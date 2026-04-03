@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { verifyAdmin } from "@/lib/admin-auth";
+import { commitFile, deleteFile, readFile } from "@/lib/github";
 import fs from "fs";
 import path from "path";
 
 const CONTENT_DIR = path.join(process.cwd(), "content", "blog");
-const IMAGE_DIR = path.join(process.cwd(), "public", "blog");
 
 export async function GET(
   _req: NextRequest,
@@ -14,14 +14,20 @@ export async function GET(
   if (!isAdmin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   const { slug } = await params;
-  const filePath = path.join(CONTENT_DIR, `${slug}.mdx`);
 
-  if (!fs.existsSync(filePath)) {
-    return NextResponse.json({ error: "Post not found" }, { status: 404 });
+  // Try local filesystem first (for dev), fall back to GitHub API
+  const localPath = path.join(CONTENT_DIR, `${slug}.mdx`);
+  if (fs.existsSync(localPath)) {
+    const content = fs.readFileSync(localPath, "utf-8");
+    return NextResponse.json({ slug, content });
   }
 
-  const content = fs.readFileSync(filePath, "utf-8");
-  return NextResponse.json({ slug, content });
+  try {
+    const content = await readFile(`content/blog/${slug}.mdx`);
+    return NextResponse.json({ slug, content });
+  } catch {
+    return NextResponse.json({ error: "Post not found" }, { status: 404 });
+  }
 }
 
 export async function PUT(
@@ -33,13 +39,27 @@ export async function PUT(
 
   const { slug } = await params;
   const { content } = await req.json();
-  const filePath = path.join(CONTENT_DIR, `${slug}.mdx`);
 
-  if (!fs.existsSync(filePath)) {
-    return NextResponse.json({ error: "Post not found" }, { status: 404 });
+  // Write locally if possible (dev mode)
+  const localPath = path.join(CONTENT_DIR, `${slug}.mdx`);
+  if (fs.existsSync(localPath)) {
+    fs.writeFileSync(localPath, content, "utf-8");
   }
 
-  fs.writeFileSync(filePath, content, "utf-8");
+  // Also commit to GitHub (works in both dev and production)
+  try {
+    await commitFile(
+      `content/blog/${slug}.mdx`,
+      content,
+      `Update blog post: ${slug}`
+    );
+  } catch (err) {
+    // If GitHub fails but local write succeeded, still return success in dev
+    if (!fs.existsSync(localPath)) {
+      return NextResponse.json({ error: "Failed to save" }, { status: 500 });
+    }
+  }
+
   return NextResponse.json({ success: true });
 }
 
@@ -51,19 +71,28 @@ export async function DELETE(
   if (!isAdmin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   const { slug } = await params;
-  const filePath = path.join(CONTENT_DIR, `${slug}.mdx`);
 
-  if (!fs.existsSync(filePath)) {
-    return NextResponse.json({ error: "Post not found" }, { status: 404 });
+  // Delete locally if exists
+  const localPath = path.join(CONTENT_DIR, `${slug}.mdx`);
+  if (fs.existsSync(localPath)) {
+    fs.unlinkSync(localPath);
   }
 
-  // Delete MDX file
-  fs.unlinkSync(filePath);
+  // Delete from GitHub
+  try {
+    await deleteFile(`content/blog/${slug}.mdx`, `Delete blog post: ${slug}`);
 
-  // Delete associated images
-  const imageFiles = fs.readdirSync(IMAGE_DIR).filter((f) => f.startsWith(slug));
-  for (const img of imageFiles) {
-    fs.unlinkSync(path.join(IMAGE_DIR, img));
+    // Also delete associated images
+    const imageFiles = [`${slug}-cover.jpg`, `${slug}-img1.jpg`, `${slug}-img2.jpg`];
+    for (const img of imageFiles) {
+      try {
+        await deleteFile(`public/blog/${img}`, `Delete blog image: ${img}`);
+      } catch { /* image may not exist */ }
+    }
+  } catch (err) {
+    if (!fs.existsSync(localPath)) {
+      // File was already deleted locally, that's fine
+    }
   }
 
   return NextResponse.json({ success: true });
