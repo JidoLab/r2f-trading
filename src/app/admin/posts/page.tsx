@@ -30,7 +30,8 @@ export default function AdminPostsPage() {
     if (res.ok) {
       setPosts((prev) => prev.filter((p) => p.slug !== slug));
     } else {
-      alert("Failed to delete post");
+      const data = await res.json().catch(() => ({}));
+      alert(`Failed to delete post: ${data.error || res.statusText}`);
     }
   }
 

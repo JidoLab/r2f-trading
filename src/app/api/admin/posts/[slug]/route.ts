@@ -72,13 +72,7 @@ export async function DELETE(
 
   const { slug } = await params;
 
-  // Delete locally if exists
-  const localPath = path.join(CONTENT_DIR, `${slug}.mdx`);
-  if (fs.existsSync(localPath)) {
-    fs.unlinkSync(localPath);
-  }
-
-  // Delete from GitHub
+  // Delete from GitHub first (works both locally and on Vercel)
   try {
     await deleteFile(`content/blog/${slug}.mdx`, `Delete blog post: ${slug}`);
 
@@ -89,11 +83,18 @@ export async function DELETE(
         await deleteFile(`public/blog/${img}`, `Delete blog image: ${img}`);
       } catch { /* image may not exist */ }
     }
-  } catch (err) {
-    if (!fs.existsSync(localPath)) {
-      // File was already deleted locally, that's fine
-    }
+  } catch (err: unknown) {
+    const msg = err instanceof Error ? err.message : "Delete failed";
+    return NextResponse.json({ error: msg }, { status: 500 });
   }
+
+  // Also delete locally if in dev mode
+  try {
+    const localPath = path.join(CONTENT_DIR, `${slug}.mdx`);
+    if (fs.existsSync(localPath)) {
+      fs.unlinkSync(localPath);
+    }
+  } catch { /* read-only on Vercel, that's fine */ }
 
   return NextResponse.json({ success: true });
 }
