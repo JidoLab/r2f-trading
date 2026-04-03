@@ -40,25 +40,25 @@ export async function PUT(
   const { slug } = await params;
   const { content } = await req.json();
 
-  // Write locally if possible (dev mode)
-  const localPath = path.join(CONTENT_DIR, `${slug}.mdx`);
-  if (fs.existsSync(localPath)) {
-    fs.writeFileSync(localPath, content, "utf-8");
-  }
-
-  // Also commit to GitHub (works in both dev and production)
+  // Commit to GitHub first (works both locally and on Vercel)
   try {
     await commitFile(
       `content/blog/${slug}.mdx`,
       content,
       `Update blog post: ${slug}`
     );
-  } catch (err) {
-    // If GitHub fails but local write succeeded, still return success in dev
-    if (!fs.existsSync(localPath)) {
-      return NextResponse.json({ error: "Failed to save" }, { status: 500 });
-    }
+  } catch (err: unknown) {
+    const msg = err instanceof Error ? err.message : "Save failed";
+    return NextResponse.json({ error: msg }, { status: 500 });
   }
+
+  // Also write locally if in dev mode
+  try {
+    const localPath = path.join(CONTENT_DIR, `${slug}.mdx`);
+    if (fs.existsSync(localPath)) {
+      fs.writeFileSync(localPath, content, "utf-8");
+    }
+  } catch { /* read-only on Vercel, that's fine */ }
 
   return NextResponse.json({ success: true });
 }

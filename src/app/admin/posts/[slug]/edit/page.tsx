@@ -33,7 +33,8 @@ export default function EditPostPage() {
       setSaved(true);
       setTimeout(() => setSaved(false), 3000);
     } else {
-      alert("Failed to save");
+      const data = await res.json().catch(() => ({}));
+      alert(`Failed to save: ${data.error || res.statusText}`);
     }
     setSaving(false);
   }

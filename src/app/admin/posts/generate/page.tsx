@@ -32,7 +32,7 @@ export default function GeneratePostPage() {
         `Generated ${data.imageCount} images`,
         `Saved to: content/blog/${data.slug}.mdx`,
         "",
-        "Done! You can now edit the post before publishing.",
+        "Done! The post is now live. You can edit it from the posts list.",
       ]);
       setResult({ slug: data.slug, title: data.title });
       setStatus("done");
