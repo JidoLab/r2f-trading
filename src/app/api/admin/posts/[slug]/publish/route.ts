@@ -43,22 +43,46 @@ export async function POST(
     // Post to socials if requested
     if (withSocials) {
       try {
-        // Extract metadata fields with regex (new Function() is blocked on Vercel)
-        const getField = (field: string): string => {
-          const m = content.match(new RegExp(`${field}:\\s*"([^"]*)"`) ) ||
-                    content.match(new RegExp(`${field}:\\s*\`([^\`]*)\``));
-          return m ? m[1] : "";
-        };
-        const getArray = (field: string): string[] => {
-          const m = content.match(new RegExp(`${field}:\\s*\\[([^\\]]*)]`));
-          if (!m) return [];
-          return m[1].match(/"([^"]*)"/g)?.map(s => s.replace(/"/g, "")) || [];
-        };
+        // Extract metadata with simple string search (new Function() blocked on Vercel, RegExp escaping is fragile)
+        function extractField(src: string, field: string): string {
+          const patterns = [
+            `${field}: "`, `${field}: '`, `${field}: \``,
+            `${field}:"`, `${field}:'`, `${field}:\``,
+          ];
+          for (const p of patterns) {
+            const start = src.indexOf(p);
+            if (start === -1) continue;
+            const valStart = start + p.length;
+            const quote = p[p.length - 1];
+            const end = src.indexOf(quote, valStart);
+            if (end === -1) continue;
+            return src.substring(valStart, end);
+          }
+          return "";
+        }
 
-        const title = getField("title");
-        const excerpt = getField("excerpt") || getField("seoDescription");
-        const coverImage = getField("coverImage");
-        const tags = getArray("tags");
+        function extractArray(src: string, field: string): string[] {
+          const start = src.indexOf(`${field}:`);
+          if (start === -1) return [];
+          const bracketStart = src.indexOf("[", start);
+          const bracketEnd = src.indexOf("]", bracketStart);
+          if (bracketStart === -1 || bracketEnd === -1) return [];
+          const inner = src.substring(bracketStart + 1, bracketEnd);
+          const items: string[] = [];
+          let inQuote = false;
+          let current = "";
+          for (const ch of inner) {
+            if (ch === '"' && !inQuote) { inQuote = true; continue; }
+            if (ch === '"' && inQuote) { items.push(current); current = ""; inQuote = false; continue; }
+            if (inQuote) current += ch;
+          }
+          return items;
+        }
+
+        const title = extractField(content, "title");
+        const excerpt = extractField(content, "excerpt") || extractField(content, "seoDescription");
+        const coverImage = extractField(content, "coverImage");
+        const tags = extractArray(content, "tags");
 
         if (title) {
           postToAll({ title, excerpt, slug, coverImage, tags }).catch(() => {});
