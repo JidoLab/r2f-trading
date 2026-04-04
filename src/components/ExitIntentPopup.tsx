@@ -37,11 +37,11 @@ export default function ExitIntentPopup() {
       lastScrollY = window.scrollY;
     }
 
-    // Wait 30 seconds before enabling — let visitors engage with content first
+    // Wait 20 seconds before enabling — let visitors engage with content first
     const timer = setTimeout(() => {
       document.addEventListener("mouseleave", handleMouseLeave);
       window.addEventListener("scroll", handleScroll, { passive: true });
-    }, 30000);
+    }, 20000);
 
     return () => {
       clearTimeout(timer);
