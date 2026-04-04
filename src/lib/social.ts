@@ -331,6 +331,40 @@ async function postToTelegram(post: PostData): Promise<SocialResult> {
   return { platform: "telegram", status: "error", message: err.slice(0, 200) };
 }
 
+// --- Discord ---
+async function postToDiscord(post: PostData): Promise<SocialResult> {
+  const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
+
+  if (!webhookUrl) {
+    return { platform: "discord", status: "skipped", message: "No webhook URL" };
+  }
+
+  const url = `${SITE_URL}/trading-insights/${post.slug}`;
+
+  const res = await fetch(webhookUrl, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      username: "R2F Trading",
+      embeds: [
+        {
+          title: post.title,
+          url,
+          description: post.excerpt,
+          color: 0xc9a84c, // gold
+          image: post.coverImage ? { url: `${SITE_URL}${post.coverImage}` } : undefined,
+          footer: { text: `r2ftrading.com · ${post.tags.join(" · ")}` },
+          timestamp: new Date().toISOString(),
+        },
+      ],
+    }),
+  });
+
+  if (res.ok || res.status === 204) return { platform: "discord", status: "success" };
+  const err = await res.text();
+  return { platform: "discord", status: "error", message: err.slice(0, 200) };
+}
+
 // --- Main: Post to All ---
 export async function postToAll(post: PostData): Promise<SocialResult[]> {
   const results = await Promise.allSettled([
@@ -341,6 +375,7 @@ export async function postToAll(post: PostData): Promise<SocialResult[]> {
     postToReddit(post),
     postToTelegram(post),
     postToPinterest(post),
+    postToDiscord(post),
   ]);
 
   const socialResults: SocialResult[] = results.flatMap((r) =>
