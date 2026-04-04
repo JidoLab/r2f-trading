@@ -4,11 +4,16 @@ import { useState, useEffect } from "react";
 
 export default function WhatsAppButton() {
   const [bounce, setBounce] = useState(true);
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => setBounce(false), 3000);
+    // Hide on admin pages
+    if (window.location.pathname.startsWith("/admin")) setShow(false);
     return () => clearTimeout(timer);
   }, []);
+
+  if (!show) return null;
 
   return (
     <a
