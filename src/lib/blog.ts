@@ -15,6 +15,12 @@ export interface BlogPost {
 
 const CONTENT_DIR = path.join(process.cwd(), "content", "blog");
 
+export function getRawContent(slug: string): string {
+  const filePath = path.join(CONTENT_DIR, `${slug}.mdx`);
+  if (!fs.existsSync(filePath)) return "";
+  return fs.readFileSync(filePath, "utf-8");
+}
+
 export function getAllSlugs(): string[] {
   if (!fs.existsSync(CONTENT_DIR)) return [];
   return fs

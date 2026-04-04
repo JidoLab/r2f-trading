@@ -1,8 +1,12 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import EmailSignup from "@/components/EmailSignup";
+import RelatedArticles from "@/components/RelatedArticles";
+import ShareButtons from "@/components/ShareButtons";
+import ReadingTime from "@/components/ReadingTime";
+import TableOfContents from "@/components/TableOfContents";
 import Link from "next/link";
-import { getAllSlugs, getPostBySlug } from "@/lib/blog";
+import { getAllSlugs, getPostBySlug, getRawContent } from "@/lib/blog";
 import type { Metadata } from "next";
 export const dynamicParams = false;
 
@@ -57,6 +61,7 @@ export default async function BlogPostPage({
 }) {
   const { slug } = await params;
   const post = getPostBySlug(slug);
+  const rawContent = getRawContent(slug);
   const Content = await getMDXContent(slug);
 
   const jsonLd = {
@@ -96,8 +101,10 @@ export default async function BlogPostPage({
             />
           )}
 
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center gap-3 mb-4 flex-wrap">
             <time className="text-sm text-gray-400">{post.date}</time>
+            <span className="text-gray-300">·</span>
+            <ReadingTime content={rawContent} />
             {post.tags.map((tag) => (
               <span
                 key={tag}
@@ -115,9 +122,13 @@ export default async function BlogPostPage({
             {post.title}
           </h1>
 
+          <TableOfContents content={rawContent} />
+
           <div>
             <Content />
           </div>
+
+          <ShareButtons slug={slug} title={post.title} />
 
           <hr className="my-12 border-gray-200" />
 
@@ -140,6 +151,8 @@ export default async function BlogPostPage({
           </div>
 
           <EmailSignup variant="sidebar" />
+
+          <RelatedArticles currentSlug={slug} currentTags={post.tags} />
         </div>
       </article>
 

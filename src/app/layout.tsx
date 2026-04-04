@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
+import BackToTop from "@/components/BackToTop";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -98,6 +99,7 @@ export default function RootLayout({
       <body className="antialiased" style={{ minHeight: "auto", display: "block" }}>
         {children}
         <WhatsAppButton />
+        <BackToTop />
         <ExitIntentPopup />
         <Analytics />
       </body>
