@@ -27,7 +27,7 @@ export default function YouTubePreview() {
           <div className="w-full md:w-[420px] flex-shrink-0">
             <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
               <iframe
-                src="https://www.youtube.com/embed?listType=user_uploads&list=R2F-Trading"
+                src="https://www.youtube.com/embed/IazaFRwLMKo"
                 title="R2F Trading YouTube"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
