@@ -421,6 +421,13 @@ export async function postToAll(post: PostData): Promise<SocialResult[]> {
       : [{ platform: "unknown", status: "error" as const, message: String(r.reason) }]
   );
 
+  // Console log for debugging
+  for (const r of socialResults) {
+    if (r.status === "success") console.log(`[social] ✓ ${r.platform}: posted`);
+    else if (r.status === "skipped") console.log(`[social] - ${r.platform}: skipped (${r.message})`);
+    else console.error(`[social] ✗ ${r.platform}: ${r.message}`);
+  }
+
   // Log results to GitHub (best-effort)
   try {
     let log: Record<string, unknown>[] = [];

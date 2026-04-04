@@ -2,45 +2,11 @@ import { NextRequest, NextResponse } from "next/server";
 import { verifyAdmin } from "@/lib/admin-auth";
 import { readFile } from "@/lib/github";
 import { postToAll } from "@/lib/social";
+import { extractPostMetadata } from "@/lib/post-metadata";
 import fs from "fs";
 import path from "path";
 
 export const maxDuration = 60;
-
-function extractField(src: string, field: string): string {
-  const patterns = [
-    `${field}: "`, `${field}: '`, `${field}: \``,
-    `${field}:"`, `${field}:'`, `${field}:\``,
-  ];
-  for (const p of patterns) {
-    const start = src.indexOf(p);
-    if (start === -1) continue;
-    const valStart = start + p.length;
-    const quote = p[p.length - 1];
-    const end = src.indexOf(quote, valStart);
-    if (end === -1) continue;
-    return src.substring(valStart, end);
-  }
-  return "";
-}
-
-function extractArray(src: string, field: string): string[] {
-  const start = src.indexOf(`${field}:`);
-  if (start === -1) return [];
-  const bracketStart = src.indexOf("[", start);
-  const bracketEnd = src.indexOf("]", bracketStart);
-  if (bracketStart === -1 || bracketEnd === -1) return [];
-  const inner = src.substring(bracketStart + 1, bracketEnd);
-  const items: string[] = [];
-  let inQuote = false;
-  let current = "";
-  for (const ch of inner) {
-    if (ch === '"' && !inQuote) { inQuote = true; continue; }
-    if (ch === '"' && inQuote) { items.push(current); current = ""; inQuote = false; continue; }
-    if (inQuote) current += ch;
-  }
-  return items;
-}
 
 export async function POST(
   _req: NextRequest,
@@ -61,20 +27,19 @@ export async function POST(
       content = await readFile(`content/blog/${slug}.mdx`);
     }
 
-    const title = extractField(content, "title");
-    const excerpt = extractField(content, "excerpt") || extractField(content, "seoDescription");
-    const coverImage = extractField(content, "coverImage");
-    const tags = extractArray(content, "tags");
-
-    if (!title) {
+    const meta = extractPostMetadata(content);
+    if (!meta) {
       return NextResponse.json({ error: "Could not extract post metadata" }, { status: 400 });
     }
 
-    const results = await postToAll({ title, excerpt, slug, coverImage, tags });
+    console.log(`[share] Sharing ${slug} to socials: title="${meta.title}"`);
+    const results = await postToAll({ ...meta, slug });
+    console.log(`[share] Results for ${slug}:`, JSON.stringify(results));
 
     return NextResponse.json({ success: true, results });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Share failed";
+    console.error(`[share] Failed for ${slug}:`, err);
     return NextResponse.json({ error: msg }, { status: 500 });
   }
 }
