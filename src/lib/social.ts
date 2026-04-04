@@ -266,6 +266,37 @@ async function postToReddit(post: PostData): Promise<SocialResult[]> {
   return results;
 }
 
+// --- Telegram Channel ---
+async function postToTelegram(post: PostData): Promise<SocialResult> {
+  const botToken = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHANNEL_ID || "@r2ftradinginsights";
+
+  if (!botToken) {
+    return { platform: "telegram", status: "skipped", message: "No bot token" };
+  }
+
+  const url = `${SITE_URL}/trading-insights/${post.slug}`;
+  const text = `📊 *${post.title}*\n\n${post.excerpt}\n\n👉 [Read Full Article](${url})\n\n#ICTTrading #R2FTrading #ForexEducation`;
+
+  const res = await fetch(
+    `https://api.telegram.org/bot${botToken}/sendMessage`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text,
+        parse_mode: "Markdown",
+        disable_web_page_preview: false,
+      }),
+    }
+  );
+
+  if (res.ok) return { platform: "telegram", status: "success" };
+  const err = await res.text();
+  return { platform: "telegram", status: "error", message: err.slice(0, 200) };
+}
+
 // --- Main: Post to All ---
 export async function postToAll(post: PostData): Promise<SocialResult[]> {
   const results = await Promise.allSettled([
@@ -274,6 +305,7 @@ export async function postToAll(post: PostData): Promise<SocialResult[]> {
     postToInstagram(post),
     postToLinkedIn(post),
     postToReddit(post),
+    postToTelegram(post),
   ]);
 
   const socialResults: SocialResult[] = results.flatMap((r) =>
