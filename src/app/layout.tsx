@@ -61,6 +61,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
+  other: {
+    "p:domain_verify": "42be79c6382dce835c45d63181579078",
+  },
   robots: {
     index: true,
     follow: true,
