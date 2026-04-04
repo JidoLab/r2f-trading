@@ -68,6 +68,22 @@ async function postToFacebook(post: PostData): Promise<SocialResult> {
   const url = `${SITE_URL}/trading-insights/${post.slug}`;
   const message = `📊 ${post.title}\n\n${post.excerpt}\n\n👉 Read more: ${url}\n\n#ICTTrading #ForexEducation #R2FTrading`;
 
+  // If cover image exists, post as photo with caption (shows the article image prominently)
+  if (post.coverImage) {
+    const imageUrl = `${SITE_URL}${post.coverImage}`;
+    const res = await fetch(
+      `https://graph.facebook.com/v19.0/${pageId}/photos`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ url: imageUrl, message, access_token: token }),
+      }
+    );
+    if (res.ok) return { platform: "facebook", status: "success" };
+    // Fall through to link post if photo upload fails
+  }
+
+  // Fallback: link post without image
   const res = await fetch(
     `https://graph.facebook.com/v19.0/${pageId}/feed`,
     {
@@ -149,6 +165,7 @@ async function postToLinkedIn(post: PostData): Promise<SocialResult> {
             originalUrl: url,
             title: { text: post.title },
             description: { text: post.excerpt },
+            ...(post.coverImage ? { thumbnails: [{ url: `${SITE_URL}${post.coverImage}` }] } : {}),
           },
         ],
       },
@@ -310,8 +327,28 @@ async function postToTelegram(post: PostData): Promise<SocialResult> {
   }
 
   const url = `${SITE_URL}/trading-insights/${post.slug}`;
-  const text = `📊 *${post.title}*\n\n${post.excerpt}\n\n👉 [Read Full Article](${url})\n\n#ICTTrading #R2FTrading #ForexEducation`;
+  const caption = `📊 *${post.title}*\n\n${post.excerpt}\n\n👉 [Read Full Article](${url})\n\n#ICTTrading #R2FTrading #ForexEducation`;
 
+  // Send as photo with caption if cover image exists
+  if (post.coverImage) {
+    const photoRes = await fetch(
+      `https://api.telegram.org/bot${botToken}/sendPhoto`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: chatId,
+          photo: `${SITE_URL}${post.coverImage}`,
+          caption,
+          parse_mode: "Markdown",
+        }),
+      }
+    );
+    if (photoRes.ok) return { platform: "telegram", status: "success" };
+    // Fall through to text-only if photo fails
+  }
+
+  // Fallback: text only
   const res = await fetch(
     `https://api.telegram.org/bot${botToken}/sendMessage`,
     {
@@ -319,7 +356,7 @@ async function postToTelegram(post: PostData): Promise<SocialResult> {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         chat_id: chatId,
-        text,
+        text: caption,
         parse_mode: "Markdown",
         disable_web_page_preview: false,
       }),
