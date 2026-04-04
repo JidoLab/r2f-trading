@@ -7,6 +7,14 @@
     {
       "path": "/api/cron/send-drips",
       "schedule": "0 9 * * *"
+    },
+    {
+      "path": "/api/cron/send-newsletter",
+      "schedule": "0 10 * * 1"
+    },
+    {
+      "path": "/api/cron/send-report",
+      "schedule": "0 7 * * 1"
     }
   ]
 }

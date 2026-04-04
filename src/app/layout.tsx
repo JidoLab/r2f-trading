@@ -5,6 +5,7 @@ import Script from "next/script";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import BackToTop from "@/components/BackToTop";
+import ChatWidget from "@/components/ChatWidget";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -100,6 +101,7 @@ export default function RootLayout({
         {children}
         <WhatsAppButton />
         <BackToTop />
+        <ChatWidget />
         <ExitIntentPopup />
         <Analytics />
       </body>

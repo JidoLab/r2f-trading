@@ -36,6 +36,18 @@ export default async function AdminLayout({
           >
             Blog Posts
           </Link>
+          <Link
+            href="/admin/calendar"
+            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Content Calendar
+          </Link>
+          <Link
+            href="/admin/signature"
+            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Email Signature
+          </Link>
           <a
             href="https://vercel.com/wrightharvest-9811s-projects/r2f-trading/analytics"
             target="_blank"
