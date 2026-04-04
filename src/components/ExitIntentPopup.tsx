@@ -13,6 +13,9 @@ export default function ExitIntentPopup() {
   }, []);
 
   useEffect(() => {
+    // Don't show on admin pages
+    if (window.location.pathname.startsWith("/admin")) return;
+
     if (sessionStorage.getItem("r2f_exit_shown")) return;
 
     // Desktop: mouse leaves viewport toward top (tab bar)
@@ -34,11 +37,11 @@ export default function ExitIntentPopup() {
       lastScrollY = window.scrollY;
     }
 
-    // Delay adding listeners so it doesn't fire immediately
+    // Wait 30 seconds before enabling — let visitors engage with content first
     const timer = setTimeout(() => {
       document.addEventListener("mouseleave", handleMouseLeave);
       window.addEventListener("scroll", handleScroll, { passive: true });
-    }, 5000);
+    }, 30000);
 
     return () => {
       clearTimeout(timer);
