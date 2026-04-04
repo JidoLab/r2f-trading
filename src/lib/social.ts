@@ -171,6 +171,101 @@ async function postToLinkedIn(post: PostData): Promise<SocialResult> {
   return { platform: "linkedin", status: "error", message: err.slice(0, 200) };
 }
 
+// --- Reddit ---
+async function getRedditAccessToken(): Promise<string | null> {
+  const refreshToken = process.env.REDDIT_REFRESH_TOKEN;
+  const clientId = process.env.REDDIT_CLIENT_ID;
+  const clientSecret = process.env.REDDIT_CLIENT_SECRET;
+
+  if (!refreshToken || !clientId) return null;
+
+  const auth = Buffer.from(`${clientId}:${clientSecret || ""}`).toString("base64");
+  const res = await fetch("https://www.reddit.com/api/v1/access_token", {
+    method: "POST",
+    headers: {
+      Authorization: `Basic ${auth}`,
+      "Content-Type": "application/x-www-form-urlencoded",
+      "User-Agent": "R2FTradingBot/1.0",
+    },
+    body: `grant_type=refresh_token&refresh_token=${refreshToken}`,
+  });
+
+  if (!res.ok) return null;
+  const data = await res.json();
+  return data.access_token || null;
+}
+
+async function postToReddit(post: PostData): Promise<SocialResult[]> {
+  const subreddit = process.env.REDDIT_SUBREDDIT || "Road2Funded";
+  const username = process.env.REDDIT_USERNAME || "Front-Recording7391";
+
+  const accessToken = await getRedditAccessToken();
+  if (!accessToken) {
+    return [{ platform: "reddit", status: "skipped", message: "No credentials" }];
+  }
+
+  const url = `${SITE_URL}/trading-insights/${post.slug}`;
+  const postText = `## ${post.title}\n\n${post.excerpt}\n\n---\n\n🔗 **Read the full article:** [${post.title}](${url})\n\n*Join r/${subreddit} for daily ICT trading insights, market analysis, and mentorship updates.*`;
+
+  const results: SocialResult[] = [];
+
+  // Post to subreddit
+  try {
+    const res = await fetch("https://oauth.reddit.com/api/submit", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "R2FTradingBot/1.0",
+      },
+      body: new URLSearchParams({
+        sr: subreddit,
+        kind: "self",
+        title: post.title,
+        text: postText,
+        sendreplies: "true",
+      }).toString(),
+    });
+    const data = await res.json();
+    if (data?.success || !data?.json?.errors?.length) {
+      results.push({ platform: "reddit-sub", status: "success" });
+    } else {
+      results.push({ platform: "reddit-sub", status: "error", message: JSON.stringify(data?.json?.errors).slice(0, 200) });
+    }
+  } catch (err) {
+    results.push({ platform: "reddit-sub", status: "error", message: String(err).slice(0, 200) });
+  }
+
+  // Post to personal profile (u/username)
+  try {
+    const res = await fetch("https://oauth.reddit.com/api/submit", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "R2FTradingBot/1.0",
+      },
+      body: new URLSearchParams({
+        sr: `u_${username}`,
+        kind: "self",
+        title: post.title,
+        text: postText,
+        sendreplies: "true",
+      }).toString(),
+    });
+    const data = await res.json();
+    if (data?.success || !data?.json?.errors?.length) {
+      results.push({ platform: "reddit-profile", status: "success" });
+    } else {
+      results.push({ platform: "reddit-profile", status: "error", message: JSON.stringify(data?.json?.errors).slice(0, 200) });
+    }
+  } catch (err) {
+    results.push({ platform: "reddit-profile", status: "error", message: String(err).slice(0, 200) });
+  }
+
+  return results;
+}
+
 // --- Main: Post to All ---
 export async function postToAll(post: PostData): Promise<SocialResult[]> {
   const results = await Promise.allSettled([
@@ -178,12 +273,13 @@ export async function postToAll(post: PostData): Promise<SocialResult[]> {
     postToFacebook(post),
     postToInstagram(post),
     postToLinkedIn(post),
+    postToReddit(post),
   ]);
 
-  const socialResults: SocialResult[] = results.map((r) =>
+  const socialResults: SocialResult[] = results.flatMap((r) =>
     r.status === "fulfilled"
-      ? r.value
-      : { platform: "unknown", status: "error" as const, message: String(r.reason) }
+      ? (Array.isArray(r.value) ? r.value : [r.value])
+      : [{ platform: "unknown", status: "error" as const, message: String(r.reason) }]
   );
 
   // Log results to GitHub (best-effort)
