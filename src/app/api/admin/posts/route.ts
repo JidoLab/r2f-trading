@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { verifyAdmin } from "@/lib/admin-auth";
 import { getAllPosts } from "@/lib/blog";
 import { commitFile } from "@/lib/github";
+import { notifyIndexNow } from "@/lib/indexnow";
 import Anthropic from "@anthropic-ai/sdk";
 import { GoogleGenAI } from "@google/genai";
 
@@ -212,6 +213,9 @@ ${body}
       mdxContent,
       `Add blog post: ${article.title}`
     );
+
+    // Notify search engines via IndexNow
+    await notifyIndexNow([`/trading-insights/${slug}`, `/trading-insights`, `/sitemap.xml`]);
 
     return NextResponse.json({
       success: true,

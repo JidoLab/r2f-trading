@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { commitFile, readFile } from "@/lib/github";
+import { notifyIndexNow } from "@/lib/indexnow";
 import Anthropic from "@anthropic-ai/sdk";
 import { GoogleGenAI } from "@google/genai";
 
@@ -138,6 +139,9 @@ ${body}
 `;
 
     await commitFile(`content/blog/${slug}.mdx`, mdxContent, `Auto-generate: ${article.title}`);
+
+    // Notify search engines via IndexNow
+    await notifyIndexNow([`/trading-insights/${slug}`, `/trading-insights`, `/sitemap.xml`]);
 
     return NextResponse.json({ success: true, title: article.title, slug });
   } catch (err: unknown) {
