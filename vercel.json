@@ -3,6 +3,10 @@
     {
       "path": "/api/cron/generate-post",
       "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/send-drips",
+      "schedule": "0 9 * * *"
     }
   ]
 }

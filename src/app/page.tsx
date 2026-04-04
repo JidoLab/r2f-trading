@@ -7,6 +7,7 @@ import Achievements from "@/components/Achievements";
 import Testimonials from "@/components/Testimonials";
 import YouTubePreview from "@/components/YouTubePreview";
 import FinalCTA from "@/components/FinalCTA";
+import LeadCaptureSection from "@/components/LeadCaptureSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Testimonials />
       <YouTubePreview />
       <FinalCTA />
+      <LeadCaptureSection />
       <Footer />
     </main>
   );

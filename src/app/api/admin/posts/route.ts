@@ -3,6 +3,7 @@ import { verifyAdmin } from "@/lib/admin-auth";
 import { getAllPosts } from "@/lib/blog";
 import { commitFile } from "@/lib/github";
 import { notifyIndexNow } from "@/lib/indexnow";
+import { postToAll } from "@/lib/social";
 import Anthropic from "@anthropic-ai/sdk";
 import { GoogleGenAI } from "@google/genai";
 
@@ -216,6 +217,9 @@ ${body}
 
     // Notify search engines via IndexNow
     await notifyIndexNow([`/trading-insights/${slug}`, `/trading-insights`, `/sitemap.xml`]);
+
+    // Auto-post to social media (fire and forget)
+    postToAll({ title: article.title, excerpt: article.excerpt, slug, coverImage, tags: article.tags }).catch(() => {});
 
     return NextResponse.json({
       success: true,

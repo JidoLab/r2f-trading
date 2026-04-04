@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import EmailSignup from "@/components/EmailSignup";
 import Link from "next/link";
 import { getAllSlugs, getPostBySlug } from "@/lib/blog";
 import type { Metadata } from "next";
@@ -137,6 +138,8 @@ export default async function BlogPostPage({
               Book a Free Discovery Call
             </Link>
           </div>
+
+          <EmailSignup variant="sidebar" />
         </div>
       </article>
 
