@@ -62,7 +62,11 @@ export async function GET(req: NextRequest) {
 TODAY: ${dayOfWeek}, ${month}
 EXISTING POSTS (avoid repeats): ${existingTitles.slice(0, 20).join(", ") || "None"}
 Generate ONE fresh blog topic considering current market relevance and seasonal patterns.
-Return ONLY a JSON object: { "topic": "...", "category": "...", "angle": "...", "targetKeyword": "..." }`,
+
+POST TYPES — cycle through these (pick one NOT recently used):
+how-to, listicle, case-study, comparison, faq, roundup, personal-story, trends, checklist
+
+Return ONLY a JSON object: { "topic": "...", "category": "...", "postType": "...", "angle": "...", "targetKeyword": "..." }`,
       }],
     });
 
@@ -77,12 +81,15 @@ Return ONLY a JSON object: { "topic": "...", "category": "...", "angle": "...", 
       messages: [{
         role: "user",
         content: `Write a blog article for R2F Trading (r2ftrading.com).
-AUTHOR: Harvest Wright — sole mentor, 10+ years ICT trading experience.
-TOPIC: "${topicData.topic}" | CATEGORY: ${topicData.category} | ANGLE: ${topicData.angle} | KEYWORD: "${topicData.targetKeyword}" | DATE: ${date}
+AUTHOR: Harvest Wright — sole mentor, 10+ years ICT trading experience, TradingView Editors' Pick, Top 1% in competitions, FTMO Challenge passer.
+TOPIC: "${topicData.topic}" | CATEGORY: ${topicData.category} | POST TYPE: ${topicData.postType || "how-to"} | ANGLE: ${topicData.angle} | KEYWORD: "${topicData.targetKeyword}" | DATE: ${date}
 COACHING: Lite $150/week, Pro $200/week, Full Mentorship $1,000/4 months.
 INTERNAL LINKS: [coaching plans](/coaching), [book a free discovery call](/contact), [trading insights](/trading-insights)
-Write 1200-1800 words, first person as Harvest, SEO-optimized, with IMAGE_1 and IMAGE_2 placeholders.
-Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDescription": "...", "seoKeywords": [...], "tags": [...], "body": "...", "imagePrompts": ["...", "..."] }`,
+Write 1200-1800 words, first person as Harvest. Structure to match the POST TYPE format.
+SEO CRITICAL: Target keyword MUST appear in first paragraph, first ## header, and 3-5 times naturally in body.
+Include 1-2 EXTERNAL LINKS to authoritative sources (TradingView, Investopedia, BabyPips, CME Group).
+IMAGE alt text must be keyword-rich and descriptive, not generic.
+Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDescription": "...", "seoKeywords": [...], "tags": [...], "postType": "...", "body": "...", "imagePrompts": ["...", "..."] }`,
       }],
     });
 
@@ -134,6 +141,7 @@ Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDes
   seoKeywords: ${JSON.stringify(article.seoKeywords)},
   coverImage: ${JSON.stringify(coverImage)},
   tags: ${JSON.stringify(article.tags)},
+  postType: ${JSON.stringify(article.postType || topicData.postType || "how-to")},
 }
 
 ${body}

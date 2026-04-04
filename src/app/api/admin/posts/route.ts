@@ -63,10 +63,22 @@ Generate ONE fresh blog topic. Consider:
 
 CATEGORIES to rotate through: ICT Concepts, Trading Psychology, Risk Management, Funded Account Strategies, Market Analysis, Trading Lifestyle, Strategy Development
 
+POST TYPES — cycle through these to keep the blog diverse (check existing articles and pick a type NOT recently used):
+- how-to: Step-by-step guide solving a specific trading problem
+- listicle: "X Best/Top/Essential..." numbered list format
+- case-study: Real trading scenario walkthrough with specific results
+- comparison: "X vs Y" comparing two strategies, platforms, or approaches
+- faq: Answering 5-8 common questions on a topic
+- roundup: Curated list of resources, tools, or expert tips
+- personal-story: Behind-the-scenes narrative from Harvest's trading journey
+- trends: Industry predictions and market outlook
+- checklist: Actionable checklist readers can apply immediately
+
 Return ONLY a JSON object:
 {
   "topic": "The specific topic",
   "category": "Category name",
+  "postType": "one of: how-to, listicle, case-study, comparison, faq, roundup, personal-story, trends, checklist",
   "angle": "What makes this timely or unique (1 sentence)",
   "targetKeyword": "Primary SEO keyword phrase"
 }`,
@@ -94,6 +106,7 @@ AUTHOR: Harvest Wright — sole mentor, 10+ years ICT trading experience, Tradin
 
 TOPIC: "${topicData.topic}"
 CATEGORY: ${topicData.category}
+POST TYPE: ${topicData.postType || "how-to"} — structure the article to match this format
 ANGLE: ${topicData.angle}
 TARGET KEYWORD: "${topicData.targetKeyword}"
 TODAY'S DATE: ${date}
@@ -119,15 +132,19 @@ CONTENT REQUIREMENTS:
 - Short paragraphs (2-3 sentences max)
 - End with a CTA that feels helpful, not pushy
 
-SEO REQUIREMENTS:
+SEO REQUIREMENTS (CRITICAL — follow all of these):
 - seoTitle: 50-60 chars with target keyword near the front
 - seoDescription: 150-155 chars, compelling with implied benefit
 - 4-5 specific long-tail SEO keywords
 - FAQ-style headers where appropriate (Google loves these)
+- TARGET KEYWORD MUST appear in: the first paragraph, the first ## header, and naturally 3-5 times throughout the body
+- First ## header should contain or closely match the target keyword
+- Include 1-2 EXTERNAL LINKS to authoritative trading resources (e.g., TradingView, Investopedia, BabyPips, CME Group, Forex Factory) — use natural anchor text, not "click here"
 
 IMAGE PLACEMENT:
 - Provide exactly 2 descriptive image prompts for trading-related illustrations
-- Mark placement with: ![descriptive-alt-text](IMAGE_1) and ![descriptive-alt-text](IMAGE_2)
+- IMAGE ALT TEXT MUST be keyword-rich and descriptive (not generic like "trading chart" — instead use "ICT order block setup on EURUSD 1-hour chart showing liquidity sweep")
+- Mark placement with: ![keyword-rich-descriptive-alt-text](IMAGE_1) and ![keyword-rich-descriptive-alt-text](IMAGE_2)
 
 Return ONLY a JSON object (no code fences):
 {
@@ -137,6 +154,7 @@ Return ONLY a JSON object (no code fences):
   "seoDescription": "Meta description (150-155 chars)",
   "seoKeywords": ["keyword1", "keyword2", "keyword3", "keyword4", "keyword5"],
   "tags": ["tag1", "tag2", "tag3"],
+  "postType": "the post type from the topic step",
   "body": "Full article markdown with IMAGE_1 and IMAGE_2 placeholders",
   "imagePrompts": ["Prompt for image 1", "Prompt for image 2"]
 }`,
@@ -203,6 +221,7 @@ Return ONLY a JSON object (no code fences):
   seoKeywords: ${JSON.stringify(article.seoKeywords)},
   coverImage: ${JSON.stringify(coverImage)},
   tags: ${JSON.stringify(article.tags)},
+  postType: ${JSON.stringify(article.postType || topicData.postType || "how-to")},
 }
 
 ${body}
