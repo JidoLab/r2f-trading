@@ -52,13 +52,13 @@ export default function AutoGenerateToggle() {
         <button
           onClick={handleToggle}
           disabled={saving}
-          className={`relative w-14 h-7 rounded-full transition-colors duration-200 flex-shrink-0 ${
+          className={`relative w-12 h-6 rounded-full transition-colors duration-200 flex-shrink-0 ${
             enabled ? "bg-gold" : "bg-white/20"
           } ${saving ? "opacity-50" : ""}`}
         >
           <span
-            className={`absolute top-1 w-5 h-5 rounded-full bg-white shadow transition-transform duration-200 ${
-              enabled ? "translate-x-8" : "translate-x-1"
+            className={`block w-5 h-5 rounded-full bg-white shadow transition-transform duration-200 absolute top-0.5 ${
+              enabled ? "left-[26px]" : "left-0.5"
             }`}
           />
         </button>

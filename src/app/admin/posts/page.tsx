@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import AutoGenerateToggle from "@/components/AutoGenerateToggle";
 
 interface Post {
   slug: string;
@@ -37,7 +38,7 @@ export default function AdminPostsPage() {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold text-white">Blog Posts</h1>
         <Link
           href="/admin/posts/generate"
@@ -46,6 +47,8 @@ export default function AdminPostsPage() {
           + Generate Post
         </Link>
       </div>
+
+      <AutoGenerateToggle />
 
       {loading ? (
         <p className="text-white/40">Loading...</p>

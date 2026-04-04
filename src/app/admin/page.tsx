@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
-import AutoGenerateToggle from "@/components/AutoGenerateToggle";
 
 export const dynamic = "force-dynamic";
 
@@ -40,9 +39,6 @@ export default function AdminDashboard() {
           </a>
         </div>
       </div>
-
-      {/* Auto-Generate Toggle */}
-      <AutoGenerateToggle />
 
       <div className="flex gap-4 mb-10">
         <Link
