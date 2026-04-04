@@ -266,6 +266,40 @@ async function postToReddit(post: PostData): Promise<SocialResult[]> {
   return results;
 }
 
+// --- Pinterest ---
+async function postToPinterest(post: PostData): Promise<SocialResult> {
+  const token = process.env.PINTEREST_ACCESS_TOKEN;
+
+  if (!token || !post.coverImage) {
+    return { platform: "pinterest", status: "skipped", message: "No token or cover image" };
+  }
+
+  const url = `${SITE_URL}/trading-insights/${post.slug}`;
+  const imageUrl = `${SITE_URL}${post.coverImage}`;
+
+  const res = await fetch("https://api.pinterest.com/v5/pins", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      title: post.title,
+      description: `${post.excerpt}\n\n#ICTTrading #ForexEducation #TradingMentorship #R2FTrading #FundedTrader ${post.tags.map((t) => `#${t.replace(/[^a-zA-Z0-9]/g, "")}`).join(" ")}`,
+      link: url,
+      media_source: {
+        source_type: "image_url",
+        url: imageUrl,
+      },
+      board_id: process.env.PINTEREST_BOARD_ID || "",
+    }),
+  });
+
+  if (res.ok) return { platform: "pinterest", status: "success" };
+  const err = await res.text();
+  return { platform: "pinterest", status: "error", message: err.slice(0, 200) };
+}
+
 // --- Telegram Channel ---
 async function postToTelegram(post: PostData): Promise<SocialResult> {
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
@@ -306,6 +340,7 @@ export async function postToAll(post: PostData): Promise<SocialResult[]> {
     postToLinkedIn(post),
     postToReddit(post),
     postToTelegram(post),
+    postToPinterest(post),
   ]);
 
   const socialResults: SocialResult[] = results.flatMap((r) =>
