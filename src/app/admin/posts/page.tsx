@@ -25,6 +25,7 @@ export default function AdminPostsPage() {
   const [drafts, setDrafts] = useState<Draft[]>([]);
   const [loading, setLoading] = useState(true);
   const [publishing, setPublishing] = useState<string | null>(null);
+  const [sharing, setSharing] = useState<string | null>(null);
   const router = useRouter();
 
   useEffect(() => {
@@ -47,6 +48,21 @@ export default function AdminPostsPage() {
       const data = await res.json().catch(() => ({}));
       alert(`Failed to delete post: ${data.error || res.statusText}`);
     }
+  }
+
+  async function handleShareToSocials(slug: string) {
+    setSharing(slug);
+    const res = await fetch(`/api/admin/posts/${slug}/share`, { method: "POST" });
+    if (res.ok) {
+      const data = await res.json();
+      const successes = data.results?.filter((r: { status: string }) => r.status === "success").length || 0;
+      const total = data.results?.length || 0;
+      alert(`Shared to ${successes}/${total} platforms`);
+    } else {
+      const data = await res.json().catch(() => ({}));
+      alert(`Failed to share: ${data.error || "Unknown error"}`);
+    }
+    setSharing(null);
   }
 
   async function handlePublish(slug: string, withSocials: boolean) {
@@ -183,6 +199,13 @@ export default function AdminPostsPage() {
                           >
                             View
                           </Link>
+                          <button
+                            onClick={() => handleShareToSocials(post.slug)}
+                            disabled={sharing === post.slug}
+                            className="text-blue-400/70 hover:text-blue-400 text-xs font-semibold transition-colors disabled:opacity-50"
+                          >
+                            {sharing === post.slug ? "Sharing..." : "Share"}
+                          </button>
                           <Link
                             href={`/admin/posts/${post.slug}/edit`}
                             className="text-gold text-xs font-bold hover:text-gold-light transition-colors"
