@@ -38,14 +38,21 @@ export async function GET() {
         content = await readFile(`content/drafts/${file}`);
       }
 
-      const metaMatch = content.match(/export\s+const\s+metadata\s*=\s*(\{[\s\S]*?\n\})/);
-      if (metaMatch) {
-        const meta = new Function(`return ${metaMatch[1]}`)();
+      const getField = (f: string): string => {
+        const m = content.match(new RegExp(`${f}:\\s*"([^"]*)"`) );
+        return m ? m[1] : "";
+      };
+      const getArray = (f: string): string[] => {
+        const m = content.match(new RegExp(`${f}:\\s*\\[([^\\]]*)]`));
+        return m ? (m[1].match(/"([^"]*)"/g)?.map(s => s.replace(/"/g, "")) || []) : [];
+      };
+      const title = getField("title");
+      if (title) {
         drafts.push({
           slug,
-          title: meta.title || slug,
-          date: meta.date || "",
-          tags: meta.tags || [],
+          title: title || slug,
+          date: getField("date"),
+          tags: getArray("tags"),
         });
       }
     } catch { /* skip unreadable drafts */ }

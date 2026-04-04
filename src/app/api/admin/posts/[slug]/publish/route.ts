@@ -42,20 +42,28 @@ export async function POST(
 
     // Post to socials if requested
     if (withSocials) {
-      // Extract metadata from MDX for social posting
-      const metaMatch = content.match(/export\s+const\s+metadata\s*=\s*(\{[\s\S]*?\n\})/);
-      if (metaMatch) {
-        try {
-          const meta = new Function(`return ${metaMatch[1]}`)();
-          postToAll({
-            title: meta.title,
-            excerpt: meta.excerpt || meta.seoDescription,
-            slug,
-            coverImage: meta.coverImage || "",
-            tags: meta.tags || [],
-          }).catch(() => {});
-        } catch { /* social posting is best-effort */ }
-      }
+      try {
+        // Extract metadata fields with regex (new Function() is blocked on Vercel)
+        const getField = (field: string): string => {
+          const m = content.match(new RegExp(`${field}:\\s*"([^"]*)"`) ) ||
+                    content.match(new RegExp(`${field}:\\s*\`([^\`]*)\``));
+          return m ? m[1] : "";
+        };
+        const getArray = (field: string): string[] => {
+          const m = content.match(new RegExp(`${field}:\\s*\\[([^\\]]*)]`));
+          if (!m) return [];
+          return m[1].match(/"([^"]*)"/g)?.map(s => s.replace(/"/g, "")) || [];
+        };
+
+        const title = getField("title");
+        const excerpt = getField("excerpt") || getField("seoDescription");
+        const coverImage = getField("coverImage");
+        const tags = getArray("tags");
+
+        if (title) {
+          postToAll({ title, excerpt, slug, coverImage, tags }).catch(() => {});
+        }
+      } catch { /* social posting is best-effort */ }
     }
 
     return NextResponse.json({ success: true, published: true, withSocials });
