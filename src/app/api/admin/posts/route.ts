@@ -208,21 +208,16 @@ Return ONLY a JSON object (no code fences):
 ${body}
 `;
 
-    // Commit to GitHub
+    // Save as draft (manual generation) — not published to site or socials yet
     await commitFile(
-      `content/blog/${slug}.mdx`,
+      `content/drafts/${slug}.mdx`,
       mdxContent,
-      `Add blog post: ${article.title}`
+      `Draft: ${article.title}`
     );
-
-    // Notify search engines via IndexNow
-    await notifyIndexNow([`/trading-insights/${slug}`, `/trading-insights`, `/sitemap.xml`]);
-
-    // Auto-post to social media (fire and forget)
-    postToAll({ title: article.title, excerpt: article.excerpt, slug, coverImage, tags: article.tags }).catch(() => {});
 
     return NextResponse.json({
       success: true,
+      draft: true,
       title: article.title,
       category: topicData.category,
       topic: topicData.topic,

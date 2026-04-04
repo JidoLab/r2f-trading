@@ -64,7 +64,8 @@ export default function GeneratePostPage() {
     setLog((prev) => [
       ...prev,
       "",
-      `=== Complete: ${generated.length}/${count} posts generated ===`,
+      `=== Complete: ${generated.length}/${count} posts saved as drafts ===`,
+      "Go to Blog Posts to review and publish them.",
     ]);
     setResults(generated);
     setStatus(generated.length > 0 ? "done" : "error");

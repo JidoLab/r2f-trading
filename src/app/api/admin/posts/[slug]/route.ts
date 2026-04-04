@@ -22,12 +22,14 @@ export async function GET(
     return NextResponse.json({ slug, content });
   }
 
-  try {
-    const content = await readFile(`content/blog/${slug}.mdx`);
-    return NextResponse.json({ slug, content });
-  } catch {
-    return NextResponse.json({ error: "Post not found" }, { status: 404 });
+  // Try blog first, then drafts
+  for (const dir of ["content/blog", "content/drafts"]) {
+    try {
+      const content = await readFile(`${dir}/${slug}.mdx`);
+      return NextResponse.json({ slug, content, isDraft: dir === "content/drafts" });
+    } catch { /* try next */ }
   }
+  return NextResponse.json({ error: "Post not found" }, { status: 404 });
 }
 
 export async function PUT(
@@ -40,25 +42,20 @@ export async function PUT(
   const { slug } = await params;
   const { content } = await req.json();
 
-  // Commit to GitHub first (works both locally and on Vercel)
+  // Determine if file is in blog or drafts
+  let filePath = `content/blog/${slug}.mdx`;
   try {
-    await commitFile(
-      `content/blog/${slug}.mdx`,
-      content,
-      `Update blog post: ${slug}`
-    );
+    await readFile(`content/drafts/${slug}.mdx`);
+    filePath = `content/drafts/${slug}.mdx`;
+  } catch { /* not a draft, use blog path */ }
+
+  // Commit to GitHub
+  try {
+    await commitFile(filePath, content, `Update: ${slug}`);
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Save failed";
     return NextResponse.json({ error: msg }, { status: 500 });
   }
-
-  // Also write locally if in dev mode
-  try {
-    const localPath = path.join(CONTENT_DIR, `${slug}.mdx`);
-    if (fs.existsSync(localPath)) {
-      fs.writeFileSync(localPath, content, "utf-8");
-    }
-  } catch { /* read-only on Vercel, that's fine */ }
 
   return NextResponse.json({ success: true });
 }
