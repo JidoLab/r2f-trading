@@ -50,9 +50,9 @@ export default function Methodology() {
           Choosing R2F isn&rsquo;t just about learning to trade&mdash;it&rsquo;s about transforming how you approach the markets and yourself. Here&rsquo;s what you can expect:
         </p>
 
-        <div className="flex flex-wrap justify-center lg:justify-start gap-6 md:gap-8 mb-12">
-          {features.map((feature) => (
-            <div key={feature.title} className="flex flex-col items-center text-center group w-[calc(50%-12px)] sm:w-[calc(33.333%-16px)] lg:w-[calc(14.285%-16px)]">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-6 md:gap-8 mb-12">
+          {features.map((feature, i) => (
+            <div key={feature.title} className={`flex flex-col items-center text-center group ${i === features.length - 1 ? "col-span-2 sm:col-span-1" : ""}`}>
               <img
                 src={feature.icon}
                 alt={feature.title}
