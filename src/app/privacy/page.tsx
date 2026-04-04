@@ -53,7 +53,7 @@ export default function PrivacyPage() {
             <li>Opt-out of receiving promotional communications.</li>
           </ul>
           <p className="text-gray-600 leading-relaxed mb-4">
-            To exercise these rights, contact us at r2ftrading@gmail.com.
+            To exercise these rights, contact us at road2funded@gmail.com.
           </p>
 
           <h2 className="text-xl font-bold text-navy mt-10 mb-4">6. Security</h2>

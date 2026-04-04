@@ -36,14 +36,14 @@ export default function ContactPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
               <a
-                href="mailto:r2ftrading@gmail.com"
+                href="mailto:road2funded@gmail.com"
                 className="flex flex-col items-center p-6 rounded-lg border border-gray-200 hover:border-gold/40 transition-colors"
               >
                 <svg className="w-8 h-8 text-gold mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                   <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <span className="text-sm font-bold text-navy">Email</span>
-                <span className="text-xs text-gray-500 mt-1">r2ftrading@gmail.com</span>
+                <span className="text-xs text-gray-500 mt-1">road2funded@gmail.com</span>
               </a>
 
               <a
