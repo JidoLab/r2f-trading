@@ -44,5 +44,50 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-05T10:38:58.939Z",
+    "slug": "2026-04-05-5-ict-trading-setups-that-thrive-during-april-s-fed-meeting-uncertainty-complete-strategy-breakdown",
+    "title": "5 ICT Trading Setups That Thrive During April's Fed Meeting Uncertainty: Complete Strategy Breakdown",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
