@@ -1,0 +1,152 @@
+{
+  "task": "transcribe",
+  "language": "english",
+  "duration": 26.979999542236328,
+  "text": "I lost everything 3 times Before learning these 5 rules Rule 1 Never risk more than 1% Rule 2 Always set your stop loss first Rule 3 Risk to reward minimum 2 to 1 Rule 4 No revenge trading after losses Follow for more life-saving tips",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0,
+      "end": 5.480000019073486,
+      "text": " I lost everything 3 times Before learning these 5 rules",
+      "tokens": [
+        50364,
+        286,
+        2731,
+        1203,
+        805,
+        1413,
+        4546,
+        2539,
+        613,
+        1025,
+        4474,
+        50638
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.33146175742149353,
+      "compression_ratio": 1.409638524055481,
+      "no_speech_prob": 0.0004373169504106045
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 5.480000019073486,
+      "end": 10.119999885559082,
+      "text": " Rule 1 Never risk more than 1%",
+      "tokens": [
+        50638,
+        27533,
+        502,
+        7344,
+        3148,
+        544,
+        813,
+        502,
+        4,
+        50870
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.33146175742149353,
+      "compression_ratio": 1.409638524055481,
+      "no_speech_prob": 0.0004373169504106045
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 10.119999885559082,
+      "end": 15.079999923706055,
+      "text": " Rule 2 Always set your stop loss first",
+      "tokens": [
+        50870,
+        27533,
+        568,
+        11270,
+        992,
+        428,
+        1590,
+        4470,
+        700,
+        51118
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.33146175742149353,
+      "compression_ratio": 1.409638524055481,
+      "no_speech_prob": 0.0004373169504106045
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 15.079999923706055,
+      "end": 20.440000534057617,
+      "text": " Rule 3 Risk to reward minimum 2 to 1",
+      "tokens": [
+        51118,
+        27533,
+        805,
+        45892,
+        281,
+        7782,
+        7285,
+        568,
+        281,
+        502,
+        51386
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.33146175742149353,
+      "compression_ratio": 1.409638524055481,
+      "no_speech_prob": 0.0004373169504106045
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 20.440000534057617,
+      "end": 24.799999237060547,
+      "text": " Rule 4 No revenge trading after losses",
+      "tokens": [
+        51386,
+        27533,
+        1017,
+        883,
+        16711,
+        9529,
+        934,
+        15352,
+        51604
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.33146175742149353,
+      "compression_ratio": 1.409638524055481,
+      "no_speech_prob": 0.0004373169504106045
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 24.799999237060547,
+      "end": 26.799999237060547,
+      "text": " Follow for more life-saving tips",
+      "tokens": [
+        51604,
+        9876,
+        337,
+        544,
+        993,
+        12,
+        82,
+        6152,
+        6082,
+        51704
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.33146175742149353,
+      "compression_ratio": 1.409638524055481,
+      "no_speech_prob": 0.0004373169504106045
+    }
+  ],
+  "usage": {
+    "type": "duration",
+    "seconds": 27
+  }
+}

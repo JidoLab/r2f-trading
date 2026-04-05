@@ -1,0 +1,187 @@
+{
+  "task": "transcribe",
+  "language": "english",
+  "duration": 20.239999771118164,
+  "text": "Most traders see this move. They think it's just noise. They miss the institutional footprint. Price isn't moving randomly here. This is displacement. Smart money is pushing aggressively. Three consecutive candles. Same direction. Follow R2F trading. Learn to read institutional moves.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0,
+      "end": 2.640000104904175,
+      "text": " Most traders see this move. They think it's just noise.",
+      "tokens": [
+        50364,
+        4534,
+        26014,
+        536,
+        341,
+        1286,
+        13,
+        814,
+        519,
+        309,
+        311,
+        445,
+        5658,
+        13,
+        50496
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.4130658805370331,
+      "compression_ratio": 1.4766839742660522,
+      "no_speech_prob": 0.001366898650303483
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 2.9600000381469727,
+      "end": 4.71999979019165,
+      "text": " They miss the institutional footprint.",
+      "tokens": [
+        50512,
+        814,
+        1713,
+        264,
+        18391,
+        24222,
+        13,
+        50600
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.4130658805370331,
+      "compression_ratio": 1.4766839742660522,
+      "no_speech_prob": 0.001366898650303483
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 5.159999847412109,
+      "end": 8.399999618530273,
+      "text": " Price isn't moving randomly here. This is displacement.",
+      "tokens": [
+        50622,
+        25803,
+        1943,
+        380,
+        2684,
+        16979,
+        510,
+        13,
+        639,
+        307,
+        21899,
+        13,
+        50784
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.4130658805370331,
+      "compression_ratio": 1.4766839742660522,
+      "no_speech_prob": 0.001366898650303483
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 8.84000015258789,
+      "end": 10.960000038146973,
+      "text": " Smart money is pushing aggressively.",
+      "tokens": [
+        50806,
+        12923,
+        1460,
+        307,
+        7380,
+        32024,
+        13,
+        50912
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.4130658805370331,
+      "compression_ratio": 1.4766839742660522,
+      "no_speech_prob": 0.001366898650303483
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 11.520000457763672,
+      "end": 13.15999984741211,
+      "text": " Three consecutive candles.",
+      "tokens": [
+        50940,
+        6244,
+        30497,
+        23774,
+        13,
+        51022
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.4130658805370331,
+      "compression_ratio": 1.4766839742660522,
+      "no_speech_prob": 0.001366898650303483
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 13.359999656677246,
+      "end": 14.4399995803833,
+      "text": " Same direction.",
+      "tokens": [
+        51032,
+        10635,
+        3513,
+        13,
+        51086
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.4130658805370331,
+      "compression_ratio": 1.4766839742660522,
+      "no_speech_prob": 0.001366898650303483
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 15.4399995803833,
+      "end": 17.280000686645508,
+      "text": " Follow R2F trading.",
+      "tokens": [
+        51136,
+        9876,
+        497,
+        17,
+        37,
+        9529,
+        13,
+        51228
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.4130658805370331,
+      "compression_ratio": 1.4766839742660522,
+      "no_speech_prob": 0.001366898650303483
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 17.559999465942383,
+      "end": 20.040000915527344,
+      "text": " Learn to read institutional moves.",
+      "tokens": [
+        51242,
+        17216,
+        281,
+        1401,
+        18391,
+        6067,
+        13,
+        51366
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.4130658805370331,
+      "compression_ratio": 1.4766839742660522,
+      "no_speech_prob": 0.001366898650303483
+    }
+  ],
+  "usage": {
+    "type": "duration",
+    "seconds": 21
+  }
+}

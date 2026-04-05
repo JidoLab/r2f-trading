@@ -1,0 +1,59 @@
+{
+  "title": "5 Risk Management Tips That Saved My Trading Career",
+  "description": "I lost everything three times before learning these 5 crucial risk management rules. Don't repeat my costly mistakes - these tips will protect your trading account and help you stay profitable long-term. Follow R2F Trading for more ICT concepts and risk management strategies.",
+  "hashtags": [
+    "#ICTTrading",
+    "#RiskManagement",
+    "#TradingTips",
+    "#ForexTrading",
+    "#TradingStrategy",
+    "#AccountManagement"
+  ],
+  "scenes": [
+    {
+      "text": "I lost everything three times. Before learning these five rules.",
+      "visualType": "stock_video",
+      "visualQuery": "frustrated trader looking devastated staring at computer screen with head in hands",
+      "emotion": "devastated"
+    },
+    {
+      "text": "Rule one. Never risk more than one percent.",
+      "visualType": "chart_image",
+      "visualQuery": "trading position size calculator showing 1% risk management on EUR/USD trade setup",
+      "emotion": "focused"
+    },
+    {
+      "text": "Rule two. Always set your stop loss first.",
+      "visualType": "chart_image",
+      "visualQuery": "GBP/USD chart showing stop loss placement below key support level before entry",
+      "emotion": "disciplined"
+    },
+    {
+      "text": "Rule three. Risk to reward minimum two to one.",
+      "visualType": "chart_image",
+      "visualQuery": "USD/JPY chart displaying 2:1 risk reward ratio with stop loss and take profit levels clearly marked",
+      "emotion": "confident"
+    },
+    {
+      "text": "Rule four. No revenge trading after losses.",
+      "visualType": "stock_video",
+      "visualQuery": "calm trader taking deep breath stepping away from computer screen",
+      "emotion": "controlled"
+    },
+    {
+      "text": "Follow for more life saving tips.",
+      "visualType": "stock_video",
+      "visualQuery": "successful trader smiling confidently pointing at camera",
+      "emotion": "successful"
+    }
+  ],
+  "highlightWords": [
+    "1%",
+    "stop loss",
+    "2:1",
+    "revenge trading",
+    "risk management"
+  ],
+  "hookText": "Lost everything three times before this",
+  "script": "I lost everything three times. Before learning these five rules. Rule one. Never risk more than one percent. Rule two. Always set your stop loss first. Rule three. Risk to reward minimum two to one. Rule four. No revenge trading after losses. Follow for more life saving tips."
+}

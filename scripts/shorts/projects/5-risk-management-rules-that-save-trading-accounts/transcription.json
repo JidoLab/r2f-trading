@@ -1,0 +1,294 @@
+{
+  "task": "transcribe",
+  "language": "english",
+  "duration": 25.950000762939453,
+  "text": "The worst loss I ever took? It taught me everything. Rule 1. Never risk more than 2%. Rule 2. Always set your stop loss first. Rule 3. Risk to reward minimum 1 to 2. Rule 4. Never move stops against you. Rule 5. Protect your capital above all else. Master these rules. Join R2F Trading today.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0,
+      "end": 2,
+      "text": " The worst loss I ever took?",
+      "tokens": [
+        50364,
+        440,
+        5855,
+        4470,
+        286,
+        1562,
+        1890,
+        30,
+        50464
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 2,
+      "end": 3.5999999046325684,
+      "text": " It taught me everything.",
+      "tokens": [
+        50464,
+        467,
+        5928,
+        385,
+        1203,
+        13,
+        50544
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 3.5999999046325684,
+      "end": 4.800000190734863,
+      "text": " Rule 1.",
+      "tokens": [
+        50544,
+        27533,
+        502,
+        13,
+        50604
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 4.800000190734863,
+      "end": 7.099999904632568,
+      "text": " Never risk more than 2%.",
+      "tokens": [
+        50604,
+        7344,
+        3148,
+        544,
+        813,
+        568,
+        6856,
+        50719
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 7.099999904632568,
+      "end": 8.199999809265137,
+      "text": " Rule 2.",
+      "tokens": [
+        50719,
+        27533,
+        568,
+        13,
+        50774
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 8.199999809265137,
+      "end": 10.699999809265137,
+      "text": " Always set your stop loss first.",
+      "tokens": [
+        50774,
+        11270,
+        992,
+        428,
+        1590,
+        4470,
+        700,
+        13,
+        50899
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 10.699999809265137,
+      "end": 11.899999618530273,
+      "text": " Rule 3.",
+      "tokens": [
+        50899,
+        27533,
+        805,
+        13,
+        50959
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 11.899999618530273,
+      "end": 14.699999809265137,
+      "text": " Risk to reward minimum 1 to 2.",
+      "tokens": [
+        50959,
+        45892,
+        281,
+        7782,
+        7285,
+        502,
+        281,
+        568,
+        13,
+        51099
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 14.699999809265137,
+      "end": 15.899999618530273,
+      "text": " Rule 4.",
+      "tokens": [
+        51099,
+        27533,
+        1017,
+        13,
+        51159
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    },
+    {
+      "id": 9,
+      "seek": 0,
+      "start": 15.899999618530273,
+      "end": 18.200000762939453,
+      "text": " Never move stops against you.",
+      "tokens": [
+        51159,
+        7344,
+        1286,
+        10094,
+        1970,
+        291,
+        13,
+        51274
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    },
+    {
+      "id": 10,
+      "seek": 0,
+      "start": 18.200000762939453,
+      "end": 19.5,
+      "text": " Rule 5.",
+      "tokens": [
+        51274,
+        27533,
+        1025,
+        13,
+        51339
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    },
+    {
+      "id": 11,
+      "seek": 0,
+      "start": 19.5,
+      "end": 22,
+      "text": " Protect your capital above all else.",
+      "tokens": [
+        51339,
+        32017,
+        428,
+        4238,
+        3673,
+        439,
+        1646,
+        13,
+        51464
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    },
+    {
+      "id": 12,
+      "seek": 0,
+      "start": 22,
+      "end": 23.600000381469727,
+      "text": " Master these rules.",
+      "tokens": [
+        51464,
+        6140,
+        613,
+        4474,
+        13,
+        51544
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    },
+    {
+      "id": 13,
+      "seek": 0,
+      "start": 23.600000381469727,
+      "end": 25.600000381469727,
+      "text": " Join R2F Trading today.",
+      "tokens": [
+        51544,
+        19642,
+        497,
+        17,
+        37,
+        49929,
+        965,
+        13,
+        51644
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2654421031475067,
+      "compression_ratio": 1.4822335243225098,
+      "no_speech_prob": 0.004198337905108929
+    }
+  ],
+  "usage": {
+    "type": "duration",
+    "seconds": 26
+  }
+}

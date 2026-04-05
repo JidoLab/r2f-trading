@@ -152,10 +152,16 @@ ${body}
     // Notify search engines via IndexNow
     await notifyIndexNow([`/trading-insights/${slug}`, `/trading-insights`, `/sitemap.xml`]);
 
-    // Auto-post to social media (fire and forget)
-    postToAll({ title: article.title, excerpt: article.excerpt, slug, coverImage, tags: article.tags }).catch(() => {});
+    // Auto-post to social media — MUST await, otherwise Vercel kills the function before it completes
+    let socialResults = null;
+    try {
+      socialResults = await postToAll({ title: article.title, excerpt: article.excerpt, slug, coverImage, tags: article.tags });
+      console.log("[cron] Social results:", JSON.stringify(socialResults));
+    } catch (err) {
+      console.error("[cron] Social posting error:", err);
+    }
 
-    return NextResponse.json({ success: true, title: article.title, slug });
+    return NextResponse.json({ success: true, title: article.title, slug, socialResults });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Generation failed";
     return NextResponse.json({ error: msg }, { status: 500 });

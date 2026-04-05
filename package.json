@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "generate-post": "npx tsx scripts/generate-post.ts",
+    "create-short": "npx tsx scripts/shorts/create-short.ts",
     "generate-short": "npx tsx scripts/shorts/generate-script.ts",
     "assemble-short": "npx tsx scripts/shorts/assemble-video.ts",
     "upload-short": "npx tsx scripts/shorts/upload-youtube.ts"

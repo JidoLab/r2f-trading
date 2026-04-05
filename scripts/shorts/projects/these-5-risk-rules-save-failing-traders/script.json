@@ -1,0 +1,89 @@
+{
+  "title": "These 5 Risk Rules Save Failing Traders",
+  "description": "Most traders focus on entries but ignore risk management. Here are the 5 essential risk management rules that separate profitable traders from the 90% who fail. Master these rules before your next trade! Follow @R2FTrading for more ICT trading education and risk management strategies.",
+  "hashtags": [
+    "#ICTTrading",
+    "#RiskManagement",
+    "#TradingRules",
+    "#ForexTrading",
+    "#TradingEducation",
+    "#R2FTrading"
+  ],
+  "scenes": [
+    {
+      "text": "Most traders fail because of this. They focus on entries, not exits.",
+      "captions": [
+        "MOST TRADERS",
+        "FAIL BECAUSE",
+        "OF THIS."
+      ],
+      "visualType": "stock_video",
+      "visualQuery": "frustrated trader looking at computer screen with hands on head",
+      "emotion": "frustration"
+    },
+    {
+      "text": "Rule one. Never risk more than two percent per trade.",
+      "captions": [
+        "RULE 1:",
+        "NEVER RISK MORE",
+        "THAN 2%"
+      ],
+      "visualType": "chart_image",
+      "visualQuery": "trading position sizing calculator showing 2% risk management on EUR/USD chart",
+      "emotion": "focused"
+    },
+    {
+      "text": "Rule two. Always set your stop loss before entry.",
+      "captions": [
+        "RULE 2:",
+        "SET STOP LOSS",
+        "BEFORE ENTRY"
+      ],
+      "visualType": "chart_image",
+      "visualQuery": "GBP/USD chart showing stop loss placement below support level with entry marked",
+      "emotion": "disciplined"
+    },
+    {
+      "text": "Rule three. Risk to reward must be one to two minimum.",
+      "captions": [
+        "RULE 3:",
+        "RISK REWARD",
+        "1:2 MINIMUM"
+      ],
+      "visualType": "chart_image",
+      "visualQuery": "USD/JPY chart displaying 1:2 risk reward ratio with measured entry, stop loss and take profit levels",
+      "emotion": "strategic"
+    },
+    {
+      "text": "Rule four. Never move stops against you. Rule five. Size down after losses.",
+      "captions": [
+        "RULE 4:",
+        "NEVER MOVE",
+        "STOPS AGAINST YOU"
+      ],
+      "visualType": "chart_image",
+      "visualQuery": "AUD/USD chart showing proper stop loss management with original stop level maintained",
+      "emotion": "disciplined"
+    },
+    {
+      "text": "Follow for more trading rules. Your account will thank you.",
+      "captions": [
+        "FOLLOW FOR",
+        "MORE RULES",
+        "SAVE YOUR ACCOUNT"
+      ],
+      "visualType": "stock_video",
+      "visualQuery": "confident trader smiling while looking at profitable trading results on screen",
+      "emotion": "success"
+    }
+  ],
+  "highlightWords": [
+    "2%",
+    "stop loss",
+    "risk reward",
+    "1:2",
+    "never move stops"
+  ],
+  "hookText": "TRADERS FAIL BECAUSE OF THIS",
+  "script": "Most traders fail because of this. They focus on entries, not exits. Rule one. Never risk more than two percent per trade. Rule two. Always set your stop loss before entry. Rule three. Risk to reward must be one to two minimum. Rule four. Never move stops against you. Rule five. Size down after losses. Follow for more trading rules. Your account will thank you."
+}

@@ -1,0 +1,47 @@
+{
+  "title": "ICT Displacement: The One Thing Most Traders Miss",
+  "description": "Most traders completely miss ICT displacement signals - but once you see it, everything changes. Learn how to spot these powerful market moves that signal institutional order flow. Master ICT concepts with R2F Trading.",
+  "hashtags": [
+    "#ICTTrading",
+    "#Displacement",
+    "#TradingTips",
+    "#OrderFlow",
+    "#ForexTrading",
+    "#R2FTrading",
+    "#TradingEducation",
+    "#SmartMoney"
+  ],
+  "scenes": [
+    {
+      "text": "Most traders see this move. They think it's just noise.",
+      "visualType": "chart_image",
+      "visualQuery": "EUR/USD 5-minute chart showing strong displacement candles breaking through previous highs with multiple green candles in sequence",
+      "emotion": "curiosity"
+    },
+    {
+      "text": "They miss the institutional footprint. Price isn't moving randomly here.",
+      "visualType": "stock_video",
+      "visualQuery": "confused trader looking puzzled at multiple computer screens",
+      "emotion": "frustration"
+    },
+    {
+      "text": "This is displacement. Smart money is pushing aggressively. Three consecutive candles, same direction.",
+      "visualType": "chart_image",
+      "visualQuery": "Clean forex chart highlighting three consecutive bullish displacement candles with arrows pointing to the aggressive price movement",
+      "emotion": "revelation"
+    },
+    {
+      "text": "Follow R2F Trading. Learn to read institutional moves.",
+      "visualType": "stock_video",
+      "visualQuery": "confident trader smiling with arms crossed looking successful",
+      "emotion": "confidence"
+    }
+  ],
+  "highlightWords": [
+    "displacement",
+    "institutional",
+    "smart money"
+  ],
+  "hookText": "Most traders see this move",
+  "script": "Most traders see this move. They think it's just noise. They miss the institutional footprint. Price isn't moving randomly here. This is displacement. Smart money is pushing aggressively. Three consecutive candles, same direction. Follow R2F Trading. Learn to read institutional moves."
+}

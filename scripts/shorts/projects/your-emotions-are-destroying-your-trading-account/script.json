@@ -1,0 +1,47 @@
+{
+  "title": "Your Emotions Are Destroying Your Trading Account",
+  "description": "Stop letting emotions control your trades! Learn how trading psychology affects your profits and discover the mindset shift that separates profitable traders from losing ones. Master your emotions, master the markets with R2F Trading.",
+  "hashtags": [
+    "#ICTTrading",
+    "#TradingPsychology",
+    "#ForexTrading",
+    "#TradingMindset",
+    "#R2FTrading",
+    "#TradingEmotions",
+    "#ProfitableTrading",
+    "#ForexEducation"
+  ],
+  "scenes": [
+    {
+      "text": "Stop revenge trading immediately. Your emotions are killing profits.",
+      "visualType": "stock_video",
+      "visualQuery": "frustrated trader holding head in hands staring at computer screen loss",
+      "emotion": "shock"
+    },
+    {
+      "text": "Fear makes you exit early. Greed keeps you in losers. You're sabotaging yourself constantly.",
+      "visualType": "chart_image",
+      "visualQuery": "GBP/USD 15min chart showing premature exit from winning trade followed by extended losing position",
+      "emotion": "frustration"
+    },
+    {
+      "text": "Trade your plan, not feelings. Set rules before entry. Stick to them religiously.",
+      "visualType": "stock_video",
+      "visualQuery": "focused person writing trading plan notes calm and determined",
+      "emotion": "revelation"
+    },
+    {
+      "text": "Master your mind first. Follow R2F for disciplined trading.",
+      "visualType": "stock_video",
+      "visualQuery": "confident trader celebrating success with arms raised",
+      "emotion": "confidence"
+    }
+  ],
+  "highlightWords": [
+    "revenge trading",
+    "emotions",
+    "plan"
+  ],
+  "hookText": "Stop revenge trading immediately",
+  "script": "Stop revenge trading immediately. Your emotions are killing profits. Fear makes you exit early. Greed keeps you in losers. You're sabotaging yourself constantly. Trade your plan, not feelings. Set rules before entry. Stick to them religiously. Master your mind first. Follow R2F for disciplined trading."
+}

@@ -1,0 +1,100 @@
+{
+  "title": "5 Risk Management Rules That Save Trading Accounts",
+  "description": "The worst loss I ever took taught me these 5 critical risk management rules that every ICT trader needs to know. Don't blow your account - follow these rules religiously. Ready to master risk management? Join R2F Trading today!",
+  "hashtags": [
+    "#ICTTrading",
+    "#RiskManagement",
+    "#TradingRules",
+    "#ForexTrading",
+    "#TradingEducation",
+    "#R2FTrading"
+  ],
+  "scenes": [
+    {
+      "text": "The worst loss I ever took? It taught me everything.",
+      "captions": [
+        "THE WORST LOSS",
+        "I EVER TOOK?",
+        "TAUGHT ME EVERYTHING."
+      ],
+      "visualType": "stock_video",
+      "visualQuery": "frustrated trader holding head in hands staring at computer screen with disappointment",
+      "emotion": "regret"
+    },
+    {
+      "text": "Rule one. Never risk more than two percent.",
+      "captions": [
+        "RULE 1:",
+        "NEVER RISK MORE",
+        "THAN 2%."
+      ],
+      "visualType": "chart_image",
+      "visualQuery": "trading position size calculator showing 2% risk management on account balance",
+      "emotion": "serious"
+    },
+    {
+      "text": "Rule two. Always set your stop loss first.",
+      "captions": [
+        "RULE 2:",
+        "ALWAYS SET",
+        "STOP LOSS FIRST."
+      ],
+      "visualType": "chart_image",
+      "visualQuery": "EUR/USD chart with stop loss level clearly marked below entry point with red line",
+      "emotion": "disciplined"
+    },
+    {
+      "text": "Rule three. Risk to reward minimum one to two.",
+      "captions": [
+        "RULE 3:",
+        "RISK TO REWARD",
+        "MINIMUM 1:2."
+      ],
+      "visualType": "chart_image",
+      "visualQuery": "GBP/USD chart showing 1:2 risk reward ratio with stop loss and take profit levels marked",
+      "emotion": "strategic"
+    },
+    {
+      "text": "Rule four. Never move stops against you.",
+      "captions": [
+        "RULE 4:",
+        "NEVER MOVE STOPS",
+        "AGAINST YOU."
+      ],
+      "visualType": "chart_image",
+      "visualQuery": "chart showing original stop loss position versus moved stop loss with X mark indicating wrong move",
+      "emotion": "warning"
+    },
+    {
+      "text": "Rule five. Protect your capital above all else.",
+      "captions": [
+        "RULE 5:",
+        "PROTECT CAPITAL",
+        "ABOVE ALL ELSE."
+      ],
+      "visualType": "stock_video",
+      "visualQuery": "confident trader looking determined and focused at trading setup",
+      "emotion": "determined"
+    },
+    {
+      "text": "Master these rules. Join R2F Trading today.",
+      "captions": [
+        "MASTER THESE RULES.",
+        "JOIN R2F TRADING",
+        "TODAY."
+      ],
+      "visualType": "stock_video",
+      "visualQuery": "successful trader celebrating with arms raised in victory",
+      "emotion": "success"
+    }
+  ],
+  "highlightWords": [
+    "2%",
+    "stop loss",
+    "1:2",
+    "protect capital",
+    "R2F Trading"
+  ],
+  "hookText": "WORST LOSS TAUGHT ME EVERYTHING",
+  "script": "The worst loss I ever took? It taught me everything. Rule one. Never risk more than two percent. Rule two. Always set your stop loss first. Rule three. Risk to reward minimum one to two. Rule four. Never move stops against you. Rule five. Protect your capital above all else. Master these rules. Join R2F Trading today."
+}

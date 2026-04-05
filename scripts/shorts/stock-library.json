@@ -1,0 +1,72 @@
+{
+  "trading_desk": {
+    "id": 34406409,
+    "duration": 8,
+    "url": "https://videos.pexels.com/video-files/34406409/14575914_360_640_30fps.mp4",
+    "w": 360,
+    "h": 640
+  },
+  "chart_close": {
+    "id": 32536829,
+    "duration": 13,
+    "url": "https://videos.pexels.com/video-files/32536829/13875320_360_640_25fps.mp4",
+    "w": 360,
+    "h": 640
+  },
+  "typing_trade": {
+    "id": 8480680,
+    "duration": 36,
+    "url": "https://videos.pexels.com/video-files/8480680/8480680-hd_1080_1920_25fps.mp4",
+    "w": 1080,
+    "h": 1920
+  },
+  "screen_glow": {
+    "id": 19532053,
+    "duration": 19,
+    "url": "https://videos.pexels.com/video-files/19532053/19532053-hd_720_1280_30fps.mp4",
+    "w": 720,
+    "h": 1280
+  },
+  "frustration": {
+    "id": 8731296,
+    "duration": 15,
+    "url": "https://videos.pexels.com/video-files/8731296/8731296-hd_1080_1920_25fps.mp4",
+    "w": 1080,
+    "h": 1920
+  },
+  "thinking": {
+    "id": 7710496,
+    "duration": 19,
+    "url": "https://videos.pexels.com/video-files/7710496/7710496-hd_1080_2048_25fps.mp4",
+    "w": 1080,
+    "h": 2048
+  },
+  "celebration": {
+    "id": 6344459,
+    "duration": 8,
+    "url": "https://videos.pexels.com/video-files/6344459/6344459-hd_720_1366_25fps.mp4",
+    "w": 720,
+    "h": 1366
+  },
+  "phone_chart": {
+    "id": 7580285,
+    "duration": 18,
+    "url": "https://videos.pexels.com/video-files/7580285/7580285-hd_720_1366_25fps.mp4",
+    "w": 720,
+    "h": 1366
+  },
+  "money_count": {
+    "id": 6326861,
+    "duration": 18,
+    "url": "https://videos.pexels.com/video-files/6326861/6326861-hd_720_1366_25fps.mp4",
+    "w": 720,
+    "h": 1366
+  },
+  "walking_city": {
+    "id": 7263299,
+    "duration": 21,
+    "url": "https://videos.pexels.com/video-files/7263299/7263299-hd_1080_1920_25fps.mp4",
+    "w": 1080,
+    "h": 1920
+  }
+}

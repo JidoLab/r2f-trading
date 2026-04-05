@@ -47,9 +47,12 @@ async function uploadVideo(slug: string) {
     process.exit(1);
   }
 
-  const videoPath = path.join(projectDir, "output.mp4");
+  // Find the output video — check multiple names
+  let videoPath = path.join(projectDir, "output-final.mp4");
+  if (!fs.existsSync(videoPath)) videoPath = path.join(projectDir, "output-synced.mp4");
+  if (!fs.existsSync(videoPath)) videoPath = path.join(projectDir, "output.mp4");
   if (!fs.existsSync(videoPath)) {
-    console.error("output.mp4 not found! Run assemble-short first.");
+    console.error("No output video found! Run create-short first.");
     process.exit(1);
   }
 
@@ -65,7 +68,7 @@ async function uploadVideo(slug: string) {
 
   // YouTube shorts need #Shorts in title or description
   const title = script.title.length > 95 ? script.title.slice(0, 95) + "..." : script.title;
-  const description = `${script.description}\n\n${script.hashtags.join(" ")} #Shorts\n\n🔗 Free ICT Trading Checklist: https://r2ftrading.com\n📊 Coaching from $150/week: https://r2ftrading.com/coaching\n📞 Free Discovery Call: https://r2ftrading.com/contact`;
+  const description = `${script.description}\n\n${script.hashtags.join(" ")} #Shorts\n\n🔗 Free ICT Trading Checklist: https://r2ftrading.com\n📊 Coaching from $150/week: https://r2ftrading.com/coaching\n📞 Free Discovery Call: https://r2ftrading.com/contact\n\n📱 Follow us:\n▸ Instagram: https://instagram.com/road2funded\n▸ Telegram: https://t.me/Road2Funded\n▸ TradingView: https://tradingview.com/u/Road_2_Funded\n▸ Twitter/X: https://twitter.com/Road2Funded`;
 
   // Step 1: Initialize resumable upload
   console.log("Initializing upload...");
