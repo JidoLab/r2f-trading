@@ -59,7 +59,7 @@ export default function ChatWidget() {
       {!open && (
         <button
           onClick={() => setOpen(true)}
-          className="fixed bottom-6 right-24 z-40 w-14 h-14 rounded-full bg-navy hover:bg-navy-light text-white flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+          className="fixed bottom-24 right-6 z-40 w-14 h-14 rounded-full bg-navy hover:bg-navy-light text-white flex items-center justify-center shadow-lg hover:scale-110 transition-all"
           aria-label="Open chat"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -102,7 +102,19 @@ export default function ChatWidget() {
                       : "bg-gray-100 text-gray-700 rounded-bl-md"
                   }`}
                 >
-                  {msg.content}
+                  {msg.role === "assistant" ? (
+                    <div className="space-y-2" dangerouslySetInnerHTML={{
+                      __html: msg.content
+                        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                        .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" class="text-gold underline" target="_blank">$1</a>')
+                        .replace(/^- (.+)/gm, '<li class="ml-3">• $1</li>')
+                        .replace(/\n\n/g, '</p><p class="mt-2">')
+                        .replace(/\n/g, '<br/>')
+                        .replace(/^/, '<p>').replace(/$/, '</p>')
+                    }} />
+                  ) : (
+                    msg.content
+                  )}
                 </div>
               </div>
             ))}
