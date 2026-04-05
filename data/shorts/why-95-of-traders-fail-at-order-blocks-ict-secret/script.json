@@ -1,0 +1,52 @@
+{
+  "title": "Why 95% of Traders FAIL at Order Blocks (ICT Secret)",
+  "description": "Most traders completely misunderstand how to trade order blocks properly. Here's what separates profitable ICT traders from the rest.",
+  "hashtags": [
+    "#ICTTrading",
+    "#ForexTrader",
+    "#OrderBlocks",
+    "#TradingTips",
+    "#SmartMoney",
+    "#ICTConcepts",
+    "#TradingEducation",
+    "#ForexStrategy"
+  ],
+  "script": "95% of traders think ANY level is an order block... WRONG! Listen, I've been trading ICT concepts for over 10 years... Real order blocks need THREE things: First, they must be the LAST up close before a strong move down, or last down close before a strong move up... Second, you need DISPLACEMENT - that aggressive push away from the block... Third, wait for RETURN and REJECTION - smart money defending that level... Most people just draw random rectangles and wonder why they lose... Stop guessing, start understanding how institutions really move price... Follow for more ICT breakdowns that actually work!",
+  "hookLine": "95% think ANY level works",
+  "ctaLine": "Follow @R2FTrading for real ICT education",
+  "textOverlays": [
+    {
+      "timestamp": "0s",
+      "text": "95% GET ORDER BLOCKS WRONG",
+      "style": "hook"
+    },
+    {
+      "timestamp": "8s",
+      "text": "LAST OPPOSING CANDLE",
+      "style": "key-point"
+    },
+    {
+      "timestamp": "18s",
+      "text": "DISPLACEMENT REQUIRED",
+      "style": "key-point"
+    },
+    {
+      "timestamp": "28s",
+      "text": "RETURN + REJECTION",
+      "style": "key-point"
+    },
+    {
+      "timestamp": "35s",
+      "text": "FOLLOW FOR MORE ICT SECRETS",
+      "style": "cta"
+    }
+  ],
+  "visualNotes": [
+    "Show failed order block examples",
+    "Highlight proper last opposing candle",
+    "Show displacement with arrows",
+    "Demonstrate return and rejection",
+    "Display R2F Trading logo and follow button"
+  ],
+  "estimatedDuration": 40
+}
