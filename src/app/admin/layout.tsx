@@ -37,6 +37,12 @@ export default async function AdminLayout({
             Blog Posts
           </Link>
           <Link
+            href="/admin/shorts"
+            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            YouTube Shorts
+          </Link>
+          <Link
             href="/admin/calendar"
             className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
           >

@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "generate-post": "npx tsx scripts/generate-post.ts"
+    "generate-post": "npx tsx scripts/generate-post.ts",
+    "generate-short": "npx tsx scripts/shorts/generate-script.ts",
+    "assemble-short": "npx tsx scripts/shorts/assemble-video.ts",
+    "upload-short": "npx tsx scripts/shorts/upload-youtube.ts"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",
