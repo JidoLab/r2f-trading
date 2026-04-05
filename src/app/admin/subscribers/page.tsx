@@ -11,15 +11,59 @@ interface Subscriber {
 export default function AdminSubscribersPage() {
   const [subscribers, setSubscribers] = useState<Subscriber[]>([]);
   const [loading, setLoading] = useState(true);
+  const [newEmail, setNewEmail] = useState("");
+  const [adding, setAdding] = useState(false);
+  const [removing, setRemoving] = useState<string | null>(null);
 
-  useEffect(() => {
+  function loadSubscribers() {
     fetch("/api/admin/subscribers")
       .then((r) => r.json())
       .then((data) => {
         setSubscribers(data.subscribers || []);
         setLoading(false);
       });
-  }, []);
+  }
+
+  useEffect(() => { loadSubscribers(); }, []);
+
+  async function handleAdd() {
+    if (!newEmail || !newEmail.includes("@")) return;
+    setAdding(true);
+
+    const res = await fetch("/api/admin/subscribers", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: newEmail }),
+    });
+
+    if (res.ok) {
+      setNewEmail("");
+      loadSubscribers();
+    } else {
+      const data = await res.json().catch(() => ({}));
+      alert(`Failed to add: ${data.error || "Unknown error"}`);
+    }
+    setAdding(false);
+  }
+
+  async function handleRemove(email: string) {
+    if (!confirm(`Remove ${email} from the list?`)) return;
+    setRemoving(email);
+
+    const res = await fetch("/api/admin/subscribers", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    });
+
+    if (res.ok) {
+      setSubscribers((prev) => prev.filter((s) => s.email !== email));
+    } else {
+      const data = await res.json().catch(() => ({}));
+      alert(`Failed to remove: ${data.error || "Unknown error"}`);
+    }
+    setRemoving(null);
+  }
 
   const totalSubs = subscribers.length;
   const last7Days = subscribers.filter(
@@ -53,6 +97,29 @@ export default function AdminSubscribersPage() {
         </div>
       </div>
 
+      {/* Add Subscriber */}
+      <div className="bg-white/5 border border-white/10 rounded-lg p-5 mb-6">
+        <h3 className="text-white text-sm font-semibold mb-3">Add Subscriber Manually</h3>
+        <p className="text-white/40 text-xs mb-3">They will receive the welcome email with PDF immediately and start the drip sequence in 1 hour.</p>
+        <form onSubmit={(e) => { e.preventDefault(); handleAdd(); }} className="flex gap-3">
+          <input
+            type="email"
+            value={newEmail}
+            onChange={(e) => setNewEmail(e.target.value)}
+            placeholder="email@example.com"
+            required
+            className="flex-1 px-4 py-2.5 rounded-md bg-white/10 border border-white/20 text-white placeholder-white/30 text-sm focus:outline-none focus:border-gold"
+          />
+          <button
+            type="submit"
+            disabled={adding}
+            className="bg-gold hover:bg-gold-light text-navy font-bold text-sm px-6 py-2.5 rounded-md transition-all disabled:opacity-50"
+          >
+            {adding ? "Adding..." : "Add"}
+          </button>
+        </form>
+      </div>
+
       {/* Subscriber List */}
       {loading ? (
         <p className="text-white/40">Loading...</p>
@@ -66,6 +133,7 @@ export default function AdminSubscribersPage() {
                 <th className="px-6 py-3 text-xs font-bold text-white/40 uppercase tracking-wider">Email</th>
                 <th className="px-6 py-3 text-xs font-bold text-white/40 uppercase tracking-wider">Signed Up</th>
                 <th className="px-6 py-3 text-xs font-bold text-white/40 uppercase tracking-wider">Drip Status</th>
+                <th className="px-6 py-3 text-xs font-bold text-white/40 uppercase tracking-wider text-right">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -85,6 +153,15 @@ export default function AdminSubscribersPage() {
                     }`}>
                       {sub.dripsSent >= 4 ? "Completed" : sub.dripsSent > 0 ? `Drip ${sub.dripsSent}/4` : "Welcome sent"}
                     </span>
+                  </td>
+                  <td className="px-6 py-4 text-right">
+                    <button
+                      onClick={() => handleRemove(sub.email)}
+                      disabled={removing === sub.email}
+                      className="text-red-400/50 hover:text-red-400 text-xs transition-colors disabled:opacity-50"
+                    >
+                      {removing === sub.email ? "Removing..." : "Remove"}
+                    </button>
                   </td>
                 </tr>
               ))}
