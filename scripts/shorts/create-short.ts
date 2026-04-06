@@ -34,7 +34,7 @@ const VIRAL_HOOKS = [
 ];
 
 // --- Phase 6: Series Tracking ---
-async function getSeriesTracker(): Promise<Record<string, number>> {
+async function getSeriesTracker(): Promise<Record<string, any>> {
   try {
     const { readFile } = await import("../../src/lib/github.js");
     const raw = await readFile("data/shorts/series-tracker.json");
@@ -42,7 +42,7 @@ async function getSeriesTracker(): Promise<Record<string, number>> {
   } catch (e) { console.warn("[seriesTracker] Failed:", e); return {}; }
 }
 
-async function updateSeriesTracker(series: Record<string, number>) {
+async function updateSeriesTracker(series: Record<string, any>) {
   const { commitFile } = await import("../../src/lib/github.js");
   await commitFile("data/shorts/series-tracker.json", JSON.stringify(series, null, 2), "Update series tracker");
 }
@@ -498,7 +498,7 @@ async function uploadToAllPlatforms(videoPath: string, script: any, slug: string
   try {
     const { uploadToTwitterVideo } = await import("./upload-platforms.js");
     const xResult = await uploadToTwitterVideo(videoPath, script);
-    results.push({ platform: "twitter", status: xResult.status, url: xResult.url });
+    results.push({ platform: "twitter", status: xResult.status, url: (xResult as any).url });
     console.log(`  ${xResult.status === "success" ? "✓" : "⚠"} Twitter: ${xResult.status}`);
   } catch (e: any) {
     results.push({ platform: "twitter", status: "skipped", error: e.message });
