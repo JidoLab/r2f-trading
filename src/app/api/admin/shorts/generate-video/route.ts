@@ -116,12 +116,17 @@ export async function POST(req: NextRequest) {
   if (!isAdmin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   try {
-    const { topic, count = 1, autoPublish = false } = await req.json();
+    const { topic, count = 1, autoPublish = false, contentType, duration } = await req.json();
     const results: { slug: string; title: string; status: string }[] = [];
 
     for (let n = 0; n < Math.min(count, 5); n++) {
       try {
-        const result = await generateSingleShort(topic && count === 1 ? topic : undefined, autoPublish);
+        const result = await generateSingleShort(
+          topic && count === 1 ? topic : undefined,
+          autoPublish,
+          contentType || undefined,
+          duration || undefined,
+        );
         results.push(result);
       } catch (err: unknown) {
         results.push({ slug: "", title: "", status: `error: ${err instanceof Error ? err.message : "unknown"}` });
@@ -134,7 +139,7 @@ export async function POST(req: NextRequest) {
   }
 }
 
-async function generateSingleShort(topic?: string, autoPublish = false) {
+async function generateSingleShort(topic?: string, autoPublish = false, forceContentType?: string, forceDuration?: number) {
   const anthropic = new Anthropic();
 
   // Load content types
@@ -157,10 +162,15 @@ async function generateSingleShort(topic?: string, autoPublish = false) {
     if (tracker._recentTypes) recentTypes = tracker._recentTypes;
   } catch {}
 
-  const typeCounts: Record<string, number> = {};
-  for (const t of recentTypes) typeCounts[t] = (typeCounts[t] || 0) + 1;
-  const sorted = [...contentTypes].sort((a, b) => (typeCounts[a.id] || 0) - (typeCounts[b.id] || 0));
-  const contentType = sorted[0];
+  let contentType;
+  if (forceContentType) {
+    contentType = contentTypes.find(t => t.id === forceContentType) || contentTypes[0];
+  } else {
+    const typeCounts: Record<string, number> = {};
+    for (const t of recentTypes) typeCounts[t] = (typeCounts[t] || 0) + 1;
+    const sorted = [...contentTypes].sort((a, b) => (typeCounts[a.id] || 0) - (typeCounts[b.id] || 0));
+    contentType = sorted[0];
+  }
 
   const hookExample = VIRAL_HOOKS[Math.floor(Math.random() * VIRAL_HOOKS.length)];
 
@@ -178,7 +188,7 @@ async function generateSingleShort(topic?: string, autoPublish = false) {
 ${topic ? `TOPIC: "${topic}"` : "Pick an engaging ICT trading topic."}
 CONTENT TYPE: ${contentType.id} — ${contentType.name}. ${contentType.description}
 SCENE STRUCTURE: ${contentType.sceneTemplate}
-TARGET: ${contentType.targetDuration} seconds (~${contentType.targetWords} words), ${contentType.sceneCount} scenes
+TARGET: ${forceDuration || contentType.targetDuration} seconds (~${forceDuration ? Math.round(forceDuration * 2.5) : contentType.targetWords} words), ${contentType.sceneCount} scenes
 VIRAL HOOK INSPIRATION: "${hookExample}"
 SERIES: ${JSON.stringify(Object.fromEntries(Object.entries(seriesTracker).filter(([k]) => k !== "_recentTypes")))}
 

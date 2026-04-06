@@ -19,6 +19,7 @@ interface VideoEntry {
   slug: string;
   title: string;
   status: string;
+  contentType?: string;
   videoUrl?: string;
   youtubeUrl?: string;
   copyText?: string;
@@ -37,8 +38,11 @@ export default function AdminShortsPage() {
   const [generating, setGenerating] = useState(false);
   const [genTopic, setGenTopic] = useState("");
   const [genCount, setGenCount] = useState(1);
+  const [genContentType, setGenContentType] = useState("");
+  const [genDuration, setGenDuration] = useState("");
   const [copiedIdx, setCopiedIdx] = useState<number | null>(null);
   const [publishing, setPublishing] = useState<string | null>(null);
+  const [deleting, setDeleting] = useState<string | null>(null);
 
   async function fetchData() {
     try {
@@ -87,7 +91,13 @@ export default function AdminShortsPage() {
       const res = await fetch("/api/admin/shorts/generate-video", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ topic: genTopic || undefined, count: genCount, autoPublish: false }),
+        body: JSON.stringify({
+          topic: genTopic || undefined,
+          count: genCount,
+          autoPublish: false,
+          contentType: genContentType || undefined,
+          duration: genDuration ? Number(genDuration) : undefined,
+        }),
       });
       const result = await res.json();
       if (res.ok) {
@@ -133,6 +143,21 @@ export default function AdminShortsPage() {
     setPublishing(null);
   }
 
+  async function deleteVideo(slug: string) {
+    if (!confirm("Delete this video? This cannot be undone.")) return;
+    setDeleting(slug);
+    try {
+      const res = await fetch("/api/admin/shorts/delete", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ slug }),
+      });
+      if (res.ok) await fetchData();
+      else alert("Failed to delete");
+    } catch { alert("Delete failed"); }
+    setDeleting(null);
+  }
+
   function copyToClipboard(text: string, idx: number) {
     navigator.clipboard.writeText(text);
     setCopiedIdx(idx);
@@ -171,7 +196,7 @@ export default function AdminShortsPage() {
       {/* Generate On Demand */}
       <div className="bg-white/5 border border-white/10 rounded-lg p-6 mb-6">
         <h2 className="text-white font-semibold text-sm mb-4">Generate Videos</h2>
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div className="flex flex-col sm:flex-row gap-3 mb-3">
           <input
             type="text"
             value={genTopic}
@@ -179,16 +204,6 @@ export default function AdminShortsPage() {
             placeholder="Topic (optional — AI picks if blank)"
             className="flex-1 px-4 py-2.5 rounded-md bg-white/10 border border-white/20 text-white placeholder-white/30 text-sm focus:outline-none focus:border-gold"
           />
-          <select
-            value={genCount}
-            onChange={(e) => setGenCount(Number(e.target.value))}
-            className="px-4 py-2.5 rounded-md bg-white/10 border border-white/20 text-white text-sm focus:outline-none focus:border-gold"
-          >
-            <option value={1}>1 video</option>
-            <option value={2}>2 videos</option>
-            <option value={3}>3 videos</option>
-            <option value={5}>5 videos</option>
-          </select>
           <button
             onClick={generateVideos}
             disabled={generating}
@@ -197,8 +212,46 @@ export default function AdminShortsPage() {
             {generating ? "Generating..." : "Generate Now"}
           </button>
         </div>
+        <div className="flex flex-wrap gap-3">
+          <select
+            value={genContentType}
+            onChange={(e) => setGenContentType(e.target.value)}
+            className="px-3 py-2 rounded-md bg-white/10 border border-white/20 text-white text-xs focus:outline-none focus:border-gold"
+          >
+            <option value="">Content Type (auto)</option>
+            <option value="listicle">Listicle</option>
+            <option value="chart-breakdown">Chart Breakdown</option>
+            <option value="myth-buster">Myth Buster</option>
+            <option value="story">Story</option>
+            <option value="quiz">Quiz</option>
+            <option value="pov">POV</option>
+            <option value="rapid-fire">Rapid Fire</option>
+            <option value="debate">Debate</option>
+          </select>
+          <select
+            value={genDuration}
+            onChange={(e) => setGenDuration(e.target.value)}
+            className="px-3 py-2 rounded-md bg-white/10 border border-white/20 text-white text-xs focus:outline-none focus:border-gold"
+          >
+            <option value="">Duration (auto)</option>
+            <option value="20">~20s (quick tip)</option>
+            <option value="30">~30s (standard)</option>
+            <option value="40">~40s (detailed)</option>
+            <option value="50">~50s (deep dive)</option>
+          </select>
+          <select
+            value={genCount}
+            onChange={(e) => setGenCount(Number(e.target.value))}
+            className="px-3 py-2 rounded-md bg-white/10 border border-white/20 text-white text-xs focus:outline-none focus:border-gold"
+          >
+            <option value={1}>1 video</option>
+            <option value={2}>2 videos</option>
+            <option value={3}>3 videos</option>
+            <option value={5}>5 videos</option>
+          </select>
+        </div>
         <p className="text-white/30 text-xs mt-2">
-          Each video: AI script &rarr; ElevenLabs voice &rarr; Whisper captions &rarr; Creatomate render &rarr; auto-upload to YouTube, FB, LinkedIn. Takes ~3-5 min per video.
+          AI script &rarr; ElevenLabs voice &rarr; Whisper captions &rarr; Creatomate render. Takes ~3-5 min per video.
         </p>
       </div>
 
@@ -241,6 +294,19 @@ export default function AdminShortsPage() {
                         "bg-red-400"
                       }`}></span>
                       <h3 className="text-white text-sm font-semibold truncate">{v.title}</h3>
+                      {v.contentType && (
+                        <span className={`text-[10px] font-bold uppercase px-2 py-0.5 rounded ${
+                          v.contentType === "listicle" ? "bg-blue-500/20 text-blue-400" :
+                          v.contentType === "myth-buster" ? "bg-red-500/20 text-red-400" :
+                          v.contentType === "quiz" ? "bg-purple-500/20 text-purple-400" :
+                          v.contentType === "chart-breakdown" ? "bg-green-500/20 text-green-400" :
+                          v.contentType === "story" ? "bg-orange-500/20 text-orange-400" :
+                          v.contentType === "pov" ? "bg-cyan-500/20 text-cyan-400" :
+                          v.contentType === "rapid-fire" ? "bg-yellow-500/20 text-yellow-400" :
+                          v.contentType === "debate" ? "bg-pink-500/20 text-pink-400" :
+                          "bg-white/10 text-white/50"
+                        }`}>{v.contentType}</span>
+                      )}
                     </div>
                     <p className="text-white/30 text-xs">
                       {new Date(v.createdAt).toLocaleDateString()} &middot;{" "}
@@ -252,11 +318,21 @@ export default function AdminShortsPage() {
                       }>{v.status === "ready" ? "Ready to publish" : v.status === "failed" ? "Failed" : v.status}</span>
                     </p>
                   </div>
-                  {v.youtubeUrl && (
-                    <a href={v.youtubeUrl} target="_blank" rel="noopener noreferrer" className="text-xs bg-red-500/20 text-red-400 px-3 py-1.5 rounded-md hover:bg-red-500/30 transition-colors whitespace-nowrap">
-                      YouTube
-                    </a>
-                  )}
+                  <div className="flex items-center gap-2">
+                    {v.youtubeUrl && (
+                      <a href={v.youtubeUrl} target="_blank" rel="noopener noreferrer" className="text-xs bg-red-500/20 text-red-400 px-3 py-1.5 rounded-md hover:bg-red-500/30 transition-colors whitespace-nowrap">
+                        YouTube
+                      </a>
+                    )}
+                    <button
+                      onClick={() => deleteVideo(v.slug)}
+                      disabled={deleting === v.slug}
+                      className="text-xs text-white/20 hover:text-red-400 px-2 py-1.5 rounded-md hover:bg-red-500/10 transition-colors disabled:opacity-50"
+                      title="Delete"
+                    >
+                      {deleting === v.slug ? "..." : "✕"}
+                    </button>
+                  </div>
                 </div>
 
                 {/* Upload results (only for published) */}

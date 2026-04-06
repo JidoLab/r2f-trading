@@ -19,6 +19,7 @@ export async function GET() {
     completedAt?: string;
     uploadResults?: { platform: string; status: string }[];
     error?: string;
+    contentType?: string;
   }[] = [];
 
   try {
@@ -32,6 +33,7 @@ export async function GET() {
           slug: data.slug,
           title: data.title,
           status: data.status,
+          contentType: data.contentType,
           videoUrl: data.videoUrl,
           youtubeUrl: data.youtubeUrl,
           copyText: data.copyText,
