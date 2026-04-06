@@ -55,6 +55,12 @@ export default async function AdminLayout({
             Content Calendar
           </Link>
           <Link
+            href="/admin/trends"
+            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Market Trends
+          </Link>
+          <Link
             href="/admin/signature"
             className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
           >

@@ -174,6 +174,13 @@ async function generateSingleShort(topic?: string, autoPublish = false, forceCon
 
   const hookExample = VIRAL_HOOKS[Math.floor(Math.random() * VIRAL_HOOKS.length)];
 
+  // Get market context for trend-aware content
+  let marketContext = "";
+  try {
+    const { buildMarketContext } = await import("@/lib/market-trends");
+    marketContext = await buildMarketContext();
+  } catch {}
+
   // Get series tracker
   let seriesTracker: Record<string, any> = {};
   try { seriesTracker = JSON.parse(await readFile("data/shorts/series-tracker.json")); } catch {}
@@ -185,12 +192,13 @@ async function generateSingleShort(topic?: string, autoPublish = false, forceCon
     messages: [{
       role: "user",
       content: `Generate a YouTube Shorts script for R2F Trading, an ICT trading coaching brand.
-${topic ? `TOPIC: "${topic}"` : "Pick an engaging ICT trading topic."}
+${topic ? `TOPIC: "${topic}"` : "Pick an engaging ICT trading topic. PRIORITIZE timely/trending topics if available below — they get more views."}
 CONTENT TYPE: ${contentType.id} — ${contentType.name}. ${contentType.description}
 SCENE STRUCTURE: ${contentType.sceneTemplate}
 TARGET: ${forceDuration || contentType.targetDuration} seconds (~${forceDuration ? Math.round(forceDuration * 2.5) : contentType.targetWords} words), ${contentType.sceneCount} scenes
 VIRAL HOOK INSPIRATION: "${hookExample}"
 SERIES: ${JSON.stringify(Object.fromEntries(Object.entries(seriesTracker).filter(([k]) => k !== "_recentTypes")))}
+${marketContext}
 
 RULES:
 - NEVER mention any person's name

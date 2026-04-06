@@ -47,11 +47,18 @@ export async function GET(req: NextRequest) {
       existingTitles = files.map(f => f.replace(/^content\/blog\//, "").replace(/\.mdx$/, ""));
     } catch { /* no posts yet */ }
 
-    // Pick topic using Claude
+    // Pick topic using Claude — now with market context
     const anthropic = new Anthropic();
     const date = new Date().toISOString().split("T")[0];
     const month = new Date().toLocaleDateString("en-US", { month: "long", year: "numeric" });
     const dayOfWeek = new Date().toLocaleDateString("en-US", { weekday: "long" });
+
+    // Fetch market trends and economic calendar
+    let marketContext = "";
+    try {
+      const { buildMarketContext } = await import("@/lib/market-trends");
+      marketContext = await buildMarketContext();
+    } catch {}
 
     const topicResponse = await anthropic.messages.create({
       model: "claude-sonnet-4-20250514",
@@ -61,7 +68,8 @@ export async function GET(req: NextRequest) {
         content: `You are a content strategist for R2F Trading, a professional ICT trading coaching website.
 TODAY: ${dayOfWeek}, ${month}
 EXISTING POSTS (avoid repeats): ${existingTitles.slice(0, 20).join(", ") || "None"}
-Generate ONE fresh blog topic considering current market relevance and seasonal patterns.
+${marketContext}
+Generate ONE fresh blog topic. PRIORITIZE timely/trending topics when available — they get 3-5x more search traffic. If there's an upcoming economic event (NFP, CPI, FOMC), write about how to trade it with ICT concepts.
 
 POST TYPES — cycle through these (pick one NOT recently used):
 how-to, listicle, case-study, comparison, faq, roundup, personal-story, trends, checklist
