@@ -1,0 +1,37 @@
+{
+  "music": {
+    "tense": {
+      "name": "Tense / Dramatic",
+      "moods": ["shock", "tension", "frustration", "confusion"],
+      "url": ""
+    },
+    "confident": {
+      "name": "Confident / Upbeat",
+      "moods": ["confidence", "motivation", "celebration", "revelation"],
+      "url": ""
+    },
+    "lofi": {
+      "name": "Lo-fi Chill",
+      "moods": ["curiosity", "thinking", "reflection"],
+      "url": ""
+    },
+    "cinematic": {
+      "name": "Cinematic Epic",
+      "moods": ["shock", "revelation", "transformation"],
+      "url": ""
+    },
+    "dark": {
+      "name": "Dark / Mysterious",
+      "moods": ["tension", "confusion", "frustration"],
+      "url": ""
+    }
+  },
+  "sfx": {
+    "swoosh": { "name": "Caption Swoosh", "trigger": "caption_change", "url": "" },
+    "ding": { "name": "Key Point Ding", "trigger": "highlight_word", "url": "" },
+    "boom": { "name": "Impact Boom", "trigger": "hook", "url": "" },
+    "cash": { "name": "Cash Register", "trigger": "money_mention", "url": "" },
+    "whoosh": { "name": "Transition Whoosh", "trigger": "scene_change", "url": "" }
+  },
+  "_note": "URLs will be populated with royalty-free tracks from Pixabay or user uploads. Place files in public/shorts/music/ and public/shorts/sfx/"
+}

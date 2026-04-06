@@ -68,5 +68,110 @@
     "url": "https://videos.pexels.com/video-files/7263299/7263299-hd_1080_1920_25fps.mp4",
     "w": 1080,
     "h": 1920
+  },
+  "surprise": {
+    "id": 6657887,
+    "duration": 9,
+    "url": "https://videos.pexels.com/video-files/6657887/6657887-hd_1080_1920_30fps.mp4",
+    "w": 1080,
+    "h": 1920
+  },
+  "focus_intense": {
+    "id": 5197251,
+    "duration": 19,
+    "url": "https://videos.pexels.com/video-files/5197251/5197251-hd_720_1280_25fps.mp4",
+    "w": 720,
+    "h": 1280
+  },
+  "writing_notes": {
+    "id": 7316372,
+    "duration": 8,
+    "url": "https://videos.pexels.com/video-files/7316372/7316372-hd_1080_1920_25fps.mp4",
+    "w": 1080,
+    "h": 1920
+  },
+  "team_discuss": {
+    "id": 8480284,
+    "duration": 30,
+    "url": "https://videos.pexels.com/video-files/8480284/8480284-hd_720_1280_25fps.mp4",
+    "w": 720,
+    "h": 1280
+  },
+  "night_trading": {
+    "id": 7942762,
+    "duration": 11,
+    "url": "https://videos.pexels.com/video-files/7942762/7942762-hd_1080_2048_25fps.mp4",
+    "w": 1080,
+    "h": 2048
+  },
+  "coffee_morning": {
+    "id": 7657789,
+    "duration": 8,
+    "url": "https://videos.pexels.com/video-files/7657789/7657789-hd_720_1280_50fps.mp4",
+    "w": 720,
+    "h": 1280
+  },
+  "hands_phone": {
+    "id": 10374888,
+    "duration": 8,
+    "url": "https://videos.pexels.com/video-files/10374888/10374888-hd_720_1280_24fps.mp4",
+    "w": 720,
+    "h": 1280
+  },
+  "cityscape": {
+    "id": 31946278,
+    "duration": 10,
+    "url": "https://videos.pexels.com/video-files/31946278/13609482_360_640_30fps.mp4",
+    "w": 360,
+    "h": 640
+  },
+  "data_screen": {
+    "id": 7579943,
+    "duration": 19,
+    "url": "https://videos.pexels.com/video-files/7579943/7579943-hd_1080_2048_25fps.mp4",
+    "w": 1080,
+    "h": 2048
+  },
+  "stress_relief": {
+    "id": 6189263,
+    "duration": 6,
+    "url": "https://videos.pexels.com/video-files/6189263/6189263-hd_720_1280_25fps.mp4",
+    "w": 720,
+    "h": 1280
+  },
+  "countdown": {
+    "id": 5973871,
+    "duration": 11,
+    "url": "https://videos.pexels.com/video-files/5973871/5973871-hd_720_1280_30fps.mp4",
+    "w": 720,
+    "h": 1280
+  },
+  "lightbulb": {
+    "id": 8165993,
+    "duration": 11,
+    "url": "https://videos.pexels.com/video-files/8165993/8165993-hd_720_1366_25fps.mp4",
+    "w": 720,
+    "h": 1366
+  },
+  "comparison": {
+    "id": 5473803,
+    "duration": 30,
+    "url": "https://videos.pexels.com/video-files/5473803/5473803-hd_1080_2048_25fps.mp4",
+    "w": 1080,
+    "h": 2048
+  },
+  "book_study": {
+    "id": 9198031,
+    "duration": 27,
+    "url": "https://videos.pexels.com/video-files/9198031/9198031-hd_1080_1920_25fps.mp4",
+    "w": 1080,
+    "h": 1920
+  },
+  "high_five": {
+    "id": 7989417,
+    "duration": 12,
+    "url": "https://videos.pexels.com/video-files/7989417/7989417-hd_1080_1920_25fps.mp4",
+    "w": 1080,
+    "h": 1920
   }
 }
