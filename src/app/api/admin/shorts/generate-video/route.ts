@@ -164,11 +164,12 @@ Return ONLY JSON:
   const ghData = await ghRes.json();
   const audioUrl = ghData.download_url;
 
-  // Transcribe with Whisper
+  // Transcribe with Whisper — get word-level timestamps for precise caption sync
   const formData = new FormData();
   formData.append("file", new Blob([voiceBuffer], { type: "audio/mp3" }), "voice.mp3");
   formData.append("model", "whisper-1");
   formData.append("response_format", "verbose_json");
+  formData.append("timestamp_granularities[]", "word");
   formData.append("timestamp_granularities[]", "segment");
   const whisperRes = await fetch("https://api.openai.com/v1/audio/transcriptions", {
     method: "POST",
@@ -224,32 +225,30 @@ Return ONLY JSON:
     }
   }
 
-  // Build Creatomate source — use Whisper segment timing for captions
-  const allCaps: string[] = [];
-  for (const scene of script.scenes) { if (scene.captions) allCaps.push(...scene.captions); }
-
-  const segments = transcription.segments || [];
+  // Build captions from Whisper's actual transcribed words (exact timing)
+  const words: { word: string; start: number; end: number }[] = transcription.words || [];
+  const segments: { start: number; end: number; text: string }[] = transcription.segments || [];
+  const highlightWords = (script.highlightWords || []).map((w: string) => w.toLowerCase());
   const captions: { text: string; start: number; end: number; isHighlight: boolean; isHook: boolean }[] = [];
 
-  if (allCaps.length > 0 && segments.length > 0) {
-    // Map each caption to Whisper segment timing by distributing segments across captions
-    const segsPerCap = Math.max(1, Math.floor(segments.length / allCaps.length));
-    for (let i = 0; i < allCaps.length; i++) {
-      const segStart = i * segsPerCap;
-      const segEnd = i === allCaps.length - 1 ? segments.length : (i + 1) * segsPerCap;
-      const firstSeg = segments[Math.min(segStart, segments.length - 1)];
-      const lastSeg = segments[Math.min(segEnd - 1, segments.length - 1)];
-      const start = firstSeg?.start ?? (i * duration / allCaps.length);
-      const end = lastSeg?.end ?? ((i + 1) * duration / allCaps.length);
-      const isHl = (script.highlightWords || []).some((hw: string) => allCaps[i].toLowerCase().includes(hw.toLowerCase()));
-      captions.push({ text: allCaps[i].toUpperCase(), start, end, isHighlight: isHl, isHook: i === 0 });
+  if (words.length > 0) {
+    // Group words into 2-4 word caption chunks with exact timing
+    const WORDS_PER_CAP = 3;
+    for (let i = 0; i < words.length; i += WORDS_PER_CAP) {
+      const chunk = words.slice(i, Math.min(i + WORDS_PER_CAP, words.length));
+      const text = chunk.map(w => w.word).join(" ").trim().toUpperCase();
+      const start = chunk[0].start;
+      const end = chunk[chunk.length - 1].end;
+      const isHl = highlightWords.some((hw: string) => text.toLowerCase().includes(hw));
+      captions.push({ text, start, end, isHighlight: isHl, isHook: i === 0 });
     }
-  } else if (allCaps.length > 0) {
-    // Fallback: even distribution if no segments
-    const timePerCap = duration / allCaps.length;
-    for (let i = 0; i < allCaps.length; i++) {
-      const isHl = (script.highlightWords || []).some((hw: string) => allCaps[i].toLowerCase().includes(hw.toLowerCase()));
-      captions.push({ text: allCaps[i].toUpperCase(), start: i * timePerCap, end: (i + 1) * timePerCap, isHighlight: isHl, isHook: i === 0 });
+  } else if (segments.length > 0) {
+    // Fallback: use Whisper segments as captions
+    for (let i = 0; i < segments.length; i++) {
+      const seg = segments[i];
+      const text = seg.text.trim().toUpperCase();
+      const isHl = highlightWords.some((hw: string) => text.toLowerCase().includes(hw));
+      captions.push({ text, start: seg.start, end: seg.end, isHighlight: isHl, isHook: i === 0 });
     }
   }
 
