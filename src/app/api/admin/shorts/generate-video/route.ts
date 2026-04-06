@@ -22,25 +22,102 @@ const VIRAL_HOOKS = [
   "Two years of struggle. Fixed in one conversation.",
 ];
 
-const STOCK_LIBRARY: Record<string, { url: string }> = {
-  frustration: { url: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4" },
-  thinking: { url: "https://videos.pexels.com/video-files/5699862/5699862-uhd_2560_1440_24fps.mp4" },
-  surprise: { url: "https://videos.pexels.com/video-files/3196269/3196269-uhd_2560_1440_25fps.mp4" },
-  screen_glow: { url: "https://videos.pexels.com/video-files/6801869/6801869-uhd_2560_1440_25fps.mp4" },
-  lightbulb: { url: "https://videos.pexels.com/video-files/3945055/3945055-uhd_2560_1440_25fps.mp4" },
-  typing_trade: { url: "https://videos.pexels.com/video-files/6801543/6801543-uhd_2560_1440_25fps.mp4" },
-  celebration: { url: "https://videos.pexels.com/video-files/3195810/3195810-uhd_2560_1440_25fps.mp4" },
-  walking_city: { url: "https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4" },
-  phone_chart: { url: "https://videos.pexels.com/video-files/7567443/7567443-uhd_2560_1440_30fps.mp4" },
-  focus_intense: { url: "https://videos.pexels.com/video-files/5699862/5699862-uhd_2560_1440_24fps.mp4" },
-  chart_close: { url: "https://videos.pexels.com/video-files/6801869/6801869-uhd_2560_1440_25fps.mp4" },
+// Expanded stock video library — heavy on human emotions/reactions for engagement
+const STOCK_LIBRARY: Record<string, { url: string }[]> = {
+  // Frustration / Stress
+  frustration: [
+    { url: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/5699737/5699737-uhd_2560_1440_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/6549174/6549174-uhd_2560_1440_25fps.mp4" },
+  ],
+  // Thinking / Contemplation
+  thinking: [
+    { url: "https://videos.pexels.com/video-files/5699862/5699862-uhd_2560_1440_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7579956/7579956-uhd_2560_1440_30fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/4057613/4057613-uhd_2560_1440_25fps.mp4" },
+  ],
+  // Surprise / Shock
+  surprise: [
+    { url: "https://videos.pexels.com/video-files/3196269/3196269-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/6549019/6549019-uhd_2560_1440_25fps.mp4" },
+  ],
+  // Screen glow / Trading screens
+  screen_glow: [
+    { url: "https://videos.pexels.com/video-files/6801869/6801869-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7567443/7567443-uhd_2560_1440_30fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/6801543/6801543-uhd_2560_1440_25fps.mp4" },
+  ],
+  // Lightbulb / Insight moment
+  lightbulb: [
+    { url: "https://videos.pexels.com/video-files/3945055/3945055-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/6549019/6549019-uhd_2560_1440_25fps.mp4" },
+  ],
+  // Typing / Working
+  typing_trade: [
+    { url: "https://videos.pexels.com/video-files/6801543/6801543-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/5699862/5699862-uhd_2560_1440_24fps.mp4" },
+  ],
+  // Celebration / Success
+  celebration: [
+    { url: "https://videos.pexels.com/video-files/3195810/3195810-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/6962025/6962025-uhd_2560_1440_30fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/3249935/3249935-uhd_2560_1440_25fps.mp4" },
+  ],
+  // Walking / Lifestyle
+  walking_city: [
+    { url: "https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/4763824/4763824-uhd_2560_1440_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/5752729/5752729-uhd_2732_1440_25fps.mp4" },
+  ],
+  // Phone / Charts on device
+  phone_chart: [
+    { url: "https://videos.pexels.com/video-files/7567443/7567443-uhd_2560_1440_30fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/6801869/6801869-uhd_2560_1440_25fps.mp4" },
+  ],
+  // Intense focus / determination
+  focus_intense: [
+    { url: "https://videos.pexels.com/video-files/5699862/5699862-uhd_2560_1440_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/4057613/4057613-uhd_2560_1440_25fps.mp4" },
+  ],
+  // Money / Wealth
+  money: [
+    { url: "https://videos.pexels.com/video-files/3943962/3943962-uhd_2560_1440_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/6963744/6963744-uhd_2560_1440_25fps.mp4" },
+  ],
+  // Head in hands / Defeat
+  defeat: [
+    { url: "https://videos.pexels.com/video-files/6549174/6549174-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/5699737/5699737-uhd_2560_1440_24fps.mp4" },
+  ],
+  // Nodding / Agreement
+  agreement: [
+    { url: "https://videos.pexels.com/video-files/7579956/7579956-uhd_2560_1440_30fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/4057613/4057613-uhd_2560_1440_25fps.mp4" },
+  ],
+  // Luxury / Aspirational
+  luxury: [
+    { url: "https://videos.pexels.com/video-files/4763824/4763824-uhd_2560_1440_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/5752729/5752729-uhd_2732_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/3249935/3249935-uhd_2560_1440_25fps.mp4" },
+  ],
+  // Coffee / Morning routine
+  morning: [
+    { url: "https://videos.pexels.com/video-files/4057613/4057613-uhd_2560_1440_25fps.mp4" },
+  ],
+  // Pointing / Teaching gesture
+  pointing: [
+    { url: "https://videos.pexels.com/video-files/6549019/6549019-uhd_2560_1440_25fps.mp4" },
+  ],
 };
 
 const EMOTION_MAP: Record<string, string> = {
   frustration: "frustration", confusion: "thinking", shock: "surprise",
   tension: "screen_glow", revelation: "lightbulb", confidence: "typing_trade",
   celebration: "celebration", motivation: "walking_city", curiosity: "phone_chart",
-  focus: "focus_intense", reflection: "typing_trade",
+  focus: "focus_intense", reflection: "thinking", defeat: "defeat",
+  agreement: "agreement", wealth: "money", luxury: "luxury",
+  aspiration: "luxury", morning: "morning", pointing: "pointing",
+  teaching: "pointing", money: "money",
 };
 
 export async function POST(req: NextRequest) {
@@ -117,10 +194,12 @@ SERIES: ${JSON.stringify(Object.fromEntries(Object.entries(seriesTracker).filter
 RULES:
 - NEVER mention any person's name
 - Short punchy sentences. 3-7 words per sentence.
-- Each scene has "captions" array: 2-5 words MAX per caption, split at natural pauses
+- The LAST scene MUST always be a CTA ending with something like: "Follow R2F Trading for more tips like this." or "Follow R2F Trading. Link in bio." or "R2F Trading. Follow for daily setups." — always mention "R2F Trading" and "follow" in the final scene.
+- VISUAL PRIORITY: Use "stock_video" for MOST scenes — people's emotions (frustration, shock, celebration, thinking) get way more attention than charts. Only use "chart_image" for 1 scene MAX where you need to show a specific pattern or setup. The final CTA scene should ALWAYS be "stock_video" with emotion "motivation" or "luxury" or "celebration".
+- Available emotions for stock_video: shock, frustration, curiosity, revelation, confidence, celebration, motivation, defeat, agreement, wealth, luxury, aspiration, focus, teaching, money, morning, reflection, confusion, tension
 
 Return ONLY JSON:
-{"title":"...","description":"...","hashtags":["#ICTTrading","..."],"contentType":"${contentType.id}","seriesName":"or null","seriesNumber":null,"mood":"tense|confident|lofi|cinematic","scenes":[{"text":"...","captions":["CAP1","CAP2"],"visualType":"stock_video or chart_image","visualQuery":"...","emotion":"shock|frustration|curiosity|revelation|confidence|celebration|motivation"}],"highlightWords":["..."]}`,
+{"title":"...","description":"...","hashtags":["#ICTTrading","..."],"contentType":"${contentType.id}","seriesName":"or null","seriesNumber":null,"mood":"tense|confident|lofi|cinematic","scenes":[{"text":"...","captions":["CAP1","CAP2"],"visualType":"stock_video or chart_image","visualQuery":"...","emotion":"see list above"}],"highlightWords":["..."]}`,
     }],
   });
 
@@ -180,19 +259,53 @@ Return ONLY JSON:
   const transcription = await whisperRes.json();
   const duration = transcription.duration || 30;
 
-  // Fetch visuals (stock clips + AI chart images)
+  // Fetch visuals — prefer stock video, recycle saved images, generate new only if needed
   const visuals: { type: "video" | "image"; url: string }[] = [];
+  const usedClipUrls = new Set<string>(); // prevent same clip twice in one video
+  const token = process.env.GITHUB_TOKEN!;
+
+  // Load saved image library for recycling
+  let savedImages: { tag: string; url: string }[] = [];
+  try {
+    const imgLib = await readFile("data/shorts/image-library.json");
+    savedImages = JSON.parse(imgLib);
+  } catch {}
+
   for (let i = 0; i < script.scenes.length; i++) {
     const scene = script.scenes[i];
     let found = false;
 
-    if (scene.visualType === "stock_video") {
-      const stockTag = EMOTION_MAP[scene.emotion] || "";
-      const clip = STOCK_LIBRARY[stockTag];
-      if (clip?.url) { visuals.push({ type: "video", url: clip.url }); found = true; }
+    // Priority 1: Stock video (most scenes should use this)
+    if (scene.visualType === "stock_video" || scene.visualType !== "chart_image") {
+      const stockTag = EMOTION_MAP[scene.emotion] || EMOTION_MAP[scene.visualType] || "";
+      const clips = STOCK_LIBRARY[stockTag] || [];
+      // Pick a random clip that hasn't been used yet in this video
+      const available = clips.filter(c => !usedClipUrls.has(c.url));
+      if (available.length > 0) {
+        const clip = available[Math.floor(Math.random() * available.length)];
+        visuals.push({ type: "video", url: clip.url });
+        usedClipUrls.add(clip.url);
+        found = true;
+      } else if (clips.length > 0) {
+        // All used — pick any random one
+        const clip = clips[Math.floor(Math.random() * clips.length)];
+        visuals.push({ type: "video", url: clip.url });
+        found = true;
+      }
     }
 
-    if (!found && process.env.GEMINI_API_KEY) {
+    // Priority 2: Check saved image library for matching tag
+    if (!found && scene.visualType === "chart_image") {
+      const query = (scene.visualQuery || "").toLowerCase();
+      const match = savedImages.find(img => query.includes(img.tag) || img.tag.includes(query.split(" ")[0]));
+      if (match) {
+        visuals.push({ type: "image", url: match.url });
+        found = true;
+      }
+    }
+
+    // Priority 3: Generate new image with Gemini and save for recycling
+    if (!found && process.env.GEMINI_API_KEY && scene.visualType === "chart_image") {
       try {
         const { GoogleGenAI } = await import("@google/genai");
         const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
@@ -203,25 +316,37 @@ Return ONLY JSON:
         });
         for (const part of res.candidates?.[0]?.content?.parts ?? []) {
           if (part.inlineData && !found) {
-            const filename = `shorts-assets/${slug}-bg-${i}.jpg`;
-            const token = process.env.GITHUB_TOKEN!;
+            // Save with descriptive tag for recycling
+            const tag = (scene.visualQuery || "chart").toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 40);
+            const filename = `shorts-assets/library/${tag}-${Date.now()}.jpg`;
             try {
-              const existing = await fetch(`https://api.github.com/repos/${repo}/contents/${filename}`, { headers: { Authorization: `Bearer ${token}` } });
-              const ed = await existing.json();
-              if (ed.sha) await fetch(`https://api.github.com/repos/${repo}/contents/${filename}`, { method: "DELETE", headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" }, body: JSON.stringify({ message: "Replace", sha: ed.sha }) });
+              await fetch(`https://api.github.com/repos/${repo}/contents/${filename}`, {
+                method: "PUT",
+                headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+                body: JSON.stringify({ message: `Chart: ${tag}`, content: part.inlineData.data }),
+              });
+              const imgRes = await fetch(`https://api.github.com/repos/${repo}/contents/${filename}`, { headers: { Authorization: `Bearer ${token}` } });
+              const imgData = await imgRes.json();
+              if (imgData.download_url) {
+                visuals.push({ type: "image", url: imgData.download_url });
+                // Save to recycling library
+                savedImages.push({ tag, url: imgData.download_url });
+                await commitFile("data/shorts/image-library.json", JSON.stringify(savedImages, null, 2), `Image library: +${tag}`).catch(() => {});
+                found = true;
+              }
             } catch {}
-            await fetch(`https://api.github.com/repos/${repo}/contents/${filename}`, { method: "PUT", headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" }, body: JSON.stringify({ message: `Bg ${i}`, content: part.inlineData.data }) });
-            const imgRes = await fetch(`https://api.github.com/repos/${repo}/contents/${filename}`, { headers: { Authorization: `Bearer ${token}` } });
-            const imgData = await imgRes.json();
-            if (imgData.download_url) { visuals.push({ type: "image", url: imgData.download_url }); found = true; }
           }
         }
       } catch {}
     }
 
+    // Fallback: random stock video from any category
     if (!found) {
-      const fb = STOCK_LIBRARY["chart_close"] || STOCK_LIBRARY["screen_glow"];
-      visuals.push({ type: fb ? "video" : "image", url: fb?.url || "" });
+      const allCategories = Object.keys(STOCK_LIBRARY);
+      const randomCat = allCategories[Math.floor(Math.random() * allCategories.length)];
+      const clips = STOCK_LIBRARY[randomCat];
+      const clip = clips[Math.floor(Math.random() * clips.length)];
+      visuals.push({ type: "video", url: clip.url });
     }
   }
 
