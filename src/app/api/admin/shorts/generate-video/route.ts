@@ -195,7 +195,12 @@ Return ONLY JSON:
   });
 
   let text = response.content[0].type === "text" ? response.content[0].text : "";
+  // Extract JSON robustly — find the first { and last }
   text = text.replace(/^```(?:json)?\s*\n?/, "").replace(/\n?```\s*$/, "").trim();
+  const jsonStart = text.indexOf("{");
+  const jsonEnd = text.lastIndexOf("}");
+  if (jsonStart === -1 || jsonEnd === -1) throw new Error("No JSON found in Claude response");
+  text = text.slice(jsonStart, jsonEnd + 1);
   const script = JSON.parse(text);
   script.script = script.scenes.map((s: { text: string }) => s.text).join(" ");
 
