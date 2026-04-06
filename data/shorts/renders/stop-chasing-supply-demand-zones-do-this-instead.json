@@ -19,5 +19,6 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-06T08:11:28.795Z",
-  "status": "rendering"
+  "status": "failed",
+  "error": "Pexels 403 - old UHD URL (pre-fix deploy)"
 }
