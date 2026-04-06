@@ -18,6 +18,7 @@ export async function GET() {
     createdAt: string;
     completedAt?: string;
     uploadResults?: { platform: string; status: string }[];
+    error?: string;
   }[] = [];
 
   try {
