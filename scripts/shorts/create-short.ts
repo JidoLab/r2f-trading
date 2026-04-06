@@ -548,17 +548,32 @@ async function uploadToAllPlatforms(videoPath: string, script: any, slug: string
   try {
     const ytUrl = results.find(r => r.platform === "youtube")?.url;
     if (ytUrl) {
-      const { postToAll } = await import("../../src/lib/social.js");
-      await postToAll({
-        title: `🎬 New Short: ${script.title}`,
-        excerpt: script.description?.slice(0, 120) || "",
-        slug: ytUrl,
-        coverImage: "",
-        tags: script.hashtags || [],
-      });
+      // Post announcement to Telegram + Discord directly (not via postToAll which adds site URL prefix)
+      const tgToken = process.env.TELEGRAM_BOT_TOKEN;
+      const tgChannel = process.env.TELEGRAM_CHANNEL_ID || "@r2ftradinginsights";
+      if (tgToken) {
+        const tgText = `🎬 *New Short: ${script.title}*\n\n${script.description?.slice(0, 120) || ""}\n\n👉 [Watch Now](${ytUrl})\n\n${(script.hashtags || []).join(" ")}`;
+        await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ chat_id: tgChannel, text: tgText, parse_mode: "Markdown", disable_web_page_preview: false }),
+        }).catch(() => {});
+      }
+
+      const discordUrl = process.env.DISCORD_WEBHOOK_URL;
+      if (discordUrl) {
+        await fetch(discordUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            username: "R2F Trading",
+            embeds: [{ title: `🎬 ${script.title}`, url: ytUrl, description: script.description?.slice(0, 200), color: 0xc9a84c }],
+          }),
+        }).catch(() => {});
+      }
       console.log(`  ✓ Social announcements sent`);
     }
-  } catch {}
+  } catch (e) { console.warn("[social] Announcement failed:", e); }
 
   // Log results
   try {

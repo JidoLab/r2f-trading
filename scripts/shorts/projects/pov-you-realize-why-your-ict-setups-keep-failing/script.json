@@ -1,0 +1,74 @@
+{
+  "title": "POV: You Realize Why Your ICT Setups Keep Failing",
+  "description": "That moment when you discover the missing piece in your ICT trading strategy. Are you making this common mistake with your market structure breaks?",
+  "hashtags": [
+    "#ICTTrading",
+    "#TradingTips",
+    "#MarketStructure",
+    "#R2FTrading",
+    "#TradingPOV",
+    "#ICTConcepts"
+  ],
+  "contentType": "pov",
+  "seriesName": null,
+  "seriesNumber": null,
+  "mood": "dark",
+  "scenes": [
+    {
+      "text": "POV: You just realized you're entering too early. Every single time.",
+      "captions": [
+        "POV: You just",
+        "realized you're entering",
+        "too early.",
+        "Every single time."
+      ],
+      "visualType": "stock_video",
+      "visualQuery": "person having realization moment in dark room with screen glow",
+      "emotion": "revelation"
+    },
+    {
+      "text": "Market structure breaks. But you jump in immediately. No confirmation.",
+      "captions": [
+        "Market structure breaks.",
+        "But you jump",
+        "in immediately.",
+        "No confirmation."
+      ],
+      "visualType": "chart_image",
+      "visualQuery": "market structure break with premature entry point highlighted",
+      "emotion": "frustration"
+    },
+    {
+      "text": "Wait for the retest. Let price come back. Then strike.",
+      "captions": [
+        "Wait for",
+        "the retest.",
+        "Let price",
+        "come back.",
+        "Then strike."
+      ],
+      "visualType": "chart_image",
+      "visualQuery": "proper market structure break entry after retest confirmation",
+      "emotion": "confidence"
+    },
+    {
+      "text": "Follow for more ICT insights. Your entries will thank you.",
+      "captions": [
+        "Follow for more",
+        "ICT insights.",
+        "Your entries will",
+        "thank you."
+      ],
+      "visualType": "stock_video",
+      "visualQuery": "confident trader looking at profitable charts",
+      "emotion": "motivation"
+    }
+  ],
+  "highlightWords": [
+    "market structure",
+    "retest",
+    "confirmation"
+  ],
+  "hookText": "You're entering trades too early",
+  "script": "POV: You just realized you're entering too early. Every single time. Market structure breaks. But you jump in immediately. No confirmation. Wait for the retest. Let price come back. Then strike. Follow for more ICT insights. Your entries will thank you."
+}
