@@ -13,7 +13,7 @@
     "assemble-short": "npx tsx scripts/shorts/assemble-video.ts",
     "upload-short": "npx tsx scripts/shorts/upload-youtube.ts",
     "repurpose-blog": "npx tsx scripts/shorts/repurpose-blog.ts",
-    "generate-calendar": "npx tsx -e \"require('dotenv').config({path:'.env.local',override:true});import('./src/lib/content-calendar.js').then(m=>m.generateContentCalendar(30)).then(()=>console.log('Calendar generated'))\""
+    "generate-calendar": "npx tsx scripts/shorts/generate-calendar.ts"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",

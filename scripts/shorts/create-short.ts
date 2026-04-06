@@ -39,7 +39,7 @@ async function getSeriesTracker(): Promise<Record<string, number>> {
     const { readFile } = await import("../../src/lib/github.js");
     const raw = await readFile("data/shorts/series-tracker.json");
     return JSON.parse(raw);
-  } catch { return {}; }
+  } catch (e) { console.warn("[seriesTracker] Failed:", e); return {}; }
 }
 
 async function updateSeriesTracker(series: Record<string, number>) {
@@ -56,7 +56,7 @@ async function getCalendarTopic(): Promise<{ topic: string; contentType: string 
     const today = new Date().toISOString().split("T")[0];
     const entry = calendar.find((e: { date: string; used: boolean }) => e.date === today && !e.used);
     return entry ? { topic: entry.topic, contentType: entry.contentType } : null;
-  } catch { return null; }
+  } catch (e) { console.warn("[calendar] Failed:", e); return null; }
 }
 
 // --- Phase 9: Performance Data ---
@@ -77,7 +77,7 @@ async function getPerformanceContext(): Promise<string> {
 Top performing videos:\n${top3}
 Lowest performing:\n${bottom3}
 Optimize for: higher retention and engagement.\n`;
-  } catch { return ""; }
+  } catch (e) { console.warn("[context] Failed:", e); return ""; }
 }
 
 // --- Phase 10: Trend Context ---
@@ -92,7 +92,7 @@ async function getTrendContext(): Promise<string> {
 Today: ${dayName}, ${month}
 Consider: seasonal patterns, end-of-week/month flows, any major economic events this week.
 If there's a timely angle, use it. If not, stick to evergreen content.\n`;
-  } catch { return ""; }
+  } catch (e) { console.warn("[context] Failed:", e); return ""; }
 }
 
 // --- Step 1: Generate Script ---

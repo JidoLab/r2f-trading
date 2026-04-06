@@ -24,9 +24,10 @@ export async function pullYouTubeAnalytics(): Promise<void> {
 
   // Get channel's recent videos
   const searchRes = await fetch(
-    `https://www.googleapis.com/youtube/v3/search?part=snippet&forMine=true&maxResults=50&order=date&type=video&access_token=${access_token}`
+    `https://www.googleapis.com/youtube/v3/search?part=snippet&forMine=true&maxResults=50&order=date&type=video`,
+    { headers: { Authorization: `Bearer ${access_token}` } }
   );
-  if (!searchRes.ok) { console.log("[analytics] Search failed"); return; }
+  if (!searchRes.ok) { console.log("[analytics] Search failed:", await searchRes.text()); return; }
   const searchData = await searchRes.json();
   const videoIds = searchData.items?.map((item: any) => item.id.videoId).filter(Boolean) || [];
 
@@ -34,7 +35,8 @@ export async function pullYouTubeAnalytics(): Promise<void> {
 
   // Get video statistics
   const statsRes = await fetch(
-    `https://www.googleapis.com/youtube/v3/videos?part=statistics,snippet&id=${videoIds.join(",")}&access_token=${access_token}`
+    `https://www.googleapis.com/youtube/v3/videos?part=statistics,snippet&id=${videoIds.join(",")}`,
+    { headers: { Authorization: `Bearer ${access_token}` } }
   );
   if (!statsRes.ok) { console.log("[analytics] Stats failed"); return; }
   const statsData = await statsRes.json();
