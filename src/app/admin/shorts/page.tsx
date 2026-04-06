@@ -115,12 +115,19 @@ export default function AdminShortsPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ slug }),
       });
+      const result = await res.json();
       if (res.ok) {
-        alert("Published to all platforms!");
+        const platforms = result.results || [];
+        const succeeded = platforms.filter((r: { status: string }) => r.status === "success");
+        const failed = platforms.filter((r: { status: string }) => r.status === "error");
+        const skipped = platforms.filter((r: { status: string }) => r.status === "skipped");
+        let msg = `Published!\n\n✅ Success: ${succeeded.map((r: { platform: string }) => r.platform).join(", ") || "none"}`;
+        if (failed.length) msg += `\n❌ Failed: ${failed.map((r: { platform: string }) => r.platform).join(", ")}`;
+        if (skipped.length) msg += `\n⏭️ Skipped: ${skipped.map((r: { platform: string }) => r.platform).join(", ")}`;
+        alert(msg);
         await fetchData();
       } else {
-        const err = await res.json().catch(() => ({}));
-        alert(`Publish failed: ${err.error || "Unknown error"}`);
+        alert(`Publish failed: ${result.error || "Unknown error"}`);
       }
     } catch { alert("Publish failed"); }
     setPublishing(null);
