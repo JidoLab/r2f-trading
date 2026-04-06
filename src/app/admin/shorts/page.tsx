@@ -37,6 +37,7 @@ export default function AdminShortsPage() {
   const [genTopic, setGenTopic] = useState("");
   const [genCount, setGenCount] = useState(1);
   const [copiedIdx, setCopiedIdx] = useState<number | null>(null);
+  const [publishing, setPublishing] = useState<string | null>(null);
 
   async function fetchData() {
     try {
@@ -85,7 +86,7 @@ export default function AdminShortsPage() {
       const res = await fetch("/api/admin/shorts/generate-video", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ topic: genTopic || undefined, count: genCount }),
+        body: JSON.stringify({ topic: genTopic || undefined, count: genCount, autoPublish: false }),
       });
       const result = await res.json();
       if (res.ok) {
@@ -103,6 +104,25 @@ export default function AdminShortsPage() {
       }
     } catch { alert("Generation failed"); }
     setGenerating(false);
+  }
+
+  async function publishVideo(slug: string) {
+    setPublishing(slug);
+    try {
+      const res = await fetch("/api/admin/shorts/publish", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ slug }),
+      });
+      if (res.ok) {
+        alert("Published to all platforms!");
+        await fetchData();
+      } else {
+        const err = await res.json().catch(() => ({}));
+        alert(`Publish failed: ${err.error || "Unknown error"}`);
+      }
+    } catch { alert("Publish failed"); }
+    setPublishing(null);
   }
 
   function copyToClipboard(text: string, idx: number) {
@@ -207,14 +227,20 @@ export default function AdminShortsPage() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <span className={`w-2 h-2 rounded-full ${
-                        v.status === "completed" ? "bg-green-400" :
+                        v.status === "published" ? "bg-green-400" :
+                        v.status === "ready" ? "bg-blue-400" :
                         v.status === "rendering" ? "bg-yellow-400 animate-pulse" :
                         "bg-red-400"
                       }`}></span>
                       <h3 className="text-white text-sm font-semibold truncate">{v.title}</h3>
                     </div>
                     <p className="text-white/30 text-xs">
-                      {new Date(v.createdAt).toLocaleDateString()} &middot; {v.status}
+                      {new Date(v.createdAt).toLocaleDateString()} &middot;{" "}
+                      <span className={
+                        v.status === "published" ? "text-green-400" :
+                        v.status === "ready" ? "text-blue-400" :
+                        v.status === "rendering" ? "text-yellow-400" : ""
+                      }>{v.status === "ready" ? "Ready to publish" : v.status}</span>
                     </p>
                   </div>
                   {v.youtubeUrl && (
@@ -224,8 +250,8 @@ export default function AdminShortsPage() {
                   )}
                 </div>
 
-                {/* Upload results */}
-                {v.uploadResults && (
+                {/* Upload results (only for published) */}
+                {v.status === "published" && v.uploadResults && (
                   <div className="flex flex-wrap gap-1.5 mb-3">
                     {v.uploadResults.map((r) => (
                       <span key={r.platform} className={`text-[10px] font-bold uppercase px-2 py-0.5 rounded ${
@@ -239,12 +265,12 @@ export default function AdminShortsPage() {
                   </div>
                 )}
 
-                {/* Manual posting actions */}
-                {v.status === "completed" && (
+                {/* Actions for ready videos */}
+                {(v.status === "ready" || v.status === "published") && (
                   <div className="flex flex-wrap gap-2">
                     {v.videoUrl && (
                       <a href={v.videoUrl} target="_blank" rel="noopener noreferrer" className="text-xs bg-white/10 text-white/70 px-3 py-1.5 rounded-md hover:bg-white/20 transition-colors">
-                        Download Video
+                        Preview Video
                       </a>
                     )}
                     {v.copyText && (
@@ -253,6 +279,15 @@ export default function AdminShortsPage() {
                         className="text-xs bg-gold/20 text-gold px-3 py-1.5 rounded-md hover:bg-gold/30 transition-colors"
                       >
                         {copiedIdx === idx ? "Copied!" : "Copy Caption"}
+                      </button>
+                    )}
+                    {v.status === "ready" && (
+                      <button
+                        onClick={() => publishVideo(v.slug)}
+                        disabled={publishing === v.slug}
+                        className="text-xs bg-green-500/20 text-green-400 px-3 py-1.5 rounded-md hover:bg-green-500/30 transition-colors disabled:opacity-50"
+                      >
+                        {publishing === v.slug ? "Publishing..." : "Publish to All Platforms"}
                       </button>
                     )}
                   </div>

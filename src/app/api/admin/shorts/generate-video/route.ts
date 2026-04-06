@@ -48,12 +48,12 @@ export async function POST(req: NextRequest) {
   if (!isAdmin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   try {
-    const { topic, count = 1 } = await req.json();
+    const { topic, count = 1, autoPublish = false } = await req.json();
     const results: { slug: string; title: string; status: string }[] = [];
 
     for (let n = 0; n < Math.min(count, 5); n++) {
       try {
-        const result = await generateSingleShort(topic && count === 1 ? topic : undefined);
+        const result = await generateSingleShort(topic && count === 1 ? topic : undefined, autoPublish);
         results.push(result);
       } catch (err: unknown) {
         results.push({ slug: "", title: "", status: `error: ${err instanceof Error ? err.message : "unknown"}` });
@@ -66,7 +66,7 @@ export async function POST(req: NextRequest) {
   }
 }
 
-async function generateSingleShort(topic?: string) {
+async function generateSingleShort(topic?: string, autoPublish = false) {
   const anthropic = new Anthropic();
 
   // Load content types
@@ -224,21 +224,32 @@ Return ONLY JSON:
     }
   }
 
-  // Build Creatomate source
+  // Build Creatomate source — use Whisper segment timing for captions
   const allCaps: string[] = [];
   for (const scene of script.scenes) { if (scene.captions) allCaps.push(...scene.captions); }
 
+  const segments = transcription.segments || [];
   const captions: { text: string; start: number; end: number; isHighlight: boolean; isHook: boolean }[] = [];
-  if (allCaps.length > 0) {
-    const hookDuration = 3.0;
-    const captionDuration = duration - hookDuration;
-    const timePerCap = captionDuration / allCaps.length;
+
+  if (allCaps.length > 0 && segments.length > 0) {
+    // Map each caption to Whisper segment timing by distributing segments across captions
+    const segsPerCap = Math.max(1, Math.floor(segments.length / allCaps.length));
     for (let i = 0; i < allCaps.length; i++) {
-      const text = allCaps[i];
-      const start = hookDuration + i * timePerCap;
-      const end = start + timePerCap;
-      const isHl = (script.highlightWords || []).some((hw: string) => text.toLowerCase().includes(hw.toLowerCase()));
-      captions.push({ text: text.toUpperCase(), start, end, isHighlight: isHl, isHook: i === 0 });
+      const segStart = i * segsPerCap;
+      const segEnd = i === allCaps.length - 1 ? segments.length : (i + 1) * segsPerCap;
+      const firstSeg = segments[Math.min(segStart, segments.length - 1)];
+      const lastSeg = segments[Math.min(segEnd - 1, segments.length - 1)];
+      const start = firstSeg?.start ?? (i * duration / allCaps.length);
+      const end = lastSeg?.end ?? ((i + 1) * duration / allCaps.length);
+      const isHl = (script.highlightWords || []).some((hw: string) => allCaps[i].toLowerCase().includes(hw.toLowerCase()));
+      captions.push({ text: allCaps[i].toUpperCase(), start, end, isHighlight: isHl, isHook: i === 0 });
+    }
+  } else if (allCaps.length > 0) {
+    // Fallback: even distribution if no segments
+    const timePerCap = duration / allCaps.length;
+    for (let i = 0; i < allCaps.length; i++) {
+      const isHl = (script.highlightWords || []).some((hw: string) => allCaps[i].toLowerCase().includes(hw.toLowerCase()));
+      captions.push({ text: allCaps[i].toUpperCase(), start: i * timePerCap, end: (i + 1) * timePerCap, isHighlight: isHl, isHook: i === 0 });
     }
   }
 
@@ -305,6 +316,7 @@ Return ONLY JSON:
     contentType: script.contentType || contentType.id,
     seriesName: script.seriesName,
     seriesNumber: script.seriesNumber,
+    autoPublish,
     createdAt: new Date().toISOString(),
     status: "rendering",
   }, null, 2), `Render started: ${script.title.slice(0, 30)}`);

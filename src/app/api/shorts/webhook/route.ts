@@ -40,66 +40,69 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // Upload to platforms
-    const results: { platform: string; status: string; url?: string }[] = [];
-
-    // YouTube
-    try {
-      const ytResult = await uploadToYouTube(videoUrl, renderData);
-      results.push({ platform: "youtube", ...ytResult });
-    } catch (e: any) {
-      results.push({ platform: "youtube", status: "error", url: e.message?.slice(0, 100) });
-    }
-
-    // Facebook Reels
-    try {
-      const fbResult = await uploadToFBReel(videoUrl, renderData);
-      results.push({ platform: "facebook_reel", ...fbResult });
-    } catch (e: any) {
-      results.push({ platform: "facebook_reel", status: "error" });
-    }
-
-    // LinkedIn Video
-    try {
-      const liResult = await uploadToLinkedIn(videoUrl, renderData);
-      results.push({ platform: "linkedin", ...liResult });
-    } catch (e: any) {
-      results.push({ platform: "linkedin", status: "error" });
-    }
-
-    // Telegram + Discord announcements
-    const ytUrl = results.find(r => r.platform === "youtube" && r.status === "success")?.url;
-    if (ytUrl) {
-      const tgToken = process.env.TELEGRAM_BOT_TOKEN;
-      const tgChannel = process.env.TELEGRAM_CHANNEL_ID || "@r2ftradinginsights";
-      if (tgToken) {
-        const tgText = `🎬 *New Short: ${renderData.title}*\n\n${renderData.description?.slice(0, 120) || ""}\n\n👉 [Watch Now](${ytUrl})\n\n${(renderData.hashtags || []).join(" ")}`;
-        await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ chat_id: tgChannel, text: tgText, parse_mode: "Markdown", disable_web_page_preview: false }),
-        }).catch(() => {});
-      }
-      const discordUrl = process.env.DISCORD_WEBHOOK_URL;
-      if (discordUrl) {
-        await fetch(discordUrl, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            username: "R2F Trading",
-            embeds: [{ title: `🎬 ${renderData.title}`, url: ytUrl, description: renderData.description?.slice(0, 200), color: 0xc9a84c }],
-          }),
-        }).catch(() => {});
-      }
-    }
-
     // Build copy text for manual platforms (TikTok, Instagram)
     const copyText = `${renderData.title}\n\n${renderData.description || ""}\n\n${(renderData.hashtags || []).join(" ")}`;
+
+    // Only upload if autoPublish is enabled (cron jobs set this to true, manual generates don't)
+    const results: { platform: string; status: string; url?: string }[] = [];
+    let ytUrl: string | undefined;
+
+    if (renderData.autoPublish) {
+      // YouTube
+      try {
+        const ytResult = await uploadToYouTube(videoUrl, renderData);
+        results.push({ platform: "youtube", ...ytResult });
+        if (ytResult.status === "success") ytUrl = ytResult.url;
+      } catch (e: any) {
+        results.push({ platform: "youtube", status: "error", url: e.message?.slice(0, 100) });
+      }
+
+      // Facebook Reels
+      try {
+        const fbResult = await uploadToFBReel(videoUrl, renderData);
+        results.push({ platform: "facebook_reel", ...fbResult });
+      } catch (e: any) {
+        results.push({ platform: "facebook_reel", status: "error" });
+      }
+
+      // LinkedIn Video
+      try {
+        const liResult = await uploadToLinkedIn(videoUrl, renderData);
+        results.push({ platform: "linkedin", ...liResult });
+      } catch (e: any) {
+        results.push({ platform: "linkedin", status: "error" });
+      }
+
+      // Telegram + Discord announcements
+      if (ytUrl) {
+        const tgToken = process.env.TELEGRAM_BOT_TOKEN;
+        const tgChannel = process.env.TELEGRAM_CHANNEL_ID || "@r2ftradinginsights";
+        if (tgToken) {
+          const tgText = `🎬 *New Short: ${renderData.title}*\n\n${renderData.description?.slice(0, 120) || ""}\n\n👉 [Watch Now](${ytUrl})\n\n${(renderData.hashtags || []).join(" ")}`;
+          await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ chat_id: tgChannel, text: tgText, parse_mode: "Markdown", disable_web_page_preview: false }),
+          }).catch(() => {});
+        }
+        const discordUrl = process.env.DISCORD_WEBHOOK_URL;
+        if (discordUrl) {
+          await fetch(discordUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              username: "R2F Trading",
+              embeds: [{ title: `🎬 ${renderData.title}`, url: ytUrl, description: renderData.description?.slice(0, 200), color: 0xc9a84c }],
+            }),
+          }).catch(() => {});
+        }
+      }
+    }
 
     // Update render data with results
     await commitFile(`data/shorts/renders/${renderSlug}.json`, JSON.stringify({
       ...renderData,
-      status: "completed",
+      status: renderData.autoPublish ? "published" : "ready",
       videoUrl,
       youtubeUrl: ytUrl || null,
       copyText,
