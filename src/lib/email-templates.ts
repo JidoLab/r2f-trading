@@ -115,3 +115,81 @@ export function coachingCtaEmail(): { subject: string; html: string } {
     ),
   };
 }
+
+// --- Segment-specific templates for lead scoring ---
+
+export function socialProofEmail(): { subject: string; html: string } {
+  return {
+    subject: "How These Traders Went From Struggling to Funded",
+    html: layout(
+      "Results That Speak for Themselves",
+      `<p style="color:#555;line-height:1.7;">Hey,</p>
+      <p style="color:#555;line-height:1.7;">I want to show you what's possible when you have the right guidance:</p>
+      <blockquote style="border-left:4px solid ${BRAND.gold};padding:12px 20px;margin:16px 0;background:${BRAND.cream};border-radius:4px;">
+        <p style="color:${BRAND.navy};font-style:italic;margin:0;">"I got funded a couple of times but kept losing the accounts. R2F's mentorship on scaling and risk management was a game-changer. I'm not only keeping my account but steadily growing it."</p>
+        <p style="color:#888;font-size:13px;margin:8px 0 0;">— A.S.</p>
+      </blockquote>
+      <blockquote style="border-left:4px solid ${BRAND.gold};padding:12px 20px;margin:16px 0;background:${BRAND.cream};border-radius:4px;">
+        <p style="color:${BRAND.navy};font-style:italic;margin:0;">"The personalized approach changed everything. R2F focused on my specific weaknesses. The improvements in my trading psychology alone are incredible."</p>
+        <p style="color:#888;font-size:13px;margin:8px 0 0;">— M.L.</p>
+      </blockquote>
+      <p style="color:#555;line-height:1.7;">These aren't overnight success stories. They're traders who committed to improvement and got the support they needed.</p>
+      <p style="color:#555;line-height:1.7;">Want to see more results?</p>`,
+      { text: "See Student Results", url: `${BRAND.url}/results` }
+    ),
+  };
+}
+
+export function bookCallSoftEmail(): { subject: string; html: string } {
+  return {
+    subject: "Quick Question About Your Trading Goals",
+    html: layout(
+      "Let's Chat About Your Trading",
+      `<p style="color:#555;line-height:1.7;">Hey,</p>
+      <p style="color:#555;line-height:1.7;">I noticed you've been checking out our coaching options — that tells me you're serious about improving your trading.</p>
+      <p style="color:#555;line-height:1.7;">I'd love to hop on a <strong>free 15-minute call</strong> to hear about where you're at and what you're working toward. No pitch, no pressure — just a real conversation between traders.</p>
+      <p style="color:#555;line-height:1.7;">Here's what we can cover:</p>
+      <ul style="color:#555;line-height:2;">
+        <li>Your current trading strategy and what's working (or not)</li>
+        <li>Specific ICT concepts you're struggling with</li>
+        <li>A personalized recommendation for your next steps</li>
+      </ul>
+      <p style="color:#555;line-height:1.7;">Even if coaching isn't the right fit, you'll walk away with actionable advice.</p>`,
+      { text: "Book a Free 15-Min Call", url: `${BRAND.url}/contact` }
+    ),
+  };
+}
+
+export function bookCallUrgentEmail(): { subject: string; html: string } {
+  return {
+    subject: "I Have 3 Coaching Spots Left This Month",
+    html: layout(
+      "Limited Spots Available",
+      `<p style="color:#555;line-height:1.7;">Hey,</p>
+      <p style="color:#555;line-height:1.7;">I wanted to reach out directly because I can see you're actively exploring R2F coaching — and I respect that.</p>
+      <p style="color:#555;line-height:1.7;">Quick heads up: I only take on a limited number of students at a time to ensure everyone gets the personalized attention they deserve. Right now, I have <strong style="color:${BRAND.gold};">3 spots remaining</strong> for this month.</p>
+      <p style="color:#555;line-height:1.7;">If you've been thinking about it, now's the time to book a free discovery call. We'll figure out together if this is the right move for you.</p>
+      <p style="color:#555;line-height:1.7;">No commitment required — just 15 minutes of your time.</p>`,
+      { text: "Claim Your Free Call", url: `${BRAND.url}/contact` }
+    ),
+  };
+}
+
+export function limitedSpotsEmail(): { subject: string; html: string } {
+  return {
+    subject: "Last Chance: Coaching Applications Close Friday",
+    html: layout(
+      "Don't Miss This Window",
+      `<p style="color:#555;line-height:1.7;">Hey,</p>
+      <p style="color:#555;line-height:1.7;">This is the final reminder — coaching applications for this cycle close at the end of the week.</p>
+      <p style="color:#555;line-height:1.7;">Here's what students who started this month are already saying:</p>
+      <blockquote style="border-left:4px solid ${BRAND.gold};padding:12px 20px;margin:16px 0;background:${BRAND.cream};border-radius:4px;">
+        <p style="color:${BRAND.navy};font-style:italic;margin:0;">"I finally feel confident in my trades. Harvest worked through all the aspects that were holding me back."</p>
+        <p style="color:#888;font-size:13px;margin:8px 0 0;">— T.W.</p>
+      </blockquote>
+      <p style="color:#555;line-height:1.7;">Every week you wait is another week of trading without a plan. Let's change that.</p>
+      <p style="color:#555;line-height:1.7;">Book your free call before spots fill up:</p>`,
+      { text: "Book Before Friday", url: `${BRAND.url}/contact` }
+    ),
+  };
+}

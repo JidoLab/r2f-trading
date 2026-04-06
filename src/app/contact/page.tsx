@@ -1,11 +1,13 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CalendlyEmbed from "@/components/CalendlyEmbed";
+import PageTracker from "@/components/PageTracker";
 
 export default function ContactPage() {
   return (
     <main>
       <Header />
+      <PageTracker event="contact_page_view" />
 
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6">

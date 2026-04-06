@@ -1,10 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { trackEvent } from "@/lib/tracking";
 
 export default function EmailSignup({ variant = "inline" }: { variant?: "inline" | "sidebar" | "popup" }) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const router = useRouter();
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -18,8 +21,13 @@ export default function EmailSignup({ variant = "inline" }: { variant?: "inline"
         body: JSON.stringify({ email }),
       });
       if (res.ok) {
+        // Save email for lead scoring tracking
+        localStorage.setItem("r2f_subscriber_email", email);
+        trackEvent("email_signup", { method: variant });
         setStatus("success");
         setEmail("");
+        // Redirect to thank-you page with Calendly
+        router.push("/thank-you");
       } else {
         setStatus("error");
       }
@@ -32,7 +40,7 @@ export default function EmailSignup({ variant = "inline" }: { variant?: "inline"
     return (
       <div className={`text-center ${variant === "popup" ? "py-4" : "py-6"}`}>
         <p className="text-green-500 font-bold text-lg mb-1">You&rsquo;re in!</p>
-        <p className="text-gray-500 text-sm">Check your email for the ICT Trading Checklist.</p>
+        <p className="text-gray-500 text-sm">Redirecting...</p>
       </div>
     );
   }

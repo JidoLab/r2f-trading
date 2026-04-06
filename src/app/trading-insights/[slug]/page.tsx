@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import ShareButtons from "@/components/ShareButtons";
 import ReadingTime from "@/components/ReadingTime";
 import TableOfContents from "@/components/TableOfContents";
+import PageTracker from "@/components/PageTracker";
 import Link from "next/link";
 import { getAllSlugs, getPostBySlug, getRawContent } from "@/lib/blog";
 import type { Metadata } from "next";
@@ -79,6 +80,7 @@ export default async function BlogPostPage({
   return (
     <main>
       <Header />
+      <PageTracker event="blog_read" data={{ slug }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

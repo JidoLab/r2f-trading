@@ -50,6 +50,15 @@ export default function Testimonials() {
             </div>
           ))}
         </div>
+
+        <div className="text-center mt-10">
+          <a
+            href="/results"
+            className="inline-flex items-center gap-2 text-gold hover:text-gold-light font-bold text-sm uppercase tracking-wider transition-colors"
+          >
+            See All Student Results &rarr;
+          </a>
+        </div>
       </div>
     </section>
   );

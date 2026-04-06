@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageTracker from "@/components/PageTracker";
 import Link from "next/link";
 
 const plans = [
@@ -54,6 +55,7 @@ export default function CoachingPage() {
   return (
     <main>
       <Header />
+      <PageTracker event="coaching_page_view" />
 
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
