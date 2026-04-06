@@ -134,5 +134,50 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-06T08:21:53.335Z",
+    "slug": "2026-04-06-april-2026-earnings-season-liquidity-raids-6-ict-concepts-every-smart-money-trader-must-know",
+    "title": "April 2026 Earnings Season Liquidity Raids: 6 ICT Concepts Every Smart Money Trader Must Know",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
