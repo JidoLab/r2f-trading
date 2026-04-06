@@ -87,15 +87,19 @@ export default function AdminShortsPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ topic: genTopic || undefined, count: genCount }),
       });
+      const result = await res.json();
       if (res.ok) {
-        const result = await res.json();
-        const count = result.results?.filter((r: { status: string }) => r.status === "rendering").length || 0;
-        alert(`${count} video${count !== 1 ? "s" : ""} started rendering! They'll appear below once complete.`);
-        setGenTopic("");
+        const rendering = result.results?.filter((r: { status: string }) => r.status === "rendering") || [];
+        const errors = result.results?.filter((r: { status: string }) => r.status.startsWith("error")) || [];
+        if (rendering.length > 0) {
+          alert(`${rendering.length} video${rendering.length !== 1 ? "s" : ""} started rendering! They'll appear in "Recent Videos" below once Creatomate finishes (2-3 min).`);
+          setGenTopic("");
+        } else if (errors.length > 0) {
+          alert(`Generation failed:\n${errors.map((e: { status: string }) => e.status).join("\n")}`);
+        }
         await fetchData();
       } else {
-        const err = await res.json().catch(() => ({}));
-        alert(`Failed: ${err.error || "Unknown error"}`);
+        alert(`Failed: ${result.error || "Unknown error"}`);
       }
     } catch { alert("Generation failed"); }
     setGenerating(false);
