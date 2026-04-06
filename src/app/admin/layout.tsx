@@ -46,7 +46,7 @@ export default async function AdminLayout({
             href="/admin/shorts"
             className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
           >
-            YouTube Shorts
+            Shorts Automation
           </Link>
           <Link
             href="/admin/calendar"
