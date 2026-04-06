@@ -84,7 +84,7 @@ export async function deleteFile(
   }
 }
 
-export async function listFiles(dirPath: string): Promise<string[]> {
+export async function listFiles(dirPath: string, extension?: string): Promise<string[]> {
   const repo = getRepo();
   const headers = getHeaders();
 
@@ -96,7 +96,10 @@ export async function listFiles(dirPath: string): Promise<string[]> {
 
   const data = await res.json();
   if (!Array.isArray(data)) return [];
-  return data.filter((f: { name: string }) => f.name.endsWith(".mdx")).map((f: { name: string }) => f.name);
+  const ext = extension || "";
+  return data
+    .filter((f: { name: string }) => ext ? f.name.endsWith(ext) : true)
+    .map((f: { path: string }) => f.path);
 }
 
 export async function readFile(path: string): Promise<string> {

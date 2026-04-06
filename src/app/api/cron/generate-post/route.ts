@@ -43,8 +43,8 @@ export async function GET(req: NextRequest) {
     let existingTitles: string[] = [];
     try {
       const { listFiles } = await import("@/lib/github");
-      const files = await listFiles("content/blog");
-      existingTitles = files.map(f => f.replace(/\.mdx$/, ""));
+      const files = await listFiles("content/blog", ".mdx");
+      existingTitles = files.map(f => f.replace(/^content\/blog\//, "").replace(/\.mdx$/, ""));
     } catch { /* no posts yet */ }
 
     // Pick topic using Claude

@@ -23,7 +23,7 @@ export async function GET() {
   // Also check GitHub
   if (files.length === 0) {
     try {
-      files = await listFiles("content/drafts");
+      files = await listFiles("content/drafts", ".mdx");
     } catch { /* no drafts directory yet */ }
   }
 
