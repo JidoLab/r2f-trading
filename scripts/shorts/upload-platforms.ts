@@ -189,7 +189,8 @@ export async function uploadToFacebookReel(videoPath: string, script: any) {
       headers: {
         Authorization: `OAuth ${token}`,
         "Content-Type": "application/octet-stream",
-        file_size: videoData.length.toString(),
+        offset: "0",
+        file_size: String(videoData.length),
       },
       body: videoData,
     });

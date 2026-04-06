@@ -118,7 +118,12 @@ export async function POST(req: NextRequest) {
           const { video_id } = await initRes.json();
           const uploadRes = await fetch(`https://rupload.facebook.com/video-upload/v21.0/${video_id}`, {
             method: "POST",
-            headers: { Authorization: `OAuth ${fbToken}`, "Content-Type": "application/octet-stream", file_size: videoBuffer.length.toString() },
+            headers: {
+              Authorization: `OAuth ${fbToken}`,
+              "Content-Type": "application/octet-stream",
+              offset: "0",
+              file_size: String(videoBuffer.length),
+            },
             body: videoBuffer,
           });
           if (!uploadRes.ok) {

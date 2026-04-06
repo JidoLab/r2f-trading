@@ -207,7 +207,7 @@ async function uploadToFBReel(videoUrl: string, data: any): Promise<{ status: st
 
   const uploadRes = await fetch(`https://rupload.facebook.com/video-upload/v21.0/${video_id}`, {
     method: "POST",
-    headers: { Authorization: `OAuth ${token}`, "Content-Type": "application/octet-stream", file_size: videoData.length.toString() },
+    headers: { Authorization: `OAuth ${token}`, "Content-Type": "application/octet-stream", offset: "0", file_size: String(videoData.length) },
     body: videoData,
   });
   if (!uploadRes.ok) return { status: "error" };
