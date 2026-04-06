@@ -225,23 +225,44 @@ Return ONLY JSON:
     }
   }
 
-  // Build captions from Whisper's actual transcribed words (exact timing)
+  // Build captions: use Whisper words but split at natural phrase boundaries
   const words: { word: string; start: number; end: number }[] = transcription.words || [];
   const segments: { start: number; end: number; text: string }[] = transcription.segments || [];
   const highlightWords = (script.highlightWords || []).map((w: string) => w.toLowerCase());
   const captions: { text: string; start: number; end: number; isHighlight: boolean; isHook: boolean }[] = [];
 
   if (words.length > 0) {
-    // Group words into 2-4 word caption chunks with exact timing
-    const WORDS_PER_CAP = 3;
-    for (let i = 0; i < words.length; i += WORDS_PER_CAP) {
-      const chunk = words.slice(i, Math.min(i + WORDS_PER_CAP, words.length));
+    // Smart phrase grouping: split at punctuation, pauses, and natural breaks
+    let chunk: typeof words = [];
+    const flush = () => {
+      if (chunk.length === 0) return;
       const text = chunk.map(w => w.word).join(" ").trim().toUpperCase();
       const start = chunk[0].start;
       const end = chunk[chunk.length - 1].end;
       const isHl = highlightWords.some((hw: string) => text.toLowerCase().includes(hw));
-      captions.push({ text, start, end, isHighlight: isHl, isHook: i === 0 });
+      captions.push({ text, start, end, isHighlight: isHl, isHook: captions.length === 0 });
+      chunk = [];
+    };
+
+    for (let i = 0; i < words.length; i++) {
+      const w = words[i];
+      chunk.push(w);
+      const wordText = w.word.trim();
+      const nextWord = words[i + 1];
+
+      // Check for natural break points
+      const endsWithPunctuation = /[.!?,;:\-—]$/.test(wordText);
+      const hasLongPause = nextWord && (nextWord.start - w.end) > 0.3;
+      const atMaxWords = chunk.length >= 5;
+      const atGoodLength = chunk.length >= 3;
+      const isLastWord = i === words.length - 1;
+
+      // Flush at: punctuation, long pauses, max length, or end
+      if (isLastWord || atMaxWords || (atGoodLength && (endsWithPunctuation || hasLongPause)) || endsWithPunctuation) {
+        flush();
+      }
     }
+    flush(); // catch any remaining
   } else if (segments.length > 0) {
     // Fallback: use Whisper segments as captions
     for (let i = 0; i < segments.length; i++) {
