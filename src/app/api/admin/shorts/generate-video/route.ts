@@ -139,7 +139,7 @@ export async function POST(req: NextRequest) {
   }
 }
 
-async function generateSingleShort(topic?: string, autoPublish = false, forceContentType?: string, forceDuration?: number) {
+export async function generateSingleShort(topic?: string, autoPublish = false, forceContentType?: string, forceDuration?: number) {
   const anthropic = new Anthropic();
 
   // Load content types
