@@ -9,9 +9,28 @@ export async function POST(req: NextRequest) {
     const { id: renderId, status, url: videoUrl } = payload;
 
     if (status !== "succeeded" || !videoUrl) {
-      // Log failed renders
+      // Mark failed renders so they don't sit as "rendering" forever
       if (status === "failed") {
         console.error("[webhook] Render failed:", renderId, payload.error_message);
+        try {
+          const files = await listFiles("data/shorts/renders");
+          for (const file of files) {
+            if (!file.endsWith(".json")) continue;
+            try {
+              const raw = await readFile(file);
+              const data = JSON.parse(raw);
+              if (data.renderId === renderId) {
+                await commitFile(file, JSON.stringify({
+                  ...data,
+                  status: "failed",
+                  error: payload.error_message || "Render failed",
+                  failedAt: new Date().toISOString(),
+                }, null, 2), `Failed: ${data.title?.slice(0, 30) || renderId}`);
+                break;
+              }
+            } catch {}
+          }
+        } catch {}
       }
       return NextResponse.json({ ok: true });
     }

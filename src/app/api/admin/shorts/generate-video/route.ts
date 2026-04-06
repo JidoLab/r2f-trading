@@ -22,91 +22,82 @@ const VIRAL_HOOKS = [
   "Two years of struggle. Fixed in one conversation.",
 ];
 
-// Expanded stock video library — heavy on human emotions/reactions for engagement
+// Stock video library — all portrait HD, verified accessible via Pexels API
 const STOCK_LIBRARY: Record<string, { url: string }[]> = {
-  // Frustration / Stress
   frustration: [
-    { url: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/5699737/5699737-uhd_2560_1440_24fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/6549174/6549174-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/18503891/18503891-hd_1080_1920_30fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/8530543/8530543-hd_1080_2048_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/8873041/8873041-hd_1080_1920_25fps.mp4" },
   ],
-  // Thinking / Contemplation
   thinking: [
-    { url: "https://videos.pexels.com/video-files/5699862/5699862-uhd_2560_1440_24fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/7579956/7579956-uhd_2560_1440_30fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/4057613/4057613-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/8226005/8226005-hd_1080_1920_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7924472/7924472-hd_1080_1920_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/8555748/8555748-hd_1080_1920_24fps.mp4" },
   ],
-  // Surprise / Shock
   surprise: [
-    { url: "https://videos.pexels.com/video-files/3196269/3196269-uhd_2560_1440_25fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/6549019/6549019-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/8627749/8627749-hd_1080_1920_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/6657887/6657887-hd_1080_1920_30fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/18503908/18503908-hd_1080_1920_30fps.mp4" },
   ],
-  // Screen glow / Trading screens
   screen_glow: [
-    { url: "https://videos.pexels.com/video-files/6801869/6801869-uhd_2560_1440_25fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/7567443/7567443-uhd_2560_1440_30fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/6801543/6801543-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/8480680/8480680-hd_1080_1920_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/8480278/8480278-hd_1080_1920_25fps.mp4" },
   ],
-  // Lightbulb / Insight moment
   lightbulb: [
-    { url: "https://videos.pexels.com/video-files/3945055/3945055-uhd_2560_1440_25fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/6549019/6549019-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/9196607/9196607-hd_1080_2048_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/5647316/5647316-hd_1080_1920_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/5094588/5094588-hd_1080_2048_25fps.mp4" },
   ],
-  // Typing / Working
   typing_trade: [
-    { url: "https://videos.pexels.com/video-files/6801543/6801543-uhd_2560_1440_25fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/5699862/5699862-uhd_2560_1440_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/6963412/6963412-hd_1080_1920_30fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/8873184/8873184-hd_1080_1920_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7546674/7546674-hd_1080_1920_25fps.mp4" },
   ],
-  // Celebration / Success
   celebration: [
-    { url: "https://videos.pexels.com/video-files/3195810/3195810-uhd_2560_1440_25fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/6962025/6962025-uhd_2560_1440_30fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/3249935/3249935-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/6532231/6532231-hd_1080_1920_30fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7165664/7165664-hd_1080_1920_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7842360/7842360-hd_1080_1920_30fps.mp4" },
   ],
-  // Walking / Lifestyle
   walking_city: [
-    { url: "https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/4763824/4763824-uhd_2560_1440_24fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/5752729/5752729-uhd_2732_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/8394092/8394092-hd_1080_1920_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/8151972/8151972-hd_1080_1920_30fps.mp4" },
   ],
-  // Phone / Charts on device
   phone_chart: [
-    { url: "https://videos.pexels.com/video-files/7567443/7567443-uhd_2560_1440_30fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/6801869/6801869-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7580285/7580285-hd_1080_2048_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7691557/7691557-hd_1080_1920_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7989855/7989855-hd_1080_1920_25fps.mp4" },
   ],
-  // Intense focus / determination
   focus_intense: [
-    { url: "https://videos.pexels.com/video-files/5699862/5699862-uhd_2560_1440_24fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/4057613/4057613-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/9945187/9945187-hd_1080_1920_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/9945196/9945196-hd_1080_1920_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/9943349/9943349-hd_1080_1920_24fps.mp4" },
   ],
-  // Money / Wealth
   money: [
-    { url: "https://videos.pexels.com/video-files/3943962/3943962-uhd_2560_1440_24fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/6963744/6963744-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/6266430/6266430-hd_1080_1920_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/6326861/6326861-hd_1080_2048_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/6266251/6266251-hd_1080_1920_25fps.mp4" },
   ],
-  // Head in hands / Defeat
   defeat: [
-    { url: "https://videos.pexels.com/video-files/6549174/6549174-uhd_2560_1440_25fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/5699737/5699737-uhd_2560_1440_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7350231/7350231-hd_1080_1920_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7924956/7924956-hd_1080_1920_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7924517/7924517-hd_1080_1920_24fps.mp4" },
   ],
-  // Nodding / Agreement
   agreement: [
-    { url: "https://videos.pexels.com/video-files/7579956/7579956-uhd_2560_1440_30fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/4057613/4057613-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7735910/7735910-hd_1080_1920_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7953586/7953586-hd_1080_1920_30fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/8731519/8731519-hd_1080_1920_25fps.mp4" },
   ],
-  // Luxury / Aspirational
   luxury: [
-    { url: "https://videos.pexels.com/video-files/4763824/4763824-uhd_2560_1440_24fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/5752729/5752729-uhd_2732_1440_25fps.mp4" },
-    { url: "https://videos.pexels.com/video-files/3249935/3249935-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/28408297/12377001_1080_1920_29fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/35412849/15004256_1080_1920_30fps.mp4" },
   ],
-  // Coffee / Morning routine
   morning: [
-    { url: "https://videos.pexels.com/video-files/4057613/4057613-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/27917231/12262914_1080_1920_60fps.mp4" },
   ],
-  // Pointing / Teaching gesture
   pointing: [
-    { url: "https://videos.pexels.com/video-files/6549019/6549019-uhd_2560_1440_25fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/7414131/7414131-hd_1080_1920_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/5897669/5897669-hd_1080_1920_24fps.mp4" },
+    { url: "https://videos.pexels.com/video-files/5904539/5904539-hd_1080_1920_24fps.mp4" },
   ],
 };
 

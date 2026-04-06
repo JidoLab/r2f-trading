@@ -25,6 +25,7 @@ interface VideoEntry {
   createdAt: string;
   completedAt?: string;
   uploadResults?: { platform: string; status: string }[];
+  error?: string;
 }
 
 export default function AdminShortsPage() {
@@ -239,8 +240,9 @@ export default function AdminShortsPage() {
                       <span className={
                         v.status === "published" ? "text-green-400" :
                         v.status === "ready" ? "text-blue-400" :
-                        v.status === "rendering" ? "text-yellow-400" : ""
-                      }>{v.status === "ready" ? "Ready to publish" : v.status}</span>
+                        v.status === "rendering" ? "text-yellow-400" :
+                        v.status === "failed" ? "text-red-400" : ""
+                      }>{v.status === "ready" ? "Ready to publish" : v.status === "failed" ? "Failed" : v.status}</span>
                     </p>
                   </div>
                   {v.youtubeUrl && (

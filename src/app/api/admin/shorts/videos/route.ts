@@ -37,6 +37,7 @@ export async function GET() {
           createdAt: data.createdAt,
           completedAt: data.completedAt,
           uploadResults: data.uploadResults,
+          error: data.error,
         });
       } catch {}
     }
