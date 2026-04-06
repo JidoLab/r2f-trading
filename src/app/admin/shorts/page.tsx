@@ -15,16 +15,40 @@ interface PipelineData {
   config: { enabled: boolean };
 }
 
+interface VideoEntry {
+  slug: string;
+  title: string;
+  status: string;
+  videoUrl?: string;
+  youtubeUrl?: string;
+  copyText?: string;
+  createdAt: string;
+  completedAt?: string;
+  uploadResults?: { platform: string; status: string }[];
+}
+
 export default function AdminShortsPage() {
   const [data, setData] = useState<PipelineData | null>(null);
+  const [videos, setVideos] = useState<VideoEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [toggling, setToggling] = useState(false);
   const [generatingCal, setGeneratingCal] = useState(false);
+  const [generating, setGenerating] = useState(false);
+  const [genTopic, setGenTopic] = useState("");
+  const [genCount, setGenCount] = useState(1);
+  const [copiedIdx, setCopiedIdx] = useState<number | null>(null);
 
   async function fetchData() {
     try {
-      const res = await fetch("/api/admin/shorts/pipeline");
-      if (res.ok) setData(await res.json());
+      const [pRes, vRes] = await Promise.all([
+        fetch("/api/admin/shorts/pipeline"),
+        fetch("/api/admin/shorts/videos"),
+      ]);
+      if (pRes.ok) setData(await pRes.json());
+      if (vRes.ok) {
+        const vData = await vRes.json();
+        setVideos(vData.videos || []);
+      }
     } catch {}
     setLoading(false);
   }
@@ -55,6 +79,34 @@ export default function AdminShortsPage() {
     setGeneratingCal(false);
   }
 
+  async function generateVideos() {
+    setGenerating(true);
+    try {
+      const res = await fetch("/api/admin/shorts/generate-video", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ topic: genTopic || undefined, count: genCount }),
+      });
+      if (res.ok) {
+        const result = await res.json();
+        const count = result.results?.filter((r: { status: string }) => r.status === "rendering").length || 0;
+        alert(`${count} video${count !== 1 ? "s" : ""} started rendering! They'll appear below once complete.`);
+        setGenTopic("");
+        await fetchData();
+      } else {
+        const err = await res.json().catch(() => ({}));
+        alert(`Failed: ${err.error || "Unknown error"}`);
+      }
+    } catch { alert("Generation failed"); }
+    setGenerating(false);
+  }
+
+  function copyToClipboard(text: string, idx: number) {
+    navigator.clipboard.writeText(text);
+    setCopiedIdx(idx);
+    setTimeout(() => setCopiedIdx(null), 2000);
+  }
+
   if (loading) return <div className="text-white/50 text-sm">Loading pipeline data...</div>;
   if (!data) return <div className="text-red-400 text-sm">Failed to load pipeline data.</div>;
 
@@ -69,7 +121,7 @@ export default function AdminShortsPage() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h1 className="text-2xl font-bold text-white">Shorts Automation</h1>
-          <p className="text-white/50 text-sm mt-1">Full pipeline: AI script → voice → render → multi-platform upload</p>
+          <p className="text-white/50 text-sm mt-1">Full pipeline: AI script &rarr; voice &rarr; render &rarr; multi-platform upload</p>
         </div>
         <button
           onClick={toggleAutomation}
@@ -82,6 +134,40 @@ export default function AdminShortsPage() {
         >
           {toggling ? "..." : data.config.enabled ? "● Automation ON" : "○ Automation OFF"}
         </button>
+      </div>
+
+      {/* Generate On Demand */}
+      <div className="bg-white/5 border border-white/10 rounded-lg p-6 mb-6">
+        <h2 className="text-white font-semibold text-sm mb-4">Generate Videos</h2>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <input
+            type="text"
+            value={genTopic}
+            onChange={(e) => setGenTopic(e.target.value)}
+            placeholder="Topic (optional — AI picks if blank)"
+            className="flex-1 px-4 py-2.5 rounded-md bg-white/10 border border-white/20 text-white placeholder-white/30 text-sm focus:outline-none focus:border-gold"
+          />
+          <select
+            value={genCount}
+            onChange={(e) => setGenCount(Number(e.target.value))}
+            className="px-4 py-2.5 rounded-md bg-white/10 border border-white/20 text-white text-sm focus:outline-none focus:border-gold"
+          >
+            <option value={1}>1 video</option>
+            <option value={2}>2 videos</option>
+            <option value={3}>3 videos</option>
+            <option value={5}>5 videos</option>
+          </select>
+          <button
+            onClick={generateVideos}
+            disabled={generating}
+            className="bg-gold hover:bg-gold-light text-navy font-bold text-sm px-6 py-2.5 rounded-md transition-all disabled:opacity-50 whitespace-nowrap"
+          >
+            {generating ? "Generating..." : "Generate Now"}
+          </button>
+        </div>
+        <p className="text-white/30 text-xs mt-2">
+          Each video: AI script &rarr; ElevenLabs voice &rarr; Whisper captions &rarr; Creatomate render &rarr; auto-upload to YouTube, FB, LinkedIn. Takes ~3-5 min per video.
+        </p>
       </div>
 
       {/* Pipeline Steps */}
@@ -105,6 +191,73 @@ export default function AdminShortsPage() {
           ))}
         </div>
       </div>
+
+      {/* Recent Videos */}
+      {videos.length > 0 && (
+        <div className="bg-white/5 border border-white/10 rounded-lg p-6 mb-6">
+          <h2 className="text-white font-semibold text-sm mb-4">Recent Videos</h2>
+          <div className="space-y-3">
+            {videos.slice(0, 10).map((v, idx) => (
+              <div key={v.slug} className="border border-white/10 rounded-lg p-4 bg-white/[0.02]">
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className={`w-2 h-2 rounded-full ${
+                        v.status === "completed" ? "bg-green-400" :
+                        v.status === "rendering" ? "bg-yellow-400 animate-pulse" :
+                        "bg-red-400"
+                      }`}></span>
+                      <h3 className="text-white text-sm font-semibold truncate">{v.title}</h3>
+                    </div>
+                    <p className="text-white/30 text-xs">
+                      {new Date(v.createdAt).toLocaleDateString()} &middot; {v.status}
+                    </p>
+                  </div>
+                  {v.youtubeUrl && (
+                    <a href={v.youtubeUrl} target="_blank" rel="noopener noreferrer" className="text-xs bg-red-500/20 text-red-400 px-3 py-1.5 rounded-md hover:bg-red-500/30 transition-colors whitespace-nowrap">
+                      YouTube
+                    </a>
+                  )}
+                </div>
+
+                {/* Upload results */}
+                {v.uploadResults && (
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    {v.uploadResults.map((r) => (
+                      <span key={r.platform} className={`text-[10px] font-bold uppercase px-2 py-0.5 rounded ${
+                        r.status === "success" ? "bg-green-500/20 text-green-400" :
+                        r.status === "skipped" ? "bg-white/10 text-white/30" :
+                        "bg-red-500/20 text-red-400"
+                      }`}>
+                        {r.platform.replace("_", " ")}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {/* Manual posting actions */}
+                {v.status === "completed" && (
+                  <div className="flex flex-wrap gap-2">
+                    {v.videoUrl && (
+                      <a href={v.videoUrl} target="_blank" rel="noopener noreferrer" className="text-xs bg-white/10 text-white/70 px-3 py-1.5 rounded-md hover:bg-white/20 transition-colors">
+                        Download Video
+                      </a>
+                    )}
+                    {v.copyText && (
+                      <button
+                        onClick={() => copyToClipboard(v.copyText!, idx)}
+                        className="text-xs bg-gold/20 text-gold px-3 py-1.5 rounded-md hover:bg-gold/30 transition-colors"
+                      >
+                        {copiedIdx === idx ? "Copied!" : "Copy Caption"}
+                      </button>
+                    )}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
         {/* Content Calendar */}
@@ -196,22 +349,6 @@ export default function AdminShortsPage() {
               </div>
             </>
           )}
-        </div>
-      )}
-
-      {/* Pending Scripts */}
-      {data.pendingScripts.length > 0 && (
-        <div className="bg-white/5 border border-white/10 rounded-lg p-6 mb-6">
-          <h2 className="text-white font-semibold text-sm mb-4">Pending Scripts</h2>
-          <p className="text-white/40 text-xs mb-3">Generated scripts waiting to be rendered and uploaded.</p>
-          <div className="space-y-1">
-            {data.pendingScripts.map((slug) => (
-              <div key={slug} className="flex items-center gap-3 py-2 px-3 rounded-md bg-white/[0.03]">
-                <span className="w-2 h-2 rounded-full bg-yellow-400/60"></span>
-                <span className="text-white/70 text-xs">{slug}</span>
-              </div>
-            ))}
-          </div>
         </div>
       )}
 
