@@ -72,7 +72,7 @@ async function postToFacebook(post: PostData): Promise<SocialResult> {
   if (post.coverImage) {
     const imageUrl = `${SITE_URL}${post.coverImage}`;
     const res = await fetch(
-      `https://graph.facebook.com/v19.0/${pageId}/photos`,
+      `https://graph.facebook.com/v21.0/${pageId}/photos`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -85,7 +85,7 @@ async function postToFacebook(post: PostData): Promise<SocialResult> {
 
   // Fallback: link post without image
   const res = await fetch(
-    `https://graph.facebook.com/v19.0/${pageId}/feed`,
+    `https://graph.facebook.com/v21.0/${pageId}/feed`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -112,7 +112,7 @@ async function postToInstagram(post: PostData): Promise<SocialResult> {
 
   // Step 1: Create media container
   const createRes = await fetch(
-    `https://graph.facebook.com/v19.0/${accountId}/media`,
+    `https://graph.facebook.com/v21.0/${accountId}/media`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -129,7 +129,7 @@ async function postToInstagram(post: PostData): Promise<SocialResult> {
 
   // Step 2: Publish
   const publishRes = await fetch(
-    `https://graph.facebook.com/v19.0/${accountId}/media_publish`,
+    `https://graph.facebook.com/v21.0/${accountId}/media_publish`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },

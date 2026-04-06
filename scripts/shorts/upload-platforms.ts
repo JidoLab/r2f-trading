@@ -135,7 +135,7 @@ export async function uploadToInstagramReel(videoPath: string, script: any, slug
     const caption = `${script.title}\n\n${script.description?.slice(0, 200)}\n\n${(script.hashtags || []).join(" ")} #Shorts #Reels`;
 
     // Create media container
-    const createRes = await fetch(`https://graph.facebook.com/v19.0/${accountId}/media`, {
+    const createRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ media_type: "REELS", video_url: videoUrl, caption, access_token: token }),
@@ -145,7 +145,7 @@ export async function uploadToInstagramReel(videoPath: string, script: any, slug
 
     // Wait for processing then publish
     await new Promise((r) => setTimeout(r, 10000));
-    const publishRes = await fetch(`https://graph.facebook.com/v19.0/${accountId}/media_publish`, {
+    const publishRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media_publish`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ creation_id: containerId, access_token: token }),
@@ -164,21 +164,27 @@ export async function uploadToFacebookReel(videoPath: string, script: any) {
   const token = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
   if (!pageId || !token) return { status: "skipped", message: "No Facebook credentials" };
 
+  const API_VERSION = "v21.0";
+
   try {
     const description = `${script.title}\n\n${script.description?.slice(0, 200)}\n\n${(script.hashtags || []).join(" ")}`;
 
     // Initialize reel upload
-    const initRes = await fetch(`https://graph.facebook.com/v19.0/${pageId}/video_reels`, {
+    const initRes = await fetch(`https://graph.facebook.com/${API_VERSION}/${pageId}/video_reels`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ upload_phase: "start", access_token: token }),
     });
-    if (!initRes.ok) return { status: "error", message: `Init: ${(await initRes.text()).slice(0, 100)}` };
-    const { video_id } = await initRes.json();
+    const initBody = await initRes.text();
+    if (!initRes.ok) {
+      console.error("  FB Reel init error:", initBody);
+      return { status: "error", message: `Init: ${initBody.slice(0, 200)}` };
+    }
+    const { video_id } = JSON.parse(initBody);
 
     // Upload video data
     const videoData = fs.readFileSync(videoPath);
-    const uploadRes = await fetch(`https://rupload.facebook.com/video-upload/v19.0/${video_id}`, {
+    const uploadRes = await fetch(`https://rupload.facebook.com/video-upload/${API_VERSION}/${video_id}`, {
       method: "POST",
       headers: {
         Authorization: `OAuth ${token}`,
@@ -187,19 +193,28 @@ export async function uploadToFacebookReel(videoPath: string, script: any) {
       },
       body: videoData,
     });
-    if (!uploadRes.ok) return { status: "error", message: `Upload: ${(await uploadRes.text()).slice(0, 100)}` };
+    const uploadBody = await uploadRes.text();
+    if (!uploadRes.ok) {
+      console.error("  FB Reel upload error:", uploadBody);
+      return { status: "error", message: `Upload: ${uploadBody.slice(0, 200)}` };
+    }
 
     // Finish upload
-    const finishRes = await fetch(`https://graph.facebook.com/v19.0/${pageId}/video_reels`, {
+    const finishRes = await fetch(`https://graph.facebook.com/${API_VERSION}/${pageId}/video_reels`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ upload_phase: "finish", video_id, description, access_token: token }),
     });
-    if (!finishRes.ok) return { status: "error", message: `Finish: ${(await finishRes.text()).slice(0, 100)}` };
+    const finishBody = await finishRes.text();
+    if (!finishRes.ok) {
+      console.error("  FB Reel finish error:", finishBody);
+      return { status: "error", message: `Finish: ${finishBody.slice(0, 200)}` };
+    }
 
     return { status: "success" };
   } catch (e: any) {
-    return { status: "error", message: e.message?.slice(0, 100) };
+    console.error("  FB Reel exception:", e.message);
+    return { status: "error", message: e.message?.slice(0, 200) };
   }
 }
 
