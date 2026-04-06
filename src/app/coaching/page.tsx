@@ -38,7 +38,7 @@ const plans = [
     period: "for 4 months",
     ideal: "Serious aspiring traders who want a comprehensive, long-term roadmap to success.",
     features: [
-      "2 sessions per week for 6 months (60-90 min each)",
+      "2 sessions per week for 4 months (60-90 min each)",
       "Full resource library including proprietary strategies",
       "Psychological coaching for mindset mastery",
       "Monthly in-depth trade performance reviews",

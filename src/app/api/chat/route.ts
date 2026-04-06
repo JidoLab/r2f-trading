@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
+import { readFile, commitFile } from "@/lib/github";
 
 export const maxDuration = 30;
 
@@ -13,11 +14,12 @@ ABOUT R2F TRADING:
 COACHING PLANS:
 - Lite Plan: $150/week — 1 session/week (60-90 min), templates, action plans, Telegram/WhatsApp support
 - Pro Plan: $200/week — 2 sessions/week, live market walkthroughs, recorded sessions, advanced resources
-- Full Mentorship: $1,000/4 months — 2 sessions/week for 6 months, psychological coaching, custom trading plan, free FTMO Challenge
+- Full Mentorship: $1,000/4 months — 2 sessions/week, psychological coaching, custom trading plan, free FTMO Challenge
 
 KEY LINKS:
 - Book a free discovery call: r2ftrading.com/contact
 - View coaching plans: r2ftrading.com/coaching
+- Student results: r2ftrading.com/results
 - Read trading insights: r2ftrading.com/trading-insights
 - WhatsApp: wa.me/66935754757
 - Telegram: t.me/Road2Funded
@@ -29,11 +31,12 @@ YOUR RULES:
 - Never give specific financial advice or trading signals
 - If asked about pricing, share the plans above
 - If asked something unrelated to trading/coaching, politely redirect
-- Always end responses with a helpful next step (book a call, read an article, check coaching plans)`;
+- Always end responses with a helpful next step (book a call, read an article, check coaching plans)
+- Try to understand what the visitor is looking for and guide them toward booking a discovery call`;
 
 export async function POST(req: NextRequest) {
   try {
-    const { messages } = await req.json();
+    const { messages, sessionId } = await req.json();
 
     if (!messages || !Array.isArray(messages)) {
       return NextResponse.json({ error: "Invalid messages" }, { status: 400 });
@@ -53,8 +56,82 @@ export async function POST(req: NextRequest) {
 
     const reply = response.content[0].type === "text" ? response.content[0].text : "I couldn't process that. Try asking another question!";
 
+    // Save transcript to GitHub (fire-and-forget)
+    saveTranscript(sessionId || "unknown", messages, reply).catch(() => {});
+
     return NextResponse.json({ reply });
   } catch {
     return NextResponse.json({ reply: "I'm having trouble connecting. Please try again or message us on WhatsApp!" }, { status: 200 });
   }
+}
+
+async function saveTranscript(sessionId: string, messages: { role: string; content: string }[], latestReply: string) {
+  try {
+    const today = new Date().toISOString().split("T")[0];
+    const path = `data/chat-transcripts/${today}.json`;
+
+    let transcripts: Record<string, { messages: { role: string; content: string; timestamp: string }[]; startedAt: string; lastActive: string }> = {};
+    try {
+      transcripts = JSON.parse(await readFile(path));
+    } catch {} // File doesn't exist yet
+
+    // Get or create session
+    if (!transcripts[sessionId]) {
+      transcripts[sessionId] = {
+        messages: [],
+        startedAt: new Date().toISOString(),
+        lastActive: new Date().toISOString(),
+      };
+    }
+
+    const session = transcripts[sessionId];
+
+    // Add the latest user message + assistant reply
+    const lastUserMsg = messages[messages.length - 1];
+    if (lastUserMsg && lastUserMsg.role === "user") {
+      session.messages.push({
+        role: "user",
+        content: lastUserMsg.content,
+        timestamp: new Date().toISOString(),
+      });
+    }
+    session.messages.push({
+      role: "assistant",
+      content: latestReply,
+      timestamp: new Date().toISOString(),
+    });
+    session.lastActive = new Date().toISOString();
+
+    // Keep max 50 sessions per day file
+    const sessionKeys = Object.keys(transcripts);
+    if (sessionKeys.length > 50) {
+      delete transcripts[sessionKeys[0]];
+    }
+
+    await commitFile(path, JSON.stringify(transcripts, null, 2), `Chat: ${sessionId.slice(0, 8)}`);
+
+    // Send email notification for new conversations (first message only)
+    if (session.messages.filter(m => m.role === "user").length === 1) {
+      try {
+        const { sendEmail } = await import("@/lib/resend");
+        await sendEmail(
+          "road2funded@gmail.com",
+          `New chatbot conversation on R2F Trading`,
+          `<div style="font-family:Arial,sans-serif;max-width:600px;">
+            <h2 style="color:#0d2137;">New Chatbot Conversation</h2>
+            <p style="color:#555;">Someone just started chatting on your website.</p>
+            <div style="background:#f5f5f5;padding:16px;border-radius:8px;margin:16px 0;">
+              <p style="color:#0d2137;margin:0 0 8px;"><strong>Visitor asked:</strong></p>
+              <p style="color:#555;margin:0;">"${lastUserMsg?.content?.slice(0, 200) || "..."}"</p>
+            </div>
+            <div style="background:#f0f8ff;padding:16px;border-radius:8px;margin:16px 0;">
+              <p style="color:#0d2137;margin:0 0 8px;"><strong>AI replied:</strong></p>
+              <p style="color:#555;margin:0;">"${latestReply.slice(0, 200)}"</p>
+            </div>
+            <p style="color:#888;font-size:12px;">View all transcripts in your admin dashboard under Chat Logs.</p>
+          </div>`
+        );
+      } catch {}
+    }
+  } catch {}
 }
