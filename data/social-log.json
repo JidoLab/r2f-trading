@@ -179,5 +179,33 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-07T04:22:41.427Z",
+    "type": "text",
+    "postType": "question",
+    "text": "NFP is this Friday. Question: Do you trade INTO the news or wait for the dust to settle and hunt the",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
