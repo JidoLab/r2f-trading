@@ -182,6 +182,104 @@ export async function POST(req: NextRequest) {
       results.push({ platform: "linkedin", status: "error", error: e.message?.slice(0, 100) });
     }
 
+    // --- X/Twitter Video ---
+    try {
+      const apiKey = process.env.TWITTER_API_KEY;
+      const apiSecret = process.env.TWITTER_API_SECRET;
+      const accessToken = process.env.TWITTER_ACCESS_TOKEN;
+      const accessSecret = process.env.TWITTER_ACCESS_SECRET;
+      if (!apiKey || !apiSecret || !accessToken || !accessSecret) {
+        results.push({ platform: "twitter", status: "skipped", error: "No Twitter credentials" });
+      } else {
+        const { generateOAuthHeader } = await import("@/lib/social-auth");
+        const UPLOAD_URL = "https://upload.twitter.com/1.1/media/upload.json";
+
+        // INIT
+        const initParams = { command: "INIT", total_bytes: String(videoBuffer.length), media_type: "video/mp4", media_category: "tweet_video" };
+        const initAuth = generateOAuthHeader("POST", UPLOAD_URL, initParams, apiKey, apiSecret, accessToken, accessSecret);
+        const initRes = await fetch(UPLOAD_URL, {
+          method: "POST",
+          headers: { Authorization: initAuth, "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(initParams),
+        });
+        if (!initRes.ok) {
+          results.push({ platform: "twitter", status: "error", error: `Init: ${(await initRes.text()).slice(0, 100)}` });
+        } else {
+          const { media_id_string } = await initRes.json();
+
+          // APPEND (chunks of 5MB)
+          const CHUNK_SIZE = 5 * 1024 * 1024;
+          let appendOk = true;
+          for (let seg = 0; seg * CHUNK_SIZE < videoBuffer.length; seg++) {
+            const chunk = videoBuffer.subarray(seg * CHUNK_SIZE, (seg + 1) * CHUNK_SIZE);
+            const form = new FormData();
+            form.append("command", "APPEND");
+            form.append("media_id", media_id_string);
+            form.append("segment_index", String(seg));
+            form.append("media_data", chunk.toString("base64"));
+            const appendAuth = generateOAuthHeader("POST", UPLOAD_URL, { command: "APPEND", media_id: media_id_string, segment_index: String(seg) }, apiKey, apiSecret, accessToken, accessSecret);
+            const appendRes = await fetch(UPLOAD_URL, { method: "POST", headers: { Authorization: appendAuth }, body: form });
+            if (!appendRes.ok && appendRes.status !== 204) { appendOk = false; break; }
+          }
+
+          if (!appendOk) {
+            results.push({ platform: "twitter", status: "error", error: "Chunk upload failed" });
+          } else {
+            // FINALIZE
+            const finParams = { command: "FINALIZE", media_id: media_id_string };
+            const finAuth = generateOAuthHeader("POST", UPLOAD_URL, finParams, apiKey, apiSecret, accessToken, accessSecret);
+            const finRes = await fetch(UPLOAD_URL, {
+              method: "POST",
+              headers: { Authorization: finAuth, "Content-Type": "application/x-www-form-urlencoded" },
+              body: new URLSearchParams(finParams),
+            });
+
+            if (!finRes.ok) {
+              results.push({ platform: "twitter", status: "error", error: `Finalize: ${(await finRes.text()).slice(0, 100)}` });
+            } else {
+              const finData = await finRes.json();
+
+              // Wait for processing
+              if (finData.processing_info) {
+                let ready = false;
+                for (let i = 0; i < 30; i++) {
+                  await new Promise(r => setTimeout(r, 3000));
+                  const statusParams = { command: "STATUS", media_id: media_id_string };
+                  const statusAuth = generateOAuthHeader("GET", UPLOAD_URL, statusParams, apiKey, apiSecret, accessToken, accessSecret);
+                  const statusRes = await fetch(`${UPLOAD_URL}?${new URLSearchParams(statusParams)}`, { headers: { Authorization: statusAuth } });
+                  if (statusRes.ok) {
+                    const sd = await statusRes.json();
+                    if (sd.processing_info?.state === "succeeded") { ready = true; break; }
+                    if (sd.processing_info?.state === "failed") break;
+                  }
+                }
+                if (!ready) {
+                  results.push({ platform: "twitter", status: "error", error: "Video processing timed out" });
+                }
+              }
+
+              // Post tweet with video
+              const tweetText = `${renderData.title}\n\n${(renderData.hashtags || []).slice(0, 5).join(" ")}`;
+              const tweetAuth = generateOAuthHeader("POST", "https://api.twitter.com/2/tweets", {}, apiKey, apiSecret, accessToken, accessSecret);
+              const tweetRes = await fetch("https://api.twitter.com/2/tweets", {
+                method: "POST",
+                headers: { Authorization: tweetAuth, "Content-Type": "application/json" },
+                body: JSON.stringify({ text: tweetText, media: { media_ids: [media_id_string] } }),
+              });
+              if (tweetRes.ok) {
+                const td = await tweetRes.json();
+                results.push({ platform: "twitter", status: "success", url: `https://x.com/Road2Funded/status/${td.data?.id}` });
+              } else {
+                results.push({ platform: "twitter", status: "error", error: `Tweet: ${(await tweetRes.text()).slice(0, 100)}` });
+              }
+            }
+          }
+        }
+      }
+    } catch (e: any) {
+      results.push({ platform: "twitter", status: "error", error: e.message?.slice(0, 100) });
+    }
+
     // --- Telegram + Discord (only if YouTube succeeded) ---
     const ytUrl = results.find(r => r.platform === "youtube" && r.status === "success")?.url;
     if (ytUrl) {
