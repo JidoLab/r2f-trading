@@ -14,7 +14,23 @@
     },
     {
       "path": "/api/cron/generate-short",
-      "schedule": "0 10 * * *"
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/cron/publish-short",
+      "schedule": "0 5 * * *"
+    },
+    {
+      "path": "/api/cron/publish-short",
+      "schedule": "0 9 * * *"
+    },
+    {
+      "path": "/api/cron/publish-short",
+      "schedule": "0 13 * * *"
+    },
+    {
+      "path": "/api/cron/publish-short",
+      "schedule": "0 17 * * *"
     },
     {
       "path": "/api/cron/send-newsletter",

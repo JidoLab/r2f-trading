@@ -5,8 +5,8 @@ export const maxDuration = 300; // 5 minutes for multiple videos
 
 /**
  * Daily Automated Shorts Cron — generates 4 videos per run
- * Calls the generate-video API internally with autoPublish: true
- * so videos are automatically uploaded to all platforms after rendering.
+ * Videos are saved as "ready" (not auto-published).
+ * A separate publish cron (publish-short) runs 4x/day to publish one at a time.
  */
 export async function GET(req: NextRequest) {
   const authHeader = req.headers.get("authorization");
@@ -50,7 +50,7 @@ export async function GET(req: NextRequest) {
 
     for (let i = 0; i < 4; i++) {
       try {
-        const result = await generateSingleShort(topics[i], true); // autoPublish = true
+        const result = await generateSingleShort(topics[i], false); // ready, not auto-publish
         results.push({ title: result.title, status: result.status });
       } catch (err: unknown) {
         results.push({ title: "", status: `error: ${err instanceof Error ? err.message : "unknown"}` });
