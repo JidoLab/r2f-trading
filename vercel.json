@@ -21,6 +21,14 @@
       "schedule": "0 10 * * 1"
     },
     {
+      "path": "/api/cron/social-post",
+      "schedule": "0 4 * * *"
+    },
+    {
+      "path": "/api/cron/social-post",
+      "schedule": "0 12 * * *"
+    },
+    {
       "path": "/api/cron/send-daily-report",
       "schedule": "0 14 * * *"
     },
