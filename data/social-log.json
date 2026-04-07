@@ -252,5 +252,33 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-07T12:58:13.333Z",
+    "type": "text",
+    "postType": "poll",
+    "text": "NFP drops Friday... What's your biggest challenge trading high-impact news? 🅰️ Getting stopped out ",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
