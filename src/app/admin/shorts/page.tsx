@@ -309,7 +309,7 @@ export default function AdminShortsPage() {
                       )}
                     </div>
                     <p className="text-white/30 text-xs">
-                      {new Date(v.createdAt).toLocaleDateString()} &middot;{" "}
+                      {new Date(v.createdAt).toLocaleString("en-GB", { timeZone: "Asia/Bangkok", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })} &middot;{" "}
                       <span className={
                         v.status === "published" ? "text-green-400" :
                         v.status === "ready" ? "text-blue-400" :

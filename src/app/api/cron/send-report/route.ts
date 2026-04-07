@@ -92,6 +92,54 @@ export async function GET(req: NextRequest) {
 
     await sendEmail(OWNER_EMAIL, `📈 R2F Weekly Report: ${newPosts.length} posts, ${newSubscribers} new subscribers`, html);
 
+    // Also send via Telegram
+    try {
+      const { sendTelegramReport, thaiDate } = await import("@/lib/telegram-report");
+
+      // Get additional stats for Telegram
+      let hotLeads = 0, warmLeads = 0, shortsCount = 0;
+      try {
+        const subsRaw = await readFile("data/subscribers.json");
+        const subs = JSON.parse(subsRaw);
+        hotLeads = subs.filter((s: { segment?: string }) => s.segment === "hot").length;
+        warmLeads = subs.filter((s: { segment?: string }) => s.segment === "warm").length;
+      } catch {}
+      try {
+        const { listFiles } = await import("@/lib/github");
+        const renderFiles = await listFiles("data/shorts/renders");
+        for (const file of renderFiles) {
+          if (!file.endsWith(".json")) continue;
+          try {
+            const raw = await readFile(file);
+            const data = JSON.parse(raw);
+            if (data.createdAt >= oneWeekAgo && data.status === "published") shortsCount++;
+          } catch {}
+        }
+      } catch {}
+
+      const tgReport = `📈 *R2F Weekly Report — ${thaiDate()}*
+
+📝 *Content This Week*
+• Blog posts: *${newPosts.length}*
+• Shorts published: *${shortsCount}*
+• Social posts: *${socialPosts}* (${socialSuccesses} successful)
+
+👥 *Audience*
+• New subscribers: *${newSubscribers}* (total: ${totalSubscribers})
+• Hot leads: *${hotLeads}* 🔥
+• Warm leads: *${warmLeads}*
+
+📊 *Totals*
+• Total blog posts: *${posts.length}*
+• Total subscribers: *${totalSubscribers}*
+
+${newPosts.length > 0 ? `📰 *Top Posts:*\n${newPosts.slice(0, 5).map(p => `• [${p.title}](https://r2ftrading.com/trading-insights/${p.slug})`).join("\n")}` : ""}
+
+🔗 [Open Dashboard](https://r2ftrading.com/admin-login)`;
+
+      await sendTelegramReport(tgReport);
+    } catch {}
+
     return NextResponse.json({ sent: true, posts: newPosts.length, subscribers: totalSubscribers, newSubscribers });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Report failed";

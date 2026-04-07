@@ -21,6 +21,10 @@
       "schedule": "0 10 * * 1"
     },
     {
+      "path": "/api/cron/send-daily-report",
+      "schedule": "0 14 * * *"
+    },
+    {
       "path": "/api/cron/send-report",
       "schedule": "0 7 * * 1"
     },
