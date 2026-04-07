@@ -78,7 +78,7 @@ export async function GET(req: NextRequest) {
           const idx = subscribers.findIndex((s: Record<string, unknown>) => s.email === evt.email);
           if (idx >= 0) {
             const sub = normalizeSubscriber(subscribers[idx]);
-            subscribers[idx] = addEventToSubscriber(sub, evt.event);
+            subscribers[idx] = addEventToSubscriber(sub, evt.event) as unknown as Record<string, unknown>;
           }
         }
         await commitFile("data/events-queue.json", "[]", "Process events queue").catch(() => {});
@@ -122,7 +122,7 @@ export async function GET(req: NextRequest) {
       }
 
       // Always write back the normalized subscriber (backward compat upgrade)
-      subscribers[i] = sub;
+      subscribers[i] = sub as unknown as Record<string, unknown>;
       if (!sent && !sub.score) continue; // No changes needed
       updated = true;
     }
