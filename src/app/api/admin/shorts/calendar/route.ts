@@ -21,9 +21,11 @@ export async function POST(req: NextRequest) {
   if (!isAdmin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   try {
+    const body = await req.json().catch(() => ({}));
+    const days = body.days || 90;
     const { generateContentCalendar } = await import("@/lib/content-calendar");
-    await generateContentCalendar(30);
-    return NextResponse.json({ success: true, message: "30-day calendar generated" });
+    await generateContentCalendar(days);
+    return NextResponse.json({ success: true, message: `${days}-day calendar generated` });
   } catch (err: unknown) {
     return NextResponse.json({ error: err instanceof Error ? err.message : "Failed" }, { status: 500 });
   }

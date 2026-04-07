@@ -92,9 +92,15 @@ Return ONLY a JSON object: { "topic": "...", "category": "...", "postType": "...
 AUTHOR: Harvest Wright — sole mentor, 10+ years ICT trading experience, TradingView Editors' Pick, Top 1% in competitions, FTMO Challenge passer.
 TOPIC: "${topicData.topic}" | CATEGORY: ${topicData.category} | POST TYPE: ${topicData.postType || "how-to"} | ANGLE: ${topicData.angle} | KEYWORD: "${topicData.targetKeyword}" | DATE: ${date}
 COACHING: Lite $150/week, Pro $200/week, Full Mentorship $1,000/4 months.
-INTERNAL LINKS: [coaching plans](/coaching), [book a free discovery call](/contact), [trading insights](/trading-insights)
+INTERNAL LINKS (use 2-4 of these naturally within the article body):
+- [coaching plans](/coaching) — link when mentioning mentorship/coaching
+- [book a free discovery call](/contact) — link when suggesting next steps
+- [trading insights](/trading-insights) — link when referencing more content
+- [student results](/results) — link when mentioning student outcomes
+${existingTitles.length > 0 ? `- RELATED POSTS (link to 2-3 relevant ones naturally in the body):\n${existingTitles.slice(0, 15).map(t => `  - [${t.replace(/^\d{4}-\d{2}-\d{2}-/, "").replace(/-/g, " ")}](/trading-insights/${t})`).join("\n")}` : ""}
 Write 1200-1800 words, first person as Harvest. Structure to match the POST TYPE format.
 SEO CRITICAL: Target keyword MUST appear in first paragraph, first ## header, and 3-5 times naturally in body.
+INTERNAL LINKING: Include 2-3 links to the related posts above where they naturally fit in context. This helps SEO.
 Include 1-2 EXTERNAL LINKS to authoritative sources (TradingView, Investopedia, BabyPips, CME Group).
 IMAGE alt text must be keyword-rich and descriptive, not generic.
 Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDescription": "...", "seoKeywords": [...], "tags": [...], "postType": "...", "body": "...", "imagePrompts": ["...", "..."] }`,

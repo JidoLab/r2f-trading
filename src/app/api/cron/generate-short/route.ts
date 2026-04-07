@@ -39,16 +39,17 @@ export async function GET(req: NextRequest) {
       }
     } catch {}
 
-    // Pad to 4 topics (undefined = AI picks)
-    while (topics.length < 4) topics.push(undefined);
+    // Pad to 3 topics (undefined = AI picks)
+    while (topics.length < 3) topics.push(undefined);
+    topics.splice(3); // max 3
 
-    // Generate 4 videos sequentially (each takes ~1-2 min for script + voice + render trigger)
+    // Generate 3 videos sequentially (each takes ~1-2 min for script + voice + render trigger)
     const results: { title: string; status: string }[] = [];
 
     // Import the generate function directly to avoid HTTP overhead
     const { generateSingleShort } = await import("@/app/api/admin/shorts/generate-video/route");
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 3; i++) {
       try {
         const result = await generateSingleShort(topics[i], false); // ready, not auto-publish
         results.push({ title: result.title, status: result.status });
