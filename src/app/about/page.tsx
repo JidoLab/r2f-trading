@@ -1,5 +1,17 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Harvest Wright",
+  description: "Meet Harvest Wright — ICT trading coach with 10+ years experience, TradingView Editors' Pick winner, FTMO Challenge passer, and top 1% competitor.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About Harvest Wright — R2F Trading",
+    description: "10+ years of ICT trading experience. TradingView Editors' Pick, top 1% competitor, FTMO funded.",
+    url: "/about",
+  },
+};
 
 const faqs = [
   {

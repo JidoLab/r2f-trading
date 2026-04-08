@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/about`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/coaching`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/contact`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/results`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/free-class`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/trading-insights`, lastModified: new Date().toISOString(), changeFrequency: "daily", priority: 0.8 },
     { url: `${BASE_URL}/privacy`, lastModified: new Date().toISOString(), changeFrequency: "yearly", priority: 0.3 },
     ...blogEntries,

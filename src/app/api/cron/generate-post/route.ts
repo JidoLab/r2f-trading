@@ -69,10 +69,25 @@ export async function GET(req: NextRequest) {
 TODAY: ${dayOfWeek}, ${month}
 EXISTING POSTS (avoid repeats): ${existingTitles.slice(0, 20).join(", ") || "None"}
 ${marketContext}
-Generate ONE fresh blog topic. PRIORITIZE timely/trending topics when available — they get 3-5x more search traffic. If there's an upcoming economic event (NFP, CPI, FOMC), write about how to trade it with ICT concepts.
+
+Generate ONE fresh blog topic.
+
+CRITICAL RULES:
+1. TITLE MUST be under 60 characters. Short, punchy, curiosity-driven. Examples: "Why Your FVGs Keep Failing", "The 1% Rule That Changed Everything", "ICT Killzones: A Complete Guide", "5 Signs You're Overtrading"
+2. DO NOT write another CPI, NFP, or FOMC article if one already exists in the list above. Economic events are fine occasionally (max 1 per week) but DIVERSIFY topics.
+3. Market context below is for INSPIRATION only, not a mandate. Most posts should be EVERGREEN educational content.
+
+TOPIC DIVERSITY — rotate through these categories evenly:
+- ICT Concepts (order blocks, FVGs, liquidity, killzones, breaker blocks, OTE)
+- Trading Psychology (mindset, discipline, fear, greed, revenge trading)
+- Risk Management (position sizing, drawdown, risk-reward, account protection)
+- Funded Accounts (prop firm tips, challenge strategies, payout stories)
+- Beginner Guides (getting started, platform setup, terminology)
+- Market Analysis (specific pair/asset analysis, session breakdowns)
+- Personal Stories (lessons learned, failures, breakthroughs)
 
 POST TYPES — cycle through these (pick one NOT recently used):
-how-to, listicle, case-study, comparison, faq, roundup, personal-story, trends, checklist
+how-to, listicle, case-study, comparison, faq, personal-story, checklist, myth-buster
 
 Return ONLY a JSON object: { "topic": "...", "category": "...", "postType": "...", "angle": "...", "targetKeyword": "..." }`,
       }],
@@ -99,6 +114,7 @@ INTERNAL LINKS (use 2-4 of these naturally within the article body):
 - [student results](/results) — link when mentioning student outcomes
 ${existingTitles.length > 0 ? `- RELATED POSTS (link to 2-3 relevant ones naturally in the body):\n${existingTitles.slice(0, 15).map(t => `  - [${t.replace(/^\d{4}-\d{2}-\d{2}-/, "").replace(/-/g, " ")}](/trading-insights/${t})`).join("\n")}` : ""}
 Write 1200-1800 words, first person as Harvest. Structure to match the POST TYPE format.
+TITLE RULES: The "title" field MUST be under 60 characters. Short and punchy. Do NOT stuff keywords. The "seoTitle" can be slightly longer (max 70 chars) and more keyword-rich.
 SEO CRITICAL: Target keyword MUST appear in first paragraph, first ## header, and 3-5 times naturally in body.
 INTERNAL LINKING: Include 2-3 links to the related posts above where they naturally fit in context. This helps SEO.
 Include 1-2 EXTERNAL LINKS to authoritative sources (TradingView, Investopedia, BabyPips, CME Group).

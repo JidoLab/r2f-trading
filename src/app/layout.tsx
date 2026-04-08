@@ -45,17 +45,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "R2F Trading",
-    title: "R2F Trading — Professional ICT Coaching & Mentorship",
-    description: "Charting the path to financial freedom. Professional ICT coaching with personalized mentorship for traders at all levels.",
-    url: "https://www.r2ftrading.com",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "R2F Trading — Professional ICT Coaching & Mentorship" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "R2F Trading — Professional ICT Coaching",
-    description: "Charting the path to financial freedom with personalized ICT trading mentorship.",
+    images: ["/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://www.r2ftrading.com",
     types: {
       "application/rss+xml": "/feed.xml",
     },

@@ -5,12 +5,13 @@ import PageTracker from "@/components/PageTracker";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free ICT Trading Class | R2F Trading",
+  title: "Free ICT Trading Class",
   description: "Join our free live trading class and learn the ICT concepts that helped students get funded in under 60 days. Limited spots available.",
+  alternates: { canonical: "/free-class" },
   openGraph: {
     title: "Free ICT Trading Class — R2F Trading",
     description: "Learn the exact ICT framework used by funded traders. Free live class with Harvest Wright.",
-    type: "website",
+    url: "/free-class",
   },
 };
 

@@ -2,6 +2,18 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageTracker from "@/components/PageTracker";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ICT Trading Coaching Plans",
+  description: "1-on-1 ICT trading coaching with Harvest Wright. Lite ($150/wk), Pro ($200/wk), or Full Mentorship ($1,000/4mo). Get funded faster with personalized guidance.",
+  alternates: { canonical: "/coaching" },
+  openGraph: {
+    title: "ICT Trading Coaching Plans — R2F Trading",
+    description: "Personalized 1-on-1 ICT trading mentorship. Lite, Pro, and Full Mentorship plans available.",
+    url: "/coaching",
+  },
+};
 
 const plans = [
   {

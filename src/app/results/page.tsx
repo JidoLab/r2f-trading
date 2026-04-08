@@ -5,8 +5,14 @@ import PageTracker from "@/components/PageTracker";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Student Results | R2F Trading",
+  title: "Student Results & Testimonials",
   description: "Real results from real traders. See how R2F Trading coaching has helped traders get funded, build consistency, and transform their trading careers.",
+  alternates: { canonical: "/results" },
+  openGraph: {
+    title: "Student Results — R2F Trading",
+    description: "See real trading results and testimonials from R2F Trading students.",
+    url: "/results",
+  },
 };
 
 const testimonials = [

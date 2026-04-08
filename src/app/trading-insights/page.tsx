@@ -2,6 +2,18 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Trading Insights & ICT Education",
+  description: "Free ICT trading articles, market analysis, and educational content. Learn order blocks, fair value gaps, liquidity sweeps, and prop firm strategies.",
+  alternates: { canonical: "/trading-insights" },
+  openGraph: {
+    title: "Trading Insights — R2F Trading",
+    description: "Free ICT trading education, market analysis, and strategies for funded traders.",
+    url: "/trading-insights",
+  },
+};
 
 export default function TradingInsightsPage() {
   const posts = getAllPosts();

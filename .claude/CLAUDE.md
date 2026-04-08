@@ -1,0 +1,79 @@
+# R2F Trading — Project Memory
+
+## Owner
+Harvest Wright (wrightharvest@gmail.com) — ICT trading coach, based in Thailand (Bangkok timezone)
+
+## What This Is
+Fully automated digital trading coaching business at r2ftrading.com. Built with Next.js on Vercel, using GitHub API for all data storage (Vercel filesystem is read-only).
+
+## Tech Stack
+- **Framework**: Next.js (App Router) + TypeScript + Tailwind CSS
+- **Hosting**: Vercel (Hobby plan)
+- **Storage**: GitHub API (JidoLab/r2f-trading repo) — all writes go through src/lib/github.ts
+- **AI**: Anthropic Claude (content), Google Gemini (images), ElevenLabs (voice), OpenAI Whisper (captions)
+- **Video**: Creatomate (rendering), Pexels (stock clips)
+- **Email**: Resend (marketing + drips)
+- **Payments**: PayPal (wrightharvest@gmail.com) — no Stripe
+
+## Daily Automation Schedule (all times UTC, Bangkok = UTC+7)
+- 0200 UTC (9AM BKK): Generate 3 short videos
+- 0400 UTC (11AM BKK): Text social post #1
+- 0500 UTC (12PM BKK): Publish short #1
+- 0600 UTC (1PM BKK): Blog post #1
+- 1100 UTC (6PM BKK): Publish short #2
+- 1200 UTC (7PM BKK): Text social post #2
+- 1400 UTC (9PM BKK): Daily report to Telegram
+- 1600 UTC (11PM BKK): Blog post #2
+- 1700 UTC (12AM BKK): Publish short #3
+
+## Coaching Plans
+- Lite: $150/week (1 session/week)
+- Pro: $200/week (2 sessions/week)
+- Full Mentorship: $1,000/4 months (2 sessions/week + FTMO challenge)
+
+## Key Pages
+- / — Homepage
+- /trading-insights — Blog (NOT /blog — /blog redirects here)
+- /coaching — Plans & pricing
+- /contact — Calendly booking
+- /results — Testimonials
+- /free-class — Lead magnet landing page
+- /thank-you — Post-signup with Calendly embed
+- /admin — Dashboard (password protected)
+
+## Social Platforms
+Working: Twitter/X, LinkedIn, Reddit, Telegram, Discord, YouTube, Facebook
+Manual only: TikTok, Instagram (no API — use copy caption + download video)
+
+## Lead Magnet
+PDF exists at public/downloads/ict-trading-checklist.pdf — already integrated into email signup flow
+
+## Known Recurring Issues
+- Facebook Page Access Token expires every ~60 days — refresh via Graph Explorer
+- LinkedIn Access Token expires every ~60 days — re-auth via OAuth
+- Blog titles tend to be too long if not constrained — prompt enforces <60 chars
+- Blog topics drift toward CPI/NFP if market context is strong — prompt now diversifies
+- Shorts calendar topics must be marked as `used: true` or they repeat
+
+## Important Architecture Decisions
+- All writes go through GitHub API (not filesystem)
+- Videos generate as "ready", publish via separate staggered cron
+- Lead scoring stored in data/subscribers.json on GitHub
+- Drip emails are segment-based (cold/warm/hot)
+- Content calendar generates in 30-day chunks up to 90 days
+
+## Environment Variables (all set on Vercel)
+ANTHROPIC_API_KEY, GEMINI_API_KEY, GITHUB_TOKEN, GITHUB_REPO, CRON_SECRET,
+RESEND_API_KEY, RESEND_AUDIENCE_ID, INDEXNOW_KEY,
+TWITTER_API_KEY/SECRET, TWITTER_ACCESS_TOKEN/SECRET,
+FACEBOOK_PAGE_ID, FACEBOOK_PAGE_ACCESS_TOKEN,
+LINKEDIN_ACCESS_TOKEN, LINKEDIN_PERSON_URN,
+REDDIT_CLIENT_ID/SECRET, REDDIT_REFRESH_TOKEN, REDDIT_SUBREDDIT, REDDIT_USERNAME,
+TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, TELEGRAM_OWNER_CHAT_ID,
+DISCORD_WEBHOOK_URL, PINTEREST_ACCESS_TOKEN, PINTEREST_BOARD_ID,
+YOUTUBE_CLIENT_ID/SECRET/REFRESH_TOKEN,
+OPENAI_API_KEY, ELEVENLABS_API_KEY, ELEVENLABS_VOICE_ID,
+CREATOMATE_API_KEY, PEXELS_API_KEY, ADMIN_PASSWORD
+
+## Framework Document
+Full reusable automation framework at: C:\Users\User\Desktop\AI Business Automation Framework.md

@@ -2,6 +2,18 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CalendlyEmbed from "@/components/CalendlyEmbed";
 import PageTracker from "@/components/PageTracker";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Book a Free Discovery Call",
+  description: "Schedule a free discovery call with Harvest Wright to discuss your trading goals. No commitment — just a conversation about how ICT coaching can help you get funded.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Book a Free Discovery Call — R2F Trading",
+    description: "Schedule a free call to discuss your trading goals and how ICT coaching can help.",
+    url: "/contact",
+  },
+};
 
 export default function ContactPage() {
   return (
