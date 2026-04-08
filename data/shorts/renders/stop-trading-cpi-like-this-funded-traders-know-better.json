@@ -19,10 +19,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-08T02:17:19.291Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://f002.backblazeb2.com/file/creatomate-c8xg3hsxdu/21aaa532-3ff5-4ced-aad8-cc572e0aad6b.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/k2xegnt52do",
   "copyText": "Stop Trading CPI Like This (Funded Traders Know Better)\n\nCPI releases create massive volatility but most traders position wrong. Here's what funded traders do instead during high-impact news events.\n\n#ICTTrading #CPITrading #FundedTrader #SmartMoneyConcepts #TradingTips #ForexTrading #NewsTrading #R2FTrading",
-  "uploadResults": [],
-  "completedAt": "2026-04-08T02:17:28.278Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/k2xegnt52do"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-08T02:17:28.278Z",
+  "publishedAt": "2026-04-08T05:12:01.589Z"
 }
