@@ -325,5 +325,33 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-08T04:24:24.193Z",
+    "type": "text",
+    "postType": "hot-take",
+    "text": "Hot take: Most traders obsessing over order blocks are just drawing rectangles on hindsight charts. ",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
