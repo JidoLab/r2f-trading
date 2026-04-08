@@ -398,5 +398,33 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-08T12:51:17.804Z",
+    "type": "text",
+    "postType": "quote",
+    "text": "\"The market doesn't care about your analysis when CPI drops tomorrow. It cares about liquidity grabs",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
