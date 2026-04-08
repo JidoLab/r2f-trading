@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageTracker from "@/components/PageTracker";
+import PayPalButton from "@/components/PayPalButton";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -20,6 +21,8 @@ const plans = [
     name: "Lite Coaching",
     price: "$150",
     period: "per week / $600 per month",
+    paypalAmount: "600.00",
+    paypalDesc: "Lite Coaching — 1 month (4 weekly sessions)",
     ideal: "Beginners or traders who want focused guidance with less frequent interaction.",
     features: [
       "1 Weekly Coaching Session (60-90 min)",
@@ -33,6 +36,8 @@ const plans = [
     name: "Pro Coaching",
     price: "$200",
     period: "per week / $800 per month",
+    paypalAmount: "800.00",
+    paypalDesc: "Pro Coaching — 1 month (8 weekly sessions)",
     ideal: "Traders who want regular and intensive coaching for faster progress.",
     features: [
       "2 Weekly Coaching Sessions (60-90 min each)",
@@ -48,6 +53,8 @@ const plans = [
     name: "Full Mentorship",
     price: "$1,000",
     period: "for 4 months",
+    paypalAmount: "1000.00",
+    paypalDesc: "Full Mentorship — 4 months complete program",
     ideal: "Serious aspiring traders who want a comprehensive, long-term roadmap to success.",
     features: [
       "2 sessions per week for 4 months (60-90 min each)",
@@ -146,8 +153,14 @@ export default function CoachingPage() {
                       : "bg-navy hover:bg-navy-light text-white"
                   }`}
                 >
-                  Get Started
+                  Book Free Discovery Call
                 </Link>
+                <PayPalButton
+                  planName={plan.name}
+                  amount={plan.paypalAmount}
+                  description={plan.paypalDesc}
+                  highlight={plan.highlight}
+                />
               </div>
             ))}
           </div>
