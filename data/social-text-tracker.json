@@ -2,11 +2,12 @@
   "recentTypes": [
     "question",
     "poll",
-    "hot-take"
+    "hot-take",
+    "quote"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Hot take: Most traders obsessing over order blocks are just drawing rectangles on hindsight charts. Real smart money doesn't leave perfect textbook setups for retail to find. The best ICT concepts are the ones nobody's posting screenshots of. #ICTtrading #orderblocks #smartmoney",
-    "date": "2026-04-08T04:24:23.494Z"
+    "type": "quote",
+    "text": "\"The market doesn't care about your analysis when CPI drops tomorrow. It cares about liquidity grabs and order blocks.\" — Smart money moves before the news, retail reacts after. #ICTtrading #CPI #smartmoneyconcepts",
+    "date": "2026-04-08T12:51:17.023Z"
   }
 }
