@@ -1,11 +1,12 @@
 {
   "recentTypes": [
     "question",
-    "poll"
+    "poll",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "NFP drops Friday... What's your biggest challenge trading high-impact news? 🅰️ Getting stopped out by the liquidity sweep 🅱️ Missing the real move after the initial spike 🅲️ Overleverage because of FOMO 🅳️ Taking profits too early #NFP #ICTtrading #SmartMoney",
-    "date": "2026-04-07T12:58:12.608Z"
+    "type": "hot-take",
+    "text": "Hot take: Most traders obsessing over order blocks are just drawing rectangles on hindsight charts. Real smart money doesn't leave perfect textbook setups for retail to find. The best ICT concepts are the ones nobody's posting screenshots of. #ICTtrading #orderblocks #smartmoney",
+    "date": "2026-04-08T04:24:23.494Z"
   }
 }
