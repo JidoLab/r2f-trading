@@ -18,10 +18,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-09T02:58:32.390Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://f002.backblazeb2.com/file/creatomate-c8xg3hsxdu/f652c9b0-c23f-4f3b-8e0d-dc7c5588ba57.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/Xcq8GWEpNF8",
   "copyText": "6 months of CPI losses. Then I changed ONE thing.\n\nPOV: You've been losing money trading CPI releases for months. Then you discover this ONE smart money concept that changes everything. The CPI is dropping tomorrow - are you ready?\n\n#ICTTrading #CPI #SmartMoneyConcepts #OrderBlocks #ForexTrading #TradingTips #R2FTrading",
-  "uploadResults": [],
-  "completedAt": "2026-04-09T02:58:43.931Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/Xcq8GWEpNF8"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-09T02:58:43.931Z",
+  "publishedAt": "2026-04-09T17:15:09.614Z"
 }
