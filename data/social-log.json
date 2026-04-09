@@ -544,5 +544,33 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-09T12:31:54.162Z",
+    "type": "text",
+    "postType": "myth",
+    "text": "MYTH: You need to trade every fair value gap you see. TRUTH: Smart money leaves fake FVGs as traps. ",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
