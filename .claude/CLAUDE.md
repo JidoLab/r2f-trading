@@ -63,6 +63,10 @@ PDF exists at public/downloads/ict-trading-checklist.pdf — already integrated 
 - Batch blog generation with 8 diverse topics (/api/admin/batch-generate)
 - Payments dashboard (/admin/payments)
 - Chatbot with objection handling + conversion triggers
+- Dynamic SEO landing pages (/learn/[slug]) with admin management
+- Testimonial collection system (/review) with admin approval (/admin/reviews)
+- Daily voice market brief (/market-brief) with podcast RSS feed
+- Auto review request emails 14 days after payment
 
 ## Known Recurring Issues
 - Facebook Page Access Token expires every ~60 days — refresh via Graph Explorer or /api/admin/facebook-token
