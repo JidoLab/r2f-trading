@@ -14,6 +14,16 @@
   {
     "email": "eirini.ploumidi94@gmail.com",
     "date": "2026-04-09T14:10:09.622Z",
-    "dripsSent": 0
+    "dripsSent": 0,
+    "score": 15,
+    "segment": "cold",
+    "events": [
+      {
+        "type": "coaching_page_view",
+        "date": "2026-04-09T14:12:15.297Z"
+      }
+    ],
+    "lastActivity": "2026-04-09T14:12:15.297Z",
+    "dripsHistory": []
   }
 ]
