@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -113,9 +114,29 @@ const faqs = [
   },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.flatMap((section) =>
+    section.items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    }))
+  ),
+};
+
 export default function AboutPage() {
   return (
     <main>
+      <Script
+        id="json-ld-about"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
 
       <section className="py-16 md:py-24 bg-white">

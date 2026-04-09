@@ -191,7 +191,18 @@ ${body}
       console.error("[cron] Social posting error:", err);
     }
 
-    return NextResponse.json({ success: true, title: article.title, slug, socialResults });
+    // Auto-post Twitter/X thread — wrapped in try/catch so it doesn't break blog generation
+    let threadResult = null;
+    try {
+      const { generateThread, postThread } = await import("@/lib/twitter-threads");
+      const tweets = await generateThread(article.title, body, slug);
+      threadResult = await postThread(tweets);
+      console.log("[cron] Thread result:", JSON.stringify(threadResult));
+    } catch (err) {
+      console.error("[cron] Thread posting error:", err);
+    }
+
+    return NextResponse.json({ success: true, title: article.title, slug, socialResults, threadResult });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Generation failed";
     return NextResponse.json({ error: msg }, { status: 500 });

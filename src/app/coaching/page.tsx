@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import PageTracker from "@/components/PageTracker";
 import PayPalButton from "@/components/PayPalButton";
 import Link from "next/link";
+import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -70,9 +71,58 @@ const plans = [
   },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "Trading Coaching",
+  name: "R2F Trading Coaching",
+  description:
+    "Personalized 1-on-1 ICT trading mentorship to help traders master skills and achieve consistent profitability.",
+  provider: {
+    "@type": "Organization",
+    name: "R2F Trading",
+    url: "https://r2ftrading.com",
+  },
+  areaServed: "Worldwide",
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Lite Coaching",
+      price: "150",
+      priceCurrency: "USD",
+      unitText: "per week",
+      description:
+        "1 weekly coaching session (60-90 min) with basic trading templates and weekly action plans.",
+    },
+    {
+      "@type": "Offer",
+      name: "Pro Coaching",
+      price: "200",
+      priceCurrency: "USD",
+      unitText: "per week",
+      description:
+        "2 weekly coaching sessions (60-90 min each) with advanced templates, live market walkthroughs, and recorded sessions.",
+    },
+    {
+      "@type": "Offer",
+      name: "Full Mentorship",
+      price: "1000",
+      priceCurrency: "USD",
+      unitText: "4 months",
+      description:
+        "Comprehensive 4-month program with 2 sessions per week, full resource library, psychological coaching, and complimentary FTMO Challenge.",
+    },
+  ],
+};
+
 export default function CoachingPage() {
   return (
     <main>
+      <Script
+        id="json-ld-coaching"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <PageTracker event="coaching_page_view" />
 

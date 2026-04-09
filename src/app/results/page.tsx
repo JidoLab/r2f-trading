@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CalendlyEmbed from "@/components/CalendlyEmbed";
 import PageTracker from "@/components/PageTracker";
+import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -55,9 +56,42 @@ const stats = [
   { value: "47", label: "Days to Funded (Fastest)" },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "R2F Trading",
+  url: "https://r2ftrading.com",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: String(testimonials.length),
+    bestRating: "5",
+    worstRating: "1",
+  },
+  review: testimonials.map((t) => ({
+    "@type": "Review",
+    author: {
+      "@type": "Person",
+      name: t.name,
+    },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: "5",
+      bestRating: "5",
+    },
+    name: t.heading,
+    reviewBody: t.quote,
+  })),
+};
+
 export default function ResultsPage() {
   return (
     <main>
+      <Script
+        id="json-ld-results"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <PageTracker event="results_page_view" />
 

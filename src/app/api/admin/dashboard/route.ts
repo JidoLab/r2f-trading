@@ -59,11 +59,35 @@ export async function GET() {
     socialThisWeek = log.filter((l: { date: string }) => l.date >= weekAgo).length;
   } catch {}
 
+  // Payments
+  let totalPayments = 0, totalRevenue = 0, paymentsThisMonth = 0;
+  let recentPayments: { plan: string; amount: string; date: string }[] = [];
+  try {
+    const raw = await readFile("data/payments.json");
+    const payments = JSON.parse(raw);
+    totalPayments = payments.length;
+    const thisMonth = new Date().toISOString().slice(0, 7); // YYYY-MM
+    for (const p of payments) {
+      const amt = parseFloat(String(p.amount).replace(/[^0-9.]/g, "")) || 0;
+      totalRevenue += amt;
+      if (p.date && p.date.startsWith(thisMonth)) paymentsThisMonth++;
+    }
+    recentPayments = payments
+      .sort((a: { date: string }, b: { date: string }) => (b.date || "").localeCompare(a.date || ""))
+      .slice(0, 5)
+      .map((p: { plan?: string; amount?: string; date?: string }) => ({
+        plan: p.plan || "Unknown",
+        amount: p.amount || "$0",
+        date: p.date || "",
+      }));
+  } catch {}
+
   return NextResponse.json({
     posts: { total: posts.length, today: todayPosts, latest: posts[0] ? { title: posts[0].title, slug: posts[0].slug, date: posts[0].date } : null },
     subscribers: { total: totalSubs, newToday: newSubsToday, hot: hotLeads, warm: warmLeads },
     shorts: { ready: shortsReady, published: shortsPublished, rendering: shortsRendering },
     chatsToday,
     socialThisWeek,
+    payments: { total: totalPayments, revenue: totalRevenue, thisMonth: paymentsThisMonth, recent: recentPayments },
   });
 }

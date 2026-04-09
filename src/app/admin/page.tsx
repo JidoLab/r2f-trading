@@ -9,17 +9,24 @@ interface DashboardData {
   shorts: { ready: number; published: number; rendering: number };
   chatsToday: number;
   socialThisWeek: number;
+  payments: { total: number; revenue: number; thisMonth: number; recent: { plan: string; amount: string; date: string }[] };
 }
 
 export default function AdminDashboard() {
   const [data, setData] = useState<DashboardData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [health, setHealth] = useState<"green" | "yellow" | "red">("green");
 
   useEffect(() => {
     fetch("/api/admin/dashboard")
       .then(r => r.ok ? r.json() : null)
       .then(d => { setData(d); setLoading(false); })
       .catch(() => setLoading(false));
+
+    fetch("/api/admin/health")
+      .then(r => r.ok ? r.json() : { status: "red" })
+      .then(d => setHealth(d.status || "green"))
+      .catch(() => setHealth("red"));
   }, []);
 
   const now = new Date().toLocaleString("en-GB", { timeZone: "Asia/Bangkok", weekday: "long", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
@@ -29,9 +36,17 @@ export default function AdminDashboard() {
   return (
     <div>
       <div className="flex items-center justify-between mb-8">
-        <div>
-          <h1 className="text-2xl font-bold text-white">Dashboard</h1>
-          <p className="text-white/40 text-sm mt-1">{now} (Bangkok)</p>
+        <div className="flex items-center gap-3">
+          <span
+            className={`inline-block w-2.5 h-2.5 rounded-full ${
+              health === "green" ? "bg-green-400" : health === "yellow" ? "bg-yellow-400" : "bg-red-400"
+            }`}
+            title={`System: ${health}`}
+          />
+          <div>
+            <h1 className="text-2xl font-bold text-white">Dashboard</h1>
+            <p className="text-white/40 text-sm mt-1">{now} (Bangkok)</p>
+          </div>
         </div>
         <Link
           href="/admin/share"
@@ -42,12 +57,19 @@ export default function AdminDashboard() {
       </div>
 
       {/* Key Metrics */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
         <div className="bg-white/5 border border-white/10 rounded-lg p-5">
           <p className="text-white/40 text-xs font-bold uppercase tracking-wider mb-2">Subscribers</p>
           <p className="text-3xl font-black text-gold">{data?.subscribers.total || 0}</p>
           {(data?.subscribers.newToday || 0) > 0 && (
             <p className="text-green-400 text-xs mt-1">+{data?.subscribers.newToday} today</p>
+          )}
+        </div>
+        <div className="bg-white/5 border border-white/10 rounded-lg p-5">
+          <p className="text-white/40 text-xs font-bold uppercase tracking-wider mb-2">Revenue</p>
+          <p className="text-3xl font-black text-gold">${data?.payments.revenue?.toLocaleString() || "0"}</p>
+          {(data?.payments.thisMonth || 0) > 0 && (
+            <p className="text-green-400 text-xs mt-1">{data?.payments.thisMonth} this month</p>
           )}
         </div>
         <div className="bg-white/5 border border-white/10 rounded-lg p-5">
@@ -115,6 +137,10 @@ export default function AdminDashboard() {
             <Link href="/admin/share" className="bg-white/[0.03] border border-white/10 hover:border-gold/30 rounded-lg p-4 text-center transition-colors">
               <p className="text-lg mb-1">🔗</p>
               <p className="text-white text-xs font-semibold">Quick Share</p>
+            </Link>
+            <Link href="/admin/payments" className="bg-white/[0.03] border border-white/10 hover:border-gold/30 rounded-lg p-4 text-center transition-colors">
+              <p className="text-lg mb-1">💰</p>
+              <p className="text-white text-xs font-semibold">Payments</p>
             </Link>
             <Link href="/admin/chat-logs" className="bg-white/[0.03] border border-white/10 hover:border-gold/30 rounded-lg p-4 text-center transition-colors">
               <p className="text-lg mb-1">💬</p>

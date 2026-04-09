@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import EmailSignup from "@/components/EmailSignup";
 import PageTracker from "@/components/PageTracker";
+import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -28,9 +29,33 @@ const TESTIMONIALS = [
   { quote: "I got funded 47 days after applying what I learned in the class.", name: "A.S." },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  name: "Free ICT Trading Class",
+  description:
+    "Learn the exact ICT concepts, setups, and risk management rules that helped 50+ traders get funded. Free live class with Harvest Wright.",
+  provider: {
+    "@type": "Organization",
+    name: "R2F Trading",
+    url: "https://r2ftrading.com",
+  },
+  isAccessibleForFree: true,
+  courseMode: "online",
+  instructor: {
+    "@type": "Person",
+    name: "Harvest Wright",
+  },
+};
+
 export default function FreeClassPage() {
   return (
     <main>
+      <Script
+        id="json-ld-free-class"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <PageTracker event="free_class_page_view" />
 
