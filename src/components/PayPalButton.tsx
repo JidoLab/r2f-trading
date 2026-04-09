@@ -18,30 +18,57 @@ declare global {
   }
 }
 
+// Client ID is inlined at build time — must be set BEFORE deploying
+const PAYPAL_CLIENT_ID = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID || "";
+
 export default function PayPalButton({ planName, amount, description, onSuccess, highlight = false }: PayPalButtonProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [sdkReady, setSdkReady] = useState(false);
   const [showPaypal, setShowPaypal] = useState(false);
   const [completed, setCompleted] = useState(false);
+  const [sdkError, setSdkError] = useState(false);
   const rendered = useRef(false);
 
-  // Load PayPal SDK
+  // Load PayPal SDK only when user clicks "Pay with PayPal"
   useEffect(() => {
+    if (!showPaypal) return;
     if (window.paypal) {
       setSdkReady(true);
       return;
     }
-    const clientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
-    if (!clientId) return;
 
-    const script = document.createElement("script");
-    script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}&currency=USD&intent=capture`;
-    script.async = true;
-    script.onload = () => setSdkReady(true);
-    document.body.appendChild(script);
-  }, []);
+    // Fetch client ID from API if not inlined at build time
+    async function loadSdk() {
+      let clientId = PAYPAL_CLIENT_ID;
 
-  // Render PayPal buttons when shown
+      // If not inlined, fetch from server
+      if (!clientId) {
+        try {
+          const res = await fetch("/api/paypal-config");
+          if (res.ok) {
+            const data = await res.json();
+            clientId = data.clientId || "";
+          }
+        } catch {}
+      }
+
+      if (!clientId) {
+        setSdkError(true);
+        return;
+      }
+
+      const script = document.createElement("script");
+      script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}&currency=USD&intent=capture`;
+      script.async = true;
+      script.onload = () => setSdkReady(true);
+      script.onerror = () => setSdkError(true);
+      document.body.appendChild(script);
+    }
+
+    loadSdk();
+  }, [showPaypal]);
+
+  // Render PayPal buttons once SDK is ready
   useEffect(() => {
     if (!sdkReady || !showPaypal || !containerRef.current || rendered.current) return;
     if (!window.paypal) return;
@@ -95,7 +122,7 @@ export default function PayPalButton({ planName, amount, description, onSuccess,
         onSuccess?.(details);
       },
       onCancel: () => {
-        // User closed PayPal popup — keep the button visible
+        // User closed PayPal popup
       },
       onError: (err: unknown) => {
         console.error("PayPal error:", err);
@@ -113,11 +140,6 @@ export default function PayPalButton({ planName, amount, description, onSuccess,
     );
   }
 
-  // If no PayPal client ID, fall back to contact link
-  if (!process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID) {
-    return null; // Don't render — the regular "Get Started" link handles it
-  }
-
   return (
     <div className="mt-3">
       {!showPaypal ? (
@@ -131,6 +153,16 @@ export default function PayPalButton({ planName, amount, description, onSuccess,
         >
           Pay with PayPal
         </button>
+      ) : sdkError ? (
+        <div className="text-center py-2">
+          <p className={`text-xs ${highlight ? "text-white/60" : "text-gray-500"}`}>
+            PayPal unavailable. <a href="/contact" className="underline">Contact us</a> to arrange payment.
+          </p>
+        </div>
+      ) : !sdkReady ? (
+        <div className="text-center py-3">
+          <div className={`text-sm ${highlight ? "text-white/60" : "text-gray-500"}`}>Loading PayPal...</div>
+        </div>
       ) : (
         <div>
           <div className="text-center mb-2">
