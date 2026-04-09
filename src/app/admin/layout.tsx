@@ -79,6 +79,12 @@ export default async function AdminLayout({
             Market Trends
           </Link>
           <Link
+            href="/admin/reply-suggestions"
+            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Reply Suggestions
+          </Link>
+          <Link
             href="/admin/reviews"
             className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
           >

@@ -51,6 +51,22 @@
     {
       "path": "/api/cron/pull-analytics",
       "schedule": "0 6 * * 0"
+    },
+    {
+      "path": "/api/cron/reddit-engage",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/cron/reddit-engage",
+      "schedule": "0 13 * * *"
+    },
+    {
+      "path": "/api/cron/twitter-engage",
+      "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/find-reply-opportunities",
+      "schedule": "0 3 * * *"
     }
   ]
 }
