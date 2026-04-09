@@ -32,14 +32,20 @@ Fully automated digital trading coaching business at r2ftrading.com. Built with 
 - Full Mentorship: $1,000/4 months (2 sessions/week + FTMO challenge)
 
 ## Key Pages
-- / — Homepage
+- / — Homepage (JSON-LD ProfessionalService schema)
 - /trading-insights — Blog (NOT /blog — /blog redirects here)
-- /coaching — Plans & pricing
+- /coaching — Plans & pricing + PayPal buttons (JSON-LD Service schema)
 - /contact — Calendly booking
-- /results — Testimonials
-- /free-class — Lead magnet landing page
+- /results — Testimonials (JSON-LD AggregateRating + Review schemas)
+- /free-class — Lead magnet landing page (JSON-LD Course schema)
+- /about — FAQ page (JSON-LD FAQPage schema)
 - /thank-you — Post-signup with Calendly embed
 - /admin — Dashboard (password protected)
+- /admin/payments — PayPal transaction history
+- /admin/image-library — Tagged chart image management
+- /admin/shorts — Video automation hub
+- /admin/chat-logs — Chatbot transcripts
+- /admin/trends — Market context
 
 ## Social Platforms
 Working: Twitter/X, LinkedIn, Reddit, Telegram, Discord, YouTube, Facebook
@@ -48,12 +54,23 @@ Manual only: TikTok, Instagram (no API — use copy caption + download video)
 ## Lead Magnet
 PDF exists at public/downloads/ict-trading-checklist.pdf — already integrated into email signup flow
 
+## New Features (Latest)
+- Blog → Twitter/X thread auto-repurposing (src/lib/twitter-threads.ts)
+- Image library with rich tagging (src/lib/image-library.ts, /admin/image-library)
+- PayPal payments on coaching page (NEXT_PUBLIC_PAYPAL_CLIENT_ID env var)
+- Health checks in daily Telegram report (Facebook token, stuck renders, cron status)
+- JSON-LD structured data on all pages
+- Batch blog generation with 8 diverse topics (/api/admin/batch-generate)
+- Payments dashboard (/admin/payments)
+- Chatbot with objection handling + conversion triggers
+
 ## Known Recurring Issues
-- Facebook Page Access Token expires every ~60 days — refresh via Graph Explorer
+- Facebook Page Access Token expires every ~60 days — refresh via Graph Explorer or /api/admin/facebook-token
 - LinkedIn Access Token expires every ~60 days — re-auth via OAuth
 - Blog titles tend to be too long if not constrained — prompt enforces <60 chars
-- Blog topics drift toward CPI/NFP if market context is strong — prompt now diversifies
-- Shorts calendar topics must be marked as `used: true` or they repeat
+- Blog topics drift toward CPI/NFP if market context is strong — prompt now diversifies with 7 category rotation
+- Shorts calendar topics must be marked as `used: true` or they repeat (FIXED in generate-short cron)
+- NEXT_PUBLIC_ env vars are inlined at build time — if added after deploy, they need a rebuild to take effect
 
 ## Important Architecture Decisions
 - All writes go through GitHub API (not filesystem)
