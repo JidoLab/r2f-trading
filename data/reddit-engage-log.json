@@ -1,0 +1,11 @@
+[
+  {
+    "postId": "1sgdkoe",
+    "subreddit": "Daytrading",
+    "postTitle": "Anyone here trading Nikkei 225 (JP225) intraday using order flow?",
+    "commentText": "been trading jp225 for about 2 years now and it's honestly one of my favorite indices for order flow. the asian session liquidity patterns are pretty clean, especially during the first hour after open when you get those nice displacement moves off key levels.\n\nsince you're already working with footprint charts, i'd suggest paying close attention to how jp225 respects fair value gaps during the london killzone overlap - usually see some really clean moves when price comes back to fill inefficiencies from the asian session. the 15min timeframe works great for spotting these setups.\n\none thing that really helped my consistency was focusing on break of structure plays during the 8:30-10:30 gmt window when you get that overlap with early european flow. look for liquidity sweeps above/below previous day highs/lows, then wait for the displacement back into an order block or fvg for your optimal trade entry.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-09T13:02:39.220Z",
+    "permalink": "/r/Daytrading/comments/1sgdkoe/anyone_here_trading_nikkei_225_jp225_intraday/of6j7in/"
+  }
+]
