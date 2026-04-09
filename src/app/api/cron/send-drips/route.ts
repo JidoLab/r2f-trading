@@ -11,6 +11,7 @@ import {
   bookCallSoftEmail,
   bookCallUrgentEmail,
   limitedSpotsEmail,
+  reviewRequestEmail,
 } from "@/lib/email-templates";
 
 export const maxDuration = 60;
@@ -127,15 +128,67 @@ export async function GET(req: NextRequest) {
       updated = true;
     }
 
+    // --- Review request emails for paying students ---
+    let reviewRequestsSent = 0;
+    try {
+      let payments: { email?: string; date?: string }[] = [];
+      try {
+        const paymentsRaw = await readFile("data/payments.json");
+        payments = JSON.parse(paymentsRaw);
+      } catch {
+        // No payments file yet
+      }
+
+      if (payments.length > 0) {
+        for (const payment of payments) {
+          if (!payment.email || !payment.date) continue;
+          if (emailsSent + reviewRequestsSent >= 90) break;
+
+          // Check if payment was more than 14 days ago
+          const paymentDate = new Date(payment.date).getTime();
+          const daysSincePayment = Math.floor((now - paymentDate) / 86400000);
+          if (daysSincePayment < 14) continue;
+
+          // Find the subscriber
+          const subIdx = subscribers.findIndex(
+            (s: Record<string, unknown>) => s.email === payment.email
+          );
+          if (subIdx < 0) continue;
+
+          const sub = subscribers[subIdx] as Record<string, unknown>;
+          if (sub.reviewRequested) continue; // Already sent
+
+          // Send review request email
+          try {
+            const name = (sub.name as string) || (sub.email as string).split("@")[0];
+            const { subject, html } = reviewRequestEmail(name);
+            await sendEmail(payment.email, subject, html);
+            sub.reviewRequested = true;
+            subscribers[subIdx] = sub;
+            updated = true;
+            reviewRequestsSent++;
+          } catch {
+            // Skip failed sends
+          }
+        }
+      }
+    } catch {
+      // Non-critical — don't fail the cron
+    }
+
     if (updated) {
       await commitFile(
         "data/subscribers.json",
         JSON.stringify(subscribers, null, 2),
-        `Drip campaign: sent ${emailsSent} emails`
+        `Drip campaign: sent ${emailsSent} emails, ${reviewRequestsSent} review requests`
       );
     }
 
-    return NextResponse.json({ sent: emailsSent, total: subscribers.length });
+    return NextResponse.json({
+      sent: emailsSent,
+      reviewRequests: reviewRequestsSent,
+      total: subscribers.length,
+    });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Drip failed";
     return NextResponse.json({ error: msg }, { status: 500 });

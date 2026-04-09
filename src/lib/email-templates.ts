@@ -175,6 +175,21 @@ export function bookCallUrgentEmail(): { subject: string; html: string } {
   };
 }
 
+export function reviewRequestEmail(name: string): { subject: string; html: string } {
+  const firstName = name.split(" ")[0] || "there";
+  return {
+    subject: "Quick favor — how's your trading going?",
+    html: layout(
+      "How's Your Trading Journey Going?",
+      `<p style="color:#555;line-height:1.7;">Hey ${firstName},</p>
+      <p style="color:#555;line-height:1.7;">You've been with R2F Trading for a couple of weeks now, and I'd love to hear how it's going!</p>
+      <p style="color:#555;line-height:1.7;">Whether you're seeing improvements in your consistency, psychology, risk management, or anything else — your feedback means the world to me. It helps me improve the coaching AND it helps other traders who are considering taking the same step you did.</p>
+      <p style="color:#555;line-height:1.7;">If you have 30 seconds, I'd really appreciate a quick testimonial:</p>`,
+      { text: "Share Your Experience", url: `${BRAND.url}/review` }
+    ),
+  };
+}
+
 export function limitedSpotsEmail(): { subject: string; html: string } {
   return {
     subject: "Last Chance: Coaching Applications Close Friday",

@@ -202,7 +202,114 @@ ${body}
       console.error("[cron] Thread posting error:", err);
     }
 
-    return NextResponse.json({ success: true, title: article.title, slug, socialResults, threadResult });
+    // Occasionally generate a landing page instead of only a blog post (1 in 5 runs)
+    let landingPageResult = null;
+    try {
+      if (Math.random() < 0.2) {
+        const { listFiles: listGhFiles } = await import("@/lib/github");
+
+        // Pick a trending keyword from market context or topic matrix
+        const landingTopics = [
+          { topic: "How to identify and trade ICT order blocks", keyword: "ICT order blocks" },
+          { topic: "FTMO challenge tips and strategies for passing", keyword: "FTMO challenge tips" },
+          { topic: "How to trade during ICT killzones for optimal entries", keyword: "killzone trading" },
+          { topic: "Understanding fair value gaps in ICT trading", keyword: "fair value gaps" },
+          { topic: "Liquidity sweep trading strategy using ICT concepts", keyword: "liquidity sweep trading" },
+          { topic: "ICT breaker block identification and trading guide", keyword: "ICT breaker blocks" },
+          { topic: "Smart money concepts for forex traders", keyword: "smart money concepts" },
+          { topic: "How to pass prop firm challenges consistently", keyword: "prop firm challenge" },
+          { topic: "ICT optimal trade entry setup guide", keyword: "ICT optimal trade entry" },
+          { topic: "Trading psychology tips for funded traders", keyword: "trading psychology" },
+        ];
+
+        // Check which pages already exist
+        let existingSlugs: string[] = [];
+        try {
+          const existingFiles = await listGhFiles("data/landing-pages", ".json");
+          existingSlugs = existingFiles.map((f) =>
+            f.replace(/^data\/landing-pages\//, "").replace(/\.json$/, "")
+          );
+        } catch { /* directory might not exist */ }
+
+        const available = landingTopics.filter(
+          (t) => !existingSlugs.includes(t.keyword.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""))
+        );
+
+        if (available.length > 0) {
+          const pick = available[Math.floor(Math.random() * available.length)];
+          const lpSlug = pick.keyword.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+          const lpResponse = await anthropic.messages.create({
+            model: "claude-sonnet-4-20250514",
+            max_tokens: 2000,
+            messages: [{
+              role: "user",
+              content: `You are a content strategist for R2F Trading (r2ftrading.com), an ICT trading coaching business run by Harvest Wright.
+
+Generate a landing page for the topic: "${pick.topic}"
+Target keyword: "${pick.keyword}"
+
+Return ONLY a JSON object with these fields:
+{
+  "title": "Short page title (under 40 chars)",
+  "seoTitle": "SEO-optimized title (under 70 chars) including the target keyword",
+  "seoDescription": "Meta description (under 160 chars) with target keyword, compelling and action-oriented",
+  "headline": "Attention-grabbing headline that addresses a pain point (under 80 chars)",
+  "subheadline": "Supporting text that expands on the headline benefit (1-2 sentences)",
+  "keyPoints": [
+    { "icon": "emoji", "title": "Point title (under 40 chars)", "text": "2-3 sentence explanation" }
+  ],
+  "relatedTags": ["tag1", "tag2", "tag3"]
+}
+
+Requirements:
+- 5 key points covering: what it is, why it matters, how to use it, common mistakes, and next steps
+- relatedTags should match likely blog post tags (lowercase, hyphenated)
+- Headline should be benefit-driven
+- All copy should speak to forex/futures traders learning ICT methodology
+- Include the target keyword naturally in the seoTitle, seoDescription, and headline
+- Icons should be relevant emojis`,
+            }],
+          });
+
+          let lpText = lpResponse.content[0].type === "text" ? lpResponse.content[0].text : "";
+          lpText = lpText.replace(/^```(?:json)?\s*\n?/, "").replace(/\n?```\s*$/, "").trim();
+          const lpData = JSON.parse(lpText);
+
+          const pageData = {
+            slug: lpSlug,
+            title: lpData.title,
+            seoTitle: lpData.seoTitle,
+            seoDescription: lpData.seoDescription,
+            headline: lpData.headline,
+            subheadline: lpData.subheadline,
+            keyPoints: lpData.keyPoints,
+            relatedTags: lpData.relatedTags,
+            testimonialIndex: Math.floor(Math.random() * 4),
+            createdAt: new Date().toISOString(),
+            targetKeyword: pick.keyword,
+          };
+
+          await commitFile(
+            `data/landing-pages/${lpSlug}.json`,
+            JSON.stringify(pageData, null, 2),
+            `Auto-generate landing page: ${lpData.title}`
+          );
+
+          try {
+            const { notifyIndexNow: notifyLP } = await import("@/lib/indexnow");
+            await notifyLP([`/learn/${lpSlug}`, `/sitemap.xml`]);
+          } catch { /* optional */ }
+
+          landingPageResult = { slug: lpSlug, title: lpData.title };
+          console.log("[cron] Landing page generated:", lpSlug);
+        }
+      }
+    } catch (lpErr) {
+      console.error("[cron] Landing page generation error:", lpErr);
+    }
+
+    return NextResponse.json({ success: true, title: article.title, slug, socialResults, threadResult, landingPageResult });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Generation failed";
     return NextResponse.json({ error: msg }, { status: 500 });
