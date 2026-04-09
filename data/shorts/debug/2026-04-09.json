@@ -1,0 +1,27 @@
+{
+  "date": "2026-04-09T02:58:33.340Z",
+  "today": "2026-04-09",
+  "topicsAttempted": [
+    "The Day I Lost 70% of My Account in One Trade",
+    null,
+    null
+  ],
+  "results": [
+    {
+      "title": "The Day I Lost 70% of My Account in One Trade",
+      "status": "error",
+      "error": "Unexpected token '#', ...\"Trading\", #TradingPs\"... is not valid JSON"
+    },
+    {
+      "title": "POV: You're Trading CPI Day Without This Setup",
+      "status": "rendering"
+    },
+    {
+      "title": "6 months of CPI losses. Then I changed ONE thing.",
+      "status": "rendering"
+    }
+  ],
+  "errors": [
+    "Unexpected token '#', ...\"Trading\", #TradingPs\"... is not valid JSON"
+  ]
+}
