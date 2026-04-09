@@ -67,6 +67,9 @@ PDF exists at public/downloads/ict-trading-checklist.pdf — already integrated 
 - Testimonial collection system (/review) with admin approval (/admin/reviews)
 - Daily voice market brief (/market-brief) with podcast RSS feed
 - Auto review request emails 14 days after payment
+- Reddit auto-commenting (2x/day, 5 subreddits, src/app/api/cron/reddit-engage)
+- Twitter auto-reply (1x/day, accepts platform risk, src/app/api/cron/twitter-engage)
+- Suggested replies dashboard for YouTube (/admin/reply-suggestions) with copy+open
 
 ## Known Recurring Issues
 - Facebook Page Access Token expires every ~60 days — refresh via Graph Explorer or /api/admin/facebook-token
