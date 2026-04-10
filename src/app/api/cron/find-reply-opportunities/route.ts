@@ -20,6 +20,12 @@ const SEARCH_QUERIES = [
   "order blocks forex",
   "smart money concepts",
   "prop firm challenge",
+  "fair value gap trading",
+  "funded account trading",
+  "forex liquidity sweep",
+  "break of structure trading",
+  "FTMO challenge tips",
+  "trading psychology discipline",
 ];
 
 async function getYouTubeAccessToken(): Promise<string | null> {
@@ -53,7 +59,7 @@ async function searchYouTube(
     q: query,
     type: "video",
     order: "date",
-    maxResults: "5",
+    maxResults: "3",
     ...(useApiKey ? { key: accessTokenOrApiKey } : {}),
   });
   const headers: Record<string, string> = useApiKey ? {} : { Authorization: `Bearer ${accessTokenOrApiKey}` };
