@@ -1,11 +1,19 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function ReferralThankYouPage() {
+  return (
+    <Suspense fallback={<main><Header /><section className="bg-navy py-32 text-center"><p className="text-white/50">Loading...</p></section><Footer /></main>}>
+      <ReferralThankYouContent />
+    </Suspense>
+  );
+}
+
+function ReferralThankYouContent() {
   const searchParams = useSearchParams();
   const code = searchParams.get("code") || "";
   const referralLink = code ? `https://r2ftrading.com/refer?ref=${code}` : "";

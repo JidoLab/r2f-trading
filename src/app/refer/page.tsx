@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -31,6 +31,14 @@ const TESTIMONIALS = [
 ];
 
 export default function ReferralPage() {
+  return (
+    <Suspense fallback={<main><Header /><section className="bg-navy py-32 text-center"><p className="text-white/50">Loading...</p></section><Footer /></main>}>
+      <ReferralContent />
+    </Suspense>
+  );
+}
+
+function ReferralContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const ref = searchParams.get("ref") || "";
