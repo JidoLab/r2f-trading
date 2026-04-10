@@ -82,6 +82,12 @@ PDF exists at public/downloads/ict-trading-checklist.pdf — already integrated 
 - A/B Test Tracker (/admin/ab-tests) email template performance
 - Branding Kit (/admin/signature) bios, colors, fonts, hashtags, CTAs, assets
 - Sidebar organized into 7 categories, mobile responsive with hamburger menu
+- ICT Trading Starter Kit ($49 digital product at /starter-kit with gated /starter-kit/access)
+- Referral system: unique codes per subscriber, /refer?ref=CODE landing page
+- Student onboarding automation: Day 1/3/7/30 email sequence after payment
+- Smart hot lead follow-up: auto-email + Telegram alert when score hits 50
+- Weekly newsletter auto-generation via Claude with admin page at /admin/newsletters
+- GA4 analytics integration (/admin/analytics-dashboard, needs service account setup)
 
 ## Admin Sidebar Categories
 - Overview: Dashboard, AI Briefing, Notifications

@@ -21,7 +21,7 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-10">
-          {["Home", "About", "Coaching", "Results", "Trading Insights", "Contact"].map((item) => (
+          {["Home", "About", "Coaching", "Starter Kit", "Results", "Trading Insights", "Contact"].map((item) => (
             <Link
               key={item}
               href={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, "-")}`}
@@ -51,7 +51,7 @@ export default function Header() {
       {/* Mobile Nav */}
       {menuOpen && (
         <nav className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
-          {["Home", "About", "Coaching", "Results", "Trading Insights", "Contact"].map((item) => (
+          {["Home", "About", "Coaching", "Starter Kit", "Results", "Trading Insights", "Contact"].map((item) => (
             <Link
               key={item}
               href={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, "-")}`}

@@ -23,7 +23,18 @@ export default function StarterKitAccessPage() {
   const [openLesson, setOpenLesson] = useState<string | null>(null);
 
   const verify = useCallback(async () => {
-    const token = localStorage.getItem("starterKitToken");
+    // Check for token in URL query param (from email link) or localStorage
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlToken = urlParams.get("token");
+    const token = urlToken || localStorage.getItem("starterKitToken");
+
+    if (urlToken) {
+      // Save to localStorage for future visits
+      localStorage.setItem("starterKitToken", urlToken);
+      // Clean the URL
+      window.history.replaceState({}, "", "/starter-kit/access");
+    }
+
     if (!token) {
       setVerified(false);
       return;

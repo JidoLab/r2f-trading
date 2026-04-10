@@ -48,6 +48,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/contact`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/results`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/free-class`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/starter-kit`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/trading-insights`, lastModified: new Date().toISOString(), changeFrequency: "daily", priority: 0.8 },
     { url: `${BASE_URL}/market-brief`, lastModified: new Date().toISOString(), changeFrequency: "daily", priority: 0.7 },
     { url: `${BASE_URL}/privacy`, lastModified: new Date().toISOString(), changeFrequency: "yearly", priority: 0.3 },
