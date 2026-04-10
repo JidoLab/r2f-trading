@@ -30,3 +30,9 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Fix white-on-white dropdown options in dark admin theme */
+select option {
+  background: #1a2332;
+  color: #ffffff;
+}

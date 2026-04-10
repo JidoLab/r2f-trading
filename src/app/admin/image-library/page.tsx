@@ -45,7 +45,7 @@ export default function ImageLibraryPage() {
   const [filterCategory, setFilterCategory] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Upload form state
+  // Single upload form state
   const [showUpload, setShowUpload] = useState(false);
   const [uploadData, setUploadData] = useState({
     description: "",
@@ -58,6 +58,22 @@ export default function ImageLibraryPage() {
   });
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [preview, setPreview] = useState<string>("");
+
+  // Bulk upload state
+  const [showBulk, setShowBulk] = useState(false);
+  const [bulkFiles, setBulkFiles] = useState<{ file: File; preview: string; description: string }[]>([]);
+  const [bulkShared, setBulkShared] = useState({
+    patterns: [] as string[],
+    category: "chart-pattern",
+    pair: "",
+    timeframe: "",
+    tags: [] as string[],
+    tagInput: "",
+  });
+  const [bulkUploading, setBulkUploading] = useState(false);
+  const [bulkProgress, setBulkProgress] = useState({ done: 0, total: 0 });
+  const [dragOver, setDragOver] = useState(false);
+  const bulkInputRef = useRef<HTMLInputElement>(null);
 
   async function fetchImages() {
     const params = new URLSearchParams();
@@ -82,6 +98,81 @@ export default function ImageLibraryPage() {
     reader.onload = () => setPreview(reader.result as string);
     reader.readAsDataURL(file);
     setShowUpload(true);
+    setShowBulk(false);
+  }
+
+  function handleBulkFiles(files: FileList | File[]) {
+    const fileArray = Array.from(files).filter(f => f.type.startsWith("image/")).slice(0, 20);
+    if (fileArray.length === 0) return;
+    const newFiles: typeof bulkFiles = [];
+    let loaded = 0;
+    for (const file of fileArray) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        newFiles.push({ file, preview: reader.result as string, description: "" });
+        loaded++;
+        if (loaded === fileArray.length) {
+          setBulkFiles(prev => [...prev, ...newFiles]);
+          setShowBulk(true);
+          setShowUpload(false);
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+
+  function handleDrop(e: React.DragEvent) {
+    e.preventDefault();
+    setDragOver(false);
+    handleBulkFiles(e.dataTransfer.files);
+  }
+
+  async function handleBulkUpload() {
+    if (bulkFiles.length === 0) return;
+    setBulkUploading(true);
+    setBulkProgress({ done: 0, total: bulkFiles.length });
+
+    for (let i = 0; i < bulkFiles.length; i++) {
+      const item = bulkFiles[i];
+      const base64 = item.preview.split(",")[1];
+      try {
+        await fetch("/api/admin/image-library", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            imageBase64: base64,
+            filename: item.file.name,
+            description: item.description || `Chart ${i + 1}`,
+            tags: bulkShared.tags,
+            patterns: bulkShared.patterns,
+            category: bulkShared.category,
+            pair: bulkShared.pair || undefined,
+            timeframe: bulkShared.timeframe || undefined,
+          }),
+        });
+      } catch {}
+      setBulkProgress({ done: i + 1, total: bulkFiles.length });
+    }
+
+    setBulkUploading(false);
+    setBulkFiles([]);
+    setShowBulk(false);
+    setBulkShared({ patterns: [], category: "chart-pattern", pair: "", timeframe: "", tags: [], tagInput: "" });
+    fetchImages();
+  }
+
+  function toggleBulkPattern(pattern: string) {
+    setBulkShared(d => ({
+      ...d,
+      patterns: d.patterns.includes(pattern) ? d.patterns.filter(p => p !== pattern) : [...d.patterns, pattern],
+    }));
+  }
+
+  function addBulkTag() {
+    const tag = bulkShared.tagInput.trim().toLowerCase().replace(/\s+/g, "-");
+    if (tag && !bulkShared.tags.includes(tag)) {
+      setBulkShared(d => ({ ...d, tags: [...d.tags, tag], tagInput: "" }));
+    }
   }
 
   async function handleUpload() {
@@ -154,18 +245,19 @@ export default function ImageLibraryPage() {
           <p className="text-white/40 text-sm mt-1">{images.length} images &middot; Used in blogs, shorts, and social posts</p>
         </div>
         <div className="flex gap-3">
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept="image/*"
-            onChange={handleFileSelect}
-            className="hidden"
-          />
+          <input ref={fileInputRef} type="file" accept="image/*" onChange={handleFileSelect} className="hidden" />
+          <input ref={bulkInputRef} type="file" accept="image/*" multiple onChange={e => e.target.files && handleBulkFiles(e.target.files)} className="hidden" />
           <button
             onClick={() => fileInputRef.current?.click()}
+            className="bg-white/10 hover:bg-white/20 text-white font-semibold text-sm px-4 py-2.5 rounded-md transition-all"
+          >
+            + Single
+          </button>
+          <button
+            onClick={() => bulkInputRef.current?.click()}
             className="bg-gold hover:bg-gold-light text-navy font-bold text-sm px-5 py-2.5 rounded-md transition-all"
           >
-            + Upload Image
+            + Bulk Upload
           </button>
         </div>
       </div>
@@ -305,6 +397,105 @@ export default function ImageLibraryPage() {
               </button>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* Drag & Drop Zone (always visible when no form is open) */}
+      {!showUpload && !showBulk && (
+        <div
+          onDragOver={e => { e.preventDefault(); setDragOver(true); }}
+          onDragLeave={() => setDragOver(false)}
+          onDrop={handleDrop}
+          className={`border-2 border-dashed rounded-lg p-8 mb-6 text-center transition-colors ${
+            dragOver ? "border-gold bg-gold/5" : "border-white/10 hover:border-white/20"
+          }`}
+        >
+          <p className={`text-sm ${dragOver ? "text-gold" : "text-white/30"}`}>
+            {dragOver ? "Drop images here..." : "Drag & drop chart images here for bulk upload"}
+          </p>
+        </div>
+      )}
+
+      {/* Bulk Upload Form */}
+      {showBulk && bulkFiles.length > 0 && (
+        <div className="bg-white/5 border border-gold/30 rounded-lg p-6 mb-8">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-white font-semibold">Bulk Upload ({bulkFiles.length} images)</h2>
+            <button onClick={() => { setShowBulk(false); setBulkFiles([]); }} className="text-white/30 hover:text-white/60 text-sm">Cancel</button>
+          </div>
+
+          {/* Shared settings for all images */}
+          <div className="bg-white/5 rounded-lg p-4 mb-4">
+            <p className="text-white/50 text-xs font-bold uppercase tracking-wider mb-3">Shared Settings (apply to all)</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
+              <select value={bulkShared.category} onChange={e => setBulkShared(d => ({ ...d, category: e.target.value }))} className="bg-white/5 border border-white/10 rounded-md px-3 py-2 text-white text-sm">
+                {CATEGORIES.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}
+              </select>
+              <select value={bulkShared.pair} onChange={e => setBulkShared(d => ({ ...d, pair: e.target.value }))} className="bg-white/5 border border-white/10 rounded-md px-3 py-2 text-white text-sm">
+                <option value="">Pair</option>
+                {PAIRS.map(p => <option key={p} value={p}>{p}</option>)}
+              </select>
+              <select value={bulkShared.timeframe} onChange={e => setBulkShared(d => ({ ...d, timeframe: e.target.value }))} className="bg-white/5 border border-white/10 rounded-md px-3 py-2 text-white text-sm">
+                <option value="">Timeframe</option>
+                {TIMEFRAMES.map(t => <option key={t} value={t}>{t}</option>)}
+              </select>
+              <div className="flex gap-2">
+                <input type="text" placeholder="Add tag..." value={bulkShared.tagInput} onChange={e => setBulkShared(d => ({ ...d, tagInput: e.target.value }))} onKeyDown={e => e.key === "Enter" && (e.preventDefault(), addBulkTag())} className="flex-1 bg-white/5 border border-white/10 rounded-md px-3 py-2 text-white text-sm" />
+                <button onClick={addBulkTag} className="bg-white/10 hover:bg-white/20 text-white text-sm px-2 py-2 rounded-md">+</button>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-1.5 mb-2">
+              {COMMON_PATTERNS.map(p => (
+                <button key={p} onClick={() => toggleBulkPattern(p)} className={`text-xs px-2 py-0.5 rounded-full transition-all ${bulkShared.patterns.includes(p) ? "bg-gold text-navy font-bold" : "bg-white/5 text-white/40 hover:text-white/60"}`}>{p}</button>
+              ))}
+            </div>
+            {bulkShared.tags.length > 0 && (
+              <div className="flex flex-wrap gap-1">
+                {bulkShared.tags.map(t => (
+                  <span key={t} className="bg-white/10 text-white/70 text-xs px-2 py-0.5 rounded-full">{t} <button onClick={() => setBulkShared(d => ({ ...d, tags: d.tags.filter(x => x !== t) }))} className="text-white/30 hover:text-red-400">&times;</button></span>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Individual image descriptions */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+            {bulkFiles.map((item, i) => (
+              <div key={i} className="bg-white/5 border border-white/10 rounded-lg overflow-hidden">
+                <img src={item.preview} alt="" className="w-full aspect-video object-cover" />
+                <div className="p-2">
+                  <input
+                    type="text"
+                    placeholder={`Description for image ${i + 1}...`}
+                    value={item.description}
+                    onChange={e => {
+                      const updated = [...bulkFiles];
+                      updated[i] = { ...updated[i], description: e.target.value };
+                      setBulkFiles(updated);
+                    }}
+                    className="w-full bg-white/5 border border-white/10 rounded px-2 py-1.5 text-white text-xs"
+                  />
+                  <button onClick={() => setBulkFiles(prev => prev.filter((_, idx) => idx !== i))} className="text-red-400/50 hover:text-red-400 text-[10px] mt-1">Remove</button>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Upload button with progress */}
+          <button
+            onClick={handleBulkUpload}
+            disabled={bulkUploading}
+            className="w-full bg-gold hover:bg-gold-light disabled:opacity-50 text-navy font-bold text-sm py-3 rounded-md transition-all"
+          >
+            {bulkUploading
+              ? `Uploading ${bulkProgress.done}/${bulkProgress.total}...`
+              : `Upload All ${bulkFiles.length} Images`}
+          </button>
+          {bulkUploading && (
+            <div className="mt-2 bg-white/10 rounded-full h-2 overflow-hidden">
+              <div className="bg-gold h-full transition-all" style={{ width: `${(bulkProgress.done / bulkProgress.total) * 100}%` }} />
+            </div>
+          )}
         </div>
       )}
 
