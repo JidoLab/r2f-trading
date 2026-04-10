@@ -67,9 +67,30 @@ PDF exists at public/downloads/ict-trading-checklist.pdf — already integrated 
 - Testimonial collection system (/review) with admin approval (/admin/reviews)
 - Daily voice market brief (/market-brief) with podcast RSS feed
 - Auto review request emails 14 days after payment
-- Reddit auto-commenting (2x/day, 5 subreddits, src/app/api/cron/reddit-engage)
-- Twitter auto-reply (1x/day, accepts platform risk, src/app/api/cron/twitter-engage)
+- Reddit auto-commenting (2x/day, 5 subreddits, references "my students" for curiosity)
+- Twitter auto-reply (1x/day, accepts platform risk)
 - Suggested replies dashboard for YouTube (/admin/reply-suggestions) with copy+open
+- Revenue Tracker (/admin/revenue) with CSS bar charts, conversion rate
+- Lead Pipeline funnel (/admin/pipeline) subscribers>cold>warm>hot>booked>paid
+- Social Calendar (/admin/social-calendar) weekly grid by platform
+- Notification Center (/admin/notifications) unified event feed
+- Content Performance (/admin/performance) rankings by social reach
+- Competitor Spy (/admin/competitors) tracks 4 YouTube channels + content gaps
+- AI Content Planner (/admin/content-planner) health score + smart suggestions
+- Audience Insights (/admin/audience) growth chart, score distribution, engagement heatmap
+- AI Daily Briefing (/admin/briefing) personalized morning briefing with Claude
+- A/B Test Tracker (/admin/ab-tests) email template performance
+- Branding Kit (/admin/signature) bios, colors, fonts, hashtags, CTAs, assets
+- Sidebar organized into 7 categories, mobile responsive with hamburger menu
+
+## Admin Sidebar Categories
+- Overview: Dashboard, AI Briefing, Notifications
+- Content: Blog Posts, Shorts, AI Planner, Content Calendar, Social Calendar, Landing Pages, Image Library
+- Engagement: Reply Suggestions, Chat Logs, Reviews, Quick Share
+- Growth: Subscribers, Lead Pipeline, Audience Insights
+- Revenue: Payments, Revenue Tracker, A/B Tests
+- Intelligence: Performance, Competitor Spy, Market Trends
+- Tools: Branding Kit, Analytics
 
 ## Known Recurring Issues
 - Facebook Page Access Token expires every ~60 days — refresh via Graph Explorer or /api/admin/facebook-token
@@ -97,7 +118,8 @@ TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, TELEGRAM_OWNER_CHAT_ID,
 DISCORD_WEBHOOK_URL, PINTEREST_ACCESS_TOKEN, PINTEREST_BOARD_ID,
 YOUTUBE_CLIENT_ID/SECRET/REFRESH_TOKEN,
 OPENAI_API_KEY, ELEVENLABS_API_KEY, ELEVENLABS_VOICE_ID,
-CREATOMATE_API_KEY, PEXELS_API_KEY, ADMIN_PASSWORD
+CREATOMATE_API_KEY, PEXELS_API_KEY, ADMIN_PASSWORD,
+YOUTUBE_API_KEY, NEXT_PUBLIC_PAYPAL_CLIENT_ID
 
 ## Framework Document
 Full reusable automation framework at: C:\Users\User\Desktop\AI Business Automation Framework.md
