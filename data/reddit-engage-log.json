@@ -7,5 +7,23 @@
     "mentionedR2F": false,
     "commentedAt": "2026-04-09T13:02:39.220Z",
     "permalink": "/r/Daytrading/comments/1sgdkoe/anyone_here_trading_nikkei_225_jp225_intraday/of6j7in/"
+  },
+  {
+    "postId": "1sh086v",
+    "subreddit": "Daytrading",
+    "postTitle": "PDT rule going to change ‘",
+    "commentText": "honestly wouldn't get too excited about this yet - finra's been talking about pdt changes for years and the sec moves slower than molasses. even if it does drop to 2k, you're still gonna be severely undercapitalized for day trading. \n\nwith 2k you're looking at maybe $50-100 risk per trade max, which means you need to be absolutely surgical with your entries. focus on those high probability setups like liquidity sweeps into order blocks during kill zones rather than trying to scalp every little move. i'd actually recommend using this time to practice on sim and really nail down your break of structure confirmations and optimal trade entries, because having access to day trade with small capital is useless if you don't have the skills to make it profitable first.\n\nthe real game changer would be if they adjust the leverage rules too, but like lightspeed said, that's still up in the air",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-10T03:22:04.534Z",
+    "permalink": "/r/Daytrading/comments/1sh086v/pdt_rule_going_to_change/ofbd1zf/"
+  },
+  {
+    "postId": "1sgkzt7",
+    "subreddit": "Daytrading",
+    "postTitle": "Weekly Recap",
+    "commentText": "solid week man, that strike rate is impressive but just remember variance is a real thing and even the best setups can go through rough patches. when you're hunting those liquidity sweeps, i've found it helpful to really focus on the displacement after the sweep happens - if you're not seeing that strong move away from the swept lows/highs, the trade might not have the momentum you want. \n\none thing that's helped me a ton is marking out those premium and discount ranges on higher timeframes first, then looking for your pa setups within those zones. also curious about your risk management on those losing trades - were they full stops or did you manage them down? keeping that consistency in position sizing is what separates the profitable weeks from just getting lucky.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-10T03:22:15.191Z",
+    "permalink": "/r/Daytrading/comments/1sgkzt7/weekly_recap/ofbd2ze/"
   }
 ]
