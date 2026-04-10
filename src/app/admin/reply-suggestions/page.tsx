@@ -35,6 +35,9 @@ export default function ReplySuggestionsPage() {
   const [acting, setActing] = useState<string | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
   const [historyOpen, setHistoryOpen] = useState(false);
+  const [processing, setProcessing] = useState(false);
+  const [currentProcess, setCurrentProcess] = useState(0);
+  const [waitingForNext, setWaitingForNext] = useState<(() => void) | null>(null);
 
   useEffect(() => {
     fetchSuggestions();
@@ -89,13 +92,37 @@ export default function ReplySuggestionsPage() {
     try {
       await navigator.clipboard.writeText(suggestion.suggestedReply);
       setCopied(suggestion.id);
-      setTimeout(() => setCopied(null), 2000);
+      setTimeout(() => setCopied(null), 3000);
     } catch {
       // Clipboard failed
     }
     window.open(suggestion.postUrl, "_blank");
-    // Mark as used
     handleAction(suggestion.id, "markUsed");
+  }
+
+  // Process all pending: open each video one at a time with reply on clipboard
+  async function handleProcessAll() {
+    if (processing) return;
+    setProcessing(true);
+    const toProcess = pending.slice(0, 20);
+    for (let i = 0; i < toProcess.length; i++) {
+      setCurrentProcess(i + 1);
+      const s = toProcess[i];
+      try {
+        await navigator.clipboard.writeText(s.suggestedReply);
+      } catch {}
+      window.open(s.postUrl, "_blank");
+      handleAction(s.id, "markUsed");
+      // Wait for user to paste and come back — they click "Next" to continue
+      if (i < toProcess.length - 1) {
+        await new Promise<void>((resolve) => {
+          setWaitingForNext(resolve);
+        });
+      }
+    }
+    setProcessing(false);
+    setCurrentProcess(0);
+    setWaitingForNext(null);
   }
 
   function formatDate(dateStr: string) {
@@ -134,29 +161,26 @@ export default function ReplySuggestionsPage() {
           </p>
         </div>
         <div className="flex gap-3 items-center">
-          {pending.length > 0 && (
+          {pending.length > 0 && !processing && (
             <button
-              onClick={() => {
-                const toOpen = pending.slice(0, 20);
-                // Open first URL in a new window, then open rest as tabs in that window
-                const newWindow = window.open(toOpen[0].postUrl, "_blank", "noopener");
-                // Small delay then open remaining tabs — browser associates them with user gesture
-                if (toOpen.length > 1) {
-                  let i = 1;
-                  const openNext = () => {
-                    if (i < toOpen.length) {
-                      window.open(toOpen[i].postUrl, "_blank");
-                      i++;
-                      setTimeout(openNext, 100);
-                    }
-                  };
-                  setTimeout(openNext, 300);
-                }
-              }}
-              className="bg-white/10 hover:bg-white/20 text-white font-semibold text-sm px-4 py-2 rounded-md transition-colors"
+              onClick={handleProcessAll}
+              className="bg-gold/20 text-gold hover:bg-gold/30 font-semibold text-sm px-5 py-2.5 rounded-md transition-colors"
             >
-              Open All Tabs ({Math.min(pending.length, 20)})
+              Start Replying ({Math.min(pending.length, 20)})
             </button>
+          )}
+          {processing && waitingForNext && (
+            <div className="flex items-center gap-3">
+              <span className="text-gold text-sm font-semibold">
+                {currentProcess}/{Math.min(pending.length, 20)} — Paste the reply, then:
+              </span>
+              <button
+                onClick={() => { if (waitingForNext) waitingForNext(); }}
+                className="bg-gold text-navy font-bold text-sm px-5 py-2.5 rounded-md transition-colors animate-pulse"
+              >
+                Next →
+              </button>
+            </div>
           )}
           <Link
             href="/admin"
