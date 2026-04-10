@@ -133,12 +133,27 @@ export default function ReplySuggestionsPage() {
             {pending.length} pending &middot; {history.length} in history
           </p>
         </div>
-        <Link
-          href="/admin"
-          className="text-white/40 hover:text-white text-sm transition-colors"
-        >
-          &larr; Dashboard
-        </Link>
+        <div className="flex gap-3 items-center">
+          {pending.length > 0 && (
+            <button
+              onClick={() => {
+                const toOpen = pending.slice(0, 20);
+                for (const s of toOpen) {
+                  window.open(s.postUrl, "_blank");
+                }
+              }}
+              className="bg-white/10 hover:bg-white/20 text-white font-semibold text-sm px-4 py-2 rounded-md transition-colors"
+            >
+              Open All Tabs ({Math.min(pending.length, 20)})
+            </button>
+          )}
+          <Link
+            href="/admin"
+            className="text-white/40 hover:text-white text-sm transition-colors"
+          >
+            &larr; Dashboard
+          </Link>
+        </div>
       </div>
 
       {/* Pending Suggestions */}
