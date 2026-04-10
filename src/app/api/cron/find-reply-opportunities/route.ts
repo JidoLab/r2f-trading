@@ -49,17 +49,38 @@ async function getYouTubeAccessToken(): Promise<string | null> {
   return access_token;
 }
 
+// Characters/scripts that indicate non-English content
+const NON_ENGLISH_PATTERNS = /[\u0600-\u06FF\u0900-\u097F\u0E00-\u0E7F\u3040-\u30FF\u4E00-\u9FFF\uAC00-\uD7AF\u0400-\u04FF\u0980-\u09FF\u0A00-\u0A7F]/;
+
+function isLikelyEnglish(text: string): boolean {
+  // Reject if title has significant non-Latin characters
+  if (NON_ENGLISH_PATTERNS.test(text)) return false;
+  // Check that most chars are ASCII/Latin
+  const asciiCount = (text.match(/[a-zA-Z]/g) || []).length;
+  return asciiCount > text.length * 0.3;
+}
+
+interface VideoResult {
+  videoId: string;
+  title: string;
+  channelTitle: string;
+  viewCount?: number;
+  subscriberCount?: number;
+  commentCount?: number;
+}
+
 async function searchYouTube(
   query: string,
   accessTokenOrApiKey: string,
   useApiKey: boolean = false
-): Promise<{ videoId: string; title: string; channelTitle: string }[]> {
+): Promise<VideoResult[]> {
   const params = new URLSearchParams({
     part: "snippet",
     q: query,
     type: "video",
     order: "date",
-    maxResults: "3",
+    maxResults: "8",
+    relevanceLanguage: "en",
     ...(useApiKey ? { key: accessTokenOrApiKey } : {}),
   });
   const headers: Record<string, string> = useApiKey ? {} : { Authorization: `Bearer ${accessTokenOrApiKey}` };
@@ -72,13 +93,56 @@ async function searchYouTube(
     return [];
   }
   const data = await res.json();
-  return (data.items || []).map(
+  const rawVideos = (data.items || []).map(
     (item: { id: { videoId: string }; snippet: { title: string; channelTitle: string } }) => ({
       videoId: item.id.videoId,
       title: item.snippet.title,
       channelTitle: item.snippet.channelTitle,
     })
   );
+
+  // Filter out non-English titles
+  const englishVideos = rawVideos.filter((v: VideoResult) => isLikelyEnglish(v.title));
+
+  // Get video stats to filter by quality
+  if (englishVideos.length === 0) return [];
+  const videoIds = englishVideos.map((v: VideoResult) => v.videoId).join(",");
+  const statsParams = new URLSearchParams({
+    part: "statistics",
+    id: videoIds,
+    ...(useApiKey ? { key: accessTokenOrApiKey } : {}),
+  });
+  const statsRes = await fetch(
+    `https://www.googleapis.com/youtube/v3/videos?${statsParams}`,
+    { headers }
+  );
+
+  if (statsRes.ok) {
+    const statsData = await statsRes.json();
+    const statsMap = new Map<string, { viewCount: number; commentCount: number }>();
+    for (const item of statsData.items || []) {
+      statsMap.set(item.id, {
+        viewCount: parseInt(item.statistics?.viewCount || "0"),
+        commentCount: parseInt(item.statistics?.commentCount || "0"),
+      });
+    }
+
+    // Enrich videos with stats and filter
+    return englishVideos
+      .map((v: VideoResult) => {
+        const stats = statsMap.get(v.videoId);
+        return { ...v, viewCount: stats?.viewCount || 0, commentCount: stats?.commentCount || 0 };
+      })
+      .filter((v: VideoResult) => {
+        // Skip videos with very low views (probably spam/low quality)
+        if ((v.viewCount || 0) < 50) return false;
+        // Skip videos with 500+ comments (your comment will get buried)
+        if ((v.commentCount || 0) > 500) return false;
+        return true;
+      });
+  }
+
+  return englishVideos;
 }
 
 async function generateReply(
