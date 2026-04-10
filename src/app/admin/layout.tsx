@@ -1,6 +1,71 @@
 import { requireAdmin } from "@/lib/admin-auth";
 import Link from "next/link";
 
+const NAV_SECTIONS = [
+  {
+    label: "Overview",
+    items: [
+      { href: "/admin", label: "Dashboard" },
+      { href: "/admin/briefing", label: "AI Briefing" },
+      { href: "/admin/notifications", label: "Notifications" },
+    ],
+  },
+  {
+    label: "Content",
+    items: [
+      { href: "/admin/posts", label: "Blog Posts" },
+      { href: "/admin/shorts", label: "Shorts" },
+      { href: "/admin/content-planner", label: "AI Planner" },
+      { href: "/admin/calendar", label: "Content Calendar" },
+      { href: "/admin/social-calendar", label: "Social Calendar" },
+      { href: "/admin/landing-pages", label: "Landing Pages" },
+      { href: "/admin/image-library", label: "Image Library" },
+    ],
+  },
+  {
+    label: "Engagement",
+    items: [
+      { href: "/admin/reply-suggestions", label: "Reply Suggestions" },
+      { href: "/admin/chat-logs", label: "Chat Logs" },
+      { href: "/admin/reviews", label: "Reviews" },
+      { href: "/admin/share", label: "Quick Share" },
+    ],
+  },
+  {
+    label: "Growth",
+    items: [
+      { href: "/admin/subscribers", label: "Subscribers" },
+      { href: "/admin/pipeline", label: "Lead Pipeline" },
+      { href: "/admin/audience", label: "Audience Insights" },
+    ],
+  },
+  {
+    label: "Revenue",
+    items: [
+      { href: "/admin/payments", label: "Payments" },
+      { href: "/admin/revenue", label: "Revenue Tracker" },
+      { href: "/admin/ab-tests", label: "A/B Tests" },
+    ],
+  },
+  {
+    label: "Intelligence",
+    items: [
+      { href: "/admin/performance", label: "Performance" },
+      { href: "/admin/competitors", label: "Competitor Spy" },
+      { href: "/admin/trends", label: "Market Trends" },
+    ],
+  },
+  {
+    label: "Tools",
+    items: [
+      { href: "/admin/signature", label: "Branding Kit" },
+    ],
+    external: [
+      { href: "https://vercel.com/wrightharvest-9811s-projects/r2f-trading/analytics", label: "Analytics ↗" },
+    ],
+  },
+];
+
 export default async function AdminLayout({
   children,
 }: {
@@ -9,10 +74,31 @@ export default async function AdminLayout({
   await requireAdmin();
 
   return (
-    <div className="min-h-screen bg-[#0a1628] flex">
+    <div className="min-h-screen bg-[#0a1628] md:flex">
+      {/* Mobile header */}
+      <div className="md:hidden bg-navy border-b border-white/10 px-4 py-3 flex items-center justify-between sticky top-0 z-50">
+        <Link href="/admin" className="flex items-center gap-1">
+          <span className="text-xl font-black text-white" style={{ fontFamily: "var(--font-heading)" }}>
+            R<span className="text-gold">2</span>F
+          </span>
+          <span className="text-[7px] font-bold tracking-[0.2em] uppercase text-white/50 ml-1 mt-0.5">
+            Admin
+          </span>
+        </Link>
+        <label htmlFor="mobile-nav" className="text-white/70 hover:text-white cursor-pointer p-1">
+          <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+        </label>
+      </div>
+
+      {/* Mobile nav checkbox hack (no JS needed) */}
+      <input type="checkbox" id="mobile-nav" className="hidden peer" />
+
       {/* Sidebar */}
-      <aside className="w-56 bg-navy border-r border-white/10 flex flex-col">
-        <div className="p-6 border-b border-white/10">
+      <aside className="hidden peer-checked:block md:block w-full md:w-56 bg-navy border-r border-white/10 md:flex md:flex-col md:sticky md:top-0 md:h-screen overflow-y-auto z-40">
+        {/* Desktop logo */}
+        <div className="hidden md:block p-6 border-b border-white/10">
           <Link href="/admin" className="flex items-center gap-1">
             <span className="text-2xl font-black text-white" style={{ fontFamily: "var(--font-heading)" }}>
               R<span className="text-gold">2</span>F
@@ -23,141 +109,40 @@ export default async function AdminLayout({
           </Link>
         </div>
 
-        <nav className="flex-1 p-4 space-y-1">
-          <Link
-            href="/admin"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Dashboard
-          </Link>
-          <Link
-            href="/admin/posts"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Blog Posts
-          </Link>
-          <Link
-            href="/admin/subscribers"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Subscribers
-          </Link>
-          <Link
-            href="/admin/revenue"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Revenue
-          </Link>
-          <Link
-            href="/admin/pipeline"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Lead Pipeline
-          </Link>
-          <Link
-            href="/admin/shorts"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Shorts Automation
-          </Link>
-          <Link
-            href="/admin/calendar"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Content Calendar
-          </Link>
-          <Link
-            href="/admin/content-planner"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Content Planner
-          </Link>
-          <Link
-            href="/admin/audience"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Audience Insights
-          </Link>
-          <Link
-            href="/admin/share"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Quick Share
-          </Link>
-          <Link
-            href="/admin/chat-logs"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Chat Logs
-          </Link>
-          <Link
-            href="/admin/landing-pages"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Landing Pages
-          </Link>
-          <Link
-            href="/admin/trends"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Market Trends
-          </Link>
-          <Link
-            href="/admin/reply-suggestions"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Reply Suggestions
-          </Link>
-          <Link
-            href="/admin/reviews"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Reviews
-          </Link>
-          <Link
-            href="/admin/social-calendar"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Social Calendar
-          </Link>
-          <Link
-            href="/admin/notifications"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Notifications
-          </Link>
-          <Link
-            href="/admin/performance"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Performance
-          </Link>
-          <Link
-            href="/admin/competitors"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Competitor Spy
-          </Link>
-          <Link
-            href="/admin/signature"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Branding Kit
-          </Link>
-          <a
-            href="https://vercel.com/wrightharvest-9811s-projects/r2f-trading/analytics"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
-          >
-            Analytics ↗
-          </a>
+        <nav className="flex-1 p-3 overflow-y-auto">
+          {NAV_SECTIONS.map((section) => (
+            <div key={section.label} className="mb-4">
+              <div className="px-3 py-1.5 text-[10px] font-bold tracking-[0.15em] uppercase text-white/30">
+                {section.label}
+              </div>
+              {section.items.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="block px-3 py-2 rounded-md text-sm text-white/60 hover:text-white hover:bg-white/5 transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
+              {section.external?.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-3 py-2 rounded-md text-sm text-white/60 hover:text-white hover:bg-white/5 transition-colors"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          ))}
         </nav>
 
-        <div className="p-4 border-t border-white/10 space-y-2">
+        <div className="p-3 border-t border-white/10 space-y-1">
           <Link
             href="/"
-            className="block px-4 py-2 rounded-md text-xs text-white/40 hover:text-white/70 transition-colors"
+            className="block px-3 py-2 rounded-md text-xs text-white/40 hover:text-white/70 transition-colors"
           >
             ← View Site
           </Link>
@@ -165,8 +150,11 @@ export default async function AdminLayout({
         </div>
       </aside>
 
+      {/* Backdrop for mobile */}
+      <label htmlFor="mobile-nav" className="hidden peer-checked:block md:hidden fixed inset-0 bg-black/50 z-30" />
+
       {/* Main content */}
-      <main className="flex-1 p-8 overflow-auto">{children}</main>
+      <main className="flex-1 p-4 md:p-8 overflow-auto">{children}</main>
     </div>
   );
 }
@@ -185,7 +173,7 @@ function LogoutButton() {
     >
       <button
         type="submit"
-        className="block w-full text-left px-4 py-2 rounded-md text-xs text-red-400/60 hover:text-red-400 transition-colors"
+        className="block w-full text-left px-3 py-2 rounded-md text-xs text-red-400/60 hover:text-red-400 transition-colors"
       >
         Sign Out
       </button>
