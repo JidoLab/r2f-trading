@@ -45,7 +45,8 @@ async function getYouTubeAccessToken(): Promise<string | null> {
 
 async function searchYouTube(
   query: string,
-  accessToken: string
+  accessTokenOrApiKey: string,
+  useApiKey: boolean = false
 ): Promise<{ videoId: string; title: string; channelTitle: string }[]> {
   const params = new URLSearchParams({
     part: "snippet",
@@ -53,10 +54,12 @@ async function searchYouTube(
     type: "video",
     order: "date",
     maxResults: "5",
+    ...(useApiKey ? { key: accessTokenOrApiKey } : {}),
   });
+  const headers: Record<string, string> = useApiKey ? {} : { Authorization: `Bearer ${accessTokenOrApiKey}` };
   const res = await fetch(
     `https://www.googleapis.com/youtube/v3/search?${params}`,
-    { headers: { Authorization: `Bearer ${accessToken}` } }
+    { headers }
   );
   if (!res.ok) {
     console.error(`[reply-opps] YouTube search failed: ${res.status} ${await res.text().catch(() => "")}`);
@@ -121,20 +124,30 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    const accessToken = await getYouTubeAccessToken();
-    if (!accessToken) {
-      // Log the failure for debugging
-      try {
-        await commitFile(
-          "data/reply-suggestions-debug.json",
-          JSON.stringify({ error: "YouTube OAuth token refresh failed", date: new Date().toISOString(), hasClientId: !!process.env.YOUTUBE_CLIENT_ID, hasClientSecret: !!process.env.YOUTUBE_CLIENT_SECRET, hasRefreshToken: !!process.env.YOUTUBE_REFRESH_TOKEN }, null, 2),
-          "Reply suggestions: OAuth failed"
+    // Prefer API key for search (doesn't need OAuth scopes), fall back to OAuth
+    const apiKey = process.env.YOUTUBE_API_KEY || process.env.GEMINI_API_KEY;
+    let authToken = "";
+    let useApiKey = false;
+
+    if (apiKey) {
+      authToken = apiKey;
+      useApiKey = true;
+    } else {
+      const accessToken = await getYouTubeAccessToken();
+      if (!accessToken) {
+        try {
+          await commitFile(
+            "data/reply-suggestions-debug.json",
+            JSON.stringify({ error: "No API key and OAuth refresh failed", date: new Date().toISOString() }, null, 2),
+            "Reply suggestions: auth failed"
+          );
+        } catch {}
+        return NextResponse.json(
+          { error: "No YouTube API key or OAuth token available" },
+          { status: 500 }
         );
-      } catch {}
-      return NextResponse.json(
-        { error: "YouTube OAuth credentials not configured" },
-        { status: 500 }
-      );
+      }
+      authToken = accessToken;
     }
 
     const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
@@ -145,7 +158,7 @@ export async function GET(req: NextRequest) {
     // Search YouTube for each query
     for (const query of SEARCH_QUERIES) {
       try {
-        const videos = await searchYouTube(query, accessToken);
+        const videos = await searchYouTube(query, authToken, useApiKey);
         for (const video of videos) {
           const url = `https://youtube.com/watch?v=${video.videoId}`;
           if (existingUrls.has(url)) continue;
