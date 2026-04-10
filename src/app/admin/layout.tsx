@@ -43,6 +43,18 @@ export default async function AdminLayout({
             Subscribers
           </Link>
           <Link
+            href="/admin/revenue"
+            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Revenue
+          </Link>
+          <Link
+            href="/admin/pipeline"
+            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Lead Pipeline
+          </Link>
+          <Link
             href="/admin/shorts"
             className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
           >
@@ -53,6 +65,18 @@ export default async function AdminLayout({
             className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
           >
             Content Calendar
+          </Link>
+          <Link
+            href="/admin/content-planner"
+            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Content Planner
+          </Link>
+          <Link
+            href="/admin/audience"
+            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Audience Insights
           </Link>
           <Link
             href="/admin/share"
@@ -89,6 +113,30 @@ export default async function AdminLayout({
             className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
           >
             Reviews
+          </Link>
+          <Link
+            href="/admin/social-calendar"
+            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Social Calendar
+          </Link>
+          <Link
+            href="/admin/notifications"
+            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Notifications
+          </Link>
+          <Link
+            href="/admin/performance"
+            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Performance
+          </Link>
+          <Link
+            href="/admin/competitors"
+            className="block px-4 py-2.5 rounded-md text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            Competitor Spy
           </Link>
           <Link
             href="/admin/signature"
