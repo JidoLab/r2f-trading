@@ -3,6 +3,7 @@ import { verifyAdmin } from "@/lib/admin-auth";
 import { readFile } from "@/lib/github";
 import { normalizeSubscriber } from "@/lib/lead-scoring";
 import type { ScoredSubscriber } from "@/lib/lead-scoring";
+import { getAnalyticsData, isAnalyticsConfigured } from "@/lib/analytics";
 
 export const dynamic = "force-dynamic";
 
@@ -74,5 +75,24 @@ export async function GET() {
     })
     .sort((a, b) => b.score - a.score);
 
-  return NextResponse.json({ funnel, hotLeads });
+  // If GA4 is configured, include real visitor count at top of funnel
+  let visitors: number | null = null;
+  let analyticsConfigured = false;
+  if (isAnalyticsConfigured()) {
+    analyticsConfigured = true;
+    try {
+      const analytics = await getAnalyticsData();
+      if (analytics) {
+        visitors = analytics.overview30d.users;
+      }
+    } catch {
+      // analytics fetch failed — keep visitors null
+    }
+  }
+
+  return NextResponse.json({
+    funnel: { ...funnel, visitors },
+    hotLeads,
+    analyticsConfigured,
+  });
 }

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { verifyAdmin } from "@/lib/admin-auth";
 import { readFile, listFiles } from "@/lib/github";
+import { getAnalyticsData, isAnalyticsConfigured } from "@/lib/analytics";
 
 export const dynamic = "force-dynamic";
 
@@ -186,6 +187,42 @@ export async function GET() {
       events: (sub.events || []).slice(0, 10),
     }));
 
+  // If GA4 is configured, include real traffic data
+  let trafficData: {
+    visitors7d: number;
+    visitors30d: number;
+    pageViews30d: number;
+    bounceRate: number;
+    topTrafficSources: { source: string; medium: string; sessions: number }[];
+    dailyVisitors: { date: string; users: number }[];
+  } | null = null;
+  const analyticsConfigured = isAnalyticsConfigured();
+
+  if (analyticsConfigured) {
+    try {
+      const analytics = await getAnalyticsData();
+      if (analytics) {
+        trafficData = {
+          visitors7d: analytics.overview7d.users,
+          visitors30d: analytics.overview30d.users,
+          pageViews30d: analytics.overview30d.pageViews,
+          bounceRate: analytics.overview30d.bounceRate,
+          topTrafficSources: analytics.trafficSources.slice(0, 5).map((s) => ({
+            source: s.source,
+            medium: s.medium,
+            sessions: s.sessions,
+          })),
+          dailyVisitors: analytics.dailyMetrics.map((d) => ({
+            date: d.date,
+            users: d.users,
+          })),
+        };
+      }
+    } catch {
+      // analytics fetch failed — continue without it
+    }
+  }
+
   return NextResponse.json({
     subscriberGrowth,
     scoreDistribution,
@@ -194,5 +231,7 @@ export async function GET() {
     chatbotInsights,
     subscriberTimeline,
     totalSubscribers: subscribers.length,
+    analyticsConfigured,
+    trafficData,
   });
 }

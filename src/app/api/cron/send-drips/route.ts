@@ -12,6 +12,7 @@ import {
   bookCallUrgentEmail,
   limitedSpotsEmail,
   reviewRequestEmail,
+  hotLeadFollowUpEmail,
 } from "@/lib/email-templates";
 
 export const maxDuration = 60;
@@ -176,17 +177,59 @@ export async function GET(req: NextRequest) {
       // Non-critical — don't fail the cron
     }
 
+    // --- Hot lead follow-up: personalized outreach + Telegram alert ---
+    let hotFollowUpsSent = 0;
+    for (let i = 0; i < subscribers.length; i++) {
+      if (emailsSent + reviewRequestsSent + hotFollowUpsSent >= 90) break;
+
+      const sub = subscribers[i] as Record<string, unknown>;
+      if (sub.segment !== "hot" || sub.hotFollowUpSent === true) continue;
+
+      const email = sub.email as string;
+      const name = (sub.name as string) || email.split("@")[0];
+      const score = (sub.score as number) || 0;
+      const signupDate = new Date(sub.date as string).getTime();
+      const daysSinceSignup = Math.floor((now - signupDate) / 86400000);
+
+      try {
+        // Send personalized follow-up email
+        const { subject, html } = hotLeadFollowUpEmail(name);
+        await sendEmail(email, subject, html);
+
+        // Mark as sent
+        sub.hotFollowUpSent = true;
+        subscribers[i] = sub;
+        updated = true;
+        hotFollowUpsSent++;
+
+        // Send Telegram alert to Harvest
+        const tgToken = process.env.TELEGRAM_BOT_TOKEN;
+        const tgChat = process.env.TELEGRAM_OWNER_CHAT_ID;
+        if (tgToken && tgChat) {
+          const message = `🔥 HOT LEAD ALERT\n\nEmail: ${email}\nScore: ${score}\nDays since signup: ${daysSinceSignup}\n\nThey've been viewing your coaching page. Consider reaching out!`;
+          await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ chat_id: tgChat, text: message }),
+          }).catch(() => {}); // Don't fail cron if Telegram fails
+        }
+      } catch {
+        // Skip failed sends, will retry next run
+      }
+    }
+
     if (updated) {
       await commitFile(
         "data/subscribers.json",
         JSON.stringify(subscribers, null, 2),
-        `Drip campaign: sent ${emailsSent} emails, ${reviewRequestsSent} review requests`
+        `Drip campaign: sent ${emailsSent} emails, ${reviewRequestsSent} review requests, ${hotFollowUpsSent} hot follow-ups`
       );
     }
 
     return NextResponse.json({
       sent: emailsSent,
       reviewRequests: reviewRequestsSent,
+      hotFollowUps: hotFollowUpsSent,
       total: subscribers.length,
     });
   } catch (err: unknown) {

@@ -15,6 +15,7 @@ const NAV_SECTIONS = [
     items: [
       { href: "/admin/posts", label: "Blog Posts" },
       { href: "/admin/shorts", label: "Shorts" },
+      { href: "/admin/newsletters", label: "Newsletters" },
       { href: "/admin/content-planner", label: "AI Planner" },
       { href: "/admin/calendar", label: "Content Calendar" },
       { href: "/admin/social-calendar", label: "Social Calendar" },
@@ -53,6 +54,7 @@ const NAV_SECTIONS = [
       { href: "/admin/performance", label: "Performance" },
       { href: "/admin/competitors", label: "Competitor Spy" },
       { href: "/admin/trends", label: "Market Trends" },
+      { href: "/admin/analytics-dashboard", label: "Analytics Dashboard" },
     ],
   },
   {

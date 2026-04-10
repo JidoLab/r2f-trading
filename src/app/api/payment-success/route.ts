@@ -95,6 +95,40 @@ export async function POST(req: NextRequest) {
       }
     } catch {}
 
+    // Save student record for onboarding automation
+    try {
+      let students: Record<string, unknown>[] = [];
+      try {
+        students = JSON.parse(await readFile("data/students.json"));
+      } catch {}
+
+      // Avoid duplicates — skip if student with same orderId exists
+      const exists = students.some((s) => s.orderId === orderId);
+      if (!exists) {
+        const nextCheckIn = new Date();
+        nextCheckIn.setDate(nextCheckIn.getDate() + 1);
+
+        students.push({
+          email: payerEmail,
+          name: payerName || "",
+          plan,
+          amount,
+          orderId,
+          startDate: new Date().toISOString(),
+          onboardingStep: 0,
+          onboardingEmails: [] as string[],
+          nextCheckIn: nextCheckIn.toISOString(),
+          reviewRequested: false,
+        });
+
+        await commitFile(
+          "data/students.json",
+          JSON.stringify(students, null, 2),
+          `New student: ${payerEmail} — ${plan}`
+        );
+      }
+    } catch {}
+
     return NextResponse.json({ success: true });
   } catch (err: unknown) {
     return NextResponse.json({ error: err instanceof Error ? err.message : "Failed" }, { status: 500 });
