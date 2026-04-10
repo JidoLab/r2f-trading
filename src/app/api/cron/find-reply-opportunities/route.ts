@@ -58,7 +58,10 @@ async function searchYouTube(
     `https://www.googleapis.com/youtube/v3/search?${params}`,
     { headers: { Authorization: `Bearer ${accessToken}` } }
   );
-  if (!res.ok) return [];
+  if (!res.ok) {
+    console.error(`[reply-opps] YouTube search failed: ${res.status} ${await res.text().catch(() => "")}`);
+    return [];
+  }
   const data = await res.json();
   return (data.items || []).map(
     (item: { id: { videoId: string }; snippet: { title: string; channelTitle: string } }) => ({
@@ -120,6 +123,14 @@ export async function GET(req: NextRequest) {
   try {
     const accessToken = await getYouTubeAccessToken();
     if (!accessToken) {
+      // Log the failure for debugging
+      try {
+        await commitFile(
+          "data/reply-suggestions-debug.json",
+          JSON.stringify({ error: "YouTube OAuth token refresh failed", date: new Date().toISOString(), hasClientId: !!process.env.YOUTUBE_CLIENT_ID, hasClientSecret: !!process.env.YOUTUBE_CLIENT_SECRET, hasRefreshToken: !!process.env.YOUTUBE_REFRESH_TOKEN }, null, 2),
+          "Reply suggestions: OAuth failed"
+        );
+      } catch {}
       return NextResponse.json(
         { error: "YouTube OAuth credentials not configured" },
         { status: 500 }
