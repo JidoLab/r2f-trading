@@ -138,8 +138,19 @@ export default function ReplySuggestionsPage() {
             <button
               onClick={() => {
                 const toOpen = pending.slice(0, 20);
-                for (const s of toOpen) {
-                  window.open(s.postUrl, "_blank");
+                // Open first URL in a new window, then open rest as tabs in that window
+                const newWindow = window.open(toOpen[0].postUrl, "_blank", "noopener");
+                // Small delay then open remaining tabs — browser associates them with user gesture
+                if (toOpen.length > 1) {
+                  let i = 1;
+                  const openNext = () => {
+                    if (i < toOpen.length) {
+                      window.open(toOpen[i].postUrl, "_blank");
+                      i++;
+                      setTimeout(openNext, 100);
+                    }
+                  };
+                  setTimeout(openNext, 300);
                 }
               }}
               className="bg-white/10 hover:bg-white/20 text-white font-semibold text-sm px-4 py-2 rounded-md transition-colors"
