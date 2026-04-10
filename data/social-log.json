@@ -617,5 +617,33 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-10T12:28:36.615Z",
+    "type": "text",
+    "postType": "story",
+    "text": "Last Friday's NFP I thought I was smart shorting DXY before the number. Got steamrolled when jobs ca",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
