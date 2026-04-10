@@ -2,13 +2,14 @@
   {
     "email": "wrightharvest@gmail.com",
     "date": "2026-04-04T10:35:09.710Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "score": 0,
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-04-04T10:35:09.710Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   },
   {
