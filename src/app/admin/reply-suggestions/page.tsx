@@ -35,9 +35,6 @@ export default function ReplySuggestionsPage() {
   const [acting, setActing] = useState<string | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
   const [historyOpen, setHistoryOpen] = useState(false);
-  const [processing, setProcessing] = useState(false);
-  const [currentProcess, setCurrentProcess] = useState(0);
-  const [waitingForNext, setWaitingForNext] = useState<(() => void) | null>(null);
 
   useEffect(() => {
     fetchSuggestions();
@@ -92,37 +89,12 @@ export default function ReplySuggestionsPage() {
     try {
       await navigator.clipboard.writeText(suggestion.suggestedReply);
       setCopied(suggestion.id);
-      setTimeout(() => setCopied(null), 3000);
+      setTimeout(() => setCopied(null), 2000);
     } catch {
       // Clipboard failed
     }
     window.open(suggestion.postUrl, "_blank");
     handleAction(suggestion.id, "markUsed");
-  }
-
-  // Process all pending: open each video one at a time with reply on clipboard
-  async function handleProcessAll() {
-    if (processing) return;
-    setProcessing(true);
-    const toProcess = pending.slice(0, 20);
-    for (let i = 0; i < toProcess.length; i++) {
-      setCurrentProcess(i + 1);
-      const s = toProcess[i];
-      try {
-        await navigator.clipboard.writeText(s.suggestedReply);
-      } catch {}
-      window.open(s.postUrl, "_blank");
-      handleAction(s.id, "markUsed");
-      // Wait for user to paste and come back — they click "Next" to continue
-      if (i < toProcess.length - 1) {
-        await new Promise<void>((resolve) => {
-          setWaitingForNext(resolve);
-        });
-      }
-    }
-    setProcessing(false);
-    setCurrentProcess(0);
-    setWaitingForNext(null);
   }
 
   function formatDate(dateStr: string) {
@@ -161,27 +133,6 @@ export default function ReplySuggestionsPage() {
           </p>
         </div>
         <div className="flex gap-3 items-center">
-          {pending.length > 0 && !processing && (
-            <button
-              onClick={handleProcessAll}
-              className="bg-gold/20 text-gold hover:bg-gold/30 font-semibold text-sm px-5 py-2.5 rounded-md transition-colors"
-            >
-              Start Replying ({Math.min(pending.length, 20)})
-            </button>
-          )}
-          {processing && waitingForNext && (
-            <div className="flex items-center gap-3">
-              <span className="text-gold text-sm font-semibold">
-                {currentProcess}/{Math.min(pending.length, 20)} — Paste the reply, then:
-              </span>
-              <button
-                onClick={() => { if (waitingForNext) waitingForNext(); }}
-                className="bg-gold text-navy font-bold text-sm px-5 py-2.5 rounded-md transition-colors animate-pulse"
-              >
-                Next →
-              </button>
-            </div>
-          )}
           <Link
             href="/admin"
             className="text-white/40 hover:text-white text-sm transition-colors"
