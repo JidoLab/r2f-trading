@@ -25,5 +25,32 @@
     "mentionedR2F": false,
     "commentedAt": "2026-04-10T03:22:15.191Z",
     "permalink": "/r/Daytrading/comments/1sgkzt7/weekly_recap/ofbd2ze/"
+  },
+  {
+    "postId": "1shbond",
+    "subreddit": "Daytrading",
+    "postTitle": "Where to look for ICT strategies?",
+    "commentText": "honestly the best ict education is still free on his youtube channel, just gotta dig through the older videos from 2022 when he was actually teaching concepts clearly. focus on learning one setup at a time like fair value gaps during london killzone rather than trying to absorb everything at once. reddit has some solid ict communities where people share actual chart examples without trying to sell you something, way better than those overpriced courses that just regurgitate the same material.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-10T13:43:23.988Z",
+    "permalink": "/r/Daytrading/comments/1shbond/where_to_look_for_ict_strategies/ofdpkt8/"
+  },
+  {
+    "postId": "1sh9lcc",
+    "subreddit": "Daytrading",
+    "postTitle": "Do common setups that are profitable exist?",
+    "commentText": "you're not doing anything wrong, that's literally how profitable trading works. one of my students was complaining about the same thing until they realized quality over quantity is everything. i'd rather take 3 solid order block reversals with proper liquidity sweeps per month than chase every ema cross or support level break. the setups that actually work are rare because everyone else sees the obvious ones too.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-10T13:43:32.138Z",
+    "permalink": "/r/Daytrading/comments/1sh9lcc/do_common_setups_that_are_profitable_exist/ofdpluz/"
+  },
+  {
+    "postId": "1sgxq9m",
+    "subreddit": "Daytrading",
+    "postTitle": "is my entry valid? im very new and want to know what i could done better",
+    "commentText": "solid setup actually, your confluence was on point with the 4h and 1h fvgs aligning. only thing i'd suggest is waiting for a cleaner break of structure on the lower timeframe before entering that ob retest, looks like price was still choppy when you got in. also consider where your entry sits relative to asian/london highs for better rr 📈",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-10T13:43:40.950Z",
+    "permalink": "/r/Daytrading/comments/1sgxq9m/is_my_entry_valid_im_very_new_and_want_to_know/ofdpmyd/"
   }
 ]
