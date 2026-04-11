@@ -1,0 +1,31 @@
+{
+  "date": "2026-04-11T02:17:17.234Z",
+  "today": "2026-04-11",
+  "topicsAttempted": [
+    "Stop Loss Hunting is NOT Market Manipulation",
+    null,
+    null
+  ],
+  "results": [
+    {
+      "title": "Stop Loss Hunting is NOT Market Manipulation",
+      "status": "error",
+      "error": "Creatomate: {\"hint\":\"Insufficient credits. Please check your subscription usage.\"}"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "Creatomate: {\"hint\":\"Insufficient credits. Please check your subscription usage.\"}"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "Creatomate: {\"hint\":\"Insufficient credits. Please check your subscription usage.\"}"
+    }
+  ],
+  "errors": [
+    "Creatomate: {\"hint\":\"Insufficient credits. Please check your subscription usage.\"}",
+    "Creatomate: {\"hint\":\"Insufficient credits. Please check your subscription usage.\"}",
+    "Creatomate: {\"hint\":\"Insufficient credits. Please check your subscription usage.\"}"
+  ]
+}
