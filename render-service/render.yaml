@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: r2f-video-renderer
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: RENDER_SECRET
+        sync: false

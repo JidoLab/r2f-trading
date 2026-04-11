@@ -449,20 +449,58 @@ Return ONLY JSON:
     ],
   };
 
-  // Trigger Creatomate render with webhook
+  // Trigger video render with webhook
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://r2ftrading.com";
   const webhookUrl = `${siteUrl}/api/shorts/webhook`;
 
-  const renderRes = await fetch("https://api.creatomate.com/v1/renders", {
-    method: "POST",
-    headers: { Authorization: `Bearer ${process.env.CREATOMATE_API_KEY}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ source, webhook_url: webhookUrl }),
-  });
+  let renderId: string;
 
-  if (!renderRes.ok) throw new Error(`Creatomate: ${(await renderRes.text()).slice(0, 200)}`);
-  const renders = await renderRes.json();
-  const renderData = Array.isArray(renders) ? renders[0] : renders;
-  const renderId = renderData?.id;
+  if (process.env.VIDEO_RENDER_URL) {
+    // Use FFmpeg render service (Render.com) instead of Creatomate
+    const renderRes = await fetch(process.env.VIDEO_RENDER_URL + "/render", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.RENDER_SECRET}`,
+      },
+      body: JSON.stringify({
+        slug,
+        audioUrl,
+        duration,
+        scenes: visuals.map((vis, i) => ({
+          type: vis.type,
+          url: vis.url,
+          start: i * sceneDur,
+          duration: sceneDur,
+        })),
+        captions: captions.map((c) => ({
+          text: c.text,
+          start: c.start,
+          end: c.end,
+          isHook: c.isHook,
+          isHighlight: c.isHighlight,
+        })),
+        webhookUrl,
+        githubToken: process.env.GITHUB_TOKEN,
+        githubRepo: process.env.GITHUB_REPO || "JidoLab/r2f-trading",
+      }),
+    });
+
+    if (!renderRes.ok) throw new Error(`FFmpeg Render Service: ${(await renderRes.text()).slice(0, 200)}`);
+    renderId = `render-${slug}`;
+  } else {
+    // Fallback: Creatomate
+    const renderRes = await fetch("https://api.creatomate.com/v1/renders", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${process.env.CREATOMATE_API_KEY}`, "Content-Type": "application/json" },
+      body: JSON.stringify({ source, webhook_url: webhookUrl }),
+    });
+
+    if (!renderRes.ok) throw new Error(`Creatomate: ${(await renderRes.text()).slice(0, 200)}`);
+    const renders = await renderRes.json();
+    const renderData = Array.isArray(renders) ? renders[0] : renders;
+    renderId = renderData?.id;
+  }
 
   // Save pending render data to GitHub
   await commitFile(`data/shorts/renders/${slug}.json`, JSON.stringify({
