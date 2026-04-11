@@ -1,5 +1,205 @@
 [
   {
+    "id": "sug-1775906553619-6465c",
+    "platform": "youtube",
+    "postTitle": "ICT lecture: Understanding ICT Order Block (The only video you need)",
+    "postUrl": "https://youtube.com/watch?v=8C_iu3iOT94",
+    "authorName": "URAH ICT",
+    "suggestedReply": "Why do most traders rush into trades without understanding the institutional logic behind order blocks? After 10+ years in this game, I can tell you that patience and proper order block identification is what separates profitable traders from the rest. My students always struggle with this concept initially but once it clicks, their win rate improves dramatically.",
+    "createdAt": "2026-04-11T11:22:33.619Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906557525-inhj8",
+    "platform": "youtube",
+    "postTitle": "Smart Money Concepts Trading (Beginner to Pro Guide)",
+    "postUrl": "https://youtube.com/watch?v=54fBtXvNQYU",
+    "authorName": "Smart Risk",
+    "suggestedReply": "Smart money concepts work when you understand the real institutional flow behind them. Too many traders jump into SMC without proper order flow analysis and wonder why they keep losing. I teach my students to focus on actual liquidity grabs before taking any entries, not just pretty structure breaks.",
+    "createdAt": "2026-04-11T11:22:37.525Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906561293-jjepp",
+    "platform": "youtube",
+    "postTitle": "Smart Money Concepts - The Blueprint To Trade Like Banks",
+    "postUrl": "https://youtube.com/watch?v=FNUeYlhbXkU",
+    "authorName": "TradingLab",
+    "suggestedReply": "The biggest misconception here is that banks actually trade using these \"smart money concepts\" that retail traders obsess over. In reality, institutional flow is driven by algorithmic execution across massive time horizons, not hunting for retail stop losses on 15min charts. My students learn this distinction early because it changes everything about how you approach market structure.",
+    "createdAt": "2026-04-11T11:22:41.293Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906565113-vzp66",
+    "platform": "youtube",
+    "postTitle": "How To Trade Smart Money Concepts | LuxAlgo",
+    "postUrl": "https://youtube.com/watch?v=xNcHsVJ71qo",
+    "authorName": "Tom Crown",
+    "suggestedReply": "Been trading SMC for years and what most people miss is that liquidity sweeps don't always equal reversals. I teach my students to wait for the actual shift in market structure before entering rather than jumping on every sweep. The algorithm loves to fake out retail traders who think every high/low grab is their entry signal.",
+    "createdAt": "2026-04-11T11:22:45.113Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906568829-2szej",
+    "platform": "youtube",
+    "postTitle": "The ULTIMATE Smart Money Concepts Guide (Full SMC Course)",
+    "postUrl": "https://youtube.com/watch?v=zrkfntcsorg",
+    "authorName": "Lewis Kelly",
+    "suggestedReply": "Most traders think SMC is about finding perfect order blocks and demand zones, but that's missing the bigger picture. After teaching hundreds of students over the years, I've seen too many get stuck hunting for textbook setups instead of understanding institutional flow. The real edge comes from reading market structure shifts and positioning accordingly, not just marking up levels on your chart.",
+    "createdAt": "2026-04-11T11:22:48.829Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906572933-2k03b",
+    "platform": "youtube",
+    "postTitle": "Smart Money Concepts Without The Confusion (My Clean SMC Strategy)",
+    "postUrl": "https://youtube.com/watch?v=iB3dt0Kk8j0",
+    "authorName": "The Secret Mindset",
+    "suggestedReply": "Most traders think SMC is about finding perfect order blocks and fair value gaps, but that's backwards thinking. After teaching this for years, I've seen my students struggle until they realize SMC is really about reading institutional behavior first, then using the concepts as confirmation tools. The strategy becomes clean when you flip that priority.",
+    "createdAt": "2026-04-11T11:22:52.933Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906575907-pvqnv",
+    "platform": "youtube",
+    "postTitle": "How to Only Trade A+ Setups | Smart Money Trading",
+    "postUrl": "https://youtube.com/watch?v=UX3mY_u-7-g",
+    "authorName": "Smart Risk",
+    "suggestedReply": "The biggest trap I see traders fall into is thinking A+ setups guarantee profits. After 10+ years, I can tell you that even the cleanest institutional orderflow patterns fail 30-40% of the time. My students learn this the hard way when they risk too much on these \"sure things\" and blow accounts chasing perfection.",
+    "createdAt": "2026-04-11T11:22:55.907Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906580162-enz95",
+    "platform": "youtube",
+    "postTitle": "FTMO Challenge Explained in 5 Minutes (Updated 2026)",
+    "postUrl": "https://youtube.com/watch?v=42l9D_67sZ4",
+    "authorName": "Trade With Jem",
+    "suggestedReply": "Spot on about the consistency requirements being the real challenge. What most people miss is that FTMO actually wants to see your worst drawdown periods and how you handle them psychologically. My students who pass focus more on risk management during losing streaks than hitting profit targets. The evaluation process teaches you more about yourself as a trader than any course ever could.",
+    "createdAt": "2026-04-11T11:23:00.162Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906583814-u0w0a",
+    "platform": "youtube",
+    "postTitle": "FTMO Challenge Explained - Everything You Need To Know 2026",
+    "postUrl": "https://youtube.com/watch?v=Im1U8_oKtPc",
+    "authorName": "Trade With Jem",
+    "suggestedReply": "I always tell my students that FTMO challenges are essentially glorified backtests with live market conditions. Focus on proper risk management and trade what you see, not what you think the market should do. Most fail because they overtrade trying to hit profit targets quickly instead of letting their edge play out naturally over time.",
+    "createdAt": "2026-04-11T11:23:03.814Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906587447-98cji",
+    "platform": "youtube",
+    "postTitle": "How I Pass FTMO Challenges Every Time (Full Strategy Breakdown)",
+    "postUrl": "https://youtube.com/watch?v=gqlbBsCMGnM",
+    "authorName": "Trade With Jem",
+    "suggestedReply": "Why do most traders overcomplicate FTMO challenges when the solution is right in front of them? I've been telling my students for years that consistency beats complexity every single time. The real challenge isn't the drawdown rules or profit targets, it's having the discipline to stick to a proven system when emotions kick in.",
+    "createdAt": "2026-04-11T11:23:07.447Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906591141-3cvhs",
+    "platform": "youtube",
+    "postTitle": "How To Pass A FTMO Prop Trading Challenge (Or Any Other Prop Firm)",
+    "postUrl": "https://youtube.com/watch?v=0Nh_1gPYf4s",
+    "authorName": "Bernd Skorupinski",
+    "suggestedReply": "Most traders think passing FTMO is about hitting profit targets, but that's backwards thinking. The real challenge is staying disciplined with risk management while the pressure mounts. I've seen my students blow accounts not because they couldn't make money, but because they abandoned their rules when they got close to the target.",
+    "createdAt": "2026-04-11T11:23:11.141Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906593863-53coy",
+    "platform": "youtube",
+    "postTitle": "FTMO Prop Firm Challenge Explained (2025) | FTMO challenge Review",
+    "postUrl": "https://youtube.com/watch?v=lr5Mlcznal4",
+    "authorName": "Prop Firm Match",
+    "suggestedReply": "Why do so many traders rush into FTMO without understanding their evaluation criteria first? I've seen my students fail challenges simply because they didn't grasp the daily drawdown rules. The key is treating it like a real trading business from day one, not a lottery ticket.",
+    "createdAt": "2026-04-11T11:23:13.863Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906597634-9i6dx",
+    "platform": "youtube",
+    "postTitle": "How To Pass Prop Firm Challenges EVERY TIME",
+    "postUrl": "https://youtube.com/watch?v=9yk9S2q8jAg",
+    "authorName": "JeaFx",
+    "suggestedReply": "I tell my students that consistency beats aggression when tackling prop firm challenges. Focus on small, high probability setups rather than swinging for home runs. Risk management is everything - the firms want to see you can preserve capital first, make profits second. Most traders fail because they overtrade trying to hit targets quickly instead of being methodical.",
+    "createdAt": "2026-04-11T11:23:17.634Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906603570-kt77q",
+    "platform": "youtube",
+    "postTitle": "High-Quality Fair Value Gap Trading Strategy",
+    "postUrl": "https://youtube.com/watch?v=zm2CyPrD5Uk",
+    "authorName": "Smart Risk",
+    "suggestedReply": "The key with FVGs is waiting for that clean mitigation before entry. I teach my students to look for multiple timeframe confluence when these gaps form at premium or discount levels. The rejection candle structure after the gap fills is usually what separates the high probability setups from the noise.",
+    "createdAt": "2026-04-11T11:23:23.570Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906607459-8hffm",
+    "platform": "youtube",
+    "postTitle": "Fair Value Gaps Are Lying to You — Until You Learn These 5 Keys",
+    "postUrl": "https://youtube.com/watch?v=Z58EjAAWvEE",
+    "authorName": "Day Trading & Jesus",
+    "suggestedReply": "Most traders think every fair value gap needs to be filled immediately but that's backwards thinking. The real power comes from understanding which gaps act as support/resistance and which ones are just noise from algorithmic rebalancing. I teach my students to focus on gaps formed during high impact news events because those create the institutional imbalances that actually matter.",
+    "createdAt": "2026-04-11T11:23:27.459Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906610497-nv377",
+    "platform": "youtube",
+    "postTitle": "The Only Fair Value Gap Video You Need.",
+    "postUrl": "https://youtube.com/watch?v=qswlc-I-DuA",
+    "authorName": "TJR",
+    "suggestedReply": "I tell my students that FVG identification is just the beginning. The real edge comes from understanding which gaps actually get respected and why price reacts at certain levels. Most traders focus on the setup but miss the context that determines whether a gap holds or gets blown through.",
+    "createdAt": "2026-04-11T11:23:30.497Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906614469-uglex",
+    "platform": "youtube",
+    "postTitle": "Fair Value Gap (FVG) Explained & How to Trade It | Step By Step Guide | FREE Forex Series - Ep. 3",
+    "postUrl": "https://youtube.com/watch?v=mOEYW19mLo8",
+    "authorName": "Trade Max Academy",
+    "suggestedReply": "FVGs are absolutely game changers when you understand the institutional perspective behind them. I teach my students to look for confluence with premium/discount zones and always wait for the retracement into the gap before considering entry. The key is recognizing that not all gaps get filled immediately, some take weeks or even months depending on the timeframe you're trading.",
+    "createdAt": "2026-04-11T11:23:34.469Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906618132-x2ns5",
+    "platform": "youtube",
+    "postTitle": "I Finally Solved Fair Value Gaps",
+    "postUrl": "https://youtube.com/watch?v=d0Tkxd-5vAw",
+    "authorName": "Atif Hussain",
+    "suggestedReply": "The gap fill at the open is where most retail traders get trapped because they're looking at daily timeframes instead of breaking down to 5min structure. I teach my students to wait for the first liquidity sweep above the gap before considering any short positions. The real edge comes from understanding which gaps actually hold significance in the broader market structure context.",
+    "createdAt": "2026-04-11T11:23:38.132Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906621192-iqo0x",
+    "platform": "youtube",
+    "postTitle": "Master Fair Value Gaps In JUST 5 Minutes",
+    "postUrl": "https://youtube.com/watch?v=zwvtv0gBSdc",
+    "authorName": "Tom Crown",
+    "suggestedReply": "The biggest mistake I see traders make is thinking every gap needs to be filled immediately. Fair value gaps can stay open for days or weeks before price returns to balance them. My students learn to focus on the confluence with order blocks and liquidity zones rather than just trading every gap blindly.",
+    "createdAt": "2026-04-11T11:23:41.192Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1775906624824-lujhc",
+    "platform": "youtube",
+    "postTitle": "Fair Value Gap (FVG) Explained: 3 Best Strategies Revealed",
+    "postUrl": "https://youtube.com/watch?v=6VYtImsCQ44",
+    "authorName": "Data Trader",
+    "suggestedReply": "The supply and demand imbalance concept you covered is spot on. I've been teaching my students to look for FVGs that form during high momentum moves, especially around 8:30 AM EST when the algos are most active. The key is waiting for price to return and respect that gap before entering your position.",
+    "createdAt": "2026-04-11T11:23:44.824Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1775906497092-5x0e4",
     "platform": "youtube",
     "postTitle": "🔴 Live Gold Trading (XAUUSD): Smart Money Concepts & Price Action",
