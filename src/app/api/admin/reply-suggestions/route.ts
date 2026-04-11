@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 
 interface ReplySuggestion {
   id: string;
-  platform: "youtube";
+  platform: "youtube" | "facebook_group" | "linkedin" | "medium" | "quora" | "tradingview" | "forexfactory" | "babypips";
   postTitle: string;
   postUrl: string;
   authorName: string;
@@ -25,16 +25,22 @@ async function loadSuggestions(): Promise<ReplySuggestion[]> {
   }
 }
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   const isAdmin = await verifyAdmin();
   if (!isAdmin)
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
-  const suggestions = await loadSuggestions();
+  const platform = req.nextUrl.searchParams.get("platform");
+
+  let suggestions = await loadSuggestions();
   // newest first
   suggestions.sort(
     (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
   );
+
+  if (platform) {
+    suggestions = suggestions.filter((s) => s.platform === platform);
+  }
 
   return NextResponse.json({ suggestions });
 }

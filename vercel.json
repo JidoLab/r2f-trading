@@ -71,6 +71,10 @@
     {
       "path": "/api/cron/publish-short",
       "schedule": "0 17 * * *"
+    },
+    {
+      "path": "/api/cron/find-forum-opportunities",
+      "schedule": "0 4 * * *"
     }
   ]
 }

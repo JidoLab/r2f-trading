@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
+type Platform = "youtube" | "facebook_group" | "linkedin" | "medium" | "quora" | "tradingview" | "forexfactory" | "babypips";
+
 interface ReplySuggestion {
   id: string;
-  platform: "youtube";
+  platform: Platform;
   postTitle: string;
   postUrl: string;
   authorName: string;
@@ -14,17 +16,42 @@ interface ReplySuggestion {
   status: "pending" | "used" | "skipped";
 }
 
-function PlatformIcon({ platform }: { platform: string }) {
-  if (platform === "youtube") {
+const PLATFORM_CONFIG: Record<Platform, { label: string; abbr: string; bg: string; text: string }> = {
+  youtube:        { label: "YouTube",      abbr: "YT", bg: "bg-red-600/20",    text: "text-red-400" },
+  facebook_group: { label: "Facebook",     abbr: "FB", bg: "bg-blue-600/20",   text: "text-blue-400" },
+  linkedin:       { label: "LinkedIn",     abbr: "LI", bg: "bg-blue-500/20",   text: "text-blue-300" },
+  medium:         { label: "Medium",       abbr: "M",  bg: "bg-neutral-700/30", text: "text-neutral-300" },
+  quora:          { label: "Quora",        abbr: "Q",  bg: "bg-red-700/20",    text: "text-red-300" },
+  tradingview:    { label: "TradingView",  abbr: "TV", bg: "bg-blue-500/20",   text: "text-blue-300" },
+  forexfactory:   { label: "ForexFactory", abbr: "FF", bg: "bg-green-600/20",  text: "text-green-400" },
+  babypips:       { label: "BabyPips",     abbr: "BP", bg: "bg-green-500/20",  text: "text-green-300" },
+};
+
+const TAB_ORDER: Platform[] = ["youtube", "facebook_group", "linkedin", "medium", "quora", "tradingview", "forexfactory", "babypips"];
+
+function PlatformIcon({ platform, size = "md" }: { platform: string; size?: "sm" | "md" }) {
+  const config = PLATFORM_CONFIG[platform as Platform];
+  const dims = size === "sm" ? "w-6 h-6 text-xs" : "w-8 h-8 text-sm";
+  if (config) {
     return (
-      <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-red-600/20 text-red-400 text-sm font-bold shrink-0">
-        YT
+      <span className={`inline-flex items-center justify-center rounded-full ${config.bg} ${config.text} ${dims} font-bold shrink-0`}>
+        {config.abbr}
       </span>
     );
   }
   return (
-    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/10 text-white/60 text-sm font-bold shrink-0">
+    <span className={`inline-flex items-center justify-center rounded-full bg-white/10 text-white/60 ${dims} font-bold shrink-0`}>
       ?
+    </span>
+  );
+}
+
+function PlatformBadge({ platform }: { platform: Platform }) {
+  const config = PLATFORM_CONFIG[platform];
+  if (!config) return null;
+  return (
+    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold ${config.bg} ${config.text}`}>
+      {config.abbr} {config.label}
     </span>
   );
 }
@@ -35,6 +62,7 @@ export default function ReplySuggestionsPage() {
   const [acting, setActing] = useState<string | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
   const [historyOpen, setHistoryOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState<"all" | Platform>("all");
 
   useEffect(() => {
     fetchSuggestions();
@@ -112,8 +140,18 @@ export default function ReplySuggestionsPage() {
     }
   }
 
-  const pending = suggestions.filter((s) => s.status === "pending");
-  const history = suggestions.filter((s) => s.status !== "pending");
+  const filtered = activeTab === "all" ? suggestions : suggestions.filter((s) => s.platform === activeTab);
+  const pending = filtered.filter((s) => s.status === "pending");
+  const history = filtered.filter((s) => s.status !== "pending");
+
+  const allPending = suggestions.filter((s) => s.status === "pending");
+  const pendingByPlatform = allPending.reduce<Partial<Record<Platform, number>>>((acc, s) => {
+    acc[s.platform] = (acc[s.platform] || 0) + 1;
+    return acc;
+  }, {});
+
+  // Platforms that have at least 1 suggestion (pending or history)
+  const activePlatforms = TAB_ORDER.filter((p) => suggestions.some((s) => s.platform === p));
 
   if (loading) {
     return (
@@ -125,12 +163,25 @@ export default function ReplySuggestionsPage() {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex items-center justify-between mb-6">
         <div>
           <h1 className="text-2xl font-bold text-white">Reply Suggestions</h1>
-          <p className="text-white/50 text-sm">
-            {pending.length} pending &middot; {history.length} in history
-          </p>
+          <div className="flex items-center gap-2 mt-1 flex-wrap">
+            <span className="text-white/50 text-sm">
+              {allPending.length} pending
+            </span>
+            {Object.entries(pendingByPlatform).map(([p, count]) => {
+              const config = PLATFORM_CONFIG[p as Platform];
+              return config ? (
+                <span
+                  key={p}
+                  className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-xs font-medium ${config.bg} ${config.text}`}
+                >
+                  {config.abbr} {count}
+                </span>
+              ) : null;
+            })}
+          </div>
         </div>
         <div className="flex gap-3 items-center">
           <Link
@@ -141,6 +192,46 @@ export default function ReplySuggestionsPage() {
           </Link>
         </div>
       </div>
+
+      {/* Platform Filter Tabs */}
+      {activePlatforms.length > 0 && (
+        <div className="flex gap-2 mb-6 flex-wrap">
+          <button
+            onClick={() => setActiveTab("all")}
+            className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+              activeTab === "all"
+                ? "bg-gold/20 text-gold"
+                : "bg-white/5 text-white/40 hover:text-white/70 hover:bg-white/10"
+            }`}
+          >
+            All
+            <span className="ml-1.5 text-xs opacity-70">{allPending.length}</span>
+          </button>
+          {activePlatforms.map((p) => {
+            const config = PLATFORM_CONFIG[p];
+            const count = pendingByPlatform[p] || 0;
+            return (
+              <button
+                key={p}
+                onClick={() => setActiveTab(p)}
+                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors flex items-center gap-1.5 ${
+                  activeTab === p
+                    ? `${config.bg} ${config.text}`
+                    : "bg-white/5 text-white/40 hover:text-white/70 hover:bg-white/10"
+                }`}
+              >
+                <span className={`inline-flex items-center justify-center w-5 h-5 rounded-full text-xs font-bold ${config.bg} ${config.text}`}>
+                  {config.abbr}
+                </span>
+                {config.label}
+                {count > 0 && (
+                  <span className="text-xs opacity-70">{count}</span>
+                )}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       {/* Pending Suggestions */}
       <div className="mb-10">
@@ -179,7 +270,9 @@ export default function ReplySuggestionsPage() {
                         {suggestion.postTitle}
                       </a>
                     </div>
-                    <div className="flex items-center gap-2 mb-3">
+                    <div className="flex items-center gap-2 mb-3 flex-wrap">
+                      <PlatformBadge platform={suggestion.platform} />
+                      <span className="text-white/20">&middot;</span>
                       <span className="text-white/40 text-xs">
                         by {suggestion.authorName}
                       </span>
@@ -287,10 +380,14 @@ export default function ReplySuggestionsPage() {
                           {suggestion.status === "used" ? "Used" : "Skipped"}
                         </span>
                       </div>
-                      <span className="text-white/30 text-xs">
-                        by {suggestion.authorName} &middot;{" "}
-                        {formatDate(suggestion.createdAt)}
-                      </span>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <PlatformBadge platform={suggestion.platform} />
+                        <span className="text-white/20">&middot;</span>
+                        <span className="text-white/30 text-xs">
+                          by {suggestion.authorName} &middot;{" "}
+                          {formatDate(suggestion.createdAt)}
+                        </span>
+                      </div>
                       <p className="text-white/40 text-xs mt-2 leading-relaxed line-clamp-2">
                         {suggestion.suggestedReply}
                       </p>
