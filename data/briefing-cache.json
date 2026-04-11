@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-04-11T02:22:46.715Z",
+  "greeting": "Good morning, Harvest",
+  "dateTime": "Saturday, 11 April 2026 at 09:22 (Bangkok)",
+  "overnight": {
+    "newSubscribers": 0,
+    "payments": {
+      "count": 0,
+      "revenue": 0
+    },
+    "chatConversations": 0
+  },
+  "contentStatus": {
+    "blogPostsToday": 0,
+    "totalBlogPosts": 19,
+    "shortsReady": 1,
+    "shortsPublished": 10,
+    "shortsRendering": 2,
+    "socialPostsThisWeek": 18
+  },
+  "hotLeads": {
+    "count": 0,
+    "recentHot": []
+  },
+  "suggestions": [
+    "Create and publish 1 blog post today to maintain content momentum beyond your current 19 posts",
+    "Post 3 Reddit comments in trading-related subreddits today to start building your presence from zero",
+    "Launch a lead magnet campaign to convert your 2 cold subscribers into warm prospects through targeted email sequences",
+    "Publish your 1 ready short video immediately and create 2 new shorts this week to maintain content pipeline"
+  ],
+  "schedule": [
+    {
+      "time": "09:00",
+      "task": "Generate 3 short videos"
+    },
+    {
+      "time": "11:00",
+      "task": "Text social post #1"
+    },
+    {
+      "time": "12:00",
+      "task": "Publish short #1"
+    },
+    {
+      "time": "13:00",
+      "task": "Blog post #1"
+    },
+    {
+      "time": "16:00",
+      "task": "Send drip emails"
+    },
+    {
+      "time": "18:00",
+      "task": "Publish short #2"
+    },
+    {
+      "time": "19:00",
+      "task": "Text social post #2"
+    },
+    {
+      "time": "21:00",
+      "task": "Daily report to Telegram"
+    },
+    {
+      "time": "23:00",
+      "task": "Blog post #2"
+    },
+    {
+      "time": "00:00",
+      "task": "Publish short #3"
+    },
+    {
+      "time": "10:00",
+      "task": "Reddit engage #1"
+    },
+    {
+      "time": "15:00",
+      "task": "Twitter engage"
+    },
+    {
+      "time": "20:00",
+      "task": "Reddit engage #2"
+    },
+    {
+      "time": "10:00 Mon",
+      "task": "Weekly newsletter"
+    },
+    {
+      "time": "14:00 Mon",
+      "task": "Weekly report"
+    },
+    {
+      "time": "13:00 Sun",
+      "task": "Pull analytics"
+    },
+    {
+      "time": "10:00",
+      "task": "Find reply opportunities"
+    }
+  ]
+}
