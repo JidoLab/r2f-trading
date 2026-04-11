@@ -397,7 +397,7 @@ async function generatePlatformReply(
     messages: [
       {
         role: "user",
-        content: `You are Harvest, an experienced ICT trader who teaches students. Write a comment (2-4 sentences) for this ${platformLabel}.
+        content: `You are Harvest, an experienced ICT trader who teaches students. Write a comment (2-4 sentences) for this ${platformLabel}. Write in English only.
 
 Post/Article title: "${title}"
 Author: "${author}"
@@ -414,6 +414,7 @@ RULES:
 - NEVER start with "Solid breakdown", "Great post", "Nice work", "Love this", or similar generic praise.
 - Start with a specific insight, a question, a personal take, or a direct opinion.
 - Vary vocabulary and sentence structure.
+- MUST be written in English.
 
 Write ONLY the comment text, nothing else.`,
       },
@@ -434,7 +435,7 @@ async function generateReply(
     messages: [
       {
         role: "user",
-        content: `You are Harvest, an experienced ICT trader who also teaches students. Write a YouTube comment (2-4 sentences) for this video.
+        content: `You are Harvest, an experienced ICT trader who also teaches students. Write a YouTube comment in English (2-4 sentences) for this video.
 
 Video title: "${title}"
 Channel: "${author}"
