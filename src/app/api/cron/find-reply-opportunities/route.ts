@@ -60,11 +60,14 @@ async function getYouTubeAccessToken(): Promise<string | null> {
 const NON_ENGLISH_PATTERNS = /[\u0600-\u06FF\u0900-\u097F\u0E00-\u0E7F\u3040-\u30FF\u4E00-\u9FFF\uAC00-\uD7AF\u0400-\u04FF\u0980-\u09FF\u0A00-\u0A7F]/;
 
 function isLikelyEnglish(text: string): boolean {
-  // Reject if title has significant non-Latin characters
+  // Reject if title has any non-Latin script characters
   if (NON_ENGLISH_PATTERNS.test(text)) return false;
-  // Check that most chars are ASCII/Latin
-  const asciiCount = (text.match(/[a-zA-Z]/g) || []).length;
-  return asciiCount > text.length * 0.3;
+  // Strip emojis and special chars for ratio check
+  const cleaned = text.replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}\u{FE00}-\u{FEFF}#@&*|]/gu, "").trim();
+  if (cleaned.length < 5) return false;
+  // Require at least 50% ASCII letters (stricter than before)
+  const asciiCount = (cleaned.match(/[a-zA-Z]/g) || []).length;
+  return asciiCount > cleaned.length * 0.5;
 }
 
 interface VideoResult {
@@ -111,11 +114,11 @@ async function searchYouTube(
   // Filter out non-English titles
   const englishVideos = rawVideos.filter((v: VideoResult) => isLikelyEnglish(v.title));
 
-  // Get video stats to filter by quality
+  // Get video stats + content details (duration) + channel stats (subscribers) to filter by quality
   if (englishVideos.length === 0) return [];
   const videoIds = englishVideos.map((v: VideoResult) => v.videoId).join(",");
   const statsParams = new URLSearchParams({
-    part: "statistics",
+    part: "statistics,contentDetails",
     id: videoIds,
     ...(useApiKey ? { key: accessTokenOrApiKey } : {}),
   });
@@ -126,24 +129,58 @@ async function searchYouTube(
 
   if (statsRes.ok) {
     const statsData = await statsRes.json();
-    const statsMap = new Map<string, { viewCount: number; commentCount: number }>();
+    const statsMap = new Map<string, { viewCount: number; commentCount: number; durationSeconds: number; channelId: string }>();
     for (const item of statsData.items || []) {
+      // Parse ISO 8601 duration (PT1M30S, PT5M, PT1H2M3S)
+      const dur = item.contentDetails?.duration || "PT0S";
+      const hMatch = dur.match(/(\d+)H/);
+      const mMatch = dur.match(/(\d+)M/);
+      const sMatch = dur.match(/(\d+)S/);
+      const seconds = (parseInt(hMatch?.[1] || "0") * 3600) + (parseInt(mMatch?.[1] || "0") * 60) + parseInt(sMatch?.[1] || "0");
+
       statsMap.set(item.id, {
         viewCount: parseInt(item.statistics?.viewCount || "0"),
         commentCount: parseInt(item.statistics?.commentCount || "0"),
+        durationSeconds: seconds,
+        channelId: item.snippet?.channelId || "",
       });
     }
 
-    // Enrich videos with stats and filter
+    // Get channel subscriber counts for all unique channels
+    const channelIds = [...new Set([...statsMap.values()].map(s => s.channelId).filter(Boolean))];
+    const channelSubMap = new Map<string, number>();
+    if (channelIds.length > 0) {
+      try {
+        const chParams = new URLSearchParams({
+          part: "statistics",
+          id: channelIds.join(","),
+          ...(useApiKey ? { key: accessTokenOrApiKey } : {}),
+        });
+        const chRes = await fetch(`https://www.googleapis.com/youtube/v3/channels?${chParams}`, { headers });
+        if (chRes.ok) {
+          const chData = await chRes.json();
+          for (const ch of chData.items || []) {
+            channelSubMap.set(ch.id, parseInt(ch.statistics?.subscriberCount || "0"));
+          }
+        }
+      } catch {}
+    }
+
+    // Enrich videos with stats and filter strictly
     return englishVideos
       .map((v: VideoResult) => {
         const stats = statsMap.get(v.videoId);
-        return { ...v, viewCount: stats?.viewCount || 0, commentCount: stats?.commentCount || 0 };
+        const subs = stats?.channelId ? (channelSubMap.get(stats.channelId) || 0) : 0;
+        return { ...v, viewCount: stats?.viewCount || 0, commentCount: stats?.commentCount || 0, subscriberCount: subs, durationSeconds: stats?.durationSeconds || 0 };
       })
-      .filter((v: VideoResult) => {
-        // Skip videos with very low views (probably spam/low quality)
-        if ((v.viewCount || 0) < 50) return false;
-        // Skip videos with 500+ comments (your comment will get buried)
+      .filter((v: VideoResult & { durationSeconds?: number }) => {
+        // Skip shorts and very short videos (under 2 minutes)
+        if ((v.durationSeconds || 0) < 120) return false;
+        // Skip channels with fewer than 3,000 subscribers
+        if ((v.subscriberCount || 0) < 3000) return false;
+        // Skip videos with very low views
+        if ((v.viewCount || 0) < 100) return false;
+        // Skip videos with 500+ comments (comment gets buried)
         if ((v.commentCount || 0) > 500) return false;
         return true;
       });
@@ -352,22 +389,23 @@ async function generatePlatformReply(
     messages: [
       {
         role: "user",
-        content: `You are Harvest, an experienced ICT trader who also coaches students. Write a comment (2-4 sentences) for this ${platformLabel}.
+        content: `You are Harvest, an experienced ICT trader who teaches students. Write a comment (2-4 sentences) for this ${platformLabel}.
 
 Post/Article title: "${title}"
 Author: "${author}"
 
 RULES:
-- Praise the poster genuinely. Acknowledge something specific they did well.
-- Add a quick piece of value, a complementary tip or perspective that builds on their content.
-- Sound like a confident, knowledgeable trader. NOT someone who is struggling.
-- You are an educator, not a student. Speak from a position of experience.
-- Occasionally (not always) reference "my students" naturally, e.g. "this is exactly what i tell my students" or "my students always ask about this". This makes people curious to check your profile.
-- NEVER use dashes of any kind. Use periods or commas instead.
-- NEVER mention R2F Trading, your website, or anything directly promotional.
+- Acknowledge something specific about the content. Be genuine.
+- Add value with a complementary insight or perspective.
+- Sound like a confident trader with 10+ years experience.
+- Occasionally (1 in 3) reference "my students" naturally.
+- NEVER use dashes. Use periods or commas instead.
+- NEVER mention R2F Trading, websites, or anything promotional.
 - NEVER use hashtags.
-- Keep it under 400 characters.
-- Sound natural. No generic openers like "Great post!" or "Great article!"
+- Keep under 400 characters.
+- NEVER start with "Solid breakdown", "Great post", "Nice work", "Love this", or similar generic praise.
+- Start with a specific insight, a question, a personal take, or a direct opinion.
+- Vary vocabulary and sentence structure.
 
 Write ONLY the comment text, nothing else.`,
       },
@@ -388,22 +426,32 @@ async function generateReply(
     messages: [
       {
         role: "user",
-        content: `You are Harvest, an experienced ICT trader who also coaches students. Write a YouTube comment (2-4 sentences) for this video.
+        content: `You are Harvest, an experienced ICT trader who also teaches students. Write a YouTube comment (2-4 sentences) for this video.
 
 Video title: "${title}"
 Channel: "${author}"
 
 RULES:
-- Praise the creator genuinely. Acknowledge something specific they did well.
-- Add a quick piece of value, a complementary tip or perspective that builds on their content.
-- Sound like a confident, knowledgeable trader. NOT someone who is struggling.
-- You are an educator, not a student. Speak from a position of experience.
-- Occasionally (not always) reference "my students" naturally, e.g. "this is exactly what i tell my students" or "my students always ask about this". This makes people curious to check your profile.
+- Acknowledge something specific about the video topic. Be genuine.
+- Add a complementary insight, tip, or perspective that builds on their content.
+- Sound like a confident trader with 10+ years experience. NOT a student or fan.
+- Occasionally (roughly 1 in 3 comments) reference "my students" naturally.
 - NEVER use dashes of any kind. Use periods or commas instead.
-- NEVER mention R2F Trading, your website, or anything directly promotional.
+- NEVER mention R2F Trading, your website, or anything promotional.
 - NEVER use hashtags.
-- Keep it under 400 characters.
-- Sound natural. No generic openers like "Great video!"
+- Keep under 400 characters.
+
+CRITICAL VARIETY RULES (to avoid looking like a bot):
+- NEVER start with "Solid breakdown", "Great breakdown", "Solid video", "Great content", "Nice work", "Love this", or any similar generic praise opener.
+- Each comment MUST start differently. Use varied openers like:
+  * Jump straight into the insight: "The part about [topic] is spot on..."
+  * Ask a rhetorical question: "How many traders miss this?"
+  * Share a personal take: "I've been trading [X] for years and..."
+  * Reference a specific detail: "That [specific thing] at [part]..."
+  * State an opinion: "Most people overlook the fact that..."
+  * Agree and extend: "This pairs well with..."
+- Vary your sentence structure and length between comments.
+- Use different vocabulary each time. Don't repeat phrases.
 
 Write ONLY the comment text, nothing else.`,
       },
