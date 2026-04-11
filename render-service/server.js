@@ -346,6 +346,32 @@ async function callWebhook(url, data) {
   }
 }
 
+// --- Proxy endpoint for fetching URLs that block Vercel IPs ---
+app.post("/proxy-fetch", async (req, res) => {
+  const auth = req.headers.authorization;
+  if (auth !== `Bearer ${process.env.RENDER_SECRET}`) {
+    return res.status(401).json({ error: "Unauthorized" });
+  }
+
+  const { url, headers: customHeaders } = req.body;
+  if (!url) return res.status(400).json({ error: "url required" });
+
+  try {
+    const fetchRes = await fetch(url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        ...(customHeaders || {}),
+      },
+    });
+    const text = await fetchRes.text();
+    res.json({ status: fetchRes.status, body: text.slice(0, 50000) });
+  } catch (err) {
+    res.json({ status: 0, error: err.message });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`R2F Video Renderer listening on port ${PORT}`);
   console.log(`FFmpeg available: ${ffmpegAvailable}`);
