@@ -11,7 +11,8 @@
 ## Services & Pricing
 - Lite Coaching Plan: $150/week — 1 weekly session (60-90 min), templates, action plans, direct Telegram/WhatsApp support
 - Pro Coaching Plan: $200/week — 2 weekly sessions, live market walkthroughs, recorded sessions, advanced resources
-- Full Mentorship Program: $1,000/4 months — comprehensive 6-month program, psychological coaching, custom trading plan, complimentary FTMO Challenge
+- Full Mentorship Program: $1,000/4 months — comprehensive program, psychological coaching, custom trading plan, complimentary FTMO Challenge
+- ICT Trading Starter Kit: $49 one-time — 5 module self-paced course covering ICT foundations, market structure, killzones, risk management, and funded account roadmap
 
 ## What We Teach
 - ICT (Inner Circle Trader) Concepts: order blocks, fair value gaps, liquidity, market structure, killzones, breaker blocks
@@ -34,6 +35,15 @@
 - Home: https://r2ftrading.com
 - About & FAQ: https://r2ftrading.com/about
 - Coaching Plans: https://r2ftrading.com/coaching
+- ICT Trading Starter Kit: https://r2ftrading.com/starter-kit
+- Free ICT Trading Class: https://r2ftrading.com/free-class
+- Student Results: https://r2ftrading.com/results
 - Trading Insights (Blog): https://r2ftrading.com/trading-insights
-- Contact: https://r2ftrading.com/contact
-- Privacy & Disclaimer: https://r2ftrading.com/privacy
+- Contact / Book a Call: https://r2ftrading.com/contact
+- Privacy: https://r2ftrading.com/privacy
+
+## Learning Resources
+- ICT Order Blocks Guide: https://r2ftrading.com/learn/order-blocks
+- How to Pass FTMO Challenge: https://r2ftrading.com/learn/ftmo-challenge-tips
+- ICT Killzone Trading: https://r2ftrading.com/learn/killzone-trading
+- Fair Value Gap Trading: https://r2ftrading.com/learn/fair-value-gaps
