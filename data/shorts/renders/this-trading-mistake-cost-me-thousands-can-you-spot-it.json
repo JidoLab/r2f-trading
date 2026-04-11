@@ -18,5 +18,7 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-06T08:28:22.701Z",
-  "status": "rendering"
+  "status": "failed",
+  "failedAt": "2026-04-11T02:23:41.587Z",
+  "failReason": "Creatomate webhook never returned after 3+ days"
 }
