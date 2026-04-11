@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sendEmail, addToAudience } from "@/lib/resend";
-import { welcomeEmail, referralBonusEmail, friendJoinedEmail } from "@/lib/email-templates";
+import { welcomeEmail, referralBonusEmail, friendJoinedEmail, instantWelcomeEmail } from "@/lib/email-templates";
 import { commitFile, readFile } from "@/lib/github";
 import fs from "fs";
 import path from "path";
@@ -128,6 +128,31 @@ export async function POST(req: NextRequest) {
         }
       }
     } catch { /* GitHub storage is best-effort */ }
+
+    // Instant personal welcome email (sent within seconds of signup)
+    try {
+      const displayName = name || email.split("@")[0];
+      const { subject: iwSubject, html: iwHtml } = instantWelcomeEmail(displayName);
+      sendEmail(email, iwSubject, iwHtml).catch(() => {});
+    } catch {}
+
+    // Telegram alert to Harvest — instant notification of new signup
+    try {
+      const tgToken = process.env.TELEGRAM_BOT_TOKEN;
+      const tgChat = process.env.TELEGRAM_OWNER_CHAT_ID;
+      if (tgToken && tgChat) {
+        const displayName = name || email.split("@")[0];
+        const refNote = ref ? ` (referred by ${ref})` : "";
+        fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            chat_id: tgChat,
+            text: `📧 NEW SUBSCRIBER\n\n${displayName} just signed up!\nEmail: ${email}${refNote}\n\nThey just received a personal welcome. Consider replying to their email within the hour for maximum conversion.`,
+          }),
+        }).catch(() => {});
+      }
+    } catch {}
 
     // Send referral bonus email with their unique link
     if (referralCode) {

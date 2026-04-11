@@ -13,6 +13,7 @@ import {
   limitedSpotsEmail,
   reviewRequestEmail,
   hotLeadFollowUpEmail,
+  staleLeadReengageEmail,
 } from "@/lib/email-templates";
 
 export const maxDuration = 60;
@@ -218,11 +219,46 @@ export async function GET(req: NextRequest) {
       }
     }
 
+    // --- Stale lead re-engagement ---
+    let staleReengaged = 0;
+    for (let i = 0; i < subscribers.length; i++) {
+      if (emailsSent + reviewRequestsSent + hotFollowUpsSent + staleReengaged >= 90) break;
+
+      const sub = subscribers[i] as Record<string, unknown>;
+      const email = sub.email as string;
+      const segment = sub.segment as string;
+      const signupDate = new Date(sub.date as string).getTime();
+      const daysSinceSignup = Math.floor((now - signupDate) / 86400000);
+      const events = (sub.events as { type: string }[]) || [];
+      const dripsHistory = (sub.dripsHistory as string[]) || [];
+
+      // Target: signed up 7+ days ago, still cold, completed their drip sequence,
+      // never visited coaching/contact pages, and haven't received re-engagement yet
+      if (segment !== "cold") continue;
+      if (daysSinceSignup < 7) continue;
+      if (sub.staleReengageSent === true) continue;
+      if (dripsHistory.length < 3) continue; // Let the regular drips finish first
+      const visitedHighValue = events.some(e =>
+        e.type === "coaching_page_view" || e.type === "contact_page_view" || e.type === "booking_click"
+      );
+      if (visitedHighValue) continue; // They're engaging, not stale
+
+      try {
+        const name = (sub.name as string) || email.split("@")[0];
+        const { subject, html } = staleLeadReengageEmail(name);
+        await sendEmail(email, subject, html);
+        sub.staleReengageSent = true;
+        subscribers[i] = sub;
+        updated = true;
+        staleReengaged++;
+      } catch {}
+    }
+
     if (updated) {
       await commitFile(
         "data/subscribers.json",
         JSON.stringify(subscribers, null, 2),
-        `Drip campaign: sent ${emailsSent} emails, ${reviewRequestsSent} review requests, ${hotFollowUpsSent} hot follow-ups`
+        `Drip campaign: sent ${emailsSent} emails, ${reviewRequestsSent} reviews, ${hotFollowUpsSent} hot, ${staleReengaged} re-engage`
       );
     }
 
@@ -230,6 +266,7 @@ export async function GET(req: NextRequest) {
       sent: emailsSent,
       reviewRequests: reviewRequestsSent,
       hotFollowUps: hotFollowUpsSent,
+      staleReengaged,
       total: subscribers.length,
     });
   } catch (err: unknown) {

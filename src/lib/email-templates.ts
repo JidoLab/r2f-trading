@@ -496,3 +496,32 @@ export function weeklyNewsletterEmail(content: NewsletterContent): { subject: st
 
   return { subject: content.subject, html };
 }
+
+export function instantWelcomeEmail(name: string): { subject: string; html: string } {
+  const displayName = name || "there";
+  return {
+    subject: `Hey ${displayName}, just saw you joined`,
+    html: layout(
+      `Hey ${displayName}!`,
+      `<p style="color:#555;line-height:1.7;">I just saw you signed up and wanted to personally say welcome. I'm Harvest, the founder of R2F Trading.</p>
+      <p style="color:#555;line-height:1.7;">I've been trading ICT concepts for over 10 years, and I built this community to help traders like you skip the costly mistakes I made early on.</p>
+      <p style="color:#555;line-height:1.7;">Quick question: <strong>what's your biggest challenge in trading right now?</strong> Hit reply and let me know. I read every response.</p>
+      <p style="color:#555;line-height:1.7;">In the meantime, check out our free ICT class if you haven't already. It covers the 3 setups that actually work.</p>`,
+      { text: "Watch the Free Class", url: `${BRAND.url}/free-class` }
+    ),
+  };
+}
+
+export function staleLeadReengageEmail(name: string): { subject: string; html: string } {
+  const displayName = name || "there";
+  return {
+    subject: "Still thinking about it?",
+    html: layout(
+      `Hey ${displayName}, still thinking about it?`,
+      `<p style="color:#555;line-height:1.7;">I noticed you signed up a while back but haven't had a chance to explore our coaching options yet. No pressure at all.</p>
+      <p style="color:#555;line-height:1.7;">I just wanted to share that one of my students recently passed their FTMO challenge after just 6 weeks of coaching. The key? Getting personalized feedback on their specific mistakes.</p>
+      <p style="color:#555;line-height:1.7;">If you're curious what that looks like, I'd love to chat. I do free 15 minute discovery calls where we look at your trading and figure out what's holding you back. No pitch, just real talk.</p>`,
+      { text: "Book a Free Call", url: `${BRAND.url}/contact` }
+    ),
+  };
+}
