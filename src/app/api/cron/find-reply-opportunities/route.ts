@@ -23,16 +23,21 @@ interface PostResult {
 }
 
 const SEARCH_QUERIES = [
-  "ICT trading tutorial",
-  "order blocks forex",
+  "forex trading strategy 2026",
+  "day trading tutorial",
+  "prop firm challenge strategy",
+  "how to get funded trading",
+  "trading psychology tips",
+  "price action trading",
   "smart money concepts",
-  "prop firm challenge",
-  "fair value gap trading",
-  "funded account trading",
-  "forex liquidity sweep",
-  "break of structure trading",
-  "FTMO challenge tips",
-  "trading psychology discipline",
+  "order blocks trading",
+  "risk management trading",
+  "forex market analysis today",
+  "swing trading strategy",
+  "supply and demand trading",
+  "trading mistakes to avoid",
+  "scalping forex strategy",
+  "FTMO challenge 2026",
 ];
 
 async function getYouTubeAccessToken(): Promise<string | null> {
@@ -84,13 +89,16 @@ async function searchYouTube(
   accessTokenOrApiKey: string,
   useApiKey: boolean = false
 ): Promise<VideoResult[]> {
+  // Only find videos from the last 30 days
+  const thirtyDaysAgo = new Date(Date.now() - 30 * 86400000).toISOString();
   const params = new URLSearchParams({
     part: "snippet",
     q: query,
     type: "video",
-    order: "relevance",
-    maxResults: "10",
+    order: "date",
+    maxResults: "15",
     relevanceLanguage: "en",
+    publishedAfter: thirtyDaysAgo,
     ...(useApiKey ? { key: accessTokenOrApiKey } : {}),
   });
   const headers: Record<string, string> = useApiKey ? {} : { Authorization: `Bearer ${accessTokenOrApiKey}` };
