@@ -718,5 +718,33 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-11T12:59:39.031Z",
+    "type": "text",
+    "postType": "promo-free-class",
+    "text": "CPI drops Tuesday. Smart money is already positioning while retail traders panic. I'm breaking down ",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
