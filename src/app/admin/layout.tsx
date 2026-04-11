@@ -62,6 +62,7 @@ const NAV_SECTIONS = [
     label: "Tools",
     items: [
       { href: "/admin/signature", label: "Branding Kit" },
+      { href: "/admin/gbp", label: "Google Business" },
     ],
     external: [
       { href: "https://vercel.com/wrightharvest-9811s-projects/r2f-trading/analytics", label: "Analytics ↗" },

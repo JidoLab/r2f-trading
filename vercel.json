@@ -75,6 +75,14 @@
     {
       "path": "/api/cron/find-forum-opportunities",
       "schedule": "0 4 * * *"
+    },
+    {
+      "path": "/api/cron/gbp-post",
+      "schedule": "0 7 * * *"
+    },
+    {
+      "path": "/api/cron/gbp-reviews",
+      "schedule": "0 9 * * *"
     }
   ]
 }

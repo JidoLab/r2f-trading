@@ -184,7 +184,11 @@ export function reviewRequestEmail(name: string): { subject: string; html: strin
       `<p style="color:#555;line-height:1.7;">Hey ${firstName},</p>
       <p style="color:#555;line-height:1.7;">You've been with R2F Trading for a couple of weeks now, and I'd love to hear how it's going!</p>
       <p style="color:#555;line-height:1.7;">Whether you're seeing improvements in your consistency, psychology, risk management, or anything else — your feedback means the world to me. It helps me improve the coaching AND it helps other traders who are considering taking the same step you did.</p>
-      <p style="color:#555;line-height:1.7;">If you have 30 seconds, I'd really appreciate a quick testimonial:</p>`,
+      <p style="color:#555;line-height:1.7;">If you have 30 seconds, I'd really appreciate a quick testimonial:</p>
+      <p style="text-align:center;margin-top:20px;">
+        <a href="https://search.google.com/local/writereview?placeid=${process.env.GOOGLE_PLACE_ID || "GOOGLE_PLACE_ID"}" style="display:inline-block;background:#4285f4;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:14px;">Leave a Google Review</a>
+      </p>
+      <p style="text-align:center;color:#aaa;font-size:11px;margin-top:8px;">Or review us directly on Google</p>`,
       { text: "Share Your Experience", url: `${BRAND.url}/review` }
     ),
   };

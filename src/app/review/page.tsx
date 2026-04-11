@@ -21,6 +21,8 @@ export default function ReviewPage() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
+  const [photoFile, setPhotoFile] = useState<File | null>(null);
+  const [photoPreview, setPhotoPreview] = useState("");
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -32,10 +34,22 @@ export default function ReviewPage() {
     setError("");
 
     try {
+      let photoBase64 = "";
+      let photoFilename = "";
+      if (photoFile) {
+        const reader = new FileReader();
+        const b64 = await new Promise<string>((resolve) => {
+          reader.onload = () => resolve((reader.result as string).split(",")[1]);
+          reader.readAsDataURL(photoFile);
+        });
+        photoBase64 = b64;
+        photoFilename = photoFile.name;
+      }
+
       const res = await fetch("/api/review", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: name.trim(), quote: quote.trim(), category, rating }),
+        body: JSON.stringify({ name: name.trim(), quote: quote.trim(), category, rating, photoBase64, photoFilename }),
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
@@ -179,6 +193,45 @@ export default function ReviewPage() {
                   </button>
                 ))}
               </div>
+            </div>
+
+            {/* Photo Upload */}
+            <div>
+              <label className="block text-white/80 text-sm font-semibold mb-2">
+                Photo <span className="text-white/40 font-normal">(optional)</span>
+              </label>
+              <p className="text-white/30 text-xs mb-3">
+                Share a screenshot of your trading results, funded account, or achievements.
+              </p>
+              {photoPreview ? (
+                <div className="relative inline-block">
+                  <img src={photoPreview} alt="Preview" className="max-h-40 rounded-lg border border-white/10" />
+                  <button
+                    type="button"
+                    onClick={() => { setPhotoFile(null); setPhotoPreview(""); }}
+                    className="absolute -top-2 -right-2 bg-red-500 text-white w-6 h-6 rounded-full text-xs font-bold hover:bg-red-400"
+                  >
+                    &times;
+                  </button>
+                </div>
+              ) : (
+                <label className="block cursor-pointer bg-white/5 border border-dashed border-white/20 rounded-lg p-6 text-center hover:border-gold/30 transition-colors">
+                  <span className="text-white/40 text-sm">Click to upload an image</span>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    className="hidden"
+                    onChange={(e) => {
+                      const file = e.target.files?.[0];
+                      if (!file) return;
+                      setPhotoFile(file);
+                      const reader = new FileReader();
+                      reader.onload = () => setPhotoPreview(reader.result as string);
+                      reader.readAsDataURL(file);
+                    }}
+                  />
+                </label>
+              )}
             </div>
 
             {/* Error */}

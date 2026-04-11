@@ -13,12 +13,13 @@ interface PendingReview {
   rating: number;
   date: string;
   status: "pending" | "approved" | "rejected";
+  photoUrl?: string;
 }
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { name, quote, category, rating } = body;
+    const { name, quote, category, rating, photoBase64, photoFilename } = body;
 
     // Validate
     if (!name || typeof name !== "string" || name.trim().length === 0) {
@@ -58,6 +59,16 @@ export async function POST(req: NextRequest) {
       date: new Date().toISOString(),
       status: "pending",
     };
+
+    // Upload photo if provided
+    if (photoBase64 && photoFilename) {
+      try {
+        const ext = photoFilename.split(".").pop() || "jpg";
+        const photoPath = `public/review-photos/${review.id}.${ext}`;
+        await commitFile(photoPath, photoBase64, `Review photo: ${review.name}`, true);
+        review.photoUrl = `/review-photos/${review.id}.${ext}`;
+      } catch {}
+    }
 
     pending.push(review);
 
