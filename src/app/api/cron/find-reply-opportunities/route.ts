@@ -88,8 +88,8 @@ async function searchYouTube(
     part: "snippet",
     q: query,
     type: "video",
-    order: "date",
-    maxResults: "8",
+    order: "relevance",
+    maxResults: "10",
     relevanceLanguage: "en",
     ...(useApiKey ? { key: accessTokenOrApiKey } : {}),
   });
