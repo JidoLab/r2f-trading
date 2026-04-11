@@ -19,10 +19,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-10T02:46:22.283Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://f002.backblazeb2.com/file/creatomate-c8xg3hsxdu/5f0aba4f-a424-455b-8ca0-73af65bf31b5.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/kAoDAAdGpf8",
   "copyText": "Stop Chasing Order Blocks on CPI Day - Here's What Smart Money Actually Does\n\nCPI release is Monday - most traders will hunt order blocks and lose. Here's what institutional traders actually look for during high-impact news events like inflation data.\n\n#ICTTrading #OrderBlocks #CPITrading #SmartMoney #TradingTips #ForexTrading #TradingStrategy #NewsTrading",
-  "uploadResults": [],
-  "completedAt": "2026-04-10T02:46:29.588Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/kAoDAAdGpf8"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-10T02:46:29.588Z",
+  "publishedAt": "2026-04-11T17:45:00.082Z"
 }
