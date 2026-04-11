@@ -55,6 +55,22 @@
     {
       "path": "/api/cron/student-onboarding",
       "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/generate-short",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/cron/publish-short",
+      "schedule": "0 5 * * *"
+    },
+    {
+      "path": "/api/cron/publish-short",
+      "schedule": "0 11 * * *"
+    },
+    {
+      "path": "/api/cron/publish-short",
+      "schedule": "0 17 * * *"
     }
   ]
 }
