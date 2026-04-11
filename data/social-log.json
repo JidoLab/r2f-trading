@@ -690,5 +690,33 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-11T04:13:39.968Z",
+    "type": "text",
+    "postType": "challenge",
+    "text": "WEEKEND CHALLENGE: Before CPI drops this week, pick ONE currency pair and study its last 3 CPI react",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
