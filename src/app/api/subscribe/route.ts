@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { sendEmail, addToAudience } from "@/lib/resend";
 import { welcomeEmail, referralBonusEmail, friendJoinedEmail, instantWelcomeEmail } from "@/lib/email-templates";
 import { commitFile, readFile } from "@/lib/github";
+import { isWhatsAppConfigured, sendWhatsAppMessage } from "@/lib/whatsapp";
 import fs from "fs";
 import path from "path";
 import crypto from "crypto";
@@ -18,6 +19,8 @@ interface Subscriber {
   referralCode: string;
   referredBy: string | null;
   referralCount: number;
+  phone?: string;
+  whatsappDripsSent?: string[];
 }
 
 function generateReferralCode(): string {
@@ -32,7 +35,7 @@ function generateReferralCode(): string {
 
 export async function POST(req: NextRequest) {
   try {
-    const { email, name, ref } = await req.json();
+    const { email, name, ref, phone } = await req.json();
 
     if (!email || !email.includes("@")) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
@@ -91,6 +94,7 @@ export async function POST(req: NextRequest) {
           referralCode,
           referredBy: ref || null,
           referralCount: 0,
+          ...(phone ? { phone } : {}),
         };
         subscribers.push(newSub);
 
@@ -151,6 +155,17 @@ export async function POST(req: NextRequest) {
             text: `📧 NEW SUBSCRIBER\n\n${displayName} just signed up!\nEmail: ${email}${refNote}\n\nThey just received a personal welcome. Consider replying to their email within the hour for maximum conversion.`,
           }),
         }).catch(() => {});
+      }
+    } catch {}
+
+    // WhatsApp welcome message (non-blocking)
+    try {
+      if (phone && isWhatsAppConfigured()) {
+        const displayName = name || email.split("@")[0];
+        sendWhatsAppMessage(
+          phone,
+          `Hey ${displayName}! It's Harvest from R2F Trading. Thanks for joining! What pair are you trading right now? 📈`
+        ).catch(() => {});
       }
     } catch {}
 

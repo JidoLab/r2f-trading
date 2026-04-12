@@ -83,6 +83,14 @@
     {
       "path": "/api/cron/gbp-reviews",
       "schedule": "0 9 * * *"
+    },
+    {
+      "path": "/api/cron/whatsapp-drips",
+      "schedule": "0 10 * * *"
+    },
+    {
+      "path": "/api/cron/whatsapp-session-reminder",
+      "schedule": "0 9 * * 5"
     }
   ]
 }

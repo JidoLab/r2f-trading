@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { commitFile, readFile } from "@/lib/github";
+import { isWhatsAppConfigured, sendWhatsAppMessage } from "@/lib/whatsapp";
 
 export async function POST(req: NextRequest) {
   try {
@@ -92,6 +93,30 @@ export async function POST(req: NextRequest) {
             parse_mode: "Markdown",
           }),
         });
+      }
+    } catch {}
+
+    // WhatsApp payment confirmation (non-blocking)
+    try {
+      if (isWhatsAppConfigured()) {
+        // Look up subscriber's phone number
+        let subscriberPhone: string | undefined;
+        try {
+          const subsRaw = await readFile("data/subscribers.json");
+          const subscribers = JSON.parse(subsRaw);
+          const sub = subscribers.find((s: { email: string; phone?: string }) => s.email === payerEmail);
+          if (sub?.phone) {
+            subscriberPhone = sub.phone;
+          }
+        } catch {}
+
+        if (subscriberPhone) {
+          const displayName = payerName || "there";
+          sendWhatsAppMessage(
+            subscriberPhone,
+            `Hey ${displayName}! Payment received for ${plan}. I'll reach out within 24 hours to schedule your first session. In the meantime, add me on Telegram: t.me/Road2Funded 🙌`
+          ).catch(() => {});
+        }
       }
     } catch {}
 

@@ -31,6 +31,7 @@ const NAV_SECTIONS = [
       { href: "/admin/chat-logs", label: "Chat Logs" },
       { href: "/admin/reviews", label: "Reviews" },
       { href: "/admin/share", label: "Quick Share" },
+      { href: "/admin/whatsapp", label: "WhatsApp" },
     ],
   },
   {
