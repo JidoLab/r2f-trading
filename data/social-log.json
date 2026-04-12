@@ -864,5 +864,33 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-12T12:13:38.408Z",
+    "type": "text",
+    "postType": "promo-checklist",
+    "text": "CPI hits Tuesday. Smart money is already positioning. I use this exact checklist before every single",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
