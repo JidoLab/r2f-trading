@@ -1,0 +1,31 @@
+{
+  "date": "2026-04-12T02:19:16.644Z",
+  "today": "2026-04-12",
+  "topicsAttempted": [
+    "POV: You're Watching Price Respect Your Kill Zone",
+    null,
+    null
+  ],
+  "results": [
+    {
+      "title": "POV: You're Watching Price Respect Your Kill Zone",
+      "status": "error",
+      "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+    }
+  ],
+  "errors": [
+    "FFmpeg Render Service: {\"error\":\"Unauthorized\"}",
+    "FFmpeg Render Service: {\"error\":\"Unauthorized\"}",
+    "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+  ]
+}
