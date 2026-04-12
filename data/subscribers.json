@@ -15,7 +15,7 @@
   {
     "email": "eirini.ploumidi94@gmail.com",
     "date": "2026-04-09T14:10:09.622Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "score": 15,
     "segment": "cold",
     "events": [
@@ -25,14 +25,18 @@
       }
     ],
     "lastActivity": "2026-04-09T14:12:15.297Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   },
   {
     "email": "cyrus.alia.borja@gmail.com",
     "date": "2026-04-11T13:01:25.702Z",
     "dripsSent": 0,
-    "referralCode": "R2F-hn37xs",
-    "referredBy": null,
-    "referralCount": 0
+    "score": 0,
+    "segment": "cold",
+    "events": [],
+    "lastActivity": "2026-04-11T13:01:25.702Z",
+    "dripsHistory": []
   }
 ]
