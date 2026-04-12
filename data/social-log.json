@@ -791,5 +791,33 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-12T04:16:41.638Z",
+    "type": "text",
+    "postType": "promo-results",
+    "text": "Just had another student hit their first 6-figure month using order blocks and fair value gaps. Star",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
