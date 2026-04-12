@@ -20,9 +20,24 @@ try {
   console.warn("FFmpeg not found in PATH");
 }
 
-// Health check
+// Track render status
+const renderStatus = {};
+
+// Health check + status
 app.get("/health", (_req, res) => {
-  res.json({ status: "ok", ffmpeg: ffmpegAvailable });
+  res.json({ status: "ok", ffmpeg: ffmpegAvailable, activeRenders: Object.keys(renderStatus).length });
+});
+
+// Render status check
+app.get("/status/:slug", (req, res) => {
+  const info = renderStatus[req.params.slug];
+  if (!info) return res.json({ status: "not_found" });
+  res.json(info);
+});
+
+// List all render statuses
+app.get("/renders", authMiddleware, (_req, res) => {
+  res.json(renderStatus);
 });
 
 // Auth middleware for /render
@@ -45,21 +60,25 @@ app.post("/render", authMiddleware, async (req, res) => {
   }
 
   // Respond immediately — rendering happens in background
+  renderStatus[slug] = { status: "downloading", startedAt: new Date().toISOString(), error: null };
   res.json({ status: "accepted", slug, message: "Render started" });
 
   // Run render in background
-  renderVideo({ slug, audioUrl, duration, scenes, captions, webhookUrl, githubToken, githubRepo }).catch((err) => {
+  renderVideo({ slug, audioUrl, duration, scenes, captions, webhookUrl, githubToken, githubRepo }, renderStatus).catch((err) => {
     console.error(`[${slug}] Render failed:`, err.message);
+    renderStatus[slug] = { ...renderStatus[slug], status: "failed", error: err.message };
   });
 });
 
-async function renderVideo({ slug, audioUrl, duration, scenes, captions, webhookUrl, githubToken, githubRepo }) {
+async function renderVideo({ slug, audioUrl, duration, scenes, captions, webhookUrl, githubToken, githubRepo }, statusTracker = {}) {
+  const updateStatus = (s, extra = {}) => { if (statusTracker[slug]) statusTracker[slug] = { ...statusTracker[slug], status: s, ...extra }; };
   const tmpDir = path.join("/tmp", `render-${slug}-${Date.now()}`);
   fs.mkdirSync(tmpDir, { recursive: true });
   const outputPath = path.join(tmpDir, `${slug}.mp4`);
 
   try {
     console.log(`[${slug}] Starting render — ${scenes.length} scenes, ${duration}s`);
+    updateStatus("downloading", { scenes: scenes.length, duration });
 
     // Step 1: Download all assets
     const assetPaths = [];
@@ -81,6 +100,7 @@ async function renderVideo({ slug, audioUrl, duration, scenes, captions, webhook
     }
 
     // Step 2: Build FFmpeg command
+    updateStatus("rendering");
     console.log(`[${slug}] Building FFmpeg filter graph...`);
     const totalDuration = duration || 35;
     const sceneDur = totalDuration / Math.max(scenes.length, 1);
@@ -99,6 +119,7 @@ async function renderVideo({ slug, audioUrl, duration, scenes, captions, webhook
     console.log(`[${slug}] Running FFmpeg...`);
     await runFfmpeg(inputArgs, filterComplex, lastLabel, audioPath, outputPath, totalDuration);
     console.log(`[${slug}] FFmpeg complete — output: ${outputPath}`);
+    updateStatus("uploading");
 
     // Step 3: Upload to GitHub
     const videoBuffer = fs.readFileSync(outputPath);
@@ -121,6 +142,7 @@ async function renderVideo({ slug, audioUrl, duration, scenes, captions, webhook
       });
     }
 
+    updateStatus("completed", { videoUrl, completedAt: new Date().toISOString() });
     console.log(`[${slug}] Render complete!`);
   } catch (err) {
     console.error(`[${slug}] Error:`, err.message);
