@@ -82,6 +82,19 @@ PDF exists at public/downloads/ict-trading-checklist.pdf — already integrated 
 - A/B Test Tracker (/admin/ab-tests) email template performance
 - Branding Kit (/admin/signature) bios, colors, fonts, hashtags, CTAs, assets
 - Sidebar organized into 7 categories, mobile responsive with hamburger menu
+- Full WhatsApp Business automation (src/lib/whatsapp.ts):
+  - AI chatbot on WhatsApp (/api/whatsapp/webhook) — same Claude chatbot as website
+  - WhatsApp drip sequences (Day 2/5/8/14 tips + social proof)
+  - Instant WhatsApp welcome on signup (if phone provided)
+  - WhatsApp payment confirmation
+  - Friday session check-ins for students
+  - Admin dashboard at /admin/whatsapp
+  - Needs: WHATSAPP_PHONE_NUMBER_ID, WHATSAPP_ACCESS_TOKEN, WHATSAPP_BUSINESS_ACCOUNT_ID, WHATSAPP_WEBHOOK_VERIFY_TOKEN
+- GBP automation (src/lib/gbp.ts): auto-post, review ingestion, auto-reply, quote cards
+- Review photo uploads with auto-save to image library
+- Branded quote card generator at /quote-card/[reviewId]
+- FFmpeg video render service on Render.com (replaces Creatomate, $0/mo)
+- Proxy-fetch endpoint on Render for bypassing Cloudflare (limited success)
 - ICT Trading Starter Kit ($49 digital product at /starter-kit with gated /starter-kit/access)
 - Referral system: unique codes per subscriber, /refer?ref=CODE landing page
 - Student onboarding automation: Day 1/3/7/30 email sequence after payment
