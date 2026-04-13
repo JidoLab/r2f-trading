@@ -200,7 +200,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({
       success: true,
       newCount: newSuggs.length,
-      sources: { reddit: redditPosts.length, investinglive: investingPosts.length },
+      sources: { investinglive: investingPosts.length },
     });
   } catch (err: unknown) {
     return NextResponse.json({ error: err instanceof Error ? err.message : "Failed" }, { status: 500 });
