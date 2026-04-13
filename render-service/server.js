@@ -315,27 +315,47 @@ async function downloadFile(url, destPath) {
     optimizedUrl = url.replace("hd_1080_1920", "sd_640_960").replace("hd_1080_2048", "sd_640_960");
   }
 
-  const fetch = (await import("node-fetch")).default;
-  const res = await fetch(optimizedUrl, { timeout: 120000 }); // 2 min timeout for free tier
-  if (!res.ok) {
-    // Fallback to original URL if SD version doesn't exist
-    if (optimizedUrl !== url) {
-      console.log(`[download] SD fallback failed, trying original URL`);
-      const res2 = await fetch(url, { timeout: 120000 });
-      if (!res2.ok) throw new Error(`Download failed (${res2.status}): ${url}`);
-      const fileStream = fs.createWriteStream(destPath);
-      await pipeline(Readable.fromWeb(res2.body), fileStream);
-      return;
-    }
-    throw new Error(`Download failed (${res.status}): ${url}`);
-  }
+  // Use https/http module directly for maximum compatibility with Node 18
+  const proto = optimizedUrl.startsWith("https") ? require("https") : require("http");
 
-  const fileStream = fs.createWriteStream(destPath);
-  await pipeline(Readable.fromWeb(res.body), fileStream);
+  return new Promise((resolve, reject) => {
+    const tryUrl = (targetUrl, isFallback) => {
+      const p = targetUrl.startsWith("https") ? require("https") : require("http");
+      p.get(targetUrl, { timeout: 120000 }, (res) => {
+        // Follow redirects
+        if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+          console.log(`[download] Redirect -> ${res.headers.location.slice(0, 80)}`);
+          tryUrl(res.headers.location, isFallback);
+          return;
+        }
+        if (res.statusCode !== 200) {
+          if (!isFallback && optimizedUrl !== url) {
+            console.log(`[download] SD failed (${res.statusCode}), trying original`);
+            tryUrl(url, true);
+            return;
+          }
+          reject(new Error(`Download failed (${res.statusCode}): ${targetUrl}`));
+          return;
+        }
+        const fileStream = fs.createWriteStream(destPath);
+        res.pipe(fileStream);
+        fileStream.on("finish", () => { fileStream.close(); resolve(); });
+        fileStream.on("error", reject);
+      }).on("error", (err) => {
+        if (!isFallback && optimizedUrl !== url) {
+          console.log(`[download] SD error, trying original: ${err.message}`);
+          tryUrl(url, true);
+          return;
+        }
+        reject(err);
+      });
+    };
+    tryUrl(optimizedUrl, false);
+  });
 }
 
 async function uploadToGithub(repo, filePath, buffer, token, message) {
-  const fetch = (await import("node-fetch")).default;
+  // Node 18+ has global fetch built-in
   const base64 = buffer.toString("base64");
 
   // Check if file already exists (to get SHA for update)
@@ -374,7 +394,7 @@ async function uploadToGithub(repo, filePath, buffer, token, message) {
 }
 
 async function callWebhook(url, data) {
-  const fetch = (await import("node-fetch")).default;
+  // Node 18+ has global fetch built-in
   try {
     const res = await fetch(url, {
       method: "POST",
