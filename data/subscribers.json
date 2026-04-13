@@ -2,15 +2,17 @@
   {
     "email": "wrightharvest@gmail.com",
     "date": "2026-04-04T10:35:09.710Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "score": 0,
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-04-04T10:35:09.710Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
-    ]
+      "ictConcepts",
+      "successStory"
+    ],
+    "staleReengageSent": true
   },
   {
     "email": "eirini.ploumidi94@gmail.com",
