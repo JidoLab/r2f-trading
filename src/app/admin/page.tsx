@@ -82,26 +82,63 @@ function relativeTime(dateStr: string): string {
 }
 
 // Cron schedule in Bangkok time for automation status
-const AUTOMATIONS = [
-  { label: "Blog #1", time: "13:00", hour: 13, minute: 0 },
-  { label: "Blog #2", time: "23:00", hour: 23, minute: 0 },
-  { label: "Short #1", time: "12:00", hour: 12, minute: 0 },
-  { label: "Short #2", time: "18:00", hour: 18, minute: 0 },
-  { label: "Short #3", time: "00:00", hour: 0, minute: 0 },
-  { label: "Reddit #1", time: "10:00", hour: 10, minute: 0 },
-  { label: "Reddit #2", time: "20:00", hour: 20, minute: 0 },
-  { label: "Report", time: "21:00", hour: 21, minute: 0 },
+const AUTOMATIONS: { label: string; category: string; hour: number; minute: number; days?: string }[] = [
+  // Content
+  { label: "Generate Short Videos (3x)", category: "Content", hour: 9, minute: 0 },
+  { label: "Publish Short #1", category: "Content", hour: 12, minute: 0 },
+  { label: "Blog Post #1", category: "Content", hour: 13, minute: 0 },
+  { label: "Publish Short #2", category: "Content", hour: 18, minute: 0 },
+  { label: "Blog Post #2", category: "Content", hour: 23, minute: 0 },
+  { label: "Publish Short #3", category: "Content", hour: 0, minute: 0 },
+  // Social
+  { label: "Text Social Post #1", category: "Social", hour: 11, minute: 0 },
+  { label: "Text Social Post #2", category: "Social", hour: 19, minute: 0 },
+  // Engagement
+  { label: "Reddit Engage #1", category: "Engagement", hour: 10, minute: 0 },
+  { label: "Reddit Engage #2", category: "Engagement", hour: 20, minute: 0 },
+  { label: "Twitter/X Engage", category: "Engagement", hour: 15, minute: 0 },
+  { label: "YouTube Reply Suggestions", category: "Engagement", hour: 10, minute: 0 },
+  { label: "Forum Reply Suggestions", category: "Engagement", hour: 11, minute: 0 },
+  // Email
+  { label: "Email Drips + Lead Scoring", category: "Email", hour: 16, minute: 0 },
+  { label: "Crash Course Drips", category: "Email", hour: 15, minute: 0 },
+  { label: "WhatsApp Drips", category: "Email", hour: 17, minute: 0 },
+  { label: "Student Onboarding Emails", category: "Email", hour: 15, minute: 0 },
+  { label: "Weekly Newsletter", category: "Email", hour: 17, minute: 0, days: "Mon" },
+  // Google Business
+  { label: "GBP Auto Post", category: "Google", hour: 14, minute: 0 },
+  { label: "GBP Review Check", category: "Google", hour: 16, minute: 0 },
+  // Reports
+  { label: "Daily Report (Telegram)", category: "Reports", hour: 21, minute: 45 },
+  { label: "Weekly Report", category: "Reports", hour: 14, minute: 0, days: "Mon" },
+  { label: "WhatsApp Session Reminder", category: "Reports", hour: 16, minute: 0, days: "Fri" },
+  // SEO
+  { label: "Auto Internal Linking", category: "SEO", hour: 3, minute: 0 },
+  { label: "Pull Analytics", category: "SEO", hour: 13, minute: 0, days: "Sun" },
 ];
 
-function getNextRunLabel(auto: { label: string; time: string; hour: number; minute: number }): { label: string; timeStr: string; isPast: boolean } {
+const CATEGORY_COLORS: Record<string, string> = {
+  Content: "text-blue-400",
+  Social: "text-purple-400",
+  Engagement: "text-orange-400",
+  Email: "text-green-400",
+  Google: "text-red-400",
+  Reports: "text-yellow-400",
+  SEO: "text-teal-400",
+};
+
+function getRunInfo(auto: typeof AUTOMATIONS[0]): { label: string; category: string; timeStr: string; isPast: boolean; isActive: boolean; days?: string } {
   const now = new Date();
   const bangkokNow = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Bangkok" }));
   const currentMinutes = bangkokNow.getHours() * 60 + bangkokNow.getMinutes();
   const targetMinutes = auto.hour * 60 + auto.minute;
   const isPast = currentMinutes >= targetMinutes;
+  // "Active" = ran within the last 30 minutes
+  const isActive = isPast && (currentMinutes - targetMinutes) < 30;
   const h = auto.hour > 12 ? auto.hour - 12 : auto.hour === 0 ? 12 : auto.hour;
   const ampm = auto.hour >= 12 ? "PM" : "AM";
-  return { label: auto.label, timeStr: `${h}${auto.minute > 0 ? ":" + String(auto.minute).padStart(2, "0") : ""}${ampm}`, isPast };
+  const timeStr = `${h}${auto.minute > 0 ? ":" + String(auto.minute).padStart(2, "0") : ""}${ampm}`;
+  return { label: auto.label, category: auto.category, timeStr, isPast, isActive, days: auto.days };
 }
 
 export default function AdminDashboard() {
@@ -187,7 +224,7 @@ export default function AdminDashboard() {
     { icon: "\u{1F9E0}", label: "AI Planner", href: "/admin/content-planner" },
   ];
 
-  const automationStatus = AUTOMATIONS.map(a => getNextRunLabel(a));
+  const automationStatus = AUTOMATIONS.map(a => getRunInfo(a));
   const latestPosts = data?.latestPosts || (data?.posts.latest ? [data.posts.latest] : []);
 
   return (
@@ -334,17 +371,64 @@ export default function AdminDashboard() {
         </div>
       </div>
 
-      {/* 6. Automation Status */}
-      <div className="bg-white/5 border border-white/10 rounded-lg p-5">
-        <h2 className="text-white/60 text-xs font-bold uppercase tracking-wider mb-3">Automation Schedule</h2>
-        <div className="flex flex-wrap gap-x-6 gap-y-2">
-          {automationStatus.map((auto, i) => (
-            <div key={i} className="flex items-center gap-2">
-              <span className={`w-1.5 h-1.5 rounded-full ${auto.isPast ? "bg-white/20" : "bg-green-400 shadow-sm shadow-green-400/30"}`} />
-              <span className="text-white/50 text-xs">{auto.label}:</span>
-              <span className={`text-xs font-medium ${auto.isPast ? "text-white/25 line-through" : "text-white/80"}`}>{auto.timeStr}</span>
-            </div>
-          ))}
+      {/* 6. Full Automation Schedule */}
+      <div className="bg-white/5 border border-white/10 rounded-lg p-6">
+        <h2 className="text-white font-semibold text-sm mb-4">Automation Schedule <span className="text-white/30 font-normal">({AUTOMATIONS.length} automations)</span></h2>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-white/10">
+                <th className="text-left text-white/40 text-xs font-bold uppercase tracking-wider py-2 pr-4">Status</th>
+                <th className="text-left text-white/40 text-xs font-bold uppercase tracking-wider py-2 pr-4">Automation</th>
+                <th className="text-left text-white/40 text-xs font-bold uppercase tracking-wider py-2 pr-4">Category</th>
+                <th className="text-left text-white/40 text-xs font-bold uppercase tracking-wider py-2 pr-4">Time (BKK)</th>
+                <th className="text-left text-white/40 text-xs font-bold uppercase tracking-wider py-2">Frequency</th>
+              </tr>
+            </thead>
+            <tbody>
+              {automationStatus.map((auto, i) => (
+                <tr
+                  key={i}
+                  className={`border-b border-white/5 last:border-0 ${
+                    auto.isActive ? "bg-gold/5" : ""
+                  }`}
+                >
+                  <td className="py-2.5 pr-4">
+                    {auto.isActive ? (
+                      <span className="inline-flex items-center gap-1.5">
+                        <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
+                        <span className="text-gold text-xs font-bold">JUST RAN</span>
+                      </span>
+                    ) : auto.isPast ? (
+                      <span className="inline-flex items-center gap-1.5">
+                        <span className="w-2 h-2 rounded-full bg-green-500/50" />
+                        <span className="text-green-400/50 text-xs">Done</span>
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1.5">
+                        <span className="w-2 h-2 rounded-full bg-white/20" />
+                        <span className="text-white/40 text-xs">Pending</span>
+                      </span>
+                    )}
+                  </td>
+                  <td className={`py-2.5 pr-4 font-medium ${auto.isActive ? "text-gold" : auto.isPast ? "text-white/40" : "text-white/80"}`}>
+                    {auto.label}
+                  </td>
+                  <td className="py-2.5 pr-4">
+                    <span className={`text-xs font-semibold ${CATEGORY_COLORS[auto.category] || "text-white/50"}`}>
+                      {auto.category}
+                    </span>
+                  </td>
+                  <td className={`py-2.5 pr-4 tabular-nums ${auto.isActive ? "text-gold font-bold" : auto.isPast ? "text-white/30" : "text-white/70"}`}>
+                    {auto.timeStr}
+                  </td>
+                  <td className="py-2.5 text-white/40 text-xs">
+                    {auto.days || "Daily"}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
 
