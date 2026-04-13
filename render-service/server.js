@@ -179,9 +179,9 @@ function buildFilterGraph(scenes, assetPaths, captions, totalDuration, sceneDur,
       inputArgs.push("-loop", "1", "-t", String(sceneDur), "-i", assetPaths[i]);
     }
 
-    // Scale and crop each input to 720x1280 (optimized for free tier), center crop
+    // Scale and crop each input to 1080x1920 (full HD vertical)
     filterParts.push(
-      `[${inputIdx}:v]scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280,setsar=1,fps=24,setpts=PTS-STARTPTS,trim=0:${sceneDur},setpts=PTS-STARTPTS[v${i}]`
+      `[${inputIdx}:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30,setpts=PTS-STARTPTS,trim=0:${sceneDur},setpts=PTS-STARTPTS[v${i}]`
     );
     inputIdx++;
   }
@@ -206,7 +206,7 @@ function buildFilterGraph(scenes, assetPaths, captions, totalDuration, sceneDur,
   // Add R2F watermark (top right, gold, 50% opacity)
   let currentLabel = "vprog";
   filterParts.push(
-    `[${currentLabel}]drawtext=text='R2F':fontsize=32:fontcolor=#c9a84c@0.5:x=w-tw-30:y=30:fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf[vwm]`
+    `[${currentLabel}]drawtext=text='R2F':fontsize=48:fontcolor=#c9a84c@0.5:x=w-tw-40:y=40:fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf[vwm]`
   );
   currentLabel = "vwm";
 
@@ -217,7 +217,7 @@ function buildFilterGraph(scenes, assetPaths, captions, totalDuration, sceneDur,
     const isHook = cap.isHook || i === 0;
     const isHighlight = cap.isHighlight;
 
-    const fontSize = isHook ? 56 : isHighlight ? 50 : 42;
+    const fontSize = isHook ? 84 : isHighlight ? 76 : 64;
     const fontColor = isHook || isHighlight ? "#EEFF00" : "white";
     const yPos = isHook ? "h*0.45" : "h*0.73";
     const borderW = isHook ? 5 : 3;
@@ -260,11 +260,11 @@ function runFfmpeg(inputArgs, filterComplex, lastVideoLabel, audioPath, outputPa
     args.push(
       "-c:v", "libx264",
       "-preset", "ultrafast",   // 10x faster encoding for free tier
-      "-crf", "28",             // slightly lower quality, much smaller file
+      "-crf", "23",             // good quality for 1080p
       "-tune", "fastdecode",    // optimize for fast playback
       "-c:a", "aac",
       "-b:a", "96k",            // lower audio bitrate (good enough for voice)
-      "-r", "24",               // 24fps instead of 30 (saves CPU)
+      "-r", "30",               // 30fps full quality
       "-t", String(totalDuration),
       "-pix_fmt", "yuv420p",
       "-movflags", "+faststart",
