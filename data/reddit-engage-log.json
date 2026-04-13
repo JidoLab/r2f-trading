@@ -61,5 +61,32 @@
     "mentionedR2F": true,
     "commentedAt": "2026-04-12T13:08:17.702Z",
     "permalink": "/r/Daytrading/comments/1siukne/trading_psychology/ofqv5qj/"
+  },
+  {
+    "postId": "1sju7w7",
+    "subreddit": "Daytrading",
+    "postTitle": "You're regulated?! By WHAT?!",
+    "commentText": "prop firms are already self regulated through evaluation phases and risk parameters, adding more layers just kills the business model. the real issue isn't regulation but traders not understanding risk management and chasing funded accounts like lottery tickets. maybe focus on education about proper lot sizing and drawdown rules instead of asking the government to babysit grown adults making trading decisions 🤷‍♂️",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-13T03:35:45.215Z",
+    "permalink": "/r/Daytrading/comments/1sju7w7/youre_regulated_by_what/ofvij4h/"
+  },
+  {
+    "postId": "1sjqfoo",
+    "subreddit": "Daytrading",
+    "postTitle": "Looking for community support/realistic expectations",
+    "commentText": "honestly 6 months is cutting it close but not impossible if you really dial in your process. one of my students went from blowing accounts monthly to consistent in about 8 months once they stopped chasing every liquidity sweep and started respecting the asian/london killzones properly. the fact you got payouts shows you understand something, but blowing 5-6 accounts means your risk management is still off. i'd take that job offer and trade part time until you can string together 3 solid months without major drawdowns 📊",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-13T03:35:55.447Z",
+    "permalink": "/r/Daytrading/comments/1sjqfoo/looking_for_community_supportrealistic/ofvijza/"
+  },
+  {
+    "postId": "1sjcwvp",
+    "subreddit": "Daytrading",
+    "postTitle": "I built a Trading Journal as a solo project, I would love feedback from actual traders",
+    "commentText": "honestly this looks solid man. i've been through so many journals that either cost way too much or missing basic features like proper futures support. the tradingview integration is clutch since most of us are already marking up charts there anyway. only thing i'd add is maybe some way to tag setups like liquidity sweeps or failed breakouts since pattern recognition becomes huge once you start logging enough trades.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-13T03:36:02.925Z",
+    "permalink": "/r/Daytrading/comments/1sjcwvp/i_built_a_trading_journal_as_a_solo_project_i/ofvikoa/"
   }
 ]
