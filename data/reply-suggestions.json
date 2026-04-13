@@ -147,7 +147,7 @@
     "authorName": "FXIndicatorZone",
     "suggestedReply": "The key with non repaint indicators is backtesting them across multiple market conditions before going live. I've seen too many traders get burned by indicators that work perfectly in hindsight but fail during volatile sessions. Testing your setup during news events and ranging markets will separate the profitable setups from the pretty ones.",
     "createdAt": "2026-04-13T10:40:50.668Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776076854563-xztp4",
