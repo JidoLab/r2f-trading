@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-type Platform = "youtube" | "facebook_group" | "linkedin" | "medium" | "quora" | "tradingview" | "forexfactory" | "babypips";
+type Platform = "youtube" | "facebook_group" | "linkedin" | "medium" | "quora" | "tradingview" | "forexfactory" | "babypips" | "reddit_forum" | "investinglive";
 
 interface ReplySuggestion {
   id: string;
@@ -25,9 +25,11 @@ const PLATFORM_CONFIG: Record<Platform, { label: string; abbr: string; bg: strin
   tradingview:    { label: "TradingView",  abbr: "TV", bg: "bg-blue-500/20",   text: "text-blue-300" },
   forexfactory:   { label: "ForexFactory", abbr: "FF", bg: "bg-green-600/20",  text: "text-green-400" },
   babypips:       { label: "BabyPips",     abbr: "BP", bg: "bg-green-500/20",  text: "text-green-300" },
+  reddit_forum:   { label: "Reddit",      abbr: "RD", bg: "bg-orange-600/20", text: "text-orange-400" },
+  investinglive:  { label: "InvestingLive", abbr: "IL", bg: "bg-cyan-600/20", text: "text-cyan-400" },
 };
 
-const TAB_ORDER: Platform[] = ["youtube", "facebook_group", "linkedin", "medium", "quora", "tradingview", "forexfactory", "babypips"];
+const TAB_ORDER: Platform[] = ["youtube", "reddit_forum", "investinglive", "linkedin", "medium", "facebook_group", "quora", "tradingview", "forexfactory", "babypips"];
 
 function PlatformIcon({ platform, size = "md" }: { platform: string; size?: "sm" | "md" }) {
   const config = PLATFORM_CONFIG[platform as Platform];
