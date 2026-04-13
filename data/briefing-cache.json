@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-13T09:33:31.905Z",
+  "generatedAt": "2026-04-13T10:52:49.298Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Monday, 13 April 2026 at 16:33 (Bangkok)",
+  "dateTime": "Monday, 13 April 2026 at 17:52 (Bangkok)",
   "overnight": {
-    "newSubscribers": 0,
+    "newSubscribers": 1,
     "payments": {
       "count": 0,
       "revenue": 0
@@ -23,10 +23,10 @@
     "recentHot": []
   },
   "suggestions": [
-    "Create and publish 3-5 new trading education shorts this week to increase your content pipeline beyond the current 11 published videos",
-    "Start a daily Reddit engagement strategy by commenting on 5-10 trading-related posts to build community presence and drive subscriber growth",
-    "Launch a targeted lead magnet campaign to convert your 3 cold subscribers into warm prospects through personalized trading content",
-    "Publish 1 new blog post today focusing on ICT trading strategies to add to your 30 existing posts and improve SEO visibility"
+    "Create 2-3 new video shorts this week to maintain momentum beyond your current 11 published shorts.",
+    "Increase your drip campaign frequency from 1.0 to 2-3 emails per subscriber to better nurture your 3 cold leads.",
+    "Start engaging on Reddit trading communities by posting 5-10 valuable comments daily to drive traffic since you have 0 current activity.",
+    "Publish 1 new blog post today focusing on ICT trading strategies to complement your existing 30 posts and attract new subscribers."
   ],
   "schedule": [
     {
