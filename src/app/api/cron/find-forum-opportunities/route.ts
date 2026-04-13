@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { readFile, commitFile } from "@/lib/github";
 import Anthropic from "@anthropic-ai/sdk";
+import { HttpsProxyAgent } from "https-proxy-agent";
 
 export const maxDuration = 120;
 
@@ -29,39 +30,34 @@ function isEnglish(text: string): boolean {
   return cleaned.length >= 5 && (cleaned.match(/[a-zA-Z]/g) || []).length > cleaned.length * 0.5;
 }
 
-// --- Reddit Public RSS (no auth needed) ---
-const REDDIT_SUBS = ["Forex", "Daytrading", "FundedTrading", "ForexTrading", "proptrading", "algotrading", "StockMarket"];
-
-async function searchRedditRSS(): Promise<ForumPost[]> {
-  const posts: ForumPost[] = [];
-  const shuffled = [...REDDIT_SUBS].sort(() => Math.random() - 0.5).slice(0, 4);
-
-  for (const sub of shuffled) {
-    try {
-      const res = await fetch(`https://www.reddit.com/r/${sub}/new.rss?limit=5`, {
-        headers: { "User-Agent": "R2FTrading/1.0" },
-      });
-      if (!res.ok) continue;
-      const xml = await res.text();
-
-      // Parse Atom feed entries
-      const entries = xml.split("<entry>").slice(1);
-      for (const entry of entries.slice(0, 3)) {
-        const titleM = entry.match(/<title[^>]*>([\s\S]*?)<\/title>/);
-        const linkM = entry.match(/<link[^>]*href="(https:\/\/www\.reddit\.com\/r\/[^"]+)"/);
-        const authorM = entry.match(/<name>(.*?)<\/name>/);
-        if (titleM && linkM) {
-          const title = titleM[1].replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").trim();
-          if (!isEnglish(title)) continue;
-          posts.push({ title, url: linkM[1], author: authorM?.[1] || "Reddit User", platform: "reddit_forum" });
-        }
-      }
-    } catch {}
-  }
-  return posts.sort(() => Math.random() - 0.5).slice(0, 5);
+// --- Proxy fetch for Cloudflare-blocked sites ---
+function getProxyAgent(): HttpsProxyAgent<string> | undefined {
+  const user = process.env.PROXY_USERNAME;
+  const pass = process.env.PROXY_PASSWORD;
+  const host = process.env.PROXY_HOST || "gw.dataimpulse.com";
+  const port = process.env.PROXY_PORT || "823";
+  if (!user || !pass) return undefined;
+  return new HttpsProxyAgent(`http://${user}:${pass}@${host}:${port}`);
 }
 
-// --- InvestingLive (ForexLive) RSS ---
+async function proxyFetch(url: string): Promise<string | null> {
+  const agent = getProxyAgent();
+  if (!agent) return null;
+  try {
+    const res = await fetch(url, {
+      headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" },
+      // @ts-expect-error Node.js fetch supports agent
+      agent,
+      signal: AbortSignal.timeout(15000),
+    });
+    if (!res.ok) return null;
+    return await res.text();
+  } catch {
+    return null;
+  }
+}
+
+// --- InvestingLive RSS (no proxy needed) ---
 async function searchInvestingLive(): Promise<ForumPost[]> {
   const posts: ForumPost[] = [];
   try {
@@ -70,14 +66,12 @@ async function searchInvestingLive(): Promise<ForumPost[]> {
     });
     if (!res.ok) return [];
     const xml = await res.text();
-
     const items = xml.split("<item>").slice(1);
     for (const item of items.slice(0, 8)) {
       const titleM = item.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/) || item.match(/<title>(.*?)<\/title>/);
       const linkM = item.match(/<link>(https?:.*?)<\/link>/);
       const creatorM = item.match(/<dc:creator><!\[CDATA\[(.*?)\]\]><\/dc:creator>/);
       if (titleM && linkM && isEnglish(titleM[1])) {
-        // Only keep trading-relevant articles
         const title = titleM[1];
         const lower = title.toLowerCase();
         if (lower.includes("forex") || lower.includes("trading") || lower.includes("market") ||
@@ -92,11 +86,109 @@ async function searchInvestingLive(): Promise<ForumPost[]> {
   return posts.sort(() => Math.random() - 0.5).slice(0, 5);
 }
 
+// --- TradingView (proxy required) ---
+async function searchTradingView(): Promise<ForumPost[]> {
+  const posts: ForumPost[] = [];
+  const html = await proxyFetch("https://www.tradingview.com/ideas/");
+  if (!html) return [];
+
+  // Extract idea titles and URLs from the HTML
+  const ideaPattern = /href="(\/chart\/[^"]+|\/i\/[^"]+)"/g;
+  const titlePattern = /<a[^>]*class="[^"]*title[^"]*"[^>]*>([^<]+)/g;
+
+  // Simpler approach: find idea links with titles
+  const blocks = html.split("data-widget-type").slice(1, 8);
+  for (const block of blocks) {
+    const linkM = block.match(/href="(\/chart\/[^"]+)"/);
+    const titleM = block.match(/title="([^"]+)"/);
+    if (linkM && titleM && isEnglish(titleM[1])) {
+      posts.push({
+        title: titleM[1].slice(0, 100),
+        url: `https://www.tradingview.com${linkM[1]}`,
+        author: "TradingView User",
+        platform: "tradingview",
+      });
+    }
+  }
+
+  // Fallback: extract from meta/structured content
+  if (posts.length === 0) {
+    const matches = html.matchAll(/<a[^>]*href="(https:\/\/www\.tradingview\.com\/chart\/[^"]+)"[^>]*title="([^"]+)"/g);
+    for (const m of matches) {
+      if (isEnglish(m[2]) && posts.length < 5) {
+        posts.push({ title: m[2].slice(0, 100), url: m[1], author: "TradingView User", platform: "tradingview" });
+      }
+    }
+  }
+
+  return posts.slice(0, 5);
+}
+
+// --- ForexFactory (proxy required) ---
+async function searchForexFactory(): Promise<ForumPost[]> {
+  const posts: ForumPost[] = [];
+  const html = await proxyFetch("https://www.forexfactory.com/forums/trading-discussion");
+  if (!html) return [];
+
+  // Extract thread titles and URLs
+  const threadPattern = /href="(\/thread\/[^"]+)"[^>]*class="[^"]*thread[^"]*"[^>]*>([\s\S]*?)<\/a>/g;
+  let match;
+  while ((match = threadPattern.exec(html)) !== null && posts.length < 8) {
+    const url = `https://www.forexfactory.com${match[1]}`;
+    const title = match[2].replace(/<[^>]+>/g, "").trim();
+    if (title && isEnglish(title)) {
+      posts.push({ title: title.slice(0, 100), url, author: "ForexFactory User", platform: "forexfactory" });
+    }
+  }
+
+  // Fallback: simpler pattern
+  if (posts.length === 0) {
+    const simplePattern = /href="(\/thread\/\d+-[^"]+)"[^>]*>([^<]+)/g;
+    while ((match = simplePattern.exec(html)) !== null && posts.length < 5) {
+      const title = match[2].trim();
+      if (title.length > 10 && isEnglish(title)) {
+        posts.push({ title, url: `https://www.forexfactory.com${match[1]}`, author: "ForexFactory User", platform: "forexfactory" });
+      }
+    }
+  }
+
+  return posts.slice(0, 5);
+}
+
+// --- Quora via Google (proxy required) ---
+async function searchQuora(): Promise<ForumPost[]> {
+  const posts: ForumPost[] = [];
+  const queries = [
+    "site:quora.com forex trading funded account",
+    "site:quora.com ICT trading order blocks",
+    "site:quora.com prop firm challenge",
+  ];
+  const query = queries[Math.floor(Math.random() * queries.length)];
+  const html = await proxyFetch(`https://www.google.com/search?q=${encodeURIComponent(query)}&num=5`);
+  if (!html) return [];
+
+  // Extract Quora links from Google results
+  const linkPat = /href="\/url\?q=(https:\/\/www\.quora\.com\/[^&"]+)/g;
+  let match;
+  while ((match = linkPat.exec(html)) !== null && posts.length < 5) {
+    const qUrl = decodeURIComponent(match[1]);
+    const slug = qUrl.split("/").pop() || "";
+    const title = slug.replace(/-/g, " ").replace(/\?.*/, "");
+    if (title.length >= 10 && isEnglish(title)) {
+      posts.push({ title, url: qUrl, author: "Quora", platform: "quora" });
+    }
+  }
+
+  return posts;
+}
+
 // --- Reply generation ---
 async function generateReply(post: ForumPost, anthropic: Anthropic): Promise<string> {
   const labels: Record<string, string> = {
-    reddit_forum: "Reddit post",
     investinglive: "InvestingLive article",
+    tradingview: "TradingView idea",
+    forexfactory: "Forex Factory thread",
+    quora: "Quora question",
   };
   const openers = [
     "Jump into a specific insight",
@@ -133,6 +225,7 @@ export async function GET(req: NextRequest) {
 
   try {
     const anthropic = new Anthropic();
+    const hasProxy = !!(process.env.PROXY_USERNAME && process.env.PROXY_PASSWORD);
 
     // Load existing suggestions
     let existing: ReplySuggestion[] = [];
@@ -140,15 +233,22 @@ export async function GET(req: NextRequest) {
       existing = JSON.parse(await readFile("data/reply-suggestions.json"));
     } catch {}
     const existingUrls = new Set(existing.map(s => s.postUrl));
-
     const newSuggs: ReplySuggestion[] = [];
 
-    // Search InvestingLive RSS only (Reddit is already fully automated via reddit-engage cron)
-    const investingPosts = await searchInvestingLive();
+    // Search all platforms in parallel
+    const searches = [searchInvestingLive()];
+    if (hasProxy) {
+      searches.push(searchTradingView(), searchForexFactory(), searchQuora());
+    }
+    const results = await Promise.allSettled(searches);
+    const allPosts: ForumPost[] = [];
+    for (const r of results) {
+      if (r.status === "fulfilled") allPosts.push(...r.value);
+    }
 
-    const allPosts = investingPosts.filter(p => !existingUrls.has(p.url));
+    const uniquePosts = allPosts.filter(p => !existingUrls.has(p.url));
 
-    for (const post of allPosts.slice(0, 10)) {
+    for (const post of uniquePosts.slice(0, 15)) {
       try {
         const reply = await generateReply(post, anthropic);
         if (reply) {
@@ -172,7 +272,7 @@ export async function GET(req: NextRequest) {
       await commitFile(
         "data/reply-suggestions.json",
         JSON.stringify(all, null, 2),
-        `Added ${newSuggs.length} forum suggestions (Reddit RSS, InvestingLive)`
+        `Added ${newSuggs.length} forum suggestions`
       );
 
       // Telegram notification
@@ -200,7 +300,8 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({
       success: true,
       newCount: newSuggs.length,
-      sources: { investinglive: investingPosts.length },
+      proxyEnabled: hasProxy,
+      sources: allPosts.reduce((acc, p) => { acc[p.platform] = (acc[p.platform] || 0) + 1; return acc; }, {} as Record<string, number>),
     });
   } catch (err: unknown) {
     return NextResponse.json({ error: err instanceof Error ? err.message : "Failed" }, { status: 500 });
