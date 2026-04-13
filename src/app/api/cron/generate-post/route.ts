@@ -136,7 +136,7 @@ Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDes
       async function genImage(prompt: string, filename: string): Promise<string> {
         try {
           const res = await ai.models.generateContent({
-            model: "gemini-3.1-flash-image-preview",
+            model: "gemini-2.5-flash-image",
             contents: `${prompt}. Style: Dark navy (#0d2137) and gold (#c9a84c). No text.`,
             config: { responseModalities: ["TEXT", "IMAGE"] },
           });

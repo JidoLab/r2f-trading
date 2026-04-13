@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
 
     // Download video once, reuse for all platforms
     const videoRes = await fetch(renderData.videoUrl);
-    if (!videoRes.ok) return NextResponse.json({ error: "Failed to download video from Creatomate" }, { status: 500 });
+    if (!videoRes.ok) return NextResponse.json({ error: "Failed to download rendered video" }, { status: 500 });
     const videoBuffer = Buffer.from(await videoRes.arrayBuffer());
 
     const results: { platform: string; status: string; url?: string; error?: string }[] = [];

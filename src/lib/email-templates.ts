@@ -516,6 +516,212 @@ export function instantWelcomeEmail(name: string): { subject: string; html: stri
   };
 }
 
+// --- Crash Course (5-Day ICT Email Course) ---
+
+export function crashCourseDay1(name: string): { subject: string; html: string } {
+  const firstName = name.split(" ")[0] || "there";
+  return {
+    subject: "Day 1: The ICT Foundation — Order Blocks, FVGs & Liquidity",
+    html: layout(
+      "Day 1: The ICT Foundation",
+      `<p style="color:#555;line-height:1.7;">Hey ${firstName},</p>
+      <p style="color:#555;line-height:1.7;">Welcome to Day 1 of the R2F 5-Day ICT Crash Course. Over the next 5 days, I'm going to break down the exact ICT framework I teach my funded students. Let's get into it.</p>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">What Are Order Blocks?</h2>
+      <p style="color:#555;line-height:1.7;">An order block is the last candle before a strong move in the opposite direction. Think of it as the footprint of institutional money entering the market. Banks and hedge funds can't fill massive orders instantly — they leave traces. That trace is the order block.</p>
+      <p style="color:#555;line-height:1.7;"><strong>Actionable tip:</strong> On a 1-hour chart, find the last bearish candle before a strong bullish push (or vice versa). Mark that zone. Price often returns to it before continuing.</p>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">Fair Value Gaps (FVGs)</h2>
+      <p style="color:#555;line-height:1.7;">An FVG is a three-candle pattern where the wicks of candle 1 and candle 3 don't overlap, leaving a gap in price. This gap represents an imbalance — the market moved so fast that not all orders were filled. Price loves to come back and "fill" these gaps.</p>
+      <p style="color:#555;line-height:1.7;"><strong>Actionable tip:</strong> When you spot an FVG on the 15-minute chart during a killzone, mark the gap. If price retraces into it, that's often a high-probability entry zone.</p>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">Liquidity Pools</h2>
+      <p style="color:#555;line-height:1.7;">Liquidity sits above swing highs (buy-side) and below swing lows (sell-side). Equal highs and equal lows are magnets for price because that's where stop losses cluster. Smart money hunts these pools to fill their orders.</p>
+      <p style="color:#555;line-height:1.7;"><strong>Actionable tip:</strong> Before every trade, ask yourself: "Where is the liquidity?" If price just swept a pool of liquidity, that's often the moment smart money reverses direction.</p>
+      <div style="background:${BRAND.cream};border-left:4px solid ${BRAND.gold};padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;">
+        <p style="color:${BRAND.navy};font-weight:700;margin:0 0 8px;">Tomorrow: Market Structure Decoded</p>
+        <p style="color:#555;margin:0;font-size:14px;">I'll show you how to read BOS, CHOCH, and displacement — the backbone of every ICT trade.</p>
+      </div>
+      <p style="color:#555;line-height:1.7;">Talk soon,<br><strong style="color:${BRAND.navy};">Harvest Wright</strong><br>R2F Trading</p>
+      <div style="border-top:1px solid #eee;margin-top:24px;padding-top:16px;text-align:center;">
+        <p style="color:#aaa;font-size:12px;margin:0;">Know someone who'd love this course? <a href="${BRAND.url}/crash-course" style="color:${BRAND.gold};">Share it here</a></p>
+      </div>`
+    ),
+  };
+}
+
+export function crashCourseDay2(name: string): { subject: string; html: string } {
+  const firstName = name.split(" ")[0] || "there";
+  return {
+    subject: "Day 2: Market Structure Decoded — BOS, CHOCH & Displacement",
+    html: layout(
+      "Day 2: Market Structure Decoded",
+      `<p style="color:#555;line-height:1.7;">Hey ${firstName},</p>
+      <p style="color:#555;line-height:1.7;">Yesterday we covered the building blocks — order blocks, FVGs, and liquidity. Today, we're learning how to read the market's story through <strong>structure</strong>.</p>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">Break of Structure (BOS)</h2>
+      <p style="color:#555;line-height:1.7;">A BOS happens when price breaks through a recent swing high (in a bullish trend) or swing low (in a bearish trend). It confirms that the current trend is continuing. Think of it as the market saying "I'm still going this way."</p>
+      <p style="color:#555;line-height:1.7;"><strong>Actionable tip:</strong> In a bullish trend, wait for a BOS (higher high) then look for a pullback into an order block or FVG for your entry. Don't chase — let price come to you.</p>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">Change of Character (CHOCH)</h2>
+      <p style="color:#555;line-height:1.7;">A CHOCH is the first sign that a trend might be reversing. In an uptrend, it's when price breaks below a recent swing low for the first time. It's the market's way of saying "something has shifted."</p>
+      <p style="color:#555;line-height:1.7;"><strong>Actionable tip:</strong> Don't trade a CHOCH in isolation. Wait for confirmation — a CHOCH followed by a BOS in the new direction is a much stronger signal than a CHOCH alone.</p>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">Displacement</h2>
+      <p style="color:#555;line-height:1.7;">Displacement is aggressive, one-sided price movement — big candles with little to no wicks. It shows institutional commitment. When you see displacement, smart money is making a move and they mean it.</p>
+      <p style="color:#555;line-height:1.7;"><strong>Actionable tip:</strong> Look for displacement candles that leave FVGs behind. The combination of displacement + FVG = high-probability retracement zone.</p>
+      <div style="background:${BRAND.cream};border-left:4px solid ${BRAND.gold};padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;">
+        <p style="color:${BRAND.navy};font-weight:700;margin:0 0 8px;">Tomorrow: Killzone Mastery</p>
+        <p style="color:#555;margin:0;font-size:14px;">I'll break down the exact session times where the highest-probability setups form — and when to stay away from the charts.</p>
+      </div>
+      <p style="color:#555;line-height:1.7;">Keep studying,<br><strong style="color:${BRAND.navy};">Harvest</strong></p>
+      <div style="border-top:1px solid #eee;margin-top:24px;padding-top:16px;text-align:center;">
+        <p style="color:#aaa;font-size:12px;margin:0;">Know someone who'd love this course? <a href="${BRAND.url}/crash-course" style="color:${BRAND.gold};">Share it here</a></p>
+      </div>`
+    ),
+  };
+}
+
+export function crashCourseDay3(name: string): { subject: string; html: string } {
+  const firstName = name.split(" ")[0] || "there";
+  return {
+    subject: "Day 3: Killzone Mastery — Session Timing & Optimal Entries",
+    html: layout(
+      "Day 3: Killzone Mastery",
+      `<p style="color:#555;line-height:1.7;">Hey ${firstName},</p>
+      <p style="color:#555;line-height:1.7;">Today's lesson might be the most impactful one in this entire course. I've seen traders improve their win rate by 20%+ just by filtering their trades by <strong>time</strong>.</p>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">The Three Killzones</h2>
+      <div style="background:${BRAND.cream};padding:16px 20px;border-radius:8px;margin:16px 0;">
+        <p style="color:${BRAND.navy};font-weight:700;margin:0 0 4px;">Asian Session: 8PM-12AM EST</p>
+        <p style="color:#555;margin:0;font-size:14px;">The "accumulation" phase. Price often ranges here, building the liquidity pools that London and NY will target. Don't trade this — use it to identify where liquidity is building.</p>
+      </div>
+      <div style="background:${BRAND.cream};padding:16px 20px;border-radius:8px;margin:16px 0;">
+        <p style="color:${BRAND.navy};font-weight:700;margin:0 0 4px;">London Open: 2AM-5AM EST</p>
+        <p style="color:#555;margin:0;font-size:14px;">The manipulation phase. London often sweeps the Asian range highs or lows to grab liquidity before the real move. This is where your CHOCH signals and displacement happen.</p>
+      </div>
+      <div style="background:${BRAND.cream};padding:16px 20px;border-radius:8px;margin:16px 0;">
+        <p style="color:${BRAND.navy};font-weight:700;margin:0 0 4px;">New York Open: 8:30AM-11AM EST</p>
+        <p style="color:#555;margin:0;font-size:14px;">The highest-volume period. NY either continues London's move or reverses it. The 9:30-10AM window (NYSE open) is the most volatile 30 minutes of the day.</p>
+      </div>
+      <p style="color:#555;line-height:1.7;"><strong>Actionable tip:</strong> Before each session, mark the Asian range high and low. During the London or NY killzone, watch for price to sweep one of those levels, then look for your entry (order block + FVG + displacement) in the opposite direction.</p>
+      <p style="color:#555;line-height:1.7;"><strong>Bonus tip:</strong> Avoid trading between 12PM-1PM EST (lunch hour) and after 2PM EST. Volume drops, spreads widen, and setups become unreliable.</p>
+      <div style="background:${BRAND.cream};border-left:4px solid ${BRAND.gold};padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;">
+        <p style="color:${BRAND.navy};font-weight:700;margin:0 0 8px;">Tomorrow: Risk Management That Actually Works</p>
+        <p style="color:#555;margin:0;font-size:14px;">I'll share the exact position sizing and drawdown rules my funded students use — the stuff most courses skip.</p>
+      </div>
+      <p style="color:#555;line-height:1.7;">Stay disciplined,<br><strong style="color:${BRAND.navy};">Harvest</strong></p>
+      <div style="border-top:1px solid #eee;margin-top:24px;padding-top:16px;text-align:center;">
+        <p style="color:#aaa;font-size:12px;margin:0;">Know someone who'd love this course? <a href="${BRAND.url}/crash-course" style="color:${BRAND.gold};">Share it here</a></p>
+      </div>`
+    ),
+  };
+}
+
+export function crashCourseDay4(name: string): { subject: string; html: string } {
+  const firstName = name.split(" ")[0] || "there";
+  return {
+    subject: "Day 4: Risk Management That Actually Works",
+    html: layout(
+      "Day 4: Risk Management That Actually Works",
+      `<p style="color:#555;line-height:1.7;">Hey ${firstName},</p>
+      <p style="color:#555;line-height:1.7;">I'm going to be direct: <strong>strategy doesn't matter if your risk management is broken.</strong> I've seen traders with incredible analysis blow accounts because they ignored this lesson. Don't be that trader.</p>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">The 1% Rule</h2>
+      <p style="color:#555;line-height:1.7;">Never risk more than 1% of your account on a single trade. On a $100K funded account, that's $1,000 max risk. This means if you take 10 losing trades in a row (it happens), you've only lost 10% of your account. You're still in the game.</p>
+      <p style="color:#555;line-height:1.7;"><strong>Actionable tip:</strong> Calculate your position size BEFORE entering every trade. Formula: Position Size = (Account Balance x 0.01) / (Entry Price - Stop Loss in pips x Pip Value). No exceptions.</p>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">The Drawdown Rules</h2>
+      <div style="background:${BRAND.cream};padding:16px 20px;border-radius:8px;margin:16px 0;">
+        <ul style="color:#555;line-height:2;margin:0;padding-left:20px;">
+          <li><strong>2 losses in a row:</strong> Walk away for the session. Come back tomorrow.</li>
+          <li><strong>3% daily drawdown:</strong> Done for the day. No revenge trading.</li>
+          <li><strong>5% weekly drawdown:</strong> Take a full day off and review your journal.</li>
+          <li><strong>Max 2-3 trades per day:</strong> Quality over quantity. Always.</li>
+        </ul>
+      </div>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">Position Sizing in Practice</h2>
+      <p style="color:#555;line-height:1.7;">Most prop firms have a 5% max daily drawdown and 10% max overall drawdown. If you're risking 1% per trade and capping at 2-3 trades per day, it's mathematically very difficult to violate these rules. That's the point.</p>
+      <p style="color:#555;line-height:1.7;"><strong>Actionable tip:</strong> Use a position size calculator — don't do it in your head. One miscalculation can cost you a funded account. I recommend myfxbook's free calculator.</p>
+      <div style="background:${BRAND.cream};border-left:4px solid ${BRAND.gold};padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;">
+        <p style="color:${BRAND.navy};font-weight:700;margin:0 0 8px;">Tomorrow: The Funded Account Blueprint</p>
+        <p style="color:#555;margin:0;font-size:14px;">The final lesson — I'll share the exact strategy and challenge tips my students use to pass FTMO and other prop firm challenges.</p>
+      </div>
+      <p style="color:#555;line-height:1.7;">Protect your capital,<br><strong style="color:${BRAND.navy};">Harvest</strong></p>
+      <div style="border-top:1px solid #eee;margin-top:24px;padding-top:16px;text-align:center;">
+        <p style="color:#aaa;font-size:12px;margin:0;">Know someone who'd love this course? <a href="${BRAND.url}/crash-course" style="color:${BRAND.gold};">Share it here</a></p>
+      </div>`
+    ),
+  };
+}
+
+export function crashCourseDay5(name: string): { subject: string; html: string } {
+  const firstName = name.split(" ")[0] || "there";
+  return {
+    subject: "Day 5: The Funded Account Blueprint",
+    html: layout(
+      "Day 5: The Funded Account Blueprint",
+      `<p style="color:#555;line-height:1.7;">Hey ${firstName},</p>
+      <p style="color:#555;line-height:1.7;">This is it — the final lesson. Over the past 4 days, you've learned order blocks, FVGs, liquidity, market structure, killzones, and risk management. Today, we put it all together into a strategy for getting funded.</p>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">The Prop Firm Challenge Strategy</h2>
+      <p style="color:#555;line-height:1.7;">Most traders fail prop firm challenges because they try to hit the profit target too fast. Here's how my students approach it:</p>
+      <div style="background:${BRAND.cream};padding:16px 20px;border-radius:8px;margin:16px 0;">
+        <p style="color:${BRAND.navy};font-weight:700;margin:0 0 8px;">The Framework:</p>
+        <ul style="color:#555;line-height:2;margin:0;padding-left:20px;">
+          <li><strong>Trade only during killzones</strong> (London and NY opens)</li>
+          <li><strong>1 pair, 1 session</strong> — master one pair before adding more</li>
+          <li><strong>Wait for confluence</strong> — don't enter unless you have at least 3 confirmations (e.g., liquidity sweep + order block + FVG)</li>
+          <li><strong>Risk 0.5-1% per trade</strong> during the challenge (conservative wins)</li>
+          <li><strong>Aim for 1:3 RR minimum</strong> — this means you only need to win 30% of your trades to be profitable</li>
+        </ul>
+      </div>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">Challenge Tips That Most Courses Won't Tell You</h2>
+      <p style="color:#555;line-height:1.7;"><strong>1. Trade the first 2 weeks conservatively.</strong> Build a buffer before pushing for the profit target. A 3% buffer means you can take more calculated risks later.</p>
+      <p style="color:#555;line-height:1.7;"><strong>2. Avoid news events.</strong> NFP, CPI, FOMC — skip them entirely during the challenge. The risk-to-reward is terrible when spreads blow out.</p>
+      <p style="color:#555;line-height:1.7;"><strong>3. Journal every trade.</strong> Screenshot your setup, write your reasoning, and grade yourself. After 2 weeks, patterns in your mistakes become obvious.</p>
+      <div style="background:${BRAND.navy};padding:24px;border-radius:8px;margin:24px 0;text-align:center;">
+        <p style="color:${BRAND.gold};font-weight:700;font-size:18px;margin:0 0 8px;">Ready for personalized coaching?</p>
+        <p style="color:rgba(255,255,255,0.7);margin:0 0 16px;font-size:14px;">This crash course gave you the framework. One-on-one coaching gives you the accountability, feedback, and personalized plan to actually execute it.</p>
+        <a href="${BRAND.url}/contact" style="display:inline-block;background:${BRAND.gold};color:${BRAND.navy};font-weight:700;font-size:14px;padding:14px 28px;text-decoration:none;border-radius:6px;text-transform:uppercase;letter-spacing:1px;">Book a Free Discovery Call</a>
+      </div>
+      <p style="color:#555;line-height:1.7;">It's been an honor teaching you this week. Whatever you decide, keep showing up to the charts. Consistency is the only shortcut in trading.</p>
+      <p style="color:#555;line-height:1.7;">Your corner,<br><strong style="color:${BRAND.navy};">Harvest Wright</strong><br>R2F Trading</p>
+      <div style="border-top:1px solid #eee;margin-top:24px;padding-top:16px;text-align:center;">
+        <p style="color:#aaa;font-size:12px;margin:0;">Know someone who'd love this course? <a href="${BRAND.url}/crash-course" style="color:${BRAND.gold};">Share it here</a></p>
+      </div>`
+    ),
+  };
+}
+
+export function crashCourseComplete(name: string): { subject: string; html: string } {
+  const firstName = name.split(" ")[0] || "there";
+  return {
+    subject: "You completed the 5-Day ICT Crash Course!",
+    html: layout(
+      "Congratulations — You Did It!",
+      `<p style="color:#555;line-height:1.7;">Hey ${firstName},</p>
+      <p style="color:#555;line-height:1.7;">You just completed the R2F 5-Day ICT Trading Crash Course. Seriously — give yourself credit. Most people sign up for free courses and never finish. You showed up every day.</p>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">Here's What You've Learned:</h2>
+      <div style="background:${BRAND.cream};padding:20px;border-radius:8px;margin:16px 0;">
+        <ul style="color:#555;line-height:2.2;margin:0;padding-left:20px;">
+          <li>Order blocks, FVGs, and liquidity pools (Day 1)</li>
+          <li>Market structure — BOS, CHOCH, displacement (Day 2)</li>
+          <li>Killzone timing and session-based trading (Day 3)</li>
+          <li>Position sizing and drawdown rules (Day 4)</li>
+          <li>The funded account blueprint (Day 5)</li>
+        </ul>
+      </div>
+      <p style="color:#555;line-height:1.7;">That's more practical ICT knowledge than most $500 courses provide. But here's the thing — knowledge without application is just entertainment.</p>
+      <h2 style="color:${BRAND.navy};font-size:18px;margin:24px 0 12px;">What To Do Next:</h2>
+      <div style="background:${BRAND.cream};padding:16px 20px;border-radius:8px;margin:16px 0;">
+        <p style="color:${BRAND.navy};font-weight:700;margin:0 0 4px;">Option 1: Self-Study</p>
+        <p style="color:#555;margin:0;font-size:14px;">Grab our <a href="${BRAND.url}/starter-kit" style="color:${BRAND.gold};font-weight:600;">ICT Trading Starter Kit ($49)</a> — includes templates, checklists, and a trading journal to apply everything you learned.</p>
+      </div>
+      <div style="background:${BRAND.cream};padding:16px 20px;border-radius:8px;margin:16px 0;">
+        <p style="color:${BRAND.navy};font-weight:700;margin:0 0 4px;">Option 2: Personalized Coaching</p>
+        <p style="color:#555;margin:0;font-size:14px;"><a href="${BRAND.url}/contact" style="color:${BRAND.gold};font-weight:600;">Book a free discovery call</a> and let's build a personalized plan for your trading. Coaching starts at $150/week.</p>
+      </div>
+      <p style="color:#555;line-height:1.7;">Whichever path you choose, I'm here to help. Reply to this email anytime — I read every message.</p>
+      <p style="color:#555;line-height:1.7;">Proud of you,<br><strong style="color:${BRAND.navy};">Harvest Wright</strong><br>R2F Trading</p>
+      <div style="border-top:1px solid #eee;margin-top:24px;padding-top:16px;text-align:center;">
+        <p style="color:#aaa;font-size:12px;margin:0;">Know someone who'd love this course? <a href="${BRAND.url}/crash-course" style="color:${BRAND.gold};">Share it here</a></p>
+      </div>`,
+      { text: "Book a Free Discovery Call", url: `${BRAND.url}/contact` }
+    ),
+  };
+}
+
 export function staleLeadReengageEmail(name: string): { subject: string; html: string } {
   const displayName = name || "there";
   return {

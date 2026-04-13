@@ -59,6 +59,37 @@ export async function GET() {
     socialThisWeek = log.filter((l: { date: string }) => l.date >= weekAgo).length;
   } catch {}
 
+  // Latest 3 posts
+  const latestPosts = posts.slice(0, 3).map(p => ({
+    title: p.title,
+    slug: p.slug,
+    date: p.date,
+  }));
+
+  // Reply suggestions pending
+  let replySuggestionsPending = 0;
+  try {
+    const raw = await readFile("data/reply-suggestions.json");
+    const suggestions = JSON.parse(raw);
+    replySuggestionsPending = Array.isArray(suggestions)
+      ? suggestions.filter((s: { status?: string }) => s.status === "pending").length
+      : 0;
+  } catch {}
+
+  // Reddit comments today
+  let redditCommentsToday = 0;
+  try {
+    const raw = await readFile("data/reddit-engage-log.json");
+    const log = JSON.parse(raw);
+    const todayStr = new Date().toISOString().split("T")[0];
+    redditCommentsToday = Array.isArray(log)
+      ? log.filter((entry: { commentedAt?: string; date?: string }) => {
+          const d = entry.commentedAt || entry.date || "";
+          return d.startsWith(todayStr);
+        }).length
+      : 0;
+  } catch {}
+
   // Payments
   let totalPayments = 0, totalRevenue = 0, paymentsThisMonth = 0;
   let recentPayments: { plan: string; amount: string; date: string }[] = [];
@@ -89,5 +120,8 @@ export async function GET() {
     chatsToday,
     socialThisWeek,
     payments: { total: totalPayments, revenue: totalRevenue, thisMonth: paymentsThisMonth, recent: recentPayments },
+    latestPosts,
+    replySuggestionsPending,
+    redditCommentsToday,
   });
 }

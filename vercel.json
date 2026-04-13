@@ -91,6 +91,14 @@
     {
       "path": "/api/cron/whatsapp-session-reminder",
       "schedule": "0 9 * * 5"
+    },
+    {
+      "path": "/api/cron/auto-link",
+      "schedule": "0 20 * * *"
+    },
+    {
+      "path": "/api/cron/crash-course-drip",
+      "schedule": "0 8 * * *"
     }
   ]
 }

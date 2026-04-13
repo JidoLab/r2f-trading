@@ -104,7 +104,7 @@ export default function AdminShortsPage() {
         const rendering = result.results?.filter((r: { status: string }) => r.status === "rendering") || [];
         const errors = result.results?.filter((r: { status: string }) => r.status.startsWith("error")) || [];
         if (rendering.length > 0) {
-          alert(`${rendering.length} video${rendering.length !== 1 ? "s" : ""} started rendering! They'll appear in "Recent Videos" below once Creatomate finishes (2-3 min).`);
+          alert(`${rendering.length} video${rendering.length !== 1 ? "s" : ""} started rendering! They'll appear in "Recent Videos" below once rendering finishes (2-3 min).`);
           setGenTopic("");
         } else if (errors.length > 0) {
           alert(`Generation failed:\n${errors.map((e: { status: string }) => e.status).join("\n")}`);
@@ -251,7 +251,7 @@ export default function AdminShortsPage() {
           </select>
         </div>
         <p className="text-white/30 text-xs mt-2">
-          AI script &rarr; ElevenLabs voice &rarr; Whisper captions &rarr; Creatomate render. Takes ~3-5 min per video.
+          AI script &rarr; ElevenLabs voice &rarr; Whisper captions &rarr; FFmpeg render. Takes ~3-5 min per video.
         </p>
       </div>
 
@@ -264,7 +264,7 @@ export default function AdminShortsPage() {
             { icon: "✍️", label: "Script", desc: "Claude AI" },
             { icon: "🎙️", label: "Voice", desc: "ElevenLabs" },
             { icon: "📝", label: "Captions", desc: "Whisper" },
-            { icon: "🎬", label: "Render", desc: "Creatomate" },
+            { icon: "🎬", label: "Render", desc: "FFmpeg" },
             { icon: "📤", label: "Upload", desc: "YT + FB + LI" },
             { icon: "📢", label: "Announce", desc: "TG + Discord" },
           ].map((s, i) => (

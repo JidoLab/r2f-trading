@@ -21,10 +21,10 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-10">
-          {["Home", "About", "Coaching", "Starter Kit", "Results", "Trading Insights", "Contact"].map((item) => (
+          {["Home", "About", "Coaching", "Starter Kit", "Free Course", "Results", "Trading Insights", "Contact"].map((item) => (
             <Link
               key={item}
-              href={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, "-")}`}
+              href={item === "Home" ? "/" : item === "Free Course" ? "/crash-course" : `/${item.toLowerCase().replace(/\s+/g, "-")}`}
               className="text-xs font-bold tracking-[0.2em] uppercase text-navy/80 hover:text-gold transition-colors"
             >
               {item}
@@ -51,10 +51,10 @@ export default function Header() {
       {/* Mobile Nav */}
       {menuOpen && (
         <nav className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
-          {["Home", "About", "Coaching", "Starter Kit", "Results", "Trading Insights", "Contact"].map((item) => (
+          {["Home", "About", "Coaching", "Starter Kit", "Free Course", "Results", "Trading Insights", "Contact"].map((item) => (
             <Link
               key={item}
-              href={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, "-")}`}
+              href={item === "Home" ? "/" : item === "Free Course" ? "/crash-course" : `/${item.toLowerCase().replace(/\s+/g, "-")}`}
               className="text-sm font-bold tracking-[0.15em] uppercase text-navy/80 hover:text-gold transition-colors"
               onClick={() => setMenuOpen(false)}
             >
