@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-11T02:22:46.715Z",
+  "generatedAt": "2026-04-13T04:06:43.513Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Saturday, 11 April 2026 at 09:22 (Bangkok)",
+  "dateTime": "Monday, 13 April 2026 at 11:06 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -12,21 +12,21 @@
   },
   "contentStatus": {
     "blogPostsToday": 0,
-    "totalBlogPosts": 19,
-    "shortsReady": 1,
-    "shortsPublished": 10,
-    "shortsRendering": 2,
-    "socialPostsThisWeek": 18
+    "totalBlogPosts": 30,
+    "shortsReady": 0,
+    "shortsPublished": 11,
+    "shortsRendering": 0,
+    "socialPostsThisWeek": 23
   },
   "hotLeads": {
     "count": 0,
     "recentHot": []
   },
   "suggestions": [
-    "Create and publish 1 blog post today to maintain content momentum beyond your current 19 posts",
-    "Post 3 Reddit comments in trading-related subreddits today to start building your presence from zero",
-    "Launch a lead magnet campaign to convert your 2 cold subscribers into warm prospects through targeted email sequences",
-    "Publish your 1 ready short video immediately and create 2 new shorts this week to maintain content pipeline"
+    "Create 3 new educational shorts about ICT trading concepts to build on your existing 11 published videos and attract new subscribers.",
+    "Increase your email drip sequence from 1.0 to 3-5 emails per subscriber to better nurture your 3 cold leads into warm prospects.",
+    "Start engaging on Reddit trading communities by posting 2-3 valuable comments daily to drive traffic and build authority.",
+    "Publish 1 blog post today focusing on Bangkok trading hours or local market insights to add to your 30 existing posts and improve SEO."
   ],
   "schedule": [
     {
