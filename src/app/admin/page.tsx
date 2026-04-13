@@ -365,7 +365,7 @@ export default function AdminDashboard() {
                   rel="noopener noreferrer"
                   className="text-gold text-xs font-bold hover:text-gold-light transition-colors ml-4 shrink-0"
                 >
-                  View &nearr;
+                  View ↗
                 </a>
               </div>
             ))}
