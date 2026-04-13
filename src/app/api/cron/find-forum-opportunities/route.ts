@@ -143,13 +143,10 @@ export async function GET(req: NextRequest) {
 
     const newSuggs: ReplySuggestion[] = [];
 
-    // Search Reddit RSS + InvestingLive RSS
-    const [redditPosts, investingPosts] = await Promise.all([
-      searchRedditRSS(),
-      searchInvestingLive(),
-    ]);
+    // Search InvestingLive RSS only (Reddit is already fully automated via reddit-engage cron)
+    const investingPosts = await searchInvestingLive();
 
-    const allPosts = [...redditPosts, ...investingPosts].filter(p => !existingUrls.has(p.url));
+    const allPosts = investingPosts.filter(p => !existingUrls.has(p.url));
 
     for (const post of allPosts.slice(0, 10)) {
       try {
