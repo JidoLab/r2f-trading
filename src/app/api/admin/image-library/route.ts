@@ -63,22 +63,73 @@ export async function POST(req: NextRequest) {
   if (!isAdmin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   try {
-    const { imageBase64, filename, tags, patterns, category, description, pair, timeframe } = await req.json();
+    const { imageBase64, filename, tags, patterns, category, description, pair, timeframe, autoTag } = await req.json();
 
     if (!imageBase64 || !filename) {
       return NextResponse.json({ error: "imageBase64 and filename required" }, { status: 400 });
     }
-
     const id = `img-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`;
     const ext = filename.split(".").pop() || "jpg";
     const safeName = `${id}.${ext}`;
-    const path = `public/chart-library/${safeName}`;
+    const imgPath = `public/chart-library/${safeName}`;
 
     // Upload image to GitHub
-    await commitFile(path, imageBase64, `Chart library: ${description?.slice(0, 40) || safeName}`, true);
+    await commitFile(imgPath, imageBase64, `Chart library: ${description?.slice(0, 40) || safeName}`, true);
 
     // Get the URL
     const url = `/chart-library/${safeName}`;
+
+    // Auto-tag with AI Vision if no description provided or autoTag requested
+    let aiTags = tags || [];
+    let aiPatterns = patterns || [];
+    let aiCategory = category || "chart-pattern";
+    let aiDescription = description || "";
+    let aiPair = pair || undefined;
+    let aiTimeframe = timeframe || undefined;
+
+    if ((!description || autoTag) && process.env.GEMINI_API_KEY) {
+      try {
+        const { GoogleGenAI } = await import("@google/genai");
+        const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+        const result = await ai.models.generateContent({
+          model: "gemini-2.5-flash",
+          contents: [{
+            role: "user",
+            parts: [
+              { inlineData: { mimeType: `image/${ext === "png" ? "png" : "jpeg"}`, data: imageBase64 } },
+              { text: `Analyze this image and return ONLY a JSON object with these fields:
+{
+  "description": "A concise, SEO-friendly description of what this image shows (under 100 chars)",
+  "tags": ["tag1", "tag2", "tag3", "tag4", "tag5"],
+  "category": "one of: chart-pattern, setup, result, concept, comparison, educational, product, lifestyle, portrait, other",
+  "patterns": ["any trading patterns visible, e.g. order block, FVG, liquidity sweep, or empty array if not a trading chart"],
+  "pair": "trading pair if visible (e.g. EURUSD, XAUUSD) or null",
+  "timeframe": "chart timeframe if visible (e.g. 1M, 5M, 15M, 1H, 4H, D) or null",
+  "altText": "Descriptive alt text for SEO and accessibility (under 120 chars)"
+}
+
+If this is NOT a trading chart, still describe it accurately. For non-trading images, use category "product", "lifestyle", "portrait", or "other" as appropriate. Return ONLY the JSON.` }
+            ],
+          }],
+        });
+
+        const responseText = result.candidates?.[0]?.content?.parts?.[0]?.text || "";
+        const jsonStart = responseText.indexOf("{");
+        const jsonEnd = responseText.lastIndexOf("}");
+        if (jsonStart >= 0 && jsonEnd > jsonStart) {
+          const aiResult = JSON.parse(responseText.slice(jsonStart, jsonEnd + 1));
+          if (!description) aiDescription = aiResult.description || "";
+          if (!tags || tags.length === 0) aiTags = aiResult.tags || [];
+          if (!patterns || patterns.length === 0) aiPatterns = aiResult.patterns || [];
+          if (!category) aiCategory = aiResult.category || "chart-pattern";
+          if (!pair && aiResult.pair) aiPair = aiResult.pair;
+          if (!timeframe && aiResult.timeframe) aiTimeframe = aiResult.timeframe;
+        }
+      } catch (err) {
+        console.error("[image-library] Auto-tag failed:", err instanceof Error ? err.message : "unknown");
+        // Fall through with whatever manual data was provided
+      }
+    }
 
     // Add to library metadata
     let images: LibraryImage[] = [];
@@ -90,12 +141,12 @@ export async function POST(req: NextRequest) {
       id,
       filename: safeName,
       url,
-      tags: tags || [],
-      patterns: patterns || [],
-      category: category || "chart-pattern",
-      description: description || "",
-      pair: pair || undefined,
-      timeframe: timeframe || undefined,
+      tags: aiTags,
+      patterns: aiPatterns,
+      category: aiCategory,
+      description: aiDescription,
+      pair: aiPair,
+      timeframe: aiTimeframe,
       addedAt: new Date().toISOString(),
       usageCount: 0,
     };

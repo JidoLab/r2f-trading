@@ -142,12 +142,13 @@ export default function ImageLibraryPage() {
           body: JSON.stringify({
             imageBase64: base64,
             filename: item.file.name,
-            description: item.description || `Chart ${i + 1}`,
+            description: item.description || "",
             tags: bulkShared.tags,
             patterns: bulkShared.patterns,
-            category: bulkShared.category,
+            category: bulkShared.category.length > 0 ? bulkShared.category : undefined,
             pair: bulkShared.pair || undefined,
             timeframe: bulkShared.timeframe || undefined,
+            autoTag: !item.description,
           }),
         });
       } catch {}
