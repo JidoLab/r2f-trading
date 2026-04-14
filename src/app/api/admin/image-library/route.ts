@@ -76,8 +76,9 @@ export async function POST(req: NextRequest) {
     // Upload image to GitHub
     await commitFile(imgPath, imageBase64, `Chart library: ${description?.slice(0, 40) || safeName}`, true);
 
-    // Get the URL
-    const url = `/chart-library/${safeName}`;
+    // Get the URL — use GitHub raw URL so images display immediately without waiting for Vercel deploy
+    const repo = process.env.GITHUB_REPO || "JidoLab/r2f-trading";
+    const url = `https://raw.githubusercontent.com/${repo}/master/public/chart-library/${safeName}`;
 
     // Auto-tag with AI Vision if no description provided or autoTag requested
     let aiTags = tags || [];
@@ -101,14 +102,33 @@ export async function POST(req: NextRequest) {
 {
   "description": "A concise, SEO-friendly description of what this image shows (under 100 chars)",
   "tags": ["tag1", "tag2", "tag3", "tag4", "tag5"],
-  "category": "one of: chart-pattern, setup, result, concept, comparison, educational, product, lifestyle, portrait, other",
-  "patterns": ["any trading patterns visible, e.g. order block, FVG, liquidity sweep, or empty array if not a trading chart"],
-  "pair": "trading pair if visible (e.g. EURUSD, XAUUSD) or null",
-  "timeframe": "chart timeframe if visible (e.g. 1M, 5M, 15M, 1H, 4H, D) or null",
+  "category": "pick the BEST match from this list: chart-pattern, setup, result, concept, comparison, educational, leaderboard, achievement, screenshot, product, lifestyle, portrait, logo, infographic, other",
+  "patterns": ["any trading patterns visible, e.g. order block, FVG, liquidity sweep. Use EMPTY ARRAY [] if not a price chart"],
+  "pair": "trading pair if visible on a price chart (e.g. EURUSD, XAUUSD) or null",
+  "timeframe": "chart timeframe if visible on a price chart (e.g. 1M, 5M, 15M, 1H, 4H, D) or null",
   "altText": "Descriptive alt text for SEO and accessibility (under 120 chars)"
 }
 
-If this is NOT a trading chart, still describe it accurately. For non-trading images, use category "product", "lifestyle", "portrait", or "other" as appropriate. Return ONLY the JSON.` }
+CATEGORY GUIDE:
+- "chart-pattern": A price/candlestick chart showing technical patterns
+- "setup": A trade setup with entry/exit annotations
+- "result": A trade result showing P&L
+- "concept": An educational diagram explaining a trading concept
+- "leaderboard": A ranking, competition result, or performance table
+- "achievement": A certificate, award, badge, or milestone
+- "screenshot": A software screenshot (platform, dashboard, app)
+- "comparison": A before/after or side-by-side comparison
+- "educational": An educational graphic or infographic about trading
+- "product": A product photo
+- "lifestyle": A lifestyle or environment photo
+- "portrait": A photo of a person
+- "logo": A logo or brand asset
+- "infographic": A data visualization or infographic
+- "other": Anything that doesn't fit above
+
+IMPORTANT: Do NOT default to "chart-pattern" unless the image actually shows a price chart with candles. A leaderboard is NOT a chart pattern. A screenshot of trading positions is NOT a chart pattern.
+
+Return ONLY the JSON.` }
             ],
           }],
         });
