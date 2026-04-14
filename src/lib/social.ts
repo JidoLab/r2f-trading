@@ -404,6 +404,24 @@ async function postToDiscord(post: PostData): Promise<SocialResult> {
 
 // --- Main: Post to All ---
 export async function postToAll(post: PostData): Promise<SocialResult[]> {
+  // If coverImage is missing or a relative path that won't resolve on social platforms,
+  // try to find a matching library image with an absolute URL
+  try {
+    if (!post.coverImage || (post.coverImage.startsWith("/") && !post.coverImage.startsWith("https"))) {
+      const { findMatchingImages } = await import("./image-library");
+      const keywords = (post.tags || []).filter(Boolean);
+      if (keywords.length > 0) {
+        const matches = await findMatchingImages(keywords, { limit: 1 });
+        if (matches.length > 0 && matches[0].url.startsWith("http")) {
+          post = { ...post, coverImage: matches[0].url };
+          console.log(`[social] Using library image as cover: ${matches[0].description}`);
+        }
+      }
+    }
+  } catch (err) {
+    console.error("[social] Library image fallback error:", err);
+  }
+
   const results = await Promise.allSettled([
     postToTwitter(post),
     postToFacebook(post),

@@ -161,6 +161,45 @@ Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDes
     body = img1Path ? body.replace(/\(IMAGE_1\)/, `(${img1Path})`) : body.replace(/!\[.*?\]\(IMAGE_1\)\n?/, "");
     body = img2Path ? body.replace(/\(IMAGE_2\)/, `(${img2Path})`) : body.replace(/!\[.*?\]\(IMAGE_2\)\n?/, "");
 
+    // Auto-insert library images into the article body
+    try {
+      const { findMatchingImages, markImageUsed } = await import("@/lib/image-library");
+      const keywords = [
+        ...(article.tags || []),
+        topicData.targetKeyword,
+      ].filter(Boolean);
+
+      const libraryImages = await findMatchingImages(keywords, { limit: 2 });
+      if (libraryImages.length > 0) {
+        // Find H2 headings and insert images after the 2nd and 4th
+        const h2Regex = /^## .+$/gm;
+        let h2Index = 0;
+        const insertPositions: { position: number; image: typeof libraryImages[0] }[] = [];
+
+        let match;
+        while ((match = h2Regex.exec(body)) !== null) {
+          h2Index++;
+          // Insert after 2nd H2 (index 0 of libraryImages) and 4th H2 (index 1)
+          if (h2Index === 2 && libraryImages[0]) {
+            insertPositions.push({ position: match.index + match[0].length, image: libraryImages[0] });
+          } else if (h2Index === 4 && libraryImages[1]) {
+            insertPositions.push({ position: match.index + match[0].length, image: libraryImages[1] });
+          }
+        }
+
+        // Insert in reverse order so positions stay valid
+        for (const { position, image } of insertPositions.reverse()) {
+          const imgMarkdown = `\n\n![${image.description}](${image.url})\n`;
+          body = body.slice(0, position) + imgMarkdown + body.slice(position);
+          await markImageUsed(image.id);
+        }
+
+        console.log(`[cron] Inserted ${insertPositions.length} library image(s) into article`);
+      }
+    } catch (imgErr) {
+      console.error("[cron] Library image insertion error:", imgErr);
+    }
+
     // Commit MDX
     const mdxContent = `export const metadata = {
   title: ${JSON.stringify(article.title)},

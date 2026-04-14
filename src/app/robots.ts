@@ -7,6 +7,9 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://www.r2ftrading.com/sitemap.xml",
+    sitemap: [
+      "https://www.r2ftrading.com/sitemap.xml",
+      "https://www.r2ftrading.com/image-sitemap.xml",
+    ],
   };
 }

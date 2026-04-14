@@ -80,6 +80,34 @@ export async function POST(req: NextRequest) {
     const repo = process.env.GITHUB_REPO || "JidoLab/r2f-trading";
     const url = `https://raw.githubusercontent.com/${repo}/master/public/chart-library/${safeName}`;
 
+    // Watermark the image via the DigitalOcean render service (non-blocking)
+    const renderUrl = process.env.VIDEO_RENDER_URL;
+    const renderSecret = process.env.RENDER_SECRET;
+    if (renderUrl && renderSecret) {
+      try {
+        const wmRes = await fetch(`${renderUrl}/watermark`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${renderSecret}`,
+          },
+          body: JSON.stringify({ imageBase64, text: "R2F Trading", position: "bottom-right" }),
+        });
+        if (wmRes.ok) {
+          const wmData = await wmRes.json();
+          if (wmData.success && wmData.imageBase64) {
+            // Overwrite the original with the watermarked version
+            await commitFile(imgPath, wmData.imageBase64, `Watermark: ${safeName}`, true);
+            console.log(`[image-library] Watermarked ${safeName}`);
+          }
+        } else {
+          console.warn(`[image-library] Watermark service returned ${wmRes.status} — keeping original`);
+        }
+      } catch (wmErr) {
+        console.warn("[image-library] Watermark failed (service may be down) — keeping original:", wmErr instanceof Error ? wmErr.message : "unknown");
+      }
+    }
+
     // Auto-tag with AI Vision if no description provided or autoTag requested
     let aiTags = tags || [];
     let aiPatterns = patterns || [];

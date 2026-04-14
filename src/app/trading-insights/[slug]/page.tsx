@@ -65,17 +65,46 @@ export default async function BlogPostPage({
   const rawContent = getRawContent(slug);
   const Content = await getMDXContent(slug);
 
+  // Extract all images from article body for ImageObject schema
+  const imageRegex = /!\[([^\]]*)\]\(([^)]+)\)/g;
+  const bodyImages: { alt: string; url: string }[] = [];
+  let imgMatch;
+  while ((imgMatch = imageRegex.exec(rawContent)) !== null) {
+    const [, alt, url] = imgMatch;
+    const fullUrl = url.startsWith("http") ? url : `https://www.r2ftrading.com${url}`;
+    bodyImages.push({ alt: alt || post.title, url: fullUrl });
+  }
+
+  // Add cover image to the list if present
+  if (post.coverImage) {
+    const coverUrl = post.coverImage.startsWith("http")
+      ? post.coverImage
+      : `https://www.r2ftrading.com${post.coverImage}`;
+    bodyImages.unshift({ alt: post.title, url: coverUrl });
+  }
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.seoDescription || post.excerpt,
-    image: post.coverImage ? `https://www.r2ftrading.com${post.coverImage}` : undefined,
+    image: post.coverImage
+      ? (post.coverImage.startsWith("http") ? post.coverImage : `https://www.r2ftrading.com${post.coverImage}`)
+      : undefined,
     datePublished: post.date,
     author: { "@type": "Person", name: "Harvest Wright", url: "https://www.r2ftrading.com/about" },
     publisher: { "@type": "Organization", name: "R2F Trading", url: "https://www.r2ftrading.com" },
     keywords: post.seoKeywords?.join(", "),
   };
+
+  const imageObjectsLd = bodyImages.map((img) => ({
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    url: img.url,
+    caption: img.alt,
+    creator: { "@type": "Person", name: "Harvest Wright" },
+    copyrightHolder: { "@type": "Organization", name: "R2F Trading" },
+  }));
 
   return (
     <main>
@@ -85,6 +114,12 @@ export default async function BlogPostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {imageObjectsLd.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(imageObjectsLd) }}
+        />
+      )}
 
       <article className="py-16 md:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-6">

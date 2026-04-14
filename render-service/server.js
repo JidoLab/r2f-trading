@@ -407,6 +407,68 @@ async function callWebhook(url, data) {
   }
 }
 
+// --- Watermark endpoint for overlaying text on images ---
+app.post("/watermark", authMiddleware, async (req, res) => {
+  if (!ffmpegAvailable) {
+    return res.status(500).json({ error: "FFmpeg not available" });
+  }
+
+  const { imageBase64, text = "R2F Trading", position = "bottom-right" } = req.body;
+  if (!imageBase64) {
+    return res.status(400).json({ error: "imageBase64 required" });
+  }
+
+  const tmpDir = path.join("/tmp", `wm-${Date.now()}`);
+  fs.mkdirSync(tmpDir, { recursive: true });
+  const inputPath = path.join(tmpDir, "input.jpg");
+  const outputPath = path.join(tmpDir, "output.jpg");
+
+  try {
+    // Decode base64 to file
+    fs.writeFileSync(inputPath, Buffer.from(imageBase64, "base64"));
+
+    // Build position coordinates
+    let x, y;
+    switch (position) {
+      case "top-left":     x = "15";          y = "15";          break;
+      case "top-right":    x = "w-tw-15";     y = "15";          break;
+      case "bottom-left":  x = "15";          y = "h-th-15";     break;
+      case "bottom-right":
+      default:             x = "w-tw-15";     y = "h-th-15";     break;
+    }
+
+    const escapedText = text.replace(/'/g, "\u2019").replace(/:/g, "\\:");
+
+    // Run FFmpeg to overlay text
+    await new Promise((resolve, reject) => {
+      const { spawn } = require("child_process");
+      const args = [
+        "-i", inputPath,
+        "-vf", `drawtext=text='${escapedText}':fontsize=20:fontcolor=white@0.35:x=${x}:y=${y}:fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf`,
+        "-q:v", "2",
+        "-y", outputPath,
+      ];
+      const proc = spawn("ffmpeg", args, { stdio: ["ignore", "pipe", "pipe"] });
+      let stderr = "";
+      proc.stderr.on("data", (d) => { stderr += d.toString(); });
+      proc.on("close", (code) => {
+        if (code === 0) resolve();
+        else reject(new Error(`FFmpeg watermark failed (code ${code}): ${stderr.split("\n").slice(-3).join(" ")}`));
+      });
+      proc.on("error", reject);
+    });
+
+    // Read output and return as base64
+    const outputBuffer = fs.readFileSync(outputPath);
+    res.json({ success: true, imageBase64: outputBuffer.toString("base64") });
+  } catch (err) {
+    console.error("[watermark] Error:", err.message);
+    res.status(500).json({ error: err.message });
+  } finally {
+    try { fs.rmSync(tmpDir, { recursive: true, force: true }); } catch {}
+  }
+});
+
 // --- Proxy endpoint for fetching URLs that block Vercel IPs ---
 app.post("/proxy-fetch", async (req, res) => {
   const auth = req.headers.authorization;
