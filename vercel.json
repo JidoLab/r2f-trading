@@ -99,6 +99,18 @@
     {
       "path": "/api/cron/crash-course-drip",
       "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/syndicate",
+      "schedule": "0 18 * * *"
+    },
+    {
+      "path": "/api/cron/content-from-search",
+      "schedule": "0 22 * * 1"
+    },
+    {
+      "path": "/api/cron/retry-missed",
+      "schedule": "30 * * * *"
     }
   ]
 }

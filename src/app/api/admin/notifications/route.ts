@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { verifyAdmin } from "@/lib/admin-auth";
 import { readFile, listFiles } from "@/lib/github";
 
@@ -16,9 +16,11 @@ function makeId(type: string, date: string, index: number): string {
   return `${type}-${date}-${index}`;
 }
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   const isAdmin = await verifyAdmin();
   if (!isAdmin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+
+  const countOnly = req.nextUrl.searchParams.get("count") === "true";
 
   const events: NotificationEvent[] = [];
 
@@ -166,6 +168,13 @@ export async function GET() {
   // Sort by date descending, take last 50
   events.sort((a, b) => (a.date > b.date ? -1 : 1));
   const trimmed = events.slice(0, 50);
+
+  // Count-only mode: return unread count (events from last 24 hours)
+  if (countOnly) {
+    const cutoff = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
+    const unreadCount = trimmed.filter((e) => e.date >= cutoff).length;
+    return NextResponse.json({ unreadCount });
+  }
 
   return NextResponse.json({ events: trimmed });
 }

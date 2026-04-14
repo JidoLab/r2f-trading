@@ -1,5 +1,6 @@
 import { requireAdmin } from "@/lib/admin-auth";
 import Link from "next/link";
+import { NotificationBadge, ReplySuggestionsBadge } from "@/components/AdminSidebarBadge";
 
 const NAV_SECTIONS = [
   {
@@ -57,6 +58,7 @@ const NAV_SECTIONS = [
       { href: "/admin/competitors", label: "Competitor Spy" },
       { href: "/admin/trends", label: "Market Trends" },
       { href: "/admin/analytics-dashboard", label: "Analytics Dashboard" },
+      { href: "/admin/search-insights", label: "Search Insights" },
     ],
   },
   {
@@ -124,9 +126,11 @@ export default async function AdminLayout({
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="block px-3 py-2 rounded-md text-sm text-white/60 hover:text-white hover:bg-white/5 transition-colors"
+                  className="flex items-center px-3 py-2 rounded-md text-sm text-white/60 hover:text-white hover:bg-white/5 transition-colors"
                 >
                   {item.label}
+                  {item.href === "/admin/notifications" && <NotificationBadge />}
+                  {item.href === "/admin/reply-suggestions" && <ReplySuggestionsBadge />}
                 </Link>
               ))}
               {section.external?.map((item) => (

@@ -241,6 +241,48 @@ ${body}
       console.error("[cron] Thread posting error:", err);
     }
 
+    // Auto-generate infographic from the blog post
+    let infographicResult = null;
+    try {
+      const takeawayRes = await anthropic.messages.create({
+        model: "claude-sonnet-4-20250514",
+        max_tokens: 500,
+        messages: [{
+          role: "user",
+          content: `Extract 3-5 key takeaways from this trading article. Each should be a concise, actionable insight (under 80 characters each). Return ONLY a JSON array of strings.
+
+TITLE: ${article.title}
+
+ARTICLE:
+${body.slice(0, 3000)}`,
+        }],
+      });
+
+      let takeawayText = takeawayRes.content[0].type === "text" ? takeawayRes.content[0].text : "[]";
+      takeawayText = takeawayText.replace(/^```(?:json)?\s*\n?/, "").replace(/\n?```\s*$/, "").trim();
+      const takeaways: string[] = JSON.parse(takeawayText);
+
+      if (takeaways.length >= 3) {
+        const infographicParams = new URLSearchParams({
+          title: article.title,
+          points: takeaways.join("|"),
+        });
+        const infographicUrl = `https://r2ftrading.com/infographic/${slug}?${infographicParams.toString()}`;
+
+        // Fetch the rendered infographic image
+        const imgRes = await fetch(infographicUrl);
+        if (imgRes.ok) {
+          const imgBuffer = await imgRes.arrayBuffer();
+          const base64 = Buffer.from(imgBuffer).toString("base64");
+          await commitFile(`public/infographics/${slug}.png`, base64, `Add infographic: ${slug}`, true);
+          infographicResult = { url: `/infographics/${slug}.png`, points: takeaways.length };
+          console.log("[cron] Infographic generated:", slug);
+        }
+      }
+    } catch (infErr) {
+      console.error("[cron] Infographic generation error:", infErr);
+    }
+
     // Occasionally generate a landing page instead of only a blog post (1 in 5 runs)
     let landingPageResult = null;
     try {
@@ -348,7 +390,7 @@ Requirements:
       console.error("[cron] Landing page generation error:", lpErr);
     }
 
-    return NextResponse.json({ success: true, title: article.title, slug, socialResults, threadResult, landingPageResult });
+    return NextResponse.json({ success: true, title: article.title, slug, socialResults, threadResult, infographicResult, landingPageResult });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Generation failed";
     return NextResponse.json({ error: msg }, { status: 500 });

@@ -224,7 +224,25 @@ export default function AdminDashboard() {
     { icon: "\u{1F9E0}", label: "AI Planner", href: "/admin/content-planner" },
   ];
 
-  const automationStatus = AUTOMATIONS.map(a => getRunInfo(a));
+  const [sortBy, setSortBy] = useState<"time" | "category" | "status">("time");
+
+  const automationStatusRaw = AUTOMATIONS.map(a => getRunInfo(a));
+  const automationStatus = [...automationStatusRaw].sort((a, b) => {
+    if (sortBy === "time") {
+      // Parse time back to minutes for sorting
+      const parseTime = (auto: typeof a) => {
+        const orig = AUTOMATIONS.find(x => x.label === auto.label);
+        return orig ? orig.hour * 60 + orig.minute : 0;
+      };
+      return parseTime(a) - parseTime(b);
+    }
+    if (sortBy === "category") {
+      return a.category.localeCompare(b.category);
+    }
+    // status: JUST RAN (isActive) first, then Pending (!isPast), then Done (isPast)
+    const statusOrder = (x: typeof a) => x.isActive ? 0 : !x.isPast ? 1 : 2;
+    return statusOrder(a) - statusOrder(b);
+  });
   const latestPosts = data?.latestPosts || (data?.posts.latest ? [data.posts.latest] : []);
 
   return (
@@ -378,10 +396,25 @@ export default function AdminDashboard() {
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-white/10">
-                <th className="text-left text-white/40 text-xs font-bold uppercase tracking-wider py-2 pr-4">Status</th>
+                <th
+                  className="text-left text-xs font-bold uppercase tracking-wider py-2 pr-4 cursor-pointer hover:text-gold text-white/40 select-none"
+                  onClick={() => setSortBy("status")}
+                >
+                  Status {sortBy === "status" && <span className="text-gold">▼</span>}
+                </th>
                 <th className="text-left text-white/40 text-xs font-bold uppercase tracking-wider py-2 pr-4">Automation</th>
-                <th className="text-left text-white/40 text-xs font-bold uppercase tracking-wider py-2 pr-4">Category</th>
-                <th className="text-left text-white/40 text-xs font-bold uppercase tracking-wider py-2 pr-4">Time (BKK)</th>
+                <th
+                  className="text-left text-xs font-bold uppercase tracking-wider py-2 pr-4 cursor-pointer hover:text-gold text-white/40 select-none"
+                  onClick={() => setSortBy("category")}
+                >
+                  Category {sortBy === "category" && <span className="text-gold">▼</span>}
+                </th>
+                <th
+                  className="text-left text-xs font-bold uppercase tracking-wider py-2 pr-4 cursor-pointer hover:text-gold text-white/40 select-none"
+                  onClick={() => setSortBy("time")}
+                >
+                  Time (BKK) {sortBy === "time" && <span className="text-gold">▼</span>}
+                </th>
                 <th className="text-left text-white/40 text-xs font-bold uppercase tracking-wider py-2">Frequency</th>
               </tr>
             </thead>

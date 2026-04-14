@@ -30,6 +30,14 @@ export async function GET(req: NextRequest) {
   if (!isAdmin)
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
+  // Count-only mode: return pending suggestion count
+  const countPending = req.nextUrl.searchParams.get("countPending") === "true";
+  if (countPending) {
+    const all = await loadSuggestions();
+    const pendingCount = all.filter((s) => s.status === "pending").length;
+    return NextResponse.json({ pendingCount });
+  }
+
   const platform = req.nextUrl.searchParams.get("platform");
 
   let suggestions = await loadSuggestions();
