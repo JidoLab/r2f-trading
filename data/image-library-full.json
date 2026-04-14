@@ -36,5 +36,22 @@
     "description": "Road_2_Funded leaderboard displaying a trader's 9th place, +80.24% profit, +$200k realized.",
     "addedAt": "2026-04-14T04:09:56.723Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776139798778-72nu",
+    "filename": "img-1776139798778-72nu.PNG",
+    "url": "/chart-library/img-1776139798778-72nu.PNG",
+    "tags": [
+      "trading positions",
+      "live trades",
+      "forex",
+      "commodities",
+      "indices"
+    ],
+    "patterns": [],
+    "category": "chart-pattern",
+    "description": "A table displaying live trading positions for various instruments with P&L, leverage, and margin.",
+    "addedAt": "2026-04-14T04:10:04.693Z",
+    "usageCount": 0
   }
 ]
