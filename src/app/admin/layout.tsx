@@ -60,6 +60,7 @@ const NAV_SECTIONS = [
       { href: "/admin/trends", label: "Market Trends" },
       { href: "/admin/analytics-dashboard", label: "Analytics Dashboard" },
       { href: "/admin/search-insights", label: "Search Insights" },
+      { href: "/admin/content-ideas", label: "Content Ideas" },
     ],
   },
   {

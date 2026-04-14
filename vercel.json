@@ -113,8 +113,20 @@
       "schedule": "0 22 * * 1"
     },
     {
+      "path": "/api/cron/comment-to-content",
+      "schedule": "0 21 * * 0"
+    },
+    {
       "path": "/api/cron/retry-missed",
       "schedule": "30 * * * *"
+    },
+    {
+      "path": "/api/cron/daily-tip-card",
+      "schedule": "0 6 * * *"
+    },
+    {
+      "path": "/api/cron/weekly-recap",
+      "schedule": "0 5 * * 0"
     }
   ]
 }

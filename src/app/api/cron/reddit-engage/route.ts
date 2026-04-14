@@ -32,6 +32,7 @@ interface EngageLogEntry {
   mentionedR2F: boolean;
   commentedAt: string;
   permalink?: string;
+  commentId?: string;
 }
 
 interface RedditPost {
@@ -122,23 +123,33 @@ function scorePosts(posts: RedditPost[], alreadyCommented: Set<string>): RedditP
       let scoreA = 0;
       let scoreB = 0;
 
-      // Prefer posts with questions (title ends with ?)
-      if (a.title.includes("?")) scoreA += 10;
-      if (b.title.includes("?")) scoreB += 10;
+      // Prioritize unanswered questions (first responder advantage)
+      if (a.num_comments === 0) scoreA += 20;
+      else if (a.num_comments < 3) scoreA += 12;
+      else if (a.num_comments < 10) scoreA += 5;
+      if (b.num_comments === 0) scoreB += 20;
+      else if (b.num_comments < 3) scoreB += 12;
+      else if (b.num_comments < 10) scoreB += 5;
 
-      // Prefer posts with fewer comments (more visible)
-      if (a.num_comments < 5) scoreA += 8;
-      else if (a.num_comments < 15) scoreA += 4;
-      if (b.num_comments < 5) scoreB += 8;
-      else if (b.num_comments < 15) scoreB += 4;
+      // Prefer questions
+      if (a.title.includes("?")) scoreA += 15;
+      if (b.title.includes("?")) scoreB += 15;
+
+      // Prefer very recent posts (first responder)
+      const ageHoursA = (Date.now() / 1000 - a.created_utc) / 3600;
+      if (ageHoursA < 2) scoreA += 10;
+      else if (ageHoursA < 6) scoreA += 5;
+      const ageHoursB = (Date.now() / 1000 - b.created_utc) / 3600;
+      if (ageHoursB < 2) scoreB += 10;
+      else if (ageHoursB < 6) scoreB += 5;
 
       // Prefer posts with some upvotes (engaged audience)
       if (a.score >= 3 && a.score <= 50) scoreA += 3;
       if (b.score >= 3 && b.score <= 50) scoreB += 3;
 
       // Prefer posts with body text (more context to reply to)
-      if (a.selftext.length > 50) scoreA += 2;
-      if (b.selftext.length > 50) scoreB += 2;
+      if (a.selftext.length > 50) scoreA += 5;
+      if (b.selftext.length > 50) scoreB += 5;
 
       return scoreB - scoreA;
     });
@@ -194,7 +205,7 @@ async function postComment(
   postId: string,
   text: string,
   accessToken: string
-): Promise<{ success: boolean; permalink?: string; error?: string }> {
+): Promise<{ success: boolean; permalink?: string; commentId?: string; error?: string }> {
   const ua = getRedditUserAgent();
 
   const res = await fetch("https://oauth.reddit.com/api/comment", {
@@ -222,9 +233,10 @@ async function postComment(
     return { success: false, error: JSON.stringify(errors).slice(0, 200) };
   }
 
-  const permalink =
-    data?.json?.data?.things?.[0]?.data?.permalink || undefined;
-  return { success: true, permalink };
+  const commentData = data?.json?.data?.things?.[0]?.data;
+  const permalink = commentData?.permalink || undefined;
+  const commentId = commentData?.id || undefined;
+  return { success: true, permalink, commentId };
 }
 
 // --- Main handler ---
@@ -317,7 +329,7 @@ export async function GET(req: NextRequest) {
         }
 
         // Post comment
-        const { success, permalink, error } = await postComment(
+        const { success, permalink, commentId, error } = await postComment(
           post.id,
           commentText,
           accessToken
@@ -332,6 +344,7 @@ export async function GET(req: NextRequest) {
             mentionedR2F: shouldMentionR2F,
             commentedAt: new Date().toISOString(),
             permalink,
+            commentId,
           });
 
           results.push({
