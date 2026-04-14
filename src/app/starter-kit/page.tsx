@@ -145,7 +145,7 @@ export default function StarterKitPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <PageTracker event="starter_kit_page_view" />
+      <PageTracker event="starter_kit_view" />
 
       {/* Hero */}
       <section className="bg-navy py-16 md:py-24">

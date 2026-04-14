@@ -131,6 +131,26 @@
     {
       "path": "/api/cron/recycle-content",
       "schedule": "0 14 * * *"
+    },
+    {
+      "path": "/api/cron/competitor-watch",
+      "schedule": "0 19 * * *"
+    },
+    {
+      "path": "/api/cron/trend-sniper",
+      "schedule": "0 1 * * *"
+    },
+    {
+      "path": "/api/cron/quora-syndicate",
+      "schedule": "0 21 * * 3"
+    },
+    {
+      "path": "/api/cron/cart-abandonment",
+      "schedule": "0 11 * * *"
+    },
+    {
+      "path": "/api/cron/upsell",
+      "schedule": "0 12 * * *"
     }
   ]
 }

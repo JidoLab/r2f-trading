@@ -8,7 +8,7 @@ export async function POST(req: NextRequest) {
     if (!email || !event) return NextResponse.json({ ok: true });
 
     // High-value events update subscriber immediately
-    const highValueEvents = ["coaching_page_view", "contact_page_view", "calendly_click"];
+    const highValueEvents = ["coaching_page_view", "contact_page_view", "calendly_click", "starter_kit_view"];
 
     if (highValueEvents.includes(event)) {
       // Update subscriber score directly

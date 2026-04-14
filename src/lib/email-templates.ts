@@ -755,3 +755,84 @@ export function staleLeadReengageEmail(name: string): { subject: string; html: s
     ),
   };
 }
+
+// --- Cart Abandonment Templates ---
+
+export function coachingAbandonmentEmail(name: string): { subject: string; html: string } {
+  const firstName = name.split(" ")[0] || "there";
+  return {
+    subject: `${firstName}, I noticed you checked out coaching`,
+    html: layout(
+      "Still Thinking About Coaching?",
+      `<p style="color:#555;line-height:1.7;">Hey ${firstName},</p>
+      <p style="color:#555;line-height:1.7;">I noticed you checked out our coaching plans recently. Totally get it — it's a big decision, and I want to make sure you have all the info you need.</p>
+      <p style="color:#555;line-height:1.7;">Here's what a typical coaching experience looks like:</p>
+      <ul style="color:#555;line-height:2;">
+        <li>We start with a <strong>free discovery call</strong> — no commitment, just a conversation</li>
+        <li>I review your current trading and identify your biggest gaps</li>
+        <li>We build a personalized plan based on YOUR strengths and weaknesses</li>
+        <li>Weekly sessions with real-time chart analysis and trade reviews</li>
+      </ul>
+      <p style="color:#555;line-height:1.7;">Most of my students see a noticeable improvement within the first 2-3 weeks. Not because I have some magic formula, but because having someone who's been there calling out your blind spots makes all the difference.</p>
+      <p style="color:#555;line-height:1.7;">Have questions? Just hit reply — I read every message personally.</p>
+      <p style="color:#555;line-height:1.7;">Talk soon,<br><strong style="color:${BRAND.navy};">Harvest</strong></p>`,
+      { text: "Book a Free Discovery Call", url: `${BRAND.url}/contact` }
+    ),
+  };
+}
+
+export function starterKitAbandonmentEmail(name: string): { subject: string; html: string } {
+  const firstName = name.split(" ")[0] || "there";
+  return {
+    subject: "Your ICT Trading Starter Kit is waiting",
+    html: layout(
+      "Your Starter Kit Is Waiting",
+      `<p style="color:#555;line-height:1.7;">Hey ${firstName},</p>
+      <p style="color:#555;line-height:1.7;">I saw you were checking out the ICT Trading Starter Kit — solid move. Here's a quick recap of what's inside:</p>
+      <div style="background:${BRAND.cream};border-radius:8px;padding:20px;margin:20px 0;">
+        <p style="color:${BRAND.navy};font-weight:700;margin:0 0 12px;">5 Self-Paced Modules:</p>
+        <ul style="color:#555;line-height:2;margin:0;">
+          <li><strong>ICT Foundations</strong> — Order blocks, FVGs, liquidity pools</li>
+          <li><strong>Market Structure</strong> — BOS, CHOCH, displacement</li>
+          <li><strong>Killzone Mastery</strong> — London, New York, Asian session setups</li>
+          <li><strong>Risk Management</strong> — Position sizing, drawdown rules, psychology</li>
+          <li><strong>Funded Account Roadmap</strong> — FTMO/MFF challenge blueprint</li>
+        </ul>
+      </div>
+      <p style="color:#555;line-height:1.7;">All of this for a one-time payment of <strong style="color:${BRAND.gold};">$49</strong>. No subscriptions, no upsells — just the framework I used to get my students funded.</p>
+      <p style="color:#555;line-height:1.7;">If you have any questions about the content, just reply to this email. I'm happy to help.</p>
+      <p style="color:#555;line-height:1.7;">— <strong style="color:${BRAND.navy};">Harvest</strong></p>`,
+      { text: "Get the Starter Kit — $49", url: `${BRAND.url}/starter-kit` }
+    ),
+  };
+}
+
+// --- Upsell Template (Starter Kit → Coaching) ---
+
+export function coachingUpsellEmail(name: string): { subject: string; html: string } {
+  const firstName = name.split(" ")[0] || "there";
+  return {
+    subject: `${firstName}, you've been crushing it — ready for the next level?`,
+    html: layout(
+      "Ready for Personalized Guidance?",
+      `<p style="color:#555;line-height:1.7;">Hey ${firstName},</p>
+      <p style="color:#555;line-height:1.7;">I've noticed you've been putting in the work since getting the Starter Kit — reading the blog, studying the concepts. That tells me you're serious about this.</p>
+      <p style="color:#555;line-height:1.7;">Here's the thing: the Starter Kit gives you the <em>what</em>. Coaching gives you the <em>how</em> — applied to YOUR specific trading, YOUR mistakes, YOUR psychology.</p>
+      <p style="color:#555;line-height:1.7;">That's why I want to offer you something special:</p>
+      <div style="background:${BRAND.cream};border:2px solid ${BRAND.gold};border-radius:8px;padding:24px;margin:24px 0;text-align:center;">
+        <p style="color:${BRAND.navy};font-weight:900;font-size:20px;margin:0 0 8px;">10% OFF Your First Month</p>
+        <p style="color:#555;font-size:14px;margin:0;">Mention "STARTERKIT10" on your discovery call</p>
+      </div>
+      <p style="color:#555;line-height:1.7;">What coaching includes:</p>
+      <ul style="color:#555;line-height:2;">
+        <li>1-on-1 live sessions with personalized trade reviews</li>
+        <li>Real-time chart analysis during killzones</li>
+        <li>Custom action plans for your skill level</li>
+        <li>Direct Telegram access for questions between sessions</li>
+      </ul>
+      <p style="color:#555;line-height:1.7;">No pressure — book a free 15-min call and we'll figure out if it's the right move for you.</p>
+      <p style="color:#555;line-height:1.7;">Let's keep the momentum going,<br><strong style="color:${BRAND.navy};">Harvest</strong></p>`,
+      { text: "Book a Free Call (10% Off)", url: `${BRAND.url}/contact` }
+    ),
+  };
+}

@@ -34,6 +34,7 @@ const NAV_SECTIONS = [
       { href: "/admin/reviews", label: "Reviews" },
       { href: "/admin/share", label: "Quick Share" },
       { href: "/admin/whatsapp", label: "WhatsApp" },
+      { href: "/admin/community", label: "Community" },
     ],
   },
   {

@@ -13,6 +13,7 @@ const POST_TYPES = [
   { id: "myth", prompt: "Bust a common trading myth in a punchy way. Format: 'MYTH: [common belief]. TRUTH: [reality].' Example: 'MYTH: You need a 90% win rate. TRUTH: Some of the best traders win only 40% of the time — it's all about risk-reward.'" },
   { id: "story", prompt: "Share a very short trading story or lesson (3-4 sentences). Personal, relatable, ends with a takeaway. Example: 'I once held a losing trade for 3 hours hoping it would come back. It didn't. That one trade taught me more about discipline than 6 months of courses.'" },
   { id: "challenge", prompt: "Issue a mini challenge to traders. Example: 'Challenge: For the next 5 trading days, only take 1 trade per session. Just one. See what happens to your win rate. Drop your results below 👇'" },
+  { id: "poll-native", prompt: "Generate a trading poll question with 2-4 short answer options. The question should be engaging and debatable — something traders have strong opinions about. Return the question and options separately. Topics: best killzone, favorite pair, trading style, risk management, psychology, ICT concepts, funded challenges, timeframes, etc. Example question: 'Which ICT killzone gives you the best entries?' with options ['London', 'New York', 'Asian', 'All of them']. Keep the question under 200 characters and each option under 25 characters." },
   // Promotional — rotate in naturally (link to value pages)
   { id: "promo-free-class", prompt: "Promote the free ICT trading class in an exciting, non-spammy way. Mention what they'll learn (3 setups that work, funded account blueprint, trading psychology). Include the link: https://r2ftrading.com/free-class. Example: 'I'm doing a free class on the 3 ICT setups that got my students funded. No fluff, just the framework. Grab your spot 👇 https://r2ftrading.com/free-class'" },
   { id: "promo-results", prompt: "Share a student result or success stat and link to the results page. Make it feel like a genuine brag/celebration, not an ad. Include: https://r2ftrading.com/results. Example: '85% of my students pass their funded challenge. That's not luck — that's structure. See the results 👇 https://r2ftrading.com/results'" },
@@ -36,10 +37,17 @@ export async function GET(req: NextRequest) {
     } catch {}
 
     // Pick a type we haven't used recently
+    // Poll-native should appear roughly 1 in 7 posts (~2x/week with 2 posts/day)
+    const rollPoll = Math.random() < 1 / 7;
     const typeCounts: Record<string, number> = {};
     for (const t of recentTypes.slice(-20)) typeCounts[t] = (typeCounts[t] || 0) + 1;
-    const sorted = [...POST_TYPES].sort((a, b) => (typeCounts[a.id] || 0) - (typeCounts[b.id] || 0));
-    const postType = sorted[0];
+    let postType: (typeof POST_TYPES)[number];
+    if (rollPoll) {
+      postType = POST_TYPES.find((t) => t.id === "poll-native")!;
+    } else {
+      const sorted = [...POST_TYPES].filter((t) => t.id !== "poll-native").sort((a, b) => (typeCounts[a.id] || 0) - (typeCounts[b.id] || 0));
+      postType = sorted[0];
+    }
 
     // Get market context
     let marketContext = "";
@@ -50,12 +58,32 @@ export async function GET(req: NextRequest) {
 
     // Generate the post with Claude
     const anthropic = new Anthropic();
+    const isPollNative = postType.id === "poll-native";
     const response = await anthropic.messages.create({
       model: "claude-sonnet-4-20250514",
       max_tokens: 500,
       messages: [{
         role: "user",
-        content: `You are the social media voice for R2F Trading (ICT trading coaching by Harvest Wright).
+        content: isPollNative
+          ? `You are the social media voice for R2F Trading (ICT trading coaching by Harvest Wright).
+Generate a trading poll for Twitter/X.
+
+${postType.prompt}
+
+${marketContext ? `If any trending/timely topic is relevant, incorporate it:\n${marketContext}` : ""}
+
+RULES:
+- Sound like a real trader, NOT an AI
+- Casual, confident tone
+- The question should spark debate and get votes
+- 2-4 options, each under 25 characters
+- NEVER use the word "journey"
+- Keep the question under 200 characters
+- Include 1-2 relevant hashtags in the question text
+
+Return ONLY a JSON object:
+{"question": "the poll question with hashtags", "options": ["Option A", "Option B", "Option C"], "duration_minutes": 1440, "type": "poll-native"}`
+          : `You are the social media voice for R2F Trading (ICT trading coaching by Harvest Wright).
 Write a ${postType.id.toUpperCase()} post for Twitter/X and social media.
 
 ${postType.prompt}
@@ -83,6 +111,13 @@ Return ONLY a JSON object:
     const jsonEnd = text.lastIndexOf("}");
     if (jsonStart === -1 || jsonEnd === -1) throw new Error("No JSON in response");
     const post = JSON.parse(text.slice(jsonStart, jsonEnd + 1));
+
+    // For poll-native, build a text fallback for non-Twitter platforms
+    if (isPollNative && post.question && post.options) {
+      const emojis = ["🅰️", "🅱️", "🅲️", "🅳️"];
+      const optionLines = (post.options as string[]).map((opt: string, i: number) => `${emojis[i] || `${i + 1}.`} ${opt}`).join("\n");
+      post.text = `${post.question}\n\n${optionLines}\n\nVote below! 👇`;
+    }
 
     // For visual post types, generate a branded image via the quote-card/infographic route
     const IMAGE_POST_TYPES = ["tip", "myth", "quote", "hot-take"];
@@ -118,9 +153,32 @@ Return ONLY a JSON object:
     // Post to all text-friendly platforms
     const results: { platform: string; status: string }[] = [];
 
-    // Twitter/X — use image tweet if we have an image, otherwise text-only
+    // Twitter/X — use native poll for poll-native, image tweet if image, otherwise text-only
     try {
-      if (socialImageUrl) {
+      if (isPollNative && post.question && post.options) {
+        // Native Twitter poll via v2 API
+        const { generateOAuthHeader } = await import("@/lib/social-auth");
+        const apiKey = process.env.TWITTER_API_KEY!;
+        const apiSecret = process.env.TWITTER_API_SECRET!;
+        const accessToken = process.env.TWITTER_ACCESS_TOKEN!;
+        const accessSecret = process.env.TWITTER_ACCESS_SECRET!;
+        if (apiKey && accessToken) {
+          const tweetBody: Record<string, unknown> = {
+            text: post.question,
+            poll: {
+              options: (post.options as string[]).slice(0, 4),
+              duration_minutes: post.duration_minutes || 1440,
+            },
+          };
+          const auth = generateOAuthHeader("POST", "https://api.twitter.com/2/tweets", {}, apiKey, apiSecret, accessToken, accessSecret);
+          const res = await fetch("https://api.twitter.com/2/tweets", {
+            method: "POST",
+            headers: { Authorization: auth, "Content-Type": "application/json" },
+            body: JSON.stringify(tweetBody),
+          });
+          results.push({ platform: "twitter", status: res.ok ? "success" : "error" });
+        }
+      } else if (socialImageUrl) {
         const { postTweetWithImage } = await import("@/lib/social");
         const imgResult = await postTweetWithImage(post.text, socialImageUrl);
         results.push({ platform: "twitter", status: imgResult.status });
