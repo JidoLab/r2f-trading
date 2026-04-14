@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-14T02:30:50.369Z",
+  "generatedAt": "2026-04-14T03:57:35.852Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Tuesday, 14 April 2026 at 09:30 (Bangkok)",
+  "dateTime": "Tuesday, 14 April 2026 at 10:57 (Bangkok)",
   "overnight": {
     "newSubscribers": 2,
     "payments": {
@@ -11,22 +11,22 @@
     "chatConversations": 0
   },
   "contentStatus": {
-    "blogPostsToday": 0,
-    "totalBlogPosts": 30,
+    "blogPostsToday": 1,
+    "totalBlogPosts": 31,
     "shortsReady": 0,
     "shortsPublished": 11,
     "shortsRendering": 0,
-    "socialPostsThisWeek": 22
+    "socialPostsThisWeek": 23
   },
   "hotLeads": {
     "count": 0,
     "recentHot": []
   },
   "suggestions": [
-    "Create 3-5 new video shorts this week to maintain momentum with your existing 11 published shorts and attract more subscribers.",
-    "Increase your drip campaign frequency from 0.8 to at least 2-3 emails per subscriber to warm up your 3 cold leads.",
-    "Start engaging on Reddit trading communities by posting 5-10 valuable comments daily to drive traffic and generate upvotes.",
-    "Publish 1 new blog post today focusing on ICT trading strategies to complement your 30 existing posts and improve SEO."
+    "Start 2-3 drip email sequences targeting your 3 cold subscribers to warm them up with ICT trading tips and success stories",
+    "Create 3-5 trading shorts this week showcasing live chart analysis to boost engagement beyond your current 23 social posts",
+    "Engage on 5-10 relevant trading Reddit posts daily with valuable ICT insights to build authority and drive traffic",
+    "Launch a limited-time free mini-course or webinar to convert your recent 2 new subscribers before they go cold"
   ],
   "schedule": [
     {
