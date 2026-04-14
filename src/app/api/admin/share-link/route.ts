@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     const results: { platform: string; status: string; error?: string }[] = [];
     const selectedPlatforms: string[] = platforms || ["twitter", "facebook", "linkedin", "telegram", "discord", "reddit"];
 
-    // Twitter/X
+    // Twitter/X (280 char limit)
     if (selectedPlatforms.includes("twitter")) {
       try {
         const apiKey = process.env.TWITTER_API_KEY!;
@@ -25,15 +25,26 @@ export async function POST(req: NextRequest) {
         const accessToken = process.env.TWITTER_ACCESS_TOKEN!;
         const accessSecret = process.env.TWITTER_ACCESS_SECRET!;
         if (apiKey && accessToken) {
+          // Twitter counts URLs as 23 chars. Truncate caption if total would exceed 280.
+          const urlLength = 23; // Twitter's t.co wraps all URLs to 23 chars
+          const maxCaption = 280 - urlLength - 3; // 3 for "\n\n"
+          const tweetCaption = caption.length > maxCaption ? caption.slice(0, maxCaption - 3) + "..." : caption;
+          const tweetText = `${tweetCaption}\n\n${url}`;
+
           const auth = generateOAuthHeader("POST", "https://api.twitter.com/2/tweets", {}, apiKey, apiSecret, accessToken, accessSecret);
           const res = await fetch("https://api.twitter.com/2/tweets", {
             method: "POST",
             headers: { Authorization: auth, "Content-Type": "application/json" },
-            body: JSON.stringify({ text }),
+            body: JSON.stringify({ text: tweetText }),
           });
-          results.push({ platform: "twitter", status: res.ok ? "success" : "error", error: res.ok ? undefined : (await res.text()).slice(0, 80) });
+          if (!res.ok) {
+            const errText = await res.text().catch(() => "");
+            results.push({ platform: "twitter", status: "error", error: `${res.status}: ${errText.slice(0, 80)}` });
+          } else {
+            results.push({ platform: "twitter", status: "success" });
+          }
         }
-      } catch (e: any) { results.push({ platform: "twitter", status: "error", error: e.message?.slice(0, 80) }); }
+      } catch (e: unknown) { results.push({ platform: "twitter", status: "error", error: e instanceof Error ? e.message.slice(0, 80) : "Unknown error" }); }
     }
 
     // Facebook
