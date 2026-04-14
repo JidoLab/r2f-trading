@@ -15,5 +15,26 @@
     "description": "Trading leaderboard showing user 'Road_2_Funded' performance, profit metrics, and rank.",
     "addedAt": "2026-04-14T04:09:49.985Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776139791738-rqi6",
+    "filename": "img-1776139791738-rqi6.jpeg",
+    "url": "/chart-library/img-1776139791738-rqi6.jpeg",
+    "tags": [
+      "leaderboard",
+      "trading",
+      "profit",
+      "performance",
+      "R2F",
+      "funded",
+      "challenge",
+      "results",
+      "propfirm"
+    ],
+    "patterns": [],
+    "category": "chart-pattern",
+    "description": "Road_2_Funded leaderboard displaying a trader's 9th place, +80.24% profit, +$200k realized.",
+    "addedAt": "2026-04-14T04:09:56.723Z",
+    "usageCount": 0
   }
 ]
