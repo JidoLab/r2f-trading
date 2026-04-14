@@ -34,27 +34,38 @@
   {
     "email": "cyrus.alia.borja@gmail.com",
     "date": "2026-04-11T13:01:25.702Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "score": 0,
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-04-11T13:01:25.702Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   },
   {
     "email": "blackkilevu@gmail.com",
     "date": "2026-04-13T10:23:34.431Z",
     "dripsSent": 0,
-    "referralCode": "R2F-9cixu5",
-    "referredBy": null,
-    "referralCount": 0
+    "score": 0,
+    "segment": "cold",
+    "events": [],
+    "lastActivity": "2026-04-13T10:23:34.431Z",
+    "dripsHistory": []
   },
   {
     "email": "lucky04_flour@icloud.com",
     "date": "2026-04-13T23:04:34.994Z",
     "dripsSent": 0,
-    "referralCode": "R2F-dxxk1r",
-    "referredBy": null,
-    "referralCount": 0
+    "score": 5,
+    "segment": "cold",
+    "events": [
+      {
+        "type": "blog_read",
+        "date": "2026-04-14T09:56:28.355Z"
+      }
+    ],
+    "lastActivity": "2026-04-14T09:56:28.355Z",
+    "dripsHistory": []
   }
 ]
