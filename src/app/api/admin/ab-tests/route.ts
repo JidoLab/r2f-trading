@@ -88,15 +88,58 @@ export async function GET() {
     }
   }
 
-  // Build template stats
-  const templateStats: TemplateStats[] = Object.entries(TEMPLATE_META).map(([key, meta]) => ({
-    name: key,
-    displayName: meta.displayName,
-    sentCount: templateCounts[key] || 0,
-    segments: meta.segments,
-    openRate: "N/A",
-    clickRate: "N/A",
-  }));
+  // Load email analytics for open/click rates
+  let emailAnalytics: Record<string, {
+    subjects: Record<string, { delivered: number; opened: number; clicked: number }>;
+  }> = {};
+  try {
+    emailAnalytics = JSON.parse(await readFile("data/email-analytics.json"));
+  } catch {}
+
+  // Aggregate open/click rates per template by matching subject lines
+  const SUBJECT_TO_TEMPLATE: Record<string, string> = {
+    "3 mistakes killing your trading": "beginnerMistakes",
+    "The ICT concepts that changed": "ictConcepts",
+    "How one student went from": "successStory",
+    "coaching spots": "coachingCta",
+    "traders are saying": "socialProof",
+    "Let's chat about your": "bookCallSoft",
+    "Quick question for you": "bookCallUrgent",
+    "spots left": "limitedSpots",
+  };
+
+  const templateOpenClicks: Record<string, { delivered: number; opened: number; clicked: number }> = {};
+  for (const recipient of Object.values(emailAnalytics)) {
+    for (const [subject, stats] of Object.entries(recipient.subjects || {})) {
+      const subjectLower = subject.toLowerCase();
+      for (const [keyword, templateKey] of Object.entries(SUBJECT_TO_TEMPLATE)) {
+        if (subjectLower.includes(keyword.toLowerCase())) {
+          if (!templateOpenClicks[templateKey]) templateOpenClicks[templateKey] = { delivered: 0, opened: 0, clicked: 0 };
+          templateOpenClicks[templateKey].delivered += stats.delivered;
+          templateOpenClicks[templateKey].opened += stats.opened;
+          templateOpenClicks[templateKey].clicked += stats.clicked;
+          break;
+        }
+      }
+    }
+  }
+
+  // Build template stats with real open/click rates where available
+  const templateStats: TemplateStats[] = Object.entries(TEMPLATE_META).map(([key, meta]) => {
+    const analytics = templateOpenClicks[key];
+    const delivered = analytics?.delivered || 0;
+    const opened = analytics?.opened || 0;
+    const clicked = analytics?.clicked || 0;
+
+    return {
+      name: key,
+      displayName: meta.displayName,
+      sentCount: templateCounts[key] || 0,
+      segments: meta.segments,
+      openRate: delivered > 0 ? `${Math.round((opened / delivered) * 100)}%` : "N/A",
+      clickRate: delivered > 0 ? `${Math.round((clicked / delivered) * 100)}%` : "N/A",
+    };
+  });
 
   // Sort by sentCount descending
   templateStats.sort((a, b) => b.sentCount - a.sentCount);
