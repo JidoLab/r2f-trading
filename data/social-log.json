@@ -1085,5 +1085,33 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-14T12:15:26.877Z",
+    "type": "text",
+    "postType": "promo-coaching",
+    "text": "PPI drops tomorrow — classic setup for USD reversals if it misses. Been teaching my students how ord",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
