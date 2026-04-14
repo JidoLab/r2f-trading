@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { trackFBEvent } from "@/lib/tracking";
 
 interface PayPalButtonProps {
   planName: string;
@@ -102,6 +103,7 @@ export default function PayPalButton({ planName, amount, description, onSuccess,
         const details = await actions.order.capture();
         setCompleted(true);
         setShowPaypal(false);
+        trackFBEvent("Purchase", { value: parseFloat(amount), currency: "USD" });
 
         // Notify backend
         try {

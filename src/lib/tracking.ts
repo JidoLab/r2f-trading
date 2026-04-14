@@ -17,6 +17,20 @@ export function trackEvent(
   } catch {}
 }
 
+// Facebook Pixel event tracking
+export function trackFBEvent(event: string, data?: Record<string, unknown>) {
+  if (typeof window !== "undefined" && (window as any).fbq) {
+    (window as any).fbq("track", event, data);
+  }
+}
+
+// Google Ads conversion tracking
+export function trackGoogleConversion(conversionId: string) {
+  if (typeof window !== "undefined" && (window as any).gtag) {
+    (window as any).gtag("event", "conversion", { send_to: conversionId });
+  }
+}
+
 // Also send to our lead scoring API (fire-and-forget)
 export function trackEngagement(
   eventType: string,

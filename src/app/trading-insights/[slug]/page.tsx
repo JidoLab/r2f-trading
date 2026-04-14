@@ -55,6 +55,65 @@ async function getMDXContent(slug: string) {
   return mod.default;
 }
 
+// Determine CTA based on post tags
+function getBlogCTA(tags: string[], title: string) {
+  const lower = tags.map(t => t.toLowerCase()).join(" ") + " " + title.toLowerCase();
+
+  if (lower.includes("funded") || lower.includes("ftmo") || lower.includes("prop firm") || lower.includes("challenge")) {
+    return {
+      headline: "Ready to Get Funded?",
+      text: "Our students pass prop firm challenges in under 60 days with personalized ICT coaching.",
+      buttonText: "Book a Free Discovery Call",
+      buttonUrl: "/contact",
+      secondaryText: "Or start with our $49 Starter Kit →",
+      secondaryUrl: "/starter-kit",
+    };
+  }
+
+  if (lower.includes("psychology") || lower.includes("mindset") || lower.includes("discipline") || lower.includes("emotion")) {
+    return {
+      headline: "Master Your Trading Psychology",
+      text: "Psychology is 80% of trading. Our coaching includes dedicated psychological coaching sessions.",
+      buttonText: "See Coaching Plans",
+      buttonUrl: "/coaching",
+      secondaryText: "Start free: 5-Day ICT Crash Course →",
+      secondaryUrl: "/crash-course",
+    };
+  }
+
+  if (lower.includes("risk") || lower.includes("position size") || lower.includes("drawdown")) {
+    return {
+      headline: "Build a Risk Management Plan That Works",
+      text: "Get a custom risk management framework built for YOUR account size and trading style.",
+      buttonText: "Book a Free Call",
+      buttonUrl: "/contact",
+      secondaryText: "Free: Position Sizing Checklist →",
+      secondaryUrl: "/",
+    };
+  }
+
+  if (lower.includes("beginner") || lower.includes("start") || lower.includes("learn") || lower.includes("basic")) {
+    return {
+      headline: "New to ICT Trading?",
+      text: "Start with our free 5-day crash course. Learn the 3 setups that actually work.",
+      buttonText: "Start Free Crash Course",
+      buttonUrl: "/crash-course",
+      secondaryText: "Or grab the free checklist →",
+      secondaryUrl: "/",
+    };
+  }
+
+  // Default CTA
+  return {
+    headline: "Take Your Trading to the Next Level",
+    text: "Get personalized 1-on-1 ICT coaching with Harvest Wright. Free discovery call, no commitment.",
+    buttonText: "Book a Free Discovery Call",
+    buttonUrl: "/contact",
+    secondaryText: "Learn more about coaching →",
+    secondaryUrl: "/coaching",
+  };
+}
+
 export default async function BlogPostPage({
   params,
 }: {
@@ -169,23 +228,36 @@ export default async function BlogPostPage({
 
           <hr className="my-12 border-gray-200" />
 
-          <div className="bg-cream rounded-lg p-8 text-center">
-            <p
-              className="text-xl font-bold text-navy mb-3"
-              style={{ fontFamily: "var(--font-serif)" }}
-            >
-              Ready to take your trading to the next level?
-            </p>
-            <p className="text-gray-600 text-sm mb-6">
-              Get personalized coaching from an experienced ICT trader.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-block bg-gold hover:bg-gold-light text-navy font-bold text-sm tracking-wide px-8 py-3 rounded-md transition-all uppercase"
-            >
-              Book a Free Discovery Call
-            </Link>
-          </div>
+          {(() => {
+            const cta = getBlogCTA(post.tags, post.title);
+            return (
+              <div className="bg-navy rounded-lg p-10 text-center">
+                <p
+                  className="text-2xl md:text-3xl font-bold text-white mb-3"
+                  style={{ fontFamily: "var(--font-serif)" }}
+                >
+                  {cta.headline}
+                </p>
+                <p className="text-gray-300 text-sm mb-6 max-w-md mx-auto">
+                  {cta.text}
+                </p>
+                <Link
+                  href={cta.buttonUrl}
+                  className="inline-block bg-gold hover:bg-gold-light text-navy font-bold text-sm tracking-wide px-8 py-3 rounded-md transition-all uppercase"
+                >
+                  {cta.buttonText}
+                </Link>
+                <div className="mt-4">
+                  <Link
+                    href={cta.secondaryUrl}
+                    className="text-gold hover:text-gold-light text-sm font-medium transition-colors"
+                  >
+                    {cta.secondaryText}
+                  </Link>
+                </div>
+              </div>
+            );
+          })()}
 
           <EmailSignup variant="sidebar" />
 

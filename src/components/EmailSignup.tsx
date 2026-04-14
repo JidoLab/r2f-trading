@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { trackEvent } from "@/lib/tracking";
+import { trackEvent, trackFBEvent } from "@/lib/tracking";
 
 export default function EmailSignup({ variant = "inline" }: { variant?: "inline" | "sidebar" | "popup" }) {
   const [email, setEmail] = useState("");
@@ -25,6 +25,7 @@ export default function EmailSignup({ variant = "inline" }: { variant?: "inline"
         // Save email for lead scoring tracking
         localStorage.setItem("r2f_subscriber_email", email);
         trackEvent("email_signup", { method: variant });
+        trackFBEvent("Lead");
         setStatus("success");
         setEmail("");
         // Redirect to thank-you page with Calendly
