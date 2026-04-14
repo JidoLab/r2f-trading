@@ -1056,5 +1056,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-04-14T09:45:41.428Z",
+    "type": "link-share",
+    "url": "https://www.tradingview.com/chart/MBT1!/Xgcdt3QJ-A-lesson-on-LIQUIDITY-and-EFFECIENY-on-Bitcoin/",
+    "caption": "Doing a quick lesson on the concepts of liquidity and efficiency on Bitcoin futu",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "error": "{\"detail\":\"You are not permitted to perform this action.\",\"type\":\"about:blank\",\""
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
