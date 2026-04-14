@@ -21,7 +21,7 @@ const SEARCH_QUERIES = [
 ];
 
 const LOG_PATH = "data/reddit-engage-log.json";
-const MAX_COMMENTS_PER_RUN = 3;
+const MAX_COMMENTS_PER_RUN = 5;
 const MAX_LOG_ENTRIES = 200;
 
 interface EngageLogEntry {

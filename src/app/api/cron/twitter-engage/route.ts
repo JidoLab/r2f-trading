@@ -243,7 +243,7 @@ export async function GET(req: NextRequest) {
       return scoreB - scoreA;
     });
 
-    const replyCount = Math.random() > 0.5 ? 3 : 2;
+    const replyCount = 5;
     const toReply = filtered.slice(0, replyCount);
 
     // Generate and post replies

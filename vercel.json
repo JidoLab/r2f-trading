@@ -49,6 +49,10 @@
       "schedule": "0 8 * * *"
     },
     {
+      "path": "/api/cron/twitter-engage",
+      "schedule": "0 15 * * *"
+    },
+    {
       "path": "/api/cron/find-reply-opportunities",
       "schedule": "30 0 * * *"
     },
