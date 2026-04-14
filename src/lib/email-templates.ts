@@ -5,7 +5,7 @@ const BRAND = {
   url: "https://r2ftrading.com",
 };
 
-function layout(title: string, body: string, cta?: { text: string; url: string }) {
+export function layout(title: string, body: string, cta?: { text: string; url: string }) {
   return `<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
@@ -512,6 +512,26 @@ export function instantWelcomeEmail(name: string): { subject: string; html: stri
       <p style="color:#555;line-height:1.7;">Quick question: <strong>what's your biggest challenge in trading right now?</strong> Hit reply and let me know. I read every response.</p>
       <p style="color:#555;line-height:1.7;">In the meantime, check out our free ICT class if you haven't already. It covers the 3 setups that actually work.</p>`,
       { text: "Watch the Free Class", url: `${BRAND.url}/free-class` }
+    ),
+  };
+}
+
+// --- Blog Post Notification ---
+
+export function blogNotificationEmail(
+  title: string,
+  excerpt: string,
+  slug: string
+): { subject: string; html: string } {
+  const postUrl = `${BRAND.url}/trading-insights/${slug}`;
+  return {
+    subject: `New: ${title}`,
+    html: layout(
+      title,
+      `<p style="color:#555;line-height:1.7;">${excerpt}</p>
+      <p style="color:#555;line-height:1.7;">Read the full breakdown on the blog — it's packed with actionable insights you can apply to your next session.</p>
+      <p style="margin:8px 0 0;font-size:11px;color:#aaa;text-align:center;"><a href="${BRAND.url}/unsubscribe" style="color:#aaa;text-decoration:underline;">Unsubscribe</a></p>`,
+      { text: "Read Now \u2192", url: postUrl }
     ),
   };
 }

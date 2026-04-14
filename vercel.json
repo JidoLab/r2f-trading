@@ -127,6 +127,10 @@
     {
       "path": "/api/cron/weekly-recap",
       "schedule": "0 5 * * 0"
+    },
+    {
+      "path": "/api/cron/recycle-content",
+      "schedule": "0 14 * * *"
     }
   ]
 }
