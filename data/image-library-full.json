@@ -2,7 +2,7 @@
   {
     "id": "img-1776139783808-hdcr",
     "filename": "img-1776139783808-hdcr.PNG",
-    "url": "/chart-library/img-1776139783808-hdcr.PNG",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776139783808-hdcr.PNG",
     "tags": [
       "trading leaderboard",
       "profit results",
@@ -11,7 +11,7 @@
       "performance metrics"
     ],
     "patterns": [],
-    "category": "chart-pattern",
+    "category": "leaderboard",
     "description": "Trading leaderboard showing user 'Road_2_Funded' performance, profit metrics, and rank.",
     "addedAt": "2026-04-14T04:09:49.985Z",
     "usageCount": 0
@@ -19,7 +19,7 @@
   {
     "id": "img-1776139791738-rqi6",
     "filename": "img-1776139791738-rqi6.jpeg",
-    "url": "/chart-library/img-1776139791738-rqi6.jpeg",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776139791738-rqi6.jpeg",
     "tags": [
       "leaderboard",
       "trading",
@@ -32,7 +32,7 @@
       "propfirm"
     ],
     "patterns": [],
-    "category": "chart-pattern",
+    "category": "leaderboard",
     "description": "Road_2_Funded leaderboard displaying a trader's 9th place, +80.24% profit, +$200k realized.",
     "addedAt": "2026-04-14T04:09:56.723Z",
     "usageCount": 0
@@ -40,7 +40,7 @@
   {
     "id": "img-1776139798778-72nu",
     "filename": "img-1776139798778-72nu.PNG",
-    "url": "/chart-library/img-1776139798778-72nu.PNG",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776139798778-72nu.PNG",
     "tags": [
       "trading positions",
       "live trades",
@@ -49,7 +49,7 @@
       "indices"
     ],
     "patterns": [],
-    "category": "chart-pattern",
+    "category": "screenshot",
     "description": "A table displaying live trading positions for various instruments with P&L, leverage, and margin.",
     "addedAt": "2026-04-14T04:10:04.693Z",
     "usageCount": 0
