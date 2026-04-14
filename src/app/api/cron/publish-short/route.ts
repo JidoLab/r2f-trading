@@ -61,12 +61,32 @@ export async function GET(req: NextRequest) {
         });
         if (tokenRes.ok) {
           const { access_token } = await tokenRes.json();
-          const description = `${renderData.description}\n\n${(renderData.hashtags || []).join(" ")}\n\n📈 Free ICT Trading Checklist: https://r2ftrading.com\n🔔 Subscribe for daily trading insights`;
+          const topicHashtags = (renderData.hashtags || []).join(" ");
+          const description = [
+            renderData.description || renderData.title,
+            "",
+            topicHashtags,
+            "",
+            "📈 Free ICT Trading Checklist: https://r2ftrading.com",
+            "🎓 Free 5-Day Crash Course: https://r2ftrading.com/crash-course",
+            "📊 Trading Insights Blog: https://r2ftrading.com/trading-insights",
+            "🔔 Subscribe for daily trading tips",
+            "",
+            "#ICTTrading #ForexTrading #SmartMoneyConcepts #FundedTrader #R2FTrading",
+          ].join("\n");
+          const baseTags = (renderData.hashtags || []).map((h: string) => h.replace("#", ""));
+          const seoTags = [
+            ...baseTags,
+            "ICT trading", "smart money concepts", "forex trading", "funded trader",
+            "trading strategy", "price action", "liquidity", "order blocks",
+            "R2F Trading", "day trading", "swing trading", "FTMO",
+          ];
+          const uniqueTags = [...new Set(seoTags.map(t => t.toLowerCase()))].slice(0, 30);
           const initRes = await fetch("https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status", {
             method: "POST",
             headers: { Authorization: `Bearer ${access_token}`, "Content-Type": "application/json" },
             body: JSON.stringify({
-              snippet: { title: renderData.title, description, tags: (renderData.hashtags || []).map((h: string) => h.replace("#", "")), categoryId: "22" },
+              snippet: { title: renderData.title, description, tags: uniqueTags, categoryId: "22" },
               status: { privacyStatus: "public", selfDeclaredMadeForKids: false },
             }),
           });

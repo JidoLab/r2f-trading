@@ -402,6 +402,172 @@ async function postToDiscord(post: PostData): Promise<SocialResult> {
   return { platform: "discord", status: "error", message: err.slice(0, 200) };
 }
 
+// --- LinkedIn Native Article (full text post, not link share) ---
+export async function postLinkedInArticle(
+  title: string,
+  articleBody: string,
+  articleUrl: string
+): Promise<SocialResult> {
+  const token = process.env.LINKEDIN_ACCESS_TOKEN;
+  const personUrn = process.env.LINKEDIN_PERSON_URN;
+
+  if (!token || !personUrn) {
+    return { platform: "linkedin-article", status: "skipped", message: "No credentials" };
+  }
+
+  // Use Claude to shorten the article to 500-800 words for LinkedIn
+  let shortenedText: string;
+  try {
+    const Anthropic = (await import("@anthropic-ai/sdk")).default;
+    const anthropic = new Anthropic();
+    const res = await anthropic.messages.create({
+      model: "claude-sonnet-4-20250514",
+      max_tokens: 2000,
+      messages: [{
+        role: "user",
+        content: `Shorten this trading article to 500-800 words for a LinkedIn post. Keep the key insights, actionable advice, and personal voice. Remove markdown formatting (no ##, no **, no []() links). Use plain text with line breaks between sections. Keep it conversational and valuable — this should feel like a native LinkedIn post, not a blog excerpt.
+
+TITLE: ${title}
+
+ARTICLE:
+${articleBody.slice(0, 8000)}
+
+Return ONLY the shortened article text, nothing else.`,
+      }],
+    });
+    shortenedText = res.content[0].type === "text" ? res.content[0].text.trim() : "";
+  } catch {
+    // Fallback: take first ~700 words of the article, strip markdown
+    shortenedText = articleBody
+      .replace(/^#{1,6}\s+/gm, "")
+      .replace(/\*\*/g, "")
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+      .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
+      .split(/\s+/)
+      .slice(0, 700)
+      .join(" ");
+  }
+
+  if (!shortenedText) {
+    return { platform: "linkedin-article", status: "error", message: "Failed to shorten article" };
+  }
+
+  const postText = `${title}\n\n${shortenedText}\n\n---\nRead the full article: ${articleUrl}\n\n#ICTTrading #TradingEducation #ForexTrading #R2FTrading`;
+
+  // LinkedIn UGC API — native text post (no link card, just text)
+  const body = {
+    author: personUrn,
+    lifecycleState: "PUBLISHED",
+    specificContent: {
+      "com.linkedin.ugc.ShareContent": {
+        shareCommentary: { text: postText },
+        shareMediaCategory: "NONE",
+      },
+    },
+    visibility: { "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC" },
+  };
+
+  const res = await fetch("https://api.linkedin.com/v2/ugcPosts", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+      "X-Restli-Protocol-Version": "2.0.0",
+    },
+    body: JSON.stringify(body),
+  });
+
+  if (res.ok) return { platform: "linkedin-article", status: "success" };
+  const err = await res.text();
+  return { platform: "linkedin-article", status: "error", message: err.slice(0, 200) };
+}
+
+// --- Twitter/X Image Upload + Tweet ---
+export async function postTweetWithImage(
+  text: string,
+  imageUrl: string
+): Promise<SocialResult> {
+  const apiKey = process.env.TWITTER_API_KEY;
+  const apiSecret = process.env.TWITTER_API_SECRET;
+  const accessToken = process.env.TWITTER_ACCESS_TOKEN;
+  const accessSecret = process.env.TWITTER_ACCESS_SECRET;
+
+  if (!apiKey || !apiSecret || !accessToken || !accessSecret) {
+    return { platform: "twitter-image", status: "skipped", message: "No credentials" };
+  }
+
+  try {
+    // Step 1: Download the image
+    const imgRes = await fetch(imageUrl);
+    if (!imgRes.ok) {
+      return { platform: "twitter-image", status: "error", message: `Image fetch failed: ${imgRes.status}` };
+    }
+    const imgBuffer = await imgRes.arrayBuffer();
+    const base64Data = Buffer.from(imgBuffer).toString("base64");
+    const contentType = imgRes.headers.get("content-type") || "image/png";
+
+    // Step 2: Upload to Twitter media upload API (simple upload for images < 5MB)
+    const uploadUrl = "https://upload.twitter.com/1.1/media/upload.json";
+    const uploadParams: Record<string, string> = {
+      media_data: base64Data,
+      media_category: "tweet_image",
+    };
+
+    // For media upload, we need to use form-urlencoded with OAuth
+    const uploadAuth = generateOAuthHeader(
+      "POST", uploadUrl, {}, apiKey, apiSecret, accessToken, accessSecret
+    );
+
+    const uploadBody = new URLSearchParams(uploadParams);
+    const uploadRes = await fetch(uploadUrl, {
+      method: "POST",
+      headers: {
+        Authorization: uploadAuth,
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: uploadBody.toString(),
+    });
+
+    if (!uploadRes.ok) {
+      const uploadErr = await uploadRes.text();
+      return { platform: "twitter-image", status: "error", message: `Media upload failed: ${uploadErr.slice(0, 150)}` };
+    }
+
+    const uploadData = await uploadRes.json();
+    const mediaId = uploadData.media_id_string;
+
+    if (!mediaId) {
+      return { platform: "twitter-image", status: "error", message: "No media_id returned" };
+    }
+
+    // Step 3: Post the tweet with the media attached
+    const tweetUrl = "https://api.twitter.com/2/tweets";
+    const tweetBody = JSON.stringify({
+      text: text.length > 280 ? text.slice(0, 277) + "..." : text,
+      media: { media_ids: [mediaId] },
+    });
+
+    const tweetAuth = generateOAuthHeader(
+      "POST", tweetUrl, {}, apiKey, apiSecret, accessToken, accessSecret
+    );
+
+    const tweetRes = await fetch(tweetUrl, {
+      method: "POST",
+      headers: {
+        Authorization: tweetAuth,
+        "Content-Type": "application/json",
+      },
+      body: tweetBody,
+    });
+
+    if (tweetRes.ok) return { platform: "twitter-image", status: "success" };
+    const tweetErr = await tweetRes.text();
+    return { platform: "twitter-image", status: "error", message: tweetErr.slice(0, 200) };
+  } catch (err) {
+    return { platform: "twitter-image", status: "error", message: String(err).slice(0, 200) };
+  }
+}
+
 // --- Main: Post to All ---
 export async function postToAll(post: PostData): Promise<SocialResult[]> {
   // If coverImage is missing or a relative path that won't resolve on social platforms,

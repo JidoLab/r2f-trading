@@ -22,6 +22,7 @@ const NAV_SECTIONS = [
       { href: "/admin/social-calendar", label: "Social Calendar" },
       { href: "/admin/landing-pages", label: "Landing Pages" },
       { href: "/admin/image-library", label: "Image Library" },
+      { href: "/admin/youtube-community", label: "YT Community" },
     ],
   },
   {

@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { readFile, commitFile } from "@/lib/github";
 import Anthropic from "@anthropic-ai/sdk";
 
-export const maxDuration = 60;
+export const maxDuration = 90;
 
 const POST_TYPES = [
   { id: "question", prompt: "Ask an engaging question that makes traders think and comment. Example: 'What's the ONE rule you'd give a beginner trader?' or 'Would you rather have an 80% win rate with 1:1 RR or 40% win rate with 1:4 RR?'" },
@@ -84,38 +84,87 @@ Return ONLY a JSON object:
     if (jsonStart === -1 || jsonEnd === -1) throw new Error("No JSON in response");
     const post = JSON.parse(text.slice(jsonStart, jsonEnd + 1));
 
+    // For visual post types, generate a branded image via the quote-card/infographic route
+    const IMAGE_POST_TYPES = ["tip", "myth", "quote", "hot-take"];
+    let socialImageUrl: string | null = null;
+
+    if (IMAGE_POST_TYPES.includes(postType.id)) {
+      try {
+        const timestamp = Date.now();
+        // Extract a short title from the post text (first line or first 60 chars)
+        const imageTitle = post.text.split("\n")[0].replace(/#\w+/g, "").trim().slice(0, 80);
+        const params = new URLSearchParams({
+          title: imageTitle,
+          type: postType.id,
+        });
+        const imageRouteUrl = `https://r2ftrading.com/quote-card/social-${timestamp}?${params.toString()}`;
+
+        const imgRes = await fetch(imageRouteUrl, { signal: AbortSignal.timeout(15000) });
+        if (imgRes.ok) {
+          // Store the image to GitHub so it has a persistent URL
+          const imgBuffer = await imgRes.arrayBuffer();
+          const base64 = Buffer.from(imgBuffer).toString("base64");
+          const imgPath = `public/social-images/social-${timestamp}.png`;
+          await commitFile(imgPath, base64, `Social image: ${postType.id}`, true);
+          socialImageUrl = `https://r2ftrading.com/social-images/social-${timestamp}.png`;
+          console.log(`[social-cron] Generated image for ${postType.id}: ${socialImageUrl}`);
+        }
+      } catch (imgErr) {
+        console.error("[social-cron] Image generation error:", imgErr);
+        // Continue without image — text-only is fine
+      }
+    }
+
     // Post to all text-friendly platforms
     const results: { platform: string; status: string }[] = [];
 
-    // Twitter/X
+    // Twitter/X — use image tweet if we have an image, otherwise text-only
     try {
-      const { generateOAuthHeader } = await import("@/lib/social-auth");
-      const apiKey = process.env.TWITTER_API_KEY!;
-      const apiSecret = process.env.TWITTER_API_SECRET!;
-      const accessToken = process.env.TWITTER_ACCESS_TOKEN!;
-      const accessSecret = process.env.TWITTER_ACCESS_SECRET!;
-      if (apiKey && accessToken) {
-        const auth = generateOAuthHeader("POST", "https://api.twitter.com/2/tweets", {}, apiKey, apiSecret, accessToken, accessSecret);
-        const res = await fetch("https://api.twitter.com/2/tweets", {
-          method: "POST",
-          headers: { Authorization: auth, "Content-Type": "application/json" },
-          body: JSON.stringify({ text: post.text }),
-        });
-        results.push({ platform: "twitter", status: res.ok ? "success" : "error" });
+      if (socialImageUrl) {
+        const { postTweetWithImage } = await import("@/lib/social");
+        const imgResult = await postTweetWithImage(post.text, socialImageUrl);
+        results.push({ platform: "twitter", status: imgResult.status });
+      } else {
+        const { generateOAuthHeader } = await import("@/lib/social-auth");
+        const apiKey = process.env.TWITTER_API_KEY!;
+        const apiSecret = process.env.TWITTER_API_SECRET!;
+        const accessToken = process.env.TWITTER_ACCESS_TOKEN!;
+        const accessSecret = process.env.TWITTER_ACCESS_SECRET!;
+        if (apiKey && accessToken) {
+          const auth = generateOAuthHeader("POST", "https://api.twitter.com/2/tweets", {}, apiKey, apiSecret, accessToken, accessSecret);
+          const res = await fetch("https://api.twitter.com/2/tweets", {
+            method: "POST",
+            headers: { Authorization: auth, "Content-Type": "application/json" },
+            body: JSON.stringify({ text: post.text }),
+          });
+          results.push({ platform: "twitter", status: res.ok ? "success" : "error" });
+        }
       }
     } catch { results.push({ platform: "twitter", status: "error" }); }
 
-    // Facebook
+    // Facebook — use photo post if image available (higher reach)
     try {
       const pageId = process.env.FACEBOOK_PAGE_ID;
       const fbToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
       if (pageId && fbToken) {
-        const res = await fetch(`https://graph.facebook.com/v21.0/${pageId}/feed`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ message: post.text, access_token: fbToken }),
-        });
-        results.push({ platform: "facebook", status: res.ok ? "success" : "error" });
+        let fbOk = false;
+        if (socialImageUrl) {
+          const photoRes = await fetch(`https://graph.facebook.com/v21.0/${pageId}/photos`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ url: socialImageUrl, message: post.text, access_token: fbToken }),
+          });
+          fbOk = photoRes.ok;
+        }
+        if (!fbOk) {
+          const res = await fetch(`https://graph.facebook.com/v21.0/${pageId}/feed`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message: post.text, access_token: fbToken }),
+          });
+          fbOk = res.ok;
+        }
+        results.push({ platform: "facebook", status: fbOk ? "success" : "error" });
       }
     } catch { results.push({ platform: "facebook", status: "error" }); }
 
@@ -200,13 +249,13 @@ Return ONLY a JSON object:
     try {
       let log: unknown[] = [];
       try { log = JSON.parse(await readFile("data/social-log.json")); } catch {}
-      log.push({ date: new Date().toISOString(), type: "text", postType: postType.id, text: post.text.slice(0, 100), results });
+      log.push({ date: new Date().toISOString(), type: "text", postType: postType.id, text: post.text.slice(0, 100), hasImage: !!socialImageUrl, results });
       if (log.length > 200) log = log.slice(-200);
       await commitFile("data/social-log.json", JSON.stringify(log, null, 2), `Social text: ${postType.id}`);
     } catch {}
 
     const succeeded = results.filter(r => r.status === "success").length;
-    return NextResponse.json({ success: true, type: postType.id, text: post.text, platforms: succeeded, results });
+    return NextResponse.json({ success: true, type: postType.id, text: post.text, hasImage: !!socialImageUrl, platforms: succeeded, results });
   } catch (err: unknown) {
     return NextResponse.json({ error: err instanceof Error ? err.message : "Failed" }, { status: 500 });
   }

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { commitFile, readFile } from "@/lib/github";
 import { notifyIndexNow } from "@/lib/indexnow";
-import { postToAll } from "@/lib/social";
+import { postToAll, postLinkedInArticle } from "@/lib/social";
 import Anthropic from "@anthropic-ai/sdk";
 import { GoogleGenAI } from "@google/genai";
 
@@ -230,6 +230,16 @@ ${body}
       console.error("[cron] Social posting error:", err);
     }
 
+    // Auto-post LinkedIn native article (full text, not link share — favored by LinkedIn algorithm)
+    let linkedInArticleResult = null;
+    try {
+      const articleUrl = `${process.env.NEXT_PUBLIC_SITE_URL || "https://r2ftrading.com"}/trading-insights/${slug}`;
+      linkedInArticleResult = await postLinkedInArticle(article.title, body, articleUrl);
+      console.log("[cron] LinkedIn article result:", JSON.stringify(linkedInArticleResult));
+    } catch (err) {
+      console.error("[cron] LinkedIn article posting error:", err);
+    }
+
     // Auto-post Twitter/X thread — wrapped in try/catch so it doesn't break blog generation
     let threadResult = null;
     try {
@@ -390,7 +400,7 @@ Requirements:
       console.error("[cron] Landing page generation error:", lpErr);
     }
 
-    return NextResponse.json({ success: true, title: article.title, slug, socialResults, threadResult, infographicResult, landingPageResult });
+    return NextResponse.json({ success: true, title: article.title, slug, socialResults, linkedInArticleResult, threadResult, infographicResult, landingPageResult });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Generation failed";
     return NextResponse.json({ error: msg }, { status: 500 });
