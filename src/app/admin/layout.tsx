@@ -70,6 +70,7 @@ const NAV_SECTIONS = [
     items: [
       { href: "/admin/signature", label: "Branding Kit" },
       { href: "/admin/gbp", label: "Google Business" },
+      { href: "/admin/claude-tasks", label: "Claude Code Backlog" },
     ],
     external: [
       { href: "https://vercel.com/wrightharvest-9811s-projects/r2f-trading/analytics", label: "Analytics ↗" },
