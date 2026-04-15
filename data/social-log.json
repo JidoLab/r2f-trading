@@ -1,51 +1,5 @@
 [
   {
-    "date": "2026-04-04T15:08:33.157Z",
-    "slug": "2026-04-04-how-april-nfp-week-liquidity-patterns-create-hidden-ict-entry-opportunities-2026-market-update",
-    "title": "How April NFP Week Liquidity Patterns Create Hidden ICT Entry Opportunities (2026 Market Update)",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "error",
-        "message": "{\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 04-Apr-26 06:00:00 PDT. The current time is Saturday, 04-Apr-26 08:08:30 PDT.\",\"type\":\"OAuthException\",\"code\":190,\""
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":3,\"message\":\"Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['boards:write', 'pins:w"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-05T10:38:58.939Z",
     "slug": "2026-04-05-5-ict-trading-setups-that-thrive-during-april-s-fed-meeting-uncertainty-complete-strategy-breakdown",
     "title": "5 ICT Trading Setups That Thrive During April's Fed Meeting Uncertainty: Complete Strategy Breakdown",
@@ -1958,6 +1912,52 @@
     "date": "2026-04-15T16:32:17.900Z",
     "slug": "2026-04-15-retail-sales-week-trade-usd-with-ict",
     "title": "Retail Sales Week: Trade USD With ICT",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-15T17:32:00.783Z",
+    "slug": "2026-04-15-retail-sales-week-how-smart-money-traps-usd-traders",
+    "title": "Retail Sales Week: How Smart Money Traps USD Traders",
     "results": [
       {
         "platform": "twitter",
