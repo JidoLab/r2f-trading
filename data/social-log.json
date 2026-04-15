@@ -1556,5 +1556,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-04-15T12:00:58.013Z",
+    "type": "text",
+    "postType": "poll",
+    "text": "Which ICT concept clicked LAST for you? 🅰️ Fair Value Gaps 🅱️ Order Blocks 🅲️ Market Structure 🅳",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
