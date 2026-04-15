@@ -3,6 +3,18 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="relative min-h-[520px] md:min-h-[600px] flex items-center overflow-hidden">
+      <style>{`
+        @keyframes cta-pulse {
+          0%, 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+          50% { box-shadow: 0 0 20px 4px rgba(212, 175, 55, 0.4); }
+        }
+        .cta-pulse {
+          animation: cta-pulse 3s ease-in-out infinite;
+        }
+        .cta-pulse:hover {
+          animation: none;
+        }
+      `}</style>
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/hero-bg.png')" }}
@@ -24,12 +36,20 @@ export default function Hero() {
           <p className="text-white/60 text-base md:text-lg italic mb-8">
             Propel your growth with personalized one-on-one training
           </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-gold hover:bg-gold-light text-navy font-bold text-sm md:text-base tracking-wide px-8 py-4 rounded-md transition-all hover:shadow-lg hover:shadow-gold/20 uppercase"
-          >
-            Book A Free Discovery Session
-          </Link>
+          <div className="flex flex-wrap gap-4">
+            <Link
+              href="/contact"
+              className="cta-pulse inline-block bg-gold hover:bg-gold-light text-navy font-bold text-sm md:text-base tracking-wide px-8 py-4 rounded-md transition-all hover:shadow-lg hover:shadow-gold/20 uppercase"
+            >
+              Book A Free Discovery Session
+            </Link>
+            <Link
+              href="/coaching"
+              className="inline-block border-2 border-white/30 hover:border-gold text-white hover:text-gold font-bold text-sm md:text-base tracking-wide px-8 py-4 rounded-md transition-all uppercase"
+            >
+              Explore Coaching Plans
+            </Link>
+          </div>
         </div>
       </div>
     </section>
