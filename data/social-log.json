@@ -1815,5 +1815,51 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-04-15T14:31:53.913Z",
+    "slug": "2026-04-15-ict-killzones-a-beginner-s-guide",
+    "title": "ICT Killzones: A Beginner's Guide",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
   }
 ]
