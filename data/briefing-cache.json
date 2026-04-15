@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-14T08:59:56.130Z",
+  "generatedAt": "2026-04-15T02:34:37.225Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Tuesday, 14 April 2026 at 15:59 (Bangkok)",
+  "dateTime": "Wednesday, 15 April 2026 at 09:34 (Bangkok)",
   "overnight": {
-    "newSubscribers": 2,
+    "newSubscribers": 0,
     "payments": {
       "count": 0,
       "revenue": 0
@@ -12,7 +12,7 @@
   },
   "contentStatus": {
     "blogPostsToday": 1,
-    "totalBlogPosts": 31,
+    "totalBlogPosts": 35,
     "shortsReady": 0,
     "shortsPublished": 11,
     "shortsRendering": 0,
@@ -23,10 +23,10 @@
     "recentHot": []
   },
   "suggestions": [
-    "Create 3-5 new video shorts this week to build on your 11 published shorts and attract more subscribers beyond the current 5.",
-    "Start engaging on Reddit trading communities by posting 2-3 valuable comments daily to drive traffic since you have 0 upvotes currently.",
-    "Set up an automated drip campaign to increase the 0.8 average drips per subscriber to at least 3-4 nurturing messages.",
-    "Convert your 3 cold subscribers to warm leads by initiating direct chat conversations since you had 0 chat conversations recently."
+    "All 5 subscribers are cold with an average of only 1.0 drips each — create a targeted email sequence of at least 5 drips to warm them up and move them toward a sales conversation.",
+    "You have 35 blog posts but 0 Reddit comments posted yesterday — repurpose key ICT concepts from your top posts into Reddit comments on r/Forex or r/Daytrading to drive new traffic and subscribers.",
+    "Zero new subscribers were added yesterday despite 24 social posts this week — audit your highest-performing post and add a direct call-to-action linking to your R2F Trading opt-in page.",
+    "You have 11 published Shorts but 0 ready in the queue — record and schedule at least 3 new Shorts this week focused on a specific ICT concept like Order Blocks or Fair Value Gaps to maintain momentum."
   ],
   "schedule": [
     {
