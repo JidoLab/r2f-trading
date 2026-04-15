@@ -1,24 +1,24 @@
 {
-  "date": "2026-04-15T22:33:09.261Z",
+  "date": "2026-04-15T23:33:34.423Z",
   "today": "2026-04-16",
   "topicsAttempted": [
-    "7 Signs of Institutional Order Flow in 60 Seconds",
-    "Scalping vs Swing Trading: Which Makes More Money?",
-    "How This Silver Bullet Setup Paid My Rent"
+    "Before ICT vs After ICT: My Trading Transformation",
+    "Why I Almost Quit Trading After Failing My Third Prop Firm",
+    "Quiz: Which Risk Management Rule Am I Breaking?"
   ],
   "results": [
     {
-      "title": "7 Signs of Institutional Order Flow in 60 Seconds",
+      "title": "Before ICT vs After ICT: My Trading Transformation",
       "status": "error",
       "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
     },
     {
-      "title": "Scalping vs Swing Trading: Which Makes More Money?",
+      "title": "Why I Almost Quit Trading After Failing My Third Prop Firm",
       "status": "error",
       "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
     },
     {
-      "title": "How This Silver Bullet Setup Paid My Rent",
+      "title": "Quiz: Which Risk Management Rule Am I Breaking?",
       "status": "error",
       "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
     }
