@@ -88,5 +88,55 @@
     "mentionedR2F": false,
     "commentedAt": "2026-04-13T03:36:02.925Z",
     "permalink": "/r/Daytrading/comments/1sjcwvp/i_built_a_trading_journal_as_a_solo_project_i/ofvikoa/"
+  },
+  {
+    "postId": "1sm2i52",
+    "subreddit": "Daytrading",
+    "postTitle": "Real time data for futures trading?",
+    "commentText": "thinkorswim by TD Ameritrade (now Schwab) gives you free real time futures data and a solid paper trading account, no funding required. i'd honestly just use that for your ES/MNQ setups during NY and London killzones rather than paying extra on top of tradingview. the charts aren't as clean but you're not losing anything meaningful for paper trading purposes.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-15T13:00:52.044Z",
+    "permalink": "/r/Daytrading/comments/1sm2i52/real_time_data_for_futures_trading/ogbjjll/",
+    "commentId": "ogbjjll"
+  },
+  {
+    "postId": "1sm0nas",
+    "subreddit": "FOREXTRADING",
+    "postTitle": "What Makes Pepperstone Stand Out and Why Traders Choose It",
+    "commentText": "pepperstone's execution is genuinely solid for ICT traders, one of my students switched to them specifically because they were getting slippage during london killzone on their old broker and it basically disappeared. the razor account spreads make a real difference when you're waiting for precise entries on order blocks or fvgs because you're not fighting a wide spread on top of your already tight invalidation. ctrader is also underrated for anyone running more advanced order flow work.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-15T13:01:03.549Z",
+    "permalink": "/r/FOREXTRADING/comments/1sm0nas/what_makes_pepperstone_stand_out_and_why_traders/ogbjkxi/",
+    "commentId": "ogbjkxi"
+  },
+  {
+    "postId": "1slap2t",
+    "subreddit": "Daytrading",
+    "postTitle": "Starting out",
+    "commentText": "honest advice here, youtube tutorials alone won't cut it for funded accounts because prop firms will eat you alive if you don't understand how price actually moves. learn to trade the new york and london killzones, watch for liquidity sweeps above previous highs or below lows before entering, and don't even think about scaling to multiple accounts until you're consistently profitable on one. the $200 to $500 a day goal is solid but most people blow their first funded account before they ever see a payout, so slow down and actually study how smart money moves price.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-15T13:01:10.466Z",
+    "permalink": "/r/Daytrading/comments/1slap2t/starting_out/ogbjlnz/",
+    "commentId": "ogbjlnz"
+  },
+  {
+    "postId": "1slnzqs",
+    "subreddit": "Daytrading",
+    "postTitle": "Looking for some help.",
+    "commentText": "cancel that meeting tomorrow, no legitimate trading education requires a sales call and a \"coach named Rob.\" spend your time screen time on tradingview studying NY killzone price action, specifically how price sweeps liquidity before making its real move. at your age the best investment is free resources like youtube and just screen time building that intuition before you ever risk a dollar.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-15T13:01:18.622Z",
+    "permalink": "/r/Daytrading/comments/1slnzqs/looking_for_some_help/ogbjmn8/",
+    "commentId": "ogbjmn8"
+  },
+  {
+    "postId": "1slf2o7",
+    "subreddit": "Daytrading",
+    "postTitle": "First payout how do I scale up",
+    "commentText": "congrats on the first payout, that's genuinely the hardest one. personally i'd get at least 2 or 3 more consistent payouts before adding another account, because one payout doesn't tell you if your edge is repeatable or if you just caught a good week during a london killzone sweep. once you can show yourself you're consistently entering off order blocks or FVGs with clean BOS confirmation, then stack accounts because the process scales way better than the account size does.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-15T13:01:25.557Z",
+    "permalink": "/r/Daytrading/comments/1slf2o7/first_payout_how_do_i_scale_up/ogbjnfm/",
+    "commentId": "ogbjnfm"
   }
 ]
