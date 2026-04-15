@@ -88,21 +88,21 @@
     "topic": "Before ICT vs After ICT: My Trading Transformation",
     "contentType": "before-after",
     "category": "Strategy Development",
-    "used": false
+    "used": true
   },
   {
     "date": "2026-04-19",
     "topic": "Why I Almost Quit Trading After Failing My Third Prop Firm",
     "contentType": "story",
     "category": "Funded Accounts",
-    "used": false
+    "used": true
   },
   {
     "date": "2026-04-20",
     "topic": "Quiz: Which Risk Management Rule Am I Breaking?",
     "contentType": "quiz",
     "category": "Risk Management",
-    "used": false
+    "used": true
   },
   {
     "date": "2026-04-21",
