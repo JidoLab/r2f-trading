@@ -1,0 +1,126 @@
+{
+  "gaps": [
+    {
+      "topic": "ICT Concepts Master Glossary",
+      "keyword": "ICT trading terms explained for beginners",
+      "searchIntent": "informational",
+      "difficulty": "easy",
+      "reason": "High-volume beginner query with no dedicated glossary post in existing content, captures top-of-funnel traders who later buy coaching.",
+      "suggestedTitle": "ICT Trading Terms: The Complete Glossary"
+    },
+    {
+      "topic": "ICT vs Price Action Trading",
+      "keyword": "ICT method vs price action trading which is better",
+      "searchIntent": "informational",
+      "difficulty": "medium",
+      "reason": "Comparison queries convert well and this specific ICT vs PA angle is missing despite having Smart Money vs Price Action for funded accounts only.",
+      "suggestedTitle": "ICT Method vs Price Action: Honest Comparison"
+    },
+    {
+      "topic": "How Long to Learn ICT Trading",
+      "keyword": "how long does it take to learn ICT trading",
+      "searchIntent": "informational",
+      "difficulty": "easy",
+      "reason": "Extremely common pre-coaching question that signals purchase intent and directly positions coaching as an accelerator.",
+      "suggestedTitle": "How Long Does It Take to Learn ICT Trading?"
+    },
+    {
+      "topic": "ICT Trading Coach Cost",
+      "keyword": "how much does ICT trading coaching cost",
+      "searchIntent": "commercial",
+      "difficulty": "easy",
+      "reason": "Bottom-of-funnel buyers researching pricing before committing will find this and be funneled directly to R2F coaching plans.",
+      "suggestedTitle": "ICT Trading Coaching Cost: What to Expect"
+    },
+    {
+      "topic": "ICT Power of 3 Explained",
+      "keyword": "ICT power of 3 trading strategy explained",
+      "searchIntent": "informational",
+      "difficulty": "medium",
+      "reason": "Power of 3 (accumulation, manipulation, distribution) is a core ICT concept with strong search volume that is completely absent from existing content.",
+      "suggestedTitle": "ICT Power of 3: The Full Strategy Breakdown"
+    },
+    {
+      "topic": "Prop Firm vs Funded Account Differences",
+      "keyword": "prop firm vs funded account which is better for traders",
+      "searchIntent": "commercial",
+      "difficulty": "medium",
+      "reason": "Traders choosing between models have high commercial intent and this comparison is missing despite multiple prop firm posts existing.",
+      "suggestedTitle": "Prop Firm vs Funded Account: Key Differences"
+    },
+    {
+      "topic": "ICT Trading Results Realistic Expectations",
+      "keyword": "realistic ICT trading results for new traders",
+      "searchIntent": "informational",
+      "difficulty": "easy",
+      "reason": "Skeptical buyers search this before purchasing coaching and an honest answer from a coach builds trust and drives conversions.",
+      "suggestedTitle": "Realistic ICT Trading Results: The Honest Truth"
+    },
+    {
+      "topic": "Market Maker Model ICT",
+      "keyword": "ICT market maker model explained",
+      "searchIntent": "informational",
+      "difficulty": "medium",
+      "reason": "The Market Maker Model is one of ICT's most searched concepts and is entirely absent from the current content library.",
+      "suggestedTitle": "ICT Market Maker Model: Complete Breakdown"
+    },
+    {
+      "topic": "Best Forex Pairs for ICT Trading",
+      "keyword": "best forex pairs to trade with ICT strategy",
+      "searchIntent": "informational",
+      "difficulty": "easy",
+      "reason": "Beginners frequently ask this question and a targeted post captures early-stage traders most likely to need coaching guidance.",
+      "suggestedTitle": "Best Forex Pairs for ICT Trading in 2026"
+    },
+    {
+      "topic": "Self-Learning ICT vs Hiring a Coach",
+      "keyword": "should I learn ICT trading alone or hire a coach",
+      "searchIntent": "commercial",
+      "difficulty": "easy",
+      "reason": "This decision-stage query directly competes with the existing landing page topic but a long-form blog version will capture organic traffic and warm leads.",
+      "suggestedTitle": "Learn ICT Alone vs Hire a Coach: The Truth"
+    }
+  ],
+  "generatedAt": "2026-04-15T12:12:23.605Z",
+  "existingTopics": [
+    "ICT Killzones: A Beginner's Guide",
+    "Retail Sales Week: How Smart Money Fakes Direction",
+    "Retail Sales Week: How Smart Money Fakes Moves",
+    "Retail Sales Week: How Smart Money Trades USD",
+    "Retail Sales Week: Smart Money Fakes Direction",
+    "5 Signs You're Revenge Trading (And How to Stop)",
+    "ICT Killzones vs Session Opens: The Truth About Entry Timing",
+    "ICT Mitigation Block vs Order Block: Which Works Better?",
+    "PPI Day Trading: Smart Money's 24-Hour Setup",
+    "5 Signs You're Revenge Trading (And How to Stop)",
+    "How I Passed FTMO in 12 Days",
+    "ICT Killzones That Actually Work in 2026",
+    "ICT Mitigation Block vs Order Block: Key Differences",
+    "ICT Trading for Complete Beginners: Your First Steps",
+    "Position Sizing Cheat Sheet for Funded Traders",
+    "Scalping vs Swing Trading: Which Style Fits You?",
+    "The 1% Rule That Changed Everything",
+    "The Biggest Lie About Win Rate",
+    "Why Boredom Kills More Accounts Than Bad Setups",
+    "Weekend Backtesting Ritual That Made Me Profitable",
+    "Why 80% of ICT Traders Fail at Risk Management",
+    "5 Trading Tax Deductions Most Traders Miss",
+    "Smart Money vs Retail: 5 Mind Games You Fall For",
+    "CPI Trading Psychology: The Pre-Data Mental Game",
+    "ICT Breaker Block Strategy: 3 Must-Have Confirmations",
+    "CPI Trading: Smart Money Positions Before Data",
+    "Trade NFP Friday with ICT: Liquidity Playbook",
+    "Earnings Season Liquidity Raids: 6 ICT Concepts",
+    "5 ICT Setups for Fed Meeting Uncertainty",
+    "April NFP Week: Hidden ICT Entry Opportunities",
+    "ICT Premium/Discount Arrays in April Volatility",
+    "ICT Fair Value Gap Checklist: 9 Confirmations",
+    "Liquidity Grab vs Stop Hunt: 8 Key Questions",
+    "Smart Money vs Price Action: Which Gets Funded?",
+    "My $47K Prop Firm Loss: Rebuilding My Strategy",
+    "Why Order Blocks Fail in Ranging Markets (Fix)",
+    "7 Fatal Mistakes That Kill Your Funded Account",
+    "The Truth About Funded Trading: What They Don't Tell You",
+    "Q2 2026 Market Shifts Breaking ICT Setups"
+  ]
+}
