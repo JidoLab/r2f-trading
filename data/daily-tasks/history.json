@@ -1,0 +1,72 @@
+[
+  {
+    "date": "2026-04-15",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": true,
+        "completedAt": "2026-04-15T03:18:23.750Z"
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776223103750-0",
+        "title": "All 5 subscribers are cold with an average of only 1.0 drips each — set up an automated drip sequence of at least 5 emails to start warming them up toward a sales conversation.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776223103750-1",
+        "title": "You have 35 blog posts but 0 Reddit comments yesterday — repurpose key insights from your top blog posts into Reddit comments on r/Forex or r/Daytrading to drive free targeted traffic.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776223103750-2",
+        "title": "Zero new subscribers were added yesterday despite 24 social posts this week — add a clear lead magnet CTA (e.g., a free ICT concepts checklist) to your highest-performing posts to convert followers into subscribers.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776223103750-3",
+        "title": "You have 11 published Shorts but 0 ready in the queue — batch-record at least 3 new Shorts this week to maintain consistent publishing momentum and grow your Bangkok-based ICT audience.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 1,
+    "totalCount": 7
+  }
+]
