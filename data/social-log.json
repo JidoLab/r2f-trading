@@ -1159,5 +1159,51 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-04-15T02:31:45.409Z",
+    "slug": "2026-04-15-retail-sales-week-how-smart-money-fakes-direction",
+    "title": "Retail Sales Week: How Smart Money Fakes Direction",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
   }
 ]
