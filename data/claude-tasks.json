@@ -7,8 +7,9 @@
       "category": "conversion",
       "priority": "high",
       "reasoning": "With 5 cold subscribers and $0 revenue, the biggest gap is a direct human touchpoint that converts cold leads — a free call lowers friction and gives Harvest a closing opportunity that no automation can replicate.",
-      "status": "pending",
-      "createdAt": "2026-04-15T03:46:14.445Z"
+      "status": "dismissed",
+      "createdAt": "2026-04-15T03:46:14.445Z",
+      "completedAt": "2026-04-15T03:54:47.847Z"
     },
     {
       "id": "ct-1776224774445-1",
