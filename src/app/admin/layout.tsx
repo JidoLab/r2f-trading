@@ -1,6 +1,6 @@
 import { requireAdmin } from "@/lib/admin-auth";
 import Link from "next/link";
-import { NotificationBadge, ReplySuggestionsBadge } from "@/components/AdminSidebarBadge";
+import { NotificationBadge, ReplySuggestionsBadge, DailyTasksBadge } from "@/components/AdminSidebarBadge";
 
 const NAV_SECTIONS = [
   {
@@ -8,6 +8,7 @@ const NAV_SECTIONS = [
     items: [
       { href: "/admin", label: "Dashboard" },
       { href: "/admin/briefing", label: "AI Briefing" },
+      { href: "/admin/daily-tasks", label: "Daily Tasks" },
       { href: "/admin/notifications", label: "Notifications" },
     ],
   },
@@ -133,6 +134,7 @@ export default async function AdminLayout({
                 >
                   {item.label}
                   {item.href === "/admin/notifications" && <NotificationBadge />}
+                  {item.href === "/admin/daily-tasks" && <DailyTasksBadge />}
                   {item.href === "/admin/reply-suggestions" && <ReplySuggestionsBadge />}
                 </Link>
               ))}
