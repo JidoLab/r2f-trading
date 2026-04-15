@@ -1,0 +1,31 @@
+{
+  "date": "2026-04-15T19:32:42.548Z",
+  "today": "2026-04-16",
+  "topicsAttempted": [
+    "3 Power of 3 Setups Every ICT Trader Must Know",
+    null,
+    null
+  ],
+  "results": [
+    {
+      "title": "3 Power of 3 Setups Every ICT Trader Must Know",
+      "status": "error",
+      "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+    }
+  ],
+  "errors": [
+    "FFmpeg Render Service: {\"error\":\"Unauthorized\"}",
+    "FFmpeg Render Service: {\"error\":\"Unauthorized\"}",
+    "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+  ]
+}
