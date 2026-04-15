@@ -222,7 +222,7 @@ export async function GET(req: NextRequest) {
       try {
         // Step 1: Generate a search query to find matching Quora questions
         const queryResponse = await anthropic.messages.create({
-          model: "claude-sonnet-4-20250514",
+          model: "claude-sonnet-4-6",
           max_tokens: 100,
           messages: [
             {
@@ -271,7 +271,7 @@ Return ONLY the search query text, nothing else.`,
 
         // Step 3: Generate Quora-style answer from blog post
         const answerResponse = await anthropic.messages.create({
-          model: "claude-sonnet-4-20250514",
+          model: "claude-sonnet-4-6",
           max_tokens: 800,
           messages: [
             {

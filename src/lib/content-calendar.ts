@@ -42,7 +42,7 @@ export async function generateContentCalendar(daysAhead: number = 90): Promise<v
     const existingTopics = allEntries.map(e => e.topic).slice(-20).join(", ");
 
     const response = await anthropic.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-6",
       max_tokens: 6000,
       messages: [{
         role: "user",

@@ -41,7 +41,7 @@ export async function POST() {
     // STEP 1: Topic ideation — Claude picks a fresh, relevant topic
     const anthropic = new Anthropic();
     const topicResponse = await anthropic.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-6",
       max_tokens: 1000,
       messages: [{
         role: "user",
@@ -96,7 +96,7 @@ ${existingSlugs.map((p) => `- [${p.title}](/trading-insights/${p.slug})`).join("
       : "";
 
     const articleResponse = await anthropic.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-6",
       max_tokens: 5000,
       messages: [{
         role: "user",

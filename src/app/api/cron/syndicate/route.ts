@@ -151,7 +151,7 @@ export async function GET(req: NextRequest) {
     for (const post of toSyndicate) {
       // Generate shortened version with Claude
       const shortenRes = await anthropic.messages.create({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-sonnet-4-6",
         max_tokens: 2000,
         messages: [
           {

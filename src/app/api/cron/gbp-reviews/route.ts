@@ -45,7 +45,7 @@ async function generateReply(
       : `Write a professional, empathetic reply to this negative Google review. Acknowledge their experience, express genuine desire to help, offer to connect directly. No dashes or bullet points. Keep it 2-3 sentences. Reviewer: ${review.reviewer.displayName}. Review: "${review.comment}"`;
 
   const msg = await anthropic.messages.create({
-    model: "claude-sonnet-4-20250514",
+    model: "claude-sonnet-4-6",
     max_tokens: 200,
     messages: [{ role: "user", content: prompt }],
   });

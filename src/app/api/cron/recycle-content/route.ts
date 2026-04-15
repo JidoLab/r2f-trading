@@ -119,7 +119,7 @@ export async function GET(req: NextRequest) {
     // Generate a fresh social caption using Claude
     const anthropic = new Anthropic();
     const captionRes = await anthropic.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-6",
       max_tokens: 500,
       messages: [{
         role: "user",

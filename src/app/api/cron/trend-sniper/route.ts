@@ -204,7 +204,7 @@ export async function GET(req: NextRequest) {
     // Use Claude to generate a blog topic connecting the trend to ICT trading
     const anthropic = new Anthropic();
     const response = await anthropic.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-6",
       max_tokens: 400,
       messages: [
         {

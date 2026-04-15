@@ -201,7 +201,7 @@ async function generateReply(post: ForumPost, anthropic: Anthropic): Promise<str
   const opener = openers[Math.floor(Math.random() * openers.length)];
 
   const msg = await anthropic.messages.create({
-    model: "claude-sonnet-4-20250514",
+    model: "claude-sonnet-4-6",
     max_tokens: 300,
     messages: [{
       role: "user",

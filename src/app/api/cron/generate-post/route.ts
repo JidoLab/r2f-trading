@@ -61,7 +61,7 @@ export async function GET(req: NextRequest) {
     } catch {}
 
     const topicResponse = await anthropic.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-6",
       max_tokens: 1000,
       messages: [{
         role: "user",
@@ -99,7 +99,7 @@ Return ONLY a JSON object: { "topic": "...", "category": "...", "postType": "...
 
     // Generate article
     const articleResponse = await anthropic.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-6",
       max_tokens: 5000,
       messages: [{
         role: "user",
@@ -255,7 +255,7 @@ ${body}
     let infographicResult = null;
     try {
       const takeawayRes = await anthropic.messages.create({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-sonnet-4-6",
         max_tokens: 500,
         messages: [{
           role: "user",
@@ -331,7 +331,7 @@ ${body.slice(0, 3000)}`,
           const lpSlug = pick.keyword.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
           const lpResponse = await anthropic.messages.create({
-            model: "claude-sonnet-4-20250514",
+            model: "claude-sonnet-4-6",
             max_tokens: 2000,
             messages: [{
               role: "user",

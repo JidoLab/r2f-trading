@@ -268,7 +268,7 @@ export async function GET(req: NextRequest) {
         : "Do NOT mention R2F Trading, Road2Funded, r2ftrading.com, or any brand. Pure value only.";
 
       const response = await anthropic.messages.create({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-sonnet-4-6",
         max_tokens: 200,
         messages: [
           {

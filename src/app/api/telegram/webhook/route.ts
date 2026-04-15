@@ -210,7 +210,7 @@ export async function POST(req: NextRequest) {
     // Generate response with Claude
     const anthropic = new Anthropic();
     const response = await anthropic.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-6",
       max_tokens: 300,
       system: SYSTEM_PROMPT,
       messages: history.slice(-4).map((m) => ({

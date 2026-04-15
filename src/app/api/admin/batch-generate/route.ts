@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
     try {
       // Generate article with Claude
       const articleResponse = await anthropic.messages.create({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-sonnet-4-6",
         max_tokens: 5000,
         messages: [{
           role: "user",
