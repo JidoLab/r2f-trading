@@ -87,8 +87,8 @@ function getBlogCTA(tags: string[], title: string) {
       text: "Get a custom risk management framework built for YOUR account size and trading style.",
       buttonText: "Book a Free Call",
       buttonUrl: "/contact",
-      secondaryText: "Free: Position Sizing Checklist →",
-      secondaryUrl: "/",
+      secondaryText: "Free: Risk/Reward Calculator →",
+      secondaryUrl: "/tools/risk-calculator",
     };
   }
 
@@ -99,7 +99,7 @@ function getBlogCTA(tags: string[], title: string) {
       buttonText: "Start Free Crash Course",
       buttonUrl: "/crash-course",
       secondaryText: "Or grab the free checklist →",
-      secondaryUrl: "/",
+      secondaryUrl: "/free-class",
     };
   }
 
