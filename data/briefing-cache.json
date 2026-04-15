@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-15T02:34:41.082Z",
+  "generatedAt": "2026-04-15T03:45:28.423Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Wednesday, 15 April 2026 at 09:34 (Bangkok)",
+  "dateTime": "Wednesday, 15 April 2026 at 10:45 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -11,22 +11,22 @@
     "chatConversations": 0
   },
   "contentStatus": {
-    "blogPostsToday": 1,
-    "totalBlogPosts": 35,
+    "blogPostsToday": 2,
+    "totalBlogPosts": 36,
     "shortsReady": 0,
     "shortsPublished": 11,
     "shortsRendering": 0,
-    "socialPostsThisWeek": 24
+    "socialPostsThisWeek": 25
   },
   "hotLeads": {
     "count": 0,
     "recentHot": []
   },
   "suggestions": [
-    "All 5 subscribers are cold with an average of only 1.0 drips each — set up an automated drip sequence of at least 5 emails to start warming them up toward a sales conversation.",
-    "You have 35 blog posts but 0 Reddit comments yesterday — repurpose key insights from your top blog posts into Reddit comments on r/Forex or r/Daytrading to drive free targeted traffic.",
-    "Zero new subscribers were added yesterday despite 24 social posts this week — add a clear lead magnet CTA (e.g., a free ICT concepts checklist) to your highest-performing posts to convert followers into subscribers.",
-    "You have 11 published Shorts but 0 ready in the queue — batch-record at least 3 new Shorts this week to maintain consistent publishing momentum and grow your Bangkok-based ICT audience."
+    "Personally message all 5 cold subscribers on Telegram or WhatsApp to introduce yourself as Harvest and spark a direct conversation about their trading goals.",
+    "Post a manual short-form video or Instagram Reel of Harvest speaking directly to camera about a specific ICT concept (e.g., order blocks or fair value gaps) to build personal brand trust beyond automated content.",
+    "Set up a paid traffic campaign (Facebook or TikTok ads) targeting Bangkok-area traders with a low-budget test of $10–$20/day, since organic is generating zero new subscribers.",
+    "Reach out to 3–5 Thai trading communities or Facebook Groups manually to share a pinned blog post or offer a free ICT mini-lesson, creating a direct subscriber acquisition channel outside automated Reddit posting."
   ],
   "schedule": [
     {
