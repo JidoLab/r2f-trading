@@ -182,17 +182,38 @@ export default async function BlogPostPage({
 
       <article className="py-16 md:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-6">
-          <Link
-            href="/trading-insights"
-            className="text-sm text-gold hover:text-gold-light font-bold uppercase tracking-wide mb-8 inline-block"
-          >
-            &larr; Back to Insights
-          </Link>
+          {/* Breadcrumbs */}
+          <nav aria-label="Breadcrumb" className="mb-6">
+            <ol className="flex items-center gap-2 text-sm" itemScope itemType="https://schema.org/BreadcrumbList">
+              <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <Link href="/" className="text-gray-400 hover:text-gold transition-colors" itemProp="item">
+                  <span itemProp="name">Home</span>
+                </Link>
+                <meta itemProp="position" content="1" />
+              </li>
+              <span className="text-gray-300">/</span>
+              <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <Link href="/trading-insights" className="text-gray-400 hover:text-gold transition-colors" itemProp="item">
+                  <span itemProp="name">Trading Insights</span>
+                </Link>
+                <meta itemProp="position" content="2" />
+              </li>
+              <span className="text-gray-300">/</span>
+              <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <span className="text-gray-600 truncate max-w-[250px] inline-block align-bottom" itemProp="name">{post.title}</span>
+                <meta itemProp="position" content="3" />
+              </li>
+            </ol>
+          </nav>
 
           {post.coverImage && (
             <img
               src={post.coverImage}
               alt={post.title}
+              loading="eager"
+              decoding="async"
+              width={1200}
+              height={675}
               className="w-full rounded-lg mb-8 aspect-video object-cover"
             />
           )}

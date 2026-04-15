@@ -1,3 +1,4 @@
+import Link from "next/link";
 import EmailSignup from "@/components/EmailSignup";
 
 export default function LeadCaptureSection() {
@@ -23,6 +24,13 @@ export default function LeadCaptureSection() {
           Join 50+ traders who downloaded this checklist
         </p>
         <EmailSignup variant="inline" />
+        <p className="mt-6 text-gray-400 text-xs">
+          Or try the{" "}
+          <Link href="/tools/risk-calculator" className="text-gold hover:text-gold-light font-semibold transition-colors">
+            free Risk/Reward Calculator
+          </Link>
+          {" "}— calculate your position size before every trade.
+        </p>
       </div>
     </section>
   );
