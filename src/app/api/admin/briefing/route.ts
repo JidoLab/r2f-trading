@@ -203,6 +203,19 @@ async function generateSuggestions(data: Awaited<ReturnType<typeof gatherData>>)
 
 Based on this data, generate exactly 4 short, actionable smart suggestions (1 sentence each). Be specific with numbers and names where possible.
 
+ALREADY AUTOMATED (do NOT suggest these — they are running daily):
+- Email drip sequences: cold (4 emails over 14 days), warm (4 emails), hot (3 emails) — all automated via cron
+- Stale lead re-engagement emails (after drips complete)
+- Hot lead follow-up emails + Telegram alerts
+- Review request emails (14 days after payment)
+- Blog post generation, social posting, YouTube shorts — all automated
+- Reddit and forum engagement — automated daily
+- WhatsApp drip sequences — automated
+- Student onboarding email sequences — automated
+- Weekly newsletter — automated
+
+Only suggest actions that require MANUAL intervention or NEW initiatives not yet built.
+
 DATA:
 - Subscribers: ${data.subscriberContext.total} total (${data.subscriberContext.hot} hot, ${data.subscriberContext.warm} warm, ${data.subscriberContext.cold} cold)
 - Average drips per subscriber: ${data.subscriberContext.avgDrips}
