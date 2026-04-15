@@ -16,16 +16,27 @@ interface PostMeta {
   path: string;
 }
 
-function extractFrontmatter(raw: string): { title: string; slug: string } {
-  const match = raw.match(/^---\n([\s\S]*?)\n---/);
-  if (!match) return { title: "", slug: "" };
-  const fm = match[1];
-  const titleMatch = fm.match(/^title:\s*["']?(.+?)["']?\s*$/m);
-  const slugMatch = fm.match(/^slug:\s*["']?(.+?)["']?\s*$/m);
-  return {
-    title: titleMatch ? titleMatch[1] : "",
-    slug: slugMatch ? slugMatch[1] : "",
-  };
+function extractMetadata(raw: string, filePath: string): { title: string; slug: string } {
+  // Handle MDX export const metadata format
+  const metaMatch = raw.match(/export\s+const\s+metadata\s*=\s*(\{[\s\S]*?\n\})/);
+  if (metaMatch) {
+    try {
+      const meta = new Function(`return ${metaMatch[1]}`)();
+      const slug = filePath.split("/").pop()?.replace(".mdx", "") || "";
+      return { title: meta.title || "", slug };
+    } catch {}
+  }
+
+  // Fallback: YAML frontmatter
+  const fmMatch = raw.match(/^---\n([\s\S]*?)\n---/);
+  if (fmMatch) {
+    const fm = fmMatch[1];
+    const titleMatch = fm.match(/^title:\s*["']?(.+?)["']?\s*$/m);
+    const slug = filePath.split("/").pop()?.replace(".mdx", "") || "";
+    return { title: titleMatch ? titleMatch[1] : "", slug };
+  }
+
+  return { title: "", slug: "" };
 }
 
 export async function GET(req: NextRequest) {
@@ -58,7 +69,7 @@ export async function GET(req: NextRequest) {
     for (const filePath of blogFiles) {
       try {
         const raw = await readFile(filePath);
-        const { title, slug } = extractFrontmatter(raw);
+        const { title, slug } = extractMetadata(raw, filePath);
         if (title && slug) {
           allPosts.push({ slug, title, path: filePath });
           postContents.set(slug, raw);
@@ -90,7 +101,7 @@ export async function GET(req: NextRequest) {
       if (!rawContent) continue;
 
       // Check if the post already has internal links
-      const bodyAfterFrontmatter = rawContent.replace(/^---\n[\s\S]*?\n---\n?/, "");
+      const bodyAfterFrontmatter = rawContent.replace(/export\s+const\s+metadata\s*=\s*\{[\s\S]*?\n\}\n?/, "").replace(/^---\n[\s\S]*?\n---\n?/, "");
       const existingInternalLinks = (bodyAfterFrontmatter.match(/\[.*?\]\(\/trading-insights\//g) || []).length;
 
       if (existingInternalLinks >= 2) {
@@ -138,11 +149,11 @@ ${rawContent}
 
       if (!modifiedContent) continue;
 
-      // Verify the output still has frontmatter and isn't mangled
-      if (!modifiedContent.startsWith("---")) continue;
+      // Verify the output still has metadata and isn't mangled
+      if (!modifiedContent.startsWith("export const metadata") && !modifiedContent.startsWith("---")) continue;
 
       // Count how many new internal links were added
-      const newBodyAfterFm = modifiedContent.replace(/^---\n[\s\S]*?\n---\n?/, "");
+      const newBodyAfterFm = modifiedContent.replace(/export\s+const\s+metadata\s*=\s*\{[\s\S]*?\n\}\n?/, "").replace(/^---\n[\s\S]*?\n---\n?/, "");
       const newInternalLinks = (newBodyAfterFm.match(/\[.*?\]\(\/trading-insights\//g) || []).length;
       const linksAdded = newInternalLinks - existingInternalLinks;
 

@@ -63,6 +63,7 @@ const NAV_SECTIONS = [
       { href: "/admin/analytics-dashboard", label: "Analytics Dashboard" },
       { href: "/admin/search-insights", label: "Search Insights" },
       { href: "/admin/content-ideas", label: "Content Ideas" },
+      { href: "/admin/content-gaps", label: "Content Gaps" },
     ],
   },
   {
