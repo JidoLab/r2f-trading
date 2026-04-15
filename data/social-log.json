@@ -1,33 +1,5 @@
 [
   {
-    "date": "2026-04-07T04:22:41.427Z",
-    "type": "text",
-    "postType": "question",
-    "text": "NFP is this Friday. Question: Do you trade INTO the news or wait for the dust to settle and hunt the",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-07T06:29:42.789Z",
     "slug": "2026-04-07-how-to-trade-nfp-friday-with-ict-smart-money-concepts-complete-48-hour-liquidity-playbook",
     "title": "How to Trade NFP Friday with ICT Smart Money Concepts: Complete 48-Hour Liquidity Playbook",
@@ -1961,6 +1933,52 @@
     "date": "2026-04-15T22:31:49.701Z",
     "slug": "2026-04-15-retail-sales-week-how-ict-traders-stay-calm",
     "title": "Retail Sales Week: How ICT Traders Stay Calm",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-15T23:32:09.818Z",
+    "slug": "2026-04-15-retail-sales-week-ict-killzones-react",
+    "title": "Retail Sales Week: ICT Killzones React",
     "results": [
       {
         "platform": "twitter",
