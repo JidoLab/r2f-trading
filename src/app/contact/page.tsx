@@ -35,6 +35,28 @@ export default function ContactPage() {
             </p>
           </div>
 
+          {/* FAQ before booking */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 max-w-3xl mx-auto">
+            <div className="bg-gray-50 rounded-lg p-5 text-center">
+              <p className="text-navy font-bold text-sm mb-1">What happens on the call?</p>
+              <p className="text-gray-500 text-xs leading-relaxed">
+                A casual 15-minute chat about your trading goals. I&rsquo;ll give honest feedback — no pitch, no pressure.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 text-center">
+              <p className="text-navy font-bold text-sm mb-1">Is it really free?</p>
+              <p className="text-gray-500 text-xs leading-relaxed">
+                100% free, zero commitment. Just a conversation to see if coaching is right for you.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 text-center">
+              <p className="text-navy font-bold text-sm mb-1">What timezone are you in?</p>
+              <p className="text-gray-500 text-xs leading-relaxed">
+                I&rsquo;m based in Bangkok (GMT+7). Sessions available mornings, evenings, and weekends to fit your schedule.
+              </p>
+            </div>
+          </div>
+
           <CalendlyEmbed />
 
           <div className="mt-16 border-t border-gray-200 pt-12">

@@ -20,16 +20,27 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-10">
-          {["Home", "About", "Coaching", "Starter Kit", "Free Course", "Results", "Trading Insights", "Contact"].map((item) => (
+        <nav className="hidden md:flex items-center gap-8">
+          {["Home", "About", "Coaching", "Free Course", "Results", "Trading Insights", "Calculator"].map((item) => (
             <Link
               key={item}
-              href={item === "Home" ? "/" : item === "Free Course" ? "/crash-course" : `/${item.toLowerCase().replace(/\s+/g, "-")}`}
+              href={
+                item === "Home" ? "/" :
+                item === "Free Course" ? "/crash-course" :
+                item === "Calculator" ? "/tools/risk-calculator" :
+                `/${item.toLowerCase().replace(/\s+/g, "-")}`
+              }
               className="text-xs font-bold tracking-[0.2em] uppercase text-navy/80 hover:text-gold transition-colors"
             >
               {item}
             </Link>
           ))}
+          <Link
+            href="/contact"
+            className="bg-gold hover:bg-gold-light text-navy font-bold text-xs tracking-[0.15em] uppercase px-5 py-2.5 rounded-md transition-all hover:shadow-md hover:shadow-gold/20"
+          >
+            Book Free Call
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -51,16 +62,28 @@ export default function Header() {
       {/* Mobile Nav */}
       {menuOpen && (
         <nav className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
-          {["Home", "About", "Coaching", "Starter Kit", "Free Course", "Results", "Trading Insights", "Contact"].map((item) => (
+          {["Home", "About", "Coaching", "Free Course", "Results", "Trading Insights", "Calculator"].map((item) => (
             <Link
               key={item}
-              href={item === "Home" ? "/" : item === "Free Course" ? "/crash-course" : `/${item.toLowerCase().replace(/\s+/g, "-")}`}
+              href={
+                item === "Home" ? "/" :
+                item === "Free Course" ? "/crash-course" :
+                item === "Calculator" ? "/tools/risk-calculator" :
+                `/${item.toLowerCase().replace(/\s+/g, "-")}`
+              }
               className="text-sm font-bold tracking-[0.15em] uppercase text-navy/80 hover:text-gold transition-colors"
               onClick={() => setMenuOpen(false)}
             >
               {item}
             </Link>
           ))}
+          <Link
+            href="/contact"
+            className="bg-gold hover:bg-gold-light text-navy font-bold text-sm tracking-[0.15em] uppercase px-5 py-3 rounded-md transition-all text-center"
+            onClick={() => setMenuOpen(false)}
+          >
+            Book Free Call
+          </Link>
         </nav>
       )}
     </header>

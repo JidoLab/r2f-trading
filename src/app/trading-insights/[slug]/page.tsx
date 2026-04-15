@@ -226,6 +226,26 @@ export default async function BlogPostPage({
 
           <ShareButtons slug={slug} title={post.title} />
 
+          {/* Author Bio */}
+          <div className="my-10 bg-gray-50 border border-gray-200 rounded-lg p-6 flex items-start gap-5">
+            <div className="w-16 h-16 rounded-full bg-navy flex items-center justify-center shrink-0">
+              <span className="text-2xl font-black text-gold" style={{ fontFamily: "var(--font-heading)" }}>HW</span>
+            </div>
+            <div>
+              <p className="text-navy font-bold text-sm">Harvest Wright</p>
+              <p className="text-gray-500 text-xs mb-2">ICT Trading Coach &middot; 10+ Years Experience</p>
+              <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                Harvest specializes in ICT methodology and has helped traders pass prop firm challenges, develop consistent strategies, and build the psychology needed for long-term profitability.
+              </p>
+              <Link
+                href="/contact"
+                className="text-gold hover:text-gold-light text-sm font-bold transition-colors"
+              >
+                Book a Free Discovery Call &rarr;
+              </Link>
+            </div>
+          </div>
+
           <hr className="my-12 border-gray-200" />
 
           {(() => {
