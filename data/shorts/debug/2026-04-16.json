@@ -1,24 +1,24 @@
 {
-  "date": "2026-04-15T19:32:42.548Z",
+  "date": "2026-04-15T20:32:53.722Z",
   "today": "2026-04-16",
   "topicsAttempted": [
-    "3 Power of 3 Setups Every ICT Trader Must Know",
-    null,
-    null
+    "5 ICT Order Blocks That Changed My Trading Forever",
+    "Breaking Down This Perfect Liquidity Sweep on EURUSD",
+    "From $500 to $50K: My Funded Account Journey"
   ],
   "results": [
     {
-      "title": "3 Power of 3 Setups Every ICT Trader Must Know",
+      "title": "5 ICT Order Blocks That Changed My Trading Forever",
       "status": "error",
       "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
     },
     {
-      "title": "",
+      "title": "Breaking Down This Perfect Liquidity Sweep on EURUSD",
       "status": "error",
       "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
     },
     {
-      "title": "",
+      "title": "From $500 to $50K: My Funded Account Journey",
       "status": "error",
       "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
     }
