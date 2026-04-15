@@ -1,0 +1,31 @@
+{
+  "date": "2026-04-15T08:32:35.988Z",
+  "today": "2026-04-15",
+  "topicsAttempted": [
+    "Reviewing My Worst Trade of 2026 So Far",
+    null,
+    null
+  ],
+  "results": [
+    {
+      "title": "Reviewing My Worst Trade of 2026 So Far",
+      "status": "error",
+      "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+    }
+  ],
+  "errors": [
+    "FFmpeg Render Service: {\"error\":\"Unauthorized\"}",
+    "FFmpeg Render Service: {\"error\":\"Unauthorized\"}",
+    "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+  ]
+}
