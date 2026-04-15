@@ -56,14 +56,14 @@ export default function EmailSignup({ variant = "inline" }: { variant?: "inline"
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email"
           required
-          className="w-full px-4 py-3 rounded-md border border-gray-300 text-gray-800 focus:outline-none focus:border-gold text-sm"
+          className="w-full px-4 py-3 rounded-md border border-white/20 bg-white/10 text-white placeholder-white/50 focus:outline-none focus:border-gold text-sm"
         />
         <input
           type="tel"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           placeholder="Phone (optional, for WhatsApp updates)"
-          className="w-full px-4 py-3 rounded-md border border-gray-300 text-gray-800 focus:outline-none focus:border-gold text-sm"
+          className="w-full px-4 py-3 rounded-md border border-white/20 bg-white/10 text-white placeholder-white/50 focus:outline-none focus:border-gold text-sm"
         />
         <button
           type="submit"
