@@ -1,50 +1,5 @@
 [
   {
-    "date": "2026-04-06T03:32:02.446Z",
-    "slug": "https://youtube.com/shorts/oOvy2Vc0YOA",
-    "title": "🎬 New Short: POV: You Realize Why Your ICT Setups Keep Failing",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "skipped",
-        "message": "No token or cover image"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-06T08:21:53.335Z",
     "slug": "2026-04-06-april-2026-earnings-season-liquidity-raids-6-ict-concepts-every-smart-money-trader-must-know",
     "title": "April 2026 Earnings Season Liquidity Raids: 6 ICT Concepts Every Smart Money Trader Must Know",
@@ -1959,6 +1914,52 @@
     "date": "2026-04-15T18:32:02.731Z",
     "slug": "2026-04-15-retail-sales-week-how-ict-traders-prepare",
     "title": "Retail Sales Week: How ICT Traders Prepare",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-15T21:31:40.888Z",
+    "slug": "2026-04-15-retail-sales-week-how-ict-traders-read-usd",
+    "title": "Retail Sales Week: How ICT Traders Read USD",
     "results": [
       {
         "platform": "twitter",
