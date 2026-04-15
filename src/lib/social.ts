@@ -568,6 +568,84 @@ export async function postTweetWithImage(
   }
 }
 
+// --- Medium ---
+export async function postToMedium(post: PostData & { fullContent?: string }): Promise<SocialResult> {
+  const token = process.env.MEDIUM_API_TOKEN;
+  if (!token) {
+    return { platform: "medium", status: "skipped", message: "No credentials" };
+  }
+
+  try {
+    // Get user ID
+    const meRes = await fetch("https://api.medium.com/v1/me", {
+      headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+    });
+    if (!meRes.ok) {
+      return { platform: "medium", status: "error", message: `Auth failed: ${meRes.status}` };
+    }
+    const meData = await meRes.json();
+    const userId = meData.data?.id;
+    if (!userId) {
+      return { platform: "medium", status: "error", message: "No user ID returned" };
+    }
+
+    const canonicalUrl = `${SITE_URL}/trading-insights/${post.slug}`;
+
+    // Build HTML content from MDX or excerpt
+    let htmlContent = "";
+    if (post.fullContent) {
+      // Strip MDX metadata block and convert basic markdown to HTML
+      let md = post.fullContent
+        .replace(/export\s+const\s+metadata\s*=\s*\{[\s\S]*?\n\}/m, "")
+        .replace(/import\s+.*?from\s+['"].*?['"]/g, "")
+        .trim();
+
+      // Basic markdown to HTML conversion
+      md = md
+        .replace(/^### (.*$)/gm, "<h3>$1</h3>")
+        .replace(/^## (.*$)/gm, "<h2>$1</h2>")
+        .replace(/^# (.*$)/gm, "<h1>$1</h1>")
+        .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+        .replace(/\*(.*?)\*/g, "<em>$1</em>")
+        .replace(/^- (.*$)/gm, "<li>$1</li>")
+        .replace(/(<li>.*<\/li>\n?)+/g, (match) => `<ul>${match}</ul>`)
+        .replace(/\n\n/g, "</p><p>")
+        .replace(/^(?!<[hul])/gm, "");
+
+      htmlContent = `<p>${md}</p>`;
+      htmlContent += `<p><em>Originally published at <a href="${canonicalUrl}">R2F Trading</a></em></p>`;
+    } else {
+      htmlContent = `<p>${post.excerpt}</p><p><a href="${canonicalUrl}">Read the full article at R2F Trading →</a></p>`;
+    }
+
+    // Publish to Medium
+    const postRes = await fetch(`https://api.medium.com/v1/users/${userId}/posts`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        title: post.title,
+        contentFormat: "html",
+        content: htmlContent,
+        canonicalUrl,
+        publishStatus: "public",
+        tags: post.tags.slice(0, 5),
+      }),
+    });
+
+    if (postRes.ok) {
+      const postData = await postRes.json();
+      return { platform: "medium", status: "success", message: postData.data?.url || "Published" };
+    }
+    const err = await postRes.text();
+    return { platform: "medium", status: "error", message: err.slice(0, 200) };
+  } catch (err) {
+    return { platform: "medium", status: "error", message: String(err).slice(0, 200) };
+  }
+}
+
 // --- Main: Post to All ---
 export async function postToAll(post: PostData): Promise<SocialResult[]> {
   // If coverImage is missing or a relative path that won't resolve on social platforms,
