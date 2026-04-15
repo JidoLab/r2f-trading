@@ -146,7 +146,25 @@ export async function GET(req: NextRequest) {
     }
   } catch {}
 
-  // 6. Reviews pending
+  // 6. Comment replies
+  try {
+    const raw = await readFile("data/reply-notifications.json");
+    const replies: { id?: string; platform?: string; postTitle?: string; subreddit?: string; replyAuthor?: string; replyText?: string; commentUrl?: string; detectedAt?: string }[] = JSON.parse(raw);
+    for (let i = 0; i < replies.length; i++) {
+      const r = replies[i];
+      if (r.detectedAt) {
+        events.push({
+          id: r.id || makeId("reply", r.detectedAt, i),
+          type: "reply",
+          title: "Comment reply received",
+          description: `u/${r.replyAuthor || "someone"} replied in r/${r.subreddit || r.platform}: "${(r.replyText || "").slice(0, 80)}"`,
+          date: r.detectedAt,
+        });
+      }
+    }
+  } catch {}
+
+  // 7. Reviews pending
   try {
     const raw = await readFile("data/reviews-pending.json");
     const reviews: { name?: string; date?: string; createdAt?: string; rating?: number }[] = JSON.parse(raw);

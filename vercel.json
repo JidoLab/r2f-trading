@@ -151,6 +151,10 @@
     {
       "path": "/api/cron/upsell",
       "schedule": "0 12 * * *"
+    },
+    {
+      "path": "/api/cron/check-comment-replies",
+      "schedule": "0 13 * * *"
     }
   ]
 }

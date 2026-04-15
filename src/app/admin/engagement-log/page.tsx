@@ -10,6 +10,10 @@ interface RedditEntry {
   mentionedR2F: boolean;
   commentedAt: string;
   permalink?: string;
+  hasReply?: boolean;
+  firstReplyAuthor?: string;
+  firstReplyText?: string;
+  firstReplyAt?: string;
 }
 
 interface TwitterEntry {
@@ -89,8 +93,8 @@ export default function EngagementLogPage() {
           </p>
         </div>
         <div className="bg-white/5 border border-white/10 rounded-lg p-5">
-          <p className="text-white/40 text-xs font-bold uppercase tracking-wider mb-2">Total Engagement</p>
-          <p className="text-3xl font-black text-white">{reddit.length + twitter.length}</p>
+          <p className="text-white/40 text-xs font-bold uppercase tracking-wider mb-2">Replies Received</p>
+          <p className="text-3xl font-black text-green-400">{reddit.filter((r) => r.hasReply).length}</p>
         </div>
       </div>
 
@@ -130,6 +134,11 @@ export default function EngagementLogPage() {
                       <span className="bg-orange-500/20 text-orange-400 text-[10px] font-bold px-2 py-0.5 rounded-full">
                         r/{entry.subreddit}
                       </span>
+                      {entry.hasReply && (
+                        <span className="bg-green-500/20 text-green-400 text-[10px] font-bold px-2 py-0.5 rounded-full">
+                          Reply received
+                        </span>
+                      )}
                       {entry.mentionedR2F && (
                         <span className="bg-gold/20 text-gold text-[10px] font-bold px-2 py-0.5 rounded-full">
                           Students mentioned
@@ -153,6 +162,17 @@ export default function EngagementLogPage() {
                 <div className="bg-white/5 rounded-md p-3">
                   <p className="text-white/60 text-sm leading-relaxed whitespace-pre-wrap">{entry.commentText}</p>
                 </div>
+                {entry.hasReply && entry.firstReplyText && (
+                  <div className="mt-2 bg-green-500/5 border border-green-500/20 rounded-md p-3">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-green-400 text-xs font-bold">u/{entry.firstReplyAuthor}</span>
+                      {entry.firstReplyAt && (
+                        <span className="text-white/30 text-xs">{formatDate(entry.firstReplyAt)}</span>
+                      )}
+                    </div>
+                    <p className="text-white/50 text-sm leading-relaxed">{entry.firstReplyText}</p>
+                  </div>
+                )}
               </div>
             ))
           )}

@@ -43,6 +43,7 @@ const EVENT_ICONS: Record<string, string> = {
   video: "\u{1F3AC}",
   chat: "\u{1F4AC}",
   review: "\u2B50",
+  reply: "\u{1F4AC}",
   alert: "\u{1F534}",
   "hot-lead": "\u{1F525}",
 };
