@@ -1,0 +1,66 @@
+{
+  "tasks": [
+    {
+      "id": "ct-1776224774445-0",
+      "title": "Live Trading Session Booking & Free Consultation Funnel",
+      "description": "Build a calendar-based booking system where cold leads can schedule a free 15-minute 'ICT Strategy Call' with Harvest, integrated with PayPal for paid session upgrades. Include automated reminder emails via Resend at 24h and 1h before, plus a post-call follow-up sequence that pushes the $49 Starter Kit or coaching plans. Store bookings in Supabase with lead score updates triggered by booking actions.",
+      "category": "conversion",
+      "priority": "high",
+      "reasoning": "With 5 cold subscribers and $0 revenue, the biggest gap is a direct human touchpoint that converts cold leads — a free call lowers friction and gives Harvest a closing opportunity that no automation can replicate.",
+      "status": "pending",
+      "createdAt": "2026-04-15T03:46:14.445Z"
+    },
+    {
+      "id": "ct-1776224774445-1",
+      "title": "Social Proof Wall with Real-Time Trade Result Submissions",
+      "description": "Create a public-facing 'Results' page where students or prospects can submit trade screenshots and outcomes via a form, which are stored in Supabase and displayed in a filterable gallery with win/loss stats and testimonial quotes. Add an admin moderation queue in the dashboard to approve submissions before they go live. Include embeddable widgets for the homepage and landing pages.",
+      "category": "conversion",
+      "priority": "high",
+      "reasoning": "ICT trading coaching is a trust-heavy sale and zero visible social proof is likely the core reason cold leads aren't converting — real trade results are the single most persuasive asset in this niche.",
+      "status": "pending",
+      "createdAt": "2026-04-15T03:46:14.445Z"
+    },
+    {
+      "id": "ct-1776224774445-2",
+      "title": "Reddit & Forum Engagement Tracker with Reply-Bait Templates",
+      "description": "Build a dashboard module that monitors which Reddit comments Harvest has posted, tracks view counts and engagement over time via Reddit API, and flags posts where the topic is trending so Harvest can manually boost with follow-up replies. Generate AI-suggested reply-bait comments (open questions, partial answers) designed to provoke responses and increase profile visibility. Include a 'comment performance score' to identify which subreddits and topics get the most traction.",
+      "category": "engagement",
+      "priority": "high",
+      "reasoning": "10 Reddit comments with 0 replies suggests the current comment strategy isn't working, and without reply engagement the funnel has no organic top-of-funnel traffic — this directly addresses the lead acquisition bottleneck.",
+      "status": "pending",
+      "createdAt": "2026-04-15T03:46:14.445Z"
+    },
+    {
+      "id": "ct-1776224774445-3",
+      "title": "Interactive ICT Concept Quiz with Personalized Learning Path",
+      "description": "Build a multi-step quiz (10-15 questions covering ICT concepts like Order Blocks, FVGs, Liquidity) that scores the visitor's knowledge level and outputs a personalized 'Trading Assessment Report' delivered via email. The report recommends either the $49 Starter Kit, a specific coaching tier, or the crash course based on their score, and automatically updates their lead score and email sequence in Supabase. Embed the quiz prominently on the homepage and SEO landing pages.",
+      "category": "conversion",
+      "priority": "medium",
+      "reasoning": "A quiz captures emails with high intent, segments leads by readiness, and creates a personalized pitch — this replaces generic cold outreach with a warm, self-qualified lead flow that maps directly to the product lineup.",
+      "status": "pending",
+      "createdAt": "2026-04-15T03:46:14.445Z"
+    },
+    {
+      "id": "ct-1776224774445-4",
+      "title": "YouTube Shorts Performance Dashboard with Upload Gap Alerts",
+      "description": "Build a YouTube Data API integration that pulls view counts, subscriber changes, and engagement metrics for all 11 published Shorts into the admin dashboard with trend charts. Add an automated alert (email or WhatsApp) if no new Short has been published in 5+ days, and surface the 2 unpublished Shorts with a one-click publish reminder workflow. Include a 'best performing content' summary to guide future Short topics.",
+      "category": "analytics",
+      "priority": "medium",
+      "reasoning": "Shorts are the cheapest organic traffic source available and 2 are sitting unpublished — a performance feedback loop and gap alerts ensure consistent publishing momentum which is critical for YouTube algorithm growth.",
+      "status": "pending",
+      "createdAt": "2026-04-15T03:46:14.445Z"
+    },
+    {
+      "id": "ct-1776224774445-5",
+      "title": "Abandoned Lead Re-Engagement Campaign Builder",
+      "description": "Create a Supabase query that identifies leads who haven't opened an email or visited the site in 14+ days, and automatically enrolls them in a 3-email 'win-back' sequence with a time-limited offer (e.g. $10 off Starter Kit for 48 hours) generated via Resend. Include a dashboard view showing re-engagement rates and which leads converted after the sequence, plus a manual trigger so Harvest can launch campaigns on demand. Track PayPal coupon redemptions to measure ROI.",
+      "category": "revenue",
+      "priority": "medium",
+      "reasoning": "The existing subscriber list is entirely cold and stagnant — a systematic re-engagement campaign is the fastest path to first revenue without needing new traffic, turning existing sunk acquisition cost into potential conversions.",
+      "status": "pending",
+      "createdAt": "2026-04-15T03:46:14.445Z"
+    }
+  ],
+  "lastGeneratedAt": "2026-04-15T03:46:14.445Z",
+  "generationCount": 1
+}
