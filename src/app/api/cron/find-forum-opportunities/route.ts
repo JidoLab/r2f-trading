@@ -250,8 +250,11 @@ export async function GET(req: NextRequest) {
 
     for (const post of uniquePosts.slice(0, 15)) {
       try {
-        const reply = await generateReply(post, anthropic);
+        let reply = await generateReply(post, anthropic);
         if (reply) {
+          if (post.platform === "investinglive") {
+            reply += "\n\nHarvest\nProfessional Trading Coach\nwww.r2ftrading.com";
+          }
           newSuggs.push({
             id: `sug-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
             platform: post.platform,
