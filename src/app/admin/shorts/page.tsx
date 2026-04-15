@@ -2,6 +2,15 @@
 
 import { useEffect, useState } from "react";
 
+interface VideoPerf {
+  videoId: string;
+  title: string;
+  publishedAt: string;
+  views: number;
+  likes: number;
+  comments: number;
+}
+
 interface PipelineData {
   calendar: { date: string; topic: string; contentType: string; used: boolean }[];
   seriesTracker: Record<string, number>;
@@ -11,6 +20,17 @@ interface PipelineData {
     bottomVideos: { title: string; views: number }[];
     totalVideos: number;
   } | null;
+  youtubeMetrics: {
+    videos: VideoPerf[];
+    totalViews: number;
+    totalLikes: number;
+    totalComments: number;
+    avgViews: number;
+    lastPublishedAt: string | null;
+    daysSinceLastPublish: number;
+    lastUpdated: string;
+  } | null;
+  unpublishedVideos: { slug: string; title: string; createdAt: string }[];
   pendingScripts: string[];
   config: { enabled: boolean };
 }
@@ -439,42 +459,172 @@ export default function AdminShortsPage() {
         </div>
       </div>
 
-      {/* Performance Data */}
-      {data.performance && (
-        <div className="bg-white/5 border border-white/10 rounded-lg p-6 mb-6">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-white font-semibold text-sm">YouTube Performance</h2>
-            <span className="text-white/30 text-xs">Last pull: {data.performance.lastPull}</span>
+      {/* Upload Gap Alert */}
+      {data.youtubeMetrics && data.youtubeMetrics.daysSinceLastPublish >= 2 && (
+        <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-5 mb-6">
+          <div className="flex items-start gap-3">
+            <span className="text-2xl">⚠️</span>
+            <div className="flex-1">
+              <h3 className="text-red-400 font-bold text-sm mb-1">
+                No Short published in {data.youtubeMetrics.daysSinceLastPublish} days
+              </h3>
+              <p className="text-white/50 text-sm">
+                Consistency is key for the YouTube algorithm. Publishing at least 3 Shorts per week keeps momentum.
+              </p>
+              {data.unpublishedVideos.length > 0 && (
+                <div className="mt-3 space-y-2">
+                  <p className="text-white/40 text-xs font-bold uppercase tracking-wider">Ready to publish:</p>
+                  {data.unpublishedVideos.map(v => (
+                    <div key={v.slug} className="flex items-center justify-between bg-white/5 rounded-md px-3 py-2">
+                      <span className="text-white/70 text-sm truncate flex-1">{v.title}</span>
+                      <button
+                        onClick={() => publishVideo(v.slug)}
+                        disabled={publishing === v.slug}
+                        className="text-xs bg-green-500/20 text-green-400 px-3 py-1.5 rounded-md hover:bg-green-500/30 transition-colors disabled:opacity-50 ml-3 shrink-0"
+                      >
+                        {publishing === v.slug ? "Publishing..." : "Publish Now"}
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-5">
-            <div className="text-center py-3 px-4 rounded-md bg-white/[0.03]">
-              <p className="text-2xl font-bold text-gold">{data.performance.totalVideos}</p>
-              <p className="text-white/40 text-xs mt-1">Total Videos</p>
-            </div>
-            <div className="text-center py-3 px-4 rounded-md bg-white/[0.03]">
-              <p className="text-2xl font-bold text-green-400">{data.performance.topVideos?.length || 0}</p>
-              <p className="text-white/40 text-xs mt-1">Top Performers</p>
-            </div>
-            <div className="text-center py-3 px-4 rounded-md bg-white/[0.03]">
-              <p className="text-2xl font-bold text-white/60">{completed}</p>
-              <p className="text-white/40 text-xs mt-1">Shorts Produced</p>
-            </div>
-          </div>
-          {data.performance.topVideos?.length > 0 && (
-            <>
-              <h3 className="text-white/50 text-xs font-bold uppercase tracking-wider mb-2">Top Videos</h3>
-              <div className="space-y-1">
-                {data.performance.topVideos.slice(0, 5).map((v, i) => (
-                  <div key={i} className="flex items-center justify-between py-1.5 px-3 rounded-md bg-white/[0.03]">
-                    <span className="text-white/70 text-xs truncate flex-1">{v.title}</span>
-                    <span className="text-green-400 text-xs font-bold ml-3">{v.views?.toLocaleString()} views</span>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
         </div>
       )}
+
+      {/* YouTube Performance Dashboard */}
+      {data.youtubeMetrics && data.youtubeMetrics.videos.length > 0 && (() => {
+        const m = data.youtubeMetrics!;
+        const maxViews = Math.max(...m.videos.map(v => v.views), 1);
+        const sortedByViews = [...m.videos].sort((a, b) => b.views - a.views);
+        const top5 = sortedByViews.slice(0, 5);
+        const bottom3 = sortedByViews.slice(-3).reverse();
+
+        // Engagement rate = (likes + comments) / views
+        const bestEngagement = [...m.videos]
+          .filter(v => v.views > 0)
+          .map(v => ({ ...v, engagementRate: ((v.likes + v.comments) / v.views) * 100 }))
+          .sort((a, b) => b.engagementRate - a.engagementRate)
+          .slice(0, 3);
+
+        // Sort by publish date for the chart
+        const chronological = [...m.videos]
+          .filter(v => v.publishedAt)
+          .sort((a, b) => a.publishedAt.localeCompare(b.publishedAt));
+
+        return (
+          <div className="bg-white/5 border border-white/10 rounded-lg p-6 mb-6">
+            <div className="flex items-center justify-between mb-5">
+              <h2 className="text-white font-semibold text-sm">YouTube Shorts Performance</h2>
+              <span className="text-white/30 text-xs">
+                {m.lastUpdated ? `Updated: ${new Date(m.lastUpdated).toLocaleDateString("en-GB", { timeZone: "Asia/Bangkok", day: "numeric", month: "short" })}` : ""}
+              </span>
+            </div>
+
+            {/* Metrics Row */}
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-6">
+              <div className="bg-white/[0.04] rounded-lg p-4 text-center">
+                <p className="text-2xl font-black text-gold">{m.totalViews.toLocaleString()}</p>
+                <p className="text-white/40 text-[10px] uppercase tracking-wider mt-1">Total Views</p>
+              </div>
+              <div className="bg-white/[0.04] rounded-lg p-4 text-center">
+                <p className="text-2xl font-black text-white">{m.avgViews.toLocaleString()}</p>
+                <p className="text-white/40 text-[10px] uppercase tracking-wider mt-1">Avg Views</p>
+              </div>
+              <div className="bg-white/[0.04] rounded-lg p-4 text-center">
+                <p className="text-2xl font-black text-red-400">{m.totalLikes.toLocaleString()}</p>
+                <p className="text-white/40 text-[10px] uppercase tracking-wider mt-1">Total Likes</p>
+              </div>
+              <div className="bg-white/[0.04] rounded-lg p-4 text-center">
+                <p className="text-2xl font-black text-blue-400">{m.totalComments.toLocaleString()}</p>
+                <p className="text-white/40 text-[10px] uppercase tracking-wider mt-1">Comments</p>
+              </div>
+              <div className="bg-white/[0.04] rounded-lg p-4 text-center">
+                <p className="text-2xl font-black text-green-400">{m.videos.length}</p>
+                <p className="text-white/40 text-[10px] uppercase tracking-wider mt-1">Videos</p>
+              </div>
+            </div>
+
+            {/* Views Trend Chart */}
+            {chronological.length > 1 && (
+              <div className="mb-6">
+                <h3 className="text-white/50 text-xs font-bold uppercase tracking-wider mb-3">Views by Video (chronological)</h3>
+                <div className="flex items-end gap-1.5 h-32">
+                  {chronological.map((v, i) => {
+                    const pct = (v.views / maxViews) * 100;
+                    const isTop = v.videoId === top5[0]?.videoId;
+                    return (
+                      <div key={i} className="flex-1 flex flex-col items-center justify-end h-full group relative">
+                        <div
+                          className={`w-full rounded-t-sm transition-all ${isTop ? "bg-gold" : "bg-blue-500/60"} group-hover:bg-gold/80`}
+                          style={{ height: `${Math.max(pct, 3)}%`, minHeight: "4px" }}
+                        />
+                        <div className="hidden group-hover:block absolute -top-16 left-1/2 -translate-x-1/2 bg-navy border border-white/20 rounded-md px-2 py-1.5 z-10 whitespace-nowrap">
+                          <p className="text-white text-[10px] font-medium truncate max-w-[150px]">{v.title}</p>
+                          <p className="text-gold text-[10px] font-bold">{v.views.toLocaleString()} views</p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* Top Performers */}
+              <div>
+                <h3 className="text-white/50 text-xs font-bold uppercase tracking-wider mb-2">Top Performing</h3>
+                <div className="space-y-1.5">
+                  {top5.map((v, i) => (
+                    <div key={i} className="flex items-center gap-3 py-2 px-3 rounded-md bg-white/[0.03]">
+                      <span className={`text-xs font-black w-5 text-center ${i === 0 ? "text-gold" : "text-white/30"}`}>
+                        {i + 1}
+                      </span>
+                      <span className="text-white/70 text-xs truncate flex-1">{v.title}</span>
+                      <div className="flex items-center gap-3 shrink-0">
+                        <span className="text-green-400 text-xs font-bold tabular-nums">{v.views.toLocaleString()}</span>
+                        <span className="text-red-400/60 text-[10px] tabular-nums">{v.likes} ♥</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Best Engagement Rate */}
+              <div>
+                <h3 className="text-white/50 text-xs font-bold uppercase tracking-wider mb-2">Best Engagement Rate</h3>
+                <div className="space-y-1.5">
+                  {bestEngagement.map((v, i) => (
+                    <div key={i} className="flex items-center gap-3 py-2 px-3 rounded-md bg-white/[0.03]">
+                      <span className={`text-xs font-black w-5 text-center ${i === 0 ? "text-gold" : "text-white/30"}`}>
+                        {i + 1}
+                      </span>
+                      <span className="text-white/70 text-xs truncate flex-1">{v.title}</span>
+                      <span className="text-orange-400 text-xs font-bold tabular-nums shrink-0">
+                        {v.engagementRate.toFixed(1)}%
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Content Insight */}
+                {top5.length >= 3 && (
+                  <div className="mt-4 bg-gold/5 border border-gold/20 rounded-md p-3">
+                    <p className="text-gold text-xs font-bold mb-1">Best Performing Content</p>
+                    <p className="text-white/50 text-xs leading-relaxed">
+                      Your top video &quot;{top5[0].title.slice(0, 50)}&quot; got {top5[0].views.toLocaleString()} views
+                      — {Math.round(top5[0].views / m.avgViews)}x your average.
+                      {bottom3.length > 0 && ` Lowest: "${bottom3[0].title.slice(0, 40)}" with ${bottom3[0].views} views.`}
+                      {" "}Create more content similar to your top performers.
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Platform Distribution */}
       <div className="bg-white/5 border border-white/10 rounded-lg p-6">

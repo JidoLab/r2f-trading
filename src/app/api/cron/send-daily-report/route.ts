@@ -145,7 +145,23 @@ export async function GET(req: NextRequest) {
       healthChecks.push({ label: "Facebook token", status: "error", detail: "Token check failed" });
     }
 
-    // 6. Shorts pipeline — videos stuck rendering > 24h
+    // 6. YouTube upload gap — alert if no Short published in 2+ days
+    try {
+      const raw = await readFile("data/shorts/performance.json");
+      const perfData = JSON.parse(raw);
+      const videos = (perfData.videos || []) as { publishedAt?: string }[];
+      const sorted = videos.filter(v => v.publishedAt).sort((a, b) => (b.publishedAt || "").localeCompare(a.publishedAt || ""));
+      if (sorted.length > 0 && sorted[0].publishedAt) {
+        const daysSince = Math.floor((Date.now() - new Date(sorted[0].publishedAt).getTime()) / 86400000);
+        if (daysSince >= 2) {
+          healthChecks.push({ label: "YouTube uploads", status: "warn", detail: `No Short published in ${daysSince} days` });
+        } else {
+          healthChecks.push({ label: "YouTube uploads", status: "ok" });
+        }
+      }
+    } catch {}
+
+    // 7. Shorts pipeline — videos stuck rendering > 24h
     let stuckRenders = 0;
     try {
       const { listFiles: listGhFiles } = await import("@/lib/github");
