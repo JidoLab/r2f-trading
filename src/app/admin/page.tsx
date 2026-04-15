@@ -198,6 +198,7 @@ export default function AdminDashboard() {
       });
   }, []);
 
+  const [sortBy, setSortBy] = useState<"time" | "category" | "status">("time");
   const bangkokTime = getBangkokTime();
   const greeting = getGreeting();
 
@@ -223,8 +224,6 @@ export default function AdminDashboard() {
     { icon: "\u{1F4B0}", label: "Revenue", href: "/admin/revenue" },
     { icon: "\u{1F9E0}", label: "AI Planner", href: "/admin/content-planner" },
   ];
-
-  const [sortBy, setSortBy] = useState<"time" | "category" | "status">("time");
 
   const automationStatusRaw = AUTOMATIONS.map(a => getRunInfo(a));
   const automationStatus = [...automationStatusRaw].sort((a, b) => {
