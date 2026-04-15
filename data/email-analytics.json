@@ -28,7 +28,7 @@
     }
   },
   "eirini.ploumidi94@gmail.com": {
-    "delivered": 2,
+    "delivered": 3,
     "opened": 0,
     "clicked": 0,
     "bounced": 0,
@@ -40,6 +40,11 @@
         "clicked": 0
       },
       "How ICT Concepts Changed Everything for Me": {
+        "delivered": 1,
+        "opened": 0,
+        "clicked": 0
+      },
+      "eirini.ploumidi94, I noticed you checked out coaching": {
         "delivered": 1,
         "opened": 0,
         "clicked": 0
