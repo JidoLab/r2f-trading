@@ -1,33 +1,5 @@
 [
   {
-    "date": "2026-04-07T12:58:13.333Z",
-    "type": "text",
-    "postType": "poll",
-    "text": "NFP drops Friday... What's your biggest challenge trading high-impact news? 🅰️ Getting stopped out ",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-07T16:20:13.601Z",
     "slug": "2026-04-07-cpi-trading-strategy-how-smart-money-positions-24-hours-before-inflation-data-using-ict-order-blocks",
     "title": "CPI Trading Strategy: How Smart Money Positions 24 Hours Before Inflation Data Using ICT Order Blocks",
@@ -1980,6 +1952,52 @@
     "date": "2026-04-16T00:31:44.142Z",
     "slug": "2026-04-16-retail-sales-week-how-ict-traders-read-it",
     "title": "Retail Sales Week: How ICT Traders Read It",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-16T01:31:45.866Z",
+    "slug": "2026-04-16-retail-sales-week-trade-usd-with-ict-ote",
+    "title": "Retail Sales Week: Trade USD With ICT OTE",
     "results": [
       {
         "platform": "twitter",
