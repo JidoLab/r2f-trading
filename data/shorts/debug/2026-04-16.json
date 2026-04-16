@@ -1,31 +1,27 @@
 {
-  "date": "2026-04-16T13:48:02.007Z",
+  "date": "2026-04-16T13:57:26.806Z",
   "today": "2026-04-16",
   "topicsAttempted": [
-    "Dissecting This 200 Pip Move on GBPUSD",
-    "My Position Sizing Evolution: From Broke to Profitable",
-    "The Trade That Taught Me Patience is Everything"
+    "Can You Identify the Optimal Trade Entry? Challenge Time",
+    "The Biggest Lie About Funded Trading Challenges",
+    "POV: You're in Drawdown But Trust Your System"
   ],
   "results": [
     {
-      "title": "Dissecting This 200 Pip Move on GBPUSD",
-      "status": "error",
-      "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+      "title": "Can You Spot the Optimal Trade Entry? 🧠",
+      "status": "rendering"
     },
     {
-      "title": "My Position Sizing Evolution: From Broke to Profitable",
-      "status": "error",
-      "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+      "title": "The Biggest Lie About Funded Trading Challenges",
+      "status": "rendering"
     },
     {
-      "title": "The Trade That Taught Me Patience is Everything",
+      "title": "POV: You're in Drawdown But Trust Your System",
       "status": "error",
-      "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+      "error": "FFmpeg Render Service: "
     }
   ],
   "errors": [
-    "FFmpeg Render Service: {\"error\":\"Unauthorized\"}",
-    "FFmpeg Render Service: {\"error\":\"Unauthorized\"}",
-    "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
+    "FFmpeg Render Service: "
   ]
 }
