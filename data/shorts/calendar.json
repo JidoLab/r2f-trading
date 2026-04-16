@@ -172,21 +172,21 @@
     "topic": "Can You Identify the Optimal Trade Entry? Challenge Time",
     "contentType": "quiz",
     "category": "Strategy Development",
-    "used": false
+    "used": true
   },
   {
     "date": "2026-05-01",
     "topic": "The Biggest Lie About Funded Trading Challenges",
     "contentType": "myth-buster",
     "category": "Funded Accounts",
-    "used": false
+    "used": true
   },
   {
     "date": "2026-05-02",
     "topic": "POV: You're in Drawdown But Trust Your System",
     "contentType": "pov",
     "category": "Trading Psychology",
-    "used": false
+    "used": true
   },
   {
     "date": "2026-05-03",
