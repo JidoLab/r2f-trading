@@ -152,7 +152,7 @@ Return ONLY the caption text, nothing else.`,
     }
 
     // Replace URL placeholder
-    const postUrl = `https://r2ftrading.com/trading-insights/${pick.slug}`;
+    const postUrl = `https://www.r2ftrading.com/trading-insights/${pick.slug}`;
     caption = caption.replace("{URL}", postUrl);
     // If no URL was in the caption, append it
     if (!caption.includes(postUrl)) {

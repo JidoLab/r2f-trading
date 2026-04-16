@@ -450,7 +450,7 @@ Return ONLY JSON:
   };
 
   // Trigger video render with webhook
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://r2ftrading.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.r2ftrading.com";
   const webhookUrl = `${siteUrl}/api/shorts/webhook`;
 
   let renderId: string;

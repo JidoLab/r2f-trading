@@ -6,7 +6,7 @@ import Anthropic from "@anthropic-ai/sdk";
 
 export const maxDuration = 60;
 
-const SITE_URL = "https://r2ftrading.com";
+const SITE_URL = "https://www.r2ftrading.com";
 
 function getWeekLabel(): string {
   const now = new Date();

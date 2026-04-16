@@ -5,7 +5,7 @@ import Anthropic from "@anthropic-ai/sdk";
 
 export const maxDuration = 60;
 
-const SITE_URL = "https://r2ftrading.com";
+const SITE_URL = "https://www.r2ftrading.com";
 
 function extractBody(content: string): string {
   return content.replace(/export\s+const\s+metadata\s*=\s*\{[\s\S]*?\n\}\s*\n*/, "").trim();

@@ -1,7 +1,7 @@
 import { generateOAuthHeader } from "./social-auth";
 import { commitFile, readFile } from "./github";
 
-const SITE_URL = "https://r2ftrading.com";
+const SITE_URL = "https://www.r2ftrading.com";
 
 interface PostData {
   title: string;

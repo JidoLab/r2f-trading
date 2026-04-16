@@ -114,7 +114,7 @@ const jsonLd = {
   provider: {
     "@type": "Organization",
     name: "R2F Trading",
-    url: "https://r2ftrading.com",
+    url: "https://www.r2ftrading.com",
   },
   instructor: {
     "@type": "Person",
@@ -127,7 +127,7 @@ const jsonLd = {
     price: "49",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    url: "https://r2ftrading.com/starter-kit",
+    url: "https://www.r2ftrading.com/starter-kit",
   },
   hasCourseInstance: {
     "@type": "CourseInstance",

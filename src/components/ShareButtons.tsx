@@ -1,6 +1,6 @@
 "use client";
 
-const SITE_URL = "https://r2ftrading.com";
+const SITE_URL = "https://www.r2ftrading.com";
 
 export default function ShareButtons({ slug, title }: { slug: string; title: string }) {
   const url = encodeURIComponent(`${SITE_URL}/trading-insights/${slug}`);

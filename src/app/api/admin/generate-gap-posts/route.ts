@@ -129,7 +129,7 @@ ${body}
         await postToAll({ title: article.title, excerpt: article.excerpt, slug, coverImage, tags: article.tags });
       } catch {}
       try {
-        const articleUrl = `https://r2ftrading.com/trading-insights/${slug}`;
+        const articleUrl = `https://www.r2ftrading.com/trading-insights/${slug}`;
         await postLinkedInArticle(article.title, body, articleUrl);
       } catch {}
 

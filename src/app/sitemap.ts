@@ -41,19 +41,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // data/landing-pages directory might not exist yet
   }
 
+  // Use the most recent blog post date for dynamic pages (trading-insights, homepage)
+  // and realistic last-modified dates for static pages to avoid Google ignoring lastmod
+  const latestPostDate = posts.length > 0
+    ? posts.sort((a, b) => (b.date || "").localeCompare(a.date || ""))[0].date
+    : "2026-04-01";
+
   return [
-    { url: BASE_URL, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 1.0 },
-    { url: `${BASE_URL}/about`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/coaching`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE_URL}/contact`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE_URL}/results`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/free-class`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/crash-course`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/starter-kit`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE_URL}/trading-insights`, lastModified: new Date().toISOString(), changeFrequency: "daily", priority: 0.8 },
-    { url: `${BASE_URL}/tools/risk-calculator`, lastModified: new Date().toISOString(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/market-brief`, lastModified: new Date().toISOString(), changeFrequency: "daily", priority: 0.7 },
-    { url: `${BASE_URL}/privacy`, lastModified: new Date().toISOString(), changeFrequency: "yearly", priority: 0.3 },
+    { url: BASE_URL, lastModified: latestPostDate, changeFrequency: "weekly", priority: 1.0 },
+    { url: `${BASE_URL}/about`, lastModified: "2026-04-15", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/coaching`, lastModified: "2026-04-15", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/contact`, lastModified: "2026-04-10", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/results`, lastModified: "2026-04-15", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/free-class`, lastModified: "2026-04-10", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/crash-course`, lastModified: "2026-04-10", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/starter-kit`, lastModified: "2026-04-10", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/trading-insights`, lastModified: latestPostDate, changeFrequency: "daily", priority: 0.8 },
+    { url: `${BASE_URL}/tools/risk-calculator`, lastModified: "2026-04-15", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/market-brief`, lastModified: latestPostDate, changeFrequency: "daily", priority: 0.7 },
+    { url: `${BASE_URL}/privacy`, lastModified: "2026-01-01", changeFrequency: "yearly", priority: 0.3 },
     ...blogEntries,
     ...landingPageEntries,
   ];

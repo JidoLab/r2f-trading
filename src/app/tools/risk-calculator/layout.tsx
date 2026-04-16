@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Trading Risk/Reward Calculator | R2F Trading",
     description: "Calculate your exact position size, risk amount, and R:R ratio. The same tool professional ICT traders use.",
-    url: "https://r2ftrading.com/tools/risk-calculator",
+    url: "https://www.r2ftrading.com/tools/risk-calculator",
   },
 };
 

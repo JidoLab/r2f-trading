@@ -273,7 +273,7 @@ ${body}
     // Auto-post LinkedIn native article (full text, not link share — favored by LinkedIn algorithm)
     let linkedInArticleResult = null;
     try {
-      const articleUrl = `${process.env.NEXT_PUBLIC_SITE_URL || "https://r2ftrading.com"}/trading-insights/${slug}`;
+      const articleUrl = `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.r2ftrading.com"}/trading-insights/${slug}`;
       linkedInArticleResult = await postLinkedInArticle(article.title, body, articleUrl);
       console.log("[cron] LinkedIn article result:", JSON.stringify(linkedInArticleResult));
     } catch (err) {

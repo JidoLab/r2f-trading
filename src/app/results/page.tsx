@@ -60,7 +60,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "R2F Trading",
-  url: "https://r2ftrading.com",
+  url: "https://www.r2ftrading.com",
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",

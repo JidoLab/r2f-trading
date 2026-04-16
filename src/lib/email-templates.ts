@@ -2,7 +2,7 @@ const BRAND = {
   navy: "#0d2137",
   gold: "#c9a84c",
   cream: "#f5f0e8",
-  url: "https://r2ftrading.com",
+  url: "https://www.r2ftrading.com",
 };
 
 export function layout(title: string, body: string, cta?: { text: string; url: string }) {

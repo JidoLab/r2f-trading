@@ -2,7 +2,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { generateOAuthHeader } from "./social-auth";
 
 const TWITTER_API_URL = "https://api.twitter.com/2/tweets";
-const SITE_URL = "https://r2ftrading.com";
+const SITE_URL = "https://www.r2ftrading.com";
 
 /**
  * Uses Claude to convert a blog post into a 5-7 tweet thread.
