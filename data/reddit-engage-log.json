@@ -97,11 +97,7 @@
     "mentionedR2F": false,
     "commentedAt": "2026-04-15T13:00:52.044Z",
     "permalink": "/r/Daytrading/comments/1sm2i52/real_time_data_for_futures_trading/ogbjjll/",
-    "commentId": "ogbjjll",
-    "hasReply": true,
-    "firstReplyAt": "2026-04-15T13:46:19.000Z",
-    "firstReplyAuthor": "CurtisEffland",
-    "firstReplyText": "I'll have a look into this. Seems like the best option, thank you "
+    "commentId": "ogbjjll"
   },
   {
     "postId": "1sm0nas",
@@ -131,11 +127,7 @@
     "mentionedR2F": false,
     "commentedAt": "2026-04-15T13:01:18.622Z",
     "permalink": "/r/Daytrading/comments/1slnzqs/looking_for_some_help/ogbjmn8/",
-    "commentId": "ogbjmn8",
-    "hasReply": true,
-    "firstReplyAt": "2026-04-15T13:24:50.000Z",
-    "firstReplyAuthor": "Interesting_Ad_666",
-    "firstReplyText": "I’m already familiar with liq sweeps and other PD arrays but I can definitely use more work with liquidity, it doesn’t fully sink into my mind yet. Any recommendations on a good video to watch?"
+    "commentId": "ogbjmn8"
   },
   {
     "postId": "1slf2o7",
@@ -165,11 +157,7 @@
     "mentionedR2F": false,
     "commentedAt": "2026-04-16T03:01:26.928Z",
     "permalink": "/r/Daytrading/comments/1sm7l8e/i_cant_be_who_i_used_to_be/oggam85/",
-    "commentId": "oggam85",
-    "hasReply": true,
-    "firstReplyAt": "2026-04-16T03:10:31.000Z",
-    "firstReplyAuthor": "PGT-Med2905",
-    "firstReplyText": "Holy shit you just described the trade i took this afternoon...I am so impressed you could tell. I am very impressed bro. But youre right my psychology is messed up. I could've been funded by now but I sat there and watched the trades pass by. Im actively working on my psychology and I will risk the"
+    "commentId": "oggam85"
   },
   {
     "postId": "1sm3kkq",
@@ -250,5 +238,55 @@
     "commentedAt": "2026-04-16T03:31:45.259Z",
     "permalink": "/r/Daytrading/comments/1smjqzj/finding_new_session_to_trade/oggf5wu/",
     "commentId": "oggf5wu"
+  },
+  {
+    "postId": "1smlsua",
+    "subreddit": "Daytrading",
+    "postTitle": "ES or NQ?",
+    "commentText": "honestly with only $1k drawdown left the last thing you should be worried about is ES vs NQ. you need to stop trading until you figure out why your FVGs are failing, because if you're down $300/day consistently that means you're either trading outside killzones or not waiting for a proper displacement with a BOS before entering. NQ will just blow you out faster with its volatility so if anything go ES, but seriously just sit on your hands for a day and audit your trades first 🙏",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-16T13:00:40.644Z",
+    "permalink": "/r/Daytrading/comments/1smlsua/es_or_nq/ogiidfm/",
+    "commentId": "ogiidfm"
+  },
+  {
+    "postId": "1sm91cr",
+    "subreddit": "Daytrading",
+    "postTitle": "Is it worth it ? Money/Time wise ?",
+    "commentText": "honestly the prop firm grind is brutal and most people quit right where you are. one of my students was stuck in phase 2 for almost 4 months, turned out he was taking setups outside the london and ny killzones and chasing price instead of waiting for liquidity sweeps into his order blocks. market conditions do shift but the real question is whether your edge is actually defined or if you're still adjusting things when drawdown hits, because that's usually where phase 2 eats people alive.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-16T13:00:48.705Z",
+    "permalink": "/r/Daytrading/comments/1sm91cr/is_it_worth_it_moneytime_wise/ogiied6/",
+    "commentId": "ogiied6"
+  },
+  {
+    "postId": "1smuypr",
+    "subreddit": "FOREXTRADING",
+    "postTitle": "this kind of gold price action is dangerous for funded accounts",
+    "commentText": "yeah dialing it down is the right call on days like this. gold above 4800 is swimming in untapped liquidity on both sides and the asian and london sessions have been leaving FVGs everywhere without proper mitigation so you get these choppy sweeps that look like BOS but just aren't. i'd personally wait for a clean killzone setup with an actual order block to anchor the trade rather than chasing displacement that doesn't have follow-through. size reduction isn't weakness here it's just reading the tape honestly.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-16T13:00:58.425Z",
+    "permalink": "/r/FOREXTRADING/comments/1smuypr/this_kind_of_gold_price_action_is_dangerous_for/ogiifho/",
+    "commentId": "ogiifho"
+  },
+  {
+    "postId": "1smbmh5",
+    "subreddit": "Daytrading",
+    "postTitle": "Feel like i’m nkt doing enough",
+    "commentText": "honestly after 1500 backtested trades and a year live you've put in the reps, the issue probably isn't knowledge at this point. focus on one setup, like a single session liquidity sweep into an OB during london or ny killzone, and just trade that one thing obsessively until it clicks. most people plateau not because they don't know enough but because they're still switching between concepts instead of mastering the execution of one. the edge is in the repetition of a specific model, not consuming more content.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-16T13:01:07.291Z",
+    "permalink": "/r/Daytrading/comments/1smbmh5/feel_like_im_nkt_doing_enough/ogiigir/",
+    "commentId": "ogiigir"
+  },
+  {
+    "postId": "1smn721",
+    "subreddit": "Daytrading",
+    "postTitle": "New To Trading, Some Guidance Would Be Appreciated",
+    "commentText": "honestly the contrarian tendency is gonna keep bleeding your accounts until you beat it out of yourself. in ICT terms, wait for a liquidity sweep above/below a key level, then look for a break of structure and a fair value gap to form before you even think about entry. you're entering too early and fighting the move instead of waiting for confirmation that smart money has already shown their hand.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-16T13:01:16.284Z",
+    "permalink": "/r/Daytrading/comments/1smn721/new_to_trading_some_guidance_would_be_appreciated/ogiihlu/",
+    "commentId": "ogiihlu"
   }
 ]
