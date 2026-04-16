@@ -11,6 +11,7 @@ export interface BlogPost {
   seoKeywords: string[];
   coverImage: string;
   tags: string[];
+  postType: string;
 }
 
 const CONTENT_DIR = path.join(process.cwd(), "content", "blog");
@@ -39,7 +40,7 @@ function extractMetadata(slug: string): Omit<BlogPost, "slug"> {
   if (!metaMatch) {
     return {
       title: slug, seoTitle: "", date: "", excerpt: "",
-      seoDescription: "", seoKeywords: [], coverImage: "", tags: [],
+      seoDescription: "", seoKeywords: [], coverImage: "", tags: [], postType: "",
     };
   }
 
@@ -54,11 +55,12 @@ function extractMetadata(slug: string): Omit<BlogPost, "slug"> {
       seoKeywords: meta.seoKeywords ?? [],
       coverImage: meta.coverImage ?? "",
       tags: meta.tags ?? [],
+      postType: meta.postType ?? "",
     };
   } catch {
     return {
       title: slug, seoTitle: "", date: "", excerpt: "",
-      seoDescription: "", seoKeywords: [], coverImage: "", tags: [],
+      seoDescription: "", seoKeywords: [], coverImage: "", tags: [], postType: "",
     };
   }
 }

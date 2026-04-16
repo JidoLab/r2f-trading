@@ -229,6 +229,38 @@ export default function CrashCoursePage() {
         </div>
       </section>
 
+      {/* Bridge to Coaching */}
+      <section className="py-12 md:py-16 bg-white border-t border-gray-100">
+        <div className="max-w-3xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center gap-8 bg-gray-50 rounded-xl p-8">
+            <div className="flex-shrink-0 w-20 h-20 bg-navy rounded-full flex items-center justify-center">
+              <span className="text-3xl font-black text-gold" style={{ fontFamily: "var(--font-heading)" }}>HW</span>
+            </div>
+            <div>
+              <h3 className="text-navy font-bold text-lg mb-2">Want Faster Results?</h3>
+              <p className="text-gray-500 text-sm leading-relaxed mb-3">
+                The crash course gives you the framework. Coaching gives you personalized feedback, live session reviews, and accountability. Most of my students get funded within 60 days of starting 1-on-1 coaching.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="/coaching"
+                  className="text-sm font-bold text-gold hover:text-gold-light transition-colors"
+                >
+                  See Coaching Plans &rarr;
+                </a>
+                <span className="text-gray-300">|</span>
+                <a
+                  href="/contact"
+                  className="text-sm font-bold text-navy hover:text-gold transition-colors"
+                >
+                  Book a Free Discovery Call
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Bottom CTA */}
       <section className="py-16 md:py-20 bg-navy">
         <div className="max-w-2xl mx-auto px-6 text-center">

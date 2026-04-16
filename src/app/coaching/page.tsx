@@ -164,6 +164,22 @@ export default function CoachingPage() {
             </p>
           </div>
 
+          {/* Stats Bar */}
+          <div className="grid grid-cols-3 gap-4 mb-8 max-w-2xl mx-auto">
+            <div className="text-center p-4 bg-gold/5 rounded-lg border border-gold/20">
+              <p className="text-2xl md:text-3xl font-black text-navy" style={{ fontFamily: "var(--font-heading)" }}>10+</p>
+              <p className="text-xs text-gray-500 font-medium mt-1">Years Trading ICT</p>
+            </div>
+            <div className="text-center p-4 bg-gold/5 rounded-lg border border-gold/20">
+              <p className="text-2xl md:text-3xl font-black text-navy" style={{ fontFamily: "var(--font-heading)" }}>85%</p>
+              <p className="text-xs text-gray-500 font-medium mt-1">Students Pass Challenges</p>
+            </div>
+            <div className="text-center p-4 bg-gold/5 rounded-lg border border-gold/20">
+              <p className="text-2xl md:text-3xl font-black text-navy" style={{ fontFamily: "var(--font-heading)" }}>60</p>
+              <p className="text-xs text-gray-500 font-medium mt-1">Days Avg. to Funded</p>
+            </div>
+          </div>
+
           {/* Social Proof */}
           <div className="bg-navy/5 border border-navy/10 rounded-xl p-6 mb-12 max-w-2xl mx-auto text-center">
             <p className="text-navy/70 text-base italic leading-relaxed mb-3">

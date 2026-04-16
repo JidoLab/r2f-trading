@@ -179,6 +179,64 @@ export default async function BlogPostPage({
     },
   };
 
+  // Generate FAQ schema for FAQ-type posts (extract Q&A pairs from content)
+  let faqLd: Record<string, unknown> | null = null;
+  if (post.postType === "faq") {
+    // Extract bold questions followed by answers from the body
+    const faqRegex = /\*\*(.+?)\*\*\s*\n\n([^*#]+?)(?=\n\n\*\*|\n\n##|\n*$)/g;
+    const faqItems: { question: string; answer: string }[] = [];
+    let faqMatch;
+    while ((faqMatch = faqRegex.exec(rawContent)) !== null && faqItems.length < 10) {
+      const q = faqMatch[1].replace(/\??\s*$/, "?").trim();
+      const a = faqMatch[2].trim().slice(0, 500);
+      if (q.length > 10 && a.length > 20) {
+        faqItems.push({ question: q, answer: a });
+      }
+    }
+    if (faqItems.length >= 2) {
+      faqLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqItems.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      };
+    }
+  }
+
+  // Generate HowTo schema for how-to/checklist posts (extract steps from numbered lists)
+  let howToLd: Record<string, unknown> | null = null;
+  if (post.postType === "how-to" || post.postType === "checklist") {
+    const stepRegex = /^\d+\.\s+\*\*(.+?)\*\*(?:\s*[-–—:]\s*)?(.+)?$/gm;
+    const steps: { name: string; text: string }[] = [];
+    let stepMatch;
+    while ((stepMatch = stepRegex.exec(rawContent)) !== null && steps.length < 15) {
+      steps.push({
+        name: stepMatch[1].trim(),
+        text: (stepMatch[2] || stepMatch[1]).trim().slice(0, 300),
+      });
+    }
+    if (steps.length >= 3) {
+      howToLd = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        name: post.title,
+        description: post.seoDescription || post.excerpt,
+        step: steps.map((s, i) => ({
+          "@type": "HowToStep",
+          position: i + 1,
+          name: s.name,
+          text: s.text,
+        })),
+      };
+    }
+  }
+
   const imageObjectsLd = bodyImages.map((img) => ({
     "@context": "https://schema.org",
     "@type": "ImageObject",
@@ -200,6 +258,18 @@ export default async function BlogPostPage({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(imageObjectsLd) }}
+        />
+      )}
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
+      {howToLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }}
         />
       )}
 

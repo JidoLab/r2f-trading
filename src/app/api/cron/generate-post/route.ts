@@ -7,14 +7,6 @@ import { GoogleGenAI } from "@google/genai";
 
 export const maxDuration = 120;
 
-const TOPIC_MATRIX = [
-  { category: "ICT Concepts", topics: ["Understanding Fair Value Gaps and How to Trade Them", "Liquidity Sweeps: How Smart Money Hunts Stop Losses", "Market Structure Shifts Explained for ICT Traders", "How to Use ICT Killzones for Optimal Entry Timing", "The Power of Breaker Blocks in ICT Trading", "ICT Optimal Trade Entry: Finding High-Probability Setups", "Understanding Displacement and How It Signals Institutional Activity"] },
-  { category: "Trading Psychology", topics: ["Why Most Traders Fail: The Psychology Behind Consistent Losses", "Building a Winning Mindset: Mental Frameworks for Traders", "How to Handle Losing Streaks Without Blowing Your Account", "The Role of Patience in Profitable Trading", "Overcoming Fear of Missing Out (FOMO) in Trading", "Emotional Detachment: Trading Like a Professional", "Journal Your Way to Profits: The Power of Trade Journaling"] },
-  { category: "Risk Management", topics: ["Position Sizing: The Most Important Skill No One Teaches", "Risk-to-Reward Ratios: What Actually Matters", "How to Protect Your Funded Account from Drawdown", "Building a Risk Management Plan That Actually Works", "The 1% Rule and Why It Transforms Your Trading", "Scaling In and Out of Positions: A Practical Guide"] },
-  { category: "Funded Accounts", topics: ["How to Pass Your First Prop Firm Challenge", "FTMO vs Other Prop Firms: What to Consider", "Common Mistakes That Fail Funded Account Challenges", "Managing a Funded Account Like a Business", "From Prop Firm Challenge to Consistent Payouts: A Roadmap", "The Truth About Funded Trading: What They Don't Tell You"] },
-  { category: "Market Analysis", topics: ["How to Read Price Action Like an Institutional Trader", "Multi-Timeframe Analysis: A Step-by-Step Approach", "Understanding Forex Sessions and Their Impact on Volatility", "Gold (XAUUSD) Trading Strategies Using ICT Concepts", "How Economic Events Affect Your ICT Setups", "Reading Candlestick Patterns Through the ICT Lens"] },
-];
-
 function slugify(text: string): string {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
