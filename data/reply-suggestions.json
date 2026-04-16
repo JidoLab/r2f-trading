@@ -1,5 +1,75 @@
 [
   {
+    "id": "sug-1776299413504-f6qqu",
+    "platform": "linkedin",
+    "postTitle": "fair value gaps and imbalance trading",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=fair%20value%20gaps%20and%20imbalance%20trading",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Fair value gaps become truly powerful when you combine them with the higher timeframe draw on liquidity. Most traders react to the gap itself without asking where price is actually going. I always teach my students to identify the target first, then work back to the entry. That sequence changes everything about how you read imbalances.",
+    "createdAt": "2026-04-16T00:30:13.504Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776299415882-ypxw1",
+    "platform": "linkedin",
+    "postTitle": "ICT trading concepts every trader should learn",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=ICT%20trading%20concepts%20every%20trader%20should%20learn",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Most traders learn ICT concepts in isolation and wonder why they still lose. The real edge comes when you connect liquidity sweeps with time of day, specifically killzone sessions. Once that clicks, everything else starts to make sense. I watch my students transform once they stop memorizing terms and start reading price with context.",
+    "createdAt": "2026-04-16T00:30:15.882Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776299418713-t4qif",
+    "platform": "medium",
+    "postTitle": "Excellence Does Not Mean Obligation",
+    "postUrl": "https://medium.com/@damaristradesllc/excellence-does-not-mean-obligation-b34be9b527c5?source=rss------day_trading-5",
+    "authorName": "Damaris Options Trading",
+    "suggestedReply": "This reframing of excellence hit differently. Many traders confuse skill with obligation, taking every setup simply because they *can* read it well. The market rewards patience, not performance. Knowing when to sit on your hands is just as much a craft as knowing when to pull the trigger.",
+    "createdAt": "2026-04-16T00:30:18.713Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776299422124-0476s",
+    "platform": "medium",
+    "postTitle": "This Forex Strategy Using Non Repaint Indicator Changed Everything",
+    "postUrl": "https://forexlearninghub.medium.com/this-forex-strategy-using-non-repaint-indicator-changed-everything-9c7e5cf85e8a?source=rss------forex_trading-5",
+    "authorName": "Forex Scalper Trader",
+    "suggestedReply": "Non-repaint indicators can genuinely shift how traders approach entry timing, but the real edge comes from understanding WHY the signal fires, not just acting on it. I always push my students to back-test any indicator across multiple market conditions before trusting it live. Confluence with structure and liquidity zones is what separates consistent results from lucky streaks.",
+    "createdAt": "2026-04-16T00:30:22.124Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776299424778-akcyh",
+    "platform": "medium",
+    "postTitle": "The Real Reason You’re Not Profitable (It’s Not Your Strategy)",
+    "postUrl": "https://medium.com/@flowgenio/the-real-reason-youre-not-profitable-it-s-not-your-strategy-0c6ca018d924?source=rss------forex_trading-5",
+    "authorName": "Flowgenio | FGen.io",
+    "suggestedReply": "After 10 years watching traders blow accounts, the psychology piece you touched on is everything. Most people chase setups to avoid sitting with uncertainty, not because the setup is actually there. I see this constantly with my students. The market does not reward busyness, it rewards patience and honest self assessment.",
+    "createdAt": "2026-04-16T00:30:24.778Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776299427116-2r97o",
+    "platform": "medium",
+    "postTitle": "Neural Networks and Evolution Strategies for Trading Signals",
+    "postUrl": "https://pyquantlab.medium.com/neural-networks-and-evolution-strategies-for-trading-signals-ffe9eb0e9989?source=rss------trading-5",
+    "authorName": "PyQuantLab",
+    "suggestedReply": "The combination of evolution strategies with neural networks for signal generation is something I've been watching closely. What often gets overlooked is how these models handle regime changes during high impact news events. In live markets, the edge disappears fast if your architecture isn't adaptive enough. Appreciate the depth here, PyQuantLab.",
+    "createdAt": "2026-04-16T00:30:27.116Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776299429375-so57y",
+    "platform": "medium",
+    "postTitle": "The One Protocol That Turns Blowing Account Busts Into Funded",
+    "postUrl": "https://medium.com/@fundingframework/the-one-protocol-that-turns-blowing-account-busts-into-funded-4bfb3cd1b6d9?source=rss------day_trading-5",
+    "authorName": "Funding Framework",
+    "suggestedReply": "The reset mindset shift you described is exactly what separates repeat failures from funded traders. Most people chase the evaluation again with the same psychology that caused the bust. I tell my students that passing a challenge is a behavior problem before it is ever a strategy problem. Fix the ritual, fix the result.",
+    "createdAt": "2026-04-16T00:30:29.375Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776217433202-ooxti",
     "platform": "investinglive",
     "postTitle": "PBOC sets USD/ CNY mid-point today at 6.8582 (vs. estimate at 6.8096)",
