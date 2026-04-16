@@ -6,7 +6,7 @@ import Anthropic from "@anthropic-ai/sdk";
 export const maxDuration = 120;
 
 export async function POST(req: NextRequest) {
-  const admin = await verifyAdmin(req);
+  const admin = await verifyAdmin();
   if (!admin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   const body = await req.json().catch(() => ({}));
