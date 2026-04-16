@@ -102,9 +102,15 @@ export default function ThankYouPage() {
           >
             Book Your Free Discovery Call
           </h2>
-          <p className="text-white/50 text-center text-sm mb-8">
+          <p className="text-white/50 text-center text-sm mb-4">
             15 minutes. No pressure. Let&apos;s talk about your trading goals and see if coaching is right for you.
           </p>
+          <div className="flex justify-center mb-6">
+            <span className="inline-flex items-center gap-2 bg-gold/10 text-gold text-xs font-bold px-4 py-2 rounded-full border border-gold/20">
+              <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
+              Limited spots available this month
+            </span>
+          </div>
           <CalendlyEmbed />
         </div>
       </section>

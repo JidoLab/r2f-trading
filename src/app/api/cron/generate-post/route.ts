@@ -145,6 +145,11 @@ SEO CRITICAL: Target keyword MUST appear in first paragraph, first ## header, an
 INTERNAL LINKING: Include 2-3 links to the related posts above where they naturally fit in context. This helps SEO.
 Include 1-2 EXTERNAL LINKS to authoritative sources (TradingView, Investopedia, BabyPips, CME Group).
 IMAGE alt text must be keyword-rich and descriptive, not generic.
+META DESCRIPTION RULES for "seoDescription":
+- MUST be 130-155 characters (Google truncates at 160)
+- NEVER start with "Discover", "Learn", "Master", "Find out", or "Complete guide" — these are generic and hurt CTR
+- Start with a specific claim, number, or action verb instead (e.g., "3 ICT setups got my students funded in 60 days", "Stop losing funded accounts to revenge trading")
+- Include the target keyword naturally
 Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDescription": "...", "seoKeywords": [...], "tags": [...], "postType": "...", "body": "...", "imagePrompts": ["...", "..."] }`,
       }],
     });
