@@ -128,6 +128,26 @@ INTERNAL LINKS (use 2-4 of these naturally within the article body):
 - [student results](/results) — link when mentioning student outcomes
 ${existingTitles.length > 0 ? `- RELATED POSTS (link to 2-3 relevant ones naturally in the body):\n${existingTitles.slice(0, 15).map(t => `  - [${t.replace(/^\d{4}-\d{2}-\d{2}-/, "").replace(/-/g, " ")}](/trading-insights/${t})`).join("\n")}` : ""}
 Write 1200-1800 words, first person as Harvest. Structure to match the POST TYPE format.
+
+STRUCTURAL VARIATION — CRITICAL for SEO:
+- Vary the number of H2 sections (3-7, not always the same count)
+- Vary paragraph lengths (mix short 1-2 sentence paragraphs with longer ones)
+- For how-to and checklist: use numbered steps
+- For listicle: use H3 sub-headers under H2s
+- For case-study and personal-story: use narrative flow with fewer headers
+- For faq: use Q&A format with bold questions
+- For myth-buster: use "Myth:" / "Reality:" formatting
+- Do NOT follow the same template every time — deliberately vary structure
+
+ANSWER BLOCK — Include a "Key Takeaway" callout near the TOP of the article (after the first paragraph), formatted as:
+> **Key Takeaway:** [1-2 sentence direct answer to the main question this article addresses]
+This helps the article get cited in AI search results (Google AI Overviews, ChatGPT, Perplexity).
+
+E-E-A-T SIGNALS — Include at least ONE of these per article:
+- A specific personal trading example with numbers (e.g., "I took a 0.5% risk on EURUSD last Tuesday...")
+- A reference to your student outcomes (e.g., "3 of my students passed FTMO this month using this approach")
+- A proprietary observation from your 10+ years of experience that isn't in textbooks
+
 TITLE RULES: The "title" field MUST be under 60 characters. Short and punchy. Do NOT stuff keywords. The "seoTitle" can be slightly longer (max 70 chars) and more keyword-rich.
 SEO CRITICAL: Target keyword MUST appear in first paragraph, first ## header, and 3-5 times naturally in body.
 INTERNAL LINKING: Include 2-3 links to the related posts above where they naturally fit in context. This helps SEO.

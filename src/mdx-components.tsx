@@ -47,14 +47,45 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <ol className="list-decimal pl-6 text-gray-600 space-y-2 mb-4">{children}</ol>
     ),
     li: ({ children }) => <li className="leading-relaxed">{children}</li>,
-    blockquote: ({ children }) => (
-      <blockquote
-        className="border-l-4 border-gold pl-6 my-6 italic text-navy/70"
-        style={{ fontFamily: "var(--font-serif)" }}
-      >
-        {children}
-      </blockquote>
-    ),
+    blockquote: ({ children }) => {
+      // Check if this is a "Key Takeaway" answer block
+      const text = typeof children === "string" ? children : "";
+      const childArray = Array.isArray(children) ? children : [children];
+      const isKeyTakeaway = childArray.some((child: unknown) => {
+        if (typeof child === "string") return child.includes("Key Takeaway");
+        if (child && typeof child === "object" && "props" in (child as Record<string, unknown>)) {
+          const props = (child as { props?: { children?: unknown } }).props;
+          const nested = props?.children;
+          if (typeof nested === "string") return nested.includes("Key Takeaway");
+          if (Array.isArray(nested)) return nested.some((n: unknown) => {
+            if (typeof n === "string") return n.includes("Key Takeaway");
+            if (n && typeof n === "object" && "props" in (n as Record<string, unknown>)) {
+              const nProps = (n as { props?: { children?: string } }).props;
+              return typeof nProps?.children === "string" && nProps.children.includes("Key Takeaway");
+            }
+            return false;
+          });
+        }
+        return false;
+      });
+
+      if (isKeyTakeaway) {
+        return (
+          <blockquote className="border-l-4 border-gold bg-gold/5 pl-6 pr-6 py-4 my-8 rounded-r-lg not-italic text-navy">
+            {children}
+          </blockquote>
+        );
+      }
+
+      return (
+        <blockquote
+          className="border-l-4 border-gold pl-6 my-6 italic text-navy/70"
+          style={{ fontFamily: "var(--font-serif)" }}
+        >
+          {children}
+        </blockquote>
+      );
+    },
     strong: ({ children }) => (
       <strong className="font-bold text-navy">{children}</strong>
     ),

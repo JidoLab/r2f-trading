@@ -151,9 +151,32 @@ export default async function BlogPostPage({
       ? (post.coverImage.startsWith("http") ? post.coverImage : `https://www.r2ftrading.com${post.coverImage}`)
       : undefined,
     datePublished: post.date,
-    author: { "@type": "Person", name: "Harvest Wright", url: "https://www.r2ftrading.com/about" },
-    publisher: { "@type": "Organization", name: "R2F Trading", url: "https://www.r2ftrading.com" },
+    dateModified: post.date,
+    author: {
+      "@type": "Person",
+      name: "Harvest Wright",
+      url: "https://www.r2ftrading.com/about",
+      jobTitle: "ICT Trading Coach",
+      sameAs: [
+        "https://x.com/Road2Funded",
+        "https://www.tradingview.com/u/HarvestSignals/",
+      ],
+      knowsAbout: ["ICT trading", "forex coaching", "prop firm challenges", "trading psychology"],
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "R2F Trading",
+      url: "https://www.r2ftrading.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.r2ftrading.com/favicon.png",
+      },
+    },
     keywords: post.seoKeywords?.join(", "),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.r2ftrading.com/trading-insights/${slug}`,
+    },
   };
 
   const imageObjectsLd = bodyImages.map((img) => ({
