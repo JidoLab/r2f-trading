@@ -1,50 +1,5 @@
 [
   {
-    "date": "2026-04-07T06:29:42.789Z",
-    "slug": "2026-04-07-how-to-trade-nfp-friday-with-ict-smart-money-concepts-complete-48-hour-liquidity-playbook",
-    "title": "How to Trade NFP Friday with ICT Smart Money Concepts: Complete 48-Hour Liquidity Playbook",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-07T12:58:13.333Z",
     "type": "text",
     "postType": "poll",
@@ -1979,6 +1934,52 @@
     "date": "2026-04-15T23:32:09.818Z",
     "slug": "2026-04-15-retail-sales-week-ict-killzones-react",
     "title": "Retail Sales Week: ICT Killzones React",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-16T00:31:44.142Z",
+    "slug": "2026-04-16-retail-sales-week-how-ict-traders-read-it",
+    "title": "Retail Sales Week: How ICT Traders Read It",
     "results": [
       {
         "platform": "twitter",
