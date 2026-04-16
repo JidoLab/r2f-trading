@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-15T03:45:28.423Z",
+  "generatedAt": "2026-04-16T08:14:13.769Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Wednesday, 15 April 2026 at 10:45 (Bangkok)",
+  "dateTime": "Thursday, 16 April 2026 at 15:14 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -11,12 +11,12 @@
     "chatConversations": 0
   },
   "contentStatus": {
-    "blogPostsToday": 2,
-    "totalBlogPosts": 36,
+    "blogPostsToday": 0,
+    "totalBlogPosts": 40,
     "shortsReady": 0,
     "shortsPublished": 11,
     "shortsRendering": 0,
-    "socialPostsThisWeek": 25
+    "socialPostsThisWeek": 47
   },
   "hotLeads": {
     "count": 0,
@@ -24,9 +24,9 @@
   },
   "suggestions": [
     "Personally message all 5 cold subscribers on Telegram or WhatsApp to introduce yourself as Harvest and spark a direct conversation about their trading goals.",
-    "Post a manual short-form video or Instagram Reel of Harvest speaking directly to camera about a specific ICT concept (e.g., order blocks or fair value gaps) to build personal brand trust beyond automated content.",
-    "Set up a paid traffic campaign (Facebook or TikTok ads) targeting Bangkok-area traders with a low-budget test of $10–$20/day, since organic is generating zero new subscribers.",
-    "Reach out to 3–5 Thai trading communities or Facebook Groups manually to share a pinned blog post or offer a free ICT mini-lesson, creating a direct subscriber acquisition channel outside automated Reddit posting."
+    "Launch a manual lead generation push today by posting a value-packed ICT trading tip in 2-3 Facebook or LinkedIn trading groups to drive new subscriber sign-ups.",
+    "Record and post a short personal video (60-90 seconds) of Harvest sharing a quick ICT concept or Bangkok trading lifestyle clip to humanize the brand and attract warm traffic.",
+    "Reach out to at least 3 past students or contacts personally to ask for a referral or testimonial that can be repurposed as social proof across R2F Trading channels."
   ],
   "schedule": [
     {
