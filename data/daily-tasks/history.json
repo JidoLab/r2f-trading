@@ -44,8 +44,8 @@
         "category": "content",
         "estimatedMinutes": 15,
         "source": "ai",
-        "completed": false,
-        "completedAt": null
+        "completed": true,
+        "completedAt": "2026-04-16T14:08:50.218Z"
       },
       {
         "id": "ai-1776348308052-2",
@@ -66,7 +66,7 @@
         "completedAt": null
       }
     ],
-    "completedCount": 5,
+    "completedCount": 6,
     "totalCount": 7
   },
   {
