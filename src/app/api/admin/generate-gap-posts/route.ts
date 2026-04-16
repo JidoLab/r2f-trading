@@ -95,6 +95,11 @@ Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDes
         ]);
       }
 
+      // Guardrail: fallback cover image if Gemini failed
+      if (!coverImage) {
+        coverImage = "/og-image.jpg";
+      }
+
       // Replace image placeholders
       let body = article.body;
       body = img1Path ? body.replace(/\(IMAGE_1\)/, `(${img1Path})`) : body.replace(/!\[.*?\]\(IMAGE_1\)\n?/, "");

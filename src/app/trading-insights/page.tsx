@@ -48,8 +48,8 @@ export default function TradingInsightsPage() {
                   href={`/trading-insights/${post.slug}`}
                   className="group block rounded-lg overflow-hidden border border-gray-200 hover:border-gold/40 transition-colors"
                 >
-                  {post.coverImage && (
-                    <div className="aspect-video overflow-hidden bg-gray-100">
+                  <div className="aspect-video overflow-hidden bg-gray-100">
+                    {post.coverImage ? (
                       <img
                         src={post.coverImage}
                         alt={post.title}
@@ -59,8 +59,12 @@ export default function TradingInsightsPage() {
                         height={360}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
-                    </div>
-                  )}
+                    ) : (
+                      <div className="w-full h-full bg-navy flex items-center justify-center">
+                        <span className="text-4xl font-black text-gold/30" style={{ fontFamily: "var(--font-heading)" }}>R2F</span>
+                      </div>
+                    )}
+                  </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <time className="text-xs text-gray-400">{post.date}</time>

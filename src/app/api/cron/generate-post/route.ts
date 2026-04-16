@@ -97,6 +97,20 @@ Return ONLY a JSON object: { "topic": "...", "category": "...", "postType": "...
     topicText = topicText.replace(/^```(?:json)?\s*\n?/, "").replace(/\n?```\s*$/, "").trim();
     const topicData = JSON.parse(topicText);
 
+    // Guardrail: duplicate topic detection — check if a very similar slug already exists
+    const proposedSlug = slugify(topicData.topic);
+    const slugWords = proposedSlug.split("-").filter((w: string) => w.length > 3);
+    const isDuplicate = existingTitles.some(existing => {
+      const existingWords = existing.replace(/^\d{4}-\d{2}-\d{2}-/, "").split("-").filter(w => w.length > 3);
+      const overlap = slugWords.filter((w: string) => existingWords.includes(w)).length;
+      return overlap >= Math.min(4, slugWords.length * 0.6);
+    });
+
+    if (isDuplicate) {
+      console.log(`[cron] Skipping duplicate topic: "${topicData.topic}" — too similar to existing post`);
+      return NextResponse.json({ skipped: true, reason: "Duplicate topic detected", topic: topicData.topic });
+    }
+
     // Generate article
     const articleResponse = await anthropic.messages.create({
       model: "claude-sonnet-4-6",
@@ -154,6 +168,12 @@ Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDes
         article.imagePrompts?.[0] ? genImage(article.imagePrompts[0], `${slug}-img1.jpg`) : Promise.resolve(""),
         article.imagePrompts?.[1] ? genImage(article.imagePrompts[1], `${slug}-img2.jpg`) : Promise.resolve(""),
       ]);
+    }
+
+    // Guardrail: if cover image generation failed, use fallback
+    if (!coverImage) {
+      coverImage = "/og-image.jpg";
+      console.log("[cron] Cover image generation failed — using fallback /og-image.jpg");
     }
 
     // Replace image placeholders
