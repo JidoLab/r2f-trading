@@ -140,6 +140,14 @@ export async function GET(req: NextRequest) {
     if (!todayEntry) {
       const tasks = await generateTodayTasks();
       todayEntry = { date: today, tasks, completedCount: 0, totalCount: tasks.length };
+      // Persist immediately so POST can find the same task IDs
+      history.unshift(todayEntry);
+      const trimmed = history.slice(0, 90);
+      await commitFile(
+        HISTORY_PATH,
+        JSON.stringify(trimmed, null, 2),
+        `Daily tasks: generated ${tasks.length} tasks for ${today}`
+      ).catch(() => {}); // Don't fail the GET if commit fails
     }
 
     if (countOnly) {
