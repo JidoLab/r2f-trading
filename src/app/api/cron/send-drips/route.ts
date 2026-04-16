@@ -14,6 +14,10 @@ import {
   reviewRequestEmail,
   hotLeadFollowUpEmail,
   staleLeadReengageEmail,
+  tradingPsychologyTipEmail,
+  propFirmTipsEmail,
+  valueRecapEmail,
+  lastChanceEmail,
 } from "@/lib/email-templates";
 
 export const maxDuration = 60;
@@ -28,14 +32,23 @@ const TEMPLATES: Record<string, () => { subject: string; html: string }> = {
   bookCallSoft: bookCallSoftEmail,
   bookCallUrgent: bookCallUrgentEmail,
   limitedSpots: limitedSpotsEmail,
+  tradingPsychology: tradingPsychologyTipEmail,
+  propFirmTips: propFirmTipsEmail,
+  valueRecap: valueRecapEmail,
+  lastChance: lastChanceEmail,
 };
 
 // Drip sequences by segment — [day, templateKey]
+// Cold: 8-email sequence over 30 days (welcome → value → conversion → recap)
 const COLD_SEQUENCE: [number, string][] = [
-  [2, "beginnerMistakes"],
-  [5, "ictConcepts"],
-  [8, "successStory"],
-  [14, "coachingCta"],
+  [2, "beginnerMistakes"],       // Welcome: common mistakes
+  [5, "ictConcepts"],            // Welcome: core concepts
+  [8, "successStory"],           // Value: social proof
+  [12, "tradingPsychology"],     // Value: psychology tip
+  [16, "propFirmTips"],          // Value: prop firm advice
+  [20, "coachingCta"],           // Conversion: coaching pitch
+  [25, "valueRecap"],            // Recap: everything in one place
+  [30, "lastChance"],            // Final: soft close + respect inbox
 ];
 
 const WARM_SEQUENCE: [number, string][] = [
@@ -232,12 +245,12 @@ export async function GET(req: NextRequest) {
       const events = (sub.events as { type: string }[]) || [];
       const dripsHistory = (sub.dripsHistory as string[]) || [];
 
-      // Target: signed up 7+ days ago, still cold, completed their drip sequence,
+      // Target: signed up 35+ days ago, still cold, completed their full drip sequence,
       // never visited coaching/contact pages, and haven't received re-engagement yet
       if (segment !== "cold") continue;
-      if (daysSinceSignup < 7) continue;
+      if (daysSinceSignup < 35) continue; // Wait until drip sequence (30 days) is fully complete
       if (sub.staleReengageSent === true) continue;
-      if (dripsHistory.length < 3) continue; // Let the regular drips finish first
+      if (dripsHistory.length < 6) continue; // Let the regular drips finish first
       const visitedHighValue = events.some(e =>
         e.type === "coaching_page_view" || e.type === "contact_page_view" || e.type === "booking_click"
       );

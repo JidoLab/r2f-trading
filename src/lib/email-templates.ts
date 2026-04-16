@@ -836,3 +836,79 @@ export function coachingUpsellEmail(name: string): { subject: string; html: stri
     ),
   };
 }
+
+// --- Extended cold sequence emails (Days 18-30) ---
+
+export function tradingPsychologyTipEmail(): { subject: string; html: string } {
+  return {
+    subject: "The #1 reason traders blow funded accounts",
+    html: layout(
+      "It's Not Your Strategy — It's Your Head",
+      `<p style="color:#555;line-height:1.7;">Hey there,</p>
+      <p style="color:#555;line-height:1.7;">I've coached dozens of traders, and the pattern is always the same: they have a solid strategy, they pass their challenge, then they blow the funded account within 2 weeks.</p>
+      <p style="color:#555;line-height:1.7;">Why? <strong style="color:${BRAND.navy};">Revenge trading after the first loss.</strong></p>
+      <p style="color:#555;line-height:1.7;">Here's the simple rule I teach my students: after any losing trade, close your charts for at least 1 hour. No exceptions. This alone saved 3 of my students' funded accounts last month.</p>
+      <p style="color:#555;line-height:1.7;">Trading psychology is 80% of the game. The strategy is the easy part.</p>
+      <p style="color:#555;line-height:1.7;">— Harvest</p>`,
+      { text: "Read More Trading Psychology Tips", url: `${BRAND.url}/trading-insights` }
+    ),
+  };
+}
+
+export function propFirmTipsEmail(): { subject: string; html: string } {
+  return {
+    subject: "3 things I wish I knew before my first FTMO challenge",
+    html: layout(
+      "Prop Firm Secrets Nobody Talks About",
+      `<p style="color:#555;line-height:1.7;">Hi there,</p>
+      <p style="color:#555;line-height:1.7;">I've passed multiple prop firm challenges and coached students through even more. Here are the 3 things that actually matter:</p>
+      <ol style="color:#555;line-height:1.9;padding-left:20px;">
+        <li><strong style="color:${BRAND.navy};">Risk 0.5%, not 1%.</strong> The challenge rules say 5% max drawdown — but one bad day at 1% risk and you're already halfway there. My students use 0.5% and pass more consistently.</li>
+        <li><strong style="color:${BRAND.navy};">Trade only killzones.</strong> London Open and NY Open. That's it. The rest is noise that bleeds your account.</li>
+        <li><strong style="color:${BRAND.navy};">Target 3R minimum.</strong> A 3:1 reward-to-risk means you only need to win 30% of the time to be profitable. Take the pressure off yourself.</li>
+      </ol>
+      <p style="color:#555;line-height:1.7;">Try our free risk calculator to practice these numbers before risking real capital.</p>
+      <p style="color:#555;line-height:1.7;">— Harvest</p>`,
+      { text: "Free Risk/Reward Calculator", url: `${BRAND.url}/tools/risk-calculator` }
+    ),
+  };
+}
+
+export function valueRecapEmail(): { subject: string; html: string } {
+  return {
+    subject: "Quick recap: everything I've shared so far",
+    html: layout(
+      "Your ICT Trading Resource Hub",
+      `<p style="color:#555;line-height:1.7;">Hey,</p>
+      <p style="color:#555;line-height:1.7;">Over the past few weeks, I've shared some of my best trading insights with you. In case you missed any, here's everything in one place:</p>
+      <ul style="color:#555;line-height:1.9;padding-left:20px;">
+        <li>📊 <a href="${BRAND.url}/tools/risk-calculator" style="color:${BRAND.gold};">Risk/Reward Calculator</a> — Size your positions properly</li>
+        <li>📚 <a href="${BRAND.url}/trading-insights" style="color:${BRAND.gold};">Trading Blog</a> — 40+ articles on ICT concepts, psychology, and risk management</li>
+        <li>🎓 <a href="${BRAND.url}/crash-course" style="color:${BRAND.gold};">Free 5-Day Crash Course</a> — The 3 ICT setups that actually work</li>
+        <li>📋 <a href="${BRAND.url}/free-class" style="color:${BRAND.gold};">Free ICT Checklist</a> — The exact checklist I use before every trade</li>
+      </ul>
+      <p style="color:#555;line-height:1.7;">If any of this has been helpful, the next step is a free 15-minute discovery call. I'll give you honest feedback on your trading — no pitch, no pressure.</p>
+      <p style="color:#555;line-height:1.7;">— Harvest</p>`,
+      { text: "Book a Free Discovery Call", url: `${BRAND.url}/contact` }
+    ),
+  };
+}
+
+export function lastChanceEmail(): { subject: string; html: string } {
+  return {
+    subject: "Last email from me (unless you want more)",
+    html: layout(
+      "Should I Keep Sending?",
+      `<p style="color:#555;line-height:1.7;">Hey,</p>
+      <p style="color:#555;line-height:1.7;">I've been sending you trading tips for a few weeks now, and I want to respect your time.</p>
+      <p style="color:#555;line-height:1.7;">If you're finding these emails useful, you don't need to do anything — I'll keep sharing my best insights via our weekly newsletter.</p>
+      <p style="color:#555;line-height:1.7;">But if you're serious about leveling up your trading, here's what I'd recommend as your next step:</p>
+      <blockquote style="border-left:4px solid ${BRAND.gold};padding:12px 20px;margin:20px 0;background:${BRAND.cream};border-radius:4px;">
+        <strong style="color:${BRAND.navy};">Book a free 15-minute call with me.</strong> I'll review where you're at, give you honest feedback, and tell you exactly what to focus on next — whether that's coaching with me or not.
+      </blockquote>
+      <p style="color:#555;line-height:1.7;">Either way, thanks for being part of the R2F community. 🤝</p>
+      <p style="color:#555;line-height:1.7;">— Harvest</p>`,
+      { text: "Book Your Free Call", url: `${BRAND.url}/contact` }
+    ),
+  };
+}
