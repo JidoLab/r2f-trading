@@ -1,24 +1,24 @@
 {
-  "date": "2026-04-16T03:31:05.169Z",
+  "date": "2026-04-16T13:48:02.007Z",
   "today": "2026-04-16",
   "topicsAttempted": [
-    "London vs New York Session: Which is Actually Better?",
-    "Honest Review: My First Month Trading ICT Concepts",
-    "4 Displacement Patterns That Print Money"
+    "Dissecting This 200 Pip Move on GBPUSD",
+    "My Position Sizing Evolution: From Broke to Profitable",
+    "The Trade That Taught Me Patience is Everything"
   ],
   "results": [
     {
-      "title": "London vs New York Session: Which is Actually Better?",
+      "title": "Dissecting This 200 Pip Move on GBPUSD",
       "status": "error",
       "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
     },
     {
-      "title": "Honest Review: My First Month Trading ICT Concepts",
+      "title": "My Position Sizing Evolution: From Broke to Profitable",
       "status": "error",
       "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
     },
     {
-      "title": "4 Displacement Patterns That Print Money",
+      "title": "The Trade That Taught Me Patience is Everything",
       "status": "error",
       "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
     }
