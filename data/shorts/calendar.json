@@ -193,20 +193,20 @@
     "topic": "Institutional Order Flow Secrets in 45 Seconds",
     "contentType": "rapid-fire",
     "category": "ICT Concepts",
-    "used": false
+    "used": true
   },
   {
     "date": "2026-05-04",
     "topic": "High Frequency vs Smart Money: Who Really Moves Markets?",
     "contentType": "debate",
     "category": "Market Analysis",
-    "used": false
+    "used": true
   },
   {
     "date": "2026-05-05",
     "topic": "Testing This Viral ICT Strategy for 30 Days - Results",
     "contentType": "review",
     "category": "Strategy Development",
-    "used": false
+    "used": true
   }
 ]
