@@ -2069,5 +2069,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-16T12:00:41.709Z",
+    "type": "text",
+    "postType": "quote",
+    "text": "\"The market doesn't reward effort. It rewards patience and precision.\"\n\nThursdays hit different — hi",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
