@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-16T08:14:13.769Z",
+  "generatedAt": "2026-04-16T13:11:06.381Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Thursday, 16 April 2026 at 15:14 (Bangkok)",
+  "dateTime": "Thursday, 16 April 2026 at 20:11 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -12,21 +12,21 @@
   },
   "contentStatus": {
     "blogPostsToday": 0,
-    "totalBlogPosts": 40,
+    "totalBlogPosts": 37,
     "shortsReady": 0,
     "shortsPublished": 11,
     "shortsRendering": 0,
-    "socialPostsThisWeek": 47
+    "socialPostsThisWeek": 48
   },
   "hotLeads": {
     "count": 0,
     "recentHot": []
   },
   "suggestions": [
-    "Personally message all 5 cold subscribers on Telegram or WhatsApp to introduce yourself as Harvest and spark a direct conversation about their trading goals.",
-    "Launch a manual lead generation push today by posting a value-packed ICT trading tip in 2-3 Facebook or LinkedIn trading groups to drive new subscriber sign-ups.",
-    "Record and post a short personal video (60-90 seconds) of Harvest sharing a quick ICT concept or Bangkok trading lifestyle clip to humanize the brand and attract warm traffic.",
-    "Reach out to at least 3 past students or contacts personally to ask for a referral or testimonial that can be repurposed as social proof across R2F Trading channels."
+    "With 5 cold subscribers and 0 new sign-ups yesterday, manually review and optimize your lead capture page or opt-in offer to improve conversion — consider A/B testing a new headline or free resource hook.",
+    "Post a personal, behind-the-scenes Telegram or Instagram Story today showing a live trade or Bangkok trading setup — authentic human content from Harvest can break through where automated posts plateau.",
+    "Reach out directly and personally to all 5 cold subscribers via a one-on-one personalized message (not the drip) referencing their specific sign-up context to spark a reply and move them toward warm.",
+    "With 37 blog posts live but 0 chat conversations, manually add a pop-up or inline CTA to the top 5 performing blog posts offering a free ICT strategy consultation with Harvest to convert existing traffic."
   ],
   "schedule": [
     {
