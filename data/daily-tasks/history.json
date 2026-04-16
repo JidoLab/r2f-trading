@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-04-16",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": true,
+        "completedAt": "2026-04-16T14:05:08.052Z"
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776348308052-0",
+        "title": "With 5 cold subscribers and 0 new sign-ups yesterday, manually review and optimize your lead capture page or opt-in offer to improve conversion — consider A/B testing a new headline or free resource hook.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776348308052-1",
+        "title": "Post a personal, behind-the-scenes Telegram or Instagram Story today showing a live trade or Bangkok trading setup — authentic human content from Harvest can break through where automated posts plateau.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776348308052-2",
+        "title": "Reach out directly and personally to all 5 cold subscribers via a one-on-one personalized message (not the drip) referencing their specific sign-up context to spark a reply and move them toward warm.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776348308052-3",
+        "title": "With 37 blog posts live but 0 chat conversations, manually add a pop-up or inline CTA to the top 5 performing blog posts offering a free ICT strategy consultation with Harvest to convert existing traffic.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 1,
+    "totalCount": 7
+  },
+  {
     "date": "2026-04-15",
     "tasks": [
       {
