@@ -62,11 +62,11 @@
         "category": "content",
         "estimatedMinutes": 15,
         "source": "ai",
-        "completed": false,
-        "completedAt": null
+        "completed": true,
+        "completedAt": "2026-04-16T14:08:51.524Z"
       }
     ],
-    "completedCount": 6,
+    "completedCount": 7,
     "totalCount": 7
   },
   {
