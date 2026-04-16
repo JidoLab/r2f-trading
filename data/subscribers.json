@@ -11,8 +11,7 @@
       "beginnerMistakes",
       "ictConcepts",
       "successStory"
-    ],
-    "staleReengageSent": true
+    ]
   },
   {
     "email": "eirini.ploumidi94@gmail.com",
@@ -30,8 +29,7 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts"
-    ],
-    "abandonmentEmailSent": true
+    ]
   },
   {
     "email": "cyrus.alia.borja@gmail.com",
@@ -48,17 +46,19 @@
   {
     "email": "blackkilevu@gmail.com",
     "date": "2026-04-13T10:23:34.431Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "score": 0,
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-04-13T10:23:34.431Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   },
   {
     "email": "lucky04_flour@icloud.com",
     "date": "2026-04-13T23:04:34.994Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "score": 5,
     "segment": "cold",
     "events": [
@@ -68,6 +68,8 @@
       }
     ],
     "lastActivity": "2026-04-14T09:56:28.355Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   }
 ]
