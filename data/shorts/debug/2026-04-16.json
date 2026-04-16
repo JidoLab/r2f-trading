@@ -1,24 +1,24 @@
 {
-  "date": "2026-04-16T02:01:26.456Z",
+  "date": "2026-04-16T03:31:05.169Z",
   "today": "2026-04-16",
   "topicsAttempted": [
-    "Busting the Myth: You DON'T Need $10K to Start Trading",
-    "POV: You Finally Understand Market Structure",
-    "5 Ways to Blow Your Funded Account in Record Time"
+    "London vs New York Session: Which is Actually Better?",
+    "Honest Review: My First Month Trading ICT Concepts",
+    "4 Displacement Patterns That Print Money"
   ],
   "results": [
     {
-      "title": "Busting the Myth: You DON'T Need $10K to Start Trading",
+      "title": "London vs New York Session: Which is Actually Better?",
       "status": "error",
       "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
     },
     {
-      "title": "POV: You Finally Understand Market Structure",
+      "title": "Honest Review: My First Month Trading ICT Concepts",
       "status": "error",
       "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
     },
     {
-      "title": "5 Ways to Blow Your Funded Account in Record Time",
+      "title": "4 Displacement Patterns That Print Money",
       "status": "error",
       "error": "FFmpeg Render Service: {\"error\":\"Unauthorized\"}"
     }
