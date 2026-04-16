@@ -188,5 +188,55 @@
     "commentedAt": "2026-04-16T03:01:52.449Z",
     "permalink": "/r/Daytrading/comments/1sly6we/iam_confused_about_volume_profile_please_help/oggaomb/",
     "commentId": "oggaomb"
+  },
+  {
+    "postId": "1smej2i",
+    "subreddit": "Daytrading",
+    "postTitle": "VPN trading in the USA ?",
+    "commentText": "your friend is taking a massive risk tbh. VPNs can absolutely be detected through payment methods, IP inconsistencies, and broker side checks that run deeper than just location data. FTMO especially has been known to flag and void accounts for ToS violations like this, and no filled trade is worth losing a funded account over. tell him to just reach out to the prop firms directly before he travels, some of them have a straightforward process for temporarily trading from a restricted country.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-16T03:31:16.284Z",
+    "permalink": "/r/Daytrading/comments/1smej2i/vpn_trading_in_the_usa/oggf3dk/",
+    "commentId": "oggf3dk"
+  },
+  {
+    "postId": "1smkalm",
+    "subreddit": "Daytrading",
+    "postTitle": "People using aspects of the ict trading strategy, what do you trade?",
+    "commentText": "honestly forex and futures are where ict concepts shine the most, specifically NQ and ES during the london and new york killzones where you get clean order block reactions and fvg fills. stocks can work but the liquidity dynamics are different and you won't see the same precision on sweeps and BOS setups. one of my students was trying to apply it to individual stocks and kept getting stopped out, switched to NQ and it clicked almost immediately. the institutional footprint is just way more visible on the indices 📈",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-16T03:31:25.357Z",
+    "permalink": "/r/Daytrading/comments/1smkalm/people_using_aspects_of_the_ict_trading_strategy/oggf465/",
+    "commentId": "oggf465"
+  },
+  {
+    "postId": "1smpnow",
+    "subreddit": "Daytrading",
+    "postTitle": "Beginner trader looking for advice. This is my dream",
+    "commentText": "solid progress for a month in honestly. the backtest speed issue you identified is real and will mess with your psychology so try replay mode on tradingview where you're forced to watch candles form in real time, especially through the open killzone when price is hunting liquidity before your actual entry sets up. also don't rush the funded account route until you can show consistent results across at least 3 months of forward testing because one bad week of revenge trading after a stop out will blow that account fast.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-16T03:31:33.411Z",
+    "permalink": "/r/Daytrading/comments/1smpnow/beginner_trader_looking_for_advice_this_is_my/oggf4va/",
+    "commentId": "oggf4va"
+  },
+  {
+    "postId": "1sme9j3",
+    "subreddit": "Daytrading",
+    "postTitle": "Best trading platform to use for props?",
+    "commentText": "Tradovate is honestly the closest feel to ProjectX in my experience. the chart interface is clean, execution is snappy, and drawing tools don't get in the way when you're marking up order blocks or trying to map out a killzone quickly. NinjaTrader is more powerful but the learning curve will slow you down if you're used to something more streamlined.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-16T03:31:39.916Z",
+    "permalink": "/r/Daytrading/comments/1sme9j3/best_trading_platform_to_use_for_props/oggf5g7/",
+    "commentId": "oggf5g7"
+  },
+  {
+    "postId": "1smjqzj",
+    "subreddit": "Daytrading",
+    "postTitle": "Finding new session to trade",
+    "commentText": "honestly just take the summer off from trading and focus on the internship. your edge is built around new york open killzone and that's where the real institutional order flow kicks in on ES and NQ, so forcing trades during asian session on different instruments is just gonna wreck your consistency. come back in the fall with your same setup and you'll be way better off than trying to backtest a whole new approach in a few weeks.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-16T03:31:45.259Z",
+    "permalink": "/r/Daytrading/comments/1smjqzj/finding_new_session_to_trade/oggf5wu/",
+    "commentId": "oggf5wu"
   }
 ]
