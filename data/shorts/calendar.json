@@ -151,21 +151,21 @@
     "topic": "Dissecting This 200 Pip Move on GBPUSD",
     "contentType": "chart-breakdown",
     "category": "Market Analysis",
-    "used": false
+    "used": true
   },
   {
     "date": "2026-04-28",
     "topic": "My Position Sizing Evolution: From Broke to Profitable",
     "contentType": "before-after",
     "category": "Risk Management",
-    "used": false
+    "used": true
   },
   {
     "date": "2026-04-29",
     "topic": "The Trade That Taught Me Patience is Everything",
     "contentType": "story",
     "category": "Trading Psychology",
-    "used": false
+    "used": true
   },
   {
     "date": "2026-04-30",
