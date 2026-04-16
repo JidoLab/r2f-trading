@@ -7,14 +7,22 @@ export function NotificationBadge() {
 
   useEffect(() => {
     const fetchCount = () => {
-      fetch("/api/admin/notifications?count=true")
+      const lastRead = localStorage.getItem("r2f_notifications_last_read") || "";
+      const params = new URLSearchParams({ count: "true" });
+      if (lastRead) params.set("lastRead", lastRead);
+      fetch(`/api/admin/notifications?${params}`)
         .then((r) => (r.ok ? r.json() : { unreadCount: 0 }))
         .then((d) => setCount(d.unreadCount || 0))
         .catch(() => {});
     };
     fetchCount();
     const interval = setInterval(fetchCount, 60000);
-    return () => clearInterval(interval);
+    // Also listen for storage changes (when user marks all read on the notifications page)
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === "r2f_notifications_last_read") fetchCount();
+    };
+    window.addEventListener("storage", onStorage);
+    return () => { clearInterval(interval); window.removeEventListener("storage", onStorage); };
   }, []);
 
   if (count <= 0) return null;

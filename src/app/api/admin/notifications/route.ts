@@ -10,6 +10,7 @@ interface NotificationEvent {
   title: string;
   description: string;
   date: string;
+  url?: string;
 }
 
 function makeId(type: string, date: string, index: number): string {
@@ -149,7 +150,7 @@ export async function GET(req: NextRequest) {
   // 6. Comment replies
   try {
     const raw = await readFile("data/reply-notifications.json");
-    const replies: { id?: string; platform?: string; postTitle?: string; subreddit?: string; replyAuthor?: string; replyText?: string; commentUrl?: string; detectedAt?: string }[] = JSON.parse(raw);
+    const replies: { id?: string; platform?: string; postTitle?: string; subreddit?: string; replyAuthor?: string; replyText?: string; commentUrl?: string; detectedAt?: string; replyDate?: string }[] = JSON.parse(raw);
     for (let i = 0; i < replies.length; i++) {
       const r = replies[i];
       if (r.detectedAt) {
@@ -158,7 +159,8 @@ export async function GET(req: NextRequest) {
           type: "reply",
           title: "Comment reply received",
           description: `u/${r.replyAuthor || "someone"} replied in r/${r.subreddit || r.platform}: "${(r.replyText || "").slice(0, 80)}"`,
-          date: r.detectedAt,
+          date: r.replyDate || r.detectedAt,
+          url: r.commentUrl || undefined,
         });
       }
     }
@@ -187,10 +189,11 @@ export async function GET(req: NextRequest) {
   events.sort((a, b) => (a.date > b.date ? -1 : 1));
   const trimmed = events.slice(0, 50);
 
-  // Count-only mode: return unread count (events from last 24 hours)
+  // Count-only mode: return unread count since lastRead (or last 24h fallback)
   if (countOnly) {
-    const cutoff = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
-    const unreadCount = trimmed.filter((e) => e.date >= cutoff).length;
+    const lastRead = req.nextUrl.searchParams.get("lastRead");
+    const cutoff = lastRead || new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
+    const unreadCount = trimmed.filter((e) => e.date > cutoff).length;
     return NextResponse.json({ unreadCount });
   }
 

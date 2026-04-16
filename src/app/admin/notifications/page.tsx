@@ -8,6 +8,7 @@ interface NotificationEvent {
   title: string;
   description: string;
   date: string;
+  url?: string;
 }
 
 const TYPE_CONFIG: Record<string, { icon: string; color: string }> = {
@@ -72,6 +73,8 @@ export default function NotificationsPage() {
     const now = new Date().toISOString();
     localStorage.setItem(LAST_READ_KEY, now);
     setLastRead(now);
+    // Trigger storage event so sidebar badge updates immediately
+    window.dispatchEvent(new StorageEvent("storage", { key: LAST_READ_KEY, newValue: now }));
   }, []);
 
   const isUnread = useCallback(
@@ -156,12 +159,17 @@ export default function NotificationsPage() {
           {filtered.map((event) => {
             const config = TYPE_CONFIG[event.type] || { icon: "\u{1F514}", color: "text-white/50" };
             const unread = isUnread(event.date);
+            const Wrapper = event.url ? "a" : "div";
+            const wrapperProps = event.url
+              ? { href: event.url, target: "_blank" as const, rel: "noopener noreferrer" }
+              : {};
             return (
-              <div
+              <Wrapper
                 key={event.id}
-                className={`bg-white/5 border rounded-lg p-4 flex items-start gap-3 transition-colors ${
+                {...wrapperProps}
+                className={`bg-white/5 border rounded-lg p-4 flex items-start gap-3 transition-colors block ${
                   unread ? "border-gold/20 bg-gold/[0.03]" : "border-white/10"
-                }`}
+                } ${event.url ? "hover:border-gold/40 hover:bg-white/[0.06] cursor-pointer" : ""}`}
               >
                 <span className="text-xl mt-0.5 shrink-0" role="img" aria-label={event.type}>
                   {config.icon}
@@ -174,6 +182,11 @@ export default function NotificationsPage() {
                     {unread && (
                       <span className="w-2 h-2 rounded-full bg-gold shrink-0" />
                     )}
+                    {event.url && (
+                      <svg className="w-3 h-3 text-white/20 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    )}
                     <span className="text-white/30 text-xs ml-auto shrink-0">
                       {relativeTime(event.date)}
                     </span>
@@ -182,7 +195,7 @@ export default function NotificationsPage() {
                     {event.description}
                   </p>
                 </div>
-              </div>
+              </Wrapper>
             );
           })}
         </div>
