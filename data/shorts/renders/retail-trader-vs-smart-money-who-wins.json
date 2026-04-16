@@ -21,10 +21,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-16T14:03:22.015Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/retail-trader-vs-smart-money-who-wins.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/JD8RiIQ3RPo",
   "copyText": "Retail Trader vs Smart Money: Who Wins?\n\n6 months of losses. Then I changed ONE thing. Stop trading like a retail trader and start reading institutional order flow. Here's the debate that will change how you see the markets forever. #ICTTrading #SmartMoneyConcepts #R2FTrading\n\n#ICTTrading #SmartMoneyConcepts #OrderBlocks #FairValueGap #FundedTrader #ForexTrading #InstitutionalTrading #R2FTrading #TradingSecrets #SMCTrading",
-  "uploadResults": [],
-  "completedAt": "2026-04-16T14:05:19.406Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/JD8RiIQ3RPo"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-16T14:05:19.406Z",
+  "publishedAt": "2026-04-16T17:00:50.448Z"
 }
