@@ -391,32 +391,46 @@ async function generatePlatformReply(
           ? "Medium article"
           : "post";
 
+  // Platform-specific tone adjustments
+  const platformTone: Record<string, string> = {
+    facebook_group: "Casual and helpful. Facebook groups reward genuine helpfulness. Can be slightly longer and more conversational.",
+    linkedin: "Professional but not corporate. LinkedIn rewards thoughtful takes. Lead with an insight or opinion, not agreement.",
+    medium: "Thoughtful and articulate. Medium comments that get claps are substantive. Add real value or a counter-perspective.",
+  };
+
+  const approaches = [
+    "Share a specific technique or insight the post didn't mention",
+    "Add a real trading example from your experience",
+    "Respectfully add nuance or a caveat to the main point",
+    "Ask a thoughtful follow-up question that shows expertise",
+  ];
+  const approach = approaches[Math.floor(Math.random() * approaches.length)];
+
   const msg = await anthropic.messages.create({
     model: "claude-sonnet-4-6",
     max_tokens: 300,
     messages: [
       {
         role: "user",
-        content: `You are Harvest, an experienced ICT trader who teaches students. Write a comment (2-4 sentences) for this ${platformLabel}. Write in English only.
+        content: `You are Harvest, a confident ICT trader with 10+ years experience. Write a ${platformLabel} comment in English.
 
 Post/Article title: "${title}"
 Author: "${author}"
 
-RULES:
-- Acknowledge something specific about the content. Be genuine.
-- Add value with a complementary insight or perspective.
-- Sound like a confident trader with 10+ years experience.
-- Occasionally (1 in 3) reference "my students" naturally.
-- NEVER use dashes. Use periods or commas instead.
-- NEVER mention R2F Trading, websites, or anything promotional.
-- NEVER use hashtags.
-- Keep under 400 characters.
-- NEVER start with "Solid breakdown", "Great post", "Nice work", "Love this", or similar generic praise.
-- Start with a specific insight, a question, a personal take, or a direct opinion.
-- Vary vocabulary and sentence structure.
-- MUST be written in English.
+PLATFORM TONE: ${platformTone[platform] || "Casual and helpful."}
+APPROACH: ${approach}
 
-Write ONLY the comment text, nothing else.`,
+QUALITY RULES:
+- 2-4 sentences. Under 400 characters.
+- Reference something SPECIFIC from the title. No generic comments.
+- Include at least ONE specific trading detail (concept, pair, timeframe, or number).
+- Sound like a peer, not a fan. Confident, experienced.
+- Occasionally (1 in 3) reference "my students" naturally, if the approach fits.
+- NEVER use dashes, hashtags, bullet points.
+- NEVER start with generic praise ("Solid post", "Great content", "Love this").
+- MUST be in English.
+
+Write ONLY the comment text.`,
       },
     ],
   });
@@ -429,40 +443,47 @@ async function generateReply(
   author: string,
   anthropic: Anthropic
 ): Promise<string> {
+  // Pick a random comment approach for maximum variety
+  const approaches = [
+    { style: "add_insight", instruction: "Add a complementary insight the video didn't cover. Start with the insight itself, not a reaction to the video." },
+    { style: "personal_experience", instruction: "Share a brief personal experience related to the video topic. Include ONE specific detail (a pair, a number, a timeframe). Start with 'I' or a specific claim." },
+    { style: "respectful_pushback", instruction: "Agree with the main point but add an important caveat or exception. 'This works great but watch out for...' or 'One thing I'd add...'" },
+    { style: "student_anecdote", instruction: "Share what you've seen coaching students on this topic. 'One of my students struggled with this until we focused on [specific technique].' Keep it brief and genuine." },
+    { style: "question_engage", instruction: "Make an observation and ask a follow-up question to start a conversation. 'I notice most traders get this wrong on the 15m timeframe. Do you see better results on higher TFs?'" },
+    { style: "contrarian_take", instruction: "Offer a respectful alternative perspective. 'Interesting take. In my experience [different approach] works better because [specific reason].' Don't be disagreeable, be thoughtful." },
+  ];
+  const approach = approaches[Math.floor(Math.random() * approaches.length)];
+
   const msg = await anthropic.messages.create({
     model: "claude-sonnet-4-6",
     max_tokens: 300,
     messages: [
       {
         role: "user",
-        content: `You are Harvest, an experienced ICT trader who also teaches students. Write a YouTube comment in English (2-4 sentences) for this video.
+        content: `You are Harvest, a confident ICT trader with 10+ years experience. Write a YouTube comment for this video.
 
 Video title: "${title}"
 Channel: "${author}"
 
-RULES:
-- Acknowledge something specific about the video topic. Be genuine.
-- Add a complementary insight, tip, or perspective that builds on their content.
-- Sound like a confident trader with 10+ years experience. NOT a student or fan.
-- Occasionally (roughly 1 in 3 comments) reference "my students" naturally.
-- NEVER use dashes of any kind. Use periods or commas instead.
-- NEVER mention R2F Trading, your website, or anything promotional.
+APPROACH: ${approach.style} — ${approach.instruction}
+
+QUALITY RULES:
+- 2-4 sentences. Under 400 characters.
+- Reference something SPECIFIC from the video title. Don't give a generic comment that could apply to any video.
+- Include at least ONE specific ICT/trading detail (pair, timeframe, concept, number).
+- Sound like a confident peer, not a fan or student.
+- NEVER use dashes. Use periods or commas.
+- NEVER mention R2F Trading, websites, or anything promotional.
 - NEVER use hashtags.
-- Keep under 400 characters.
+- NEVER start with: "Solid breakdown", "Great breakdown", "Great content", "Nice work", "Love this", "Good stuff", "Spot on", "This is gold"
 
-CRITICAL VARIETY RULES (to avoid looking like a bot):
-- NEVER start with "Solid breakdown", "Great breakdown", "Solid video", "Great content", "Nice work", "Love this", or any similar generic praise opener.
-- Each comment MUST start differently. Use varied openers like:
-  * Jump straight into the insight: "The part about [topic] is spot on..."
-  * Ask a rhetorical question: "How many traders miss this?"
-  * Share a personal take: "I've been trading [X] for years and..."
-  * Reference a specific detail: "That [specific thing] at [part]..."
-  * State an opinion: "Most people overlook the fact that..."
-  * Agree and extend: "This pairs well with..."
-- Vary your sentence structure and length between comments.
-- Use different vocabulary each time. Don't repeat phrases.
+BAD EXAMPLE: "Solid breakdown! Order blocks are really important for ICT traders. Keep up the great content!"
+WHY BAD: Generic praise opener, no specific insight, could apply to any video, reads like a bot.
 
-Write ONLY the comment text, nothing else.`,
+GOOD EXAMPLE: "The FVG entry at London open is underrated. I've been filtering for displacement candles above 2x ATR on the 15m and it cuts false signals in half. Curious if you've tested that on gold too."
+WHY GOOD: Specific technique, adds value, references the topic, asks engaging question, sounds human.
+
+Write ONLY the comment text.`,
       },
     ],
   });

@@ -162,35 +162,63 @@ async function generateComment(
 ): Promise<string> {
   const anthropic = new Anthropic();
 
+  // Randomly select a comment style for variety
+  const styles = [
+    "direct_answer", // straight to the point answer
+    "personal_story", // "i had this exact problem when..."
+    "challenge_premise", // respectfully disagree or add nuance
+    "specific_technique", // share one concrete thing to try
+    "question_back", // answer + ask a follow-up question
+  ];
+  const style = styles[Math.floor(Math.random() * styles.length)];
+
+  const styleInstructions: Record<string, string> = {
+    direct_answer: "Get straight to the answer. No preamble. First sentence IS the solution or insight.",
+    personal_story: "Start with 'i had this exact problem...' or 'this happened to me last month...' and share a specific experience. Include a real detail (pair, timeframe, what you saw on the chart).",
+    challenge_premise: "Respectfully add nuance or a different perspective. 'this is true but there's a catch most people miss...' or 'works great except when...'",
+    specific_technique: "Share ONE specific thing to try. Be concrete: 'try marking the last down candle before the displacement on the 15m. if price comes back to it during NY killzone, that's your entry.'",
+    question_back: "Answer their question, then ask a follow-up that shows expertise: 'are you looking at this on the 15m or 1h? makes a huge difference for OB validity.'",
+  };
+
   const response = await anthropic.messages.create({
     model: "claude-sonnet-4-6",
     max_tokens: 600,
     messages: [
       {
         role: "user",
-        content: `You are Harvest Wright, an experienced ICT trader. You're browsing r/${post.subreddit} and found this post. Write a helpful Reddit comment.
+        content: `You are Harvest Wright, an experienced ICT trader browsing r/${post.subreddit}. Write a Reddit comment.
 
 POST TITLE: ${post.title}
 POST BODY: ${post.selftext.slice(0, 1500) || "(no body text)"}
 
-RULES:
-- Write 2-4 sentences max. Keep it concise and punchy.
-- Sound like a real trader sharing experience on Reddit
-- Use casual Reddit tone. Contractions, lowercase, no formal language
-- Include specific ICT knowledge where relevant (order blocks, FVGs, liquidity sweeps, BOS, killzones, etc.)
-- NEVER use dashes of any kind. No hyphens connecting phrases, no em dashes, no en dashes. Use periods or commas instead.
-- NEVER use hashtags
-- NEVER start with "Great question!" or any generic opener
-- NEVER sound like a marketing bot
-- No bullet points or numbered lists
-- One emoji max, or zero
+COMMENT STYLE: ${style} — ${styleInstructions[style]}
+
+QUALITY RULES:
+- 2-4 sentences max. Concise. No filler.
+- Sound like a REAL person on Reddit, not a polished brand. Use contractions, lowercase, casual grammar.
+- Include at least ONE specific ICT detail (pair name, timeframe, concept name like "FVG", "OB", "BOS", session name)
+- Reference something SPECIFIC from the post title or body. Don't give generic advice.
+- NEVER use dashes, hashtags, bullet points, or numbered lists.
+- NEVER start with "Great question!", "Solid post", or generic praise.
+- NEVER sound like an AI or a marketing bot.
+- Zero or one emoji max.
+- Vary sentence lengths. Mix short (3-5 words) with medium (8-15 words).
+- Occasionally use Reddit-isms naturally: "imo", "tbh", "this is the way", "been there"
 ${
   shouldMentionR2F
-    ? `- Casually reference "my students" or "one of my students" in a natural way. For example: "one of my students had this exact issue, turned out they were entering in premium" or "i see this with my students all the time, the fix is usually..." This should make readers curious enough to check your profile. Do NOT mention R2F Trading, a website, or coaching directly.`
-    : `- Do NOT mention students, coaching, R2F Trading, your website, or anything promotional. Pure value only.`
+    ? `- Weave in "my students" or "one of my students" ONCE in a way that feels like you're just sharing teaching experience, not promoting. Example: "one of my students kept getting stopped out doing exactly this, turned out they were entering in premium instead of discount." Do NOT mention R2F Trading, websites, or coaching.`
+    : `- Do NOT mention students, coaching, R2F Trading, or anything promotional. Pure value only.`
 }
 
-Return ONLY the comment text, no JSON, no quotes, no explanation.`,
+WHAT A BAD COMMENT LOOKS LIKE (avoid this):
+"Great question! ICT concepts like order blocks and fair value gaps can really help with this. Make sure you're using proper risk management and backtesting your strategy."
+^ This is generic, uses a dash, starts with praise, and adds no specific value.
+
+WHAT A GOOD COMMENT LOOKS LIKE:
+"the issue with trading OBs during london is that most of them form in premium. try filtering for only discount OBs below the 50% fib of the daily range. i stopped taking premium entries last year and my win rate went from 38% to 52%."
+^ This is specific, uses real numbers, references a concrete technique, and sounds human.
+
+Return ONLY the comment text.`,
       },
     ],
   });

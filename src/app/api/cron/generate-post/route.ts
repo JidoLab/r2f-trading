@@ -52,22 +52,42 @@ export async function GET(req: NextRequest) {
       marketContext = await buildMarketContext();
     } catch {}
 
+    // Determine which categories and post types have been used recently
+    const recentCategories = existingTitles.slice(0, 8).map(t => {
+      const words = t.replace(/^\d{4}-\d{2}-\d{2}-/, "").split("-");
+      if (words.some(w => ["fvg", "order", "block", "liquidity", "killzone", "breaker", "ote", "displacement"].includes(w))) return "ICT Concepts";
+      if (words.some(w => ["psychology", "mindset", "discipline", "fear", "revenge", "emotion", "patience"].includes(w))) return "Trading Psychology";
+      if (words.some(w => ["risk", "position", "sizing", "drawdown"].includes(w))) return "Risk Management";
+      if (words.some(w => ["funded", "ftmo", "prop", "firm", "challenge", "payout"].includes(w))) return "Funded Accounts";
+      if (words.some(w => ["beginner", "start", "basic", "learn", "guide"].includes(w))) return "Beginner Guides";
+      return "Other";
+    });
+    const categoryCount: Record<string, number> = {};
+    recentCategories.forEach(c => { categoryCount[c] = (categoryCount[c] || 0) + 1; });
+    const leastUsedCategory = ["ICT Concepts", "Trading Psychology", "Risk Management", "Funded Accounts", "Beginner Guides", "Personal Stories", "Market Analysis"]
+      .sort((a, b) => (categoryCount[a] || 0) - (categoryCount[b] || 0))[0];
+
     const topicResponse = await anthropic.messages.create({
       model: "claude-sonnet-4-6",
       max_tokens: 1000,
       messages: [{
         role: "user",
-        content: `You are a content strategist for R2F Trading, a professional ICT trading coaching website.
+        content: `You are a content strategist for R2F Trading, a professional ICT trading coaching website run by Harvest Wright (10+ years ICT experience).
 TODAY: ${dayOfWeek}, ${month}
 EXISTING POSTS (avoid repeats): ${existingTitles.slice(0, 20).join(", ") || "None"}
 ${marketContext}
 
 Generate ONE fresh blog topic.
 
+QUALITY-FIRST APPROACH — This article must pass Google's test: "Would this content exist if search engines didn't exist?" Choose topics where Harvest's real experience adds unique value.
+
 CRITICAL RULES:
-1. TITLE MUST be under 60 characters. Short, punchy, curiosity-driven. Examples: "Why Your FVGs Keep Failing", "The 1% Rule That Changed Everything", "ICT Killzones: A Complete Guide", "5 Signs You're Overtrading"
-2. DO NOT write another CPI, NFP, or FOMC article if one already exists in the list above. Economic events are fine occasionally (max 1 per week) but DIVERSIFY topics.
-3. Market context below is for INSPIRATION only, not a mandate. Most posts should be EVERGREEN educational content.
+1. TITLE MUST be under 60 characters. Short, punchy, curiosity-driven. Examples: "Why Your FVGs Keep Failing", "The 1% Rule That Changed Everything", "ICT Killzones: A Complete Guide"
+2. DO NOT write another CPI, NFP, or FOMC article if one already exists. Economic events max 1 per week.
+3. Market context is for INSPIRATION only. Most posts should be EVERGREEN educational content.
+4. The ANGLE must describe a UNIQUE perspective that can't be found by summarizing Google page 1 results. Think: what would Harvest tell a student in a 1-on-1 session that they won't find in a YouTube video?
+
+STRONG PREFERENCE for category: "${leastUsedCategory}" (least covered recently).
 
 TOPIC DIVERSITY — rotate through these categories evenly:
 - ICT Concepts (order blocks, FVGs, liquidity, killzones, breaker blocks, OTE)
@@ -81,7 +101,9 @@ TOPIC DIVERSITY — rotate through these categories evenly:
 POST TYPES — cycle through these (pick one NOT recently used):
 how-to, listicle, case-study, comparison, faq, personal-story, checklist, myth-buster
 
-Return ONLY a JSON object: { "topic": "...", "category": "...", "postType": "...", "angle": "...", "targetKeyword": "..." }`,
+SEARCH INTENT — specify one: informational, commercial, navigational, or transactional
+
+Return ONLY a JSON object: { "topic": "...", "category": "...", "postType": "...", "angle": "...", "targetKeyword": "...", "searchIntent": "...", "uniqueInsight": "one sentence describing what makes this article different from everything else on this topic" }`,
       }],
     });
 
@@ -109,47 +131,69 @@ Return ONLY a JSON object: { "topic": "...", "category": "...", "postType": "...
       max_tokens: 5000,
       messages: [{
         role: "user",
-        content: `Write a blog article for R2F Trading (r2ftrading.com).
-AUTHOR: Harvest Wright — sole mentor, 10+ years ICT trading experience, TradingView Editors' Pick, Top 1% in competitions, FTMO Challenge passer.
+        content: `Write a high-quality blog article for R2F Trading (r2ftrading.com).
+
+AUTHOR: Harvest Wright — sole mentor, 10+ years ICT trading experience, TradingView Editors' Pick, Top 1% in competitions, FTMO Challenge passer. Based in Thailand.
 TOPIC: "${topicData.topic}" | CATEGORY: ${topicData.category} | POST TYPE: ${topicData.postType || "how-to"} | ANGLE: ${topicData.angle} | KEYWORD: "${topicData.targetKeyword}" | DATE: ${date}
+UNIQUE INSIGHT: ${topicData.uniqueInsight || "Share something readers can't find elsewhere"}
+SEARCH INTENT: ${topicData.searchIntent || "informational"}
 COACHING: Lite $150/week, Pro $200/week, Full Mentorship $1,000/4 months.
-INTERNAL LINKS (use 2-4 of these naturally within the article body):
+
+═══ QUALITY STANDARD (MOST IMPORTANT) ═══
+This article must pass this test: "Would this content exist if search engines didn't exist?"
+Write as if Harvest is explaining this to a student in a 1-on-1 coaching session — conversational, specific, experienced.
+
+WHAT MAKES THIS ARTICLE UNIQUE (include ALL of these):
+1. A SPECIFIC TRADE EXAMPLE with real numbers — pair, timeframe, entry reason, risk %, outcome. Make it feel like a trade journal entry. Example: "Last Thursday on EURUSD 15m, I saw a FVG form after London open displacement. I entered at 1.0847 with a 12-pip stop, risking 0.5% of my account. The trade ran 3.2R before I took partials at the -OB."
+2. A CONTRARIAN OR NUANCED TAKE — don't just explain the concept, challenge conventional wisdom or add a perspective that most ICT YouTube creators miss. What does Harvest know after 10 years that a 1-year trader doesn't?
+3. A STUDENT STORY (vary these) — "A student of mine, let's call him D, was struggling with [specific problem]. After our session on [specific technique], he [specific result]." Make each story unique with different names (single initials: D, M, K, J, S, A, R, T) and scenarios.
+4. A PRACTICAL FRAMEWORK — not just "what" but "here's exactly how to do it step by step." Include specific entries/exits, timeframes, or mental frameworks the reader can use TODAY.
+
+WHAT TO AVOID (these make content feel AI-generated):
+- Generic statements like "Trading requires discipline" without a specific example
+- Listing things without explaining WHY each matters
+- Using the same sentence structures repeatedly (subject-verb-object, subject-verb-object)
+- Paragraphs that could apply to any trading methodology, not specifically ICT
+- Platitudes: "consistency is key", "trust the process", "manage your risk" — these are empty without specifics
+- Starting multiple paragraphs with "I" or "The"
+
+INTERNAL LINKS (use 2-4 naturally):
 - [coaching plans](/coaching) — link when mentioning mentorship/coaching
 - [book a free discovery call](/contact) — link when suggesting next steps
 - [trading insights](/trading-insights) — link when referencing more content
 - [student results](/results) — link when mentioning student outcomes
-${existingTitles.length > 0 ? `- RELATED POSTS (link to 2-3 relevant ones naturally in the body):\n${existingTitles.slice(0, 15).map(t => `  - [${t.replace(/^\d{4}-\d{2}-\d{2}-/, "").replace(/-/g, " ")}](/trading-insights/${t})`).join("\n")}` : ""}
-Write 1200-1800 words, first person as Harvest. Structure to match the POST TYPE format.
+- [risk calculator](/tools/risk-calculator) — link when discussing position sizing
+- [crash course](/crash-course) — link when addressing beginners
+${existingTitles.length > 0 ? `- RELATED POSTS (link to 2-3 naturally in body):\n${existingTitles.slice(0, 12).map(t => `  - [${t.replace(/^\d{4}-\d{2}-\d{2}-/, "").replace(/-/g, " ")}](/trading-insights/${t})`).join("\n")}` : ""}
 
-STRUCTURAL VARIATION — CRITICAL for SEO:
-- Vary the number of H2 sections (3-7, not always the same count)
-- Vary paragraph lengths (mix short 1-2 sentence paragraphs with longer ones)
-- For how-to and checklist: use numbered steps
-- For listicle: use H3 sub-headers under H2s
-- For case-study and personal-story: use narrative flow with fewer headers
-- For faq: use Q&A format with bold questions
-- For myth-buster: use "Myth:" / "Reality:" formatting
-- Do NOT follow the same template every time — deliberately vary structure
+═══ STRUCTURE ═══
+Write 1400-2000 words, first person as Harvest.
 
-ANSWER BLOCK — Include a "Key Takeaway" callout near the TOP of the article (after the first paragraph), formatted as:
-> **Key Takeaway:** [1-2 sentence direct answer to the main question this article addresses]
-This helps the article get cited in AI search results (Google AI Overviews, ChatGPT, Perplexity).
+ANSWER BLOCK — After the opening paragraph, include:
+> **Key Takeaway:** [1-2 sentence direct answer to the main question. Be specific, not vague.]
 
-E-E-A-T SIGNALS — Include at least ONE of these per article:
-- A specific personal trading example with numbers (e.g., "I took a 0.5% risk on EURUSD last Tuesday...")
-- A reference to your student outcomes (e.g., "3 of my students passed FTMO this month using this approach")
-- A proprietary observation from your 10+ years of experience that isn't in textbooks
+STRUCTURAL VARIATION (CRITICAL — each article must feel different):
+- ${topicData.postType === "how-to" || topicData.postType === "checklist" ? "Use numbered steps with clear action items" : ""}
+- ${topicData.postType === "listicle" ? "Use H3 sub-headers under each H2 list item" : ""}
+- ${topicData.postType === "case-study" || topicData.postType === "personal-story" ? "Use narrative flow — fewer headers, more storytelling with scene-setting details" : ""}
+- ${topicData.postType === "faq" ? "Use bold Q&A format, each question from a real student perspective" : ""}
+- ${topicData.postType === "myth-buster" ? 'Use "Myth:" / "Reality:" / "What I Actually See:" three-part format' : ""}
+- ${topicData.postType === "comparison" ? "Use a comparison table in markdown, then detailed analysis of each option" : ""}
+- Vary H2 count (3-7), paragraph lengths, and sentence structures deliberately
 
-TITLE RULES: The "title" field MUST be under 60 characters. Short and punchy. Do NOT stuff keywords. The "seoTitle" can be slightly longer (max 70 chars) and more keyword-rich.
-SEO CRITICAL: Target keyword MUST appear in first paragraph, first ## header, and 3-5 times naturally in body.
-INTERNAL LINKING: Include 2-3 links to the related posts above where they naturally fit in context. This helps SEO.
-Include 1-2 EXTERNAL LINKS to authoritative sources (TradingView, Investopedia, BabyPips, CME Group).
-IMAGE alt text must be keyword-rich and descriptive, not generic.
-META DESCRIPTION RULES for "seoDescription":
-- MUST be 130-155 characters (Google truncates at 160)
-- NEVER start with "Discover", "Learn", "Master", "Find out", or "Complete guide" — these are generic and hurt CTR
-- Start with a specific claim, number, or action verb instead (e.g., "3 ICT setups got my students funded in 60 days", "Stop losing funded accounts to revenge trading")
-- Include the target keyword naturally
+WRITING STYLE:
+- Mix short punchy sentences (3-8 words) with longer explanatory ones
+- Use rhetorical questions to break up sections
+- Include at least one moment of vulnerability or honesty ("I used to get this wrong too...")
+- End with a specific next step, not a generic CTA
+
+═══ SEO ═══
+TITLE: Under 60 characters, curiosity-driven. "seoTitle" can be up to 70 chars.
+KEYWORD: "${topicData.targetKeyword}" in first paragraph, first H2, and 3-5x naturally in body.
+EXTERNAL LINKS: 1-2 to authoritative sources (TradingView, Investopedia, BabyPips, CME Group).
+IMAGE alt text: keyword-rich and descriptive.
+META DESCRIPTION ("seoDescription"): 130-155 characters. Start with a specific claim or number. NEVER use "Discover", "Learn", "Master", "Find out", or "Complete guide".
+
 Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDescription": "...", "seoKeywords": [...], "tags": [...], "postType": "...", "body": "...", "imagePrompts": ["...", "..."] }`,
       }],
     });

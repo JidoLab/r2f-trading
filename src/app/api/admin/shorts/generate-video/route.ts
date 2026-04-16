@@ -191,7 +191,7 @@ export async function generateSingleShort(topic?: string, autoPublish = false, f
     max_tokens: 2500,
     messages: [{
       role: "user",
-      content: `Generate a YouTube Shorts script for R2F Trading, an ICT trading coaching brand.
+      content: `Generate a YouTube Shorts script for R2F Trading, an ICT trading coaching brand by Harvest Wright (10+ years experience).
 ${topic ? `TOPIC: "${topic}"` : "Pick an engaging ICT trading topic. PRIORITIZE timely/trending topics if available below — they get more views."}
 CONTENT TYPE: ${contentType.id} — ${contentType.name}. ${contentType.description}
 SCENE STRUCTURE: ${contentType.sceneTemplate}
@@ -200,12 +200,42 @@ VIRAL HOOK INSPIRATION: "${hookExample}"
 SERIES: ${JSON.stringify(Object.fromEntries(Object.entries(seriesTracker).filter(([k]) => k !== "_recentTypes")))}
 ${marketContext}
 
-RULES:
+═══ HOOK QUALITY (this determines 90% of performance) ═══
+The FIRST SCENE (hook) must create an "open loop" — make the viewer NEED to know the answer.
+
+HOOK PATTERNS THAT WORK (pick one, don't repeat the same pattern):
+- CONTRARIAN: "Everyone says [common belief]. They're wrong. Here's why."
+- SPECIFIC NUMBER: "I lost $4,700 in one trade. Then I found this."
+- IDENTITY CALL-OUT: "If you've blown a funded account, this is for you."
+- CURIOSITY GAP: "There's one thing funded traders do that beginners never will."
+- PATTERN INTERRUPT: "Stop. Before your next trade, check this one thing."
+- BEFORE/AFTER: "6 months ago I was down 30%. Here's what changed."
+
+BAD HOOKS (never use): "Today I'm going to show you...", "In this video...", "Hey traders...", "Did you know..."
+
+═══ SCRIPT QUALITY ═══
 - NEVER mention any person's name
-- Short punchy sentences. 3-7 words per sentence.
-- The LAST scene MUST always be a CTA ending with something like: "Follow R2F Trading for more tips like this." or "Follow R2F Trading. Link in bio." or "R2F Trading. Follow for daily setups." — always mention "R2F Trading" and "follow" in the final scene.
-- VISUAL PRIORITY: Use "stock_video" for MOST scenes — people's emotions (frustration, shock, celebration, thinking) get way more attention than charts. Only use "chart_image" for 1 scene MAX where you need to show a specific pattern or setup. The final CTA scene should ALWAYS be "stock_video" with emotion "motivation" or "luxury" or "celebration".
-- Available emotions for stock_video: shock, frustration, curiosity, revelation, confidence, celebration, motivation, defeat, agreement, wealth, luxury, aspiration, focus, teaching, money, morning, reflection, confusion, tension
+- Short punchy sentences. 3-7 words per sentence. One idea per sentence.
+- Each scene must END with a reason to keep watching the next scene (micro-cliffhanger)
+- Include ONE specific number or stat per short (makes it feel real, not generic)
+- The VOICE should feel like talking to a friend at a bar, not presenting to a classroom
+- Vary energy: tense → revelation → calm confidence → urgency
+
+═══ SCENE RULES ═══
+- Scene 1 (HOOK): Must grab attention in under 2 seconds. No setup, no context — straight to the hook.
+- Middle scenes: Build tension or deliver value. Each scene should make the viewer think "wait, really?"
+- Second-to-last scene: The PAYOFF — deliver the insight, the answer, the technique
+- LAST scene: CTA — always mention "R2F Trading" and "follow". Vary the CTA: "Follow R2F Trading for more setups like this." / "R2F Trading. Link in bio for the free checklist." / "Follow R2F Trading. New tips every day."
+
+VISUAL PRIORITY: Use "stock_video" for MOST scenes — people's emotions (frustration, shock, celebration) get more attention than charts. Only use "chart_image" for 1 scene MAX. Final CTA scene: "stock_video" with emotion "motivation" or "luxury" or "celebration".
+Available emotions: shock, frustration, curiosity, revelation, confidence, celebration, motivation, defeat, agreement, wealth, luxury, aspiration, focus, teaching, money, morning, reflection, confusion, tension
+
+═══ CAPTION QUALITY ═══
+Captions are the PRIMARY way viewers consume Shorts (85% watch with sound off).
+- Each caption should be 2-5 words MAX (displayed as large text overlay)
+- Use POWER WORDS in captions: "secret", "mistake", "funded", "broke", "changed", "truth", "never"
+- The hook caption must be THE most attention-grabbing text on screen
+- Include the highlight word for emphasis in each caption
 
 Return ONLY JSON:
 {"title":"...","description":"...","hashtags":["#ICTTrading","..."],"contentType":"${contentType.id}","seriesName":"or null","seriesNumber":null,"mood":"tense|confident|lofi|cinematic","scenes":[{"text":"...","captions":["CAP1","CAP2"],"visualType":"stock_video or chart_image","visualQuery":"...","emotion":"see list above"}],"highlightWords":["..."]}`,
