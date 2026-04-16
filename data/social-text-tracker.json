@@ -14,11 +14,12 @@
     "promo-blog",
     "promo-coaching",
     "question",
-    "poll"
+    "poll",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "Which ICT concept clicked LAST for you? 🅰️ Fair Value Gaps 🅱️ Order Blocks 🅲️ Market Structure 🅳️ PD Arrays Drop yours below 👇 #ICTTrading #SmartMonkeyConcepts #R2FTrading",
-    "date": "2026-04-15T12:00:57.261Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: Fair Value Gaps are NOT setups. They're magnets. If you're treating every FVG as an entry, you're why your funded trader account got blown. Context > pattern. #ICTTrading #FairValueGap #SmartMoneyConcepts",
+    "date": "2026-04-16T04:00:53.449Z"
   }
 }
