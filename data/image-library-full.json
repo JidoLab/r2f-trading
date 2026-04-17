@@ -1112,5 +1112,32 @@
     "timeframe": "30M",
     "addedAt": "2026-04-17T01:24:00.654Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776389042132-z9t1",
+    "filename": "img-1776389042132-z9t1.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776389042132-z9t1.png",
+    "tags": [
+      "Smart Money Concepts",
+      "Liquidity",
+      "Order Block",
+      "FVG",
+      "Trade Setup"
+    ],
+    "patterns": [
+      "Buy Side Liquidity",
+      "Sell Side Liquidity",
+      "Market Structure Shift",
+      "Order Block",
+      "Fair Value Gap",
+      "Equal Lows",
+      "Trend Line Sell Side Liquidity"
+    ],
+    "category": "chart-pattern",
+    "description": "EURUSD 1H chart analyzing smart money concepts: liquidity, order blocks, FVG, and a short setup.",
+    "pair": "EURUSD",
+    "timeframe": "1H",
+    "addedAt": "2026-04-17T01:24:14.708Z",
+    "usageCount": 0
   }
 ]
