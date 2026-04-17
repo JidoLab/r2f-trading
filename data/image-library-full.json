@@ -384,5 +384,28 @@
     "timeframe": "12H",
     "addedAt": "2026-04-17T01:13:15.080Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388396618-l4e5",
+    "filename": "img-1776388396618-l4e5.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388396618-l4e5.png",
+    "tags": [
+      "forex",
+      "DXY",
+      "EURUSD",
+      "trade setup",
+      "mitigation block"
+    ],
+    "patterns": [
+      "mitigation block",
+      "order block",
+      "fibonacci"
+    ],
+    "category": "chart-pattern",
+    "description": "Forex trading charts comparing DXY strength with a EUR/USD sell setup at a mitigation block.",
+    "pair": "DXY, EURUSD",
+    "timeframe": "6H, 8H",
+    "addedAt": "2026-04-17T01:13:25.903Z",
+    "usageCount": 0
   }
 ]
