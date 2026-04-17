@@ -21,10 +21,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-17T01:05:51.118Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/this-order-block-setup-made-3r-in-one-trade.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/JTN7zzqGqt4",
   "copyText": "This Order Block Setup Made 3R In One Trade\n\nMost traders scroll past the most powerful setup on the chart. This order block fair value gap combo is what funded traders actually look for — and beginners never see it. Watch the full breakdown. Follow R2F Trading for ICT setups that actually work.\n\n#ICTTrading #OrderBlocks #FairValueGap #SmartMonkeyConcepts #FundedTrader #R2FTrading #ICT #ForexTrading #SmartMoney #TradingTips",
-  "uploadResults": [],
-  "completedAt": "2026-04-17T01:08:09.899Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/JTN7zzqGqt4"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-17T01:08:09.899Z",
+  "publishedAt": "2026-04-17T05:00:37.490Z"
 }
