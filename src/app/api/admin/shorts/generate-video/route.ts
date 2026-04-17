@@ -3,6 +3,15 @@ import { verifyAdmin } from "@/lib/admin-auth";
 import { readFile, commitFile } from "@/lib/github";
 import Anthropic from "@anthropic-ai/sdk";
 import { getCurrentDateContext } from "@/lib/date-context";
+import {
+  buildEnrichedCaptions,
+  buildFallbackCaptions,
+  type EnrichedCaption,
+} from "@/lib/shorts-captions";
+import {
+  findBestImageMatch,
+  incrementImageUsage,
+} from "@/lib/shorts-image-matcher";
 
 export const maxDuration = 300;
 
@@ -186,6 +195,22 @@ export async function generateSingleShort(topic?: string, autoPublish = false, f
   let seriesTracker: Record<string, any> = {};
   try { seriesTracker = JSON.parse(await readFile("data/shorts/series-tracker.json")); } catch {}
 
+  // Get available image library patterns — scripts that reference these will
+  // get matched to real chart images instead of generic stock video
+  let imagePatternHint = "";
+  try {
+    const { getLibraryTaxonomy } = await import("@/lib/shorts-image-matcher");
+    const taxonomy = await getLibraryTaxonomy();
+    if (taxonomy.imageCount > 0) {
+      imagePatternHint = `
+
+AVAILABLE CHART IMAGES (prefer these concepts so scenes can match real chart visuals):
+Patterns: ${taxonomy.patterns.slice(0, 15).join(", ")}
+Pairs/topics in library: ${taxonomy.tags.filter(t => /^(EUR|USD|GBP|XAU|BTC|DXY|NAS|NFP|ICT)/i.test(t)).slice(0, 10).join(", ")}
+When your script mentions one of these concepts, set visualType=chart_image and describe the chart clearly in visualQuery.`;
+    }
+  } catch {}
+
   // Generate script
   const response = await anthropic.messages.create({
     model: "claude-sonnet-4-6",
@@ -203,6 +228,7 @@ TARGET: ${forceDuration || contentType.targetDuration} seconds (~${forceDuration
 VIRAL HOOK INSPIRATION: "${hookExample}"
 SERIES: ${JSON.stringify(Object.fromEntries(Object.entries(seriesTracker).filter(([k]) => k !== "_recentTypes")))}
 ${marketContext}
+${imagePatternHint}
 
 ═══ HOOK QUALITY (this determines 90% of performance) ═══
 The FIRST SCENE (hook) must create an "open loop" — make the viewer NEED to know the answer.
@@ -307,24 +333,46 @@ Return ONLY JSON:
   const transcription = await whisperRes.json();
   const duration = transcription.duration || 30;
 
-  // Fetch visuals — prefer stock video, recycle saved images, generate new only if needed
+  // Fetch visuals — prefer rich image library for chart scenes, stock video otherwise
   const visuals: { type: "video" | "image"; url: string }[] = [];
-  const usedClipUrls = new Set<string>(); // prevent same clip twice in one video
+  const usedClipUrls = new Set<string>(); // prevent same asset twice in one video
   const token = process.env.GITHUB_TOKEN!;
+  const usedImageIds: string[] = []; // for usage tracking after render
 
-  // Load saved image library for recycling
+  // Legacy recycling library (Gemini-generated) — kept for backwards compat
   let savedImages: { tag: string; url: string }[] = [];
   try {
     const imgLib = await readFile("data/shorts/image-library.json");
     savedImages = JSON.parse(imgLib);
   } catch {}
 
+  // Full script text — feeds image matcher's secondary context score
+  const scriptContext = script.scenes
+    .map((s: { content?: string; visualQuery?: string }) => `${s.content || ""} ${s.visualQuery || ""}`)
+    .join(" ");
+
   for (let i = 0; i < script.scenes.length; i++) {
     const scene = script.scenes[i];
     let found = false;
 
-    // Priority 1: Stock video (most scenes should use this)
-    if (scene.visualType === "stock_video" || scene.visualType !== "chart_image") {
+    // Priority 1 (chart_image only): Rich image library (/admin/image-library tagged content)
+    if (scene.visualType === "chart_image") {
+      const best = await findBestImageMatch(
+        scene.visualQuery || scene.content || "",
+        scriptContext,
+        usedClipUrls,
+      );
+      if (best) {
+        visuals.push({ type: "image", url: best.url });
+        usedClipUrls.add(best.url);
+        usedImageIds.push(best.id);
+        found = true;
+        console.log(`[shorts] Scene ${i}: matched library image "${best.description.slice(0, 60)}" (tags: ${best.tags.join(",")})`);
+      }
+    }
+
+    // Priority 2: Stock video (most non-chart scenes)
+    if (!found && (scene.visualType === "stock_video" || scene.visualType !== "chart_image")) {
       const stockTag = EMOTION_MAP[scene.emotion] || EMOTION_MAP[scene.visualType] || "";
       const clips = STOCK_LIBRARY[stockTag] || [];
       // Pick a random clip that hasn't been used yet in this video
@@ -342,7 +390,7 @@ Return ONLY JSON:
       }
     }
 
-    // Priority 2: Check saved image library for matching tag
+    // Priority 3: Legacy Gemini-generated image library fallback
     if (!found && scene.visualType === "chart_image") {
       const query = (scene.visualQuery || "").toLowerCase();
       const match = savedImages.find(img => query.includes(img.tag) || img.tag.includes(query.split(" ")[0]));
@@ -398,53 +446,25 @@ Return ONLY JSON:
     }
   }
 
-  // Build captions: use Whisper words but split at natural phrase boundaries
+  // Build ENRICHED captions with word-level timings + power-word classification.
+  // Feeds the DO renderer which generates ASS subtitle files with karaoke effect
+  // (per-word highlighting) and power-word color emphasis.
   const words: { word: string; start: number; end: number }[] = transcription.words || [];
   const segments: { start: number; end: number; text: string }[] = transcription.segments || [];
-  const highlightWords = (script.highlightWords || []).map((w: string) => w.toLowerCase());
-  const captions: { text: string; start: number; end: number; isHighlight: boolean; isHook: boolean }[] = [];
+  const highlightWords: string[] = script.highlightWords || [];
+  const enrichedCaptions: EnrichedCaption[] =
+    words.length > 0
+      ? buildEnrichedCaptions(words, highlightWords)
+      : buildFallbackCaptions(segments, highlightWords);
 
-  if (words.length > 0) {
-    // Smart phrase grouping: split at punctuation, pauses, and natural breaks
-    let chunk: typeof words = [];
-    const flush = () => {
-      if (chunk.length === 0) return;
-      const text = chunk.map(w => w.word).join(" ").trim().toUpperCase();
-      const start = chunk[0].start;
-      const end = chunk[chunk.length - 1].end;
-      const isHl = highlightWords.some((hw: string) => text.toLowerCase().includes(hw));
-      captions.push({ text, start, end, isHighlight: isHl, isHook: captions.length === 0 });
-      chunk = [];
-    };
-
-    for (let i = 0; i < words.length; i++) {
-      const w = words[i];
-      chunk.push(w);
-      const wordText = w.word.trim();
-      const nextWord = words[i + 1];
-
-      // Check for natural break points
-      const endsWithPunctuation = /[.!?,;:\-—]$/.test(wordText);
-      const hasLongPause = nextWord && (nextWord.start - w.end) > 0.3;
-      const atMaxWords = chunk.length >= 5;
-      const atGoodLength = chunk.length >= 3;
-      const isLastWord = i === words.length - 1;
-
-      // Flush at: punctuation, long pauses, max length, or end
-      if (isLastWord || atMaxWords || (atGoodLength && (endsWithPunctuation || hasLongPause)) || endsWithPunctuation) {
-        flush();
-      }
-    }
-    flush(); // catch any remaining
-  } else if (segments.length > 0) {
-    // Fallback: use Whisper segments as captions
-    for (let i = 0; i < segments.length; i++) {
-      const seg = segments[i];
-      const text = seg.text.trim().toUpperCase();
-      const isHl = highlightWords.some((hw: string) => text.toLowerCase().includes(hw));
-      captions.push({ text, start: seg.start, end: seg.end, isHighlight: isHl, isHook: i === 0 });
-    }
-  }
+  // Legacy flat-caption shape retained for Creatomate fallback path only
+  const captions = enrichedCaptions.map((c) => ({
+    text: c.text,
+    start: c.start,
+    end: c.end,
+    isHighlight: c.words.some((w) => w.style !== "normal"),
+    isHook: c.isHook,
+  }));
 
   const sceneDur = duration / Math.max(visuals.length, 1);
   const bgElements = visuals.map((vis, i) => {
@@ -514,6 +534,16 @@ Return ONLY JSON:
           isHook: c.isHook,
           isHighlight: c.isHighlight,
         })),
+        // Enriched caption data with word-level timings + power-word styles.
+        // DO renderer prefers this if present (for ASS karaoke captions).
+        // Falls back to legacy `captions` array if absent.
+        enrichedCaptions: enrichedCaptions.map((c) => ({
+          text: c.text,
+          start: c.start,
+          end: c.end,
+          isHook: c.isHook,
+          words: c.words,
+        })),
         webhookUrl,
         githubToken: process.env.GITHUB_TOKEN,
         githubRepo: process.env.GITHUB_REPO || "JidoLab/r2f-trading",
@@ -522,6 +552,11 @@ Return ONLY JSON:
 
     if (!renderRes.ok) throw new Error(`FFmpeg Render Service: ${(await renderRes.text()).slice(0, 200)}`);
     renderId = `render-${slug}`;
+
+    // Increment usage count for matched library images (best-effort, non-blocking)
+    for (const imgId of usedImageIds) {
+      incrementImageUsage(imgId).catch(() => {});
+    }
   } else {
     // Fallback: Creatomate
     const renderRes = await fetch("https://api.creatomate.com/v1/renders", {
