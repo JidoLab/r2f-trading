@@ -21,10 +21,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-17T02:00:27.875Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/pov-you-finally-understand-fair-value-gaps.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/rzHHTgvZ7Bo",
   "copyText": "POV: You Finally Understand Fair Value Gaps\n\nPOV: You've been trading for 2 years. Blowing accounts. Missing entries. Then ONE concept changes everything. This is the fair value gap moment nobody talks about. #ICTTrading #FairValueGap #SmartMonkeyConcepts #FundedTrader #R2FTrading\n\n#ICTTrading #FairValueGap #SmartMoneyConcepts #FundedTrader #OrderBlocks #ForexTrading #R2FTrading #TradingTips #ICT2026 #FundedAccount",
-  "uploadResults": [],
-  "completedAt": "2026-04-17T02:03:14.590Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/rzHHTgvZ7Bo"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-17T02:03:14.590Z",
+  "publishedAt": "2026-04-17T11:00:32.722Z"
 }
