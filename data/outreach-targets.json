@@ -11,9 +11,35 @@
       "broker-reviews",
       "strategies"
     ],
-    "status": "untouched",
+    "status": "drafted",
     "createdAt": "2026-04-17T07:01:58.276Z",
-    "updatedAt": "2026-04-17T07:01:58.276Z"
+    "updatedAt": "2026-04-17T07:02:37.804Z",
+    "context": {
+      "blogTitle": "Best Forex Trading Platforms 2022 | Forex Crunch",
+      "blogDescription": "Interested in forex trading? We review the best forex trading platforms for beginners in 2022. Find your best match with our expert guides!",
+      "recentPosts": [],
+      "scrapedAt": "2026-04-17T07:02:38.143Z"
+    },
+    "pitch": {
+      "subject": "3 ICT-focused topic ideas for Forex Crunch readers",
+      "body": "Hi there,\n\nI noticed Forex Crunch does a solid job covering platform comparisons and broker reviews for traders just getting started — but there's a gap I keep seeing on most forex blogs: almost nothing on how ICT concepts actually apply once someone is trading a funded account.\n\nI'm Harvest Wright, founder of R2F Trading and an ICT coach who has spent 10+ years helping prop firm traders pass funded challenges on platforms like FTMO and MyForexFunds. My students are actively getting funded, and I publish in-depth content on the mechanics behind why — order blocks, fair value gaps, liquidity sweeps, and session-based risk management.\n\nI think your audience would find real value in a few angles I haven't seen covered this way elsewhere:\n\n- How to Use ICT Order Blocks to Pass Your FTMO Challenge Without Blowing a Single Rule\n- The 1-Hour Killzone Mistake That Kills 9 Out of 10 Funded Challenges\n- Fair Value Gaps vs. Traditional Support and Resistance: What Forex Crunch Readers Need to Know in 2024\n\nFor reference, I've published 40+ long-form trading articles, have a growing YouTube channel at @R2F-Trading, and was featured as a TradingView Editors' Pick — so I'm used to writing for an audience that takes this seriously.\n\nOpen to any of these? Happy to send a full outline whichever direction looks like the best fit.\n\nHarvest Wright\nFounder, R2F Trading\nr2ftrading.com",
+      "topics": [
+        {
+          "title": "How to Use ICT Order Blocks to Pass Your FTMO Challenge Without Blowing a Single Rule",
+          "angle": "Most prop firm failures aren't about strategy — they're about misreading institutional order flow, and this piece shows forex traders exactly how to fix that using ICT order block logic."
+        },
+        {
+          "title": "The 1-Hour Killzone Mistake That Kills 9 Out of 10 Funded Challenges",
+          "angle": "New and intermediate forex traders consistently overtrade outside high-probability ICT killzones, and this piece gives them a concrete session-based framework to stop doing it."
+        },
+        {
+          "title": "Fair Value Gaps vs. Traditional Support and Resistance: What Forex Crunch Readers Need to Know in 2024",
+          "angle": "As ICT concepts go mainstream, forex traders using legacy S/R methods are leaving clean entries on the table — this piece bridges the gap for readers already familiar with platform-level charting tools."
+        }
+      ],
+      "draftedAt": "2026-04-17T07:02:51.370Z",
+      "model": "claude-sonnet-4-6"
+    }
   },
   {
     "id": "target-1776409318276-nstqml",
