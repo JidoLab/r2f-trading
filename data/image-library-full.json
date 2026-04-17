@@ -407,5 +407,28 @@
     "timeframe": "6H, 8H",
     "addedAt": "2026-04-17T01:13:25.903Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388407319-w0a1",
+    "filename": "img-1776388407319-w0a1.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388407319-w0a1.png",
+    "tags": [
+      "NZDUSD",
+      "Orderblock",
+      "OTE",
+      "Fibonacci",
+      "daily chart"
+    ],
+    "patterns": [
+      "order block",
+      "Fibonacci retracement",
+      "OTE"
+    ],
+    "category": "chart-pattern",
+    "description": "NZD/USD daily chart showing Optimal Trade Entry (OTE) sell setup from 72% premium level, leading to a 300+ pip drop.",
+    "pair": "NZDUSD",
+    "timeframe": "1D",
+    "addedAt": "2026-04-17T01:13:38.851Z",
+    "usageCount": 0
   }
 ]
