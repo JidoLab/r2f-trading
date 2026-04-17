@@ -670,5 +670,27 @@
     "timeframe": "30M",
     "addedAt": "2026-04-17T01:19:38.276Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388780365-6olk",
+    "filename": "img-1776388780365-6olk.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388780365-6olk.png",
+    "tags": [
+      "GBPUSD",
+      "forex",
+      "tradingview",
+      "candlestick",
+      "RSI"
+    ],
+    "patterns": [
+      "liquidity sweep",
+      "support/resistance"
+    ],
+    "category": "chart-pattern",
+    "description": "GBP/USD 5-minute chart showing a potential short trade setup with ICT Killzone and RSI.",
+    "pair": "GBPUSD",
+    "timeframe": "5M",
+    "addedAt": "2026-04-17T01:19:52.942Z",
+    "usageCount": 0
   }
 ]
