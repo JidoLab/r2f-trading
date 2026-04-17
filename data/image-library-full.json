@@ -454,5 +454,30 @@
     "timeframe": "1D",
     "addedAt": "2026-04-17T01:13:49.749Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388431431-sbzk",
+    "filename": "img-1776388431431-sbzk.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388431431-sbzk.png",
+    "tags": [
+      "forex trading",
+      "technical analysis",
+      "SMTD",
+      "liquidity sweep",
+      "EURUSD"
+    ],
+    "patterns": [
+      "SMTD",
+      "liquidity sweep",
+      "clean highs",
+      "clean lows",
+      "optimal trade entry"
+    ],
+    "category": "chart-pattern",
+    "description": "Candlestick charts comparing EURUSD sell setup with SMTD and DXY strength, showing liquidity sweeps.",
+    "pair": "EURUSD, DXY",
+    "timeframe": "1H",
+    "addedAt": "2026-04-17T01:14:02.531Z",
+    "usageCount": 0
   }
 ]
