@@ -21,10 +21,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-17T02:00:45.990Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/i-blew-my-funded-account-ignoring-this-one-thing.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/DTXaHLpFQVg",
   "copyText": "I Blew My Funded Account Ignoring This One Thing\n\nPOV: You finally get a funded account… then blow it in 3 days. Sound familiar? Here's the ONE thing smart money traders check that beginners skip every single time. Fair value gaps changed everything. Follow R2F Trading for daily ICT setups.\n\n#ICTTrading #FundedTrader #FairValueGap #SmartMoneyC oncepts #OrderBlocks #R2FTrading #ICT #ForexTrading #TradingTips #FundedAccount",
-  "uploadResults": [],
-  "completedAt": "2026-04-17T02:03:26.401Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/DTXaHLpFQVg"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-17T02:03:26.401Z",
+  "publishedAt": "2026-04-17T17:01:07.972Z"
 }
