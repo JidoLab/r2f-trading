@@ -1,5 +1,35 @@
 [
   {
+    "id": "sug-1776387557768-4ja52",
+    "platform": "medium",
+    "postTitle": "The Anatomy of Tilt: Why Winning Streaks Cause the Biggest Drawdowns",
+    "postUrl": "https://medium.com/@palchinskiyv/the-anatomy-of-tilt-why-winning-streaks-cause-the-biggest-drawdowns-aa4818251ae2?source=rss------day_trading-5",
+    "authorName": "Volodymyr Palchynskyi",
+    "suggestedReply": "Winning streaks are dangerous precisely because they distort your risk calibration, not just your psychology. I've watched traders double their position size on the fifth consecutive winning trade in NQ futures, convinced the edge has expanded when really the market regime just happened to align. The tilt you describe cuts deepest when traders conflate a favorable environment with personal skill.",
+    "createdAt": "2026-04-17T00:59:17.768Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776387560968-6it6h",
+    "platform": "medium",
+    "postTitle": "Why Most Copy Traders Still Lose Money with Forex Signals (And How to Avoid It)",
+    "postUrl": "https://medium.com/@tradecopier/why-most-copy-traders-still-lose-money-with-forex-signals-and-how-to-avoid-it-f8cc99b16e53?source=rss------forex_trading-5",
+    "authorName": "Trade Copier",
+    "suggestedReply": "One thing most copy traders overlook beyond signal quality is position sizing misalignment. My students often mirror a signal provider's EURUSD trade at full lot size without accounting for different account equity, which amplifies drawdown disproportionately. A simple 2% risk normalization per trade changes the math entirely and keeps you in the game long enough for the edge to play out.",
+    "createdAt": "2026-04-17T00:59:20.968Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776387564015-g5i6e",
+    "platform": "medium",
+    "postTitle": "How can I recover my lost money from Forex urgently?",
+    "postUrl": "https://medium.com/@49_19792/how-can-i-recover-my-lost-money-from-forex-urgently-0299af384135?source=rss------forex_trading-5",
+    "authorName": "Hannah Biden",
+    "suggestedReply": "Hannah, the urgency framing here is actually part of the problem. Chasing recovery on the same pair that burned you, say EUR/USD on a 15-minute chart, almost always compounds the loss. My students learn early that capital preservation after a drawdown requires stepping back entirely for at least 48 hours before re-entering any position.",
+    "createdAt": "2026-04-17T00:59:24.015Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776386728668-2obeo",
     "platform": "investinglive",
     "postTitle": "PBOC is expected to set the USD/CNY reference rate at 6.8206 – Reuters estimate",
