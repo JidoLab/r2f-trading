@@ -100,6 +100,18 @@ export default function SyndicationAdminPage() {
   if (loading) return <div className="text-white/40">Loading syndication status...</div>;
   if (!status) return <div className="text-red-400">Failed to load</div>;
 
+  // Defensive defaults — API response may be missing fields if first run / error
+  const statusAny = status as Partial<StatusResponse>;
+  const rawPlatforms = statusAny.platforms || ({} as Partial<StatusResponse["platforms"]>);
+  const platforms = {
+    devto: rawPlatforms.devto || { configured: false },
+    hashnode: rawPlatforms.hashnode || { configured: false },
+    medium: rawPlatforms.medium || { configured: true },
+  } as StatusResponse["platforms"];
+  const recentLog: StatusResponse["recentLog"] = Array.isArray(statusAny.recentLog)
+    ? statusAny.recentLog
+    : [];
+
   return (
     <div className="space-y-6">
       <div>
@@ -118,30 +130,30 @@ export default function SyndicationAdminPage() {
             <h3 className="text-white font-semibold">Dev.to</h3>
             <span
               className={`px-2 py-0.5 rounded-full text-[10px] font-bold ${
-                status.platforms.devto.connection?.ok
+                platforms.devto.connection?.ok
                   ? "bg-green-500/20 text-green-400"
-                  : status.platforms.devto.configured
+                  : platforms.devto.configured
                   ? "bg-amber-500/20 text-amber-400"
                   : "bg-red-500/20 text-red-400"
               }`}
             >
-              {status.platforms.devto.connection?.ok
+              {platforms.devto.connection?.ok
                 ? "Connected"
-                : status.platforms.devto.configured
+                : platforms.devto.configured
                 ? "Config'd / No Conn"
                 : "Not Configured"}
             </span>
           </div>
-          {status.platforms.devto.connection?.ok ? (
+          {platforms.devto.connection?.ok ? (
             <div className="text-xs space-y-1">
               <div className="flex justify-between">
                 <span className="text-white/40">Username</span>
-                <span className="text-white">@{status.platforms.devto.connection.username}</span>
+                <span className="text-white">@{platforms.devto.connection.username}</span>
               </div>
             </div>
-          ) : status.platforms.devto.connection?.error ? (
+          ) : platforms.devto.connection?.error ? (
             <p className="text-xs text-red-400/80 font-mono break-all">
-              {status.platforms.devto.connection.error}
+              {platforms.devto.connection.error}
             </p>
           ) : (
             <p className="text-xs text-white/50">
@@ -156,41 +168,41 @@ export default function SyndicationAdminPage() {
             <h3 className="text-white font-semibold">Hashnode</h3>
             <span
               className={`px-2 py-0.5 rounded-full text-[10px] font-bold ${
-                status.platforms.hashnode.connection?.ok
+                platforms.hashnode.connection?.ok
                   ? "bg-green-500/20 text-green-400"
-                  : status.platforms.hashnode.configured
+                  : platforms.hashnode.configured
                   ? "bg-amber-500/20 text-amber-400"
                   : "bg-red-500/20 text-red-400"
               }`}
             >
-              {status.platforms.hashnode.connection?.ok
+              {platforms.hashnode.connection?.ok
                 ? "Connected"
-                : status.platforms.hashnode.configured
+                : platforms.hashnode.configured
                 ? "Config'd / No Conn"
                 : "Not Configured"}
             </span>
           </div>
-          {status.platforms.hashnode.connection?.ok ? (
+          {platforms.hashnode.connection?.ok ? (
             <div className="text-xs space-y-1">
               <div className="flex justify-between">
                 <span className="text-white/40">Username</span>
-                <span className="text-white">@{status.platforms.hashnode.connection.username}</span>
+                <span className="text-white">@{platforms.hashnode.connection.username}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-white/40">Publication</span>
-                <span className="text-white">{status.platforms.hashnode.connection.publicationTitle}</span>
+                <span className="text-white">{platforms.hashnode.connection.publicationTitle}</span>
               </div>
             </div>
-          ) : status.platforms.hashnode.connection?.error ? (
+          ) : platforms.hashnode.connection?.error ? (
             <p className="text-xs text-red-400/80 font-mono break-all">
-              {status.platforms.hashnode.connection.error}
+              {platforms.hashnode.connection.error}
             </p>
           ) : (
             <div className="text-xs text-white/50 space-y-2">
               <p>
                 Set <code className="text-gold">HASHNODE_API_KEY</code> + <code className="text-gold">HASHNODE_PUBLICATION_ID</code>.
               </p>
-              {status.platforms.hashnode.hasApiKey && !status.platforms.hashnode.hasPublicationId && (
+              {platforms.hashnode.hasApiKey && !platforms.hashnode.hasPublicationId && (
                 <button
                   onClick={discoverHashnode}
                   disabled={discovering}
@@ -238,11 +250,11 @@ export default function SyndicationAdminPage() {
       </div>
 
       {/* Setup instructions (shown only if not all configured) */}
-      {(!status.platforms.devto.connection?.ok || !status.platforms.hashnode.connection?.ok) && (
+      {(!platforms.devto.connection?.ok || !platforms.hashnode.connection?.ok) && (
         <div className="bg-white/5 border border-white/10 rounded-lg p-6">
           <h2 className="text-white font-semibold mb-4">Setup</h2>
           <div className="space-y-6 text-sm">
-            {!status.platforms.devto.connection?.ok && (
+            {!platforms.devto.connection?.ok && (
               <div>
                 <h3 className="text-gold font-bold mb-2">Dev.to (2 min)</h3>
                 <ol className="list-decimal pl-5 space-y-1 text-white/70">
@@ -274,7 +286,7 @@ export default function SyndicationAdminPage() {
               </div>
             )}
 
-            {!status.platforms.hashnode.connection?.ok && (
+            {!platforms.hashnode.connection?.ok && (
               <div>
                 <h3 className="text-gold font-bold mb-2">Hashnode (5 min)</h3>
                 <ol className="list-decimal pl-5 space-y-1 text-white/70">
@@ -336,7 +348,7 @@ export default function SyndicationAdminPage() {
 
         {testResult && (
           <div className="mt-4 space-y-2">
-            {testResult.platforms.map((p, i) => (
+            {(testResult.platforms || []).map((p, i) => (
               <div
                 key={i}
                 className={`p-3 rounded text-sm ${
@@ -369,11 +381,11 @@ export default function SyndicationAdminPage() {
       </div>
 
       {/* Recent syndication log */}
-      {status.recentLog.length > 0 && (
+      {recentLog.length > 0 && (
         <div className="bg-white/5 border border-white/10 rounded-lg p-6">
           <h2 className="text-white font-semibold mb-4">Recent Syndications</h2>
           <div className="space-y-3">
-            {status.recentLog.map((entry, i) => (
+            {recentLog.map((entry, i) => (
               <div key={i} className="border-b border-white/5 pb-3 last:border-0">
                 <div className="flex justify-between items-start mb-2">
                   <div>
@@ -382,7 +394,7 @@ export default function SyndicationAdminPage() {
                   </div>
                 </div>
                 <div className="flex gap-2 flex-wrap">
-                  {entry.platforms.map((p, j) => (
+                  {(entry.platforms || []).map((p, j) => (
                     <span
                       key={j}
                       className={`text-[10px] px-2 py-0.5 rounded font-mono ${
