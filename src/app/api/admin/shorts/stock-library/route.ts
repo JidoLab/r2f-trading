@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { verifyAdmin } from "@/lib/admin-auth";
+import { verifyAdmin, verifyAdminOrCron } from "@/lib/admin-auth";
 import {
   expandCategoryFromPexels,
   getLibraryStats,
@@ -18,7 +18,7 @@ export const maxDuration = 60;
  */
 
 export async function GET(req: NextRequest) {
-  const admin = await verifyAdmin();
+  const admin = await verifyAdminOrCron(req);
   if (!admin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   const { searchParams } = new URL(req.url);
@@ -36,7 +36,7 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest) {
-  const admin = await verifyAdmin();
+  const admin = await verifyAdminOrCron(req);
   if (!admin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   if (!process.env.PEXELS_API_KEY) {

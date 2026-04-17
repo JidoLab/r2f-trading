@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { verifyAdmin } from "@/lib/admin-auth";
+import { verifyAdmin, verifyAdminOrCron } from "@/lib/admin-auth";
 import { readFile, commitFile } from "@/lib/github";
 import Anthropic from "@anthropic-ai/sdk";
 import { getCurrentDateContext } from "@/lib/date-context";
@@ -127,7 +127,7 @@ const EMOTION_MAP: Record<string, string> = {
 };
 
 export async function POST(req: NextRequest) {
-  const isAdmin = await verifyAdmin();
+  const isAdmin = await verifyAdminOrCron(req);
   if (!isAdmin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   try {

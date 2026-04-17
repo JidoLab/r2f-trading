@@ -41,9 +41,10 @@ const WORD_STYLES = {
   highlight: { color: COLORS.gold, scale: 110, weight: 1 },
 };
 
-// Active (currently-spoken) word gets a gold flash + bigger pop
+// Active (currently-spoken) word — hard pop with gold flash + big scale
 const ACTIVE_COLOR = COLORS.gold;
-const ACTIVE_SCALE_BOOST = 25; // 100 → 125, more visible pop
+const ACTIVE_SCALE_BOOST = 35; // 100 → 135, hard pop
+const ACTIVE_TRANSITION_MS = 70; // faster snap-in/out for crispness
 
 // ─── Helpers ───────────────────────────────────────────────────────────
 
@@ -83,10 +84,10 @@ function buildWordAnimation(wordStartMs, wordEndMs, baseStyle, chunkStartMs) {
   const baseScale = baseStyle.scale;
   const activeScale = baseScale + ACTIVE_SCALE_BOOST;
 
-  // Animate: at word start, jump to gold+larger. At word end, return to base.
-  // Fade in/out over 100ms for snappy but smooth effect.
-  const inDur = 100;
-  const outDur = 100;
+  // Animate: at word start, snap to gold + much larger. At word end, return.
+  // Short transition windows (70ms) for crisp pop rather than smooth fade.
+  const inDur = ACTIVE_TRANSITION_MS;
+  const outDur = ACTIVE_TRANSITION_MS;
 
   return (
     `{\\t(${relStart},${relStart + inDur},\\c${ACTIVE_COLOR}&\\fscx${activeScale}\\fscy${activeScale})` +
