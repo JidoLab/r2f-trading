@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { readFile, commitFile } from "@/lib/github";
 import { getRedditAccessToken, getRedditUserAgent } from "@/lib/reddit-auth";
 import Anthropic from "@anthropic-ai/sdk";
+import { getCurrentDateContext } from "@/lib/date-context";
 
 export const maxDuration = 120;
 
@@ -187,6 +188,9 @@ async function generateComment(
       {
         role: "user",
         content: `You are Harvest Wright, an experienced ICT trader browsing r/${post.subreddit}. Write a Reddit comment.
+
+${getCurrentDateContext()}
+
 
 POST TITLE: ${post.title}
 POST BODY: ${post.selftext.slice(0, 1500) || "(no body text)"}

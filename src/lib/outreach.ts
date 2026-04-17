@@ -13,6 +13,7 @@
  */
 
 import Anthropic from "@anthropic-ai/sdk";
+import { getCurrentDateContext, getCurrentDateValues } from "@/lib/date-context";
 
 export type OutreachStatus =
   | "untouched"
@@ -166,6 +167,9 @@ Proof: Active coaching business, published 40+ in-depth articles, growing YouTub
 export async function draftPitch(target: OutreachTarget): Promise<PitchDraft> {
   const anthropic = new Anthropic();
 
+  const dateContext = getCurrentDateContext();
+  const { year, quarter } = getCurrentDateValues();
+
   const ctx = target.context || {};
   const contextBlock = [
     ctx.blogTitle ? `Blog title: ${ctx.blogTitle}` : null,
@@ -182,6 +186,9 @@ export async function draftPitch(target: OutreachTarget): Promise<PitchDraft> {
     .join("\n");
 
   const prompt = `You are drafting a cold guest-post pitch email for Harvest Wright to send to the editor of a trading blog.
+
+${dateContext}
+If a topic headline needs a year/quarter, use Q${quarter} ${year} or ${year}.
 
 TARGET BLOG: ${target.name} (${target.url})
 

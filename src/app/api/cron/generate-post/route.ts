@@ -4,6 +4,7 @@ import { notifyIndexNow } from "@/lib/indexnow";
 import { postToAll, postLinkedInArticle } from "@/lib/social";
 import Anthropic from "@anthropic-ai/sdk";
 import { GoogleGenAI } from "@google/genai";
+import { getCurrentDateContext } from "@/lib/date-context";
 
 export const maxDuration = 300;
 
@@ -44,6 +45,7 @@ export async function GET(req: NextRequest) {
     const date = new Date().toISOString().split("T")[0];
     const month = new Date().toLocaleDateString("en-US", { month: "long", year: "numeric" });
     const dayOfWeek = new Date().toLocaleDateString("en-US", { weekday: "long" });
+    const dateContext = getCurrentDateContext();
 
     // Fetch market trends and economic calendar
     let marketContext = "";
@@ -73,6 +75,9 @@ export async function GET(req: NextRequest) {
       messages: [{
         role: "user",
         content: `You are a content strategist for R2F Trading, a professional ICT trading coaching website run by Harvest Wright (10+ years ICT experience).
+
+${dateContext}
+
 TODAY: ${dayOfWeek}, ${month}
 EXISTING POSTS (avoid repeats): ${existingTitles.slice(0, 20).join(", ") || "None"}
 ${marketContext}
@@ -132,6 +137,8 @@ Return ONLY a JSON object: { "topic": "...", "category": "...", "postType": "...
       messages: [{
         role: "user",
         content: `Write a high-quality blog article for R2F Trading (r2ftrading.com).
+
+${dateContext}
 
 AUTHOR: Harvest Wright — sole mentor, 10+ years ICT trading experience, TradingView Editors' Pick, Top 1% in competitions, FTMO Challenge passer. Based in Thailand.
 TOPIC: "${topicData.topic}" | CATEGORY: ${topicData.category} | POST TYPE: ${topicData.postType || "how-to"} | ANGLE: ${topicData.angle} | KEYWORD: "${topicData.targetKeyword}" | DATE: ${date}

@@ -5,6 +5,7 @@
  */
 
 import Anthropic from "@anthropic-ai/sdk";
+import { getCurrentDateContext } from "@/lib/date-context";
 import { readFile, commitFile, listFiles } from "@/lib/github";
 import { sendEmail } from "@/lib/resend";
 import { getAllPosts } from "@/lib/blog";
@@ -92,6 +93,8 @@ export async function sendWeeklyNewsletter(): Promise<NewsletterSendResult> {
     : "No major events scheduled.";
 
   const prompt = `You are Harvest Wright, an ICT trading coach writing a weekly newsletter for R2F Trading subscribers.
+
+${getCurrentDateContext()}
 
 Generate a weekly newsletter digest in JSON format. Be personable, knowledgeable, and concise.
 

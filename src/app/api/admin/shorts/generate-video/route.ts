@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { verifyAdmin } from "@/lib/admin-auth";
 import { readFile, commitFile } from "@/lib/github";
 import Anthropic from "@anthropic-ai/sdk";
+import { getCurrentDateContext } from "@/lib/date-context";
 
 export const maxDuration = 300;
 
@@ -192,6 +193,9 @@ export async function generateSingleShort(topic?: string, autoPublish = false, f
     messages: [{
       role: "user",
       content: `Generate a YouTube Shorts script for R2F Trading, an ICT trading coaching brand by Harvest Wright (10+ years experience).
+
+${getCurrentDateContext()}
+
 ${topic ? `TOPIC: "${topic}"` : "Pick an engaging ICT trading topic. PRIORITIZE timely/trending topics if available below — they get more views."}
 CONTENT TYPE: ${contentType.id} — ${contentType.name}. ${contentType.description}
 SCENE STRUCTURE: ${contentType.sceneTemplate}

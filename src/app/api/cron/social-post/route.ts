@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { readFile, commitFile } from "@/lib/github";
 import Anthropic from "@anthropic-ai/sdk";
+import { getCurrentDateContext } from "@/lib/date-context";
 
 export const maxDuration = 90;
 
@@ -66,6 +67,9 @@ export async function GET(req: NextRequest) {
         role: "user",
         content: isPollNative
           ? `You are the social media voice for R2F Trading (ICT trading coaching by Harvest Wright).
+
+${getCurrentDateContext()}
+
 Generate a trading poll for Twitter/X.
 
 ${postType.prompt}
@@ -84,6 +88,9 @@ RULES:
 Return ONLY a JSON object:
 {"question": "the poll question with hashtags", "options": ["Option A", "Option B", "Option C"], "duration_minutes": 1440, "type": "poll-native"}`
           : `You are the social media voice for R2F Trading (ICT trading coaching by Harvest Wright).
+
+${getCurrentDateContext()}
+
 Write a ${postType.id.toUpperCase()} post for Twitter/X and social media.
 
 ${postType.prompt}
