@@ -644,5 +644,31 @@
     "timeframe": "2h",
     "addedAt": "2026-04-17T01:19:29.175Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388770594-vzxj",
+    "filename": "img-1776388770594-vzxj.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388770594-vzxj.png",
+    "tags": [
+      "Bitcoin",
+      "BTCUSD",
+      "liquidity",
+      "clean highs",
+      "clean lows",
+      "trading",
+      "chart",
+      "price action"
+    ],
+    "patterns": [
+      "liquidity sweep",
+      "clean highs",
+      "clean lows"
+    ],
+    "category": "chart-pattern",
+    "description": "Bitcoin 30M chart showing price swiftly clearing out clean highs and clean lows (liquidity sweeps).",
+    "pair": "BTCUSD",
+    "timeframe": "30M",
+    "addedAt": "2026-04-17T01:19:38.276Z",
+    "usageCount": 0
   }
 ]
