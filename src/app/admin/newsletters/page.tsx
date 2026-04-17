@@ -49,8 +49,8 @@ export default function AdminNewslettersPage() {
     setSendResult(null);
 
     try {
-      const res = await fetch("/api/cron/send-newsletter", {
-        headers: { Authorization: `Bearer ${prompt("Enter CRON_SECRET:")}` },
+      const res = await fetch("/api/admin/newsletters/send", {
+        method: "POST",
       });
       const data = await res.json();
       if (res.ok) {
