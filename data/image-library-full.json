@@ -53,5 +53,35 @@
     "description": "A table displaying live trading positions for various instruments with P&L, leverage, and margin.",
     "addedAt": "2026-04-14T04:10:04.693Z",
     "usageCount": 5
+  },
+  {
+    "id": "img-1776388013339-9hbk",
+    "filename": "img-1776388013339-9hbk.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388013339-9hbk.png",
+    "tags": [
+      "US Dollar Index",
+      "DXY",
+      "weekly chart",
+      "candlestick",
+      "liquidity",
+      "FVG",
+      "order block",
+      "technical analysis",
+      "tradingview"
+    ],
+    "patterns": [
+      "order block",
+      "FVG",
+      "liquidity",
+      "trendline liquidity",
+      "doji",
+      "equilibrium"
+    ],
+    "category": "chart-pattern",
+    "description": "U.S. Dollar Index weekly chart showing FVG, order blocks, trendline, and sell-side liquidity analysis.",
+    "pair": "U.S. Dollar Index",
+    "timeframe": "1W",
+    "addedAt": "2026-04-17T01:07:03.466Z",
+    "usageCount": 0
   }
 ]
