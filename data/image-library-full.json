@@ -430,5 +430,29 @@
     "timeframe": "1D",
     "addedAt": "2026-04-17T01:13:38.851Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388421071-7xr3",
+    "filename": "img-1776388421071-7xr3.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388421071-7xr3.png",
+    "tags": [
+      "EURUSD",
+      "Daily",
+      "Bullish Divergence",
+      "Order Block",
+      "Fibonacci"
+    ],
+    "patterns": [
+      "order block",
+      "hidden bullish divergence",
+      "fibonacci retracement",
+      "propulsion block"
+    ],
+    "category": "chart-pattern",
+    "description": "EUR/USD Daily chart showing hidden bullish divergence, order block, and Fibonacci levels.",
+    "pair": "EURUSD",
+    "timeframe": "1D",
+    "addedAt": "2026-04-17T01:13:49.749Z",
+    "usageCount": 0
   }
 ]
