@@ -32,6 +32,7 @@ const NAV_SECTIONS = [
     label: "Engagement",
     items: [
       { href: "/admin/engagement-log", label: "Engagement Log" },
+      { href: "/admin/outreach", label: "Guest Post Outreach" },
       { href: "/admin/reply-suggestions", label: "Reply Suggestions" },
       { href: "/admin/chat-logs", label: "Chat Logs" },
       { href: "/admin/reviews", label: "Reviews" },
