@@ -67,7 +67,7 @@
     "authorName": "Nolan",
     "suggestedReply": "Nolan, the \"fastest-growing sector\" framing is bold but I've seen similar narratives around tokenized RWAs in 2022 before liquidity dried up fast. What distinguishes HIP-3 assets in my book is how they handle settlement finality, which determines whether institutional desks will actually allocate. I ran a 3-month position in a hybrid instrument bridging TradFi collateral last year and the friction at the custody layer killed the trade thesis entirely.",
     "createdAt": "2026-04-17T00:31:05.025Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776385868518-tifxk",
