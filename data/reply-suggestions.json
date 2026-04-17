@@ -1,5 +1,55 @@
 [
   {
+    "id": "sug-1776385858204-dbtie",
+    "platform": "medium",
+    "postTitle": "Stop winging it before the open",
+    "postUrl": "https://medium.com/@vultureval/stop-winging-it-before-the-open-92c4047a98ab?source=rss------day_trading-5",
+    "authorName": "Vultureval",
+    "suggestedReply": "The pre-open prep is non-negotiable, agreed, but I'd add that over-structuring your bias before the London-New York overlap can be just as damaging as winging it. I've seen traders with pristine 6am routines still blow their risk parameters by 9:35 because they fell in love with their own narrative. Sometimes the plan is knowing exactly when to abandon the plan.",
+    "createdAt": "2026-04-17T00:30:58.204Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776385861035-iwuo6",
+    "platform": "medium",
+    "postTitle": "Is it possible to recover money lost to Forex investments?",
+    "postUrl": "https://medium.com/@48_86596/is-it-possible-to-recover-money-lost-to-forex-investments-3504edafe211?source=rss------forex_trading-5",
+    "authorName": "Joe Long",
+    "suggestedReply": "Joe, the \"recovery\" framing here deserves a closer look. In my experience, most traders who lost money on EUR/USD swing trades didn't lose it to bad brokers but to overleveraged positions and no defined exit rules. Chasing recovery through the same instrument that burned you, without fixing those mechanics first, usually just deepens the loss.",
+    "createdAt": "2026-04-17T00:31:01.035Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776385865025-2ux80",
+    "platform": "medium",
+    "postTitle": "Why HIP-3 Assets Are Poised to Become the Fastest-Growing Sector in Finance: The Dawn of True…",
+    "postUrl": "https://medium.com/@nolantbw/why-hip-3-assets-are-poised-to-become-the-fastest-growing-sector-in-finance-the-dawn-of-true-eed171e3e3bc?source=rss------trading-5",
+    "authorName": "Nolan",
+    "suggestedReply": "Nolan, the \"fastest-growing sector\" framing is bold but I've seen similar narratives around tokenized RWAs in 2022 before liquidity dried up fast. What distinguishes HIP-3 assets in my book is how they handle settlement finality, which determines whether institutional desks will actually allocate. I ran a 3-month position in a hybrid instrument bridging TradFi collateral last year and the friction at the custody layer killed the trade thesis entirely.",
+    "createdAt": "2026-04-17T00:31:05.025Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776385868518-tifxk",
+    "platform": "medium",
+    "postTitle": "You’re Not Losing Money, You’re Leaking It",
+    "postUrl": "https://olympex.medium.com/youre-not-losing-money-you-re-leaking-it-3116ad0f4aa4?source=rss------trading-5",
+    "authorName": "Olympex",
+    "suggestedReply": "The \"leaking\" framing hits differently when you zoom out to the weekly on something like EURUSD and realize most of the damage wasn't from bad entries but from oversized positions bleeding through consolidation. What's your take on whether the leak is more often a risk management failure or a psychological one? In my experience coaching students, those two roots demand completely different fixes.",
+    "createdAt": "2026-04-17T00:31:08.518Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776385871647-5at8z",
+    "platform": "medium",
+    "postTitle": "Why Professional Positioning Matters in Online Search and AI Discovery ?",
+    "postUrl": "https://medium.com/@ATM-Capital-Ltd/why-professional-positioning-matters-in-online-search-and-ai-discovery-3969907f18f5?source=rss------forex_trading-5",
+    "authorName": "ATM Capital Ltd — Regulated Broker",
+    "suggestedReply": "Professional positioning in AI discovery also comes down to semantic consistency across platforms. I tell my students that the same logic applies to trading: if your EUR/USD analysis shifts tone every week, algorithms and followers alike stop trusting your signal. Brokers who maintain a unified, authoritative voice across 90-day content cycles tend to surface higher in both search and LLM-generated recommendations.",
+    "createdAt": "2026-04-17T00:31:11.647Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776300350352-yx5cb",
     "platform": "investinglive",
     "postTitle": "ICYMI - Fed’s Musalem says oil shock to keep core inflation near 3%",
