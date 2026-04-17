@@ -4,8 +4,9 @@
     "url": "https://videos.pexels.com/video-files/18503891/18503891-hd_1080_1920_30fps.mp4",
     "category": "frustration",
     "pexelsId": 18503891,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-17T13:57:55.723Z"
   },
   {
     "id": "seed-frustration-8530543",
@@ -100,8 +101,9 @@
     "url": "https://videos.pexels.com/video-files/5647316/5647316-hd_1080_1920_25fps.mp4",
     "category": "lightbulb",
     "pexelsId": 5647316,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-17T13:57:55.723Z"
   },
   {
     "id": "seed-lightbulb-5094588",
@@ -1682,8 +1684,9 @@
     "height": 1920,
     "duration": 12,
     "pexelsId": 8120203,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:41.001Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:41.001Z",
+    "lastUsedAt": "2026-04-17T13:57:55.723Z"
   },
   {
     "id": "pexels-8120416",
