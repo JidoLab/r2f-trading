@@ -111,5 +111,29 @@
     "timeframe": "1D",
     "addedAt": "2026-04-17T01:07:14.032Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388036268-v1ky",
+    "filename": "img-1776388036268-v1ky.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388036268-v1ky.png",
+    "tags": [
+      "USD Index",
+      "Technical Analysis",
+      "FVG",
+      "Liquidity",
+      "Price Action"
+    ],
+    "patterns": [
+      "FVG",
+      "Liquidity Sweep",
+      "Buyside Liquidity",
+      "Trendline Liquidity"
+    ],
+    "category": "chart-pattern",
+    "description": "USD Index 4H chart analysis with FVG, liquidity, and market structure insights.",
+    "pair": "U.S. Dollar Index",
+    "timeframe": "4H",
+    "addedAt": "2026-04-17T01:07:28.465Z",
+    "usageCount": 0
   }
 ]
