@@ -12,6 +12,11 @@ import {
   findBestImageMatch,
   incrementImageUsage,
 } from "@/lib/shorts-image-matcher";
+import {
+  loadStockLibrary,
+  pickStockClip,
+  trackStockUsage,
+} from "@/lib/shorts-stock-library";
 
 export const maxDuration = 300;
 
@@ -337,7 +342,11 @@ Return ONLY JSON:
   const visuals: { type: "video" | "image"; url: string }[] = [];
   const usedClipUrls = new Set<string>(); // prevent same asset twice in one video
   const token = process.env.GITHUB_TOKEN!;
-  const usedImageIds: string[] = []; // for usage tracking after render
+  const usedImageIds: string[] = []; // image library usage tracking
+  const usedStockIds: string[] = []; // stock clip usage tracking
+
+  // Preload stock library once (avoids re-fetching per scene)
+  const stockLib = await loadStockLibrary();
 
   // Legacy recycling library (Gemini-generated) — kept for backwards compat
   let savedImages: { tag: string; url: string }[] = [];
@@ -371,22 +380,18 @@ Return ONLY JSON:
       }
     }
 
-    // Priority 2: Stock video (most non-chart scenes)
+    // Priority 2: Stock video (most non-chart scenes) — uses data-driven library
+    // with least-used-first selection to avoid repetition across Shorts.
     if (!found && (scene.visualType === "stock_video" || scene.visualType !== "chart_image")) {
       const stockTag = EMOTION_MAP[scene.emotion] || EMOTION_MAP[scene.visualType] || "";
-      const clips = STOCK_LIBRARY[stockTag] || [];
-      // Pick a random clip that hasn't been used yet in this video
-      const available = clips.filter(c => !usedClipUrls.has(c.url));
-      if (available.length > 0) {
-        const clip = available[Math.floor(Math.random() * available.length)];
-        visuals.push({ type: "video", url: clip.url });
-        usedClipUrls.add(clip.url);
-        found = true;
-      } else if (clips.length > 0) {
-        // All used — pick any random one
-        const clip = clips[Math.floor(Math.random() * clips.length)];
-        visuals.push({ type: "video", url: clip.url });
-        found = true;
+      if (stockTag) {
+        const clip = await pickStockClip(stockTag, usedClipUrls, stockLib);
+        if (clip) {
+          visuals.push({ type: "video", url: clip.url });
+          usedClipUrls.add(clip.url);
+          usedStockIds.push(clip.id);
+          found = true;
+        }
       }
     }
 
@@ -436,13 +441,23 @@ Return ONLY JSON:
       } catch {}
     }
 
-    // Fallback: random stock video from any category
+    // Fallback: random stock video from any category (uses new data-driven lib)
     if (!found) {
+      const cats = [...new Set(stockLib.map((c) => c.category))];
+      const randomCat = cats[Math.floor(Math.random() * cats.length)];
+      const clip = await pickStockClip(randomCat, usedClipUrls, stockLib);
+      if (clip) {
+        visuals.push({ type: "video", url: clip.url });
+        usedClipUrls.add(clip.url);
+        usedStockIds.push(clip.id);
+        continue;
+      }
+      // Last resort — legacy hardcoded fallback (should rarely fire)
       const allCategories = Object.keys(STOCK_LIBRARY);
-      const randomCat = allCategories[Math.floor(Math.random() * allCategories.length)];
-      const clips = STOCK_LIBRARY[randomCat];
-      const clip = clips[Math.floor(Math.random() * clips.length)];
-      visuals.push({ type: "video", url: clip.url });
+      const fallbackCat = allCategories[Math.floor(Math.random() * allCategories.length)];
+      const clips = STOCK_LIBRARY[fallbackCat];
+      const legacyClip = clips[Math.floor(Math.random() * clips.length)];
+      visuals.push({ type: "video", url: legacyClip.url });
     }
   }
 
@@ -553,9 +568,12 @@ Return ONLY JSON:
     if (!renderRes.ok) throw new Error(`FFmpeg Render Service: ${(await renderRes.text()).slice(0, 200)}`);
     renderId = `render-${slug}`;
 
-    // Increment usage count for matched library images (best-effort, non-blocking)
+    // Increment usage counts (best-effort, non-blocking)
     for (const imgId of usedImageIds) {
       incrementImageUsage(imgId).catch(() => {});
+    }
+    if (usedStockIds.length > 0) {
+      trackStockUsage(usedStockIds).catch(() => {});
     }
   } else {
     // Fallback: Creatomate
