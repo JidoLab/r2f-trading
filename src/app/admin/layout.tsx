@@ -19,6 +19,7 @@ const NAV_SECTIONS = [
       { href: "/admin/shorts", label: "Shorts" },
       { href: "/admin/newsletters", label: "Newsletters" },
       { href: "/admin/substack", label: "Substack" },
+      { href: "/admin/syndication", label: "Syndication" },
       { href: "/admin/content-planner", label: "AI Planner" },
       { href: "/admin/calendar", label: "Content Calendar" },
       { href: "/admin/social-calendar", label: "Social Calendar" },

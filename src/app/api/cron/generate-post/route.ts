@@ -385,6 +385,52 @@ ${body}
       console.error("[cron] Substack draft error:", err);
     }
 
+    // Auto-syndicate to Dev.to + Hashnode (+ Medium import link) for backlinks
+    try {
+      const { syndicatePost, formatSyndicationTelegramMessage, getEnabledSyndicationPlatforms } =
+        await import("@/lib/syndication");
+      const enabledPlatforms = getEnabledSyndicationPlatforms();
+      // Only bother if at least one platform beyond medium (which is always on) is configured
+      if (enabledPlatforms.length > 1) {
+        const coverImageUrl = coverImage?.startsWith("http")
+          ? coverImage
+          : coverImage
+          ? `https://www.r2ftrading.com${coverImage}`
+          : undefined;
+
+        const tags = article.category
+          ? [article.category, "trading", "forex", "ict"]
+          : ["trading", "forex", "ict"];
+
+        const syndicationResult = await syndicatePost({
+          slug,
+          title: article.title,
+          excerpt: article.excerpt,
+          bodyMarkdown: body,
+          coverImageUrl,
+          tags,
+        });
+        console.log("[cron] Syndication result:", JSON.stringify(syndicationResult));
+
+        // Telegram alert with all syndication results (including Medium import URL)
+        const tgToken = process.env.TELEGRAM_BOT_TOKEN;
+        const tgChat = process.env.TELEGRAM_OWNER_CHAT_ID;
+        if (tgToken && tgChat) {
+          await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              chat_id: tgChat,
+              text: formatSyndicationTelegramMessage(syndicationResult),
+              disable_web_page_preview: true,
+            }),
+          }).catch(() => {});
+        }
+      }
+    } catch (err) {
+      console.error("[cron] Syndication error:", err);
+    }
+
     // Auto-generate infographic from the blog post
     let infographicResult = null;
     try {
