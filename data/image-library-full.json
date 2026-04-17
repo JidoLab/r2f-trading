@@ -972,5 +972,28 @@
     "timeframe": "15M",
     "addedAt": "2026-04-17T01:22:44.219Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388966084-hxcj",
+    "filename": "img-1776388966084-hxcj.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388966084-hxcj.png",
+    "tags": [
+      "Bitcoin",
+      "BTCUSD",
+      "liquidity",
+      "breaker block",
+      "chart analysis"
+    ],
+    "patterns": [
+      "liquidity run",
+      "swing points",
+      "breaker block"
+    ],
+    "category": "chart-pattern",
+    "description": "Bitcoin 30M chart analysis showing liquidity run, swing points, and breaker block trade setup.",
+    "pair": "BTCUSD",
+    "timeframe": "30M",
+    "addedAt": "2026-04-17T01:22:55.424Z",
+    "usageCount": 0
   }
 ]
