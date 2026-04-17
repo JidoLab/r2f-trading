@@ -825,5 +825,30 @@
     "timeframe": "D",
     "addedAt": "2026-04-17T01:21:04.699Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388866253-gz61",
+    "filename": "img-1776388866253-gz61.JPG",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388866253-gz61.JPG",
+    "tags": [
+      "EURUSD",
+      "M15",
+      "candlestick chart",
+      "liquidity sweep",
+      "Asian session",
+      "New York session",
+      "forex",
+      "trading"
+    ],
+    "patterns": [
+      "liquidity sweep",
+      "market maker buy model"
+    ],
+    "category": "chart-pattern",
+    "description": "EURUSD M15 chart displaying Asian session range, New York open, and a liquidity sweep.",
+    "pair": "EURUSD",
+    "timeframe": "M15",
+    "addedAt": "2026-04-17T01:21:17.154Z",
+    "usageCount": 0
   }
 ]
