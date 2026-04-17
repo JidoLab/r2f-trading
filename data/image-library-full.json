@@ -340,5 +340,28 @@
     "timeframe": "1W",
     "addedAt": "2026-04-17T01:12:50.185Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388372343-uqod",
+    "filename": "img-1776388372343-uqod.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388372343-uqod.png",
+    "tags": [
+      "forex trading",
+      "technical analysis",
+      "order block",
+      "breaker block",
+      "USDJPY"
+    ],
+    "patterns": [
+      "bullish order block",
+      "reclaimed block",
+      "breaker block"
+    ],
+    "category": "chart-pattern",
+    "description": "USD/JPY 2H chart showing bullish order blocks, reclaimed blocks, and a breaker block.",
+    "pair": "USDJPY",
+    "timeframe": "2H",
+    "addedAt": "2026-04-17T01:13:01.531Z",
+    "usageCount": 0
   }
 ]
