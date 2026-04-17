@@ -872,5 +872,28 @@
     "timeframe": "D",
     "addedAt": "2026-04-17T01:21:26.345Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388887101-t0x5",
+    "filename": "img-1776388887101-t0x5.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388887101-t0x5.png",
+    "tags": [
+      "USDJPY",
+      "liquidity void",
+      "reversal",
+      "forex",
+      "candlestick"
+    ],
+    "patterns": [
+      "liquidity void",
+      "fair value gap",
+      "reversal"
+    ],
+    "category": "chart-pattern",
+    "description": "USD/JPY 2H chart illustrating a liquidity void being filled before a market reversal.",
+    "pair": "USDJPY",
+    "timeframe": "2H",
+    "addedAt": "2026-04-17T01:21:38.018Z",
+    "usageCount": 0
   }
 ]
