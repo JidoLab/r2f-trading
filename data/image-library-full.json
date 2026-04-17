@@ -803,5 +803,27 @@
     "timeframe": "1W",
     "addedAt": "2026-04-17T01:20:50.675Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388852310-cv40",
+    "filename": "img-1776388852310-cv40.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388852310-cv40.png",
+    "tags": [
+      "EURUSD",
+      "Daily Chart",
+      "Price Action",
+      "Volume Analysis",
+      "Technical Analysis"
+    ],
+    "patterns": [
+      "liquidity",
+      "swing highs/lows"
+    ],
+    "category": "chart-pattern",
+    "description": "EUR/USD daily chart illustrating price action analysis with bars, days, volume, and significant highs.",
+    "pair": "EURUSD",
+    "timeframe": "D",
+    "addedAt": "2026-04-17T01:21:04.699Z",
+    "usageCount": 0
   }
 ]
