@@ -479,5 +479,38 @@
     "timeframe": "1H",
     "addedAt": "2026-04-17T01:14:02.531Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388444267-0jom",
+    "filename": "img-1776388444267-0jom.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388444267-0jom.png",
+    "tags": [
+      "Altcoin Index Futures",
+      "Technical Analysis",
+      "ICT Concepts",
+      "Market Structure",
+      "Order Blocks",
+      "Fair Value Gap",
+      "Breaker Block",
+      "TradingView",
+      "Price Action"
+    ],
+    "patterns": [
+      "Order Block",
+      "Fair Value Gap",
+      "Breaker Block",
+      "Mitigation Block",
+      "Rejection Block",
+      "Liquidity Void",
+      "Premium/Discount Array",
+      "Market Structure Shift",
+      "Buy Side Liquidity"
+    ],
+    "category": "chart-pattern",
+    "description": "Educational chart analysis of Altcoin Index Futures on a 4H timeframe, detailing ICT concepts.",
+    "pair": "Altcoin Index Perpetual Futures",
+    "timeframe": "4H",
+    "addedAt": "2026-04-17T01:14:17.488Z",
+    "usageCount": 0
   }
 ]
