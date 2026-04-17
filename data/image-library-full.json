@@ -512,5 +512,30 @@
     "timeframe": "4H",
     "addedAt": "2026-04-17T01:14:17.488Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388461626-tp6j",
+    "filename": "img-1776388461626-tp6j.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388461626-tp6j.png",
+    "tags": [
+      "SMT Divergence",
+      "Turtle Soup",
+      "liquidity sweep",
+      "GBPUSD",
+      "DXY"
+    ],
+    "patterns": [
+      "SMT Divergence",
+      "Turtle Soup",
+      "liquidity sweep",
+      "order block",
+      "Clean Highs"
+    ],
+    "category": "chart-pattern",
+    "description": "Daily charts of GBP/USD and DXY illustrating SMT Divergence, Turtle Soup, and liquidity sweep.",
+    "pair": "GBPUSD, DXY",
+    "timeframe": "D",
+    "addedAt": "2026-04-17T01:14:32.409Z",
+    "usageCount": 0
   }
 ]
