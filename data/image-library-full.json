@@ -1064,5 +1064,30 @@
     "timeframe": "30M",
     "addedAt": "2026-04-17T01:23:36.849Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776389018770-1fe0",
+    "filename": "img-1776389018770-1fe0.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776389018770-1fe0.png",
+    "tags": [
+      "Smart Money",
+      "liquidity",
+      "trading concept",
+      "ICT",
+      "price action"
+    ],
+    "patterns": [
+      "liquidity sweep",
+      "BSL",
+      "SSL",
+      "accumulation",
+      "distribution"
+    ],
+    "category": "chart-pattern",
+    "description": "Diagram explaining Smart Money concepts: liquidity, accumulation, distribution, and price fractality.",
+    "pair": "EURUSD",
+    "timeframe": "1H",
+    "addedAt": "2026-04-17T01:23:50.220Z",
+    "usageCount": 0
   }
 ]
