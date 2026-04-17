@@ -1,41 +1,30 @@
 import { NextResponse } from "next/server";
 import { verifyAdmin } from "@/lib/admin-auth";
+import { sendWeeklyNewsletter } from "@/lib/newsletter-sender";
+import { sendTelegramReport } from "@/lib/telegram-report";
 
 export const maxDuration = 120;
 
 /**
- * Admin-authenticated proxy to the send-newsletter cron endpoint.
- * Avoids exposing CRON_SECRET to the browser — admin session cookie suffices.
+ * Admin "Send Now" button → sends the weekly newsletter immediately.
+ * Calls the shared sendWeeklyNewsletter() function directly — no HTTP hop,
+ * no CRON_SECRET exposure, no VERCEL_URL pitfalls.
  */
 export async function POST() {
   const admin = await verifyAdmin();
-  if (!admin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-
-  const cronSecret = process.env.CRON_SECRET;
-  if (!cronSecret) {
-    return NextResponse.json(
-      { error: "CRON_SECRET not configured on server" },
-      { status: 500 },
-    );
+  if (!admin) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  // Construct absolute URL for internal call (required by fetch in edge runtimes)
-  const base =
-    process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : "https://www.r2ftrading.com";
-
   try {
-    const res = await fetch(`${base}/api/cron/send-newsletter`, {
-      method: "GET",
-      headers: { Authorization: `Bearer ${cronSecret}` },
-    });
-    const data = await res.json();
-    return NextResponse.json(data, { status: res.status });
-  } catch (err) {
-    return NextResponse.json(
-      { error: err instanceof Error ? err.message : "Failed to trigger newsletter" },
-      { status: 500 },
-    );
+    const result = await sendWeeklyNewsletter();
+    return NextResponse.json(result);
+  } catch (err: unknown) {
+    const msg = err instanceof Error ? err.message : "Newsletter failed";
+    console.error("[admin-newsletter] Error:", msg);
+    try {
+      await sendTelegramReport(`*Admin Newsletter Send Failed*\nError: ${msg}`);
+    } catch { /* best effort */ }
+    return NextResponse.json({ error: msg }, { status: 500 });
   }
 }

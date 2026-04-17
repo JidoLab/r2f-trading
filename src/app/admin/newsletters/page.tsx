@@ -52,15 +52,36 @@ export default function AdminNewslettersPage() {
       const res = await fetch("/api/admin/newsletters/send", {
         method: "POST",
       });
-      const data = await res.json();
+      // Defensive: response might be HTML (e.g., Vercel error page, auth redirect)
+      const rawText = await res.text();
+      let data: { sent?: number; total?: number; subject?: string; error?: string; message?: string } = {};
+      try {
+        data = JSON.parse(rawText);
+      } catch {
+        // Not JSON — likely an HTML error page
+        setSendResult(
+          `Error (HTTP ${res.status}): ${
+            rawText.includes("<!doctype") || rawText.includes("<html")
+              ? "Server returned HTML instead of JSON. The function may have timed out or crashed. Check Vercel logs."
+              : rawText.slice(0, 200)
+          }`,
+        );
+        setSending(false);
+        return;
+      }
+
       if (res.ok) {
-        setSendResult(`Sent to ${data.sent}/${data.total} subscribers. Subject: "${data.subject}"`);
-        loadNewsletters();
+        if (data.message === "No subscribers") {
+          setSendResult("No subscribers in database — nothing to send.");
+        } else {
+          setSendResult(`Sent to ${data.sent}/${data.total} subscribers. Subject: "${data.subject}"`);
+          loadNewsletters();
+        }
       } else {
-        setSendResult(`Error: ${data.error || "Unknown error"}`);
+        setSendResult(`Error (HTTP ${res.status}): ${data.error || "Unknown error"}`);
       }
     } catch (err) {
-      setSendResult(`Failed: ${err instanceof Error ? err.message : "Network error"}`);
+      setSendResult(`Network error: ${err instanceof Error ? err.message : String(err)}`);
     }
     setSending(false);
   }
