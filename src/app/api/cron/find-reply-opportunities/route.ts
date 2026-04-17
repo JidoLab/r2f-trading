@@ -23,7 +23,7 @@ interface PostResult {
 }
 
 const SEARCH_QUERIES = [
-  "forex trading strategy 2026",
+  "ICT trading strategy",
   "day trading tutorial",
   "prop firm challenge strategy",
   "how to get funded trading",
@@ -32,12 +32,22 @@ const SEARCH_QUERIES = [
   "smart money concepts",
   "order blocks trading",
   "risk management trading",
-  "forex market analysis today",
+  "forex market analysis",
   "swing trading strategy",
   "supply and demand trading",
   "trading mistakes to avoid",
-  "scalping forex strategy",
-  "FTMO challenge 2026",
+  "scalping strategy",
+  "FTMO challenge tips",
+  "fair value gap trading",
+  "liquidity sweep trading",
+  "break of structure",
+  "killzone trading strategy",
+  "ICT concepts explained",
+  "forex beginner tips",
+  "prop trading tips",
+  "smart money trading",
+  "price action patterns",
+  "funded trader tips",
 ];
 
 async function getYouTubeAccessToken(): Promise<string | null> {
@@ -89,16 +99,16 @@ async function searchYouTube(
   accessTokenOrApiKey: string,
   useApiKey: boolean = false
 ): Promise<VideoResult[]> {
-  // Only find videos from the last 30 days
-  const thirtyDaysAgo = new Date(Date.now() - 30 * 86400000).toISOString();
+  // Only find videos from the last 14 days (fresher = more engagement opportunity)
+  const fourteenDaysAgo = new Date(Date.now() - 14 * 86400000).toISOString();
   const params = new URLSearchParams({
     part: "snippet",
     q: query,
     type: "video",
     order: "date",
-    maxResults: "15",
+    maxResults: "25",
     relevanceLanguage: "en",
-    publishedAfter: thirtyDaysAgo,
+    publishedAfter: fourteenDaysAgo,
     ...(useApiKey ? { key: accessTokenOrApiKey } : {}),
   });
   const headers: Record<string, string> = useApiKey ? {} : { Authorization: `Bearer ${accessTokenOrApiKey}` };
@@ -182,14 +192,14 @@ async function searchYouTube(
         return { ...v, viewCount: stats?.viewCount || 0, commentCount: stats?.commentCount || 0, subscriberCount: subs, durationSeconds: stats?.durationSeconds || 0 };
       })
       .filter((v: VideoResult & { durationSeconds?: number }) => {
-        // Skip shorts and very short videos (under 2 minutes)
-        if ((v.durationSeconds || 0) < 120) return false;
-        // Skip channels with fewer than 3,000 subscribers
-        if ((v.subscriberCount || 0) < 3000) return false;
+        // Skip shorts and very short videos (under 90 seconds)
+        if ((v.durationSeconds || 0) < 90) return false;
+        // Skip channels with fewer than 1,000 subscribers (was 3,000 — too strict)
+        if ((v.subscriberCount || 0) < 1000) return false;
         // Skip videos with very low views
-        if ((v.viewCount || 0) < 100) return false;
-        // Skip videos with 500+ comments (comment gets buried)
-        if ((v.commentCount || 0) > 500) return false;
+        if ((v.viewCount || 0) < 50) return false;
+        // Skip videos with 800+ comments (comment gets buried)
+        if ((v.commentCount || 0) > 800) return false;
         return true;
       });
   }
