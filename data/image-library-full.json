@@ -316,5 +316,29 @@
     "timeframe": "D",
     "addedAt": "2026-04-17T01:12:38.773Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388360224-5l88",
+    "filename": "img-1776388360224-5l88.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388360224-5l88.png",
+    "tags": [
+      "SMT divergence",
+      "Turtle Soup",
+      "order block",
+      "forex",
+      "technical analysis"
+    ],
+    "patterns": [
+      "SMT Divergence",
+      "Turtle Soup",
+      "Order Block",
+      "Clean Highs"
+    ],
+    "category": "chart-pattern",
+    "description": "Weekly GBPUSD and DXY charts illustrate SMT Divergence, Turtle Soup, and bearish order block.",
+    "pair": "GBPUSD, DXY",
+    "timeframe": "1W",
+    "addedAt": "2026-04-17T01:12:50.185Z",
+    "usageCount": 0
   }
 ]
