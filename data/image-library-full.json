@@ -245,5 +245,26 @@
     "timeframe": "3M",
     "addedAt": "2026-04-17T01:12:08.004Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388329736-p0nq",
+    "filename": "img-1776388329736-p0nq.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388329736-p0nq.png",
+    "tags": [
+      "forex",
+      "NZDUSD",
+      "bullish mitigation",
+      "chart analysis",
+      "price action"
+    ],
+    "patterns": [
+      "bullish mitigation block"
+    ],
+    "category": "chart-pattern",
+    "description": "NZD/USD 2h chart showing a bullish mitigation block and subsequent price reaction.",
+    "pair": "NZDUSD",
+    "timeframe": "2H",
+    "addedAt": "2026-04-17T01:12:18.651Z",
+    "usageCount": 0
   }
 ]
