@@ -1041,5 +1041,28 @@
     "timeframe": "D, 1H",
     "addedAt": "2026-04-17T01:23:20.607Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776389002976-2j30",
+    "filename": "img-1776389002976-2j30.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776389002976-2j30.png",
+    "tags": [
+      "Bitcoin",
+      "FVG",
+      "Liquidity",
+      "Market Structure Shift",
+      "TradingView"
+    ],
+    "patterns": [
+      "Fair Value Gap",
+      "Liquidity Sweep",
+      "Market Structure Shift"
+    ],
+    "category": "chart-pattern",
+    "description": "Bitcoin chart showing Buyside Liquidity, Fair Value Gap, and Market Structure Shift concepts.",
+    "pair": "Bitcoin / TetherUS",
+    "timeframe": "30M",
+    "addedAt": "2026-04-17T01:23:36.849Z",
+    "usageCount": 0
   }
 ]
