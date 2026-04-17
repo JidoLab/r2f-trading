@@ -739,5 +739,30 @@
     "timeframe": "30M",
     "addedAt": "2026-04-17T01:20:20.912Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388822548-03am",
+    "filename": "img-1776388822548-03am.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388822548-03am.png",
+    "tags": [
+      "bitcoin",
+      "btc",
+      "candlestick",
+      "fair value gap",
+      "liquidity void",
+      "tradingview",
+      "technical analysis",
+      "ICT"
+    ],
+    "patterns": [
+      "Fair Value Gap",
+      "Liquidity Void"
+    ],
+    "category": "chart-pattern",
+    "description": "Bitcoin 1-hour chart showing Fair Value Gap and Liquidity Void patterns highlighted.",
+    "pair": "BTCUSD",
+    "timeframe": "1H",
+    "addedAt": "2026-04-17T01:20:30.287Z",
+    "usageCount": 0
   }
 ]
