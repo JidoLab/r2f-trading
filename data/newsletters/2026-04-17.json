@@ -1,0 +1,38 @@
+{
+  "date": "2026-04-17",
+  "sentAt": "2026-04-17T06:39:42.786Z",
+  "subject": "Winning trades are breaking your mindset",
+  "recipientCount": 5,
+  "failedCount": 0,
+  "totalSubscribers": 5,
+  "content": {
+    "subject": "Winning trades are breaking your mindset",
+    "greeting": "Hey trader,",
+    "marketRecap": "This week closed on NFP Friday, which means we saw the usual late-session position squaring and reduced liquidity after London close — classic conditions where retail gets faked out chasing moves that have already played out. Smart money was busy sweeping liquidity zones established earlier in the week, so if you were trading the New York afternoon session, you were likely fighting engineered chop. With spring volatility in play and tax-season distractions pulling focus, discipline in trade selection was the real edge this week.",
+    "articles": [
+      {
+        "title": "Why Winning Trades Still Break Your Mindset",
+        "slug": "2026-04-17-why-winning-trades-still-break-your-mindset",
+        "excerpt": "Everyone warns you about losing streaks. Nobody warns you about what a winning streak quietly does to your decision-making — until the damage is already done."
+      },
+      {
+        "title": "Why Winning Trades Still Destroy Traders",
+        "slug": "2026-04-17-why-winning-trades-still-destroy-traders",
+        "excerpt": "Most traders fear losses. But after 10 years and 90 days of obsessive journaling, I found something darker: my worst drawdown spirals always followed my biggest winning streaks. Here's the neurological trap that kills disciplined traders."
+      },
+      {
+        "title": "Why You Freeze Before Pulling the Trigger",
+        "slug": "2026-04-17-why-you-freeze-before-pulling-the-trigger",
+        "excerpt": "Harvest Wright reveals why execution freeze isn't fear of losing money — it's fear of being wrong. A subtle distinction that ICT traders rarely hear, but need to."
+      }
+    ],
+    "videoOfTheWeek": {
+      "title": "I Lost $10K Before Learning This CPI Trading Secret",
+      "url": "https://youtube.com/shorts/PZpz4MjTzrg"
+    },
+    "tipOfTheWeek": "Going into a GDP release, stop trading the candle — trade the rebalance. High-impact news like GDP almost always creates a Fair Value Gap on the initial spike, and price has a strong tendency to return and fill that imbalance before continuing the true directional move. Mark your pre-news FVGs on the 5-minute chart, sit on your hands through the first 2-3 candles after the release, then look for a mitigation entry when price retraces into that gap during the New York killzone.",
+    "comingUp": "GDP is the headline event on the calendar over the next two weeks, and it carries high impact — expect expanded spreads and stop hunts around the release, especially if the number deviates hard from consensus. Plan your bias the night before using higher timeframe order blocks, then reduce your position size going into the print. Preparation beats prediction every time with macro releases like this.",
+    "ctaText": "Book a Free Discovery Call",
+    "ctaUrl": "https://r2ftrading.com/contact"
+  }
+}
