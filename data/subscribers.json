@@ -2,7 +2,7 @@
   {
     "email": "wrightharvest@gmail.com",
     "date": "2026-04-04T10:35:09.710Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "score": 0,
     "segment": "cold",
     "events": [],
@@ -10,7 +10,8 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts",
-      "successStory"
+      "successStory",
+      "tradingPsychology"
     ]
   },
   {
@@ -29,19 +30,19 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts"
-    ],
-    "abandonmentEmailSent": true
+    ]
   },
   {
     "email": "cyrus.alia.borja@gmail.com",
     "date": "2026-04-11T13:01:25.702Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "score": 0,
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-04-11T13:01:25.702Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   },
   {
