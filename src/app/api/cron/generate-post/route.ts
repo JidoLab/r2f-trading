@@ -344,6 +344,47 @@ ${body}
       console.error("[cron] Thread posting error:", err);
     }
 
+    // Auto-create Substack DRAFT (never auto-publishes — user reviews + publishes manually)
+    let substackResult = null;
+    try {
+      const { createSubstackDraft, isSubstackEnabled } = await import("@/lib/substack");
+      if (isSubstackEnabled()) {
+        const coverImageUrl = coverImage?.startsWith("http")
+          ? coverImage
+          : coverImage
+          ? `https://www.r2ftrading.com${coverImage}`
+          : undefined;
+        const canonicalNote = `*Originally published at [R2F Trading](https://www.r2ftrading.com/trading-insights/${slug}).*\n\n`;
+        substackResult = await createSubstackDraft({
+          title: article.title,
+          subtitle: article.excerpt || "",
+          bodyMarkdown: canonicalNote + body,
+          coverImageUrl,
+        });
+        console.log("[cron] Substack draft:", JSON.stringify(substackResult));
+
+        // Telegram alert when draft is ready
+        if (substackResult.success && substackResult.draftUrl) {
+          const tgToken = process.env.TELEGRAM_BOT_TOKEN;
+          const tgChat = process.env.TELEGRAM_OWNER_CHAT_ID;
+          if (tgToken && tgChat) {
+            await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                chat_id: tgChat,
+                text: `\u{1F4DD} Substack draft ready for review\n\n"${article.title}"\n\nReview + publish: ${substackResult.draftUrl}`,
+                parse_mode: "Markdown",
+                disable_web_page_preview: true,
+              }),
+            }).catch(() => {});
+          }
+        }
+      }
+    } catch (err) {
+      console.error("[cron] Substack draft error:", err);
+    }
+
     // Auto-generate infographic from the blog post
     let infographicResult = null;
     try {
