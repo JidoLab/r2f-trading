@@ -21,5 +21,10 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-17T03:31:25.340Z",
-  "status": "rendering"
+  "status": "ready",
+  "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/order-blocks-vs-fair-value-gaps-which-one-actually-gets-you-.mp4",
+  "youtubeUrl": null,
+  "copyText": "Order Blocks vs Fair Value Gaps: Which One Actually Gets You Funded?\n\nOrder blocks or fair value gaps — funded traders swear by one. Beginners pick the wrong one every time. Here's the truth. Follow R2F Trading for daily ICT setups.\n\n#ICTTrading #OrderBlocks #FairValueGap #SmartMonkeyConcepts #FundedTrader #ICT #ForexTrading #R2FTrading #SMC #TradingTips",
+  "uploadResults": [],
+  "completedAt": "2026-04-17T03:34:36.202Z"
 }
