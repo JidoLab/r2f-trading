@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-17T02:09:43.648Z",
+  "generatedAt": "2026-04-17T04:15:30.925Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Friday, 17 April 2026 at 09:09 (Bangkok)",
+  "dateTime": "Friday, 17 April 2026 at 11:15 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -13,20 +13,20 @@
   "contentStatus": {
     "blogPostsToday": 2,
     "totalBlogPosts": 39,
-    "shortsReady": 5,
+    "shortsReady": 8,
     "shortsPublished": 12,
-    "shortsRendering": 3,
-    "socialPostsThisWeek": 46
+    "shortsRendering": 4,
+    "socialPostsThisWeek": 47
   },
   "hotLeads": {
     "count": 0,
     "recentHot": []
   },
   "suggestions": [
-    "Manually reach out to all 5 cold subscribers via a personalized 1-on-1 Telegram or WhatsApp message from Harvest introducing himself and asking about their trading goals.",
-    "Post the 5 ready-to-publish YouTube Shorts manually to the channel now to accelerate early traction while the channel is still growing.",
-    "Set up a new top-of-funnel lead magnet (e.g. a free ICT concept PDF or mini-course landing page) to break the streak of 0 new subscribers and drive fresh traffic.",
-    "Identify 2–3 active ICT or forex trading communities on Facebook or Discord and manually post a value-driven comment or resource from Harvest to generate new subscriber leads."
+    "With 0 new subscribers and 5 cold leads stuck at only 1.6 average drips, personally reach out to all 5 cold leads via a direct Telegram or Line message from Harvest to spark a real conversation.",
+    "The 8 ready-to-publish YouTube Shorts are sitting idle — manually review and schedule them immediately to maximize the current publishing momentum of 12 already live.",
+    "Zero Reddit upvotes and 0 comments yesterday suggests the automated posts may be getting no traction — manually check the Reddit account today and identify which subreddits or post formats need to be changed.",
+    "With 0 payments and 0 chat conversations this week, Harvest should personally post a time-limited offer (e.g., 500 THB discount expiring in 48 hours) in a relevant Thai trading Facebook group or Line OpenChat to drive urgent inbound leads."
   ],
   "schedule": [
     {
