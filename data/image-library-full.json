@@ -221,5 +221,29 @@
     "timeframe": "4h",
     "addedAt": "2026-04-17T01:11:57.681Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388320246-lxk8",
+    "filename": "img-1776388320246-lxk8.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388320246-lxk8.png",
+    "tags": [
+      "Forex",
+      "candlestick chart",
+      "order block",
+      "BOS",
+      "price action",
+      "USDCHF",
+      "technical analysis"
+    ],
+    "patterns": [
+      "order block",
+      "break of structure (BOS)"
+    ],
+    "category": "chart-pattern",
+    "description": "USDCHF 3-min chart illustrating bullish order blocks and break of structure for educational purposes.",
+    "pair": "USDCHF",
+    "timeframe": "3M",
+    "addedAt": "2026-04-17T01:12:08.004Z",
+    "usageCount": 0
   }
 ]
