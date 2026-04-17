@@ -186,21 +186,50 @@ export async function testHashnodeConnection(): Promise<{
   error?: string;
 }> {
   const apiKey = process.env.HASHNODE_API_KEY;
+  const publicationId = process.env.HASHNODE_PUBLICATION_ID;
+
   if (!apiKey) return { ok: false, error: "HASHNODE_API_KEY not set" };
-
-  const discovery = await discoverPublicationId();
-  if (!discovery.ok) return { ok: false, error: discovery.error };
-
-  // Also get username
-  try {
-    const data = (await gqlRequest(apiKey, `query { me { username } }`, {})) as {
-      me?: { username?: string };
+  if (!publicationId) {
+    return {
+      ok: false,
+      error: "HASHNODE_PUBLICATION_ID not set — click Discover below to find it",
     };
+  }
+
+  // Verify the API key + publication ID actually work together
+  try {
+    // Get username + confirm the publication belongs to this user
+    const query = `
+      query Me {
+        me {
+          username
+          publications(first: 10) {
+            edges { node { id title } }
+          }
+        }
+      }
+    `;
+    const data = (await gqlRequest(apiKey, query, {})) as {
+      me?: {
+        username?: string;
+        publications?: { edges: { node: { id: string; title: string } }[] };
+      };
+    };
+
+    const publications = data.me?.publications?.edges || [];
+    const match = publications.find((e) => e.node.id === publicationId);
+    if (!match) {
+      return {
+        ok: false,
+        error: `Publication ID '${publicationId.slice(0, 12)}...' not found on this account. Re-run Discover.`,
+      };
+    }
+
     return {
       ok: true,
       username: data.me?.username,
-      publicationId: discovery.publicationId,
-      publicationTitle: discovery.publicationTitle,
+      publicationId: match.node.id,
+      publicationTitle: match.node.title,
     };
   } catch (err) {
     return {
