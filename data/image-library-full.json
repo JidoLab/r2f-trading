@@ -158,5 +158,27 @@
     "timeframe": "2h",
     "addedAt": "2026-04-17T01:11:26.256Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388287907-r5n6",
+    "filename": "img-1776388287907-r5n6.JPG",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388287907-r5n6.JPG",
+    "tags": [
+      "candlestick chart",
+      "EURUSD",
+      "bullish expansion",
+      "price action",
+      "forex"
+    ],
+    "patterns": [
+      "identical price legs",
+      "bullish expansion"
+    ],
+    "category": "chart-pattern",
+    "description": "EUR/USD 1H chart showing identical bullish price legs in expansion.",
+    "pair": "EURUSD",
+    "timeframe": "1H",
+    "addedAt": "2026-04-17T01:11:36.908Z",
+    "usageCount": 0
   }
 ]
