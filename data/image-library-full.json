@@ -692,5 +692,29 @@
     "timeframe": "5M",
     "addedAt": "2026-04-17T01:19:52.942Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388794645-qo9u",
+    "filename": "img-1776388794645-qo9u.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388794645-qo9u.png",
+    "tags": [
+      "forex trading",
+      "USDJPY",
+      "technical analysis",
+      "bearish setup",
+      "RSI divergence"
+    ],
+    "patterns": [
+      "bearish order block",
+      "RSI divergence",
+      "trendline break",
+      "liquidity zone"
+    ],
+    "category": "chart-pattern",
+    "description": "USD/JPY 15M chart comparison showing a bearish setup, trendline breaks, and price action.",
+    "pair": "USDJPY",
+    "timeframe": "15M",
+    "addedAt": "2026-04-17T01:20:07.532Z",
+    "usageCount": 0
   }
 ]
