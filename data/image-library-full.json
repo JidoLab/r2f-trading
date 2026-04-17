@@ -266,5 +266,30 @@
     "timeframe": "2H",
     "addedAt": "2026-04-17T01:12:18.651Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388340023-am11",
+    "filename": "img-1776388340023-am11.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388340023-am11.png",
+    "tags": [
+      "candlestick chart",
+      "USDJPY",
+      "order block",
+      "propulsion block",
+      "impulsive reaction",
+      "technical analysis",
+      "tradingview"
+    ],
+    "patterns": [
+      "order block",
+      "propulsion block",
+      "impulsive reaction"
+    ],
+    "category": "chart-pattern",
+    "description": "USD/JPY 1H candlestick chart illustrating order blocks and impulsive price reaction.",
+    "pair": "USDJPY",
+    "timeframe": "1H",
+    "addedAt": "2026-04-17T01:12:27.992Z",
+    "usageCount": 0
   }
 ]
