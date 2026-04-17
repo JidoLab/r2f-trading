@@ -83,5 +83,33 @@
     "timeframe": "1W",
     "addedAt": "2026-04-17T01:07:03.466Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388024759-gano",
+    "filename": "img-1776388024759-gano.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388024759-gano.png",
+    "tags": [
+      "DXY",
+      "USDollarIndex",
+      "TechnicalAnalysis",
+      "FVG",
+      "Orderblock",
+      "Liquidity",
+      "CandlestickChart",
+      "TradingEducation",
+      "Forex",
+      "TradingView"
+    ],
+    "patterns": [
+      "FVG",
+      "Orderblock",
+      "liquidity"
+    ],
+    "category": "chart-pattern",
+    "description": "Educational technical analysis chart of DXY showing FVG and Orderblock concepts with price action.",
+    "pair": "DXY",
+    "timeframe": "1D",
+    "addedAt": "2026-04-17T01:07:14.032Z",
+    "usageCount": 0
   }
 ]
