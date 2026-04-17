@@ -995,5 +995,28 @@
     "timeframe": "30M",
     "addedAt": "2026-04-17T01:22:55.424Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388977247-6qms",
+    "filename": "img-1776388977247-6qms.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388977247-6qms.png",
+    "tags": [
+      "GBPJPY",
+      "FVG",
+      "BSL",
+      "candlestick",
+      "trading strategy"
+    ],
+    "patterns": [
+      "BSL",
+      "FVG",
+      "liquidity sweep"
+    ],
+    "category": "chart-pattern",
+    "description": "GBPJPY 30M chart illustrating BSL sweep, FVG creation, and entry strategy for technical analysis.",
+    "pair": "GBPJPY",
+    "timeframe": "30M",
+    "addedAt": "2026-04-17T01:23:07.830Z",
+    "usageCount": 0
   }
 ]
