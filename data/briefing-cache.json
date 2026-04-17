@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-17T04:15:30.925Z",
+  "generatedAt": "2026-04-17T05:39:23.455Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Friday, 17 April 2026 at 11:15 (Bangkok)",
+  "dateTime": "Friday, 17 April 2026 at 12:39 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -13,8 +13,8 @@
   "contentStatus": {
     "blogPostsToday": 2,
     "totalBlogPosts": 39,
-    "shortsReady": 8,
-    "shortsPublished": 12,
+    "shortsReady": 7,
+    "shortsPublished": 13,
     "shortsRendering": 4,
     "socialPostsThisWeek": 47
   },
@@ -23,10 +23,10 @@
     "recentHot": []
   },
   "suggestions": [
-    "With 0 new subscribers and 5 cold leads stuck at only 1.6 average drips, personally reach out to all 5 cold leads via a direct Telegram or Line message from Harvest to spark a real conversation.",
-    "The 8 ready-to-publish YouTube Shorts are sitting idle — manually review and schedule them immediately to maximize the current publishing momentum of 12 already live.",
-    "Zero Reddit upvotes and 0 comments yesterday suggests the automated posts may be getting no traction — manually check the Reddit account today and identify which subreddits or post formats need to be changed.",
-    "With 0 payments and 0 chat conversations this week, Harvest should personally post a time-limited offer (e.g., 500 THB discount expiring in 48 hours) in a relevant Thai trading Facebook group or Line OpenChat to drive urgent inbound leads."
+    "With 0 new subscribers and 5 stuck cold leads, Harvest should personally DM 2–3 Bangkok-based ICT trading communities on Telegram or Facebook today to drive top-of-funnel traffic.",
+    "Review the 7 ready-to-publish Shorts and manually schedule them across this week at peak times (e.g., 7–9am Bangkok) to accelerate channel growth while content is already prepared.",
+    "With 0 Reddit upvotes and 0 comments posted yesterday, verify the Reddit automation is functioning correctly and manually post 1 high-value ICT concept reply today to test engagement.",
+    "Since all 5 subscribers are cold with an average of only 1.6 drips, audit the cold email sequence to ensure delivery isn't failing — check spam rates and open rates in the email provider dashboard manually."
   ],
   "schedule": [
     {
