@@ -74,7 +74,7 @@ export async function GET(req: NextRequest) {
       max_tokens: 1000,
       messages: [{
         role: "user",
-        content: `You are a content strategist for R2F Trading, a professional ICT trading coaching website run by Harvest Wright (10+ years ICT experience).
+        content: `You are a content strategist for R2F Trading, a professional ICT trading coaching website with 10+ years of ICT experience.
 
 ${dateContext}
 
@@ -140,7 +140,7 @@ Return ONLY a JSON object: { "topic": "...", "category": "...", "postType": "...
 
 ${dateContext}
 
-AUTHOR: Harvest Wright — sole mentor, 10+ years ICT trading experience, TradingView Editors' Pick, Top 1% in competitions, FTMO Challenge passer. Based in Thailand.
+AUTHOR: R2F Trading — ICT coaching brand with 10+ years of trading experience, TradingView Editors' Pick recognition, Top 1% competition rankings, and funded trader track record.
 TOPIC: "${topicData.topic}" | CATEGORY: ${topicData.category} | POST TYPE: ${topicData.postType || "how-to"} | ANGLE: ${topicData.angle} | KEYWORD: "${topicData.targetKeyword}" | DATE: ${date}
 UNIQUE INSIGHT: ${topicData.uniqueInsight || "Share something readers can't find elsewhere"}
 SEARCH INTENT: ${topicData.searchIntent || "informational"}
@@ -522,7 +522,7 @@ ${body.slice(0, 3000)}`,
             max_tokens: 2000,
             messages: [{
               role: "user",
-              content: `You are a content strategist for R2F Trading (r2ftrading.com), an ICT trading coaching business run by Harvest Wright.
+              content: `You are a content strategist for R2F Trading (r2ftrading.com), an ICT trading coaching business — a dedicated ICT coaching brand.
 
 Generate a landing page for the topic: "${pick.topic}"
 Target keyword: "${pick.keyword}"

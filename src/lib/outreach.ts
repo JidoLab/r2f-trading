@@ -154,8 +154,8 @@ function decodeHtml(html: string): string {
 
 // ─── Pitch Drafting ────────────────────────────────────────────────────
 
-const HARVEST_BIO = `
-Harvest Wright — founder of R2F Trading (r2ftrading.com). ICT (Inner Circle Trader) coach with 10+ years of experience teaching prop firm traders how to pass funded challenges and scale. Specializes in:
+const PITCH_BIO = `
+R2F Trading (r2ftrading.com) — ICT (Inner Circle Trader) coaching brand with 10+ years of experience teaching prop firm traders how to pass funded challenges and scale. Specializes in:
 - ICT concepts: order blocks, fair value gaps, liquidity sweeps, killzones, market structure
 - Prop firm challenge strategies (FTMO, MyForexFunds, etc.)
 - Trading psychology + risk management for funded traders
@@ -185,7 +185,7 @@ export async function draftPitch(target: OutreachTarget): Promise<PitchDraft> {
     .filter(Boolean)
     .join("\n");
 
-  const prompt = `You are drafting a cold guest-post pitch email for Harvest Wright to send to the editor of a trading blog.
+  const prompt = `You are drafting a cold guest-post pitch email for R2F Trading to send to the editor of a trading blog.
 
 ${dateContext}
 If a topic headline needs a year/quarter, use Q${quarter} ${year} or ${year}.
@@ -195,7 +195,7 @@ TARGET BLOG: ${target.name} (${target.url})
 ${contextBlock || "No additional context available — write a slightly more general pitch."}
 
 HARVEST'S BIO:
-${HARVEST_BIO}
+${PITCH_BIO}
 
 YOUR TASK — return ONLY valid JSON with this shape:
 {
@@ -210,17 +210,17 @@ YOUR TASK — return ONLY valid JSON with this shape:
 
 EMAIL BODY RULES:
 - Open with a SPECIFIC observation about their recent content (use the recent posts above if available). Avoid generic flattery.
-- State what value Harvest brings in ONE sentence (ICT coach, real students getting funded)
+- State what value R2F Trading brings in ONE sentence (ICT coaching, real students getting funded)
 - List the 3 topic ideas as a bulleted list (use "- " prefix, one topic per line)
 - Close with one light question inviting reply ("Open to any of these? Happy to send an outline.")
-- Sign-off: "Harvest Wright\\nFounder, R2F Trading\\nr2ftrading.com"
+- Sign-off: "R2F Trading\\nr2ftrading.com"
 - NO hype, NO fake urgency, NO emojis, NO excessive capitalization
 - Casual-professional tone. Editors get 50 pitches a day — be human.
 - Each topic must be DIRECTLY relevant to ${target.name}'s audience (not generic trading)
 - DO NOT mention "guest post" in the first sentence — lead with value
 
 TOPIC RULES:
-- All 3 topics must be ICT/forex/prop-firm adjacent (Harvest's expertise)
+- All 3 topics must be ICT/forex/prop-firm adjacent (R2F Trading's expertise)
 - Topics must fit the blog's apparent focus (use recent posts as a signal)
 - Specific headlines, not generic ("The 1-Hour Mistake Killing 9 Out of 10 FTMO Challenges" vs "Prop Firm Mistakes")`;
 

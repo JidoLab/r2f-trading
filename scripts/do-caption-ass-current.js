@@ -41,9 +41,9 @@ const WORD_STYLES = {
   highlight: { color: COLORS.gold, scale: 110, weight: 1 },
 };
 
-// Active (currently-spoken) word gets a gold flash + bigger pop
+// Active (currently-spoken) word gets a gold flash + slight bump
 const ACTIVE_COLOR = COLORS.gold;
-const ACTIVE_SCALE_BOOST = 25; // 100 → 125, more visible pop
+const ACTIVE_SCALE_BOOST = 15; // 100 → 115, etc.
 
 // ─── Helpers ───────────────────────────────────────────────────────────
 
@@ -124,12 +124,11 @@ function generateAss(captions, opts = {}) {
   // To place body captions, we use alignment 2 with MarginV as bottom offset.
   // For hook, we use alignment 5 (center).
   //
-  // Font sizes: bumped for readability. Anton is condensed so fits 3-4 words/line easily.
-  // Also beefier outline + shadow since we removed the dark overlay for vibrance.
-  const bodySize = 96;   // was 78
-  const hookSize = 140;  // was 112
-  const outlineSize = 7; // was 5 — stronger pop on any background
-  const shadowDepth = 4; // was 3
+  // Font sizes relative to PlayResY: ~72 on 1920h looks balanced.
+  const bodySize = 78;
+  const hookSize = 112;
+  const outlineSize = 5;
+  const shadowDepth = 3;
 
   const header = `[Script Info]
 ScriptType: v4.00+
@@ -141,8 +140,8 @@ YCbCr Matrix: TV.709
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Body,Anton,${bodySize},${COLORS.normal},${COLORS.normal},${COLORS.black},&H80000000,0,0,0,0,100,100,2,0,1,${outlineSize},${shadowDepth},2,60,60,520,1
-Style: Hook,Anton,${hookSize},${COLORS.normal},${COLORS.normal},${COLORS.black},&H80000000,0,0,0,0,100,100,2,0,1,${outlineSize + 2},${shadowDepth + 1},5,60,60,0,1
+Style: Body,Anton,${bodySize},${COLORS.normal},${COLORS.normal},${COLORS.black},&H80000000,0,0,0,0,100,100,2,0,1,${outlineSize},${shadowDepth},2,80,80,480,1
+Style: Hook,Anton,${hookSize},${COLORS.normal},${COLORS.normal},${COLORS.black},&H80000000,0,0,0,0,100,100,2,0,1,${outlineSize + 2},${shadowDepth + 1},5,80,80,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text

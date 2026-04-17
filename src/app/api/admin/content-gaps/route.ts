@@ -87,7 +87,7 @@ EXISTING LANDING PAGES: ${landingPageTopics.join(", ")}
 ${competitorData}
 
 BUSINESS CONTEXT:
-- Solo ICT trading coach (Harvest Wright)
+- Solo ICT trading coaching brand (R2F Trading)
 - Coaching plans: $150-$1000/week
 - $49 starter kit digital product
 - Target: forex/futures traders learning ICT methodology

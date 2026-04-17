@@ -13,7 +13,7 @@ const SEO_PAGES = [
   { topic: "Best ICT Trading Coaching Programs in 2026 — A comparison of top ICT mentors and what to look for", keyword: "best ict trading coaching programs 2026" },
   { topic: "ICT Trading Coach vs Self-Learning — Which path gets you funded faster?", keyword: "ict trading coach vs self learning" },
   { topic: "Top Prop Firm Coaching Programs Compared — Which coaching actually helps you pass?", keyword: "prop firm coaching programs compared" },
-  { topic: "R2F Trading Review — What real students say about Harvest Wright's ICT coaching", keyword: "r2f trading review" },
+  { topic: "R2F Trading Review — What real students say about this ICT coaching", keyword: "r2f trading review" },
   { topic: "How to Pass the FTMO Challenge — Complete guide with ICT strategy breakdown", keyword: "how to pass ftmo challenge ict" },
   { topic: "ICT Order Blocks Explained — The complete trading guide for beginners", keyword: "ict order blocks explained guide" },
   { topic: "Smart Money Concepts vs Retail Trading Strategies — Why institutions trade differently", keyword: "smart money concepts vs retail trading" },
@@ -48,7 +48,7 @@ export async function POST(req: NextRequest) {
         max_tokens: 2000,
         messages: [{
           role: "user",
-          content: `You are a content strategist for R2F Trading (r2ftrading.com), an ICT trading coaching business run by Harvest Wright.
+          content: `You are a content strategist for R2F Trading (r2ftrading.com), an ICT trading coaching business — a dedicated ICT coaching brand.
 
 Generate a landing page for the topic: "${page.topic}"
 Target keyword: "${page.keyword}"

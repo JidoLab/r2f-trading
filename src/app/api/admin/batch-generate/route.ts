@@ -50,7 +50,7 @@ export async function POST(req: NextRequest) {
         messages: [{
           role: "user",
           content: `Write a blog article for R2F Trading (r2ftrading.com).
-AUTHOR: Harvest Wright — sole mentor, 10+ years ICT trading experience, TradingView Editors' Pick, Top 1% in competitions, FTMO Challenge passer.
+AUTHOR: R2F Trading — ICT coaching brand with 10+ years of trading experience, TradingView Editors' Pick recognition, Top 1% competition rankings.
 TOPIC: "${topicData.topic}" | CATEGORY: ${topicData.category} | POST TYPE: ${topicData.postType} | KEYWORD: "${topicData.targetKeyword}" | DATE: ${date}
 COACHING: Lite $150/week, Pro $200/week, Full Mentorship $1,000/4 months.
 INTERNAL LINKS (use 2-4 naturally):

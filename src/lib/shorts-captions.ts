@@ -134,8 +134,9 @@ export function buildEnrichedCaptions(
     const nextWord = rawWords[i + 1];
     const endsWithPunctuation = /[.!?,;:\-—]$/.test(wordText);
     const hasLongPause = nextWord && nextWord.start - w.end > 0.3;
-    const atMaxWords = chunk.length >= 5;
-    const atGoodLength = chunk.length >= 3;
+    // Tighter chunks — 4 words max for bigger font sizes (Apr 17 refinement)
+    const atMaxWords = chunk.length >= 4;
+    const atGoodLength = chunk.length >= 2;
     const isLastWord = i === rawWords.length - 1;
 
     if (isLastWord || atMaxWords || (atGoodLength && (endsWithPunctuation || hasLongPause)) || endsWithPunctuation) {

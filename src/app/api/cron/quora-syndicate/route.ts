@@ -276,7 +276,7 @@ Return ONLY the search query text, nothing else.`,
           messages: [
             {
               role: "user",
-              content: `Shorten this blog post into a Quora-style answer. Write as Harvest Wright, an experienced ICT trader and coach.
+              content: `Shorten this blog post into a Quora-style answer. Write as an experienced ICT trader for R2F Trading and coach.
 
 BLOG TITLE: ${post.title}
 BLOG CONTENT:

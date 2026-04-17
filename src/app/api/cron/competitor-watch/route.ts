@@ -179,7 +179,7 @@ export async function GET(req: NextRequest) {
             messages: [
               {
                 role: "user",
-                content: `You are a content strategist for R2F Trading, an ICT trading coaching brand run by Harvest Wright.
+                content: `You are a content strategist for R2F Trading, an ICT trading coaching brand — a dedicated ICT coaching brand.
 
 A competitor just posted a new YouTube video. Suggest a counter-content idea that either:
 - Covers the same topic from a better/different angle

@@ -82,7 +82,7 @@ export async function POST(req: NextRequest) {
       messages: [
         {
           role: "user",
-          content: `You are a content strategist for R2F Trading (r2ftrading.com), an ICT trading coaching business run by Harvest Wright.
+          content: `You are a content strategist for R2F Trading (r2ftrading.com), an ICT trading coaching business — a dedicated ICT coaching brand.
 
 Generate a landing page for the topic: "${topic}"
 Target keyword: "${targetKeyword}"

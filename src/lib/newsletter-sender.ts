@@ -92,7 +92,7 @@ export async function sendWeeklyNewsletter(): Promise<NewsletterSendResult> {
     ? upcomingEvents.map((e) => `- ${e.name} (${e.impact} impact)`).join("\n")
     : "No major events scheduled.";
 
-  const prompt = `You are Harvest Wright, an ICT trading coach writing a weekly newsletter for R2F Trading subscribers.
+  const prompt = `You are R2F Trading, an ICT trading coach writing a weekly newsletter for R2F Trading subscribers.
 
 ${getCurrentDateContext()}
 

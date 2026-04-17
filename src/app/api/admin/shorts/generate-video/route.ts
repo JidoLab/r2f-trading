@@ -222,7 +222,9 @@ When your script mentions one of these concepts, set visualType=chart_image and 
     max_tokens: 2500,
     messages: [{
       role: "user",
-      content: `Generate a YouTube Shorts script for R2F Trading, an ICT trading coaching brand by Harvest Wright (10+ years experience).
+      content: `Generate a YouTube Shorts script for R2F Trading, an ICT trading coaching brand with 10+ years of experience.
+
+CRITICAL BRAND RULE — never use any personal name. Refer to the brand ONLY as "R2F Trading" or "r2ftrading.com". When the script needs to self-reference, use "we", "us", "our", or "the R2F Trading system". NEVER use "I" as a personal identity — if you use "I", it must be a generic trader voice (e.g., "I blew 3 accounts before learning this"), not a claim about a specific person. NEVER mention any founder's name.
 
 ${getCurrentDateContext()}
 

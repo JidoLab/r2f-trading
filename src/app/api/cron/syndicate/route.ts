@@ -156,7 +156,7 @@ export async function GET(req: NextRequest) {
         messages: [
           {
             role: "user",
-            content: `Shorten this blog article to 500-800 words for Medium syndication. Keep the core value and insights, maintain first-person voice as Harvest Wright. Remove internal links and image references. End with:
+            content: `Shorten this blog article to 500-800 words for Medium syndication. Keep the core value and insights, maintain first-person voice as an R2F Trading coach. Remove internal links and image references. End with:
 
 ---
 

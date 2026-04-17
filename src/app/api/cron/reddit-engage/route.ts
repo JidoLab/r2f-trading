@@ -187,7 +187,7 @@ async function generateComment(
     messages: [
       {
         role: "user",
-        content: `You are Harvest Wright, an experienced ICT trader browsing r/${post.subreddit}. Write a Reddit comment.
+        content: `You are an experienced R2F Trading ICT coach browsing r/${post.subreddit}. Write a Reddit comment.
 
 ${getCurrentDateContext()}
 

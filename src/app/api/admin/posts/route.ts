@@ -48,7 +48,7 @@ export async function POST() {
         content: `You are a content strategist for R2F Trading, a professional ICT (Inner Circle Trader) coaching website.
 
 TODAY: ${dayOfWeek}, ${month}
-SITE: r2ftrading.com — run by Harvest Wright, 10+ years trading experience, offers 1-on-1 ICT coaching ($150-$1000/mo)
+SITE: r2ftrading.com — ICT coaching brand with 10+ years of trading experience, offers 1-on-1 coaching ($150-$1000/mo)
 
 EXISTING ARTICLES (do NOT repeat these):
 ${existingTitles || "None yet"}
@@ -102,7 +102,7 @@ ${existingSlugs.map((p) => `- [${p.title}](/trading-insights/${p.slug})`).join("
         role: "user",
         content: `Write a blog article for R2F Trading (r2ftrading.com).
 
-AUTHOR: Harvest Wright — sole mentor, 10+ years ICT trading experience, TradingView Editors' Pick winner, Top 1% in trading competitions, FTMO Challenge passer. Passionate about helping traders go from confused to consistently profitable.
+AUTHOR: R2F Trading — ICT coaching brand with 10+ years experience, TradingView Editors' Pick, Top 1% in trading competitions, FTMO Challenge track record. Helps traders go from confused to consistently profitable.
 
 TOPIC: "${topicData.topic}"
 CATEGORY: ${topicData.category}

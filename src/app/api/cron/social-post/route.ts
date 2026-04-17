@@ -66,7 +66,7 @@ export async function GET(req: NextRequest) {
       messages: [{
         role: "user",
         content: isPollNative
-          ? `You are the social media voice for R2F Trading (ICT trading coaching by Harvest Wright).
+          ? `You are the social media voice for R2F Trading (ICT trading coaching).
 
 ${getCurrentDateContext()}
 
@@ -87,7 +87,7 @@ RULES:
 
 Return ONLY a JSON object:
 {"question": "the poll question with hashtags", "options": ["Option A", "Option B", "Option C"], "duration_minutes": 1440, "type": "poll-native"}`
-          : `You are the social media voice for R2F Trading (ICT trading coaching by Harvest Wright).
+          : `You are the social media voice for R2F Trading (ICT trading coaching).
 
 ${getCurrentDateContext()}
 

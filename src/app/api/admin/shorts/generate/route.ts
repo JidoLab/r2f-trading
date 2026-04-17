@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
       max_tokens: 2000,
       messages: [{
         role: "user",
-        content: `Generate a YouTube Shorts script for R2F Trading (ICT trading coaching by Harvest Wright, 10+ years experience).
+        content: `Generate a YouTube Shorts script for R2F Trading (ICT trading coaching brand, 10+ years experience).
 
 ${topic ? `TOPIC: "${topic}"` : "Pick a trending/engaging ICT trading topic that would perform well as a Short."}
 
