@@ -1018,5 +1018,28 @@
     "timeframe": "30M",
     "addedAt": "2026-04-17T01:23:07.830Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388989369-lqkc",
+    "filename": "img-1776388989369-lqkc.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388989369-lqkc.png",
+    "tags": [
+      "GBP/JPY",
+      "FVG",
+      "BSL",
+      "liquidity sweep",
+      "candlestick chart"
+    ],
+    "patterns": [
+      "BSL",
+      "FVG",
+      "liquidity sweep"
+    ],
+    "category": "chart-pattern",
+    "description": "GBP/JPY charts demonstrating BSL sweep, FVG reaction, and lower expansion across Daily and 1H TFs.",
+    "pair": "GBP/JPY",
+    "timeframe": "D, 1H",
+    "addedAt": "2026-04-17T01:23:20.607Z",
+    "usageCount": 0
   }
 ]
