@@ -363,5 +363,26 @@
     "timeframe": "2H",
     "addedAt": "2026-04-17T01:13:01.531Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388383013-oz2j",
+    "filename": "img-1776388383013-oz2j.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388383013-oz2j.png",
+    "tags": [
+      "Treasury Bonds",
+      "Market Divergence",
+      "Bullish Dollar",
+      "Intermarket Analysis",
+      "Futures Trading"
+    ],
+    "patterns": [
+      "SMTD (Smart Money Tool Divergence)"
+    ],
+    "category": "chart-pattern",
+    "description": "Comparison of Treasury Bond, 10-Year, and 5-Year T-Note futures charts showing divergence for bullish dollar confirmation.",
+    "pair": "U.S. Treasury Bond Futures",
+    "timeframe": "12H",
+    "addedAt": "2026-04-17T01:13:15.080Z",
+    "usageCount": 0
   }
 ]
