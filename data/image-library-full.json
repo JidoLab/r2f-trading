@@ -291,5 +291,30 @@
     "timeframe": "1H",
     "addedAt": "2026-04-17T01:12:27.992Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388349534-ruqz",
+    "filename": "img-1776388349534-ruqz.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388349534-ruqz.png",
+    "tags": [
+      "NZDUSD",
+      "candlestick chart",
+      "daily",
+      "technical analysis",
+      "price levels"
+    ],
+    "patterns": [
+      "resistance level",
+      "support level",
+      "old high",
+      "recent high",
+      "recent low"
+    ],
+    "category": "chart-pattern",
+    "description": "Daily candlestick chart of NZD/USD showing historical highs and lows with marked levels.",
+    "pair": "NZDUSD",
+    "timeframe": "D",
+    "addedAt": "2026-04-17T01:12:38.773Z",
+    "usageCount": 0
   }
 ]
