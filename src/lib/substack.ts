@@ -253,26 +253,47 @@ function substackHeaders(sessionCookie: string, extra: Record<string, string> = 
 }
 
 /**
- * Test connection — fetches the authenticated user's profile.
- * Returns user info if auth works, null otherwise.
+ * Test connection — verifies auth by hitting the publication-scoped drafts endpoint.
+ * If we can list drafts with the cookie, we can create them.
+ * Also fetches publication name for display.
  */
-export async function testSubstackConnection(): Promise<{ ok: boolean; userId?: number; name?: string; email?: string; error?: string }> {
+export async function testSubstackConnection(): Promise<{ ok: boolean; userId?: number; name?: string; email?: string; publicationName?: string; error?: string }> {
   const sessionCookie = process.env.SUBSTACK_SESSION_COOKIE;
+  const publicationUrl = (process.env.SUBSTACK_PUBLICATION_URL || "").replace(/\/$/, "");
+  const userId = parseInt(process.env.SUBSTACK_USER_ID || "0", 10);
+
   if (!sessionCookie) return { ok: false, error: "SUBSTACK_SESSION_COOKIE not set" };
+  if (!publicationUrl) return { ok: false, error: "SUBSTACK_PUBLICATION_URL not set" };
 
   try {
-    const res = await fetch("https://substack.com/api/v1/subscription", {
+    // Primary test: list drafts (the actual capability we need)
+    const res = await fetch(`${publicationUrl}/api/v1/drafts?limit=1`, {
       headers: substackHeaders(sessionCookie),
     });
     if (!res.ok) {
-      return { ok: false, error: `HTTP ${res.status}: ${(await res.text()).slice(0, 200)}` };
+      const errText = await res.text();
+      return { ok: false, error: `HTTP ${res.status} on /api/v1/drafts: ${errText.slice(0, 200)}` };
     }
-    const data = await res.json();
+
+    // Secondary: fetch publication info for display (best-effort)
+    let publicationName: string | undefined;
+    try {
+      const pubRes = await fetch(`${publicationUrl}/api/v1/publication`, {
+        headers: substackHeaders(sessionCookie),
+      });
+      if (pubRes.ok) {
+        const pubData = await pubRes.json();
+        publicationName = pubData.name || pubData.publication_name || pubData.display_name;
+      }
+    } catch {
+      // Ignore — not critical
+    }
+
     return {
       ok: true,
-      userId: data.user_id || data.id,
-      name: data.name,
-      email: data.email,
+      userId: userId || undefined,
+      name: publicationName,
+      publicationName,
     };
   } catch (err) {
     return { ok: false, error: err instanceof Error ? err.message : String(err) };
