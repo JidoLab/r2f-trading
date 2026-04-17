@@ -850,5 +850,27 @@
     "timeframe": "M15",
     "addedAt": "2026-04-17T01:21:17.154Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388878452-19q0",
+    "filename": "img-1776388878452-19q0.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388878452-19q0.png",
+    "tags": [
+      "USDJPY",
+      "liquidity sweep",
+      "candlestick chart",
+      "market reversal",
+      "technical analysis"
+    ],
+    "patterns": [
+      "liquidity sweep",
+      "stop hunt"
+    ],
+    "category": "chart-pattern",
+    "description": "USD/JPY daily chart showing engineered lows, liquidity sweep, and bullish reversal.",
+    "pair": "USDJPY",
+    "timeframe": "D",
+    "addedAt": "2026-04-17T01:21:26.345Z",
+    "usageCount": 0
   }
 ]
