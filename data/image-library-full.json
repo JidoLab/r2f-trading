@@ -925,5 +925,29 @@
     "timeframe": "15M",
     "addedAt": "2026-04-17T01:22:21.173Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388942787-w7xx",
+    "filename": "img-1776388942787-w7xx.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388942787-w7xx.png",
+    "tags": [
+      "Breaker Block",
+      "Bearish",
+      "Trading Strategy",
+      "Market Structure",
+      "Liquidity"
+    ],
+    "patterns": [
+      "Breaker Block",
+      "SSL",
+      "Market Structure Shift",
+      "RTO"
+    ],
+    "category": "chart-pattern",
+    "description": "Bearish Breaker Block entry strategy explained with price action and market structure on BTC/USD.",
+    "pair": "BTCUSD",
+    "timeframe": "15M",
+    "addedAt": "2026-04-17T01:22:32.265Z",
+    "usageCount": 0
   }
 ]
