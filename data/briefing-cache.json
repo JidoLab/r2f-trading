@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-16T13:11:06.381Z",
+  "generatedAt": "2026-04-17T00:58:35.768Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Thursday, 16 April 2026 at 20:11 (Bangkok)",
+  "dateTime": "Friday, 17 April 2026 at 07:58 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -11,22 +11,22 @@
     "chatConversations": 0
   },
   "contentStatus": {
-    "blogPostsToday": 0,
-    "totalBlogPosts": 37,
+    "blogPostsToday": 1,
+    "totalBlogPosts": 38,
     "shortsReady": 0,
-    "shortsPublished": 11,
-    "shortsRendering": 0,
-    "socialPostsThisWeek": 48
+    "shortsPublished": 12,
+    "shortsRendering": 3,
+    "socialPostsThisWeek": 45
   },
   "hotLeads": {
     "count": 0,
     "recentHot": []
   },
   "suggestions": [
-    "With 5 cold subscribers and 0 new sign-ups yesterday, manually review and optimize your lead capture page or opt-in offer to improve conversion — consider A/B testing a new headline or free resource hook.",
-    "Post a personal, behind-the-scenes Telegram or Instagram Story today showing a live trade or Bangkok trading setup — authentic human content from Harvest can break through where automated posts plateau.",
-    "Reach out directly and personally to all 5 cold subscribers via a one-on-one personalized message (not the drip) referencing their specific sign-up context to spark a reply and move them toward warm.",
-    "With 37 blog posts live but 0 chat conversations, manually add a pop-up or inline CTA to the top 5 performing blog posts offering a free ICT strategy consultation with Harvest to convert existing traffic."
+    "Reach out personally to all 5 cold subscribers via a direct 1-on-1 message (Telegram or email) introducing Harvest and asking a specific question about their trading goals to spark a real conversation.",
+    "Launch a manual lead generation push today by posting in 2–3 Bangkok or Thailand-based Facebook trading groups with a value-first comment linking to R2F's best blog post or a free resource.",
+    "Create a short-form lead magnet (e.g., a 1-page ICT cheat sheet or free mini-lesson PDF) that Harvest can personally offer to cold subscribers to move them toward warm status.",
+    "Explore a manual outreach partnership with 1–2 Thai trading influencers or YouTube creators to arrange a shoutout, guest appearance, or co-created piece of content to break the zero-new-subscriber streak."
   ],
   "schedule": [
     {
