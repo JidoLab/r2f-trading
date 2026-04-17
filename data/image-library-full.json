@@ -1139,5 +1139,31 @@
     "timeframe": "1H",
     "addedAt": "2026-04-17T01:24:14.708Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776389056434-5pze",
+    "filename": "img-1776389056434-5pze.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776389056434-5pze.png",
+    "tags": [
+      "Hang Seng 50",
+      "trade setup",
+      "technical analysis",
+      "liquidity",
+      "fair value gap"
+    ],
+    "patterns": [
+      "FVG",
+      "liquidity sweep",
+      "BSL",
+      "premium level",
+      "swing range",
+      "EQHs"
+    ],
+    "category": "chart-pattern",
+    "description": "Hang Seng 50 chart with bearish trade setup, liquidity grab, FVG, and premium entry analysis.",
+    "pair": "Hang Seng 50",
+    "timeframe": "10",
+    "addedAt": "2026-04-17T01:24:29.725Z",
+    "usageCount": 0
   }
 ]
