@@ -135,5 +135,28 @@
     "timeframe": "4H",
     "addedAt": "2026-04-17T01:07:28.465Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388279102-2zj2",
+    "filename": "img-1776388279102-2zj2.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388279102-2zj2.png",
+    "tags": [
+      "USDJPY",
+      "candlestick chart",
+      "market structure",
+      "trend analysis",
+      "technical analysis"
+    ],
+    "patterns": [
+      "market structure",
+      "highs and lows",
+      "trend analysis"
+    ],
+    "category": "chart-pattern",
+    "description": "USD/JPY 2-hour chart illustrating market structure with highs, lows, and trend analysis.",
+    "pair": "USDJPY",
+    "timeframe": "2h",
+    "addedAt": "2026-04-17T01:11:26.256Z",
+    "usageCount": 0
   }
 ]
