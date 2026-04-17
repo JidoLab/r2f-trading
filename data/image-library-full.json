@@ -764,5 +764,22 @@
     "timeframe": "1H",
     "addedAt": "2026-04-17T01:20:30.287Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388831256-xskr",
+    "filename": "img-1776388831256-xskr.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388831256-xskr.png",
+    "tags": [
+      "currencies",
+      "forex",
+      "market share",
+      "global economy",
+      "pie chart"
+    ],
+    "patterns": [],
+    "category": "chart-pattern",
+    "description": "Pie chart showing the percentage distribution of major global currencies.",
+    "addedAt": "2026-04-17T01:20:41.557Z",
+    "usageCount": 0
   }
 ]
