@@ -716,5 +716,28 @@
     "timeframe": "15M",
     "addedAt": "2026-04-17T01:20:07.532Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388808774-bwoz",
+    "filename": "img-1776388808774-bwoz.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388808774-bwoz.png",
+    "tags": [
+      "USDJPY",
+      "candlestick",
+      "liquidity",
+      "price action",
+      "technical analysis"
+    ],
+    "patterns": [
+      "liquidity sweep",
+      "range breakout",
+      "measured move"
+    ],
+    "category": "chart-pattern",
+    "description": "USD/JPY 30M chart illustrating liquidity sweeps at 'clean highs' and subsequent measured moves.",
+    "pair": "USDJPY",
+    "timeframe": "30M",
+    "addedAt": "2026-04-17T01:20:20.912Z",
+    "usageCount": 0
   }
 ]
