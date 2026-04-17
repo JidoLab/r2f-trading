@@ -5,7 +5,7 @@ import { postToAll, postLinkedInArticle } from "@/lib/social";
 import Anthropic from "@anthropic-ai/sdk";
 import { GoogleGenAI } from "@google/genai";
 
-export const maxDuration = 120;
+export const maxDuration = 300;
 
 function slugify(text: string): string {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -215,26 +215,38 @@ Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDes
             contents: `${prompt}. Style: Dark navy (#0d2137) and gold (#c9a84c). No text.`,
             config: { responseModalities: ["TEXT", "IMAGE"] },
           });
-          for (const part of res.candidates?.[0]?.content?.parts ?? []) {
-            if (part.inlineData) {
-              await commitFile(`public/blog/${filename}`, part.inlineData.data!, `Add: ${filename}`, true);
+          const parts = res.candidates?.[0]?.content?.parts ?? [];
+          for (const part of parts) {
+            if (part.inlineData?.data) {
+              await commitFile(`public/blog/${filename}`, part.inlineData.data, `Add: ${filename}`, true);
+              console.log(`[cron] Image generated: ${filename} (${part.inlineData.data.length} bytes)`);
               return `/blog/${filename}`;
             }
           }
-        } catch { /* skip */ }
+          // No image returned — log what we got
+          console.error(`[cron] Gemini returned no image for ${filename}. Parts:`, parts.map(p => Object.keys(p)).join(", "));
+        } catch (err) {
+          console.error(`[cron] Gemini error for ${filename}:`, err instanceof Error ? err.message : String(err));
+        }
         return "";
       }
-      [coverImage, img1Path, img2Path] = await Promise.all([
-        genImage(`Blog cover: "${article.title}". Landscape 16:9, trading theme`, `${slug}-cover.jpg`),
+
+      // Generate cover image FIRST (most important) — serial, not parallel, to avoid rate limits + timeout pressure
+      coverImage = await genImage(`Blog cover: "${article.title}". Landscape 16:9, trading theme`, `${slug}-cover.jpg`);
+
+      // Body images — still parallel, but only AFTER cover is confirmed
+      [img1Path, img2Path] = await Promise.all([
         article.imagePrompts?.[0] ? genImage(article.imagePrompts[0], `${slug}-img1.jpg`) : Promise.resolve(""),
         article.imagePrompts?.[1] ? genImage(article.imagePrompts[1], `${slug}-img2.jpg`) : Promise.resolve(""),
       ]);
+    } else {
+      console.error("[cron] GEMINI_API_KEY missing — cover image will use fallback");
     }
 
     // Guardrail: if cover image generation failed, use fallback
     if (!coverImage) {
       coverImage = "/og-image.jpg";
-      console.log("[cron] Cover image generation failed — using fallback /og-image.jpg");
+      console.log(`[cron] Cover image generation failed for "${article.title}" — using fallback /og-image.jpg`);
     }
 
     // Replace image placeholders
