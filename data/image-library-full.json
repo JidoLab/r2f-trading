@@ -622,5 +622,27 @@
     "timeframe": "2H",
     "addedAt": "2026-04-17T01:19:18.800Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388760179-iev3",
+    "filename": "img-1776388760179-iev3.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388760179-iev3.png",
+    "tags": [
+      "forex",
+      "trading",
+      "bearish breaker",
+      "technical analysis",
+      "candlestick chart"
+    ],
+    "patterns": [
+      "bearish breaker",
+      "bearish breaker block"
+    ],
+    "category": "chart-pattern",
+    "description": "USD/JPY 2h chart shows bearish breaker patterns and reaction, leading to downtrend.",
+    "pair": "USDJPY",
+    "timeframe": "2h",
+    "addedAt": "2026-04-17T01:19:29.175Z",
+    "usageCount": 0
   }
 ]
