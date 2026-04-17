@@ -560,5 +560,26 @@
     "timeframe": "1H",
     "addedAt": "2026-04-17T01:14:41.646Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388483350-k1y5",
+    "filename": "img-1776388483350-k1y5.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388483350-k1y5.png",
+    "tags": [
+      "candlestick chart",
+      "USD Index",
+      "Vacuum Block",
+      "technical analysis",
+      "forex"
+    ],
+    "patterns": [
+      "Vacuum Block"
+    ],
+    "category": "chart-pattern",
+    "description": "Candlestick chart of U.S. Dollar Currency Index showing a 'Vacuum Block being filled' pattern.",
+    "pair": "U.S. Dollar Currency Index",
+    "timeframe": "1H",
+    "addedAt": "2026-04-17T01:14:51.496Z",
+    "usageCount": 0
   }
 ]
