@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-17T05:39:23.455Z",
+  "generatedAt": "2026-04-17T13:55:03.547Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Friday, 17 April 2026 at 12:39 (Bangkok)",
+  "dateTime": "Friday, 17 April 2026 at 20:55 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -11,22 +11,22 @@
     "chatConversations": 0
   },
   "contentStatus": {
-    "blogPostsToday": 2,
-    "totalBlogPosts": 39,
-    "shortsReady": 7,
-    "shortsPublished": 13,
+    "blogPostsToday": 3,
+    "totalBlogPosts": 40,
+    "shortsReady": 9,
+    "shortsPublished": 14,
     "shortsRendering": 4,
-    "socialPostsThisWeek": 47
+    "socialPostsThisWeek": 49
   },
   "hotLeads": {
     "count": 0,
     "recentHot": []
   },
   "suggestions": [
-    "With 0 new subscribers and 5 stuck cold leads, Harvest should personally DM 2–3 Bangkok-based ICT trading communities on Telegram or Facebook today to drive top-of-funnel traffic.",
-    "Review the 7 ready-to-publish Shorts and manually schedule them across this week at peak times (e.g., 7–9am Bangkok) to accelerate channel growth while content is already prepared.",
-    "With 0 Reddit upvotes and 0 comments posted yesterday, verify the Reddit automation is functioning correctly and manually post 1 high-value ICT concept reply today to test engagement.",
-    "Since all 5 subscribers are cold with an average of only 1.6 drips, audit the cold email sequence to ensure delivery isn't failing — check spam rates and open rates in the email provider dashboard manually."
+    "Reach out personally to all 5 cold subscribers via a direct 1-on-1 Telegram or LINE message from Harvest introducing himself and offering a free 15-minute trading strategy call to accelerate conversion.",
+    "Launch a new top-of-funnel lead generation initiative such as a free ICT trading webinar or live YouTube session hosted by Harvest this week to attract net-new subscribers beyond the current 5.",
+    "Manually submit the 9 ready YouTube Shorts to relevant Facebook Groups and Thai trading communities in Bangkok to drive traffic, since Reddit automation yielded 0 upvotes and 0 comments yesterday.",
+    "Create and run a paid Meta or Google ad campaign targeting Bangkok-based retail traders interested in ICT concepts, as organic channels are producing 0 new subscribers and 0 payments daily."
   ],
   "schedule": [
     {
