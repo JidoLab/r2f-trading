@@ -1,0 +1,214 @@
+[
+  {
+    "id": "target-1776409318276-grwak7",
+    "name": "Forex Crunch",
+    "url": "https://www.forexcrunch.com",
+    "contactEmail": "editor@forexcrunch.com",
+    "guestPostUrl": "https://www.forexcrunch.com/forex-blog-submit-post",
+    "domainRating": "medium",
+    "topics": [
+      "forex",
+      "broker-reviews",
+      "strategies"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318276-nstqml",
+    "name": "Trading With Rayner",
+    "url": "https://www.tradingwithrayner.com",
+    "domainRating": "medium",
+    "topics": [
+      "price-action",
+      "psychology",
+      "forex"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318276-momw76",
+    "name": "FXStreet Insights",
+    "url": "https://www.fxstreet.com",
+    "contactEmail": "editor@fxstreet.com",
+    "domainRating": "high",
+    "topics": [
+      "forex",
+      "technical-analysis",
+      "fundamentals"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318276-f1k3hk",
+    "name": "New Trader U",
+    "url": "https://www.newtraderu.com",
+    "domainRating": "medium",
+    "topics": [
+      "psychology",
+      "trend-following",
+      "beginner"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318276-s5j0pe",
+    "name": "Forex Academy",
+    "url": "https://www.forex.academy",
+    "contactEmail": "contact@forex.academy",
+    "guestPostUrl": "https://www.forex.academy/write-for-us",
+    "domainRating": "medium",
+    "topics": [
+      "forex-education",
+      "technical",
+      "fundamentals"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318277-pcfdjd",
+    "name": "The Lazy Trader",
+    "url": "https://thelazytrader.com",
+    "domainRating": "low-medium",
+    "topics": [
+      "forex",
+      "options",
+      "swing-trading"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318277-8a78y0",
+    "name": "My Trading Skills",
+    "url": "https://www.mytradingskills.com",
+    "domainRating": "medium",
+    "topics": [
+      "forex",
+      "cfds",
+      "beginner"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318277-a0hupd",
+    "name": "Orbex Blog",
+    "url": "https://www.orbex.com/blog",
+    "domainRating": "medium",
+    "topics": [
+      "forex",
+      "market-commentary"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318277-f6uu64",
+    "name": "Trade That Swing",
+    "url": "https://tradethatswing.com",
+    "domainRating": "low-medium",
+    "topics": [
+      "swing-trading",
+      "day-trading",
+      "forex"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318277-utzs3i",
+    "name": "Asia Forex Mentor",
+    "url": "https://www.asiaforexmentor.com",
+    "domainRating": "medium",
+    "topics": [
+      "forex",
+      "prop-firms",
+      "education"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318277-nu0aec",
+    "name": "Trading Heroes",
+    "url": "https://www.tradingheroes.com",
+    "domainRating": "low-medium",
+    "topics": [
+      "forex",
+      "psychology",
+      "systems"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318277-84cweo",
+    "name": "The 5%ers Blog",
+    "url": "https://the5ers.com/blog",
+    "domainRating": "medium",
+    "topics": [
+      "prop-firm",
+      "funded-trader",
+      "forex"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318277-7aa23w",
+    "name": "Daily Price Action",
+    "url": "https://dailypriceaction.com",
+    "domainRating": "medium",
+    "topics": [
+      "price-action",
+      "forex",
+      "swing-trading"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318277-m93l3t",
+    "name": "TradingSim Blog",
+    "url": "https://tradingsim.com/blog",
+    "domainRating": "medium-high",
+    "topics": [
+      "day-trading",
+      "technical-analysis"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  },
+  {
+    "id": "target-1776409318277-2ual2k",
+    "name": "FXOpen Blog",
+    "url": "https://fxopen.com/blog",
+    "domainRating": "medium",
+    "topics": [
+      "forex",
+      "technical-analysis"
+    ],
+    "status": "untouched",
+    "createdAt": "2026-04-17T07:01:58.276Z",
+    "updatedAt": "2026-04-17T07:01:58.276Z"
+  }
+]
