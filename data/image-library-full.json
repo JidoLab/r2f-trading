@@ -601,5 +601,26 @@
     "description": "Smart Money concept diagram showing liquidity sweep, institutional stops, and sentiment shifts.",
     "addedAt": "2026-04-17T01:19:09.451Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388751103-jxhs",
+    "filename": "img-1776388751103-jxhs.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388751103-jxhs.png",
+    "tags": [
+      "forex",
+      "breaker block",
+      "USDJPY",
+      "technical analysis",
+      "candlestick chart"
+    ],
+    "patterns": [
+      "breaker block"
+    ],
+    "category": "chart-pattern",
+    "description": "USD/JPY 2H candlestick chart illustrating breaker blocks and price reactions in technical analysis.",
+    "pair": "USDJPY",
+    "timeframe": "2H",
+    "addedAt": "2026-04-17T01:19:18.800Z",
+    "usageCount": 0
   }
 ]
