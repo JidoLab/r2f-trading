@@ -949,5 +949,28 @@
     "timeframe": "15M",
     "addedAt": "2026-04-17T01:22:32.265Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388954422-gb13",
+    "filename": "img-1776388954422-gb13.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388954422-gb13.png",
+    "tags": [
+      "breaker block",
+      "bullish",
+      "trading strategy",
+      "technical analysis",
+      "Bitcoin"
+    ],
+    "patterns": [
+      "breaker block",
+      "liquidity sweep",
+      "market structure shift"
+    ],
+    "category": "chart-pattern",
+    "description": "Educational diagram demonstrating a bullish breaker block trading strategy on a Bitcoin chart.",
+    "pair": "BTCUSD",
+    "timeframe": "15M",
+    "addedAt": "2026-04-17T01:22:44.219Z",
+    "usageCount": 0
   }
 ]
