@@ -1089,5 +1089,28 @@
     "timeframe": "1H",
     "addedAt": "2026-04-17T01:23:50.220Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776389032318-olrv",
+    "filename": "img-1776389032318-olrv.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776389032318-olrv.png",
+    "tags": [
+      "Bitcoin",
+      "BTCUSDT",
+      "cryptocurrency",
+      "liquidity",
+      "order block"
+    ],
+    "patterns": [
+      "liquidity sweep",
+      "order block",
+      "long trade setup"
+    ],
+    "category": "chart-pattern",
+    "description": "Bitcoin BTCUSDT 30M chart showing a liquidity sweep, order block, and long trade setup.",
+    "pair": "BTCUSDT",
+    "timeframe": "30M",
+    "addedAt": "2026-04-17T01:24:00.654Z",
+    "usageCount": 0
   }
 ]
