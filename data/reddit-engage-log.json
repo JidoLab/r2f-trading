@@ -288,5 +288,55 @@
     "commentedAt": "2026-04-16T13:01:16.284Z",
     "permalink": "/r/Daytrading/comments/1smn721/new_to_trading_some_guidance_would_be_appreciated/ogiihlu/",
     "commentId": "ogiihlu"
+  },
+  {
+    "postId": "1sn9egj",
+    "subreddit": "Daytrading",
+    "postTitle": "Trading psychology is the \"Have you tried rice?\" of trading. Technicals are the hard part.",
+    "commentText": "both are hard, but you're right that technicals get undersold as \"just learn the concept.\" one of my students could define an FVG perfectly but couldn't tell you whether the 15m gap on eurusd was in premium or discount relative to the daily range to save his life. that perceptual calibration you're describing takes years, and blaming failed trades on psychology lets people avoid the uncomfortable truth that their read of the chart was just wrong.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-17T03:31:35.420Z",
+    "permalink": "/r/Daytrading/comments/1sn9egj/trading_psychology_is_the_have_you_tried_rice_of/ognbzxw/",
+    "commentId": "ognbzxw"
+  },
+  {
+    "postId": "1sngh0n",
+    "subreddit": "Daytrading",
+    "postTitle": "Best strategy for Nas to backtest",
+    "commentText": "been there with the choppy market problem, it's brutal. try marking the weekly NDOG (new day opening gap) on the NQ and only taking trades when price returns to that gap during the NY AM session between 9:30 and 11. if your strategy kept breaking down in late march it's probably because you were chasing displacement without a clean draw on liquidity to anchor your bias tbh.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-17T03:31:42.276Z",
+    "permalink": "/r/Daytrading/comments/1sngh0n/best_strategy_for_nas_to_backtest/ognc0jg/",
+    "commentId": "ognc0jg"
+  },
+  {
+    "postId": "1smwzt2",
+    "subreddit": "Daytrading",
+    "postTitle": "Gold Analysis – Bulls Not Done Yet",
+    "commentText": "the 4810 zone makes sense as a decision point but i'd want to see how price reacts to the asian session high as an OB before committing to longs tbh — that sweep of the US session high could easily be a liquidity grab before a deeper pullback into the FVG sitting around 4786. are you looking at this on the 15m or 1h? makes a huge difference for OB validity.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-17T03:31:49.976Z",
+    "permalink": "/r/Daytrading/comments/1smwzt2/gold_analysis_bulls_not_done_yet/ognc181/",
+    "commentId": "ognc181"
+  },
+  {
+    "postId": "1sngjw5",
+    "subreddit": "Daytrading",
+    "postTitle": "Can anyone explain me Liquidity sweep like im 2 ?",
+    "commentText": "liquidity sweep is basically price hunting stop losses before reversing, but here's what most beginner explanations miss — it's not random. on something like eurusd during london open, price will often sweep the asian session high or low specifically to grab that resting liquidity before delivering toward a daily or 4h order block. so you're not just watching a wick and guessing, you want to see a sweep followed by a BOS on a lower timeframe like the 15m to confirm smart money actually shifted direction. tbh without that confirmation step you're just chasing wicks and getting chopped up.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-17T03:31:59.599Z",
+    "permalink": "/r/Daytrading/comments/1sngjw5/can_anyone_explain_me_liquidity_sweep_like_im_2/ognc24g/",
+    "commentId": "ognc24g"
+  },
+  {
+    "postId": "1sn7c9b",
+    "subreddit": "Daytrading",
+    "postTitle": "funded account",
+    "commentText": "turning $5 into $75 is possible but tbh you're looking at like 15x your account which means you'd need to be nearly perfect. try this: on eurusd, mark the previous day's high and low, then during london killzone (2am-5am NY time) wait for a BOS on the 5m and look for an FVG to form after the displacement. that's your entry with a tight stop, targeting the opposing side of the range.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-17T03:32:07.266Z",
+    "permalink": "/r/Daytrading/comments/1sn7c9b/funded_account/ognc2s4/",
+    "commentId": "ognc2s4"
   }
 ]
