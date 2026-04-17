@@ -312,13 +312,17 @@ Return ONLY JSON:
   if (!voiceRes.ok) throw new Error(`ElevenLabs: ${(await voiceRes.text()).slice(0, 100)}`);
   const voiceBuffer = Buffer.from(await voiceRes.arrayBuffer());
 
-  // Upload audio to GitHub
+  // Upload audio to GitHub — use unique filename per render to prevent race conditions
+  // between concurrent render attempts of the same slug (e.g., retry after 409).
+  // The previous shared path caused audio/caption mismatch when two renders raced.
   const audioBase64 = voiceBuffer.toString("base64");
-  await commitFile(`shorts-audio/${slug}.mp3`, audioBase64, `Short: ${slug}`, true);
+  const audioFilename = `${slug}-${Date.now()}`;
+  const audioPath = `shorts-audio/${audioFilename}.mp3`;
+  await commitFile(audioPath, audioBase64, `Short audio: ${audioFilename}`, true);
 
   // Get audio URL
   const repo = process.env.GITHUB_REPO || "JidoLab/r2f-trading";
-  const ghRes = await fetch(`https://api.github.com/repos/${repo}/contents/shorts-audio/${slug}.mp3`, {
+  const ghRes = await fetch(`https://api.github.com/repos/${repo}/contents/${audioPath}`, {
     headers: { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` },
   });
   const ghData = await ghRes.json();
