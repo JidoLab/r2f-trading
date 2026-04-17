@@ -198,7 +198,7 @@ function buildFilterGraph(scenes, assetPaths, captions, enrichedCaptions, totalD
 
   // Dark overlay (semi-transparent black)
   filterParts.push(
-    `[vtrim]drawbox=x=0:y=0:w=iw:h=ih:color=black@0.35:t=fill[vdark]`
+    `[vtrim]null[vdark]`
   );
 
   // Add progress bar (gold line at bottom, growing left to right)
@@ -334,8 +334,10 @@ function runFfmpeg(inputArgs, filterComplex, lastVideoLabel, audioPath, outputPa
 
     args.push(
       "-c:v", "libx264",
-      "-preset", "ultrafast",   // 10x faster encoding for free tier
-      "-crf", "23",             // good quality for 1080p
+      "-preset", "fast",        // better compression than ultrafast, still fast
+      "-crf", "26",             // slightly lower quality but smaller file
+      "-maxrate", "4M",         // cap peak bitrate to ensure < 50MB per minute
+      "-bufsize", "8M",
       "-tune", "fastdecode",    // optimize for fast playback
       "-c:a", "aac",
       "-b:a", "96k",            // lower audio bitrate (good enough for voice)
