@@ -781,5 +781,27 @@
     "description": "Pie chart showing the percentage distribution of major global currencies.",
     "addedAt": "2026-04-17T01:20:41.557Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388843756-06zj",
+    "filename": "img-1776388843756-06zj.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388843756-06zj.png",
+    "tags": [
+      "EURUSD",
+      "FVG",
+      "order block",
+      "weekly chart",
+      "forex trading"
+    ],
+    "patterns": [
+      "FVG",
+      "order block"
+    ],
+    "category": "chart-pattern",
+    "description": "EUR/USD weekly chart showing an FVG fill and a 1400-pip reversal to a Bullish Order Block.",
+    "pair": "EURUSD",
+    "timeframe": "1W",
+    "addedAt": "2026-04-17T01:20:50.675Z",
+    "usageCount": 0
   }
 ]
