@@ -193,24 +193,30 @@ export default function SyndicationAdminPage() {
                 <span className="text-white">{platforms.hashnode.connection.publicationTitle}</span>
               </div>
             </div>
-          ) : platforms.hashnode.connection?.error ? (
-            <p className="text-xs text-red-400/80 font-mono break-all">
-              {platforms.hashnode.connection.error}
-            </p>
           ) : (
             <div className="text-xs text-white/50 space-y-2">
-              <p>
-                Set <code className="text-gold">HASHNODE_API_KEY</code> + <code className="text-gold">HASHNODE_PUBLICATION_ID</code>.
-              </p>
-              {platforms.hashnode.hasApiKey && !platforms.hashnode.hasPublicationId && (
-                <button
-                  onClick={discoverHashnode}
-                  disabled={discovering}
-                  className="bg-gold hover:bg-gold-light text-navy font-bold text-xs px-3 py-1 rounded disabled:opacity-50"
-                >
-                  {discovering ? "Discovering..." : "Discover Publication ID →"}
-                </button>
+              {/* Always show Discover button if API key is set but publication ID is not */}
+              {platforms.hashnode.hasApiKey && !platforms.hashnode.hasPublicationId ? (
+                <>
+                  <p className="text-amber-300">API key detected. Now discover your publication ID:</p>
+                  <button
+                    onClick={discoverHashnode}
+                    disabled={discovering}
+                    className="bg-gold hover:bg-gold-light text-navy font-bold text-xs px-3 py-1 rounded disabled:opacity-50"
+                  >
+                    {discovering ? "Discovering..." : "Discover Publication ID →"}
+                  </button>
+                </>
+              ) : platforms.hashnode.connection?.error ? (
+                <p className="text-red-400/80 font-mono break-all">
+                  {platforms.hashnode.connection.error}
+                </p>
+              ) : (
+                <p>
+                  Set <code className="text-gold">HASHNODE_API_KEY</code> + <code className="text-gold">HASHNODE_PUBLICATION_ID</code>.
+                </p>
               )}
+
               {discoverResult && discoverResult.ok && (
                 <div className="p-2 bg-green-500/10 border border-green-500/20 rounded text-green-400">
                   Publication ID: <code className="font-mono">{discoverResult.publicationId}</code>

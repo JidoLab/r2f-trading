@@ -30,9 +30,21 @@ export async function GET(req: NextRequest) {
   }
 
   // Status check for all platforms
+  // For Hashnode: if we only have API key (not publication ID), run testHashnodeConnection
+  // anyway — it handles the missing publication ID gracefully and this lets us distinguish
+  // "need publication ID" from "invalid API key"
+  const hasHashnodeApiKey = !!process.env.HASHNODE_API_KEY;
+  const hasHashnodePubId = !!process.env.HASHNODE_PUBLICATION_ID;
+
   const [devtoTest, hashnodeTest] = await Promise.all([
-    isDevtoEnabled() ? testDevtoConnection() : Promise.resolve({ ok: false, error: "Not configured" }),
-    isHashnodeEnabled() ? testHashnodeConnection() : Promise.resolve({ ok: false, error: "Not configured" }),
+    isDevtoEnabled() ? testDevtoConnection() : Promise.resolve({ ok: false, error: "API key not set" }),
+    hasHashnodeApiKey
+      ? testHashnodeConnection().then((r) =>
+          !r.ok && !hasHashnodePubId
+            ? { ok: false, error: "Publication ID not yet set — click Discover below" }
+            : r,
+        )
+      : Promise.resolve({ ok: false, error: "API key not set" }),
   ]);
 
   // Recent syndication log
