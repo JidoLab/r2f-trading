@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-17T00:58:35.768Z",
+  "generatedAt": "2026-04-17T02:09:43.648Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Friday, 17 April 2026 at 07:58 (Bangkok)",
+  "dateTime": "Friday, 17 April 2026 at 09:09 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -11,22 +11,22 @@
     "chatConversations": 0
   },
   "contentStatus": {
-    "blogPostsToday": 1,
-    "totalBlogPosts": 38,
-    "shortsReady": 0,
+    "blogPostsToday": 2,
+    "totalBlogPosts": 39,
+    "shortsReady": 5,
     "shortsPublished": 12,
     "shortsRendering": 3,
-    "socialPostsThisWeek": 45
+    "socialPostsThisWeek": 46
   },
   "hotLeads": {
     "count": 0,
     "recentHot": []
   },
   "suggestions": [
-    "Reach out personally to all 5 cold subscribers via a direct 1-on-1 message (Telegram or email) introducing Harvest and asking a specific question about their trading goals to spark a real conversation.",
-    "Launch a manual lead generation push today by posting in 2–3 Bangkok or Thailand-based Facebook trading groups with a value-first comment linking to R2F's best blog post or a free resource.",
-    "Create a short-form lead magnet (e.g., a 1-page ICT cheat sheet or free mini-lesson PDF) that Harvest can personally offer to cold subscribers to move them toward warm status.",
-    "Explore a manual outreach partnership with 1–2 Thai trading influencers or YouTube creators to arrange a shoutout, guest appearance, or co-created piece of content to break the zero-new-subscriber streak."
+    "Manually reach out to all 5 cold subscribers via a personalized 1-on-1 Telegram or WhatsApp message from Harvest introducing himself and asking about their trading goals.",
+    "Post the 5 ready-to-publish YouTube Shorts manually to the channel now to accelerate early traction while the channel is still growing.",
+    "Set up a new top-of-funnel lead magnet (e.g. a free ICT concept PDF or mini-course landing page) to break the streak of 0 new subscribers and drive fresh traffic.",
+    "Identify 2–3 active ICT or forex trading communities on Facebook or Discord and manually post a value-driven comment or resource from Harvest to generate new subscriber leads."
   ],
   "schedule": [
     {
