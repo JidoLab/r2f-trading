@@ -537,5 +537,28 @@
     "timeframe": "D",
     "addedAt": "2026-04-17T01:14:32.409Z",
     "usageCount": 0
+  },
+  {
+    "id": "img-1776388474891-5fqd",
+    "filename": "img-1776388474891-5fqd.png",
+    "url": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/chart-library/img-1776388474891-5fqd.png",
+    "tags": [
+      "USDJPY",
+      "candlestick chart",
+      "trading psychology",
+      "liquidation",
+      "false breakout"
+    ],
+    "patterns": [
+      "descending channel",
+      "false breakout",
+      "liquidity sweep"
+    ],
+    "category": "chart-pattern",
+    "description": "USD/JPY 1H chart illustrating how breakout and short traders are liquidated by price action.",
+    "pair": "USDJPY",
+    "timeframe": "1H",
+    "addedAt": "2026-04-17T01:14:41.646Z",
+    "usageCount": 0
   }
 ]
