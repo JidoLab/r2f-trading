@@ -17,11 +17,12 @@
     "poll",
     "hot-take",
     "quote",
-    "tip"
+    "tip",
+    "myth"
   ],
   "lastPost": {
-    "type": "tip",
-    "text": "NFP Friday tip: the first candle after the report is bait. Let price raid a level, then wait for the FVG fill before you even think about entering. Patience on news days separates funded traders from blown accounts. #ICTTrading #FairValueGap #NFP",
-    "date": "2026-04-17T04:00:44.141Z"
+    "type": "myth",
+    "text": "MYTH: More order blocks = better analysis.\n\nTRUTH: Most retail traders mark every candle and call it SMC. One clean, confluent order block beats 20 random zones every time.\n\nQuality over quantity. Always.\n\n#ICTTrading #OrderBlocks #SmartMoneyConcepts",
+    "date": "2026-04-17T12:00:19.477Z"
   }
 }
