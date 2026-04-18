@@ -21,10 +21,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-17T03:30:47.335Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/can-you-spot-a-fair-value-gap-ict-quiz.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/T1oFo4OMSjg",
   "copyText": "Can You Spot a Fair Value Gap? 🧠 ICT Quiz\n\nThink you know ICT trading? Test yourself on fair value gaps — the #1 thing funded traders use that beginners miss. Most people get this wrong. Do you? Follow R2F Trading for daily ICT concepts that actually make sense.\n\n#ICTTrading #FairValueGap #SmartMoneyConcepts #FundedTrader #OrderBlocks #ICT #ForexTrading #R2FTrading #TradingQuiz #DayTrading",
-  "uploadResults": [],
-  "completedAt": "2026-04-17T03:33:49.433Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/T1oFo4OMSjg"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-17T03:33:49.433Z",
+  "publishedAt": "2026-04-18T17:00:51.188Z"
 }
