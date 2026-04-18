@@ -47,6 +47,6 @@
     }
   ],
   "enabled": true,
-  "baseVolumeDb": -18,
+  "baseVolumeDb": -22,
   "duckRatio": 8
 }
