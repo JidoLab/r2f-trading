@@ -17,8 +17,8 @@
         "category": "engagement",
         "estimatedMinutes": 10,
         "source": "recurring",
-        "completed": false,
-        "completedAt": null
+        "completed": true,
+        "completedAt": "2026-04-18T14:17:45.532Z"
       },
       {
         "id": "rec-3",
@@ -66,7 +66,7 @@
         "completedAt": null
       }
     ],
-    "completedCount": 2,
+    "completedCount": 3,
     "totalCount": 7
   },
   {
