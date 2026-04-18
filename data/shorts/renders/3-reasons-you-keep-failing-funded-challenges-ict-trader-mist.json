@@ -21,10 +21,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-17T02:01:07.833Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/3-reasons-you-keep-failing-funded-challenges-ict-trader-mist.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/SqL3ixqUsVs",
   "copyText": "3 Reasons You Keep Failing Funded Challenges (ICT Trader Mistakes)\n\nIf you keep blowing funded accounts, this is exactly why. These 3 ICT trading mistakes are killing your challenges before they even start. Fix these and watch everything change. Follow R2F Trading for daily smart money concepts, order blocks, and fair value gap setups that actually work.\n\n#ICTTrading #FundedTrader #SmartMonetConcepts #OrderBlocks #FairValueGap #R2FTrading #ForexTrading #TradingTips #FundedChallenge #ICT",
-  "uploadResults": [],
-  "completedAt": "2026-04-17T02:04:11.972Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/SqL3ixqUsVs"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-17T02:04:11.972Z",
+  "publishedAt": "2026-04-18T05:00:53.585Z"
 }
