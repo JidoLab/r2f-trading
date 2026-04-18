@@ -277,7 +277,7 @@ export default function AdminShortsPage() {
       </div>
 
       {/* Sub-tools */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
         <Link
           href="/admin/shorts/stock-library"
           className="bg-white/5 border border-white/10 rounded-lg p-4 hover:border-gold/40 hover:bg-white/10 transition-colors"
@@ -299,6 +299,18 @@ export default function AdminShortsPage() {
             <div>
               <p className="text-white text-sm font-semibold">Image Library</p>
               <p className="text-white/50 text-xs">Chart images for shorts + posts</p>
+            </div>
+          </div>
+        </Link>
+        <Link
+          href="/admin/shorts/music-library"
+          className="bg-white/5 border border-white/10 rounded-lg p-4 hover:border-gold/40 hover:bg-white/10 transition-colors"
+        >
+          <div className="flex items-center gap-3">
+            <div className="text-2xl">🎵</div>
+            <div>
+              <p className="text-white text-sm font-semibold">Music Library</p>
+              <p className="text-white/50 text-xs">Background tracks + ducking</p>
             </div>
           </div>
         </Link>

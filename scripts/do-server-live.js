@@ -54,8 +54,8 @@ function authMiddleware(req, res, next) {
 
 // Render endpoint
 app.post("/render", authMiddleware, async (req, res) => {
-  const { slug, audioUrl, duration, scenes, captions, enrichedCaptions, webhookUrl, githubToken, githubRepo } = req.body;
-  console.log(`[render-request] slug=${slug} captions=${captions?.length || 0} enrichedCaptions=${enrichedCaptions?.length || 0} scenes=${scenes?.length || 0}`);
+  const { slug, audioUrl, duration, scenes, captions, enrichedCaptions, musicUrl, musicVolumeDb, musicDuckRatio, webhookUrl, githubToken, githubRepo } = req.body;
+  console.log(`[render-request] slug=${slug} captions=${captions?.length || 0} enrichedCaptions=${enrichedCaptions?.length || 0} scenes=${scenes?.length || 0} music=${musicUrl ? "yes" : "no"}`);
 
   if (!slug || !scenes || !captions) {
     return res.status(400).json({ error: "Missing required fields: slug, scenes, captions" });
@@ -66,13 +66,13 @@ app.post("/render", authMiddleware, async (req, res) => {
   res.json({ status: "accepted", slug, message: "Render started" });
 
   // Run render in background
-  renderVideo({ slug, audioUrl, duration, scenes, captions, enrichedCaptions, webhookUrl, githubToken, githubRepo }, renderStatus).catch((err) => {
+  renderVideo({ slug, audioUrl, duration, scenes, captions, enrichedCaptions, musicUrl, musicVolumeDb, musicDuckRatio, webhookUrl, githubToken, githubRepo }, renderStatus).catch((err) => {
     console.error(`[${slug}] Render failed:`, err.message);
     renderStatus[slug] = { ...renderStatus[slug], status: "failed", error: err.message };
   });
 });
 
-async function renderVideo({ slug, audioUrl, duration, scenes, captions, enrichedCaptions, webhookUrl, githubToken, githubRepo }, statusTracker = {}) {
+async function renderVideo({ slug, audioUrl, duration, scenes, captions, enrichedCaptions, musicUrl, musicVolumeDb, musicDuckRatio, webhookUrl, githubToken, githubRepo }, statusTracker = {}) {
   const updateStatus = (s, extra = {}) => { if (statusTracker[slug]) statusTracker[slug] = { ...statusTracker[slug], status: s, ...extra }; };
   const tmpDir = path.join("/tmp", `render-${slug}-${Date.now()}`);
   fs.mkdirSync(tmpDir, { recursive: true });
@@ -101,6 +101,19 @@ async function renderVideo({ slug, audioUrl, duration, scenes, captions, enriche
       await downloadFile(audioUrl, audioPath);
     }
 
+    // Download background music (optional)
+    let musicPath = null;
+    if (musicUrl) {
+      try {
+        musicPath = path.join(tmpDir, "music.mp3");
+        console.log(`[${slug}] Downloading music...`);
+        await downloadFile(musicUrl, musicPath);
+      } catch (err) {
+        console.warn(`[${slug}] Music download failed, continuing without: ${err.message}`);
+        musicPath = null;
+      }
+    }
+
     // Step 2: Build FFmpeg command
     updateStatus("rendering");
     console.log(`[${slug}] Building FFmpeg filter graph...`);
@@ -108,19 +121,22 @@ async function renderVideo({ slug, audioUrl, duration, scenes, captions, enriche
     const sceneDur = totalDuration / Math.max(scenes.length, 1);
 
     // Build complex filter graph
-    const { filterComplex, lastLabel, inputArgs } = buildFilterGraph(
+    const { filterComplex, lastLabel, inputArgs, audioLabel } = buildFilterGraph(
       scenes,
       assetPaths,
       captions,
       enrichedCaptions,
       totalDuration,
       sceneDur,
-      audioPath
+      audioPath,
+      musicPath,
+      { volumeDb: typeof musicVolumeDb === "number" ? musicVolumeDb : -18,
+        duckRatio: typeof musicDuckRatio === "number" ? musicDuckRatio : 8 }
     );
 
     // Run FFmpeg
     console.log(`[${slug}] Running FFmpeg...`);
-    await runFfmpeg(inputArgs, filterComplex, lastLabel, audioPath, outputPath, totalDuration);
+    await runFfmpeg(inputArgs, filterComplex, lastLabel, audioPath, outputPath, totalDuration, audioLabel);
     console.log(`[${slug}] FFmpeg complete — output: ${outputPath}`);
     updateStatus("uploading");
 
@@ -167,7 +183,7 @@ async function renderVideo({ slug, audioUrl, duration, scenes, captions, enriche
   }
 }
 
-function buildFilterGraph(scenes, assetPaths, captions, enrichedCaptions, totalDuration, sceneDur, audioPath) {
+function buildFilterGraph(scenes, assetPaths, captions, enrichedCaptions, totalDuration, sceneDur, audioPath, musicPath, musicOpts) {
   const inputArgs = [];
   const filterParts = [];
   let inputIdx = 0;
@@ -322,19 +338,48 @@ function buildFilterGraph(scenes, assetPaths, captions, enrichedCaptions, totalD
     currentLabel = outLabel;
   }
 
-  // Add audio input
+  // Add audio input (voice) — indexed after all scene inputs
+  let audioLabel = null;
+  const sceneInputCount = scenes.length;
   if (audioPath) {
     inputArgs.push("-i", audioPath);
+    const voiceIdx = sceneInputCount; // first input after scenes
+
+    if (musicPath) {
+      // Music input is looped at input level so tracks shorter than the short
+      // still play for the full duration.
+      inputArgs.push("-stream_loop", "-1", "-i", musicPath);
+      const musicIdx = sceneInputCount + 1;
+
+      const volDb = musicOpts && typeof musicOpts.volumeDb === "number" ? musicOpts.volumeDb : -18;
+      const ratio = musicOpts && typeof musicOpts.duckRatio === "number" ? musicOpts.duckRatio : 8;
+
+      // Voice is split — one copy feeds the final mix, one copy drives the
+      // sidechain so music ducks while the voice talks.
+      filterParts.push(`[${voiceIdx}:a]asplit=2[voice_a][voice_b]`);
+      // Music: drop to the base volume floor
+      filterParts.push(`[${musicIdx}:a]volume=${volDb}dB[music_base]`);
+      // Sidechain: music is compressed by voice presence
+      filterParts.push(
+        `[music_base][voice_b]sidechaincompress=threshold=0.04:ratio=${ratio}:attack=20:release=300:makeup=1[music_ducked]`
+      );
+      // Mix voice + ducked music, trim to voice length
+      filterParts.push(
+        `[voice_a][music_ducked]amix=inputs=2:duration=first:dropout_transition=0,atrim=0:${totalDuration},asetpts=PTS-STARTPTS[aout]`
+      );
+      audioLabel = "aout";
+    }
   }
 
   return {
     filterComplex: filterParts.join(";\n"),
     lastLabel: currentLabel,
     inputArgs,
+    audioLabel, // null when no music — caller maps the raw audio input
   };
 }
 
-function runFfmpeg(inputArgs, filterComplex, lastVideoLabel, audioPath, outputPath, totalDuration) {
+function runFfmpeg(inputArgs, filterComplex, lastVideoLabel, audioPath, outputPath, totalDuration, audioLabel) {
   return new Promise((resolve, reject) => {
     const args = [
       ...inputArgs,
@@ -344,8 +389,12 @@ function runFfmpeg(inputArgs, filterComplex, lastVideoLabel, audioPath, outputPa
       `[${lastVideoLabel}]`,
     ];
 
-    // Map audio if present (it's the last input)
-    if (audioPath) {
+    // Map audio — either the filtered [aout] (when music is present) or the raw audio input.
+    if (audioLabel) {
+      args.push("-map", `[${audioLabel}]`);
+    } else if (audioPath) {
+      // Raw audio is the first -i after scenes. Since music isn't present,
+      // it's the LAST -i arg position minus offset. Simpler: count -i's.
       const audioIdx = inputArgs.filter((a) => a === "-i").length - 1;
       args.push("-map", `${audioIdx}:a`);
     }

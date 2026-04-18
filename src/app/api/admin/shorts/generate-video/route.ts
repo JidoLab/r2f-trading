@@ -17,6 +17,11 @@ import {
   pickStockClip,
   trackStockUsage,
 } from "@/lib/shorts-stock-library";
+import {
+  loadMusicLibrary,
+  pickMusicTrack,
+  trackMusicUsage,
+} from "@/lib/shorts-music";
 
 export const maxDuration = 300;
 
@@ -531,6 +536,10 @@ Return ONLY JSON:
   let renderId: string;
 
   if (process.env.VIDEO_RENDER_URL) {
+    // Pick a background music track (or null if library disabled/empty)
+    const musicLib = await loadMusicLibrary().catch(() => null);
+    const musicTrack = await pickMusicTrack().catch(() => null);
+
     // Use FFmpeg render service (Render.com) instead of Creatomate
     const renderRes = await fetch(process.env.VIDEO_RENDER_URL + "/render", {
       method: "POST",
@@ -565,6 +574,10 @@ Return ONLY JSON:
           isHook: c.isHook,
           words: c.words,
         })),
+        // Optional background music (renderer ducks it under voice automatically)
+        musicUrl: musicTrack?.url,
+        musicVolumeDb: musicLib?.baseVolumeDb ?? -18,
+        musicDuckRatio: musicLib?.duckRatio ?? 8,
         webhookUrl,
         githubToken: process.env.GITHUB_TOKEN,
         githubRepo: process.env.GITHUB_REPO || "JidoLab/r2f-trading",
@@ -580,6 +593,9 @@ Return ONLY JSON:
     }
     if (usedStockIds.length > 0) {
       trackStockUsage(usedStockIds).catch(() => {});
+    }
+    if (musicTrack?.id) {
+      trackMusicUsage(musicTrack.id).catch(() => {});
     }
   } else {
     // Fallback: Creatomate
