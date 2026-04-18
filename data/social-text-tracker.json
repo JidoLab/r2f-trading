@@ -19,11 +19,12 @@
     "quote",
     "tip",
     "myth",
-    "story"
+    "story",
+    "challenge"
   ],
   "lastPost": {
-    "type": "story",
-    "text": "First time I spotted a fair value gap, I ignored it. 'Too simple,' I thought. Took the 'complex' setup instead. Stopped out. The FVG filled perfectly. Sometimes the market hands you the answer and ego makes you overthink it. #ICTTrading #FairValueGap #SmartMoneyConcepts",
-    "date": "2026-04-18T04:00:57.922Z"
+    "type": "challenge",
+    "text": "Challenge: This weekend, backtest 20 fair value gap setups from Q1 2026. Record entry, target & result. No skipping. Post your edge % below 👇 Bet most of you won't do it. Prove me wrong. #FairValueGap #ICTTrading #SmartMoneyConcepts",
+    "date": "2026-04-18T12:00:56.641Z"
   }
 }
