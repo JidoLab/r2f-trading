@@ -197,7 +197,10 @@ function buildFilterGraph(scenes, assetPaths, captions, enrichedCaptions, totalD
   for (let i = 0; i < scenes.length; i++) {
     const scene = scenes[i];
     if (scene.type === "video") {
-      inputArgs.push("-i", assetPaths[i]);
+      // -stream_loop -1 + -t clamps short Pexels clips to sceneExt by looping;
+      // clips longer than sceneExt are simply cut short. Prevents the xfade
+      // chain from desyncing with audio when a clip ends early.
+      inputArgs.push("-stream_loop", "-1", "-t", String(sceneExt), "-i", assetPaths[i]);
     } else {
       // Image: loop it for the extended scene duration
       inputArgs.push("-loop", "1", "-t", String(sceneExt), "-i", assetPaths[i]);
