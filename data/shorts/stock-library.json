@@ -54,8 +54,9 @@
     "url": "https://videos.pexels.com/video-files/8627749/8627749-hd_1080_1920_25fps.mp4",
     "category": "surprise",
     "pexelsId": 8627749,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-18T02:30:34.016Z"
   },
   {
     "id": "seed-surprise-6657887",
@@ -178,8 +179,9 @@
     "url": "https://videos.pexels.com/video-files/8151972/8151972-hd_1080_1920_30fps.mp4",
     "category": "walking_city",
     "pexelsId": 8151972,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-18T02:30:34.016Z"
   },
   {
     "id": "seed-phone_chart-7580285",
@@ -1261,8 +1263,9 @@
     "height": 2048,
     "duration": 14,
     "pexelsId": 9196608,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:36.754Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:36.754Z",
+    "lastUsedAt": "2026-04-18T02:30:34.016Z"
   },
   {
     "id": "pexels-5094592",
