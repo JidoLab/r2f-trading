@@ -1,0 +1,16 @@
+{
+  "tracks": [
+    {
+      "id": "track-qngbje",
+      "url": "https://www.r2ftrading.com/music/cinematic-buildup.mp3",
+      "name": "Cinematic Buildup",
+      "mood": "cinematic",
+      "enabled": true,
+      "addedAt": "2026-04-18T14:00:16.766Z",
+      "usageCount": 0
+    }
+  ],
+  "enabled": true,
+  "baseVolumeDb": -18,
+  "duckRatio": 8
+}
