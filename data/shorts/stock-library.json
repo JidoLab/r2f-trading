@@ -77,8 +77,9 @@
     "url": "https://videos.pexels.com/video-files/8480680/8480680-hd_1080_1920_25fps.mp4",
     "category": "screen_glow",
     "pexelsId": 8480680,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-18T02:00:53.620Z"
   },
   {
     "id": "seed-screen_glow-8480278",
@@ -134,8 +135,9 @@
     "url": "https://videos.pexels.com/video-files/7546674/7546674-hd_1080_1920_25fps.mp4",
     "category": "typing_trade",
     "pexelsId": 7546674,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-18T02:00:53.620Z"
   },
   {
     "id": "seed-celebration-6532231",
@@ -1673,8 +1675,9 @@
     "height": 1920,
     "duration": 24,
     "pexelsId": 7945895,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:41.001Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:41.001Z",
+    "lastUsedAt": "2026-04-18T02:00:53.620Z"
   },
   {
     "id": "pexels-8120203",
