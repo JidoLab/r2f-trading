@@ -35,6 +35,15 @@
       "enabled": true,
       "addedAt": "2026-04-18T14:00:48.350Z",
       "usageCount": 0
+    },
+    {
+      "id": "track-dbl17t",
+      "url": "https://www.r2ftrading.com/music/uplift-buildup.mp3",
+      "name": "Uplift Buildup",
+      "mood": "uplift",
+      "enabled": true,
+      "addedAt": "2026-04-18T14:01:00.329Z",
+      "usageCount": 0
     }
   ],
   "enabled": true,
