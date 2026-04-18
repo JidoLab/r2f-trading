@@ -62,11 +62,11 @@
         "category": "growth",
         "estimatedMinutes": 15,
         "source": "ai",
-        "completed": false,
-        "completedAt": null
+        "completed": true,
+        "completedAt": "2026-04-18T14:17:49.056Z"
       }
     ],
-    "completedCount": 6,
+    "completedCount": 7,
     "totalCount": 7
   },
   {
