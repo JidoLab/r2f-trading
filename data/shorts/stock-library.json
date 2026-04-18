@@ -155,8 +155,9 @@
     "url": "https://videos.pexels.com/video-files/7165664/7165664-hd_1080_1920_25fps.mp4",
     "category": "celebration",
     "pexelsId": 7165664,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-18T03:31:35.744Z"
   },
   {
     "id": "seed-celebration-7842360",
@@ -370,8 +371,9 @@
     "height": 1920,
     "duration": 14,
     "pexelsId": 8731293,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.547Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.547Z",
+    "lastUsedAt": "2026-04-18T03:31:35.744Z"
   },
   {
     "id": "pexels-8135334",
@@ -1476,8 +1478,9 @@
     "height": 1920,
     "duration": 32,
     "pexelsId": 8480682,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:39.122Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:39.122Z",
+    "lastUsedAt": "2026-04-18T03:31:35.744Z"
   },
   {
     "id": "pexels-34573350",
