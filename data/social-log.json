@@ -1,33 +1,5 @@
 [
   {
-    "date": "2026-04-12T04:16:41.638Z",
-    "type": "text",
-    "postType": "promo-results",
-    "text": "Just had another student hit their first 6-figure month using order blocks and fair value gaps. Star",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-12T06:34:35.210Z",
     "slug": "2026-04-12-ict-killzones-that-actually-work-in-2026",
     "title": "ICT Killzones That Actually Work in 2026",
@@ -2046,6 +2018,52 @@
     "date": "2026-04-18T08:28:17.490Z",
     "slug": "2026-04-18-ict-alone-vs-hiring-a-coach-honest-take",
     "title": "ICT Alone vs. Hiring a Coach: Honest Take",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-18T08:29:42.463Z",
+    "slug": "2026-04-18-how-long-to-learn-ict-trading",
+    "title": "How Long to Learn ICT Trading?",
     "results": [
       {
         "platform": "twitter",
