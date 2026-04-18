@@ -26,6 +26,15 @@
       "enabled": true,
       "addedAt": "2026-04-18T14:00:39.925Z",
       "usageCount": 0
+    },
+    {
+      "id": "track-cw1b3x",
+      "url": "https://www.r2ftrading.com/music/suspense-buildup.mp3",
+      "name": "Suspense Buildup",
+      "mood": "suspense",
+      "enabled": true,
+      "addedAt": "2026-04-18T14:00:48.350Z",
+      "usageCount": 0
     }
   ],
   "enabled": true,
