@@ -394,5 +394,35 @@
     "commentedAt": "2026-04-18T03:01:41.635Z",
     "permalink": "/r/Daytrading/comments/1snu122/xauusd_5m_watching_this_pullback_closely_after/ogtz9fo/",
     "commentId": "ogtz9fo"
+  },
+  {
+    "postId": "1sobgub",
+    "subreddit": "Daytrading",
+    "postTitle": "Down 5% on FTMO funded account - pls help me 🫣",
+    "commentText": "i had this exact problem when i first got funded, blew through 4% in the first week trading EU on the 15m and chasing entries instead of waiting for proper confirmation. tbh the move that saved me was cutting position size to 0.25% per trade until i climbed back above the 3% drawdown line, no exceptions. once you're in a hole on FTMO the daily drawdown becomes your real enemy so smaller size protects you from one bad london session wiping the whole account. get back to breakeven slow, then size up.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-18T03:32:09.091Z",
+    "permalink": "/r/Daytrading/comments/1sobgub/down_5_on_ftmo_funded_account_pls_help_me/ogu3q3f/",
+    "commentId": "ogu3q3f"
+  },
+  {
+    "postId": "1soctxk",
+    "subreddit": "Daytrading",
+    "postTitle": "Worried about Payout Denial.",
+    "commentText": "apex doesn't deny payouts for drawdown at the start of an account, they're looking for things like hedging across accounts or copy trading — that $1000 loss isn't a red flag, it's just a bad day. tbh the $420 trade is the only thing worth double checking, make sure your position sizing wasn't way outside your normal pattern because consistency is what they actually scrutinize. you're fine, go get that payout.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-18T03:32:15.846Z",
+    "permalink": "/r/Daytrading/comments/1soctxk/worried_about_payout_denial/ogu3qng/",
+    "commentId": "ogu3qng"
+  },
+  {
+    "postId": "1so5z4j",
+    "subreddit": "Daytrading",
+    "postTitle": "Making Money, But Still Feel Slightly Clueless",
+    "commentText": "i had this exact problem last year, buying every indicator and discord group i could find and still feeling lost despite hitting green days — the problem wasn't my entries, it was that i had no *why* behind them. you're stacking VWAP, ORB, OTE all at once and they're all pulling you in different directions on the same chart. one of my students was doing something similar, mixing 4 methodologies on ES 5min, and once we stripped it to just watching the 15min for a clean FVG into a daily OB during the NY open killzone, everything clicked fast. pick one framework and stay married to it until it's boring, the green days will feel less like gambling after that 🎯",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-18T03:32:23.998Z",
+    "permalink": "/r/Daytrading/comments/1so5z4j/making_money_but_still_feel_slightly_clueless/ogu3rcv/",
+    "commentId": "ogu3rcv"
   }
 ]
