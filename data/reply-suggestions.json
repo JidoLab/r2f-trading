@@ -1,5 +1,45 @@
 [
   {
+    "id": "sug-1776472241420-wrrt1",
+    "platform": "medium",
+    "postTitle": "Trading With Claude: Day 24 — The Day the Hormuz Opened",
+    "postUrl": "https://medium.com/@dsrikant/trading-with-claude-day-24-the-day-the-hormuz-opened-1ad1649af4b7?source=rss------trading-5",
+    "authorName": "Dushyant Remivasan",
+    "suggestedReply": "The Hormuz reopening was a textbook geopolitical volatility event. When similar Strait tensions eased in 2019, I caught a clean 340 pip move on USOIL within the first 4 hours by waiting for the retest rather than chasing the initial spike. The patience threshold is everything on these macro catalysts.",
+    "createdAt": "2026-04-18T00:30:41.420Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776472244734-aayo6",
+    "platform": "medium",
+    "postTitle": "What Is a Fair Value Gap in Trading?",
+    "postUrl": "https://medium.com/@garrettblaco/what-is-a-fair-value-gap-in-trading-a685e9ac8174?source=rss------trading-5",
+    "authorName": "Garrett",
+    "suggestedReply": "Fair Value Gaps on the 15-minute EUR/USD chart are some of the cleanest entries I've seen consistently respect price reaction. What I'd add to Garrett's breakdown is that not all FVGs are equal — the ones formed during high-impact news sessions carry significantly more weight than those printed in low-volume overnight ranges. Context is everything with this concept.",
+    "createdAt": "2026-04-18T00:30:44.734Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776472247437-wwi4o",
+    "platform": "medium",
+    "postTitle": "The Indicator Trap: Why Your Trading Strategy is a Lie and How Orderflow Reclaims the P&L",
+    "postUrl": "https://medium.com/@wernerotto/the-indicator-trap-why-your-trading-strategy-is-a-lie-and-how-orderflow-reclaims-the-p-l-417064518de9?source=rss------trading-5",
+    "authorName": "Lutenant",
+    "suggestedReply": "The \"indicator trap\" framing hits close to home. Last week on EUR/USD 15-minute, my students kept chasing RSI divergence signals that were consistently wrong until we layered in actual bid/ask absorption at the 1.0840 level where institutions were defending. Orderflow didn't confirm the indicator once, but it confirmed the trade every time.",
+    "createdAt": "2026-04-18T00:30:47.437Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776472250837-ivs7k",
+    "platform": "medium",
+    "postTitle": "Beyond the Headlines: 6 Metrics Wall Street Uses to Decode the Market",
+    "postUrl": "https://medium.com/@Motivatedjay/beyond-the-headlines-6-metrics-wall-street-uses-to-decode-the-market-bd5df8ca90df?source=rss------trading-5",
+    "authorName": "Jay Robinson",
+    "suggestedReply": "Jay, the metric that consistently separates disciplined traders from noise chasers is the one Wall Street rarely advertises openly: the put/call ratio. When it crossed 1.3 on SPX options in October 2022, I was already positioning long before the crowd caught on. Decoding those signals ahead of the headlines is exactly where the real edge lives.",
+    "createdAt": "2026-04-18T00:30:50.837Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776387557768-4ja52",
     "platform": "medium",
     "postTitle": "The Anatomy of Tilt: Why Winning Streaks Cause the Biggest Drawdowns",
