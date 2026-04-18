@@ -18,11 +18,12 @@
     "hot-take",
     "quote",
     "tip",
-    "myth"
+    "myth",
+    "story"
   ],
   "lastPost": {
-    "type": "myth",
-    "text": "MYTH: More order blocks = better analysis.\n\nTRUTH: Most retail traders mark every candle and call it SMC. One clean, confluent order block beats 20 random zones every time.\n\nQuality over quantity. Always.\n\n#ICTTrading #OrderBlocks #SmartMoneyConcepts",
-    "date": "2026-04-17T12:00:19.477Z"
+    "type": "story",
+    "text": "First time I spotted a fair value gap, I ignored it. 'Too simple,' I thought. Took the 'complex' setup instead. Stopped out. The FVG filled perfectly. Sometimes the market hands you the answer and ego makes you overthink it. #ICTTrading #FairValueGap #SmartMoneyConcepts",
+    "date": "2026-04-18T04:00:57.922Z"
   }
 }
