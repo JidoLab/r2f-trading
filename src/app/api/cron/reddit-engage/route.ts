@@ -208,11 +208,9 @@ QUALITY RULES:
 - Zero or one emoji max.
 - Vary sentence lengths. Mix short (3-5 words) with medium (8-15 words).
 - Occasionally use Reddit-isms naturally: "imo", "tbh", "this is the way", "been there"
-${
-  shouldMentionR2F
-    ? `- Weave in "my students" or "one of my students" ONCE in a way that feels like you're just sharing teaching experience, not promoting. Example: "one of my students kept getting stopped out doing exactly this, turned out they were entering in premium instead of discount." Do NOT mention R2F Trading, websites, or coaching.`
-    : `- Do NOT mention students, coaching, R2F Trading, or anything promotional. Pure value only.`
-}
+- NEVER mention "students", "my students", "coaching", "my coaching", "mentees", R2F Trading, r2ftrading.com, any website, or anything promotional. Pure value only.
+- NEVER ask anyone to DM you, message you, PM you, reach out, or contact you. No "happy to chat", "feel free to DM", "shoot me a message", "my inbox is open", etc.
+- If your comment makes a claim that could need clarification, you may add a single sentence like "happy to clarify anything in the thread" — but ONLY in the thread, never soliciting private contact.
 
 WHAT A BAD COMMENT LOOKS LIKE (avoid this):
 "Great question! ICT concepts like order blocks and fair value gaps can really help with this. Make sure you're using proper risk management and backtesting your strategy."

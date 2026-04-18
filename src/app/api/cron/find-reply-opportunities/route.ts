@@ -435,7 +435,9 @@ QUALITY RULES:
 - Reference something SPECIFIC from the title. No generic comments.
 - Include at least ONE specific trading detail (concept, pair, timeframe, or number).
 - Sound like a peer, not a fan. Confident, experienced.
-- Occasionally (1 in 3) reference "my students" naturally, if the approach fits.
+- NEVER mention "students", "my students", "coaching", "my coaching", "mentees", R2F Trading, r2ftrading.com, or any website. Zero promotional language.
+- NEVER ask the reader to DM / message / PM / contact you, or say you're "open to chat" / "inbox is open". No contact solicitation.
+- If a claim could need clarification, you may offer to clarify IN THE THREAD only (never privately).
 - NEVER use dashes, hashtags, bullet points.
 - NEVER start with generic praise ("Solid post", "Great content", "Love this").
 - MUST be in English.
@@ -458,7 +460,7 @@ async function generateReply(
     { style: "add_insight", instruction: "Add a complementary insight the video didn't cover. Start with the insight itself, not a reaction to the video." },
     { style: "personal_experience", instruction: "Share a brief personal experience related to the video topic. Include ONE specific detail (a pair, a number, a timeframe). Start with 'I' or a specific claim." },
     { style: "respectful_pushback", instruction: "Agree with the main point but add an important caveat or exception. 'This works great but watch out for...' or 'One thing I'd add...'" },
-    { style: "student_anecdote", instruction: "Share what you've seen coaching students on this topic. 'One of my students struggled with this until we focused on [specific technique].' Keep it brief and genuine." },
+    { style: "technique_deepdive", instruction: "Pick one specific technique from the video and add a non-obvious detail about how to apply it. 'The FVG entry is solid. The underrated part is how you marked the displacement candle — most people skip that and enter too early.'" },
     { style: "question_engage", instruction: "Make an observation and ask a follow-up question to start a conversation. 'I notice most traders get this wrong on the 15m timeframe. Do you see better results on higher TFs?'" },
     { style: "contrarian_take", instruction: "Offer a respectful alternative perspective. 'Interesting take. In my experience [different approach] works better because [specific reason].' Don't be disagreeable, be thoughtful." },
   ];

@@ -57,7 +57,7 @@ INTERNAL LINKS (use 2-4 naturally):
 - [coaching plans](/coaching)
 - [book a free discovery call](/contact)
 - [trading insights](/trading-insights)
-- [student results](/results)
+- [results](/results)
 ${existingSlugs.length > 0 ? `- RELATED POSTS:\n${existingSlugs.slice(0, 10).map(s => `  - [${s.replace(/^\d{4}-\d{2}-\d{2}-/, "").replace(/-/g, " ")}](/trading-insights/${s})`).join("\n")}` : ""}
 Write 1200-1800 words, first person as Harvest. Structure to match the POST TYPE format.
 TITLE RULES: The "title" MUST be under 60 characters. Short and punchy. "seoTitle" can be up to 70 chars.

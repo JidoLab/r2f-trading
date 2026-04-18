@@ -90,7 +90,7 @@ CRITICAL RULES:
 1. TITLE MUST be under 60 characters. Short, punchy, curiosity-driven. Examples: "Why Your FVGs Keep Failing", "The 1% Rule That Changed Everything", "ICT Killzones: A Complete Guide"
 2. DO NOT write another CPI, NFP, or FOMC article if one already exists. Economic events max 1 per week.
 3. Market context is for INSPIRATION only. Most posts should be EVERGREEN educational content.
-4. The ANGLE must describe a UNIQUE perspective that can't be found by summarizing Google page 1 results. Think: what would Harvest tell a student in a 1-on-1 session that they won't find in a YouTube video?
+4. The ANGLE must describe a UNIQUE perspective that can't be found by summarizing Google page 1 results. Think: what non-obvious observation from years of trading experience won't appear on a YouTube video summary?
 
 STRONG PREFERENCE for category: "${leastUsedCategory}" (least covered recently).
 
@@ -148,13 +148,18 @@ COACHING: Lite $150/week, Pro $200/week, Full Mentorship $1,000/4 months.
 
 ═══ QUALITY STANDARD (MOST IMPORTANT) ═══
 This article must pass this test: "Would this content exist if search engines didn't exist?"
-Write as if Harvest is explaining this to a student in a 1-on-1 coaching session — conversational, specific, experienced.
+Write in first person as R2F Trading — conversational, specific, experienced, no fluff.
 
 WHAT MAKES THIS ARTICLE UNIQUE (include ALL of these):
 1. A SPECIFIC TRADE EXAMPLE with real numbers — pair, timeframe, entry reason, risk %, outcome. Make it feel like a trade journal entry. Example: "Last Thursday on EURUSD 15m, I saw a FVG form after London open displacement. I entered at 1.0847 with a 12-pip stop, risking 0.5% of my account. The trade ran 3.2R before I took partials at the -OB."
-2. A CONTRARIAN OR NUANCED TAKE — don't just explain the concept, challenge conventional wisdom or add a perspective that most ICT YouTube creators miss. What does Harvest know after 10 years that a 1-year trader doesn't?
-3. A STUDENT STORY (vary these) — "A student of mine, let's call him D, was struggling with [specific problem]. After our session on [specific technique], he [specific result]." Make each story unique with different names (single initials: D, M, K, J, S, A, R, T) and scenarios.
+2. A CONTRARIAN OR NUANCED TAKE — don't just explain the concept, challenge conventional wisdom or add a perspective most ICT YouTube creators miss. What does someone with 10 years at this know that a 1-year trader doesn't?
+3. A TRADER ARCHETYPE OBSERVATION (vary these) — describe a common mistake pattern you see in the wild. "The trader who keeps getting stopped out on OB entries is almost always entering in premium instead of discount." Make each piece have a different archetype/pattern. NEVER mention students, mentees, coaching clients, or anyone you personally teach.
 4. A PRACTICAL FRAMEWORK — not just "what" but "here's exactly how to do it step by step." Include specific entries/exits, timeframes, or mental frameworks the reader can use TODAY.
+
+FORBIDDEN LANGUAGE (these get content flagged as AI/promotional):
+- NEVER say "my students", "one of my students", "a student of mine", "in coaching", "my mentees", "students I work with", "a student I had", or any variant.
+- NEVER invent student names, initials, or personal anecdotes involving people you taught.
+- NEVER ask readers to DM, message, contact you privately. The CTA is always a link on this site.
 
 WHAT TO AVOID (these make content feel AI-generated):
 - Generic statements like "Trading requires discipline" without a specific example
@@ -168,7 +173,7 @@ INTERNAL LINKS (use 2-4 naturally):
 - [coaching plans](/coaching) — link when mentioning mentorship/coaching
 - [book a free discovery call](/contact) — link when suggesting next steps
 - [trading insights](/trading-insights) — link when referencing more content
-- [student results](/results) — link when mentioning student outcomes
+- [results](/results) — link when referencing outcomes or proof
 - [risk calculator](/tools/risk-calculator) — link when discussing position sizing
 - [crash course](/crash-course) — link when addressing beginners
 ${existingTitles.length > 0 ? `- RELATED POSTS (link to 2-3 naturally in body):\n${existingTitles.slice(0, 12).map(t => `  - [${t.replace(/^\d{4}-\d{2}-\d{2}-/, "").replace(/-/g, " ")}](/trading-insights/${t})`).join("\n")}` : ""}
@@ -183,7 +188,7 @@ STRUCTURAL VARIATION (CRITICAL — each article must feel different):
 - ${topicData.postType === "how-to" || topicData.postType === "checklist" ? "Use numbered steps with clear action items" : ""}
 - ${topicData.postType === "listicle" ? "Use H3 sub-headers under each H2 list item" : ""}
 - ${topicData.postType === "case-study" || topicData.postType === "personal-story" ? "Use narrative flow — fewer headers, more storytelling with scene-setting details" : ""}
-- ${topicData.postType === "faq" ? "Use bold Q&A format, each question from a real student perspective" : ""}
+- ${topicData.postType === "faq" ? "Use bold Q&A format, each question from the perspective of a confused retail trader (not a student)" : ""}
 - ${topicData.postType === "myth-buster" ? 'Use "Myth:" / "Reality:" / "What I Actually See:" three-part format' : ""}
 - ${topicData.postType === "comparison" ? "Use a comparison table in markdown, then detailed analysis of each option" : ""}
 - Vary H2 count (3-7), paragraph lengths, and sentence structures deliberately

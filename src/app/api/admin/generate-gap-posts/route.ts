@@ -50,7 +50,7 @@ INTERNAL LINKS (use 2-4 of these naturally within the article body):
 - [coaching plans](/coaching) — link when mentioning mentorship/coaching
 - [book a free discovery call](/contact) — link when suggesting next steps
 - [risk calculator](/tools/risk-calculator) — link when discussing risk management
-- [student results](/results) — link when mentioning student outcomes
+- [results](/results) — link when referencing outcomes or proof
 - [free ICT crash course](/crash-course) — link when suggesting free resources
 ${existingTitles.length > 0 ? `- RELATED POSTS (link to 2-3 relevant ones naturally in the body):\n${existingTitles.slice(0, 15).map(t => `  - [${t.replace(/^\d{4}-\d{2}-\d{2}-/, "").replace(/-/g, " ")}](/trading-insights/${t})`).join("\n")}` : ""}
 Write 1200-1800 words, first person as Harvest. Structure to match the POST TYPE format.

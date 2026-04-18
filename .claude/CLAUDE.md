@@ -67,7 +67,7 @@ PDF exists at public/downloads/ict-trading-checklist.pdf — already integrated 
 - Testimonial collection system (/review) with admin approval (/admin/reviews)
 - Daily voice market brief (/market-brief) with podcast RSS feed
 - Auto review request emails 14 days after payment
-- Reddit auto-commenting (2x/day, 5 subreddits, references "my students" for curiosity)
+- Reddit auto-commenting (2x/day, 5 subreddits, pure-value only — never mentions "students" or solicits DMs after r/daytrading ban 2026-04-18)
 - Twitter auto-reply (1x/day, accepts platform risk)
 - Suggested replies dashboard for YouTube (/admin/reply-suggestions) with copy+open
 - Revenue Tracker (/admin/revenue) with CSS bar charts, conversion rate

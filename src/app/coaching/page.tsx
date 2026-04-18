@@ -195,6 +195,29 @@ export default function CoachingPage() {
             </div>
           </div>
 
+          {/* Guarantee Bar */}
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center bg-gradient-to-r from-gold/5 via-gold/10 to-gold/5 border border-gold/30 rounded-xl p-5 mb-12 max-w-3xl mx-auto">
+            <div className="flex items-center gap-3">
+              <svg className="w-8 h-8 text-gold flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <div>
+                <p className="text-navy font-bold text-sm">Satisfaction Guarantee</p>
+                <p className="text-navy/60 text-xs">Not seeing value after week 1? We adjust until you are.</p>
+              </div>
+            </div>
+            <div className="hidden sm:block h-8 w-px bg-gold/30" />
+            <div className="flex items-center gap-3">
+              <svg className="w-8 h-8 text-gold flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <div>
+                <p className="text-navy font-bold text-sm">Zero-Pitch Discovery Call</p>
+                <p className="text-navy/60 text-xs">15 minutes, honest feedback, no pressure.</p>
+              </div>
+            </div>
+          </div>
+
           <h2
             className="text-2xl md:text-3xl font-bold text-navy text-center mb-10"
             style={{ fontFamily: "var(--font-serif)" }}

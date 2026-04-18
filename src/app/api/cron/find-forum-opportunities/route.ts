@@ -211,7 +211,7 @@ Title: "${post.title}"
 Author: "${post.author}"
 
 STYLE: ${opener}
-NEVER use dashes. No website mentions. No hashtags. No "Solid breakdown"/"Great content" openers. Under 400 chars. Occasionally say "my students". Vary structure. MUST be in English. Comment only.`,
+NEVER use dashes. No website mentions. No hashtags. No "Solid breakdown"/"Great content" openers. Under 400 chars. NEVER mention "students", "coaching", R2F Trading, or any website. NEVER ask anyone to DM/message/contact you. You may offer to clarify IN THE THREAD if needed, never privately. Vary structure. MUST be in English. Comment only.`,
     }],
   });
   return msg.content[0].type === "text" ? msg.content[0].text.trim() : "";

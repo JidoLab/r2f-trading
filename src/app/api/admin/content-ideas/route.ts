@@ -79,7 +79,7 @@ INTERNAL LINKS (use 2-4 naturally):
 - [coaching plans](/coaching)
 - [book a free discovery call](/contact)
 - [trading insights](/trading-insights)
-- [student results](/results)
+- [results](/results)
 ${existingTitles.length > 0 ? `RELATED POSTS:\n${existingTitles.slice(0, 10).map((t) => `- [${t.replace(/^\d{4}-\d{2}-\d{2}-/, "").replace(/-/g, " ")}](/trading-insights/${t})`).join("\n")}` : ""}
 Write 1200-1800 words, first person as Harvest.
 TITLE RULES: Under 60 characters, short and punchy.

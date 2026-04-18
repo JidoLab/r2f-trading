@@ -31,9 +31,37 @@ export default function ContactPage() {
             >
               Book a Discovery Call
             </h1>
-            <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto mb-6">
               Take the first step toward transforming your craft and trade like a professional. Use the scheduler below to book a time that works for you. Let&rsquo;s discuss your goals, challenges, and how we can work together to achieve your success.
             </p>
+
+            {/* Social Proof */}
+            <div className="inline-flex items-center gap-3 bg-gold/5 border border-gold/30 rounded-full px-5 py-2">
+              <div className="flex gap-0.5">
+                {[1,2,3,4,5].map(i => (
+                  <svg key={i} className="w-3.5 h-3.5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <span className="text-xs font-semibold text-navy">Rated 5.0 &middot; 100+ calls booked</span>
+            </div>
+          </div>
+
+          {/* Quick FAQs above booking */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-4xl mx-auto">
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+              <p className="text-navy font-bold text-sm mb-2">What happens on the call?</p>
+              <p className="text-gray-600 text-xs leading-relaxed">A casual 15-minute chat about your trading experience, goals, and what&rsquo;s holding you back. Honest feedback, no sales pitch.</p>
+            </div>
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+              <p className="text-navy font-bold text-sm mb-2">Is it really free?</p>
+              <p className="text-gray-600 text-xs leading-relaxed">Yes &mdash; 100% free. Zero commitment. If coaching isn&rsquo;t right for you, you&rsquo;ll walk away with useful feedback either way.</p>
+            </div>
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+              <p className="text-navy font-bold text-sm mb-2">What timezone?</p>
+              <p className="text-gray-600 text-xs leading-relaxed">Bangkok time (UTC+7). Evening and weekend slots available for US/EU/AU traders &mdash; pick what works for you.</p>
+            </div>
           </div>
 
           <PreQualQuiz />
