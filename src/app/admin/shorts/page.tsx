@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 interface VideoPerf {
   videoId: string;
@@ -273,6 +274,34 @@ export default function AdminShortsPage() {
         <p className="text-white/30 text-xs mt-2">
           AI script &rarr; ElevenLabs voice &rarr; Whisper captions &rarr; FFmpeg render. Takes ~3-5 min per video.
         </p>
+      </div>
+
+      {/* Sub-tools */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+        <Link
+          href="/admin/shorts/stock-library"
+          className="bg-white/5 border border-white/10 rounded-lg p-4 hover:border-gold/40 hover:bg-white/10 transition-colors"
+        >
+          <div className="flex items-center gap-3">
+            <div className="text-2xl">🎥</div>
+            <div>
+              <p className="text-white text-sm font-semibold">Stock Library</p>
+              <p className="text-white/50 text-xs">Expand Pexels B-roll per category</p>
+            </div>
+          </div>
+        </Link>
+        <Link
+          href="/admin/image-library"
+          className="bg-white/5 border border-white/10 rounded-lg p-4 hover:border-gold/40 hover:bg-white/10 transition-colors"
+        >
+          <div className="flex items-center gap-3">
+            <div className="text-2xl">📸</div>
+            <div>
+              <p className="text-white text-sm font-semibold">Image Library</p>
+              <p className="text-white/50 text-xs">Chart images for shorts + posts</p>
+            </div>
+          </div>
+        </Link>
       </div>
 
       {/* Pipeline Steps */}
