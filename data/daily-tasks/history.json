@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-04-19",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776531618500-0",
+        "title": "Reach out personally to all 5 cold subscribers via a direct 1-on-1 Telegram or LINE message from Harvest introducing himself and offering a free 15-minute trading strategy call to accelerate conversion.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776531618501-1",
+        "title": "Launch a new top-of-funnel lead generation initiative such as a free ICT trading webinar or live YouTube session hosted by Harvest this week to attract net-new subscribers beyond the current 5.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776531618501-2",
+        "title": "Manually submit the 9 ready YouTube Shorts to relevant Facebook Groups and Thai trading communities in Bangkok to drive traffic, since Reddit automation yielded 0 upvotes and 0 comments yesterday.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776531618501-3",
+        "title": "Create and run a paid Meta or Google ad campaign targeting Bangkok-based retail traders interested in ICT concepts, as organic channels are producing 0 new subscribers and 0 payments daily.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-04-18",
     "tasks": [
       {
