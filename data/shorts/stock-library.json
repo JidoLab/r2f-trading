@@ -13,8 +13,9 @@
     "url": "https://videos.pexels.com/video-files/8530543/8530543-hd_1080_2048_25fps.mp4",
     "category": "frustration",
     "pexelsId": 8530543,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-18T02:01:17.632Z"
   },
   {
     "id": "seed-frustration-8873041",
@@ -127,8 +128,9 @@
     "url": "https://videos.pexels.com/video-files/8873184/8873184-hd_1080_1920_25fps.mp4",
     "category": "typing_trade",
     "pexelsId": 8873184,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-18T02:01:17.632Z"
   },
   {
     "id": "seed-typing_trade-7546674",
@@ -1897,8 +1899,9 @@
     "height": 1920,
     "duration": 18,
     "pexelsId": 36794735,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:43.033Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:43.033Z",
+    "lastUsedAt": "2026-04-18T02:01:17.632Z"
   },
   {
     "id": "pexels-36794734",
