@@ -1,33 +1,5 @@
 [
   {
-    "date": "2026-04-10T12:28:36.615Z",
-    "type": "text",
-    "postType": "story",
-    "text": "Last Friday's NFP I thought I was smart shorting DXY before the number. Got steamrolled when jobs ca",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-10T16:45:56.472Z",
     "slug": "2026-04-10-why-80-of-ict-traders-fail-at-risk-management",
     "title": "Why 80% of ICT Traders Fail at Risk Management",
@@ -2007,6 +1979,52 @@
     "date": "2026-04-17T14:00:23.373Z",
     "slug": "2026-04-03-7-fatal-mistakes-that-kill-your-funded-account-challenge-success",
     "title": "7 Fatal Mistakes That Kill Your Funded Account",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-18T00:32:07.991Z",
+    "slug": "2026-04-18-why-patience-feels-like-losing-and-how-to-fix-it",
+    "title": "Why Patience Feels Like Losing (And How to Fix It)",
     "results": [
       {
         "platform": "twitter",
