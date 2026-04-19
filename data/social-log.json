@@ -2164,5 +2164,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-19T12:00:18.716Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "Which ICT concept has leveled up your trading the MOST? 🧠 #ICTTrading #SmartMoneyConcepts\n\n🅰️ Orde",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
