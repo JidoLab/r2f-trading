@@ -20,11 +20,12 @@
     "tip",
     "myth",
     "story",
-    "challenge"
+    "challenge",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "challenge",
-    "text": "Challenge: This weekend, backtest 20 fair value gap setups from Q1 2026. Record entry, target & result. No skipping. Post your edge % below 👇 Bet most of you won't do it. Prove me wrong. #FairValueGap #ICTTrading #SmartMoneyConcepts",
-    "date": "2026-04-18T12:00:56.641Z"
+    "type": "poll-native",
+    "text": "Order blocks or fair value gaps — which ICT concept do you trust MORE for entries? 🧠 #ICTTrading #SmartMoneyConcepts\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ Both equally\n🅳️ Neither\n\nVote below! 👇",
+    "date": "2026-04-19T04:00:52.170Z"
   }
 }
