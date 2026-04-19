@@ -164,14 +164,14 @@ export async function generateSingleShort(topic?: string, autoPublish = false, f
 
   // Load content types
   const contentTypes = [
-    { id: "listicle", name: "Listicle", description: "Top 3-5 tips/mistakes", sceneTemplate: "Hook → List items → CTA", visualStrategy: "Mix stock + charts", voiceTone: "Energetic, authoritative", targetDuration: 35, targetWords: 90, sceneCount: 5 },
-    { id: "chart-breakdown", name: "Chart Breakdown", description: "Annotated chart walkthrough", sceneTemplate: "Setup → Entry → Result", visualStrategy: "All chart images", voiceTone: "Analytical, clear", targetDuration: 40, targetWords: 100, sceneCount: 4 },
-    { id: "myth-buster", name: "Myth Buster", description: "MYTH vs TRUTH format", sceneTemplate: "Myth → Why wrong → Truth → Proof", visualStrategy: "Dramatic stock + chart proof", voiceTone: "Confident, surprising", targetDuration: 35, targetWords: 85, sceneCount: 4 },
-    { id: "story", name: "Story", description: "Personal narrative", sceneTemplate: "Before → Struggle → Change → After", visualStrategy: "Emotional stock clips", voiceTone: "Vulnerable, real", targetDuration: 40, targetWords: 100, sceneCount: 4 },
-    { id: "quiz", name: "Quiz", description: "Test your knowledge", sceneTemplate: "Question → Options → Answer → Lesson", visualStrategy: "Chart + text overlays", voiceTone: "Playful, challenging", targetDuration: 30, targetWords: 75, sceneCount: 4 },
-    { id: "pov", name: "POV", description: "POV: relatable scenario", sceneTemplate: "POV setup → Scenario → Plot twist → Lesson", visualStrategy: "Relatable stock clips", voiceTone: "Casual, dramatic", targetDuration: 30, targetWords: 75, sceneCount: 4 },
-    { id: "rapid-fire", name: "Rapid Fire", description: "Quick tips", sceneTemplate: "Hook → Tip 1 → Tip 2 → Tip 3 → CTA", visualStrategy: "Fast cuts, mixed", voiceTone: "Fast, punchy", targetDuration: 25, targetWords: 65, sceneCount: 5 },
-    { id: "debate", name: "Debate", description: "X vs Y comparison", sceneTemplate: "Question → Side A → Side B → Verdict", visualStrategy: "Split screen feel", voiceTone: "Fair, decisive", targetDuration: 35, targetWords: 90, sceneCount: 4 },
+    { id: "listicle", name: "Listicle", description: "Top 3-5 tips/mistakes", sceneTemplate: "Hook → List items → CTA", visualStrategy: "Mix stock + charts", voiceTone: "Energetic, authoritative", targetDuration: 35, targetWords: 90, sceneCount: 8 },
+    { id: "chart-breakdown", name: "Chart Breakdown", description: "Annotated chart walkthrough", sceneTemplate: "Setup → Entry → Result", visualStrategy: "All chart images", voiceTone: "Analytical, clear", targetDuration: 40, targetWords: 100, sceneCount: 7 },
+    { id: "myth-buster", name: "Myth Buster", description: "MYTH vs TRUTH format", sceneTemplate: "Myth → Why wrong → Truth → Proof", visualStrategy: "Dramatic stock + chart proof", voiceTone: "Confident, surprising", targetDuration: 35, targetWords: 85, sceneCount: 7 },
+    { id: "story", name: "Story", description: "Personal narrative", sceneTemplate: "Before → Struggle → Change → After", visualStrategy: "Emotional stock clips", voiceTone: "Vulnerable, real", targetDuration: 40, targetWords: 100, sceneCount: 7 },
+    { id: "quiz", name: "Quiz", description: "Test your knowledge", sceneTemplate: "Question → Options → Answer → Lesson", visualStrategy: "Chart + text overlays", voiceTone: "Playful, challenging", targetDuration: 30, targetWords: 75, sceneCount: 7 },
+    { id: "pov", name: "POV", description: "POV: relatable scenario", sceneTemplate: "POV setup → Scenario → Plot twist → Lesson", visualStrategy: "Relatable stock clips", voiceTone: "Casual, dramatic", targetDuration: 30, targetWords: 75, sceneCount: 7 },
+    { id: "rapid-fire", name: "Rapid Fire", description: "Quick tips", sceneTemplate: "Hook → Tip 1 → Tip 2 → Tip 3 → CTA", visualStrategy: "Fast cuts, mixed", voiceTone: "Fast, punchy", targetDuration: 25, targetWords: 65, sceneCount: 10 },
+    { id: "debate", name: "Debate", description: "X vs Y comparison", sceneTemplate: "Question → Side A → Side B → Verdict", visualStrategy: "Split screen feel", voiceTone: "Fair, decisive", targetDuration: 35, targetWords: 90, sceneCount: 7 },
   ];
 
   // Select content type with rotation

@@ -114,11 +114,29 @@ async function renderVideo({ slug, audioUrl, duration, scenes, captions, enriche
       }
     }
 
+    // Download end-card (static logo+URL held at the tail). Hardcoded URL — missing
+    // or 404 falls back gracefully to no-end-card render.
+    const END_CARD_URL = "https://www.r2ftrading.com/shorts-assets/end-card.png";
+    const END_CARD_DUR = 2.0;
+    let endCardPath = null;
+    try {
+      endCardPath = path.join(tmpDir, "end-card.png");
+      await downloadFile(END_CARD_URL, endCardPath);
+      console.log(`[${slug}] End card downloaded`);
+    } catch (err) {
+      console.warn(`[${slug}] End card download failed, skipping: ${err.message}`);
+      endCardPath = null;
+    }
+
     // Step 2: Build FFmpeg command
     updateStatus("rendering");
     console.log(`[${slug}] Building FFmpeg filter graph...`);
     const totalDuration = duration || 35;
-    const sceneDur = totalDuration / Math.max(scenes.length, 1);
+    // Reserve END_CARD_DUR at the tail when the end card is present — main scenes
+    // fill (totalDuration - END_CARD_DUR), end card holds for the final 2s.
+    const endCardDur = endCardPath ? END_CARD_DUR : 0;
+    const mainDuration = totalDuration - endCardDur;
+    const sceneDur = mainDuration / Math.max(scenes.length, 1);
 
     // Build complex filter graph
     const { filterComplex, lastLabel, inputArgs, audioLabel } = buildFilterGraph(
@@ -131,7 +149,10 @@ async function renderVideo({ slug, audioUrl, duration, scenes, captions, enriche
       audioPath,
       musicPath,
       { volumeDb: typeof musicVolumeDb === "number" ? musicVolumeDb : -18,
-        duckRatio: typeof musicDuckRatio === "number" ? musicDuckRatio : 8 }
+        duckRatio: typeof musicDuckRatio === "number" ? musicDuckRatio : 8 },
+      endCardPath,
+      endCardDur,
+      mainDuration
     );
 
     // Run FFmpeg
@@ -183,7 +204,7 @@ async function renderVideo({ slug, audioUrl, duration, scenes, captions, enriche
   }
 }
 
-function buildFilterGraph(scenes, assetPaths, captions, enrichedCaptions, totalDuration, sceneDur, audioPath, musicPath, musicOpts) {
+function buildFilterGraph(scenes, assetPaths, captions, enrichedCaptions, totalDuration, sceneDur, audioPath, musicPath, musicOpts, endCardPath, endCardDur, mainDuration) {
   const inputArgs = [];
   const filterParts = [];
   let inputIdx = 0;
@@ -192,6 +213,10 @@ function buildFilterGraph(scenes, assetPaths, captions, enrichedCaptions, totalD
   // Each scene is extended by this amount so xfade can overlap cleanly.
   const XFADE_DUR = 0.2;
   const sceneExt = sceneDur + XFADE_DUR;
+  const hasEndCard = !!endCardPath && endCardDur > 0;
+  // When an end card is appended, the main scene chain covers mainDuration and
+  // the end card fills the remaining endCardDur. When absent, main covers all.
+  const mainChainDuration = hasEndCard ? mainDuration : totalDuration;
 
   // Add scene inputs (extended by XFADE_DUR so transitions have content to crossfade)
   for (let i = 0; i < scenes.length; i++) {
@@ -230,8 +255,26 @@ function buildFilterGraph(scenes, assetPaths, captions, enrichedCaptions, totalD
     }
   }
 
-  // Trim to exact duration
-  filterParts.push(`[vcat]trim=0:${totalDuration},setpts=PTS-STARTPTS[vtrim]`);
+  // If end card present, xfade from the main chain into it so the final
+  // endCardDur seconds show the static logo/URL. Otherwise trim to totalDuration.
+  if (hasEndCard) {
+    // End-card input: loop the PNG for endCardDur + XFADE_DUR so xfade has overlap
+    inputArgs.push("-loop", "1", "-t", String(endCardDur + XFADE_DUR), "-i", endCardPath);
+    filterParts.push(
+      `[${inputIdx}:v]scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=30,setpts=PTS-STARTPTS,trim=0:${(endCardDur + XFADE_DUR).toFixed(3)},setpts=PTS-STARTPTS[vend]`
+    );
+    inputIdx++;
+
+    // Trim main chain to mainChainDuration, then xfade with the end card
+    filterParts.push(`[vcat]trim=0:${mainChainDuration},setpts=PTS-STARTPTS[vmain]`);
+    const endOffset = mainChainDuration - XFADE_DUR;
+    filterParts.push(
+      `[vmain][vend]xfade=transition=fade:duration=${XFADE_DUR}:offset=${endOffset.toFixed(3)}[vtrim]`
+    );
+  } else {
+    // Trim to exact duration
+    filterParts.push(`[vcat]trim=0:${totalDuration},setpts=PTS-STARTPTS[vtrim]`);
+  }
 
   // Dark overlay (semi-transparent black)
   filterParts.push(
