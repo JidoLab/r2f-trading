@@ -148,7 +148,17 @@ export default async function BlogPostPage({
     headline: post.title,
     description: post.seoDescription || post.excerpt,
     image: post.coverImage
-      ? (post.coverImage.startsWith("http") ? post.coverImage : `https://www.r2ftrading.com${post.coverImage}`)
+      ? {
+          "@type": "ImageObject",
+          url: post.coverImage.startsWith("http") ? post.coverImage : `https://www.r2ftrading.com${post.coverImage}`,
+          caption: post.title,
+          creator: { "@type": "Person", name: "Harvest Wright" },
+          copyrightHolder: { "@type": "Organization", name: "R2F Trading" },
+          copyrightNotice: `© ${new Date().getFullYear()} R2F Trading. All rights reserved.`,
+          creditText: "R2F Trading",
+          license: "https://www.r2ftrading.com/image-license",
+          acquireLicensePage: "https://www.r2ftrading.com/image-license",
+        }
       : undefined,
     datePublished: post.date,
     dateModified: post.date,
@@ -237,13 +247,19 @@ export default async function BlogPostPage({
     }
   }
 
+  const currentYear = new Date().getFullYear();
   const imageObjectsLd = bodyImages.map((img) => ({
     "@context": "https://schema.org",
     "@type": "ImageObject",
     url: img.url,
+    contentUrl: img.url,
     caption: img.alt,
     creator: { "@type": "Person", name: "Harvest Wright" },
     copyrightHolder: { "@type": "Organization", name: "R2F Trading" },
+    copyrightNotice: `© ${currentYear} R2F Trading. All rights reserved.`,
+    creditText: "R2F Trading",
+    license: "https://www.r2ftrading.com/image-license",
+    acquireLicensePage: "https://www.r2ftrading.com/image-license",
   }));
 
   return (

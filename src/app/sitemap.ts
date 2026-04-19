@@ -60,6 +60,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/tools/risk-calculator`, lastModified: "2026-04-15", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/market-brief`, lastModified: latestPostDate, changeFrequency: "daily", priority: 0.7 },
     { url: `${BASE_URL}/privacy`, lastModified: "2026-01-01", changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE_URL}/image-license`, lastModified: "2026-04-19", changeFrequency: "yearly", priority: 0.3 },
     ...blogEntries,
     ...landingPageEntries,
   ];
