@@ -94,6 +94,11 @@ interface VideoResult {
   commentCount?: number;
 }
 
+// Module-level diag capture for YT API failures so the route handler can
+// surface the exact HTTP status + body in the response. Populated by
+// searchYouTube on the first non-2xx so we don't spam.
+const ytApiFailure: { status?: number; text?: string } = {};
+
 async function searchYouTube(
   query: string,
   accessTokenOrApiKey: string,
@@ -117,7 +122,12 @@ async function searchYouTube(
     { headers }
   );
   if (!res.ok) {
-    console.error(`[reply-opps] YouTube search failed: ${res.status} ${await res.text().catch(() => "")}`);
+    const body = await res.text().catch(() => "");
+    console.error(`[reply-opps] YouTube search failed: ${res.status} ${body}`);
+    if (!ytApiFailure.status) {
+      ytApiFailure.status = res.status;
+      ytApiFailure.text = body.slice(0, 300);
+    }
     return [];
   }
   const data = await res.json();
@@ -542,8 +552,14 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    // Prefer API key for search (doesn't need OAuth scopes), fall back to OAuth
-    const apiKey = process.env.YOUTUBE_API_KEY || process.env.GEMINI_API_KEY;
+    // Reset module-level YT API failure capture for this run
+    delete ytApiFailure.status;
+    delete ytApiFailure.text;
+
+    // Prefer YOUTUBE_API_KEY (doesn't need OAuth scopes), fall back to OAuth
+    // refresh-token flow. GEMINI_API_KEY is NOT a valid fallback — it's rejected
+    // by YouTube Data API with 400 and causes silent empty-result runs.
+    const apiKey = process.env.YOUTUBE_API_KEY;
     let authToken = "";
     let useApiKey = false;
 
@@ -574,7 +590,12 @@ export async function GET(req: NextRequest) {
     const newSuggestions: ReplySuggestion[] = [];
 
     // Per-platform diagnostics so we can see silent zero-result states in the response
-    const diag = {
+    const diag: {
+      youtube: { searched: number; returned: number; duped: number; added: number; errors: number; authMode: string; apiFailure?: { status?: number; text?: string } };
+      facebook_group: { returned: number; duped: number; added: number };
+      linkedin: { returned: number; duped: number; added: number };
+      medium: { returned: number; duped: number; added: number };
+    } = {
       youtube: { searched: 0, returned: 0, duped: 0, added: 0, errors: 0, authMode: useApiKey ? "api_key" : "oauth" },
       facebook_group: { returned: 0, duped: 0, added: 0 },
       linkedin: { returned: 0, duped: 0, added: 0 },
@@ -619,6 +640,11 @@ export async function GET(req: NextRequest) {
         diag.youtube.errors++;
         console.error(`[reply-opps] YT query "${query}" failed:`, err instanceof Error ? err.message : String(err));
       }
+    }
+
+    // If the first YT API call returned non-2xx, surface it so the cause is visible
+    if (ytApiFailure.status) {
+      diag.youtube.apiFailure = { status: ytApiFailure.status, text: ytApiFailure.text };
     }
 
     // Search Facebook Groups
