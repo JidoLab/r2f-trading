@@ -209,72 +209,50 @@ function buildFilterGraph(scenes, assetPaths, captions, enrichedCaptions, totalD
   const filterParts = [];
   let inputIdx = 0;
 
-  // Scene-transition crossfade duration (seconds).
-  // Each scene is extended by this amount so xfade can overlap cleanly.
-  const XFADE_DUR = 0.2;
-  const sceneExt = sceneDur + XFADE_DUR;
+  // Scene transitions: hard cuts via concat filter. Xfade crossfades were too
+  // heavy for the DO droplet — 7+ chained xfades ran at 0.02x realtime.
+  // Hard cuts render near-realtime and match modern TikTok/Shorts aesthetic.
   const hasEndCard = !!endCardPath && endCardDur > 0;
-  // When an end card is appended, the main scene chain covers mainDuration and
-  // the end card fills the remaining endCardDur. When absent, main covers all.
-  const mainChainDuration = hasEndCard ? mainDuration : totalDuration;
 
-  // Add scene inputs (extended by XFADE_DUR so transitions have content to crossfade)
+  // Add scene inputs, each clamped to exactly sceneDur (no overlap needed for concat)
   for (let i = 0; i < scenes.length; i++) {
     const scene = scenes[i];
     if (scene.type === "video") {
-      // -stream_loop -1 + -t clamps short Pexels clips to sceneExt by looping;
-      // clips longer than sceneExt are simply cut short. Prevents the xfade
-      // chain from desyncing with audio when a clip ends early.
-      inputArgs.push("-stream_loop", "-1", "-t", String(sceneExt), "-i", assetPaths[i]);
+      // -stream_loop -1 + -t clamps short Pexels clips to sceneDur by looping;
+      // clips longer than sceneDur are simply cut short.
+      inputArgs.push("-stream_loop", "-1", "-t", String(sceneDur), "-i", assetPaths[i]);
     } else {
-      // Image: loop it for the extended scene duration
-      inputArgs.push("-loop", "1", "-t", String(sceneExt), "-i", assetPaths[i]);
+      // Image: loop it for the scene duration
+      inputArgs.push("-loop", "1", "-t", String(sceneDur), "-i", assetPaths[i]);
     }
 
-    // Scale and crop each input to 1080x1920 (full HD vertical)
+    // Scale and crop each input to 1080x1920 (full HD vertical).
+    // concat requires identical timebase + SAR + pixel format, so we normalize here.
     filterParts.push(
-      `[${inputIdx}:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30,setpts=PTS-STARTPTS,trim=0:${sceneExt},setpts=PTS-STARTPTS[v${i}]`
+      `[${inputIdx}:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30,format=yuv420p,setpts=PTS-STARTPTS,trim=0:${sceneDur.toFixed(3)},setpts=PTS-STARTPTS[v${i}]`
     );
     inputIdx++;
   }
 
-  // Chain scenes with xfade crossfades (or plain concat if single scene)
-  if (scenes.length <= 1) {
-    filterParts.push(`[v0]null[vcat]`);
-  } else {
-    // First xfade: v0 ⇢ v1 at offset sceneDur
-    // Each subsequent xfade: prev ⇢ vk at offset k*sceneDur
-    let prevLabel = "v0";
-    for (let k = 1; k < scenes.length; k++) {
-      const outLabel = k === scenes.length - 1 ? "vcat" : `xf${k}`;
-      const offset = k * sceneDur;
-      filterParts.push(
-        `[${prevLabel}][v${k}]xfade=transition=fade:duration=${XFADE_DUR}:offset=${offset.toFixed(3)}[${outLabel}]`
-      );
-      prevLabel = outLabel;
-    }
-  }
-
-  // If end card present, xfade from the main chain into it so the final
-  // endCardDur seconds show the static logo/URL. Otherwise trim to totalDuration.
+  // End-card input (if present) gets the same normalization as scenes so concat works.
   if (hasEndCard) {
-    // End-card input: loop the PNG for endCardDur + XFADE_DUR so xfade has overlap
-    inputArgs.push("-loop", "1", "-t", String(endCardDur + XFADE_DUR), "-i", endCardPath);
+    inputArgs.push("-loop", "1", "-t", String(endCardDur), "-i", endCardPath);
     filterParts.push(
-      `[${inputIdx}:v]scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=30,setpts=PTS-STARTPTS,trim=0:${(endCardDur + XFADE_DUR).toFixed(3)},setpts=PTS-STARTPTS[vend]`
+      `[${inputIdx}:v]scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=30,format=yuv420p,setpts=PTS-STARTPTS,trim=0:${endCardDur.toFixed(3)},setpts=PTS-STARTPTS[vend]`
     );
     inputIdx++;
-
-    // Trim main chain to mainChainDuration, then xfade with the end card
-    filterParts.push(`[vcat]trim=0:${mainChainDuration},setpts=PTS-STARTPTS[vmain]`);
-    const endOffset = mainChainDuration - XFADE_DUR;
-    filterParts.push(
-      `[vmain][vend]xfade=transition=fade:duration=${XFADE_DUR}:offset=${endOffset.toFixed(3)}[vtrim]`
-    );
-  } else {
-    // Trim to exact duration
-    filterParts.push(`[vcat]trim=0:${totalDuration},setpts=PTS-STARTPTS[vtrim]`);
   }
+
+  // Concat all video segments in order. concat is a timebase-level op — way
+  // cheaper than xfade which blends pixels per frame.
+  const concatInputs = [];
+  for (let i = 0; i < scenes.length; i++) concatInputs.push(`[v${i}]`);
+  if (hasEndCard) concatInputs.push(`[vend]`);
+  const totalSegments = concatInputs.length;
+  filterParts.push(`${concatInputs.join("")}concat=n=${totalSegments}:v=1:a=0[vcat]`);
+
+  // Trim to exact duration (should be ~exact after concat; trim guards against drift)
+  filterParts.push(`[vcat]trim=0:${totalDuration},setpts=PTS-STARTPTS[vtrim]`);
 
   // Dark overlay (semi-transparent black)
   filterParts.push(
