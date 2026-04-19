@@ -27,7 +27,7 @@
     "authorName": "Barbaros Kortarla",
     "suggestedReply": "Curious whether the slippage you experienced on gold was more pronounced during the London open or New York overlap, Barbaros — those two windows behave very differently on IC Markets in my experience. I've seen fills drift 8 to 12 pips on XAU/USD during high-impact news even on ECN accounts, but relatively tight execution during quieter sessions. Worth isolating the time variable before drawing broader conclusions about the broker.",
     "createdAt": "2026-04-19T00:30:57.565Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776558662247-vpgkz",
