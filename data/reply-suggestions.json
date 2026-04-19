@@ -1,5 +1,35 @@
 [
   {
+    "id": "sug-1776598807693-nhkgw",
+    "platform": "medium",
+    "postTitle": "The 1% Architecture: Why Retail Traders Fail and How to Trade with Institutional Precision",
+    "postUrl": "https://medium.com/@kamrulorion.llc/the-1-architecture-why-retail-traders-fail-and-how-to-trade-with-institutional-precision-9886b7d2b8b7?source=rss------day_trading-5",
+    "authorName": "AURIONE LLC | Elite Trading & Business Systems",
+    "suggestedReply": "Curious how you define \"institutional precision\" in practice — because most retail traders I've seen struggle not with strategy but with execution timing. On something like EUR/USD during the London open, even a 5-minute displacement can invalidate an otherwise clean setup. Does your 1% architecture account for session-specific entry windows or is it framework-agnostic?",
+    "createdAt": "2026-04-19T11:40:07.693Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776598811732-orbkt",
+    "platform": "medium",
+    "postTitle": "AI News Sentiment Analysis as a Trading Signal ",
+    "postUrl": "https://tripolskypetr.medium.com/ai-news-sentiment-analysis-as-a-trading-signal-057f54ac3293?source=rss------trading-5",
+    "authorName": "Petr Tripolsky",
+    "suggestedReply": "One layer I'd add to Petr's framework: sentiment signals tend to work best when filtered through volume context. On EUR/USD during NFP weeks, I've seen bullish sentiment scores spike yet price stall hard at key resistance because institutional flow simply wasn't confirming. Pairing the sentiment signal with a 4H volume divergence filter cut my false entries by roughly 30%. Raw sentiment alone is noisy without that structural confirmation.",
+    "createdAt": "2026-04-19T11:40:11.732Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776598815657-6hdcb",
+    "platform": "medium",
+    "postTitle": "How to Fit Trading into a Full-Time 9–5-Job",
+    "postUrl": "https://medium.com/@sipsnscale/how-to-fit-trading-into-a-full-time-9-5-job-430ea9b6c81d?source=rss------trading-5",
+    "authorName": "Sips & Scale",
+    "suggestedReply": "Fitting trading around a 9–5 is genuinely possible, but the timeframe choice becomes critical. Most people instinctively gravitate toward the 1H or 4H charts, which actually suits a structured work schedule far better than scalping the 5M during lunch. Curious whether you found session timing to be a real constraint, specifically whether your readers are missing the London open entirely and leaning on New York setups instead?",
+    "createdAt": "2026-04-19T11:40:15.657Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776558649488-p8ptt",
     "platform": "medium",
     "postTitle": "TraHow Trade Copier For Scalping Works",
