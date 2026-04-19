@@ -45,7 +45,8 @@
       "mood": "uplift",
       "enabled": true,
       "addedAt": "2026-04-18T14:01:00.329Z",
-      "usageCount": 0
+      "usageCount": 1,
+      "lastUsedAt": "2026-04-19T02:00:36.485Z"
     }
   ],
   "enabled": true,
