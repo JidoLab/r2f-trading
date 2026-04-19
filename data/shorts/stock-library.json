@@ -96,8 +96,9 @@
     "url": "https://videos.pexels.com/video-files/9196607/9196607-hd_1080_2048_25fps.mp4",
     "category": "lightbulb",
     "pexelsId": 9196607,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-19T00:31:19.894Z"
   },
   {
     "id": "seed-lightbulb-5647316",
@@ -383,8 +384,9 @@
     "height": 1920,
     "duration": 11,
     "pexelsId": 8135334,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.547Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.547Z",
+    "lastUsedAt": "2026-04-19T00:31:19.894Z"
   },
   {
     "id": "pexels-6382082",
@@ -1512,8 +1514,9 @@
     "height": 1920,
     "duration": 10,
     "pexelsId": 12894347,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:39.122Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:39.122Z",
+    "lastUsedAt": "2026-04-19T00:31:19.894Z"
   },
   {
     "id": "pexels-7660185",
@@ -2365,8 +2368,9 @@
     "height": 1920,
     "duration": 35,
     "pexelsId": 6388403,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:46.818Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:46.818Z",
+    "lastUsedAt": "2026-04-19T00:31:19.894Z"
   },
   {
     "id": "pexels-6388396",
