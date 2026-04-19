@@ -7,7 +7,7 @@
     "authorName": "Trade Copier",
     "suggestedReply": "One thing worth adding for scalping setups specifically: latency becomes critical when you're targeting 3 to 5 pip moves on pairs like GBPUSD or XAUUSD. Even a 200ms execution delay can flip a winning trade into a loser at that timeframe. The copier's bridge architecture matters as much as the signal quality itself.",
     "createdAt": "2026-04-19T00:30:49.488Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776558653367-k2u0n",
