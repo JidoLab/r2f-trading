@@ -170,7 +170,7 @@ export async function generateSingleShort(topic?: string, autoPublish = false, f
     { id: "story", name: "Story", description: "Personal narrative", sceneTemplate: "Before → Struggle → Change → After", visualStrategy: "Emotional stock clips", voiceTone: "Vulnerable, real", targetDuration: 40, targetWords: 100, sceneCount: 7 },
     { id: "quiz", name: "Quiz", description: "Test your knowledge", sceneTemplate: "Question → Options → Answer → Lesson", visualStrategy: "Chart + text overlays", voiceTone: "Playful, challenging", targetDuration: 30, targetWords: 75, sceneCount: 7 },
     { id: "pov", name: "POV", description: "POV: relatable scenario", sceneTemplate: "POV setup → Scenario → Plot twist → Lesson", visualStrategy: "Relatable stock clips", voiceTone: "Casual, dramatic", targetDuration: 30, targetWords: 75, sceneCount: 7 },
-    { id: "rapid-fire", name: "Rapid Fire", description: "Quick tips", sceneTemplate: "Hook → Tip 1 → Tip 2 → Tip 3 → CTA", visualStrategy: "Fast cuts, mixed", voiceTone: "Fast, punchy", targetDuration: 25, targetWords: 65, sceneCount: 10 },
+    { id: "rapid-fire", name: "Rapid Fire", description: "Quick tips", sceneTemplate: "Hook → Tip 1 → Tip 2 → Tip 3 → CTA", visualStrategy: "Fast cuts, mixed", voiceTone: "Fast, punchy", targetDuration: 25, targetWords: 65, sceneCount: 7 },
     { id: "debate", name: "Debate", description: "X vs Y comparison", sceneTemplate: "Question → Side A → Side B → Verdict", visualStrategy: "Split screen feel", voiceTone: "Fair, decisive", targetDuration: 35, targetWords: 90, sceneCount: 7 },
   ];
 
