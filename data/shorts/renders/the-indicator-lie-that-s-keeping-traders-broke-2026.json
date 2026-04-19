@@ -21,10 +21,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-17T10:27:24.404Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/the-indicator-lie-that-s-keeping-traders-broke-2026.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/lI6dvvGuRSI",
   "copyText": "The Indicator Lie That's Keeping Traders Broke (2026)\n\nEveryone thinks more indicators = more accuracy. Smart money traders know the truth. If you're still stacking RSI, MACD, and moving averages on your charts — this is why your funded account keeps blowing. R2F Trading breaks down the ICT truth behind clean charts and order blocks. Follow for daily smart money concepts.\n\n#ICTTrading #SmartMonkeyConcepts #OrderBlocks #FairValueGap #FundedTrader #R2FTrading #ForexTrading #ICT2026 #SmartMoney #TradingMyths",
-  "uploadResults": [],
-  "completedAt": "2026-04-17T10:28:48.448Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/lI6dvvGuRSI"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-17T10:28:48.448Z",
+  "publishedAt": "2026-04-19T11:00:31.288Z"
 }
