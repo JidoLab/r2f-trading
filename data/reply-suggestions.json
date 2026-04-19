@@ -1,5 +1,35 @@
 [
   {
+    "id": "sug-1776599431864-fga6g",
+    "platform": "linkedin",
+    "postTitle": "order blocks and liquidity sweeps in forex",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=order%20blocks%20and%20liquidity%20sweeps%20in%20forex&datePosted=past-24h&d=2026-04-19",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Order blocks only become truly relevant when they align with a liquidity sweep on a higher timeframe first. I've seen traders jump into OB entries on the 15M without confirming that sellside or buyside liquidity was actually taken on the 4H, and the trade just doesn't have the institutional backing they think it does. Context above the entry timeframe is everything here.",
+    "createdAt": "2026-04-19T11:50:31.864Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776599434834-oorhd",
+    "platform": "linkedin",
+    "postTitle": "moving from demo to live trading",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=moving%20from%20demo%20to%20live%20trading&datePosted=past-24h&d=2026-04-19",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "The jump from demo to live often breaks traders not because of strategy failure, but because of emotional exposure. I've seen setups on EURUSD that executed flawlessly in demo get abandoned mid-trade live because real money changes perception. Start with micro sizing, not full risk, until your psychology matches your backtested edge.",
+    "createdAt": "2026-04-19T11:50:34.834Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776599437888-umy5u",
+    "platform": "linkedin",
+    "postTitle": "reading price action without indicators",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=reading%20price%20action%20without%20indicators&datePosted=past-24h&d=2026-04-19",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "One thing most price action reads miss: displacement. On the 15-minute chart, a single aggressive candle closing beyond structure tells you more about institutional intent than three candles of consolidation. In EURUSD, I've seen traders wait for \"confirmation\" and miss the entire move because they didn't recognize the displacement as the signal itself.",
+    "createdAt": "2026-04-19T11:50:37.888Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776599133184-qcdzd",
     "platform": "linkedin",
     "postTitle": "prop firm funded trader journey",
