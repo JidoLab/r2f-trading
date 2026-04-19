@@ -264,8 +264,9 @@
     "url": "https://videos.pexels.com/video-files/7350231/7350231-hd_1080_1920_25fps.mp4",
     "category": "defeat",
     "pexelsId": 7350231,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-19T06:56:44.839Z"
   },
   {
     "id": "seed-defeat-7924956",
@@ -447,8 +448,9 @@
     "height": 1920,
     "duration": 10,
     "pexelsId": 13801293,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.547Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.547Z",
+    "lastUsedAt": "2026-04-19T06:56:44.839Z"
   },
   {
     "id": "pexels-7172723",
@@ -833,8 +835,9 @@
     "height": 1920,
     "duration": 22,
     "pexelsId": 6462490,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:33.201Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:33.201Z",
+    "lastUsedAt": "2026-04-19T06:56:44.839Z"
   },
   {
     "id": "pexels-27155332",
@@ -1560,8 +1563,9 @@
     "height": 1920,
     "duration": 6,
     "pexelsId": 7204518,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:39.122Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:39.122Z",
+    "lastUsedAt": "2026-04-19T06:56:44.839Z"
   },
   {
     "id": "pexels-7679837",
@@ -1763,8 +1767,9 @@
     "height": 1920,
     "duration": 6,
     "pexelsId": 6265064,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:41.001Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:41.001Z",
+    "lastUsedAt": "2026-04-19T06:56:44.839Z"
   },
   {
     "id": "pexels-6265062",
@@ -1987,8 +1992,9 @@
     "height": 1920,
     "duration": 4,
     "pexelsId": 29436698,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:43.033Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:43.033Z",
+    "lastUsedAt": "2026-04-19T06:56:44.839Z"
   },
   {
     "id": "pexels-35721561",
