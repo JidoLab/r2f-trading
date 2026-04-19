@@ -1,5 +1,75 @@
 [
   {
+    "id": "sug-1776603258308-7wzgy",
+    "platform": "linkedin",
+    "postTitle": "risk management for FTMO challenge",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=risk%20management%20for%20FTMO%20challenge&datePosted=past-24h&d=2026-04-19",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "FTMO's 5% daily drawdown rule catches more traders than the 10% overall limit ever does. Curious how you're approaching position sizing on news days specifically — do you reduce to half lot exposure or sit completely flat during high-impact events like NFP?",
+    "createdAt": "2026-04-19T12:54:18.308Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776603260877-rtwcs",
+    "platform": "linkedin",
+    "postTitle": "fair value gaps and imbalance trading",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=fair%20value%20gaps%20and%20imbalance%20trading&datePosted=past-24h&d=2026-04-19",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Fair value gaps are powerful, but context is everything. A 15-minute FVG forming during a low-volume Asian session behaves very differently from one created during a London open displacement. The imbalance itself isn't the edge — understanding whether price is likely to return to fill it before continuation is where the real precision lives.",
+    "createdAt": "2026-04-19T12:54:20.877Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776603264027-grr36",
+    "platform": "linkedin",
+    "postTitle": "position sizing for funded accounts",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=position%20sizing%20for%20funded%20accounts&datePosted=past-24h&d=2026-04-19",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Position sizing on funded accounts hits different when you're trading with a 5% max drawdown rule. I've seen traders blow evaluations not from bad entries, but from sizing EURUSD positions the same way they would a personal account. The psychological shift matters but the math matters more. Risk per trade should reflect the account rules, not your confidence level.",
+    "createdAt": "2026-04-19T12:54:24.027Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776603267552-ykuwk",
+    "platform": "linkedin",
+    "postTitle": "break of structure and market structure shift",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=break%20of%20structure%20and%20market%20structure%20shift&datePosted=past-24h&d=2026-04-19",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "BOS and MSS are powerful concepts, but context is everything. A BOS on the 15M during a London killzone hits differently than the same signal mid-session with no institutional order flow behind it. On EURUSD specifically, I've seen traders get trapped treating every structure break equally when displacement and the candle that created it tell the real story.",
+    "createdAt": "2026-04-19T12:54:27.552Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776603271429-zpcjc",
+    "platform": "medium",
+    "postTitle": "Weekly Memo 3: The Trade That Didn’t Happen",
+    "postUrl": "https://medium.com/@princecapitalgrp/weekly-memo-3-the-trade-that-didnt-happen-8bf0c5451ad9?source=rss------forex_trading-5",
+    "authorName": "Antonio Grillo-Balen",
+    "suggestedReply": "The trades that don't happen are often the most instructive, Antonio. One thing worth adding: journaling a \"phantom trade\" with a full entry rationale, target, and stop loss forces you to confront whether hesitation was discipline or just fear. I track these on the 4H timeframe across EUR/USD and they've genuinely sharpened my execution criteria over time.",
+    "createdAt": "2026-04-19T12:54:31.429Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776603274865-1rliz",
+    "platform": "medium",
+    "postTitle": "Best Broker Managers for Copy Trading & How to Make Daily Profit Using Softlife",
+    "postUrl": "https://medium.com/@vict9674/best-broker-managers-for-copy-trading-how-to-make-daily-profit-using-softlife-5a4f0e000a98?source=rss------forex_trading-5",
+    "authorName": "Victor Kelechi",
+    "suggestedReply": "Curious how Softlife handles drawdown management during high-impact news events like NFP or FOMC, Victor. Copy trading platforms often struggle with latency at those moments, which can turn a 1:2 risk-reward setup into a losing trade before the signal even replicates. Does the system apply fixed lot sizing or does it scale proportionally to account equity?",
+    "createdAt": "2026-04-19T12:54:34.865Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776603277643-t45mf",
+    "platform": "medium",
+    "postTitle": "Some Traders Have a View You Do Not",
+    "postUrl": "https://medium.com/@klarety_ai/some-traders-have-a-view-you-do-not-7cbf9ecdff81?source=rss------trading-5",
+    "authorName": "Klarety AI",
+    "suggestedReply": "The \"view you do not have\" often comes down to institutional order flow on higher timeframes like the daily or weekly, where a trader positioning in EURUSD at a key liquidity zone sees context most retail participants simply miss. Curious how Klarety AI accounts for that asymmetry when modeling market sentiment versus actual positioning data?",
+    "createdAt": "2026-04-19T12:54:37.643Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776599431864-fga6g",
     "platform": "linkedin",
     "postTitle": "order blocks and liquidity sweeps in forex",
