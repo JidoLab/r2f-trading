@@ -1,5 +1,45 @@
 [
   {
+    "id": "sug-1776558645224-apnqk",
+    "platform": "medium",
+    "postTitle": "Currency Exchange: How Traders in UAE Can Benefit from Global Markets",
+    "postUrl": "https://medium.com/@digitalmarketingoron/currency-exchange-how-traders-in-uae-can-benefit-from-global-markets-2363e666111e?source=rss------forex_trading-5",
+    "authorName": "OronTrade",
+    "suggestedReply": "UAE traders often overlook how London session liquidity spills into their local afternoon hours, which is where I've caught some of my cleanest GBPUSD moves on the 4H chart. The dollar correlation to regional oil flows adds another layer worth mapping before entries. Global markets aren't just accessible from the UAE, they're actually well-timed for it.",
+    "createdAt": "2026-04-19T00:30:45.224Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776558648512-tg83b",
+    "platform": "medium",
+    "postTitle": "How We Built Hashlock Markets: Intent-Based Crypto Trading for AI Agents",
+    "postUrl": "https://medium.com/@barszen/how-we-built-hashlock-markets-intent-based-crypto-trading-for-ai-agents-400402590933?source=rss------trading-5",
+    "authorName": "Mr Turquoise",
+    "suggestedReply": "Intent-based execution is genuinely interesting for volatile pairs like SOL/USDT where slippage on a 50k notional order can eat 0.3% in seconds. My question for Mr Turquoise is how Hashlock Markets handles intent resolution when liquidity fragments across venues mid-fill. That latency gap between intent broadcast and settlement is where I've seen the most edge cases blow up in live conditions.",
+    "createdAt": "2026-04-19T00:30:48.512Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776558651407-wqm4p",
+    "platform": "medium",
+    "postTitle": "Online Trading/Forex Platforms",
+    "postUrl": "https://medium.com/@aaron15elde/online-trading-forex-platforms-283e5a2eb93d?source=rss------forex_trading-5",
+    "authorName": "Aaronelde",
+    "suggestedReply": "Forex platforms aren't created equal, and the spread difference alone can make or break a scalping strategy. I've had trades on EUR/USD during the London session where a 2 pip spread versus a 0.8 pip spread on different brokers changed a marginally profitable month into a losing one. Platform execution speed matters just as much as the interface people obsess over.",
+    "createdAt": "2026-04-19T00:30:51.407Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776558654601-a9sw0",
+    "platform": "medium",
+    "postTitle": "Demo vs Real Trading: Why Most Beginners Fail When Real Money Is Involved",
+    "postUrl": "https://medium.com/@skyriss/demo-vs-real-trading-why-most-beginners-fail-when-real-money-is-involved-8a1473cd8a28?source=rss------forex_trading-5",
+    "authorName": "Skyriss",
+    "suggestedReply": "One thing Skyriss didn't mention is how demo accounts remove the psychological weight of spreads and slippage, which hits hardest on pairs like GBPJPY during news volatility. I've watched traders nail 70%+ win rates in demo, then blow accounts live because their 15-minute setups couldn't absorb real execution costs. The emotional shift is real, but the math gap is what actually kills consistency.",
+    "createdAt": "2026-04-19T00:30:54.601Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776473114862-99ajr",
     "platform": "investinglive",
     "postTitle": "investingLive Americas market news wrap: Iran says Hormuz is open, oil plunges",
