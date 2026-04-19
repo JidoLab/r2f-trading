@@ -2136,5 +2136,33 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-19T05:49:51.624Z",
+    "type": "link-share",
+    "url": "https://www.tradingview.com/chart/EURUSD/1M7N2LOi-DXY-EURUSD-Analysis-Top-down-ICT-R2F-Concepts/",
+    "caption": "Follow along as I do a breakdown of the DXY and EURUSD for next week!",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
