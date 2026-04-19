@@ -269,8 +269,15 @@ BAD HOOKS (never use): "Today I'm going to show you...", "In this video...", "He
 - Second-to-last scene: The PAYOFF — deliver the insight, the answer, the technique
 - LAST scene: CTA — always mention "R2F Trading" and "follow". Vary the CTA: "Follow R2F Trading for more setups like this." / "R2F Trading. Link in bio for the free checklist." / "Follow R2F Trading. New tips every day."
 
-VISUAL PRIORITY: Use "stock_video" for MOST scenes — people's emotions (frustration, shock, celebration) get more attention than charts. Only use "chart_image" for 1 scene MAX. Final CTA scene: "stock_video" with emotion "motivation" or "luxury" or "celebration".
-Available emotions: shock, frustration, curiosity, revelation, confidence, celebration, motivation, defeat, agreement, wealth, luxury, aspiration, focus, teaching, money, morning, reflection, confusion, tension
+VISUAL PRIORITY — match the visual to what the narration is ACTUALLY about:
+- If a scene's text mentions charts, setups, price action, candles, FVG, order blocks, liquidity sweeps, entries, exits, stop losses, targets, structure, or any ICT concept → use "chart_image". The viewer needs to SEE what you're describing.
+- If a scene is about emotions (frustration, shock, celebration), narrative/story beats, or trader lifestyle → use "stock_video".
+- For chart-heavy content types (chart-breakdown, myth-buster, quiz) most scenes should be "chart_image".
+- For story/POV content types, mostly "stock_video" with 1-2 "chart_image" when illustrating a specific setup.
+- Final CTA scene: "stock_video" with emotion "motivation", "luxury", or "celebration".
+- visualQuery for chart_image scenes should name the SPECIFIC concept shown (e.g. "bullish order block retest", "liquidity sweep before FVG fill", "London session sweep").
+
+Available emotions (for stock_video only): shock, frustration, curiosity, revelation, confidence, celebration, motivation, defeat, agreement, wealth, luxury, aspiration, focus, teaching, money, morning, reflection, confusion, tension
 
 ═══ CAPTION QUALITY ═══
 Captions are the PRIMARY way viewers consume Shorts (85% watch with sound off).

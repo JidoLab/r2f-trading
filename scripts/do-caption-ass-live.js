@@ -128,7 +128,7 @@ function generateAss(captions, opts = {}) {
   // Font sizes: bumped for readability. Anton is condensed so fits 3-4 words/line easily.
   // Also beefier outline + shadow since we removed the dark overlay for vibrance.
   const bodySize = 110;  // was 96 — bumped for better mobile readability
-  const hookSize = 160;  // was 140
+  const hookSize = 140;  // was 160 (overflow); was 112 originally. 140 fits 4-word chunks on 1080px.
   const outlineSize = 7; // was 5 — stronger pop on any background
   const shadowDepth = 4; // was 3
 
