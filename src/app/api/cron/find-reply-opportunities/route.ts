@@ -299,18 +299,41 @@ const LINKEDIN_TOPICS = [
   "break of structure and market structure shift",
   "fair value gaps and imbalance trading",
   "risk management for FTMO challenge",
+  "how to pass prop firm challenges",
+  "day trading for beginners",
+  "prop firm funded trader journey",
+  "trading journal discipline",
+  "NY session liquidity sweep setups",
+  "London open breakout strategies",
+  "XAUUSD price action trading",
+  "Nasdaq futures trading strategy",
+  "avoiding overtrading and revenge trading",
+  "building a trading plan that survives drawdown",
+  "reading price action without indicators",
+  "position sizing for funded accounts",
+  "how professional traders manage stops",
+  "trading during high-impact news events",
+  "ICT silver bullet entry model",
+  "why most retail traders lose money",
+  "choosing the right prop firm 2026",
+  "moving from demo to live trading",
 ];
 
 async function searchLinkedIn(): Promise<PostResult[]> {
   // LinkedIn API doesn't allow searching other people's posts easily.
   // Instead, generate topic-based suggestions that Harvest can use
   // when he finds relevant posts on LinkedIn himself.
+  //
+  // The URL includes today's date so dedup by URL doesn't kill us — every
+  // day produces fresh, unique "suggestion URLs" for the admin UI even
+  // when we loop back to a prior topic from the pool.
+  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
   const results: PostResult[] = [];
   const shuffled = [...LINKEDIN_TOPICS].sort(() => Math.random() - 0.5);
   const selected = shuffled.slice(0, 4);
 
   for (const topic of selected) {
-    const searchUrl = `https://www.linkedin.com/search/results/content/?keywords=${encodeURIComponent(topic)}`;
+    const searchUrl = `https://www.linkedin.com/search/results/content/?keywords=${encodeURIComponent(topic)}&datePosted=past-24h&d=${today}`;
     results.push({
       postTitle: topic,
       postUrl: searchUrl,
@@ -550,13 +573,23 @@ export async function GET(req: NextRequest) {
     const existingUrls = new Set(existing.map((s) => s.postUrl));
     const newSuggestions: ReplySuggestion[] = [];
 
+    // Per-platform diagnostics so we can see silent zero-result states in the response
+    const diag = {
+      youtube: { searched: 0, returned: 0, duped: 0, added: 0, errors: 0, authMode: useApiKey ? "api_key" : "oauth" },
+      facebook_group: { returned: 0, duped: 0, added: 0 },
+      linkedin: { returned: 0, duped: 0, added: 0 },
+      medium: { returned: 0, duped: 0, added: 0 },
+    };
+
     // Search YouTube for each query
     for (const query of SEARCH_QUERIES) {
+      diag.youtube.searched++;
       try {
         const videos = await searchYouTube(query, authToken, useApiKey);
+        diag.youtube.returned += videos.length;
         for (const video of videos) {
           const url = `https://youtube.com/watch?v=${video.videoId}`;
-          if (existingUrls.has(url)) continue;
+          if (existingUrls.has(url)) { diag.youtube.duped++; continue; }
 
           try {
             const reply = await generateReply(
@@ -576,21 +609,24 @@ export async function GET(req: NextRequest) {
                 status: "pending",
               });
               existingUrls.add(url);
+              diag.youtube.added++;
             }
           } catch {
-            // Skip this video if reply generation fails
+            diag.youtube.errors++;
           }
         }
-      } catch {
-        // Skip this query if search fails
+      } catch (err) {
+        diag.youtube.errors++;
+        console.error(`[reply-opps] YT query "${query}" failed:`, err instanceof Error ? err.message : String(err));
       }
     }
 
     // Search Facebook Groups
     try {
       const fbPosts = await searchFacebookGroups();
+      diag.facebook_group.returned = fbPosts.length;
       for (const post of fbPosts) {
-        if (existingUrls.has(post.postUrl)) continue;
+        if (existingUrls.has(post.postUrl)) { diag.facebook_group.duped++; continue; }
         try {
           const reply = await generatePlatformReply(
             post.postTitle,
@@ -610,6 +646,7 @@ export async function GET(req: NextRequest) {
               status: "pending",
             });
             existingUrls.add(post.postUrl);
+            diag.facebook_group.added++;
           }
         } catch {
           // Skip this post if reply generation fails
@@ -622,8 +659,9 @@ export async function GET(req: NextRequest) {
     // Search LinkedIn (topic-based suggestions)
     try {
       const linkedinPosts = await searchLinkedIn();
+      diag.linkedin.returned = linkedinPosts.length;
       for (const post of linkedinPosts) {
-        if (existingUrls.has(post.postUrl)) continue;
+        if (existingUrls.has(post.postUrl)) { diag.linkedin.duped++; continue; }
         try {
           const reply = await generatePlatformReply(
             post.postTitle,
@@ -643,6 +681,7 @@ export async function GET(req: NextRequest) {
               status: "pending",
             });
             existingUrls.add(post.postUrl);
+            diag.linkedin.added++;
           }
         } catch {
           // Skip this post if reply generation fails
@@ -655,8 +694,9 @@ export async function GET(req: NextRequest) {
     // Search Medium
     try {
       const mediumPosts = await searchMedium();
+      diag.medium.returned = mediumPosts.length;
       for (const post of mediumPosts) {
-        if (existingUrls.has(post.postUrl)) continue;
+        if (existingUrls.has(post.postUrl)) { diag.medium.duped++; continue; }
         try {
           const reply = await generatePlatformReply(
             post.postTitle,
@@ -676,6 +716,7 @@ export async function GET(req: NextRequest) {
               status: "pending",
             });
             existingUrls.add(post.postUrl);
+            diag.medium.added++;
           }
         } catch {
           // Skip this post if reply generation fails
@@ -690,6 +731,7 @@ export async function GET(req: NextRequest) {
         success: true,
         newCount: 0,
         message: "No new reply opportunities found",
+        diag,
       });
     }
 
@@ -730,8 +772,10 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({
       success: true,
       newCount: newSuggestions.length,
+      diag,
       suggestions: newSuggestions.map((s) => ({
         id: s.id,
+        platform: s.platform,
         title: s.postTitle,
         author: s.authorName,
       })),
