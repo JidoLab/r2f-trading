@@ -49,19 +49,20 @@
   {
     "email": "blackkilevu@gmail.com",
     "date": "2026-04-13T10:23:34.431Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "score": 0,
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-04-13T10:23:34.431Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   },
   {
     "email": "lucky04_flour@icloud.com",
     "date": "2026-04-13T23:04:34.994Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "score": 5,
     "segment": "cold",
     "events": [
@@ -72,7 +73,8 @@
     ],
     "lastActivity": "2026-04-14T09:56:28.355Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   }
 ]
