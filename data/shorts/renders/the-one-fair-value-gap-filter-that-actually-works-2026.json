@@ -21,10 +21,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-17T13:09:04.471Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/the-one-fair-value-gap-filter-that-actually-works-2026.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/cn6oo1U3Bf8",
   "copyText": "The One Fair Value Gap Filter That Actually Works (2026)\n\nNot all Fair Value Gaps are worth trading. We were taking every single one — and it was destroying our accounts. Then the R2F Trading system revealed the one filter that separates the setups worth taking from the traps. This changed everything. Follow r2ftrading.com for daily ICT concepts, smart money setups, and funded trader strategies.\n\n#ICTTrading #FairValueGap #SmartMoneyConcepts #FundedTrader #OrderBlocks #R2FTrading #ForexTrading #ICT2026 #FVG #TradingTips",
-  "uploadResults": [],
-  "completedAt": "2026-04-17T13:10:11.238Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/cn6oo1U3Bf8"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-17T13:10:11.238Z",
+  "publishedAt": "2026-04-19T17:01:07.604Z"
 }
