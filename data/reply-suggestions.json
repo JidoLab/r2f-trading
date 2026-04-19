@@ -1,5 +1,75 @@
 [
   {
+    "id": "sug-1776599133184-qcdzd",
+    "platform": "linkedin",
+    "postTitle": "prop firm funded trader journey",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=prop%20firm%20funded%20trader%20journey&datePosted=past-24h&d=2026-04-19",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "The funded trader journey breaks most people at the consistency rules, not the market itself. I've seen accounts blown not from bad trades but from oversizing a single EURUSD position after a winning streak, thinking the edge scaled infinitely. Prop firms are essentially testing emotional discipline disguised as a profit target.",
+    "createdAt": "2026-04-19T11:45:33.184Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776599136921-p3jnv",
+    "platform": "linkedin",
+    "postTitle": "trading psychology and discipline for funded accounts",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=trading%20psychology%20and%20discipline%20for%20funded%20accounts&datePosted=past-24h&d=2026-04-19",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Funded account discipline breaks down hardest during drawdown recovery, not during normal trading. I've seen traders flip from structured ICT entries on the 15M XAUUSD to revenge trading 5M chop purely because the evaluation reset was looming. The psychology around preserving capital for a firm is fundamentally different from trading your own money, and most traders underestimate that gap until they've blown at least one account learning it.",
+    "createdAt": "2026-04-19T11:45:36.921Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776599139982-8n2ec",
+    "platform": "linkedin",
+    "postTitle": "building a trading plan that survives drawdown",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=building%20a%20trading%20plan%20that%20survives%20drawdown&datePosted=past-24h&d=2026-04-19",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Most traders build drawdown rules around account percentage but ignore the time dimension entirely. A plan that survives a 15% drawdown over two weeks hits differently than one stretched across three months of slow bleed on EURUSD H4. Tracking consecutive losing days alongside equity curve slope changed how I evaluate plan resilience more than any fixed percentage threshold ever did.",
+    "createdAt": "2026-04-19T11:45:39.982Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776599142670-1iwpl",
+    "platform": "linkedin",
+    "postTitle": "smart money concepts for prop firm traders",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=smart%20money%20concepts%20for%20prop%20firm%20traders&datePosted=past-24h&d=2026-04-19",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Smart money concepts hit different when you're trading under prop firm rules because the drawdown constraints force you to be far more selective with your entries. Curious how you approach liquidity grabs on the 15M when daily bias conflicts with the institutional order flow you're tracking?",
+    "createdAt": "2026-04-19T11:45:42.670Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776599146473-0v2zh",
+    "platform": "medium",
+    "postTitle": "VWAP is Noise: The Sizing For Zero Strategy",
+    "postUrl": "https://medium.com/@wernerotto/vwap-is-noise-the-sizing-for-zero-strategy-eec3229bd9fe?source=rss------trading-5",
+    "authorName": "Lutenant",
+    "suggestedReply": "Sizing for zero makes sense in consolidation, but I'd push back slightly on dismissing VWAP entirely. On ES futures intraday, VWAP reclaims after a morning flush have historically offered high-probability entries precisely because institutional desks are anchored to it. The strategy Lutenant outlines works until liquidity thins and price mean-reverts hard against a flat position.",
+    "createdAt": "2026-04-19T11:45:46.473Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776599150095-bqsxk",
+    "platform": "medium",
+    "postTitle": "Top 5 Forex Brokers in Indonesia (2026 Updated List)",
+    "postUrl": "https://medium.com/@myfxback/top-5-forex-brokers-in-indonesia-2026-updated-list-cef41b42fdce?source=rss------forex_trading-5",
+    "authorName": "MyFxback | Forex Rebate & Cashback",
+    "suggestedReply": "One thing worth noting for Indonesian traders specifically: swap rates on IDR-correlated pairs like USD/IDR can vary dramatically between brokers, sometimes 3-5x the difference, which quietly destroys carry positions held overnight. Before committing to any broker on this list, I'd cross-check their swap tables on Wednesday rollover, where triple swap amplifies that cost significantly.",
+    "createdAt": "2026-04-19T11:45:50.095Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776599153052-t19e2",
+    "platform": "medium",
+    "postTitle": "Time Passes Either Way Build Something That Pays You Back",
+    "postUrl": "https://medium.com/@damaristradesllc/time-passes-either-way-build-something-that-pays-you-back-0f8aee900a0e?source=rss------day_trading-5",
+    "authorName": "Damaris Options Trading",
+    "suggestedReply": "Damaris, the \"time passes either way\" framing hits differently when you've watched a full options cycle expire worthless because you hesitated. Curious how you structure the early stage of building something sustainable — are you prioritizing defined-risk setups like spreads before moving into naked exposure, or do you advocate jumping straight into higher-probability single-leg positions from day one?",
+    "createdAt": "2026-04-19T11:45:53.052Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776599008231-8y59n",
     "platform": "medium",
     "postTitle": "The New Options Advantage: Decoding David Caplan’s Tactical Edge",
