@@ -21,10 +21,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-17T03:31:06.346Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/stop-trading-fair-value-gaps-like-this.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/b_ikGu3BDOc",
   "copyText": "Stop Trading Fair Value Gaps Like This\n\nMost traders misuse fair value gaps and wonder why they keep losing. Here are 3 rapid-fire fixes that funded traders already know. Follow R2F Trading for daily ICT concepts that actually work.\n\n#ICTTrading #FairValueGap #SmartMonkeyConcepts #OrderBlocks #FundedTrader #ICT #ForexTrading #R2FTrading #TradingTips #SMC",
-  "uploadResults": [],
-  "completedAt": "2026-04-17T03:34:24.740Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/b_ikGu3BDOc"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-17T03:34:24.740Z",
+  "publishedAt": "2026-04-19T05:00:43.425Z"
 }
