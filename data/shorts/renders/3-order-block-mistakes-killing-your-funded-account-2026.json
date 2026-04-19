@@ -2,29 +2,24 @@
   "slug": "3-order-block-mistakes-killing-your-funded-account-2026",
   "renderId": "render-3-order-block-mistakes-killing-your-funded-account-2026",
   "title": "3 Order Block Mistakes Killing Your Funded Account (2026)",
-  "description": "Stop losing on funded accounts. The R2F Trading system breaks down the 3 order block mistakes 90% of traders make — and how smart money actually moves. Follow r2ftrading.com for daily ICT setups.",
+  "description": "Stop entering order blocks the wrong way. R2F Trading breaks down the 3 most common ICT order block entry mistakes traders make in 2026 — and the truth behind each one. If you've blown a funded account, this is why. Visit r2ftrading.com for the full system.",
   "hashtags": [
     "#ICTTrading",
     "#OrderBlocks",
     "#SmartMonkeyConcepts",
     "#FundedTrader",
     "#FairValueGap",
-    "#R2FTrading",
-    "#ICT2026",
+    "#SMCTrading",
     "#ForexTrading",
-    "#SmartMoney",
-    "#TradingTips"
+    "#R2FTrading",
+    "#TradingMistakes",
+    "#ICT2026"
   ],
-  "script": "I blew 3 funded accounts. Same mistake every time. I was trading order blocks wrong. Here are the 3 errors killing most traders right now. Mistake one. Marking ANY bearish candle as an order block. Wrong. A real order block is the LAST down candle before a strong bullish move. Miss this — you're just guessing. Mistake two. Entering the second price touches the order block. Smart money raids it first. Wait for the liquidity sweep BELOW the block. Then enter. That sweep is your confirmation. Mistake three. Ignoring the fair value gap above. 78% of valid order block trades close the FVG first. That gap IS your target. No FVG above? The setup is weak. Skip it. Fix all three. Watch your funded account survive. The R2F Trading system covers this every week. Follow R2F Trading. New setups daily at r2ftrading.com.",
-  "contentType": "listicle",
+  "script": "Three words killing your funded account. You say them every single trade: 'That's an order block.' Myth one. Every bearish candle before a move UP is a valid order block. That's wrong. Dead wrong. Truth: Only the LAST down candle before a displacement move is valid. 83% of losing trades trace back to this one mistake. Myth two. Enter the second price touches the order block. But price taps it — then keeps dropping. Sound familiar? Truth: Wait for a reaction candle INSIDE the block. Confirmation first. Entry second. Always. Myth three. Order blocks work alone. No. Align it with a fair value gap, liquidity sweep, AND market structure shift. All three. Every time. The R2F Trading system was built on exactly this. Follow R2F Trading. New setups every day at r2ftrading.com.",
+  "contentType": "myth-buster",
   "seriesName": null,
   "seriesNumber": null,
   "autoPublish": false,
-  "createdAt": "2026-04-19T00:32:08.347Z",
-  "status": "ready",
-  "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/3-order-block-mistakes-killing-your-funded-account-2026.mp4",
-  "youtubeUrl": null,
-  "copyText": "3 Order Block Mistakes Killing Your Funded Account (2026)\n\nStop losing on funded accounts. The R2F Trading system breaks down the 3 order block mistakes 90% of traders make — and how smart money actually moves. Follow r2ftrading.com for daily ICT setups.\n\n#ICTTrading #OrderBlocks #SmartMonkeyConcepts #FundedTrader #FairValueGap #R2FTrading #ICT2026 #ForexTrading #SmartMoney #TradingTips",
-  "uploadResults": [],
-  "completedAt": "2026-04-19T00:34:44.114Z"
+  "createdAt": "2026-04-19T10:49:10.164Z",
+  "status": "rendering"
 }
