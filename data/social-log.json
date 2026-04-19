@@ -2107,5 +2107,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-04-19T04:00:52.632Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "Order blocks or fair value gaps — which ICT concept do you trust MORE for entries? 🧠 #ICTTrading #S",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
