@@ -22,32 +22,25 @@ interface PostResult {
   platform: "facebook_group" | "linkedin" | "medium";
 }
 
+// YouTube Data API v3 search.list costs 100 units each. Default daily quota
+// is 10,000 units — so 25 queries × 100 = 2,500 units just for this cron.
+// Combined with competitor-watch + any manual triggers, we hit the quota
+// ceiling fast and silently-fail for the rest of the day.
+//
+// Trimmed to 10 high-signal queries (~1,000 units/run) to leave headroom
+// for other consumers. Picked the ones most likely to surface relevant
+// English-speaking trader videos with real engagement potential.
 const SEARCH_QUERIES = [
   "ICT trading strategy",
-  "day trading tutorial",
-  "prop firm challenge strategy",
-  "how to get funded trading",
-  "trading psychology tips",
-  "price action trading",
   "smart money concepts",
   "order blocks trading",
-  "risk management trading",
-  "forex market analysis",
-  "swing trading strategy",
-  "supply and demand trading",
-  "trading mistakes to avoid",
-  "scalping strategy",
-  "FTMO challenge tips",
   "fair value gap trading",
   "liquidity sweep trading",
+  "prop firm challenge strategy",
+  "FTMO challenge tips",
+  "price action trading",
+  "trading psychology tips",
   "break of structure",
-  "killzone trading strategy",
-  "ICT concepts explained",
-  "forex beginner tips",
-  "prop trading tips",
-  "smart money trading",
-  "price action patterns",
-  "funded trader tips",
 ];
 
 async function getYouTubeAccessToken(): Promise<string | null> {
