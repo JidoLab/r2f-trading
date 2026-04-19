@@ -384,18 +384,21 @@ function buildFilterGraph(scenes, assetPaths, captions, enrichedCaptions, totalD
     currentLabel = outLabel;
   }
 
-  // Add audio input (voice) — indexed after all scene inputs
+  // Add audio input (voice) — indexed after ALL preceding video inputs
+  // (scenes + optional end card). Use the running inputIdx so this stays
+  // correct regardless of how many video inputs the graph added above.
   let audioLabel = null;
-  const sceneInputCount = scenes.length;
   if (audioPath) {
+    const voiceIdx = inputIdx;
     inputArgs.push("-i", audioPath);
-    const voiceIdx = sceneInputCount; // first input after scenes
+    inputIdx++;
 
     if (musicPath) {
       // Music input is looped at input level so tracks shorter than the short
       // still play for the full duration.
+      const musicIdx = inputIdx;
       inputArgs.push("-stream_loop", "-1", "-i", musicPath);
-      const musicIdx = sceneInputCount + 1;
+      inputIdx++;
 
       const volDb = musicOpts && typeof musicOpts.volumeDb === "number" ? musicOpts.volumeDb : -18;
       const ratio = musicOpts && typeof musicOpts.duckRatio === "number" ? musicOpts.duckRatio : 8;
