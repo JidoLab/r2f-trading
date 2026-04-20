@@ -2075,5 +2075,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-04-20T04:00:52.215Z",
+    "type": "text",
+    "postType": "question",
+    "text": "Order blocks or fair value gaps — which do you trust MORE for entries and why? Drop your answer belo",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
