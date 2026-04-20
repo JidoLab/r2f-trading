@@ -1,5 +1,45 @@
 [
   {
+    "id": "sug-1776652109505-kkied",
+    "platform": "linkedin",
+    "postTitle": "risk management for FTMO challenge",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=risk%20management%20for%20FTMO%20challenge&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Risk management for FTMO specifically needs to account for the 5% daily drawdown rule, which catches traders off guard more than the 10% overall limit. Most people size correctly for their max loss but forget that a bad morning session on EURUSD can silently eat through half their daily allowance before they've even had coffee. The challenge isn't just managing risk, it's managing it within a structured ruleset that has real consequences.",
+    "createdAt": "2026-04-20T02:28:29.505Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776652112816-4m9gk",
+    "platform": "linkedin",
+    "postTitle": "fair value gaps and imbalance trading",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=fair%20value%20gaps%20and%20imbalance%20trading&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "FVGs are powerful, but I've noticed traders often miss that not all imbalances are created equal. On the ES or NQ for example, a 15-minute FVG formed during a displacement move carries far more weight than one built on low-volume consolidation. What's your take on filtering imbalances by the candle's relative volume before marking them as tradeable targets?",
+    "createdAt": "2026-04-20T02:28:32.816Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776652117040-a8u8n",
+    "platform": "medium",
+    "postTitle": "Let Go Of Your Fear Of Losing Money And You Can Become The Wealthiest You’ve Ever Been",
+    "postUrl": "https://medium.com/@imkingcash/let-go-of-your-fear-of-losing-money-and-you-can-become-the-wealthiest-youve-ever-been-6847dc964eb0?source=rss------day_trading-5",
+    "authorName": "Imkingcash",
+    "suggestedReply": "The title nails something most traders miss entirely. Fear of losing doesn't protect your capital, it actually distorts your decision-making at the worst moments, like hesitating on a clean EUR/USD setup at a 4H key level because your last three trades closed red. What helped me was treating each trade as a statistical sample within a series of 20, not an isolated win-or-lose event. That mental reframe changes everything.",
+    "createdAt": "2026-04-20T02:28:37.040Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776652121032-qh21f",
+    "platform": "medium",
+    "postTitle": "Metatrustcapital.com Scam: LinkedIn AI Trading Fraud — Steps to Recover Your Funds",
+    "postUrl": "https://medium.com/@pinkvicto489/metatrustcapital-com-scam-linkedin-ai-trading-fraud-steps-to-recover-your-funds-4b1eac580ef5?source=rss------trading-5",
+    "authorName": "Eric Freeman ⭐",
+    "suggestedReply": "Eric, LinkedIn AI trading fraud is rampant right now and Metatrustcapital fits a pattern I've seen repeatedly. Legitimate algo systems show verifiable drawdown metrics and real execution logs — when I ran a EUR/USD scalping strategy across 3-month backtests, every serious platform provided auditable trade history. If a platform cannot produce those records, that alone is your red flag before any recovery steps are necessary.",
+    "createdAt": "2026-04-20T02:28:41.032Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776651902745-difz9",
     "platform": "linkedin",
     "postTitle": "trading psychology and discipline for funded accounts",
