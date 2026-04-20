@@ -1,0 +1,25 @@
+[
+  {
+    "date": "2026-04-20",
+    "subscribers": {
+      "total": 5,
+      "new": 2,
+      "hot": 0,
+      "warm": 0
+    },
+    "revenue": {
+      "amount": 0,
+      "payments": 0
+    },
+    "content": {
+      "posts": 15,
+      "shorts": 12,
+      "social": 50
+    },
+    "engagement": {
+      "replies": 6,
+      "chats": 0
+    },
+    "taskCompletionRate": 50
+  }
+]
