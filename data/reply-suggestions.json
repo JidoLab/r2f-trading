@@ -167,7 +167,7 @@
     "authorName": "Ganthier Academy",
     "suggestedReply": "Curious whether the country availability differences affect access to live session timing or just the course portal itself — that distinction matters more than people realize. I've seen traders in restricted regions miss critical London open setups on GBPUSD simply due to session replay delays versus live feeds. The ICT framework loses real edge when you're backtesting a 15-minute order block entry two hours after the fact rather than executing it in real time.",
     "createdAt": "2026-04-20T02:51:23.854Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776653181220-hw146",
