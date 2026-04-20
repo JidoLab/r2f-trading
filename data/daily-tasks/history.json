@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-04-21",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776704420242-0",
+        "title": "Reach out personally to all 5 cold subscribers via a direct 1-on-1 Telegram or LINE message from Harvest introducing himself and offering a free 15-minute strategy call to accelerate movement through the funnel.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776704420242-1",
+        "title": "With 11 YouTube Shorts ready to publish, manually select the top 3 most compelling ones and schedule them across the next 3 days with custom thumbnails and keyword-optimized titles to boost early traction.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776704420243-2",
+        "title": "Launch a new paid traffic initiative — set up a small Facebook or TikTok ad campaign targeting Bangkok-based traders with a $10–$20/day budget to drive fresh subscribers since zero new leads joined yesterday.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776704420243-3",
+        "title": "Create and post 1 personal behind-the-scenes story from Harvest on Instagram or Facebook today — showing a real trade, P&L, or student win — to build trust and generate organic lead inquiries beyond the automated content.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-04-20",
     "tasks": [
       {
