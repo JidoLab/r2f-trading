@@ -36,14 +36,15 @@
   {
     "email": "cyrus.alia.borja@gmail.com",
     "date": "2026-04-11T13:01:25.702Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "score": 0,
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-04-11T13:01:25.702Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ]
   },
   {
