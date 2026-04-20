@@ -1,5 +1,45 @@
 [
   {
+    "id": "sug-1776651690102-c2vsb",
+    "platform": "linkedin",
+    "postTitle": "how to pass prop firm challenges",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=how%20to%20pass%20prop%20firm%20challenges&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Most traders fail prop challenges not from lack of skill but from abandoning their edge under evaluation pressure. Curious whether your approach addresses how to handle the psychological shift when real drawdown limits are on the table, say a 5% max daily on a $100K account during a volatile London open?",
+    "createdAt": "2026-04-20T02:21:30.102Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776651693852-najso",
+    "platform": "linkedin",
+    "postTitle": "trading during high-impact news events",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=trading%20during%20high-impact%20news%20events&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "High-impact news on EURUSD is where most traders bleed out waiting for \"clarity\" that never comes cleanly. My approach during NFP has always been to mark the dealing range 15 minutes pre-release and let price raid one side before considering any entry. Chasing the initial spike is usually just donating to the institutions clearing their orders.",
+    "createdAt": "2026-04-20T02:21:33.852Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776651697125-7if8z",
+    "platform": "medium",
+    "postTitle": "The 93.2% Probability That Your Forex Plan Is a Suicide Note",
+    "postUrl": "https://medium.com/@devinjulian/the-93-2-probability-that-your-forex-plan-is-a-suicide-note-b08e5f5b612d?source=rss------forex_trading-5",
+    "authorName": "Devin Julian",
+    "suggestedReply": "The \"suicide note\" framing is sharp, but I'd push back slightly on applying that probability universally. A plan built around asymmetric risk on something like EUR/USD during London open, with a defined 1.5% max drawdown per session, isn't inherently doomed. The real killer isn't the plan itself but the trader's inability to execute it without emotional deviation. Context matters more than the statistic suggests.",
+    "createdAt": "2026-04-20T02:21:37.125Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776651699869-rp4az",
+    "platform": "medium",
+    "postTitle": "Pattern Day Trader Rule: The 2026 Guide (PDT Rule Change Explained)",
+    "postUrl": "https://medium.com/@kunal00/pattern-day-trader-rule-the-2026-guide-pdt-rule-change-explained-06aa600698d9?source=rss------day_trading-5",
+    "authorName": "Kunal Desai",
+    "suggestedReply": "Kunal, curious whether the 2026 revisions address the capital threshold specifically. The $25k minimum has been the real friction point for smaller accounts trading sub-$10k equity, and if that number shifts even marginally, it completely changes how traders manage their three-trade weekly allocation without triggering the restriction.",
+    "createdAt": "2026-04-20T02:21:39.869Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776651352159-5t73l",
     "platform": "linkedin",
     "postTitle": "break of structure and market structure shift",
