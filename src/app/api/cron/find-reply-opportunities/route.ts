@@ -92,11 +92,55 @@ interface VideoResult {
 // searchYouTube on the first non-2xx so we don't spam.
 const ytApiFailure: { status?: number; text?: string } = {};
 
+/**
+ * Fetch a YouTube API endpoint with automatic key fallback. Tries each key
+ * in order; on any non-2xx response (usually 403 quota-exceeded), falls back
+ * to the next key. Captures the first failure into ytApiFailure for diag.
+ *
+ * For OAuth mode, only attempts once with the access token.
+ */
+async function ytFetchWithFallback(
+  baseUrl: string,
+  baseParams: URLSearchParams,
+  apiKeys: string[],
+  oauthToken?: string,
+): Promise<Response | null> {
+  if (oauthToken) {
+    const res = await fetch(`${baseUrl}?${baseParams}`, {
+      headers: { Authorization: `Bearer ${oauthToken}` },
+    });
+    if (!res.ok && !ytApiFailure.status) {
+      const body = await res.clone().text().catch(() => "");
+      ytApiFailure.status = res.status;
+      ytApiFailure.text = body.slice(0, 300);
+    }
+    return res;
+  }
+
+  for (const key of apiKeys) {
+    const params = new URLSearchParams(baseParams);
+    params.set("key", key);
+    const res = await fetch(`${baseUrl}?${params}`);
+    if (res.ok) return res;
+    // Non-2xx — capture first failure and try next key
+    if (!ytApiFailure.status) {
+      const body = await res.clone().text().catch(() => "");
+      ytApiFailure.status = res.status;
+      ytApiFailure.text = body.slice(0, 300);
+      console.error(`[reply-opps] YT API key #${apiKeys.indexOf(key) + 1} failed: ${res.status}`);
+    }
+  }
+  return null; // all keys exhausted
+}
+
 async function searchYouTube(
   query: string,
-  accessTokenOrApiKey: string,
+  apiKeysOrToken: string[] | string,
   useApiKey: boolean = false
 ): Promise<VideoResult[]> {
+  const apiKeys = useApiKey ? (Array.isArray(apiKeysOrToken) ? apiKeysOrToken : [apiKeysOrToken]) : [];
+  const oauthToken = useApiKey ? undefined : (apiKeysOrToken as string);
+
   // Only find videos from the last 14 days (fresher = more engagement opportunity)
   const fourteenDaysAgo = new Date(Date.now() - 14 * 86400000).toISOString();
   const params = new URLSearchParams({
@@ -107,20 +151,14 @@ async function searchYouTube(
     maxResults: "25",
     relevanceLanguage: "en",
     publishedAfter: fourteenDaysAgo,
-    ...(useApiKey ? { key: accessTokenOrApiKey } : {}),
   });
-  const headers: Record<string, string> = useApiKey ? {} : { Authorization: `Bearer ${accessTokenOrApiKey}` };
-  const res = await fetch(
-    `https://www.googleapis.com/youtube/v3/search?${params}`,
-    { headers }
+  const res = await ytFetchWithFallback(
+    "https://www.googleapis.com/youtube/v3/search",
+    params,
+    apiKeys,
+    oauthToken,
   );
-  if (!res.ok) {
-    const body = await res.text().catch(() => "");
-    console.error(`[reply-opps] YouTube search failed: ${res.status} ${body}`);
-    if (!ytApiFailure.status) {
-      ytApiFailure.status = res.status;
-      ytApiFailure.text = body.slice(0, 300);
-    }
+  if (!res || !res.ok) {
     return [];
   }
   const data = await res.json();
@@ -141,14 +179,15 @@ async function searchYouTube(
   const statsParams = new URLSearchParams({
     part: "statistics,contentDetails",
     id: videoIds,
-    ...(useApiKey ? { key: accessTokenOrApiKey } : {}),
   });
-  const statsRes = await fetch(
-    `https://www.googleapis.com/youtube/v3/videos?${statsParams}`,
-    { headers }
+  const statsRes = await ytFetchWithFallback(
+    "https://www.googleapis.com/youtube/v3/videos",
+    statsParams,
+    apiKeys,
+    oauthToken,
   );
 
-  if (statsRes.ok) {
+  if (statsRes && statsRes.ok) {
     const statsData = await statsRes.json();
     const statsMap = new Map<string, { viewCount: number; commentCount: number; durationSeconds: number; channelId: string }>();
     for (const item of statsData.items || []) {
@@ -175,10 +214,14 @@ async function searchYouTube(
         const chParams = new URLSearchParams({
           part: "statistics",
           id: channelIds.join(","),
-          ...(useApiKey ? { key: accessTokenOrApiKey } : {}),
         });
-        const chRes = await fetch(`https://www.googleapis.com/youtube/v3/channels?${chParams}`, { headers });
-        if (chRes.ok) {
+        const chRes = await ytFetchWithFallback(
+          "https://www.googleapis.com/youtube/v3/channels",
+          chParams,
+          apiKeys,
+          oauthToken,
+        );
+        if (chRes && chRes.ok) {
           const chData = await chRes.json();
           for (const ch of chData.items || []) {
             channelSubMap.set(ch.id, parseInt(ch.statistics?.subscriberCount || "0"));
@@ -549,15 +592,21 @@ export async function GET(req: NextRequest) {
     delete ytApiFailure.status;
     delete ytApiFailure.text;
 
-    // Prefer YOUTUBE_API_KEY (doesn't need OAuth scopes), fall back to OAuth
-    // refresh-token flow. GEMINI_API_KEY is NOT a valid fallback — it's rejected
-    // by YouTube Data API with 400 and causes silent empty-result runs.
-    const apiKey = process.env.YOUTUBE_API_KEY;
-    let authToken = "";
+    // Collect all available YouTube API keys (each has its own 10K/day quota).
+    // Stacking keys across GCP projects effectively multiplies the daily budget.
+    // Order matters: primary first, fallbacks after. Add more as YOUTUBE_API_KEY_3
+    // etc. if needed.
+    const apiKeys = [
+      process.env.YOUTUBE_API_KEY,
+      process.env.YOUTUBE_API_KEY_2,
+      process.env.YOUTUBE_API_KEY_3,
+    ].filter((k): k is string => !!k);
+
+    let authPayload: string[] | string = "";
     let useApiKey = false;
 
-    if (apiKey) {
-      authToken = apiKey;
+    if (apiKeys.length > 0) {
+      authPayload = apiKeys;
       useApiKey = true;
     } else {
       const accessToken = await getYouTubeAccessToken();
@@ -574,7 +623,7 @@ export async function GET(req: NextRequest) {
           { status: 500 }
         );
       }
-      authToken = accessToken;
+      authPayload = accessToken;
     }
 
     const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
@@ -589,7 +638,7 @@ export async function GET(req: NextRequest) {
       linkedin: { returned: number; duped: number; added: number };
       medium: { returned: number; duped: number; added: number };
     } = {
-      youtube: { searched: 0, returned: 0, duped: 0, added: 0, errors: 0, authMode: useApiKey ? "api_key" : "oauth" },
+      youtube: { searched: 0, returned: 0, duped: 0, added: 0, errors: 0, authMode: useApiKey ? `api_key (${apiKeys.length} key${apiKeys.length === 1 ? "" : "s"})` : "oauth" },
       facebook_group: { returned: 0, duped: 0, added: 0 },
       linkedin: { returned: 0, duped: 0, added: 0 },
       medium: { returned: 0, duped: 0, added: 0 },
@@ -599,7 +648,7 @@ export async function GET(req: NextRequest) {
     for (const query of SEARCH_QUERIES) {
       diag.youtube.searched++;
       try {
-        const videos = await searchYouTube(query, authToken, useApiKey);
+        const videos = await searchYouTube(query, authPayload, useApiKey);
         diag.youtube.returned += videos.length;
         for (const video of videos) {
           const url = `https://youtube.com/watch?v=${video.videoId}`;
