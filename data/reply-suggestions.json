@@ -1,5 +1,35 @@
 [
   {
+    "id": "sug-1776652341336-k1li2",
+    "platform": "linkedin",
+    "postTitle": "avoiding overtrading and revenge trading",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=avoiding%20overtrading%20and%20revenge%20trading&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Revenge trading after a stop-out on EURUSD during a NY session liquidity grab is what turns a bad day into a blown account. The fix isn't discipline pep talks, it's having a predefined daily loss limit, mine is 2%, after which the platform closes. Overtrading usually signals you're chasing price rather than waiting for your setup to come to you.",
+    "createdAt": "2026-04-20T02:32:21.336Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776652344087-4clez",
+    "platform": "linkedin",
+    "postTitle": "moving from demo to live trading",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=moving%20from%20demo%20to%20live%20trading&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "The biggest mistake I see when traders go live is position sizing based on demo confidence rather than live psychology. I once watched a clean GBPUSD setup on the 1H align perfectly with my bias, then froze at entry because real money changed everything. Start with micro lots until your execution matches your demo consistency, not your demo profits.",
+    "createdAt": "2026-04-20T02:32:24.087Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776652346987-smv86",
+    "platform": "linkedin",
+    "postTitle": "why most retail traders lose money",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=why%20most%20retail%20traders%20lose%20money&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Most retail traders don't just lose money from bad entries — they lose it from not understanding why price moves in the first place. On something like EUR/USD during the London session, chasing a breakout without recognizing the liquidity sweep beneath the previous low is the real culprit. The setup isn't the problem. The context is.",
+    "createdAt": "2026-04-20T02:32:26.987Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776652109505-kkied",
     "platform": "linkedin",
     "postTitle": "risk management for FTMO challenge",
