@@ -22,11 +22,12 @@
     "story",
     "challenge",
     "poll-native",
-    "poll-native"
+    "poll-native",
+    "question"
   ],
   "lastPost": {
-    "type": "poll-native",
-    "text": "Which ICT concept has leveled up your trading the MOST? 🧠 #ICTTrading #SmartMoneyConcepts\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ Killzones\n🅳️ Market Structure\n\nVote below! 👇",
-    "date": "2026-04-19T12:00:18.097Z"
+    "type": "question",
+    "text": "Order blocks or fair value gaps — which do you trust MORE for entries and why? Drop your answer below 👇 #ICTTrading #SmartMoneyConcepts #FairValueGap",
+    "date": "2026-04-20T04:00:51.558Z"
   }
 }
