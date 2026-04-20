@@ -1,0 +1,38 @@
+{
+  "date": "2026-04-20",
+  "sentAt": "2026-04-20T10:00:46.026Z",
+  "subject": "How long does ICT actually take to learn?",
+  "recipientCount": 5,
+  "failedCount": 0,
+  "totalSubscribers": 5,
+  "content": {
+    "subject": "How long does ICT actually take to learn?",
+    "greeting": "Hey trader,",
+    "marketRecap": "Monday's London open is setting the tone for the week, with smart money likely establishing a key high or low as price tests Friday's range extremes — classic false break territory. Spring volatility is in full effect, and with tax season keeping retail sentiment noisy, institutional footprints are easier to spot for those who know what to look for. ICT traders should be treating this week's early price delivery as a narrative clue, not a trade signal.",
+    "articles": [
+      {
+        "title": "How Long to Learn ICT Trading?",
+        "slug": "2026-04-18-how-long-to-learn-ict-trading",
+        "excerpt": "Wondering how long it takes to learn ICT trading from scratch? I break down the real timeline — no hype, no shortcuts — based on 10+ years of trading and coaching experience."
+      },
+      {
+        "title": "ICT Alone vs. Hiring a Coach: Honest Take",
+        "slug": "2026-04-18-ict-alone-vs-hiring-a-coach-honest-take",
+        "excerpt": "Thinking about whether to learn ICT trading alone or hire a coach? I break down the real costs, timelines, and outcomes of both paths — no fluff, just honest answers."
+      },
+      {
+        "title": "ICT Trading Coaching Cost: Worth It?",
+        "slug": "2026-04-18-ict-trading-coaching-cost-worth-it",
+        "excerpt": "Wondering how much ICT trading coaching costs and whether it's actually worth the investment? Here's an honest breakdown from a coach with 10+ years in the markets."
+      }
+    ],
+    "videoOfTheWeek": {
+      "title": "The Indicator Lie That's Keeping Traders Broke (2026)",
+      "url": "https://youtube.com/shorts/lI6dvvGuRSI"
+    },
+    "tipOfTheWeek": "This week, zoom into the Monday London open and mark any clean Fair Value Gaps (FVGs) left behind during the initial push — these are prime targets for Tuesday's retracement and often serve as the launchpad for the weekly directional move. Do not chase the open; instead, let price return to the FVG, confirm displacement away from it on a lower timeframe, and enter with the higher timeframe narrative behind you. Patience at this stage isn't weakness — it's the edge.",
+    "comingUp": "GDP data drops in the next two weeks and it's a high-impact release that can trigger aggressive liquidity sweeps on both sides of the market before committing to a direction — smart money loves the volatility these events manufacture. Position yourself by identifying the key liquidity pools sitting above and below current price well before the release, so you are not reacting, you are anticipating. Avoid entering new swing positions in the 30-minute window surrounding the print and wait for the post-news displacement to confirm which way the institutions want to go.",
+    "ctaText": "Book a Free Discovery Call",
+    "ctaUrl": "https://r2ftrading.com/contact"
+  }
+}
