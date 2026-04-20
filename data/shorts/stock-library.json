@@ -22,8 +22,9 @@
     "url": "https://videos.pexels.com/video-files/8873041/8873041-hd_1080_1920_25fps.mp4",
     "category": "frustration",
     "pexelsId": 8873041,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-20T01:30:57.620Z"
   },
   {
     "id": "seed-thinking-8226005",
@@ -149,8 +150,9 @@
     "url": "https://videos.pexels.com/video-files/6532231/6532231-hd_1080_1920_30fps.mp4",
     "category": "celebration",
     "pexelsId": 6532231,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-20T01:30:57.620Z"
   },
   {
     "id": "seed-celebration-7165664",
@@ -1294,8 +1296,9 @@
     "height": 2048,
     "duration": 6,
     "pexelsId": 5094592,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:36.754Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:36.754Z",
+    "lastUsedAt": "2026-04-20T01:30:57.620Z"
   },
   {
     "id": "pexels-6913249",
@@ -1949,8 +1952,9 @@
     "height": 1920,
     "duration": 5,
     "pexelsId": 36794734,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:43.033Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:43.033Z",
+    "lastUsedAt": "2026-04-20T01:30:57.620Z"
   },
   {
     "id": "pexels-6524286",
@@ -2844,8 +2848,9 @@
     "height": 2048,
     "duration": 16,
     "pexelsId": 6032156,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:50.686Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:50.686Z",
+    "lastUsedAt": "2026-04-20T01:30:57.620Z"
   },
   {
     "id": "pexels-6382077",
