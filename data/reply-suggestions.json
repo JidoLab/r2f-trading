@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1776645049791-w6f8j",
+    "platform": "linkedin",
+    "postTitle": "trading journal discipline",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=trading%20journal%20discipline&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Journal discipline means nothing without a clear review framework. I've seen traders log 200 entries on EUR/USD H4 setups and still repeat the same entry mistakes because they never audited patterns across their losses. The journal isn't the discipline. The weekly review ritual is.",
+    "createdAt": "2026-04-20T00:30:49.791Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776645052635-tueip",
+    "platform": "linkedin",
+    "postTitle": "smart money concepts for prop firm traders",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=smart%20money%20concepts%20for%20prop%20firm%20traders&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Smart money concepts cut both ways for prop firm traders — most focus on liquidity grabs but ignore the displacement candle that confirms institutional intent. Curious whether this covers how to align SMC entries with specific prop firm drawdown rules, particularly on pairs like NAS100 where the spreads and volatility can invalidate a clean setup fast.",
+    "createdAt": "2026-04-20T00:30:52.635Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776645055924-mz5n4",
+    "platform": "linkedin",
+    "postTitle": "moving from demo to live trading",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=moving%20from%20demo%20to%20live%20trading&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "The jump from demo to live often exposes something no simulator can replicate: emotional execution. I've seen traders nail a clean London session setup on demo, then hesitate 20 pips into the move on a live GBPUSD trade because real money changes everything. The skill gap isn't usually technical, it's psychological. Start micro, protect your confidence early.",
+    "createdAt": "2026-04-20T00:30:55.924Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776645060605-djucu",
+    "platform": "linkedin",
+    "postTitle": "why most retail traders lose money",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=why%20most%20retail%20traders%20lose%20money&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Most retail traders don't just lose money from bad strategy, they lose it from inconsistent execution of a decent one. I've watched traders nail the setup on EURUSD at the London open, then override their own entry because \"it didn't feel right.\" The edge isn't the hardest part to find. Discipline under pressure is.",
+    "createdAt": "2026-04-20T00:31:00.605Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776645065196-lerqf",
+    "platform": "medium",
+    "postTitle": "Zenquantai.com Scam: LinkedIn AI Trading Fraud Exposed — How to Get Your Money Back",
+    "postUrl": "https://medium.com/@recovery.expert/zenquantai-com-scam-linkedin-ai-trading-fraud-exposed-how-to-get-your-money-back-adc3f4064606?source=rss------trading-5",
+    "authorName": "Shelle Richmond ⭐",
+    "suggestedReply": "Curious whether the victims in these LinkedIn AI trading cases were being shown fabricated equity curves or actual MT4/MT5 account statements, Shelle — because the distinction matters when building a recovery case. In my experience, platforms running this type of fraud typically manufacture 15-30% monthly \"returns\" to keep deposits flowing before the withdrawal freeze. Did any of the cases you covered involve crypto-paired instruments specifically?",
+    "createdAt": "2026-04-20T00:31:05.196Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776645068171-0p9e0",
+    "platform": "medium",
+    "postTitle": "Beginner’s Guide to Forex Trading (2026)",
+    "postUrl": "https://medium.com/@odingaraila47/beginners-guide-to-forex-trading-2026-32c89b650a34?source=rss------forex_trading-5",
+    "authorName": "Rai Odhiambo ",
+    "suggestedReply": "Good guide for 2026 beginners, Rai. One caveat worth adding: many new traders fixate on major pairs like EUR/USD without understanding that spreads and liquidity conditions vary significantly depending on the session overlap. A New York/London crossover trades very differently than the same pair during the Asian session, and that distinction alone saves newer traders from a lot of unnecessary losses.",
+    "createdAt": "2026-04-20T00:31:08.171Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776645072128-qydiv",
+    "platform": "medium",
+    "postTitle": "Pattern Day Trader Rule: The 2026 Guide (PDT Rule Change Explained)",
+    "postUrl": "https://medium.com/@kunal00/pattern-day-trader-rule-the-2026-guide-pdt-rule-change-explained-06aa600698d9?source=rss------day_trading-5",
+    "authorName": "Kunal Desai",
+    "suggestedReply": "The PDT rule change is worth unpacking carefully because the $25k threshold conversation often overshadows a more practical concern: how brokers interpret \"pattern\" differently across margin accounts. I've seen traders with four round trips in five days still flagged depending on the custodian. Whether the 2026 updates meaningfully address that gray area will determine real-world impact more than the headline rule itself.",
+    "createdAt": "2026-04-20T00:31:12.128Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776645076284-m8q0w",
+    "platform": "medium",
+    "postTitle": "The “Prop Firm” Bubble: How to Spot a Reliable Partner in 2026",
+    "postUrl": "https://medium.com/@agustinbianciotti/the-prop-firm-bubble-how-to-spot-a-reliable-partner-in-2026-8b59c8d374e8?source=rss------trading-5",
+    "authorName": "propscope",
+    "suggestedReply": "The \"bubble\" framing here is apt, but the real tell I'd add is how a firm handles drawdown transparency. I ran into issues with one firm in 2023 where a 4% intraday drawdown on GBPUSD during a high-impact NFP candle was calculated differently than their rulebook stated. Firms that can't clearly define whether drawdown is balance-based or equity-based before you fund are the ones to avoid first.",
+    "createdAt": "2026-04-20T00:31:16.284Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776603258308-7wzgy",
     "platform": "linkedin",
     "postTitle": "risk management for FTMO challenge",
