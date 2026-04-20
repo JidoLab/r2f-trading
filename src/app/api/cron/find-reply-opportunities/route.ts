@@ -96,6 +96,10 @@ const ytApiFailure: { status?: number; text?: string } = {};
 // Reset at the start of each request handler.
 const ytKeyStatus: Record<string, { ok: number; failed: number; lastStatus?: number; lastText?: string }> = {};
 
+// Per-filter drop counters so we can see which filter eliminates the most
+// candidates. Reset at the start of each request handler.
+const ytFilterDrops = { rawTotal: 0, nonEnglish: 0, tooShort: 0, lowSubs: 0, lowViews: 0, highComments: 0, passed: 0 };
+
 /**
  * Fetch a YouTube API endpoint with automatic key fallback. Tries each key
  * in order; on any non-2xx response (usually 403 quota-exceeded), falls back
@@ -183,9 +187,13 @@ async function searchYouTube(
       channelTitle: item.snippet.channelTitle,
     })
   );
+  ytFilterDrops.rawTotal += rawVideos.length;
 
   // Filter out non-English titles
-  const englishVideos = rawVideos.filter((v: VideoResult) => isLikelyEnglish(v.title));
+  const englishVideos = rawVideos.filter((v: VideoResult) => {
+    if (!isLikelyEnglish(v.title)) { ytFilterDrops.nonEnglish++; return false; }
+    return true;
+  });
 
   // Get video stats + content details (duration) + channel stats (subscribers) to filter by quality
   if (englishVideos.length === 0) return [];
@@ -252,14 +260,18 @@ async function searchYouTube(
         return { ...v, viewCount: stats?.viewCount || 0, commentCount: stats?.commentCount || 0, subscriberCount: subs, durationSeconds: stats?.durationSeconds || 0 };
       })
       .filter((v: VideoResult & { durationSeconds?: number }) => {
-        // Skip shorts and very short videos (under 90 seconds)
-        if ((v.durationSeconds || 0) < 90) return false;
-        // Skip channels with fewer than 1,000 subscribers (was 3,000 — too strict)
-        if ((v.subscriberCount || 0) < 1000) return false;
-        // Skip videos with very low views
-        if ((v.viewCount || 0) < 50) return false;
-        // Skip videos with 800+ comments (comment gets buried)
-        if ((v.commentCount || 0) > 800) return false;
+        // Skip very short videos (under 60 seconds — was 90, trading creators
+        // publish 60-89s explainers that are good reply targets)
+        if ((v.durationSeconds || 0) < 60) { ytFilterDrops.tooShort++; return false; }
+        // Skip channels with fewer than 200 subscribers (was 1000 — 200 still
+        // filters lurkers but captures smaller active ICT creators)
+        if ((v.subscriberCount || 0) < 200) { ytFilterDrops.lowSubs++; return false; }
+        // Skip videos with very low views (was 50, now 20 — fresh uploads
+        // don't accumulate views for hours)
+        if ((v.viewCount || 0) < 20) { ytFilterDrops.lowViews++; return false; }
+        // Skip videos with 1200+ comments (comment gets buried — was 800)
+        if ((v.commentCount || 0) > 1200) { ytFilterDrops.highComments++; return false; }
+        ytFilterDrops.passed++;
         return true;
       });
   }
@@ -606,6 +618,13 @@ export async function GET(req: NextRequest) {
     delete ytApiFailure.status;
     delete ytApiFailure.text;
     for (const k of Object.keys(ytKeyStatus)) delete ytKeyStatus[k];
+    ytFilterDrops.rawTotal = 0;
+    ytFilterDrops.nonEnglish = 0;
+    ytFilterDrops.tooShort = 0;
+    ytFilterDrops.lowSubs = 0;
+    ytFilterDrops.lowViews = 0;
+    ytFilterDrops.highComments = 0;
+    ytFilterDrops.passed = 0;
 
     // Collect all available YouTube API keys (each has its own 10K/day quota).
     // Stacking keys across GCP projects effectively multiplies the daily budget.
@@ -707,6 +726,8 @@ export async function GET(req: NextRequest) {
     if (Object.keys(ytKeyStatus).length > 0) {
       (diag.youtube as Record<string, unknown>).keyStatus = ytKeyStatus;
     }
+    // Per-filter drop counts — shows which filter rejects the most candidates
+    (diag.youtube as Record<string, unknown>).filterDrops = { ...ytFilterDrops };
 
     // Search Facebook Groups
     try {
