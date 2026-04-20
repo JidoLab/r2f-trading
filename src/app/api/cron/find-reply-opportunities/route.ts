@@ -260,16 +260,18 @@ async function searchYouTube(
         return { ...v, viewCount: stats?.viewCount || 0, commentCount: stats?.commentCount || 0, subscriberCount: subs, durationSeconds: stats?.durationSeconds || 0 };
       })
       .filter((v: VideoResult & { durationSeconds?: number }) => {
-        // Skip very short videos (under 60 seconds — was 90, trading creators
-        // publish 60-89s explainers that are good reply targets)
+        // Skip very short videos (under 60s). Shorts have chaotic,
+        // low-signal comments — not worth Harvest's reply time.
         if ((v.durationSeconds || 0) < 60) { ytFilterDrops.tooShort++; return false; }
-        // Skip channels with fewer than 200 subscribers (was 1000 — 200 still
-        // filters lurkers but captures smaller active ICT creators)
-        if ((v.subscriberCount || 0) < 200) { ytFilterDrops.lowSubs++; return false; }
-        // Skip videos with very low views (was 50, now 20 — fresh uploads
-        // don't accumulate views for hours)
+        // No subscriber floor — diag showed 119/119 longer videos were from
+        // <200-sub channels, and these are actually BETTER reply targets
+        // (less noise in comments, creators more responsive to engagement).
+        // Only skip truly dead channels (0 subs usually = disabled/deleted).
+        if ((v.subscriberCount || 0) === 0) { ytFilterDrops.lowSubs++; return false; }
+        // Skip videos with almost no views (under 20 — usually shadow-banned
+        // or dead uploads after several hours)
         if ((v.viewCount || 0) < 20) { ytFilterDrops.lowViews++; return false; }
-        // Skip videos with 1200+ comments (comment gets buried — was 800)
+        // Skip oversaturated threads (1200+ comments → ours gets buried)
         if ((v.commentCount || 0) > 1200) { ytFilterDrops.highComments++; return false; }
         ytFilterDrops.passed++;
         return true;
