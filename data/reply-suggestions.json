@@ -1,5 +1,55 @@
 [
   {
+    "id": "sug-1776651352159-5t73l",
+    "platform": "linkedin",
+    "postTitle": "break of structure and market structure shift",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=break%20of%20structure%20and%20market%20structure%20shift&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "One thing worth adding: the distinction between a Break of Structure and a Market Structure Shift becomes much cleaner when you qualify it by liquidity. On the 15-minute chart in EURUSD, I only confirm an MSS after price takes an obvious swing high or low first. Without that liquidity run preceding the shift, you're often reading displacement as a reversal too early.",
+    "createdAt": "2026-04-20T02:15:52.159Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776651354677-1xikg",
+    "platform": "linkedin",
+    "postTitle": "ICT trading concepts every trader should learn",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=ICT%20trading%20concepts%20every%20trader%20should%20learn&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "The ICT concepts that actually move the needle are the ones most traders rush past — specifically understanding why liquidity voids on the 15-minute chart behave differently during London versus New York open. Which concept in this list do you think has the steepest learning curve before it becomes consistently applicable in live conditions?",
+    "createdAt": "2026-04-20T02:15:54.677Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776651357031-3qti5",
+    "platform": "linkedin",
+    "postTitle": "ICT silver bullet entry model",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=ICT%20silver%20bullet%20entry%20model&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "The \"silver bullet\" entry is powerful, but context is everything. Are you framing this around the 15-minute timeframe exclusively, or do you also apply the model on the 1-hour for higher conviction setups during the London open? Entry precision means little without the right session alignment behind it.",
+    "createdAt": "2026-04-20T02:15:57.031Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776651360936-qyqy5",
+    "platform": "medium",
+    "postTitle": "Beginner’s Guide to Forex Trading (2026)",
+    "postUrl": "https://medium.com/@odingaraila47/beginners-guide-to-forex-trading-2026-32c89b650a34?source=rss------forex_trading-5",
+    "authorName": "Rai Odhiambo ",
+    "suggestedReply": "Good foundation here, Rai. One caveat worth adding for beginners though: 2026 forex conditions mean tighter spreads on majors like EUR/USD but significantly more algorithmic noise on the lower timeframes. New traders anchoring to the 15-minute chart will get chopped apart before they find their footing. Starting on the daily gives the market room to breathe and your analysis room to be right.",
+    "createdAt": "2026-04-20T02:16:00.936Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1776651364146-543tc",
+    "platform": "medium",
+    "postTitle": "Free 5 Minutes Binary Option Best Signal Providers 2026",
+    "postUrl": "https://medium.com/@binarywarriortrader/free-5-minutes-binary-option-best-signal-providers-2026-302c67ee8faa?source=rss------forex_trading-5",
+    "authorName": "Warrior Trader",
+    "suggestedReply": "The \"free\" framing here deserves a closer look. Most signal providers monetize through broker affiliate commissions, meaning their signals are optimized for trade volume, not accuracy. On a 5-minute binary timeframe, even a 60% win rate can erode capital fast if the payout ratio sits below 80%. Worth verifying independently before committing real funds.",
+    "createdAt": "2026-04-20T02:16:04.146Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776645931490-k5d48",
     "platform": "investinglive",
     "postTitle": "Trump’s Fed pick blocked as Tillis cites Powell investigation",
