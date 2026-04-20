@@ -97,7 +97,7 @@
     "authorName": "Trader Zed",
     "suggestedReply": "One thing that trips people up with PO1 besides the execution errors is ignoring the higher timeframe draw on liquidity before even marking the model. On EURUSD I won't touch a PO1 setup unless the 4H narrative confirms we're sweeping toward an external range liquidity point. Without that filter you're just trading patterns in a vacuum.",
     "createdAt": "2026-04-20T02:50:47.015Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776653451586-aco1j",
