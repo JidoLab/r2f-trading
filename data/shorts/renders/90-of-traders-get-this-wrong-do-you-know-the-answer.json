@@ -21,10 +21,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-18T02:01:54.645Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/90-of-traders-get-this-wrong-do-you-know-the-answer.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/rFI3HIhsCsA",
   "copyText": "90% of Traders Get This Wrong — Do You Know the Answer?\n\nQuiz time 🧠 Most traders fail this one question about Fair Value Gaps — and it's costing them funded accounts. Test yourself and see if you really understand smart money concepts. Drop your answer in the comments! Follow R2F Trading for daily ICT breakdowns. r2ftrading.com\n\n#ICTTrading #FairValueGap #SmartMoneyConceptss #FundedTrader #OrderBlocks #ICT2026 #ForexTrading #R2FTrading #TradingQuiz #FVG",
-  "uploadResults": [],
-  "completedAt": "2026-04-18T02:04:59.616Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/rFI3HIhsCsA"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-18T02:04:59.616Z",
+  "publishedAt": "2026-04-20T17:00:48.817Z"
 }
