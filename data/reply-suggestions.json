@@ -147,7 +147,7 @@
     "authorName": "TRADER'S PATH",
     "suggestedReply": "Liquidity sweeps are solid but I've found waiting for a confirmed displacement candle after the sweep on the 5m makes a bigger difference than the sweep itself. Without that confirmation you're often entering into reaccumulation, not a true reversal. Works especially well on GBPUSD during London session where the stops cluster above recent highs are more predictable.",
     "createdAt": "2026-04-20T02:51:06.509Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776653470390-vesfl",
