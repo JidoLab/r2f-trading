@@ -263,11 +263,9 @@ async function searchYouTube(
         // Skip very short videos (under 60s). Shorts have chaotic,
         // low-signal comments — not worth Harvest's reply time.
         if ((v.durationSeconds || 0) < 60) { ytFilterDrops.tooShort++; return false; }
-        // No subscriber floor — diag showed 119/119 longer videos were from
-        // <200-sub channels, and these are actually BETTER reply targets
-        // (less noise in comments, creators more responsive to engagement).
-        // Only skip truly dead channels (0 subs usually = disabled/deleted).
-        if ((v.subscriberCount || 0) === 0) { ytFilterDrops.lowSubs++; return false; }
+        // No subscriber filter. YT creators can hide their subscriber count
+        // (public-facing privacy toggle) — channels.list then returns 0,
+        // causing any "subs > N" filter to silently reject valid channels.
         // Skip videos with almost no views (under 20 — usually shadow-banned
         // or dead uploads after several hours)
         if ((v.viewCount || 0) < 20) { ytFilterDrops.lowViews++; return false; }
