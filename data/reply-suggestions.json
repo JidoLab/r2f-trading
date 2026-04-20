@@ -1,5 +1,15 @@
 [
   {
+    "id": "sug-1776653181220-hw146",
+    "platform": "linkedin",
+    "postTitle": "smart money concepts for prop firm traders",
+    "postUrl": "https://www.linkedin.com/search/results/content/?keywords=smart%20money%20concepts%20for%20prop%20firm%20traders&datePosted=past-24h&d=2026-04-20",
+    "authorName": "LinkedIn Search",
+    "suggestedReply": "Smart money concepts only work for prop firm traders if you understand the institutional delivery model first. I've seen too many people chase liquidity sweeps on GBPUSD without recognizing whether price is in a premium or discount array on the daily. The kill zones matter more than the setup itself when you're working within a funded account's drawdown constraints.",
+    "createdAt": "2026-04-20T02:46:21.220Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1776652950383-hrm48",
     "platform": "linkedin",
     "postTitle": "building a trading plan that survives drawdown",
