@@ -1,108 +1,5 @@
 [
   {
-    "date": "2026-04-14T09:45:41.428Z",
-    "type": "link-share",
-    "url": "https://www.tradingview.com/chart/MBT1!/Xgcdt3QJ-A-lesson-on-LIQUIDITY-and-EFFECIENY-on-Bitcoin/",
-    "caption": "Doing a quick lesson on the concepts of liquidity and efficiency on Bitcoin futu",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "error": "{\"detail\":\"You are not permitted to perform this action.\",\"type\":\"about:blank\",\""
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-14T12:15:26.877Z",
-    "type": "text",
-    "postType": "promo-coaching",
-    "text": "PPI drops tomorrow — classic setup for USD reversals if it misses. Been teaching my students how ord",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-14T17:00:02.393Z",
-    "slug": "2026-04-14-ppi-day-trading-smart-money-s-24-hour-setup",
-    "title": "PPI Day Trading: Smart Money's 24-Hour Setup",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
     "date": "2026-04-15T02:31:45.409Z",
     "slug": "2026-04-15-retail-sales-week-how-smart-money-fakes-direction",
     "title": "Retail Sales Week: How Smart Money Fakes Direction",
@@ -2131,6 +2028,52 @@
       {
         "platform": "discord",
         "status": "success"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-20T14:00:32.148Z",
+    "slug": "2026-04-06-april-2026-earnings-season-liquidity-raids-6-ict-concepts-every-smart-money-trader-must-know",
+    "title": "Earnings Season Liquidity Raids: 6 ICT Concepts",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
       }
     ]
   }
