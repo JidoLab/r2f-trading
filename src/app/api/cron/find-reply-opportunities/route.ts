@@ -92,6 +92,10 @@ interface VideoResult {
 // searchYouTube on the first non-2xx so we don't spam.
 const ytApiFailure: { status?: number; text?: string } = {};
 
+// Per-key outcome tracking — lets us see which keys are live/blown on any run.
+// Reset at the start of each request handler.
+const ytKeyStatus: Record<string, { ok: number; failed: number; lastStatus?: number; lastText?: string }> = {};
+
 /**
  * Fetch a YouTube API endpoint with automatic key fallback. Tries each key
  * in order; on any non-2xx response (usually 403 quota-exceeded), falls back
@@ -117,18 +121,28 @@ async function ytFetchWithFallback(
     return res;
   }
 
-  for (const key of apiKeys) {
+  for (let i = 0; i < apiKeys.length; i++) {
+    const key = apiKeys[i];
+    const keyLabel = `key${i + 1}`;
+    if (!ytKeyStatus[keyLabel]) ytKeyStatus[keyLabel] = { ok: 0, failed: 0 };
+
     const params = new URLSearchParams(baseParams);
     params.set("key", key);
     const res = await fetch(`${baseUrl}?${params}`);
-    if (res.ok) return res;
-    // Non-2xx — capture first failure and try next key
+    if (res.ok) {
+      ytKeyStatus[keyLabel].ok++;
+      return res;
+    }
+    // Non-2xx — record per-key outcome and try the next key
+    const body = await res.clone().text().catch(() => "");
+    ytKeyStatus[keyLabel].failed++;
+    ytKeyStatus[keyLabel].lastStatus = res.status;
+    ytKeyStatus[keyLabel].lastText = body.slice(0, 200);
     if (!ytApiFailure.status) {
-      const body = await res.clone().text().catch(() => "");
       ytApiFailure.status = res.status;
       ytApiFailure.text = body.slice(0, 300);
-      console.error(`[reply-opps] YT API key #${apiKeys.indexOf(key) + 1} failed: ${res.status}`);
     }
+    console.error(`[reply-opps] YT ${keyLabel} failed: ${res.status} ${body.slice(0, 150)}`);
   }
   return null; // all keys exhausted
 }
@@ -591,6 +605,7 @@ export async function GET(req: NextRequest) {
     // Reset module-level YT API failure capture for this run
     delete ytApiFailure.status;
     delete ytApiFailure.text;
+    for (const k of Object.keys(ytKeyStatus)) delete ytKeyStatus[k];
 
     // Collect all available YouTube API keys (each has its own 10K/day quota).
     // Stacking keys across GCP projects effectively multiplies the daily budget.
@@ -687,6 +702,10 @@ export async function GET(req: NextRequest) {
     // If the first YT API call returned non-2xx, surface it so the cause is visible
     if (ytApiFailure.status) {
       diag.youtube.apiFailure = { status: ytApiFailure.status, text: ytApiFailure.text };
+    }
+    // Per-key health — lets us see which of the stacked keys are working
+    if (Object.keys(ytKeyStatus).length > 0) {
+      (diag.youtube as Record<string, unknown>).keyStatus = ytKeyStatus;
     }
 
     // Search Facebook Groups
