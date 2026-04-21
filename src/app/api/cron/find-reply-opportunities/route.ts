@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { readFile, commitFile } from "@/lib/github";
 import Anthropic from "@anthropic-ai/sdk";
 
-export const maxDuration = 120;
+export const maxDuration = 180;
 
 interface ReplySuggestion {
   id: string;
@@ -446,6 +446,7 @@ async function searchLinkedIn(): Promise<PostResult[]> {
       }
       const data = await res.json();
       for (const item of data.items || []) {
+        if (results.length >= 5) break; // hard cap total LinkedIn candidates per run
         const url = item.link as string | undefined;
         if (!url || !/linkedin\.com\/posts\//i.test(url)) continue;
         if (seen.has(url)) continue;
@@ -461,6 +462,7 @@ async function searchLinkedIn(): Promise<PostResult[]> {
           platform: "linkedin",
         });
       }
+      if (results.length >= 5) break;
     } catch (err) {
       console.error(`[reply-opps] LinkedIn CSE "${topic}" threw:`, err instanceof Error ? err.message : String(err));
     }
