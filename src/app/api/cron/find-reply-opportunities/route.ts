@@ -722,6 +722,12 @@ export async function GET(req: NextRequest) {
     const existingUrls = new Set(existing.map((s) => s.postUrl));
     const newSuggestions: ReplySuggestion[] = [];
 
+    // Per-platform caps on NEW Claude draft generations this run. Each Claude
+    // call is ~3s, so 20+ sequential drafts can push us past the 180s Vercel
+    // function ceiling. These caps keep us under budget AND deliver enough
+    // variety per run for Harvest to work with.
+    const PER_PLATFORM_CAP = { youtube: 8, facebook_group: 5, linkedin: 5, medium: 5 };
+
     // Per-platform diagnostics so we can see silent zero-result states in the response
     const diag: {
       youtube: { searched: number; returned: number; duped: number; added: number; errors: number; authMode: string; apiFailure?: { status?: number; text?: string } };
@@ -737,11 +743,13 @@ export async function GET(req: NextRequest) {
 
     // Search YouTube for each query
     for (const query of SEARCH_QUERIES) {
+      if (diag.youtube.added >= PER_PLATFORM_CAP.youtube) break;
       diag.youtube.searched++;
       try {
         const videos = await searchYouTube(query, authPayload, useApiKey);
         diag.youtube.returned += videos.length;
         for (const video of videos) {
+          if (diag.youtube.added >= PER_PLATFORM_CAP.youtube) break;
           const url = `https://youtube.com/watch?v=${video.videoId}`;
           if (existingUrls.has(url)) { diag.youtube.duped++; continue; }
 
@@ -791,6 +799,7 @@ export async function GET(req: NextRequest) {
       const fbPosts = await searchFacebookGroups();
       diag.facebook_group.returned = fbPosts.length;
       for (const post of fbPosts) {
+        if (diag.facebook_group.added >= PER_PLATFORM_CAP.facebook_group) break;
         if (existingUrls.has(post.postUrl)) { diag.facebook_group.duped++; continue; }
         try {
           const reply = await generatePlatformReply(
@@ -826,6 +835,7 @@ export async function GET(req: NextRequest) {
       const linkedinPosts = await searchLinkedIn();
       diag.linkedin.returned = linkedinPosts.length;
       for (const post of linkedinPosts) {
+        if (diag.linkedin.added >= PER_PLATFORM_CAP.linkedin) break;
         if (existingUrls.has(post.postUrl)) { diag.linkedin.duped++; continue; }
         try {
           const reply = await generatePlatformReply(
@@ -861,6 +871,7 @@ export async function GET(req: NextRequest) {
       const mediumPosts = await searchMedium();
       diag.medium.returned = mediumPosts.length;
       for (const post of mediumPosts) {
+        if (diag.medium.added >= PER_PLATFORM_CAP.medium) break;
         if (existingUrls.has(post.postUrl)) { diag.medium.duped++; continue; }
         try {
           const reply = await generatePlatformReply(
