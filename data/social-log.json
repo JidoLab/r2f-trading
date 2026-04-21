@@ -2076,5 +2076,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-04-21T04:00:54.471Z",
+    "type": "text",
+    "postType": "hot-take",
+    "text": "Unpopular opinion: Fair value gaps are NOT entry signals. They're magnets. Trading INTO them blindly",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
