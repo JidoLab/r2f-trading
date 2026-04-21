@@ -21,10 +21,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-18T02:32:11.560Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/3-mistakes-that-kill-funded-accounts-fix-these-now.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/vWKYXVAf6p4",
   "copyText": "3 Mistakes That Kill Funded Accounts (Fix These Now)\n\nBlowing a funded account hurts. But 90% of traders make the same 3 mistakes — and they're all fixable. R2F Trading breaks down the exact errors smart money traders avoid. Watch before your next trade. Follow r2ftrading.com for daily ICT setups, order block breakdowns, and funded trader strategies in 2026.\n\n#ICTTrading #FundedTrader #OrderBlocks #SmartMoneyConcepts #FairValueGap #R2FTrading #ForexTrading #TradingTips #FundedAccount #ICT2026",
-  "uploadResults": [],
-  "completedAt": "2026-04-18T02:36:43.746Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/vWKYXVAf6p4"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-18T02:36:43.746Z",
+  "publishedAt": "2026-04-21T05:00:30.835Z"
 }
