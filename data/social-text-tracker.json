@@ -24,11 +24,12 @@
     "poll-native",
     "poll-native",
     "question",
-    "poll"
+    "poll",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "Which ICT concept clicked LAST for you?\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ Market Structure\n🅳️ Liquidity sweeps\n\nDrop it 👇 we all had that one that took forever to sink in\n\n#ICTtrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-04-20T12:00:55.299Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: Fair value gaps are NOT entry signals. They're magnets. Trading INTO them blindly is why most funded traders get wiped. The gap fills — then reverses. Learn the difference. #ICTTrading #FairValueGap #SmartMoneyConcepts",
+    "date": "2026-04-21T04:00:53.893Z"
   }
 }
