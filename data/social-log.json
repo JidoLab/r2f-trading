@@ -2105,5 +2105,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-21T12:00:56.593Z",
+    "type": "text",
+    "postType": "quote",
+    "text": "\"The market doesn't care about your opinion. It only respects your preparation.\" — Especially true o",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
