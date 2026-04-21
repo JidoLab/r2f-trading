@@ -391,27 +391,79 @@ const LINKEDIN_TOPICS = [
   "moving from demo to live trading",
 ];
 
+// Pull the author handle out of a linkedin.com/posts/<slug> URL. Slug format
+// is usually `firstname-lastname-<hash>_<post-title-slug>-activity-<id>-<hash>`.
+// We only need the leading `firstname-lastname` portion to show as author.
+function extractLinkedInAuthor(url: string): string {
+  const m = url.match(/linkedin\.com\/posts\/([^\/_?]+)/i);
+  if (!m) return "LinkedIn User";
+  const raw = m[1].split("-").slice(0, -1); // drop trailing hash
+  if (raw.length === 0) return "LinkedIn User";
+  return raw
+    .map((w) => (w.length > 0 ? w[0].toUpperCase() + w.slice(1) : w))
+    .join(" ");
+}
+
 async function searchLinkedIn(): Promise<PostResult[]> {
-  // LinkedIn API doesn't allow searching other people's posts easily.
-  // Instead, generate topic-based suggestions that Harvest can use
-  // when he finds relevant posts on LinkedIn himself.
+  // Use Google Programmable Search (CSE) to find ACTUAL LinkedIn posts that
+  // mention our topics. The previous "generate a LinkedIn search URL for
+  // Harvest to click" approach produced garbage results because LinkedIn's
+  // in-app search is network-weighted and often returns empty.
   //
-  // The URL includes today's date so dedup by URL doesn't kill us — every
-  // day produces fresh, unique "suggestion URLs" for the admin UI even
-  // when we loop back to a prior topic from the pool.
-  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+  // CSE free tier: 100 queries/day. We do up to 3 queries per cron run.
+  //
+  // If the env vars aren't configured, return [] — Harvest explicitly said
+  // "if there is none, then no problem" on 2026-04-20.
+  const apiKey = process.env.GOOGLE_CSE_API_KEY;
+  const cseId = process.env.GOOGLE_CSE_ID;
+  if (!apiKey || !cseId) {
+    console.log("[reply-opps] LinkedIn CSE not configured (set GOOGLE_CSE_API_KEY + GOOGLE_CSE_ID). Skipping.");
+    return [];
+  }
+
   const results: PostResult[] = [];
+  const seen = new Set<string>();
   const shuffled = [...LINKEDIN_TOPICS].sort(() => Math.random() - 0.5);
-  const selected = shuffled.slice(0, 4);
+  const selected = shuffled.slice(0, 3); // 3 queries × ~5 results each = up to 15 candidates
 
   for (const topic of selected) {
-    const searchUrl = `https://www.linkedin.com/search/results/content/?keywords=${encodeURIComponent(topic)}&datePosted=past-24h&d=${today}`;
-    results.push({
-      postTitle: topic,
-      postUrl: searchUrl,
-      authorName: "LinkedIn Search",
-      platform: "linkedin",
-    });
+    try {
+      // site: restricts results to LinkedIn posts specifically. CSE respects
+      // this even if the engine is configured for the entire web.
+      const q = `site:linkedin.com/posts ${topic}`;
+      const params = new URLSearchParams({
+        key: apiKey,
+        cx: cseId,
+        q,
+        num: "5",
+        dateRestrict: "w1", // last 7 days — keeps results fresh
+      });
+      const res = await fetch(`https://www.googleapis.com/customsearch/v1?${params}`);
+      if (!res.ok) {
+        const body = await res.text().catch(() => "");
+        console.error(`[reply-opps] LinkedIn CSE "${topic}" failed: ${res.status} ${body.slice(0, 200)}`);
+        continue;
+      }
+      const data = await res.json();
+      for (const item of data.items || []) {
+        const url = item.link as string | undefined;
+        if (!url || !/linkedin\.com\/posts\//i.test(url)) continue;
+        if (seen.has(url)) continue;
+        seen.add(url);
+        const title = (item.title as string | undefined)?.trim() || topic;
+        // Strip trailing "| LinkedIn" / "- LinkedIn" boilerplate from titles
+        const cleanTitle = title.replace(/\s*[|\-–]\s*LinkedIn\s*$/i, "").trim();
+        if (!isLikelyEnglish(cleanTitle)) continue;
+        results.push({
+          postTitle: cleanTitle.length > 200 ? cleanTitle.slice(0, 197) + "..." : cleanTitle,
+          postUrl: url,
+          authorName: extractLinkedInAuthor(url),
+          platform: "linkedin",
+        });
+      }
+    } catch (err) {
+      console.error(`[reply-opps] LinkedIn CSE "${topic}" threw:`, err instanceof Error ? err.message : String(err));
+    }
   }
   return results;
 }
