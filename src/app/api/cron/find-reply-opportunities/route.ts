@@ -100,6 +100,11 @@ const ytKeyStatus: Record<string, { ok: number; failed: number; lastStatus?: num
 // candidates. Reset at the start of each request handler.
 const ytFilterDrops = { rawTotal: 0, nonEnglish: 0, tooShort: 0, lowSubs: 0, lowViews: 0, highComments: 0, passed: 0 };
 
+// LinkedIn CSE diagnostics — exposes CSE status so we can see why
+// linkedin.returned stays at 0 when the env vars ARE set.
+const linkedinCseDiag: { configured: boolean; queries: number; rawItems: number; errors: number; lastError?: string } =
+  { configured: false, queries: 0, rawItems: 0, errors: 0 };
+
 /**
  * Fetch a YouTube API endpoint with automatic key fallback. Tries each key
  * in order; on any non-2xx response (usually 403 quota-exceeded), falls back
@@ -420,11 +425,15 @@ async function searchLinkedIn(): Promise<PostResult[]> {
     console.log("[reply-opps] LinkedIn CSE not configured (set GOOGLE_CSE_API_KEY + GOOGLE_CSE_ID). Skipping.");
     return [];
   }
+  linkedinCseDiag.configured = true;
 
   const results: PostResult[] = [];
   const seen = new Set<string>();
   const shuffled = [...LINKEDIN_TOPICS].sort(() => Math.random() - 0.5);
   const selected = shuffled.slice(0, 3); // 3 queries × ~5 results each = up to 15 candidates
+
+  // Track CSE outcome for diag visibility
+  linkedinCseDiag.queries = selected.length;
 
   for (const topic of selected) {
     try {
@@ -436,15 +445,22 @@ async function searchLinkedIn(): Promise<PostResult[]> {
         cx: cseId,
         q,
         num: "5",
-        dateRestrict: "w1", // last 7 days — keeps results fresh
+        dateRestrict: "m1", // last 30 days — w1 (7 days) was too narrow for niche ICT topics
       });
-      const res = await fetch(`https://www.googleapis.com/customsearch/v1?${params}`);
+      const res = await fetch(`https://www.googleapis.com/customsearch/v1?${params}`, {
+        signal: AbortSignal.timeout(15000), // 15s per CSE call — don't hang the function
+      });
       if (!res.ok) {
         const body = await res.text().catch(() => "");
         console.error(`[reply-opps] LinkedIn CSE "${topic}" failed: ${res.status} ${body.slice(0, 200)}`);
+        linkedinCseDiag.errors++;
+        if (!linkedinCseDiag.lastError) {
+          linkedinCseDiag.lastError = `${res.status}: ${body.slice(0, 150)}`;
+        }
         continue;
       }
       const data = await res.json();
+      linkedinCseDiag.rawItems += (data.items?.length || 0);
       for (const item of data.items || []) {
         if (results.length >= 5) break; // hard cap total LinkedIn candidates per run
         const url = item.link as string | undefined;
@@ -682,6 +698,11 @@ export async function GET(req: NextRequest) {
     ytFilterDrops.lowViews = 0;
     ytFilterDrops.highComments = 0;
     ytFilterDrops.passed = 0;
+    linkedinCseDiag.configured = false;
+    linkedinCseDiag.queries = 0;
+    linkedinCseDiag.rawItems = 0;
+    linkedinCseDiag.errors = 0;
+    delete linkedinCseDiag.lastError;
 
     // Collect all available YouTube API keys (each has its own 10K/day quota).
     // Stacking keys across GCP projects effectively multiplies the daily budget.
@@ -793,6 +814,9 @@ export async function GET(req: NextRequest) {
     }
     // Per-filter drop counts — shows which filter rejects the most candidates
     (diag.youtube as Record<string, unknown>).filterDrops = { ...ytFilterDrops };
+    // LinkedIn CSE diagnostics — shows whether the API is configured, reachable,
+    // returning items, or failing with a specific error.
+    (diag.linkedin as Record<string, unknown>).cse = { ...linkedinCseDiag };
 
     // Search Facebook Groups
     try {
