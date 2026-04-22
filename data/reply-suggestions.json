@@ -767,7 +767,7 @@
     "authorName": "LinkedIn Search",
     "suggestedReply": "FVGs are powerful, but I've noticed traders often miss that not all imbalances are created equal. On the ES or NQ for example, a 15-minute FVG formed during a displacement move carries far more weight than one built on low-volume consolidation. What's your take on filtering imbalances by the candle's relative volume before marking them as tradeable targets?",
     "createdAt": "2026-04-20T02:28:32.816Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776652117040-a8u8n",
