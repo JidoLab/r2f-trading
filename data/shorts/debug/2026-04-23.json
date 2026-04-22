@@ -1,0 +1,31 @@
+{
+  "date": "2026-04-22T17:32:38.312Z",
+  "today": "2026-04-23",
+  "topicsAttempted": [
+    null,
+    null,
+    null
+  ],
+  "results": [
+    {
+      "title": "",
+      "status": "error",
+      "error": "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2"
+    }
+  ],
+  "errors": [
+    "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2",
+    "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2",
+    "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2"
+  ]
+}
