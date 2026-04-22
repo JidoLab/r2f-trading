@@ -427,7 +427,7 @@
     "authorName": "Xcelerate.Trade",
     "suggestedReply": "One thing worth adding to the CPI reading framework is watching the month-over-month figure against the year-over-year simultaneously rather than anchoring to just one. On DXY and rate-sensitive pairs like EURUSD, the initial 15-minute candle reaction often fades or reverses once traders digest which component drove the headline. The core services ex-shelter print has been the Fed's quiet obsession lately and it deserves its own line on your pre-release checklist.",
     "createdAt": "2026-04-21T13:57:01.417Z",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "id": "sug-1776779825068-f1zao",
