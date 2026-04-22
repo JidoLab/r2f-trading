@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-22T00:33:11.808Z",
+  "date": "2026-04-22T08:33:16.216Z",
   "today": "2026-04-22",
   "topicsAttempted": [
     null,
@@ -8,20 +8,20 @@
   ],
   "results": [
     {
+      "title": "The GDP Myth That's Costing Traders Thousands (2026)",
+      "status": "rendering"
+    },
+    {
+      "title": "Order Blocks vs Fair Value Gaps: Which One Actually Gets You Funded in 2026?",
+      "status": "rendering"
+    },
+    {
       "title": "",
       "status": "error",
-      "error": "GitHub commit failed: 409 {\"message\":\"is at e01b7f85ec4043772fcfa458c0ec15a794534d4a but expected 243f9abcc017269393e67f79cedd26f467538214\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
-    },
-    {
-      "title": "Quiz: Do You Know What Happens BEFORE a GDP Reversal? 📊",
-      "status": "rendering"
-    },
-    {
-      "title": "POV: You Pass Your Funded Account Then GDP Drops 🔴",
-      "status": "rendering"
+      "error": "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 4"
     }
   ],
   "errors": [
-    "GitHub commit failed: 409 {\"message\":\"is at e01b7f85ec4043772fcfa458c0ec15a794534d4a but expected 243f9abcc017269393e67f79cedd26f467538214\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+    "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 4"
   ]
 }
