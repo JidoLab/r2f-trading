@@ -1,5 +1,30 @@
 [
   {
+    "slug": "2026-04-22-the-quiet-mind-protocol-for-high-stakes-trades",
+    "syndicatedAt": "2026-04-22T12:32:51.399Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-22-the-quiet-mind-protocol-for-high-stakes-trades",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-quiet-mind-protocol-for-high-stakes-trades-clj",
+        "id": "3536553"
+      },
+      {
+        "platform": "hashnode",
+        "success": true,
+        "url": "https://r2ftrading.hashnode.dev/the-quiet-mind-protocol-for-high-stakes-trades",
+        "id": "69e8bff3823d232dc3c4fcc9"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-04-22-the-quiet-mind-protocol-for-high-stakes-trades"
+  },
+  {
     "slug": "2026-04-22-the-boredom-trade-ict-s-silent-account-killer",
     "syndicatedAt": "2026-04-22T11:32:40.099Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-22-the-boredom-trade-ict-s-silent-account-killer",
