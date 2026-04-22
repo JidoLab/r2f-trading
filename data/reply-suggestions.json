@@ -757,7 +757,7 @@
     "authorName": "LinkedIn Search",
     "suggestedReply": "Risk management for FTMO specifically needs to account for the 5% daily drawdown rule, which catches traders off guard more than the 10% overall limit. Most people size correctly for their max loss but forget that a bad morning session on EURUSD can silently eat through half their daily allowance before they've even had coffee. The challenge isn't just managing risk, it's managing it within a structured ruleset that has real consequences.",
     "createdAt": "2026-04-20T02:28:29.505Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776652112816-4m9gk",
