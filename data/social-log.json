@@ -2059,5 +2059,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-04-22T04:00:55.010Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "GDP drop incoming 👀 How do you trade high-impact news events? #ICTTrading #SmartMoney\n\n🅰️ Sit it o",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
