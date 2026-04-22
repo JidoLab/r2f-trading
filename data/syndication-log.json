@@ -1,5 +1,30 @@
 [
   {
+    "slug": "2026-04-22-why-winning-trades-feel-worse-than-losing",
+    "syndicatedAt": "2026-04-22T06:03:02.390Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-22-why-winning-trades-feel-worse-than-losing",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/why-winning-trades-feel-worse-than-losing-4bgg",
+        "id": "3534637"
+      },
+      {
+        "platform": "hashnode",
+        "success": true,
+        "url": "https://r2ftrading.hashnode.dev/why-winning-trades-feel-worse-than-losing",
+        "id": "69e864969d2a4b691e5902cf"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-04-22-why-winning-trades-feel-worse-than-losing"
+  },
+  {
     "slug": "2026-04-22-why-winning-trades-feel-wrong-at-first",
     "syndicatedAt": "2026-04-22T05:32:53.156Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-22-why-winning-trades-feel-wrong-at-first",
