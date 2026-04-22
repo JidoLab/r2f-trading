@@ -89,8 +89,9 @@
     "url": "https://videos.pexels.com/video-files/8480278/8480278-hd_1080_1920_25fps.mp4",
     "category": "screen_glow",
     "pexelsId": 8480278,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-22T00:32:40.423Z"
   },
   {
     "id": "seed-lightbulb-9196607",
@@ -557,8 +558,9 @@
     "height": 1920,
     "duration": 10,
     "pexelsId": 7918577,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.547Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.547Z",
+    "lastUsedAt": "2026-04-22T00:32:40.423Z"
   },
   {
     "id": "pexels-7698608",
@@ -1913,8 +1915,9 @@
     "height": 1920,
     "duration": 8,
     "pexelsId": 8120207,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:41.001Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:41.001Z",
+    "lastUsedAt": "2026-04-22T00:32:40.423Z"
   },
   {
     "id": "pexels-8143003",
