@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-22T08:33:16.216Z",
+  "date": "2026-04-22T09:33:01.714Z",
   "today": "2026-04-22",
   "topicsAttempted": [
     null,
@@ -8,20 +8,22 @@
   ],
   "results": [
     {
-      "title": "The GDP Myth That's Costing Traders Thousands (2026)",
-      "status": "rendering"
-    },
-    {
-      "title": "Order Blocks vs Fair Value Gaps: Which One Actually Gets You Funded in 2026?",
+      "title": "GDP Week Order Block Setup That Funded Traders Watch (2026)",
       "status": "rendering"
     },
     {
       "title": "",
       "status": "error",
-      "error": "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 4"
+      "error": "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2"
     }
   ],
   "errors": [
-    "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 4"
+    "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2",
+    "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2"
   ]
 }
