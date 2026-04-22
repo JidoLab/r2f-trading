@@ -107,7 +107,7 @@
     "authorName": "AlphioAI",
     "suggestedReply": "What I'd add to the Alphio.ai conversation is that AI-driven signal generation performs very differently across timeframes. On lower timeframes like the 15M, noise tends to overwhelm even strong models, whereas higher timeframe confluence filtering genuinely sharpens edge. Curious whether Alphio's architecture accounts for session-specific volatility, particularly during London-New York overlap on major forex pairs.",
     "createdAt": "2026-04-22T02:21:45.503Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776817899579-rqb5m",
