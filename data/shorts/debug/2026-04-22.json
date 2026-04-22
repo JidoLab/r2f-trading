@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-22T09:33:01.714Z",
+  "date": "2026-04-22T10:33:00.758Z",
   "today": "2026-04-22",
   "topicsAttempted": [
     null,
@@ -8,8 +8,9 @@
   ],
   "results": [
     {
-      "title": "GDP Week Order Block Setup That Funded Traders Watch (2026)",
-      "status": "rendering"
+      "title": "",
+      "status": "error",
+      "error": "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2"
     },
     {
       "title": "",
@@ -23,6 +24,7 @@
     }
   ],
   "errors": [
+    "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2",
     "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2",
     "ElevenLabs: {\"detail\":{\"status\":\"quota_exceeded\",\"message\":\"This request exceeds your quota of 40000. You have 2"
   ]
