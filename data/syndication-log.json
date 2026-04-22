@@ -1,5 +1,30 @@
 [
   {
+    "slug": "2026-04-22-the-silence-between-trades-managing-boredom",
+    "syndicatedAt": "2026-04-22T14:32:24.715Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-22-the-silence-between-trades-managing-boredom",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-silence-between-trades-managing-boredom-5alg",
+        "id": "3537063"
+      },
+      {
+        "platform": "hashnode",
+        "success": true,
+        "url": "https://r2ftrading.hashnode.dev/the-silence-between-trades-managing-boredom",
+        "id": "69e8dbf8ee3cbf15487ff216"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-04-22-the-silence-between-trades-managing-boredom"
+  },
+  {
     "slug": "2026-04-22-the-quiet-mind-protocol-for-high-stakes-trades",
     "syndicatedAt": "2026-04-22T12:32:51.399Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-22-the-quiet-mind-protocol-for-high-stakes-trades",
