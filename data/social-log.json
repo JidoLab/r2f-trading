@@ -1,51 +1,5 @@
 [
   {
-    "date": "2026-04-15T18:32:02.731Z",
-    "slug": "2026-04-15-retail-sales-week-how-ict-traders-prepare",
-    "title": "Retail Sales Week: How ICT Traders Prepare",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
     "date": "2026-04-15T21:31:40.888Z",
     "slug": "2026-04-15-retail-sales-week-how-ict-traders-read-usd",
     "title": "Retail Sales Week: How ICT Traders Read USD",
@@ -2010,6 +1964,53 @@
     "date": "2026-04-22T19:32:38.169Z",
     "slug": "2026-04-22-why-you-revenge-trade-after-winning-not-losing",
     "title": "Why You Revenge Trade After Winning, Not Losing",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-22T20:32:09.054Z",
+    "slug": "2026-04-22-gdp-week-killed-my-discipline-here-s-why",
+    "title": "GDP Week Killed My Discipline (Here's Why)",
     "results": [
       {
         "platform": "twitter",
