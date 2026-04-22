@@ -21,10 +21,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-22T00:33:11.345Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/pov-you-pass-your-funded-account-then-gdp-drops.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/sVRWHdxLX0A",
   "copyText": "POV: You Pass Your Funded Account Then GDP Drops 🔴\n\nPOV: You finally pass your funded account… then GDP week hits and wipes you out. Here's the one thing the R2F Trading system checks before every major news release. Don't skip this. #ICTTrading #FundedTrader #SmartMoneyConcepts #OrderBlocks #FairValueGap #r2ftrading\n\n#ICTTrading #FundedTrader #SmartMoneyConceptss #OrderBlocks #FairValueGap #ForexTrading #r2ftrading #GDPRelease #LiquiditySweep #ICTConcepts",
-  "uploadResults": [],
-  "completedAt": "2026-04-22T00:36:02.977Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/sVRWHdxLX0A"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-22T00:36:02.977Z",
+  "publishedAt": "2026-04-22T17:00:57.945Z"
 }
