@@ -26,11 +26,12 @@
     "question",
     "poll",
     "hot-take",
-    "quote"
+    "quote",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "quote",
-    "text": "\"The market doesn't care about your opinion. It only respects your preparation.\" — Especially true on days like today when Tuesday continuation setups are lining up off Monday's range. Be ready, not right. #ICTTrading #SmartMoneyConcepts #OrderBlocks",
-    "date": "2026-04-21T12:00:55.919Z"
+    "type": "poll-native",
+    "text": "GDP drop incoming 👀 How do you trade high-impact news events? #ICTTrading #SmartMoney\n\n🅰️ Sit it out\n🅱️ Trade the spike\n🅲️ Wait for retracement\n🅳️ Pre-position\n\nVote below! 👇",
+    "date": "2026-04-22T04:00:54.292Z"
   }
 }
