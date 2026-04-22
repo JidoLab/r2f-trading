@@ -18,7 +18,7 @@
   {
     "email": "eirini.ploumidi94@gmail.com",
     "date": "2026-04-09T14:10:09.622Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "score": 15,
     "segment": "cold",
     "events": [
@@ -31,7 +31,8 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts",
-      "successStory"
+      "successStory",
+      "tradingPsychology"
     ]
   },
   {
@@ -51,20 +52,21 @@
   {
     "email": "blackkilevu@gmail.com",
     "date": "2026-04-13T10:23:34.431Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "score": 0,
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-04-13T10:23:34.431Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ]
   },
   {
     "email": "lucky04_flour@icloud.com",
     "date": "2026-04-13T23:04:34.994Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "score": 5,
     "segment": "cold",
     "events": [
@@ -76,7 +78,8 @@
     "lastActivity": "2026-04-14T09:56:28.355Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ]
   }
 ]
