@@ -1,51 +1,5 @@
 [
   {
-    "date": "2026-04-15T15:31:48.072Z",
-    "slug": "2026-04-15-retail-sales-week-how-ict-traders-position-early",
-    "title": "Retail Sales Week: How ICT Traders Position Early",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
     "date": "2026-04-15T16:02:28.558Z",
     "slug": "2026-04-15-retail-sales-week-how-ict-traders-use-it",
     "title": "Retail Sales Week: How ICT Traders Use It",
@@ -2006,6 +1960,53 @@
     "date": "2026-04-22T14:00:40.966Z",
     "slug": "2026-04-08-cpi-trading-psychology-the-mental-game-smart-money-plays-24-hours-before-inflation-data-drops",
     "title": "CPI Trading Psychology: The Pre-Data Mental Game",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-22T14:32:02.656Z",
+    "slug": "2026-04-22-the-silence-between-trades-managing-boredom",
+    "title": "The Silence Between Trades: Managing Boredom",
     "results": [
       {
         "platform": "twitter",
