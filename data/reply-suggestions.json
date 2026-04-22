@@ -237,7 +237,7 @@
     "authorName": "Angiterver",
     "suggestedReply": "The section on order types is where most traders trip up in live conditions. I've watched clean GBP/USD setups on the 4H get completely invalidated by a market order filled at a terrible spread during a news event, when a limit order would have held the edge. Execution type isn't just a setting, it's part of the trade logic itself.",
     "createdAt": "2026-04-22T00:31:32.317Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776780146324-8s8n9",
