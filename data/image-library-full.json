@@ -491,7 +491,7 @@
     "pair": "Altcoin Index Perpetual Futures",
     "timeframe": "4H",
     "addedAt": "2026-04-17T01:14:17.488Z",
-    "usageCount": 11
+    "usageCount": 10
   },
   {
     "id": "img-1776388461626-tp6j",
@@ -1164,6 +1164,6 @@
     "pair": "Hang Seng 50",
     "timeframe": "10",
     "addedAt": "2026-04-17T01:24:29.725Z",
-    "usageCount": 1
+    "usageCount": 2
   }
 ]
