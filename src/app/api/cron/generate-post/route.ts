@@ -69,18 +69,30 @@ export async function GET(req: NextRequest) {
     const leastUsedCategory = ["ICT Concepts", "Trading Psychology", "Risk Management", "Funded Accounts", "Beginner Guides", "Personal Stories", "Market Analysis"]
       .sort((a, b) => (categoryCount[a] || 0) - (categoryCount[b] || 0))[0];
 
-    const topicResponse = await anthropic.messages.create({
-      model: "claude-sonnet-4-6",
-      max_tokens: 1000,
-      messages: [{
-        role: "user",
-        content: `You are a content strategist for R2F Trading, a professional ICT trading coaching website with 10+ years of ICT experience.
+    // Topic selection with retry — Claude occasionally picks a topic too close
+    // to an existing post. Instead of bailing (skipping the whole day's post),
+    // retry up to 3 times, feeding the rejected topic back into the prompt.
+    const rejectedTopics: string[] = [];
+    const MAX_TOPIC_ATTEMPTS = 3;
+    let topicData: { topic: string; category: string; postType: string; angle: string; targetKeyword: string; searchIntent: string; uniqueInsight: string } | null = null;
+
+    for (let attempt = 1; attempt <= MAX_TOPIC_ATTEMPTS; attempt++) {
+      const rejectedBlock = rejectedTopics.length > 0
+        ? `\n\nREJECTED TOPICS from this run (do NOT re-propose anything similar to these):\n${rejectedTopics.map((t, i) => `${i + 1}. "${t}"`).join("\n")}\n\nYou MUST pick a meaningfully DIFFERENT angle — different category if possible, different keywords, different hook.`
+        : "";
+
+      const topicResponse = await anthropic.messages.create({
+        model: "claude-sonnet-4-6",
+        max_tokens: 1000,
+        messages: [{
+          role: "user",
+          content: `You are a content strategist for R2F Trading, a professional ICT trading coaching website with 10+ years of ICT experience.
 
 ${dateContext}
 
 TODAY: ${dayOfWeek}, ${month}
 EXISTING POSTS (avoid repeats): ${existingTitles.slice(0, 20).join(", ") || "None"}
-${marketContext}
+${marketContext}${rejectedBlock}
 
 Generate ONE fresh blog topic.
 
@@ -109,25 +121,39 @@ how-to, listicle, case-study, comparison, faq, personal-story, checklist, myth-b
 SEARCH INTENT — specify one: informational, commercial, navigational, or transactional
 
 Return ONLY a JSON object: { "topic": "...", "category": "...", "postType": "...", "angle": "...", "targetKeyword": "...", "searchIntent": "...", "uniqueInsight": "one sentence describing what makes this article different from everything else on this topic" }`,
-      }],
-    });
+        }],
+      });
 
-    let topicText = topicResponse.content[0].type === "text" ? topicResponse.content[0].text : "";
-    topicText = topicText.replace(/^```(?:json)?\s*\n?/, "").replace(/\n?```\s*$/, "").trim();
-    const topicData = JSON.parse(topicText);
+      let topicText = topicResponse.content[0].type === "text" ? topicResponse.content[0].text : "";
+      topicText = topicText.replace(/^```(?:json)?\s*\n?/, "").replace(/\n?```\s*$/, "").trim();
+      const candidate = JSON.parse(topicText);
 
-    // Guardrail: duplicate topic detection — check if a very similar slug already exists
-    const proposedSlug = slugify(topicData.topic);
-    const slugWords = proposedSlug.split("-").filter((w: string) => w.length > 3);
-    const isDuplicate = existingTitles.some(existing => {
-      const existingWords = existing.replace(/^\d{4}-\d{2}-\d{2}-/, "").split("-").filter(w => w.length > 3);
-      const overlap = slugWords.filter((w: string) => existingWords.includes(w)).length;
-      return overlap >= Math.min(4, slugWords.length * 0.6);
-    });
+      // Guardrail: duplicate topic detection — check if a very similar slug already exists
+      const proposedSlug = slugify(candidate.topic);
+      const slugWords = proposedSlug.split("-").filter((w: string) => w.length > 3);
+      const isDuplicate = existingTitles.some(existing => {
+        const existingWords = existing.replace(/^\d{4}-\d{2}-\d{2}-/, "").split("-").filter(w => w.length > 3);
+        const overlap = slugWords.filter((w: string) => existingWords.includes(w)).length;
+        return overlap >= Math.min(4, slugWords.length * 0.6);
+      });
 
-    if (isDuplicate) {
-      console.log(`[cron] Skipping duplicate topic: "${topicData.topic}" — too similar to existing post`);
-      return NextResponse.json({ skipped: true, reason: "Duplicate topic detected", topic: topicData.topic });
+      if (!isDuplicate) {
+        topicData = candidate;
+        console.log(`[cron] Topic selected on attempt ${attempt}: "${candidate.topic}"`);
+        break;
+      }
+
+      console.log(`[cron] Attempt ${attempt}/${MAX_TOPIC_ATTEMPTS}: "${candidate.topic}" rejected as duplicate`);
+      rejectedTopics.push(candidate.topic);
+    }
+
+    if (!topicData) {
+      console.log(`[cron] Gave up after ${MAX_TOPIC_ATTEMPTS} attempts, all duplicates`);
+      return NextResponse.json({
+        skipped: true,
+        reason: `Duplicate topic detected across ${MAX_TOPIC_ATTEMPTS} attempts`,
+        rejectedTopics,
+      });
     }
 
     // Generate article

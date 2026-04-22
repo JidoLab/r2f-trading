@@ -6,7 +6,24 @@ import { getCurrentDateContext } from "@/lib/date-context";
 
 export const maxDuration = 120;
 
-const SUBREDDITS = ["Forex", "Daytrading", "FundedTrading", "ForexTrading", "proptrading"];
+// Daytrading banned Harvest 2026-04-18. Replaced with these 6 still-active
+// subreddits per Harvest on 2026-04-22:
+//   ICTMentorship, Swingtrading, Forexstrategy,
+//   InnerCircleTraders, Realdaytrading, Trading.
+// Keeping the original non-banned ones (Forex, FundedTrading, ForexTrading,
+// proptrading) for a total of 10.
+const SUBREDDITS = [
+  "Forex",
+  "FundedTrading",
+  "ForexTrading",
+  "proptrading",
+  "ICTMentorship",
+  "Swingtrading",
+  "Forexstrategy",
+  "InnerCircleTraders",
+  "Realdaytrading",
+  "Trading",
+];
 
 const SEARCH_QUERIES = [
   "ICT trading",
