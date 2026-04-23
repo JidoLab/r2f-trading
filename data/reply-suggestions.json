@@ -1227,7 +1227,7 @@
     "authorName": "Batra's trader",
     "suggestedReply": "Most traders misread the Market Structure Shift as confirmation when it's actually just context. I've found pairing the MSS with an order block on the 1H then dropping to the 15m for entry precision cuts a lot of noise. Are you using the OB as your primary entry trigger or just confluence with another model?",
     "createdAt": "2026-04-20T00:31:22.579Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776645085416-c0tst",
