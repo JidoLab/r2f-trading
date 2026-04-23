@@ -1567,7 +1567,7 @@
     "authorName": "LinkedIn Search",
     "suggestedReply": "The funded trader journey breaks most people at the consistency rules, not the market itself. I've seen accounts blown not from bad trades but from oversizing a single EURUSD position after a winning streak, thinking the edge scaled infinitely. Prop firms are essentially testing emotional discipline disguised as a profit target.",
     "createdAt": "2026-04-19T11:45:33.184Z",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "id": "sug-1776599136921-p3jnv",
@@ -1577,7 +1577,7 @@
     "authorName": "LinkedIn Search",
     "suggestedReply": "Funded account discipline breaks down hardest during drawdown recovery, not during normal trading. I've seen traders flip from structured ICT entries on the 15M XAUUSD to revenge trading 5M chop purely because the evaluation reset was looming. The psychology around preserving capital for a firm is fundamentally different from trading your own money, and most traders underestimate that gap until they've blown at least one account learning it.",
     "createdAt": "2026-04-19T11:45:36.921Z",
-    "status": "skipped"
+    "status": "pending"
   },
   {
     "id": "sug-1776599139982-8n2ec",
