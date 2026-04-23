@@ -1147,7 +1147,7 @@
     "authorName": "khalid.invests",
     "suggestedReply": "Interesting take on what's \"unknown\" about order blocks. In my experience, the real edge isn't the block itself but the mitigation candle confirmation on the 5m before price sweeps the high or low. Most traders enter at the OB origin without waiting for that confirmation, which is why their win rate on EURUSD setups stays inconsistent. Did you cover breaker blocks as a comparison in this series?",
     "createdAt": "2026-04-20T00:30:57.259Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776645060643-o7gho",
