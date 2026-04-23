@@ -1617,7 +1617,7 @@
     "authorName": "MyFxback | Forex Rebate & Cashback",
     "suggestedReply": "One thing worth noting for Indonesian traders specifically: swap rates on IDR-correlated pairs like USD/IDR can vary dramatically between brokers, sometimes 3-5x the difference, which quietly destroys carry positions held overnight. Before committing to any broker on this list, I'd cross-check their swap tables on Wednesday rollover, where triple swap amplifies that cost significantly.",
     "createdAt": "2026-04-19T11:45:50.095Z",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "id": "sug-1776599153052-t19e2",
