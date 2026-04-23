@@ -1187,7 +1187,7 @@
     "authorName": "URAH ICT",
     "suggestedReply": "Order blocks paired with IFVGs are a solid confluence setup, but the caveat I'd add is that not every OB with an IFVG above it is worth taking. On pairs like EURUSD, I've seen price mitigate the OB cleanly on the 15m then completely skip the IFVG fill during high impact news, leaving traders who waited for confirmation stranded. Always check the economic calendar before holding into that second target.",
     "createdAt": "2026-04-20T00:31:11.010Z",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "id": "sug-1776645074511-ti8va",
