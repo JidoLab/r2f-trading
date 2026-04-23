@@ -1,34 +1,5 @@
 [
   {
-    "date": "2026-04-16T04:00:54.061Z",
-    "type": "text",
-    "postType": "hot-take",
-    "text": "Unpopular opinion: Fair Value Gaps are NOT setups. They're magnets. If you're treating every FVG as ",
-    "hasImage": true,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-16T12:00:41.709Z",
     "type": "text",
     "postType": "quote",
@@ -1999,6 +1970,53 @@
     "date": "2026-04-23T04:32:35.223Z",
     "slug": "2026-04-23-the-revenge-trade-trap-how-i-finally-broke-it",
     "title": "The Revenge Trade Trap: How I Finally Broke It",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-23T05:32:32.839Z",
+    "slug": "2026-04-23-the-silence-before-the-move-trading-stillness",
+    "title": "The Silence Before the Move: Trading Stillness",
     "results": [
       {
         "platform": "twitter",
