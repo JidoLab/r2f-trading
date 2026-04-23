@@ -1517,7 +1517,7 @@
     "authorName": "Victor Kelechi",
     "suggestedReply": "Curious how Softlife handles drawdown management during high-impact news events like NFP or FOMC, Victor. Copy trading platforms often struggle with latency at those moments, which can turn a 1:2 risk-reward setup into a losing trade before the signal even replicates. Does the system apply fixed lot sizing or does it scale proportionally to account equity?",
     "createdAt": "2026-04-19T12:54:34.865Z",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "id": "sug-1776603277643-t45mf",
