@@ -1,5 +1,30 @@
 [
   {
+    "slug": "2026-04-23-the-silence-between-trades-that-breaks-traders",
+    "syndicatedAt": "2026-04-23T02:32:35.334Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-23-the-silence-between-trades-that-breaks-traders",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-silence-between-trades-that-breaks-traders-4p2l",
+        "id": "3538635"
+      },
+      {
+        "platform": "hashnode",
+        "success": true,
+        "url": "https://r2ftrading.hashnode.dev/the-silence-between-trades-that-breaks-traders",
+        "id": "69e984c38c696b1be0c80dfb"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-04-23-the-silence-between-trades-that-breaks-traders"
+  },
+  {
     "slug": "2026-04-22-why-patience-kills-more-traders-than-greed",
     "syndicatedAt": "2026-04-22T22:32:39.039Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-22-why-patience-kills-more-traders-than-greed",
