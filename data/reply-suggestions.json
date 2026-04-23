@@ -1467,7 +1467,7 @@
     "authorName": "LinkedIn Search",
     "suggestedReply": "FTMO's 5% daily drawdown rule catches more traders than the 10% overall limit ever does. Curious how you're approaching position sizing on news days specifically — do you reduce to half lot exposure or sit completely flat during high-impact events like NFP?",
     "createdAt": "2026-04-19T12:54:18.308Z",
-    "status": "skipped"
+    "status": "pending"
   },
   {
     "id": "sug-1776603260877-rtwcs",
@@ -1557,7 +1557,7 @@
     "authorName": "LinkedIn Search",
     "suggestedReply": "One thing most price action reads miss: displacement. On the 15-minute chart, a single aggressive candle closing beyond structure tells you more about institutional intent than three candles of consolidation. In EURUSD, I've seen traders wait for \"confirmation\" and miss the entire move because they didn't recognize the displacement as the signal itself.",
     "createdAt": "2026-04-19T11:50:37.888Z",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "id": "sug-1776599133184-qcdzd",
