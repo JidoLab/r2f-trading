@@ -1587,7 +1587,7 @@
     "authorName": "LinkedIn Search",
     "suggestedReply": "Most traders build drawdown rules around account percentage but ignore the time dimension entirely. A plan that survives a 15% drawdown over two weeks hits differently than one stretched across three months of slow bleed on EURUSD H4. Tracking consecutive losing days alongside equity curve slope changed how I evaluate plan resilience more than any fixed percentage threshold ever did.",
     "createdAt": "2026-04-19T11:45:39.982Z",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "id": "sug-1776599142670-1iwpl",
@@ -1597,7 +1597,7 @@
     "authorName": "LinkedIn Search",
     "suggestedReply": "Smart money concepts hit different when you're trading under prop firm rules because the drawdown constraints force you to be far more selective with your entries. Curious how you approach liquidity grabs on the 15M when daily bias conflicts with the institutional order flow you're tracking?",
     "createdAt": "2026-04-19T11:45:42.670Z",
-    "status": "skipped"
+    "status": "pending"
   },
   {
     "id": "sug-1776599146473-0v2zh",
