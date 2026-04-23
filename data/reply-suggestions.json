@@ -1657,7 +1657,7 @@
     "authorName": "AURIONE LLC | Elite Trading & Business Systems",
     "suggestedReply": "Curious how you define \"institutional precision\" in practice — because most retail traders I've seen struggle not with strategy but with execution timing. On something like EUR/USD during the London open, even a 5-minute displacement can invalidate an otherwise clean setup. Does your 1% architecture account for session-specific entry windows or is it framework-agnostic?",
     "createdAt": "2026-04-19T11:40:07.693Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776598811732-orbkt",
