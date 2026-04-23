@@ -1267,7 +1267,7 @@
     "authorName": "R2F Trading",
     "suggestedReply": "Order blocks on higher timeframes getting invalidated mid-week is a silent account killer most traders ignore. On NQ specifically, I've noticed that OBs formed during Tuesday's session hold significantly better than Monday's, likely due to liquidity being more defined after the weekly range begins printing. Worth filtering your entries by session of origin, not just price level.",
     "createdAt": "2026-04-20T00:31:35.416Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776645098460-o9ur5",
