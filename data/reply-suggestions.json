@@ -1447,7 +1447,7 @@
     "authorName": "Binary Options Strategy",
     "suggestedReply": "Curious whether your asset classification here accounts for the correlation overlap between major forex pairs and binary options expiry windows — specifically how EUR/USD and GBP/USD tend to move in tandem during London open, which can skew short-term binary outcomes significantly. Does your framework address managing that correlated exposure when trading both asset classes simultaneously?",
     "createdAt": "2026-04-20T00:32:38.075Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776645160974-ardcv",
