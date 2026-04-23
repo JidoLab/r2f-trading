@@ -1407,7 +1407,7 @@
     "authorName": "LinkedIn Search",
     "suggestedReply": "Order blocks only hold significance when they align with a liquidity pool above or below a key swing point. On something like GBPUSD on the 4H, I've seen traders enter on the block itself and get stopped out precisely because the sweep hadn't happened yet. The sequence matters more than the level.",
     "createdAt": "2026-04-20T00:32:21.873Z",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "id": "sug-1776645145576-rz28p",
