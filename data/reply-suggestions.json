@@ -1607,7 +1607,7 @@
     "authorName": "Lutenant",
     "suggestedReply": "Sizing for zero makes sense in consolidation, but I'd push back slightly on dismissing VWAP entirely. On ES futures intraday, VWAP reclaims after a morning flush have historically offered high-probability entries precisely because institutional desks are anchored to it. The strategy Lutenant outlines works until liquidity thins and price mean-reverts hard against a flat position.",
     "createdAt": "2026-04-19T11:45:46.473Z",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "id": "sug-1776599150095-bqsxk",
