@@ -1287,7 +1287,7 @@
     "authorName": "Skill & Education Trading Learn",
     "suggestedReply": "I traded a reclaimed order block on EURUSD last week, 1H timeframe, and the liquidity sweep before price came back to mitigate was textbook. The way you explained the difference between a used and reclaimed block in this series finally puts words to what I was seeing intuitively. Most traders ignore the reclaim step entirely and wonder why their OB entries keep failing.",
     "createdAt": "2026-04-20T00:31:42.407Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776645105276-oncvk",
