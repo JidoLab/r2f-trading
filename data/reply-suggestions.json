@@ -1337,7 +1337,7 @@
     "authorName": "CSW Crypto",
     "suggestedReply": "Most traders misuse reclaimed order blocks because they're not waiting for a proper mitigation before entry. I've seen far better results confirming them on the 1H then dropping to the 15m for precision. Are you filtering these with displacement or just relying on the reclaim alone?",
     "createdAt": "2026-04-20T00:31:57.434Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776645121014-s4ct4",
