@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "question",
     "poll",
     "hot-take",
     "quote",
@@ -29,11 +28,12 @@
     "quote",
     "poll-native",
     "tip",
-    "promo-free-class"
+    "promo-free-class",
+    "promo-results"
   ],
   "lastPost": {
-    "type": "promo-free-class",
-    "text": "GDP drops soon. Market's about to move HARD. Free class covers the 3 ICT setups built for days like this + funded account blueprint + the psychology to not blow it. No fluff. 👇\nhttps://r2ftrading.com/free-class\n#ICTTrading #FairValueGap #FundedTrader",
-    "date": "2026-04-23T04:00:55.966Z"
+    "type": "promo-results",
+    "text": "R2F traders are crushing funded challenges even heading into GDP week. That's ICT structure doing the heavy lifting — not guessing. The numbers speak. 👇\nhttps://r2ftrading.com/results\n\n#ICTtrading #FundedTrader #SmartMoneyConcepts",
+    "date": "2026-04-23T12:00:49.271Z"
   }
 }
