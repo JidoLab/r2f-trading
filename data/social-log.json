@@ -2057,5 +2057,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-04-23T04:00:56.547Z",
+    "type": "text",
+    "postType": "promo-free-class",
+    "text": "GDP drops soon. Market's about to move HARD. Free class covers the 3 ICT setups built for days like ",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
