@@ -1387,7 +1387,7 @@
     "authorName": "LinkedIn Search",
     "suggestedReply": "One thing most 2026 prop firm guides overlook: check how the firm handles drawdown calculation during high-impact news on pairs like GBPUSD. Some firms use balance-based drawdown, others use equity-based, and that difference alone can wipe an account during a 50-pip spike on NFP before your trade even closes. That single rule matters more than the payout split.",
     "createdAt": "2026-04-20T00:32:16.493Z",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "id": "sug-1776645138938-r9xtb",
@@ -1427,7 +1427,7 @@
     "authorName": "Joinx_Capital",
     "suggestedReply": "Curious how JoinX Academy structures the transition from first trade to funded status — specifically, does the curriculum address drawdown management before traders attempt prop firm evaluations? Most retail traders blow funded accounts not from poor entries but from ignoring max daily loss thresholds around 4-5%. That gap between \"profitable\" and \"fundable\" is where most programs fall short.",
     "createdAt": "2026-04-20T00:32:28.975Z",
-    "status": "skipped"
+    "status": "pending"
   },
   {
     "id": "sug-1776645151710-mov7j",
