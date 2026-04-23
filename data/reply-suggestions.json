@@ -1527,7 +1527,7 @@
     "authorName": "Klarety AI",
     "suggestedReply": "The \"view you do not have\" often comes down to institutional order flow on higher timeframes like the daily or weekly, where a trader positioning in EURUSD at a key liquidity zone sees context most retail participants simply miss. Curious how Klarety AI accounts for that asymmetry when modeling market sentiment versus actual positioning data?",
     "createdAt": "2026-04-19T12:54:37.643Z",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "id": "sug-1776599431864-fga6g",
