@@ -515,10 +515,26 @@
     "mentionedR2F": true,
     "commentedAt": "2026-04-22T13:00:33.541Z",
     "permalink": "/r/Forexstrategy/comments/1ssgfyn/the_smart_money_blueprint_most_traders/ohmi0ge/",
-    "commentId": "ohmi0ge",
-    "hasReply": true,
-    "firstReplyAt": "2026-04-22T13:03:27.000Z",
-    "firstReplyAuthor": "david20031030",
-    "firstReplyText": "Exactly this. CHoCH alone is just noise on 15M—without the SSL sweep, there’s no real fuel behind the move. Once you wait for liquidity to get taken first, the OB actually means something. Cleaner entries, fewer fakeouts."
+    "commentId": "ohmi0ge"
+  },
+  {
+    "postId": "1stcv4d",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Young Prop Firm vs FTMO in 2026 , Is the veteran firm still worth it?",
+    "commentText": "i had this exact problem last year when i was scaling my EURUSD positions on a 15m timeframe and kept getting flagged by FTMO's consistency rule even though my entries were clean displacement candles with proper BOS confirmation. switched to a younger firm mid Q1 2026 and got a $150k payout within 6 weeks, no drama. tbh the \"age equals safety\" logic made sense in 2021 but the space moved fast and proof of payouts in 2026 matters way more than a company's birthday. real payout receipts from multiple traders beat a logo that's been around a while imo.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-23T13:00:40.585Z",
+    "permalink": "/r/InnerCircleTraders/comments/1stcv4d/young_prop_firm_vs_ftmo_in_2026_is_the_veteran/ohta3rw/",
+    "commentId": "ohta3rw"
+  },
+  {
+    "postId": "1stdbcy",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Thoughts on Gold short today | London session",
+    "commentText": "try waiting for a second M5 CISD after the sweep instead of the first one. the first CISD in a HTF bearish FVG is almost always a trap tbh, price needs to raid that extra liquidity sitting above before it commits. been there so many times with gold during london. basically you already had the right idea on your second entry, just need to make that your rule from the jump.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-23T13:00:49.302Z",
+    "permalink": "/r/InnerCircleTraders/comments/1stdbcy/thoughts_on_gold_short_today_london_session/ohta4rj/",
+    "commentId": "ohta4rj"
   }
 ]
