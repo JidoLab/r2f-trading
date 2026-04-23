@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-23T01:56:46.546Z",
+  "generatedAt": "2026-04-23T02:01:50.835Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Thursday, 23 April 2026 at 08:56 (Bangkok)",
+  "dateTime": "Thursday, 23 April 2026 at 09:01 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -13,20 +13,20 @@
   "contentStatus": {
     "blogPostsToday": 0,
     "totalBlogPosts": 62,
-    "shortsReady": 1,
-    "shortsPublished": 31,
-    "shortsRendering": 4,
-    "socialPostsThisWeek": 49
+    "shortsReady": 0,
+    "shortsPublished": 0,
+    "shortsRendering": 0,
+    "socialPostsThisWeek": 0
   },
   "hotLeads": {
     "count": 0,
     "recentHot": []
   },
   "suggestions": [
-    "Reach out manually to all 5 cold subscribers via a personalized 1-on-1 Telegram or WhatsApp message from Harvest, referencing their specific sign-up interest to spark a direct conversation.",
-    "Launch a new top-of-funnel lead magnet (e.g., a free ICT trading checklist or mini PDF guide) to break the streak of 0 new subscribers and give the automated drip sequences fresh leads to work with.",
-    "Record and publish a short personal video or live Q&A session on YouTube or TikTok where Harvest speaks directly to camera about a real ICT trade taken this week, to build trust and drive new opt-ins.",
-    "Identify and manually engage 2–3 active ICT or forex trading communities on Facebook or Discord where Harvest can personally introduce R2F Trading and offer free value to generate new subscriber leads."
+    "Manually post in 2-3 Thai trading Facebook groups today introducing R2F Trading and Harvest's ICT coaching approach to seed the top of the funnel.",
+    "Record a short personal video of Harvest sharing one ICT concept and post it directly to TikTok and Instagram Reels to drive organic traffic before automation kicks in.",
+    "Reach out personally to 5 past contacts or trading community connections via LINE or Telegram to invite them to join the R2F newsletter as the first subscribers.",
+    "Set up a lead magnet (e.g. a free ICT cheat sheet or mini-guide) and manually add a signup link to Harvest's social bios to start capturing subscriber data."
   ],
   "schedule": [
     {
