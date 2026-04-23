@@ -21,10 +21,33 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-04-22T02:01:42.506Z",
-  "status": "ready",
+  "status": "published",
   "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/the-biggest-gdp-trading-myth-that-s-costing-you-money-in-202.mp4",
-  "youtubeUrl": null,
+  "youtubeUrl": "https://youtube.com/shorts/K46RigBkrLg",
   "copyText": "The Biggest GDP Trading Myth (That's Costing You Money in 2026)\n\nEveryone trades the GDP candle. That's exactly why they lose. Here's what smart money actually does during high-impact news — and how the R2F Trading system reads order blocks and fair value gaps to catch the real move AFTER the manipulation. Stop guessing. Start trading structure.\n\n#ICTTrading #SmartMonetyConcepts #OrderBlocks #FairValueGap #FundedTrader #R2FTrading #ForexMyths #GDPTrading #ICT2026 #TradingTips",
-  "uploadResults": [],
-  "completedAt": "2026-04-22T02:05:15.932Z"
+  "uploadResults": [
+    {
+      "platform": "youtube",
+      "status": "success",
+      "url": "https://youtube.com/shorts/K46RigBkrLg"
+    },
+    {
+      "platform": "facebook_reel",
+      "status": "success"
+    },
+    {
+      "platform": "linkedin",
+      "status": "success"
+    },
+    {
+      "platform": "telegram",
+      "status": "success"
+    },
+    {
+      "platform": "discord",
+      "status": "success"
+    }
+  ],
+  "completedAt": "2026-04-22T02:05:15.932Z",
+  "publishedAt": "2026-04-23T05:00:52.038Z"
 }
