@@ -1137,7 +1137,7 @@
     "authorName": "ScorchTrades",
     "suggestedReply": "The part about what most traders miss is real. On order blocks specifically, I filter by whether the candle that created the block actually left an imbalance above it. If there's no FVG attached to that OB on the 15m, I'm skipping it entirely. Clean the criteria and the setups on EURUSD alone become half as frequent but twice as reliable.",
     "createdAt": "2026-04-20T00:30:53.802Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776645057259-9zvjq",
