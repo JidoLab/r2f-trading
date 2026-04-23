@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-23T02:01:50.835Z",
+  "generatedAt": "2026-04-23T05:19:23.947Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Thursday, 23 April 2026 at 09:01 (Bangkok)",
+  "dateTime": "Thursday, 23 April 2026 at 12:19 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -11,22 +11,22 @@
     "chatConversations": 0
   },
   "contentStatus": {
-    "blogPostsToday": 0,
-    "totalBlogPosts": 62,
+    "blogPostsToday": 3,
+    "totalBlogPosts": 65,
     "shortsReady": 0,
-    "shortsPublished": 0,
-    "shortsRendering": 0,
-    "socialPostsThisWeek": 0
+    "shortsPublished": 32,
+    "shortsRendering": 4,
+    "socialPostsThisWeek": 50
   },
   "hotLeads": {
     "count": 0,
     "recentHot": []
   },
   "suggestions": [
-    "Manually post in 2-3 Thai trading Facebook groups today introducing R2F Trading and Harvest's ICT coaching approach to seed the top of the funnel.",
-    "Record a short personal video of Harvest sharing one ICT concept and post it directly to TikTok and Instagram Reels to drive organic traffic before automation kicks in.",
-    "Reach out personally to 5 past contacts or trading community connections via LINE or Telegram to invite them to join the R2F newsletter as the first subscribers.",
-    "Set up a lead magnet (e.g. a free ICT cheat sheet or mini-guide) and manually add a signup link to Harvest's social bios to start capturing subscriber data."
+    "With 0 new subscribers in the last 24 hours and only 5 total cold leads, Harvest should personally post 2–3 value-packed ICT trading tips in targeted Facebook Groups or Thai forex communities today to drive fresh opt-ins.",
+    "Reach out directly to 3–5 past students or contacts on LINE or Telegram asking for a short testimonial or referral, since there are zero hot leads and no recent payments to work with.",
+    "Create a limited-time offer or flash promotion (e.g., 500 THB discount valid 48 hours) and manually announce it via Harvest's personal Instagram Stories or LINE Official Account to stimulate immediate payment activity.",
+    "With 4 Shorts currently rendering, plan a manual push notification or story on Harvest's social accounts the moment they publish to capitalize on early engagement momentum and drive traffic back to the opt-in page."
   ],
   "schedule": [
     {
