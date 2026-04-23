@@ -1327,7 +1327,7 @@
     "authorName": "Algo Theory Studio",
     "suggestedReply": "The BOS automation is useful but the real edge is in how you filter which BOS signals actually matter. On EURUSD I only take CHoCH entries when the displacement candle closes beyond the prior swing by at least 50% of its body, otherwise you're just chasing noise. Curious if the indicator has a sensitivity setting for that kind of confirmation.",
     "createdAt": "2026-04-20T00:31:55.030Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776645117434-d0tsr",
