@@ -1,34 +1,5 @@
 [
   {
-    "date": "2026-04-18T04:00:59.000Z",
-    "type": "text",
-    "postType": "story",
-    "text": "First time I spotted a fair value gap, I ignored it. 'Too simple,' I thought. Took the 'complex' set",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-18T08:26:40.854Z",
     "slug": "2026-04-18-ict-trading-coaching-cost-worth-it",
     "title": "ICT Trading Coaching Cost: Worth It?",
@@ -2041,6 +2012,53 @@
     "date": "2026-04-24T06:32:03.383Z",
     "slug": "2026-04-24-the-quiet-session-trap-that-drains-accounts",
     "title": "The Quiet Session Trap That Drains Accounts",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-24T07:32:15.567Z",
+    "slug": "2026-04-24-the-revenge-trade-loop-how-to-break-it",
+    "title": "The Revenge Trade Loop: How to Break It",
     "results": [
       {
         "platform": "twitter",
