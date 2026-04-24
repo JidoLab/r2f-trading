@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-04-25",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1777050020551-0",
+        "title": "Personally message all 5 cold subscribers on Telegram or WhatsApp to start a real conversation and qualify their interest in ICT trading coaching.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1777050020552-1",
+        "title": "Create a short-form video or reel manually featuring Harvest speaking directly to camera about a specific ICT concept (e.g., order blocks or fair value gaps) to build personal brand trust.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1777050020552-2",
+        "title": "Launch a manual outreach campaign by posting a value-packed comment or thread in 2–3 Bangkok or Thailand-based trading Facebook groups to drive new subscriber sign-ups.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1777050020552-3",
+        "title": "Set up a referral or affiliate incentive program where existing students earn a reward for bringing in new leads — this is a new initiative not yet built or automated.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-04-24",
     "tasks": [
       {
