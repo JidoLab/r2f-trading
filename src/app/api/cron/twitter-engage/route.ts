@@ -243,7 +243,9 @@ export async function GET(req: NextRequest) {
       return scoreB - scoreA;
     });
 
-    const replyCount = 5;
+    // Doubled 5 → 10 on 2026-04-24 per Harvest. Well under Twitter's
+    // daily tweet ceiling and still modest for organic engagement.
+    const replyCount = 10;
     const toReply = filtered.slice(0, replyCount);
 
     // Generate and post replies

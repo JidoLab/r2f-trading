@@ -39,7 +39,9 @@ const SEARCH_QUERIES = [
 ];
 
 const LOG_PATH = "data/reddit-engage-log.json";
-const MAX_COMMENTS_PER_RUN = 5;
+// Doubled 5 → 10 on 2026-04-24 per Harvest. Cron runs 2x/day = 20 comments
+// daily across 10 subs (max ~2/sub/day — still well under any rate limit).
+const MAX_COMMENTS_PER_RUN = 10;
 const MAX_LOG_ENTRIES = 200;
 
 interface EngageLogEntry {
