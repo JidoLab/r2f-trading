@@ -60,14 +60,57 @@ export async function PUT(
   return NextResponse.json({ success: true });
 }
 
+interface PostRedirectEntry {
+  from: string;
+  to: string;
+  deletedAt: string;
+  reason?: string;
+}
+
+/**
+ * Append a 301 redirect entry to data/post-redirects.json so the deleted
+ * post's URL hands link-equity to its replacement. next.config.ts reads
+ * this file at build time and generates Next.js redirects from it.
+ */
+async function recordRedirect(from: string, to: string, reason?: string) {
+  const REDIRECTS_PATH = "data/post-redirects.json";
+  let existing: PostRedirectEntry[] = [];
+  try {
+    const raw = await readFile(REDIRECTS_PATH);
+    const parsed = JSON.parse(raw);
+    if (Array.isArray(parsed)) existing = parsed;
+  } catch { /* file may not exist yet */ }
+
+  // Dedupe: don't add the same redirect twice (idempotent on re-delete)
+  if (existing.some((e) => e.from === from)) return;
+
+  existing.push({
+    from,
+    to,
+    deletedAt: new Date().toISOString(),
+    ...(reason ? { reason } : {}),
+  });
+  await commitFile(
+    REDIRECTS_PATH,
+    JSON.stringify(existing, null, 2),
+    `Redirect: /trading-insights/${from} -> /${to}`
+  );
+}
+
 export async function DELETE(
-  _req: NextRequest,
+  req: NextRequest,
   { params }: { params: Promise<{ slug: string }> }
 ) {
   const isAdmin = await verifyAdmin();
   if (!isAdmin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   const { slug } = await params;
+  // Optional: ?replacedBy=<surviving-slug>&reason=<why>
+  // When present, append a permanent 301 redirect so the deleted URL
+  // preserves link equity and stops showing as 404 in GSC.
+  const url = new URL(req.url);
+  const replacedBy = url.searchParams.get("replacedBy");
+  const reason = url.searchParams.get("reason") || undefined;
 
   // Delete from GitHub first (works both locally and on Vercel)
   try {
@@ -93,5 +136,21 @@ export async function DELETE(
     }
   } catch { /* read-only on Vercel, that's fine */ }
 
-  return NextResponse.json({ success: true });
+  // Record redirect AFTER successful delete so we never redirect to nothing.
+  let redirectRecorded = false;
+  if (replacedBy) {
+    try {
+      await recordRedirect(slug, replacedBy, reason);
+      redirectRecorded = true;
+    } catch (err) {
+      // Non-fatal — the post is already deleted, redirect can be added
+      // manually later via the JSON file.
+      console.error(`[posts/delete] Failed to record redirect for ${slug}:`, err);
+    }
+  }
+
+  return NextResponse.json({
+    success: true,
+    redirect: redirectRecorded ? { from: slug, to: replacedBy } : null,
+  });
 }

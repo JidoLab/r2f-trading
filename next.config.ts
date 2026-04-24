@@ -1,31 +1,39 @@
 import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
+import fs from "fs";
+import path from "path";
+
+/**
+ * Load blog-post redirects from data/post-redirects.json at build time.
+ *
+ * The file is the source of truth — the admin delete endpoint appends to it
+ * whenever a post is deleted with a ?replacedBy=<slug> target. Vercel
+ * rebuilds on every commit, so the new redirects go live automatically.
+ *
+ * Shape of each entry:
+ *   { from: "old-slug", to: "new-slug", deletedAt: ISO, reason?: string }
+ *
+ * Both slugs are expected WITHOUT the /trading-insights/ prefix — we add it here.
+ */
+function loadPostRedirects() {
+  try {
+    const raw = fs.readFileSync(path.join(process.cwd(), "data/post-redirects.json"), "utf-8");
+    const entries = JSON.parse(raw) as { from: string; to: string; deletedAt?: string; reason?: string }[];
+    return entries.map((e) => ({
+      source: `/trading-insights/${e.from}`,
+      destination: `/trading-insights/${e.to}`,
+      permanent: true,
+    }));
+  } catch {
+    return [];
+  }
+}
 
 const nextConfig: NextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 
-  // 301 redirects for blog posts deleted during the 2026-04-16 duplicate
-  // cleanup (commit 0fc377d). Google indexed these URLs before we removed
-  // them, so they show up as 404s in GSC. Each redirect preserves link
-  // equity by pointing at the "kept" stronger version of the same topic.
   async redirects() {
-    return [
-      {
-        source: "/trading-insights/2026-04-14-ict-mitigation-block-vs-order-block-which-works-better",
-        destination: "/trading-insights/2026-04-12-ict-mitigation-block-vs-order-block-key-differences",
-        permanent: true,
-      },
-      {
-        source: "/trading-insights/2026-04-14-5-signs-you-re-revenge-trading-and-how-to-stop",
-        destination: "/trading-insights/2026-04-12-5-signs-you-re-revenge-trading-and-how-to-stop",
-        permanent: true,
-      },
-      {
-        source: "/trading-insights/2026-04-15-retail-sales-week-how-smart-money-fakes-direction",
-        destination: "/trading-insights/2026-04-15-retail-sales-week-how-smart-money-trades-usd",
-        permanent: true,
-      },
-    ];
+    return loadPostRedirects();
   },
 };
 
