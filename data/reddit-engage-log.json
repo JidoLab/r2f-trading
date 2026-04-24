@@ -596,5 +596,35 @@
     "commentedAt": "2026-04-24T04:32:06.783Z",
     "permalink": "/r/Forexstrategy/comments/1stf56g/built_an_smc_indicator_beginner_trader_need/ohydvvp/",
     "commentId": "ohydvvp"
+  },
+  {
+    "postId": "1su956x",
+    "subreddit": "proptrading",
+    "postTitle": "anyone else change risk after a good week?",
+    "commentText": "fixed risk during eval is correct tbh, but the real trap isn't sizing up after a good week — it's that a green run makes you looser on *entry criteria*. you start taking an NY open kill zone setup that's missing the BOS confirmation because \"the market's been easy,\" and that's where the week unravels. the size isn't the problem, the discipline on the model is.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-24T09:32:03.353Z",
+    "permalink": "/r/proptrading/comments/1su956x/anyone_else_change_risk_after_a_good_week/ohzd98z/",
+    "commentId": "ohzd98z"
+  },
+  {
+    "postId": "1stjdq7",
+    "subreddit": "proptrading",
+    "postTitle": "Traderscale Experience",
+    "commentText": "tbh a $450 loss breaching a funded account sounds like a daily drawdown rule violation not just a raw P&L thing — most firms set that limit based on your starting balance for the day, not your overall account cushion. been there with a similar situation where i thought i had room left but the DD calc reset at a different time than i expected. what session were you trading when it hit, london open or NY? because if you were in NY AM taking entries off 15m OBs that formed overnight, those can wick hard into your stop before price actually delivers.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-24T09:32:12.374Z",
+    "permalink": "/r/proptrading/comments/1stjdq7/traderscale_experience/ohzd9u6/",
+    "commentId": "ohzd9u6"
+  },
+  {
+    "postId": "1stdvuq",
+    "subreddit": "proptrading",
+    "postTitle": "Day 31–33 — No BE Challenge. Funded Account still in -%",
+    "commentText": "for the missed entries tbh try marking your POI on the 15m the night before and setting a hard limit, then just not watching it. the psychological damage of *watching* price tap and retrace is way worse than missing it blind. on days like your day 33 with the news-reactive structure, i'd also look back at whether your B setups even had clean displacement or if the FVGs were forming on news spikes — those are basically fake IMBs and they'll keep doing this to you in a headline-driven week 📌",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-24T09:32:22.047Z",
+    "permalink": "/r/proptrading/comments/1stdvuq/day_3133_no_be_challenge_funded_account_still_in/ohzdah9/",
+    "commentId": "ohzdah9"
   }
 ]
