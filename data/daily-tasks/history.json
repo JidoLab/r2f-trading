@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-04-24",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776995410082-0",
+        "title": "With 0 new subscribers in the last 24 hours and only 5 total cold leads, Harvest should personally post 2–3 value-packed ICT trading tips in targeted Facebook Groups or Thai forex communities today to drive fresh opt-ins.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776995410082-1",
+        "title": "Reach out directly to 3–5 past students or contacts on LINE or Telegram asking for a short testimonial or referral, since there are zero hot leads and no recent payments to work with.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776995410082-2",
+        "title": "Create a limited-time offer or flash promotion (e.g., 500 THB discount valid 48 hours) and manually announce it via Harvest's personal Instagram Stories or LINE Official Account to stimulate immediate payment activity.",
+        "category": "revenue",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1776995410082-3",
+        "title": "With 4 Shorts currently rendering, plan a manual push notification or story on Harvest's social accounts the moment they publish to capitalize on early engagement momentum and drive traffic back to the opt-in page.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-04-23",
     "tasks": [
       {
