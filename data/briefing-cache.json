@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-23T05:19:23.947Z",
+  "generatedAt": "2026-04-24T05:57:06.929Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Thursday, 23 April 2026 at 12:19 (Bangkok)",
+  "dateTime": "Friday, 24 April 2026 at 12:57 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -11,8 +11,8 @@
     "chatConversations": 0
   },
   "contentStatus": {
-    "blogPostsToday": 3,
-    "totalBlogPosts": 65,
+    "blogPostsToday": 4,
+    "totalBlogPosts": 70,
     "shortsReady": 0,
     "shortsPublished": 32,
     "shortsRendering": 4,
@@ -23,10 +23,10 @@
     "recentHot": []
   },
   "suggestions": [
-    "With 0 new subscribers in the last 24 hours and only 5 total cold leads, Harvest should personally post 2–3 value-packed ICT trading tips in targeted Facebook Groups or Thai forex communities today to drive fresh opt-ins.",
-    "Reach out directly to 3–5 past students or contacts on LINE or Telegram asking for a short testimonial or referral, since there are zero hot leads and no recent payments to work with.",
-    "Create a limited-time offer or flash promotion (e.g., 500 THB discount valid 48 hours) and manually announce it via Harvest's personal Instagram Stories or LINE Official Account to stimulate immediate payment activity.",
-    "With 4 Shorts currently rendering, plan a manual push notification or story on Harvest's social accounts the moment they publish to capitalize on early engagement momentum and drive traffic back to the opt-in page."
+    "Personally message all 5 cold subscribers on Telegram or WhatsApp to start a real conversation and qualify their interest in ICT trading coaching.",
+    "Create a short-form video or reel manually featuring Harvest speaking directly to camera about a specific ICT concept (e.g., order blocks or fair value gaps) to build personal brand trust.",
+    "Launch a manual outreach campaign by posting a value-packed comment or thread in 2–3 Bangkok or Thailand-based trading Facebook groups to drive new subscriber sign-ups.",
+    "Set up a referral or affiliate incentive program where existing students earn a reward for bringing in new leads — this is a new initiative not yet built or automated."
   ],
   "schedule": [
     {
