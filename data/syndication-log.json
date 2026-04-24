@@ -1,5 +1,30 @@
 [
   {
+    "slug": "2026-04-24-the-revenge-trade-loop-how-to-break-it",
+    "syndicatedAt": "2026-04-24T07:32:41.521Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-24-the-revenge-trade-loop-how-to-break-it",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-revenge-trade-loop-how-to-break-it-2fj2",
+        "id": "3544860"
+      },
+      {
+        "platform": "hashnode",
+        "success": true,
+        "url": "https://r2ftrading.hashnode.dev/the-revenge-trade-loop-how-to-break-it",
+        "id": "69eb1c99546a0ea6bd54e39f"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-04-24-the-revenge-trade-loop-how-to-break-it"
+  },
+  {
     "slug": "2026-04-24-the-quiet-session-trap-that-drains-accounts",
     "syndicatedAt": "2026-04-24T06:32:40.389Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-24-the-quiet-session-trap-that-drains-accounts",
