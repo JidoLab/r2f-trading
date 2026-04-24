@@ -38,7 +38,7 @@
   {
     "email": "cyrus.alia.borja@gmail.com",
     "date": "2026-04-11T13:01:25.702Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "score": 0,
     "segment": "cold",
     "events": [],
@@ -46,7 +46,8 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts",
-      "successStory"
+      "successStory",
+      "tradingPsychology"
     ]
   },
   {
