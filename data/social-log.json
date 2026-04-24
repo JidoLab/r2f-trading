@@ -1,34 +1,5 @@
 [
   {
-    "date": "2026-04-17T04:00:44.718Z",
-    "type": "text",
-    "postType": "tip",
-    "text": "NFP Friday tip: the first candle after the report is bait. Let price raid a level, then wait for the",
-    "hasImage": true,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-17T06:02:29.096Z",
     "slug": "2026-04-17-why-winning-trades-still-break-your-mindset",
     "title": "Why Winning Trades Still Break Your Mindset",
@@ -2019,6 +1990,53 @@
     "date": "2026-04-24T01:31:53.018Z",
     "slug": "2026-04-24-the-patience-trap-why-ict-traders-overtrade",
     "title": "The Patience Trap: Why ICT Traders Overtrade",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-24T02:32:18.193Z",
+    "slug": "2026-04-24-gdp-week-how-smart-money-traps-traders-early",
+    "title": "GDP Week: How Smart Money Traps Traders Early",
     "results": [
       {
         "platform": "twitter",
