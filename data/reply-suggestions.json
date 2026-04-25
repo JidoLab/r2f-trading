@@ -297,7 +297,7 @@
     "authorName": "Forex Scalper Trader",
     "suggestedReply": "The \"non-repainting\" claim is where I always pause with SMC-based systems. On Cable during high-impact London sessions, I've watched plenty of indicators flag clean order blocks in real time, then silently shift confluence zones on the closed candles after price moves. Worth clarifying in the thread whether your entry trigger is confirmed on candle close or live tick, because that distinction completely changes the strategy's reliability.",
     "createdAt": "2026-04-24T00:31:32.939Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1776990695908-zolwu",
