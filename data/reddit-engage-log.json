@@ -636,5 +636,45 @@
     "commentedAt": "2026-04-24T13:01:03.881Z",
     "permalink": "/r/InnerCircleTraders/comments/1stxhmb/im_pretty_sure_i_hold_the_record/oi089me/",
     "commentId": "oi089me"
+  },
+  {
+    "postId": "1suu5rb",
+    "subreddit": "Trading",
+    "postTitle": "any advice",
+    "commentText": "i had this exact problem with pressure-based trading — my brother had a serious illness and i thought i could just scale up size and grind it out, took max allocation on eurusd m15 OBs during NY open and blew two funded accounts in three weeks because the emotional stakes destroyed my execution. bro, $3M in two years from a single funded account isn't aggressive, it's mathematically almost impossible without a luck streak that would need to be sustained across hundreds of trades with zero meaningful drawdown. the kelly criterion sounds logical until you realize even a small miscalculation on your edge percentage turns it into a ruin machine, not a growth engine. i know this isn't what you want to hear but the plan as you've described it will most likely leave you with nothing AND no cousin treatment fund — explore DMD charity foundations and clinical trial programs running right now in 2026, seriously.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-25T03:00:40.541Z",
+    "permalink": "/r/Trading/comments/1suu5rb/any_advice/oi4tmls/",
+    "commentId": "oi4tmls"
+  },
+  {
+    "postId": "1surujo",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Is tjr bootcamp good?",
+    "commentText": "tjr's concepts are solid tbh, the liquidity and displacement stuff translates well to ICT 2022 mentorship since they're basically speaking the same language. start with ICT 2022 mentorship first tho, it gives you the foundation so you actually understand *why* things like FVGs and OBs matter instead of just pattern matching. are you planning to apply this on forex pairs or indices, because that changes which sessions you'd prioritize when studying the material?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-25T03:00:48.482Z",
+    "permalink": "/r/InnerCircleTraders/comments/1surujo/is_tjr_bootcamp_good/oi4tndl/",
+    "commentId": "oi4tndl"
+  },
+  {
+    "postId": "1suftku",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Why this is not a FVG ?",
+    "commentText": "the yellow zone is probably missing the three-candle structure required for a valid FVG — you need a candle where the low of the candle two positions ahead is higher than the high of the candle two positions back, leaving a gap that price never touched. if the wicks overlap or price already traded through that zone, it disqualifies it. tbh the 2016 month 4 mentorship is pretty dense on this, rewatch it specifically looking at how ICT marks the *bodies vs wicks* distinction on the 15m or lower timeframe examples he uses.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-25T03:00:57.217Z",
+    "permalink": "/r/InnerCircleTraders/comments/1suftku/why_this_is_not_a_fvg/oi4to8a/",
+    "commentId": "oi4to8a"
+  },
+  {
+    "postId": "1surq43",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "I need help with trading",
+    "commentText": "hitting margin on demo with 10k usually means position sizing was way off, not the concepts themselves. tbh with $100 real money i'd forget about live trading for now and just grind the 2022 mentorship again but this time focus specifically on how ICT sizes into trades using proper 1% risk per setup. are you marking your OBs on the 15m or going straight to the 1h, because a lot of newer people miss that the 15m OB is often already violated by the time they see it on the higher tf?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-25T03:01:05.573Z",
+    "permalink": "/r/InnerCircleTraders/comments/1surq43/i_need_help_with_trading/oi4tp08/",
+    "commentId": "oi4tp08"
   }
 ]
