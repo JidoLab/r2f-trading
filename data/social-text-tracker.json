@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "tip",
     "myth",
     "story",
     "challenge",
@@ -29,11 +28,12 @@
     "promo-results",
     "promo-checklist",
     "promo-blog",
-    "promo-coaching"
+    "promo-coaching",
+    "question"
   ],
   "lastPost": {
-    "type": "promo-coaching",
-    "text": "GDP drops this week. Most traders panic. My students prepare. If you want to learn how to read macro events with ICT concepts, I have 2 spots open. Free 15-min call, no pitch. 👇 https://r2ftrading.com/contact #ICTTrading #FundedTrader #SmartMoneyConcepts",
-    "date": "2026-04-25T04:00:28.577Z"
+    "type": "question",
+    "text": "GDP drops next week 👀 Do you trade the actual release or wait for the dust to settle and hunt the liquidity sweep after? Drop your approach 👇 #ICTTrading #SmartMoneyConcepts #FairValueGap",
+    "date": "2026-04-25T12:00:51.816Z"
   }
 }
