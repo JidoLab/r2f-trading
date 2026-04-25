@@ -277,7 +277,7 @@
     "authorName": "Holo Forex",
     "suggestedReply": "One mechanic worth adding here is liquidity engineering around session opens, particularly the first 15 to 30 minutes of London. Retail entries cluster predictably at obvious structure levels, and institutional flow routinely sweeps those zones before continuing in the intended direction. Understanding that your \"worst price\" entry is often the engineered liquidity grab rather than a mistake changes how you approach order placement entirely.",
     "createdAt": "2026-04-24T00:31:23.275Z",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "id": "sug-1776990688959-dynpr",
