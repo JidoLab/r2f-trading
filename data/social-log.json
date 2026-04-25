@@ -2115,5 +2115,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-25T12:00:52.629Z",
+    "type": "text",
+    "postType": "question",
+    "text": "GDP drops next week 👀 Do you trade the actual release or wait for the dust to settle and hunt the l",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
