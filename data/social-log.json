@@ -1,109 +1,5 @@
 [
   {
-    "date": "2026-04-18T12:00:57.311Z",
-    "type": "text",
-    "postType": "challenge",
-    "text": "Challenge: This weekend, backtest 20 fair value gap setups from Q1 2026. Record entry, target & resu",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-18T14:00:30.954Z",
-    "slug": "2026-04-04-how-april-nfp-week-liquidity-patterns-create-hidden-ict-entry-opportunities-2026-market-update",
-    "title": "April NFP Week: Hidden ICT Entry Opportunities",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-19T04:00:52.632Z",
-    "type": "text",
-    "postType": "poll-native",
-    "text": "Order blocks or fair value gaps — which ICT concept do you trust MORE for entries? 🧠 #ICTTrading #S",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-19T05:49:51.624Z",
     "type": "link-share",
     "url": "https://www.tradingview.com/chart/EURUSD/1M7N2LOi-DXY-EURUSD-Analysis-Top-down-ICT-R2F-Concepts/",
@@ -2142,6 +2038,53 @@
       {
         "platform": "discord",
         "status": "success"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-25T14:00:27.163Z",
+    "slug": "2026-04-11-weekend-backtesting-ritual-that-made-me-profitable",
+    "title": "Weekend Backtesting Ritual That Made Me Profitable",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
       }
     ]
   }
