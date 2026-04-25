@@ -107,7 +107,7 @@
     "authorName": "Forex Algo-Trader",
     "suggestedReply": "Interesting take on using SMC for gold live. In my experience, the real edge on XAUUSD isn't just identifying order blocks but waiting for a proper liquidity sweep BEFORE entry confirmation. I drill this into my students constantly because gold is one of the most manipulated assets on the 15m and 1H, and premature entries kill otherwise solid setups. Are you factoring session liquidity grabs into your live reads here?",
     "createdAt": "2026-04-25T00:30:45.841Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1777077052023-jbxan",
