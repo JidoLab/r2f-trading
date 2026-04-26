@@ -38,5 +38,45 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "week": "April 20 - April 26, 2026",
+    "weekKey": "2026-04-26",
+    "items": [
+      "EUR/USD swept weekly lows near 1.0620 before reclaiming 1.0680 structure",
+      "GBP/USD rejected bearish order block at 1.2750, closed weekly candle bullish",
+      "USD/JPY pushed into 155.80 premium zone, facing institutional selling pressure",
+      "NAS100 reclaimed 17,400 fair value gap, printing bullish market structure shift",
+      "S&P 500 held 5,080 demand zone, smart money accumulation signals present",
+      "Preliminary GDP data looming, expect liquidity sweeps around high-impact release"
+    ],
+    "imageUrl": "https://www.r2ftrading.com/recap-cards/week-2026-04-26.png",
+    "date": "2026-04-26T05:00:28.734Z",
+    "results": [
+      {
+        "platform": "twitter-image",
+        "status": "error",
+        "message": "Image fetch failed: 404"
+      },
+      {
+        "platform": "facebook",
+        "status": "error",
+        "message": "{\"error\":{\"message\":\"Missing or invalid image file\",\"type\":\"OAuthException\",\"code\":324,\"error_subcode\":2069019,\"is_transient\":true,\"error_user_title\":\"Image Required\",\"error_user_msg\":\"Make sure your "
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
