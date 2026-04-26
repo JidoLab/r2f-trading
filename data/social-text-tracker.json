@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "myth",
     "story",
     "challenge",
     "promo-free-class",
@@ -29,11 +28,12 @@
     "promo-checklist",
     "promo-blog",
     "promo-coaching",
-    "question"
+    "question",
+    "poll"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "GDP drops next week 👀 Do you trade the actual release or wait for the dust to settle and hunt the liquidity sweep after? Drop your approach 👇 #ICTTrading #SmartMoneyConcepts #FairValueGap",
-    "date": "2026-04-25T12:00:51.816Z"
+    "type": "poll",
+    "text": "GDP drops this week. How do you trade high-impact news?\n\n🅰️ Sit out entirely\n🅱️ Trade the reaction after\n🅲️ Already positioned beforehand\n🅳️ What's GDP? 😅\n\n#ICTTrading #SmartMoneyConcepts #GDP",
+    "date": "2026-04-26T04:00:47.792Z"
   }
 }
