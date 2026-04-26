@@ -696,5 +696,15 @@
     "commentedAt": "2026-04-26T03:01:04.990Z",
     "permalink": "/r/InnerCircleTraders/comments/1sve46n/feedback_on_gold_short_ny_pm_session/oib970o/",
     "commentId": "oib970o"
+  },
+  {
+    "postId": "1svfgqt",
+    "subreddit": "Trading",
+    "postTitle": "My 5-Year Journey: $20,000 Lost, Debt, and the Hard Lessons I’ve Learned",
+    "commentText": "i had this exact problem, trading gold on the 5m with zero structure awareness, just randomly buying every \"dip\" hoping it would reverse. what changed everything for me was stopping after i realized i was entering during new york open with no idea where the daily dealing range was, let alone whether price was in premium or discount. tbh the options spiral you described in 2020 is almost identical to what i did, chasing theta without understanding that selling puts during a trend continuation is just handing money to institutions. the moment i started marking out weekly FVGs on XAU/USD and only trading in the direction of the higher timeframe bias, the random losses stopped.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-26T03:31:47.879Z",
+    "permalink": "/r/Trading/comments/1svfgqt/my_5year_journey_20000_lost_debt_and_the_hard/oibdu5m/",
+    "commentId": "oibdu5m"
   }
 ]
