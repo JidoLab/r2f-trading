@@ -706,5 +706,35 @@
     "commentedAt": "2026-04-26T03:31:47.879Z",
     "permalink": "/r/Trading/comments/1svfgqt/my_5year_journey_20000_lost_debt_and_the_hard/oibdu5m/",
     "commentId": "oibdu5m"
+  },
+  {
+    "postId": "1sw304h",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Gold Holding Support - What’s Your Move?",
+    "commentText": "solid read on the liquidity sweep tbh, but that 4720 level you're watching for confirmation is sitting right below what looks like an unmitigated 1h OB from the asian session — price could tap that and reject before ever reaching 4800. are you looking at this on the 15m or 1h? makes a huge difference for OB validity and whether that MSS you're seeing actually holds weight.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-26T13:00:49.082Z",
+    "permalink": "/r/Forexstrategy/comments/1sw304h/gold_holding_support_whats_your_move/oidc2mb/",
+    "commentId": "oidc2mb"
+  },
+  {
+    "postId": "1svbx04",
+    "subreddit": "Trading",
+    "postTitle": "Prop firms experiences? How many have you tried/failed/ passed? Would you recommend it?",
+    "commentText": "before going prop, tbh i'd take your paper trading setup and run it on a small live account first — even $200 on NQ or ES just to feel the emotional difference. once you're consistently hitting 60%+ on the 15m using NY killzone FVGs with a clean BOS above them, then the prop environment won't shake you. most people fail challenges because discipline breaks, not because the setup stops working.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-26T13:00:55.255Z",
+    "permalink": "/r/Trading/comments/1svbx04/prop_firms_experiences_how_many_have_you/oidc38f/",
+    "commentId": "oidc38f"
+  },
+  {
+    "postId": "1svj2s0",
+    "subreddit": "Forexstrategy",
+    "postTitle": "A PULLBACK AGAINST A STRONG TREND IS NOT A REVERSAL",
+    "commentText": "solid breakdown tbh, but the part about \"slow and controlled\" descent to 0.6620 is exactly where an ICT lens adds precision — that move is likely leaving behind a fair value gap on the way down, and that FVG becomes your actual entry trigger, not just the 20 EMA bounce. structure stays bullish until you get a clean BOS to the downside on the higher timeframe, which clearly didn't happen here. are you marking these pullback entries on the 15m or 4h, because the OB you're trading back into looks completely different depending on which one you're anchored to?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-26T13:01:02.431Z",
+    "permalink": "/r/Forexstrategy/comments/1svj2s0/a_pullback_against_a_strong_trend_is_not_a/oidc3zz/",
+    "commentId": "oidc3zz"
   }
 ]
