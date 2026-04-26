@@ -1,5 +1,135 @@
 [
   {
+    "id": "sug-1777163454214-70ywu",
+    "platform": "youtube",
+    "postTitle": "$350 Live Profit 💵 | Liquidity + FVG Strategy (1 Lot Trade) 🔥#trading #viral#stockmarket #viralvideo",
+    "postUrl": "https://youtube.com/watch?v=r1L4qPBnp1E",
+    "authorName": "tradewithRahul108",
+    "suggestedReply": "Respect for executing the 1 lot trade live, that takes discipline most skip when real money is on the line. Interesting take on the FVG entry though. In my experience I teach my students to wait for a confirmed liquidity sweep before entering on the FVG, because price often rebalances deeper than expected and premature entries get stopped out. Did you have a specific session bias guiding the direction here?",
+    "createdAt": "2026-04-26T00:30:54.214Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777163457968-7jael",
+    "platform": "youtube",
+    "postTitle": "Why Your CISD Fails ❌ (Advanced ICT Entry Rules That Actually Work)",
+    "postUrl": "https://youtube.com/watch?v=s99d-RXzbnM",
+    "authorName": "JxTrades",
+    "suggestedReply": "I used to fail CISD setups constantly until I realized the entry was the problem, not the concept itself. I now teach my students to wait for a confirmed displacement on the 5m before any entry, especially on NAS100 where the moves are aggressive and fake reversals are common. The \"advanced entry rules\" angle in this video is exactly what separates traders who understand the draw on liquidity from those just drawing boxes. Most of my students had their CISD accuracy jump significantly once they stopped entering on the candle close alone.",
+    "createdAt": "2026-04-26T00:30:57.968Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777163460810-hhqce",
+    "platform": "youtube",
+    "postTitle": "LIVE BACKTEST - 100 Trades Using ICT Silver Bullet — Profit or Loss? #gold #ict #tamilforex",
+    "postUrl": "https://youtube.com/watch?v=DjOFvFNobz8",
+    "authorName": "Tamil Traders Academy",
+    "suggestedReply": "I ran a similar Silver Bullet backtest myself focused purely on the 1pm New York session window on EURUSD and the consistency surprised me. What I drill into my students is that the 50% entry model inside the Silver Bullet timeframe separates the profitable runs from the noise. Did the 100 trades here factor in session overlap days or were those filtered out entirely?",
+    "createdAt": "2026-04-26T00:31:00.810Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777163463882-w3oux",
+    "platform": "youtube",
+    "postTitle": "WHY YOU ALWAYS GET STOP LOSS?📈🗣 #guardeer #stockmarket #crypto #liquidity #smc #ict #trading",
+    "postUrl": "https://youtube.com/watch?v=yXtQikLjyJY",
+    "authorName": "Artha trades",
+    "suggestedReply": "The stop hunt dynamic you're describing here is exactly why liquidity matters more than the entry itself. I drill this into my students constantly. most retail traders place stops at obvious swing lows and market makers know exactly where that pool sits. The non-obvious fix is waiting for price to return INTO the range after the sweep rather than chasing the move. Did you factor in session timing when identifying those liquidity levels?",
+    "createdAt": "2026-04-26T00:31:03.882Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777163466761-1mnsc",
+    "platform": "youtube",
+    "postTitle": "What are FVG‘s? #trading #ict #fvg #tradingtips #tradingstrategy",
+    "postUrl": "https://youtube.com/watch?v=gHu-YxOV8p0",
+    "authorName": "Mindvest",
+    "suggestedReply": "I drilled FVGs into my students for months before they truly understood the difference between a valid imbalance and just a gap. The ones trading NAS100 on the 15 minute chart started seeing real consistency once they learned to wait for price to return and respect the 50% equilibrium of the FVG. Most traders skip that filter and wonder why their entries keep getting blown through.",
+    "createdAt": "2026-04-26T00:31:06.761Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777163469919-faju5",
+    "platform": "youtube",
+    "postTitle": "How to predict target price of stock #tradingforbeginners #ictconcepthindi #trading",
+    "postUrl": "https://youtube.com/watch?v=R7WDcxhPLP8",
+    "authorName": "ICT Gurukul !! Trading Strategy for Indian Market",
+    "suggestedReply": "Predicting target price using ICT concepts comes down to one thing most beginners miss. identifying the opposing liquidity pool BEFORE entering, not after. I drill this into my students constantly. if you mark your premium or discount array first, your target almost selects itself based on where resting liquidity sits above old highs or below old lows. Are you using HTF draw on liquidity to confirm your targets here?",
+    "createdAt": "2026-04-26T00:31:09.919Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777163472904-yc2q4",
+    "platform": "youtube",
+    "postTitle": "Trading Candle 2 Fractal Model (TTFM) ICT Concepts",
+    "postUrl": "https://youtube.com/watch?v=Fhd4D_diU7w",
+    "authorName": "TIGERTRADER",
+    "suggestedReply": "Interesting take on the Candle 2 Fractal Model. In my experience, I teach my students to wait for confirmation on the higher timeframe before dropping down to frame the entry, because jumping straight to Candle 2 without that context leads to a lot of premature entries. The fractal only has real confluence when the higher timeframe draw on liquidity aligns with it.",
+    "createdAt": "2026-04-26T00:31:12.904Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777163476162-vgnop",
+    "platform": "youtube",
+    "postTitle": "I am the Mentor of your Mentor #SmartMoneyConcepts #ICTTrading #SMCTrader #PriceAction",
+    "postUrl": "https://youtube.com/watch?v=jXxnhK7UVF4",
+    "authorName": "Trader Abdullah Masood",
+    "suggestedReply": "Smart Money being the mentor of mentors is something I drill into my students constantly. Most people chase the concept without understanding the origin. One thing I push hard is confirming your SMC bias on the higher timeframe first, daily or 4H, before dropping to the 15m for entry. Without that top down alignment, you are just guessing with fancy terminology.",
+    "createdAt": "2026-04-26T00:31:16.162Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777163480820-y8f7v",
+    "platform": "medium",
+    "postTitle": "VPS for Forex Trading: The Ultimate Guide to Faster, Stable Trading Performance",
+    "postUrl": "https://medium.com/@moseini97/vps-for-forex-trading-the-ultimate-guide-to-faster-stable-trading-performance-ddb9ae086c7b?source=rss------forex_trading-5",
+    "authorName": "Leo Taylor",
+    "suggestedReply": "Latency is the real enemy for scalpers and news traders, so VPS placement relative to your broker's server matters enormously. Leo, did you cover how to benchmark the actual ping between the VPS and the broker's execution server, since a few milliseconds can be the difference between a clean fill and slippage on fast-moving pairs like EURUSD during high-impact releases?",
+    "createdAt": "2026-04-26T00:31:20.820Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777163484551-9y4gn",
+    "platform": "medium",
+    "postTitle": "Why Traders Keep Getting Stopped Out Before the Market Moves",
+    "postUrl": "https://medium.com/@nexoraofficial556/why-traders-keep-getting-stopped-out-before-the-market-moves-460a5da5f133?source=rss------day_trading-5",
+    "authorName": "Nexoraofficial",
+    "suggestedReply": "The stop hunt phenomenon Nexoraofficial describes is especially brutal on GBP pairs during the London open, where liquidity grabs below obvious swing lows routinely sweep retail stops before the actual displacement occurs. I've watched price sweep a clean structure level on the 15-minute chart, trigger cascading stops, then reverse sharply with institutional order flow. The fix isn't a wider stop but understanding WHERE smart money needs liquidity before committing to a move.",
+    "createdAt": "2026-04-26T00:31:24.551Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777163488374-o3wdu",
+    "platform": "medium",
+    "postTitle": "Justepatrimoineai.com: fake CEO interview scam that cost a Chicago IT manager $189,000",
+    "postUrl": "https://medium.com/write-a-catalyst/justepatrimoineai-com-fake-ceo-interview-scam-that-cost-a-chicago-it-manager-189-000-3815ef8debd7?source=rss------trading-5",
+    "authorName": "Jeff Ostrowski",
+    "suggestedReply": "Jeff, the $189,000 figure is what gets me — that's not retail speculation money, that's someone's entire liquid position, likely leveraged across multiple forex or crypto pairs over weeks. These fake CEO interview setups are sophisticated precisely because they mirror legitimate institutional conviction trades, where holding through drawdown feels disciplined rather than catastrophic. The real warning sign is always the artificial urgency around \"closing windows,\" something no credible desk ever pushes.",
+    "createdAt": "2026-04-26T00:31:28.374Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777163492245-d3c32",
+    "platform": "medium",
+    "postTitle": "Nextleap.vip: $366K Crypto Ponzi Scam — The “TrionBest NextLeap” Telegram Trap",
+    "postUrl": "https://medium.com/write-a-catalyst/nextleap-vip-366k-crypto-ponzi-scam-the-trionbest-nextleap-telegram-trap-06149a300aa8?source=rss------trading-5",
+    "authorName": "Jacob Jaffa",
+    "suggestedReply": "Jacob, the TrionBest rebranding cycle you exposed is actually a classic liquidity migration play these operations use to reset exit timing. What most miss is that Telegram-based schemes like Nextleap.vip typically accelerate withdrawal restrictions right around the 90 to 120 day mark, which aligns with when early depositors start compounding pressure on the pool. Recognizing that compression pattern in crypto-adjacent \"yield\" platforms is often the earliest on-chain signal worth watching.",
+    "createdAt": "2026-04-26T00:31:32.245Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777163495569-e479p",
+    "platform": "medium",
+    "postTitle": "GloAINova & Stockri.com: Fake state documents and a romance scam that cost an Austin man $112,000",
+    "postUrl": "https://medium.com/write-a-catalyst/gloainova-stockri-com-fake-state-documents-and-a-romance-scam-that-cost-an-austin-man-112-000-b8467e47e4d3?source=rss------trading-5",
+    "authorName": "Jeff Ostrowski",
+    "suggestedReply": "The fake state documents angle here is particularly alarming because it mirrors a pattern I've seen used to manufacture false regulatory credibility before luring victims into \"managed forex accounts.\" Jeff, did the Austin victim recall whether Stockri.com framed the opportunity around a specific asset class like crypto or spot FX, since that detail often reveals which script these operations are running?",
+    "createdAt": "2026-04-26T00:31:35.569Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1777077142852-uwcgf",
     "platform": "investinglive",
     "postTitle": "USDJPY falls to new lows. Retests 100 hour MA",
