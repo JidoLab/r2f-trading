@@ -1,24 +1,33 @@
 {
-  "lastUpdated": "2026-04-19T06:00:15.950Z",
-  "totalVideos": 49,
-  "totalViews": 1647,
-  "avgViews": 34,
+  "lastUpdated": "2026-04-26T06:00:45.995Z",
+  "totalVideos": 50,
+  "totalViews": 3173,
+  "avgViews": 63,
   "videos": [
     {
       "videoId": "SqL3ixqUsVs",
       "title": "3 Reasons You Keep Failing Funded Challenges (ICT Trader Mistakes)",
       "publishedAt": "2026-04-18T05:01:00Z",
-      "views": 259,
-      "likes": 7,
+      "views": 366,
+      "likes": 8,
       "comments": 0,
       "retention": 0
     },
     {
-      "videoId": "rzHHTgvZ7Bo",
-      "title": "POV: You Finally Understand Fair Value Gaps",
-      "publishedAt": "2026-04-17T11:00:40Z",
-      "views": 185,
+      "videoId": "vWKYXVAf6p4",
+      "title": "3 Mistakes That Kill Funded Accounts (Fix These Now)",
+      "publishedAt": "2026-04-21T05:00:35Z",
+      "views": 290,
       "likes": 5,
+      "comments": 0,
+      "retention": 0
+    },
+    {
+      "videoId": "cn6oo1U3Bf8",
+      "title": "The One Fair Value Gap Filter That Actually Works (2026)",
+      "publishedAt": "2026-04-19T17:01:06Z",
+      "views": 265,
+      "likes": 4,
       "comments": 0,
       "retention": 0
     },
@@ -26,7 +35,34 @@
       "videoId": "T1oFo4OMSjg",
       "title": "Can You Spot a Fair Value Gap? 🧠 ICT Quiz",
       "publishedAt": "2026-04-18T17:00:43Z",
-      "views": 147,
+      "views": 259,
+      "likes": 5,
+      "comments": 0,
+      "retention": 0
+    },
+    {
+      "videoId": "rzHHTgvZ7Bo",
+      "title": "POV: You Finally Understand Fair Value Gaps",
+      "publishedAt": "2026-04-17T11:00:40Z",
+      "views": 211,
+      "likes": 6,
+      "comments": 0,
+      "retention": 0
+    },
+    {
+      "videoId": "jLC_WY6zYLg",
+      "title": "Why Smart Money Traps Retail at Every Swing High (2026)",
+      "publishedAt": "2026-04-20T05:00:33Z",
+      "views": 209,
+      "likes": 2,
+      "comments": 0,
+      "retention": 0
+    },
+    {
+      "videoId": "sSmgZtwk7ZU",
+      "title": "Silver Bullet Myth That's Killing Your Funded Account (2026)",
+      "publishedAt": "2026-04-19T08:52:57Z",
+      "views": 190,
       "likes": 2,
       "comments": 0,
       "retention": 0
@@ -35,7 +71,7 @@
       "videoId": "DTXaHLpFQVg",
       "title": "I Blew My Funded Account Ignoring This One Thing",
       "publishedAt": "2026-04-17T17:01:13Z",
-      "views": 143,
+      "views": 181,
       "likes": 3,
       "comments": 0,
       "retention": 0
@@ -44,17 +80,44 @@
       "videoId": "JTN7zzqGqt4",
       "title": "This Order Block Setup Made 3R In One Trade",
       "publishedAt": "2026-04-17T05:00:55Z",
-      "views": 138,
+      "views": 142,
       "likes": 3,
       "comments": 0,
       "retention": 0
     },
     {
-      "videoId": "-uxdxGk2NGo",
-      "title": "A 3-Step Process For Analytical SUCCESS",
-      "publishedAt": "2025-05-07T07:26:56Z",
-      "views": 119,
-      "likes": 8,
+      "videoId": "g3yxOUiAvlI",
+      "title": "This Fair Value Gap Setup Paid Me $4,200 In One Trade",
+      "publishedAt": "2026-04-18T11:01:05Z",
+      "views": 140,
+      "likes": 1,
+      "comments": 0,
+      "retention": 0
+    },
+    {
+      "videoId": "b_ikGu3BDOc",
+      "title": "Stop Trading Fair Value Gaps Like This",
+      "publishedAt": "2026-04-19T05:00:56Z",
+      "views": 127,
+      "likes": 1,
+      "comments": 0,
+      "retention": 0
+    },
+    {
+      "videoId": "X88xbyvnkAM",
+      "title": "3 Order Block Mistakes Killing Your Funded Account (2026)",
+      "publishedAt": "2026-04-19T11:35:30Z",
+      "views": 107,
+      "likes": 2,
+      "comments": 0,
+      "retention": 0
+    },
+    {
+      "videoId": "rFI3HIhsCsA",
+      "title": "90% of Traders Get This Wrong — Do You Know the Answer?",
+      "publishedAt": "2026-04-20T17:00:48Z",
+      "views": 105,
+      "likes": 2,
       "comments": 0,
       "retention": 0
     },
@@ -68,30 +131,21 @@
       "retention": 0
     },
     {
-      "videoId": "g3yxOUiAvlI",
-      "title": "This Fair Value Gap Setup Paid Me $4,200 In One Trade",
-      "publishedAt": "2026-04-18T11:01:05Z",
-      "views": 77,
-      "likes": 1,
+      "videoId": "lI6dvvGuRSI",
+      "title": "The Indicator Lie That's Keeping Traders Broke (2026)",
+      "publishedAt": "2026-04-19T11:00:32Z",
+      "views": 94,
+      "likes": 0,
       "comments": 0,
       "retention": 0
     },
     {
-      "videoId": "YB3M23YziWI",
-      "title": "Super Fast Analysis & Trade - EP.2",
-      "publishedAt": "2025-05-05T14:38:54Z",
-      "views": 72,
-      "likes": 3,
-      "comments": 10,
-      "retention": 0
-    },
-    {
-      "videoId": "EaeiqQcWqgE",
-      "title": "A Trade A Day Challenge - Day 1",
-      "publishedAt": "2025-07-02T07:52:18Z",
-      "views": 58,
-      "likes": 5,
-      "comments": 2,
+      "videoId": "sVRWHdxLX0A",
+      "title": "POV: You Pass Your Funded Account Then GDP Drops 🔴",
+      "publishedAt": "2026-04-22T17:01:01Z",
+      "views": 71,
+      "likes": 1,
+      "comments": 0,
       "retention": 0
     },
     {
@@ -104,47 +158,56 @@
       "retention": 0
     },
     {
-      "videoId": "2IP_rz6jq6o",
-      "title": "Weekly Market Analysis - 10th May 2025",
-      "publishedAt": "2025-05-10T07:40:01Z",
-      "views": 55,
-      "likes": 1,
+      "videoId": "K46RigBkrLg",
+      "title": "The Biggest GDP Trading Myth (That's Costing You Money in 2026)",
+      "publishedAt": "2026-04-23T05:00:56Z",
+      "views": 42,
+      "likes": 0,
       "comments": 0,
       "retention": 0
     },
     {
-      "videoId": "D8rC4D-uplM",
-      "title": "BITCOIN... THE DROP IS NOT OVER YET!",
-      "publishedAt": "2025-10-14T04:36:20Z",
-      "views": 54,
-      "likes": 1,
-      "comments": 0,
-      "retention": 0
-    },
-    {
-      "videoId": "x1-KZ-WFOcA",
-      "title": "EURUSD and DXY - Reading Instituitonal Order Flow",
-      "publishedAt": "2025-08-28T04:31:27Z",
-      "views": 36,
+      "videoId": "O7RojzdCnh8",
+      "title": "I Blew 3 Funded Accounts Before Learning This One Thing (2026)",
+      "publishedAt": "2026-04-21T11:01:01Z",
+      "views": 40,
       "likes": 2,
       "comments": 0,
       "retention": 0
     },
     {
-      "videoId": "edbUGHsNRhE",
-      "title": "Deciphering NASDAQ for the coming week..",
-      "publishedAt": "2025-05-12T15:21:22Z",
-      "views": 26,
-      "likes": 2,
-      "comments": 0,
-      "retention": 0
-    },
-    {
-      "videoId": "iAsqhcdf3Tg",
-      "title": "The Leap Competition June 2025 - Pair Analysis",
-      "publishedAt": "2025-06-12T06:04:18Z",
+      "videoId": "4m1AI5SgG9E",
+      "title": "Monday's False Break Will Trap You (Unless You See This) | R2F Trading 2026",
+      "publishedAt": "2026-04-22T11:00:47Z",
       "views": 22,
       "likes": 0,
+      "comments": 0,
+      "retention": 0
+    },
+    {
+      "videoId": "ZB79mm667Eo",
+      "title": "Why Do 90% of Retail Traders Lose? (Take the Quiz)",
+      "publishedAt": "2026-04-21T17:00:58Z",
+      "views": 22,
+      "likes": 0,
+      "comments": 0,
+      "retention": 0
+    },
+    {
+      "videoId": "_fcwdk_UIoM",
+      "title": "The FVG Filter Nobody Teaches (2026)",
+      "publishedAt": "2026-04-20T11:00:56Z",
+      "views": 22,
+      "likes": 0,
+      "comments": 0,
+      "retention": 0
+    },
+    {
+      "videoId": "qWyJSjqyw8A",
+      "title": "video idea 8be7c",
+      "publishedAt": "2026-04-20T07:38:21Z",
+      "views": 19,
+      "likes": 1,
       "comments": 0,
       "retention": 0
     },
@@ -185,15 +248,6 @@
       "retention": 0
     },
     {
-      "videoId": "w27yB7TjBTw",
-      "title": "voice agent recording",
-      "publishedAt": "2025-08-03T09:02:27Z",
-      "views": 9,
-      "likes": 0,
-      "comments": 0,
-      "retention": 0
-    },
-    {
       "videoId": "4x-lHEFZEh4",
       "title": "Stop Chasing Every Setup. Here's What Actually Made Me Profitable.",
       "publishedAt": "2026-04-06T12:11:56Z",
@@ -208,6 +262,15 @@
       "publishedAt": "2026-04-05T10:09:34Z",
       "views": 7,
       "likes": 1,
+      "comments": 0,
+      "retention": 0
+    },
+    {
+      "videoId": "kcaUOrlp89I",
+      "title": "Dune Run",
+      "publishedAt": "2026-04-20T13:46:50Z",
+      "views": 6,
+      "likes": 0,
       "comments": 0,
       "retention": 0
     },
@@ -275,37 +338,10 @@
       "retention": 0
     },
     {
-      "videoId": "wvdUrYRXD5k",
-      "title": "How to make Payment Link for Poby Stripe",
-      "publishedAt": "2025-09-23T05:24:39Z",
-      "views": 2,
-      "likes": 0,
-      "comments": 0,
-      "retention": 0
-    },
-    {
-      "videoId": "F5ra-sIt6E8",
-      "title": "Super Fast Analysis & Trade - EP.3",
-      "publishedAt": "2025-05-06T08:20:05Z",
-      "views": 2,
-      "likes": 0,
-      "comments": 0,
-      "retention": 0
-    },
-    {
       "videoId": "oOvy2Vc0YOA",
       "title": "POV: You Realize Why Your ICT Setups Keep Failing",
       "publishedAt": "2026-04-06T03:32:02Z",
       "views": 1,
-      "likes": 0,
-      "comments": 0,
-      "retention": 0
-    },
-    {
-      "videoId": "b_ikGu3BDOc",
-      "title": "Stop Trading Fair Value Gaps Like This",
-      "publishedAt": "2026-04-19T05:00:56Z",
-      "views": 0,
       "likes": 0,
       "comments": 0,
       "retention": 0
@@ -413,33 +449,6 @@
       "videoId": "lx3i-1uadd0",
       "title": "Oct 30  2039 22s 202510311140 phgfg",
       "publishedAt": "2025-10-31T04:40:51Z",
-      "views": 0,
-      "likes": 0,
-      "comments": 0,
-      "retention": 0
-    },
-    {
-      "videoId": "wqcZy-4dlHs",
-      "title": "Oct 30  1232 22s 202510301256 bx9om",
-      "publishedAt": "2025-10-30T05:57:56Z",
-      "views": 0,
-      "likes": 0,
-      "comments": 0,
-      "retention": 0
-    },
-    {
-      "videoId": "Crdy6lJjV_k",
-      "title": "Oct 30  1106 22s 202510301139 f7e7y",
-      "publishedAt": "2025-10-30T05:00:21Z",
-      "views": 0,
-      "likes": 0,
-      "comments": 0,
-      "retention": 0
-    },
-    {
-      "videoId": "Ut8lvOxntcc",
-      "title": "video idea aaf83",
-      "publishedAt": "2025-07-02T06:51:56Z",
       "views": 0,
       "likes": 0,
       "comments": 0,
