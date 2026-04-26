@@ -676,5 +676,15 @@
     "commentedAt": "2026-04-25T03:01:05.573Z",
     "permalink": "/r/InnerCircleTraders/comments/1surq43/i_need_help_with_trading/oi4tp08/",
     "commentId": "oi4tp08"
+  },
+  {
+    "postId": "1sv4m71",
+    "subreddit": "Trading",
+    "postTitle": "Should I continue studying Order Flow",
+    "commentText": "order flow and ICT aren't really competing frameworks tbh, the \"why\" you're looking for with absorption and heatmaps actually just confirms what ICT calls institutional order flow — you're watching the same thing from two angles. the anxiety you felt during backtesting is probably because you were trading FVGs and OBs without understanding the liquidity draw behind the move, which cbrackn actually covers well in his tape reading stuff. getting that \"why is price HERE\" clarity before entry removes like 80% of that stress. are you watching the order flow on the 1m chart during london open or asian session, because the absorption signals read completely differently depending on session liquidity?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-26T00:32:52.356Z",
+    "permalink": "/r/Trading/comments/1sv4m71/should_i_continue_studying_order_flow/oiall17/",
+    "commentId": "oiall17"
   }
 ]
