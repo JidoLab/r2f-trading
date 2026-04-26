@@ -1,5 +1,30 @@
 [
   {
+    "slug": "2026-04-26-the-quiet-session-that-rewired-my-trading-brain",
+    "syndicatedAt": "2026-04-26T02:33:02.585Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-26-the-quiet-session-that-rewired-my-trading-brain",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-quiet-session-that-rewired-my-trading-brain-1maj",
+        "id": "3551660"
+      },
+      {
+        "platform": "hashnode",
+        "success": true,
+        "url": "https://r2ftrading.hashnode.dev/the-quiet-session-that-rewired-my-trading-brain",
+        "id": "69ed795ead3088ebdb687f9c"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-04-26-the-quiet-session-that-rewired-my-trading-brain"
+  },
+  {
     "slug": "2026-04-25-the-silence-before-the-trade-a-gdp-prep-guide",
     "syndicatedAt": "2026-04-25T01:32:49.844Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-25-the-silence-before-the-trade-a-gdp-prep-guide",
