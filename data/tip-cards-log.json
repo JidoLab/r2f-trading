@@ -328,5 +328,38 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "number": 11,
+    "category": "Market Structure",
+    "tip": "When price sweeps a liquidity pool and immediately forms a Market Structure Shift on the lower timeframe, mark the candle that caused the shift as your entry order block — that's your sniper entry, not the sweep candle itself.",
+    "imageUrl": "https://www.r2ftrading.com/tip-cards/tip-11.png",
+    "date": "2026-04-26T06:00:33.640Z",
+    "results": [
+      {
+        "platform": "twitter-image",
+        "status": "error",
+        "message": "Image fetch failed: 404"
+      },
+      {
+        "platform": "facebook",
+        "status": "error",
+        "message": "{\"error\":{\"message\":\"Missing or invalid image file\",\"type\":\"OAuthException\",\"code\":324,\"error_subcode\":2069019,\"is_transient\":true,\"error_user_title\":\"Image Required\",\"error_user_msg\":\"Make sure your "
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
