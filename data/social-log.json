@@ -1,63 +1,5 @@
 [
   {
-    "date": "2026-04-20T04:00:52.215Z",
-    "type": "text",
-    "postType": "question",
-    "text": "Order blocks or fair value gaps — which do you trust MORE for entries and why? Drop your answer belo",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-20T12:00:56.058Z",
-    "type": "text",
-    "postType": "poll",
-    "text": "Which ICT concept clicked LAST for you?\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ Market Structure\n\ud83c",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "success"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-20T14:00:32.148Z",
     "slug": "2026-04-06-april-2026-earnings-season-liquidity-raids-6-ict-concepts-every-smart-money-trader-must-know",
     "title": "Earnings Season Liquidity Raids: 6 ICT Concepts",
@@ -2134,6 +2076,53 @@
       {
         "platform": "discord",
         "status": "success"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-26T14:00:47.773Z",
+    "slug": "2026-04-12-5-signs-you-re-revenge-trading-and-how-to-stop",
+    "title": "5 Signs You're Revenge Trading (And How to Stop)",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
       }
     ]
   }
