@@ -686,5 +686,15 @@
     "commentedAt": "2026-04-26T00:32:52.356Z",
     "permalink": "/r/Trading/comments/1sv4m71/should_i_continue_studying_order_flow/oiall17/",
     "commentId": "oiall17"
+  },
+  {
+    "postId": "1sve46n",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Feedback on Gold short | NY PM Session",
+    "commentText": "your reflections are actually solid tbh, but the big one you might be missing is the NY PM session itself — that's historically a low probability time for shorts on gold unless you already have a clean displacement below a HTF dealing range. the London bullish expansion you mentioned was probably the real tell, those large candles suggest price was still in a buy program and your M5 CISD likely formed in premium relative to the H4 range. been there with gold, it's brutal when the setup looks clean on the lower timeframe but HTF context is still bullish. what was the H4 structure sitting at when you entered — was price trading inside the H4 bearish FVG or just approaching it?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-26T03:01:04.990Z",
+    "permalink": "/r/InnerCircleTraders/comments/1sve46n/feedback_on_gold_short_ny_pm_session/oib970o/",
+    "commentId": "oib970o"
   }
 ]
