@@ -2106,5 +2106,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-04-26T04:00:48.501Z",
+    "type": "text",
+    "postType": "poll",
+    "text": "GDP drops this week. How do you trade high-impact news?\n\n🅰️ Sit out entirely\n🅱️ Trade the reaction",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
