@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-free-class",
     "promo-results",
     "promo-checklist",
     "promo-blog",
@@ -29,11 +28,12 @@
     "question",
     "poll",
     "hot-take",
-    "quote"
+    "quote",
+    "tip"
   ],
   "lastPost": {
-    "type": "quote",
-    "text": "\"Smart money doesn't chase price. It waits for price to come to it.\"\n\nMonday London open is live. Don't break your rules chasing a move that already happened. Let the order blocks do their job. 🎯\n\n#ICTTrading #SmartMoneyConcepts #OrderBlocks",
-    "date": "2026-04-27T04:00:57.104Z"
+    "type": "tip",
+    "text": "Monday tip: Watch for false breaks of Friday's range at London open. Smart money hunts those highs/lows before committing to the weekly direction. Don't chase the spike — wait for the reaction. #ICTTrading #SmartMoneyConcepts #OrderBlocks",
+    "date": "2026-04-27T12:00:14.264Z"
   }
 }
