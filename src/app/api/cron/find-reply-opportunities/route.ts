@@ -515,6 +515,12 @@ function parseRssItems(
 }
 
 async function searchMedium(): Promise<PostResult[]> {
+  // Medium scraping disabled 2026-04-24 — Harvest's Medium account is
+  // suspended, so commenting on Medium posts isn't actionable until the
+  // suspension lifts. Restore by removing this early return.
+  return [];
+
+  // eslint-disable-next-line no-unreachable
   const results: PostResult[] = [];
   const seen = new Set<string>();
 
