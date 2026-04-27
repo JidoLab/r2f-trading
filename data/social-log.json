@@ -2155,5 +2155,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-27T12:00:15.305Z",
+    "type": "text",
+    "postType": "tip",
+    "text": "Monday tip: Watch for false breaks of Friday's range at London open. Smart money hunts those highs/l",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
