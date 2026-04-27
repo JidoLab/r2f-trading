@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "challenge",
     "promo-free-class",
     "promo-results",
     "promo-checklist",
@@ -29,11 +28,12 @@
     "promo-coaching",
     "question",
     "poll",
-    "hot-take"
+    "hot-take",
+    "quote"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: Fair value gaps are overused. Everyone sees them now — that's exactly why smart money isn't using them the same way anymore. The edge is gone when it's on every chart. #ICTTrading #SmartMoneyConcepts #FairValueGap",
-    "date": "2026-04-26T12:00:40.434Z"
+    "type": "quote",
+    "text": "\"Smart money doesn't chase price. It waits for price to come to it.\"\n\nMonday London open is live. Don't break your rules chasing a move that already happened. Let the order blocks do their job. 🎯\n\n#ICTTrading #SmartMoneyConcepts #OrderBlocks",
+    "date": "2026-04-27T04:00:57.104Z"
   }
 }
