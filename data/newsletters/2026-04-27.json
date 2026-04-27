@@ -1,0 +1,38 @@
+{
+  "date": "2026-04-27",
+  "sentAt": "2026-04-27T10:00:46.628Z",
+  "subject": "The win streak nobody warns you about",
+  "recipientCount": 5,
+  "failedCount": 0,
+  "totalSubscribers": 5,
+  "content": {
+    "subject": "The win streak nobody warns you about",
+    "greeting": "Hey trader,",
+    "marketRecap": "Monday's London open did exactly what smart money loves to do — probe Friday's range extremes before committing to a direction, shaking out reactive traders on both sides. With GDP on deck this week, institutions are likely in positioning mode rather than trending mode, which means choppy price delivery and a lot of engineered liquidity above and below key weekly levels. ICT traders should be treating this as a read-and-wait environment, not a chase-every-setup environment.",
+    "articles": [
+      {
+        "title": "Why Discipline Breaks Down After Winning Streaks",
+        "slug": "2026-04-27-why-discipline-breaks-down-after-winning-streaks",
+        "excerpt": "Everyone warns about revenge trading after losses. Nobody talks about the invisible overconfidence that follows 3-5 consecutive wins — and how it silently wrecks funded accounts built on smart money concepts."
+      },
+      {
+        "title": "The GDP Trade: Why I Do Nothing",
+        "slug": "2026-04-26-the-gdp-trade-why-i-do-nothing",
+        "excerpt": "After 10+ years of watching GDP releases wreck otherwise disciplined traders, I've learned the most profitable move is a structured, rules-based decision to sit out — and why that's harder than any entry you'll ever take."
+      },
+      {
+        "title": "The Quiet Session That Rewired My Trading Brain",
+        "slug": "2026-04-26-the-quiet-session-that-rewired-my-trading-brain",
+        "excerpt": "Most psychology content tells you to control your emotions. I'm arguing the opposite — that one deliberately boring, no-trade Asian session observed weekly as a ritual is the single most underrated psychological training tool in ICT trading."
+      }
+    ],
+    "videoOfTheWeek": {
+      "title": "The Biggest GDP Trading Myth (That's Costing You Money in 2026)",
+      "url": "https://youtube.com/shorts/K46RigBkrLg"
+    },
+    "tipOfTheWeek": "Ahead of a high-impact GDP release, mark your nearest unmitigated order blocks on the 1-hour chart and treat them as decision zones — not entry triggers. If price sweeps a liquidity pool and taps into a valid order block inside a killzone (London or New York open), that confluence is your signal to engage. If those conditions aren't all present simultaneously, the most disciplined move is no move at all.",
+    "comingUp": "GDP hits this week and it is the highest-impact macro event of the quarter — quarterly GDP surprises have historically triggered sharp trend reversals that wrong-foot traders who enter impulsively in the first 90 seconds. The play is preparation, not prediction: identify your key fair value gaps and liquidity levels now, define your no-trade rules before the number drops, and let the dust settle before any smart money concepts setup is even considered valid.",
+    "ctaText": "Check Out the Starter Kit",
+    "ctaUrl": "https://r2ftrading.com/coaching"
+  }
+}
