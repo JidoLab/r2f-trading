@@ -886,5 +886,45 @@
     "commentedAt": "2026-04-28T01:31:53.100Z",
     "permalink": "/r/InnerCircleTraders/comments/1sxibms/question_for_you_trader/oio136p/",
     "commentId": "oio136p"
+  },
+  {
+    "postId": "1sxp3cs",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "ICT/Anchored Volume Traders",
+    "commentText": "for NVDA/TSLA options tbh the cleanest setup i've found is marking the overnight high and low like you mentioned, then waiting for NY killzone (9:30-11am) to sweep one of those levels and leave a 5m FVG on the way back. that FVG becomes your entry for a call or put depending on direction, and you're targeting the opposite overnight extreme as your draw on liquidity. keep your expiry same day or next day max, anything further out and the premium decay kills you even when you're right on the move 🎯",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-28T03:01:06.749Z",
+    "permalink": "/r/InnerCircleTraders/comments/1sxp3cs/ictanchored_volume_traders/oiog55l/",
+    "commentId": "oiog55l"
+  },
+  {
+    "postId": "1sx6w8y",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Analysis wrong?",
+    "commentText": "your first trade got stopped because you entered on the CISD before price had actually committed to the draw — the 15min liquidity sweep doesn't guarantee immediate expansion, and during NY am the market often consolidates or retraces into a deeper FVG before running to the DOL. tbh the second trade worked because the MSS gave you actual confirmation of intent, which the CISD alone doesn't provide. imo on the silver bullet model stick to entries that have both the MSS and an FVG tap before sizing into the move toward your draw on liquidity.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-28T03:01:15.019Z",
+    "permalink": "/r/InnerCircleTraders/comments/1sx6w8y/analysis_wrong/oiog5zs/",
+    "commentId": "oiog5zs"
+  },
+  {
+    "postId": "1sx1zts",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Weekly outlook of Dollars index DXY",
+    "commentText": "since price reacted to that FVG before the open, i'd zoom into the 15m and mark the last down candle before the displacement that created it. if DXY pulls back into that candle during the london or NY killzone this week, that's your actual entry model rather than just \"waiting to see if it goes up.\" tbh reacting to the FVG is one thing, but without a refined entry you're basically guessing size.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-28T03:01:22.701Z",
+    "permalink": "/r/InnerCircleTraders/comments/1sx1zts/weekly_outlook_of_dollars_index_dxy/oiog6pp/",
+    "commentId": "oiog6pp"
+  },
+  {
+    "postId": "1sxak6s",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Basic doubt in for FVG (is this another name for imbalance)",
+    "commentText": "the blue one is wrong tbh. an FVG is the gap between candle 1's wick and candle 3's wick, not the body of candle 2. so yeah, FVG and imbalance are basically the same thing — price moved so fast it left an inefficiency that hasn't been revisited yet. your top drawing looks closer to correct as long as you're measuring from the low of candle 1's upper wick to the high of candle 3's lower wick.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-28T03:01:28.823Z",
+    "permalink": "/r/InnerCircleTraders/comments/1sxak6s/basic_doubt_in_for_fvg_is_this_another_name_for/oiog7at/",
+    "commentId": "oiog7at"
   }
 ]
