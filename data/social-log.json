@@ -2156,5 +2156,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-28T12:00:17.337Z",
+    "type": "text",
+    "postType": "story",
+    "text": "Held a trade through last GDP release thinking I knew better than the data. Got stopped out in 3 sec",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
