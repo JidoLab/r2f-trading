@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-results",
     "promo-checklist",
     "promo-blog",
     "promo-coaching",
@@ -29,11 +28,12 @@
     "poll",
     "hot-take",
     "quote",
-    "tip"
+    "tip",
+    "myth"
   ],
   "lastPost": {
-    "type": "tip",
-    "text": "Monday tip: Watch for false breaks of Friday's range at London open. Smart money hunts those highs/lows before committing to the weekly direction. Don't chase the spike — wait for the reaction. #ICTTrading #SmartMoneyConcepts #OrderBlocks",
-    "date": "2026-04-27T12:00:14.264Z"
+    "type": "myth",
+    "text": "MYTH: More indicators = better trades.\n\nTRUTH: Smart money doesn't use RSI. They leave footprints in order blocks and fair value gaps. Clean charts win.\n\n#ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-04-28T04:00:31.117Z"
   }
 }
