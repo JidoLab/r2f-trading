@@ -926,5 +926,35 @@
     "commentedAt": "2026-04-28T03:01:28.823Z",
     "permalink": "/r/InnerCircleTraders/comments/1sxak6s/basic_doubt_in_for_fvg_is_this_another_name_for/oiog7at/",
     "commentId": "oiog7at"
+  },
+  {
+    "postId": "1sy018q",
+    "subreddit": "Trading",
+    "postTitle": "After six years of trading, I found that making stable profits is actually not a particularly difficult thing",
+    "commentText": "i had this exact problem early on — studying everything (fundamentals, NFP, DXY like you mentioned) and still getting wrecked because none of it told me *where* price was actually going to react. what changed it for me was zooming out to the weekly on cable (GBP/USD) and identifying the real dealing range before ever touching a lower timeframe. tbh your \"go with the flow\" principle is basically what ICT calls HTF bias and most people skip that step entirely 😅",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-28T13:00:38.489Z",
+    "permalink": "/r/Trading/comments/1sy018q/after_six_years_of_trading_i_found_that_making/oiqmtsb/",
+    "commentId": "oiqmtsb"
+  },
+  {
+    "postId": "1sxrmqu",
+    "subreddit": "Trading",
+    "postTitle": "Apex vs Topstep vs FundedNext Futures. Best futures prop firm in 2026? (6 months testing all 3)",
+    "commentText": "the 6-payout cap on apex PA accounts is genuinely the thing people are sleeping on, especially if you're running an ICT-based approach where you might have 2-3 slow consolidation weeks then one clean london killzone sweep that prints half your monthly target in a day. six of those and you're done, buying back in. tbh if metals are suspended and your edge is anywhere near gold HTF order blocks or micro gold displacement plays, apex right now is just not the move until they clarify the reinstatement date.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-28T13:00:48.953Z",
+    "permalink": "/r/Trading/comments/1sxrmqu/apex_vs_topstep_vs_fundednext_futures_best/oiqmv0a/",
+    "commentId": "oiqmv0a"
+  },
+  {
+    "postId": "1sxxvbo",
+    "subreddit": "Trading",
+    "postTitle": "Post Your Setup, I Will Assess Your Progression Stage.",
+    "commentText": "this is a solid framework for assessing process tbh, way more useful than just posting PnL screenshots. i'll bite — my setup runs a top-down from daily to 15m, primarily hunting for ICT displacement moves into FVGs during the london open on NQ and occasionally EURUSD. are you weighting the workspace/environment side heavily in your assessment, or is that mostly just context and the real read comes from how someone structures their chart hierarchy and decision logic?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-28T13:00:56.006Z",
+    "permalink": "/r/Trading/comments/1sxxvbo/post_your_setup_i_will_assess_your_progression/oiqmvsn/",
+    "commentId": "oiqmvsn"
   }
 ]
