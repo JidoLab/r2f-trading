@@ -2143,5 +2143,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-29T04:00:18.193Z",
+    "type": "text",
+    "postType": "challenge",
+    "text": "Challenge: Today only — Wednesday reversal day. One trade. Must be off an order block. No exceptions",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
