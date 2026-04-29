@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-24T05:57:06.929Z",
+  "generatedAt": "2026-04-29T03:09:55.121Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Friday, 24 April 2026 at 12:57 (Bangkok)",
+  "dateTime": "Wednesday, 29 April 2026 at 10:09 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -11,8 +11,8 @@
     "chatConversations": 0
   },
   "contentStatus": {
-    "blogPostsToday": 4,
-    "totalBlogPosts": 70,
+    "blogPostsToday": 3,
+    "totalBlogPosts": 80,
     "shortsReady": 0,
     "shortsPublished": 32,
     "shortsRendering": 4,
@@ -23,10 +23,10 @@
     "recentHot": []
   },
   "suggestions": [
-    "Personally message all 5 cold subscribers on Telegram or WhatsApp to start a real conversation and qualify their interest in ICT trading coaching.",
-    "Create a short-form video or reel manually featuring Harvest speaking directly to camera about a specific ICT concept (e.g., order blocks or fair value gaps) to build personal brand trust.",
-    "Launch a manual outreach campaign by posting a value-packed comment or thread in 2–3 Bangkok or Thailand-based trading Facebook groups to drive new subscriber sign-ups.",
-    "Set up a referral or affiliate incentive program where existing students earn a reward for bringing in new leads — this is a new initiative not yet built or automated."
+    "With 5 cold subscribers averaging 4.8 drips each, personally reach out to all 5 via a direct Telegram or LINE message from Harvest today to add a human touch beyond the automated sequences.",
+    "Zero new subscribers yesterday signals a top-of-funnel gap — create and post one short-form video personally featuring Harvest discussing a specific ICT concept (e.g., Fair Value Gaps or Order Blocks) on TikTok or Instagram Reels today.",
+    "With 80 blog posts published but 0 Reddit upvotes, manually identify 2–3 high-traffic ICT or forex subreddits and post a genuinely helpful comment linking to a relevant R2F blog post to seed organic traffic.",
+    "Zero payments this month suggests a conversion barrier — Harvest should personally host a free 30-minute live Q&A or webinar this week announced across all channels to move cold leads toward a buying decision."
   ],
   "schedule": [
     {
