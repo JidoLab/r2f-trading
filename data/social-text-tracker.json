@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-blog",
     "promo-coaching",
     "question",
     "poll",
@@ -29,11 +28,12 @@
     "quote",
     "tip",
     "myth",
-    "story"
+    "story",
+    "challenge"
   ],
   "lastPost": {
-    "type": "story",
-    "text": "Held a trade through last GDP release thinking I knew better than the data. Got stopped out in 3 seconds. Now I close or reduce before high-impact news — every single time. The market doesn't care about your analysis. #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-04-28T12:00:16.333Z"
+    "type": "challenge",
+    "text": "Challenge: Today only — Wednesday reversal day. One trade. Must be off an order block. No exceptions. Drop your entry & result below 👇 Let's see who actually has the discipline. #ICTTrading #OrderBlocks #SmartMoneyConcepts",
+    "date": "2026-04-29T04:00:17.311Z"
   }
 }
