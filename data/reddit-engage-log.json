@@ -966,5 +966,55 @@
     "commentedAt": "2026-04-29T03:32:37.602Z",
     "permalink": "/r/swingtrading/comments/1sy4oxs/momentum_stock_entries_on_pullbacks_frustration/oivhxeq/",
     "commentId": "oivhxeq"
+  },
+  {
+    "postId": "1syqiih",
+    "subreddit": "Trading",
+    "postTitle": "If gold loses 4600, the real move might start",
+    "commentText": "i had this exact problem last month watching XAU/USD on the 15m during new york open — price tapped into a daily bearish OB right around a clean swing high and i kept waiting for the BOS confirmation before committing. the fill issue you're describing is real, fast moves through key levels like 4600 will wick straight through your limit and you're either chasing or sitting out. tbh i've just been waiting for the actual market structure shift on a lower timeframe before entering rather than trying to predict the hold or break in advance.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-29T13:00:29.921Z",
+    "permalink": "/r/Trading/comments/1syqiih/if_gold_loses_4600_the_real_move_might_start/oixke0e/",
+    "commentId": "oixke0e"
+  },
+  {
+    "postId": "1syads4",
+    "subreddit": "Trading",
+    "postTitle": "How much money does a prop firm actually make? (Based on real pass-rate data)",
+    "commentText": "the 0.072% withdrawal stat is brutal but it tracks — most people buying challenges have no business trading a funded account yet, they're just hoping momentum carries them through. tbh the firms aren't even the villain here, the real issue is traders taking NQ or GBPUSD challenges with no understanding of things like session liquidity or why price sweeps the asian range high before london open. you're not competing against other traders, you're competing against your own underdevelopment. the math just makes that undeniable.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-29T13:00:37.786Z",
+    "permalink": "/r/Trading/comments/1syads4/how_much_money_does_a_prop_firm_actually_make/oixkewj/",
+    "commentId": "oixkewj"
+  },
+  {
+    "postId": "1sya73z",
+    "subreddit": "Trading",
+    "postTitle": "Stop Overcomplicating Trading",
+    "commentText": "try this on the structural confirmation piece — on the 15m, mark the last up candle body before a BOS on eurusd during london open. if price sweeps back into that candle's body during NY killzone and you've already seen a liquidity grab on equal lows, that's your FVG entry. tbh that overlap of swept liquidity plus structural confirmation is exactly what you're describing, and having that specific candle to anchor to kills the hesitation.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-29T13:00:46.779Z",
+    "permalink": "/r/Trading/comments/1sya73z/stop_overcomplicating_trading/oixkfxj/",
+    "commentId": "oixkfxj"
+  },
+  {
+    "postId": "1syn6qd",
+    "subreddit": "proptrading",
+    "postTitle": "For beginners looking to trade fx",
+    "commentText": "the EUR/USD sell setup makes sense structurally but i'd be careful about that 1.1685 trigger without checking where the 1H FVG sits relative to current price — if there's an unmitigated gap above, price can easily wick back up before committing to the downside and stop you out on the retest entry. also tbh 40 pips SL on a 5m structure break feels a bit wide unless there's an OB sitting right at 1.1725 justifying that placement. are you anchoring that stop to a specific 1H or 15m order block, or just using the nearest swing high?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-29T13:00:56.903Z",
+    "permalink": "/r/proptrading/comments/1syn6qd/for_beginners_looking_to_trade_fx/oixkh06/",
+    "commentId": "oixkh06"
+  },
+  {
+    "postId": "1syn6cx",
+    "subreddit": "Trading",
+    "postTitle": "For beginners looking to trade fx",
+    "commentText": "i had this exact problem last month on eur/usd — kept jumping in on 5m breaks without waiting for the 1h to actually show bearish structure, not just \"not bullish.\" your 1h filter here is vague tbh, because neutral on the 1h can still be mid-range with no clear BOS lower, which means that 1.1685 break could just be chop. the displacement qualifier you've listed is doing a lot of heavy lifting in this plan so make sure you actually define what displacement looks like to you before price gets there, not during.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-29T13:01:07.097Z",
+    "permalink": "/r/Trading/comments/1syn6cx/for_beginners_looking_to_trade_fx/oixki6r/",
+    "commentId": "oixki6r"
   }
 ]
