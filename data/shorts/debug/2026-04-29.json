@@ -1,0 +1,27 @@
+{
+  "date": "2026-04-29T03:32:26.672Z",
+  "today": "2026-04-29",
+  "topicsAttempted": [
+    null,
+    null,
+    null
+  ],
+  "results": [
+    {
+      "title": "I Blew 3 Funded Accounts Before Learning This One Thing | R2F Trading 2026",
+      "status": "rendering"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "GitHub commit failed: 409 {\"message\":\"is at 9bf6263322291e2bf2976abc77660ab5b9ea83a5 but expected 4ff422fdcf53008cd966e65724dbd1a2d823c223\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+    },
+    {
+      "title": "Stop Losing on FOMC Wednesdays — 3 ICT Tips That Changed Everything (2026)",
+      "status": "rendering"
+    }
+  ],
+  "errors": [
+    "GitHub commit failed: 409 {\"message\":\"is at 9bf6263322291e2bf2976abc77660ab5b9ea83a5 but expected 4ff422fdcf53008cd966e65724dbd1a2d823c223\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+  ]
+}
