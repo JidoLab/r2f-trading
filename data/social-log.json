@@ -2172,5 +2172,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-04-29T12:00:56.379Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "Fair value gaps or order blocks — which one do you trust MORE for entries? 👇 #ICTTrading #SmartMone",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
