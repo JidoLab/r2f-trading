@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-coaching",
     "question",
     "poll",
     "hot-take",
@@ -29,11 +28,12 @@
     "tip",
     "myth",
     "story",
-    "challenge"
+    "challenge",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "challenge",
-    "text": "Challenge: Today only — Wednesday reversal day. One trade. Must be off an order block. No exceptions. Drop your entry & result below 👇 Let's see who actually has the discipline. #ICTTrading #OrderBlocks #SmartMoneyConcepts",
-    "date": "2026-04-29T04:00:17.311Z"
+    "type": "poll-native",
+    "text": "Fair value gaps or order blocks — which one do you trust MORE for entries? 👇 #ICTTrading #SmartMoney\n\n🅰️ Fair Value Gaps\n🅱️ Order Blocks\n🅲️ Both equally\n🅳️ Neither 😅\n\nVote below! 👇",
+    "date": "2026-04-29T12:00:55.450Z"
   }
 }
