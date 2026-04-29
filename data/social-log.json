@@ -1,193 +1,5 @@
 [
   {
-    "date": "2026-04-22T06:02:21.091Z",
-    "slug": "2026-04-22-why-winning-trades-feel-worse-than-losing",
-    "title": "Why Winning Trades Feel Worse Than Losing",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-22T06:32:05.206Z",
-    "slug": "2026-04-22-the-silence-after-a-big-win-is-dangerous",
-    "title": "The Silence After a Big Win Is Dangerous",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-22T07:32:10.139Z",
-    "slug": "2026-04-22-why-discipline-breaks-down-at-profit-targets",
-    "title": "Why Discipline Breaks Down at Profit Targets",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-22T11:32:00.546Z",
-    "slug": "2026-04-22-the-boredom-trade-ict-s-silent-account-killer",
-    "title": "The Boredom Trade: ICT's Silent Account Killer",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
     "date": "2026-04-22T12:00:34.124Z",
     "type": "text",
     "postType": "tip",
@@ -2199,6 +2011,53 @@
       {
         "platform": "discord",
         "status": "success"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-29T14:00:39.038Z",
+    "slug": "2026-04-15-how-long-to-learn-ict-trading",
+    "title": "How Long to Learn ICT Trading?",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
       }
     ]
   }
