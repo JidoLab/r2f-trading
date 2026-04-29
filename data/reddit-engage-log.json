@@ -956,5 +956,15 @@
     "commentedAt": "2026-04-28T13:00:56.006Z",
     "permalink": "/r/Trading/comments/1sxxvbo/post_your_setup_i_will_assess_your_progression/oiqmvsn/",
     "commentId": "oiqmvsn"
+  },
+  {
+    "postId": "1sy4oxs",
+    "subreddit": "swingtrading",
+    "postTitle": "Momentum stock entries on pullbacks - frustration",
+    "commentText": "on your bounce day entry, try marking the 15m fair value gap that forms when price displaces back up off the 10 EMA — that's your actual entry point rather than the close of the daily candle. for something like LWLG or CIEN where you're already scaling in with a half position, waiting for price to retrace into that 15m FVG during the last hour of RTH gives you a tighter stop and better R, tbh. the daily close entry is fine conceptually but you're leaving precision on the table.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-29T03:32:37.602Z",
+    "permalink": "/r/swingtrading/comments/1sy4oxs/momentum_stock_entries_on_pullbacks_frustration/oivhxeq/",
+    "commentId": "oivhxeq"
   }
 ]
