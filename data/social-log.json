@@ -2114,5 +2114,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-04-29T03:11:44.037Z",
+    "type": "link-share",
+    "url": "https://www.tradingview.com/chart/GBPUSD/ehLNswNv-GBPUSD-and-DXY-The-Draw-on-LIQUIDITY/",
+    "caption": "Alrighty then, in this video I go through some of the concepts of liquidity, and",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "error": "402: {\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrol"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
