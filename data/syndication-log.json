@@ -1,5 +1,30 @@
 [
   {
+    "slug": "2026-04-30-how-boredom-destroys-ict-traders",
+    "syndicatedAt": "2026-04-30T01:32:53.060Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-30-how-boredom-destroys-ict-traders",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/how-boredom-destroys-ict-traders-1529",
+        "id": "3589139"
+      },
+      {
+        "platform": "hashnode",
+        "success": true,
+        "url": "https://r2ftrading.hashnode.dev/how-boredom-destroys-ict-traders",
+        "id": "69f2b1443fb737a77a822d8d"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-04-30-how-boredom-destroys-ict-traders"
+  },
+  {
     "slug": "2026-04-30-why-smart-traders-freeze-at-the-right-setup",
     "syndicatedAt": "2026-04-30T00:33:37.184Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-30-why-smart-traders-freeze-at-the-right-setup",
