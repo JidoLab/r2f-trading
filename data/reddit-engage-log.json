@@ -1036,5 +1036,95 @@
     "commentedAt": "2026-04-30T04:32:23.500Z",
     "permalink": "/r/InnerCircleTraders/comments/1szb75f/10_years_of_nq_data_on_london_session_sweeps/oj2os5g/",
     "commentId": "oj2os5g"
+  },
+  {
+    "postId": "1szoqa4",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAUUSD: Gold Is Repeating The EXACT Same Pattern That Caused The Last Massive Crash — 4200 Is Next?",
+    "commentText": "the retest and reject idea is solid but there's a massive bearish FVG sitting on the 1H right around 4659 that got created during that initial breakdown — price isn't just hitting horizontal resistance, it's literally tapping into an inefficiency that still needs to get properly mitigated before any sustained move either direction. tbh i'd want to see a full rejection *out of* that FVG with a confirmed BOS lower before committing to the 4200 target, because if price wicks through and closes above it during the NY open session, that whole bearish structure gets invalidated real fast. the SuperTrend flip means nothing if the FVG gets filled. 🎯",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-30T13:00:32.861Z",
+    "permalink": "/r/Forexstrategy/comments/1szoqa4/xauusd_gold_is_repeating_the_exact_same_pattern/oj4i34t/",
+    "commentId": "oj4i34t"
+  },
+  {
+    "postId": "1sz5g07",
+    "subreddit": "Trading",
+    "postTitle": "Gold Downtrend Continues… Smart Money Buying or Warning Sign?",
+    "commentText": "tbh this \"accumulation zone\" framing is exactly where retail gets chopped up waiting for a reversal that might not come for weeks. the macro pressure you mentioned is real, and until we get a clear BOS on the daily with a displacement candle reclaiming a key OB, it's just a falling knife dressed up as opportunity imo. are you looking at this on the 15m or 1h? makes a huge difference for OB validity because the 15m is printing new supply every session right now 👀",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-30T13:00:41.545Z",
+    "permalink": "/r/Trading/comments/1sz5g07/gold_downtrend_continues_smart_money_buying_or/oj4i41k/",
+    "commentId": "oj4i41k"
+  },
+  {
+    "postId": "1szsgnq",
+    "subreddit": "Trading",
+    "postTitle": "Prop firm and EA",
+    "commentText": "ftmo e the5ers sono solide per EA tbh, ma controlla bene le regole sul drawdown perché molte prop hanno limiti di trailing drawdown che ammazzano le strategie automatiche durante sessioni volatili tipo NY open. funded next va bene ma occhio ai gap di liquidità su paia come gbpjpy che possono triggerare lo stop out in secondi. che tipo di logica usa il tuo EA, sta prendendo OB su H1 o lavora su timeframe più bassi? fa una differenza enorme sulla gestione del drawdown in live.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-30T13:00:49.280Z",
+    "permalink": "/r/Trading/comments/1szsgnq/prop_firm_and_ea/oj4i4ww/",
+    "commentId": "oj4i4ww"
+  },
+  {
+    "postId": "1szpw66",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Does ICT actually work?",
+    "commentText": "i had this exact problem last year grinding the 2022 model on eurusd and wondering if i was just wasting my time. the concepts work tbh but the 2022 model specifically gets really noisy if you're not anchoring everything to a clear daily bias first, like actually knowing whether price is in premium or discount before you even look for an fvg or OB on the 15m. the \"it doesn't work sometimes\" feeling usually comes from taking setups without that higher timeframe context locked in, not from the model itself being broken.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-30T13:01:00.015Z",
+    "permalink": "/r/InnerCircleTraders/comments/1szpw66/does_ict_actually_work/oj4i638/",
+    "commentId": "oj4i638"
+  },
+  {
+    "postId": "1syyxtd",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Stressful MNQ trade | London session | 3R",
+    "commentText": "next time you see ES already taking Asia low while MNQ hasn't, mark that SMT divergence on the 5m the moment you spot it and tighten to breakeven immediately. that ES/MNQ divergence was basically the market telling you the MNQ move was losing steam imo. you held through nearly 3R of draw which worked out, but that SMT was your signal to protect yourself a lot earlier than NY open.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-30T13:01:06.823Z",
+    "permalink": "/r/InnerCircleTraders/comments/1syyxtd/stressful_mnq_trade_london_session_3r/oj4i6uq/",
+    "commentId": "oj4i6uq"
+  },
+  {
+    "postId": "1sz7g2v",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Requested FTMO payout",
+    "commentText": "congrats on the payout. one thing that helped me lock in consistent ones is only targeting NY killzone setups on pairs like GU or EU where the daily bias is already confirmed with a clean BOS on the 4h. if you're trading every session your drawdown will eat into those payouts fast tbh.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-30T13:01:12.100Z",
+    "permalink": "/r/Forexstrategy/comments/1sz7g2v/requested_ftmo_payout/oj4i7g1/",
+    "commentId": "oj4i7g1"
+  },
+  {
+    "postId": "1sz4k7u",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "ICT Concepts work. Don't listen to fools.",
+    "commentText": "i had this exact problem early on where i kept treating ICT like a pattern system and kept getting destroyed. it wasn't until i stopped hunting setups and started asking \"where is price engineered to go and WHEN\" that things clicked. cable on the 15m during london open, i watched price sweep a BSL above the previous day's high right into a bearish OB then dropped 80 pips clean. time was everything tbh, that same setup at the wrong session would've just chopped me out.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-30T13:01:20.501Z",
+    "permalink": "/r/InnerCircleTraders/comments/1sz4k7u/ict_concepts_work_dont_listen_to_fools/oj4i8by/",
+    "commentId": "oj4i8by"
+  },
+  {
+    "postId": "1szbckg",
+    "subreddit": "Trading",
+    "postTitle": "Options Insider - Vincent Desiano Review",
+    "commentText": "the drop from $5K–$50K daily to barely $1K trades is actually the most telling detail here imo. when someone's genuinely working HTF bias into daily FVGs on something like NQ or ES, the setups don't just dry up like that. tbh the $200/month while pushing a $100/month affiliate link in the same breath is just sloppy, but what really matters is whether the A+ setups are still being called in real time or just recapped after the fact.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-30T13:01:28.858Z",
+    "permalink": "/r/Trading/comments/1szbckg/options_insider_vincent_desiano_review/oj4i98v/",
+    "commentId": "oj4i98v"
+  },
+  {
+    "postId": "1sz3c2q",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Advice for trading ICT",
+    "commentText": "your backtesting being clean but live trading falling apart usually comes down to one thing — you're marking setups *after* you already see how price moved. try this: on the 15m, once price taps into that HTF FVG you've identified, wait for a displacement candle and mark the last down candle before it. if price retraces into that candle during the NY open killzone (9:30-11am EST), that's your only entry. one setup, one model, done — the current choppy conditions in 2026 will shake you out of everything else tbh.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-30T13:01:39.535Z",
+    "permalink": "/r/InnerCircleTraders/comments/1sz3c2q/advice_for_trading_ict/oj4iafu/",
+    "commentId": "oj4iafu"
   }
 ]
