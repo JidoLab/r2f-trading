@@ -39,8 +39,9 @@
     "url": "https://videos.pexels.com/video-files/7924472/7924472-hd_1080_1920_24fps.mp4",
     "category": "thinking",
     "pexelsId": 7924472,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-04-30T03:31:31.046Z"
   },
   {
     "id": "seed-thinking-8555748",
@@ -1963,8 +1964,9 @@
     "height": 1920,
     "duration": 7,
     "pexelsId": 8120423,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:41.001Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:41.001Z",
+    "lastUsedAt": "2026-04-30T03:31:31.046Z"
   },
   {
     "id": "pexels-36794735",
@@ -2882,8 +2884,9 @@
     "height": 1920,
     "duration": 36,
     "pexelsId": 6462475,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:50.686Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:50.686Z",
+    "lastUsedAt": "2026-04-30T03:31:31.046Z"
   },
   {
     "id": "pexels-6032156",
