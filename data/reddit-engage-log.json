@@ -1016,5 +1016,25 @@
     "commentedAt": "2026-04-29T13:01:07.097Z",
     "permalink": "/r/Trading/comments/1syn6cx/for_beginners_looking_to_trade_fx/oixki6r/",
     "commentId": "oixki6r"
+  },
+  {
+    "postId": "1szef93",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "20y/o Italian Trader, $10k profit in March, 15 funded accounts ($1+ million in capital), almost quit in September. AMA - not selling anything.",
+    "commentText": "congrats on the comeback tbh, going from blown challenges to 15 funded accounts is no joke. since you're running the OHLC/OLHC system on futures, try marking the open of the actual 8:30am NY session candle on the 5m as your reference point — if price sweeps that open and drops an FVG before 10am, that FVG becomes your sniper entry for the rest of the morning session. been doing this on NQ and it filters out like 60% of the noise that kills most challenge accounts.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-04-30T04:32:16.923Z",
+    "permalink": "/r/InnerCircleTraders/comments/1szef93/20yo_italian_trader_10k_profit_in_march_15_funded/oj2orla/",
+    "commentId": "oj2orla"
+  },
+  {
+    "postId": "1szb75f",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "10 years of NQ data on London session sweeps. here's what the numbers say",
+    "commentText": "the 80.8% sweep stat on the london high lines up with what i've personally seen when NY opens into a premium array after a clean bullish overnight structure, it makes sense because price needs liquidity above before reversing or continuing. tbh the real question is whether you're pairing this with a confirmed MSS on the lower timeframes before committing to that target. are you checking if the london high has an untapped FVG sitting just above it, or are you treating the sweep probability in isolation?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-04-30T04:32:23.500Z",
+    "permalink": "/r/InnerCircleTraders/comments/1szb75f/10_years_of_nq_data_on_london_session_sweeps/oj2os5g/",
+    "commentId": "oj2os5g"
   }
 ]
