@@ -2,7 +2,7 @@
   "slug": "stop-trading-order-blocks-do-this-instead-r2f-trading-2026",
   "renderId": "render-stop-trading-order-blocks-do-this-instead-r2f-trading-2026",
   "title": "Stop Trading Order Blocks (Do This Instead) | R2F Trading 2026",
-  "description": "Everyone's hunting order blocks — and getting stopped out. Here's the one thing funded traders check first before every entry. R2F Trading breaks down the exact setup on a live chart. Follow for daily ICT breakdowns → r2ftrading.com",
+  "description": "Everyone's hunting order blocks. Smart money is doing something completely different. R2F Trading breaks down the exact chart structure funded traders use to time entries in 2026. Watch this before your next trade. Follow for daily ICT setups → r2ftrading.com",
   "hashtags": [
     "#ICTTrading",
     "#OrderBlocks",
@@ -12,16 +12,14 @@
     "#R2FTrading",
     "#ForexTrading",
     "#ICT2026",
-    "#DXY",
-    "#LiquiditySweep"
+    "#TradingTips",
+    "#PriceAction"
   ],
-  "script": "Stop hunting order blocks. Seriously. 73% of retail traders get swept before price even touches one. There's a reason. And funded traders already know it. Look at this DXY chart. Price sweeps buyside liquidity — that trendline high everyone sees. Then it drops. Classic. But where did smart money actually enter? Not the order block. One level above it. The R2F Trading system calls it the liquidity magnet. Price hunts the obvious level first. Clears the stops. Then the real move starts. You don't enter at the block. You enter after the sweep confirms. That one shift? Changed everything. Follow R2F Trading for setups like this every single day. Link in bio at r2ftrading.com.",
+  "script": "Stop hunting order blocks. Seriously. Retail traders mark them everywhere — and smart money uses that against you. See this chart? Price swept buyside liquidity — then left a Fair Value Gap on the way down. That's the real signal. Most traders see a drop and panic. Funded traders see a gap — and wait. Patience is the edge. Price retraces into the FVG — exactly 50% equilibrium. That's your entry. Clean. Surgical. No guessing. Stop goes above the FVG. Target is the next liquidity pool below. Risk-to-reward? 1-to-4. Every time. Price expanded down — 47 pips. Straight into sellside liquidity. No order block needed. Just structure and gaps. This is how the R2F Trading system reads price. Follow R2F Trading for setups like this every single day.",
   "contentType": "chart-breakdown",
   "seriesName": null,
   "seriesNumber": null,
   "autoPublish": false,
-  "createdAt": "2026-04-19T02:00:36.401Z",
-  "status": "failed",
-  "error": "Render failed",
-  "failedAt": "2026-04-19T02:02:20.003Z"
+  "createdAt": "2026-04-30T02:33:58.800Z",
+  "status": "rendering"
 }
