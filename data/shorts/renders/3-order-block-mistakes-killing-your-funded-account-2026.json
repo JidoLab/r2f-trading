@@ -2,57 +2,24 @@
   "slug": "3-order-block-mistakes-killing-your-funded-account-2026",
   "renderId": "render-3-order-block-mistakes-killing-your-funded-account-2026",
   "title": "3 Order Block Mistakes Killing Your Funded Account (2026)",
-  "description": "Stop entering order blocks the wrong way. R2F Trading breaks down the 3 most common ICT order block entry mistakes traders make in 2026 — and the truth behind each one. If you've blown a funded account, this is why. Visit r2ftrading.com for the full system.",
+  "description": "Stop losing on funded accounts. R2F Trading breaks down the 3 order block mistakes that wipe traders out — and exactly how to fix them. Follow for daily ICT setups. r2ftrading.com",
   "hashtags": [
     "#ICTTrading",
     "#OrderBlocks",
     "#SmartMonkeyConcepts",
     "#FundedTrader",
     "#FairValueGap",
-    "#SMCTrading",
-    "#ForexTrading",
+    "#SMC",
     "#R2FTrading",
-    "#TradingMistakes",
-    "#ICT2026"
+    "#ForexTrading",
+    "#ICT2026",
+    "#TradingTips"
   ],
-  "script": "Three words killing your funded account. You say them every single trade: 'That's an order block.' Myth one. Every bearish candle before a move UP is a valid order block. That's wrong. Dead wrong. Truth: Only the LAST down candle before a displacement move is valid. 83% of losing trades trace back to this one mistake. Myth two. Enter the second price touches the order block. But price taps it — then keeps dropping. Sound familiar? Truth: Wait for a reaction candle INSIDE the block. Confirmation first. Entry second. Always. Myth three. Order blocks work alone. No. Align it with a fair value gap, liquidity sweep, AND market structure shift. All three. Every time. The R2F Trading system was built on exactly this. Follow R2F Trading. New setups every day at r2ftrading.com.",
-  "contentType": "myth-buster",
+  "script": "3 order block mistakes. Blowing funded accounts in 2026. Most traders never catch them. Mistake one. Trading EVERY order block you see. Not all order blocks are equal. Only the ones with a liquidity sweep before them matter. No sweep? No trade. That's the rule. 78% of retail losses happen at unvalidated order blocks. Mistake two. Ignoring the fair value gap INSIDE the order block. That gap is where price actually wants to go. Mistake three. Entering on the first candle touch. Smart money runs your stop first. Wait for the SECOND touch. The R2F Trading system calls this the sweep, fill, and confirm entry. Three filters. One clean trade. Fix all three of these and your funded account stops bleeding. It really is that simple. Follow R2F Trading. New ICT setups every single day. Link in bio at r2ftrading.com.",
+  "contentType": "listicle",
   "seriesName": null,
   "seriesNumber": null,
   "autoPublish": false,
-  "createdAt": "2026-04-19T10:49:10.164Z",
-  "status": "published",
-  "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/3-order-block-mistakes-killing-your-funded-account-2026.mp4",
-  "youtubeUrl": "https://youtube.com/shorts/X88xbyvnkAM",
-  "copyText": "3 Order Block Mistakes Killing Your Funded Account (2026)\n\nStop entering order blocks the wrong way. R2F Trading breaks down the 3 most common ICT order block entry mistakes traders make in 2026 — and the truth behind each one. If you've blown a funded account, this is why. Visit r2ftrading.com for the full system.\n\n#ICTTrading #OrderBlocks #SmartMonkeyConcepts #FundedTrader #FairValueGap #SMCTrading #ForexTrading #R2FTrading #TradingMistakes #ICT2026",
-  "uploadResults": [
-    {
-      "platform": "youtube",
-      "status": "success",
-      "url": "https://youtube.com/shorts/X88xbyvnkAM"
-    },
-    {
-      "platform": "facebook_reel",
-      "status": "success"
-    },
-    {
-      "platform": "linkedin",
-      "status": "success"
-    },
-    {
-      "platform": "twitter",
-      "status": "error",
-      "error": "Chunk upload failed"
-    },
-    {
-      "platform": "telegram",
-      "status": "success"
-    },
-    {
-      "platform": "discord",
-      "status": "success"
-    }
-  ],
-  "completedAt": "2026-04-19T10:52:01.653Z",
-  "publishedAt": "2026-04-19T11:35:28.475Z"
+  "createdAt": "2026-04-30T02:33:28.353Z",
+  "status": "rendering"
 }
