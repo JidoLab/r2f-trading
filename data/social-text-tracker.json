@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll",
     "hot-take",
     "quote",
     "tip",
@@ -29,11 +28,12 @@
     "story",
     "challenge",
     "poll-native",
-    "myth"
+    "myth",
+    "question"
   ],
   "lastPost": {
-    "type": "myth",
-    "text": "MYTH: More order blocks = better trade. TRUTH: One clean, confluent order block beats 10 messy ones every time. Stop hoarding setups. Stack reasons, not zones. #ICTTrading #OrderBlocks #SmartMoneyConcepts",
-    "date": "2026-04-30T04:00:52.242Z"
+    "type": "question",
+    "text": "Order blocks or fair value gaps — which one do you actually trade more often? Drop your answer 👇 #ICTTrading #SmartMoneyConcepts #FairValueGap",
+    "date": "2026-04-30T12:00:30.379Z"
   }
 }
