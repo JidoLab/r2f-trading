@@ -2,7 +2,7 @@
   {
     "email": "wrightharvest@gmail.com",
     "date": "2026-04-04T10:35:09.710Z",
-    "dripsSent": 6,
+    "dripsSent": 7,
     "score": 0,
     "segment": "cold",
     "events": [],
@@ -13,13 +13,14 @@
       "successStory",
       "tradingPsychology",
       "propFirmTips",
-      "coachingCta"
+      "coachingCta",
+      "valueRecap"
     ]
   },
   {
     "email": "eirini.ploumidi94@gmail.com",
     "date": "2026-04-09T14:10:09.622Z",
-    "dripsSent": 5,
+    "dripsSent": 6,
     "score": 15,
     "segment": "cold",
     "events": [
@@ -34,7 +35,8 @@
       "ictConcepts",
       "successStory",
       "tradingPsychology",
-      "propFirmTips"
+      "propFirmTips",
+      "coachingCta"
     ]
   },
   {
@@ -56,7 +58,7 @@
   {
     "email": "blackkilevu@gmail.com",
     "date": "2026-04-13T10:23:34.431Z",
-    "dripsSent": 4,
+    "dripsSent": 5,
     "score": 0,
     "segment": "cold",
     "events": [],
@@ -65,13 +67,14 @@
       "beginnerMistakes",
       "ictConcepts",
       "successStory",
-      "tradingPsychology"
+      "tradingPsychology",
+      "propFirmTips"
     ]
   },
   {
     "email": "lucky04_flour@icloud.com",
     "date": "2026-04-13T23:04:34.994Z",
-    "dripsSent": 4,
+    "dripsSent": 5,
     "score": 5,
     "segment": "cold",
     "events": [
@@ -85,7 +88,8 @@
       "beginnerMistakes",
       "ictConcepts",
       "successStory",
-      "tradingPsychology"
+      "tradingPsychology",
+      "propFirmTips"
     ]
   }
 ]
