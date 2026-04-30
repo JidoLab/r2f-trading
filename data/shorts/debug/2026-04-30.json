@@ -1,0 +1,27 @@
+{
+  "date": "2026-04-30T03:34:35.728Z",
+  "today": "2026-04-30",
+  "topicsAttempted": [
+    null,
+    null,
+    null
+  ],
+  "results": [
+    {
+      "title": "POV: You Blew Your Funded Account (Then Found This) | R2F Trading 2026",
+      "status": "rendering"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "GitHub commit failed: 409 {\"message\":\"is at 89bc751516e668c25c29cbbf8a657f6d396c45a3 but expected 46594b2d4030067ef91b6fc8658fd7625a508fdf\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+    },
+    {
+      "title": "Can You Spot the Order Block? 🧠 ICT Quiz",
+      "status": "rendering"
+    }
+  ],
+  "errors": [
+    "GitHub commit failed: 409 {\"message\":\"is at 89bc751516e668c25c29cbbf8a657f6d396c45a3 but expected 46594b2d4030067ef91b6fc8658fd7625a508fdf\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+  ]
+}
