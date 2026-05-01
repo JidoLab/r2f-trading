@@ -1,5 +1,30 @@
 [
   {
+    "slug": "2026-05-01-the-quiet-bias-killing-your-ict-trades",
+    "syndicatedAt": "2026-05-01T06:03:19.129Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-01-the-quiet-bias-killing-your-ict-trades",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-quiet-bias-killing-your-ict-trades-2p68",
+        "id": "3594480"
+      },
+      {
+        "platform": "hashnode",
+        "success": true,
+        "url": "https://r2ftrading.hashnode.dev/the-quiet-bias-killing-your-ict-trades",
+        "id": "69f442274f76f3cbc41088b1"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-01-the-quiet-bias-killing-your-ict-trades"
+  },
+  {
     "slug": "2026-05-01-stop-journaling-trades-start-this-instead",
     "syndicatedAt": "2026-05-01T00:33:12.029Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-01-stop-journaling-trades-start-this-instead",
