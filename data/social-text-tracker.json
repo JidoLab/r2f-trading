@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "hot-take",
     "quote",
     "tip",
     "myth",
@@ -29,11 +28,12 @@
     "challenge",
     "poll-native",
     "myth",
-    "question"
+    "question",
+    "poll"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "Order blocks or fair value gaps — which one do you actually trade more often? Drop your answer 👇 #ICTTrading #SmartMoneyConcepts #FairValueGap",
-    "date": "2026-04-30T12:00:30.379Z"
+    "type": "poll",
+    "text": "NFP day. What's your move?\n\n🅰️ Stay flat, not worth the risk\n🅱️ Wait for the sweep, then trade the reversal\n🅲️ Already positioned pre-release\n🅳️ I don't trade news at all\n\n#NFP #ICTTrading #SmartMoney",
+    "date": "2026-05-01T04:00:46.946Z"
   }
 }
