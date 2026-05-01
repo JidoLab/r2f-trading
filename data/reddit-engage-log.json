@@ -1126,5 +1126,65 @@
     "commentedAt": "2026-04-30T13:01:39.535Z",
     "permalink": "/r/InnerCircleTraders/comments/1sz3c2q/advice_for_trading_ict/oj4iafu/",
     "commentId": "oj4iafu"
+  },
+  {
+    "postId": "1t093aa",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Built a tool to help with prop firm challenges — looking for honest feedback from traders who've failed or passed one",
+    "commentText": "the real-time drawdown tracker is actually solving something real tbh, most people failing challenges aren't overtrading, they're just unaware they've already eaten into their daily loss limit mid-session after a bad london open trade and then keep going. what i'd want to know is whether the trade checker accounts for correlation risk, like if someone's already in eurusd and wants to add gbpusd during the same NY kill zone, does it flag that as compounding drawdown exposure?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-01T03:00:40.893Z",
+    "permalink": "/r/Forexstrategy/comments/1t093aa/built_a_tool_to_help_with_prop_firm_challenges/oj925n2/",
+    "commentId": "oj925n2"
+  },
+  {
+    "postId": "1t06b0e",
+    "subreddit": "Forexstrategy",
+    "postTitle": "10K to 20K in 10 days.",
+    "commentText": "on the liquidity sweep entries for xauusd, try marking the wick low of the sweep candle on the 15m and then dropping to the 1m to watch for a BOS back in the opposite direction during london open. if price mitigates that 1m OB that forms right after the BOS, that's usually where the clean continuation leg kicks off tbh. the layering approach works but that entry refinement tightens your SL significantly on gold.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-01T03:00:46.629Z",
+    "permalink": "/r/Forexstrategy/comments/1t06b0e/10k_to_20k_in_10_days/oj9266c/",
+    "commentId": "oj9266c"
+  },
+  {
+    "postId": "1szsgfi",
+    "subreddit": "Forexstrategy",
+    "postTitle": "v2 Blueprint: Strict SMC State Machine, and defining the new AI Roles",
+    "commentText": "for your Structure Agent on H1, i'd add a confluence filter before the LLM selects the POI — specifically, only surface OBs that have an overlapping FVG within the same displacement leg. if the OB and FVG don't share the same origin candle sequence, the LLM is just picking between noise imo. on GBPUSD this cuts the candidate POIs down dramatically during london open and the ones that survive are almost always the ones that actually react.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-01T03:00:54.221Z",
+    "permalink": "/r/Forexstrategy/comments/1szsgfi/v2_blueprint_strict_smc_state_machine_and/oj926x0/",
+    "commentId": "oj926x0"
+  },
+  {
+    "postId": "1t00vkb",
+    "subreddit": "Forexstrategy",
+    "postTitle": "WTF is up with all these free prop firm passing services lol",
+    "commentText": "i had this exact problem last year when a buddy of mine used one of these services on his FTMO challenge, passed clean, then three months into the funded account they just... stopped trading it. the 30% cut only makes sense if they're using your account as a data farm tbh, proving out a strategy across hundreds of accounts simultaneously so they can run their own capital with validated confluence. imo the real red flag is when they're scalping stuff like GBPUSD on the 1m during NY open with no regard for whether there's an actual daily FVG being respected, just churning trades to hit the metrics.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-01T03:01:02.602Z",
+    "permalink": "/r/Forexstrategy/comments/1t00vkb/wtf_is_up_with_all_these_free_prop_firm_passing/oj927of/",
+    "commentId": "oj927of"
+  },
+  {
+    "postId": "1szql1l",
+    "subreddit": "Forexstrategy",
+    "postTitle": "📊 XAU/USD Technical Analysis (4H) – Range Compression Before Big Move",
+    "commentText": "the 4660 level is interesting but tbh that's not where i'd be watching — the real tell is whether price can reclaim the internal range high with a clean BOS on the 4H before touching that zone, otherwise you're just buying into resistance with no confirmation. that accumulation between 4300–4450 lines up with what looks like a solid 4H OB that hasn't been properly mitigated yet, so a sweep of 4485 liquidity followed by a rejection back into that zone would actually be the higher probability entry imo. are you marking your OBs from the 15m or the 1H for entries around these levels? makes a huge difference for how tight you can actually get your invalidation.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-01T03:01:10.509Z",
+    "permalink": "/r/Forexstrategy/comments/1szql1l/xauusd_technical_analysis_4h_range_compression/oj928fv/",
+    "commentId": "oj928fv"
+  },
+  {
+    "postId": "1szpjrz",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Should I use my own capital or a prop firms funded",
+    "commentText": "with £5k on gold tbh i'd start with your own capital first, just so you learn what it actually feels like to lose real money on XAUUSD without a prop firm's rules breathing down your neck. once you've traded a full killzone cycle or two with live funds and you're still hitting your model consistently, then look at FTMO or The Funded Trader to scale up without risking more of your own. prop firms are great but failing a challenge because you revenge traded during london open is a very expensive lesson 😅",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-01T03:01:18.683Z",
+    "permalink": "/r/Forexstrategy/comments/1szpjrz/should_i_use_my_own_capital_or_a_prop_firms_funded/oj9296s/",
+    "commentId": "oj9296s"
   }
 ]
