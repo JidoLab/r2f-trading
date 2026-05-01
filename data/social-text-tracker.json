@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "quote",
     "tip",
     "myth",
     "story",
@@ -29,11 +28,12 @@
     "poll-native",
     "myth",
     "question",
-    "poll"
+    "poll",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "NFP day. What's your move?\n\n🅰️ Stay flat, not worth the risk\n🅱️ Wait for the sweep, then trade the reversal\n🅲️ Already positioned pre-release\n🅳️ I don't trade news at all\n\n#NFP #ICTTrading #SmartMoney",
-    "date": "2026-05-01T04:00:46.946Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: NFP is NOT a news event. It's a liquidity hunt. Smart money already positioned. Retail chases the spike and gets eaten. Stop trading the candle, trade the aftermath. #NFP #ICTTrading #SmartMoney",
+    "date": "2026-05-01T12:00:52.073Z"
   }
 }
