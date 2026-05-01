@@ -2042,5 +2042,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-05-01T04:00:47.795Z",
+    "type": "text",
+    "postType": "poll",
+    "text": "NFP day. What's your move?\n\n🅰️ Stay flat, not worth the risk\n🅱️ Wait for the sweep, then trade the",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
