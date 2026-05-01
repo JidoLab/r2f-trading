@@ -1,5 +1,30 @@
 [
   {
+    "slug": "2026-05-01-stop-journaling-trades-start-this-instead",
+    "syndicatedAt": "2026-05-01T00:33:12.029Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-01-stop-journaling-trades-start-this-instead",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/stop-journaling-trades-start-this-instead-5cc",
+        "id": "3593827"
+      },
+      {
+        "platform": "hashnode",
+        "success": true,
+        "url": "https://r2ftrading.hashnode.dev/stop-journaling-trades-start-this-instead",
+        "id": "69f3f4c7f99f033c5d74d862"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-01-stop-journaling-trades-start-this-instead"
+  },
+  {
     "slug": "2026-04-30-how-boredom-destroys-ict-traders",
     "syndicatedAt": "2026-04-30T01:32:53.060Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-04-30-how-boredom-destroys-ict-traders",
