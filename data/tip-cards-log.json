@@ -526,5 +526,38 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "number": 17,
+    "category": "ICT Concepts",
+    "tip": "When price sweeps a key liquidity level (old high/low) and immediately closes back inside the range, don't chase the breakout — wait for the return to the nearest Fair Value Gap or Order Block for your entry, because that sweep was the manipulation phase and the real move is just beginning.",
+    "imageUrl": "https://www.r2ftrading.com/tip-cards/tip-17.png",
+    "date": "2026-05-02T06:00:12.109Z",
+    "results": [
+      {
+        "platform": "twitter-image",
+        "status": "error",
+        "message": "Image fetch failed: 404"
+      },
+      {
+        "platform": "facebook",
+        "status": "error",
+        "message": "{\"error\":{\"message\":\"Missing or invalid image file\",\"type\":\"OAuthException\",\"code\":324,\"error_subcode\":2069019,\"is_transient\":true,\"error_user_title\":\"Image Required\",\"error_user_msg\":\"Make sure your "
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
