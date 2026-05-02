@@ -221,8 +221,9 @@
     "url": "https://videos.pexels.com/video-files/9945187/9945187-hd_1080_1920_24fps.mp4",
     "category": "focus_intense",
     "pexelsId": 9945187,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-05-02T00:31:55.490Z"
   },
   {
     "id": "seed-focus_intense-9945196",
@@ -1154,8 +1155,9 @@
     "height": 1920,
     "duration": 10,
     "pexelsId": 29276577,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:34.899Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:34.899Z",
+    "lastUsedAt": "2026-05-02T00:31:55.490Z"
   },
   {
     "id": "pexels-8347241",
@@ -1758,9 +1760,9 @@
     "height": 1920,
     "duration": 12,
     "pexelsId": 8120203,
-    "usageCount": 1,
+    "usageCount": 2,
     "addedAt": "2026-04-17T13:21:41.001Z",
-    "lastUsedAt": "2026-04-17T13:57:55.723Z"
+    "lastUsedAt": "2026-05-02T00:31:55.490Z"
   },
   {
     "id": "pexels-8120416",
