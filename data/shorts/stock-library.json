@@ -182,9 +182,9 @@
     "url": "https://videos.pexels.com/video-files/8394092/8394092-hd_1080_1920_24fps.mp4",
     "category": "walking_city",
     "pexelsId": 8394092,
-    "usageCount": 1,
+    "usageCount": 2,
     "addedAt": "2026-04-17T13:21:29.546Z",
-    "lastUsedAt": "2026-04-22T00:32:06.953Z"
+    "lastUsedAt": "2026-05-02T09:31:36.736Z"
   },
   {
     "id": "seed-walking_city-8151972",
@@ -242,8 +242,9 @@
     "url": "https://videos.pexels.com/video-files/9943349/9943349-hd_1080_1920_24fps.mp4",
     "category": "focus_intense",
     "pexelsId": 9943349,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-05-02T09:31:36.736Z"
   },
   {
     "id": "seed-money-6266430",
@@ -544,8 +545,9 @@
     "height": 1920,
     "duration": 15,
     "pexelsId": 8731296,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.547Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.547Z",
+    "lastUsedAt": "2026-05-02T09:31:36.736Z"
   },
   {
     "id": "pexels-8731302",
@@ -944,8 +946,9 @@
     "height": 2048,
     "duration": 32,
     "pexelsId": 8724462,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:33.201Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:33.201Z",
+    "lastUsedAt": "2026-05-02T09:31:36.736Z"
   },
   {
     "id": "pexels-8724213",
