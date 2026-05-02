@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "myth",
     "story",
     "challenge",
     "poll-native",
@@ -29,11 +28,12 @@
     "question",
     "poll",
     "hot-take",
-    "quote"
+    "quote",
+    "story"
   ],
   "lastPost": {
-    "type": "quote",
-    "text": "\"The market doesn't reward effort. It rewards patience.\"\n\nNFP week incoming — most traders will overtrade. The smart money is already waiting for the liquidity sweep. Be the latter.\n\n#ICTTrading #NFP #SmartMoneyConcepts",
-    "date": "2026-05-02T04:00:31.243Z"
+    "type": "story",
+    "text": "Blew my account the week before NFP once. Thought I was ready. I wasn't. Now I sit on my hands the day before and let the liquidity sweep do the talking first. NFP isn't a trade — it's a trap with a gift inside. #NFP #ICTTrading #R2FTrading",
+    "date": "2026-05-02T12:00:14.264Z"
   }
 }
