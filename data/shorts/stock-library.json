@@ -74,8 +74,9 @@
     "url": "https://videos.pexels.com/video-files/18503908/18503908-hd_1080_1920_30fps.mp4",
     "category": "surprise",
     "pexelsId": 18503908,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-05-02T05:31:55.992Z"
   },
   {
     "id": "seed-screen_glow-8480680",
@@ -1622,8 +1623,9 @@
     "height": 2048,
     "duration": 22,
     "pexelsId": 7679837,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:39.122Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:39.122Z",
+    "lastUsedAt": "2026-05-02T05:31:55.992Z"
   },
   {
     "id": "pexels-19162270",
@@ -2081,9 +2083,9 @@
     "height": 1920,
     "duration": 9,
     "pexelsId": 32039090,
-    "usageCount": 1,
+    "usageCount": 2,
     "addedAt": "2026-04-17T13:21:43.033Z",
-    "lastUsedAt": "2026-04-20T01:31:56.658Z"
+    "lastUsedAt": "2026-05-02T05:31:55.992Z"
   },
   {
     "id": "pexels-34013121",
@@ -2947,8 +2949,9 @@
     "height": 1920,
     "duration": 10,
     "pexelsId": 7918567,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:50.686Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:50.686Z",
+    "lastUsedAt": "2026-05-02T05:31:55.992Z"
   },
   {
     "id": "pexels-7273680",
