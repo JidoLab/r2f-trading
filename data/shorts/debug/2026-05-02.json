@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-02T02:32:27.405Z",
+  "date": "2026-05-02T03:32:10.461Z",
   "today": "2026-05-02",
   "topicsAttempted": [
     null,
@@ -8,20 +8,20 @@
   ],
   "results": [
     {
+      "title": "NFP Week: 3 ICT Secrets Funded Traders Know (Beginners Don't) 2026",
+      "status": "rendering"
+    },
+    {
+      "title": "Order Blocks vs Fair Value Gaps: Which One Actually Gets You Funded in 2026?",
+      "status": "rendering"
+    },
+    {
       "title": "",
       "status": "error",
-      "error": "GitHub commit failed: 409 {\"message\":\"is at 9e33502fc417dfbc77f7fa444ce9ae46d2c90739 but expected cc5bc36f54767ee6975528d76596a75c13ffa4d5\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
-    },
-    {
-      "title": "6 Months of Losses. Then NFP Changed Everything.",
-      "status": "rendering"
-    },
-    {
-      "title": "NFP Quiz: What Does Smart Money Do FIRST? 🧠",
-      "status": "rendering"
+      "error": "GitHub commit failed: 409 {\"message\":\"is at 01f803b7424b86d65919e28a2795a86731fca66c but expected 842b6bb58f76f0e9ce51608ad7841da7b5ded961\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
     }
   ],
   "errors": [
-    "GitHub commit failed: 409 {\"message\":\"is at 9e33502fc417dfbc77f7fa444ce9ae46d2c90739 but expected cc5bc36f54767ee6975528d76596a75c13ffa4d5\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+    "GitHub commit failed: 409 {\"message\":\"is at 01f803b7424b86d65919e28a2795a86731fca66c but expected 842b6bb58f76f0e9ce51608ad7841da7b5ded961\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
   ]
 }
