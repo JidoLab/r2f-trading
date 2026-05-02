@@ -1206,5 +1206,25 @@
     "commentedAt": "2026-05-02T01:32:30.202Z",
     "permalink": "/r/swingtrading/comments/1t0ixu5/insider_tape_thursday_analysis_494m_volume_331/ojfefg7/",
     "commentId": "ojfefg7"
+  },
+  {
+    "postId": "1t153f1",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Built my first trading bot with MT5 + Python — complete beginner in trading",
+    "commentText": "the bot sounds genuinely impressive for a first build, but here's the catch — stacking FVGs, OBs, BOS, fib OTE, liquidity sweeps, AND pivot points into one confluence engine without understanding how they interact is gonna create a lot of false signals, especially on something like XAUUSD where price moves are driven by session opens and news, not pattern combinations. imo the conflation of ICT concepts (which are time-of-day dependent) with RSI/MACD combos (which aren't) is where this gets messy fast. a hammer on EURUSD at 3am UTC hitting a \"bollinger band\" means almost nothing without knowing whether you're in london kill zone or dead session. the architecture sounds solid tbh, but the strategy logic needs a trading brain behind it before the signals mean anything real.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-02T02:32:40.618Z",
+    "permalink": "/r/Forexstrategy/comments/1t153f1/built_my_first_trading_bot_with_mt5_python/ojfookx/",
+    "commentId": "ojfookx"
+  },
+  {
+    "postId": "1t0m0vd",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Gold Market Insight: “$4,592 - Fair Value Gap in Play”",
+    "commentText": "the $4,592 pivot sitting right on the 0.5 fib inside that FVG cluster is actually a bearish tell imo — price hovering in the middle of an inefficiency without a clean displacement above $4,606 means buyside liquidity up there hasn't been swept yet. i'd want to see a 1H candle close above the 0.382 before calling this a launchpad, otherwise this looks more like distribution before a run down to grab liquidity below $4,563. sellers reloading at those supply zones overhead makes the bullish case pretty weak right now tbh.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-02T02:32:57.485Z",
+    "permalink": "/r/Forexstrategy/comments/1t0m0vd/gold_market_insight_4592_fair_value_gap_in_play/ojfoqa2/",
+    "commentId": "ojfoqa2"
   }
 ]
