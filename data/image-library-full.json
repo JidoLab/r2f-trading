@@ -134,7 +134,7 @@
     "pair": "U.S. Dollar Index",
     "timeframe": "4H",
     "addedAt": "2026-04-17T01:07:28.465Z",
-    "usageCount": 6
+    "usageCount": 5
   },
   {
     "id": "img-1776388279102-2zj2",
@@ -1164,6 +1164,6 @@
     "pair": "Hang Seng 50",
     "timeframe": "10",
     "addedAt": "2026-04-17T01:24:29.725Z",
-    "usageCount": 2
+    "usageCount": 3
   }
 ]
