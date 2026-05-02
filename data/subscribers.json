@@ -42,7 +42,7 @@
   {
     "email": "cyrus.alia.borja@gmail.com",
     "date": "2026-04-11T13:01:25.702Z",
-    "dripsSent": 5,
+    "dripsSent": 6,
     "score": 0,
     "segment": "cold",
     "events": [],
@@ -52,7 +52,8 @@
       "ictConcepts",
       "successStory",
       "tradingPsychology",
-      "propFirmTips"
+      "propFirmTips",
+      "coachingCta"
     ]
   },
   {
