@@ -13,9 +13,9 @@
     "url": "https://videos.pexels.com/video-files/8530543/8530543-hd_1080_2048_25fps.mp4",
     "category": "frustration",
     "pexelsId": 8530543,
-    "usageCount": 1,
+    "usageCount": 2,
     "addedAt": "2026-04-17T13:21:29.546Z",
-    "lastUsedAt": "2026-04-18T02:01:17.632Z"
+    "lastUsedAt": "2026-05-02T02:32:26.841Z"
   },
   {
     "id": "seed-frustration-8873041",
@@ -31,8 +31,9 @@
     "url": "https://videos.pexels.com/video-files/8226005/8226005-hd_1080_1920_25fps.mp4",
     "category": "thinking",
     "pexelsId": 8226005,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-05-02T02:32:26.841Z"
   },
   {
     "id": "seed-thinking-7924472",
@@ -1074,9 +1075,9 @@
     "height": 2048,
     "duration": 28,
     "pexelsId": 7596773,
-    "usageCount": 1,
+    "usageCount": 2,
     "addedAt": "2026-04-17T13:21:34.899Z",
-    "lastUsedAt": "2026-04-18T02:01:54.757Z"
+    "lastUsedAt": "2026-05-02T02:32:26.841Z"
   },
   {
     "id": "pexels-12893579",
@@ -1923,8 +1924,9 @@
     "height": 1920,
     "duration": 5,
     "pexelsId": 6251363,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:41.001Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:41.001Z",
+    "lastUsedAt": "2026-05-02T02:32:26.841Z"
   },
   {
     "id": "pexels-7842849",
