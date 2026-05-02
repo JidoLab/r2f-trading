@@ -1,52 +1,5 @@
 [
   {
-    "date": "2026-04-23T05:32:32.839Z",
-    "slug": "2026-04-23-the-silence-before-the-move-trading-stillness",
-    "title": "The Silence Before the Move: Trading Stillness",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
     "date": "2026-04-23T12:00:50.035Z",
     "type": "text",
     "postType": "promo-results",
@@ -1964,6 +1917,53 @@
     "date": "2026-05-02T07:32:42.352Z",
     "slug": "2026-05-02-the-confidence-trap-why-good-trades-ruin-you",
     "title": "The Confidence Trap: Why Good Trades Ruin You",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-02T08:32:14.399Z",
+    "slug": "2026-05-02-the-silence-after-a-loss-ict-trader-s-recovery-protocol",
+    "title": "The Silence After a Loss: ICT Trader's Recovery Protocol",
     "results": [
       {
         "platform": "twitter",
