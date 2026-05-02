@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "tip",
     "myth",
     "story",
     "challenge",
@@ -29,11 +28,12 @@
     "myth",
     "question",
     "poll",
-    "hot-take"
+    "hot-take",
+    "quote"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: NFP is NOT a news event. It's a liquidity hunt. Smart money already positioned. Retail chases the spike and gets eaten. Stop trading the candle, trade the aftermath. #NFP #ICTTrading #SmartMoney",
-    "date": "2026-05-01T12:00:52.073Z"
+    "type": "quote",
+    "text": "\"The market doesn't reward effort. It rewards patience.\"\n\nNFP week incoming — most traders will overtrade. The smart money is already waiting for the liquidity sweep. Be the latter.\n\n#ICTTrading #NFP #SmartMoneyConcepts",
+    "date": "2026-05-02T04:00:31.243Z"
   }
 }
