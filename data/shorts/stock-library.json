@@ -939,8 +939,9 @@
     "height": 2048,
     "duration": 30,
     "pexelsId": 8724306,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:33.201Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:33.201Z",
+    "lastUsedAt": "2026-05-03T03:31:17.254Z"
   },
   {
     "id": "pexels-8724462",
@@ -1108,9 +1109,9 @@
     "height": 1920,
     "duration": 9,
     "pexelsId": 33314914,
-    "usageCount": 1,
+    "usageCount": 2,
     "addedAt": "2026-04-17T13:21:34.899Z",
-    "lastUsedAt": "2026-04-21T02:00:53.691Z"
+    "lastUsedAt": "2026-05-03T03:31:17.254Z"
   },
   {
     "id": "pexels-5473802",
@@ -2165,9 +2166,9 @@
     "height": 1920,
     "duration": 10,
     "pexelsId": 6565345,
-    "usageCount": 1,
+    "usageCount": 2,
     "addedAt": "2026-04-17T13:21:43.033Z",
-    "lastUsedAt": "2026-04-22T08:32:26.358Z"
+    "lastUsedAt": "2026-05-03T03:31:17.254Z"
   },
   {
     "id": "pexels-34762047",
@@ -2948,8 +2949,9 @@
     "height": 1920,
     "duration": 10,
     "pexelsId": 6382077,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:50.686Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:50.686Z",
+    "lastUsedAt": "2026-05-03T03:31:17.254Z"
   },
   {
     "id": "pexels-7918567",
