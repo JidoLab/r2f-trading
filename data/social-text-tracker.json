@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "story",
     "challenge",
     "poll-native",
     "poll-native",
@@ -29,11 +28,12 @@
     "poll",
     "hot-take",
     "quote",
-    "story"
+    "story",
+    "tip"
   ],
   "lastPost": {
-    "type": "story",
-    "text": "Blew my account the week before NFP once. Thought I was ready. I wasn't. Now I sit on my hands the day before and let the liquidity sweep do the talking first. NFP isn't a trade — it's a trap with a gift inside. #NFP #ICTTrading #R2FTrading",
-    "date": "2026-05-02T12:00:14.264Z"
+    "type": "tip",
+    "text": "NFP week tip: price almost always sweeps liquidity BEFORE the real move. Don't chase the spike — wait for the sweep, then look for your entry. The news isn't the signal. The liquidity grab IS. 🎯 #NFP #ICTTrading #SmartMoneyConcepts",
+    "date": "2026-05-03T04:00:59.425Z"
   }
 }
