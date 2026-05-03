@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "challenge",
     "poll-native",
     "poll-native",
     "question",
@@ -29,11 +28,12 @@
     "hot-take",
     "quote",
     "story",
-    "tip"
+    "tip",
+    "promo-free-class"
   ],
   "lastPost": {
-    "type": "tip",
-    "text": "NFP week tip: price almost always sweeps liquidity BEFORE the real move. Don't chase the spike — wait for the sweep, then look for your entry. The news isn't the signal. The liquidity grab IS. 🎯 #NFP #ICTTrading #SmartMoneyConcepts",
-    "date": "2026-05-03T04:00:59.425Z"
+    "type": "promo-free-class",
+    "text": "NFP week + 'sell in May' noise = perfect storm for liquidity sweeps. Free class covers exactly how to trade this with ICT setups — plus the funded account blueprint. No fluff. 👇 https://r2ftrading.com/free-class #ICTTrading #SmartMoneyConcepts #FundedTrader",
+    "date": "2026-05-03T12:00:54.498Z"
   }
 }
