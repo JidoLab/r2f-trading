@@ -1286,5 +1286,15 @@
     "commentedAt": "2026-05-02T09:32:10.435Z",
     "permalink": "/r/Forexstrategy/comments/1t1kij2/gold_scalping/ojh4wsr/",
     "commentId": "ojh4wsr"
+  },
+  {
+    "postId": "1t2368o",
+    "subreddit": "Trading",
+    "postTitle": "Reintroducing one of ICT concepts - long post",
+    "commentText": "the dealing range point is spot on tbh — it's literally just a high and a low over n periods, same math underneath whether you're calling it a \"dealing range\" or a donchian channel or a 20-day breakout window. what actually matters is *when* you're referencing it, like using the prior week's high and low as your dealing range on a 15m EURUSD chart to define premium vs discount before london open is genuinely useful, not because of magic but because enough participants are doing the same thing. the \"secret sauce\" framing is what sells courses, not what sells trades.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-03T03:32:06.269Z",
+    "permalink": "/r/Trading/comments/1t2368o/reintroducing_one_of_ict_concepts_long_post/ojmcabf/",
+    "commentId": "ojmcabf"
   }
 ]
