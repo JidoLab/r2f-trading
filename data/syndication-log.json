@@ -1,5 +1,30 @@
 [
   {
+    "slug": "2026-05-03-the-boredom-that-blows-accounts",
+    "syndicatedAt": "2026-05-03T01:33:14.059Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-03-the-boredom-that-blows-accounts",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-boredom-that-blows-accounts-299f",
+        "id": "3602112"
+      },
+      {
+        "platform": "hashnode",
+        "success": true,
+        "url": "https://r2ftrading.hashnode.dev/the-boredom-that-blows-accounts",
+        "id": "69f6a5d9d70d6f9743d32c1c"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-03-the-boredom-that-blows-accounts"
+  },
+  {
     "slug": "2026-05-02-the-silence-after-a-loss-ict-trader-s-recovery-protocol",
     "syndicatedAt": "2026-05-02T08:32:40.865Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-02-the-silence-after-a-loss-ict-trader-s-recovery-protocol",
