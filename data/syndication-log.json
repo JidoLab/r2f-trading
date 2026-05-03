@@ -1,5 +1,30 @@
 [
   {
+    "slug": "2026-05-03-the-confidence-trap-killing-ict-traders",
+    "syndicatedAt": "2026-05-03T06:03:00.081Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-03-the-confidence-trap-killing-ict-traders",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-confidence-trap-killing-ict-traders-ngp",
+        "id": "3602695"
+      },
+      {
+        "platform": "hashnode",
+        "success": true,
+        "url": "https://r2ftrading.hashnode.dev/the-confidence-trap-killing-ict-traders",
+        "id": "69f6e5131cb4c492e88ba223"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-03-the-confidence-trap-killing-ict-traders"
+  },
+  {
     "slug": "2026-05-03-the-boredom-that-blows-accounts",
     "syndicatedAt": "2026-05-03T01:33:14.059Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-03-the-boredom-that-blows-accounts",
