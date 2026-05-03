@@ -208,8 +208,9 @@
     "url": "https://videos.pexels.com/video-files/7691557/7691557-hd_1080_1920_25fps.mp4",
     "category": "phone_chart",
     "pexelsId": 7691557,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-05-03T03:30:51.675Z"
   },
   {
     "id": "seed-phone_chart-7989855",
@@ -605,8 +606,9 @@
     "height": 1920,
     "duration": 14,
     "pexelsId": 8048478,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.547Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.547Z",
+    "lastUsedAt": "2026-05-03T03:30:51.675Z"
   },
   {
     "id": "pexels-6622803",
@@ -1827,9 +1829,9 @@
     "height": 1920,
     "duration": 6,
     "pexelsId": 6265064,
-    "usageCount": 1,
+    "usageCount": 2,
     "addedAt": "2026-04-17T13:21:41.001Z",
-    "lastUsedAt": "2026-04-19T06:56:44.839Z"
+    "lastUsedAt": "2026-05-03T03:30:51.675Z"
   },
   {
     "id": "pexels-6265062",
@@ -2187,9 +2189,9 @@
     "height": 1920,
     "duration": 17,
     "pexelsId": 34394871,
-    "usageCount": 1,
+    "usageCount": 2,
     "addedAt": "2026-04-17T13:21:43.033Z",
-    "lastUsedAt": "2026-04-29T03:31:58.522Z"
+    "lastUsedAt": "2026-05-03T03:30:51.675Z"
   },
   {
     "id": "pexels-34405192",
@@ -3016,8 +3018,9 @@
     "height": 1920,
     "duration": 6,
     "pexelsId": 8399346,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:50.686Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:50.686Z",
+    "lastUsedAt": "2026-05-03T03:30:51.675Z"
   },
   {
     "id": "pexels-13801280",
