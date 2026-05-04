@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll-native",
     "question",
     "poll",
     "hot-take",
@@ -29,11 +28,12 @@
     "story",
     "tip",
     "promo-free-class",
-    "promo-results"
+    "promo-results",
+    "promo-checklist"
   ],
   "lastPost": {
-    "type": "promo-results",
-    "text": "R2F traders are passing funded challenges at 85%. NFP week, 'sell in May' noise, doesn't matter — structure beats narratives every time. See the proof 👇 https://r2ftrading.com/results #ICTTrading #FundedTrader #SmartMoneyConcepts",
-    "date": "2026-05-04T04:00:25.210Z"
+    "type": "promo-checklist",
+    "text": "NFP week + Monday false breaks = chaos for the unprepared. I use this ICT checklist before EVERY trade. Pre-trade, during, post-trade — it keeps me disciplined when the market wants me emotional. Grab it free 👇 https://r2ftrading.com #ICTTrading #SmartMoneyConcepts #NFP",
+    "date": "2026-05-04T12:00:23.644Z"
   }
 }
