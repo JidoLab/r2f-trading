@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-29T03:09:55.121Z",
+  "generatedAt": "2026-05-04T01:43:08.320Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Wednesday, 29 April 2026 at 10:09 (Bangkok)",
+  "dateTime": "Monday, 4 May 2026 at 08:43 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -11,22 +11,22 @@
     "chatConversations": 0
   },
   "contentStatus": {
-    "blogPostsToday": 3,
-    "totalBlogPosts": 80,
-    "shortsReady": 0,
-    "shortsPublished": 32,
+    "blogPostsToday": 0,
+    "totalBlogPosts": 90,
+    "shortsReady": 11,
+    "shortsPublished": 31,
     "shortsRendering": 4,
-    "socialPostsThisWeek": 50
+    "socialPostsThisWeek": 36
   },
   "hotLeads": {
     "count": 0,
     "recentHot": []
   },
   "suggestions": [
-    "With 5 cold subscribers averaging 4.8 drips each, personally reach out to all 5 via a direct Telegram or LINE message from Harvest today to add a human touch beyond the automated sequences.",
-    "Zero new subscribers yesterday signals a top-of-funnel gap — create and post one short-form video personally featuring Harvest discussing a specific ICT concept (e.g., Fair Value Gaps or Order Blocks) on TikTok or Instagram Reels today.",
-    "With 80 blog posts published but 0 Reddit upvotes, manually identify 2–3 high-traffic ICT or forex subreddits and post a genuinely helpful comment linking to a relevant R2F blog post to seed organic traffic.",
-    "Zero payments this month suggests a conversion barrier — Harvest should personally host a free 30-minute live Q&A or webinar this week announced across all channels to move cold leads toward a buying decision."
+    "Manually reach out to all 5 cold subscribers via a personalized Telegram or LINE message from Harvest, since they've averaged 5.8 drips each with no conversion — a direct human touch may break the stall.",
+    "Launch a new top-of-funnel acquisition channel such as a paid Meta or TikTok ad campaign targeting Bangkok-based retail traders, since new subscriber count is at 0 and organic growth has stalled.",
+    "Record and publish a live trading session or real-time ICT concept breakdown on YouTube (not a Short) to build deeper trust and attract higher-intent leads beyond the 11 Shorts already queued.",
+    "Partner with a Bangkok-based finance influencer or trader community for a co-promotion or guest appearance to inject new cold traffic into the funnel, addressing the zero new subscriber growth."
   ],
   "schedule": [
     {
