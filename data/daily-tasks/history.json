@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-05-04",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1777858972565-0",
+        "title": "With 5 cold subscribers averaging 4.8 drips each, personally reach out to all 5 via a direct Telegram or LINE message from Harvest today to add a human touch beyond the automated sequences.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1777858972565-1",
+        "title": "Zero new subscribers yesterday signals a top-of-funnel gap — create and post one short-form video personally featuring Harvest discussing a specific ICT concept (e.g., Fair Value Gaps or Order Blocks) on TikTok or Instagram Reels today.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1777858972565-2",
+        "title": "With 80 blog posts published but 0 Reddit upvotes, manually identify 2–3 high-traffic ICT or forex subreddits and post a genuinely helpful comment linking to a relevant R2F blog post to seed organic traffic.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1777858972565-3",
+        "title": "Zero payments this month suggests a conversion barrier — Harvest should personally host a free 30-minute live Q&A or webinar this week announced across all channels to move cold leads toward a buying decision.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-04-29",
     "tasks": [
       {
