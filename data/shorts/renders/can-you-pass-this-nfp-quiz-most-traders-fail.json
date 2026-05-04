@@ -1,27 +1,25 @@
 {
   "slug": "can-you-pass-this-nfp-quiz-most-traders-fail",
   "renderId": "render-can-you-pass-this-nfp-quiz-most-traders-fail",
-  "title": "Can You Pass This NFP Quiz? Most Traders Fail ❌",
-  "description": "NFP drops this week. Do you actually know how smart money trades it? Test yourself with this quick ICT quiz — most traders get it wrong. Follow R2F Trading for daily ICT setups and funded trader tips. r2ftrading.com",
+  "title": "Can You Pass This NFP Quiz? (Most Traders Fail)",
+  "description": "NFP drops this week. Do you actually know how smart money moves before and after the release? Test yourself with this ICT liquidity quiz — most traders get Q3 wrong. Follow R2F Trading for daily ICT setups. r2ftrading.com",
   "hashtags": [
     "#ICTTrading",
-    "#NFP",
-    "#SmartMonkeyConcepts",
+    "#NFPTrading",
+    "#SmartMoneyConceptss",
+    "#FundedTrader",
     "#OrderBlocks",
     "#FairValueGap",
-    "#FundedTrader",
     "#LiquiditySweep",
     "#ForexTrading",
-    "#R2FTrading",
-    "#ICT2026"
+    "#ICT2026",
+    "#R2FTrading"
   ],
-  "script": "NFP is THIS week. Quick quiz — what does smart money do BEFORE the release? Most traders get this dead wrong. Question: Before NFP drops, smart money typically... A) Buys breakouts. B) Sweeps liquidity. C) Waits for the candle to close. Think you know it? 78% of traders in our community got this wrong the first time. The answer might surprise you. The answer is B — liquidity sweep. Smart money hunts stops above AND below before the real move begins. After the sweep, price leaves a Fair Value Gap. THAT is your entry. Not the breakout. The FVG after the sweep. Stop trading the spike. Trade the structure. Sweep → FVG → entry. That's how funded traders survive NFP week in 2026. Follow R2F Trading. We drop NFP prep content this week. Don't trade blind. r2ftrading.com — link in bio.",
+  "script": "NFP is THIS week. Stop. Before you place that trade — can you actually pass this one question? Most funded traders can. Most beginners can't. THE QUESTION: Before NFP drops, smart money sweeps liquidity. Which side gets hit FIRST — buy side or sell side? Option A: Buy side — highs get swept first. Option B: Sell side — lows get swept first. Option C: Depends on the higher timeframe bias. Think fast. Most traders panic-bought the highs in 2024 NFP — 73% of retail was wrong. That's not a coincidence. That's the trap. THE ANSWER: Option C. It depends on the HTF bias. Smart money engineers the sweep against the trend FIRST — then expands with it. The R2F Trading system calls this a liquidity engineered run. Mark your draw on liquidity BEFORE NFP. Then wait for the sweep. Then enter. Follow R2F Trading. We post NFP breakdowns every week. Link in bio at r2ftrading.com. Don't trade NFP blind.",
   "contentType": "quiz",
   "seriesName": null,
   "seriesNumber": null,
   "autoPublish": false,
-  "createdAt": "2026-05-02T09:31:10.298Z",
-  "status": "failed",
-  "error": "Render failed",
-  "failedAt": "2026-05-02T09:32:00.860Z"
+  "createdAt": "2026-05-04T00:33:23.757Z",
+  "status": "rendering"
 }
