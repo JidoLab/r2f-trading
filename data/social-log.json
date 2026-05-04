@@ -2017,5 +2017,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-04T12:00:24.543Z",
+    "type": "text",
+    "postType": "promo-checklist",
+    "text": "NFP week + Monday false breaks = chaos for the unprepared. I use this ICT checklist before EVERY tra",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
