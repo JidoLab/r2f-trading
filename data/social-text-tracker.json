@@ -1,7 +1,6 @@
 {
   "recentTypes": [
     "poll-native",
-    "poll-native",
     "question",
     "poll",
     "hot-take",
@@ -29,11 +28,12 @@
     "quote",
     "story",
     "tip",
-    "promo-free-class"
+    "promo-free-class",
+    "promo-results"
   ],
   "lastPost": {
-    "type": "promo-free-class",
-    "text": "NFP week + 'sell in May' noise = perfect storm for liquidity sweeps. Free class covers exactly how to trade this with ICT setups — plus the funded account blueprint. No fluff. 👇 https://r2ftrading.com/free-class #ICTTrading #SmartMoneyConcepts #FundedTrader",
-    "date": "2026-05-03T12:00:54.498Z"
+    "type": "promo-results",
+    "text": "R2F traders are passing funded challenges at 85%. NFP week, 'sell in May' noise, doesn't matter — structure beats narratives every time. See the proof 👇 https://r2ftrading.com/results #ICTTrading #FundedTrader #SmartMoneyConcepts",
+    "date": "2026-05-04T04:00:25.210Z"
   }
 }
