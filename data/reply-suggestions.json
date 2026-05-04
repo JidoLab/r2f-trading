@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1777854620179-og2u1",
+    "platform": "youtube",
+    "postTitle": "ICT Gems- The Market Structure Gem ICT Kept Hidden… Until Now",
+    "postUrl": "https://youtube.com/watch?v=yJH8ga4z2aE",
+    "authorName": "URAH ICT",
+    "suggestedReply": "That hidden market structure gem is something I drill into my students from day one because most of them miss it completely on lower timeframes. The real edge comes when you combine it with proper PD array alignment on the 4H before dropping to a 15m entry. Have you found this concept holds stronger during London or New York sessions when liquidity is actually moving?",
+    "createdAt": "2026-05-04T00:30:20.179Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777854623792-0ogqu",
+    "platform": "youtube",
+    "postTitle": "LEC 27: How to Shift your Bias | ICT SMC",
+    "postUrl": "https://youtube.com/watch?v=gl3F0FeEb54",
+    "authorName": "Trader Abdullah Masood",
+    "suggestedReply": "Shifting bias is actually where most traders bleed out silently. Interesting take on the process here. In my experience, I teach my students to wait for a confirmed displacement on the 15 minute after a liquidity sweep before committing to a bias shift, because premature shifts on correlated pairs like forex majors will get you chopped to pieces. The sweep itself is the signal, not the structure break.",
+    "createdAt": "2026-05-04T00:30:23.792Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777854627428-luol2",
+    "platform": "youtube",
+    "postTitle": "$100 Se $1000 Challenge | ChatGPT + ICT Strategy Se Gold Trading LivePakistan 2026",
+    "postUrl": "https://youtube.com/watch?v=gmGVCtLuWOQ",
+    "authorName": "SA Trader",
+    "suggestedReply": "I ran a similar $100 to $1000 challenge on gold last year using pure ICT concepts and the discipline required is brutal. Most of my students underestimate how patient you have to be waiting for a proper displacement into an order block on the 15 minute before committing. Combining ChatGPT for bias confirmation is interesting but I always remind my students that the AI won't save you if your kill zone timing is off.",
+    "createdAt": "2026-05-04T00:30:27.428Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777854631135-mmb4h",
+    "platform": "youtube",
+    "postTitle": "TheStrat + ICT: The Most Mechanical Combo In Trading",
+    "postUrl": "https://youtube.com/watch?v=joUovjFonG8",
+    "authorName": "Trader Mike",
+    "suggestedReply": "I've been combining TheStrat's 3-candle continuity with ICT order blocks for years and the mechanical nature of it is exactly what I drill into my students. When price forms a full outside bar on the daily and aligns with a premium array on the 4H, the setup almost trades itself. Taught this framework to a student last month on EURUSD and the confluence removed all the guesswork he struggled with.",
+    "createdAt": "2026-05-04T00:30:31.135Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777854635068-1spq6",
+    "platform": "youtube",
+    "postTitle": "Silver Bullet ICT Strategy Explained | Best Forex Trading Setup for XAUUSD, BTC &amp; EURUSD",
+    "postUrl": "https://youtube.com/watch?v=GXrIT2on868",
+    "authorName": "Achieve Point",
+    "suggestedReply": "The Silver Bullet window on XAUUSD is something I drill into my students constantly because gold's volatility during that 10am to 11am killzone can be brutal if you misread the displacement. Most of them initially try to apply the same entry model across BTC and EURUSD without adjusting for liquidity differences between those asset classes. Are you finding the 1min confirmation more reliable on gold versus forex pairs with this setup?",
+    "createdAt": "2026-05-04T00:30:35.068Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777854639199-fzvey",
+    "platform": "youtube",
+    "postTitle": "🔴Live GOLD &amp; BTC Analysis | Smart Money Concepts | ICT Strategy Explained #240 FlipperxForex",
+    "postUrl": "https://youtube.com/watch?v=kPP2N6pg7Gk",
+    "authorName": "FlipperX Forex",
+    "suggestedReply": "The Smart Money Concepts breakdown on Gold is exactly what most traders need to see. The part I drill into my students is understanding WHY displacement matters before marking your FVG, not just identifying the gap itself. On Gold especially, a clean displacement on the 15m or 1H tells you institutional intent. Without that confirmation you are just guessing entries.",
+    "createdAt": "2026-05-04T00:30:39.199Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777854642947-tkfyd",
+    "platform": "youtube",
+    "postTitle": "Smart Money Concepts Trading Course (COMPLETE Beginner to Advanced Guide)",
+    "postUrl": "https://youtube.com/watch?v=-9t_hTKVcEU",
+    "authorName": "Billionaire Trader",
+    "suggestedReply": "I started my SMC journey over a decade ago and the \"beginner to advanced\" structure this course uses is exactly how I teach my own students. Most of them struggle with the transition from basic order blocks to understanding true institutional displacement on the 15 minute chart. Once they stop chasing entries and start waiting for confirmed market structure shifts on GBPUSD, their consistency changes completely. The concepts here are solid foundations worth drilling.",
+    "createdAt": "2026-05-04T00:30:42.947Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1777854646351-latzs",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Crypto Analysis | Gold (XAUUSD) &amp; |  Smart Money Concepts #thetradingprocess",
+    "postUrl": "https://youtube.com/watch?v=hSzNde9ZOlE",
+    "authorName": "The Trading Process",
+    "suggestedReply": "One thing Smart Money Concepts traders often miss on XAUUSD is that gold respects session liquidity sweeps differently than forex pairs. The Asian range on gold tends to set up cleaner inducement before London displacement. I drill this into my students constantly. Are you factoring session separation into your SMC entries here or treating it as a single confluent setup?",
+    "createdAt": "2026-05-04T00:30:46.351Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1777768302774-u87nt",
     "platform": "investinglive",
     "postTitle": "Newsquawk Week Ahead: US NFP, ISM Services PMI, RBA, Canadian jobs and OPEC+",
