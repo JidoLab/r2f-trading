@@ -1,0 +1,34 @@
+{
+  "date": "2026-05-04",
+  "sentAt": "2026-05-04T10:00:29.149Z",
+  "subject": "The trade that feels safest will ruin you",
+  "recipientCount": 5,
+  "failedCount": 0,
+  "totalSubscribers": 5,
+  "content": {
+    "subject": "The trade that feels safest will ruin you",
+    "greeting": "Hey trader,",
+    "marketRecap": "Monday's London open is doing exactly what smart money loves — testing Friday's range extremes and hunting stops before the real weekly direction reveals itself. With the 'Sell in May' narrative flooding retail sentiment, ICT traders need to stay sharp: narrative-driven markets are liquidity goldmines for institutions, not signals to blindly follow. The real question this week isn't whether May is bearish — it's where the liquidity pools are sitting that smart money needs to raid first.",
+    "articles": [
+      {
+        "title": "The Boredom That Blows Accounts",
+        "slug": "2026-05-03-the-boredom-that-blows-accounts",
+        "excerpt": "Fear and greed get all the blame. But after 10+ years of ICT coaching, I've watched boredom quietly destroy more funded accounts than any emotional blowup — especially during May's slow-grind chop."
+      },
+      {
+        "title": "The Confidence Trap Killing ICT Traders",
+        "slug": "2026-05-03-the-confidence-trap-killing-ict-traders",
+        "excerpt": "Everyone tells you to trade with confidence. After 10+ years of ICT coaching, I've found the opposite is true — the moment ICT concepts click is statistically the most account-destroying phase of a trader's journey."
+      },
+      {
+        "title": "The Confidence Trap: Why Good Trades Ruin You",
+        "slug": "2026-05-02-the-confidence-trap-why-good-trades-ruin-you",
+        "excerpt": "Most traders fear losing streaks. But a string of winning smart money concepts setups is statistically more dangerous — it rewires your brain to skip confirmations, overtrade killzones, and size up right before the market punishes you."
+      }
+    ],
+    "tipOfTheWeek": "With NFP on the horizon, mark the dealing range from the last 2-3 days of price action and identify the buy-side and sell-side liquidity sitting above and below it. Smart money almost always runs one side of that range in the 15-30 minutes before the NFP release — that sweep is not the trade, it's the signal. Wait for the sweep, watch for a Fair Value Gap to form on the 1-minute or 5-minute chart in the opposite direction, and enter only after price returns into that FVG during the New York killzone.",
+    "comingUp": "NFP drops this week and it's the highest-impact event on the calendar — if you're not prepped, sit on your hands until the dust settles, because the liquidity sweeps around that release will be violent and fast. CPI and PPI follow shortly after, meaning the next two weeks are essentially back-to-back fundamental landmines. Build your levels now, define your kill zones, and treat any session leading into these releases as a reduced-size or no-trade zone until confluence is undeniable.",
+    "ctaText": "Book a Free Discovery Call",
+    "ctaUrl": "https://r2ftrading.com/contact"
+  }
+}
