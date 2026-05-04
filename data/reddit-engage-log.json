@@ -1296,5 +1296,65 @@
     "commentedAt": "2026-05-03T03:32:06.269Z",
     "permalink": "/r/Trading/comments/1t2368o/reintroducing_one_of_ict_concepts_long_post/ojmcabf/",
     "commentId": "ojmcabf"
+  },
+  {
+    "postId": "1t2be0l",
+    "subreddit": "Trading",
+    "postTitle": "Anyone else just starting out in prop firms??",
+    "commentText": "before you commit to the Lucid flex 50k, try running a week of sim trades using only NY killzone entries on NQ or ES, specifically waiting for a displacement candle to form a 15m FVG and only entering on the retest of that gap. tbh a lot of people fail prop challenges not because their edge is bad but because they overtrade outside of high probability windows and blow the drawdown rules. the challenge rules will hurt you way more than the platform choice imo.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-04T01:32:15.738Z",
+    "permalink": "/r/Trading/comments/1t2be0l/anyone_else_just_starting_out_in_prop_firms/ojsdw3c/",
+    "commentId": "ojsdw3c"
+  },
+  {
+    "postId": "1t2zn5x",
+    "subreddit": "Trading",
+    "postTitle": "Is anyone actually making consistent money with Prop Firms, or is it all just marketing hype?",
+    "commentText": "i had this exact problem when i first started chasing funded accounts, kept blowing evals because i was forcing trades outside of my model just to hit profit targets. what actually changed things for me was getting surgical, like only taking london open FVGs on eurusd on the 5m when price had already swept asian session liquidity. tbh the firms aren't a scam but they do profit heavily from people who treat the eval like a casino rather than a business. consistent payouts are real but they require a level of patience that most people who buy into the \"easy money\" content just don't have yet 🎯",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-04T01:32:23.860Z",
+    "permalink": "/r/Trading/comments/1t2zn5x/is_anyone_actually_making_consistent_money_with/ojsdwx9/",
+    "commentId": "ojsdwx9"
+  },
+  {
+    "postId": "1t2mrno",
+    "subreddit": "Trading",
+    "postTitle": "Profitable futures prop firm traders",
+    "commentText": "tbh the traders who survive those trailing drawdowns long-term are usually the ones treating each NQ or CL session like a sniper, not a machine gunner. try this: only take one trade per killzone, and only when there's a confirmed NY open displacement with a clean FVG left behind on the 5m. one trade, one kill, protect that trail. the 4% stops being terrifying real fast when you're not overtrading it.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-04T01:32:30.069Z",
+    "permalink": "/r/Trading/comments/1t2mrno/profitable_futures_prop_firm_traders/ojsdxjv/",
+    "commentId": "ojsdxjv"
+  },
+  {
+    "postId": "1t2fg8u",
+    "subreddit": "Trading",
+    "postTitle": "A Letter to the Trader who just hit zero",
+    "commentText": "the supply/demand advice is solid but tbh going \"back to basics\" without structure is just how people blow another account doing the same thing differently. the real issue here isn't complexity vs simplicity — it's that he was probably trading without a defined daily bias, which means every trade was essentially a coin flip dressed up as analysis. like, if you can't tell me whether tuesday's london session closed above or below the previous day's high and why that matters for NY open, no amount of \"simplicity\" saves you 🎯",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-04T01:32:38.303Z",
+    "permalink": "/r/Trading/comments/1t2fg8u/a_letter_to_the_trader_who_just_hit_zero/ojsdyg9/",
+    "commentId": "ojsdyg9"
+  },
+  {
+    "postId": "1t2ibau",
+    "subreddit": "Trading",
+    "postTitle": "5y+ still having issues",
+    "commentText": "your 30% win rate on 1:3 and 1:4 RR trades is actually not the problem tbh — that's mathematically profitable if you're sizing correctly. the real issue is you said you \"couldn't execute properly,\" which tells me the edge exists but there's a disconnect between what you see on the chart and what you do with it. been there. what usually breaks that is forcing yourself to pre-mark your levels before london open on something like eurusd — OB, FVG, whatever your draw is — and then literally not touching the mouse until price comes to you. the execution hesitation almost always comes from deciding in real time instead of in advance.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-04T01:32:46.371Z",
+    "permalink": "/r/Trading/comments/1t2ibau/5y_still_having_issues/ojsdzap/",
+    "commentId": "ojsdzap"
+  },
+  {
+    "postId": "1t2cvqu",
+    "subreddit": "Trading",
+    "postTitle": "Blew Multiple Prop Firm Accounts – Stuck and Need Honest Advice",
+    "commentText": "i had this exact problem last year, kept flipping between strategies every time i took a loss on eurusd 15m and never actually understood *why* the setup failed. the strategy hopping you mentioned is what's killing you tbh, not the strategy itself. what fixed it for me was forcing myself to only trade london session killzone on one pair and journal every single entry against the most recent 4H BOS, so i could actually see if i was trading with or against real order flow. once i stopped guessing and started auditing my executions, the problem wasn't my system, it was that i kept entering before price swept the liquidity above the previous session high.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-04T01:32:53.704Z",
+    "permalink": "/r/Trading/comments/1t2cvqu/blew_multiple_prop_firm_accounts_stuck_and_need/ojse00h/",
+    "commentId": "ojse00h"
   }
 ]
