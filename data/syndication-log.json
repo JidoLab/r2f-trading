@@ -1,5 +1,30 @@
 [
   {
+    "slug": "2026-05-05-the-silence-after-a-loss-is-louder-than-you-think",
+    "syndicatedAt": "2026-05-05T02:33:07.550Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-05-the-silence-after-a-loss-is-louder-than-you-think",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-silence-after-a-loss-is-louder-than-you-think-4df9",
+        "id": "3612032"
+      },
+      {
+        "platform": "hashnode",
+        "success": true,
+        "url": "https://r2ftrading.hashnode.dev/the-silence-after-a-loss-is-louder-than-you-think",
+        "id": "69f956e351add06e2fe40d34"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-05-the-silence-after-a-loss-is-louder-than-you-think"
+  },
+  {
     "slug": "2026-05-03-the-confidence-trap-killing-ict-traders",
     "syndicatedAt": "2026-05-03T06:03:00.081Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-03-the-confidence-trap-killing-ict-traders",
