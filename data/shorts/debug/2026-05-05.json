@@ -1,0 +1,27 @@
+{
+  "date": "2026-05-05T00:33:08.869Z",
+  "today": "2026-05-05",
+  "topicsAttempted": [
+    null,
+    null,
+    null
+  ],
+  "results": [
+    {
+      "title": "NFP Week Trap: How Smart Money Hunts Your Stop Loss First",
+      "status": "rendering"
+    },
+    {
+      "title": "The NFP Myth That's Costing Traders Thousands (2026)",
+      "status": "rendering"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "GitHub commit failed: 409 {\"message\":\"is at 0f9a7f4f78cf8533122649798c9825c4ba9537ef but expected 95dd4c17a25696f38d6e7a303ad673ed53848185\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+    }
+  ],
+  "errors": [
+    "GitHub commit failed: 409 {\"message\":\"is at 0f9a7f4f78cf8533122649798c9825c4ba9537ef but expected 95dd4c17a25696f38d6e7a303ad673ed53848185\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+  ]
+}
