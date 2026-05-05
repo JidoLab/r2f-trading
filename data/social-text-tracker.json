@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "question",
     "poll",
     "hot-take",
     "quote",
@@ -29,11 +28,12 @@
     "tip",
     "promo-free-class",
     "promo-results",
-    "promo-checklist"
+    "promo-checklist",
+    "promo-blog"
   ],
   "lastPost": {
-    "type": "promo-checklist",
-    "text": "NFP week + Monday false breaks = chaos for the unprepared. I use this ICT checklist before EVERY trade. Pre-trade, during, post-trade — it keeps me disciplined when the market wants me emotional. Grab it free 👇 https://r2ftrading.com #ICTTrading #SmartMoneyConcepts #NFP",
-    "date": "2026-05-04T12:00:23.644Z"
+    "type": "promo-blog",
+    "text": "NFP week + 'Sell in May' fear = liquidity hunt season. Smart money loves this chaos. I broke down exactly what to watch for. Read it 👇 https://r2ftrading.com/trading-insights #ICTtrading #FairValueGap #SmartMoney",
+    "date": "2026-05-05T04:00:53.074Z"
   }
 }
