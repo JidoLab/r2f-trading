@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-05T00:33:08.869Z",
+  "date": "2026-05-05T01:33:24.961Z",
   "today": "2026-05-05",
   "topicsAttempted": [
     null,
@@ -8,20 +8,20 @@
   ],
   "results": [
     {
-      "title": "NFP Week Trap: How Smart Money Hunts Your Stop Loss First",
-      "status": "rendering"
-    },
-    {
-      "title": "The NFP Myth That's Costing Traders Thousands (2026)",
-      "status": "rendering"
-    },
-    {
       "title": "",
       "status": "error",
-      "error": "GitHub commit failed: 409 {\"message\":\"is at 0f9a7f4f78cf8533122649798c9825c4ba9537ef but expected 95dd4c17a25696f38d6e7a303ad673ed53848185\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+      "error": "GitHub commit failed: 409 {\"message\":\"is at 57b7d0008dbb9c6f1a99c8ceec5d7540f20b5384 but expected 939c24c564e2eb84cba3aeb5a0b9b67dae42ab43\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+    },
+    {
+      "title": "Order Blocks vs Fair Value Gaps: Which One Actually Gets You Funded in 2026?",
+      "status": "rendering"
+    },
+    {
+      "title": "3 NFP Mistakes That Kill Funded Accounts (ICT 2026)",
+      "status": "rendering"
     }
   ],
   "errors": [
-    "GitHub commit failed: 409 {\"message\":\"is at 0f9a7f4f78cf8533122649798c9825c4ba9537ef but expected 95dd4c17a25696f38d6e7a303ad673ed53848185\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+    "GitHub commit failed: 409 {\"message\":\"is at 57b7d0008dbb9c6f1a99c8ceec5d7540f20b5384 but expected 939c24c564e2eb84cba3aeb5a0b9b67dae42ab43\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
   ]
 }
