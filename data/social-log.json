@@ -1,34 +1,5 @@
 [
   {
-    "date": "2026-04-24T12:00:24.620Z",
-    "type": "text",
-    "postType": "promo-blog",
-    "text": "GDP drops next week. Most traders freeze. Smart money? They've already mapped the reversal zones. I ",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-24T14:00:27.351Z",
     "slug": "2026-04-10-why-80-of-ict-traders-fail-at-risk-management",
     "title": "Why 80% of ICT Traders Fail at Risk Management",
@@ -1910,6 +1881,53 @@
     "date": "2026-05-04T14:00:40.632Z",
     "slug": "2026-04-18-ict-trading-coaching-cost-worth-it",
     "title": "ICT Trading Coaching Cost: Worth It?",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-05T02:32:31.431Z",
+    "slug": "2026-05-05-the-silence-after-a-loss-is-louder-than-you-think",
+    "title": "The Silence After a Loss Is Louder Than You Think",
     "results": [
       {
         "platform": "twitter",
