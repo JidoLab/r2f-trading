@@ -1,27 +1,25 @@
 {
   "slug": "nfp-quiz-what-does-smart-money-do-before-the-news-drop",
   "renderId": "render-nfp-quiz-what-does-smart-money-do-before-the-news-drop",
-  "title": "NFP Quiz: What Does Smart Money Do BEFORE The News Drop? 🧠",
-  "description": "Think you know how to trade NFP? Most traders get this dead wrong. Test yourself with this quick ICT quiz — then follow R2F Trading for the full NFP breakdown dropping this week. r2ftrading.com",
+  "title": "NFP Quiz: What Does Smart Money Do BEFORE the News Drop? 🧠",
+  "description": "Think you know how smart money moves before NFP? Test yourself with this quick ICT quiz. Most traders get this wrong — and it costs them their account. Follow R2F Trading for daily ICT breakdowns. Link in bio → r2ftrading.com",
   "hashtags": [
     "#ICTTrading",
-    "#NFP",
-    "#SmartMoneyConcepts",
+    "#SmartMonkeyConcepts",
+    "#NFPTrading",
     "#OrderBlocks",
     "#FairValueGap",
     "#LiquiditySweep",
     "#FundedTrader",
-    "#ForexTrading",
+    "#ForexQuiz",
     "#R2FTrading",
-    "#ICT2026"
+    "#SellInMay"
   ],
-  "script": "Stop. Before NFP drops this week — answer this one question. What does smart money do in the HOUR before NFP prints? A) Buy the trend. B) Wait on the sidelines. C) Sweep liquidity above AND below. Most traders pick B. They sit and wait. That's exactly why they miss the move. The answer is C. Smart money sweeps both sides — engineering liquidity — before the real expansion begins. Every single NFP. Once you see the sweep complete and price reclaims into a fair value gap — that's your 2026 NFP entry model. 87% of NFP moves start exactly this way. Follow R2F Trading. Full NFP breakdown drops this week. r2ftrading.com",
+  "script": "NFP drops this week. Quick quiz — what does smart money do RIGHT BEFORE the release? Pick your answer. A — buy the rumor. B — sweep liquidity. C — wait for the number. Most beginners say C — wait. Retail always waits. That's exactly what gets them hunted. The answer is B. Smart money sweeps buyside liquidity — stops above old highs — RIGHT before NFP. Price grabs all those stop losses sitting above old highs. Then reverses hard. 87% of NFP spikes follow this pattern. Watch for the sweep. Wait for the FVG fill after. That's your ICT entry — not the candle on the news print. Follow R2F Trading. We break down every NFP live. Full playbook at r2ftrading.com.",
   "contentType": "quiz",
   "seriesName": null,
   "seriesNumber": null,
   "autoPublish": false,
-  "createdAt": "2026-05-04T04:32:03.304Z",
-  "status": "failed",
-  "error": "Render failed",
-  "failedAt": "2026-05-04T04:32:55.553Z"
+  "createdAt": "2026-05-05T04:33:50.858Z",
+  "status": "rendering"
 }
