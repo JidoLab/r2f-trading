@@ -1,34 +1,5 @@
 [
   {
-    "date": "2026-04-25T12:00:52.629Z",
-    "type": "text",
-    "postType": "question",
-    "text": "GDP drops next week 👀 Do you trade the actual release or wait for the dust to settle and hunt the l",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-04-25T14:00:27.163Z",
     "slug": "2026-04-11-weekend-backtesting-ritual-that-made-me-profitable",
     "title": "Weekend Backtesting Ritual That Made Me Profitable",
@@ -1928,6 +1899,53 @@
     "date": "2026-05-05T07:32:09.048Z",
     "slug": "2026-05-05-the-silence-before-the-setup-ict-patience",
     "title": "The Silence Before the Setup: ICT Patience",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-05T14:00:58.483Z",
+    "slug": "2026-04-18-patience-is-your-most-profitable-ict-skill",
+    "title": "Patience Is Your Most Profitable ICT Skill",
     "results": [
       {
         "platform": "twitter",
