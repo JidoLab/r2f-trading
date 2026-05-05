@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-05T01:33:24.961Z",
+  "date": "2026-05-05T08:31:11.135Z",
   "today": "2026-05-05",
   "topicsAttempted": [
     null,
@@ -8,20 +8,22 @@
   ],
   "results": [
     {
-      "title": "",
-      "status": "error",
-      "error": "GitHub commit failed: 409 {\"message\":\"is at 57b7d0008dbb9c6f1a99c8ceec5d7540f20b5384 but expected 939c24c564e2eb84cba3aeb5a0b9b67dae42ab43\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
-    },
-    {
       "title": "Order Blocks vs Fair Value Gaps: Which One Actually Gets You Funded in 2026?",
       "status": "rendering"
     },
     {
-      "title": "3 NFP Mistakes That Kill Funded Accounts (ICT 2026)",
-      "status": "rendering"
+      "title": "",
+      "status": "error",
+      "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 8,000 output tokens per minute (org: ffa2d565-0d75-4b6a-88f2-57ad5eaf9f3f, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://claude.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011Caj7LDT1WVoJJGTmmb4Xg\"}"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 8,000 output tokens per minute (org: ffa2d565-0d75-4b6a-88f2-57ad5eaf9f3f, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://claude.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011Caj7Lat7PjQnXq27GmFdY\"}"
     }
   ],
   "errors": [
-    "GitHub commit failed: 409 {\"message\":\"is at 57b7d0008dbb9c6f1a99c8ceec5d7540f20b5384 but expected 939c24c564e2eb84cba3aeb5a0b9b67dae42ab43\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+    "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 8,000 output tokens per minute (org: ffa2d565-0d75-4b6a-88f2-57ad5eaf9f3f, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://claude.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011Caj7LDT1WVoJJGTmmb4Xg\"}",
+    "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed your organization's rate limit of 8,000 output tokens per minute (org: ffa2d565-0d75-4b6a-88f2-57ad5eaf9f3f, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://claude.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011Caj7Lat7PjQnXq27GmFdY\"}"
   ]
 }
