@@ -75,11 +75,7 @@
     "mentionedR2F": true,
     "commentedAt": "2026-05-05T08:31:21.710Z",
     "permalink": "/r/ICTMentorship/comments/1t47qxj/prop_firm_funded/ok0tczi/",
-    "commentId": "ok0tczi",
-    "hasReply": true,
-    "firstReplyAt": "2026-05-05T19:02:33.000Z",
-    "firstReplyAuthor": "LongTax963",
-    "firstReplyText": "Midnight open retracement entry at NY?? Not London? Confirm you didn't mistype. Cuz price will be far away from midnight open at NY. In fact, that's now the target depending on the day. It depends, not always. If you mean it, enlighten us. Would be good to re-up my arsenal."
+    "commentId": "ok0tczi"
   },
   {
     "postId": "1t4ikvo",
@@ -90,5 +86,35 @@
     "commentedAt": "2026-05-06T05:32:37.202Z",
     "permalink": "/r/Forexstrategy/comments/1t4ikvo/hft_ea_auto_trading/ok75q0i/",
     "commentId": "ok75q0i"
+  },
+  {
+    "postId": "1t56vpq",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "26 year old from India",
+    "commentText": "i had this exact problem with information overload when i first started mapping TTFM on the daily and H4 — i kept jumping between models and never actually sat with one long enough to trust it. what clicked for me was just trading GBPUSD, higher timeframe OBs only, waiting for a clean BOS on H4 before even considering an entry. tbh the family business schedule is actually an edge here, not a disadvantage — forces you to stop babysitting trades and let the setup breathe.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-06T13:01:06.343Z",
+    "permalink": "/r/InnerCircleTraders/comments/1t56vpq/26_year_old_from_india/ok8sjbg/",
+    "commentId": "ok8sjbg"
+  },
+  {
+    "postId": "1t59ngy",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Use this framework for continuation trades",
+    "commentText": "on step 4, try waiting for the FVG to form on the 5m specifically after the BOS, not just any timeframe. then on step 5, the OB you want is the last down candle *before* the displacement that created that FVG. if price retraces into it during the NY killzone on EURUSD or NJ pairs, that's your highest probability entry imo. the killzone timing is what separates the clean fills from the messy ones tbh.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-06T13:01:14.673Z",
+    "permalink": "/r/InnerCircleTraders/comments/1t59ngy/use_this_framework_for_continuation_trades/ok8sk9k/",
+    "commentId": "ok8sk9k"
+  },
+  {
+    "postId": "1t4qbt0",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Tiny fix, Big results",
+    "commentText": "the \"skip the stress part\" realization is genuinely one of the most underrated breakthroughs in prop trading tbh. scaling accounts instead of scaling risk per account keeps your model clean because you're never inflating position size to chase a bigger payout, you're just replicating the same disciplined 2-trade session across more accounts. are you syncing your entries across all 20 accounts during the same session window, like london or NY open kill zone, or are you finding yourself drifting into different setups per account as the count grew?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-06T13:01:22.552Z",
+    "permalink": "/r/InnerCircleTraders/comments/1t4qbt0/tiny_fix_big_results/ok8sl5x/",
+    "commentId": "ok8sl5x"
   }
 ]
