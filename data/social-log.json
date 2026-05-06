@@ -2017,5 +2017,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-06T12:00:39.283Z",
+    "type": "text",
+    "postType": "question",
+    "text": "NFP dropping soon — do you STOP trading the day before, trade the news live, or wait for the dust to",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
