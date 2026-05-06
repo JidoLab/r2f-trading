@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll",
     "hot-take",
     "quote",
     "poll-native",
@@ -29,11 +28,12 @@
     "promo-free-class",
     "promo-results",
     "promo-checklist",
-    "promo-blog"
+    "promo-blog",
+    "promo-coaching"
   ],
   "lastPost": {
-    "type": "promo-blog",
-    "text": "NFP week + 'Sell in May' fear = liquidity hunt season. Smart money loves this chaos. I broke down exactly what to watch for. Read it 👇 https://r2ftrading.com/trading-insights #ICTtrading #FairValueGap #SmartMoney",
-    "date": "2026-05-05T04:00:53.074Z"
+    "type": "promo-coaching",
+    "text": "FOMC week + NFP around the corner = retail getting wrecked, smart money eating. I have 2 coaching spots open. If you want to finally read these moves, not guess them — free 15-min call, no pitch. 👇 https://r2ftrading.com/contact #ICTTrading #SmartMoneyConcepts #FundedTrader",
+    "date": "2026-05-06T04:00:54.249Z"
   }
 }
