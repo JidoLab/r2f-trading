@@ -76,5 +76,15 @@
     "commentedAt": "2026-05-05T08:31:21.710Z",
     "permalink": "/r/ICTMentorship/comments/1t47qxj/prop_firm_funded/ok0tczi/",
     "commentId": "ok0tczi"
+  },
+  {
+    "postId": "1t4ikvo",
+    "subreddit": "Forexstrategy",
+    "postTitle": "HFT EA Auto Trading",
+    "commentText": "hft EAs and ICT don't really mix tbh because these tools rely on latency arbitrage and tick manipulation that has nothing to do with how price actually delivers through draw on liquidity. the site is basically selling a black box with zero transparency on what's driving entries. are you trying to automate a specific setup like a london open FVG play on EURUSD, or just looking for a hands-off solution in general?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-06T05:32:37.202Z",
+    "permalink": "/r/Forexstrategy/comments/1t4ikvo/hft_ea_auto_trading/ok75q0i/",
+    "commentId": "ok75q0i"
   }
 ]
