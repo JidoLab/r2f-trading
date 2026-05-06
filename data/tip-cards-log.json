@@ -625,5 +625,38 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "number": 20,
+    "category": "Prop Firms",
+    "tip": "Before taking any setup on your prop firm challenge, confirm price has swept a liquidity pool (buy-side or sell-side) and printed a market structure shift on the entry timeframe — without that sequence, you're just guessing direction and burning funded account drawdown on low-probability trades.",
+    "imageUrl": "https://www.r2ftrading.com/tip-cards/tip-20.png",
+    "date": "2026-05-06T06:00:21.152Z",
+    "results": [
+      {
+        "platform": "twitter-image",
+        "status": "error",
+        "message": "Image fetch failed: 404"
+      },
+      {
+        "platform": "facebook",
+        "status": "error",
+        "message": "{\"error\":{\"message\":\"Missing or invalid image file\",\"type\":\"OAuthException\",\"code\":324,\"error_subcode\":2069019,\"is_transient\":true,\"error_user_title\":\"Image Required\",\"error_user_msg\":\"Make sure your "
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
