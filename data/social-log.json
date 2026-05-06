@@ -1988,5 +1988,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-05-06T04:00:55.190Z",
+    "type": "text",
+    "postType": "promo-coaching",
+    "text": "FOMC week + NFP around the corner = retail getting wrecked, smart money eating. I have 2 coaching sp",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
