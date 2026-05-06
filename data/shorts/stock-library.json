@@ -85,9 +85,9 @@
     "url": "https://videos.pexels.com/video-files/8480680/8480680-hd_1080_1920_25fps.mp4",
     "category": "screen_glow",
     "pexelsId": 8480680,
-    "usageCount": 2,
+    "usageCount": 3,
     "addedAt": "2026-04-17T13:21:29.546Z",
-    "lastUsedAt": "2026-05-02T03:31:17.066Z"
+    "lastUsedAt": "2026-05-06T02:33:10.657Z"
   },
   {
     "id": "seed-screen_glow-8480278",
@@ -737,8 +737,9 @@
     "height": 2048,
     "duration": 29,
     "pexelsId": 8724310,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:31.431Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:31.431Z",
+    "lastUsedAt": "2026-05-06T02:33:10.657Z"
   },
   {
     "id": "pexels-7125843",
@@ -2022,9 +2023,9 @@
     "height": 1920,
     "duration": 18,
     "pexelsId": 36794735,
-    "usageCount": 2,
+    "usageCount": 3,
     "addedAt": "2026-04-17T13:21:43.033Z",
-    "lastUsedAt": "2026-05-02T03:32:05.159Z"
+    "lastUsedAt": "2026-05-06T02:33:10.657Z"
   },
   {
     "id": "pexels-36794734",
