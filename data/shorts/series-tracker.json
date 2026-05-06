@@ -1,6 +1,5 @@
 {
   "_recentTypes": [
-    "story",
     "quiz",
     "pov",
     "rapid-fire",
@@ -20,6 +19,7 @@
     "rapid-fire",
     "debate",
     "listicle",
-    "chart-breakdown"
+    "chart-breakdown",
+    "pov"
   ]
 }
