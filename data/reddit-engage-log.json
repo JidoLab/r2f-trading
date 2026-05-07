@@ -166,5 +166,35 @@
     "commentedAt": "2026-05-07T01:33:19.699Z",
     "permalink": "/r/Forexstrategy/comments/1t54qfc/this_confirms_everything_next_big_move_starts_now/okd6r0e/",
     "commentId": "okd6r0e"
+  },
+  {
+    "postId": "1t5pv55",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Anybody know what would cause this?",
+    "commentText": "not saying it's definitely this but FundingTraders (and most props tbh) have a trailing drawdown that locks in at EOD or sometimes even intraday when your equity peaks. so even if your SL wasn't hit on price, if your floating P&L ran up earlier in the session and then retraced, the account equity could've breached the trailing threshold and triggered a force close. been there during NY session on a GBPUSD trade that was technically \"fine\" on the chart but the prop closed it because my peak equity from the london run-up had already set a new drawdown floor.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-07T02:32:39.978Z",
+    "permalink": "/r/Forexstrategy/comments/1t5pv55/anybody_know_what_would_cause_this/okdh58f/",
+    "commentId": "okdh58f"
+  },
+  {
+    "postId": "1t5pfv4",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Guys i know not a big deal but finally after 2 years of trading i am a Funded trader 😭",
+    "commentText": "this happened to me last month... two years of blowing evals before i finally passed holding a GBPUSD trade through a london open displacement into a 15m FVG that i would've panic closed 6 months ago. 😭 the funded milestone isn't the win tbh, it's realizing you actually trust your read now. congrats man, two years is real work.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-07T02:32:47.246Z",
+    "permalink": "/r/Forexstrategy/comments/1t5pfv4/guys_i_know_not_a_big_deal_but_finally_after_2/okdh5z5/",
+    "commentId": "okdh5z5"
+  },
+  {
+    "postId": "1t5na6b",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Support me",
+    "commentText": "not sure what you need support with but if you're just lost in general, start here — mark the most recent daily FVG on eurusd, then drop to the 15m and wait for ny killzone to tap it. that's it. one setup, one pair, until it clicks.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-07T02:32:53.288Z",
+    "permalink": "/r/Forexstrategy/comments/1t5na6b/support_me/okdh6mh/",
+    "commentId": "okdh6mh"
   }
 ]
