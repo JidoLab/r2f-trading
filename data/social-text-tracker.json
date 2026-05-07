@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll-native",
     "tip",
     "promo-free-class",
     "promo-results",
@@ -29,11 +28,12 @@
     "promo-blog",
     "promo-coaching",
     "question",
-    "poll"
+    "poll",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "NFP tomorrow. What's your move?\n\n🅰️ Sit out — news is a gamble\n🅱️ Trade the liquidity sweep before\n🅲️ Wait for the 5-min FVG after\n🅳️ No plan yet 😅\n\n#NFP #ICTTrading #SmartMoneyConcepts",
-    "date": "2026-05-07T04:00:30.205Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: Stop backtesting NFP setups. Smart money doesn't care about your 200-trade sample. They're already positioned BEFORE the candle prints. React less. Read liquidity more. #ICTTrading #NFP #SmartMoneyConcepts",
+    "date": "2026-05-07T12:01:05.569Z"
   }
 }
