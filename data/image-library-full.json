@@ -600,7 +600,7 @@
     "category": "chart-pattern",
     "description": "Smart Money concept diagram showing liquidity sweep, institutional stops, and sentiment shifts.",
     "addedAt": "2026-04-17T01:19:09.451Z",
-    "usageCount": 0
+    "usageCount": 1
   },
   {
     "id": "img-1776388751103-jxhs",
@@ -1138,7 +1138,7 @@
     "pair": "EURUSD",
     "timeframe": "1H",
     "addedAt": "2026-04-17T01:24:14.708Z",
-    "usageCount": 30
+    "usageCount": 29
   },
   {
     "id": "img-1776389056434-5pze",
