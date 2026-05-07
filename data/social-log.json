@@ -1970,5 +1970,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-05-07T04:00:31.019Z",
+    "type": "text",
+    "postType": "poll",
+    "text": "NFP tomorrow. What's your move?\n\n🅰️ Sit out — news is a gamble\n🅱️ Trade the liquidity sweep before",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
