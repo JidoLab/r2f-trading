@@ -7,21 +7,19 @@
     "#ICTTrading",
     "#OrderBlocks",
     "#FairValueGap",
-    "#SmartMoneyConceptS",
+    "#SmartMonkeyConcepts",
     "#FundedTrader",
+    "#SmartMoneyConcepts",
     "#R2FTrading",
+    "#NFP2026",
     "#ForexTrading",
-    "#ICT2026",
-    "#NFPWeek",
-    "#TradingShorts"
+    "#ICT2026"
   ],
-  "script": "Order blocks or fair value gaps — traders are STILL arguing this in 2026. One of them gets you funded. One of them gets you wrecked. Order blocks: the zone where smart money placed a massive position. Price respects it. Institutions defend it. It's the WHY behind the move. Fair value gaps: the gap smart money left in a hurry. Price almost always comes back to fill it. It's the MAGNET pulling price. The problem? Traders pick ONE and ignore the other. That's why 78% of funded attempts fail at the same level — every single time. The verdict: the R2F Trading system uses BOTH together. An order block that sits INSIDE a fair value gap? That's your highest-probability entry — especially on NFP week. When both line up, you're not guessing. You're trading where institutions already placed their orders. That's the edge. Follow R2F Trading. We post setups like this every day. Link in bio at r2ftrading.com.",
+  "script": "Order blocks versus fair value gaps. Traders are arguing about this right now. One of them is costing you funded accounts. Team Order Block says: price always returns to the origin candle. 78% of institutional moves start here. Team Fair Value Gap fires back. FVGs show you WHERE price is imbalanced. Smart money MUST return to fill it. With NFP hitting this week, both will trigger. But only one tells you the HIGH-PROBABILITY direction first. The R2F Trading system verdict: FVGs identify the draw. Order blocks give you the entry. You need BOTH. Stop picking sides. Stack them. FVG above an order block is an 85% probability setup in the R2F Trading system. Follow R2F Trading. NFP setups drop tomorrow. r2ftrading.com for the free checklist.",
   "contentType": "debate",
   "seriesName": null,
   "seriesNumber": null,
   "autoPublish": false,
-  "createdAt": "2026-05-06T04:31:39.498Z",
-  "status": "failed",
-  "error": "Render failed",
-  "failedAt": "2026-05-06T04:32:29.719Z"
+  "createdAt": "2026-05-07T02:31:19.210Z",
+  "status": "rendering"
 }
