@@ -116,5 +116,55 @@
     "commentedAt": "2026-05-06T13:01:22.552Z",
     "permalink": "/r/InnerCircleTraders/comments/1t4qbt0/tiny_fix_big_results/ok8sl5x/",
     "commentId": "ok8sl5x"
+  },
+  {
+    "postId": "1t58w2g",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Gold swept liquidity below lows continuation or range-bound again?",
+    "commentText": "looks like continuation to me tbh, especially if price has now closed above the dealing range equilibrium on the 4h and the sweep left a clean BOS on the lower timeframe. the macro confluence you mentioned (DXY weakness + yields dropping) lines up with smart money repositioning long, not just a temporary blip. are you looking at this on the 15m or 1h? makes a huge difference for OB validity because that reversal candle after the sweep could be a legit entry point or just noise depending on the timeframe 👀",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-07T01:32:46.615Z",
+    "permalink": "/r/Forexstrategy/comments/1t58w2g/gold_swept_liquidity_below_lows_continuation_or/okd6nje/",
+    "commentId": "okd6nje"
+  },
+  {
+    "postId": "1t5c4jb",
+    "subreddit": "Forexstrategy",
+    "postTitle": "🤔 Is Gold Preparing for Another Expansion After This Pullback… or Was That the Local Top for XAUUSD?",
+    "commentText": "the 4660–4680 area you're watching is basically the 15M bullish OB from that initial expansion leg, so if NY open prints a displacement candle back into that zone with a reaction, that's your tell. tbh the RSI cooling while price holds structure is textbook smart money reaccumulation, not distribution — distribution would've taken out the 4660 low already. watch for a 15M FVG fill into that OB and then a BOS on the lower timeframe before committing to the long.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-07T01:32:53.613Z",
+    "permalink": "/r/Forexstrategy/comments/1t5c4jb/is_gold_preparing_for_another_expansion_after/okd6o9s/",
+    "commentId": "okd6o9s"
+  },
+  {
+    "postId": "1t5g95l",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Feedback on my SMC strategy (Gold + all markets)",
+    "commentText": "the fake MSS problem on Gold is almost always a session timing issue — if your 15M MSS forms outside London or NY overlap, it's probably noise, not a real shift. tbh the model you've described is solid but the one thing missing is a higher timeframe PD array to draw price toward, like a 4H FVG or OB acting as a magnet for your 1H sweep. without that you're basically trading structure shifts in a void. for confirmation, i'd add time of day as a hard filter before anything else — kills a ton of bad setups immediately.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-07T01:33:03.328Z",
+    "permalink": "/r/Forexstrategy/comments/1t5g95l/feedback_on_my_smc_strategy_gold_all_markets/okd6pa7/",
+    "commentId": "okd6pa7"
+  },
+  {
+    "postId": "1t5sud0",
+    "subreddit": "ICTMentorship",
+    "postTitle": "19 Year old Trying to Make Trading Work",
+    "commentText": "the \"make money then give it back the next day\" cycle is almost always an overtrading problem, not a strategy problem — you've got 4 models running simultaneously on a funded account with $500 DD left, that's too many discretionary frameworks competing for your attention tbh. pick one, probably your reversal model since those have the cleanest invalidation points, and only take trades where you can identify a clear MSS on the 15m with a confirming FVG to target. are you marking your entry model bias on the daily and 4h first, or are you just dropping to execution TFs and hunting setups without a top-down narrative locked in?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-07T01:33:12.989Z",
+    "permalink": "/r/ICTMentorship/comments/1t5sud0/19_year_old_trying_to_make_trading_work/okd6qat/",
+    "commentId": "okd6qat"
+  },
+  {
+    "postId": "1t54qfc",
+    "subreddit": "Forexstrategy",
+    "postTitle": "⚠️THIS CONFIRMS EVERYTHING -NEXT BIG MOVE STARTS NOW 🚨💹",
+    "commentText": "the 4625–4633 zone you're calling an intraday buy is basically sitting inside what looks like a daily bearish FVG from last week's sell-off, so i'd want to see a clean BOS on the 15m before trusting any long off that area. tbh calling every dip \"short-lived\" without a confirmed higher low on the 1H is just narrative bias dressed up as analysis. price respecting 4572 as an OB is the only thing that actually confirms this bullish thesis for me.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-07T01:33:19.699Z",
+    "permalink": "/r/Forexstrategy/comments/1t54qfc/this_confirms_everything_next_big_move_starts_now/okd6r0e/",
+    "commentId": "okd6r0e"
   }
 ]
