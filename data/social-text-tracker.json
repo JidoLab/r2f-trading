@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "quote",
     "poll-native",
     "tip",
     "promo-free-class",
@@ -29,11 +28,12 @@
     "promo-checklist",
     "promo-blog",
     "promo-coaching",
-    "question"
+    "question",
+    "poll"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "NFP dropping soon — do you STOP trading the day before, trade the news live, or wait for the dust to settle after? Real answer only 👇 #NFP #ICTTrading #SmartMoneyConcepts",
-    "date": "2026-05-06T12:00:38.007Z"
+    "type": "poll",
+    "text": "NFP tomorrow. What's your move?\n\n🅰️ Sit out — news is a gamble\n🅱️ Trade the liquidity sweep before\n🅲️ Wait for the 5-min FVG after\n🅳️ No plan yet 😅\n\n#NFP #ICTTrading #SmartMoneyConcepts",
+    "date": "2026-05-07T04:00:30.205Z"
   }
 }
