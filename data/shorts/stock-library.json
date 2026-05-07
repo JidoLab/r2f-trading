@@ -138,9 +138,9 @@
     "url": "https://videos.pexels.com/video-files/8873184/8873184-hd_1080_1920_25fps.mp4",
     "category": "typing_trade",
     "pexelsId": 8873184,
-    "usageCount": 1,
+    "usageCount": 2,
     "addedAt": "2026-04-17T13:21:29.546Z",
-    "lastUsedAt": "2026-04-18T02:01:17.632Z"
+    "lastUsedAt": "2026-05-07T01:31:43.329Z"
   },
   {
     "id": "seed-typing_trade-7546674",
@@ -452,9 +452,9 @@
     "height": 2048,
     "duration": 31,
     "pexelsId": 8526496,
-    "usageCount": 1,
+    "usageCount": 2,
     "addedAt": "2026-04-17T13:21:29.547Z",
-    "lastUsedAt": "2026-04-20T02:01:10.090Z"
+    "lastUsedAt": "2026-05-07T01:31:43.329Z"
   },
   {
     "id": "pexels-13801293",
@@ -1006,8 +1006,9 @@
     "height": 1920,
     "duration": 6,
     "pexelsId": 6974134,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:33.201Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:33.201Z",
+    "lastUsedAt": "2026-05-07T01:31:43.329Z"
   },
   {
     "id": "pexels-8724226",
@@ -2125,9 +2126,9 @@
     "height": 1920,
     "duration": 16,
     "pexelsId": 34013121,
-    "usageCount": 2,
+    "usageCount": 3,
     "addedAt": "2026-04-17T13:21:43.033Z",
-    "lastUsedAt": "2026-05-02T09:31:10.408Z"
+    "lastUsedAt": "2026-05-07T01:31:43.329Z"
   },
   {
     "id": "pexels-6047749",
