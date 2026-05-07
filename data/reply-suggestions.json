@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1778113822279-lx884",
+    "platform": "youtube",
+    "postTitle": "Here is why ICT does NOT work anymore...",
+    "postUrl": "https://youtube.com/watch?v=eYYRCZ7rwCc",
+    "authorName": "Ghost Trading Systems",
+    "suggestedReply": "Interesting take on ICT \"not working anymore.\" In my experience the concept itself is fine but most traders misapply it by hunting setups without proper HTF bias first. I drill this into my students constantly. waiting for a clean daily displacement before even looking at 15m order blocks on pairs like Cable filters out most of the noise that makes people think the model is broken.",
+    "createdAt": "2026-05-07T00:30:22.279Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778113825584-cv7jy",
+    "platform": "youtube",
+    "postTitle": "# 101 Live Trading - ( 6 May 2026, Tuesday) &quot;GXT/TTFM&quot; Model - ICT Trading",
+    "postUrl": "https://youtube.com/watch?v=9DSh-SJamng",
+    "authorName": "A7FX",
+    "suggestedReply": "Interesting take on the GXT/TTFM model here. In my experience, I get cleaner results when I let price fully confirm the model at the higher timeframe first before dropping to execution, because premature entries on that structure tend to get swept before the real move develops. I drill this into my students constantly, especially when trading sessions overlap and liquidity is messier. Curious how you handle partials within this model specifically.",
+    "createdAt": "2026-05-07T00:30:25.584Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778113829324-yu546",
+    "platform": "youtube",
+    "postTitle": "Most Traders Ignore this and Lose Money 👀  #trading #forex #tradingstrategy",
+    "postUrl": "https://youtube.com/watch?v=GOU7oiWtlIE",
+    "authorName": "Eikyo ",
+    "suggestedReply": "Most traders ignoring key confluences is exactly what blows accounts. I drill into my students that waiting for a proper market structure shift on the 4H before dropping to the 15m for entry keeps them out of so much noise. Are you focusing more on London or New York session setups when applying this concept?",
+    "createdAt": "2026-05-07T00:30:29.324Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778113832738-jdnek",
+    "platform": "youtube",
+    "postTitle": "Why ICT Trading is Broken (MUST WATCH)",
+    "postUrl": "https://youtube.com/watch?v=6Vd4wJMUD1M",
+    "authorName": "airKam Trader",
+    "suggestedReply": "I used to think ICT was broken too, specifically when I kept getting stopped out on EURUSD during New York open reversals. Took me almost 2 years to realize I was trading the model without understanding the liquidity narrative behind it. I drill this into my students constantly. the concept isn't broken, most people just never learned what they were actually supposed to be looking for.",
+    "createdAt": "2026-05-07T00:30:32.738Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778113835789-0qrq3",
+    "platform": "youtube",
+    "postTitle": "W ON $NQ LONGS |  DAY TRADING ICT CONCEPTS | 5/6/2026",
+    "postUrl": "https://youtube.com/watch?v=-nwklgIbPeg",
+    "authorName": "Tanja Trades",
+    "suggestedReply": "Clean NQ longs on a day like this shows real patience with ICT. The part I drill into my students is waiting for the displacement candle to fully close before marking the FVG. Most jump in the moment they see the gap form and get chopped out before price actually delivers. Did you use the 15m or 5m FVG as your primary entry on this one?",
+    "createdAt": "2026-05-07T00:30:35.789Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778113838994-y0ln6",
+    "platform": "youtube",
+    "postTitle": "SPX Entry Model | Gold Trading Strategy | Precision Entry Levels | ICT | (Video 1/4)",
+    "postUrl": "https://youtube.com/watch?v=ylpFnYkXvGQ",
+    "authorName": "GoldSharks",
+    "suggestedReply": "The SPX entry model applied to gold is something I drill into my students constantly. The precision entry levels only work when you confirm displacement on the higher timeframe first. Most traders jump straight to the 1m or 5m without checking if the 15m structure actually supports the move. Curious how you handle conflicting bias between SPX correlation and gold's own internal range in part 2.",
+    "createdAt": "2026-05-07T00:30:38.994Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778113842872-h5zki",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE XAUUSD &amp; US100 Trading | ICT Liquidity &amp; Smart Money Concepts",
+    "postUrl": "https://youtube.com/watch?v=I6hpE394zC8",
+    "authorName": "Dogar ICT Precision ",
+    "suggestedReply": "Interesting take on XAUUSD liquidity sweeps. In my experience, the real edge on gold comes from waiting for a confirmed displacement after the sweep rather than entering on the sweep itself. I drill this into my students constantly because premature entries on liquidity grabs are one of the most expensive habits in SMC trading. The US100 setups can actually help you time gold entries when both show confluence at key imbalances.",
+    "createdAt": "2026-05-07T00:30:42.872Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778113847528-h68qw",
+    "platform": "youtube",
+    "postTitle": "Trading with Smart Money Concepts | Day 3",
+    "postUrl": "https://youtube.com/watch?v=hLaXIL4R2U8",
+    "authorName": "IMMORTAL ENIGMA",
+    "suggestedReply": "Smart Money Concepts on Day 3 usually means liquidity sweeps are coming into focus and that is where most traders trip up. I always tell my students to confirm which side of a range is holding premium or discount before committing to a direction, because SMC without that context just becomes entry hunting. The exception I would add here is on lower timeframe pairs like indices and forex during news events, where the sweep can look clean but the displacement never follows through. Watch the reaction after the sweep more than the sweep itself.",
+    "createdAt": "2026-05-07T00:30:47.529Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1778027462497-0ikcy",
     "platform": "investinglive",
     "postTitle": "PBOC is expected to set the USD/CNY reference rate at 6.8160 – Reuters estimate",
