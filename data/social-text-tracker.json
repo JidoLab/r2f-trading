@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "tip",
     "promo-free-class",
     "promo-results",
     "promo-checklist",
@@ -29,11 +28,12 @@
     "promo-coaching",
     "question",
     "poll",
-    "hot-take"
+    "hot-take",
+    "quote"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: Stop backtesting NFP setups. Smart money doesn't care about your 200-trade sample. They're already positioned BEFORE the candle prints. React less. Read liquidity more. #ICTTrading #NFP #SmartMoneyConcepts",
-    "date": "2026-05-07T12:01:05.569Z"
+    "type": "quote",
+    "text": "\"Retail sells in May. Smart money hunts the liquidity retail leaves behind.\"\n\nNFP morning. Stay patient, let price come to you. #ICTTrading #SmartMoneyConcepts #NFP",
+    "date": "2026-05-08T04:01:00.026Z"
   }
 }
