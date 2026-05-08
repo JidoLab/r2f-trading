@@ -1,5 +1,30 @@
 [
   {
+    "slug": "2026-05-08-the-boredom-problem-every-ict-trader-ignores",
+    "syndicatedAt": "2026-05-08T00:33:09.157Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-08-the-boredom-problem-every-ict-trader-ignores",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-boredom-problem-every-ict-trader-ignores-1jbi",
+        "id": "3629734"
+      },
+      {
+        "platform": "hashnode",
+        "success": true,
+        "url": "https://r2ftrading.hashnode.dev/the-boredom-problem-every-ict-trader-ignores",
+        "id": "69fd2f444a8fd566536954ad"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-08-the-boredom-problem-every-ict-trader-ignores"
+  },
+  {
     "slug": "2026-05-06-why-patience-feels-wrong-in-profitable-trades",
     "syndicatedAt": "2026-05-06T01:33:16.913Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-06-why-patience-feels-wrong-in-profitable-trades",
