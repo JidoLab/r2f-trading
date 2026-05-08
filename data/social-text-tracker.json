@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-free-class",
     "promo-results",
     "promo-checklist",
     "promo-blog",
@@ -29,11 +28,12 @@
     "question",
     "poll",
     "hot-take",
-    "quote"
+    "quote",
+    "tip"
   ],
   "lastPost": {
-    "type": "quote",
-    "text": "\"Retail sells in May. Smart money hunts the liquidity retail leaves behind.\"\n\nNFP morning. Stay patient, let price come to you. #ICTTrading #SmartMoneyConcepts #NFP",
-    "date": "2026-05-08T04:01:00.026Z"
+    "type": "tip",
+    "text": "NFP day tip: wait for the 9:30 AM NY open after the spike settles. Smart money hunts liquidity on that initial move THEN shows its hand. Trade the retracement, not the news. #NFP #ICTTrading #SmartMoneyConcepts",
+    "date": "2026-05-08T12:00:30.913Z"
   }
 }
