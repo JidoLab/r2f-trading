@@ -2017,5 +2017,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-08T12:00:31.897Z",
+    "type": "text",
+    "postType": "tip",
+    "text": "NFP day tip: wait for the 9:30 AM NY open after the spike settles. Smart money hunts liquidity on th",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
