@@ -26,5 +26,14 @@
       "day5",
       "complete"
     ]
+  },
+  {
+    "email": "marie.yeji.nam@gmail.com",
+    "name": "marie",
+    "date": "2026-05-08T06:06:43.958Z",
+    "day": 0,
+    "emailsSent": [
+      "day1"
+    ]
   }
 ]
