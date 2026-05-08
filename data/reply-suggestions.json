@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1778200215674-sagrm",
+    "platform": "youtube",
+    "postTitle": "Live Futures Trading, GIVEAWAY, NQ Day Trading Prop Firm ICT Strategy, Lucid, Tradeify, Apex, Gold",
+    "postUrl": "https://youtube.com/watch?v=yoHlYPy4E9U",
+    "authorName": "Cove Trader",
+    "suggestedReply": "One thing I always stress when trading NQ on prop firm accounts is session timing relative to liquidity sweeps. Most traders gun for entries before New York open confirmation, which gets them stopped out chasing. I teach my students to wait for the 8:30 killzone sweep before committing to a direction, especially on volatile NQ. That patience alone changes the funded account game completely.",
+    "createdAt": "2026-05-08T00:30:15.674Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778200219859-ni42j",
+    "platform": "youtube",
+    "postTitle": "Progress Update 14 of the 25k LucidFlex eval #daytrader #lifestyle #makemoneyonline #relateable",
+    "postUrl": "https://youtube.com/watch?v=YvFcZ7UM2Kg",
+    "authorName": "Cash McNasty",
+    "suggestedReply": "Progress update 14 of 25 means you're deep enough in the eval where the real psychological traps start showing up. Solid approach overall but I always warn my students on funded accounts to watch their consistency rule during drawdown days because that's where most blow it, not on losses but on revenge sizing after a missed setup. Make sure your lot sizing on the 15m sessions stays uniform all the way to that final target.",
+    "createdAt": "2026-05-08T00:30:19.859Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778200222936-0i9jo",
+    "platform": "youtube",
+    "postTitle": "The Easiest Gold Volume Profile Trading Strategy That Works!",
+    "postUrl": "https://youtube.com/watch?v=LsC2IokcYpc",
+    "authorName": "Faiz SMC",
+    "suggestedReply": "Volume Profile on gold hits different when you stack it with ICT concepts. I teach my students to combine high volume nodes with premium and discount arrays on the 1H, because gold respects those confluence zones more consistently than almost any other asset. The POC alone without a liquidity narrative behind it leaves too many entries exposed.",
+    "createdAt": "2026-05-08T00:30:22.936Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778200226519-5q70p",
+    "platform": "youtube",
+    "postTitle": "DAY TRADING ICT LIVE AM SESSION! $NQ and $ES FUTURES",
+    "postUrl": "https://youtube.com/watch?v=rwRxUZxKdEA",
+    "authorName": "Benjamin",
+    "suggestedReply": "On NQ and ES simultaneously, the correlation divergence between the two is where I find the real edge. When ES confirms a PD array but NQ lags, that lag is often your highest probability entry signal. I drill this into my students constantly. Most traders watch both charts but never actually use the relationship between them as a trigger.",
+    "createdAt": "2026-05-08T00:30:26.519Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778200229540-yxfqg",
+    "platform": "youtube",
+    "postTitle": "DAY BEFORE NFP... NO TRADE | DAY TRADING ICT CONCEPTS | 5/7/2026",
+    "postUrl": "https://youtube.com/watch?v=1ZE_k_PKv2Q",
+    "authorName": "Tanja Trades",
+    "suggestedReply": "Sitting out the day before NFP is the right call and I drill this into my students constantly. The liquidity grab going into high impact news creates too many false setups, especially when you are watching sessions where price is just ranging and hunting stops. Are you finding clean ICT setups returning on the Monday open after NFP, or do you wait for mid week confirmation before re engaging?",
+    "createdAt": "2026-05-08T00:30:29.540Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778200232729-jqalf",
+    "platform": "youtube",
+    "postTitle": "W on ES long 🔴 LIVE Day Trading Futures | ES NQ | ICT Concepts | May 7",
+    "postUrl": "https://youtube.com/watch?v=NUTgKokXSQA",
+    "authorName": "LumiTraders",
+    "suggestedReply": "I drilled ES longs into my students all last week using the 15 minute chart to identify premium and discount arrays before the NY session open. Catching that directional bias early on ES is exactly what separates consistent traders from the ones who chase. Good to see the ICT concepts applied cleanly here on a live session rather than hindsight charts.",
+    "createdAt": "2026-05-08T00:30:32.729Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778200236574-f7y7x",
+    "platform": "youtube",
+    "postTitle": "LIVE TRADING NQ | ICT | Inversion Model | $NQ $ES",
+    "postUrl": "https://youtube.com/watch?v=cYtISHoZq0U",
+    "authorName": "dhesi_trades",
+    "suggestedReply": "The Inversion Fair Value Gap model on NQ is something I drill into my students constantly because it trips people up when price returns to a previous IFVG and they misread whether it's holding as support or breaking down. One thing I'd add here is to confirm your model with the higher timeframe bias first, especially on NQ where liquidity sweeps can be aggressive and fake you into premature entries. Great execution though, this pair rewards patience.",
+    "createdAt": "2026-05-08T00:30:36.574Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778200241603-rznpx",
+    "platform": "youtube",
+    "postTitle": "SMART MONEY CONCEPTS  + MSNR EURUSD TRADE REVIEW: Market Structure, Liquidity, And Key  Levels.",
+    "postUrl": "https://youtube.com/watch?v=Xu9LBZjkjcI",
+    "authorName": "Nexoel Trading hub",
+    "suggestedReply": "I drill MSNR into my students before they even touch a live chart. On EURUSD specifically, most of them miss the liquidity sweep before the actual market structure shift, and that one mistake costs them the whole entry. Watching you map out those key levels the way you did here confirms exactly what I teach on the 4H. Good to see this approach getting more visibility.",
+    "createdAt": "2026-05-08T00:30:41.603Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1778114740482-ejr3d",
     "platform": "investinglive",
     "postTitle": "PBOC is expected to set the USD/CNY reference rate at 6.8087 – Reuters estimate",
