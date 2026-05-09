@@ -408,5 +408,45 @@
     "commentedAt": "2026-05-08T13:02:14.328Z",
     "permalink": "/r/Trading/comments/1t6voyo/im_a_beginner_trader_and_i_took_this_trade/okmrbtl/",
     "commentId": "okmrbtl"
+  },
+  {
+    "postId": "1t73jyz",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Anyone Become Profitable Trading ICT While Working a Full-Time Office Job?",
+    "commentText": "try marking your HTF draw on liquidity Sunday night — 4H or daily OB or FVG that price is obviously targeting — then set a limit order at that level before you go to work Monday or Tuesday. you're not missing NY open entries, you're just pre-positioning into the same PD arrays everyone else is reacting to in real time tbh. the GBPUSD during early NY has clean sweeps into 4H FVGs that hold well enough for a set-and-manage approach if you check in around lunch.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-09T03:01:12.911Z",
+    "permalink": "/r/InnerCircleTraders/comments/1t73jyz/anyone_become_profitable_trading_ict_while/okrc071/",
+    "commentId": "okrc071"
+  },
+  {
+    "postId": "1t780w2",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Rinse and repeat. 5 Min Entry at the top after News and ATH Sweep, Bullish Breaker broken and price closed below last swing low",
+    "commentText": "classic news sweep + ATH raid combo, the bullish breaker breaking down after price closed below that last swing low is your confirmation the narrative flipped. on the 5min that close below the swing low is basically a BOS telling you smart money already repositioned. clean execution tbh, this is the way.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-09T03:01:20.353Z",
+    "permalink": "/r/InnerCircleTraders/comments/1t780w2/rinse_and_repeat_5_min_entry_at_the_top_after/okrc0wd/",
+    "commentId": "okrc0wd"
+  },
+  {
+    "postId": "1t74fq9",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Liquidity Sweep, Market Structure Shift, Return to Fair Value. 5 Min Entry",
+    "commentText": "i had this exact problem last month on eurusd, 5 min chart during london open. saw the sweep of the asian session low, got a clean BOS, price came back into a 5 min FVG and i still hesitated because the daily was in a discount and i wasn't sure if the return to FVG was enough confluece on its own. tbh the entry was fine, the problem was i hadn't confirmed the 15 min OB aligned with where price was retracing to. always check that your FVG on the 5 min sits inside a higher timeframe PD array or you're just gambling the retracement.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-09T03:01:29.868Z",
+    "permalink": "/r/InnerCircleTraders/comments/1t74fq9/liquidity_sweep_market_structure_shift_return_to/okrc1sv/",
+    "commentId": "okrc1sv"
+  },
+  {
+    "postId": "1t7fy30",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Where to start as a beginner",
+    "commentText": "i had this exact problem when i first started, just wanted someone to tell me exactly where to click. start with the 2022 mentorship on youtube, specifically the sessions on market structure and BOS before you even touch FVGs or order blocks. tbh trying to learn everything at once on eurusd m15 just broke my brain early on so go slow with one concept at a time.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-09T03:01:36.595Z",
+    "permalink": "/r/InnerCircleTraders/comments/1t7fy30/where_to_start_as_a_beginner/okrc2ei/",
+    "commentId": "okrc2ei"
   }
 ]
