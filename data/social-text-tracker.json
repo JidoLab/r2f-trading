@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-checklist",
     "promo-blog",
     "promo-coaching",
     "question",
@@ -29,11 +28,12 @@
     "hot-take",
     "quote",
     "tip",
-    "myth"
+    "myth",
+    "story"
   ],
   "lastPost": {
-    "type": "myth",
-    "text": "MYTH: 'Sell in May' means avoid trading this month.\n\nTRUTH: Smart money still moves. CPI week = massive liquidity grabs on fair value gaps. The calendar doesn't trade — price does.\n\nR2F Trading #ICTTrading #SmartMoneyConcepts #FairValueGap",
-    "date": "2026-05-09T04:00:53.161Z"
+    "type": "story",
+    "text": "Held a long through CPI week once. Price swept the low, hit my SL, then ran 200 pips in my direction. I was right — just wrong on timing. Now I let the data volatility clear before entering. #ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-05-09T12:00:27.269Z"
   }
 }
