@@ -367,7 +367,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-08T13:01:34.339Z",
     "permalink": "/r/FOREXTRADING/comments/1t6ly5s/divergence_with_techled_strengtht/okmr78h/",
-    "commentId": "okmr78h"
+    "commentId": "okmr78h",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-08T14:56:56.000Z",
+    "firstReplyAuthor": "bowryjabari",
+    "firstReplyText": "Yeah this is a solid breakdown and honestly something most traders overlook early on.\n\nThe biggest shift for me came when I stopped treating all indices the same and actually **backtested how they behave relative to each other**. What you’re describing shows up a lot—when US100 has clean structure a"
   },
   {
     "postId": "1t6eodu",
@@ -448,15 +452,5 @@
     "commentedAt": "2026-05-09T03:01:36.595Z",
     "permalink": "/r/InnerCircleTraders/comments/1t7fy30/where_to_start_as_a_beginner/okrc2ei/",
     "commentId": "okrc2ei"
-  },
-  {
-    "postId": "1t7v8af",
-    "subreddit": "Trading",
-    "postTitle": "Asking recommendations for books on SMCs.",
-    "commentText": "i had this exact problem when i first got into SMC tbh — there really aren't many dedicated books because most of the core concepts come directly from ICT's free content. what clicked for me was just working through his 2022 mentorship recordings while sitting on a EURUSD 15m chart looking for breaker blocks during london open, way more practical than any book. the concepts only make sense when you see a BOS form live and then watch price return to the OB.",
-    "mentionedR2F": true,
-    "commentedAt": "2026-05-09T13:00:28.544Z",
-    "permalink": "/r/Trading/comments/1t7v8af/asking_recommendations_for_books_on_smcs/oktdxz3/",
-    "commentId": "oktdxz3"
   }
 ]
