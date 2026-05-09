@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-results",
     "promo-checklist",
     "promo-blog",
     "promo-coaching",
@@ -29,11 +28,12 @@
     "poll",
     "hot-take",
     "quote",
-    "tip"
+    "tip",
+    "myth"
   ],
   "lastPost": {
-    "type": "tip",
-    "text": "NFP day tip: wait for the 9:30 AM NY open after the spike settles. Smart money hunts liquidity on that initial move THEN shows its hand. Trade the retracement, not the news. #NFP #ICTTrading #SmartMoneyConcepts",
-    "date": "2026-05-08T12:00:30.913Z"
+    "type": "myth",
+    "text": "MYTH: 'Sell in May' means avoid trading this month.\n\nTRUTH: Smart money still moves. CPI week = massive liquidity grabs on fair value gaps. The calendar doesn't trade — price does.\n\nR2F Trading #ICTTrading #SmartMoneyConcepts #FairValueGap",
+    "date": "2026-05-09T04:00:53.161Z"
   }
 }
