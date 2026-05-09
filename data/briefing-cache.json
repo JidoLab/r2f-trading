@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-04T01:43:08.320Z",
+  "generatedAt": "2026-05-09T03:07:18.783Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Monday, 4 May 2026 at 08:43 (Bangkok)",
+  "dateTime": "Saturday, 9 May 2026 at 10:07 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -11,22 +11,22 @@
     "chatConversations": 0
   },
   "contentStatus": {
-    "blogPostsToday": 0,
-    "totalBlogPosts": 90,
-    "shortsReady": 11,
+    "blogPostsToday": 1,
+    "totalBlogPosts": 97,
+    "shortsReady": 22,
     "shortsPublished": 31,
     "shortsRendering": 4,
-    "socialPostsThisWeek": 36
+    "socialPostsThisWeek": 33
   },
   "hotLeads": {
     "count": 0,
     "recentHot": []
   },
   "suggestions": [
-    "Manually reach out to all 5 cold subscribers via a personalized Telegram or LINE message from Harvest, since they've averaged 5.8 drips each with no conversion — a direct human touch may break the stall.",
-    "Launch a new top-of-funnel acquisition channel such as a paid Meta or TikTok ad campaign targeting Bangkok-based retail traders, since new subscriber count is at 0 and organic growth has stalled.",
-    "Record and publish a live trading session or real-time ICT concept breakdown on YouTube (not a Short) to build deeper trust and attract higher-intent leads beyond the 11 Shorts already queued.",
-    "Partner with a Bangkok-based finance influencer or trader community for a co-promotion or guest appearance to inject new cold traffic into the funnel, addressing the zero new subscriber growth."
+    "With 22 YouTube Shorts ready to publish and 0 new subscribers yesterday, manually share 2–3 of the best-performing shorts directly in relevant Bangkok trader Facebook Groups or LINE communities to drive immediate traffic.",
+    "Reach out personally to all 5 cold subscribers via a 1-on-1 Telegram or WhatsApp voice note from Harvest, since they've averaged 6.8 drips with no conversion — a personal touch can break the pattern.",
+    "With 97 blog posts published and zero Reddit upvotes, manually identify the top 3 most-visited blog posts and post a genuine, value-adding comment linking to them in active subreddits like r/Forex or r/Daytrading.",
+    "Launch a new top-of-funnel lead magnet (e.g. a free ICT cheat sheet PDF or a live free webinar hosted by Harvest) to address the 0 new subscribers yesterday and replenish an otherwise stagnant pipeline."
   ],
   "schedule": [
     {
