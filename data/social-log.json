@@ -2017,5 +2017,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-09T12:00:28.148Z",
+    "type": "text",
+    "postType": "story",
+    "text": "Held a long through CPI week once. Price swept the low, hit my SL, then ran 200 pips in my direction",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
