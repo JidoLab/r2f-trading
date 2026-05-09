@@ -26,6 +26,26 @@ interface TwitterEntry {
   tweetUrl?: string;
 }
 
+interface ReplyNotification {
+  id: string;
+  platform: "reddit" | "twitter" | "youtube";
+  postTitle: string;
+  subreddit?: string;
+  replyAuthor: string;
+  replyText: string;
+  commentUrl: string;
+  detectedAt: string;
+}
+
+const PLATFORM_STYLE: Record<
+  ReplyNotification["platform"],
+  { bg: string; text: string; label: string; authorPrefix: string }
+> = {
+  reddit:  { bg: "bg-orange-500/20", text: "text-orange-400", label: "Reddit",     authorPrefix: "u/" },
+  twitter: { bg: "bg-blue-500/20",   text: "text-blue-400",   label: "Twitter/X",  authorPrefix: "@" },
+  youtube: { bg: "bg-red-500/20",    text: "text-red-400",    label: "YouTube",    authorPrefix: "" },
+};
+
 function formatDate(dateStr: string) {
   try {
     return new Date(dateStr).toLocaleDateString("en-GB", {
@@ -43,8 +63,10 @@ function formatDate(dateStr: string) {
 export default function EngagementLogPage() {
   const [reddit, setReddit] = useState<RedditEntry[]>([]);
   const [twitter, setTwitter] = useState<TwitterEntry[]>([]);
+  const [replies, setReplies] = useState<ReplyNotification[]>([]);
   const [loading, setLoading] = useState(true);
-  const [tab, setTab] = useState<"reddit" | "twitter">("reddit");
+  const [tab, setTab] = useState<"replies" | "reddit" | "twitter">("replies");
+  const [lastReadAt, setLastReadAt] = useState<string>("");
 
   useEffect(() => {
     fetch("/api/admin/engagement-log")
@@ -53,11 +75,28 @@ export default function EngagementLogPage() {
         if (d) {
           setReddit(d.reddit || []);
           setTwitter(d.twitter || []);
+          setReplies(d.replies || []);
         }
         setLoading(false);
       })
       .catch(() => setLoading(false));
+    setLastReadAt(localStorage.getItem("engagement-log:lastReadAt") || "");
   }, []);
+
+  // When the user opens the Replies tab, mark everything as read.
+  useEffect(() => {
+    if (tab === "replies" && replies.length > 0) {
+      const newest = replies[0]?.detectedAt || "";
+      if (newest && newest !== lastReadAt) {
+        localStorage.setItem("engagement-log:lastReadAt", newest);
+        setLastReadAt(newest);
+      }
+    }
+  }, [tab, replies, lastReadAt]);
+
+  const unreadCount = lastReadAt
+    ? replies.filter((r) => r.detectedAt > lastReadAt).length
+    : replies.length;
 
   if (loading) {
     return (
@@ -101,6 +140,21 @@ export default function EngagementLogPage() {
       {/* Tabs */}
       <div className="flex gap-2 mb-6">
         <button
+          onClick={() => setTab("replies")}
+          className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors flex items-center gap-2 ${
+            tab === "replies"
+              ? "bg-green-500/20 text-green-400"
+              : "bg-white/5 text-white/40 hover:text-white/60"
+          }`}
+        >
+          Replies ({replies.length})
+          {unreadCount > 0 && (
+            <span className="bg-green-500 text-white text-[10px] font-black px-1.5 py-0.5 rounded-full leading-none">
+              {unreadCount}
+            </span>
+          )}
+        </button>
+        <button
           onClick={() => setTab("reddit")}
           className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors ${
             tab === "reddit" ? "bg-orange-500/20 text-orange-400" : "bg-white/5 text-white/40 hover:text-white/60"
@@ -117,6 +171,69 @@ export default function EngagementLogPage() {
           Twitter ({twitter.length})
         </button>
       </div>
+
+      {/* Replies Tab — unified feed across Reddit + Twitter + YouTube */}
+      {tab === "replies" && (
+        <div className="space-y-3">
+          {replies.length === 0 ? (
+            <div className="bg-white/5 border border-white/10 rounded-lg p-8 text-center">
+              <p className="text-white/40 text-sm">
+                No replies detected yet. The cron polls Reddit + Twitter + YouTube once a day.
+              </p>
+            </div>
+          ) : (
+            replies.map((r) => {
+              const style = PLATFORM_STYLE[r.platform] || PLATFORM_STYLE.reddit;
+              const isUnread = lastReadAt ? r.detectedAt > lastReadAt : true;
+              return (
+                <div
+                  key={r.id}
+                  className={`border rounded-lg p-5 transition-colors ${
+                    isUnread
+                      ? "bg-green-500/5 border-green-500/30"
+                      : "bg-white/5 border-white/10"
+                  }`}
+                >
+                  <div className="flex items-start justify-between gap-4 mb-3">
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-2 mb-1 flex-wrap">
+                        <span className={`${style.bg} ${style.text} text-[10px] font-bold px-2 py-0.5 rounded-full`}>
+                          {style.label}
+                          {r.platform === "reddit" && r.subreddit ? ` · r/${r.subreddit}` : ""}
+                        </span>
+                        {isUnread && (
+                          <span className="bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
+                            NEW
+                          </span>
+                        )}
+                        <span className="text-white/30 text-xs">{formatDate(r.detectedAt)}</span>
+                      </div>
+                      <p className="text-white/70 text-sm font-medium truncate">{r.postTitle}</p>
+                    </div>
+                    <a
+                      href={r.commentUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`${style.text} text-xs font-bold shrink-0 hover:opacity-80`}
+                    >
+                      Open ↗
+                    </a>
+                  </div>
+                  <div className="bg-white/5 rounded-md p-3">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className={`${style.text} text-xs font-bold`}>
+                        {style.authorPrefix}
+                        {r.replyAuthor}
+                      </span>
+                    </div>
+                    <p className="text-white/60 text-sm leading-relaxed whitespace-pre-wrap">{r.replyText}</p>
+                  </div>
+                </div>
+              );
+            })
+          )}
+        </div>
+      )}
 
       {/* Reddit Tab */}
       {tab === "reddit" && (

@@ -10,6 +10,7 @@ export async function GET() {
 
   const redditLog: Record<string, unknown>[] = [];
   const twitterLog: Record<string, unknown>[] = [];
+  const replyNotifications: Record<string, unknown>[] = [];
 
   try {
     const raw = await readFile("data/reddit-engage-log.json");
@@ -23,13 +24,32 @@ export async function GET() {
     if (Array.isArray(parsed)) twitterLog.push(...parsed);
   } catch {}
 
-  // Sort both by date descending
+  // Unified reply feed populated by /api/cron/check-comment-replies — covers
+  // Reddit + Twitter + YouTube (any platform that publishes ReplyNotification
+  // entries to data/reply-notifications.json).
+  try {
+    const raw = await readFile("data/reply-notifications.json");
+    const parsed = JSON.parse(raw);
+    if (Array.isArray(parsed)) replyNotifications.push(...parsed);
+  } catch {}
+
+  // Sort by date descending
   redditLog.sort((a, b) => String(b.commentedAt || "").localeCompare(String(a.commentedAt || "")));
-  twitterLog.sort((a, b) => String(b.repliedAt || "").localeCompare(String(a.repliedAt || "")));
+  twitterLog.sort((a, b) =>
+    String(b.repliedAt || b.date || "").localeCompare(String(a.repliedAt || a.date || ""))
+  );
+  replyNotifications.sort((a, b) =>
+    String(b.detectedAt || "").localeCompare(String(a.detectedAt || ""))
+  );
 
   return NextResponse.json({
     reddit: redditLog,
     twitter: twitterLog,
-    totals: { reddit: redditLog.length, twitter: twitterLog.length },
+    replies: replyNotifications,
+    totals: {
+      reddit: redditLog.length,
+      twitter: twitterLog.length,
+      replies: replyNotifications.length,
+    },
   });
 }
