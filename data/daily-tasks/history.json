@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-05-09",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1778296017158-0",
+        "title": "Manually reach out to all 5 cold subscribers via a personalized Telegram or LINE message from Harvest, since they've averaged 5.8 drips each with no conversion — a direct human touch may break the stall.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1778296017158-1",
+        "title": "Launch a new top-of-funnel acquisition channel such as a paid Meta or TikTok ad campaign targeting Bangkok-based retail traders, since new subscriber count is at 0 and organic growth has stalled.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1778296017158-2",
+        "title": "Record and publish a live trading session or real-time ICT concept breakdown on YouTube (not a Short) to build deeper trust and attract higher-intent leads beyond the 11 Shorts already queued.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1778296017158-3",
+        "title": "Partner with a Bangkok-based finance influencer or trader community for a co-promotion or guest appearance to inject new cold traffic into the funnel, addressing the zero new subscriber growth.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-05-05",
     "tasks": [
       {
