@@ -107,7 +107,7 @@
     "authorName": "We Trade Profits",
     "suggestedReply": "Interesting take on combining order blocks with liquidity sweeps. In my experience, the sequence matters more than most traders realize. I teach my students to wait for the liquidity sweep to fully complete before marking the order block, because entering too early on crypto pairs especially means you get caught in the wick. The FVG confirmation after the sweep is what separates the clean setups from the noise.",
     "createdAt": "2026-05-09T00:30:34.706Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1778286638504-vipks",
