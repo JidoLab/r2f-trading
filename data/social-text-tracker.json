@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-coaching",
     "question",
     "poll",
     "hot-take",
@@ -29,11 +28,12 @@
     "tip",
     "myth",
     "story",
-    "poll-native"
+    "poll-native",
+    "challenge"
   ],
   "lastPost": {
-    "type": "poll-native",
-    "text": "CPI week is here 👀 How do you trade high-impact news as an #ICT trader? #SmartMoney\n\n🅰️ I sit out & wait\n🅱️ I trade the setup after\n🅲️ I fade the spike\n🅳️ Depends on bias\n\nVote below! 👇",
-    "date": "2026-05-10T04:00:53.644Z"
+    "type": "challenge",
+    "text": "CHALLENGE: This week only take trades AFTER CPI drops. No pre-news entries. No guessing. Wait for the sweep, find the order block, execute. 5 days. Report back. Who's brave enough? 👇 #ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-05-10T12:00:55.945Z"
   }
 }
