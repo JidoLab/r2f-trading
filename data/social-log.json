@@ -1970,5 +1970,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-05-10T04:00:54.379Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "CPI week is here 👀 How do you trade high-impact news as an #ICT trader? #SmartMoney\n\n🅰️ I sit out ",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
