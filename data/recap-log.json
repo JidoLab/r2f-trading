@@ -118,5 +118,45 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "week": "May 4 - May 10, 2026",
+    "weekKey": "2026-05-10",
+    "items": [
+      "EUR/USD swept 1.1180 highs, rejected from weekly order block near 1.1240",
+      "GBP/USD reclaimed 1.3350 structure, targeting unfilled fair value gap at 1.3420",
+      "USD/JPY displaced below 142.80, confirming bearish institutional order flow shift",
+      "S&P 500 swept sell-side liquidity at 5,560, reversed into premium array resistance",
+      "NAS100 rejected 19,840 order block, leaving unmitigated gap between 19,600 and 19,700",
+      "NFP miss Friday triggered dollar selloff, validating bearish smart money positioning"
+    ],
+    "imageUrl": "https://www.r2ftrading.com/recap-cards/week-2026-05-10.png",
+    "date": "2026-05-10T05:00:36.261Z",
+    "results": [
+      {
+        "platform": "twitter-image",
+        "status": "error",
+        "message": "Image fetch failed: 404"
+      },
+      {
+        "platform": "facebook",
+        "status": "error",
+        "message": "{\"error\":{\"message\":\"Missing or invalid image file\",\"type\":\"OAuthException\",\"code\":324,\"error_subcode\":2069019,\"is_transient\":true,\"error_user_title\":\"Image Required\",\"error_user_msg\":\"Make sure your "
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
