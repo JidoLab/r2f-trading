@@ -810,8 +810,9 @@
     "height": 1920,
     "duration": 7,
     "pexelsId": 6956679,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:31.431Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:31.431Z",
+    "lastUsedAt": "2026-05-10T05:31:32.944Z"
   },
   {
     "id": "pexels-8559177",
@@ -2115,9 +2116,9 @@
     "height": 1920,
     "duration": 12,
     "pexelsId": 35721561,
-    "usageCount": 2,
+    "usageCount": 3,
     "addedAt": "2026-04-17T13:21:43.033Z",
-    "lastUsedAt": "2026-05-05T01:32:52.988Z"
+    "lastUsedAt": "2026-05-10T05:31:32.944Z"
   },
   {
     "id": "pexels-32039090",
