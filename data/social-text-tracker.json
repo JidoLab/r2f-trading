@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-blog",
     "promo-coaching",
     "question",
     "poll",
@@ -29,11 +28,12 @@
     "quote",
     "tip",
     "myth",
-    "story"
+    "story",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "story",
-    "text": "Held a long through CPI week once. Price swept the low, hit my SL, then ran 200 pips in my direction. I was right — just wrong on timing. Now I let the data volatility clear before entering. #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-05-09T12:00:27.269Z"
+    "type": "poll-native",
+    "text": "CPI week is here 👀 How do you trade high-impact news as an #ICT trader? #SmartMoney\n\n🅰️ I sit out & wait\n🅱️ I trade the setup after\n🅲️ I fade the spike\n🅳️ Depends on bias\n\nVote below! 👇",
+    "date": "2026-05-10T04:00:53.644Z"
   }
 }
