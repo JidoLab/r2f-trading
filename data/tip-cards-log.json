@@ -757,5 +757,38 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "number": 24,
+    "category": "Psychology",
+    "tip": "Stop revenge trading after a stop hunt — when price sweeps liquidity and returns inside the range, that **is** the setup; your emotional urge to \"get back in\" is actually the smart entry if you wait for the market structure shift to confirm.",
+    "imageUrl": "https://www.r2ftrading.com/tip-cards/tip-24.png",
+    "date": "2026-05-10T06:00:30.671Z",
+    "results": [
+      {
+        "platform": "twitter-image",
+        "status": "error",
+        "message": "Image fetch failed: 404"
+      },
+      {
+        "platform": "facebook",
+        "status": "error",
+        "message": "{\"error\":{\"message\":\"Missing or invalid image file\",\"type\":\"OAuthException\",\"code\":324,\"error_subcode\":2069019,\"is_transient\":true,\"error_user_title\":\"Image Required\",\"error_user_msg\":\"Make sure your "
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
