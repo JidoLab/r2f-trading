@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1778373030591-v61sp",
+    "platform": "youtube",
+    "postTitle": "🔴Live GOLD &amp; BTC Analysis | Smart Money Concepts | ICT Strategy Explained #246 FlipperxForex",
+    "postUrl": "https://youtube.com/watch?v=kTiSRbt3LVM",
+    "authorName": "FlipperX Forex",
+    "suggestedReply": "I tell my students all the time that BTC and Gold actually move with similar Smart Money logic, and this kind of dual analysis is exactly what builds that pattern recognition. Traded Gold through a liquidity sweep into an order block on the 4H last week and it confirmed everything ICT teaches about institutional delivery. Most of my students who are newer to SMC try to force entries before seeing that sweep complete. Appreciate FlipperX breaking this down live, the real time application is where it clicks.",
+    "createdAt": "2026-05-10T00:30:30.591Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778373034028-zj94z",
+    "platform": "youtube",
+    "postTitle": "Order Blocks ICT: l’erreur que 90% des traders font ⚠️",
+    "postUrl": "https://youtube.com/watch?v=_ovM3jjfGnY",
+    "authorName": "ICT DAY TRADER",
+    "suggestedReply": "I used to make this exact mistake on EURUSD for months. Trading every order block I spotted on the 15m without confirming if price had actually left a liquidity void behind it. Once I started drilling that filter into my students, their win rate on OB entries improved noticeably. The 90% stat is real, most traders are just marking rectangles without understanding the why.",
+    "createdAt": "2026-05-10T00:30:34.028Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778373038087-gzxnx",
+    "platform": "youtube",
+    "postTitle": "Simple ICT Trading Strategy for Inflation Protection",
+    "postUrl": "https://youtube.com/watch?v=FlTLQwJgzvk",
+    "authorName": "ICT Twitter Spaces",
+    "suggestedReply": "Using ICT concepts for inflation protection makes sense but here is the caveat most traders miss. When inflation data drops, liquidity gets swept aggressively on both sides before price commits to a direction. I always tell my students to wait for the first 15 minute candle close after the news before looking for a fair value gap entry, not before. Jumping in early on CPI weeks has burned more accounts than any other mistake I see.",
+    "createdAt": "2026-05-10T00:30:38.087Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778373041183-dlod4",
+    "platform": "youtube",
+    "postTitle": "ICT Trading Strategy Is Dead..? 💀☠️",
+    "postUrl": "https://youtube.com/watch?v=9e-VHfHUERY",
+    "authorName": "IMMORTAL ENIGMA",
+    "suggestedReply": "The \"ICT is dead\" narrative always spikes when retail traders chase setups without understanding the higher timeframe narrative first. I drill this into my students constantly. a clean order block on the 15m means nothing if the daily is still in a premium array with no liquidity below. The concept isn't dead, the discipline to wait for confluence is just rare.",
+    "createdAt": "2026-05-10T00:30:41.183Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778373045289-acc5p",
+    "platform": "youtube",
+    "postTitle": "Smart Money Concept Entry Models That Actually Work! (Top 4 Setups)",
+    "postUrl": "https://youtube.com/watch?v=xViUtfK0xIc",
+    "authorName": "Crypto4light Trading",
+    "suggestedReply": "Of the 4 entry models covered here, the OB retest setup is the one I drill hardest into my students. The part most traders miss is waiting for a confirmed displacement candle before marking the block valid. Without that displacement, you're just drawing rectangles on random wicks and wondering why price keeps blowing through them. Do you typically filter these on the 15m or drop to the 5m for the actual entry trigger?",
+    "createdAt": "2026-05-10T00:30:45.289Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778373048195-1nfgn",
+    "platform": "youtube",
+    "postTitle": "🔴 BTCUSD LIVE 🔴 Smart Money Concepts | Bitcoin Liquidity &amp; Entry Model",
+    "postUrl": "https://youtube.com/watch?v=rsRbtyQFOKU",
+    "authorName": "AUTO TRADER 247",
+    "suggestedReply": "One thing worth layering onto the Bitcoin liquidity model here is session timing. I tell my students to wait for the New York AM session before committing to any SMC entry on BTCUSD, because that is where the real institutional displacement happens and the buy side or sell side liquidity actually gets swept with conviction. London can fake you out badly on crypto pairs.",
+    "createdAt": "2026-05-10T00:30:48.195Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778373050717-l8nhh",
+    "platform": "youtube",
+    "postTitle": "Supply and Demand Trading Strategy With Smart Money Concepts",
+    "postUrl": "https://youtube.com/watch?v=A7nBttU8xtI",
+    "authorName": "Com Lucro Trader",
+    "suggestedReply": "Combining supply and demand zones with smart money concepts is exactly what I drill into my students before they touch a live account. Most traders I see mark their zones on the 15m and wonder why price blows straight through them. Do you factor in higher timeframe liquidity pools before confirming your entries, or are you treating each zone in isolation?",
+    "createdAt": "2026-05-10T00:30:50.717Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778373054784-xe306",
+    "platform": "youtube",
+    "postTitle": "The Truth About Why SMC Traders Stay Stuck",
+    "postUrl": "https://youtube.com/watch?v=3h54Vu8tTO4",
+    "authorName": "Lewis Kelly",
+    "suggestedReply": "I spent years watching SMC traders get stuck in the same loop, and it's almost never about the concepts. It's about wanting to trade every session instead of waiting for true confluence. I drill this into my students constantly. One shift on EURUSD, narrowing down to just the London session, changed everything for them.",
+    "createdAt": "2026-05-10T00:30:54.784Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1778301084984-hw74h",
     "platform": "investinglive",
     "postTitle": "US stock market close: Another big week of gains ends with a flourish",
