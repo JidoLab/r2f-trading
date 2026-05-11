@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "question",
     "poll",
     "hot-take",
     "quote",
@@ -29,11 +28,12 @@
     "myth",
     "story",
     "poll-native",
-    "challenge"
+    "challenge",
+    "myth"
   ],
   "lastPost": {
-    "type": "challenge",
-    "text": "CHALLENGE: This week only take trades AFTER CPI drops. No pre-news entries. No guessing. Wait for the sweep, find the order block, execute. 5 days. Report back. Who's brave enough? 👇 #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-05-10T12:00:55.945Z"
+    "type": "myth",
+    "text": "MYTH: You need to sit out during CPI week — too risky.\n\nTRUTH: Smart money USES that volatility. CPI creates the liquidity grabs and fair value gaps ICT traders hunt for.\n\nThe news isn't the risk. YOUR lack of a plan is.\n\n#ICTTrading #FairValueGap #CPI",
+    "date": "2026-05-11T04:00:28.107Z"
   }
 }
