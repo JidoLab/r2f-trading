@@ -1,0 +1,34 @@
+{
+  "date": "2026-05-11",
+  "sentAt": "2026-05-11T10:00:27.983Z",
+  "subject": "The trade after your best week is a trap",
+  "recipientCount": 5,
+  "failedCount": 0,
+  "totalSubscribers": 5,
+  "content": {
+    "subject": "The trade after your best week is a trap",
+    "greeting": "Hey trader,",
+    "marketRecap": "Monday's London open is the line in the sand this week — smart money will be probing Friday's range for liquidity before committing to a directional bias. The 'Sell in May' narrative is circulating loudly right now, which is exactly the kind of retail sentiment that smart money uses to fuel the opposite move. ICT traders should be watching for engineered liquidity sweeps on key weekly highs and lows before taking any directional bias seriously.",
+    "articles": [
+      {
+        "title": "The Silence After a Big Win Destroys Traders",
+        "slug": "2026-05-10-the-silence-after-a-big-win-destroys-traders",
+        "excerpt": "Everyone warns you about losing streaks. Nobody warns you about the 48-72 hours after your best trade — when overconfidence disguises itself as calm and your risk appetite quietly doubles."
+      },
+      {
+        "title": "Why Discipline Fails When You're Winning",
+        "slug": "2026-05-10-why-discipline-fails-when-you-re-winning",
+        "excerpt": "Every trader gets warned about revenge trading after losses. Nobody warns you about the quiet rule-breaking that happens when everything is going right. That's the streak that kills accounts."
+      },
+      {
+        "title": "Why Patience Feels Physically Painful in Trading",
+        "slug": "2026-05-10-why-patience-feels-physically-painful-in-trading",
+        "excerpt": "Impatience in trading isn't a discipline failure — it's a neurological response to uncertainty. Here's how ICT's killzone rules accidentally became one of the most effective dopamine circuit breakers ever built into a trading system."
+      }
+    ],
+    "tipOfTheWeek": "With CPI dropping this week, the setup isn't during the release — it's before it. Smart money typically raids obvious liquidity pools (equal highs, buy-side resting orders) in the hours leading into high-impact news to fuel their actual position. Mark your order blocks and fair value gaps on the 1H going into the CPI killzone window, wait for the sweep and displacement, then look for a mitigation entry. The news candle is the trap. The retracement after is the trade.",
+    "comingUp": "CPI is the headline event this week and it will move markets hard — position sizing and patience before the release are non-negotiable. PPI follows shortly after and is worth watching as a confirmation or divergence signal against the CPI read. Retail Sales rounds out the data cycle, so USD pairs will be reactive all week — this is a week to be sharp, not busy.",
+    "ctaText": "Check Out the Starter Kit",
+    "ctaUrl": "https://r2ftrading.com/coaching"
+  }
+}
