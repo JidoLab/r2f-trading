@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1778459413806-rqiai",
+    "platform": "youtube",
+    "postTitle": "Time before price.. always",
+    "postUrl": "https://youtube.com/watch?v=kz2j52BdiO0",
+    "authorName": "Hazon Trades",
+    "suggestedReply": "Time before price is something I drill into my students constantly because most want to skip straight to the setup without asking \"is this even the right session window.\" The underrated application here is pairing your time-based bias with the 15m swing structure before dropping to execution. If the time isn't right, even a clean breaker becomes a trap. Patience is the actual edge.",
+    "createdAt": "2026-05-11T00:30:13.806Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778459417021-1rlsu",
+    "platform": "youtube",
+    "postTitle": "Killzones orderblock strategy🚀📊🔥 #xauusd #smc #ict #fvg #liquidity #trading #forextrading #algo",
+    "postUrl": "https://youtube.com/watch?v=eGP4_90o3lQ",
+    "authorName": "Trader in making",
+    "suggestedReply": "Pairing killzones with orderblocks on XAUUSD specifically is where most traders leave money on the table. I teach my students to only take OB entries during the actual killzone window, not just any time price returns to the block, because gold outside of New York or London open behaves completely differently. The institutional flow just isn't there to deliver cleanly. That one filter alone changed how my students approach setups.",
+    "createdAt": "2026-05-11T00:30:17.021Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778459419938-tgmid",
+    "platform": "youtube",
+    "postTitle": "XAUUSD TRADING STRATEGY | Liquidity Grab Trading Strategy | ICT Liquidity Trading Strategy ",
+    "postUrl": "https://youtube.com/watch?v=CmXgFpWq8io",
+    "authorName": "Charts Cafe",
+    "suggestedReply": "One thing I always add to liquidity grab setups on gold is confirmation through session timing. A liquidity sweep that happens during London open carries far more weight than the same move during the Asian range. I drill this into my students because XAUUSD is notorious for faking sweeps during low volume periods before the real move prints in New York overlap.",
+    "createdAt": "2026-05-11T00:30:19.938Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778459423058-7e5xc",
+    "platform": "youtube",
+    "postTitle": "Read Caption ⬇️ This is how you can pass a Funded Account in 5 Steps 1.Know how to trade 2",
+    "postUrl": "https://youtube.com/watch?v=iqDlqmdRcvw",
+    "authorName": "Tursonz",
+    "suggestedReply": "Interesting take on the 5 steps approach. In my experience with funded accounts, step 1 knowing how to trade is actually where most traders rush past the foundation. I drill into my students that passing a prop challenge starts with mastering one session, one pair, and one clean model like London killzone entries on the 15 minute before ever touching risk parameters.",
+    "createdAt": "2026-05-11T00:30:23.058Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778459426113-dhnrc",
+    "platform": "youtube",
+    "postTitle": "How Pro Traders Read the Market Before Entry (II) #trading #scalpingtradingstrategybanknifty #forex",
+    "postUrl": "https://youtube.com/watch?v=fXrhXw7FnH4",
+    "authorName": "Mr Chart Trader",
+    "suggestedReply": "I tell my students this exact thing before they even think about entry. reading market structure on the 5m before scalping Bank Nifty or any forex pair is what separates reactive traders from prepared ones. I traded through enough sessions getting stopped out to know that pre entry context is the whole game. what specific confirmation are you using before committing to a scalp here?",
+    "createdAt": "2026-05-11T00:30:26.113Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778459430103-gga11",
+    "platform": "youtube",
+    "postTitle": "Smart Money Concepts: Trading Fair Value Gaps #shorts",
+    "postUrl": "https://youtube.com/watch?v=LDP-pWxBo8U",
+    "authorName": "Michael Whitman",
+    "suggestedReply": "Fair value gaps on lower timeframes can be tricky and I notice most of my students initially try to trade every FVG they see without waiting for price to return with momentum. The ones who start filtering by session, specifically London or New York open, see a much cleaner hit rate. Are you applying these concepts primarily on indices or do you find FVGs more reliable on forex pairs?",
+    "createdAt": "2026-05-11T00:30:30.103Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778459434311-ida5a",
+    "platform": "youtube",
+    "postTitle": "Smart Money Concepts: Day Trading or Swing Trading Zones #shorts",
+    "postUrl": "https://youtube.com/watch?v=cBK2rrVHKU0",
+    "authorName": "Michael Whitman",
+    "suggestedReply": "Smart money zones work differently depending on whether you're day trading or swing trading, and that distinction matters more than most people admit. The caveat I always give my students is that a premium or discount zone on the daily chart can look completely different on the 15 minute, so always confirm your bias on the higher timeframe before executing. Forex pairs especially will sweep those zones aggressively during news, so patience is the real edge here.",
+    "createdAt": "2026-05-11T00:30:34.311Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778459436703-hit7g",
+    "platform": "youtube",
+    "postTitle": "Weekly Bias + Best Daily Candle Strategy | SMC Liquidity &amp; Entry Setups",
+    "postUrl": "https://youtube.com/watch?v=_HsJe-utlGk",
+    "authorName": "Trading Made Easy",
+    "suggestedReply": "Weekly bias alignment is everything before touching a daily candle setup. I drill into my students that most errors happen when they force entries without confirming the higher timeframe narrative first. Do you factor in the Asia session range when building your weekly bias, or are you strictly working off the daily structure before London open?",
+    "createdAt": "2026-05-11T00:30:36.703Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1778373950312-5vf3y",
     "platform": "investinglive",
     "postTitle": "Bitcoin Price Prediction Favors the Bulls Going Higher",
