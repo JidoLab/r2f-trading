@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll",
     "hot-take",
     "quote",
     "tip",
@@ -29,11 +28,12 @@
     "story",
     "poll-native",
     "challenge",
-    "myth"
+    "myth",
+    "question"
   ],
   "lastPost": {
-    "type": "myth",
-    "text": "MYTH: You need to sit out during CPI week — too risky.\n\nTRUTH: Smart money USES that volatility. CPI creates the liquidity grabs and fair value gaps ICT traders hunt for.\n\nThe news isn't the risk. YOUR lack of a plan is.\n\n#ICTTrading #FairValueGap #CPI",
-    "date": "2026-05-11T04:00:28.107Z"
+    "type": "question",
+    "text": "CPI week + 'Sell in May' noise incoming 👀\n\nDo you AVOID trading high-impact news events or do you hunt them for liquidity grabs?\n\nDrop your answer below 👇\n\n#ICTTrading #SmartMoneyConcepts #Forex",
+    "date": "2026-05-11T12:00:31.072Z"
   }
 }
