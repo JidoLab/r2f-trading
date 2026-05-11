@@ -1999,5 +1999,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-11T12:00:32.081Z",
+    "type": "text",
+    "postType": "question",
+    "text": "CPI week + 'Sell in May' noise incoming 👀\n\nDo you AVOID trading high-impact news events or do you h",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
