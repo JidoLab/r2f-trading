@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "quote",
     "tip",
     "myth",
     "story",
@@ -29,11 +28,12 @@
     "challenge",
     "myth",
     "question",
-    "poll"
+    "poll",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "CPI dropping this week. What's your move?\n\n🅰️ Sit out — too risky\n🅱️ Trade the volatility\n🅲️ Wait for smart money reaction AFTER the print\n🅳️ Already positioned pre-news\n\n#ICTTrading #SmartMoneyConcepts #CPI",
-    "date": "2026-05-12T04:00:11.603Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: trading through CPI is not 'gambling' — it's where the REAL money is. Smart money doesn't hide. It hunts liquidity RIGHT before the news drop. Learn to read it. #ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-05-12T12:00:26.512Z"
   }
 }
