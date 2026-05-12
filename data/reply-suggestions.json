@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1778545823875-cugmc",
+    "platform": "youtube",
+    "postTitle": "This is strategy that never fails me 🤝 #NQ #Trading #FVG #IFVG #ICT",
+    "postUrl": "https://youtube.com/watch?v=dR-lklBR9ic",
+    "authorName": "APJ Capital",
+    "suggestedReply": "FVGs and IFVGs are solid tools but I always tell my students to be careful trading these on NQ during high impact news windows. The IFVG can get blown straight through on a CPI or FOMC release and suddenly your \"never fails\" setup is offside fast. I drill context first, always confirm the higher timeframe bias before touching any gap entry.",
+    "createdAt": "2026-05-12T00:30:23.875Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778545827155-agzku",
+    "platform": "youtube",
+    "postTitle": "I Copied ICT’s Trading Strategy And Made $500K In Payouts",
+    "postUrl": "https://youtube.com/watch?v=Xa11VacMdQk",
+    "authorName": "Tursonz",
+    "suggestedReply": "Copying ICT's strategy is one thing, hitting $500K in payouts means you actually understood the execution side. The part most traders miss when replicating this is waiting for the displacement candle to fully close before marking the FVG. I drill this into my students constantly. Entering on a wick instead of a confirmed close is what kills otherwise clean setups.",
+    "createdAt": "2026-05-12T00:30:27.155Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778545830262-14alu",
+    "platform": "youtube",
+    "postTitle": "Most traders lose because they enter too early. ❌",
+    "postUrl": "https://youtube.com/watch?v=q-PKeJs5zww",
+    "authorName": "Willam Brown",
+    "suggestedReply": "Entering too early is the mistake I see most often, and it almost always comes down to not respecting the displacement candle before the move. I drill this into my students constantly. wait for the candle that actually creates the imbalance, then look for a pullback into that range on the 5m or 15m before committing. Patience at that stage separates the funded traders from the ones burning accounts.",
+    "createdAt": "2026-05-12T00:30:30.262Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778545838761-zpe9f",
+    "platform": "youtube",
+    "postTitle": "ICT Gems - ICT Teaches the Real Order Flow | Advanced Time Model",
+    "postUrl": "https://youtube.com/watch?v=2xv8NOZeWxI",
+    "authorName": "URAH ICT",
+    "suggestedReply": "The Advanced Time Model hits different when you pair it with real order flow because the \"when\" and the \"why\" finally align. I drill into my students that knowing the time window means nothing without understanding which side of the market is being engineered first. On pairs like Cable or fiber, that displacement confirmation during the killzone separates the real move from the manipulation. Most traders watch the candles. Smart money watches the clock and the liquidity.",
+    "createdAt": "2026-05-12T00:30:38.761Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778545842681-ncw95",
+    "platform": "youtube",
+    "postTitle": "The &quot;Hands in Pockets&quot; Trading Strategy 🧘‍♂️📉 #Shorts #DayTrading #Xauusd",
+    "postUrl": "https://youtube.com/watch?v=ur-CWUd2pFk",
+    "authorName": "DHAYA TRADER",
+    "suggestedReply": "The \"hands in pockets\" discipline on XAUUSD is real. Most traders I mentor blow their edge on gold specifically because they force entries during consolidation when price hasn't shown a clean displacement yet. I drill this into my students, wait for the market to show its hand first, then your job is literally to do nothing until structure confirms. Are you filtering by session for this or running it across the full day?",
+    "createdAt": "2026-05-12T00:30:42.681Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778545850965-myveu",
+    "platform": "youtube",
+    "postTitle": "No news Monday still making it work 👊 #NQ #Trading #FVG #IFVG #ICT",
+    "postUrl": "https://youtube.com/watch?v=gr3K1BpGA_k",
+    "authorName": "APJ Capital",
+    "suggestedReply": "I always tell my students that no news days on NQ are actually where you sharpen your real skills. Without a catalyst pushing price, you have to trust the structure, and IFVGs become your best friend for finding clean entries on the lower timeframes. I had a student last week who sat out the whole session waiting for news confirmation and missed two textbook 5m IFVG fills. Patience plus preparation beats waiting for permission every time.",
+    "createdAt": "2026-05-12T00:30:50.965Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778545854388-j6wmp",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE Day Trading Futures | ES NQ | ICT Concepts | May 11",
+    "postUrl": "https://youtube.com/watch?v=TOLqoLEMxMs",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Trading ES and NQ simultaneously on a live session is where most traders I work with start overcomplicating their bias. I always drill into my students to anchor their macro bias on the higher timeframe PD arrays before dropping into execution. Are you prioritizing the 15m for your entry refinement or going straight to the lower timeframes once price hits a premium or discount zone?",
+    "createdAt": "2026-05-12T00:30:54.388Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778545858552-4uczq",
+    "platform": "youtube",
+    "postTitle": "LIVE TRADING NQ | ICT | Inversion Model | $NQ $ES",
+    "postUrl": "https://youtube.com/watch?v=9f7Lzzu26Fs",
+    "authorName": "dhesi_trades",
+    "suggestedReply": "The Inversion Model on NQ is powerful but I always tell my students to be extra careful when price is approaching a major HTF discount or premium array. The inversion fair value gap can flip back into a regular FVG if the move lacks real displacement, and that's where most people get stopped out chasing the entry. Did you wait for confirmation on the 15m before executing here?",
+    "createdAt": "2026-05-12T00:30:58.552Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1778460306425-i51ah",
     "platform": "investinglive",
     "postTitle": "Iran oil shock has put Fed rate cuts off the table and hikes back on, Pimco says",
