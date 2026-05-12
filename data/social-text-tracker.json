@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "hot-take",
     "quote",
     "tip",
     "myth",
@@ -29,11 +28,12 @@
     "poll-native",
     "challenge",
     "myth",
-    "question"
+    "question",
+    "poll"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "CPI week + 'Sell in May' noise incoming 👀\n\nDo you AVOID trading high-impact news events or do you hunt them for liquidity grabs?\n\nDrop your answer below 👇\n\n#ICTTrading #SmartMoneyConcepts #Forex",
-    "date": "2026-05-11T12:00:31.072Z"
+    "type": "poll",
+    "text": "CPI dropping this week. What's your move?\n\n🅰️ Sit out — too risky\n🅱️ Trade the volatility\n🅲️ Wait for smart money reaction AFTER the print\n🅳️ Already positioned pre-news\n\n#ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-05-12T04:00:11.603Z"
   }
 }
