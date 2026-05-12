@@ -513,7 +513,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-05-12T03:00:39.159Z",
     "permalink": "/r/Forexstrategy/comments/1taf5xh/do_you_trade_liquidity_sweeps_correctly_or_just/olave4a/",
-    "commentId": "olave4a"
+    "commentId": "olave4a",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-12T05:28:34.000Z",
+    "firstReplyAuthor": "rosyfx2003",
+    "firstReplyText": "Exactly. The sweep only creates the setup — the real confirmation is the lower timeframe displacement and IFVG violation. Patience separates execution from emotional entries."
   },
   {
     "postId": "1t9vs0a",
