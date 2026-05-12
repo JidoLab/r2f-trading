@@ -1999,5 +1999,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-12T12:00:27.500Z",
+    "type": "text",
+    "postType": "hot-take",
+    "text": "Unpopular opinion: trading through CPI is not 'gambling' — it's where the REAL money is. Smart money",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
