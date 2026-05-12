@@ -494,5 +494,45 @@
     "firstReplyAt": "2026-05-10T04:55:42.000Z",
     "firstReplyAuthor": "Efficient_Nobody_988",
     "firstReplyText": "Fair point and largely agree. 10b5-1 scheduled sells are priced-in noise for the most part, they're not reacting to anything current, and that nuance is real.\n\nHere's the thing though, one insider selling could easily be a scheduled plan. But when multiple insiders sell the same ticker in the same w"
+  },
+  {
+    "postId": "1t9tjcj",
+    "subreddit": "Forexstrategy",
+    "postTitle": "🟡 Is XAUUSD Setting Up for Another Major Breakdown… or Are Bears About to Get Trapped Below 4670?",
+    "commentText": "the setup reads clean on the surface but tbh that 4670 level deserves more scrutiny before calling it \"support\" — on the 15M you're essentially trading inside what ICT would consider a larger dealing range, and that zone could just be an old sell side liquidity pool waiting to get swept before any real reversal prints. the RSI flattening near oversold isn't confirmation, it's just price pausing to grab fuel. if you're not seeing a valid bullish OB or FVG form on the retest after a sweep of 4658, the bounce thesis is pretty thin imo.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-12T03:00:31.959Z",
+    "permalink": "/r/Forexstrategy/comments/1t9tjcj/is_xauusd_setting_up_for_another_major_breakdown/olavdgu/",
+    "commentId": "olavdgu"
+  },
+  {
+    "postId": "1taf5xh",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Do You Trade Liquidity Sweeps Correctly or Just Chase the Move?",
+    "commentText": "the IFVG step is where most people get wrecked tbh — they're watching the wrong timeframe for the retest. if you're trading cable on the 15m, your IFVG confirmation needs to come from the 1m displacement inside that zone, not just price touching it. entering right after the sweep is basically gambling on the return, you need that FVG violation confirmed before you're even thinking about entries.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-12T03:00:39.159Z",
+    "permalink": "/r/Forexstrategy/comments/1taf5xh/do_you_trade_liquidity_sweeps_correctly_or_just/olave4a/",
+    "commentId": "olave4a"
+  },
+  {
+    "postId": "1t9vs0a",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Why smart traders watch London before trading New York-",
+    "commentText": "try marking the 15m FVG that forms right after London sweeps the low, because that's usually where NY comes back to raid before expanding higher. if price taps into it during the 10-11am NY killzone and holds, that's your entry with the stop just below the swing low that got swept. tbh the FVG acts as your confirmation that the sweep was intentional and not just noise. eurusd does this cleaner than most pairs imo.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-12T03:00:45.226Z",
+    "permalink": "/r/Forexstrategy/comments/1t9vs0a/why_smart_traders_watch_london_before_trading_new/olavep3/",
+    "commentId": "olavep3"
+  },
+  {
+    "postId": "1ta2a0g",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAU/USD Technical Analysis – 1H Timeframe",
+    "commentText": "the 4710 level you're calling resistance lines up pretty cleanly with an HTF dealing range ceiling, but tbh the more interesting play is watching for a 1H FVG to form on any pullback into the 4620–4640 area before trusting a long. price sweeping 4710 liquidity then rejecting doesn't automatically mean bearish — could just be a stop run before continuation toward that 4892 target. id wait for a clean BOS on the 15M after any retrace before committing.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-12T03:00:55.184Z",
+    "permalink": "/r/Forexstrategy/comments/1ta2a0g/xauusd_technical_analysis_1h_timeframe/olavfmp/",
+    "commentId": "olavfmp"
   }
 ]
