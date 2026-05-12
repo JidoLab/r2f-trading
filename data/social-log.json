@@ -1970,5 +1970,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-05-12T04:00:12.454Z",
+    "type": "text",
+    "postType": "poll",
+    "text": "CPI dropping this week. What's your move?\n\n🅰️ Sit out — too risky\n🅱️ Trade the volatility\n🅲️ Wait",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
