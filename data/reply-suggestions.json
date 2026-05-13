@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1778632233971-fv4nk",
+    "platform": "youtube",
+    "postTitle": "Why Your Trading Strategy is FAILING You ❌📉 #Shorts #Xauusd #viral",
+    "postUrl": "https://youtube.com/watch?v=sWjOv5Ecceg",
+    "authorName": "DHAYA TRADER",
+    "suggestedReply": "Spot on about strategies failing but here is the caveat most traders miss on XAUUSD specifically. Gold respects liquidity sweeps differently than forex pairs, and I see my students abandon perfectly valid setups simply because they are not accounting for the Asian range manipulation before London opens. A strategy is not failing you, your session awareness probably is.",
+    "createdAt": "2026-05-13T00:30:33.971Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778632237835-ym574",
+    "platform": "youtube",
+    "postTitle": "#icttrading #deefyh #xauusd #trading #forextrader #smc #ICT #smt #ForexUSD #USDAnalysis #Currency",
+    "postUrl": "https://youtube.com/watch?v=rAeA-cWeFwU",
+    "authorName": "Huzaifa Tariq",
+    "suggestedReply": "SMT divergence on XAUUSD is genuinely one of the cleanest confluences you can use right now. One thing I drill into my students though. always confirm the divergence against a higher timeframe PD array before committing to a bias. Dollar pairs can create false SMT reads during news volatility, and I've watched traders get trapped chasing the signal without that higher timeframe anchor.",
+    "createdAt": "2026-05-13T00:30:37.835Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778632240865-ezrtt",
+    "platform": "youtube",
+    "postTitle": "ICT daily profile | New York reversal  | Smart Money Strategy",
+    "postUrl": "https://youtube.com/watch?v=PD5s42vAPaM",
+    "authorName": "Mr. Perfect Trader",
+    "suggestedReply": "The New York reversal profile is something I drill into my students constantly. Most of them struggle to identify the actual manipulation leg before the true reversal kicks in, especially when they're anchoring bias from the London session. Are you using the 15m chart to confirm the shift in market structure, or waiting for higher timeframe displacement before taking the entry?",
+    "createdAt": "2026-05-13T00:30:40.865Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778632243956-ertyh",
+    "platform": "youtube",
+    "postTitle": "Live Trading | ICT Concepts | May 12, 2026",
+    "postUrl": "https://youtube.com/watch?v=zDFhl4KpnZs",
+    "authorName": "Tyler Trades",
+    "suggestedReply": "One thing worth noting on May 12 live sessions is how Tuesday tends to deliver the clearest ICT setups after Monday's range gets established. I always tell my students to map the weekly opening range first before looking for any PD arrays on the lower timeframes. Missing that step is where most people get chopped up midweek.",
+    "createdAt": "2026-05-13T00:30:43.956Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778632247480-skoki",
+    "platform": "youtube",
+    "postTitle": "👉 NQ LIVE TRADING - ICT Strategy + MMXM 🚨",
+    "postUrl": "https://youtube.com/watch?v=UpKsEFcOIxc",
+    "authorName": "WMG TRADING  ",
+    "suggestedReply": "Interesting take combining MMXM with live NQ execution. In my experience, the model works cleaner on NQ when you wait for a confirmed displacement into a premium or discount array rather than anticipating the draw. I drill this into my students constantly because jumping early on NQ kills your accuracy before the real move even develops. Curious how you handle the kill zone overlap when price is mid range.",
+    "createdAt": "2026-05-13T00:30:47.480Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778632250442-b6hlo",
+    "platform": "youtube",
+    "postTitle": "Liquidity#smc#ict#trading india#viral shorts#day trading#trading strategy#viral shorts",
+    "postUrl": "https://youtube.com/watch?v=GmNynPQbFog",
+    "authorName": "Market warrior Balveer ",
+    "suggestedReply": "Liquidity sweeps are one of the most powerful concepts in ICT and I love seeing it getting attention in the Indian trading community. One thing I drill into my students though is to always confirm the sweep with a displacement candle on the lower timeframe before entering. Without that confirmation, you are often just catching a continuation move rather than a true reversal. Have you covered the difference between a liquidity sweep and a stop hunt in your other videos?",
+    "createdAt": "2026-05-13T00:30:50.442Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778632254943-wye74",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=xyqrTf28lJo",
+    "authorName": "The Trading Process",
+    "suggestedReply": "I've been trading XAUUSD with SMC for years and the one thing I drill into my students is that gold respects institutional order flow more consistently than almost any other asset. On the 4H, waiting for a confirmed displacement into a premium array before entries filters out so much noise. Most beginners jump in at the first liquidity grab and wonder why they get stopped out repeatedly.",
+    "createdAt": "2026-05-13T00:30:54.943Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778632257625-t8z2i",
+    "platform": "youtube",
+    "postTitle": "Smart Money Concepts: Selling at Resistance #shorts",
+    "postUrl": "https://youtube.com/watch?v=9NLiO2pHcw4",
+    "authorName": "Michael Whitman",
+    "suggestedReply": "Selling at resistance is solid but the trap most traders fall into is treating every resistance level equally. I drill this into my students constantly. a clean institutional resistance with a liquidity sweep above it behaves very differently than a basic technical ceiling. Check the higher timeframe context on something like the daily before committing to that short.",
+    "createdAt": "2026-05-13T00:30:57.625Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1778545884352-ycgpm",
     "platform": "investinglive",
     "postTitle": "PBOC is expected to set the USD/CNY reference rate at 6.7945 – Reuters estimate",
