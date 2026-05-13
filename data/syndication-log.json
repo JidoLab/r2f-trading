@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-13-the-quiet-confidence-loop-ict-traders-miss",
+    "syndicatedAt": "2026-05-13T02:33:25.001Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-13-the-quiet-confidence-loop-ict-traders-miss",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-quiet-confidence-loop-ict-traders-miss-72",
+        "id": "3659741"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "fetch failed"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-13-the-quiet-confidence-loop-ict-traders-miss"
+  },
+  {
     "slug": "2026-05-10-why-patience-feels-physically-painful-in-trading",
     "syndicatedAt": "2026-05-10T06:02:39.630Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-10-why-patience-feels-physically-painful-in-trading",
