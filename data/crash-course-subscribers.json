@@ -31,23 +31,25 @@
     "email": "marie.yeji.nam@gmail.com",
     "name": "marie",
     "date": "2026-05-08T06:06:43.958Z",
-    "day": 4,
+    "day": 5,
     "emailsSent": [
       "day1",
       "day2",
       "day3",
       "day4",
-      "day5"
+      "day5",
+      "complete"
     ]
   },
   {
     "email": "takwing1hk@yahoo.com.hk",
     "name": "Trader Wing",
     "date": "2026-05-10T09:44:24.002Z",
-    "day": 1,
+    "day": 2,
     "emailsSent": [
       "day1",
-      "day2"
+      "day2",
+      "day3"
     ]
   }
 ]
