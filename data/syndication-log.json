@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-13-the-boredom-problem-why-ict-traders-self-sabotage",
+    "syndicatedAt": "2026-05-13T06:02:35.014Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-13-the-boredom-problem-why-ict-traders-self-sabotage",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-boredom-problem-why-ict-traders-self-sabotage-2ic9",
+        "id": "3660457"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "fetch failed"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-13-the-boredom-problem-why-ict-traders-self-sabotage"
+  },
+  {
     "slug": "2026-05-13-the-quiet-confidence-loop-ict-traders-miss",
     "syndicatedAt": "2026-05-13T02:33:25.001Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-13-the-quiet-confidence-loop-ict-traders-miss",
