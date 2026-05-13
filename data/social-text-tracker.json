@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "tip",
     "myth",
     "story",
     "challenge",
@@ -29,11 +28,12 @@
     "myth",
     "question",
     "poll",
-    "hot-take"
+    "hot-take",
+    "quote"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: trading through CPI is not 'gambling' — it's where the REAL money is. Smart money doesn't hide. It hunts liquidity RIGHT before the news drop. Learn to read it. #ICTTrading #SmartMoneyConcepts #CPI",
-    "date": "2026-05-12T12:00:26.512Z"
+    "type": "quote",
+    "text": "\"Smart money doesn't react to CPI. It's already positioned.\"\n\n— This is why you study the manipulation before the news, not after.\n\n#ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-05-13T04:01:00.891Z"
   }
 }
