@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-13T05:32:13.425Z",
+  "date": "2026-05-13T06:32:35.493Z",
   "today": "2026-05-13",
   "topicsAttempted": [
     null,
@@ -8,20 +8,20 @@
   ],
   "results": [
     {
-      "title": "3 Things Smart Money Does Before CPI (That Beginners Ignore)",
+      "title": "This CPI Setup Paid For My Entire Year (2026)",
+      "status": "rendering"
+    },
+    {
+      "title": "CPI Week Quiz: What Does Smart Money Do BEFORE Inflation Data? 🧠",
       "status": "rendering"
     },
     {
       "title": "",
       "status": "error",
-      "error": "GitHub commit failed: 409 {\"message\":\"is at 2e8eca9ee629f734abbb46bc69c8a73603920031 but expected 93c0fb3aed38ac254b8e9e06b7f56c5b69e48c27\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
-    },
-    {
-      "title": "Quiz: What Does Smart Money Do RIGHT Before CPI? 🧠 | R2F Trading",
-      "status": "rendering"
+      "error": "GitHub commit failed: 409 {\"message\":\"is at 4a70967940ab89bae470fd0a3570ff286225a9f5 but expected 3d06bf5043d09d5268f5acf8b990bc9ec9e93e88\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
     }
   ],
   "errors": [
-    "GitHub commit failed: 409 {\"message\":\"is at 2e8eca9ee629f734abbb46bc69c8a73603920031 but expected 93c0fb3aed38ac254b8e9e06b7f56c5b69e48c27\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+    "GitHub commit failed: 409 {\"message\":\"is at 4a70967940ab89bae470fd0a3570ff286225a9f5 but expected 3d06bf5043d09d5268f5acf8b990bc9ec9e93e88\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
   ]
 }
