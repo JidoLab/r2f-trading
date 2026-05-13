@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "myth",
     "story",
     "challenge",
     "poll-native",
@@ -29,11 +28,12 @@
     "question",
     "poll",
     "hot-take",
-    "quote"
+    "quote",
+    "story"
   ],
   "lastPost": {
-    "type": "quote",
-    "text": "\"Smart money doesn't react to CPI. It's already positioned.\"\n\n— This is why you study the manipulation before the news, not after.\n\n#ICTTrading #SmartMoneyConcepts #CPI",
-    "date": "2026-05-13T04:01:00.891Z"
+    "type": "story",
+    "text": "Held a short through CPI once. Price spiked 80 pips against me in seconds. I froze. Closed at the worst possible moment — right before the reversal. Never trade INTO a high-impact news event without a plan. #ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-05-13T12:00:44.450Z"
   }
 }
