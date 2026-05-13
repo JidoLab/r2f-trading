@@ -634,5 +634,25 @@
     "commentedAt": "2026-05-12T13:01:58.294Z",
     "permalink": "/r/Forexstrategy/comments/1tasrhq/stop_random_trading_this_is_how_you_can_profit/old4oxd/",
     "commentId": "old4oxd"
+  },
+  {
+    "postId": "1tbkz7q",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "venom model is printing on the nasdaQ",
+    "commentText": "the venom model really does run clean on NQ tbh, especially during the NY open killzone when price sweeps overnight highs before displacement into a discount FVG. the part most people mess up is waiting for the actual BOS confirmation instead of entering on the sweep itself — that's where the \"forcing trades\" problem you mentioned comes from. manipulation candle ≠ entry signal, displacement is what validates it.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-13T01:32:02.994Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tbkz7q/venom_model_is_printing_on_the_nasdaq/olhh6av/",
+    "commentId": "olhh6av"
+  },
+  {
+    "postId": "1tb2xdr",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Feeling lost in trading / struggling / do I switch strategies",
+    "commentText": "tbh after 8 months of QT not clicking, the problem probably isn't the model itself, it's that you're trying to trade something fully discretionary without a mechanical anchor. strip it back and just trade london session BOS into an FVG on the 15m, london open to about 10am UTC, that's it. no QT overlay, no quarterly shifts, just structure and imbalance with a clear entry rule you can define in writing before you touch a chart. sometimes the best move after over-complicating things for that long is embarrassingly simple.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-13T01:32:10.724Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tb2xdr/feeling_lost_in_trading_struggling_do_i_switch/olhh733/",
+    "commentId": "olhh733"
   }
 ]
