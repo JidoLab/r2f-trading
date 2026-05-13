@@ -704,5 +704,75 @@
     "commentedAt": "2026-05-13T04:33:25.238Z",
     "permalink": "/r/Forexstrategy/comments/1tauay1/highimpact_news/oliaa9b/",
     "commentId": "oliaa9b"
+  },
+  {
+    "postId": "1tbq1lp",
+    "subreddit": "Trading",
+    "postTitle": "Am I the only one who feels like we’re all fcked?",
+    "commentText": "i had this exact problem last month sitting on my hands watching ES on the 15m during new york open, just completely paralyzed because every commentator online was screaming opposite directions. what snapped me out of it was realizing the daily chart had a clean unmitigated OB sitting below and price was just floating in premium doing nothing meaningful. tbh the melt up you're describing is actually the worst environment for most retail traders because there's no real retracement to give you a sensible entry with defined risk, so the excitement people feel is mostly just fomo dressed up as conviction.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-13T05:32:24.960Z",
+    "permalink": "/r/Trading/comments/1tbq1lp/am_i_the_only_one_who_feels_like_were_all_fcked/olii2lt/",
+    "commentId": "olii2lt"
+  },
+  {
+    "postId": "1tbomyt",
+    "subreddit": "Trading",
+    "postTitle": "My Win Rate Is 55% But I'm Giving Back Profits on Trades I Already Won",
+    "commentText": "i had this exact problem last year on NQ, was up like $180 targeting a clean liquidity level above the asian high and just... held through the entire retracement back to my entry and beyond. the fix that actually worked for me was tying the BE move to a specific structural event, not time or dollar amount — once price delivers into the opposing FVG and closes, that's your trigger to move the stop, full stop. tbh your MNQ -$1 trade (was up $191) tells me you already knew where the move was going, you just didn't have a hard rule to lock it in mechanically.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-13T05:32:32.384Z",
+    "permalink": "/r/Trading/comments/1tbomyt/my_win_rate_is_55_but_im_giving_back_profits_on/olii370/",
+    "commentId": "olii370"
+  },
+  {
+    "postId": "1tbbbkx",
+    "subreddit": "Trading",
+    "postTitle": "What should Bob do?",
+    "commentText": "honestly the prop firm internship angle is underrated but Bob needs to think about what skill actually gets him hired — knowing how to read a DOM, understanding liquidity sweeps, or having some algo experience matters way more than a Business Management degree on its own. the smartest move imo is spending the next year building a verified track record on something like a funded account while also applying for that summer internship, so he walks in with *both* the credential and proof he can actually trade. tbh most quant and prop desks in 2026 want to see you understand things like how price reacts to a daily FVG before they care what your major is. is Bob focusing more on discretionary execution or trying to learn algo, because that changes which firms he should even be targeting?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-13T05:32:42.291Z",
+    "permalink": "/r/Trading/comments/1tbbbkx/what_should_bob_do/olii3xr/",
+    "commentId": "olii3xr"
+  },
+  {
+    "postId": "1tbodzf",
+    "subreddit": "Trading",
+    "postTitle": "Crypto future Trading Give me a lot!",
+    "commentText": "10% a day is real until it isn't tbh. the part most people miss is that crypto futures will let you run that edge for months, then one low-resistance liquidity run during the new york session wipes out weeks of gains because position sizing never scaled with the volatility. imo the ICT framework you're describing works, but a daily FVG on bitcoin behaves completely differently than the same setup on ES or NQ because the manipulation windows aren't as clean or predictable. been there in 2023 and it humbled me fast.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-13T05:32:51.548Z",
+    "permalink": "/r/Trading/comments/1tbodzf/crypto_future_trading_give_me_a_lot/olii4om/",
+    "commentId": "olii4om"
+  },
+  {
+    "postId": "1tb339r",
+    "subreddit": "Trading",
+    "postTitle": "Feeling lost in trading / struggling / do I switch strategies",
+    "commentText": "since you mentioned QT is too discretionary, try anchoring it with one strict rule — only take trades where there's a confirmed BOS on the 15m *and* a FVG left behind from the displacement, then wait for price to return to that FVG during london or NY open. that alone forces structure onto a model that otherwise lets you talk yourself into anything. tbh eight months of struggling usually means the entries aren't the problem, it's the trigger being too loose.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-13T05:32:59.172Z",
+    "permalink": "/r/Trading/comments/1tb339r/feeling_lost_in_trading_struggling_do_i_switch/olii59q/",
+    "commentId": "olii59q"
+  },
+  {
+    "postId": "1tavh6f",
+    "subreddit": "Trading",
+    "postTitle": "broker froze my account figure out where to actually trade while i sort it out",
+    "commentText": "bybit's tradfi products are worth looking at tbh but the quirk most people miss is that the funding rates on their index perps (things like SPX, NAS100) can absolutely chew through your collateral during high volatility sessions, specifically around new york open when displacement moves are common and you're already on the wrong side of a swing. it's not like trading a normal CFD account where overnight fees are predictable. imo the bitmex equity perps have slightly more transparent fee structures but their liquidity on single stocks is thin enough to make fills during news events genuinely painful.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-13T05:33:08.209Z",
+    "permalink": "/r/Trading/comments/1tavh6f/broker_froze_my_account_figure_out_where_to/olii5y9/",
+    "commentId": "olii5y9"
+  },
+  {
+    "postId": "1tbh1ec",
+    "subreddit": "Trading",
+    "postTitle": "How to ACTUALLY find your edge",
+    "commentText": "on your daily breakout + retest idea, try adding one filter before entry — mark the 15m FVG that forms during the retest candle, and only take the trade if price sweeps back into that gap during the NY open killzone (9:30-11am EST). the gap acts as a magnet for price and gives you a much tighter SL than just \"below the low.\" imo that one filter alone cuts out like half the garbage setups that look clean on the daily but fall apart intraday.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-13T05:33:14.711Z",
+    "permalink": "/r/Trading/comments/1tbh1ec/how_to_actually_find_your_edge/olii6g2/",
+    "commentId": "olii6g2"
   }
 ]
