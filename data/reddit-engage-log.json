@@ -513,7 +513,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-05-12T03:00:39.159Z",
     "permalink": "/r/Forexstrategy/comments/1taf5xh/do_you_trade_liquidity_sweeps_correctly_or_just/olave4a/",
-    "commentId": "olave4a"
+    "commentId": "olave4a",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-12T05:28:34.000Z",
+    "firstReplyAuthor": "rosyfx2003",
+    "firstReplyText": "Exactly. The sweep only creates the setup — the real confirmation is the lower timeframe displacement and IFVG violation. Patience separates execution from emotional entries."
   },
   {
     "postId": "1t9vs0a",
@@ -553,7 +557,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-12T13:00:49.233Z",
     "permalink": "/r/Forexstrategy/comments/1tazail/xauusd_intraday_analysis_gold_preparing_for_a/old4h40/",
-    "commentId": "old4h40"
+    "commentId": "old4h40",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-12T13:04:31.000Z",
+    "firstReplyAuthor": "Klutzy-Recipe-7540",
+    "firstReplyText": "Appreciate that breakdown bro. A lot of traders enter too early just because price taps the trendline, but the real confirmation comes from BOS + displacement with an FVG supporting the move. I’m also watching that zone closely — if momentum confirms during London session, bearish continuation could"
   },
   {
     "postId": "1tauf0u",
@@ -573,7 +581,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-12T13:01:05.955Z",
     "permalink": "/r/Forexstrategy/comments/1tawqv4/eurgbp_long_setup_1h_uptrend_gbp_under_political/old4j0k/",
-    "commentId": "old4j0k"
+    "commentId": "old4j0k",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-12T13:10:53.000Z",
+    "firstReplyAuthor": "MaB_arreca",
+    "firstReplyText": "I’ve found that my current strategy performs better with slightly wider stops and a higher win rate. I’m prioritizing a very stable equity line with minimal drawdown right now, so I prefer giving the trade some breathing room over extreme precision. Appreciate the insight though!"
   },
   {
     "postId": "1tainxw",
@@ -583,7 +595,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-12T13:01:16.393Z",
     "permalink": "/r/Forexstrategy/comments/1tainxw/xauusd_at_point_of_control/old4k7h/",
-    "commentId": "old4k7h"
+    "commentId": "old4k7h",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-12T13:35:20.000Z",
+    "firstReplyAuthor": "AnveshArumilli",
+    "firstReplyText": "I always look at higher tf..4h"
   },
   {
     "postId": "1tar6gp",
@@ -593,7 +609,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-12T13:01:22.775Z",
     "permalink": "/r/Forexstrategy/comments/1tar6gp/is_gold_about_to_fake_everyone_out_before_the/old4kx5/",
-    "commentId": "old4kx5"
+    "commentId": "old4kx5",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-12T13:04:49.000Z",
+    "firstReplyAuthor": "Savings-Score-2294",
+    "firstReplyText": "Yeah, that makes a lot of sense. A sweep below 4710 into that 15M demand/OB zone feels way more probable than a clean breakout continuation. Gold loves engineering liquidity before expansion, especially during NYC session volatility. I’d rather wait for the reaction after the sweep than chase above "
   },
   {
     "postId": "1tazqta",
@@ -663,7 +683,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-13T04:32:51.684Z",
     "permalink": "/r/Forexstrategy/comments/1tbccxl/will_gold_continue_its_bullish_recovery_towards/olia7ir/",
-    "commentId": "olia7ir"
+    "commentId": "olia7ir",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-13T06:49:03.000Z",
+    "firstReplyAuthor": "Proof-Sheepherder-40",
+    "firstReplyText": "Wow that's great 👍🏻"
   },
   {
     "postId": "1tbeltb",
@@ -784,15 +808,5 @@
     "commentedAt": "2026-05-13T06:32:47.189Z",
     "permalink": "/r/InnerCircleTraders/comments/1tbodxe/insider_tape_may_12_anomaly_report_the_political/olipk46/",
     "commentId": "olipk46"
-  },
-  {
-    "postId": "1tbfz4f",
-    "subreddit": "swingtrading",
-    "postTitle": "Fair Value Gaps — what they are, why they work, and how to actually trade them",
-    "commentText": "fvgs work because market makers leave inefficiency when they move price aggressively through a level, and price has a mechanical tendency to return and fill that imbalance before continuing. the real edge isn't just identifying the gap though, it's confluence — an fvg sitting inside a higher timeframe OB during london open or NY open is a completely different trade than a random fvg on the 15m in dead asian session. are you pairing these with BOS confirmation or just fading into the gap raw?",
-    "mentionedR2F": true,
-    "commentedAt": "2026-05-13T13:00:41.180Z",
-    "permalink": "/r/swingtrading/comments/1tbfz4f/fair_value_gaps_what_they_are_why_they_work_and/olk60hf/",
-    "commentId": "olk60hf"
   }
 ]
