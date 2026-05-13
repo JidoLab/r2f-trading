@@ -784,5 +784,15 @@
     "commentedAt": "2026-05-13T06:32:47.189Z",
     "permalink": "/r/InnerCircleTraders/comments/1tbodxe/insider_tape_may_12_anomaly_report_the_political/olipk46/",
     "commentId": "olipk46"
+  },
+  {
+    "postId": "1tbfz4f",
+    "subreddit": "swingtrading",
+    "postTitle": "Fair Value Gaps — what they are, why they work, and how to actually trade them",
+    "commentText": "fvgs work because market makers leave inefficiency when they move price aggressively through a level, and price has a mechanical tendency to return and fill that imbalance before continuing. the real edge isn't just identifying the gap though, it's confluence — an fvg sitting inside a higher timeframe OB during london open or NY open is a completely different trade than a random fvg on the 15m in dead asian session. are you pairing these with BOS confirmation or just fading into the gap raw?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-13T13:00:41.180Z",
+    "permalink": "/r/swingtrading/comments/1tbfz4f/fair_value_gaps_what_they_are_why_they_work_and/olk60hf/",
+    "commentId": "olk60hf"
   }
 ]
