@@ -1,34 +1,5 @@
 [
   {
-    "date": "2026-05-01T12:00:52.901Z",
-    "type": "text",
-    "postType": "hot-take",
-    "text": "Unpopular opinion: NFP is NOT a news event. It's a liquidity hunt. Smart money already positioned. R",
-    "hasImage": true,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-05-01T14:00:56.609Z",
     "slug": "2026-04-17-why-winning-trades-still-break-your-mindset",
     "title": "Why Winning Trades Still Break Your Mindset",
@@ -1910,6 +1881,53 @@
     "date": "2026-05-12T14:00:58.424Z",
     "slug": "2026-04-26-the-quiet-session-that-rewired-my-trading-brain",
     "title": "The Quiet Session That Rewired My Trading Brain",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-13T02:32:49.745Z",
+    "slug": "2026-05-13-the-quiet-confidence-loop-ict-traders-miss",
+    "title": "The Quiet Confidence Loop ICT Traders Miss",
     "results": [
       {
         "platform": "twitter",
