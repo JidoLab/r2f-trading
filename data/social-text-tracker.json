@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "story",
     "challenge",
     "poll-native",
     "myth",
@@ -29,11 +28,12 @@
     "poll",
     "hot-take",
     "quote",
-    "story"
+    "story",
+    "tip"
   ],
   "lastPost": {
-    "type": "story",
-    "text": "Held a short through CPI once. Price spiked 80 pips against me in seconds. I froze. Closed at the worst possible moment — right before the reversal. Never trade INTO a high-impact news event without a plan. #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-05-13T12:00:44.450Z"
+    "type": "tip",
+    "text": "PPI drops soon. Before you trade it — if price is already extended from a fair value gap, DON'T chase the news move. Wait for the retracement back into the FVG. That's your entry, not the spike. #ICTTrading #FairValueGap #SmartMoneyConcepts",
+    "date": "2026-05-14T12:00:47.046Z"
   }
 }
