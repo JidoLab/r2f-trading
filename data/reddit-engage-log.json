@@ -737,11 +737,7 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-13T05:32:24.960Z",
     "permalink": "/r/Trading/comments/1tbq1lp/am_i_the_only_one_who_feels_like_were_all_fcked/olii2lt/",
-    "commentId": "olii2lt",
-    "hasReply": true,
-    "firstReplyAt": "2026-05-13T09:58:02.000Z",
-    "firstReplyAuthor": "Proof-Conference-765",
-    "firstReplyText": "Watching YouTube, or anybody live you will hear thier stupid opinions and  subliminal messages will  mess you up. Even ninja trader live all those guys may be real trades, but are misleading and have big egos, and you will never see them truly explaining their trades before they enter. It's not wort"
+    "commentId": "olii2lt"
   },
   {
     "postId": "1tbomyt",
@@ -761,11 +757,7 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-13T05:32:42.291Z",
     "permalink": "/r/Trading/comments/1tbbbkx/what_should_bob_do/olii3xr/",
-    "commentId": "olii3xr",
-    "hasReply": true,
-    "firstReplyAt": "2026-05-14T04:41:18.000Z",
-    "firstReplyAuthor": "TradersUni",
-    "firstReplyText": "Bob is trying to focus on discretionary execution. In other words, he's focusing on trading one strategy, building credibility behind his name, and growing as a trader as time goes on. \n\nSpending the next year building a track record is a great suggestion to help Bob get that internship.   \nLastly, "
+    "commentId": "olii3xr"
   },
   {
     "postId": "1tbodzf",
@@ -816,5 +808,65 @@
     "commentedAt": "2026-05-13T06:32:47.189Z",
     "permalink": "/r/InnerCircleTraders/comments/1tbodxe/insider_tape_may_12_anomaly_report_the_political/olipk46/",
     "commentId": "olipk46"
+  },
+  {
+    "postId": "1tctzse",
+    "subreddit": "Forexstrategy",
+    "postTitle": "funded trader market",
+    "commentText": "the five-minute simultaneous entry rule is a real clause a lot of prop firms started enforcing harder in 2026 tbh, but the sketchy part here is them refusing to actually show you the timestamp data you requested. any legit firm can pull exact entry logs down to the millisecond, like if there's truly a gap between your desktop EURUSD entry and your mobile entry that violates their rule, just show the trade journal with the timestamps. the fact they're ghosting that specific request is the actual red flag imo.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-14T13:00:39.070Z",
+    "permalink": "/r/Forexstrategy/comments/1tctzse/funded_trader_market/olr5oug/",
+    "commentId": "olr5oug"
+  },
+  {
+    "postId": "1tc4lpd",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Elliott Wave and SMC describe the same market. Here is how they connect — and why it changed my entries.",
+    "commentText": "i had this exact problem trying to figure out which OB to actually trust on eurusd h4 — there were like four valid ones stacked on top of each other and i had no idea which one would hold. once i started labeling the wave structure first, it became obvious the deepest OB was sitting right at the wave 2 low and that's the one institutions were defending. the FVG that formed during the wave 3 push basically confirmed the whole thing tbh. now i won't touch an OB unless i know what wave it's sitting in.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-14T13:00:48.312Z",
+    "permalink": "/r/Forexstrategy/comments/1tc4lpd/elliott_wave_and_smc_describe_the_same_market/olr5pwk/",
+    "commentId": "olr5pwk"
+  },
+  {
+    "postId": "1tcodkc",
+    "subreddit": "Forexstrategy",
+    "postTitle": "THIS ONE LEVEL WILL DECIDE GOLD’S NEXT EXPLOSION 🚀 MISS IT AND REGRET ⚠️",
+    "commentText": "the \"buy every pullback\" bias is the part that concerns me tbh. if price is consolidating in a tight range for 2 days, you need to identify *where* the liquidity actually sits before committing to a directional lean. on the 4H, if there's an unmitigated bearish OB sitting just above the range highs, that's where smart money runs stops first before any real expansion happens. the april comparison is actually useful but not for the reason you think — it shows that a liquidity sweep *preceded* the directional move, not that the direction itself was predictable. 🎯",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-14T13:00:57.532Z",
+    "permalink": "/r/Forexstrategy/comments/1tcodkc/this_one_level_will_decide_golds_next_explosion/olr5qym/",
+    "commentId": "olr5qym"
+  },
+  {
+    "postId": "1tccesr",
+    "subreddit": "Forexstrategy",
+    "postTitle": "For those who've been following: the numbers changed. Here's the honest version.",
+    "commentText": "the 9.01% drawdown coming from a single trade during a high-volatility session is textbook what happens when you size into a move without waiting for confirmation on the lower timeframe, probably chasing price through a live session without an actual OB or FVG anchor to justify the entry. tbh the win rate holding at 91% across 178 trades tells you the model is fine. the operator isn't the problem either, not really — it's just that one unmitigated loss will always reveal whether your sizing rules have teeth or just exist on paper.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-14T13:01:09.303Z",
+    "permalink": "/r/Forexstrategy/comments/1tccesr/for_those_whove_been_following_the_numbers/olr5sa6/",
+    "commentId": "olr5sa6"
+  },
+  {
+    "postId": "1tcsaei",
+    "subreddit": "Forexstrategy",
+    "postTitle": "SMART MONEY IS PREPARING A BIG TRAP IN GOLD ! 🥇 90% OF TRADERS MAY GET CAUGHT IN THE WRONG DIRECTION🚨",
+    "commentText": "the 4734 level makes sense as a ceiling but tbh i'd be watching for a liquidity sweep below that consolidation low before any real buys — smart money loves to grab those sell stops sitting under the range before the actual expansion move. the april 23-27 comparison you made is interesting but the difference now is we've got a cleaner daily FVG sitting underneath current price that could act as the real magnet if they fake the breakout first. are you looking at that 4734 level on the 15m or 1h? makes a huge difference for OB validity going into the NYC open 👀",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-14T13:01:22.775Z",
+    "permalink": "/r/Forexstrategy/comments/1tcsaei/smart_money_is_preparing_a_big_trap_in_gold_90_of/olr5tqi/",
+    "commentId": "olr5tqi"
+  },
+  {
+    "postId": "1tcothp",
+    "subreddit": "Forexstrategy",
+    "postTitle": "SMART MONEY IS ABOUT TO TRAP EVERYONE IN GOLD",
+    "commentText": "if price taps 4734 and breaks above it during the first 30 mins of NY killzone, mark the last bearish candle before that displacement on the 15m — that's your breaker OB and it should hold as support on any immediate retest. tbh the trap you're describing is real, a lot of traders are pattern-matching that april consolidation without checking whether the current range has an equal highs sweep above it already. if those EQHs above 4734 got swept before this post, smart money already grabbed liquidity and the path to 4758 is cleaner than most think. 🎯",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-14T13:01:30.814Z",
+    "permalink": "/r/Forexstrategy/comments/1tcothp/smart_money_is_about_to_trap_everyone_in_gold/olr5uml/",
+    "commentId": "olr5uml"
   }
 ]
