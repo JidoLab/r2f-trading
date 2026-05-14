@@ -45,11 +45,12 @@
     "email": "takwing1hk@yahoo.com.hk",
     "name": "Trader Wing",
     "date": "2026-05-10T09:44:24.002Z",
-    "day": 2,
+    "day": 3,
     "emailsSent": [
       "day1",
       "day2",
-      "day3"
+      "day3",
+      "day4"
     ]
   }
 ]
