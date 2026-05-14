@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-14-why-revenge-trading-feels-like-discipline",
+    "syndicatedAt": "2026-05-14T00:32:32.153Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-14-why-revenge-trading-feels-like-discipline",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/why-revenge-trading-feels-like-discipline-6pf",
+        "id": "3666487"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-14-why-revenge-trading-feels-like-discipline"
+  },
+  {
     "slug": "2026-05-13-the-boredom-problem-why-ict-traders-self-sabotage",
     "syndicatedAt": "2026-05-13T06:02:35.014Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-13-the-boredom-problem-why-ict-traders-self-sabotage",
