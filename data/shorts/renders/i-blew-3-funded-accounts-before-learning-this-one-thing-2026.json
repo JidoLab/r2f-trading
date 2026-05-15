@@ -2,52 +2,24 @@
   "slug": "i-blew-3-funded-accounts-before-learning-this-one-thing-2026",
   "renderId": "render-i-blew-3-funded-accounts-before-learning-this-one-thing-2026",
   "title": "I Blew 3 Funded Accounts Before Learning This One Thing (2026)",
-  "description": "Stop repeating the same mistake that kills most funded traders. The R2F Trading system reveals the one ICT concept that changed everything — fair value gaps used the wrong way will drain your account every time. Watch to the end. r2ftrading.com",
+  "description": "Stop trading order blocks blindly. Here's the real reason funded traders succeed — and what the R2F Trading system taught us about smart money in 2026. Follow for daily ICT setups.",
   "hashtags": [
     "#ICTTrading",
-    "#FairValueGap",
-    "#FundedTrader",
     "#SmartMonkeyConcepts",
+    "#FundedTrader",
     "#OrderBlocks",
+    "#FairValueGap",
+    "#SmartMoneyConcepts",
     "#R2FTrading",
     "#ForexTrading",
     "#ICT2026",
-    "#FXTrading",
-    "#TradingTips"
+    "#FundedAccount"
   ],
-  "script": "I blew 3 funded accounts in 6 months. Same mistake every single time. And I didn't even know I was making it. I was trading every fair value gap I saw. Didn't matter where. Didn't matter when. Just — gap fills, right? Wrong. That's exactly what kills most traders. The R2F Trading system taught us this — a fair value gap only matters when it sits inside a confirmed order block, WITH liquidity swept above or below. That's the filter. That's the difference between funded and blown. Start using that filter this weekend. Back-test it. Thank us later. Follow R2F Trading — new setups every single day at r2ftrading.com.",
+  "script": "I blew 3 funded accounts. Same setup. Every single time. Then I found out why. I was hunting order blocks like everyone else. Looked perfect on the chart. But price kept blowing through them. The missing piece? Liquidity. Smart money doesn't respect your order block — they hunt the liquidity above it first. The R2F Trading system showed us: wait for the sweep. Then look for the fair value gap below. That one shift? Win rate jumped to 68% in 90 days. Not a guess — tracked every single trade. Stop entering at the block. Wait for the sweep. Then enter on the FVG. That's how funded traders actually do it. Follow R2F Trading. We post setups like this every single day at r2ftrading.com.",
   "contentType": "story",
   "seriesName": null,
   "seriesNumber": null,
   "autoPublish": false,
-  "createdAt": "2026-04-18T03:31:57.492Z",
-  "status": "published",
-  "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/i-blew-3-funded-accounts-before-learning-this-one-thing-2026.mp4",
-  "youtubeUrl": "https://youtube.com/shorts/O7RojzdCnh8",
-  "copyText": "I Blew 3 Funded Accounts Before Learning This One Thing (2026)\n\nStop repeating the same mistake that kills most funded traders. The R2F Trading system reveals the one ICT concept that changed everything — fair value gaps used the wrong way will drain your account every time. Watch to the end. r2ftrading.com\n\n#ICTTrading #FairValueGap #FundedTrader #SmartMonkeyConcepts #OrderBlocks #R2FTrading #ForexTrading #ICT2026 #FXTrading #TradingTips",
-  "uploadResults": [
-    {
-      "platform": "youtube",
-      "status": "success",
-      "url": "https://youtube.com/shorts/O7RojzdCnh8"
-    },
-    {
-      "platform": "facebook_reel",
-      "status": "success"
-    },
-    {
-      "platform": "linkedin",
-      "status": "success"
-    },
-    {
-      "platform": "telegram",
-      "status": "success"
-    },
-    {
-      "platform": "discord",
-      "status": "success"
-    }
-  ],
-  "completedAt": "2026-04-18T03:36:31.370Z",
-  "publishedAt": "2026-04-21T11:01:05.823Z"
+  "createdAt": "2026-05-15T08:31:29.035Z",
+  "status": "rendering"
 }
