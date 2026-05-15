@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll-native",
     "myth",
     "question",
     "poll",
@@ -29,11 +28,12 @@
     "quote",
     "story",
     "tip",
-    "promo-free-class"
+    "promo-free-class",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "promo-free-class",
-    "text": "Free class. 3 ICT setups that actually work, funded account blueprint, and the psychology keeping you broke. No fluff. Just the framework. Grab your spot 👇 https://r2ftrading.com/free-class #ICTTrading #SmartMoneyConceptss #FundedTrader",
-    "date": "2026-05-15T04:00:24.043Z"
+    "type": "poll-native",
+    "text": "Order blocks or Fair Value Gaps — which do you trust MORE for entries? 👇 #ICTTrading #SmartMoney\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ Both equally\n🅳️ Neither, I use both\n\nVote below! 👇",
+    "date": "2026-05-15T12:00:18.905Z"
   }
 }
