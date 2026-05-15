@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1778805047272-z2sxs",
+    "platform": "youtube",
+    "postTitle": "CRT Trading Strategy Explained | High Probability Setup (ICT Concepts)",
+    "postUrl": "https://youtube.com/watch?v=KN-SMwHNj9o",
+    "authorName": "Michael student 72",
+    "suggestedReply": "CRT is a solid high probability setup but I always tell my students to pay close attention to the session they're trading it in. A CRT forming during the New York open hits very differently than one during the Asian range, and I've seen traders get wrecked chasing the setup in low liquidity windows. Make sure you're confirming with a higher timeframe bias before committing to the entry.",
+    "createdAt": "2026-05-15T00:30:47.272Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778805057572-z88kl",
+    "platform": "youtube",
+    "postTitle": "Live Trading | ICT Concepts | May 14, 2026",
+    "postUrl": "https://youtube.com/watch?v=nms2N07yN5U",
+    "authorName": "Tyler Trades",
+    "suggestedReply": "Trading live on May 14 puts you right in the middle of a high volatility window with news drivers in play. One thing I always tell my students is to map your premium and discount arrays BEFORE the session opens, not during, because reactive drawing gets you killed in live conditions. The 15m FVG becomes almost useless if you're identifying it after price has already reacted. Did you factor in any HTF PD array confluences before taking entries today?",
+    "createdAt": "2026-05-15T00:30:57.572Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778805061315-etur2",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE Day Trading Futures | ES NQ | ICT Concepts | May 14",
+    "postUrl": "https://youtube.com/watch?v=EMVEBlWzfcg",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Trading ES and NQ simultaneously during live sessions is where most retail traders get chopped up. ICT concepts work beautifully on these futures but I always tell my students to confirm the draw on liquidity before committing to a bias. One thing I'd add here is that May 14 opened with some tricky macro conditions and the kill zone timing on NQ can diverge from ES more than people expect. Make sure you're not forcing confluences across both instruments when they're telling different stories.",
+    "createdAt": "2026-05-15T00:31:01.315Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778805070644-9qb4n",
+    "platform": "youtube",
+    "postTitle": "A Live Bitcoin &amp; Gold Chart Analysis | Smart Money Concepts &amp; Price Action TODAY ||  trump live news",
+    "postUrl": "https://youtube.com/watch?v=uZ9Yy9Dq3Bg",
+    "authorName": "Vishnu Verma",
+    "suggestedReply": "Gold and Bitcoin reacting to Trump news is exactly where I tell my students to stay patient and not chase the initial spike. Smart money uses that liquidity grab to reposition, and the real entry comes after the manipulation candle closes on the 15m or 1H. Most traders see the news move and enter emotionally. Wait for the return to an OB or FVG before committing size.",
+    "createdAt": "2026-05-15T00:31:10.644Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778805078441-ulww7",
+    "platform": "youtube",
+    "postTitle": "NIFTY LIVE TRADING | Smart Money Concept (SMC) | 14 MAY 2026",
+    "postUrl": "https://youtube.com/watch?v=mbSmi-v1cNw",
+    "authorName": "Trade with Gyani",
+    "suggestedReply": "Interesting take on SMC for Nifty live trading. In my experience, I get my students to wait for a confirmed liquidity sweep on the 15 minute chart before looking for entry, rather than reacting to the first displacement. The reason is simple. Nifty can be choppy around session opens and premature entries get stopped out before the real move begins.",
+    "createdAt": "2026-05-15T00:31:18.441Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778805087878-i5iaa",
+    "platform": "youtube",
+    "postTitle": "The Only Smart Money Concepts Settings You Need (LuxAlgo)",
+    "postUrl": "https://youtube.com/watch?v=OZ0_g0PvcWs",
+    "authorName": "Michael Whitman",
+    "suggestedReply": "Most traders mess up their LuxAlgo SMC settings by keeping the default sensitivity, which floods the chart with noise and kills their confluences. I always tell my students to dial back the structure detection and focus on higher timeframe order blocks before dropping to the 15m for entry precision. Do you find certain settings work better on indices versus forex pairs with this indicator?",
+    "createdAt": "2026-05-15T00:31:27.878Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778805091444-axv4c",
+    "platform": "youtube",
+    "postTitle": "The Trade I Almost Forced | Higher Timeframe Saved Me #trading #shorts #tradingstrategy",
+    "postUrl": "https://youtube.com/watch?v=8Hiabz_KVtM",
+    "authorName": "Trading Analysis Official",
+    "suggestedReply": "Higher timeframe confirmation saving you from a forced entry is something I drill into my students constantly. The real discipline is sitting on your hands when price is at a premium or discount but the 4H hasn't confirmed the shift yet. Most people see a clean setup on the 5m and jump in, then wonder why they got stopped out before the real move. Patience on the HTF structure is what separates consistent traders from the ones chasing entries.",
+    "createdAt": "2026-05-15T00:31:31.444Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778805094655-f1y71",
+    "platform": "youtube",
+    "postTitle": "One Candle, One Timeframe 💰🚀 | RI 3.0 | True Smart Money Concepts",
+    "postUrl": "https://youtube.com/watch?v=xFJxZpPoVXw",
+    "authorName": "RALLYTOP INVESTING",
+    "suggestedReply": "The \"one candle, one timeframe\" approach is something I drill into my students constantly because most of them want to flip between 5 charts at once and end up with analysis paralysis. In True SMC, that single displacement candle carrying the narrative is everything. Are you finding this works cleaner on the higher timeframes like the 4H or daily versus dropping to the 15m where the noise tends to distort the story?",
+    "createdAt": "2026-05-15T00:31:34.655Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1778718616309-uyvk1",
     "platform": "youtube",
     "postTitle": "The hardest part of trading isn’t the setup. It’s controlling your emotions. #daytrading #us30  #ict",
