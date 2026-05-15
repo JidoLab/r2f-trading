@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-15-the-quiet-hours-that-destroy-disciplined-traders",
+    "syndicatedAt": "2026-05-15T04:32:46.355Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-15-the-quiet-hours-that-destroy-disciplined-traders",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-quiet-hours-that-destroy-disciplined-traders-3afa",
+        "id": "3674647"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-15-the-quiet-hours-that-destroy-disciplined-traders"
+  },
+  {
     "slug": "2026-05-15-the-quiet-confidence-trap-in-ict-trading",
     "syndicatedAt": "2026-05-15T02:32:49.575Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-15-the-quiet-confidence-trap-in-ict-trading",
