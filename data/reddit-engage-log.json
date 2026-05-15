@@ -737,7 +737,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-13T05:32:24.960Z",
     "permalink": "/r/Trading/comments/1tbq1lp/am_i_the_only_one_who_feels_like_were_all_fcked/olii2lt/",
-    "commentId": "olii2lt"
+    "commentId": "olii2lt",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-13T09:58:02.000Z",
+    "firstReplyAuthor": "Proof-Conference-765",
+    "firstReplyText": "Watching YouTube, or anybody live you will hear thier stupid opinions and  subliminal messages will  mess you up. Even ninja trader live all those guys may be real trades, but are misleading and have big egos, and you will never see them truly explaining their trades before they enter. It's not wort"
   },
   {
     "postId": "1tbomyt",
@@ -757,7 +761,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-13T05:32:42.291Z",
     "permalink": "/r/Trading/comments/1tbbbkx/what_should_bob_do/olii3xr/",
-    "commentId": "olii3xr"
+    "commentId": "olii3xr",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-14T04:41:18.000Z",
+    "firstReplyAuthor": "TradersUni",
+    "firstReplyText": "Bob is trying to focus on discretionary execution. In other words, he's focusing on trading one strategy, building credibility behind his name, and growing as a trader as time goes on. \n\nSpending the next year building a track record is a great suggestion to help Bob get that internship.   \nLastly, "
   },
   {
     "postId": "1tbodzf",
@@ -1068,25 +1076,5 @@
     "commentedAt": "2026-05-15T08:33:39.098Z",
     "permalink": "/r/Forexstrategy/comments/1td6urc/one_last_dip_then_gold_could_rip_higher/olwwneo/",
     "commentId": "olwwneo"
-  },
-  {
-    "postId": "1tdljh4",
-    "subreddit": "InnerCircleTraders",
-    "postTitle": "Should I have taken this trade? Im a beginner, 5 month in learning ict concepts, for me, this had to be a A+ setup.",
-    "commentText": "5 months in and already calling things A+ setups is honestly where most people go wrong tbh. try going back and marking the most recent daily FVG or OB, then ask yourself if price was trading into discount or premium when you entered. if it was premium, that alone disqualifies it as A+ regardless of how clean the lower timeframe looked.",
-    "mentionedR2F": true,
-    "commentedAt": "2026-05-15T13:00:42.657Z",
-    "permalink": "/r/InnerCircleTraders/comments/1tdljh4/should_i_have_taken_this_trade_im_a_beginner_5/olxy426/",
-    "commentId": "olxy426"
-  },
-  {
-    "postId": "1tdsplt",
-    "subreddit": "InnerCircleTraders",
-    "postTitle": "struggling with ICT and AMD trades",
-    "commentText": "tbh the \"not enough trades\" problem is usually a signal your read of AMD is actually working — accumulation and distribution phases can last way longer than people expect, especially on something like NQ where the manipulation leg fakes out for 30-45 min before the actual distribution move. the catch most people miss is they start widening settings to *generate* trades instead of waiting for price to come to a defined OB or FVG within the right session window. fewer trades with cleaner confluence beats grinding 8 setups a day that are just noise.",
-    "mentionedR2F": false,
-    "commentedAt": "2026-05-15T13:00:49.973Z",
-    "permalink": "/r/InnerCircleTraders/comments/1tdsplt/struggling_with_ict_and_amd_trades/olxy4vi/",
-    "commentId": "olxy4vi"
   }
 ]
