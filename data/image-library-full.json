@@ -1063,7 +1063,7 @@
     "pair": "Bitcoin / TetherUS",
     "timeframe": "30M",
     "addedAt": "2026-04-17T01:23:36.849Z",
-    "usageCount": 14
+    "usageCount": 15
   },
   {
     "id": "img-1776389018770-1fe0",
@@ -1164,6 +1164,6 @@
     "pair": "Hang Seng 50",
     "timeframe": "10",
     "addedAt": "2026-04-17T01:24:29.725Z",
-    "usageCount": 7
+    "usageCount": 6
   }
 ]
