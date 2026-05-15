@@ -928,5 +928,25 @@
     "commentedAt": "2026-05-15T03:01:50.043Z",
     "permalink": "/r/InnerCircleTraders/comments/1tcsgdn/question_regarding_break_of_market_structure/olvrmsl/",
     "commentId": "olvrmsl"
+  },
+  {
+    "postId": "1tcz04y",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Early 5 min reversal Sell after Liquidity sweep",
+    "commentText": "the liquidity sweep is only half the equation tbh. if there's no BOS on the 5 min after the sweep, you're essentially just fading momentum with no confirmation, which burns people constantly. i'd want to see price displace through a prior swing low and leave a FVG before even thinking about an entry, especially if this is during late NY session when spreads widen and the move can just keep grinding higher.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-15T03:32:52.805Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tcz04y/early_5_min_reversal_sell_after_liquidity_sweep/olvvxj6/",
+    "commentId": "olvvxj6"
+  },
+  {
+    "postId": "1tczu6b",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "XAUUSD - Sweep liquidity → MSS → FVG retrace → Entry → Target external liquidity",
+    "commentText": "the FVG mitigation is clean but the real edge here is whether that displacement candle on the MSS actually closed above the previous swing high on the 15m — if it didn't, you're working with a weak BOS and the retrace into the FVG could just be continuation sell-side delivery. tbh a lot of XAUUSD setups look identical to this and fail because the MSS didn't happen during a killzone, so london or NY open confluence matters a lot here. solid execution if the timing lined up 👌",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-15T03:33:01.175Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tczu6b/xauusd_sweep_liquidity_mss_fvg_retrace_entry/olvvy9f/",
+    "commentId": "olvvy9f"
   }
 ]
