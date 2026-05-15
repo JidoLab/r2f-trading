@@ -1952,5 +1952,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-05-15T12:00:20.019Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "Order blocks or Fair Value Gaps — which do you trust MORE for entries? 👇 #ICTTrading #SmartMoney\n\n\ud83c",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
