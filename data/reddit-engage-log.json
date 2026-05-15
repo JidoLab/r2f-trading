@@ -868,5 +868,35 @@
     "commentedAt": "2026-05-14T13:01:30.814Z",
     "permalink": "/r/Forexstrategy/comments/1tcothp/smart_money_is_about_to_trap_everyone_in_gold/olr5uml/",
     "commentId": "olr5uml"
+  },
+  {
+    "postId": "1tct9ta",
+    "subreddit": "Trading",
+    "postTitle": "POST NFP NASDAQ LONGS TRADE IDEA/CONTEXT - ICT CONCEPTS.",
+    "commentText": "this happened to me last month actually, NQ post NFP on the 8th, i was watching the 1min for a displacement after the initial spike and price dropped straight into a 15min bullish OB sitting right at a 4h equilibrium level before ripping. the key for me was waiting for the retracement *after* the news candle, not chasing the initial move tbh. most guys get shaken out trying to long into the spike itself and miss the real entry on the pullback into the inefficiency.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-15T01:32:52.826Z",
+    "permalink": "/r/Trading/comments/1tct9ta/post_nfp_nasdaq_longs_trade_ideacontext_ict/olvde79/",
+    "commentId": "olvde79"
+  },
+  {
+    "postId": "1td1uw4",
+    "subreddit": "Trading",
+    "postTitle": "Combing ICT with EMAs/VWAP",
+    "commentText": "tbh the catch with layering EMAs or VWAP on top of ICT is that you end up with conflicting signals and no clear hierarchy for which one wins. like if price is at a 15m FVG but sitting above VWAP, do you take it or not? most people just freeze or cherry-pick whichever tool confirms what they already want to do. imo after two days of research you're not struggling because you need more confluence, you're probably struggling because the core ICT framework isn't clicking yet, and adding indicators on top won't fix that.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-15T01:33:01.872Z",
+    "permalink": "/r/Trading/comments/1td1uw4/combing_ict_with_emasvwap/olvdf3q/",
+    "commentId": "olvdf3q"
+  },
+  {
+    "postId": "1tcvxxk",
+    "subreddit": "Trading",
+    "postTitle": "Looking for a trading partner",
+    "commentText": "solid setup tbh, eurusd on the 1m and 5m is where a lot of the real precision work happens with ICT. are you framing your entries off a higher timeframe OB first or just working purely off the lower timeframe structure for your 5m BOS confirmation? makes a big difference in how many garbage setups you filter out during the london killzone.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-15T01:33:09.975Z",
+    "permalink": "/r/Trading/comments/1tcvxxk/looking_for_a_trading_partner/olvdfwd/",
+    "commentId": "olvdfwd"
   }
 ]
