@@ -898,5 +898,35 @@
     "commentedAt": "2026-05-15T01:33:09.975Z",
     "permalink": "/r/Trading/comments/1tcvxxk/looking_for_a_trading_partner/olvdfwd/",
     "commentId": "olvdfwd"
+  },
+  {
+    "postId": "1tddbo7",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Can you guest any best course on YouTube to learn ict trading strategy",
+    "commentText": "ICT's own YouTube channel is honestly the best free roadmap for a complete beginner, start with his 2022 mentorship series and work through it in order. don't jump around tbh, just go concept by concept — learn market structure and BOS first, then work your way into session timing like london open, then start studying FVGs and order blocks on the 15m. the temptation is to skip ahead but if you don't understand why price seeks liquidity before reversing, none of the entry models will make sense 🎯",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-15T03:01:23.292Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tddbo7/can_you_guest_any_best_course_on_youtube_to_learn/olvrklu/",
+    "commentId": "olvrklu"
+  },
+  {
+    "postId": "1td1rd4",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Combining ICT with EMAs/VWAP",
+    "commentText": "tbh mixing EMAs with ICT usually just creates confluences you don't need because the concepts already tell you where price wants to go. VWAP is more tolerable imo, especially if you're scalping NQ during new york open and using it as a crude premium/discount gauge alongside a daily FVG. the real issue is two days of research isn't enough to know if you're struggling because of the framework or because of execution, and layering more indicators on top won't solve that.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-15T03:01:40.473Z",
+    "permalink": "/r/InnerCircleTraders/comments/1td1rd4/combining_ict_with_emasvwap/olvrm0b/",
+    "commentId": "olvrm0b"
+  },
+  {
+    "postId": "1tcsgdn",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Question regarding break of market structure",
+    "commentText": "honestly for NQ specifically, a BOS isn't always a prerequisite if you've got a clean liquidity sweep like that doji on a swing low during NY session. try dropping to the 1m or 2m after that sweep and marking the first FVG that forms on the displacement candle going bullish — if price rebalances into it during the 10-11am killzone window, that's your entry with a stop just below the swept low. the sweep itself is doing the work tbh, BOS just adds confluence but it's not always there before the move initiates. 🎯",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-15T03:01:50.043Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tcsgdn/question_regarding_break_of_market_structure/olvrmsl/",
+    "commentId": "olvrmsl"
   }
 ]
