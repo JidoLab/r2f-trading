@@ -1981,5 +1981,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-16T12:00:34.199Z",
+    "type": "text",
+    "postType": "promo-checklist",
+    "text": "I use this checklist before every single trade. Pre-trade, during, post-trade — keeps me disciplined",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
