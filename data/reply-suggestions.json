@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1778891409193-1nz6q",
+    "platform": "youtube",
+    "postTitle": "Sweep and reversal on NQ #ict #trading #nqfutures #daytrading",
+    "postUrl": "https://youtube.com/watch?v=GaZtklemHYU",
+    "authorName": "Dalton Taylor - MarketForge Trading",
+    "suggestedReply": "That NQ sweep and reversal setup is something I drill into my students constantly. Most of them miss the actual confirmation entry and jump in right at the sweep instead of waiting for the displacement back through the range. Do you typically mark your draw on liquidity before the session opens, or are you identifying it in real time as price approaches?",
+    "createdAt": "2026-05-16T00:30:09.193Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778891412744-rzmvv",
+    "platform": "youtube",
+    "postTitle": "W on ES long 🔴 LIVE Day Trading Futures | ES NQ | ICT Concepts | May 15",
+    "postUrl": "https://youtube.com/watch?v=nA4ce4HKFU0",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Nice W on the ES long but I always tell my students to be careful chasing longs when price is extended away from a key dealing range without a proper retracement first. The ICT concept of waiting for a mitigation back into a breaker or order block before committing is something that separates consistent traders from lucky ones. One impulsive entry can erase a good setup mentally even if it works out. Did you get a clean PD array to lean on before the entry?",
+    "createdAt": "2026-05-16T00:30:12.745Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778891415667-5ix0b",
+    "platform": "youtube",
+    "postTitle": "Jake Paul strategy #trading #ict #smc",
+    "postUrl": "https://youtube.com/watch?v=4ctMNP9bRIE",
+    "authorName": "Investing Gods",
+    "suggestedReply": "Interesting take linking Jake Paul's aggressive style to ICT execution. In my experience, the issue isn't the strategy itself but the timing. I teach my students to wait for a confirmed displacement into a premium or discount array before committing, rather than forcing entries on hype. The Jake Paul energy is great for confidence but ICT rewards patience over aggression every time.",
+    "createdAt": "2026-05-16T00:30:15.667Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778891419259-a63lz",
+    "platform": "youtube",
+    "postTitle": "Mitigation Block Strategy Explained 🔥 | SMC &amp; ICT Trading",
+    "postUrl": "https://youtube.com/watch?v=4zqtRvH1Dnc",
+    "authorName": "IAMRKLODHI",
+    "suggestedReply": "Mitigation blocks are genuinely powerful but I always tell my students to confirm the block on a higher timeframe before dropping down to execute. The trap I see constantly is traders entering a mitigation block on the 5m without checking if price is actually in a premium or discount zone on the 1H or 4H. That context is what separates clean setups from getting chopped up. Great concept covered here though.",
+    "createdAt": "2026-05-16T00:30:19.259Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778891422207-n7kuv",
+    "platform": "youtube",
+    "postTitle": "ICT vs Volume Profile. Which One is More Profitble?",
+    "postUrl": "https://youtube.com/watch?v=uTJL7K7gsGU",
+    "authorName": "Trading Clubs",
+    "suggestedReply": "ICT vs Volume Profile is honestly a false choice in my experience. I teach my students to use Volume Profile POCs as confluence for ICT draw on liquidity, not as competing tools. The caveat though is on lower timeframe entries, especially during news events, volume profile levels can get blown straight through before price respects them so timing matters a lot.",
+    "createdAt": "2026-05-16T00:30:22.207Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778891425858-n34su",
+    "platform": "youtube",
+    "postTitle": "A Live Bitcoin &amp; Gold Chart Analysis | Smart Money Concepts &amp; Price Action TODAY ||  trump live news",
+    "postUrl": "https://youtube.com/watch?v=-_YtuGt4gFM",
+    "authorName": "Vishnu Verma",
+    "suggestedReply": "Smart money concepts on Bitcoin AND gold in the same session is a solid combo to watch, especially with Trump news driving macro sentiment right now. One thing I drill into my students though is that news events can trigger liquidity sweeps that look like valid SMC setups but are actually just stop hunts before a sharp reversal. Always wait for the 15m candle to close and confirm displacement before committing to a direction on days like this.",
+    "createdAt": "2026-05-16T00:30:25.858Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778891428495-5wios",
+    "platform": "youtube",
+    "postTitle": "Live Forex Trading &amp; Analysis | Smart Money Concepts &amp; Price Acti",
+    "postUrl": "https://youtube.com/watch?v=JljYHbm7Nk4",
+    "authorName": "@BtechTrader",
+    "suggestedReply": "Smart Money Concepts without session confluence is where most traders get burned. When I work with my students on live setups, I always have them map the New York open killzone against any HTF order block before committing to a direction. Price action alone tells you what happened. Session timing tells you why it matters.",
+    "createdAt": "2026-05-16T00:30:28.495Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778891431389-7fhz4",
+    "platform": "youtube",
+    "postTitle": "🔴Live GOLD &amp; BTC Analysis | Smart Money Concepts | ICT Strategy Explained #248 FlipperxForex",
+    "postUrl": "https://youtube.com/watch?v=NYumU0nZIVk",
+    "authorName": "FlipperX Forex",
+    "suggestedReply": "Interesting take on the SMC approach for BTC alongside gold. In my experience, I teach my students to prioritize the higher timeframe PD arrays first before dropping into the entry timeframe, because gold and BTC often have very different liquidity profiles and treating them the same way gets traders in trouble. The correlation play can be powerful but the confirmation criteria need to stay asset specific.",
+    "createdAt": "2026-05-16T00:30:31.389Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1778805942143-3e8c5",
     "platform": "investinglive",
     "postTitle": "More from Fed's Williams, sees no case for rate move as policy sits in good place",
