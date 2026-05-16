@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "myth",
     "question",
     "poll",
     "hot-take",
@@ -29,11 +28,12 @@
     "story",
     "tip",
     "promo-free-class",
-    "poll-native"
+    "poll-native",
+    "promo-results"
   ],
   "lastPost": {
-    "type": "poll-native",
-    "text": "Order blocks or Fair Value Gaps — which do you trust MORE for entries? 👇 #ICTTrading #SmartMoney\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ Both equally\n🅳️ Neither, I use both\n\nVote below! 👇",
-    "date": "2026-05-15T12:00:18.905Z"
+    "type": "promo-results",
+    "text": "R2F traders are passing funded challenges at 85%. While everyone's panic-selling in May, smart money traders are collecting. Structure > noise. See the results 👇 https://r2ftrading.com/results #ICTTrading #FundedTrader #SmartMoneyConcepts",
+    "date": "2026-05-16T04:00:13.863Z"
   }
 }
