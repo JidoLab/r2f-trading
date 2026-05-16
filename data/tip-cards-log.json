@@ -955,5 +955,38 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "number": 30,
+    "category": "Psychology",
+    "tip": "Stop entering the moment price taps an order block — wait for a market structure shift on the lower timeframe to confirm smart money is actually defending that level before you risk a single tick.",
+    "imageUrl": "https://www.r2ftrading.com/tip-cards/tip-30.png",
+    "date": "2026-05-16T06:00:19.167Z",
+    "results": [
+      {
+        "platform": "twitter-image",
+        "status": "error",
+        "message": "Image fetch failed: 404"
+      },
+      {
+        "platform": "facebook",
+        "status": "error",
+        "message": "{\"error\":{\"message\":\"Missing or invalid image file\",\"type\":\"OAuthException\",\"code\":324,\"error_subcode\":2069019,\"is_transient\":true,\"error_user_title\":\"Image Required\",\"error_user_msg\":\"Make sure your "
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
