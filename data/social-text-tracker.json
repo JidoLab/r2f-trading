@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "hot-take",
     "quote",
     "story",
     "tip",
@@ -29,11 +28,12 @@
     "poll-native",
     "promo-results",
     "promo-checklist",
-    "poll-native"
+    "poll-native",
+    "promo-blog"
   ],
   "lastPost": {
-    "type": "poll-native",
-    "text": "It's Sunday — time to set your weekly bias. Do you trust order blocks or fair value gaps more for your entries this week? #ICTTrading #SmartMoney\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ Both equally\n🅳️ Neither — price action\n\nVote below! 👇",
-    "date": "2026-05-17T04:00:48.008Z"
+    "type": "promo-blog",
+    "text": "Everyone's screaming 'Sell in May' but smart money doesn't follow retail calendars. I broke down exactly what order blocks are telling us this week. Don't set your bias blind. 👇 https://r2ftrading.com/trading-insights #ICTTrading #SmartMonkeyConcepts #FundedTrader",
+    "date": "2026-05-17T12:00:41.189Z"
   }
 }
