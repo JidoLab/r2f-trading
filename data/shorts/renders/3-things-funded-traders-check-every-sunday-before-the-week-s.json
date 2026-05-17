@@ -25,5 +25,7 @@
   "seriesNumber": null,
   "autoPublish": false,
   "createdAt": "2026-05-17T14:32:35.996Z",
-  "status": "rendering"
+  "status": "failed",
+  "error": "Render failed",
+  "failedAt": "2026-05-17T14:33:17.808Z"
 }
