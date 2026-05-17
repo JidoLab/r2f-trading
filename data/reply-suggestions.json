@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1778977849409-p2tgp",
+    "platform": "youtube",
+    "postTitle": "Live GOLD and CRYPTO Scalping Trading | DAY 238 #goldtrading #cryptotrading #bitcoin",
+    "postUrl": "https://youtube.com/watch?v=dlT_Af2f2mU",
+    "authorName": "ICT ENIGMA",
+    "suggestedReply": "Scalping gold and crypto on the same session is a skill most traders underestimate. The key I drill into my students is not just identifying the FVG but confirming the displacement candle that created it before touching the entry. On gold especially, premature entries at the fair value gap without that confirmation get stopped out constantly. Are you filtering by session on the crypto side or treating it like gold with London and NY overlap?",
+    "createdAt": "2026-05-17T00:30:49.409Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778977853285-vnddo",
+    "platform": "youtube",
+    "postTitle": "ICT Top Down Analysis Strategy Using Bias, Liquidity and OTZ",
+    "postUrl": "https://youtube.com/watch?v=fcY8PGtWdYs",
+    "authorName": "Com Lucro Trader",
+    "suggestedReply": "I always tell my students that top down analysis only works when your bias is locked in before you even look at the lower timeframes. I spent years fighting that on EURUSD until I started building my OTZ confluences from the weekly down to the 15 minute before touching anything else. The liquidity piece changes everything once you understand why price needs to raid those levels first. Solid framework here.",
+    "createdAt": "2026-05-17T00:30:53.285Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778977858616-y6jan",
+    "platform": "youtube",
+    "postTitle": "This kept me running in circles … #daytrading #ict #daytrader #trading #tradingstrategy",
+    "postUrl": "https://youtube.com/watch?v=nXoSV9MdhXI",
+    "authorName": "$niper",
+    "suggestedReply": "Running in circles with ICT usually comes down to chasing concepts without a defined model. In my experience, anchoring everything to ONE draw on liquidity per session clears up most of the confusion. I tell my students to stop asking \"which setup\" and start asking \"where is price going\" first. The framework gets a lot simpler after that shift.",
+    "createdAt": "2026-05-17T00:30:58.616Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778977861196-57qkh",
+    "platform": "youtube",
+    "postTitle": "ICT Gems: Algorithmic Time and Price Theory",
+    "postUrl": "https://youtube.com/watch?v=OPjDI0DbCz0",
+    "authorName": "URAH ICT",
+    "suggestedReply": "Algorithmic time and price theory is something I drill into my students before they even think about touching a chart. Most of them struggle with understanding that price targets specific times before it targets specific levels, and that sequencing is everything. Do you break down how this plays out differently across sessions like London versus New York open?",
+    "createdAt": "2026-05-17T00:31:01.196Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778977864195-a312m",
+    "platform": "youtube",
+    "postTitle": "This IFVG Continuation Model Feels Broken",
+    "postUrl": "https://youtube.com/watch?v=9so44M-aL_8",
+    "authorName": "The Soup Room",
+    "suggestedReply": "The IFVG continuation model isn't broken, it just needs the right conditions to breathe. I teach my students that when price is consolidating inside a larger dealing range, IFVGs on the lower timeframes will get invalidated constantly because there's no true displacement driving the move. Wait for a confirmed higher timeframe bias shift first, then look for your IFVG entries. That one filter changes everything.",
+    "createdAt": "2026-05-17T00:31:04.195Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778977867195-mu0g4",
+    "platform": "youtube",
+    "postTitle": "You know you should be long, but your entries are getting stopped. #NQ #Trading #FVG #IFVG #ICT",
+    "postUrl": "https://youtube.com/watch?v=SIQfO4rIdYg",
+    "authorName": "APJ Capital",
+    "suggestedReply": "I used to get stopped out constantly on NQ longs until I realized I was entering directly into the FVG instead of waiting for price to respect the IFVG first. I drill this into my students now. the 5 minute confirmation after a liquidity sweep changed everything for my consistency. that layering between FVG and IFVG is exactly where the patience game gets won.",
+    "createdAt": "2026-05-17T00:31:07.195Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778977870760-3vpr2",
+    "platform": "youtube",
+    "postTitle": "Tu utilises MAL le Fibonacci Retracement 🔥",
+    "postUrl": "https://youtube.com/watch?v=yHhytiVyJ60",
+    "authorName": "ICT DAY TRADER",
+    "suggestedReply": "Le point sur le mauvais ancrage du Fibonacci est exactement ce que je corrige chez mes étudiants en premier. La plupart tracent du swing high au swing low sans tenir compte du corps des bougies de déplacement, ce qui fausse le niveau 0.618 et les fait entrer hors structure. Sur les paires majeurs en session London, cet écart peut coûter plusieurs dizaines de pips avant même que le trade commence.",
+    "createdAt": "2026-05-17T00:31:10.760Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1778977873630-8ed8g",
+    "platform": "youtube",
+    "postTitle": "Live GOLD and CRYPTO Scalping Trading | DAY 238 #goldtrading #cryptotrading #bitcoin",
+    "postUrl": "https://youtube.com/watch?v=J_cHEydXks8",
+    "authorName": "ICT ENIGMA",
+    "suggestedReply": "Interesting take on scalping both gold and crypto in the same session. In my experience, I actually steer my students away from trading both simultaneously because the liquidity profiles are so different. Gold respects London and New York killzones tightly, while crypto runs its own clock and can pull your focus at the worst moment during an active NFP setup.",
+    "createdAt": "2026-05-17T00:31:13.630Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1778891468560-xc3k7",
     "platform": "investinglive",
     "postTitle": "Gold tumbles lower today on the back of higher yields and the higher USD",
