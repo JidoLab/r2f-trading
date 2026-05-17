@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-17-the-silent-killer-of-ict-traders-pattern-addiction",
+    "syndicatedAt": "2026-05-17T06:03:09.048Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-silent-killer-of-ict-traders-pattern-addiction",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-silent-killer-of-ict-traders-pattern-addiction-19jd",
+        "id": "3686413"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-silent-killer-of-ict-traders-pattern-addiction"
+  },
+  {
     "slug": "2026-05-17-the-sunday-night-lie-every-ict-trader-tells-himself",
     "syndicatedAt": "2026-05-17T04:33:11.166Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-sunday-night-lie-every-ict-trader-tells-himself",
