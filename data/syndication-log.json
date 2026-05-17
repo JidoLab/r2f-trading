@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-17-the-boredom-that-kills-ict-traders",
+    "syndicatedAt": "2026-05-17T02:32:56.013Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-boredom-that-kills-ict-traders",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-boredom-that-kills-ict-traders-1516",
+        "id": "3686001"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-boredom-that-kills-ict-traders"
+  },
+  {
     "slug": "2026-05-17-the-sunday-fear-that-ruins-monday-trades",
     "syndicatedAt": "2026-05-17T00:32:56.064Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-sunday-fear-that-ruins-monday-trades",
