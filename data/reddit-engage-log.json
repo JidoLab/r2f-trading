@@ -1136,5 +1136,15 @@
     "commentedAt": "2026-05-17T13:00:17.825Z",
     "permalink": "/r/Trading/comments/1tfkm12/the_jasmy_story_what_actually_creates_an_edge/omat115/",
     "commentId": "omat115"
+  },
+  {
+    "postId": "1tf46vn",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "New here and looking for help",
+    "commentText": "i had this exact problem when i was still using trendline-based entries on eurusd, kept getting chopped out on the 15m because i was chasing price instead of waiting for it to come to me. the tori tradez stuff isn't bad for basics but once you understand ICT's concept of waiting for price to raid a liquidity level then look for a fair value gap on the 5m to enter, it completely changes how you read that 15m break you're already marking. tbh the break means nothing without knowing *why* price broke it and where it's likely going next. start with ICT's market structure shift on a lower timeframe after a liquidity sweep, that one concept alone would've saved my first prop attempt",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-17T16:32:03.310Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tf46vn/new_here_and_looking_for_help/omby3ph/",
+    "commentId": "omby3ph"
   }
 ]
