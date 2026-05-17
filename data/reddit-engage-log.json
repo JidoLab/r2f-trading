@@ -1096,5 +1096,25 @@
     "commentedAt": "2026-05-16T03:00:33.775Z",
     "permalink": "/r/proptrading/comments/1te13xl/the_prop_firm_rule_thats_quietly_working_against/om2f2np/",
     "commentId": "om2f2np"
+  },
+  {
+    "postId": "1teupf4",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "If Everyone Sees The Same Liquidity, Who Actually Has An Edge?",
+    "commentText": "the edge isn't in seeing the level, it's in knowing *why* price goes there before it sweeps. anybody can spot SSL below a swing low on H1, but most people don't know if that's the actual draw or just a stop hunt before price continues lower into a bigger pool. tbh the real filter is understanding the narrative — is this a tuesday AMD cycle targeting buyside into NY open, or is price just meandering? execution and context beat the setup every time imo.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-17T08:32:18.958Z",
+    "permalink": "/r/InnerCircleTraders/comments/1teupf4/if_everyone_sees_the_same_liquidity_who_actually/om9uave/",
+    "commentId": "om9uave"
+  },
+  {
+    "postId": "1teoom2",
+    "subreddit": "Trading",
+    "postTitle": "Fair Value Gaps — what they are, why they work, and how to actually trade them",
+    "commentText": "try marking the 50% midpoint of the FVG (the \"EQ\") instead of treating the whole gap as your entry zone. tbh most fills don't go all the way to the bottom of a bullish FVG — price taps the equilibrium and bounces, especially on the 15m during london open or NY killzone. if you're waiting for a full fill on EURUSD and it only gets to mid-gap before ripping, you're just watching money leave without you.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-17T08:32:27.905Z",
+    "permalink": "/r/Trading/comments/1teoom2/fair_value_gaps_what_they_are_why_they_work_and/om9ubh4/",
+    "commentId": "om9ubh4"
   }
 ]
