@@ -1116,5 +1116,15 @@
     "commentedAt": "2026-05-17T08:32:27.905Z",
     "permalink": "/r/Trading/comments/1teoom2/fair_value_gaps_what_they_are_why_they_work_and/om9ubh4/",
     "commentId": "om9ubh4"
+  },
+  {
+    "postId": "1tetow3",
+    "subreddit": "proptrading",
+    "postTitle": "Hypothetical question: prop firm scaling with multiple accounts",
+    "commentText": "scaling multiple accounts works fine as long as you're not doubling your correlated exposure — if you're in EURUSD on all three accounts chasing the same NY open displacement, you're basically just running oversized risk with extra steps. tbh the smarter play is treating each account like it has its own session bias, so maybe one is running the london OB play and another waits for the NY killzone BOS confirmation before entering. are you thinking about syncing entries across all accounts or staggering them based on different timeframe confluences?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-17T11:32:09.476Z",
+    "permalink": "/r/proptrading/comments/1tetow3/hypothetical_question_prop_firm_scaling_with/omafev3/",
+    "commentId": "omafev3"
   }
 ]
