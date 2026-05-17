@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-17-the-sunday-night-lie-every-ict-trader-tells-himself",
+    "syndicatedAt": "2026-05-17T04:33:11.166Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-sunday-night-lie-every-ict-trader-tells-himself",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-sunday-night-lie-every-ict-trader-tells-himself-349j",
+        "id": "3686216"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-sunday-night-lie-every-ict-trader-tells-himself"
+  },
+  {
     "slug": "2026-05-17-the-boredom-that-kills-ict-traders",
     "syndicatedAt": "2026-05-17T02:32:56.013Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-boredom-that-kills-ict-traders",
