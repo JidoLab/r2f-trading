@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-17-the-sunday-fear-that-ruins-monday-trades",
+    "syndicatedAt": "2026-05-17T00:32:56.064Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-sunday-fear-that-ruins-monday-trades",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-sunday-fear-that-ruins-monday-trades-22md",
+        "id": "3685718"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-sunday-fear-that-ruins-monday-trades"
+  },
+  {
     "slug": "2026-05-15-why-smart-traders-feel-nothing-after-big-wins",
     "syndicatedAt": "2026-05-15T07:32:18.884Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-15-why-smart-traders-feel-nothing-after-big-wins",
