@@ -184,9 +184,9 @@
     "url": "https://videos.pexels.com/video-files/8394092/8394092-hd_1080_1920_24fps.mp4",
     "category": "walking_city",
     "pexelsId": 8394092,
-    "usageCount": 5,
+    "usageCount": 6,
     "addedAt": "2026-04-17T13:21:29.546Z",
-    "lastUsedAt": "2026-05-15T09:31:16.919Z"
+    "lastUsedAt": "2026-05-17T15:33:15.119Z"
   },
   {
     "id": "seed-walking_city-8151972",
@@ -1064,8 +1064,9 @@
     "height": 2048,
     "duration": 46,
     "pexelsId": 8724215,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:33.201Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:33.201Z",
+    "lastUsedAt": "2026-05-17T15:33:15.119Z"
   },
   {
     "id": "pexels-7688647",
@@ -2675,8 +2676,9 @@
     "height": 2048,
     "duration": 45,
     "pexelsId": 8035616,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:46.818Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:46.818Z",
+    "lastUsedAt": "2026-05-17T15:33:15.119Z"
   },
   {
     "id": "pexels-8108971",
