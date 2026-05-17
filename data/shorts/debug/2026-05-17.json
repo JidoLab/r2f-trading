@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-17T08:32:06.557Z",
+  "date": "2026-05-17T11:31:57.720Z",
   "today": "2026-05-17",
   "topicsAttempted": [
     null,
@@ -8,20 +8,20 @@
   ],
   "results": [
     {
-      "title": "POV: You Said These 3 Words Before Blowing Your Funded Account",
+      "title": "POV: You Passed 3 Funded Challenges… Then Blew the Live Account",
       "status": "rendering"
     },
     {
       "title": "",
       "status": "error",
-      "error": "GitHub commit failed: 409 {\"message\":\"is at 87325da5ea4018d8c5c75dda83c35459d65b7a2a but expected 7a2bd7621d89129f4fbabe7debbbcd082709824a\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+      "error": "GitHub commit failed: 409 {\"message\":\"is at 5e5cb781b881baaa007abd737f2a996e95761bea but expected 3daa36ad902c71fbadc4df472231e47311abab8e\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
     },
     {
-      "title": "The 'Sell in May' Myth That's Costing Funded Traders in 2026",
+      "title": "They Said 'Sell in May' — The Chart Said Otherwise (2026)",
       "status": "rendering"
     }
   ],
   "errors": [
-    "GitHub commit failed: 409 {\"message\":\"is at 87325da5ea4018d8c5c75dda83c35459d65b7a2a but expected 7a2bd7621d89129f4fbabe7debbbcd082709824a\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+    "GitHub commit failed: 409 {\"message\":\"is at 5e5cb781b881baaa007abd737f2a996e95761bea but expected 3daa36ad902c71fbadc4df472231e47311abab8e\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
   ]
 }
