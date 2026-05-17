@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-17-the-sunday-bias-trap-why-i-stopped-setting-weekly-bias",
+    "syndicatedAt": "2026-05-17T10:33:20.542Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-sunday-bias-trap-why-i-stopped-setting-weekly-bias",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-sunday-bias-trap-why-i-stopped-setting-weekly-bias-5hmp",
+        "id": "3687271"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-sunday-bias-trap-why-i-stopped-setting-weekly-bias"
+  },
+  {
     "slug": "2026-05-17-the-silent-killer-of-ict-traders-pattern-addiction",
     "syndicatedAt": "2026-05-17T06:03:09.048Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-17-the-silent-killer-of-ict-traders-pattern-addiction",
