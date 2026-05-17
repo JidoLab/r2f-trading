@@ -323,8 +323,9 @@
     "url": "https://videos.pexels.com/video-files/8731519/8731519-hd_1080_1920_25fps.mp4",
     "category": "agreement",
     "pexelsId": 8731519,
-    "usageCount": 0,
-    "addedAt": "2026-04-17T13:21:29.546Z"
+    "usageCount": 1,
+    "addedAt": "2026-04-17T13:21:29.546Z",
+    "lastUsedAt": "2026-05-17T16:31:23.580Z"
   },
   {
     "id": "seed-luxury-28408297",
@@ -1076,9 +1077,9 @@
     "height": 1920,
     "duration": 7,
     "pexelsId": 7688647,
-    "usageCount": 1,
+    "usageCount": 2,
     "addedAt": "2026-04-17T13:21:33.201Z",
-    "lastUsedAt": "2026-05-07T01:32:10.171Z"
+    "lastUsedAt": "2026-05-17T16:31:23.580Z"
   },
   {
     "id": "pexels-8724512",
@@ -1859,9 +1860,9 @@
     "height": 1920,
     "duration": 11,
     "pexelsId": 6265082,
-    "usageCount": 4,
+    "usageCount": 5,
     "addedAt": "2026-04-17T13:21:41.001Z",
-    "lastUsedAt": "2026-05-15T05:31:08.211Z"
+    "lastUsedAt": "2026-05-17T16:31:23.580Z"
   },
   {
     "id": "pexels-6265064",
@@ -3144,9 +3145,9 @@
     "height": 1920,
     "duration": 10,
     "pexelsId": 7918624,
-    "usageCount": 1,
+    "usageCount": 2,
     "addedAt": "2026-04-17T13:21:50.686Z",
-    "lastUsedAt": "2026-05-05T03:31:27.441Z"
+    "lastUsedAt": "2026-05-17T16:31:23.580Z"
   },
   {
     "id": "pexels-8557550",
