@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll",
     "hot-take",
     "quote",
     "story",
@@ -29,11 +28,12 @@
     "promo-free-class",
     "poll-native",
     "promo-results",
-    "promo-checklist"
+    "promo-checklist",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "promo-checklist",
-    "text": "I use this checklist before every single trade. Pre-trade, during, post-trade — keeps me disciplined when the market wants me emotional. Grab it free 👇\nhttps://r2ftrading.com\n\n#ICTTrading #SmartMoneyConcepts #FundedTrader",
-    "date": "2026-05-16T12:00:33.316Z"
+    "type": "poll-native",
+    "text": "It's Sunday — time to set your weekly bias. Do you trust order blocks or fair value gaps more for your entries this week? #ICTTrading #SmartMoney\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ Both equally\n🅳️ Neither — price action\n\nVote below! 👇",
+    "date": "2026-05-17T04:00:48.008Z"
   }
 }
