@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "story",
     "tip",
     "promo-free-class",
     "promo-results",
@@ -29,11 +28,12 @@
     "promo-checklist",
     "poll-native",
     "promo-blog",
-    "promo-coaching"
+    "promo-coaching",
+    "question"
   ],
   "lastPost": {
-    "type": "promo-coaching",
-    "text": "3 coaching spots open this month. While everyone's panicking over 'Sell in May,' my students are hunting order blocks at London open like it's nothing. ICT isn't seasonal. Book a free 15-min call. No pitch. 👇 https://r2ftrading.com/contact #ICTTrading #FundedTrader #SmartMoneyConcepts",
-    "date": "2026-05-18T04:00:22.299Z"
+    "type": "question",
+    "text": "Monday London open — do you wait for the false break of Friday's range before entering, or do you trade the initial move? Smart money is building this week's narrative RIGHT NOW. Drop your answer 👇 #ICTTrading #SmartMoneyConcepts #OrderBlocks",
+    "date": "2026-05-18T12:00:47.062Z"
   }
 }
