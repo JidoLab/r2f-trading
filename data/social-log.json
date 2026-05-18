@@ -2035,5 +2035,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-18T12:00:48.325Z",
+    "type": "text",
+    "postType": "question",
+    "text": "Monday London open — do you wait for the false break of Friday's range before entering, or do you tr",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
