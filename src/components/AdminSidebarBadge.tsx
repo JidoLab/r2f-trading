@@ -62,6 +62,43 @@ export function DailyTasksBadge() {
   );
 }
 
+/**
+ * Badge for the Engagement Log sidebar item — shows the count of unread
+ * reply notifications (replies on Reddit/Twitter/YT/FB/LI). "Read" state
+ * is tracked in localStorage:engagement-log:lastReadAt — the same key the
+ * /admin/engagement-log Replies tab updates when opened.
+ */
+export function EngagementRepliesBadge() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const fetchCount = () => {
+      const lastRead = localStorage.getItem("engagement-log:lastReadAt") || "";
+      const params = new URLSearchParams({ countUnread: "true" });
+      if (lastRead) params.set("lastRead", lastRead);
+      fetch(`/api/admin/engagement-log?${params}`)
+        .then((r) => (r.ok ? r.json() : { unreadCount: 0 }))
+        .then((d) => setCount(d.unreadCount || 0))
+        .catch(() => {});
+    };
+    fetchCount();
+    const interval = setInterval(fetchCount, 60000);
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === "engagement-log:lastReadAt") fetchCount();
+    };
+    window.addEventListener("storage", onStorage);
+    return () => { clearInterval(interval); window.removeEventListener("storage", onStorage); };
+  }, []);
+
+  if (count <= 0) return null;
+
+  return (
+    <span className="ml-auto bg-green-500 text-white text-[10px] font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1">
+      {count > 99 ? "99+" : count}
+    </span>
+  );
+}
+
 export function ReplySuggestionsBadge() {
   const [count, setCount] = useState(0);
 

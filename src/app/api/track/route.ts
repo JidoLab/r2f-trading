@@ -18,7 +18,10 @@ export async function POST(req: NextRequest) {
         const idx = subscribers.findIndex((s: { email: string }) => s.email === email);
         if (idx >= 0) {
           const sub = normalizeSubscriber(subscribers[idx]);
-          subscribers[idx] = addEventToSubscriber(sub, event, metadata);
+          // Spread the original record so non-normalized fields
+          // (staleReengageSent, hotFollowUpSent, reviewRequested,
+          // abandonmentEmailSent, referralCode, name, phone) survive.
+          subscribers[idx] = { ...subscribers[idx], ...addEventToSubscriber(sub, event, metadata) };
           await commitFile(
             "data/subscribers.json",
             JSON.stringify(subscribers, null, 2),

@@ -94,7 +94,12 @@ export async function GET(req: NextRequest) {
           const idx = subscribers.findIndex((s: Record<string, unknown>) => s.email === evt.email);
           if (idx >= 0) {
             const sub = normalizeSubscriber(subscribers[idx]);
-            subscribers[idx] = addEventToSubscriber(sub, evt.event) as unknown as Record<string, unknown>;
+            // CRITICAL: spread the original record into the result so non-normalized
+            // fields (staleReengageSent, hotFollowUpSent, reviewRequested,
+            // referralCode, name, phone, etc.) survive. Replacing with just the
+            // normalized object strips those, causing flags to reset daily and
+            // trigger duplicate sends.
+            subscribers[idx] = { ...subscribers[idx], ...(addEventToSubscriber(sub, evt.event) as unknown as Record<string, unknown>) };
           }
         }
         await commitFile("data/events-queue.json", "[]", "Process events queue").catch(() => {});
@@ -137,8 +142,12 @@ export async function GET(req: NextRequest) {
         }
       }
 
-      // Always write back the normalized subscriber (backward compat upgrade)
-      subscribers[i] = sub as unknown as Record<string, unknown>;
+      // Spread the original record so non-normalized one-shot flags
+      // (staleReengageSent, hotFollowUpSent, reviewRequested, referralCode,
+      // name, phone, abandonmentEmailSent, etc.) survive. Replacing with
+      // just the normalized object strips those, causing every downstream
+      // "send once" flow to re-fire daily.
+      subscribers[i] = { ...subscribers[i], ...(sub as unknown as Record<string, unknown>) };
       if (!sent && !sub.score) continue; // No changes needed
       updated = true;
     }
