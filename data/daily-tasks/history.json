@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-05-18",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1779073003303-0",
+        "title": "With 22 YouTube Shorts ready to publish and 0 new subscribers yesterday, manually share 2–3 of the best-performing shorts directly in relevant Bangkok trader Facebook Groups or LINE communities to drive immediate traffic.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1779073003303-1",
+        "title": "Reach out personally to all 5 cold subscribers via a 1-on-1 Telegram or WhatsApp voice note from Harvest, since they've averaged 6.8 drips with no conversion — a personal touch can break the pattern.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1779073003303-2",
+        "title": "With 97 blog posts published and zero Reddit upvotes, manually identify the top 3 most-visited blog posts and post a genuine, value-adding comment linking to them in active subreddits like r/Forex or r/Daytrading.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1779073003303-3",
+        "title": "Launch a new top-of-funnel lead magnet (e.g. a free ICT cheat sheet PDF or a live free webinar hosted by Harvest) to address the 0 new subscribers yesterday and replenish an otherwise stagnant pipeline.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-05-09",
     "tasks": [
       {
