@@ -16,5 +16,17 @@
     "to": "2026-04-15-retail-sales-week-how-smart-money-trades-usd",
     "deletedAt": "2026-04-16T08:44:53.000Z",
     "reason": "Duplicate cleanup: kept stronger version"
+  },
+  {
+    "from": "2026-04-15-retail-sales-week-smart-money-fakes-direction",
+    "to": "2026-04-15-retail-sales-week-how-smart-money-trades-usd",
+    "deletedAt": "2026-05-18T00:00:00.000Z",
+    "reason": "Slug variant indexed by Google (missing 'how-'); points to the same kept version"
+  },
+  {
+    "from": "/learn/position-sizing-funded-accounts",
+    "to": "/learn/position-sizing",
+    "deletedAt": "2026-05-18T00:00:00.000Z",
+    "reason": "Landing page slug renamed; old URL indexed by Google as 404"
   }
 ]

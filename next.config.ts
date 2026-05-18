@@ -11,17 +11,25 @@ import path from "path";
  * rebuilds on every commit, so the new redirects go live automatically.
  *
  * Shape of each entry:
- *   { from: "old-slug", to: "new-slug", deletedAt: ISO, reason?: string }
+ *   { from: "old-slug-or-/path", to: "new-slug-or-/path", deletedAt: ISO, reason?: string }
  *
- * Both slugs are expected WITHOUT the /trading-insights/ prefix — we add it here.
+ * Path resolution:
+ *  - If from/to begins with "/", treat as a literal absolute path
+ *    (handles /learn/*, /tools/*, etc.)
+ *  - Otherwise prepend "/trading-insights/" for backward compat with
+ *    blog-slug entries
  */
+function resolveRedirectPath(s: string): string {
+  return s.startsWith("/") ? s : `/trading-insights/${s}`;
+}
+
 function loadPostRedirects() {
   try {
     const raw = fs.readFileSync(path.join(process.cwd(), "data/post-redirects.json"), "utf-8");
     const entries = JSON.parse(raw) as { from: string; to: string; deletedAt?: string; reason?: string }[];
     return entries.map((e) => ({
-      source: `/trading-insights/${e.from}`,
-      destination: `/trading-insights/${e.to}`,
+      source: resolveRedirectPath(e.from),
+      destination: resolveRedirectPath(e.to),
       permanent: true,
     }));
   } catch {
