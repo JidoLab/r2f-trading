@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-18-the-silence-after-a-loss-nobody-talks-about",
+    "syndicatedAt": "2026-05-18T03:32:58.199Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-18-the-silence-after-a-loss-nobody-talks-about",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-silence-after-a-loss-nobody-talks-about-37dj",
+        "id": "3690571"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-18-the-silence-after-a-loss-nobody-talks-about"
+  },
+  {
     "slug": "2026-05-18-the-silent-trade-that-reveals-your-real-risk-tolerance",
     "syndicatedAt": "2026-05-18T02:33:04.117Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-18-the-silent-trade-that-reveals-your-real-risk-tolerance",
