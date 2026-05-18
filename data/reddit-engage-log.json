@@ -1146,5 +1146,35 @@
     "commentedAt": "2026-05-17T16:32:03.310Z",
     "permalink": "/r/InnerCircleTraders/comments/1tf46vn/new_here_and_looking_for_help/omby3ph/",
     "commentId": "omby3ph"
+  },
+  {
+    "postId": "1tfl3im",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAUUSD weekly outlook — SSL sweep first before push to 4800?",
+    "commentText": "solid read tbh but the catch i'd add is that the 4400 SSL zone needs confirmation on the 4h before you commit to a reversal bias. if there's no mitigation of a 4h demand OB or a clean BOS to the upside after the sweep, price can absolutely just keep grinding lower and skip the bounce entirely. seen gold do exactly that this year where it sweeps SSL, consolidates for like two sessions, then continues the draw without ever giving a proper reversal structure. the sweep alone isn't the signal imo.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-18T00:32:42.195Z",
+    "permalink": "/r/Forexstrategy/comments/1tfl3im/xauusd_weekly_outlook_ssl_sweep_first_before_push/omee1tw/",
+    "commentId": "omee1tw"
+  },
+  {
+    "postId": "1tfysby",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Is Gold Setting Up for a Weekend Liquidity Trap… or Is This the Real Breakdown? 👀📉",
+    "commentText": "this happened to me last month on XAUUSD — price looked weak bouncing off support on the 1H, exact same RSI/MACD read you're describing, and i was ready to short. then i zoomed out to the 4H and saw we were sitting right on a massive bullish OB that hadn't been properly tapped yet. the \"weak bounce\" was actually just a liquidity sweep below that level before price ripped 180 pips north into the london open monday. tbh that EMA rejection you're calling on the 1H means nothing if there's a higher timeframe OB sitting underneath current price with unmitigated orders.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-18T00:32:49.420Z",
+    "permalink": "/r/Forexstrategy/comments/1tfysby/is_gold_setting_up_for_a_weekend_liquidity_trap/omee2i9/",
+    "commentId": "omee2i9"
+  },
+  {
+    "postId": "1tfl2qd",
+    "subreddit": "ICTMentorship",
+    "postTitle": "XAUUSD weekly outlook — SSL sweep first before push to 4800?",
+    "commentText": "solid read but tbh the 4400 SSL isn't guaranteed to get swept first if there's a clean daily FVG sitting between current price and that level. price at 4540 could tap an imbalance on the 4H, grab some BSL at 4800, *then* come back for the 4400 sweep imo. the sequence you're mapping assumes a clean downside run but Q2 2026 gold has been choppy enough to fake both directions before committing. i'd be watching for a BOS on the 15M after the london open before leaning hard into either direction.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-18T00:32:58.599Z",
+    "permalink": "/r/ICTMentorship/comments/1tfl2qd/xauusd_weekly_outlook_ssl_sweep_first_before_push/omee3du/",
+    "commentId": "omee3du"
   }
 ]
