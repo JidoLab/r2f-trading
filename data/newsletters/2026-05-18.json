@@ -1,0 +1,34 @@
+{
+  "date": "2026-05-18",
+  "sentAt": "2026-05-18T10:00:56.279Z",
+  "subject": "The trade you closed too early said everything",
+  "recipientCount": 5,
+  "failedCount": 0,
+  "totalSubscribers": 5,
+  "content": {
+    "subject": "The trade you closed too early said everything",
+    "greeting": "Hey trader,",
+    "marketRecap": "Monday's London open set the tone for the week as smart money used Friday's range extremes to engineer liquidity grabs before committing to directional flow — a textbook start to the weekly narrative. ICT traders who waited for the false break rather than front-running price had the cleaner entries and the cleaner minds. With fair value gaps and order blocks trending heavily in search right now, it's clear more traders are learning the language — the challenge remains executing without forcing what isn't there.",
+    "articles": [
+      {
+        "title": "The Silence After a Loss Nobody Talks About",
+        "slug": "2026-05-18-the-silence-after-a-loss-nobody-talks-about",
+        "excerpt": "Everyone warns you about revenge trading. Nobody warns you about going so quiet after a loss that you systematically miss every setup that would have rebuilt your account — and your confidence."
+      },
+      {
+        "title": "The Silent Trade That Reveals Your Real Risk Tolerance",
+        "slug": "2026-05-18-the-silent-trade-that-reveals-your-real-risk-tolerance",
+        "excerpt": "Most traders discover their true risk tolerance not during losses, but during unexpected winners. When a trade goes 3R in your favor and you close it early out of fear, that moment reveals more about your psychological limits than any drawdown ever could."
+      },
+      {
+        "title": "The Boredom That Kills ICT Traders",
+        "slug": "2026-05-17-the-boredom-that-kills-ict-traders",
+        "excerpt": "Fear and greed get all the attention. But after 10+ years coaching ICT traders through funded challenges, the silent account-killer is chronic boredom during dead sessions — and it's more neurologically specific than anyone talks about."
+      }
+    ],
+    "tipOfTheWeek": "This week, when price trades into a premium or discount array — whether that's an order block or a fair value gap — ask yourself one question before entering: has liquidity been swept on the opposing side first? If the buy-side or sell-side resting liquidity hasn't been taken, smart money has no reason to reverse price at your level yet. Patience at the array is good, but confluence with a liquidity sweep is what separates a valid ICT setup from a hopeful one.",
+    "comingUp": "The GDP release hitting in the next two weeks is the kind of high-impact event that turns clean price action into a minefield if you're not prepared. Mark your higher-timeframe dealing ranges before the number drops and treat any pre-release manipulation into order blocks with serious skepticism — smart money loves engineering false conviction ahead of red-folder events. Consider reducing position size or sitting on your hands entirely in the 30 minutes surrounding the release, then look for the real move after the dust settles.",
+    "ctaText": "Book a Free Discovery Call",
+    "ctaUrl": "https://r2ftrading.com/contact"
+  }
+}
