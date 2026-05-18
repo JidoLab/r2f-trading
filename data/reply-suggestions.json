@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1779064240324-v4jsp",
+    "platform": "youtube",
+    "postTitle": "I am the Mentor of your Mentor #SmartMoneyConcepts #ICTTrading #SMCTrader #PriceAction",
+    "postUrl": "https://youtube.com/watch?v=7QIcsNE0p5I",
+    "authorName": "Trader Abdullah Masood",
+    "suggestedReply": "Interesting take on the \"mentor of mentors\" framing. In my experience, the real edge in SMC comes less from lineage and more from understanding WHY price seeks liquidity above old highs before reversing, not just recognizing the pattern. I drill this into my students constantly because spotting order blocks without that context leads to early entries and blown stops.",
+    "createdAt": "2026-05-18T00:30:40.324Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779064242958-3c2hs",
+    "platform": "youtube",
+    "postTitle": "🔴Live GOLD &amp; BTC Analysis | Smart Money Concepts | ICT Strategy Explained #249 FlipperxForex",
+    "postUrl": "https://youtube.com/watch?v=mQcotVjREns",
+    "authorName": "FlipperX Forex",
+    "suggestedReply": "The Smart Money Concepts breakdown on gold is exactly where I see traders hesitate. The displacement candle before the FVG is the real entry signal and I drill this into my students constantly. Most skip straight to the imbalance and wonder why they get stopped out. On gold especially, waiting for that confirmed displacement on the 15m before touching the FVG changes everything.",
+    "createdAt": "2026-05-18T00:30:42.958Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779064246232-01rig",
+    "platform": "youtube",
+    "postTitle": "This New ICT Strategy Made Me Consistently Profitable...",
+    "postUrl": "https://youtube.com/watch?v=NdAuBWilBvU",
+    "authorName": "ICTKESIK",
+    "suggestedReply": "Consistency with ICT concepts is absolutely achievable but I always warn my students that \"consistent profitability\" can mask a strategy that works beautifully in trending conditions and bleeds you dry in choppy consolidation. The real test is whether this approach holds up when price is grinding inside a weekly range with no clear institutional flow. What session and timeframe are you finding this most reliable on?",
+    "createdAt": "2026-05-18T00:30:46.232Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779064249179-qosp5",
+    "platform": "youtube",
+    "postTitle": "ICT Gems: THE ULTIMATE ICT SWING TRADING GUIDE (All you need to know)",
+    "postUrl": "https://youtube.com/watch?v=dy7WYczwuPo",
+    "authorName": "URAH ICT",
+    "suggestedReply": "Swing trading with ICT concepts is solid but I always tell my students that the \"ultimate\" approach shifts depending on whether you're working with higher timeframe draw on liquidity or internal range liquidity. In my experience, anchoring your swing bias to the weekly dealing range first makes the lower timeframe entries far cleaner. Most students who skip that step get chopped up on the retracements.",
+    "createdAt": "2026-05-18T00:30:49.179Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779064252994-yv9zp",
+    "platform": "youtube",
+    "postTitle": "    Complete ICT Trading Roadmap 2026 | Learn Smart Money Concepts Free. ",
+    "postUrl": "https://youtube.com/watch?v=tD5a7kJTO_w",
+    "authorName": "Chart to Check-in",
+    "suggestedReply": "The Smart Money Concepts roadmap structure here is solid, especially how the displacement concept is laid out for beginners. What I drill into my students is that displacement without a confirmed shift in order flow is just a big candle. Wait for price to return to the FVG and respect it on a lower timeframe before committing. That filter alone separates the entries that work from the ones that just look good in hindsight.",
+    "createdAt": "2026-05-18T00:30:52.994Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779064256566-iol22",
+    "platform": "youtube",
+    "postTitle": "ICT Silver Bullet Trading Strategy 🔥Trade Forex &amp; GOLD (XAUUSD)",
+    "postUrl": "https://youtube.com/watch?v=V98HAksgb04",
+    "authorName": "Trade Maven",
+    "suggestedReply": "The Silver Bullet window on XAUUSD is powerful but I always tell my students to be extra cautious during high impact news releases that overlap that 10am to 11am window. Gold reacts violently to macro data and will invalidate your draw on liquidity before the setup even forms. Wait for the spread to normalize and confirm your CISD before committing size.",
+    "createdAt": "2026-05-18T00:30:56.566Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779064260234-d3u2l",
+    "platform": "youtube",
+    "postTitle": "CRT Concept Explained for Beginners",
+    "postUrl": "https://youtube.com/watch?v=p1_dOtN6-a8",
+    "authorName": "Royale Speed ⚡ ",
+    "suggestedReply": "CRT concepts are solid for beginners but one thing I always warn my students about is assuming every candle qualifies as a valid CRT just because it has a wick sweep. The manipulation leg needs to show real displacement on the return, especially on something like the 15 minute chart in London or New York session. Without that confirmation, you're just guessing entries.",
+    "createdAt": "2026-05-18T00:31:00.234Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779064263835-7xxqp",
+    "platform": "youtube",
+    "postTitle": "How I Made $300k+ in 4 Months Using These ICT Concepts",
+    "postUrl": "https://youtube.com/watch?v=ykGVZ5d5gfc",
+    "authorName": "isaacitrades",
+    "suggestedReply": "The missing piece behind scaling to $300k+ in compressed timeframes is usually session separation. I teach my students to treat London and New York as completely isolated kill zones with separate bias resets, not one continuous trend. Most blow their edge by carrying London bias into the NY open and getting caught in the manipulation sweep before true expansion.",
+    "createdAt": "2026-05-18T00:31:03.835Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1779035433722-lvquk",
     "platform": "investinglive",
     "postTitle": "Is Tesla Stock a Buy or Sell?",
