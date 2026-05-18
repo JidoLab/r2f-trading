@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-09T03:07:18.783Z",
+  "generatedAt": "2026-05-18T02:57:14.009Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Saturday, 9 May 2026 at 10:07 (Bangkok)",
+  "dateTime": "Monday, 18 May 2026 at 09:57 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -12,9 +12,9 @@
   },
   "contentStatus": {
     "blogPostsToday": 1,
-    "totalBlogPosts": 97,
-    "shortsReady": 22,
-    "shortsPublished": 31,
+    "totalBlogPosts": 113,
+    "shortsReady": 43,
+    "shortsPublished": 30,
     "shortsRendering": 4,
     "socialPostsThisWeek": 33
   },
@@ -23,10 +23,10 @@
     "recentHot": []
   },
   "suggestions": [
-    "With 22 YouTube Shorts ready to publish and 0 new subscribers yesterday, manually share 2–3 of the best-performing shorts directly in relevant Bangkok trader Facebook Groups or LINE communities to drive immediate traffic.",
-    "Reach out personally to all 5 cold subscribers via a 1-on-1 Telegram or WhatsApp voice note from Harvest, since they've averaged 6.8 drips with no conversion — a personal touch can break the pattern.",
-    "With 97 blog posts published and zero Reddit upvotes, manually identify the top 3 most-visited blog posts and post a genuine, value-adding comment linking to them in active subreddits like r/Forex or r/Daytrading.",
-    "Launch a new top-of-funnel lead magnet (e.g. a free ICT cheat sheet PDF or a live free webinar hosted by Harvest) to address the 0 new subscribers yesterday and replenish an otherwise stagnant pipeline."
+    "With 43 shorts ready and only 30 published, manually review and schedule the remaining 13 shorts across YouTube, TikTok, and Instagram Reels to maximize reach this week.",
+    "Zero new subscribers in the last day signals a traffic problem — manually launch a targeted Facebook or Google ad campaign focused on ICT trading keywords to drive fresh leads into the funnel.",
+    "All 5 existing subscribers are cold with an average of 6.8 drips each, meaning they're likely near drip exhaustion — personally reach out to each one via a direct Telegram or WhatsApp voice message from Harvest to re-engage with a human touch.",
+    "Reddit posted 0 comments yesterday with 0 upvotes total, suggesting the automated engagement may be getting flagged or ignored — manually visit r/Forex and r/Daytrading today and post 2–3 genuinely helpful ICT-related comments from Harvest's personal account to build credibility."
   ],
   "schedule": [
     {
