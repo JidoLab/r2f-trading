@@ -22,7 +22,7 @@
   {
     "email": "eirini.ploumidi94@gmail.com",
     "date": "2026-04-09T14:10:09.622Z",
-    "dripsSent": 7,
+    "dripsSent": 8,
     "score": 15,
     "segment": "cold",
     "events": [
@@ -39,14 +39,15 @@
       "tradingPsychology",
       "propFirmTips",
       "coachingCta",
-      "valueRecap"
+      "valueRecap",
+      "lastChance"
     ],
     "staleReengageSent": true
   },
   {
     "email": "cyrus.alia.borja@gmail.com",
     "date": "2026-04-11T13:01:25.702Z",
-    "dripsSent": 7,
+    "dripsSent": 8,
     "score": 0,
     "segment": "cold",
     "events": [],
@@ -58,14 +59,15 @@
       "tradingPsychology",
       "propFirmTips",
       "coachingCta",
-      "valueRecap"
+      "valueRecap",
+      "lastChance"
     ],
     "staleReengageSent": true
   },
   {
     "email": "blackkilevu@gmail.com",
     "date": "2026-04-13T10:23:34.431Z",
-    "dripsSent": 6,
+    "dripsSent": 7,
     "score": 0,
     "segment": "cold",
     "events": [],
@@ -76,13 +78,14 @@
       "successStory",
       "tradingPsychology",
       "propFirmTips",
-      "coachingCta"
+      "coachingCta",
+      "valueRecap"
     ]
   },
   {
     "email": "lucky04_flour@icloud.com",
     "date": "2026-04-13T23:04:34.994Z",
-    "dripsSent": 6,
+    "dripsSent": 7,
     "score": 5,
     "segment": "cold",
     "events": [
@@ -98,7 +101,8 @@
       "successStory",
       "tradingPsychology",
       "propFirmTips",
-      "coachingCta"
+      "coachingCta",
+      "valueRecap"
     ]
   }
 ]
