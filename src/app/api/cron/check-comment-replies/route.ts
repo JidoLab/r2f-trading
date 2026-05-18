@@ -39,7 +39,7 @@ interface TwitterEngageLogEntry {
 
 interface ReplyNotification {
   id: string;
-  platform: "reddit" | "twitter" | "youtube";
+  platform: "reddit" | "twitter" | "youtube" | "facebook" | "linkedin";
   postTitle: string;
   subreddit?: string;
   replyAuthor: string;
@@ -49,7 +49,9 @@ interface ReplyNotification {
 }
 
 interface ReplyCursors {
-  youtubeLastCheckedAt?: string; // ISO — only surface comments newer than this
+  youtubeLastCheckedAt?: string;  // ISO — only surface YT comments newer than this
+  facebookLastCheckedAt?: string; // ISO — same idea for FB Page comments
+  linkedinLastCheckedAt?: string; // ISO — same idea for LinkedIn comments
 }
 
 // ─────────────────────────────────────────────────────────────────────
@@ -430,6 +432,198 @@ async function checkYouTubeReplies(
 }
 
 // ─────────────────────────────────────────────────────────────────────
+// Facebook — fetches the Page's recent feed with inline comments using
+// field expansion. One Graph API call gets all posts + comments in a
+// single roundtrip. Free with Page Access Token.
+// ─────────────────────────────────────────────────────────────────────
+
+async function checkFacebookReplies(
+  notifications: ReplyNotification[],
+  existingNotifIds: Set<string>,
+  cursors: ReplyCursors
+): Promise<{ checked: number; newReplies: number; available: boolean }> {
+  const pageId = process.env.FACEBOOK_PAGE_ID;
+  const token = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
+  if (!pageId || !token) return { checked: 0, newReplies: 0, available: false };
+
+  const since = cursors.facebookLastCheckedAt
+    ? new Date(cursors.facebookLastCheckedAt).getTime()
+    : Date.now() - 7 * 86400000; // first run: 7-day lookback
+  let mostRecentSeen = since;
+
+  type FbComment = {
+    id: string;
+    from?: { id?: string; name?: string };
+    message?: string;
+    created_time?: string;
+  };
+  type FbPost = {
+    id: string;
+    message?: string;
+    permalink_url?: string;
+    created_time?: string;
+    comments?: { data?: FbComment[] };
+  };
+
+  let posts: FbPost[] = [];
+  try {
+    const params = new URLSearchParams({
+      fields: "id,message,permalink_url,created_time,comments.limit(20){id,from,message,created_time}",
+      limit: "10",
+      access_token: token,
+    });
+    const res = await fetch(`https://graph.facebook.com/v21.0/${pageId}/feed?${params}`);
+    if (!res.ok) {
+      console.error(`[check-replies] Facebook feed fetch failed: ${res.status}`);
+      return { checked: 0, newReplies: 0, available: false };
+    }
+    const data = await res.json();
+    posts = data.data || [];
+  } catch (err) {
+    console.error("[check-replies] Facebook fetch threw:", err instanceof Error ? err.message : err);
+    return { checked: 0, newReplies: 0, available: false };
+  }
+
+  let newReplies = 0;
+  let totalCommentsExamined = 0;
+
+  for (const post of posts) {
+    const comments = post.comments?.data || [];
+    for (const c of comments) {
+      totalCommentsExamined++;
+      const createdMs = c.created_time ? new Date(c.created_time).getTime() : 0;
+      if (createdMs <= since) continue;
+      if (createdMs > mostRecentSeen) mostRecentSeen = createdMs;
+      if (c.from?.id === pageId) continue; // skip our own page replies
+
+      const notifId = `reply-fb-${c.id}`;
+      if (existingNotifIds.has(notifId)) continue;
+
+      const postSnippet = (post.message || "").slice(0, 100);
+      notifications.unshift({
+        id: notifId,
+        platform: "facebook",
+        postTitle: postSnippet || "Comment on your post",
+        replyAuthor: c.from?.name || "Unknown",
+        replyText: (c.message || "").slice(0, 300),
+        commentUrl: post.permalink_url || `https://www.facebook.com/${post.id}`,
+        detectedAt: new Date().toISOString(),
+      });
+      existingNotifIds.add(notifId);
+      newReplies++;
+    }
+  }
+
+  cursors.facebookLastCheckedAt = new Date(mostRecentSeen).toISOString();
+  return { checked: totalCommentsExamined, newReplies, available: true };
+}
+
+// ─────────────────────────────────────────────────────────────────────
+// LinkedIn — fetches our recent UGC posts then queries comments per
+// post via socialActions API. Requires the personUrn (already in env).
+// Graceful fallback: if access token lacks the social-action read
+// scope, we log + return empty rather than throwing.
+// ─────────────────────────────────────────────────────────────────────
+
+async function checkLinkedInReplies(
+  notifications: ReplyNotification[],
+  existingNotifIds: Set<string>,
+  cursors: ReplyCursors
+): Promise<{ checked: number; newReplies: number; available: boolean }> {
+  const token = process.env.LINKEDIN_ACCESS_TOKEN;
+  const personUrn = process.env.LINKEDIN_PERSON_URN;
+  if (!token || !personUrn) return { checked: 0, newReplies: 0, available: false };
+
+  const since = cursors.linkedinLastCheckedAt
+    ? new Date(cursors.linkedinLastCheckedAt).getTime()
+    : Date.now() - 7 * 86400000;
+  let mostRecentSeen = since;
+
+  // Step 1: list our recent posts
+  type LiPost = { id: string; created?: { time?: number }; specificContent?: unknown };
+  let posts: LiPost[] = [];
+  try {
+    const url = `https://api.linkedin.com/v2/ugcPosts?q=authors&authors=List(${encodeURIComponent(personUrn)})&count=20`;
+    const res = await fetch(url, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "X-Restli-Protocol-Version": "2.0.0",
+      },
+    });
+    if (!res.ok) {
+      // Token may lack r_member_social scope — degrade silently
+      console.error(`[check-replies] LinkedIn ugcPosts fetch failed: ${res.status}`);
+      return { checked: 0, newReplies: 0, available: false };
+    }
+    const data = await res.json();
+    posts = data.elements || [];
+  } catch (err) {
+    console.error("[check-replies] LinkedIn ugcPosts threw:", err instanceof Error ? err.message : err);
+    return { checked: 0, newReplies: 0, available: false };
+  }
+
+  let newReplies = 0;
+  let totalCommentsExamined = 0;
+
+  // Step 2: for each post, query its comments
+  for (const post of posts.slice(0, 10)) {
+    if (!post.id) continue;
+    try {
+      const url = `https://api.linkedin.com/v2/socialActions/${encodeURIComponent(post.id)}/comments?count=20`;
+      const res = await fetch(url, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "X-Restli-Protocol-Version": "2.0.0",
+        },
+      });
+      if (!res.ok) continue;
+      const data = await res.json();
+      type LiComment = {
+        id?: string;
+        actor?: string;
+        message?: { text?: string };
+        created?: { time?: number };
+      };
+      const comments: LiComment[] = data.elements || [];
+
+      for (const c of comments) {
+        totalCommentsExamined++;
+        const createdMs = c.created?.time || 0;
+        if (createdMs <= since) continue;
+        if (createdMs > mostRecentSeen) mostRecentSeen = createdMs;
+        if (c.actor === personUrn) continue; // skip own comments
+
+        const commentId = c.id || `${post.id}-${createdMs}`;
+        const notifId = `reply-li-${commentId}`;
+        if (existingNotifIds.has(notifId)) continue;
+
+        // LinkedIn doesn't return display name in this endpoint; the actor
+        // urn looks like "urn:li:person:abc" — show the suffix as best-effort.
+        const actorTail = (c.actor || "").split(":").pop() || "Unknown";
+
+        notifications.unshift({
+          id: notifId,
+          platform: "linkedin",
+          postTitle: "Comment on your LinkedIn post",
+          replyAuthor: actorTail,
+          replyText: (c.message?.text || "").slice(0, 300),
+          // No clean public URL pattern from API; the post id deep-links via the feed
+          commentUrl: `https://www.linkedin.com/feed/update/${encodeURIComponent(post.id)}/`,
+          detectedAt: new Date().toISOString(),
+        });
+        existingNotifIds.add(notifId);
+        newReplies++;
+      }
+    } catch {
+      // Skip post on transient error, retry next run
+    }
+  }
+
+  cursors.linkedinLastCheckedAt = new Date(mostRecentSeen).toISOString();
+  return { checked: totalCommentsExamined, newReplies, available: true };
+}
+
+// ─────────────────────────────────────────────────────────────────────
 // Main handler — orchestrates all platforms
 // ─────────────────────────────────────────────────────────────────────
 
@@ -451,13 +645,16 @@ export async function GET(req: NextRequest) {
 
     const reddit = await checkRedditReplies(notifications, existingNotifIds);
     const twitter = await checkTwitterReplies(notifications, existingNotifIds);
-    const youtube = await checkYouTubeReplies(
-      notifications,
-      existingNotifIds,
-      cursors
-    );
+    const youtube = await checkYouTubeReplies(notifications, existingNotifIds, cursors);
+    const facebook = await checkFacebookReplies(notifications, existingNotifIds, cursors);
+    const linkedin = await checkLinkedInReplies(notifications, existingNotifIds, cursors);
 
-    const totalNew = reddit.newReplies + twitter.newReplies + youtube.newReplies;
+    const totalNew =
+      reddit.newReplies +
+      twitter.newReplies +
+      youtube.newReplies +
+      facebook.newReplies +
+      linkedin.newReplies;
 
     if (totalNew > 0) {
       // Cap stored notifications at last 200
@@ -473,12 +670,11 @@ export async function GET(req: NextRequest) {
       const tgChat = process.env.TELEGRAM_OWNER_CHAT_ID;
       if (tgToken && tgChat) {
         const summaryLines: string[] = [];
-        if (reddit.newReplies > 0)
-          summaryLines.push(`Reddit: ${reddit.newReplies}`);
-        if (twitter.newReplies > 0)
-          summaryLines.push(`Twitter: ${twitter.newReplies}`);
-        if (youtube.newReplies > 0)
-          summaryLines.push(`YouTube: ${youtube.newReplies}`);
+        if (reddit.newReplies > 0)   summaryLines.push(`Reddit: ${reddit.newReplies}`);
+        if (twitter.newReplies > 0)  summaryLines.push(`Twitter: ${twitter.newReplies}`);
+        if (youtube.newReplies > 0)  summaryLines.push(`YouTube: ${youtube.newReplies}`);
+        if (facebook.newReplies > 0) summaryLines.push(`Facebook: ${facebook.newReplies}`);
+        if (linkedin.newReplies > 0) summaryLines.push(`LinkedIn: ${linkedin.newReplies}`);
         const text = `💬 ${totalNew} new repl${totalNew === 1 ? "y" : "ies"} on your comments/posts!\n\n${summaryLines.join("\n")}\n\nCheck: r2ftrading.com/admin/engagement-log`;
         await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
           method: "POST",
@@ -501,6 +697,8 @@ export async function GET(req: NextRequest) {
       reddit,
       twitter,
       youtube,
+      facebook,
+      linkedin,
     });
   } catch (err: unknown) {
     return NextResponse.json(

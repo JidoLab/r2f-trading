@@ -28,7 +28,7 @@ interface TwitterEntry {
 
 interface ReplyNotification {
   id: string;
-  platform: "reddit" | "twitter" | "youtube";
+  platform: "reddit" | "twitter" | "youtube" | "facebook" | "linkedin";
   postTitle: string;
   subreddit?: string;
   replyAuthor: string;
@@ -41,9 +41,11 @@ const PLATFORM_STYLE: Record<
   ReplyNotification["platform"],
   { bg: string; text: string; label: string; authorPrefix: string }
 > = {
-  reddit:  { bg: "bg-orange-500/20", text: "text-orange-400", label: "Reddit",     authorPrefix: "u/" },
-  twitter: { bg: "bg-blue-500/20",   text: "text-blue-400",   label: "Twitter/X",  authorPrefix: "@" },
-  youtube: { bg: "bg-red-500/20",    text: "text-red-400",    label: "YouTube",    authorPrefix: "" },
+  reddit:   { bg: "bg-orange-500/20", text: "text-orange-400", label: "Reddit",    authorPrefix: "u/" },
+  twitter:  { bg: "bg-blue-500/20",   text: "text-blue-400",   label: "Twitter/X", authorPrefix: "@" },
+  youtube:  { bg: "bg-red-500/20",    text: "text-red-400",    label: "YouTube",   authorPrefix: "" },
+  facebook: { bg: "bg-sky-600/20",    text: "text-sky-400",    label: "Facebook",  authorPrefix: "" },
+  linkedin: { bg: "bg-cyan-600/20",   text: "text-cyan-400",   label: "LinkedIn",  authorPrefix: "" },
 };
 
 function formatDate(dateStr: string) {
