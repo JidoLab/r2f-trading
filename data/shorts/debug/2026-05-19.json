@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-19T00:32:29.876Z",
+  "date": "2026-05-19T01:31:58.798Z",
   "today": "2026-05-19",
   "topicsAttempted": [
     null,
@@ -8,8 +8,9 @@
   ],
   "results": [
     {
-      "title": "The DXY Setup That Printed 80 Pips On Tuesday | ICT 2026",
-      "status": "rendering"
+      "title": "",
+      "status": "error",
+      "error": "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo"
     },
     {
       "title": "",
@@ -17,11 +18,14 @@
       "error": "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo"
     },
     {
-      "title": "I Blew 3 Funded Accounts Before Learning This One ICT Secret (2026)",
-      "status": "rendering"
+      "title": "",
+      "status": "error",
+      "error": "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo"
     }
   ],
   "errors": [
+    "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo",
+    "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo",
     "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo"
   ]
 }
