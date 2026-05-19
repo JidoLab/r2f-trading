@@ -1310,5 +1310,15 @@
     "commentedAt": "2026-05-19T01:33:00.818Z",
     "permalink": "/r/proptrading/comments/1tgek09/confused_about_prop_firms_which_ones_actually_pay/oml9mou/",
     "commentId": "oml9mou"
+  },
+  {
+    "postId": "1tgm281",
+    "subreddit": "ICTMentorship",
+    "postTitle": "How do I turn this price action strategy into a fully systematic, rule-based system with zero discretion?",
+    "commentText": "the thing about fully removing discretion from an MSS-based system on the 1M/5M is that the MSS itself is still a discretionary call — what counts as a \"shift\" changes depending on whether you're in a consolidation range or a trending leg, and no hard rule fully captures that. tbh scaling into a pullback (averaging down) is also the part that'll blow your prop account the fastest if your invalidation level isn't *structure-based* and not just a dollar amount, because MNQ will sweep an SSL, look like it's retracing, then continue against you right into your OB entries. imo the most honest answer is that ICT concepts resist full automation not because they're discretionary by design, but because they're context-dependent — and context is the part a bot struggles with most.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-19T02:32:08.530Z",
+    "permalink": "/r/ICTMentorship/comments/1tgm281/how_do_i_turn_this_price_action_strategy_into_a/omlk0hs/",
+    "commentId": "omlk0hs"
   }
 ]
