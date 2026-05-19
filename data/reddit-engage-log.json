@@ -1330,5 +1330,15 @@
     "commentedAt": "2026-05-19T03:00:44.235Z",
     "permalink": "/r/FOREXTRADING/comments/1tgqlp8/hfm_broker/omlowkv/",
     "commentId": "omlowkv"
+  },
+  {
+    "postId": "1tgsjl8",
+    "subreddit": "RealDayTrading",
+    "postTitle": "I made my own Journal",
+    "commentText": "the custom backtest archive is genuinely useful but the gap most people miss is whether their journaling system captures *why* a trade deviated from the model, not just the outcome. like if you're trading NY open kills and you took an entry off a 15m OB but the actual displacement that created it happened on a 1m spike, that nuance gets lost if you're only logging entry price and result. tbh the metric tracking looks clean but without tagging confluence context those win rate numbers can lie to you over time.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-19T13:01:27.384Z",
+    "permalink": "/r/RealDayTrading/comments/1tgsjl8/i_made_my_own_journal/omnwv1h/",
+    "commentId": "omnwv1h"
   }
 ]
