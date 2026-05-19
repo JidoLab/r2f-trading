@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1779150638179-5o0hk",
+    "platform": "youtube",
+    "postTitle": "POV: you subscribed and became profitable in 30 days",
+    "postUrl": "https://youtube.com/watch?v=YEYUUhAINk8",
+    "authorName": "SPX",
+    "suggestedReply": "Profitable in 30 days is possible but I tell my students the real test is staying profitable in month 31 and beyond. Most new traders rush entries without waiting for a confirmed displacement on the 15 minute, which is what kills consistency early on. The subscription alone won't do it. the work behind the screen will.",
+    "createdAt": "2026-05-19T00:30:38.179Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779150641803-ewzj0",
+    "platform": "youtube",
+    "postTitle": "I became a fulltime trader after switching to this strategy 2 years ago #NQ #Trading #FVG #IFVG #ICT",
+    "postUrl": "https://youtube.com/watch?v=iPvnOOhoBCk",
+    "authorName": "APJ Capital",
+    "suggestedReply": "FVGs and IFVGs together is exactly how I approach NQ entries too. One thing I'd add though, most of my students struggle when they treat every IFVG as equal without checking the timeframe of the original imbalance. A 4H FVG getting inverted carries very different weight than a 15m one, and ignoring that distinction will get you chopped up fast.",
+    "createdAt": "2026-05-19T00:30:41.803Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779150645630-1di0k",
+    "platform": "youtube",
+    "postTitle": "Secret ICT Liquidity Sweep Trading Strategy With Insane Winrate!",
+    "postUrl": "https://youtube.com/watch?v=FAiYE-2zESk",
+    "authorName": "Faiz SMC",
+    "suggestedReply": "Liquidity sweeps are one of the most misunderstood concepts I see traders butcher. Most of my students initially chase the sweep itself instead of waiting for the confirmation candle after price takes the buy or sell side liquidity. I actually drill this on the 4H before dropping to the 15m for entry. Are you finding this strategy holds up across multiple sessions or mostly during London and New York overlap?",
+    "createdAt": "2026-05-19T00:30:45.630Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779150649026-rcov8",
+    "platform": "youtube",
+    "postTitle": "Accumulation Manipulation Distribution AMD ICT trading Strategy #trading #forex #crypto #daytrading",
+    "postUrl": "https://youtube.com/watch?v=MCT4_BiOlgk",
+    "authorName": "Crypto Antidote",
+    "suggestedReply": "One thing most traders miss in the AMD model is that the manipulation leg needs to raid a specific liquidity pool before distribution kicks in. I drill into my students to mark out the previous session highs and lows on the 15m before New York open so they can identify exactly where that manipulation sweep is targeting. Without that step, you're just guessing which direction price delivers.",
+    "createdAt": "2026-05-19T00:30:49.026Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779150651965-l5mdy",
+    "platform": "youtube",
+    "postTitle": "LIVE Trade WIN on Tradowix 😱🔥",
+    "postUrl": "https://youtube.com/watch?v=JIV2qGiK_tY",
+    "authorName": "DrStylishStar",
+    "suggestedReply": "That live win on Tradowix is a good example of why execution matters more than prediction. The part I drill into my students is confirming the displacement candle before committing to an FVG entry. Most skip that step and wonder why they get stopped out on what looks like a clean setup. Did you notice any mitigation of a previous OB before price delivered into your target?",
+    "createdAt": "2026-05-19T00:30:51.965Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779150654842-ylorz",
+    "platform": "youtube",
+    "postTitle": "no trade day recap",
+    "postUrl": "https://youtube.com/watch?v=Z-emjAVXzhc",
+    "authorName": "ictbum",
+    "suggestedReply": "Interesting take on calling a no trade day. In my experience, I actually teach my students to use these sessions as active study time, mapping out HTF PD arrays and marking potential liquidity pools for the next session. Sitting on your hands is a skill, but so is building your bias during dead price action.",
+    "createdAt": "2026-05-19T00:30:54.842Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779150658724-0xd3o",
+    "platform": "youtube",
+    "postTitle": "W on ES long 🔴 LIVE Day Trading Futures | ES NQ | ICT Concepts | May 18",
+    "postUrl": "https://youtube.com/watch?v=vdaDPUFgS7E",
+    "authorName": "LumiTraders",
+    "suggestedReply": "I drilled ES longs with my students this morning using the same ICT logic. When price sweeps a low and you get a clean displacement back into a 15m FVG, that is your confirmation to get long. Most beginners bail before the entry prints because they second guess the liquidity grab. Good to see this approach getting validated live on May 18.",
+    "createdAt": "2026-05-19T00:30:58.724Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779150661995-1lmlw",
+    "platform": "youtube",
+    "postTitle": "Backtest XAUUSD With Me | SMC Trading Strategy (60% Win-Rate, 1:3RR)",
+    "postUrl": "https://youtube.com/watch?v=G6lIEqWL0p4",
+    "authorName": "Baileysforex",
+    "suggestedReply": "I backtested XAUUSD myself for nearly 3 months straight before I trusted it with real size. The 1:3RR target is actually conservative on gold if you're patient with your entries near session opens. I drill into my students that a 60% win rate means nothing without proper draw down tolerance built into your plan. What session were you targeting most for these setups?",
+    "createdAt": "2026-05-19T00:31:01.995Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1779065145042-bp8en",
     "platform": "investinglive",
     "postTitle": "PBOC is expected to set the USD/CNY reference rate at 6.8086 – Reuters estimate",
