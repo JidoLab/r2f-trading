@@ -1999,5 +1999,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-19T12:00:34.401Z",
+    "type": "text",
+    "postType": "hot-take",
+    "text": "Unpopular opinion: Fair value gaps are so oversaturated that retail is now running stops INTO them. ",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
