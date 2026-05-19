@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-free-class",
     "promo-results",
     "promo-checklist",
     "promo-blog",
@@ -29,11 +28,12 @@
     "promo-blog",
     "promo-coaching",
     "question",
-    "poll"
+    "poll",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "Which ICT concept made everything click for you?\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ Market Structure\n🅳️ Still waiting for that moment 😅\n\n#ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-05-19T04:00:15.681Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: Fair value gaps are so oversaturated that retail is now running stops INTO them. The edge isn't the FVG — it's knowing when NOT to trade it. Most 'smart money' traders are just smart enough to copy, not understand. #ICTTrading #FairValueGap #SmartMoneyConcepts",
+    "date": "2026-05-19T12:00:33.448Z"
   }
 }
