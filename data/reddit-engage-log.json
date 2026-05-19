@@ -1220,5 +1220,25 @@
     "commentedAt": "2026-05-18T04:32:41.555Z",
     "permalink": "/r/ICTMentorship/comments/1tfw49i/xauusd_analysis_for_monday_next_week/omfe49j/",
     "commentId": "omfe49j"
+  },
+  {
+    "postId": "1tguga7",
+    "subreddit": "Trading",
+    "postTitle": "i lost 1500$ in half a day in a demo account daytrading. i don’t think i’m suited for this",
+    "commentText": "been there tbh, and on gold/silver specifically this is super common because the spread and volatility during NY open will absolutely chew through entries that look textbook clean. the BOS you're seeing on the 15m is probably just liquidity being swept before the real move — not an actual shift in structure. are you waiting for displacement + a confirmed FVG before entry, or are you entering right at the BOS candle close?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-19T00:32:49.592Z",
+    "permalink": "/r/Trading/comments/1tguga7/i_lost_1500_in_half_a_day_in_a_demo_account/omkz3em/",
+    "commentId": "omkz3em"
+  },
+  {
+    "postId": "1tgnnkn",
+    "subreddit": "Trading",
+    "postTitle": "Im sooo lost",
+    "commentText": "been there man, two and a half years is a long time to grind without seeing it click. try this one thing — on eurusd, mark your 15m FVGs that form during london open, then do nothing until NY killzone (9:30-11am EST). if price raids a liquidity level and then returns into that FVG during NY, that's your setup. intraday TA alone can feel random because you're missing the *when*, not the what.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-19T00:32:58.459Z",
+    "permalink": "/r/Trading/comments/1tgnnkn/im_sooo_lost/omkz4bf/",
+    "commentId": "omkz4bf"
   }
 ]
