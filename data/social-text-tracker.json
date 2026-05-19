@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "tip",
     "promo-free-class",
     "promo-results",
     "promo-checklist",
@@ -29,11 +28,12 @@
     "poll-native",
     "promo-blog",
     "promo-coaching",
-    "question"
+    "question",
+    "poll"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "Monday London open — do you wait for the false break of Friday's range before entering, or do you trade the initial move? Smart money is building this week's narrative RIGHT NOW. Drop your answer 👇 #ICTTrading #SmartMoneyConcepts #OrderBlocks",
-    "date": "2026-05-18T12:00:47.062Z"
+    "type": "poll",
+    "text": "Which ICT concept made everything click for you?\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ Market Structure\n🅳️ Still waiting for that moment 😅\n\n#ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-05-19T04:00:15.681Z"
   }
 }
