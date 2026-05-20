@@ -1999,5 +1999,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-20T12:00:29.600Z",
+    "type": "text",
+    "postType": "tip",
+    "text": "Wednesday reversal day + 'Sell in May' noise = perfect trap. Smart money doesn't sell in May — it hu",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
