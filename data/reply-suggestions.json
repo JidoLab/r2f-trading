@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1779237021432-a42i2",
+    "platform": "youtube",
+    "postTitle": "winning trade recap #ict #trading #nasdaq #forex",
+    "postUrl": "https://youtube.com/watch?v=KPILGj2kMsg",
+    "authorName": "ictbum",
+    "suggestedReply": "Congrats on the winning recap but I actually teach my students to be cautious about recapping wins in isolation on Nasdaq. The real lesson lives in the losing trades where your model broke down. In my experience, pairing your win with a recent loss on the same setup shows students exactly where the edge holds and where it doesn't, which builds way more conviction long term.",
+    "createdAt": "2026-05-20T00:30:21.432Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779237024745-j6mt3",
+    "platform": "youtube",
+    "postTitle": "Live Futures Trading, GIVEAWAY, NQ Day Trading Prop Firm ICT Strategy, Lucid, Tradeify Cup, Apex,",
+    "postUrl": "https://youtube.com/watch?v=I_1leOAARzQ",
+    "authorName": "Cove Trader",
+    "suggestedReply": "The NQ prop firm challenge approach hits different when you understand how to manage draw on liquidity during news windows. I drill into my students that on funded accounts especially, protecting the account during high volatility is just as important as the entry itself. Most skip the displacement confirmation before the FVG and wonder why they get stopped out on Lucid or Apex evals. What rules were you trading around news during this session?",
+    "createdAt": "2026-05-20T00:30:24.745Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779237027855-54apx",
+    "platform": "youtube",
+    "postTitle": "84% BEARISH BIAS Before NY Open… Then This Happened (NQ ORB15 Strategy)",
+    "postUrl": "https://youtube.com/watch?v=GCFmMxwY154",
+    "authorName": "Herman",
+    "suggestedReply": "ORB15 on NQ with an 84% bearish bias going into NY open is a solid confluence setup but I always tell my students to watch how price reacts at the 9:30 killzone before committing. If there's a liquidity sweep below the overnight low first, that bearish bias can flip into a manipulation trap fast. The bias is a filter, not a signal.",
+    "createdAt": "2026-05-20T00:30:27.855Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779237030720-aqimh",
+    "platform": "youtube",
+    "postTitle": "El más FACIL para operar de ICT Mercado Financiero Trading Modelo de Entrada",
+    "postUrl": "https://youtube.com/watch?v=VsbTRxCXbU4",
+    "authorName": "TradingICT",
+    "suggestedReply": "El modelo de entrada más fácil que menciona el título es poderoso precisamente porque filtra el ruido. Lo que yo drillo en mis estudiantes es que no basta con identificar el FVG en el M15, sino que hay que confirmar que la vela de desplazamiento rompió la liquidez anterior. Sin eso, estás entrando en retroceso, no en continuación.",
+    "createdAt": "2026-05-20T00:30:30.720Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779237033708-g19yl",
+    "platform": "youtube",
+    "postTitle": "Live Trading | ICT Concepts | May 19, 2026",
+    "postUrl": "https://youtube.com/watch?v=PxPpjI5BmG0",
+    "authorName": "Tyler Trades",
+    "suggestedReply": "Tyler's live session on May 19th caught something I drill into my students constantly. The displacement candle identification before any FVG entry is the step most traders rush past. On a live session like this, seeing it in real time on the 15m or 5m confirms whether you have genuine displacement or just a random push. That context alone separates clean entries from noise.",
+    "createdAt": "2026-05-20T00:30:33.708Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779237038001-haklx",
+    "platform": "youtube",
+    "postTitle": "This Trade Was BEAUTIFUL! (Perfect Exit) \\ NQ Live Trade Walkthrough \\ ICT SMART MONEY CONCEPTS",
+    "postUrl": "https://youtube.com/watch?v=9Sl1CzcgvFU",
+    "authorName": "Chermane Trades",
+    "suggestedReply": "Perfect exit on NQ is satisfying to watch but I always tell my students to pay close attention to what happens at the next draw on liquidity BEFORE calling it perfect. Sometimes price leaves an unmitigated FVG above the exit that would have added another clean leg. The exit was clean no doubt, just make sure you're mapping the full narrative and not stopping at the first sign of profit.",
+    "createdAt": "2026-05-20T00:30:38.001Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779237041610-2zzx9",
+    "platform": "youtube",
+    "postTitle": "WIN ON SHORTS 🔴 DAY TRADING ICT CONCEPTS | 5/19/2026",
+    "postUrl": "https://youtube.com/watch?v=JR7kKh753O0",
+    "authorName": "Tanja Trades",
+    "suggestedReply": "Winning on shorts during a trend like this comes down to patience at the right PD array. I drill into my students that when you're trading ICT on the short side, the kill zone entry matters more than the setup itself. Most people see the opportunity and jump in at the first bearish FVG they spot. Wait for price to raid a liquidity level above before committing. That one filter alone changes everything.",
+    "createdAt": "2026-05-20T00:30:41.610Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779237045008-501gt",
+    "platform": "youtube",
+    "postTitle": "👉 NQ LIVE TRADING - ICT Strategy + MMXM ( ICT CONCEPTS ) 🚨",
+    "postUrl": "https://youtube.com/watch?v=SasxqSLzWbI",
+    "authorName": "WMG TRADING  ",
+    "suggestedReply": "Combining MMXM with live NQ execution is where most traders expose their weak points. I drill into my students that market maker profiles on NQ can shift aggressively during NY session, and if your draw on liquidity isn't clearly defined before entry you'll get chopped. Are you framing your MMXM targets off the daily or dropping to the 15m for confirmation?",
+    "createdAt": "2026-05-20T00:30:45.008Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1779150671946-4ckw2",
     "platform": "investinglive",
     "postTitle": "USD/JPY on approach to 159! How you left, Ministry of Finance?",
