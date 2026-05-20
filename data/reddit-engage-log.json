@@ -1420,5 +1420,55 @@
     "commentedAt": "2026-05-20T01:33:30.746Z",
     "permalink": "/r/Forexstrategy/comments/1thehnw/gbpusd_intraday_long_setup/oms85gb/",
     "commentId": "oms85gb"
+  },
+  {
+    "postId": "1ti0khe",
+    "subreddit": "proptrading",
+    "postTitle": "Have you managed to get a payout from prop firms? (poll)",
+    "commentText": "payout rates look better on paper than they are in practice tbh, because most people who \"got paid\" early either got lucky on a trending week or were trading something like GU during a clean london session with an obvious daily FVG to target. the ones who fail the second or third account are usually doing the same thing that worked once but without understanding *why* it worked. getting a payout and being consistently funded are genuinely different skills and the poll kind of blurs that line.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-20T02:32:17.243Z",
+    "permalink": "/r/proptrading/comments/1ti0khe/have_you_managed_to_get_a_payout_from_prop_firms/omsieg6/",
+    "commentId": "omsieg6"
+  },
+  {
+    "postId": "1thpfzs",
+    "subreddit": "proptrading",
+    "postTitle": "Prop firm spreads",
+    "commentText": "tbh spread comparison matters way less than you think on pairs like eurgbp and usdcad — what kills most traders is entering outside the london or ny killzone when spread naturally widens anyway. try pulling up eurgbp on the 15m right at 2am NY time and check the spread vs what you're seeing mid-session, night and day difference regardless of which firm you're with. the 5ers spreads on those pairs are honestly mid-tier, not the best not the worst.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-20T02:32:23.763Z",
+    "permalink": "/r/proptrading/comments/1thpfzs/prop_firm_spreads/omsif5a/",
+    "commentId": "omsif5a"
+  },
+  {
+    "postId": "1thjtuf",
+    "subreddit": "swingtrading",
+    "postTitle": "A data Driven Market Review: A historical study of the ABI signal, which has fired 5 times over the past 7 days, and what the implications are for the market.",
+    "commentText": "the ABI firing 5 times in 7 days while bond yields are surging is exactly the kind of confluence that makes me want to sit on my hands tbh. the displacement into the weekly FVG on QQQ is still unmitigated from two weeks ago and that's the real draw on liquidity imo, nvidia earnings or not. are you mapping the ABI signals against the tuesday/wednesday london opens specifically, because the ones that fire ahead of high-impact events tend to engineer a sweep before the real move, which changes how you'd position around wednesday's print entirely.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-20T02:32:30.555Z",
+    "permalink": "/r/swingtrading/comments/1thjtuf/a_data_driven_market_review_a_historical_study_of/omsifxg/",
+    "commentId": "omsifxg"
+  },
+  {
+    "postId": "1thsdtc",
+    "subreddit": "swingtrading",
+    "postTitle": "NRЕDF 5-Minute Imbalance Setup I’m Watching",
+    "commentText": "the $1.55 reclaim is the real tell here — if price can't hold above that lower FVG edge on a 5-min close, the whole thesis falls apart fast. tbh i'd want to see a displacement candle back into the zone before trusting the $1.60 target, not just a slow grind into it. slow grinds into imbalance usually get faded hard on a penny stock like this.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-20T02:32:37.043Z",
+    "permalink": "/r/swingtrading/comments/1thsdtc/nrеdf_5minute_imbalance_setup_im_watching/omsigmf/",
+    "commentId": "omsigmf"
+  },
+  {
+    "postId": "1thi0gl",
+    "subreddit": "swingtrading",
+    "postTitle": "Swing trading set up, rethinking if this is why I should be doing or refining",
+    "commentText": "your framework is solid tbh but marking too many liquidity levels is probably the issue — if you're tagging every equal high and low on the chart you're gonna get chopped out constantly. for swing trading i'd anchor your liquidity sweeps to the daily chart first, then drop to the 4h to confirm the BOS actually has displacement behind it, not just a wick close. the FVG entry only really matters if it forms *after* a convincing break, not a slow grind through the level. are you confluencing your entries with session highs and lows, like the london or NY open liquidity pools, or just trading the structure in isolation?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-20T02:32:44.307Z",
+    "permalink": "/r/swingtrading/comments/1thi0gl/swing_trading_set_up_rethinking_if_this_is_why_i/omsihfn/",
+    "commentId": "omsihfn"
   }
 ]
