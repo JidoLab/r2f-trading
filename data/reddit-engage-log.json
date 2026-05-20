@@ -1470,5 +1470,45 @@
     "commentedAt": "2026-05-20T02:32:44.307Z",
     "permalink": "/r/swingtrading/comments/1thi0gl/swing_trading_set_up_rethinking_if_this_is_why_i/omsihfn/",
     "commentId": "omsihfn"
+  },
+  {
+    "postId": "1thtmru",
+    "subreddit": "Trading",
+    "postTitle": "Canaan Falls After Wider Loss and Revenue Decline",
+    "commentText": "the 13% drop is valid on fundamentals but tbh the bigger tell was already printed on the weekly chart — CAN swept a liquidity pool sitting below the prior quarter's low before this report even dropped. that $24.5M inventory write-down is the kind of institutional repositioning that leaves a bearish order block on the daily you don't want to be buying into. imo the mining expansion narrative doesn't matter until price reclaims that daily OB and shows a clean BOS to the upside, otherwise you're just catching a falling knife dressed up as a \"value play.\" 📉",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-20T03:00:40.179Z",
+    "permalink": "/r/Trading/comments/1thtmru/canaan_falls_after_wider_loss_and_revenue_decline/omsn9na/",
+    "commentId": "omsn9na"
+  },
+  {
+    "postId": "1thscyc",
+    "subreddit": "Trading",
+    "postTitle": "Backtest looked clean. Paper trading looked clean. Live account bled. Here's what I missed.",
+    "commentText": "your queue position point is the one most people never figure out tbh. try running your entries as market orders timed to the 15m FVG mitigation during NY killzone instead of resting limits — you eat a bit more spread but you actually *get* filled, and on a strategy living at 8bps you'd rather take the real fill than the ghost fill that never touched your queue position. the execution drag you described on ES or NQ open is basically guaranteed when you're stacking limits in the first 15 minutes.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-20T03:00:49.746Z",
+    "permalink": "/r/Trading/comments/1thscyc/backtest_looked_clean_paper_trading_looked_clean/omsnalr/",
+    "commentId": "omsnalr"
+  },
+  {
+    "postId": "1thsa8z",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Breaker block works really well",
+    "commentText": "you can absolutely build a full approach around just those four concepts tbh — BOS gives you direction, OB/BB gives you entry, FVG gives you precision. the key thing you're missing right now is session context; that breaker block hitting on a random chart is different from a breaker block aligning with the london open killzone on a 15m. luck vs. edge is basically just whether you can replicate the setup with a reason every time 🎯",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-20T03:00:58.492Z",
+    "permalink": "/r/InnerCircleTraders/comments/1thsa8z/breaker_block_works_really_well/omsnbhe/",
+    "commentId": "omsnbhe"
+  },
+  {
+    "postId": "1thi17r",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Please give me some suggestions",
+    "commentText": "the problem probably isn't gold or the pair tbh, it's that gold during london open is one of the most manipulated sessions right now in 2026 and if you're trading without a clear draw on liquidity you're basically guessing. been there. missing good trades usually means your bias was right but your entry model was too early or too late, and taking bad trades usually means you're entering off a random candle instead of waiting for a confirmed BOS into a displacement FVG. fix the process before you go pair hopping, because ES and NQ will humble you even faster if the underlying issue is model clarity.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-20T03:01:06.658Z",
+    "permalink": "/r/InnerCircleTraders/comments/1thi17r/please_give_me_some_suggestions/omsnccr/",
+    "commentId": "omsnccr"
   }
 ]
