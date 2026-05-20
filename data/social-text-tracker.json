@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-results",
     "promo-checklist",
     "promo-blog",
     "promo-coaching",
@@ -29,11 +28,12 @@
     "promo-coaching",
     "question",
     "poll",
-    "hot-take"
+    "hot-take",
+    "quote"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: Fair value gaps are so oversaturated that retail is now running stops INTO them. The edge isn't the FVG — it's knowing when NOT to trade it. Most 'smart money' traders are just smart enough to copy, not understand. #ICTTrading #FairValueGap #SmartMoneyConcepts",
-    "date": "2026-05-19T12:00:33.448Z"
+    "type": "quote",
+    "text": "\"Retail sells in May. Smart money just restocked their bags.\"\n\nOrder blocks don't care about old Wall Street sayings. The institutions are hunting — not hiding.\n\n#ICTTrading #SmartMoneyConcepts #OrderBlocks",
+    "date": "2026-05-20T04:00:33.798Z"
   }
 }
