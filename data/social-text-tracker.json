@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-checklist",
     "promo-blog",
     "promo-coaching",
     "question",
@@ -29,11 +28,12 @@
     "question",
     "poll",
     "hot-take",
-    "quote"
+    "quote",
+    "tip"
   ],
   "lastPost": {
-    "type": "quote",
-    "text": "\"Retail sells in May. Smart money just restocked their bags.\"\n\nOrder blocks don't care about old Wall Street sayings. The institutions are hunting — not hiding.\n\n#ICTTrading #SmartMoneyConcepts #OrderBlocks",
-    "date": "2026-05-20T04:00:33.798Z"
+    "type": "tip",
+    "text": "Wednesday reversal day + 'Sell in May' noise = perfect trap. Smart money doesn't sell in May — it hunts liquidity while retail panics. Watch for a fair value gap fill before committing to any bias today. #ICTTrading #FairValueGap #SmartMoneyConcepts",
+    "date": "2026-05-20T12:00:28.602Z"
   }
 }
