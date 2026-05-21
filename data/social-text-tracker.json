@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-blog",
     "promo-coaching",
     "question",
     "poll",
@@ -29,11 +28,12 @@
     "poll",
     "hot-take",
     "quote",
-    "tip"
+    "tip",
+    "myth"
   ],
   "lastPost": {
-    "type": "tip",
-    "text": "Wednesday reversal day + 'Sell in May' noise = perfect trap. Smart money doesn't sell in May — it hunts liquidity while retail panics. Watch for a fair value gap fill before committing to any bias today. #ICTTrading #FairValueGap #SmartMoneyConcepts",
-    "date": "2026-05-20T12:00:28.602Z"
+    "type": "myth",
+    "text": "MYTH: 'Sell in May' means go flat all month. TRUTH: May creates the BEST fair value gap setups as smart money repositions. R2F Trading lives for these moves. #ICTTrading #FairValueGap #SmartMoney",
+    "date": "2026-05-21T04:00:48.264Z"
   }
 }
