@@ -1570,5 +1570,25 @@
     "commentedAt": "2026-05-21T02:33:05.108Z",
     "permalink": "/r/Trading/comments/1tj2zqc/i_have_a_question_about_liquidity_and_fair_value/omzf2hc/",
     "commentId": "omzf2hc"
+  },
+  {
+    "postId": "1tj69zc",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Alpha futures has 50% off",
+    "commentText": "i had this exact problem when i was starting out, bouncing between firms trying to find something affordable while still learning. tbh if you're still in the learning phase, just use a free sim like tradovate's demo and focus on reading the 15m chart for NY open displacement and FVGs before you even think about paying for a prop account. alpha futures is fine but you're gonna blow the account anyway if you're not consistently profitable in sim first, no shame in that, been there.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-21T03:01:17.261Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tj69zc/alpha_futures_has_50_off/omzk1id/",
+    "commentId": "omzk1id"
+  },
+  {
+    "postId": "1tj4kor",
+    "subreddit": "swingtrading",
+    "postTitle": "Up 100% YTD, First Time Above the 200MA in Years, and the Last Time This Happened It Ran 300%.. ThreeD Capital (CSE: IDK / OTCQX: IDKFF)",
+    "commentText": "the 200MA cross is clean but tbh what i'm watching on IDK is whether price can hold above that level as a **breaker block** on the daily rather than just a one-time pierce. with a tight float like this the real amplification happens when the weekly chart shows a BOS above a prior significant high and the daily OB beneath current price holds as support on any retrace. one flush back into that zone with a rejection wick would be the actual entry signal imo, not the initial cross itself. are you tracking where the nearest daily FVG is below current price, because that's usually where the smart money reloads on names like this before the real leg starts?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-21T03:01:27.094Z",
+    "permalink": "/r/swingtrading/comments/1tj4kor/up_100_ytd_first_time_above_the_200ma_in_years/omzk2je/",
+    "commentId": "omzk2je"
   }
 ]
