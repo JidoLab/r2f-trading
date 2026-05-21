@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1779323429544-yfo1e",
+    "platform": "youtube",
+    "postTitle": "No trades #disciplinedtrader #daytrading #trading #ict",
+    "postUrl": "https://youtube.com/watch?v=o8eGeaFP79s",
+    "authorName": "GuiceTrades ",
+    "suggestedReply": "Respect the discipline, but I actually teach my students that \"no trade is a trade\" only holds when you have a documented reason. On days with clean PD arrays lining up during London or New York open, sitting out without a defined reason can build the wrong habit over time. Patience and paralysis look identical from the outside.",
+    "createdAt": "2026-05-21T00:30:29.544Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779323435166-1mtui",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE Day Trading Futures | ES NQ | ICT Concepts | May 20",
+    "postUrl": "https://youtube.com/watch?v=9p8QRM3V-uY",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Interesting take trading both ES and NQ simultaneously during the session. In my experience, my students get better results by anchoring to one instrument and using the other purely for confluence confirmation, because splitting focus between two correlated futures often leads to hesitation at key order blocks when you need conviction most. The NQ displacement can mislead you on ES entries if you're treating them as equal signals rather than primary versus secondary. Worth considering if you find yourself second guessing setups mid session.",
+    "createdAt": "2026-05-21T00:30:35.166Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779323440716-kiery",
+    "platform": "youtube",
+    "postTitle": "ICT LTF Confirmation : la méthode simple pour entrer au bon moment",
+    "postUrl": "https://youtube.com/watch?v=LAbkkrmOT08",
+    "authorName": "ICT DAY TRADER",
+    "suggestedReply": "La confirmation LTF est souvent mal comprise et ça coûte cher. Ce que j'enseigne à mes élèves c'est d'attendre que le déplacement sur le 1m ou 2m crée réellement un FVG propre avant d'entrer, pas juste un chandelier haussier isolé. La plupart entrent sur l'élan et se font stopper juste avant la vraie impulsion. La structure du déplacement confirme l'intention institutionnelle, sans ça tu joues à pile ou face.",
+    "createdAt": "2026-05-21T00:30:40.716Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779323443753-2u6k7",
+    "platform": "youtube",
+    "postTitle": "The ICT Power of Three Setup Traders Ignore",
+    "postUrl": "https://youtube.com/watch?v=VAXnfxl9bfM",
+    "authorName": "Com Lucro Trader",
+    "suggestedReply": "I've been teaching the Power of Three to my students for years and the \"accumulation\" phase is exactly what most of them overlook. They jump in during manipulation and wonder why they get stopped out. On EURUSD alone, drilling the 15 minute chart to identify the true London accumulation range changed how they approach the New York session entirely.",
+    "createdAt": "2026-05-21T00:30:43.753Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779323447779-f073t",
+    "platform": "youtube",
+    "postTitle": "🔴Live GOLD &amp; BTC Analysis | Smart Money Concepts | ICT Strategy Explained #251 FlipperxForex",
+    "postUrl": "https://youtube.com/watch?v=AdpKVddhB9s",
+    "authorName": "FlipperX Forex",
+    "suggestedReply": "Smart Money Concepts on both Gold and BTC in the same session is something I drill into my students constantly. Most of them try to trade these two assets the same way but BTC liquidity sweeps behave very differently from Gold during the New York open. Are you finding the higher timeframe bias on BTC aligns cleanly with your ICT setups, or are you adjusting your approach given how erratic crypto sessions can be?",
+    "createdAt": "2026-05-21T00:30:47.779Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779323451608-onm88",
+    "platform": "youtube",
+    "postTitle": "Smart Money Order Block Strategy Explained in Simple Way 💸",
+    "postUrl": "https://youtube.com/watch?v=k4500aomop8",
+    "authorName": "The Trading School",
+    "suggestedReply": "Interesting take on simplifying order blocks. In my experience, the \"simple\" explanation often skips the most important filter, which is whether the block forms during a displacement move or just a standard pullback. I drill this into my students because entering every swing high or low labeled as an OB is exactly how accounts get wiped. On higher timeframe confluences like the 4H, a true order block paired with a liquidity sweep changes the probability completely.",
+    "createdAt": "2026-05-21T00:30:51.608Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779323454614-z8tov",
+    "platform": "youtube",
+    "postTitle": "ADVANCE MARKET STRUCTURE : Smartmoney concepts",
+    "postUrl": "https://youtube.com/watch?v=xDfCAFMwZm4",
+    "authorName": "ArtemisiaFX",
+    "suggestedReply": "The advance market structure breakdown here is clean. The part I drill into my students is understanding displacement within market structure shifts. Most traders see the ChoCh and jump in immediately, but waiting for confirmed displacement on the lower timeframe before committing is what separates consistent entries from gambling. Are you applying this on forex majors or do you extend it to indices as well?",
+    "createdAt": "2026-05-21T00:30:54.614Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779323458092-s11wj",
+    "platform": "youtube",
+    "postTitle": "XAUUSD LIVE 🔴 Smart Money Concepts &amp; Real Gold Trades",
+    "postUrl": "https://youtube.com/watch?v=le8OJ8Rfwnc",
+    "authorName": "Faizan Forex Institute",
+    "suggestedReply": "Interesting take on Smart Money Concepts for gold specifically. In my experience, XAUUSD reacts more aggressively to liquidity sweeps than most pairs, so I actually teach my students to wait for a full displacement candle to close before confirming any order block entry. The emotional volatility in gold traps a lot of impatient traders who jump in at the first reaction. Are you filtering your real trades by session, or taking setups across all three?",
+    "createdAt": "2026-05-21T00:30:58.092Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1779237082520-qnj8m",
     "platform": "investinglive",
     "postTitle": "China to scrap SME loan targets in shift toward market-driven credit, report says",
