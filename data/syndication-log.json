@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-21-the-quiet-session-trap-why-patience-kills-traders",
+    "syndicatedAt": "2026-05-21T01:33:15.856Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-21-the-quiet-session-trap-why-patience-kills-traders",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/the-quiet-session-trap-why-patience-kills-traders-222m",
+        "id": "3712661"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-21-the-quiet-session-trap-why-patience-kills-traders"
+  },
+  {
     "slug": "2026-05-21-gdp-day-trading-what-smart-money-does-first",
     "syndicatedAt": "2026-05-21T00:32:53.306Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-21-gdp-day-trading-what-smart-money-does-first",
