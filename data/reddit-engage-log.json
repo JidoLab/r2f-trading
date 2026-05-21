@@ -879,7 +879,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-14T13:01:30.814Z",
     "permalink": "/r/Forexstrategy/comments/1tcothp/smart_money_is_about_to_trap_everyone_in_gold/olr5uml/",
-    "commentId": "olr5uml"
+    "commentId": "olr5uml",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-15T08:44:44.000Z",
+    "firstReplyAuthor": "Prestigious_Tips10",
+    "firstReplyText": "good. Although you write this from ChatGPT"
   },
   {
     "postId": "1tct9ta",
@@ -889,7 +893,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-15T01:32:52.826Z",
     "permalink": "/r/Trading/comments/1tct9ta/post_nfp_nasdaq_longs_trade_ideacontext_ict/olvde79/",
-    "commentId": "olvde79"
+    "commentId": "olvde79",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-15T18:27:52.000Z",
+    "firstReplyAuthor": "Intelligent_Loquat52",
+    "firstReplyText": "You know ball !\n\nI had attached images but it seems they dont allow images on this sub\n\n"
   },
   {
     "postId": "1td1uw4",
@@ -1600,25 +1608,5 @@
     "commentedAt": "2026-05-21T03:32:13.243Z",
     "permalink": "/r/ICTMentorship/comments/1tip3cr/your_trade_presents_itself_and_you_enter_then/omzp3ly/",
     "commentId": "omzp3ly"
-  },
-  {
-    "postId": "1tip4dg",
-    "subreddit": "InnerCircleTraders",
-    "postTitle": "your trade presents itself and you enter then REH/REL form? What do you do?",
-    "commentText": "the 2 disrespected BISIs thing is valid but here's the catch — on a day where the HTF draw is that clean (REH at 29,419 sitting right there), a 1m BISI getting violated during the 10-15am consolidation chop is almost expected noise tbh. the question isn't really A B or C, it's whether your original premise (manipulation into lows, expansion toward REH) was invalidated or just stalling. sounds like the premise held and you managed the noise instead of the trade.",
-    "mentionedR2F": false,
-    "commentedAt": "2026-05-21T13:00:48.566Z",
-    "permalink": "/r/InnerCircleTraders/comments/1tip4dg/your_trade_presents_itself_and_you_enter_then/on1t0e4/",
-    "commentId": "on1t0e4"
-  },
-  {
-    "postId": "1tir2u1",
-    "subreddit": "Forexstrategy",
-    "postTitle": "The FOMC Meeting Minutes is finally here &amp; it’s gonna tell us everything the market has been guessing about for 3 weeks 😱",
-    "commentText": "with the Warsh transition uncertainty baked in, tbh the cleanest play around today's 2pm release is to wait for the initial spike on EURUSD to sweep liquidity above or below the asian range high/low, then let price come back into the 15m FVG that forms on the displacement candle. if the minutes show a divided committee like 7-5 or similar, that displacement is gonna be aggressive and the FVG will be easy to spot before NY close.",
-    "mentionedR2F": true,
-    "commentedAt": "2026-05-21T13:00:55.599Z",
-    "permalink": "/r/Forexstrategy/comments/1tir2u1/the_fomc_meeting_minutes_is_finally_here_its/on1t181/",
-    "commentId": "on1t181"
   }
 ]
