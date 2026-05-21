@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-21-gdp-day-trading-what-smart-money-does-first",
+    "syndicatedAt": "2026-05-21T00:32:53.306Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-21-gdp-day-trading-what-smart-money-does-first",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/gdp-day-trading-what-smart-money-does-first-3ap7",
+        "id": "3712463"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-21-gdp-day-trading-what-smart-money-does-first"
+  },
+  {
     "slug": "2026-05-18-the-silence-after-a-loss-nobody-talks-about",
     "syndicatedAt": "2026-05-18T03:32:58.199Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-18-the-silence-after-a-loss-nobody-talks-about",
