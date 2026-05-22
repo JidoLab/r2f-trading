@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1779409814647-ytjx1",
+    "platform": "youtube",
+    "postTitle": "I Explained My Trading Strategy in 3 Minutes",
+    "postUrl": "https://youtube.com/watch?v=SEvHnRac0bU",
+    "authorName": "dhesi_trades",
+    "suggestedReply": "Compressing a full strategy into 3 minutes is harder than it sounds and you pulled it off. The part most traders rush past is confirmation after the setup forms. I teach my students to wait for a shift in market structure on the entry timeframe before committing, especially on forex pairs where liquidity sweeps can fake the move entirely. That one filter alone changed how my students approach their entries.",
+    "createdAt": "2026-05-22T00:30:14.647Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779409818378-n3tld",
+    "platform": "youtube",
+    "postTitle": "ICT Turtle Soup Strategy: Internal vs External Liquidity",
+    "postUrl": "https://youtube.com/watch?v=JbOEsHGpRa8",
+    "authorName": "Com Lucro Trader",
+    "suggestedReply": "I drilled the internal vs external liquidity distinction into my students for months before it finally clicked for them. Turtle Soup setups on EURUSD specifically become so much cleaner once you stop hunting entries at the obvious external sweep and start waiting for price to reach back into the internal range. Most traders miss that the real hunt is for where smart money needs to fill, not where retail stops are sitting. Great concept covered here.",
+    "createdAt": "2026-05-22T00:30:18.378Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779409821991-3tek4",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE Day Trading Futures | ES NQ | ICT Concepts | May 21",
+    "postUrl": "https://youtube.com/watch?v=2BhcYaMIajQ",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Interesting take trading both ES and NQ simultaneously during live sessions. In my experience, I tell my students to anchor to one instrument until they can read the internals cleanly, because NQ tends to exaggerate ICT displacement moves while ES gives cleaner confirmation at key dealing ranges. Chasing both at once can blur your bias, especially during overlapping killzone windows.",
+    "createdAt": "2026-05-22T00:30:21.991Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779409824988-cfzz5",
+    "platform": "youtube",
+    "postTitle": "Why This ICT Trading Video Was Removed From YouTube | Institutional Trader Don’t Want You To Learn 1",
+    "postUrl": "https://youtube.com/watch?v=K24MPpV1eiw",
+    "authorName": "Trade Alchemy",
+    "suggestedReply": "The reason this type of content gets pulled is exactly why I drill liquidity sweep mechanics into my students before anything else. Most traders see a stop hunt on the 15 minute chart and panic. Institutional flow targets those equal highs and lows with precision, especially during the New York killzone. Understanding WHY price moves there changes everything.",
+    "createdAt": "2026-05-22T00:30:24.988Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779409827538-6vcy9",
+    "platform": "youtube",
+    "postTitle": "forex beginners must watch this",
+    "postUrl": "https://youtube.com/watch?v=aImrM81Shws",
+    "authorName": "NUR FX-Smart Money &Financial Freedom ",
+    "suggestedReply": "Interesting take on what beginners \"must watch.\" In my experience, most new traders focus too much on strategy and not enough on session timing. I tell my students that understanding when smart money is actually active, London open versus New York overlap for example, matters more than any single setup. Getting that foundation right first changes everything.",
+    "createdAt": "2026-05-22T00:30:27.538Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779409830637-gdcnl",
+    "platform": "youtube",
+    "postTitle": "My 83% Chance Of Continuation Trading Strategy 🎯  #shorts",
+    "postUrl": "https://youtube.com/watch?v=9RtxzBOFa20",
+    "authorName": "Nexus Blast Trading",
+    "suggestedReply": "I've been tracking continuation setups for years and that 83% stat caught my attention. On EURUSD specifically, I tell my students to wait for a confirmed break of structure on the 15 minute before entering, because jumping in early is exactly what kills that probability. Most of them cut their win rate in half by not being patient with the confirmation.",
+    "createdAt": "2026-05-22T00:30:30.637Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779409834408-d0bpq",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=bnco4OENdxo",
+    "authorName": "The Trading Process",
+    "suggestedReply": "Interesting take applying SMC to both gold and crypto simultaneously. In my experience, the liquidity dynamics on XAUUSD behave very differently from crypto, so I actually teach my students to keep their ICT frameworks separate rather than blending the two. Gold respects institutional order flow on higher timeframes more cleanly, while crypto manipulation is far noisier and harder to map with precision. Worth considering when calibrating your bias.",
+    "createdAt": "2026-05-22T00:30:34.408Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779409838063-mcq64",
+    "platform": "youtube",
+    "postTitle": "Smart Money Concepts #trader #tradeiniciante #trading #mercadofinanceiroamericano",
+    "postUrl": "https://youtube.com/watch?v=6xV-zvViOh0",
+    "authorName": "Dk-Trader",
+    "suggestedReply": "Smart Money Concepts work best when you understand the displacement behind the move, not just the imbalance itself. Most traders I see learning SMC jump straight to marking FVGs without confirming the institutional displacement candle that created them, which leads to early entries and unnecessary stop hunts. I drill this into every student before they touch a live chart. Are you teaching that sequence in future videos because the mercado americano audience needs that context badly.",
+    "createdAt": "2026-05-22T00:30:38.063Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1779324337177-or8q3",
     "platform": "investinglive",
     "postTitle": "PBOC is expected to set the USD/CNY reference rate at 6.7955 – Reuters estimate",
