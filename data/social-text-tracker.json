@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "question",
     "poll",
     "hot-take",
     "quote",
@@ -29,11 +28,12 @@
     "quote",
     "tip",
     "myth",
-    "challenge"
+    "challenge",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "challenge",
-    "text": "CHALLENGE: GDP drops soon. For the next 5 sessions, NO trades 30 mins before/after high-impact news. Just wait. Watch how many bad setups you dodge. Drop your results below 👇 #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-05-21T12:00:57.023Z"
+    "type": "poll-native",
+    "text": "GDP drop incoming 👀 How do you trade high-impact news? #ICTTrading #SmartMoney\n\n🅰️ Sit out. No trade.\n🅱️ Trade the reaction\n🅲️ Fade the spike\n🅳️ Already positioned\n\nVote below! 👇",
+    "date": "2026-05-22T04:00:33.026Z"
   }
 }
