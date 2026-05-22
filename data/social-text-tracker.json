@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll",
     "hot-take",
     "quote",
     "tip",
@@ -29,11 +28,12 @@
     "tip",
     "myth",
     "challenge",
-    "poll-native"
+    "poll-native",
+    "question"
   ],
   "lastPost": {
-    "type": "poll-native",
-    "text": "GDP drop incoming 👀 How do you trade high-impact news? #ICTTrading #SmartMoney\n\n🅰️ Sit out. No trade.\n🅱️ Trade the reaction\n🅲️ Fade the spike\n🅳️ Already positioned\n\nVote below! 👇",
-    "date": "2026-05-22T04:00:33.026Z"
+    "type": "question",
+    "text": "GDP drop incoming next week. Do you PAUSE trading around high-impact news or do you trade the reaction? Drop your approach below 👇 #ICTTrading #SmartMonkeyConcepts #FairValueGap",
+    "date": "2026-05-22T12:00:29.845Z"
   }
 }
