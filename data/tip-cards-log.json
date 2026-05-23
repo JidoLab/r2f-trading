@@ -1186,5 +1186,38 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "number": 37,
+    "category": "Risk Management",
+    "tip": "Never risk more than 1% per setup, and only trigger your entry after price sweeps liquidity AND confirms a market structure shift on the same timeframe as your order block — if both conditions aren't met, there is no trade.",
+    "imageUrl": "https://www.r2ftrading.com/tip-cards/tip-37.png",
+    "date": "2026-05-23T06:00:31.247Z",
+    "results": [
+      {
+        "platform": "twitter-image",
+        "status": "error",
+        "message": "Image fetch failed: 404"
+      },
+      {
+        "platform": "facebook",
+        "status": "error",
+        "message": "{\"error\":{\"message\":\"Missing or invalid image file\",\"type\":\"OAuthException\",\"code\":324,\"error_subcode\":2069019,\"is_transient\":true,\"error_user_title\":\"Image Required\",\"error_user_msg\":\"Make sure your "
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
