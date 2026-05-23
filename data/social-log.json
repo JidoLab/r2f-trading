@@ -1971,5 +1971,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-05-23T04:00:47.673Z",
+    "type": "text",
+    "postType": "poll",
+    "text": "What's your weekend grind righty now?\n\n🅰️ Backtesting setups\n🅱️ Studying order blocks & FVGs\n🅲️ B",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
