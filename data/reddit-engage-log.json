@@ -1157,7 +1157,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-05-17T11:32:09.476Z",
     "permalink": "/r/proptrading/comments/1tetow3/hypothetical_question_prop_firm_scaling_with/omafev3/",
-    "commentId": "omafev3"
+    "commentId": "omafev3",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-17T13:13:23.000Z",
+    "firstReplyAuthor": "writer66",
+    "firstReplyText": "That’s actually a really good point. My original thought was more about syncing the same ES trade across all accounts, mainly to keep execution simple and mechanical.\n\nBut I can definitely see how correlated exposure becomes the real issue — especially if every account is essentially taking the exac"
   },
   {
     "postId": "1tfkm12",
@@ -1187,7 +1191,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-18T00:32:42.195Z",
     "permalink": "/r/Forexstrategy/comments/1tfl3im/xauusd_weekly_outlook_ssl_sweep_first_before_push/omee1tw/",
-    "commentId": "omee1tw"
+    "commentId": "omee1tw",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-18T05:33:04.000Z",
+    "firstReplyAuthor": "GoldLevels",
+    "firstReplyText": "If you had noticed, on market open, gold went down and touched the box starting exactly at 4485 with a low of 4480 something and now running at 4550, it is obviously a reaction from that zone that I posted about yesterday, but yeah I would wait for confirmations obviously, I always do, you'll know i"
   },
   {
     "postId": "1tfysby",
@@ -1197,7 +1205,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-05-18T00:32:49.420Z",
     "permalink": "/r/Forexstrategy/comments/1tfysby/is_gold_setting_up_for_a_weekend_liquidity_trap/omee2i9/",
-    "commentId": "omee2i9"
+    "commentId": "omee2i9",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-18T05:00:36.000Z",
+    "firstReplyAuthor": "Sana-Ahmed98",
+    "firstReplyText": "That’s exactly why higher timeframe context matters. A weak 1H setup can completely fail if price is reacting from a strong 4H demand or unmitigated OB."
   },
   {
     "postId": "1tfl2qd",
