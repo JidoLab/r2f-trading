@@ -1728,5 +1728,45 @@
     "commentedAt": "2026-05-23T01:32:11.876Z",
     "permalink": "/r/InnerCircleTraders/comments/1tkcs5t/your_main_job_as_a_trader_pt2/oncqe0z/",
     "commentId": "oncqe0z"
+  },
+  {
+    "postId": "1tkav7e",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Anyone from Tamilnadu?",
+    "commentText": "yeah there's a decent Tamil Nadu ICT community building up tbh, mostly active during london session which lines up pretty well with our IST mornings. most of the guys i've seen are focused on XAUUSD and GBPUSD, working off the 15m for entry and using the 1H OB as the narrative. good time to be learning this stuff in 2026 with how clean the liquidity sweeps have been on gold lately.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-23T03:00:42.525Z",
+    "permalink": "/r/ICTMentorship/comments/1tkav7e/anyone_from_tamilnadu/ond4nh8/",
+    "commentId": "ond4nh8"
+  },
+  {
+    "postId": "1tkth5d",
+    "subreddit": "Trading",
+    "postTitle": "**Please read** How can I learn to trade as a complete beginner?",
+    "commentText": "i had this exact problem when i started tbh, got completely overwhelmed by contradictory reddit opinions and almost gave up before i even began. the \"ICT doesn't work in real time\" take is almost always from people who never properly understood the framework, specifically things like how a fair value gap on the 15m eurusd chart during london killzone actually behaves around a daily OB, which takes real screen time to see. al brooks is solid for pure price action foundations but imo pairing that with learning market structure basics like BOS and how liquidity gets swept before a move will give you that strong base you're after. a year on demo is genuinely the way, don't let anyone rush you out of it.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-23T03:00:52.467Z",
+    "permalink": "/r/Trading/comments/1tkth5d/please_read_how_can_i_learn_to_trade_as_a/ond4ocy/",
+    "commentId": "ond4ocy"
+  },
+  {
+    "postId": "1tk92za",
+    "subreddit": "Trading",
+    "postTitle": "Got to experience beginner's luck in trading at the start and now thinking to quit.",
+    "commentText": "been there honestly and the $800 day followed by blowing it the next is textbook revenge cycle, not bad luck. the real issue you're describing isn't psychology being \"broken,\" it's that you never had a rule stopping you from trading after a big green day — like a hard daily drawdown kill switch tied to your previous session's high. what session were you trading when you made that $800, london or ny, and were you taking entries off 15m OBs or something lower?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-23T03:00:59.176Z",
+    "permalink": "/r/Trading/comments/1tk92za/got_to_experience_beginners_luck_in_trading_at/ond4oxh/",
+    "commentId": "ond4oxh"
+  },
+  {
+    "postId": "1tkqmsj",
+    "subreddit": "Trading",
+    "postTitle": "I always blow my funded account after a payout",
+    "commentText": "after your payout, drop down to the 15m on eurusd and only trade during london killzone with a hard rule of one trade per session. tbh the blow-ups after payouts are almost always overtrading — you feel \"house money\" energy and start forcing setups that aren't there. only take entries where you have a clear displacement leaving an FVG, and if price doesn't return to that FVG clean, you sit on your hands. one trade, one session, that's it for a while.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-23T03:01:06.721Z",
+    "permalink": "/r/Trading/comments/1tkqmsj/i_always_blow_my_funded_account_after_a_payout/ond4pkc/",
+    "commentId": "ond4pkc"
   }
 ]
