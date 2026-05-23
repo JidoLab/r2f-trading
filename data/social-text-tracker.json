@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "quote",
     "tip",
     "myth",
     "story",
@@ -29,11 +28,12 @@
     "challenge",
     "poll-native",
     "question",
-    "poll"
+    "poll",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "What's your weekend grind righty now?\n\n🅰️ Backtesting setups\n🅱️ Studying order blocks & FVGs\n🅲️ Building next week's watchlist\n🅳️ Touching grass (valid)\n\n#ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-05-23T04:00:46.808Z"
+    "type": "poll-native",
+    "text": "GDP drops next week 📉 How do you trade high-impact news? #ICTTrading #SmartMoney\n\n🅰️ I fade the spike\n🅱️ I wait for retracement\n🅲️ I sit out entirely\n🅳️ Trade the run-up\n\nVote below! 👇",
+    "date": "2026-05-23T12:00:36.760Z"
   }
 }
