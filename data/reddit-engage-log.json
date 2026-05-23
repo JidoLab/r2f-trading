@@ -1123,7 +1123,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-05-16T03:00:33.775Z",
     "permalink": "/r/proptrading/comments/1te13xl/the_prop_firm_rule_thats_quietly_working_against/om2f2np/",
-    "commentId": "om2f2np"
+    "commentId": "om2f2np",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-16T08:58:47.000Z",
+    "firstReplyAuthor": "PropBehavior",
+    "firstReplyText": "Floor anxiety from a clean R2F setup is such a specific kind of frustrating. The analysis was right, the entry was right, the exit was wrong because the environment changed the decision. That's exactly the wrong firm for that style."
   },
   {
     "postId": "1teupf4",
