@@ -2000,5 +2000,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-23T12:00:37.637Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "GDP drops next week 📉 How do you trade high-impact news? #ICTTrading #SmartMoney\n\n🅰️ I fade the sp",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
