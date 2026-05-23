@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "hot-take",
     "quote",
     "tip",
     "myth",
@@ -29,11 +28,12 @@
     "myth",
     "challenge",
     "poll-native",
-    "question"
+    "question",
+    "poll"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "GDP drop incoming next week. Do you PAUSE trading around high-impact news or do you trade the reaction? Drop your approach below 👇 #ICTTrading #SmartMonkeyConcepts #FairValueGap",
-    "date": "2026-05-22T12:00:29.845Z"
+    "type": "poll",
+    "text": "What's your weekend grind righty now?\n\n🅰️ Backtesting setups\n🅱️ Studying order blocks & FVGs\n🅲️ Building next week's watchlist\n🅳️ Touching grass (valid)\n\n#ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-05-23T04:00:46.808Z"
   }
 }
