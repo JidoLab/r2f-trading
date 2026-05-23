@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-23-gdp-shock-how-smart-money-reacts-vs-you",
+    "syndicatedAt": "2026-05-23T00:32:58.052Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-23-gdp-shock-how-smart-money-reacts-vs-you",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/gdp-shock-how-smart-money-reacts-vs-you-5ggk",
+        "id": "3728955"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-23-gdp-shock-how-smart-money-reacts-vs-you"
+  },
+  {
     "slug": "2026-05-22-the-silence-after-a-loss-ict-traders-hidden-battle",
     "syndicatedAt": "2026-05-22T00:33:13.238Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-22-the-silence-after-a-loss-ict-traders-hidden-battle",
