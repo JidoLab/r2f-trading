@@ -74,5 +74,14 @@
       "day1",
       "day2"
     ]
+  },
+  {
+    "email": "eaglesfocus01@gmail.com",
+    "name": "solomon george",
+    "date": "2026-05-24T22:44:01.668Z",
+    "day": 0,
+    "emailsSent": [
+      "day1"
+    ]
   }
 ]
