@@ -1219,5 +1219,38 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "number": 38,
+    "category": "Market Structure",
+    "tip": "When price sweeps sell-side liquidity and immediately displaces back through a prior swing low, don't chase the move — wait for the return into the FVG left behind by that displacement candle, as that's where smart money will defend the reversal with precision entries.",
+    "imageUrl": "https://www.r2ftrading.com/tip-cards/tip-38.png",
+    "date": "2026-05-24T06:00:42.201Z",
+    "results": [
+      {
+        "platform": "twitter-image",
+        "status": "error",
+        "message": "Image fetch failed: 404"
+      },
+      {
+        "platform": "facebook",
+        "status": "error",
+        "message": "{\"error\":{\"message\":\"Missing or invalid image file\",\"type\":\"OAuthException\",\"code\":324,\"error_subcode\":2069019,\"is_transient\":true,\"error_user_title\":\"Image Required\",\"error_user_msg\":\"Make sure your "
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: failed to get HTTP URL content\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
