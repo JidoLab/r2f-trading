@@ -59,18 +59,20 @@
     "email": "kannan196@yahoo.com",
     "name": "Bala",
     "date": "2026-05-22T10:39:45.042Z",
-    "day": 0,
+    "day": 1,
     "emailsSent": [
-      "day1"
+      "day1",
+      "day2"
     ]
   },
   {
     "email": "honore.trader@gmail.com",
     "name": "Honore",
     "date": "2026-05-22T19:51:11.953Z",
-    "day": 0,
+    "day": 1,
     "emailsSent": [
-      "day1"
+      "day1",
+      "day2"
     ]
   }
 ]
