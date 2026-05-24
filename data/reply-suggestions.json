@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1779582639705-drbse",
+    "platform": "youtube",
+    "postTitle": "SMC Trading Secrets: Mitigation Block &amp; Breaker Block Explained",
+    "postUrl": "https://youtube.com/watch?v=u9sD16owTaA",
+    "authorName": "The Trading School",
+    "suggestedReply": "Mitigation blocks and breaker blocks are genuinely underrated concepts but I always warn my students about one key exception. On lower timeframe pairs like cable during news events, a breaker block can get completely violated before price respects the mitigation level, which trips a lot of beginners out of positions early. I teach my students to confirm structure shift on the hourly before committing to either setup.",
+    "createdAt": "2026-05-24T00:30:39.705Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779582642929-8g3g3",
+    "platform": "youtube",
+    "postTitle": "Pourquoi 90% des traders perdent sur le GOLD (Xauusd)",
+    "postUrl": "https://youtube.com/watch?v=W79OW7dGq1I",
+    "authorName": "ICT DAY TRADER",
+    "suggestedReply": "Interesting take on why traders struggle with XAUUSD specifically. In my experience, the real issue is not the asset itself but traders ignoring the weekly and daily bias before dropping to execution timeframes. I drill this into my students constantly. Gold respects premium and discount arrays beautifully when you let higher timeframe liquidity guide your entries rather than reacting to every impulsive move.",
+    "createdAt": "2026-05-24T00:30:42.929Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779582646270-zylz7",
+    "platform": "youtube",
+    "postTitle": "$940 mit Daytrading verdient! #daytrader #daytrading #tradinglernen #nasdaq #sp500 #trading",
+    "postUrl": "https://youtube.com/watch?v=SqEAnRrXElc",
+    "authorName": "mikefvg",
+    "suggestedReply": "Respect the $940 day on the Nasdaq, that kind of consistency compounds fast. Interesting take on the approach though. In my experience, I get my students to wait for a proper liquidity sweep into a 15m FVG before pulling the trigger, rather than chasing the move early. The patience piece alone separates the profitable days from the breakeven ones.",
+    "createdAt": "2026-05-24T00:30:46.270Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779582648787-3df4p",
+    "platform": "youtube",
+    "postTitle": "Forex OTE Strategy Explained | ICT Trading Setup for Beginners",
+    "postUrl": "https://youtube.com/watch?v=STPZiN8FnKA",
+    "authorName": "Technical Analyst FX",
+    "suggestedReply": "Good breakdown of the OTE concept here. Most beginners I work with misapply the 62-79% fibonacci retracement by entering too early before price actually sweeps liquidity first. Are you teaching your audience to wait for the liquidity grab before looking for that optimal entry, or going straight into the retracement?",
+    "createdAt": "2026-05-24T00:30:48.787Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779582652080-zy2s9",
+    "platform": "youtube",
+    "postTitle": "Stop losing with IFVG’s #trading #daytrade #ict #tradingtips #trader #daytrading #daytrader",
+    "postUrl": "https://youtube.com/watch?v=OIBwfeaxmQw",
+    "authorName": "ReeseTradesNQ",
+    "suggestedReply": "The IFVG setup is one I drill into my students constantly, and the part most people butcher is treating every gap the same. The key is confirming the inversion first, waiting for price to tap back into the former FVG on the 5m or 15m before committing. Skipping that confirmation step is exactly why traders keep getting stopped out on these.",
+    "createdAt": "2026-05-24T00:30:52.080Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779582655826-unr0w",
+    "platform": "youtube",
+    "postTitle": "ICT Power of Three Strategy: How Smart Money Traps Traders",
+    "postUrl": "https://youtube.com/watch?v=Q-aGXqlbPFY",
+    "authorName": "Com Lucro Trader",
+    "suggestedReply": "Power of Three is deadlier than most traders realize because the accumulation phase is where smart money does the real work, not the manipulation spike. I drill into my students that identifying the dealing range on the higher timeframe first, usually the daily or 4H, is what separates reacting to the trap from anticipating it. Most traders only see the manipulation candle after it already stopped them out on forex pairs like Cable or the majors. Map the range before London opens and the setup becomes obvious.",
+    "createdAt": "2026-05-24T00:30:55.826Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779582659455-ggbmn",
+    "platform": "youtube",
+    "postTitle": "ICT Silver Bullet Strategy : The ONLY Setup You Need (Step By Step)",
+    "postUrl": "https://youtube.com/watch?v=s1NXJT3FszM",
+    "authorName": "Zero Drawdown",
+    "suggestedReply": "I've been running the Silver Bullet window setups with my students for over two years and the 10am to 11am New York session window consistently produces the cleanest liquidity sweeps on NAS100. Most of them struggle at first because they chase the move before the FVG forms. Once they learn to wait for the displacement and then let price return to the imbalance, the whole strategy clicks.",
+    "createdAt": "2026-05-24T00:30:59.455Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779582663086-yi2ar",
+    "platform": "youtube",
+    "postTitle": "A Live Bitcoin &amp; Gold Chart Analysis | Smart Money Concepts &amp; Price Action TODAY ||  trump live news",
+    "postUrl": "https://youtube.com/watch?v=0R14tZX6a-4",
+    "authorName": "Vishnu Verma",
+    "suggestedReply": "Combining Bitcoin and gold analysis under Smart Money Concepts in the same session is something I drill into my students constantly. Trump news events create massive liquidity grabs on both assets and most traders react instead of waiting for the displacement confirmation on the higher timeframe structure. Do you tend to prioritize the 4H order blocks over intraday setups when news volatility is this high?",
+    "createdAt": "2026-05-24T00:31:03.087Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1779497138744-702nx",
     "platform": "investinglive",
     "postTitle": "USDCAD stretches above the 200 day MA.",
