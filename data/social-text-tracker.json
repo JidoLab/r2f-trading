@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "tip",
     "myth",
     "story",
     "poll-native",
@@ -29,11 +28,12 @@
     "poll-native",
     "question",
     "poll",
-    "poll-native"
+    "poll-native",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "poll-native",
-    "text": "GDP drops next week 📉 How do you trade high-impact news? #ICTTrading #SmartMoney\n\n🅰️ I fade the spike\n🅱️ I wait for retracement\n🅲️ I sit out entirely\n🅳️ Trade the run-up\n\nVote below! 👇",
-    "date": "2026-05-23T12:00:36.760Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: 'Sell in May' is cope for traders who don't understand order blocks. Smart money doesn't follow calendar memes — it follows liquidity. GDP drop this week = setup season, not sideline season. 🔥 #ICTTrading #SmartMoneyConcepts #FairValueGap",
+    "date": "2026-05-24T04:00:37.826Z"
   }
 }
