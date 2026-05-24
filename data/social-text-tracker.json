@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "myth",
     "story",
     "poll-native",
     "challenge",
@@ -29,11 +28,12 @@
     "question",
     "poll",
     "poll-native",
-    "hot-take"
+    "hot-take",
+    "story"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: 'Sell in May' is cope for traders who don't understand order blocks. Smart money doesn't follow calendar memes — it follows liquidity. GDP drop this week = setup season, not sideline season. 🔥 #ICTTrading #SmartMoneyConcepts #FairValueGap",
-    "date": "2026-05-24T04:00:37.826Z"
+    "type": "story",
+    "text": "Went flat before GDP last quarter. Everyone called me scared. The release dumped 200 pips in 3 minutes. No position = no blown account. Protecting capital IS the trade. #ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-05-24T12:01:00.202Z"
   }
 }
