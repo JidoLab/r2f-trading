@@ -2000,5 +2000,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-24T12:01:01.119Z",
+    "type": "text",
+    "postType": "story",
+    "text": "Went flat before GDP last quarter. Everyone called me scared. The release dumped 200 pips in 3 minut",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
