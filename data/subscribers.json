@@ -130,6 +130,16 @@
     "referralCode": "R2F-h75t9t",
     "referredBy": null,
     "referralCount": 0,
-    "phone": "2347035261679"
+    "phone": "2347035261679",
+    "score": 15,
+    "segment": "cold",
+    "events": [
+      {
+        "type": "coaching_page_view",
+        "date": "2026-05-24T22:51:30.245Z"
+      }
+    ],
+    "lastActivity": "2026-05-24T22:51:30.245Z",
+    "dripsHistory": []
   }
 ]
