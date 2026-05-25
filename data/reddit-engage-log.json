@@ -1822,5 +1822,25 @@
     "commentedAt": "2026-05-25T01:32:43.361Z",
     "permalink": "/r/InnerCircleTraders/comments/1tmc0qu/really_trynna_tell_yall_dont_give_up_because_once/onpi11s/",
     "commentId": "onpi11s"
+  },
+  {
+    "postId": "1tmdfw3",
+    "subreddit": "Forexstrategy",
+    "postTitle": "15m fib continuation strategy",
+    "commentText": "solid setup tbh, but the 75% entry only really works clean if your FVG is sitting inside that retracement zone too, otherwise you're just fading into a random level with no confluence. i've seen this break down a lot during NY open when price blows through the 75% and sweeps liquidity before the actual continuation. are you confirming the BOS on the 15m before drawing the fib, or are you using the 4H swing structure to define those highs and lows? makes a huge difference for where that retracement actually lands 👀",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-25T03:01:24.653Z",
+    "permalink": "/r/Forexstrategy/comments/1tmdfw3/15m_fib_continuation_strategy/onpwj6e/",
+    "commentId": "onpwj6e"
+  },
+  {
+    "postId": "1tmj3k8",
+    "subreddit": "Forexstrategy",
+    "postTitle": "THE PATH OF LEAST RESISTANCE FOR GOLD IS STILL DOWN",
+    "commentText": "if that 4240–4400 IFVG/OB zone holds as resistance on the daily, try dropping to the 15m during NY killzone and marking the last down candle before the most recent displacement leg. if price retraces into that candle and can't close above it, that's your short entry with a tight stop above the wick. tbh the 4098 liquidity target lines up clean with what i'm seeing on the weekly too.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-25T03:01:31.391Z",
+    "permalink": "/r/Forexstrategy/comments/1tmj3k8/the_path_of_least_resistance_for_gold_is_still/onpwjtm/",
+    "commentId": "onpwjtm"
   }
 ]
