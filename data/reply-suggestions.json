@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1779669013775-5gr07",
+    "platform": "youtube",
+    "postTitle": "90% Traders Enter Too Early ❌ Wait For MSS",
+    "postUrl": "https://youtube.com/watch?v=tF9CzaxZ-mQ",
+    "authorName": "Multyfi",
+    "suggestedReply": "MSS is valid but I'd add one caveat my students always miss. Waiting for the shift is correct, but if you enter the first candle that closes after the MSS on a lower timeframe like the 5m, you're often still early. I teach my students to wait for a pullback into the breaker or FVG that forms after the shift. That confirmation separates clean entries from lucky ones.",
+    "createdAt": "2026-05-25T00:30:13.775Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779669017464-b15xl",
+    "platform": "youtube",
+    "postTitle": "#icttrading #deefyh #xauusd #trading #forextrader #smc #ICT #smt #ForexUSD #USDAnalysis",
+    "postUrl": "https://youtube.com/watch?v=YBauZVZ6IZc",
+    "authorName": "Huzaifa Tariq",
+    "suggestedReply": "SMT divergence on XAUUSD is genuinely one of the cleanest confluences you can use, and I back this approach fully. One thing I always warn my students about though is treating SMT as a standalone signal without confirming the higher timeframe draw on liquidity first. On gold especially, divergence can appear during choppy consolidation and trap traders expecting a clean reversal. Confirm the narrative before pulling the trigger.",
+    "createdAt": "2026-05-25T00:30:17.464Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779669021958-gf1zm",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=_C4YTLfsbIw",
+    "authorName": "The Trading Process",
+    "suggestedReply": "SMC on XAUUSD is solid but one thing I always drill into my students is that gold liquidity grabs can be extremely aggressive during NY session overlap, where price will sweep a BSL or SSL and reverse so fast that your entry model looks invalidated before it actually plays out. The patience required to wait for confirmation after the sweep is where most traders fail, not the analysis itself.",
+    "createdAt": "2026-05-25T00:30:21.958Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779669028466-qs2q9",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE BTC &amp; GOLD Trading | ICT Smart Money Concepts | BTCUSDT &amp; XAUUSD Analysis 24 May  #crypto",
+    "postUrl": "https://youtube.com/watch?v=qBjPuUON0dE",
+    "authorName": "Trap Trader Samrat",
+    "suggestedReply": "Trading both BTC and gold simultaneously is something I drill into my students as a great way to understand how risk-on and risk-off sentiment shifts in real time. The correlation between XAUUSD and BTCUSDT during London to New York overlap sessions reveals a lot about institutional flow that most retail traders completely miss. Do you find you get cleaner ICT setups on gold compared to BTC during that overlap, or are you seeing similar structure on both pairs?",
+    "createdAt": "2026-05-25T00:30:28.466Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779669031696-mcxxy",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=6WOs11NAl00",
+    "authorName": "The Trading Process",
+    "suggestedReply": "I've been running SMC on XAUUSD for years and the one thing I drill into my students is that gold respects the daily order blocks far more consistently than most crypto pairs do. Watching how HTF liquidity sweeps set up the London session entries on the 4H is where the real edge lives. Most beginners skip that step entirely.",
+    "createdAt": "2026-05-25T00:30:31.696Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779669036794-ob4ph",
+    "platform": "youtube",
+    "postTitle": "Live Bitcoin &amp; Gold Chart Analysis | Smart Money Concepts &amp; Price Action TODAY ||",
+    "postUrl": "https://youtube.com/watch?v=0gMyDipWI4M",
+    "authorName": "Vishnu Verma",
+    "suggestedReply": "Smart Money Concepts on Bitcoin and Gold together is a powerful combination but the caveat I always give my students is that BTC liquidity runs very differently from Gold. Bitcoin can sweep equal highs and reverse within minutes during Asian session, while Gold tends to be more deliberate with its draw on liquidity. Make sure you're not applying the same entry model to both without adjusting for their individual volatility profiles.",
+    "createdAt": "2026-05-25T00:30:36.794Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779669041288-vmli7",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=m2qQPYlib88",
+    "authorName": "The Trading Process",
+    "suggestedReply": "One thing I always add to SMC analysis on XAUUSD is confirmation through higher timeframe liquidity sweeps before dropping to the 15m for entry. Gold respects engineered liquidity more consistently than most crypto pairs, so the two assets actually need slightly different execution rules. I drill this into my students constantly. Are you layering HTF bias separately for gold versus crypto in this analysis?",
+    "createdAt": "2026-05-25T00:30:41.288Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1779669044389-r7lpy",
+    "platform": "youtube",
+    "postTitle": "🔴 BTC Live Market Analysis | Bitcoin Price Action &amp; Smart Money Concepts",
+    "postUrl": "https://youtube.com/watch?v=mkE2EF_55Bo",
+    "authorName": "Silent Profit Lab",
+    "suggestedReply": "The Smart Money Concepts breakdown here is clean. One thing I drill into my students when reading BTC price action specifically is to treat the higher timeframe displacement candle as your anchor before even looking at an FVG entry. Most traders rush straight to the gap and wonder why price keeps running through them. Lock in the displacement first and your entries become significantly more precise.",
+    "createdAt": "2026-05-25T00:30:44.389Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1779582639705-drbse",
     "platform": "youtube",
     "postTitle": "SMC Trading Secrets: Mitigation Block &amp; Breaker Block Explained",
