@@ -1,34 +1,5 @@
 [
   {
-    "date": "2026-05-13T12:00:45.502Z",
-    "type": "text",
-    "postType": "story",
-    "text": "Held a short through CPI once. Price spiked 80 pips against me in seconds. I froze. Closed at the wo",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-05-13T14:00:34.517Z",
     "slug": "2026-04-29-how-revenge-trading-rewires-your-brain",
     "title": "How Revenge Trading Rewires Your Brain",
@@ -1911,6 +1882,53 @@
     "date": "2026-05-24T14:00:13.736Z",
     "slug": "2026-05-10-the-silence-after-a-big-win-destroys-traders",
     "title": "The Silence After a Big Win Destroys Traders",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-25T00:32:40.795Z",
+    "slug": "2026-05-25-gdp-week-trading-control-your-emotions-not-the-chart",
+    "title": "GDP Week Trading: Control Your Emotions, Not the Chart",
     "results": [
       {
         "platform": "twitter",
