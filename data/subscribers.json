@@ -112,7 +112,7 @@
   {
     "email": "honore.trader@gmail.com",
     "date": "2026-05-22T19:54:53.128Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-zttm23",
     "referredBy": null,
     "referralCount": 0,
@@ -121,7 +121,9 @@
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-05-22T19:54:53.128Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   },
   {
     "email": "eaglesfocus01@gmail.com",
