@@ -1792,5 +1792,35 @@
     "commentedAt": "2026-05-23T03:01:06.721Z",
     "permalink": "/r/Trading/comments/1tkqmsj/i_always_blow_my_funded_account_after_a_payout/ond4pkc/",
     "commentId": "ond4pkc"
+  },
+  {
+    "postId": "1tm5vfz",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Transition from photon strategy to ICT",
+    "commentText": "honest heads up — ICT has the exact same subjectivity problem you're describing with photon, just dressed in different language. \"where exactly is the OB?\" is the same question as \"where exactly is the BOS?\" tbh. what actually made things click for me was narrowing to one setup on one pair (eurusd, london session, 15m FVG into a daily OB) and drilling that until the discretion had nowhere to hide. the mechanical feeling you're chasing comes from repetition on a tiny scope, not from the methodology itself.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-25T01:32:20.030Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tm5vfz/transition_from_photon_strategy_to_ict/onphyth/",
+    "commentId": "onphyth"
+  },
+  {
+    "postId": "1tm1w6s",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "What to do in this situation should i consider it or not.",
+    "commentText": "the FVG forming after the liquidity sweep is actually the key detail here — that's your answer tbh. a post-sweep FVG is still valid as long as price hasn't returned to close it and the SMT on the LTF is aligning with the HTF narrative, not contradicting it. the divergence between the two symbols is the edge, not a red flag. are you looking at this on the 15m or 1h though? because on the 15m that SMT can look clean but the 1h might already show a confirmed BOS that changes the whole bias.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-25T01:32:26.935Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tm1w6s/what_to_do_in_this_situation_should_i_consider_it/onphzgd/",
+    "commentId": "onphzgd"
+  },
+  {
+    "postId": "1tmc0qu",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Really trynna tell yall don’t give up because once it clicks it becomes so easy that it gets boring. and yes the payouts are sweet af also these things repeat every week around the same time 🔂",
+    "commentText": "year 4 is real tbh, i remember when london killzone FVGs just looked like random wicks and now i can't unsee the setups. the point about not speeding up the videos is underrated — i rewatched the 2016 core content like three times before the draw on liquidity concept actually made sense in real time price action. 🔂",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-25T01:32:43.361Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tmc0qu/really_trynna_tell_yall_dont_give_up_because_once/onpi11s/",
+    "commentId": "onpi11s"
   }
 ]
