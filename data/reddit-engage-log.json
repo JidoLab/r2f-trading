@@ -1311,11 +1311,7 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-19T01:32:20.190Z",
     "permalink": "/r/Forexstrategy/comments/1tgwzmv/anyone_else_seeing_this_xauusd_setup_as_a/oml9id6/",
-    "commentId": "oml9id6",
-    "hasReply": true,
-    "firstReplyAt": "2026-05-19T04:43:02.000Z",
-    "firstReplyAuthor": "Sana-Ahmed98",
-    "firstReplyText": "That’s actually a solid breakdown. The 15M FVG + BOS confirmation during NY session gives way cleaner confirmation than blindly catching support. I’d rather wait for displacement and reaction too instead of relying only on RSI/MACD lagging signals 👌"
+    "commentId": "oml9id6"
   },
   {
     "postId": "1tgwd6m",
@@ -1856,5 +1852,65 @@
     "commentedAt": "2026-05-26T03:01:15.725Z",
     "permalink": "/r/ICTMentorship/comments/1tnb3hw/ive_been_paid_19305_from_prop_firms_in_6_weeks/onwk8dz/",
     "commentId": "onwk8dz"
+  },
+  {
+    "postId": "1to58jb",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Structure + Liquidity Intraday Strategy (Looking for Feedback &amp; Improvements)",
+    "commentText": "your value zone logic is solid but the fib range you're using for bullish setups (38.2–50%) is leaving a lot of clean OB entries on the table that sit right at the 50–61.8% on the 5M. tbh the real issue i see is requiring a full BOS on the 1H before looking for continuation — by that point price is often already halfway through the move and your R is cooked before you even enter. tighten the confluence by waiting for a 5M FVG to form inside the discount zone after the HTF BOS, that's usually where displacement actually confirms itself rather than just structure labels.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-26T13:00:20.923Z",
+    "permalink": "/r/Forexstrategy/comments/1to58jb/structure_liquidity_intraday_strategy_looking_for/onyrod8/",
+    "commentId": "onyrod8"
+  },
+  {
+    "postId": "1to0dwq",
+    "subreddit": "Forexstrategy",
+    "postTitle": "15m fib continuation strategy",
+    "commentText": "i had this exact problem last month on eurusd, kept getting stopped out at the 75% because price was sweeping the 79% before continuing and my stop was too tight. the 75% is clean in theory but if there's no FVG confluence sitting right at that level you're just guessing tbh. check if the FVG on the 15m is actually overlapping that retracement before placing the limit, otherwise you're just using fib in isolation.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-26T13:00:27.789Z",
+    "permalink": "/r/Forexstrategy/comments/1to0dwq/15m_fib_continuation_strategy/onyrp4g/",
+    "commentId": "onyrp4g"
+  },
+  {
+    "postId": "1tnhc74",
+    "subreddit": "Forexstrategy",
+    "postTitle": "I Blew 70 Funded Accounts and Spent $50,000 Before The Cycle Broke.",
+    "commentText": "tbh 70 accounts tells me the problem wasn't the strategy, it was the same mistake repeating and not recognizing it. most people i see in this spot are entering on the first tap of a 15m OB during NY open before price has even swept the asian range low, basically front-running the actual setup. the cycle breaks when you stop treating the loss count as a badge and start asking why the same candle pattern keeps taking you out. 70 attempts is data, not bad luck.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-26T13:00:35.375Z",
+    "permalink": "/r/Forexstrategy/comments/1tnhc74/i_blew_70_funded_accounts_and_spent_50000_before/onyrpxq/",
+    "commentId": "onyrpxq"
+  },
+  {
+    "postId": "1tnhxev",
+    "subreddit": "FOREXTRADING",
+    "postTitle": "I Blew 70 Funded Accounts and Spent $50,000 Before The Cycle Broke.",
+    "commentText": "tbh 70 accounts tells me the cycle wasn't the problem, the model was. most people burning through funded accounts are still taking setups outside of killzones and wondering why price keeps running them out before delivering — if you were trading something like cable or fiber, london open OBs that haven't had an FVG filled yet are going to fake out 9 times out of 10 without confluence from the higher timeframe PD array. the \"cycle breaking\" moment is usually less about mindset and more about finally understanding *why* a specific setup fails structurally.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-26T13:00:47.623Z",
+    "permalink": "/r/FOREXTRADING/comments/1tnhxev/i_blew_70_funded_accounts_and_spent_50000_before/onyrrcb/",
+    "commentId": "onyrrcb"
+  },
+  {
+    "postId": "1tnln5o",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Gold Consolidating Below Key Resistance (4580)",
+    "commentText": "try marking that 4580 level on the 15m and waiting to see if XAUUSD sweeps above it during NY open, then wicks back inside and leaves a FVG. that retracement into the gap is your actual entry, not the breakout itself. chasing the \"clean break and hold\" narrative gets you filled at the worst price tbh.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-26T13:00:56.298Z",
+    "permalink": "/r/Forexstrategy/comments/1tnln5o/gold_consolidating_below_key_resistance_4580/onyrsc0/",
+    "commentId": "onyrsc0"
+  },
+  {
+    "postId": "1tno2bx",
+    "subreddit": "Forexstrategy",
+    "postTitle": "URfx",
+    "commentText": "honestly at 21 with consistent prop payouts you're already ahead, but option 3 has a ceiling tbh — you're basically renting capital and one bad drawdown wipes the account. i'd split it, keep a small personal funded account so you're trading with real skin in the game and let compounding do the heavy lifting in a low-cost index fund with the rest. since you're already profitable, are you seeing consistent performance across sessions or is most of your edge coming from one specific window like london open?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-26T13:01:05.406Z",
+    "permalink": "/r/Forexstrategy/comments/1tno2bx/urfx/onyrtd9/",
+    "commentId": "onyrtd9"
   }
 ]
