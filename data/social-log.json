@@ -2000,5 +2000,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-26T12:00:28.714Z",
+    "type": "text",
+    "postType": "promo-free-class",
+    "text": "GDP drops this week. Markets move. Most traders freeze. Learn the 3 ICT setups that actually work du",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
