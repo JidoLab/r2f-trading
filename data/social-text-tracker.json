@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "challenge",
     "myth",
     "question",
     "poll",
@@ -29,11 +28,12 @@
     "hot-take",
     "story",
     "quote",
-    "promo-free-class"
+    "promo-free-class",
+    "tip"
   ],
   "lastPost": {
-    "type": "promo-free-class",
-    "text": "GDP drops this week. Markets move. Most traders freeze. Learn the 3 ICT setups that actually work during high-impact events + the funded account blueprint. Free class 👇 https://r2ftrading.com/free-class #ICTtrading #FairValueGap #FundedTrader",
-    "date": "2026-05-26T12:00:27.694Z"
+    "type": "tip",
+    "text": "GDP drops soon — smart money already positioned. Don't trade the candle, trade the liquidity sweep before the news settles. Let price come to your order block, then execute. R2F Trading tip 📌 #ICTTrading #OrderBlocks #SmartMoneyConcepts",
+    "date": "2026-05-27T12:00:31.591Z"
   }
 }
