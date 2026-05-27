@@ -2029,5 +2029,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-27T12:00:32.945Z",
+    "type": "text",
+    "postType": "tip",
+    "text": "GDP drops soon — smart money already positioned. Don't trade the candle, trade the liquidity sweep b",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
