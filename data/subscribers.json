@@ -128,7 +128,7 @@
   {
     "email": "eaglesfocus01@gmail.com",
     "date": "2026-05-24T22:46:12.434Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-h75t9t",
     "referredBy": null,
     "referralCount": 0,
@@ -142,7 +142,9 @@
       }
     ],
     "lastActivity": "2026-05-24T22:51:30.245Z",
-    "dripsHistory": [],
+    "dripsHistory": [
+      "beginnerMistakes"
+    ],
     "abandonmentEmailSent": true
   }
 ]
