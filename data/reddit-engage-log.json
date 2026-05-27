@@ -1912,5 +1912,25 @@
     "commentedAt": "2026-05-26T13:01:05.406Z",
     "permalink": "/r/Forexstrategy/comments/1tno2bx/urfx/onyrtd9/",
     "commentId": "onyrtd9"
+  },
+  {
+    "postId": "1tobja0",
+    "subreddit": "Forexstrategy",
+    "postTitle": "What are the EAs which passed the FTMO challenges or prop firm challenges?",
+    "commentText": "i had this exact problem last year trying to automate my XAUUSD setup on the 15m, kept thinking an EA could just hunt london open FVGs and print money. tbh every EA i saw that \"passed\" a challenge either curve-fitted the backtest or got lucky during a trending month then blew the funded account quietly. the prop firm meta in 2026 has gotten way too good at sniffing out overoptimized bots, especially after the drawdown rule tightening most firms did earlier this year.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-27T03:01:03.316Z",
+    "permalink": "/r/Forexstrategy/comments/1tobja0/what_are_the_eas_which_passed_the_ftmo_challenges/oo3l8a2/",
+    "commentId": "oo3l8a2"
+  },
+  {
+    "postId": "1to6eg3",
+    "subreddit": "Forexstrategy",
+    "postTitle": "This is how I use ANEF to spot efficient moves - $60,000 payout on FTMO",
+    "commentText": "tbh the exhaustion piece you mentioned is where most people fumble this — try marking the last inefficiency (FVG) left behind before the move dies on the 15m, because if price returns to that FVG during NY killzone and shows rejection, that's your confirmation the original move was weak from the start. been seeing this play out clean on GBPUSD lately when price sweeps a high, leaves a gap, then wicks straight back into it. same candle shape, completely different story imo.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-27T03:01:11.149Z",
+    "permalink": "/r/Forexstrategy/comments/1to6eg3/this_is_how_i_use_anef_to_spot_efficient_moves/oo3l93j/",
+    "commentId": "oo3l93j"
   }
 ]
