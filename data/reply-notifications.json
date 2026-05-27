@@ -1,5 +1,35 @@
 [
   {
+    "id": "reply-omsif5a",
+    "platform": "reddit",
+    "postTitle": "Prop firm spreads",
+    "subreddit": "proptrading",
+    "replyAuthor": "Worried-Basil1060",
+    "replyText": "I thought everyone said 5ers had the best spreads but I checked funding pips and its way better spreads",
+    "commentUrl": "https://www.reddit.com/r/proptrading/comments/1thpfzs/prop_firm_spreads/omsif5a/",
+    "detectedAt": "2026-05-27T13:00:54.350Z"
+  },
+  {
+    "id": "reply-oms85gb",
+    "platform": "reddit",
+    "postTitle": "GBP/USD Intraday Long Setup",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "CaterpillarGlass6661",
+    "replyText": "True tbh, 21 pips was kinda conservative if the buy-side liquidity above 1.3430 was still untouched. Clean sweep though  once the LTF BOS came in, the displacement looked solid enough to hold for runners instead of full TP.",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1thehnw/gbpusd_intraday_long_setup/oms85gb/",
+    "detectedAt": "2026-05-27T13:00:52.968Z"
+  },
+  {
+    "id": "reply-omlk0hs",
+    "platform": "reddit",
+    "postTitle": "How do I turn this price action strategy into a fully systematic, rule-based system with zero discretion?",
+    "subreddit": "ICTMentorship",
+    "replyAuthor": "peerteek",
+    "replyText": "The core argument is that ICT trading concepts resist full automation because market context requires human judgment\n",
+    "commentUrl": "https://www.reddit.com/r/ICTMentorship/comments/1tgm281/how_do_i_turn_this_price_action_strategy_into_a/omlk0hs/",
+    "detectedAt": "2026-05-27T13:00:46.419Z"
+  },
+  {
     "id": "reply-oml9id6",
     "platform": "reddit",
     "postTitle": "Anyone else seeing this XAUUSD setup as a possible liquidity sweep before continuation?",
