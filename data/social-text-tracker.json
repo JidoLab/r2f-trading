@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "myth",
     "question",
     "poll",
     "hot-take",
@@ -29,11 +28,12 @@
     "story",
     "quote",
     "promo-free-class",
-    "tip"
+    "tip",
+    "promo-results"
   ],
   "lastPost": {
-    "type": "tip",
-    "text": "GDP drops soon — smart money already positioned. Don't trade the candle, trade the liquidity sweep before the news settles. Let price come to your order block, then execute. R2F Trading tip 📌 #ICTTrading #OrderBlocks #SmartMoneyConcepts",
-    "date": "2026-05-27T12:00:31.591Z"
+    "type": "promo-results",
+    "text": "R2F traders are passing funded challenges at an 85%+ rate heading into GDP week. Structure beats guessing every time. See the community results 👇 https://r2ftrading.com/results #ICTTrading #FundedTrader #SmartMoneyConcepts",
+    "date": "2026-05-28T12:00:31.113Z"
   }
 }
