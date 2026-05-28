@@ -27,13 +27,16 @@ export default function Hero() {
         Empty alt is intentional — this is decorative; the H1 carries meaning.
       */}
       <Image
-        src="/hero-bg.png"
+        src="/hero-bg.avif"
         alt=""
         fill
         priority
         fetchPriority="high"
         sizes="100vw"
-        quality={75}
+        // Source is already AVIF at 73 KB (was 3.29 MB PNG before
+        // compression on 2026-05-28). Next/Image still generates the
+        // appropriate variants per device and serves WebP/AVIF based
+        // on browser capability — source bytes just got 98% smaller.
         className="object-cover object-center"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/60 to-transparent" />
