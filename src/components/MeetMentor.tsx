@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function MeetMentor() {
   return (
@@ -6,11 +7,15 @@ export default function MeetMentor() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-start gap-10 md:gap-16">
           <div className="flex-shrink-0 mx-auto md:mx-0">
-            <div className="w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-gold/30 shadow-lg">
-              <img
+            <div className="w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-gold/30 shadow-lg relative">
+              {/* 400x400 source displayed at 176-208px — Next/Image
+                  optimizes from ~200 KiB PNG to ~10-20 KiB AVIF. */}
+              <Image
                 src="/mentor.png"
                 alt="Harvest - R2F Trading Mentor"
-                className="w-full h-full object-cover"
+                fill
+                sizes="(max-width: 768px) 176px, 208px"
+                className="object-cover"
               />
             </div>
           </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const achievements = [
   {
@@ -44,11 +45,16 @@ export default function Achievements() {
                 onClick={() => setLightbox(item.image)}
                 className="rounded-lg overflow-hidden bg-white/5 border border-white/10 hover:border-gold/40 transition-colors group text-left cursor-pointer"
               >
-                <div className="aspect-square overflow-hidden">
-                  <img
+                <div className="aspect-square overflow-hidden relative">
+                  {/* Next/Image auto-serves AVIF/WebP at the rendered size
+                      (~400px square instead of the 2044px source PNG/JPG).
+                      Cuts tradingview-competition.jpg from 2.4 MB to ~50 KB. */}
+                  <Image
                     src={item.image}
                     alt={item.alt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-4">
@@ -75,10 +81,15 @@ export default function Achievements() {
           >
             &times;
           </button>
-          <img
+          {/* Lightbox uses the original asset — full quality for the
+              click-to-zoom view. width/height needed because Next/Image
+              requires intrinsic dims when not using `fill`. */}
+          <Image
             src={lightbox}
             alt="Achievement detail"
-            className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
+            width={2000}
+            height={2000}
+            className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl w-auto h-auto"
             onClick={(e) => e.stopPropagation()}
           />
         </div>

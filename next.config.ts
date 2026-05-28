@@ -40,6 +40,16 @@ function loadPostRedirects() {
 const nextConfig: NextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 
+  // Whitelist external image hosts that next/image is allowed to optimize.
+  // i.ytimg.com — YouTube thumbnail CDN used by the lite YouTube embed
+  // (replaced the always-loaded iframe in YouTubePreview.tsx to save
+  // ~944 KiB transfer and ~669ms main-thread work per the PSI audit).
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "i.ytimg.com" },
+    ],
+  },
+
   async redirects() {
     return loadPostRedirects();
   },

@@ -1,6 +1,24 @@
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+
+/**
+ * Lite YouTube embed — replaces the always-loaded iframe with a clickable
+ * thumbnail. The full YouTube player (~944 KiB of JS + 669ms main-thread
+ * work per PSI) only loads when the user actually clicks play, not when
+ * the homepage renders.
+ *
+ * Pattern is the established "lite-youtube-embed" approach. We use the
+ * native YT thumbnail CDN (i.ytimg.com is already preconnected in the
+ * head per the prior PSI report) so the thumbnail load is essentially free.
+ */
+const VIDEO_ID = "IazaFRwLMKo";
 
 export default function YouTubePreview() {
+  const [activated, setActivated] = useState(false);
+
   return (
     <section className="py-16 md:py-24 bg-white border-t border-gray-100">
       <div className="max-w-5xl mx-auto px-6">
@@ -25,14 +43,47 @@ export default function YouTubePreview() {
             </a>
           </div>
           <div className="w-full md:w-[420px] flex-shrink-0">
-            <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                src="https://www.youtube.com/embed/IazaFRwLMKo"
-                title="R2F Trading YouTube"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
+            <div className="aspect-video rounded-lg overflow-hidden shadow-lg relative bg-black">
+              {activated ? (
+                <iframe
+                  src={`https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1`}
+                  title="R2F Trading YouTube"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => setActivated(true)}
+                  className="w-full h-full relative group cursor-pointer"
+                  aria-label="Play R2F Trading intro video"
+                >
+                  <Image
+                    src={`https://i.ytimg.com/vi/${VIDEO_ID}/hqdefault.jpg`}
+                    alt="R2F Trading YouTube preview"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 420px"
+                    className="object-cover"
+                  />
+                  {/* Gradient overlay for play-button visibility */}
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
+                  {/* YouTube-style play button */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-20 h-14 bg-red-600/90 group-hover:bg-red-600 rounded-2xl flex items-center justify-center transition-colors shadow-2xl">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        fill="white"
+                        aria-hidden="true"
+                      >
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              )}
             </div>
           </div>
         </div>

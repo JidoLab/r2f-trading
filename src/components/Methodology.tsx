@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const features = [
   {
     title: "Adaptable for All Levels and Traders",
@@ -53,9 +55,15 @@ export default function Methodology() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-6 md:gap-8 mb-12">
           {features.map((feature, i) => (
             <div key={feature.title} className={`flex flex-col items-center text-center group ${i === features.length - 1 ? "col-span-2 sm:col-span-1" : ""}`}>
-              <img
+              {/* 7 icons were 512x512 PNGs at ~300 KiB each — ~2 MB total —
+                  rendered at 96-176px. Next/Image serves AVIF at the right
+                  size; total drops to ~50-100 KiB across all 7. */}
+              <Image
                 src={feature.icon}
                 alt={feature.title}
+                width={176}
+                height={176}
+                sizes="(max-width: 640px) 96px, (max-width: 768px) 128px, (max-width: 1024px) 160px, 176px"
                 className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44 object-contain mb-4"
               />
               <p className="text-sm sm:text-base md:text-lg font-bold text-navy/80 leading-tight">
