@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Trading Risk/Reward Calculator | R2F Trading",
-  description: "Free position size calculator for ICT traders. Calculate exact risk amount, lot size, and reward-to-risk ratio before every trade. Protect your funded account.",
-  keywords: ["position size calculator", "risk reward calculator", "ICT trading calculator", "forex lot size calculator", "funded account risk management"],
+  // Title leads with the exact query "Risk Reward Ratio Calculator" — current
+  // GSC ranking is position 73-75 because the page never said that exact phrase.
+  title: "Risk Reward Ratio Calculator — Free Position Size Tool for ICT Traders",
+  description: "Free risk reward ratio calculator for forex, futures, and prop firm traders. Type your entry, stop, and target — get exact position size, R:R, and dollar risk in one click.",
+  keywords: [
+    "risk reward ratio calculator",
+    "risk to reward ratio calculator",
+    "risk reward calculator",
+    "position size calculator",
+    "ICT trading calculator",
+    "forex lot size calculator",
+    "funded account risk management",
+  ],
   openGraph: {
-    title: "Trading Risk/Reward Calculator | R2F Trading",
-    description: "Calculate your exact position size, risk amount, and R:R ratio. The same tool professional ICT traders use.",
+    title: "Risk Reward Ratio Calculator | R2F Trading",
+    description: "Type entry, stop, and target — get exact position size, R:R, and dollar risk. Free tool ICT and funded-account traders use before every trade.",
     url: "https://www.r2ftrading.com/tools/risk-calculator",
   },
 };

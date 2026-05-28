@@ -28,5 +28,29 @@
     "to": "/learn/position-sizing",
     "deletedAt": "2026-05-18T00:00:00.000Z",
     "reason": "Landing page slug renamed; old URL indexed by Google as 404"
+  },
+  {
+    "from": "/tools/risk-reward-calculator",
+    "to": "/tools/risk-calculator",
+    "deletedAt": "2026-05-26T00:00:00.000Z",
+    "reason": "Searchers + manual links use this URL; same page, new keyword-optimized title"
+  },
+  {
+    "from": "/tools/risk-to-reward-calculator",
+    "to": "/tools/risk-calculator",
+    "deletedAt": "2026-05-26T00:00:00.000Z",
+    "reason": "Alternate phrasing of the calculator URL — same destination"
+  },
+  {
+    "from": "/learn/michael-huddleston",
+    "to": "/learn/ict-methodology-origins-michael-huddleston",
+    "deletedAt": "2026-05-26T00:00:00.000Z",
+    "reason": "Short URL for the methodology-origins page that captures Huddleston brand queries"
+  },
+  {
+    "from": "/learn/inner-circle-trader",
+    "to": "/learn/ict-methodology-origins-michael-huddleston",
+    "deletedAt": "2026-05-26T00:00:00.000Z",
+    "reason": "Short URL for the methodology-origins page that captures ICT brand queries"
   }
 ]

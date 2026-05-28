@@ -75,11 +75,11 @@ export default function RiskCalculatorPage() {
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4"
             style={{ fontFamily: "var(--font-heading)" }}
           >
-            Trading Risk/Reward <span className="text-gold">Calculator</span>
+            Risk Reward Ratio <span className="text-gold">Calculator</span>
           </h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            Calculate your exact position size, risk amount, and reward-to-risk ratio before every trade.
-            The same tool ICT traders use to protect their capital.
+            Free risk reward ratio calculator for forex, futures, and prop firm traders.
+            Enter your entry, stop loss, and take profit — get exact position size, R:R, and dollar risk before every trade.
           </p>
         </div>
 

@@ -16,7 +16,10 @@ const organizationLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "R2F Trading",
-  alternateName: "Road to Funded",
+  // alternateName accepts an array — these are the EXACT brand strings
+  // people search for. Without "R2F" here, GSC shows our own brand at
+  // position 47 for the literal query "r2f". Listing them all fixes that.
+  alternateName: ["R2F", "Road to Funded", "R2FTrading", "Road 2 Funded"],
   url: "https://www.r2ftrading.com",
   logo: "https://www.r2ftrading.com/favicon.png",
   description: "Professional ICT trading coaching and mentorship with Harvest Wright. Personalized 1-on-1 sessions for traders at all levels.",
