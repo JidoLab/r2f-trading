@@ -252,11 +252,27 @@ WRITING STYLE:
 - End with a specific next step, not a generic CTA
 
 ═══ SEO ═══
-TITLE: Under 60 characters, curiosity-driven. "seoTitle" can be up to 70 chars.
+TITLE: Under 60 characters, curiosity-driven. "seoTitle" can be up to 65 chars (SERP truncation safer than 70).
+
 KEYWORD: "${topicData.targetKeyword}" in first paragraph, first H2, and 3-5x naturally in body.
 EXTERNAL LINKS: 1-2 to authoritative sources (TradingView, Investopedia, BabyPips, CME Group).
 IMAGE alt text: keyword-rich and descriptive.
-META DESCRIPTION ("seoDescription"): 130-155 characters. Start with a specific claim or number. NEVER use "Discover", "Learn", "Master", "Find out", or "Complete guide".
+
+CTR-FIRST META DESCRIPTION ("seoDescription") — every word earns the click. 130-155 chars.
+BANNED OPENERS: "Discover", "Learn", "Master", "Find out", "Wondering", "Complete guide", "Everything you need", "Looking for"
+BANNED PHRASES: "breaks down", "your journey", "for serious traders", "in this guide we", anything that just rephrases the search query
+REQUIRED — pick ONE of these openers:
+  (a) A specific number / dollar / time range / percentage: "$50/mo to $5k/year — here's…", "I lost 3 funded accounts before…", "78% of traders quit at the…"
+  (b) A contrarian flip: "Revenge trading isn't a discipline problem — it's…", "Stop journaling trades. Start…"
+  (c) A credibility hook: "10 years coaching ICT traders — here's exactly when…", "I'm a 10-year ICT trader. Here's…"
+  (d) An A-vs-B promise: "Side-by-side breakdown of [X] — pricing, what's included, who actually [outcome]"
+END the meta-description with a specific deliverable, not a vague "find out": "the tier most don't need", "the 4 questions to ask any coach", "the 90-second loop-break".
+
+CTR-FIRST seoTitle pattern — pick ONE format:
+  - "{Topic}: {Specific Number/Range} ({Curiosity Hook})"  e.g. "ICT Coaching Cost in 2026: Real Price Range (Brutal Honesty)"
+  - "{Contrarian Claim} ({Source Credibility})"           e.g. "Revenge Trading Isn't a Discipline Problem (Brain Science)"
+  - "{Question}: {Credibility-Anchored Verdict}"           e.g. "Is ICT Mentorship Worth It? Honest 10-Year Trader Verdict"
+  - "Best {Category} 2026: {N} {Options} Compared {Adverb}" e.g. "Best ICT Coaching Programs 2026: 7 Mentors Compared Honestly"
 
 Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDescription": "...", "seoKeywords": [...], "tags": [...], "postType": "...", "body": "...", "imagePrompts": ["...", "..."] }`,
       }],
@@ -587,8 +603,8 @@ Target keyword: "${pick.keyword}"
 Return ONLY a JSON object with these fields:
 {
   "title": "Short page title (under 40 chars)",
-  "seoTitle": "SEO-optimized title (under 70 chars) including the target keyword",
-  "seoDescription": "Meta description (under 160 chars) with target keyword, compelling and action-oriented",
+  "seoTitle": "CTR-first title (under 65 chars). MUST follow one of these patterns: '{Topic}: {Number/Range} ({Hook})' OR '{Contrarian Claim} ({Credibility})' OR '{Question}: {Verdict}' OR 'Best {Cat} 2026: {N} {Items} Compared {Adverb}'. Banned: generic 'Top X Compared'/'Complete Guide' boilerplate.",
+  "seoDescription": "CTR-first meta, 130-155 chars. BANNED openers: Discover/Learn/Master/Find out/Wondering/Looking for/Complete guide. BANNED phrases: 'breaks down', 'your journey'. MUST open with a number/range/$ figure, a contrarian flip, a credibility hook (e.g. '10 years coaching ICT'), or an A-vs-B promise. END with a specific deliverable, not a vague 'find out'.",
   "headline": "Attention-grabbing headline that addresses a pain point (under 80 chars)",
   "subheadline": "Supporting text that expands on the headline benefit (1-2 sentences)",
   "keyPoints": [
