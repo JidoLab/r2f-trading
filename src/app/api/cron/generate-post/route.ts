@@ -54,20 +54,34 @@ export async function GET(req: NextRequest) {
       marketContext = await buildMarketContext();
     } catch {}
 
-    // Determine which categories and post types have been used recently
+    // Determine which categories and post types have been used recently.
+    // Keyword maps drive both classification of past posts and the
+    // leastUsedCategory rotation that the prompt steers toward.
     const recentCategories = existingTitles.slice(0, 8).map(t => {
       const words = t.replace(/^\d{4}-\d{2}-\d{2}-/, "").split("-");
       if (words.some(w => ["fvg", "order", "block", "liquidity", "killzone", "breaker", "ote", "displacement"].includes(w))) return "ICT Concepts";
       if (words.some(w => ["psychology", "mindset", "discipline", "fear", "revenge", "emotion", "patience"].includes(w))) return "Trading Psychology";
       if (words.some(w => ["risk", "position", "sizing", "drawdown"].includes(w))) return "Risk Management";
       if (words.some(w => ["funded", "ftmo", "prop", "firm", "challenge", "payout"].includes(w))) return "Funded Accounts";
-      if (words.some(w => ["beginner", "start", "basic", "learn", "guide"].includes(w))) return "Beginner Guides";
+      if (words.some(w => ["beginner", "start", "basic", "learn", "guide"].includes(w))) return "Beginner reality-checks";
+      if (words.some(w => ["grail", "secret", "magic", "indicator", "system", "method"].includes(w))) return "The Holy Grail Trap";
+      if (words.some(w => ["losing", "still", "broken", "blew", "blown", "failed", "stuck", "plateau"].includes(w))) return "Why-am-I-still-losing";
       return "Other";
     });
     const categoryCount: Record<string, number> = {};
     recentCategories.forEach(c => { categoryCount[c] = (categoryCount[c] || 0) + 1; });
-    const leastUsedCategory = ["ICT Concepts", "Trading Psychology", "Risk Management", "Funded Accounts", "Beginner Guides", "Personal Stories", "Market Analysis"]
-      .sort((a, b) => (categoryCount[a] || 0) - (categoryCount[b] || 0))[0];
+    // Pain-point driven categories. Market Analysis dropped — news-event
+    // topics are explicitly banned in the prompt now.
+    const leastUsedCategory = [
+      "Why-am-I-still-losing",
+      "ICT Concepts",
+      "Trading Psychology",
+      "Risk Management",
+      "Funded Accounts",
+      "The Holy Grail Trap",
+      "Personal Stories",
+      "Beginner reality-checks",
+    ].sort((a, b) => (categoryCount[a] || 0) - (categoryCount[b] || 0))[0];
 
     // Topic selection with retry — Claude occasionally picks a topic too close
     // to an existing post. Instead of bailing (skipping the whole day's post),
@@ -96,24 +110,36 @@ ${marketContext}${rejectedBlock}
 
 Generate ONE fresh blog topic.
 
-QUALITY-FIRST APPROACH — This article must pass Google's test: "Would this content exist if search engines didn't exist?" Choose topics where Harvest's real experience adds unique value.
+AUDIENCE — write FOR the struggling trader. The reader has been at this 6 months to 3 years. They've blown at least one account (maybe several funded ones). They're convinced "one more piece" will make it click — the magic indicator, the secret setup, the killzone nobody else uses, the one rule that finally separates pros from amateurs. Your job is to meet them where they are: validate the frustration, then reframe the actual problem (usually NOT what they think it is).
+
+QUALITY-FIRST APPROACH — This article must pass Google's test: "Would this content exist if search engines didn't exist?" Choose topics where 10+ years of real ICT experience adds unique value.
 
 CRITICAL RULES:
 1. TITLE MUST be under 60 characters. Short, punchy, curiosity-driven. Examples: "Why Your FVGs Keep Failing", "The 1% Rule That Changed Everything", "ICT Killzones: A Complete Guide"
-2. DO NOT write another CPI, NFP, or FOMC article if one already exists. Economic events max 1 per week.
-3. Market context is for INSPIRATION only. Most posts should be EVERGREEN educational content.
-4. The ANGLE must describe a UNIQUE perspective that can't be found by summarizing Google page 1 results. Think: what non-obvious observation from years of trading experience won't appear on a YouTube video summary?
+2. **NO NEWS-EVENT TOPICS.** Do NOT write about CPI, NFP, FOMC, GDP, Fed meetings, jobs reports, ECB, BoJ, or any specific upcoming economic event. These articles age out in 48 hours and are NOT what struggling traders search for. Pick evergreen topics that will still be valuable in 6 months.
+3. DO NOT use the market context above to choose the topic. It's there for tone calibration only. The topic must be EVERGREEN.
+4. The ANGLE must describe a UNIQUE perspective that can't be found by summarizing Google page 1 results. Think: what non-obvious observation from years of coaching struggling traders won't appear on a YouTube video summary?
 
 STRONG PREFERENCE for category: "${leastUsedCategory}" (least covered recently).
 
-TOPIC DIVERSITY — rotate through these categories evenly:
-- ICT Concepts (order blocks, FVGs, liquidity, killzones, breaker blocks, OTE)
-- Trading Psychology (mindset, discipline, fear, greed, revenge trading)
-- Risk Management (position sizing, drawdown, risk-reward, account protection)
-- Funded Accounts (prop firm tips, challenge strategies, payout stories)
-- Beginner Guides (getting started, platform setup, terminology)
-- Market Analysis (specific pair/asset analysis, session breakdowns)
-- Personal Stories (lessons learned, failures, breakthroughs)
+TOPIC DIVERSITY — rotate through these categories evenly. ALL of these are pain-point driven, NOT news-driven:
+- **Why-am-I-still-losing** (the bigger question struggling traders won't admit they're asking — survivorship bias, the gap between knowing and doing, why "more screen time" makes it worse)
+- **ICT Concepts** (order blocks, FVGs, liquidity, killzones, breaker blocks, OTE — but framed as "why yours keep failing" or "the part nobody teaches", not "what is X")
+- **Trading Psychology** (mindset, discipline, the relapse cycle, what blowing the 4th funded account actually feels like, why your trading journal isn't helping)
+- **Risk Management** (the real reason 1% per trade still kills accounts, why the prop firm rules are designed to make you fail, drawdown psychology)
+- **Funded Accounts** (the truth about payout ratios, why you keep failing Phase 2 specifically, when to walk away from prop firms)
+- **The "Holy Grail" Trap** (the indicator/setup/system mindset, why traders quit one strategy days before it would have worked, the seduction of new methodologies)
+- **Personal Stories** (specific failure → lesson, the day everything clicked, the trade that taught more than 100 winners)
+- **Beginner reality-checks** (what 6 months in actually feels like, the unsexy truths nobody tells beginners)
+
+HIGH-VALUE ANGLES (struggling traders click these every time):
+- "Why your [X] keep failing"
+- "The part of [setup] nobody teaches"
+- "I traded for [N] years before I realized this about [concept]"
+- "[Holy-grail thing] won't fix what's actually broken"
+- "The brutal truth about [thing the trader is hoping will save them]"
+- "What [N] funded-account fails taught me about [topic]"
+- "Stop searching for [thing] — start [different thing]"
 
 POST TYPES — cycle through these (pick one NOT recently used):
 how-to, listicle, case-study, comparison, faq, personal-story, checklist, myth-buster
