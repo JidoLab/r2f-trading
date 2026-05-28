@@ -2088,5 +2088,55 @@
     "commentedAt": "2026-05-28T13:01:32.235Z",
     "permalink": "/r/Forexstrategy/comments/1tphnq9/the_guru_signal_groups_are_designed_to_liquidate/ood584c/",
     "commentId": "ood584c"
+  },
+  {
+    "postId": "1tq7lt1",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Simplifying Risk management for Gold and Silver traders with lot size",
+    "commentText": "for the journaling side, tbh the thing most platforms miss is logging *why* you took the trade, not just the result. like for XAUUSD specifically, being able to tag whether your entry was an FVG fill or an OB during NY killzone on the 15m tells you way more than just win/loss over time. that pattern recognition on *session + concept* is where the real edge shows up in the data.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-28T18:00:41.084Z",
+    "permalink": "/r/Forexstrategy/comments/1tq7lt1/simplifying_risk_management_for_gold_and_silver/oof0bdh/",
+    "commentId": "oof0bdh"
+  },
+  {
+    "postId": "1tq33h8",
+    "subreddit": "Forexstrategy",
+    "postTitle": "EURUSD 4H SHORT — Liquidity Hunt into 1.1660–1.1680 Supply (Conflux AI A-Grade)",
+    "commentText": "on the 15m confirmed entry, try marking the actual displacement candle that caused the ChoCH — not just the ChoCH level itself, but the candle body. if price retraces into that candle's body during NY open (between 9:30–10am EST), that's your OB entry, not just a random limit in the zone. tbh the difference between getting swept out at 1.1710 and holding through to TP2 usually comes down to whether you entered on the OB retest or just slapped a limit at 1.1680 hoping for the best 🎯",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-28T18:00:51.317Z",
+    "permalink": "/r/Forexstrategy/comments/1tq33h8/eurusd_4h_short_liquidity_hunt_into_1166011680/oof0cqa/",
+    "commentId": "oof0cqa"
+  },
+  {
+    "postId": "1tpv896",
+    "subreddit": "Forexstrategy",
+    "postTitle": "🤔 Smart Money Buying Gold Here… Or Trapping Late Buyers Again?",
+    "commentText": "i had this exact problem last month on XAUUSD, H4 chart looked like a clean bullish OB retest right before new york open but price just knifed straight through it and took out every late buyer within 20 minutes. tbh the tell was the daily still showed an unmitigated bearish FVG sitting about $40 higher, smart money needed liquidity resting above before any real reversal. if there's no sweep of the sell side AND that higher FVG hasn't been filled yet, i'd be real careful calling this accumulation 🧐",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-28T18:01:00.160Z",
+    "permalink": "/r/Forexstrategy/comments/1tpv896/smart_money_buying_gold_here_or_trapping_late/oof0dz5/",
+    "commentId": "oof0dz5"
+  },
+  {
+    "postId": "1tq6ivb",
+    "subreddit": "Forexstrategy",
+    "postTitle": "15m Fib Continuation strategy (scroll for the Auto analysis indicator on the last picture)",
+    "commentText": "try pairing your 15m fib levels with the nearest FVG on the same timeframe before entry. if the fib retracement lands inside an imbalance during NY killzone, that confluence is way stronger than the fib alone imo. mechanical gets even cleaner when you add that filter because you're not just catching price at a number, you're catching it at an inefficiency that actually needs to be filled.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-28T18:01:10.153Z",
+    "permalink": "/r/Forexstrategy/comments/1tq6ivb/15m_fib_continuation_strategy_scroll_for_the_auto/oof0fcu/",
+    "commentId": "oof0fcu"
+  },
+  {
+    "postId": "1tq5n3w",
+    "subreddit": "Forexstrategy",
+    "postTitle": "🚨 SELLERS ARE ABOUT TO GET WIPED OUT IN GOLD 🚨",
+    "commentText": "that $4367 level holding is interesting but tbh the real question is whether we actually got a clean BOS on the 1H after that 8-hour consolidation or just a liquidity grab that trapped late longs into thinking reversal confirmed. imo a lot of people are going to get burned calling this a full reversal without seeing price reclaim the $4500 OB on the 4H first. are you looking at that bounce on the 15m or 1h? makes a huge difference for OB validity and whether that \"sharp bullish candle\" is actually displacement or just a reactive wick into sell-side liquidity above.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-28T18:01:18.045Z",
+    "permalink": "/r/Forexstrategy/comments/1tq5n3w/sellers_are_about_to_get_wiped_out_in_gold/oof0gcn/",
+    "commentId": "oof0gcn"
   }
 ]
