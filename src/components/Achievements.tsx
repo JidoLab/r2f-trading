@@ -46,14 +46,17 @@ export default function Achievements() {
                 className="rounded-lg overflow-hidden bg-white/5 border border-white/10 hover:border-gold/40 transition-colors group text-left cursor-pointer"
               >
                 <div className="aspect-square overflow-hidden relative">
-                  {/* Next/Image auto-serves AVIF/WebP at the rendered size
-                      (~400px square instead of the 2044px source PNG/JPG).
-                      Cuts tradingview-competition.jpg from 2.4 MB to ~50 KB. */}
+                  {/* Next/Image auto-serves AVIF/WebP at the rendered size.
+                      sizes is tight (360px max on desktop because the grid
+                      cell never exceeds that inside the max-w-5xl container)
+                      so the optimizer picks the 384w variant instead of
+                      750w — saves ~50 KiB across the 3 images per the
+                      2026-05-28 PSI re-audit. */}
                   <Image
                     src={item.image}
                     alt={item.alt}
                     fill
-                    sizes="(max-width: 640px) 100vw, 33vw"
+                    sizes="(min-width: 640px) 360px, 100vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

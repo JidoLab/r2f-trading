@@ -93,11 +93,14 @@ export default function RootLayout({
       style={{ height: "auto" }}
     >
       <head>
+        {/* Google Tag Manager — deferred to window onload so it doesn't
+            burn 178ms of main-thread time during the LCP race. Pageview
+            events still fire; they just wait until LCP is done. */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-DL8TG7YHRN"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
