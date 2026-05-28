@@ -59,37 +59,40 @@
     "email": "kannan196@yahoo.com",
     "name": "Bala",
     "date": "2026-05-22T10:39:45.042Z",
-    "day": 4,
+    "day": 5,
     "emailsSent": [
       "day1",
       "day2",
       "day3",
       "day4",
-      "day5"
+      "day5",
+      "complete"
     ]
   },
   {
     "email": "honore.trader@gmail.com",
     "name": "Honore",
     "date": "2026-05-22T19:51:11.953Z",
-    "day": 4,
+    "day": 5,
     "emailsSent": [
       "day1",
       "day2",
       "day3",
       "day4",
-      "day5"
+      "day5",
+      "complete"
     ]
   },
   {
     "email": "eaglesfocus01@gmail.com",
     "name": "solomon george",
     "date": "2026-05-24T22:44:01.668Z",
-    "day": 2,
+    "day": 3,
     "emailsSent": [
       "day1",
       "day2",
-      "day3"
+      "day3",
+      "day4"
     ]
   }
 ]
