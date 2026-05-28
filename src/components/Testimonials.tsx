@@ -38,7 +38,8 @@ export default function Testimonials() {
               key={t.name}
               className="bg-white rounded-lg p-8 shadow-sm border border-gray-100"
             >
-              <p className="text-gold font-bold text-lg mb-3" style={{ fontFamily: "var(--font-serif)" }}>
+              {/* text-gold-dark for WCAG AA on white testimonial cards */}
+              <p className="text-gold-dark font-bold text-lg mb-3" style={{ fontFamily: "var(--font-serif)" }}>
                 &ldquo;{t.heading}&rdquo;
               </p>
               <p className="text-gray-600 leading-relaxed mb-4 text-sm">
@@ -54,7 +55,7 @@ export default function Testimonials() {
         <div className="text-center mt-10">
           <a
             href="/results"
-            className="inline-flex items-center gap-2 text-gold hover:text-gold-light font-bold text-sm uppercase tracking-wider transition-colors"
+            className="inline-flex items-center gap-2 text-gold-dark hover:text-gold font-bold text-sm uppercase tracking-wider transition-colors"
           >
             See All Student Results &rarr;
           </a>

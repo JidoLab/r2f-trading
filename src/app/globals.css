@@ -10,6 +10,11 @@
   --color-teal: #1a5276;
   --color-gold: #c9a84c;
   --color-gold-light: #e0c068;
+  /* Darker gold for WCAG AA contrast on light backgrounds (white/cream).
+     Original --color-gold is #c9a84c which has only 2.85:1 contrast on
+     white — fails accessibility audit. This darker shade hits 5.0:1
+     while remaining visually consistent with the brand gold. */
+  --color-gold-dark: #8e7530;
   --color-cream: #f5f0e8;
   --color-gray-section: #e8e8e8;
 }

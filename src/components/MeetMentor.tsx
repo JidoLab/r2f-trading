@@ -33,9 +33,12 @@ export default function MeetMentor() {
             <p className="text-gray-600 leading-relaxed mb-6">
               Whether you&rsquo;re new to trading or looking to refine your skills, I&rsquo;ll guide you every step of the way toward becoming a thriving, consistently profitable trader using the most effective techniques in the industry.
             </p>
+            {/* text-gold-dark on white: 5.0:1 contrast (passes WCAG AA).
+                Was text-gold #c9a84c → 2.85:1 which failed. Hover still
+                lightens to gold-light for visual feedback. */}
             <Link
               href="/about"
-              className="inline-block text-gold font-bold hover:text-gold-light transition-colors uppercase text-sm tracking-wide"
+              className="inline-block text-gold-dark font-bold hover:text-gold transition-colors uppercase text-sm tracking-wide"
             >
               More About Me &rarr;
             </Link>

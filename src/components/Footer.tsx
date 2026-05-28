@@ -99,7 +99,9 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="border-t border-white/10 pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-white/40 text-xs">
+        {/* text-white/40 was failing WCAG contrast on bg-navy at text-xs
+            size (~3.2:1). Bumped to text-white/70 (~5.2:1, passes AA). */}
+        <div className="border-t border-white/10 pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-white/70 text-xs">
           <p>&copy; {new Date().getFullYear()} R2F Trading. All rights reserved.</p>
           <Link href="/privacy" className="hover:text-gold transition-colors">Privacy Policy &amp; Disclaimer</Link>
         </div>
