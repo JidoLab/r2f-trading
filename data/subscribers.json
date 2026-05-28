@@ -112,7 +112,7 @@
   {
     "email": "honore.trader@gmail.com",
     "date": "2026-05-22T19:54:53.128Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "referralCode": "R2F-zttm23",
     "referredBy": null,
     "referralCount": 0,
@@ -122,7 +122,8 @@
     "events": [],
     "lastActivity": "2026-05-22T19:54:53.128Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   },
   {
@@ -153,6 +154,20 @@
     "dripsSent": 0,
     "referralCode": "R2F-bybt8j",
     "referredBy": null,
-    "referralCount": 0
+    "referralCount": 0,
+    "score": 10,
+    "segment": "cold",
+    "events": [
+      {
+        "type": "blog_read",
+        "date": "2026-05-28T09:00:05.007Z"
+      },
+      {
+        "type": "blog_read",
+        "date": "2026-05-28T09:00:05.007Z"
+      }
+    ],
+    "lastActivity": "2026-05-28T09:00:05.007Z",
+    "dripsHistory": []
   }
 ]
