@@ -67,7 +67,7 @@
     "authorName": "XA trader ",
     "suggestedReply": "Interesting take on calling these \"algorithmic secrets\" because in my experience the real edge isn't in the SMT divergence itself but in WHERE you look for it. I teach my students to confirm SMT between correlated pairs only at key session opens like London or New York, not mid-session noise. The algorithm respects time, not just price. That filter alone has cleaned up a lot of choppy trades for them.",
     "createdAt": "2026-05-28T00:31:12.155Z",
-    "status": "pending"
+    "status": "used"
   },
   {
     "id": "sug-1779928275442-eclns",
