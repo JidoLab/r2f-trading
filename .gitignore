@@ -41,3 +41,11 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# Design assets at repo root — keep PSDs and raw image exports out of git
+/*.psd
+/*.ai
+/*.sketch
+/Gemini_Generated_*.png
+/Gemini_Generated_*.jpg
+/Gemini_Generated_*.jpeg
