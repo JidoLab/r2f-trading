@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -15,9 +16,25 @@ export default function Hero() {
           animation: none;
         }
       `}</style>
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/hero-bg.png')" }}
+      {/*
+        Hero background — was a CSS background-image on a 3.29MB PNG, which
+        gave us a 43.2s mobile LCP and dragged Google's mobile-first index
+        away from the site entirely (May 2026 GSC audit). Next/Image with
+        priority + sizes:
+          - Auto-generates AVIF/WebP variants per device
+          - Preload hint injected into <head> so browser fetches it ASAP
+          - Mobile receives ~50-100KB instead of 3.29MB
+        Empty alt is intentional — this is decorative; the H1 carries meaning.
+      */}
+      <Image
+        src="/hero-bg.png"
+        alt=""
+        fill
+        priority
+        fetchPriority="high"
+        sizes="100vw"
+        quality={75}
+        className="object-cover object-center"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/60 to-transparent" />
 
