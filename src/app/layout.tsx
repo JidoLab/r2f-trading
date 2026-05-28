@@ -5,16 +5,31 @@ import Script from "next/script";
 import ClientWidgets from "@/components/ClientWidgets";
 import "./globals.css";
 
+// display: 'swap' = browser paints text with a fallback system font
+// immediately, then swaps in the Google Font when it loads. Per the
+// 2026-05-28 PSI audit, font load was blocking LCP — adding ~1.1s of
+// "Element Render Delay" while the browser waited for woff2 files to
+// finish. This single flag drops that toward ~0.
+//
+// Open Sans trimmed from 5 weights (300/400/600/700/800) to 3 (400/600/
+// 700). Drops the rare-use 300 (light) and 800 (extrabold) which aren't
+// used anywhere in the codebase. ~40% font byte savings.
+//
+// Merriweather kept at original weights — the testimonial section uses
+// both italic AND non-italic + bold serif, can't trim without visual
+// regression.
 const bebasNeue = Bebas_Neue({
   variable: "--font-heading",
   subsets: ["latin"],
   weight: "400",
+  display: "swap",
 });
 
 const openSans = Open_Sans({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700", "800"],
+  weight: ["400", "600", "700"],
+  display: "swap",
 });
 
 const merriweather = Merriweather({
@@ -22,6 +37,7 @@ const merriweather = Merriweather({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
   style: ["normal", "italic"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
