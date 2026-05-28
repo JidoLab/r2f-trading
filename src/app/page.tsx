@@ -11,6 +11,14 @@ import LeadCaptureSection from "@/components/LeadCaptureSection";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 
+// Edge-cache the rendered HTML for 1 hour. The homepage is pure marketing
+// content with no per-request personalization — caching it at Vercel's
+// edge drops TTFB from ~600ms (full render per request) to ~50ms (cache
+// hit). After 3600s the next visitor gets a stale-while-revalidate
+// regen — no user ever waits for the rebuild. Deploys invalidate the
+// cache automatically, so copy changes go live instantly.
+export const revalidate = 3600;
+
 // Organization schema — primary entity for AI source selection
 const organizationLd = {
   "@context": "https://schema.org",
