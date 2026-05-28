@@ -2058,5 +2058,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-05-28T12:00:32.309Z",
+    "type": "text",
+    "postType": "promo-results",
+    "text": "R2F traders are passing funded challenges at an 85%+ rate heading into GDP week. Structure beats gue",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
