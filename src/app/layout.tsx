@@ -93,14 +93,20 @@ export default function RootLayout({
       style={{ height: "auto" }}
     >
       <head>
-        {/* Google Tag Manager — deferred to window onload so it doesn't
-            burn 178ms of main-thread time during the LCP race. Pageview
-            events still fire; they just wait until LCP is done. */}
+        {/* Google Tag Manager — kept on afterInteractive (NOT lazyOnload).
+            We tried lazyOnload on 2026-05-28 to save 178ms of main-thread
+            time during the LCP race, but the PSI re-audit revealed it
+            caused 3,500+ms of TBT regression: when GTM defers until the
+            full DOM has rendered, every property query it does (offsetWidth,
+            getBoundingClientRect for tracking visibility) triggers a forced
+            reflow of the entire complex tree — two ~380ms reflows attributed
+            directly to gtag/js. afterInteractive runs GTM with a small DOM,
+            keeping reflows cheap. Net: afterInteractive wins decisively. */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-DL8TG7YHRN"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="lazyOnload">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
