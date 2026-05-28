@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-28-why-more-screen-time-is-making-you-worse",
+    "syndicatedAt": "2026-05-28T12:02:50.453Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-28-why-more-screen-time-is-making-you-worse",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/why-more-screen-time-is-making-you-worse-1gd",
+        "id": "3771055"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-28-why-more-screen-time-is-making-you-worse"
+  },
+  {
     "slug": "2026-05-25-gdp-week-trading-control-your-emotions-not-the-chart",
     "syndicatedAt": "2026-05-25T00:33:15.852Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-25-gdp-week-trading-control-your-emotions-not-the-chart",
