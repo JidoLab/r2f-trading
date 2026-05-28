@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-05-28",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1779935376760-0",
+        "title": "With 43 shorts ready and only 30 published, manually review and schedule the remaining 13 shorts across YouTube, TikTok, and Instagram Reels to maximize reach this week.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1779935376760-1",
+        "title": "Zero new subscribers in the last day signals a traffic problem — manually launch a targeted Facebook or Google ad campaign focused on ICT trading keywords to drive fresh leads into the funnel.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1779935376760-2",
+        "title": "All 5 existing subscribers are cold with an average of 6.8 drips each, meaning they're likely near drip exhaustion — personally reach out to each one via a direct Telegram or WhatsApp voice message from Harvest to re-engage with a human touch.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1779935376760-3",
+        "title": "Reddit posted 0 comments yesterday with 0 upvotes total, suggesting the automated engagement may be getting flagged or ignored — manually visit r/Forex and r/Daytrading today and post 2–3 genuinely helpful ICT-related comments from Harvest's personal account to build credibility.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-05-25",
     "tasks": [
       {
