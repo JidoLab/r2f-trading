@@ -2138,5 +2138,15 @@
     "commentedAt": "2026-05-28T18:01:18.045Z",
     "permalink": "/r/Forexstrategy/comments/1tq5n3w/sellers_are_about_to_get_wiped_out_in_gold/oof0gcn/",
     "commentId": "oof0gcn"
+  },
+  {
+    "postId": "1tq355y",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Central Bank Dealing Range on NQ/ES",
+    "commentText": "the CBDR absolutely applies to indices tbh, you just have to calibrate it differently since NQ and ES are point-based not pip-based. for NQ i typically look for a 30-50 point range during the 2-5pm new york session as your \"dealing range,\" and if price is outside that by the london open you're usually looking at a draw on liquidity back inside it. are you marking the CBDR on the 15m or just eyeballing the highs and lows, because the way you define those boundary wicks changes everything for where you'd expect price to seek equilibrium before the ny open session kills it?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-29T08:00:36.911Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tq355y/central_bank_dealing_range_on_nqes/ooj3487/",
+    "commentId": "ooj3487"
   }
 ]
