@@ -1,25 +1,5 @@
 [
   {
-    "postId": "1t2zn5x",
-    "subreddit": "Trading",
-    "postTitle": "Is anyone actually making consistent money with Prop Firms, or is it all just marketing hype?",
-    "commentText": "consistent payouts are real but it's nowhere near as common as the content makes it look tbh. the guys i've seen actually pass and hold funded accounts long-term are trading something like the 15m NQ or GU, waiting for a proper london session displacement with a clean FVG to fill — not just clicking buttons on every setup. the problem is most people buying into the \"easy funded\" narrative are overtrading during NY overlap when spreads and stop hunts wreck their drawdown before they even get close to a payout. the firm owners AND the gurus are definitely eating well, but that doesn't mean there's zero money to be made — it just means the edge has to be real, not borrowed from a youtube recap. 🎯",
-    "mentionedR2F": true,
-    "commentedAt": "2026-05-04T06:31:25.763Z",
-    "permalink": "/r/Trading/comments/1t2zn5x/is_anyone_actually_making_consistent_money_with/ojtji0l/",
-    "commentId": "ojtji0l"
-  },
-  {
-    "postId": "1t35mh6",
-    "subreddit": "Trading",
-    "postTitle": "To all of the new traders out there, pls don't fall for those trading influencers/gurus",
-    "commentText": "the alpha decay point is underrated and nobody talks about it enough tbh. most of these gurus are teaching strategies that worked in 2021-2022 market conditions and are now completely cooked because liquidity patterns have shifted. you're 100% right that chart time is the answer, specifically studying how price interacts with HTF FVGs during the ny open kill zone is worth more than any $500 course. are you doing most of your screen time on the 15m or pulling back to the 1h first, because the way you anchor your bias changes everything for execution?",
-    "mentionedR2F": false,
-    "commentedAt": "2026-05-04T06:31:33.980Z",
-    "permalink": "/r/Trading/comments/1t35mh6/to_all_of_the_new_traders_out_there_pls_dont_fall/ojtjilc/",
-    "commentId": "ojtjilc"
-  },
-  {
     "postId": "1t2fg8u",
     "subreddit": "Trading",
     "postTitle": "A Letter to the Trader who just hit zero",
@@ -2176,5 +2156,35 @@
     "commentedAt": "2026-05-29T08:00:36.911Z",
     "permalink": "/r/InnerCircleTraders/comments/1tq355y/central_bank_dealing_range_on_nqes/ooj3487/",
     "commentId": "ooj3487"
+  },
+  {
+    "postId": "1tr2kur",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Why Most Traders Lose Trading Pullbacks (And How I Use ICT + Mean Reversion Instead)",
+    "commentText": "the real problem with mean reversion pullbacks is traders are picking levels without confluence — if your \"mean\" isn't sitting inside a 15m FVG or at least respected by a prior 4H OB, you're just guessing at a line. on EURUSD specifically, i'll only take the reversion entry if price has already shown a BOS on the lower timeframe first, otherwise you're catching a knife and calling it a strategy. tbh combining ICT with mean reversion is genuinely solid but the entry trigger has to be mechanical, not vibes.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-29T18:00:48.717Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tr2kur/why_most_traders_lose_trading_pullbacks_and_how_i/oom53ef/",
+    "commentId": "oom53ef"
+  },
+  {
+    "postId": "1tr48kp",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "ICT 2022 Mentorship - How to get started",
+    "commentText": "i had this exact problem when i first started, spent weeks confused before someone told me to just watch the free ICT youtube content in order starting from his older core content videos before even touching 2022 mentorship. tbh trying to jump into 2022 mentorship without knowing what a displacement or a FVG even looks like is like trying to read chapter 10 before chapter 1. get comfortable just watching price move on like the 15m EURUSD during london open first, no trades, just observation. once displacement and inefficiencies start to visually \"click\" on the chart, the 2022 mentorship will actually make sense instead of just being noise.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-29T18:01:00.816Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tr48kp/ict_2022_mentorship_how_to_get_started/oom5533/",
+    "commentId": "oom5533"
+  },
+  {
+    "postId": "1tqzg38",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Pre NY Open Sell, 5 Min entry. Price is respecting Fair Value",
+    "commentText": "respecting a FVG on the 5min pre-NY is solid but tbh \"price is respecting\" can flip fast the second NY cash open hits at 9:30. seen so many 5min entries get swept right into the NY open killzone before the real move happens. if there's no confirmed BOS on the 15min yet i'd wait for that first before trusting the FVG hold.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-29T18:01:08.384Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tqzg38/pre_ny_open_sell_5_min_entry_price_is_respecting/oom5655/",
+    "commentId": "oom5655"
   }
 ]
