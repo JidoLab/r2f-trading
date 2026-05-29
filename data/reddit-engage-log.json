@@ -1,15 +1,5 @@
 [
   {
-    "postId": "1t2zn5x",
-    "subreddit": "Trading",
-    "postTitle": "Is anyone actually making consistent money with Prop Firms, or is it all just marketing hype?",
-    "commentText": "consistent payouts are real but it's nowhere near as common as the content makes it look tbh. the guys i've seen actually pass and hold funded accounts long-term are trading something like the 15m NQ or GU, waiting for a proper london session displacement with a clean FVG to fill — not just clicking buttons on every setup. the problem is most people buying into the \"easy funded\" narrative are overtrading during NY overlap when spreads and stop hunts wreck their drawdown before they even get close to a payout. the firm owners AND the gurus are definitely eating well, but that doesn't mean there's zero money to be made — it just means the edge has to be real, not borrowed from a youtube recap. 🎯",
-    "mentionedR2F": true,
-    "commentedAt": "2026-05-04T06:31:25.763Z",
-    "permalink": "/r/Trading/comments/1t2zn5x/is_anyone_actually_making_consistent_money_with/ojtji0l/",
-    "commentId": "ojtji0l"
-  },
-  {
     "postId": "1t35mh6",
     "subreddit": "Trading",
     "postTitle": "To all of the new traders out there, pls don't fall for those trading influencers/gurus",
@@ -2148,5 +2138,25 @@
     "commentedAt": "2026-05-29T08:00:36.911Z",
     "permalink": "/r/InnerCircleTraders/comments/1tq355y/central_bank_dealing_range_on_nqes/ooj3487/",
     "commentId": "ooj3487"
+  },
+  {
+    "postId": "1tqy7xp",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "OTE trading style question",
+    "commentText": "the OTE setup itself is solid but your entry TF might be working against you tbh. dropping to 5min for the reversal confirmation means you're fighting a lot of noise, especially during the NY open when price is sweeping liquidity aggressively before committing to a direction. imo try the 15min for your entry model instead, wait for a clear BOS and then look for the FVG fill within the 62-79% fib range, it filters out a ton of the fake reversals. the 5min has its place but not as your primary entry signal when you're still learning to read structure.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-29T13:00:47.771Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tqy7xp/ote_trading_style_question/ooka3sx/",
+    "commentId": "ooka3sx"
+  },
+  {
+    "postId": "1tqwlkh",
+    "subreddit": "FOREXTRADING",
+    "postTitle": "Looking for a liquidity-based trader to exchange ideas with",
+    "commentText": "been there with the hindsight problem tbh. try this: before NY killzone opens on eurusd, mark the high and low of the london session, then only take entries when you see a sweep of that liquidity followed by a displacement candle on the 5m that leaves a clean FVG. the rule is if you can't identify the sweep AND the FVG before price retraces into it, you don't take the trade. forces you to preplan in real time instead of rationalizing after.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-05-29T13:00:54.407Z",
+    "permalink": "/r/FOREXTRADING/comments/1tqwlkh/looking_for_a_liquiditybased_trader_to_exchange/ooka4ky/",
+    "commentId": "ooka4ky"
   }
 ]
