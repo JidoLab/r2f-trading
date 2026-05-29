@@ -1,5 +1,75 @@
 [
   {
+    "id": "reply-omzk1id",
+    "platform": "reddit",
+    "postTitle": "Alpha futures has 50% off",
+    "subreddit": "InnerCircleTraders",
+    "replyAuthor": "Meretruth",
+    "replyText": "They need to trade with real money, it’s way different than paper trading. ",
+    "commentUrl": "https://www.reddit.com/r/InnerCircleTraders/comments/1tj69zc/alpha_futures_has_50_off/omzk1id/",
+    "detectedAt": "2026-05-29T13:00:49.720Z"
+  },
+  {
+    "id": "reply-omzf2hc",
+    "platform": "reddit",
+    "postTitle": "I have a question about liquidity and fair value gaps. ( I am learning Gold)",
+    "subreddit": "Trading",
+    "replyAuthor": "Many_Faced_God812",
+    "replyText": "Thank you I would have to see to better understand ",
+    "commentUrl": "https://www.reddit.com/r/Trading/comments/1tj2zqc/i_have_a_question_about_liquidity_and_fair_value/omzf2hc/",
+    "detectedAt": "2026-05-29T13:00:49.083Z"
+  },
+  {
+    "id": "reply-omzf1oc",
+    "platform": "reddit",
+    "postTitle": "Trading on Vanguard",
+    "subreddit": "Trading",
+    "replyAuthor": "StationMast",
+    "replyText": "Vanguard does not allow trading before 9:30. They do offer trading from 4pm to 5:30. I managed to unwind several positions during the extended session. I had been warned not to trade before 10am, but probably 10% of my trades were right around market open. If NVDA was trading at $120.50 in the pre-m",
+    "commentUrl": "https://www.reddit.com/r/Trading/comments/1tiwhb2/trading_on_vanguard/omzf1oc/",
+    "detectedAt": "2026-05-29T13:00:48.404Z"
+  },
+  {
+    "id": "reply-omzf0tf",
+    "platform": "reddit",
+    "postTitle": "4 months in, feeling lost (Engineer background). Stick with ICT, switch strategies, or pivot to Quant/Algos despite strategy decay?",
+    "subreddit": "Trading",
+    "replyAuthor": "quesomesopesohueso",
+    "replyText": "Thanks for the reality check.\nYou’re right break-even as a win for risk management at 4 months definitely changes my perspective i have heard people burning accounts left and right in the begginer phase.\nWhat you proposed is actually a strategy i could try to gather a clean dataset without the noise",
+    "commentUrl": "https://www.reddit.com/r/Trading/comments/1tir68g/4_months_in_feeling_lost_engineer_background/omzf0tf/",
+    "detectedAt": "2026-05-29T13:00:47.684Z"
+  },
+  {
+    "id": "reply-omzezvx",
+    "platform": "reddit",
+    "postTitle": "4 months in, feeling lost (Engineer background). Stick with ICT, switch strategies, or pivot to Quant/Algos despite strategy decay?",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "quesomesopesohueso",
+    "replyText": "Moving past the creator's drama and focusing strictly on what price actually does on the chart is the healthiest way to approach this.\nAt the end of the day, liquidity mechanics either show up in the data or they don't. Just backtesting the concepts, keep a strict journal of the setups, and stress-t",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1tird1s/4_months_in_feeling_lost_engineer_background/omzezvx/",
+    "detectedAt": "2026-05-29T13:00:45.700Z"
+  },
+  {
+    "id": "reply-omzeyc6",
+    "platform": "reddit",
+    "postTitle": "I have a question about liquidity and fair value gaps. ( I am learning Gold)",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "Many_Faced_God812",
+    "replyText": "Thank you ",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1tj30aw/i_have_a_question_about_liquidity_and_fair_value/omzeyc6/",
+    "detectedAt": "2026-05-29T13:00:44.431Z"
+  },
+  {
+    "id": "reply-omsnccr",
+    "platform": "reddit",
+    "postTitle": "Please give me some suggestions",
+    "subreddit": "InnerCircleTraders",
+    "replyAuthor": "PastWerewolf23",
+    "replyText": "I understand, will focus on the entries",
+    "commentUrl": "https://www.reddit.com/r/InnerCircleTraders/comments/1thi17r/please_give_me_some_suggestions/omsnccr/",
+    "detectedAt": "2026-05-29T13:00:43.732Z"
+  },
+  {
     "id": "reply-omsif5a",
     "platform": "reddit",
     "postTitle": "Prop firm spreads",
