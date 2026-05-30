@@ -1,15 +1,5 @@
 [
   {
-    "postId": "1t5g95l",
-    "subreddit": "Forexstrategy",
-    "postTitle": "Feedback on my SMC strategy (Gold + all markets)",
-    "commentText": "the fake MSS problem on Gold is almost always a session timing issue — if your 15M MSS forms outside London or NY overlap, it's probably noise, not a real shift. tbh the model you've described is solid but the one thing missing is a higher timeframe PD array to draw price toward, like a 4H FVG or OB acting as a magnet for your 1H sweep. without that you're basically trading structure shifts in a void. for confirmation, i'd add time of day as a hard filter before anything else — kills a ton of bad setups immediately.",
-    "mentionedR2F": false,
-    "commentedAt": "2026-05-07T01:33:03.328Z",
-    "permalink": "/r/Forexstrategy/comments/1t5g95l/feedback_on_my_smc_strategy_gold_all_markets/okd6pa7/",
-    "commentId": "okd6pa7"
-  },
-  {
     "postId": "1t5sud0",
     "subreddit": "ICTMentorship",
     "postTitle": "19 Year old Trying to Make Trading Work",
@@ -2170,5 +2160,15 @@
     "commentedAt": "2026-05-30T08:02:11.550Z",
     "permalink": "/r/Forexstrategy/comments/1tqwjj8/xauusd_overall_structure_is_bullish_short_term/ooq3t2n/",
     "commentId": "ooq3t2n"
+  },
+  {
+    "postId": "1ts2ws4",
+    "subreddit": "swingtrading",
+    "postTitle": "Looking for a mechanical strategy I can trade around work hours (3 years experience, feeling stuck)",
+    "commentText": "since you mentioned you can follow rules like a robot, try this — on the 15m chart, wait for a clean BOS on eurusd or gbpusd during the late NY session, then mark the FVG left behind from the displacement. set a limit order in the middle of that gap with your stop below the swing low and a 1:2 target. tbh this lines up perfectly with your schedule since NY mid-to-late is when those gaps actually get filled.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-30T18:00:18.944Z",
+    "permalink": "/r/swingtrading/comments/1ts2ws4/looking_for_a_mechanical_strategy_i_can_trade/oosuugs/",
+    "commentId": "oosuugs"
   }
 ]
