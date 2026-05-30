@@ -1,19 +1,5 @@
 [
   {
-    "postId": "1t2fg8u",
-    "subreddit": "Trading",
-    "postTitle": "A Letter to the Trader who just hit zero",
-    "commentText": "losing $2k in a single day means position sizing was completely broken, not the market. tbh if he was trading something like EURUSD on a 15m chart and not respecting the prior day's high/low as a draw on liquidity, he was just handing money to institutional flow. the market didn't manipulate him — it swept liquidity exactly where retail always parks stops, which is what it's designed to do.",
-    "mentionedR2F": false,
-    "commentedAt": "2026-05-04T06:31:42.549Z",
-    "permalink": "/r/Trading/comments/1t2fg8u/a_letter_to_the_trader_who_just_hit_zero/ojtjj7y/",
-    "commentId": "ojtjj7y",
-    "hasReply": true,
-    "firstReplyAt": "2026-05-04T06:37:14.000Z",
-    "firstReplyAuthor": "One_Egg_1137",
-    "firstReplyText": "You are , you see it takes so little to start trading that people think it is walk in the park only to find out that it one of the hardest way to make money "
-  },
-  {
     "postId": "1t2mrno",
     "subreddit": "Trading",
     "postTitle": "Profitable futures prop firm traders",
@@ -2186,5 +2172,15 @@
     "commentedAt": "2026-05-29T18:01:08.384Z",
     "permalink": "/r/InnerCircleTraders/comments/1tqzg38/pre_ny_open_sell_5_min_entry_price_is_respecting/oom5655/",
     "commentId": "oom5655"
+  },
+  {
+    "postId": "1tqwlkh",
+    "subreddit": "FOREXTRADING",
+    "postTitle": "Looking for a liquidity-based trader to exchange ideas with",
+    "commentText": "the gap between backtesting and live execution is real and tbh it usually comes down to one thing: in backtesting you already know where price is going, so every OB looks clean in hindsight. in live you're watching a candle form and second-guessing whether the displacement is strong enough to validate the block. are you marking your OBs on the 15m or the 1h before dropping to execution? because a 15m OB with no confluence on the higher timeframe is probably where a lot of those hesitation moments are coming from.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-30T03:00:50.219Z",
+    "permalink": "/r/FOREXTRADING/comments/1tqwlkh/looking_for_a_liquiditybased_trader_to_exchange/oop0i89/",
+    "commentId": "oop0i89"
   }
 ]
