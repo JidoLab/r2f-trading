@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "hot-take",
     "quote",
     "story",
     "tip",
@@ -29,11 +28,12 @@
     "tip",
     "promo-results",
     "promo-checklist",
-    "myth"
+    "myth",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "myth",
-    "text": "MYTH: 'Sell in May' means sit out the whole month. TRUTH: Smart money doesn't take months off — they hunt liquidity. Order blocks and fair value gaps printed clean setups all May. #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-05-30T12:00:55.923Z"
+    "type": "poll-native",
+    "text": "It's Sunday — time to set your weekly bias. Which tool do you trust MOST going into the week? #ICTTrading #SmartMoney\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ HTF Structure\n🅳️ News + ICT combo\n\nVote below! 👇",
+    "date": "2026-05-31T12:00:38.470Z"
   }
 }
