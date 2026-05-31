@@ -1705,7 +1705,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-25T03:01:24.653Z",
     "permalink": "/r/Forexstrategy/comments/1tmdfw3/15m_fib_continuation_strategy/onpwj6e/",
-    "commentId": "onpwj6e"
+    "commentId": "onpwj6e",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-25T11:22:47.000Z",
+    "firstReplyAuthor": "Entire_Efficiency_37",
+    "firstReplyText": "I’ve just hit 50 years combined data collection across the major fx pairs,commodities and indices, I’ve honestly found a lot of refinements to the model like now I leave my stop not at the swing H or L but at the 1.025 level on the fib and just target a fixed 1:3,there’s so much customisation you ca"
   },
   {
     "postId": "1tmj3k8",
@@ -1715,7 +1719,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-05-25T03:01:31.391Z",
     "permalink": "/r/Forexstrategy/comments/1tmj3k8/the_path_of_least_resistance_for_gold_is_still/onpwjtm/",
-    "commentId": "onpwjtm"
+    "commentId": "onpwjtm",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-26T06:39:41.000Z",
+    "firstReplyAuthor": "Odd-Reputation8409",
+    "firstReplyText": "Agreed. If that 4240–4400 zone keeps holding on the daily, I’ll be watching the 15m NY killzone for a rejection entry. A failed close above the last bearish candle before displacement would be a clean short setup. 4098 liquidity target aligns well with the weekly draw too."
   },
   {
     "postId": "1tnb3hw",
@@ -1735,7 +1743,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-26T13:00:20.923Z",
     "permalink": "/r/Forexstrategy/comments/1to58jb/structure_liquidity_intraday_strategy_looking_for/onyrod8/",
-    "commentId": "onyrod8"
+    "commentId": "onyrod8",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-26T17:17:00.000Z",
+    "firstReplyAuthor": "Mustbethewater5",
+    "firstReplyText": "Appreciate the feedback. You’re right about the continuation logic being too delayed with full 1H BOS confirmation. The FVG point also makes sense, I’m considering refining entries to focus more on 5M imbalance mitigation inside discount/premium rather than just fib levels alone."
   },
   {
     "postId": "1to0dwq",
@@ -1745,7 +1757,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-26T13:00:27.789Z",
     "permalink": "/r/Forexstrategy/comments/1to0dwq/15m_fib_continuation_strategy/onyrp4g/",
-    "commentId": "onyrp4g"
+    "commentId": "onyrp4g",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-26T13:01:34.000Z",
+    "firstReplyAuthor": "Entire_Efficiency_37",
+    "firstReplyText": "I’ve actually been placing the stop abit higher on the 1.025 level on the fib and aiming   for fixed 1:3 the back testing data aligns too as a lot of the time we end up sweeping the low then going higher "
   },
   {
     "postId": "1tnhc74",
