@@ -1,5 +1,45 @@
 [
   {
+    "id": "reply-onyrp4g",
+    "platform": "reddit",
+    "postTitle": "15m fib continuation strategy",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "Entire_Efficiency_37",
+    "replyText": "I’ve actually been placing the stop abit higher on the 1.025 level on the fib and aiming   for fixed 1:3 the back testing data aligns too as a lot of the time we end up sweeping the low then going higher ",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1to0dwq/15m_fib_continuation_strategy/onyrp4g/",
+    "detectedAt": "2026-05-31T13:01:11.308Z"
+  },
+  {
+    "id": "reply-onyrod8",
+    "platform": "reddit",
+    "postTitle": "Structure + Liquidity Intraday Strategy (Looking for Feedback &amp; Improvements)",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "Mustbethewater5",
+    "replyText": "Appreciate the feedback. You’re right about the continuation logic being too delayed with full 1H BOS confirmation. The FVG point also makes sense, I’m considering refining entries to focus more on 5M imbalance mitigation inside discount/premium rather than just fib levels alone.",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1to58jb/structure_liquidity_intraday_strategy_looking_for/onyrod8/",
+    "detectedAt": "2026-05-31T13:01:10.641Z"
+  },
+  {
+    "id": "reply-onpwjtm",
+    "platform": "reddit",
+    "postTitle": "THE PATH OF LEAST RESISTANCE FOR GOLD IS STILL DOWN",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "Odd-Reputation8409",
+    "replyText": "Agreed. If that 4240–4400 zone keeps holding on the daily, I’ll be watching the 15m NY killzone for a rejection entry. A failed close above the last bearish candle before displacement would be a clean short setup. 4098 liquidity target aligns well with the weekly draw too.",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1tmj3k8/the_path_of_least_resistance_for_gold_is_still/onpwjtm/",
+    "detectedAt": "2026-05-31T13:01:09.306Z"
+  },
+  {
+    "id": "reply-onpwj6e",
+    "platform": "reddit",
+    "postTitle": "15m fib continuation strategy",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "Entire_Efficiency_37",
+    "replyText": "I’ve just hit 50 years combined data collection across the major fx pairs,commodities and indices, I’ve honestly found a lot of refinements to the model like now I leave my stop not at the swing H or L but at the 1.025 level on the fib and just target a fixed 1:3,there’s so much customisation you ca",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1tmdfw3/15m_fib_continuation_strategy/onpwj6e/",
+    "detectedAt": "2026-05-31T13:01:08.672Z"
+  },
+  {
     "id": "reply-onphyth",
     "platform": "reddit",
     "postTitle": "Transition from photon strategy to ICT",
