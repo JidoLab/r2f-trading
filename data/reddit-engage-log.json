@@ -1,19 +1,5 @@
 [
   {
-    "postId": "1t5sud0",
-    "subreddit": "ICTMentorship",
-    "postTitle": "19 Year old Trying to Make Trading Work",
-    "commentText": "the \"make money then give it back the next day\" cycle is almost always an overtrading problem, not a strategy problem — you've got 4 models running simultaneously on a funded account with $500 DD left, that's too many discretionary frameworks competing for your attention tbh. pick one, probably your reversal model since those have the cleanest invalidation points, and only take trades where you can identify a clear MSS on the 15m with a confirming FVG to target. are you marking your entry model bias on the daily and 4h first, or are you just dropping to execution TFs and hunting setups without a top-down narrative locked in?",
-    "mentionedR2F": true,
-    "commentedAt": "2026-05-07T01:33:12.989Z",
-    "permalink": "/r/ICTMentorship/comments/1t5sud0/19_year_old_trying_to_make_trading_work/okd6qat/",
-    "commentId": "okd6qat",
-    "hasReply": true,
-    "firstReplyAt": "2026-05-07T01:44:47.000Z",
-    "firstReplyAuthor": "Fsty420",
-    "firstReplyText": "I do see your point, however why I have created 4 models is because I found that If I only look for reversals maybe 1 day out of the week I'll see a reversal. In a way I want to be able to adapt and play the market everyday or almost everyday.  \nThis this the wrong way to think about trading?  \nAs f"
-  },
-  {
     "postId": "1t54qfc",
     "subreddit": "Forexstrategy",
     "postTitle": "⚠️THIS CONFIRMS EVERYTHING -NEXT BIG MOVE STARTS NOW 🚨💹",
@@ -2170,5 +2156,15 @@
     "commentedAt": "2026-05-30T18:00:18.944Z",
     "permalink": "/r/swingtrading/comments/1ts2ws4/looking_for_a_mechanical_strategy_i_can_trade/oosuugs/",
     "commentId": "oosuugs"
+  },
+  {
+    "postId": "1ts2ak6",
+    "subreddit": "proptrading",
+    "postTitle": "Futures Prop Firms vs Forex Prop Firms – My Experience After Trading Both",
+    "commentText": "futures vs forex prop is honestly a different game imo, and the edge that translates cleanest between both is just respecting killzone timing. try marking your 15m FVGs on ES or NQ during the 9:30-10am NY open killzone specifically, then cross-referencing if that same FVG aligns with a HTF premium/discount array. the firms don't care what instrument you're on, they care if you're consistent, and that killzone discipline is what keeps you out of the choppy garbage in between.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-05-31T08:00:37.245Z",
+    "permalink": "/r/proptrading/comments/1ts2ak6/futures_prop_firms_vs_forex_prop_firms_my/oown47g/",
+    "commentId": "oown47g"
   }
 ]
