@@ -112,7 +112,7 @@
   {
     "email": "honore.trader@gmail.com",
     "date": "2026-05-22T19:54:53.128Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-zttm23",
     "referredBy": null,
     "referralCount": 0,
@@ -123,7 +123,8 @@
     "lastActivity": "2026-05-22T19:54:53.128Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ]
   },
   {
