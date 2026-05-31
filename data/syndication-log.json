@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-05-31-why-knowing-ict-concepts-still-isn-t-enough",
+    "syndicatedAt": "2026-05-31T06:02:42.080Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-31-why-knowing-ict-concepts-still-isn-t-enough",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/why-knowing-ict-concepts-still-isnt-enough-2ddk",
+        "id": "3787412"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "HTTP 502: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-05-31-why-knowing-ict-concepts-still-isn-t-enough"
+  },
+  {
     "slug": "2026-05-30-why-you-pass-phase-1-but-always-fail-phase-2",
     "syndicatedAt": "2026-05-30T12:04:42.130Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-30-why-you-pass-phase-1-but-always-fail-phase-2",
