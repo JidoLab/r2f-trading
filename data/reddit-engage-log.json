@@ -2174,5 +2174,25 @@
     "commentedAt": "2026-06-01T03:00:56.634Z",
     "permalink": "/r/swingtrading/comments/1tt8rja/prop_firms_for_stock_swing_trading/op25fq3/",
     "commentId": "op25fq3"
+  },
+  {
+    "postId": "1ttosdg",
+    "subreddit": "proptrading",
+    "postTitle": "spent the last few weeks building a leaderboard for funded traders, ratio over account size. what am i missing",
+    "commentText": "the ratio metric is clever but it misses consistency entirely — a guy who hit one 20% return in january on a lucky NFP trade looks identical to someone grinding 4-5% monthly on london open using clean displacement off H4 order blocks. tbh i'd want to see something like minimum trade count or a rolling 3-month window before i'd trust any single submission as a legit skill signal rather than a lottery ticket.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-01T13:00:21.681Z",
+    "permalink": "/r/proptrading/comments/1ttosdg/spent_the_last_few_weeks_building_a_leaderboard/op4cgi1/",
+    "commentId": "op4cgi1"
+  },
+  {
+    "postId": "1ttky7h",
+    "subreddit": "proptrading",
+    "postTitle": "Prop Firms In India Are Trash !!",
+    "commentText": "i had this exact problem last year when i was using an indian prop firm and got flagged for \"strategy manipulation\" after holding a eurusd 15m FVG entry through new york open. legit textbook setup, displacement into a clean imbalance, hit TP within the same session. their risk desk had no idea what an imbalance even was tbh. the evaluation rules here are built for retail trend-followers, not anyone trading with actual market structure logic.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-01T13:00:29.933Z",
+    "permalink": "/r/proptrading/comments/1ttky7h/prop_firms_in_india_are_trash/op4chgf/",
+    "commentId": "op4chgf"
   }
 ]
