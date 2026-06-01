@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-06-01-why-you-keep-failing-phase-2-not-phase-1",
+    "syndicatedAt": "2026-06-01T12:03:39.349Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-06-01-why-you-keep-failing-phase-2-not-phase-1",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/why-you-keep-failing-phase-2-not-phase-1-5eam",
+        "id": "3795741"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-06-01-why-you-keep-failing-phase-2-not-phase-1"
+  },
+  {
     "slug": "2026-05-31-why-knowing-ict-perfectly-won-t-make-you-profitable",
     "syndicatedAt": "2026-05-31T12:03:17.002Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-05-31-why-knowing-ict-perfectly-won-t-make-you-profitable",
