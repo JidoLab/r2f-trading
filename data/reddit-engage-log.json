@@ -1,33 +1,5 @@
 [
   {
-    "postId": "1t5pv55",
-    "subreddit": "Forexstrategy",
-    "postTitle": "Anybody know what would cause this?",
-    "commentText": "not saying it's definitely this but FundingTraders (and most props tbh) have a trailing drawdown that locks in at EOD or sometimes even intraday when your equity peaks. so even if your SL wasn't hit on price, if your floating P&L ran up earlier in the session and then retraced, the account equity could've breached the trailing threshold and triggered a force close. been there during NY session on a GBPUSD trade that was technically \"fine\" on the chart but the prop closed it because my peak equity from the london run-up had already set a new drawdown floor.",
-    "mentionedR2F": false,
-    "commentedAt": "2026-05-07T02:32:39.978Z",
-    "permalink": "/r/Forexstrategy/comments/1t5pv55/anybody_know_what_would_cause_this/okdh58f/",
-    "commentId": "okdh58f",
-    "hasReply": true,
-    "firstReplyAt": "2026-05-11T06:14:42.000Z",
-    "firstReplyAuthor": "fundingtraders_care",
-    "firstReplyText": "Kindly check all brokers you have access to and you will see same price action as here."
-  },
-  {
-    "postId": "1t5pfv4",
-    "subreddit": "Forexstrategy",
-    "postTitle": "Guys i know not a big deal but finally after 2 years of trading i am a Funded trader 😭",
-    "commentText": "this happened to me last month... two years of blowing evals before i finally passed holding a GBPUSD trade through a london open displacement into a 15m FVG that i would've panic closed 6 months ago. 😭 the funded milestone isn't the win tbh, it's realizing you actually trust your read now. congrats man, two years is real work.",
-    "mentionedR2F": false,
-    "commentedAt": "2026-05-07T02:32:47.246Z",
-    "permalink": "/r/Forexstrategy/comments/1t5pfv4/guys_i_know_not_a_big_deal_but_finally_after_2/okdh5z5/",
-    "commentId": "okdh5z5",
-    "hasReply": true,
-    "firstReplyAt": "2026-05-07T07:03:37.000Z",
-    "firstReplyAuthor": "ArmadilloFun3422",
-    "firstReplyText": "thanks man means a lot !! 🙏🙏🙏❤️"
-  },
-  {
     "postId": "1t5na6b",
     "subreddit": "Forexstrategy",
     "postTitle": "Support me",
@@ -2182,5 +2154,25 @@
     "commentedAt": "2026-05-31T18:01:07.146Z",
     "permalink": "/r/FOREXTRADING/comments/1tt1w6p/looking_for_the_best_prop_firm_for_large_payouts/oozejoa/",
     "commentId": "oozejoa"
+  },
+  {
+    "postId": "1ttdssq",
+    "subreddit": "swingtrading",
+    "postTitle": "$HMR - The Next Uber - I told you so! Q1 Was a Blockbuster. EPS beat by 1,076%. Q2 Will Be Bigger. Still The Most Undervalued Stock On NASDAQ.  Prove Me Wrong Again.",
+    "commentText": "this happened to me last month chasing a similar micro-cap setup on a 4H chart where the BOS looked clean and fundamentals were genuinely solid. the problem is when the story gets *this* loud, price has usually already discounted a lot of the good news into the current range and you're buying into distribution, not accumulation. that 95c entry is cold hard alpha tbh but anyone entering now needs to identify the actual HTF OB they're leaning on before sizing in.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-01T03:00:49.904Z",
+    "permalink": "/r/swingtrading/comments/1ttdssq/hmr_the_next_uber_i_told_you_so_q1_was_a/op25f3t/",
+    "commentId": "op25f3t"
+  },
+  {
+    "postId": "1tt8rja",
+    "subreddit": "swingtrading",
+    "postTitle": "Prop firms for stock swing trading",
+    "commentText": "prop firms that allow individual stock swing trading are pretty rare tbh — most of the well-known ones like FTMO and similar are forex/futures focused. your best bet right now in 2026 is looking at firms that offer equities accounts specifically, because momentum plays on individual stocks need multi-day holding and most firm rules will penalize overnight exposure hard. the daily OB and weekly FVG setups you'd want to hold into get killed by those overnight restrictions.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-01T03:00:56.634Z",
+    "permalink": "/r/swingtrading/comments/1tt8rja/prop_firms_for_stock_swing_trading/op25fq3/",
+    "commentId": "op25fq3"
   }
 ]
