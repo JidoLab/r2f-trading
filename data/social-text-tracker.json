@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "quote",
     "story",
     "tip",
     "promo-free-class",
@@ -29,11 +28,12 @@
     "promo-results",
     "promo-checklist",
     "myth",
-    "poll-native"
+    "poll-native",
+    "promo-blog"
   ],
   "lastPost": {
-    "type": "poll-native",
-    "text": "It's Sunday — time to set your weekly bias. Which tool do you trust MOST going into the week? #ICTTrading #SmartMoney\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ HTF Structure\n🅳️ News + ICT combo\n\nVote below! 👇",
-    "date": "2026-05-31T12:00:38.470Z"
+    "type": "promo-blog",
+    "text": "NFP week + Monday London open = liquidity trap season. Smart money is already setting up the sweep. I broke down exactly how to position around it. Read it 👇 https://r2ftrading.com/trading-insights #ICTTrading #FairValueGap #FundedTrader",
+    "date": "2026-06-01T12:01:20.063Z"
   }
 }
