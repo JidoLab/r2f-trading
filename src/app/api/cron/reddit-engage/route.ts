@@ -39,10 +39,15 @@ const SEARCH_QUERIES = [
 ];
 
 const LOG_PATH = "data/reddit-engage-log.json";
-// Doubled 5 → 10 on 2026-04-24 per Harvest. Cron runs 2x/day = 20 comments
-// daily across 10 subs (max ~2/sub/day — still well under any rate limit).
+// Doubled 5 → 10 on 2026-04-24 per Harvest. Cron runs 4x/day (3am/8am/
+// 1pm/6pm UTC) = up to 40 comments daily across 10 subs.
 const MAX_COMMENTS_PER_RUN = 10;
-const MAX_LOG_ENTRIES = 200;
+// Bumped 200 → 5000 on 2026-06-01 after Harvest saw a duplicate comment.
+// At 40/day the old cap held only ~5 days of dedup history; an evergreen
+// ICT post bumped back into Reddit's last-24h search window could clear
+// the rolling cap and get a second comment. 5000 entries = 4+ months of
+// runway, well past any realistic search-resurface window.
+const MAX_LOG_ENTRIES = 5000;
 
 interface EngageLogEntry {
   postId: string;
@@ -78,8 +83,34 @@ async function loadLog(): Promise<EngageLogEntry[]> {
 }
 
 // --- Save engagement log ---
+// Re-fetches the remote log right before saving and merges in our new
+// entries. This is the second layer of dedup: if a concurrent run wrote
+// entries between our loadLog() and saveLog(), we won't clobber them and
+// won't accidentally re-add a postId they already covered. Defensive
+// because Reddit duplicate-comment bug was reported on 2026-06-01.
 async function saveLog(log: EngageLogEntry[]): Promise<void> {
-  const trimmed = log.length > MAX_LOG_ENTRIES ? log.slice(-MAX_LOG_ENTRIES) : log;
+  let remote: EngageLogEntry[] = [];
+  try {
+    remote = await loadLog();
+  } catch {
+    // If we can't re-fetch, fall back to our in-memory log
+    remote = [];
+  }
+
+  const remoteIds = new Set(remote.map((e) => e.postId));
+  // Merge: keep remote as base, append any of our entries whose postId
+  // isn't already there. Preserves concurrent-run entries we'd otherwise
+  // overwrite, and silently drops any duplicate we'd add.
+  const merged = [...remote];
+  for (const entry of log) {
+    if (!remoteIds.has(entry.postId)) {
+      merged.push(entry);
+      remoteIds.add(entry.postId);
+    }
+  }
+
+  const trimmed =
+    merged.length > MAX_LOG_ENTRIES ? merged.slice(-MAX_LOG_ENTRIES) : merged;
   await commitFile(
     LOG_PATH,
     JSON.stringify(trimmed, null, 2),

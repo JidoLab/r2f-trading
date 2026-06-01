@@ -88,12 +88,15 @@ const CRITICAL_CRONS = [
       try {
         const raw = await readFile("data/reddit-engage-log.json");
         const data = JSON.parse(raw);
+        // Log entries use `commentedAt` (ISO). Earlier this checked for
+        // `date`/`timestamp` which never existed, so retry-missed fired a
+        // 5th reddit-engage run every day — increasing duplicate-comment
+        // exposure. Field name fix on 2026-06-01.
         if (Array.isArray(data)) {
-          return data.some((d: { date?: string; timestamp?: string }) =>
-            (d.date || d.timestamp || "").startsWith(today),
+          return data.some((d: { commentedAt?: string }) =>
+            (d.commentedAt || "").startsWith(today),
           );
         }
-        // Could be object with date keys
         return !!data[today];
       } catch {
         return false;
