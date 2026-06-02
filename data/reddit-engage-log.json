@@ -1821,7 +1821,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-27T08:01:19.021Z",
     "permalink": "/r/Trading/comments/1to54e7/built_a_signal_tracking_autocopy_system_for_mt5/oo4qpsv/",
-    "commentId": "oo4qpsv"
+    "commentId": "oo4qpsv",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-27T10:11:12.000Z",
+    "firstReplyAuthor": "Individual-Kale-9317",
+    "firstReplyText": "good catch and i shold have been clearer about this — BTCUSD signals only run on weekends when gold markets are closed so the actual comparison is:\n\nXAUUSD — weekdays only, london and NY sessions, H1 primarily → this is where the 78-80% win rate lives and where the volume of signals comes from\n\nBTCU"
   },
   {
     "postId": "1to5hxi",
@@ -1891,7 +1895,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-05-28T13:01:01.157Z",
     "permalink": "/r/Forexstrategy/comments/1tq12hf/xauusd_4h_short_patient_sell_into_premium_ob_b/ood54fs/",
-    "commentId": "ood54fs"
+    "commentId": "ood54fs",
+    "hasReply": true,
+    "firstReplyAt": "2026-05-28T13:04:17.000Z",
+    "firstReplyAuthor": "tradeconfluxAi",
+    "firstReplyText": "Agreed. I like your analysis"
   },
   {
     "postId": "1tpwfkz",
