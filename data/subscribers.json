@@ -158,8 +158,8 @@
     "referralCode": "R2F-bybt8j",
     "referredBy": null,
     "referralCount": 0,
-    "score": 10,
-    "segment": "cold",
+    "score": 25,
+    "segment": "warm",
     "events": [
       {
         "type": "blog_read",
@@ -168,9 +168,13 @@
       {
         "type": "blog_read",
         "date": "2026-05-28T09:00:05.007Z"
+      },
+      {
+        "type": "coaching_page_view",
+        "date": "2026-06-02T09:12:57.969Z"
       }
     ],
-    "lastActivity": "2026-05-28T09:00:05.007Z",
+    "lastActivity": "2026-06-02T09:12:57.969Z",
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts"
