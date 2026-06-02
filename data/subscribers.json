@@ -187,6 +187,16 @@
     "dripsSent": 0,
     "referralCode": "R2F-cnd4pp",
     "referredBy": null,
-    "referralCount": 0
+    "referralCount": 0,
+    "score": 15,
+    "segment": "cold",
+    "events": [
+      {
+        "type": "coaching_page_view",
+        "date": "2026-06-02T21:06:43.118Z"
+      }
+    ],
+    "lastActivity": "2026-06-02T21:06:43.118Z",
+    "dripsHistory": []
   }
 ]
