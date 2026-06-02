@@ -1,5 +1,25 @@
 [
   {
+    "id": "reply-ood54fs",
+    "platform": "reddit",
+    "postTitle": "XAUUSD 4H Short — Patient Sell into Premium OB (B / 7-10 Confluence)",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "tradeconfluxAi",
+    "replyText": "Agreed. I like your analysis",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1tq12hf/xauusd_4h_short_patient_sell_into_premium_ob_b/ood54fs/",
+    "detectedAt": "2026-06-02T13:01:20.396Z"
+  },
+  {
+    "id": "reply-oo4qpsv",
+    "platform": "reddit",
+    "postTitle": "Built a signal tracking + auto-copy system for MT5 — 110 signals, 72% win rate. Sharing the architecture",
+    "subreddit": "Trading",
+    "replyAuthor": "Individual-Kale-9317",
+    "replyText": "good catch and i shold have been clearer about this — BTCUSD signals only run on weekends when gold markets are closed so the actual comparison is:\n\nXAUUSD — weekdays only, london and NY sessions, H1 primarily → this is where the 78-80% win rate lives and where the volume of signals comes from\n\nBTCU",
+    "commentUrl": "https://www.reddit.com/r/Trading/comments/1to54e7/built_a_signal_tracking_autocopy_system_for_mt5/oo4qpsv/",
+    "detectedAt": "2026-06-02T13:01:15.541Z"
+  },
+  {
     "id": "reply-onyrrcb",
     "platform": "reddit",
     "postTitle": "I Blew 70 Funded Accounts and Spent $50,000 Before The Cycle Broke.",
