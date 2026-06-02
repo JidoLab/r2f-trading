@@ -130,7 +130,7 @@
   {
     "email": "eaglesfocus01@gmail.com",
     "date": "2026-05-24T22:46:12.434Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-h75t9t",
     "referredBy": null,
     "referralCount": 0,
@@ -146,14 +146,15 @@
     "lastActivity": "2026-05-24T22:51:30.245Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ],
     "abandonmentEmailSent": true
   },
   {
     "email": "libertatumtrading@gmail.com",
     "date": "2026-05-27T15:07:31.439Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "referralCode": "R2F-bybt8j",
     "referredBy": null,
     "referralCount": 0,
@@ -171,7 +172,8 @@
     ],
     "lastActivity": "2026-05-28T09:00:05.007Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   }
 ]
