@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-06-02",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1780366954687-0",
+        "title": "With 44 shorts ready and only 30 published, manually push 5–10 more YouTube Shorts live today to accelerate top-of-funnel traffic.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1780366954688-1",
+        "title": "With 7 cold leads averaging 5.3 drips each and 0 payments, personally review each cold lead's profile and send a hyper-personalized 1-on-1 Telegram or LINE message from Harvest to re-spark interest.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1780366954688-2",
+        "title": "Reddit posted 0 comments yesterday with 0 upvotes — manually identify 2–3 high-traffic ICT trading threads today and post a genuinely helpful comment from Harvest's account to drive organic traffic.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1780366954688-3",
+        "title": "With only 8 total subscribers and 1 new subscriber yesterday, launch a new paid or organic acquisition initiative such as a free live webinar, a limited-time lead magnet, or a targeted Facebook/Instagram ad campaign to rapidly grow the top of the funnel.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-05-29",
     "tasks": [
       {
