@@ -2240,5 +2240,45 @@
     "commentedAt": "2026-06-02T08:00:46.665Z",
     "permalink": "/r/Forexstrategy/comments/1ttzoyh/i_drew_this_setup_hours_ago_now_gold_is_following/opa0zdz/",
     "commentId": "opa0zdz"
+  },
+  {
+    "postId": "1tudxmm",
+    "subreddit": "Trading",
+    "postTitle": "ICT vs Supply &amp; Demand: Which One Is Actually Better?",
+    "commentText": "i had this exact problem when i was stuck trading classic S&D zones on eurusd and wondering why i kept getting stopped out on \"perfectly valid\" supply zones. turns out i was ignoring the institutional context entirely — no liquidity sweep, no BOS on the 15m, just a zone and a prayer. ICT isn't really a replacement for S&D imo, it's more like S&D finally explains *why* price reacts, but ICT tells you *when* and under what conditions — the FVG inside the zone during london open is what actually triggers the move, not the zone alone. cleaner isn't always better tbh, it's just less information.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-02T18:00:22.369Z",
+    "permalink": "/r/Trading/comments/1tudxmm/ict_vs_supply_demand_which_one_is_actually_better/opd1fl8/",
+    "commentId": "opd1fl8"
+  },
+  {
+    "postId": "1tu1rd2",
+    "subreddit": "Trading",
+    "postTitle": "Nexus: Another Algo One/Flowing Funded Scam",
+    "commentText": "the AI-generated UGC angle you mentioned is exactly how these rebrands stay alive — algo one ran the same playbook before flowing funded, and now nexus is just the next shell. tbh if there's no verifiable MT5/ctrader account history with real drawdown data tied to an actual funded account, it's fake. real operations don't need bot-flooded youtube comment sections to prove london session payouts on eurusd.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-02T18:00:29.900Z",
+    "permalink": "/r/Trading/comments/1tu1rd2/nexus_another_algo_oneflowing_funded_scam/opd1gkv/",
+    "commentId": "opd1gkv"
+  },
+  {
+    "postId": "1tus74j",
+    "subreddit": "Trading",
+    "postTitle": "Questions about a prop firm (FTUK)",
+    "commentText": "your instinct about the discord is right and tbh that's the biggest red flag imo. the fishy accounts you noticed are almost certainly astroturfing, which doesn't mean the firm is a scam but it does mean they're managing perception hard. the $600 jump after a $9 \"prove yourself\" entry is a classic funnel and you should treat that 100k as simulated capital until you've actually received a payout, not before. i'd paper trail everything, screenshot every rule page with a timestamp before you pay, because \"rules interpretation\" disputes on things like holding trades through the NY killzone or overnight gaps are where a lot of these firms quietly deny payouts.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-02T18:00:39.752Z",
+    "permalink": "/r/Trading/comments/1tus74j/questions_about_a_prop_firm_ftuk/opd1hzw/",
+    "commentId": "opd1hzw"
+  },
+  {
+    "postId": "1tumf91",
+    "subreddit": "Trading",
+    "postTitle": "The Day I Stopped Looking for the “Perfect Strategy” and Started Making Progress",
+    "commentText": "i had this exact problem last year, kept jumping between setups every other week and never built any real sample size. what locked it in for me was committing to one thing: 15m FVGs on eurusd during london open only, nothing else. after 100 trades the data was actually telling me something instead of me just guessing tbh.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-02T18:00:48.309Z",
+    "permalink": "/r/Trading/comments/1tumf91/the_day_i_stopped_looking_for_the_perfect/opd1j75/",
+    "commentId": "opd1j75"
   }
 ]
