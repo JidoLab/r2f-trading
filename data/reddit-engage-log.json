@@ -2320,5 +2320,45 @@
     "commentedAt": "2026-06-03T08:00:24.594Z",
     "permalink": "/r/FOREXTRADING/comments/1tvhgjt/simple_fib_retrace_continuation_strategy/oph3c2z/",
     "commentId": "oph3c2z"
+  },
+  {
+    "postId": "1tvhq4b",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "London Kill Zone XAU Long",
+    "commentText": "solid trade tbh, but the catch with 1m IFVGs during london kill zone is they're super prone to getting wicked through before price actually delivers. if that entry was taken right at the open of the IFVG without waiting for a 1m close back above it, you're basically gambling on the first touch which fails more often than people admit. the midnight open sweep is a clean narrative but price can keep expanding below it before reversing, so knowing *where* the daily bias sits relative to the weekly range matters a lot here. 🎯",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-03T13:00:53.995Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tvhq4b/london_kill_zone_xau_long/opi9x1j/",
+    "commentId": "opi9x1j"
+  },
+  {
+    "postId": "1tvabm2",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "what's your favorite ict concept?",
+    "commentText": "honestly the \"each concept has its own nuances\" framing is where most people get stuck tbh because they treat OBs, FVGs, and liquidity as separate tools instead of one unified narrative. the real edge isn't picking a favorite concept, it's reading why price is delivering to a specific level during that specific session. like an OB on the 15m during london open hits completely different than the same OB sitting there into new york open after a liquidity sweep on the asian high. one is high probability, one is basically a trap.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-03T13:01:01.196Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tvabm2/whats_your_favorite_ict_concept/opi9xxo/",
+    "commentId": "opi9xxo"
+  },
+  {
+    "postId": "1tvn3sj",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Price Update Today Market is Moving Up But Buying is coming from very Low Levels and its very Sudden",
+    "commentText": "if price is sweeping sellside and then displacing upward like that, drop to the 15m and mark the last down candle before the displacement, that's your breaker or OB that price came from. if we get a retrace back into it during NY killzone today, that's a cleaner entry than chasing this move tbh.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-03T13:01:06.583Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tvn3sj/price_update_today_market_is_moving_up_but_buying/opi9yiv/",
+    "commentId": "opi9yiv"
+  },
+  {
+    "postId": "1tv7tgv",
+    "subreddit": "Trading",
+    "postTitle": "Struggling with analysis paralysis choosing a market — what did profitable traders actually start with?",
+    "commentText": "i had this exact problem last year and what broke the paralysis for me was just defaulting to what i already had reps in — i picked EURUSD on the 15m because i'd already been studying london open BOS and FVGs there, so the setups weren't foreign to me. tbh the market didn't \"choose me,\" i just stopped pretending i needed to audit every market before committing to one. 30 days paper trading means nothing if you're split across four instruments — pick one, learn its personality, then expand later.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-03T13:01:15.462Z",
+    "permalink": "/r/Trading/comments/1tv7tgv/struggling_with_analysis_paralysis_choosing_a/opi9zks/",
+    "commentId": "opi9zks"
   }
 ]
