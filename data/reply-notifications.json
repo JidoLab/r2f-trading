@@ -1,5 +1,85 @@
 [
   {
+    "id": "reply-ooq3q03",
+    "platform": "reddit",
+    "postTitle": "Looking for insight on FVG validation and liquidity-based entries",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "No_Wafer7724",
+    "replyText": "Appreciate the insight.\n\nMy primary model for the past couple of years has been HTF liquidity sweep → CHOCH → BOS → internal liquidity. I typically enter from the order block of the swept structure, so I don't usually rely on additional LTF confirmations. I've used this model across most FX pairs wi",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1trpzgz/looking_for_insight_on_fvg_validation_and/ooq3q03/",
+    "detectedAt": "2026-06-03T13:01:20.885Z"
+  },
+  {
+    "id": "reply-oop0i89",
+    "platform": "reddit",
+    "postTitle": "Looking for a liquidity-based trader to exchange ideas with",
+    "subreddit": "FOREXTRADING",
+    "replyAuthor": "LowMemory6471",
+    "replyText": "I mostly work with the session Liquidity and wait for the sweep of the asia liquidity or next near ones and the try to go with the movement that comes out of that. So when it comes to my marked orderblocks which appear after the sweep, i mostly work in 5m. I had the experience that I miss a lot of m",
+    "commentUrl": "https://www.reddit.com/r/FOREXTRADING/comments/1tqwlkh/looking_for_a_liquiditybased_trader_to_exchange/oop0i89/",
+    "detectedAt": "2026-06-03T13:01:18.303Z"
+  },
+  {
+    "id": "reply-oom5655",
+    "platform": "reddit",
+    "postTitle": "Pre NY Open Sell, 5 Min entry. Price is respecting Fair Value",
+    "subreddit": "InnerCircleTraders",
+    "replyAuthor": "SmartHuckleberry9036",
+    "replyText": "for sure, i was expecting a bit more of a sell of before we expanded higher. but got out before the expansion when Fair value got disrespected. got back in at 10 for the sell down back to RTH GAP CE, bought it back up and buying it back up again actually, anticipating this bearish breaker to be viol",
+    "commentUrl": "https://www.reddit.com/r/InnerCircleTraders/comments/1tqzg38/pre_ny_open_sell_5_min_entry_price_is_respecting/oom5655/",
+    "detectedAt": "2026-06-03T13:01:17.665Z"
+  },
+  {
+    "id": "reply-oom5533",
+    "platform": "reddit",
+    "postTitle": "ICT 2022 Mentorship - How to get started",
+    "subreddit": "InnerCircleTraders",
+    "replyAuthor": "vihaangupta08",
+    "replyText": "Does the core content give you sufficient information as a complete beginner to later starting the 2022 mentorship? Currently I don’t even know how to read a candlestick or anything and want to familiarise myself with that before jumping into the mentorship ",
+    "commentUrl": "https://www.reddit.com/r/InnerCircleTraders/comments/1tr48kp/ict_2022_mentorship_how_to_get_started/oom5533/",
+    "detectedAt": "2026-06-03T13:01:17.018Z"
+  },
+  {
+    "id": "reply-ooj3487",
+    "platform": "reddit",
+    "postTitle": "Central Bank Dealing Range on NQ/ES",
+    "subreddit": "InnerCircleTraders",
+    "replyAuthor": "Intrepid-Parsley-371",
+    "replyText": "Body open to close in 15m, it just seems like i rarely get anything less than 50 points there on nq",
+    "commentUrl": "https://www.reddit.com/r/InnerCircleTraders/comments/1tq355y/central_bank_dealing_range_on_nqes/ooj3487/",
+    "detectedAt": "2026-06-03T13:01:15.738Z"
+  },
+  {
+    "id": "reply-oof0fcu",
+    "platform": "reddit",
+    "postTitle": "15m Fib Continuation strategy (scroll for the Auto analysis indicator on the last picture)",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "Entire_Efficiency_37",
+    "replyText": "I do agree this is a really nice way to filter alot of setups out and create some high probability plays ",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1tq6ivb/15m_fib_continuation_strategy_scroll_for_the_auto/oof0fcu/",
+    "detectedAt": "2026-06-03T13:01:14.455Z"
+  },
+  {
+    "id": "reply-oof0bdh",
+    "platform": "reddit",
+    "postTitle": "Simplifying Risk management for Gold and Silver traders with lot size",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "Creative_Tip5162",
+    "replyText": "Thank you so much for letting me know the things that matter the most for journaling and trading in more disciplined manner ",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1tq7lt1/simplifying_risk_management_for_gold_and_silver/oof0bdh/",
+    "detectedAt": "2026-06-03T13:01:12.423Z"
+  },
+  {
+    "id": "reply-ood5736",
+    "platform": "reddit",
+    "postTitle": "XAUUSD — called the SSL sweep toward 4400 at the start of the week, here's how it played out",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "GoldLevels",
+    "replyText": "No, I never chase the market, there are days I don't trade too because there is no high quality setup formation, although the gap was due to the geopolitical news, the fall from here or above was definite about which I posted actually. \nStill, thanks for your input. ",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1tpa3v3/xauusd_called_the_ssl_sweep_toward_4400_at_the/ood5736/",
+    "detectedAt": "2026-06-03T13:01:11.088Z"
+  },
+  {
     "id": "reply-ood54fs",
     "platform": "reddit",
     "postTitle": "XAUUSD 4H Short — Patient Sell into Premium OB (B / 7-10 Confluence)",
