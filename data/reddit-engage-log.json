@@ -2280,5 +2280,35 @@
     "commentedAt": "2026-06-02T18:00:48.309Z",
     "permalink": "/r/Trading/comments/1tumf91/the_day_i_stopped_looking_for_the_perfect/opd1j75/",
     "commentId": "opd1j75"
+  },
+  {
+    "postId": "1tvc7h6",
+    "subreddit": "Trading",
+    "postTitle": "What finally made trading psychology “Click” for you?",
+    "commentText": "the moment it clicked for me was when i stopped thinking about *money* and started thinking about *execution quality.* you said you blew the funded account and can explain exactly what you did wrong — that means your edge isn't the problem, your identity is. tbh i had to treat every london session entry like it was being graded purely on process: did i wait for displacement into the OB, did i place my stop beyond the wick, did i not touch it. that's it. the trade result became irrelevant to whether i \"did well\" that session.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-03T03:01:37.726Z",
+    "permalink": "/r/Trading/comments/1tvc7h6/what_finally_made_trading_psychology_click_for_you/opfzgdf/",
+    "commentId": "opfzgdf"
+  },
+  {
+    "postId": "1tv5z1g",
+    "subreddit": "Trading",
+    "postTitle": "I kept blowing prop challenges by oversizing, so I built a free tool that finds the lot size that actually passes",
+    "commentText": "been there with the prop blowups, oversizing during a NY session killzone sweep is basically a rite of passage lol. one thing i'd add though is that static win rate inputs can be misleading because your win rate on a 15m OB entry vs a 1h OB entry is genuinely different, sometimes by 15-20% in my experience. does the tool account for that kind of variance in edge quality, or does it treat all trades as equal probability events?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-03T03:01:44.454Z",
+    "permalink": "/r/Trading/comments/1tv5z1g/i_kept_blowing_prop_challenges_by_oversizing_so_i/opfzh1j/",
+    "commentId": "opfzh1j"
+  },
+  {
+    "postId": "1tuvh20",
+    "subreddit": "Trading",
+    "postTitle": "Here's how the bubble is going to pop",
+    "commentText": "the idle compute stat is interesting but tbh this reads more like a macro narrative than a tradeable thesis. imo the real liquidity event to watch is how institutions are pricing NVDA into Q3 earnings — there's a massive imbalance on the weekly chart right now that's basically an untested FVG sitting above the 2026 highs, and if that gets filled before any \"bubble pop\" catalyst hits, a lot of short sellers get wrecked first. are you watching this on the daily or zooming out to the weekly, because the OB that matters here is way higher than most people think price is going?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-03T03:01:53.720Z",
+    "permalink": "/r/Trading/comments/1tuvh20/heres_how_the_bubble_is_going_to_pop/opfzhyr/",
+    "commentId": "opfzhyr"
   }
 ]
