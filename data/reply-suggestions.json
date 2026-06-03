@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1780488117557-roaxy",
+    "platform": "youtube",
+    "postTitle": "W Patience l LIVE Day Trading Futures | ICT concepts | 2026-06-03",
+    "postUrl": "https://youtube.com/watch?v=HH9ko0TzKZg",
+    "authorName": "Tipsy Trader",
+    "suggestedReply": "Patience is honestly the most underrated edge in futures trading, and I'm glad someone's putting it in the title. Interesting take on the live execution though. In my experience, I teach my students to wait for a confirmed displacement into a premium or discount array before even considering an entry, because the impulse to trade \"near\" a level is what bleeds accounts. The W pattern is cleaner when you let price fully engineer the liquidity first.",
+    "createdAt": "2026-06-03T12:01:57.557Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780488121015-5fpds",
+    "platform": "youtube",
+    "postTitle": "Account size and lot size important??✅ #forexeducation #tradingprocess #motivation",
+    "postUrl": "https://youtube.com/watch?v=fNRZr7_NLwI",
+    "authorName": "Trading Process",
+    "suggestedReply": "Interesting take on lot sizing relative to account size. In my experience, what matters more than the raw lot size is whether your risk per trade aligns with your actual drawdown tolerance, not just a percentage rule. I teach my students to back-calculate position size from their invalidation point on the higher timeframe first, then worry about the lot number last. The lot size is just the result of good risk framework, not the starting point.",
+    "createdAt": "2026-06-03T12:02:01.015Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780488125295-9yxqw",
+    "platform": "youtube",
+    "postTitle": "June 1st 2026 MNQ Futures trade.",
+    "postUrl": "https://youtube.com/watch?v=7XjM7lHyt6M",
+    "authorName": "alexis",
+    "suggestedReply": "I traded MNQ on June 1st and the morning session was interesting for anyone watching the 15 minute chart for displacement. I always tell my students to be patient with NQ futures specifically because it can give you a clean sweep and then reverse hard before the real move develops. The key I drill into them is confirming the fair value gap before committing, not just the sweep alone. Did you get a clean entry on the open or wait for a retracement?",
+    "createdAt": "2026-06-03T12:02:05.295Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780488128589-ivrfz",
+    "platform": "youtube",
+    "postTitle": "Recap NAS 2 de Junio #ict #trading #smct #forex #trader",
+    "postUrl": "https://youtube.com/watch?v=XOT6bZpeCc4",
+    "authorName": "Tango Forex",
+    "suggestedReply": "That NAS recap on June 2nd is a good study case for displacement. Most traders watching this will focus on the entry but skip confirming the delivery model before touching the draw on liquidity. I drill this into my students constantly. On NAS especially, if the displacement candle doesn't close with conviction through the inefficiency, you're just guessing at the entry.",
+    "createdAt": "2026-06-03T12:02:08.589Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780488132759-lzdgg",
+    "platform": "youtube",
+    "postTitle": "Did you take this? #trading #ict #daytrade #tradingtips #trader #daytrading #daytrader",
+    "postUrl": "https://youtube.com/watch?v=MSvQGT0gP-k",
+    "authorName": "ReeseTradesNQ",
+    "suggestedReply": "Taking trades like this one is where most traders either build confidence or break it. I always tell my students to confirm with a higher timeframe bias before pulling the trigger on NQ setups like this. A clean displacement into a valid order block on the 5m with confluence from the 15m narrative changes everything. Were you trading into a daily premium or discount here?",
+    "createdAt": "2026-06-03T12:02:12.759Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780488136441-k0hqr",
+    "platform": "youtube",
+    "postTitle": "Nasdaq Day Trading ICT Concepts (02-06-2026)",
+    "postUrl": "https://youtube.com/watch?v=Q6KOtsvUx2s",
+    "authorName": "T2 SMC Trader",
+    "suggestedReply": "Nasdaq ICT on a Friday session is where I see most traders get wrecked by manipulation before the actual draw. I drill into my students to wait for the morning session killzone to close before committing to any bias, especially when dealing with premium and discount arrays on NQ. Are you framing your entries off the 15m displacement or working down from the 1h structure first?",
+    "createdAt": "2026-06-03T12:02:16.441Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780488140331-5il35",
+    "platform": "youtube",
+    "postTitle": "Stoploss Hit Trap Explained 🚨 | Smart Money Scalping Strategy 🔥 | Bank Nifty Trading Telugu",
+    "postUrl": "https://youtube.com/watch?v=ddHSDTypkxg",
+    "authorName": "Inside Trader Telugu",
+    "suggestedReply": "I got trapped by the exact stop loss hunt mechanism they're describing here more times than I care to admit early in my career. Bank Nifty is notorious for sweeping liquidity just below obvious lows on the 5 minute chart before reversing hard. Now I teach my students to wait for the mitigation of that swept level before entering, not before. Saves them from being the liquidity.",
+    "createdAt": "2026-06-03T12:02:20.331Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780488144288-ox3bk",
+    "platform": "youtube",
+    "postTitle": "This ICT Concept Makes Order Blocks 10x More Accurate",
+    "postUrl": "https://youtube.com/watch?v=gFR4BGlZ0Us",
+    "authorName": "First Mind ",
+    "suggestedReply": "Order blocks becoming 10x more accurate sounds right but only when you factor in the timeframe they were created on. I drill this into my students constantly. A 4H order block with no confluence from the daily bias is still a low probability trade no matter how clean the setup looks on the lower timeframe. The concept in this video is solid, just don't forget that context is what separates the accurate blocks from the traps.",
+    "createdAt": "2026-06-03T12:02:24.288Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1780274722936-7ff9b",
     "platform": "investinglive",
     "postTitle": "Powell warns Fed independence at risk if officials can be removed over policy",
