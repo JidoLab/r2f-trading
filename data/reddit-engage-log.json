@@ -2352,5 +2352,95 @@
     "commentedAt": "2026-06-03T08:00:24.594Z",
     "permalink": "/r/FOREXTRADING/comments/1tvhgjt/simple_fib_retrace_continuation_strategy/oph3c2z/",
     "commentId": "oph3c2z"
+  },
+  {
+    "postId": "1tvpwfq",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Everyone Is Still Buying Gold... Yet Price Keeps Sweeping Sell-Side Liquidity",
+    "commentText": "the sweep you're describing is literally just SSL being engineered before the real markup — price needs that fuel from triggered stops before smart money can absorb the buy side efficiently. imo the play on gold right now isn't the bullish bias, it's waiting for a clean H1 or H4 FVG to form *after* the sell-side sweep, then looking for a BOS on the lower timeframe before committing. tbh a lot of traders are losing on correct directional calls because they're entering into premium when price hasn't even tapped the dealing range discount yet.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-03T18:00:52.521Z",
+    "permalink": "/r/ICTMentorship/comments/1tvpwfq/everyone_is_still_buying_gold_yet_price_keeps/opk4q6d/",
+    "commentId": "opk4q6d"
+  },
+  {
+    "postId": "1tviuuq",
+    "subreddit": "Forexstrategy",
+    "postTitle": "⚠️ The Same Market Pattern Is Unfolding Again... Are You Seeing It? 🤔",
+    "commentText": "if price sweeps that 4447 low OP mentioned, drop to the 1m and look for a breaker block forming right after the sweep before NY open. that's your actual entry model, not the zone itself tbh. the zone just tells you *where*, the breaker tells you *when*. 🎯",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-03T18:00:59.028Z",
+    "permalink": "/r/Forexstrategy/comments/1tviuuq/the_same_market_pattern_is_unfolding_again_are/opk4r1k/",
+    "commentId": "opk4r1k"
+  },
+  {
+    "postId": "1tvvxj0",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Textbook Liquidity Sweep Setup Would've Resulted In a 6.65 RR Trade.",
+    "commentText": "the \"I told you so\" feeling is valid but tbh it can quietly build overconfidence if you're not careful. a 6.65R looks clean in hindsight but your edit literally buried the most important part — tight stops at the swing high got stopped out, meaning execution on this in real time wasn't as textbook as the narrative suggests. london session liquidity sweeps above PDH are notorious for that exact fake-out before the real displacement leg, and most people replay the winner's version not the version where they got hunted first. the setup may be real but the framing matters. 🎯",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-03T18:01:09.405Z",
+    "permalink": "/r/ICTMentorship/comments/1tvvxj0/textbook_liquidity_sweep_setup_wouldve_resulted/opk4shm/",
+    "commentId": "opk4shm"
+  },
+  {
+    "postId": "1tvqyvu",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Built a macro confluence tool for forex traders - looking for honest feedback",
+    "commentText": "macro confluence is genuinely useful but i'd be curious how stravia weights COT against something like a daily OB sitting right at a premium array on eurusd — because in my experience the macro can be bullish but price still respects a draw to liquidity below before continuing, and a single confluence score doesn't always capture that timing mismatch. the \"3 trades in 3 days\" thing is interesting tbh, were those entries timed to specific sessions like london open or more swing-level setups off the weekly chart?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-03T18:01:18.123Z",
+    "permalink": "/r/Forexstrategy/comments/1tvqyvu/built_a_macro_confluence_tool_for_forex_traders/opk4tpj/",
+    "commentId": "opk4tpj"
+  },
+  {
+    "postId": "1tvhpk6",
+    "subreddit": "ICTMentorship",
+    "postTitle": "London Kill zone XAU long",
+    "commentText": "i had this exact problem last month on XAU during london, kept entering the IFVG too early before price had actually confirmed the sweep was done. what saved me was waiting for a 1m BOS above the IFVG before committing, because the midnight open sweeps on gold can be really aggressive and fake you out twice before the actual PO3 plays out. tbh if the IFVG held clean and you got displacement into it that's the entry, just make sure the sweep was a proper liquidity run and not just a random wick.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-03T18:01:27.415Z",
+    "permalink": "/r/ICTMentorship/comments/1tvhpk6/london_kill_zone_xau_long/opk4uzf/",
+    "commentId": "opk4uzf"
+  },
+  {
+    "postId": "1tvkpos",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAUUSD / Gold – 1H",
+    "commentText": "this happened to me last month on xauusd 1H actually — price swept liquidity below a key low then wicked back up and i jumped in long chasing that exact bounce toward equilibrium around where you've got your 4480 target. got stopped out because i didn't wait for a proper mitigation of the OB, just entered on the wick close. tbh until the HTF BOS at 4505 gets reclaimed i'd be really cautious trusting any longs here, the retracement is real but it's just draw on liquidity toward that supply before continuation imo 📉",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-03T18:01:36.776Z",
+    "permalink": "/r/Forexstrategy/comments/1tvkpos/xauusd_gold_1h/opk4w8o/",
+    "commentId": "opk4w8o"
+  },
+  {
+    "postId": "1tvhhel",
+    "subreddit": "Forexstrategy",
+    "postTitle": "*### XAU/USD Technical Analysis Update*",
+    "commentText": "this happened to me last month on xau/usd, 1h chart — price was hovering just above a similar support zone and i kept waiting for a clean BOS to confirm bullish intent but it never came before the drop. the 4,448 area OP mentioned looks like a magnet for stops sitting below equal lows, so tbh i'd want to see a proper liquidity sweep below that level into a 15m OB before touching anything long. jumping in just because price is \"above support\" without that sweep confirmation got me a few times this year already.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-03T18:01:46.144Z",
+    "permalink": "/r/Forexstrategy/comments/1tvhhel/xauusd_technical_analysis_update/opk4xh0/",
+    "commentId": "opk4xh0"
+  },
+  {
+    "postId": "1tvpug7",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Everyone Is Still Buying Gold... Yet Price Keeps Sweeping Sell-Side Liquidity",
+    "commentText": "the sell-side sweeps on gold right now are textbook liquidity raids into asian session lows before london actually commits to a direction. imo the cleanest play is waiting for a 15m BOS after the sweep, not before — that's where you get your confirmation that smart money absorbed the sell stops and is ready to push. tbh a lot of traders are confusing \"i'm bullish\" with \"i have a valid entry,\" and those are completely different things. no sweep, no trade.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-03T18:01:54.492Z",
+    "permalink": "/r/Forexstrategy/comments/1tvpug7/everyone_is_still_buying_gold_yet_price_keeps/opk4ymw/",
+    "commentId": "opk4ymw"
+  },
+  {
+    "postId": "1tv1uqq",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Most Traders Fail Because Their Strategy Has Grey Areas. Here's What To Look For To Keep Trading Simple:",
+    "commentText": "try adding one more filter before step 6 — on the 5m, mark the candle that actually created the FVG and check if it closed above the prior swing high (for longs). if it didn't close above, the displacement is weak and the FVG has a higher chance of getting blown through during NY. tbh this has cut a lot of my losing retest entries out completely, especially on pairs like GU where the london sweep can be messy.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-03T18:02:05.402Z",
+    "permalink": "/r/ICTMentorship/comments/1tv1uqq/most_traders_fail_because_their_strategy_has_grey/opk5045/",
+    "commentId": "opk5045"
   }
 ]
