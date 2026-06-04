@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-free-class",
     "poll-native",
     "promo-results",
     "promo-checklist",
@@ -29,11 +28,12 @@
     "poll-native",
     "promo-blog",
     "promo-coaching",
-    "question"
+    "question",
+    "poll"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "NFP week + mid-week reversal day… do you sit on your hands or trade the chaos? Drop your approach below 👇 #NFP #ICTTrading #SmartMoneyConcepts",
-    "date": "2026-06-03T12:00:35.192Z"
+    "type": "poll",
+    "text": "NFP tomorrow. What's your move?\n\n🅰️ Wait for the spike + reversal\n🅱️ Trade the liquidity sweep setup\n🅲️ Sit it out entirely\n🅳️ No plan yet 😅\n\n#NFP #ICTTrading #SmartMoneyConcepts",
+    "date": "2026-06-04T12:00:17.611Z"
   }
 }
