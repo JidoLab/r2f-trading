@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1780533051262-ezn11",
+    "platform": "youtube",
+    "postTitle": "3 Jun BTC &amp; GOLD LIVE TRADING 🔴 | ICT + SMC Scalping Strategy | Real-Time Market Analysis",
+    "postUrl": "https://youtube.com/watch?v=No6xpOENA-A",
+    "authorName": "Trend Hacker",
+    "suggestedReply": "I traded BTC scalps during the New York session this morning using the same ICT framework and the killzone timing made all the difference on entries. I drill into my students that BTC and gold often give cleaner order block reactions on the 5m when you wait for the displacement to close fully before committing. Most rush entries and get stopped out on the wick. Great session to study for anyone learning SMC.",
+    "createdAt": "2026-06-04T00:30:51.262Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780533055194-4ng6w",
+    "platform": "youtube",
+    "postTitle": "CRAZY TRADE 🔴 LIVE Day Trading Futures | ES NQ | ICT Concepts | June 3",
+    "postUrl": "https://youtube.com/watch?v=ovjey-8CWrY",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Interesting take trading ES and NQ simultaneously on a day like June 3. In my experience, I tell my students to focus on one instrument during high volatility sessions because splitting attention between correlated markets often leads to missed confirmation on the 15m before entry. The confluences are cleaner when you commit to reading one tape at a time. Curious how you managed your bias alignment between the two when they diverged intraday.",
+    "createdAt": "2026-06-04T00:30:55.194Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780533058452-z694u",
+    "platform": "youtube",
+    "postTitle": "🚀 ICT Premium &amp; Discount Zone Full Guide | Smart Money Concept",
+    "postUrl": "https://youtube.com/watch?v=H7zElTJKr68",
+    "authorName": "jk_trader_suraj",
+    "suggestedReply": "I drill premium and discount zones into my students before anything else because without that foundation, entries are just guesswork. Trading EURUSD on the 15m, I watched so many of them chase price in premium when smart money was already offloading. Once they understood equilibrium as a reference point, their win rate shifted dramatically. Solid concept covered here.",
+    "createdAt": "2026-06-04T00:30:58.452Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780533062628-db7jy",
+    "platform": "youtube",
+    "postTitle": "2 Breakevens | Live Trading | ICT Concepts | June 3, 2026",
+    "postUrl": "https://youtube.com/watch?v=aB0TnFLT5rs",
+    "authorName": "Tyler Trades",
+    "suggestedReply": "Running to breakeven too early is actually one of the biggest silent killers I see in ICT traders. Tyler nails the concept here but the caveat I drill into my students is knowing WHICH draw on liquidity you're targeting before you even enter. If price hasn't swept the internal range liquidity yet, moving to breakeven at the first sign of heat will get you stopped out right before the real move develops.",
+    "createdAt": "2026-06-04T00:31:02.628Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780533066115-kwbxt",
+    "platform": "youtube",
+    "postTitle": "DAY TRADING ICT CONCEPTS | 6/3/2026",
+    "postUrl": "https://youtube.com/watch?v=jDA7u-lEtq4",
+    "authorName": "Tanja Trades",
+    "suggestedReply": "The displacement candle markup on June 3rd caught my eye because most traders I see skip straight to the FVG and wonder why they get stopped out. I drill into my students that the candle creating the imbalance tells you the story before the entry does. On days with that kind of delivery, waiting for the 15m close to confirm the move separates the patient traders from the ones giving back pips.",
+    "createdAt": "2026-06-04T00:31:06.115Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780533070042-hjrv3",
+    "platform": "youtube",
+    "postTitle": "Stop Trading ICT. This Liquidity Model Works Better.",
+    "postUrl": "https://youtube.com/watch?v=02GQpm4nDjA",
+    "authorName": "Aisy Trading ",
+    "suggestedReply": "I switched away from pure ICT methodology about 3 years ago and honestly my students who made the same shift started seeing more consistency within weeks. The liquidity model approach this video touches on is something I drill into my students specifically on GJ because the yen pairs respect those liquidity pools so cleanly on the 4H. ICT concepts still have value but layering a cleaner liquidity framework on top changed everything for me.",
+    "createdAt": "2026-06-04T00:31:10.042Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780533074677-02nrt",
+    "platform": "youtube",
+    "postTitle": "Live Bitcoin &amp; Gold Chart Analysis | Smart Money Concepts &amp; Price Action TODAY ||",
+    "postUrl": "https://youtube.com/watch?v=xF6tlkWHmDM",
+    "authorName": "Vishnu Verma",
+    "suggestedReply": "The Smart Money Concepts approach on Bitcoin and Gold together is something I drill into my students constantly. Most traders treat these two assets in isolation but when you see institutional displacement on both in the same session, that confluence is telling you something real about risk appetite. One thing worth adding here is that your price action read on Gold is sharper when you anchor your bias to the HTF premium and discount zones before dropping to the entry timeframe. Are you using the same model for both or adjusting session timing for each asset?",
+    "createdAt": "2026-06-04T00:31:14.677Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780533077759-lessp",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE XAU/USD Trading | London Session Live Analysis | Smart Money Concepts (SMC) | DAY 12",
+    "postUrl": "https://youtube.com/watch?v=sMstLac82J0",
+    "authorName": "The Traders Legacy",
+    "suggestedReply": "London session on XAU/USD is where I see most traders get chopped up chasing liquidity sweeps before the real displacement happens. I drill into my students to wait for confirmation of a shift in market structure before committing to any position during that early volatility. Are you finding SMC concepts translate cleaner on gold during London open compared to New York overlap?",
+    "createdAt": "2026-06-04T00:31:17.759Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1780488151217-c4fcy",
     "platform": "investinglive",
     "postTitle": "investingLive European markets wrap: US-Iran tensions continue; yen volatility in focus",
