@@ -2568,5 +2568,65 @@
     "commentedAt": "2026-06-04T13:01:08.583Z",
     "permalink": "/r/Trading/comments/1tw13jh/building_my_own_backtestingstrategy_building/oppcr5u/",
     "commentId": "oppcr5u"
+  },
+  {
+    "postId": "1twrc8a",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Turning 18 in August: Stick to compounding a small account on Vantage or move to FTMO prop firm? (Current layout included)",
+    "commentText": "before touching FTMO tbh, take that gold setup you mentioned and backtest it specifically during the NY killzone (9:30–11am EST) on the 15m. if the squeeze is forming and you see a displacement with an FVG left behind, mark that gap and only enter if price returns to it during that same session window. prop firms punish impulsive entries and that one habit alone will save you from blowing a challenge on an emotional re-entry.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-04T18:01:28.829Z",
+    "permalink": "/r/Forexstrategy/comments/1twrc8a/turning_18_in_august_stick_to_compounding_a_small/opr72la/",
+    "commentId": "opr72la"
+  },
+  {
+    "postId": "1twu2xd",
+    "subreddit": "proptrading",
+    "postTitle": "Swing Meta5",
+    "commentText": "i had this exact problem last year running an algo on GBPUSD m15 looking for asian session FVGs to target during london open and the firm i was with just had a straight gap in the data from like 2am to 3am EST, killed two trades completely. balance-based drawdown is harder to find but it exists tbh, firms like that tend to attract algo traders specifically because your DD doesn't bleed during floating drawdown on a runner. the MT5 requirement narrows it down but it shouldn't eliminate your options entirely in 2026 with how competitive the prop space has gotten.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-04T18:01:38.063Z",
+    "permalink": "/r/proptrading/comments/1twu2xd/swing_meta5/opr73uu/",
+    "commentId": "opr73uu"
+  },
+  {
+    "postId": "1tw3hun",
+    "subreddit": "Forexstrategy",
+    "postTitle": "This Gold Setup Has My Attention - Bullish Continuation Ahead?",
+    "commentText": "try marking the 15m FVG that formed during the displacement that created the CHoCH off that 4428-4440 zone. if price pulls back into it during NY open killzone (9:30-11am EST) and you see a rejection wick with a BOS on the 1m, that's your entry imo. 4481 as the target makes sense but i'd be partial taking at 4460 since that's a prior resistance flip.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-04T18:01:44.523Z",
+    "permalink": "/r/Forexstrategy/comments/1tw3hun/this_gold_setup_has_my_attention_bullish/opr74qx/",
+    "commentId": "opr74qx"
+  },
+  {
+    "postId": "1twicon",
+    "subreddit": "proptrading",
+    "postTitle": "I wanna sell my funded hive 10k 2 step account",
+    "commentText": "honestly if you're switching firms just for mt5 access, before you sell that account try marking your daily bias on the 15m using the asian range high/low as your reference points — funded hive's conditions are actually decent for running a clean ICT model. tbh mt4 vs mt5 doesn't change whether your FVGs or OBs are valid during NY killzone, the entries look identical.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-04T18:01:51.440Z",
+    "permalink": "/r/proptrading/comments/1twicon/i_wanna_sell_my_funded_hive_10k_2_step_account/opr75ns/",
+    "commentId": "opr75ns"
+  },
+  {
+    "postId": "1twtn3h",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Paper trading",
+    "commentText": "one week of paper trading on btc with 10x leverage in a trending market tells you almost nothing tbh. try this instead: mark your daily bias on the 4H using the previous day's high and low, then only take FVG entries on the 15m during NY killzone that align with that bias. if you took even half those 70k trades against the daily bias, you got lucky not skilled.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-04T18:01:58.193Z",
+    "permalink": "/r/ICTMentorship/comments/1twtn3h/paper_trading/opr76lx/",
+    "commentId": "opr76lx"
+  },
+  {
+    "postId": "1tw11gi",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Building my own backtesting/strategy building platform",
+    "commentText": "biggest limitation for me has always been that none of these tools handle HTF bias filtering natively — like if i want to only take london session FVG entries on GBPUSD when the daily is bearish AND there's a confirmed BOS on the 4H, i'm stitching that logic together across three different scripts. the prop firm sim feature is genuinely interesting tbh, because most backtesting tools treat the challenge drawdown rules as an afterthought. does VE8 handle trailing drawdown models like the ones FTMO uses post-payout, or just the standard challenge phase?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-04T18:02:05.856Z",
+    "permalink": "/r/Forexstrategy/comments/1tw11gi/building_my_own_backtestingstrategy_building/opr77o6/",
+    "commentId": "opr77o6"
   }
 ]
