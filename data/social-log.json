@@ -1947,5 +1947,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-06-04T12:00:18.654Z",
+    "type": "text",
+    "postType": "poll",
+    "text": "NFP tomorrow. What's your move?\n\n🅰️ Wait for the spike + reversal\n🅱️ Trade the liquidity sweep set",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
