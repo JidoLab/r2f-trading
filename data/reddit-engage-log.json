@@ -2502,5 +2502,35 @@
     "commentedAt": "2026-06-04T03:00:56.276Z",
     "permalink": "/r/InnerCircleTraders/comments/1tvzuo0/help_with_trading/opn2j2p/",
     "commentId": "opn2j2p"
+  },
+  {
+    "postId": "1twgv9s",
+    "subreddit": "swingtrading",
+    "postTitle": "Swing Trading as a bear?",
+    "commentText": "your thesis on pullbacks is solid tbh — bears aren't just taking profits from bulls, they're actively hunting sell-side liquidity and targeting old lows. imo the cleanest bear setups aren't just \"bearish candle + entry below\" — you want to see a BOS on the 1H or 4H with price retracing into a bearish OB before continuation, otherwise you're just fading momentum blind. your R:R framework is roughly right but in a strong uptrend i'd honestly pass on anything under 1.5 because the spread between your SL and the next real buy-side liquidity pool is way tighter than it looks. the algos absolutely play a role too — a lot of those sharp intraday drops in 2026 are engineered stop hunts, not organic bear conviction.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-04T08:01:01.110Z",
+    "permalink": "/r/swingtrading/comments/1twgv9s/swing_trading_as_a_bear/opo6loj/",
+    "commentId": "opo6loj"
+  },
+  {
+    "postId": "1tvzqoj",
+    "subreddit": "ICTMentorship",
+    "postTitle": "How do you decide which FVG to enter?",
+    "commentText": "the missing filter is context — if price hasn't swept a relative equal high or low on the 15m first, that FVG is probably not the one. the \"too late\" feeling usually means you're watching the wrong timeframe for entry, like waiting on the 15m when the actual fill happens in seconds on the 1m or 2m. once there's a liquidity sweep into an FVG during the first 30 mins of new york open, that's your window — price doesn't always give you a slow meandering retracement into it, it wicks and goes. tbh if you're missing the entry before the run, you're likely waiting for confirmation that the market already gave you before you even looked.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-04T08:01:11.123Z",
+    "permalink": "/r/ICTMentorship/comments/1tvzqoj/how_do_you_decide_which_fvg_to_enter/opo6md5/",
+    "commentId": "opo6md5"
+  },
+  {
+    "postId": "1tvzsyl",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Help.......",
+    "commentText": "your IFVG entries are solid in concept but your data suggests you're probably taking them without confirming the sweep has actually displaced away from liquidity first. the sweep needs to leave a clear displacement candle on the 1m or 5m before you even look at the IFVG, otherwise you're just fading into draw. tbh after 8 months of quarterly theory your bias reading is probably fine, your execution timing is just early.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-04T08:01:17.723Z",
+    "permalink": "/r/ICTMentorship/comments/1tvzsyl/help/opo6mss/",
+    "commentId": "opo6mss"
   }
 ]
