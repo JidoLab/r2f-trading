@@ -112,7 +112,7 @@
   {
     "email": "honore.trader@gmail.com",
     "date": "2026-05-22T19:54:53.128Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "referralCode": "R2F-zttm23",
     "referredBy": null,
     "referralCount": 0,
@@ -124,7 +124,8 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts",
-      "successStory"
+      "successStory",
+      "tradingPsychology"
     ]
   },
   {
@@ -154,7 +155,7 @@
   {
     "email": "libertatumtrading@gmail.com",
     "date": "2026-05-27T15:07:31.439Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "referralCode": "R2F-bybt8j",
     "referredBy": null,
     "referralCount": 0,
@@ -178,7 +179,8 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts",
-      "socialProof"
+      "socialProof",
+      "bookCallSoft"
     ],
     "abandonmentEmailSent": true
   },
