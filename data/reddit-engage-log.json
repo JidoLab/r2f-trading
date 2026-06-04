@@ -2532,5 +2532,25 @@
     "commentedAt": "2026-06-04T08:01:17.723Z",
     "permalink": "/r/ICTMentorship/comments/1tvzsyl/help/opo6mss/",
     "commentId": "opo6mss"
+  },
+  {
+    "postId": "1twj0qs",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Gold - London session today",
+    "commentText": "your stop was probably sitting right above the london open OB and price swept it before continuing down to Asia low — classic liquidity grab on the buy side before the real move. tbh if you're targeting Asia low in the london session, your sl needs room above the prior swing high or you'll get hunted every time. move your be too early and you're basically handing them your stop. seen this exact setup on gold (XAUUSD) so many times on the 5m, the sweep IS the confirmation, not the invalidation.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-04T13:01:00.196Z",
+    "permalink": "/r/InnerCircleTraders/comments/1twj0qs/gold_london_session_today/oppcq62/",
+    "commentId": "oppcq62"
+  },
+  {
+    "postId": "1tw13jh",
+    "subreddit": "Trading",
+    "postTitle": "Building my own backtesting/strategy building platform",
+    "commentText": "biggest limitation for me has always been accurately simulating HTF confluence during backtesting — like when i'm trading a 15m FVG on eurusd, the valid entries are gated by the 4h OB still being respected, and most platforms just flatten that into a single timeframe view and you lose that context entirely. your MTF filtering in the visual builder sounds like it could actually solve that tbh. does the strategy builder let you set HTF bias as a hard filter condition, or is it more of an optional confluence layer you toggle on?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-04T13:01:08.583Z",
+    "permalink": "/r/Trading/comments/1tw13jh/building_my_own_backtestingstrategy_building/oppcr5u/",
+    "commentId": "oppcr5u"
   }
 ]
