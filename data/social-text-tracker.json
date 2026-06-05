@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll-native",
     "promo-results",
     "promo-checklist",
     "poll-native",
@@ -29,11 +28,12 @@
     "promo-blog",
     "promo-coaching",
     "question",
-    "poll"
+    "poll",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "NFP tomorrow. What's your move?\n\n🅰️ Wait for the spike + reversal\n🅱️ Trade the liquidity sweep setup\n🅲️ Sit it out entirely\n🅳️ No plan yet 😅\n\n#NFP #ICTTrading #SmartMoneyConcepts",
-    "date": "2026-06-04T12:00:17.611Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: Trading NFP is gambling dressed up as strategy. The smart money already moved before the number drops. You're just reacting to bait. #NFP #ICTTrading #SmartMoneyConcepts",
+    "date": "2026-06-05T12:01:44.237Z"
   }
 }
