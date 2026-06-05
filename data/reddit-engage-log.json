@@ -2694,5 +2694,45 @@
     "commentedAt": "2026-06-05T13:01:45.529Z",
     "permalink": "/r/Forexstrategy/comments/1twujp7/xauusd_long_setup/opwag8j/",
     "commentId": "opwag8j"
+  },
+  {
+    "postId": "1twxkj2",
+    "subreddit": "Trading",
+    "postTitle": "Took a trade on NQ this morning what do we think?",
+    "commentText": "i had this exact problem last month on NQ, kept second guessing myself near that 1hr bearish fvg overhead and started micromanaging the SL instead of just letting displacement confirm the inverse. tbh if price already showed enough momentum to break the prior high with conviction, that 1hr fvg was probably getting swept before it became resistance. the cautiousness near structure is good but moving your stop while price is still in play almost always gets you shaken out of the right idea.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-05T18:01:17.719Z",
+    "permalink": "/r/Trading/comments/1twxkj2/took_a_trade_on_nq_this_morning_what_do_we_think/opy3mxt/",
+    "commentId": "opy3mxt"
+  },
+  {
+    "postId": "1twzk4u",
+    "subreddit": "Trading",
+    "postTitle": "How do I change the lot size",
+    "commentText": "tradingview handles futures in units/contracts, not lots, so for the NQ e-mini 1 unit = 1 contract worth roughly $20 per tick — you can't fractionally size it the way tradelocker lets you with forex. tbh this matters a lot on a 50K account because your risk per contract is fixed, so you have to work backwards from your daily drawdown limit to figure out how many contracts fit your model, especially if you're trading the 9:30 NY open killzone where NQ can move 20-30 handles in minutes. the \"lot size\" flexibility you're used to in tradelocker just doesn't exist natively in tradingview for futures.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-05T18:01:27.251Z",
+    "permalink": "/r/Trading/comments/1twzk4u/how_do_i_change_the_lot_size/opy3o5f/",
+    "commentId": "opy3o5f"
+  },
+  {
+    "postId": "1txiif0",
+    "subreddit": "Forexstrategy",
+    "postTitle": "WHY I'M STILL BULLISH ON GOLD WHILE 90% OF TRADERS ARE SELLING RIGHT BEFORE NFP",
+    "commentText": "solid read tbh, but the catch is you're assuming NFP runs sell stops first — pre-NFP in Q2 2026 gold has been notorious for faking the obvious move, so if the sell side is *that* visible on the 15m, smart money doesn't always need to grab it first. worth checking if there's an unmitigated 4h OB sitting below Thursday's low before assuming the sellside sweep is even necessary for the markup. the \"higher lows\" structure you mentioned is real, but without a clean BOS on the 1h after the sweep, you're essentially just anticipating the move rather than confirming it 👀",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-05T18:01:38.350Z",
+    "permalink": "/r/Forexstrategy/comments/1txiif0/why_im_still_bullish_on_gold_while_90_of_traders/opy3pli/",
+    "commentId": "opy3pli"
+  },
+  {
+    "postId": "1tx7niy",
+    "subreddit": "Trading",
+    "postTitle": "$23,645 From 124 Trades Using a 5Min ORB Setup",
+    "commentText": "one thing worth testing on your NQ setup — after the 5min range breaks and you get your FVG confirmation, drop to the 1min and look for a secondary displacement candle that leaves a clean void before your entry. that second FVG is often sitting closer to a true liquidity draw and your stop distance tightens up considerably, which means your 1.5R target hits more cleanly without price sweeping back into the range first. tbh the first FVG after the break gets faked out more than people realize on NQ especially during the 9:35-9:45 window.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-05T18:01:46.489Z",
+    "permalink": "/r/Trading/comments/1tx7niy/23645_from_124_trades_using_a_5min_orb_setup/opy3qmq/",
+    "commentId": "opy3qmq"
   }
 ]
