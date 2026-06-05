@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1780660887113-0711i",
+    "platform": "youtube",
+    "postTitle": "ICT Entry Model: 4H Context + 15M Confirmation + 1M Execution #trading",
+    "postUrl": "https://youtube.com/watch?v=nbPxFTU5m0A",
+    "authorName": "Anthropic Trader ",
+    "suggestedReply": "The 15M confirmation step in this model is where most traders I work with stall out. They nail the 4H context but then jump straight to 1M execution without waiting for a clear 15M displacement and market structure shift to confirm direction. I always tell my students, the 1M is for precision, not for making the decision.",
+    "createdAt": "2026-06-05T12:01:27.113Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780660890581-2uchb",
+    "platform": "youtube",
+    "postTitle": "🔴Daily LIVE Trading- ICT CONCEPTS- NIFTY, BANKNIFTY &amp; Equity|| | -5th June 2026",
+    "postUrl": "https://youtube.com/watch?v=YGkU-fBtKd4",
+    "authorName": "TyagiMarketMaker",
+    "suggestedReply": "I've been trading BankNifty setups using ICT concepts for years and the 15 minute chart during the London to New York overlap still gives the cleanest displacement entries. Most of my students struggle with BankNifty specifically because the liquidity sweeps are aggressive and they jump in before confirmation. Waiting for a proper FVG fill after the sweep is what separates consistent weeks from blown accounts.",
+    "createdAt": "2026-06-05T12:01:30.581Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780660894364-9f715",
+    "platform": "youtube",
+    "postTitle": "4 Jun BTC &amp; GOLD LIVE TRADING 🔴 | ICT + SMC Scalping Strategy | Real-Time Market Analysis",
+    "postUrl": "https://youtube.com/watch?v=K_yf_VcaxbE",
+    "authorName": "Trend Hacker",
+    "suggestedReply": "I've been scalping BTC and gold with ICT setups for years and the biggest thing I drill into my students is patience at the New York open before jumping into any position. Most of them want to enter the second they see a displacement candle on the 5 minute chart but waiting for the first pullback into the FVG after the initial sweep separates consistent traders from impulsive ones. Solid approach on this session.",
+    "createdAt": "2026-06-05T12:01:34.364Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780660898369-6o8r9",
+    "platform": "youtube",
+    "postTitle": "30 174$ in 2 weeks using the JDModel, Comment 30 and ill send you link to the full video #trading",
+    "postUrl": "https://youtube.com/watch?v=EB_9GfOdXUg",
+    "authorName": "JDTrades",
+    "suggestedReply": "$30k in 2 weeks is possible with the right model but I always tell my students to be careful scaling expectations before they understand the drawdown that can come with aggressive compounding. The JDModel likely leans on displacement and liquidity sweeps which work beautifully in trending conditions but can punish you hard during choppy consolidation weeks. Make sure you are tracking your win rate across session killzones before you commit real size to any model. 30",
+    "createdAt": "2026-06-05T12:01:38.369Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780660901659-bi6wb",
+    "platform": "youtube",
+    "postTitle": "How to get a sniper entry from an accumulation! #gold #trading #xauusd #trending #shorts",
+    "postUrl": "https://youtube.com/watch?v=cfRo_AX4Vo0",
+    "authorName": "PyroPeakFX Trading ",
+    "suggestedReply": "I drill sniper entries from accumulation zones into my students constantly, especially on gold. The key detail most miss is waiting for a proper displacement candle out of the range before committing, not just the first impulse move. On the 15 minute chart this has saved my students from so many fakeouts. Did you use a specific session window to time your entry here?",
+    "createdAt": "2026-06-05T12:01:41.659Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780660905685-eq1rm",
+    "platform": "youtube",
+    "postTitle": "4 Jun BTC &amp; GOLD LIVE TRADING 🔴 | ICT + SMC Scalping Strategy | Real-Time Market Analysis",
+    "postUrl": "https://youtube.com/watch?v=BgzsqAxlQjY",
+    "authorName": "Trend Hacker",
+    "suggestedReply": "Interesting take on scalping BTC and Gold together on the same session. In my experience, most traders struggle with this pairing because BTC displacement moves can look like clean ICT setups but lack the institutional follow-through you get on Gold during London overlap. I actually teach my students to confirm with a higher timeframe PD array before dropping to the scalp entry, especially on Gold where the manipulation is more predictable. Keeps them out of a lot of noise.",
+    "createdAt": "2026-06-05T12:01:45.685Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780660910508-vzow6",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=-QYDZZ8IEzY",
+    "authorName": "The Trading Process",
+    "suggestedReply": "I've been trading XAUUSD with SMC for years and the one thing I drill into my students is patience at the Asian session range before London opens. Gold specifically creates the cleanest order blocks on the 1H when smart money targets liquidity above or below that consolidation. Most beginners skip this step and wonder why their entries get swept. Are you factoring in the weekly bias before marking your POIs here?",
+    "createdAt": "2026-06-05T12:01:50.508Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780660915960-aranx",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=pPNCHdDhzyM",
+    "authorName": "The Trading Process",
+    "suggestedReply": "SMC on XAUUSD is genuinely powerful but I always warn my students about one thing. Gold's liquidity sweeps during the Asian session can look identical to real displacement, and if you're entering off an order block without confirming the higher timeframe narrative first, you'll get chopped. The Smart Money concept is solid here but confluence is everything on this pair.",
+    "createdAt": "2026-06-05T12:01:55.960Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1780533941503-8hmt2",
     "platform": "investinglive",
     "postTitle": "PBOC is expected to set the USD/CNY reference rate at 6.7770 – Reuters estimate",
