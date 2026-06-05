@@ -1976,5 +1976,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-06-05T12:01:45.245Z",
+    "type": "text",
+    "postType": "hot-take",
+    "text": "Unpopular opinion: Trading NFP is gambling dressed up as strategy. The smart money already moved bef",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
