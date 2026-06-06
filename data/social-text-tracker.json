@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-results",
     "promo-checklist",
     "poll-native",
     "promo-blog",
@@ -29,11 +28,12 @@
     "promo-coaching",
     "question",
     "poll",
-    "hot-take"
+    "hot-take",
+    "quote"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: Trading NFP is gambling dressed up as strategy. The smart money already moved before the number drops. You're just reacting to bait. #NFP #ICTTrading #SmartMoneyConcepts",
-    "date": "2026-06-05T12:01:44.237Z"
+    "type": "quote",
+    "text": "\"Risk comes from not knowing what you're doing.\" — Warren Buffett\n\nNFP week is literally a test of preparation. You either studied the levels or you're gambling. 🎯\n\n#ICTTrading #NFP #SmartMoneyConcepts",
+    "date": "2026-06-06T12:00:17.427Z"
   }
 }
