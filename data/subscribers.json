@@ -131,7 +131,7 @@
   {
     "email": "eaglesfocus01@gmail.com",
     "date": "2026-05-24T22:46:12.434Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "referralCode": "R2F-h75t9t",
     "referredBy": null,
     "referralCount": 0,
@@ -148,7 +148,8 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts",
-      "successStory"
+      "successStory",
+      "tradingPsychology"
     ],
     "abandonmentEmailSent": true
   },
