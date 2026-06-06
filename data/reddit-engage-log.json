@@ -2734,5 +2734,15 @@
     "commentedAt": "2026-06-05T18:01:46.489Z",
     "permalink": "/r/Trading/comments/1tx7niy/23645_from_124_trades_using_a_5min_orb_setup/opy3qmq/",
     "commentId": "opy3qmq"
+  },
+  {
+    "postId": "1txl9j9",
+    "subreddit": "RealDayTrading",
+    "postTitle": "Tips for a New Trader",
+    "commentText": "i had this exact problem when i first started running ORB on the 5min, kept blowing my sim account because i had no clue how to size into trades properly. what helped me was treating the opening range high/low as a proper liquidity level, and only taking the retest after a clear BOS on that same timeframe rather than chasing the initial break. for the logbook tbh just use a google sheet and log entry price, stop, target, RR, and whether price had a clean displacement candle before entry, that alone forces you to think before clicking. position sizing at £1k, i'd honestly just risk 1% per trade flat until you've got 50+ trades logged, no need to overcomplicate it yet.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-06T08:00:20.042Z",
+    "permalink": "/r/RealDayTrading/comments/1txl9j9/tips_for_a_new_trader/oq1z9s0/",
+    "commentId": "oq1z9s0"
   }
 ]
