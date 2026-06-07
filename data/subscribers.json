@@ -209,7 +209,7 @@
   {
     "email": "anmolpannu33@gmail.com",
     "date": "2026-06-04T22:08:48.687Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-auqs7a",
     "referredBy": null,
     "referralCount": 0,
@@ -217,6 +217,8 @@
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-06-04T22:08:48.687Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   }
 ]
