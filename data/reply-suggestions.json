@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1780833649007-lajth",
+    "platform": "youtube",
+    "postTitle": "Predicting the market LIVE using a 15m Bias and 1m Execution! 🎯📉",
+    "postUrl": "https://youtube.com/watch?v=IyIGP86K0Mg",
+    "authorName": "The Laksh Algo | ICT & SMC Trader",
+    "suggestedReply": "Using a 15m bias with 1m execution is exactly how I teach my students to structure their trading day. The key most miss is waiting for a true displacement on the 15m before dropping to the 1m for a refined entry, otherwise you're just guessing at noise. Do you filter your 15m bias around specific sessions like London or New York open, or are you taking setups across the full session?",
+    "createdAt": "2026-06-07T12:00:49.007Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780833652565-gwlpm",
+    "platform": "youtube",
+    "postTitle": "ICT FAIR VALUE GAP #daytrading #liquidity #ict #icttrading #tradingstrategy",
+    "postUrl": "https://youtube.com/watch?v=9T6IBub4E4I",
+    "authorName": "APREESE2x",
+    "suggestedReply": "Fair value gaps are most powerful when they align with a higher timeframe draw on liquidity. I teach my students to always ask what price is being drawn toward before entering any FVG, because without that context you're just fading moves blindly. On pairs like NQ or ES, an FVG sitting inside a premium array with no clear target above often traps newer traders. The gap is the entry, but the liquidity is the reason.",
+    "createdAt": "2026-06-07T12:00:52.565Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780833656164-6zfm9",
+    "platform": "youtube",
+    "postTitle": "🔥 20R in Just 2 Days 😱 | ICT Trading Telugu",
+    "postUrl": "https://youtube.com/watch?v=bYrlpj3b8nU",
+    "authorName": "ICT తెలుగు",
+    "suggestedReply": "20R in 2 days is the kind of result that gets newer traders chasing setups without understanding the risk model behind it. I always tell my students that the R multiple means nothing if your SL placement isn't anchored to a real structural level like a breaker or OB. What was the average RR per trade here and were these taken off the 15m or a higher confirmation timeframe?",
+    "createdAt": "2026-06-07T12:00:56.164Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780833659866-m3dwq",
+    "platform": "youtube",
+    "postTitle": "NY equilibrium + my DDE Model are a match made in heaven 🤩#NQ #Trading #FVG #IFVG #ICT",
+    "postUrl": "https://youtube.com/watch?v=K58zxGc0dCw",
+    "authorName": "APJ Capital",
+    "suggestedReply": "NY equilibrium paired with IFVGs is something I drill into my students constantly. When price returns to equilibrium mid-session and taps an IFVG on the 5m, that confluence is where the cleanest NQ entries live. Most traders overlook that the DDE model likely filters out the noise by waiting for that specific draw on liquidity to align first. Are you triggering entries on the first tap or waiting for a mitigation candle to confirm?",
+    "createdAt": "2026-06-07T12:00:59.866Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780833662608-af7cv",
+    "platform": "youtube",
+    "postTitle": "Master Entry After Liquidity Sweep | Smart Money Concept (SMC) Forex Trading #viral",
+    "postUrl": "https://youtube.com/watch?v=IvjAKj4-ytA",
+    "authorName": "SMC Nexus",
+    "suggestedReply": "Most traders I work with rush the entry right after the liquidity sweep without waiting for confirmation on the lower timeframe. I always tell my students to drop to the 5m for a displacement candle before committing, especially on London open setups. Are you finding the sweep to entry sequence works cleaner on specific sessions or across the board?",
+    "createdAt": "2026-06-07T12:01:02.608Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780833669964-axc0l",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=bh0v3G6d_Cw",
+    "authorName": "The Trading Process",
+    "suggestedReply": "Smart money on XAUUSD and crypto in the same session is something I drill into my students because the liquidity dynamics are completely different between the two asset classes. Most traders try to apply the same ICT entry model to both without adjusting for gold's sensitivity to higher timeframe displacement versus crypto's erratic wick behaviour. Are you framing your SMC confluences off the 4H draw on liquidity first before dropping into the lower timeframes for entries?",
+    "createdAt": "2026-06-07T12:01:09.965Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780833673771-iayd8",
+    "platform": "youtube",
+    "postTitle": "XAUUSD Monday Analysis (8 June 2026) 🔥 Smart Money Buy &amp; Sell Zones | Gold Forecast",
+    "postUrl": "https://youtube.com/watch?v=B9o16TaWjOY",
+    "authorName": "Trade With Ajeet",
+    "suggestedReply": "I've traded XAUUSD through some brutal Monday opens where the smart money zones from the weekly open completely flipped retail bias. I drill into my students that the buy and sell zones mean nothing without understanding which side liquidity is resting above or below going into the New York session. On gold specifically, I always wait for a confirmed displacement on the 15m before trusting any zone. Great that Ajeet is mapping these levels out early in the week.",
+    "createdAt": "2026-06-07T12:01:13.771Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1780833677478-qfns8",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=JOfmQnowAPw",
+    "authorName": "The Trading Process",
+    "suggestedReply": "SMC on gold and crypto in the same session is solid but I always warn my students to be careful about session overlap confluences. The institutional footprint on XAUUSD behaves very differently from crypto during killzone hours, and blending the two without adjusting your draw on liquidity logic can get messy fast. Make sure you are qualifying which market structure shift actually matters before committing to an entry.",
+    "createdAt": "2026-06-07T12:01:17.478Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1780747271569-ydmfd",
     "platform": "investinglive",
     "postTitle": "investingLive Americas FX news wrap 5 Jun:A strong US jobs report sends bonds/stocks lower",
