@@ -2770,5 +2770,25 @@
     "commentedAt": "2026-06-06T18:00:58.792Z",
     "permalink": "/r/Forexstrategy/comments/1tyecrx/xauusd_analysis/oq4op4u/",
     "commentId": "oq4op4u"
+  },
+  {
+    "postId": "1tz5pdu",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Any software engineers here building their own trading apps?",
+    "commentText": "the CHoCH detection is probably where you'll get the most signal quality gains tbh — a lot of apps flag it too early before price actually confirms displacement, so you end up with a ton of false entries on the 1m. market memory is underrated too, tracking whether a specific OB on NQ held or got violated in the previous session can filter out a ton of garbage setups before the alert even fires. are you validating your CHoCH logic against a higher timeframe like the 15m before the 1m entry triggers, or are you running it purely on the 1m structure?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-07T08:01:33.315Z",
+    "permalink": "/r/Forexstrategy/comments/1tz5pdu/any_software_engineers_here_building_their_own/oq8br00/",
+    "commentId": "oq8br00"
+  },
+  {
+    "postId": "1tydwna",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Gold buying level",
+    "commentText": "try marking the 15m bearish OB that caused the most recent displacement down on gold before looking for longs. if price sweeps that buy side liquidity above and then retraces into that OB during london or NY open killzone, that's your actual entry, not just a random \"buying level.\" tbh drawing a line on a chart and calling it support is where most people get chopped up on XAU.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-07T08:01:41.360Z",
+    "permalink": "/r/Forexstrategy/comments/1tydwna/gold_buying_level/oq8brko/",
+    "commentId": "oq8brko"
   }
 ]
