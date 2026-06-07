@@ -2034,5 +2034,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-06-07T12:00:32.105Z",
+    "type": "text",
+    "postType": "tip",
+    "text": "NFP week = liquidity sweep season. Smart money hunts stops BEFORE the news drops — not after. Mark y",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
