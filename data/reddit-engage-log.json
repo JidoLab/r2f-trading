@@ -2553,7 +2553,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-04T03:00:56.276Z",
     "permalink": "/r/InnerCircleTraders/comments/1tvzuo0/help_with_trading/opn2j2p/",
-    "commentId": "opn2j2p"
+    "commentId": "opn2j2p",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-04T07:40:49.000Z",
+    "firstReplyAuthor": "Appropriate-Bite-100",
+    "firstReplyText": "Thanks for that. I have been trading from 8:30 am up until about 11am NY time. "
   },
   {
     "postId": "1twgv9s",
@@ -2563,7 +2567,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-04T08:01:01.110Z",
     "permalink": "/r/swingtrading/comments/1twgv9s/swing_trading_as_a_bear/opo6loj/",
-    "commentId": "opo6loj"
+    "commentId": "opo6loj",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-04T08:30:24.000Z",
+    "firstReplyAuthor": "t2ton",
+    "firstReplyText": "Thanks. \n\n\n\"Target a liquidity pool\" - That is exactly what I am arguing with. Of course there are some not covered orders that sit below gaps, but my assumption is - it is bears who create buy-side liquidity, and bulls, who create sell-side liquidity, not the other way round that is a common way of"
   },
   {
     "postId": "1tvzqoj",
