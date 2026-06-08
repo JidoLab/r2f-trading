@@ -1,0 +1,93 @@
+{
+  "slug": "what-is-a-judas-swing",
+  "title": "Judas Swing Explained",
+  "seoTitle": "What Is a Judas Swing? ICT False Move Explained",
+  "seoDescription": "The Judas Swing fakes out retail traders in the first 30 minutes of a session. Knowing what is a judas swing helps you stop chasing and start positioning with smart money.",
+  "headline": "What Is a Judas Swing and How Do You Trade It?",
+  "subheadline": "The false move at session open is one of the most reliable manipulation patterns in the ICT methodology. Once you can identify it, you stop being the liquidity and start following the institutions.",
+  "intro": "A Judas Swing is a deliberate false price move that occurs at or near the open of a trading session, designed to trigger retail stop orders and induce traders into positions in the wrong direction before price reverses toward its true daily draw on liquidity. The term comes from the ICT methodology and describes how smart money engineers a sweep of one side of the market, collecting liquidity resting above recent highs or below recent lows, before delivering a strong impulse move in the opposite direction. Recognizing a Judas Swing means you can wait for the manipulation to complete rather than entering impulsively into the trap.",
+  "keyPoints": [
+    {
+      "icon": "🎭",
+      "title": "What a Judas Swing Actually Is",
+      "text": "A Judas Swing is a short, aggressive price spike at session open that runs liquidity on one side of the market before reversing sharply. It typically occurs during the first 30 to 60 minutes of the London or New York killzone. The move is not random volatility. It is purposeful accumulation targeting the stop clusters and pending orders placed by retail traders above swing highs or below swing lows."
+    },
+    {
+      "icon": "💸",
+      "title": "Why It Matters for Your Entries",
+      "text": "Most retail traders enter on the initial session move, assuming momentum will continue. The Judas Swing punishes that assumption by reversing immediately after triggering those entries and stops. Understanding this pattern shifts your timing entirely. Instead of entering on the open spike, you wait for the sweep to complete and look for a displacement candle, a fair value gap, or an order block retest that confirms the real direction."
+    },
+    {
+      "icon": "🗺️",
+      "title": "How to Use It in Your Trading",
+      "text": "Start by marking the dealing range from the previous session or the Asian range. Note where buy-side and sell-side liquidity is sitting as equal highs, equal lows, or trendline clusters. At the killzone open, watch for price to spike aggressively into one of those liquidity pools. Once a break of structure forms in the opposing direction with a fair value gap left behind, that is your confirmation to enter with the actual draw on liquidity as your target."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "Traders who know about the Judas Swing concept often make the error of labeling every open-session spike as one, which leads to premature entries before the sweep is actually complete. The pattern requires confirmation: a clean liquidity grab, a displacement move away from that level, and ideally a retest of a mitigation point such as an order block or fair value gap. Entering before displacement is confirmed puts you back inside the same trap, just with extra steps."
+    },
+    {
+      "icon": "📈",
+      "title": "Next Steps to Develop This Skill",
+      "text": "Replay historical London and New York opens on EURUSD, GBPUSD, or the NQ futures contract and label every session where a Judas Swing formed. Build a habit of identifying the prior session liquidity before the open, not after. Once you can consistently spot the sweep and the subsequent displacement on a 5-minute or 15-minute chart, you will have a repeatable framework for timing high-probability entries within the killzone windows."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What time does the Judas Swing happen?",
+      "a": "The Judas Swing most commonly occurs during the London killzone, roughly 2:00 to 5:00 AM New York time, and the New York killzone from 7:00 to 10:00 AM New York time. The London open version tends to sweep Asian range highs or lows before reversing toward the true daily bias."
+    },
+    {
+      "q": "How do you confirm a Judas Swing has completed?",
+      "a": "Confirmation comes from a displacement candle that creates a fair value gap in the opposite direction after the liquidity sweep. On EURUSD on a 5-minute chart, this looks like price spiking above equal highs from the Asian session, then forming a strong bearish engulf with a visible imbalance below it before continuing lower toward a draw."
+    },
+    {
+      "q": "Is the Judas Swing bullish or bearish?",
+      "a": "It can be either. A bearish Judas Swing sweeps buy-side liquidity above a high before price drops. A bullish Judas Swing takes out sell-side liquidity below a low before price rallies. The direction of the initial fake move is always opposite to the intended daily delivery."
+    },
+    {
+      "q": "Can the Judas Swing be used on futures like NQ or ES?",
+      "a": "Yes. The New York open on NQ and ES futures is one of the clearest environments for this pattern. Price frequently spikes through the overnight high or low during the 9:30 to 10:00 AM window, triggering breakout entries and stop orders before reversing into a structured trend move aligned with the higher timeframe draw."
+    },
+    {
+      "q": "What is the difference between a Judas Swing and a stop hunt?",
+      "a": "A stop hunt is the broader concept of price moving to trigger clustered stops. The Judas Swing is a specific ICT application of that idea, tied to session timing, killzone windows, and the daily draw on liquidity. Every Judas Swing is a stop hunt, but a stop hunt is only a Judas Swing when it occurs at session open as part of a structured manipulation before directional delivery."
+    }
+  ],
+  "relatedTags": [
+    "ict-methodology",
+    "judas-swing",
+    "killzone-trading",
+    "liquidity-sweep",
+    "fair-value-gap",
+    "order-block",
+    "break-of-structure",
+    "london-session",
+    "new-york-session",
+    "smart-money-concepts",
+    "forex-price-action",
+    "futures-trading"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "ict-silver-bullet-strategy",
+      "label": "ICT Silver Bullet Strategy"
+    },
+    {
+      "slug": "ict-optimal-trade-entry",
+      "label": "ICT Optimal Trade Entry Guide"
+    },
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    },
+    {
+      "slug": "ict-order-blocks",
+      "label": "ICT Order Blocks Explained"
+    }
+  ],
+  "testimonialIndex": 1,
+  "createdAt": "2026-06-08T05:02:02.943Z",
+  "targetKeyword": "what is a judas swing"
+}
