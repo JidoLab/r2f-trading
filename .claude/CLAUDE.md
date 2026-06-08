@@ -101,6 +101,8 @@ PDF exists at public/downloads/ict-trading-checklist.pdf — already integrated 
 - Smart hot lead follow-up: auto-email + Telegram alert when score hits 50
 - Weekly newsletter auto-generation via Claude with admin page at /admin/newsletters
 - GA4 analytics integration (/admin/analytics-dashboard, needs service account setup)
+- Pinterest auto-pinning (cron pinterest-pin, 10:00 UTC) — drips 2 evergreen pins/day from existing infographics + blog covers, dedup log data/pinterest-pin-log.json. pinToPinterest() helper in social.ts
+- Programmatic SEO glossary (cron generate-glossary, 5:00 UTC) — 3 long-tail ICT pages/day from finite seed list in route, stops when exhausted. /learn/[slug] now has breadcrumbs + FAQPage + related-term links; /learn hub page lists all. LandingPageData gained optional intro/faqs/relatedTerms (backward compatible)
 
 ## Admin Sidebar Categories
 - Overview: Dashboard, AI Briefing, Notifications
