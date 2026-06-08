@@ -317,6 +317,55 @@ async function postToPinterest(post: PostData): Promise<SocialResult> {
   return { platform: "pinterest", status: "error", message: err.slice(0, 200) };
 }
 
+/**
+ * Generic Pinterest pin — pins any publicly-accessible image with a custom
+ * title/description/link. Used by the pinterest-pin cron to drip evergreen
+ * pins of existing infographics + blog covers (separate from the one-off
+ * cover pin that postToPinterest does on publish). Pinterest rewards
+ * consistent daily pinning and resurfaces old pins for months, so this is
+ * pure incremental reach at zero marginal cost.
+ *
+ * Pinterest field limits: title <= 100 chars, description <= 500 chars.
+ */
+export async function pinToPinterest(opts: {
+  title: string;
+  description: string;
+  link: string;
+  imageUrl: string;
+}): Promise<SocialResult> {
+  const token = process.env.PINTEREST_ACCESS_TOKEN;
+  const boardId = process.env.PINTEREST_BOARD_ID;
+
+  if (!token || !boardId) {
+    return { platform: "pinterest", status: "skipped", message: "No token or board id" };
+  }
+  if (!opts.imageUrl) {
+    return { platform: "pinterest", status: "skipped", message: "No image url" };
+  }
+
+  const res = await fetch("https://api.pinterest.com/v5/pins", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      title: opts.title.slice(0, 100),
+      description: opts.description.slice(0, 500),
+      link: opts.link,
+      media_source: {
+        source_type: "image_url",
+        url: opts.imageUrl,
+      },
+      board_id: boardId,
+    }),
+  });
+
+  if (res.ok) return { platform: "pinterest", status: "success" };
+  const err = await res.text();
+  return { platform: "pinterest", status: "error", message: err.slice(0, 200) };
+}
+
 // --- Telegram Channel ---
 async function postToTelegram(post: PostData): Promise<SocialResult> {
   const botToken = process.env.TELEGRAM_BOT_TOKEN;

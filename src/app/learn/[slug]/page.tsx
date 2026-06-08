@@ -4,7 +4,7 @@ import EmailSignup from "@/components/EmailSignup";
 import PageTracker from "@/components/PageTracker";
 import Script from "next/script";
 import Link from "next/link";
-import { readFile, listFiles } from "@/lib/github";
+import { readFile } from "@/lib/github";
 import { getAllPosts } from "@/lib/blog";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -23,6 +23,12 @@ interface LandingPageData {
   testimonialIndex: number;
   createdAt: string;
   targetKeyword: string;
+  // Optional fields added for programmatic-SEO glossary pages (2026-06-01).
+  // Older landing pages won't have them; every render guards on presence so
+  // the 26 pre-existing pages keep rendering unchanged.
+  intro?: string; // 2-3 sentence plain-language definition/answer up top
+  faqs?: { q: string; a: string }[]; // powers on-page FAQ + FAQPage schema
+  relatedTerms?: { slug: string; label: string }[]; // internal links to siblings
 }
 
 const TESTIMONIALS = [
@@ -96,23 +102,48 @@ export default async function LandingPage({
 
   const testimonial = TESTIMONIALS[data.testimonialIndex % TESTIMONIALS.length];
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    name: data.seoTitle,
-    description: data.seoDescription,
-    url: `${BASE_URL}/learn/${slug}`,
-    publisher: {
-      "@type": "Organization",
-      name: "R2F Trading",
-      url: BASE_URL,
+  const hasFaqs = Array.isArray(data.faqs) && data.faqs.length > 0;
+
+  // Single JSON-LD @graph: WebPage + BreadcrumbList (+ FAQPage when present).
+  // FAQPage markup is the highest-leverage schema for both rich results and
+  // AI-answer citations, so glossary pages always ship it when they have FAQs.
+  const graph: Record<string, unknown>[] = [
+    {
+      "@type": "WebPage",
+      name: data.seoTitle,
+      description: data.seoDescription,
+      url: `${BASE_URL}/learn/${slug}`,
+      publisher: { "@type": "Organization", name: "R2F Trading", url: BASE_URL },
+      author: { "@type": "Person", name: "Harvest Wright" },
+      datePublished: data.createdAt,
     },
-    author: {
-      "@type": "Person",
-      name: "Harvest Wright",
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+        { "@type": "ListItem", position: 2, name: "Learn", item: `${BASE_URL}/learn` },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: data.title,
+          item: `${BASE_URL}/learn/${slug}`,
+        },
+      ],
     },
-    datePublished: data.createdAt,
-  };
+  ];
+
+  if (hasFaqs) {
+    graph.push({
+      "@type": "FAQPage",
+      mainEntity: data.faqs!.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
+
+  const jsonLd = { "@context": "https://schema.org", "@graph": graph };
 
   return (
     <main>
@@ -123,6 +154,30 @@ export default async function LandingPage({
       />
       <Header />
       <PageTracker event="landing_page_view" />
+
+      {/* Breadcrumbs — required on all content pages for crawlability and
+          to render BreadcrumbList rich results. */}
+      <nav aria-label="Breadcrumb" className="bg-navy border-b border-white/10">
+        <div className="max-w-4xl mx-auto px-6 py-3">
+          <ol className="flex flex-wrap items-center gap-2 text-xs text-white/50">
+            <li>
+              <Link href="/" className="hover:text-gold transition-colors">
+                Home
+              </Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li>
+              <Link href="/learn" className="hover:text-gold transition-colors">
+                Learn
+              </Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li className="text-white/80 font-medium" aria-current="page">
+              {data.title}
+            </li>
+          </ol>
+        </div>
+      </nav>
 
       {/* Hero */}
       <section className="bg-navy py-16 md:py-24">
@@ -184,9 +239,15 @@ export default async function LandingPage({
           >
             {data.title}
           </h2>
-          <p className="text-gray-500 text-center mb-12 max-w-2xl mx-auto">
-            Everything you need to know, broken down by a 10-year ICT practitioner.
-          </p>
+          {data.intro ? (
+            <p className="text-gray-600 text-center text-lg mb-12 max-w-3xl mx-auto leading-relaxed">
+              {data.intro}
+            </p>
+          ) : (
+            <p className="text-gray-500 text-center mb-12 max-w-2xl mx-auto">
+              Everything you need to know, broken down by a 10-year ICT practitioner.
+            </p>
+          )}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {data.keyPoints.map((point) => (
               <div
@@ -254,6 +315,61 @@ export default async function LandingPage({
                   <p className="text-gray-500 text-sm line-clamp-2">
                     {post.excerpt}
                   </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* FAQ — drives FAQPage rich results and AI-answer citations */}
+      {hasFaqs && (
+        <section className="py-16 md:py-20 bg-white border-t border-gray-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2
+              className="text-2xl md:text-3xl font-bold text-navy text-center mb-10"
+              style={{ fontFamily: "var(--font-serif)" }}
+            >
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-4">
+              {data.faqs!.map((faq, i) => (
+                <details
+                  key={i}
+                  className="group bg-gray-50 rounded-lg border border-gray-100 p-5"
+                >
+                  <summary className="flex cursor-pointer items-center justify-between text-navy font-bold list-none">
+                    <span>{faq.q}</span>
+                    <span className="text-gold ml-4 transition-transform group-open:rotate-45">
+                      +
+                    </span>
+                  </summary>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-3">
+                    {faq.a}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Related glossary terms — internal links spread crawl equity across
+          the programmatic-SEO cluster and keep readers on-site. */}
+      {Array.isArray(data.relatedTerms) && data.relatedTerms.length > 0 && (
+        <section className="py-12 bg-cream border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-6 text-center">
+            <h2 className="text-sm font-bold uppercase tracking-wider text-navy/50 mb-6">
+              Related ICT Concepts
+            </h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              {data.relatedTerms.map((term) => (
+                <Link
+                  key={term.slug}
+                  href={`/learn/${term.slug}`}
+                  className="bg-white border border-gray-200 hover:border-gold/50 hover:text-gold text-navy text-sm font-semibold px-4 py-2 rounded-full transition-all"
+                >
+                  {term.label}
                 </Link>
               ))}
             </div>
