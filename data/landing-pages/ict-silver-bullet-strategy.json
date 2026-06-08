@@ -1,0 +1,93 @@
+{
+  "slug": "ict-silver-bullet-strategy",
+  "title": "ICT Silver Bullet Strategy",
+  "seoTitle": "ICT Silver Bullet Strategy: 1-Hour Window Entries",
+  "seoDescription": "The ICT silver bullet strategy gives traders a defined 1-hour killzone window with specific entry logic. Know the three sessions, the FVG trigger, and how to filter noise.",
+  "headline": "ICT Silver Bullet: High-Probability Entries in 60 Minutes",
+  "subheadline": "A structured, time-based approach to catching precision entries using Fair Value Gaps and session killzones. No ambiguity, no all-day screen time.",
+  "intro": "The ICT silver bullet strategy is a time-restricted entry model developed by Michael Huddleston (ICT) that targets high-probability trades within specific 1-hour windows during the London and New York sessions. It combines a Break of Structure with a Fair Value Gap entry to pinpoint low-risk, high-reward trade locations. Traders use it to avoid the noise of the broader session and focus execution on moments when institutional activity is most likely concentrated.",
+  "keyPoints": [
+    {
+      "icon": "🕐",
+      "title": "What the Silver Bullet Is",
+      "text": "The silver bullet is a 1-hour entry window that occurs three times per day: 3:00 to 4:00 AM New York time (London open), 10:00 to 11:00 AM New York time (New York AM session), and 2:00 to 3:00 PM New York time (New York PM session). Within each window, traders wait for a specific sequence: a liquidity sweep, a Break of Structure, and then a Fair Value Gap that forms on the retracement. The FVG becomes the entry zone, not a random candle pattern."
+    },
+    {
+      "icon": "📍",
+      "title": "Why the Timing Window Matters",
+      "text": "Killzones are periods when institutional order flow is most active, which means price displacement and clean FVG formation are far more reliable than in dead-hour markets. Trading the silver bullet outside its defined window removes the statistical edge the model is built on. The time constraint is a feature, not a limitation. It forces selectivity and keeps traders away from low-quality setups that emerge mid-session."
+    },
+    {
+      "icon": "⚙️",
+      "title": "How to Execute the Setup",
+      "text": "Start by identifying the higher timeframe bias, either bullish or bearish, using the daily or 4-hour chart. During the silver bullet window, drop to the 5-minute or 1-minute chart and watch for price to sweep a recent liquidity level such as an equal high or equal low. After the sweep, look for a Break of Structure in the opposing direction. When price retraces into the FVG created by that displacement move, that gap is your entry zone. Set the stop loss beyond the liquidity sweep and target the opposing liquidity pool or a significant order block."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Execution Mistake",
+      "text": "Traders frequently enter the FVG before confirming the Break of Structure, which means they are fading a move that has not yet reversed. The BOS is the confirmation signal that institutional order flow has shifted. Entering before it appears is anticipation, not execution, and it dramatically increases the likelihood of getting stopped out by the continuation of the original move. Patience inside the 1-hour window is what separates consistent application from random results."
+    },
+    {
+      "icon": "🚀",
+      "title": "Building on the Silver Bullet",
+      "text": "Once the core sequence feels mechanical, add a higher timeframe order block as a confluence filter so your FVG entry aligns with a larger institutional level. Pair the model with a basic daily bias framework using premium and discount arrays to ensure you are only taking buys in discount and sells in premium. R2F Trading covers the full ICT model structure, including how the silver bullet fits within the Power of 3 (AMD) concept, in the coaching curriculum available on the site."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What time is the ICT silver bullet strategy?",
+      "a": "There are three silver bullet windows, all in New York time: 3:00 to 4:00 AM (London open killzone), 10:00 to 11:00 AM (New York AM killzone), and 2:00 to 3:00 PM (New York PM killzone). If no valid FVG forms after a BOS during the window, no trade is taken that session."
+    },
+    {
+      "q": "What markets work best for the ICT silver bullet?",
+      "a": "The strategy is designed for liquid markets with clean price delivery. Forex majors like EURUSD and GBPUSD work well, as do index futures like ES and NQ. These instruments display clear FVG formation and reliable liquidity sweeps during the designated killzone windows where institutional participation is highest."
+    },
+    {
+      "q": "What is the difference between a silver bullet FVG and a regular FVG?",
+      "a": "A silver bullet FVG is specifically the Fair Value Gap that forms during the displacement move following a Break of Structure inside the 1-hour window. A regular FVG can appear anywhere on the chart. The silver bullet FVG carries more weight because it forms in a confirmed directional move during a high-activity session window, not during a random price swing."
+    },
+    {
+      "q": "How do I set a stop loss on a silver bullet trade?",
+      "a": "Place the stop loss beyond the liquidity level that was swept before the Break of Structure. For example, on a bullish silver bullet on the 5-minute EURUSD chart, the sweep would take out a recent equal low. Your stop goes a few pips below that swept low, keeping risk defined and structurally logical rather than arbitrary."
+    },
+    {
+      "q": "Can the ICT silver bullet be traded on the 1-minute chart?",
+      "a": "Yes. Many ICT traders use the 1-minute chart inside the silver bullet window to get a more precise FVG entry and tighter stop loss. The 5-minute chart is more common for beginners because the structure is easier to read. The 1-minute approach suits traders who want reduced risk exposure and are comfortable reading fast price action during the killzone."
+    }
+  ],
+  "relatedTags": [
+    "ict-silver-bullet",
+    "ict-killzone",
+    "fair-value-gap",
+    "break-of-structure",
+    "order-block",
+    "liquidity-sweep",
+    "ict-methodology",
+    "new-york-session",
+    "london-killzone",
+    "price-action-entries",
+    "ict-concepts",
+    "forex-day-trading"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    },
+    {
+      "slug": "ict-optimal-trade-entry",
+      "label": "ICT Optimal Trade Entry Guide"
+    },
+    {
+      "slug": "ict-order-blocks",
+      "label": "ICT Order Blocks Explained"
+    },
+    {
+      "slug": "liquidity-sweep-trading",
+      "label": "Liquidity Sweep Trading Strategy"
+    }
+  ],
+  "testimonialIndex": 3,
+  "createdAt": "2026-06-08T05:01:23.887Z",
+  "targetKeyword": "ICT silver bullet strategy"
+}
