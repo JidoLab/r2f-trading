@@ -2804,5 +2804,55 @@
     "commentedAt": "2026-06-08T03:01:01.841Z",
     "permalink": "/r/ICTMentorship/comments/1tzcun3/2_years_of_learning_ict_and_still_not_profitable/oqds2h8/",
     "commentId": "oqds2h8"
+  },
+  {
+    "postId": "1u00yma",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "What range do you use for OTE?",
+    "commentText": "for OTE specifically i always draw it swing to swing on the timeframe where the displacement happened, not just any old high/low. so if you see a clean BOS on the 15m during london killzone, mark that leg, drop your fib with 0.62-0.79 highlighted, and wait for price to retrace into that zone during NY open. tbh using random HTF swings for a 15m entry just widens the zone too much and you lose precision.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-08T08:01:01.552Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u00yma/what_range_do_you_use_for_ote/oqetry4/",
+    "commentId": "oqetry4"
+  },
+  {
+    "postId": "1tzhm9m",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "XAU/USD — Patience Setup: Sweep the Low, Retrace into OTE, Then Hunt 4,099",
+    "commentText": "the OTE you're hunting on the retrace needs to line up with a breaker or a 4H FVG left behind from the initial expansion leg, otherwise you're basically just selling a fib in isolation. if June closes below May's low on the monthly that's your confirmation the draw to 4,099 is still live, but i'd be watching the 1H for a clean displacement into that POI before touching it tbh. patience here is genuinely the edge, not the setup itself.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-08T08:01:13.897Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tzhm9m/xauusd_patience_setup_sweep_the_low_retrace_into/oqetsrf/",
+    "commentId": "oqetsrf"
+  },
+  {
+    "postId": "1tzbg42",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "EURCAD outlook for next week",
+    "commentText": "try marking the daily FVG on EURCAD before next week opens — there's likely one sitting above or below current price acting as a draw. if price sweeps Asian session lows during London and then shows a BOS on the 15m back up into that gap, that's your entry zone tbh, not before.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-08T08:01:20.002Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tzbg42/eurcad_outlook_for_next_week/oqett6e/",
+    "commentId": "oqett6e"
+  },
+  {
+    "postId": "1tzxien",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Looking for traders to chat with NY session mornings",
+    "commentText": "NQ during NY open is where it's at tbh, especially if you're hunting that 9:30-10:00 window when price sweeps the london high or low before the real move. four years in you're probably already watching for the AM session displacement into an FVG off the 8:30 news spike. good group to find honestly, NY futures traders who actually understand the model are harder to come by than people think.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-08T08:01:26.153Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tzxien/looking_for_traders_to_chat_with_ny_session/oqettk0/",
+    "commentId": "oqettk0"
+  },
+  {
+    "postId": "1tzcwrr",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "2 Years of Learning ICT and Still Not Profitable – Looking for Guidance",
+    "commentText": "been there man, two years deep with all the concepts but still bleeding — the issue is probably setup overload. try this: pick ONE session (NY open, 9:30-11am EST), ONE timeframe (15m on NQ), and only trade when price sweeps a PDH or PDL during the killzone then shows a displacement candle leaving a clean FVG. that's it, nothing else. tbh narrowing down like that is what actually makes the concepts click in live conditions.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-08T08:01:35.642Z",
+    "permalink": "/r/InnerCircleTraders/comments/1tzcwrr/2_years_of_learning_ict_and_still_not_profitable/oqetu7p/",
+    "commentId": "oqetu7p"
   }
 ]
