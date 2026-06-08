@@ -1,0 +1,91 @@
+{
+  "slug": "what-is-displacement-in-ict",
+  "title": "Displacement in ICT Trading",
+  "seoTitle": "What Is Displacement in ICT? Institutional Candles Explained",
+  "seoDescription": "Displacement in ICT trading marks where institutions moved price with force. Spot it correctly and you can pinpoint FVGs, confirm BOS, and time entries with precision.",
+  "headline": "What Is Displacement in ICT and Why It Changes Your Entries",
+  "subheadline": "Displacement is the price signature institutions leave behind. Once you can read it, you stop chasing setups and start waiting for confirmation that actually means something.",
+  "intro": "Displacement in ICT trading refers to a sudden, aggressive move in price driven by institutional order flow, typically appearing as one or more large, full-bodied candles that break through a key level with clear momentum. It signals that smart money has stepped in decisively, not gradually, and it leaves behind structural clues like fair value gaps and broken order blocks that traders use to plan entries. Recognizing displacement separates a meaningful break of structure from the low-quality, choppy price action that traps retail traders on the wrong side.",
+  "keyPoints": [
+    {
+      "icon": "⚡",
+      "title": "What Displacement Actually Is",
+      "text": "Displacement is a sharp, impulsive price move made up of strong, full-bodied candles that cut through previous structure or liquidity with little to no wick. It occurs when institutional orders hit the market in size, creating an imbalance between buyers and sellers. That imbalance is often visible as a fair value gap, the three-candle formation where the middle candle moves so fast that price leaves an unfilled zone between the wicks of the surrounding candles."
+    },
+    {
+      "icon": "🏦",
+      "title": "Why Displacement Matters to Your Read",
+      "text": "A break of structure (BOS) only carries weight when displacement accompanies it. Price grinding through a level over many small candles suggests weak conviction and is frequently a liquidity sweep rather than a genuine directional move. Displacement confirms that the move has institutional backing, which is the difference between a setup worth trading and noise worth ignoring. In pairs like EURUSD or on instruments like ES futures, this distinction directly affects how you assign bias for the session."
+    },
+    {
+      "icon": "🎯",
+      "title": "How to Use It in Your Setups",
+      "text": "After displacement occurs, price commonly retraces into the fair value gap or the origin order block it created during the move. That retracement is where ICT traders look for entries, using the displacement as both directional confirmation and a reference for structuring the trade. During the London or New York killzone, a displacement through Asian range highs or lows followed by a pullback into the FVG is a textbook sequence worth building your watchlist around."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "Many traders label any large candle as displacement, which leads to over-trading and poor location. A single high-spread candle during low-liquidity hours, a news spike on a minor release, or a candle that closes back inside the range it broke are all disqualified. Real displacement closes decisively beyond the level, leaves a visible imbalance, and occurs in the context of a killzone or a liquidity draw that was already identified on higher timeframes."
+    },
+    {
+      "icon": "📈",
+      "title": "Building Displacement Into Your Process",
+      "text": "Start by marking displacement on the 15-minute chart during the New York open model and work down to the 5-minute or 1-minute for entry refinement. Higher timeframe displacement on the 4-hour or daily chart defines the macro bias, while lower timeframe displacement within that same direction gives you the entry trigger. Pairing displacement with a clearly identified liquidity pool above or below price gives your trade a logical draw and makes your risk-to-reward targets far more defensible."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is displacement in ICT trading?",
+      "a": "Displacement in ICT trading is a strong, fast directional move caused by institutional order flow. It creates large full-bodied candles that break through key levels and leave behind fair value gaps. It confirms that a break of structure has genuine momentum behind it rather than being a retail liquidity sweep."
+    },
+    {
+      "q": "How is displacement different from a regular big candle?",
+      "a": "A big candle during off-hours or on a minor news event can look similar but lacks context. Displacement must occur at a relevant time, typically a killzone, break cleanly beyond prior structure, and leave an imbalance like an FVG. A candle that wicks through and closes back inside the range does not qualify as displacement in ICT methodology."
+    },
+    {
+      "q": "Does displacement have to create a fair value gap?",
+      "a": "Frequently yes, but not always. Strong displacement often produces an FVG because price moves so quickly that a gap forms between candle wicks. However, displacement can also be identified by the quality and close of the candles alone. The FVG is a byproduct and a useful tool for locating entry zones, but its absence does not automatically invalidate the displacement read."
+    },
+    {
+      "q": "What timeframe should I look for displacement on?",
+      "a": "For context and bias, mark displacement on the 4-hour and 1-hour charts. For entries, drop to the 15-minute or 5-minute chart during the London or New York killzone. On GBPUSD, for example, a 15-minute displacement through the Asian high during the London open frequently creates a 5-minute FVG that offers a clean entry with a tight stop."
+    },
+    {
+      "q": "Can displacement happen against the higher timeframe trend?",
+      "a": "Yes, and when it does, it often signals a liquidity grab or a model like a stop hunt before continuation. If the higher timeframe trend is bullish and you see bearish displacement into a premium, that move may be engineering sell-side liquidity before price reverses higher. Reading displacement in both directions against the higher timeframe bias is part of understanding the full ICT price delivery model."
+    }
+  ],
+  "relatedTags": [
+    "ict-concepts",
+    "fair-value-gap",
+    "break-of-structure",
+    "order-blocks",
+    "killzone-trading",
+    "liquidity",
+    "price-action",
+    "institutional-trading",
+    "forex-trading",
+    "futures-trading"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "ict-order-blocks-explained-guide",
+      "label": "ICT Order Blocks Explained"
+    },
+    {
+      "slug": "smart-money-concepts",
+      "label": "Smart Money Concepts for Forex"
+    },
+    {
+      "slug": "how-to-pass-ftmo-challenge-ict",
+      "label": "Pass FTMO with ICT Strategy"
+    },
+    {
+      "slug": "ict-order-blocks",
+      "label": "ICT Order Blocks Explained"
+    }
+  ],
+  "testimonialIndex": 3,
+  "createdAt": "2026-06-08T05:00:44.983Z",
+  "targetKeyword": "what is displacement in ICT"
+}
