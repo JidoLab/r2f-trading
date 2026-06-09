@@ -157,7 +157,7 @@
   {
     "email": "libertatumtrading@gmail.com",
     "date": "2026-05-27T15:07:31.439Z",
-    "dripsSent": 4,
+    "dripsSent": 5,
     "referralCode": "R2F-bybt8j",
     "referredBy": null,
     "referralCount": 0,
@@ -182,7 +182,8 @@
       "beginnerMistakes",
       "ictConcepts",
       "socialProof",
-      "bookCallSoft"
+      "bookCallSoft",
+      "limitedSpots"
     ],
     "abandonmentEmailSent": true
   },
