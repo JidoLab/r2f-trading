@@ -2866,5 +2866,15 @@
     "commentedAt": "2026-06-08T08:01:35.642Z",
     "permalink": "/r/InnerCircleTraders/comments/1tzcwrr/2_years_of_learning_ict_and_still_not_profitable/oqetu7p/",
     "commentId": "oqetu7p"
+  },
+  {
+    "postId": "1u0rwv0",
+    "subreddit": "Trading",
+    "postTitle": "looking for a better way to track trading performance and actually understand my mistakes",
+    "commentText": "your problem isn't the data, it's that you're not tagging *why* you took each trade in the moment — specifically whether it was a valid setup (like a confirmed OB or FVG on the 15m during london open) versus revenge/boredom after a stop-out. tbh just adding a \"trigger type\" column to your journal that flags rule-based vs. emotional entries will show you exactly when the session starts slipping. most people find the deviation pattern kicks in after the second consecutive loss, and once you can see that in black and white it's hard to ignore.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-09T13:01:05.126Z",
+    "permalink": "/r/Trading/comments/1u0rwv0/looking_for_a_better_way_to_track_trading/oqmtg70/",
+    "commentId": "oqmtg70"
   }
 ]
