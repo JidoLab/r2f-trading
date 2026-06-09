@@ -1,0 +1,91 @@
+{
+  "slug": "ict-power-of-three-explained",
+  "title": "ICT Power of Three Explained",
+  "seoTitle": "ICT Power of Three Explained: AMD Price Delivery",
+  "seoDescription": "3 phases drive every clean ICT setup: accumulation, manipulation, distribution. This breakdown shows how to read AMD price delivery and time your entries precisely.",
+  "headline": "ICT Power of Three: Read Price Delivery Like a Pro",
+  "subheadline": "Every engineered price move follows the same three-phase structure. Once you can identify accumulation, manipulation, and distribution in real time, your entry timing changes completely.",
+  "intro": "The ICT Power of Three explained: price delivery in liquid markets moves through three deliberate phases called accumulation, manipulation, and distribution (AMD). In the accumulation phase, smart money builds a position within a defined range. Manipulation then engineers a false move to trap retail traders and collect liquidity. Distribution is the actual directional delivery toward a higher timeframe draw on liquidity, and it is the phase where aligned traders look to profit.",
+  "keyPoints": [
+    {
+      "icon": "🧱",
+      "title": "What the AMD Framework Is",
+      "text": "Accumulation is a consolidation range where institutional positioning occurs, often visible as a tight bracketing structure before a killzone opens. Manipulation is a brief spike through a recognizable level, such as a swing high, previous day high, or equal lows, to trigger stop orders and create liquidity. Distribution is the sustained directional move that follows, delivering price toward a premium or discount array like a fair value gap or order block on a higher timeframe."
+    },
+    {
+      "icon": "📍",
+      "title": "Why It Matters for ICT Traders",
+      "text": "Without recognizing AMD, traders frequently enter during the manipulation phase and get stopped out just before the real move begins. The framework explains why price so often spikes one direction at the London or New York open before reversing sharply. Understanding it shifts your focus from chasing candles to waiting for manipulation to complete before committing to a position."
+    },
+    {
+      "icon": "🕰️",
+      "title": "How to Apply It on a Live Chart",
+      "text": "Start on the daily chart to identify the higher timeframe draw: is price targeting buy-side or sell-side liquidity? Drop to the 15-minute chart and mark the overnight or pre-session range as the accumulation zone. When the New York or London killzone opens and price sweeps a clean liquidity level, such as equal highs or a previous session high, watch for a break of structure on the 1-minute or 5-minute chart back into the range. That BOS inside the killzone is your signal to align with distribution."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake",
+      "text": "Traders frequently label every consolidation as accumulation and every spike as manipulation, which leads to over-trading low-probability setups. AMD only carries weight when the manipulation move sweeps a meaningful liquidity pool, such as the Asian range high or a prior day extreme, and when the subsequent BOS aligns with the higher timeframe narrative. Without that confluence, you are pattern-matching noise."
+    },
+    {
+      "icon": "📈",
+      "title": "Next Steps to Build the Skill",
+      "text": "Spend two weeks back-testing AMD on EURUSD and NQ futures across the New York AM session, specifically between 8:30 and 11:00 EST. For each day, mark the overnight range, note where the manipulation spike occurs relative to liquidity, and log whether distribution delivered into a valid FVG or order block. That journaling process builds the pattern recognition needed to execute it live with confidence. The R2F Trading resources section has session-specific breakdowns to support that practice."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the ICT Power of Three in simple terms?",
+      "a": "It is a three-phase model describing how institutional price delivery works: consolidation to build a position, a false spike to trigger liquidity, then the real directional move. On EURUSD, this often plays out within a single New York AM session across the 15-minute chart."
+    },
+    {
+      "q": "How do I tell real manipulation from just a normal spike?",
+      "a": "Genuine manipulation sweeps a specific, obvious liquidity pool, such as equal highs, a prior day high, or the Asian session high, and then closes back inside the range with a strong candle. Random spikes lack that clean liquidity target and do not produce a clear break of structure back in the opposite direction within the killzone window."
+    },
+    {
+      "q": "Does the Power of Three apply to daily charts or just intraday?",
+      "a": "It applies across multiple timeframes. On the daily chart, Monday often acts as accumulation, Tuesday or Wednesday delivers the manipulation sweep, and the rest of the week distributes toward the weekly target. ICT refers to this as the weekly AMD, and it helps traders on NQ or EURUSD anticipate mid-week reversals."
+    },
+    {
+      "q": "Where exactly should I enter a trade using the AMD model?",
+      "a": "The entry comes after manipulation completes. Wait for the liquidity sweep above or below the accumulation range, then look for a break of structure on a lower timeframe, such as the 1-minute or 5-minute chart, back into a fair value gap or order block formed during the manipulation spike. That FVG or OB inside the killzone is your entry zone."
+    },
+    {
+      "q": "Can the Power of Three fail or produce losing trades?",
+      "a": "Yes, and it fails most often when the higher timeframe bias is unclear or when a news event overrides the session structure. If the weekly draw on liquidity is ambiguous or if a high-impact release like NFP disrupts the normal session rhythm, AMD setups have a lower completion rate and smaller position sizing is appropriate."
+    }
+  ],
+  "relatedTags": [
+    "ict-power-of-three",
+    "accumulation-manipulation-distribution",
+    "ict-price-delivery",
+    "killzone-trading",
+    "fair-value-gap",
+    "order-block",
+    "liquidity-sweep",
+    "break-of-structure",
+    "new-york-session-trading",
+    "ict-concepts-explained"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-a-judas-swing",
+      "label": "Judas Swing Explained"
+    },
+    {
+      "slug": "ict-silver-bullet-strategy",
+      "label": "ICT Silver Bullet Strategy"
+    },
+    {
+      "slug": "what-is-smt-divergence",
+      "label": "SMT Divergence Explained"
+    },
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    }
+  ],
+  "testimonialIndex": 0,
+  "createdAt": "2026-06-09T05:01:11.573Z",
+  "targetKeyword": "ICT power of three explained"
+}
