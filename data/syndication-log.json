@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-06-09-why-you-re-still-losing-after-learning-ict",
+    "syndicatedAt": "2026-06-09T12:03:06.139Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-06-09-why-you-re-still-losing-after-learning-ict",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/why-youre-still-losing-after-learning-ict-5h1g",
+        "id": "3856790"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-06-09-why-you-re-still-losing-after-learning-ict"
+  },
+  {
     "slug": "2026-06-03-why-knowing-ict-concepts-isn-t-making-you-money",
     "syndicatedAt": "2026-06-03T06:02:56.478Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-06-03-why-knowing-ict-concepts-isn-t-making-you-money",
