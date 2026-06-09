@@ -2876,5 +2876,25 @@
     "commentedAt": "2026-06-09T13:01:05.126Z",
     "permalink": "/r/Trading/comments/1u0rwv0/looking_for_a_better_way_to_track_trading/oqmtg70/",
     "commentId": "oqmtg70"
+  },
+  {
+    "postId": "1u18s91",
+    "subreddit": "proptrading",
+    "postTitle": "Prop Trading in US",
+    "commentText": "i had this exact problem last year when i was trying to run my NQ setup on the 15m around new york open and couldn't find a futures prop firm that supported ctrader properly. tbh the futures space is almost entirely NinjaTrader or Rithmic based for US firms, ctrader just isn't really in that ecosystem. your best bet is probably looking at topstep or apex which use NinjaTrader, not ctrader, but the execution is clean enough that my FVG entries on ES haven't slipped noticeably. if you're dead set on ctrader you're basically limited to forex/CFD firms, not true US futures.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-09T18:00:48.314Z",
+    "permalink": "/r/proptrading/comments/1u18s91/prop_trading_in_us/oqoosza/",
+    "commentId": "oqoosza"
+  },
+  {
+    "postId": "1u0idle",
+    "subreddit": "proptrading",
+    "postTitle": "which prop firm",
+    "commentText": "honestly the better question is what pairs you're trading and when, because the \"best\" firm depends entirely on your style. if you're scalping NY session FVGs on NQ the drawdown rules at some firms will destroy you before you even get a clean setup. some firms flag aggressive ES trades around FOMC too, imo do your research on the specific rules before you drop money on an eval.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-09T18:00:57.136Z",
+    "permalink": "/r/proptrading/comments/1u0idle/which_prop_firm/oqoou60/",
+    "commentId": "oqoou60"
   }
 ]
