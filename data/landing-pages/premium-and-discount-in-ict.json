@@ -1,0 +1,94 @@
+{
+  "slug": "premium-and-discount-in-ict",
+  "title": "Premium & Discount in ICT",
+  "seoTitle": "Premium and Discount in ICT: Buy Low, Sell High",
+  "seoDescription": "Premium and discount in ICT splits any price range into two zones that tell you exactly where to buy and where to sell. Know which side you're on before entering.",
+  "headline": "Premium and Discount in ICT: Trade With the Range",
+  "subheadline": "The dealing range is one of ICT's most practical tools. It stops you from chasing price and puts you in positions the smart money is already taking.",
+  "intro": "Premium and discount in ICT refers to a method of dividing any significant price range into two halves using its 50% equilibrium level. Prices above the midpoint are considered premium, where sellers look to offload positions. Prices below the midpoint are considered discount, where buyers look to accumulate. This framework is applied across all timeframes and pairs to give every potential entry a clear directional bias before execution.",
+  "keyPoints": [
+    {
+      "icon": "📐",
+      "title": "What the Dealing Range Actually Is",
+      "text": "The dealing range is drawn from a significant swing low to a significant swing high. The midpoint, or equilibrium, is the 50% level of that range. Everything above 50% is premium territory. Everything below 50% is discount territory. This single division tells you whether current price is relatively expensive or cheap within the context of that move."
+    },
+    {
+      "icon": "🎯",
+      "title": "Why It Changes Your Entry Logic",
+      "text": "Entering a buy trade while price sits in premium means you are paying top dollar for a position the market may soon correct. Waiting for a discount pullback aligns your entry with institutional accumulation zones, which frequently coincide with order blocks, fair value gaps, and breaker structures. This alignment dramatically improves your risk-to-reward because your stop is tighter and your target is the opposite side of the range."
+    },
+    {
+      "icon": "🛠️",
+      "title": "How to Apply It on a Live Chart",
+      "text": "Identify the most recent significant swing high and swing low on the timeframe that sets your bias, often the daily or 4-hour chart. Draw a Fibonacci retracement with 0 at the low and 1 at the high. The 0.5 level is your equilibrium. During a London or New York killzone, look for long setups only when price retraces into discount, ideally confluent with a bullish order block or a filled fair value gap. For shorts, wait for a premium retracement after a bearish break of structure."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Mistake That Costs Traders",
+      "text": "The most common error is treating premium and discount as absolute buy or sell signals in isolation. Price can and does trend through premium or discount for extended periods. The dealing range must be nested within a higher-timeframe directional bias. Buying at discount while the weekly trend is strongly bearish ignores the larger context. Always confirm that the range you are using aligns with the prevailing institutional order flow."
+    },
+    {
+      "icon": "➡️",
+      "title": "Building This Into Your Process",
+      "text": "Start by marking premium and discount on the daily chart each week before markets open. Note where current price sits relative to equilibrium. When price reaches a discount zone, drop to the 15-minute or 5-minute chart to look for confirmation through a break of structure, a mitigation of an order block, or displacement leaving behind a fair value gap. This top-down process connects macro range context to precise intraday execution."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What timeframe should I use to draw the dealing range in ICT?",
+      "a": "Start on the timeframe that defines your trade bias: daily for swing trades, 4-hour for multi-day setups, and 1-hour for intraday trades on pairs like EURUSD or NQ futures. The dealing range on the higher timeframe is the one that governs where you look for entries on lower timeframes."
+    },
+    {
+      "q": "Can I use premium and discount with order blocks and FVGs?",
+      "a": "Yes, and this is where the concept becomes genuinely powerful. A bullish order block or a bullish fair value gap sitting inside a discount zone carries far more weight than one sitting at equilibrium or in premium. The confluence of the two filters reduces low-probability setups significantly and tightens your entry criteria."
+    },
+    {
+      "q": "How do I find the swing high and swing low to build the range?",
+      "a": "Use the most recent clean swing points that represent a meaningful leg of price delivery. On the EURUSD daily chart, this might be the low formed at the start of a bullish expansion and the subsequent high before the first meaningful pullback. Avoid using micro-wicks. Use bodies and obvious structural pivots instead."
+    },
+    {
+      "q": "Does premium mean price will always reverse there?",
+      "a": "No. Premium signals that price is in a relatively expensive zone where short setups have better structural logic. In a strong uptrend, price can consolidate in premium for days before continuing higher. Use premium and discount as a filter for entry quality, not as a reversal trigger on its own."
+    },
+    {
+      "q": "How does the 50% level relate to ICT's optimal trade entry?",
+      "a": "ICT's optimal trade entry, or OTE, sits between the 62% and 79% retracement levels, which fall inside the discount zone for longs. The 50% equilibrium is the boundary that confirms price has crossed into discount. The OTE levels then provide the precise entry window within that discount zone, often overlapping a breaker or fair value gap."
+    }
+  ],
+  "relatedTags": [
+    "ict-concepts",
+    "dealing-range",
+    "order-blocks",
+    "fair-value-gap",
+    "break-of-structure",
+    "optimal-trade-entry",
+    "smart-money-concepts",
+    "ict-killzones",
+    "liquidity",
+    "fibonacci-retracement",
+    "price-action",
+    "forex-trading-strategy",
+    "futures-trading"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    },
+    {
+      "slug": "smart-money-concepts",
+      "label": "Smart Money Concepts for Forex"
+    },
+    {
+      "slug": "ict-order-blocks-explained-guide",
+      "label": "ICT Order Blocks Explained"
+    },
+    {
+      "slug": "what-is-a-judas-swing",
+      "label": "Judas Swing Explained"
+    }
+  ],
+  "testimonialIndex": 1,
+  "createdAt": "2026-06-09T05:01:46.610Z",
+  "targetKeyword": "premium and discount in ICT"
+}
