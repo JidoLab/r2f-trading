@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-blog",
     "promo-coaching",
     "question",
     "poll",
@@ -29,11 +28,12 @@
     "hot-take",
     "quote",
     "tip",
-    "challenge"
+    "challenge",
+    "myth"
   ],
   "lastPost": {
-    "type": "challenge",
-    "text": "Challenge: This week only trade the London open. No NY, no Asia. Just London. 5 days. Track your results and drop them below 👇 Bet your stats surprise you. #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-06-08T12:00:27.780Z"
+    "type": "myth",
+    "text": "MYTH: Avoid trading before CPI — too risky.\n\nTRUTH: Smart money MOVES before the news. The setup is already printed in the chart. Learn to read order blocks and you'll see it.\n\nR2F Trading #ICTTrading #OrderBlocks #CPI",
+    "date": "2026-06-09T12:00:43.676Z"
   }
 }
