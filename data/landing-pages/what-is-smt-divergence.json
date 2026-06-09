@@ -1,0 +1,91 @@
+{
+  "slug": "what-is-smt-divergence",
+  "title": "SMT Divergence Explained",
+  "seoTitle": "What Is SMT Divergence? ICT Trading Explained",
+  "seoDescription": "SMT divergence uses correlated pairs to expose what smart money is actually doing. Understand the signal, avoid the false read, and time reversals with precision.",
+  "headline": "What Is SMT Divergence and How Do You Trade It?",
+  "subheadline": "SMT divergence is one of the sharpest confirmation tools in the ICT methodology. When two correlated instruments stop moving in sync, that disagreement often marks a turning point worth trading.",
+  "intro": "SMT divergence, short for Smart Money Technique divergence, occurs when two positively correlated instruments such as ES and NQ, or EUR/USD and GBP/USD, fail to make matching highs or lows at the same time. That structural disagreement signals that one market is being used to run liquidity while the other reveals the true directional intent of institutional participants. Traders using the ICT methodology treat this divergence as a high-probability confirmation tool for reversals, especially when it aligns with a premium or discount array like an order block or fair value gap.",
+  "keyPoints": [
+    {
+      "icon": "🔗",
+      "title": "What SMT Divergence Actually Is",
+      "text": "SMT divergence is a price action relationship between two correlated markets. When EUR/USD prints a lower low but GBP/USD holds its prior low, the failure to confirm that sweep is the divergence. It tells you that one pair was used to trigger sell-side liquidity while the other resisted, exposing the hand of a larger participant."
+    },
+    {
+      "icon": "🎯",
+      "title": "Why It Matters for Reversals",
+      "text": "A liquidity sweep on its own can be ambiguous. SMT divergence removes much of that ambiguity by requiring a second instrument to contradict the move. When EUR/USD sweeps a swing low and GBP/USD refuses to do the same, you have cross-market evidence of a stop hunt rather than a genuine breakdown. That distinction is critical for timing entries off order blocks or fair value gaps."
+    },
+    {
+      "icon": "🛠️",
+      "title": "How to Apply It in Practice",
+      "text": "During a London or New York killzone, pull up two correlated pairs on the same timeframe, typically the 15-minute or 5-minute chart. Watch for one pair to sweep a recent swing while the other holds. Confirm the divergence aligns with a higher timeframe point of interest such as a 4-hour order block or a fair value gap. The SMT confirmation then justifies a tighter entry with a stop behind the swept extreme."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "Traders often apply SMT divergence to pairs that share a superficial relationship but do not actually move in tight institutional correlation. Using AUD/USD and EUR/USD as an SMT pair, for example, introduces too much independent fundamental noise. Stick to pairs with strong, consistent correlation: EUR/USD with GBP/USD, or ES with NQ, where the divergence is meaningful rather than coincidental."
+    },
+    {
+      "icon": "📈",
+      "title": "Building SMT Into a Full Setup",
+      "text": "SMT divergence is a confirmation layer, not a standalone signal. The full setup includes a draw on liquidity identified on a higher timeframe, a killzone window providing the timing context, and a point of interest such as an order block or breaker for the actual entry. When a market structure shift or break of structure follows the SMT confirmation, that sequence gives you the entry trigger with defined invalidation."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What pairs work best for SMT divergence?",
+      "a": "EUR/USD and GBP/USD are the most commonly used forex pairs because they share strong institutional correlation. In futures, ES and NQ are the standard pairing. The key requirement is that both instruments move together the vast majority of the time so that any divergence is structurally significant rather than random."
+    },
+    {
+      "q": "What timeframe should I use for SMT divergence?",
+      "a": "The 5-minute and 15-minute charts are the most practical for spotting SMT divergence during killzones. A 4-hour or daily chart establishes the higher timeframe bias and the relevant draw on liquidity, while the lower timeframe divergence provides the precision entry. Avoid hunting for SMT signals outside of active session windows where volume is thin."
+    },
+    {
+      "q": "Can SMT divergence give false signals?",
+      "a": "Yes. A divergence that forms outside of a killzone, away from a higher timeframe point of interest, or between pairs with weak correlation should be treated with skepticism. SMT divergence is most reliable when it occurs at a confluent level, such as a 4-hour order block sitting at old sell-side liquidity, during London or New York open hours."
+    },
+    {
+      "q": "How is SMT divergence different from regular bearish or bullish divergence?",
+      "a": "Traditional divergence compares price to an indicator like RSI on a single instrument. SMT divergence compares the price structure of two correlated instruments directly, with no indicator involved. It is rooted in the idea that institutions use one market to engineer liquidity while their true position is revealed in the correlated market that does not confirm the move."
+    },
+    {
+      "q": "Does SMT divergence work in futures markets like ES and NQ?",
+      "a": "Yes, and many ICT traders consider the ES and NQ pairing one of the cleanest SMT relationships available. During the New York open killzone, if NQ sweeps a prior swing low while ES holds its low, that divergence at a 15-minute fair value gap or order block sets up a high-quality long entry with the stop below the NQ swept extreme."
+    }
+  ],
+  "relatedTags": [
+    "ict-methodology",
+    "smart-money-concepts",
+    "order-blocks",
+    "fair-value-gap",
+    "liquidity-sweep",
+    "market-structure",
+    "killzone-trading",
+    "correlated-pairs",
+    "reversal-setups",
+    "break-of-structure"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-a-judas-swing",
+      "label": "Judas Swing Explained"
+    },
+    {
+      "slug": "ict-optimal-trade-entry",
+      "label": "ICT Optimal Trade Entry Guide"
+    },
+    {
+      "slug": "ict-silver-bullet-strategy",
+      "label": "ICT Silver Bullet Strategy"
+    },
+    {
+      "slug": "smart-money-concepts",
+      "label": "Smart Money Concepts for Forex"
+    }
+  ],
+  "testimonialIndex": 1,
+  "createdAt": "2026-06-09T05:00:35.129Z",
+  "targetKeyword": "what is SMT divergence"
+}
