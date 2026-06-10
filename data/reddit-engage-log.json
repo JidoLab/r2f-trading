@@ -2615,7 +2615,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-04T13:01:08.583Z",
     "permalink": "/r/Trading/comments/1tw13jh/building_my_own_backtestingstrategy_building/oppcr5u/",
-    "commentId": "oppcr5u"
+    "commentId": "oppcr5u",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-04T17:13:10.000Z",
+    "firstReplyAuthor": "InYumen7",
+    "firstReplyText": "Yes it does. Currently I allow a maximum of 3 different timeframes, and you can use them however you want.\n\nI also like to use htf confluence on most of my strategies, so I needed to make sure that ve8 would support that."
   },
   {
     "postId": "1twrc8a",
@@ -2675,7 +2679,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-04T18:02:05.856Z",
     "permalink": "/r/Forexstrategy/comments/1tw11gi/building_my_own_backtestingstrategy_building/opr77o6/",
-    "commentId": "opr77o6"
+    "commentId": "opr77o6",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-04T20:08:47.000Z",
+    "firstReplyAuthor": "InYumen7",
+    "firstReplyText": "It handles everything. Equity drawdown, payout períods, splits, scaling. Its as close to a real challenge as they come. \nIt simulates single phases, full challenges, and currently it supports all the challenge types from 5ers, ftmo, funded next, alpha capital and funding pips "
   },
   {
     "postId": "1txhglx",
