@@ -132,7 +132,7 @@
   {
     "email": "eaglesfocus01@gmail.com",
     "date": "2026-05-24T22:46:12.434Z",
-    "dripsSent": 4,
+    "dripsSent": 5,
     "referralCode": "R2F-h75t9t",
     "referredBy": null,
     "referralCount": 0,
@@ -150,7 +150,8 @@
       "beginnerMistakes",
       "ictConcepts",
       "successStory",
-      "tradingPsychology"
+      "tradingPsychology",
+      "propFirmTips"
     ],
     "abandonmentEmailSent": true
   },
@@ -212,7 +213,7 @@
   {
     "email": "anmolpannu33@gmail.com",
     "date": "2026-06-04T22:08:48.687Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "referralCode": "R2F-auqs7a",
     "referredBy": null,
     "referralCount": 0,
@@ -221,7 +222,8 @@
     "events": [],
     "lastActivity": "2026-06-04T22:08:48.687Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   }
 ]
