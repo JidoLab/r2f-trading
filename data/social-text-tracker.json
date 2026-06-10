@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-coaching",
     "question",
     "poll",
     "hot-take",
@@ -29,11 +28,12 @@
     "quote",
     "tip",
     "challenge",
-    "myth"
+    "myth",
+    "question"
   ],
   "lastPost": {
-    "type": "myth",
-    "text": "MYTH: Avoid trading before CPI — too risky.\n\nTRUTH: Smart money MOVES before the news. The setup is already printed in the chart. Learn to read order blocks and you'll see it.\n\nR2F Trading #ICTTrading #OrderBlocks #CPI",
-    "date": "2026-06-09T12:00:43.676Z"
+    "type": "question",
+    "text": "CPI drops this week. Do you STOP trading before the release or do you USE the volatility? Drop your answer 👇 #ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-06-10T12:00:12.872Z"
   }
 }
