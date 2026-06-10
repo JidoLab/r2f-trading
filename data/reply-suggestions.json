@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1781092902910-v80g3",
+    "platform": "youtube",
+    "postTitle": "How to trade Nifty using SMC &amp; ICT | CRT Model | 10 Jun 2026  #smc #ict #nifty",
+    "postUrl": "https://youtube.com/watch?v=vVs9ZSgb2hM",
+    "authorName": "TradeWizdom | SMC & ICT Trading Education",
+    "suggestedReply": "The CRT model on Nifty is underused by most retail traders. What I drill into my students is that the manipulation leg inside the range needs to close back inside before you even think about entries. Most people see the liquidity sweep and jump in immediately, missing the confirmation that separates a real CRT from a fake one. Did you cover the AMD alignment on the higher timeframe before framing the model here?",
+    "createdAt": "2026-06-10T12:01:42.910Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781092906691-4ela7",
+    "platform": "youtube",
+    "postTitle": "Advanced Liquidity Trading Masterclass | Complete SMC &amp; ICT Liquidity Guide (2026)",
+    "postUrl": "https://youtube.com/watch?v=8TYWAIfTSds",
+    "authorName": "Trades by Naman",
+    "suggestedReply": "The SMC liquidity concepts here are solid, especially the equal highs and lows section. The part most traders miss is that not all liquidity pools are equal. I drill into my students that you want confluence with a higher timeframe PD array before engineering entries off those levels, otherwise you are just hunting stops with no real reason for price to reverse there. Are you filtering by session when targeting those pools?",
+    "createdAt": "2026-06-10T12:01:46.691Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781092910239-qfe2a",
+    "platform": "youtube",
+    "postTitle": "This ONE Daily Candle Can Predict the Next Move",
+    "postUrl": "https://youtube.com/watch?v=7wvbxYaH5q0",
+    "authorName": "The Displacement Lab",
+    "suggestedReply": "Interesting take on using a single daily candle as a predictor. In my experience, context matters more than the candle itself. I teach my students to identify WHERE that displacement candle forms relative to a higher timeframe draw on liquidity, because the same candle near a daily SIBI versus an untested weekly high tells a completely different story. What timeframe are you using to confirm entries after that daily close?",
+    "createdAt": "2026-06-10T12:01:50.239Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781092913445-30ysj",
+    "platform": "youtube",
+    "postTitle": "ICT Unicorn Strategy Explained: Breaker Blocks and FVGs",
+    "postUrl": "https://youtube.com/watch?v=9Z6fvmF_ifI",
+    "authorName": "Com Lucro Trader",
+    "suggestedReply": "Most traders I see misuse the Breaker Block by entering too early before confirmation, especially on lower timeframes. I drill into my students to wait for the FVG to align with the Breaker on the 1H before considering any entry. Are you finding the Unicorn setup performs better during London session or New York open in your experience?",
+    "createdAt": "2026-06-10T12:01:53.445Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781092916981-dra28",
+    "platform": "youtube",
+    "postTitle": "This ONE Daily Candle Can Predict the Next Move",
+    "postUrl": "https://youtube.com/watch?v=fVzkDAaq2dI",
+    "authorName": "The Displacement Lab",
+    "suggestedReply": "That single daily candle concept is solid and I teach my students to respect it, but the caveat I always add is that displacement candles on the daily lose a lot of predictive value when they form inside a larger consolidation range. A big bodied candle without a proper draw on liquidity above or below is just noise. Always confirm what price is actually reaching for before committing.",
+    "createdAt": "2026-06-10T12:01:56.981Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781092920996-9a7w4",
+    "platform": "youtube",
+    "postTitle": "smc trading, smart money concepts, what is smc trading, forex trading, ict trading, smart money",
+    "postUrl": "https://youtube.com/watch?v=A_yRFVnz0Kw",
+    "authorName": "Crown Trader",
+    "suggestedReply": "I started with SMC concepts about 7 years ago and the biggest shift for me was understanding that smart money isn't random. I drill into my students that liquidity raids on the 15 minute chart during London open are not accidents, they are engineered. Once you see ICT principles through that lens on pairs like GBPUSD, your whole perspective on price delivery changes permanently.",
+    "createdAt": "2026-06-10T12:02:00.996Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781092924840-lmm6n",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=QkjpAV-BsB8",
+    "authorName": "The Trading Process",
+    "suggestedReply": "SMC on XAUUSD is genuinely powerful but I always warn my students about one trap. Gold respects institutional order blocks beautifully on the 4H but during high impact news sessions those levels get swept aggressively before the real move plays out. Most beginners see the setup, enter early, and get stopped out right before the expansion. Always wait for confirmation after the sweep, not before.",
+    "createdAt": "2026-06-10T12:02:04.840Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781092929514-a9a9p",
+    "platform": "youtube",
+    "postTitle": "Backtesting Different Order Block EAs and Seeing What&#39;s Best | MetaTrader 5 (MT5) HorizonAI [FREE]",
+    "postUrl": "https://youtube.com/watch?v=xNAjbfpOKEw",
+    "authorName": "Horizon Trading",
+    "suggestedReply": "Backtesting order block EAs on MT5 is a solid starting point but one thing I always warn my students about is that historical performance on order blocks can look clean until you account for spread and slippage on lower timeframe entries. A mitigation block on the 15 minute during high impact news will behave very differently in live conditions than in a backtest. Worth filtering your EA results by session and avoiding overlap entries to get a more realistic picture.",
+    "createdAt": "2026-06-10T12:02:09.514Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1780879549780-xyp3q",
     "platform": "investinglive",
     "postTitle": "Head of US equity and quant strategy at BoA sees too many red flags in stock markets",
