@@ -1,5 +1,25 @@
 [
   {
+    "id": "reply-opr77o6",
+    "platform": "reddit",
+    "postTitle": "Building my own backtesting/strategy building platform",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "InYumen7",
+    "replyText": "It handles everything. Equity drawdown, payout períods, splits, scaling. Its as close to a real challenge as they come. \nIt simulates single phases, full challenges, and currently it supports all the challenge types from 5ers, ftmo, funded next, alpha capital and funding pips ",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1tw11gi/building_my_own_backtestingstrategy_building/opr77o6/",
+    "detectedAt": "2026-06-10T13:00:32.714Z"
+  },
+  {
+    "id": "reply-oppcr5u",
+    "platform": "reddit",
+    "postTitle": "Building my own backtesting/strategy building platform",
+    "subreddit": "Trading",
+    "replyAuthor": "InYumen7",
+    "replyText": "Yes it does. Currently I allow a maximum of 3 different timeframes, and you can use them however you want.\n\nI also like to use htf confluence on most of my strategies, so I needed to make sure that ve8 would support that.",
+    "commentUrl": "https://www.reddit.com/r/Trading/comments/1tw13jh/building_my_own_backtestingstrategy_building/oppcr5u/",
+    "detectedAt": "2026-06-10T13:00:28.758Z"
+  },
+  {
     "id": "reply-oppcq62",
     "platform": "reddit",
     "postTitle": "Gold - London session today",
