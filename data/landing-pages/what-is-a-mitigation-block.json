@@ -1,0 +1,91 @@
+{
+  "slug": "what-is-a-mitigation-block",
+  "title": "Mitigation Block Explained",
+  "seoTitle": "What Is a Mitigation Block? ICT Trading Explained",
+  "seoDescription": "A mitigation block is one of the most misread ICT concepts. Understand what makes it valid, how to time entries, and why price revisits it before continuing.",
+  "headline": "What Is a Mitigation Block in ICT Trading?",
+  "subheadline": "Price rarely moves in a straight line. When an order block fails to hold a move, it often becomes a mitigation block, a level the market returns to before continuing in the original direction.",
+  "intro": "A mitigation block is an order block that price revisits after the original move has already expanded away from it, allowing trapped positions from that zone to be offloaded before the market resumes its directional bias. It forms when smart money needs to exit or reduce exposure at a specific price area where orders were originally placed. Unlike a standard order block used for entry on first touch, a mitigation block is recognized after price has already left the zone and then pulls back into it.",
+  "keyPoints": [
+    {
+      "icon": "📦",
+      "title": "What a Mitigation Block Is",
+      "text": "A mitigation block is a previously identified order block that price has moved away from and is now returning to. The key distinction is timing: the original move has already happened, confirming the zone held institutional interest. When price pulls back into that area, the market is revisiting it to fill or close out positions before continuing."
+    },
+    {
+      "icon": "💡",
+      "title": "Why It Matters for ICT Traders",
+      "text": "Mitigation blocks give traders a second, often cleaner, opportunity to enter a move they may have missed on the initial departure. Because the zone has already demonstrated its relevance through a prior displacement or break of structure, the confluence is stronger. Traders using the ICT methodology look for these areas in conjunction with fair value gaps and liquidity sweeps to time high-probability entries."
+    },
+    {
+      "icon": "🎯",
+      "title": "How to Trade a Mitigation Block",
+      "text": "First, identify a valid order block on your working timeframe, such as the 15-minute or 1-hour chart, that preceded a break of structure. Mark the original candle range. When price returns to that zone during a killzone, such as the London or New York open, watch for a lower-timeframe shift in market structure or a fair value gap fill inside the block. That confirmation is your entry signal."
+    },
+    {
+      "icon": "⚠️",
+      "title": "Common Mistake: Treating Any Return as Valid",
+      "text": "A frequent error is marking every revisited order block as a mitigation block regardless of context. The block needs to have caused a clear break of structure or displacement on the way out. If price simply meandered away and drifted back, there is no strong institutional narrative behind the zone. Mitigation blocks are most reliable when the original move away from them was impulsive and left a visible imbalance or fair value gap above or below."
+    },
+    {
+      "icon": "🔁",
+      "title": "Next Steps: Combining with Broader Context",
+      "text": "Mitigation blocks work best when nested inside a higher-timeframe narrative. Identify the weekly or daily bias first, then drop to the 4-hour or 1-hour chart to locate the mitigation block that aligns with that bias. From there, refine the entry on the 5-minute or 15-minute chart during a killzone. Pairing this with liquidity sweep confirmation, such as a stop hunt above a swing high before the block is tested, significantly improves the quality of the setup."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a mitigation block in ICT trading?",
+      "a": "A mitigation block is an order block that price has already left and is now returning to. It marks a zone where institutional traders originally placed orders and are returning to close or reduce those positions before continuing the move. It is recognized after the initial displacement has confirmed the zone."
+    },
+    {
+      "q": "What is the difference between an order block and a mitigation block?",
+      "a": "An order block is any institutional candle zone that may act as support or resistance. A mitigation block is specifically an order block that has already caused a directional move and is being revisited. The prior price expansion away from it is what defines and validates the mitigation block label."
+    },
+    {
+      "q": "How do you confirm a mitigation block entry on a lower timeframe?",
+      "a": "After price returns to the mitigation block zone on your higher timeframe, drop to the 5-minute chart and look for a break of structure or a bullish or bearish fair value gap forming inside the zone. On a pair like GBP/USD during the London killzone, a 5-minute BOS after a sweep of internal lows inside the block gives a concrete entry signal."
+    },
+    {
+      "q": "Can a mitigation block fail, and what does that look like?",
+      "a": "Yes. If price trades through the mitigation block without a reaction and closes beyond it with momentum, the zone has been violated. This often signals a shift in the higher-timeframe narrative or the presence of a larger liquidity target beyond the block. A clean close through it on the 15-minute chart is generally the invalidation threshold."
+    },
+    {
+      "q": "Are mitigation blocks more reliable on certain timeframes or sessions?",
+      "a": "They tend to perform best on the 15-minute through 1-hour charts when tested during high-volume sessions, specifically the London open between 2 and 5 AM EST or the New York open between 7 and 10 AM EST. Testing during off-hours like the Asian session often produces choppy, inconclusive reactions that do not offer clean entry conditions."
+    }
+  ],
+  "relatedTags": [
+    "order-blocks",
+    "ict-methodology",
+    "fair-value-gap",
+    "break-of-structure",
+    "killzone-trading",
+    "liquidity-concepts",
+    "smart-money-concepts",
+    "price-action",
+    "forex-entries",
+    "futures-trading"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "premium-and-discount-in-ict",
+      "label": "Premium & Discount in ICT"
+    },
+    {
+      "slug": "what-is-a-judas-swing",
+      "label": "Judas Swing Explained"
+    },
+    {
+      "slug": "what-is-smt-divergence",
+      "label": "SMT Divergence Explained"
+    },
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    }
+  ],
+  "testimonialIndex": 2,
+  "createdAt": "2026-06-10T05:01:54.561Z",
+  "targetKeyword": "what is a mitigation block"
+}
