@@ -1,0 +1,91 @@
+{
+  "slug": "what-is-a-break-of-structure",
+  "title": "Break of Structure (BOS) Explained",
+  "seoTitle": "What Is a Break of Structure in ICT Trading?",
+  "seoDescription": "A break of structure confirms trend continuation in 3 specific price conditions. ICT traders use BOS to filter entries and avoid fading momentum. Here's exactly how it works.",
+  "headline": "Break of Structure: How to Confirm Trend Continuation",
+  "subheadline": "In ICT methodology, a break of structure is the primary signal that smart money is continuing to push price in the dominant direction. Knowing how to read it keeps you on the right side of the market.",
+  "intro": "A break of structure (BOS) occurs when price extends beyond a previous swing high in a bullish trend or a previous swing low in a bearish trend, confirming that the underlying directional move is still intact. Unlike a reversal signal, a BOS tells you the market is continuing its current narrative rather than shifting it. ICT traders use BOS confirmation to time entries off order blocks and fair value gaps without fighting the prevailing flow.",
+  "keyPoints": [
+    {
+      "icon": "📐",
+      "title": "What a BOS Actually Is",
+      "text": "A break of structure is a candle close beyond a prior significant swing point in the direction of the current trend. In a bullish market, price must close above the most recent swing high to qualify as a BOS. This print confirms that buy-side liquidity has been consumed and price is making a higher high, maintaining the bullish market structure."
+    },
+    {
+      "icon": "🎯",
+      "title": "Why BOS Matters for Trade Bias",
+      "text": "BOS establishes and reaffirms directional bias on any timeframe. When you see a confirmed BOS on the daily chart, for example, your intraday London or New York killzone entries should align with that bias. Trading against a fresh BOS puts you in the position of fading institutional order flow, which is statistically a low-probability approach in the ICT framework."
+    },
+    {
+      "icon": "🛠️",
+      "title": "How to Use BOS in Your Setups",
+      "text": "After a BOS prints on a higher timeframe like the 4-hour or daily, drop to the 15-minute or 1-hour chart and wait for price to retrace into a nearby order block or fair value gap. The BOS acts as structural confirmation that the retracement is a buying opportunity rather than the start of a reversal. Entry precision comes from the lower timeframe; the BOS on the higher timeframe gives you the conviction to take it."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common BOS Mistake",
+      "text": "Many traders mark a BOS on a wick rather than a candle close. A wick that exceeds a prior swing high but closes back below it is a liquidity sweep, not a confirmed break of structure. Treating wick breaks as BOS signals leads to premature entries right before price reverses, which is one of the fastest ways to get stopped out repeatedly on otherwise valid setups."
+    },
+    {
+      "icon": "➡️",
+      "title": "Next Step: Pairing BOS with CHoCH",
+      "text": "Once you understand BOS for trend continuation, the natural next concept to study is the change of character (CHoCH), which signals a potential structural shift in the opposite direction. Together, BOS and CHoCH form the backbone of ICT market structure analysis. Being able to distinguish between the two on multiple timeframes is what separates reactive trading from anticipatory, high-probability execution."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a break of structure in trading?",
+      "a": "A break of structure is when price closes beyond a prior swing high or swing low in the direction of the current trend, confirming that the move is continuing. In a bullish trend on the EUR/USD 4-hour chart, a candle closing above the last swing high is a BOS and validates ongoing bullish market structure."
+    },
+    {
+      "q": "What is the difference between a BOS and a CHoCH?",
+      "a": "A BOS confirms trend continuation by breaking a swing point in the same direction price has been moving. A CHoCH, or change of character, breaks structure in the opposite direction and signals a potential reversal. On the GBP/USD 1-hour chart, a bullish CHoCH would be price closing above a prior swing high after a series of lower highs, indicating the bearish trend may be ending."
+    },
+    {
+      "q": "Does a BOS need to close on the candle or is a wick enough?",
+      "a": "A confirmed BOS requires a candle close beyond the swing point. A wick that pierces a level but closes back inside the prior range is a liquidity sweep, not a structural break. Using candle closes as your filter removes a large percentage of false signals, especially during volatile killzone hours like the New York open."
+    },
+    {
+      "q": "Can I use a break of structure on any timeframe?",
+      "a": "Yes, but the timeframe changes the significance. A BOS on the daily or 4-hour chart defines the macro bias for the week. A BOS on the 15-minute chart during the London killzone is used to refine entries within that session. ICT methodology stacks these timeframes so that lower-timeframe BOS signals align with higher-timeframe directional intent."
+    },
+    {
+      "q": "How do I use a BOS to find entry points?",
+      "a": "After a higher-timeframe BOS confirms directional bias, wait for price to pull back into an order block or fair value gap on a lower timeframe. The BOS tells you the trend is intact; the retracement into a premium or discount zone is where you look for a lower-timeframe entry trigger. This sequence is the core of ICT's top-down analysis approach."
+    }
+  ],
+  "relatedTags": [
+    "market-structure",
+    "break-of-structure",
+    "change-of-character",
+    "order-blocks",
+    "fair-value-gap",
+    "ict-concepts",
+    "liquidity",
+    "top-down-analysis",
+    "killzone-trading",
+    "trend-continuation"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    },
+    {
+      "slug": "premium-and-discount-in-ict",
+      "label": "Premium & Discount in ICT"
+    },
+    {
+      "slug": "what-is-smt-divergence",
+      "label": "SMT Divergence Explained"
+    },
+    {
+      "slug": "ict-power-of-three-explained",
+      "label": "ICT Power of Three Explained"
+    }
+  ],
+  "testimonialIndex": 3,
+  "createdAt": "2026-06-10T05:00:46.387Z",
+  "targetKeyword": "what is a break of structure"
+}
