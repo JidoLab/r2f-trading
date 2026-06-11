@@ -2994,5 +2994,15 @@
     "commentedAt": "2026-06-11T08:00:33.694Z",
     "permalink": "/r/ICTMentorship/comments/1u26luf/ict_trader_here_i_feel_like_giving_up/oqzuisk/",
     "commentId": "oqzuisk"
+  },
+  {
+    "postId": "1u2d3q9",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Why Did This XAUUSD Order Block Fail? Looking for Feedback...",
+    "commentText": "tbh the bigger issue here is probably that the OB wasn't backed by a displacement candle on the 1H — if there's no strong impulsive move *away* from that level creating a proper imbalance, price tends to just melt through it. on XAUUSD especially in 2026 this year, gold's been respecting OBs way more cleanly when they're confluent with an FVG sitting right beneath them. were you seeing any unmitigated fair value gap below that block, or was it just the OB in isolation?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-11T13:00:24.897Z",
+    "permalink": "/r/Forexstrategy/comments/1u2d3q9/why_did_this_xauusd_order_block_fail_looking_for/or104l6/",
+    "commentId": "or104l6"
   }
 ]
