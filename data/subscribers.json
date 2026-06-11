@@ -191,7 +191,7 @@
   {
     "email": "mani.katakatla.09@gmail.com",
     "date": "2026-06-02T21:06:10.786Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-cnd4pp",
     "referredBy": null,
     "referralCount": 0,
@@ -206,7 +206,8 @@
     "lastActivity": "2026-06-02T21:06:43.118Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ],
     "abandonmentEmailSent": true
   },
