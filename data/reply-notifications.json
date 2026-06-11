@@ -1,5 +1,35 @@
 [
   {
+    "id": "reply-opy3qmq",
+    "platform": "reddit",
+    "postTitle": "$23,645 From 124 Trades Using a 5Min ORB Setup",
+    "subreddit": "Trading",
+    "replyAuthor": "Kasraborhan",
+    "replyText": "That's actually a great idea. I may test that. NQ definitely loves punishing the first impatient entry.",
+    "commentUrl": "https://www.reddit.com/r/Trading/comments/1tx7niy/23645_from_124_trades_using_a_5min_orb_setup/opy3qmq/",
+    "detectedAt": "2026-06-11T13:01:43.840Z"
+  },
+  {
+    "id": "reply-opy3mxt",
+    "platform": "reddit",
+    "postTitle": "Took a trade on NQ this morning what do we think?",
+    "subreddit": "Trading",
+    "replyAuthor": "Its_Rice",
+    "replyText": "Yeah I really try not to move stops other than my break even, still trying to kill some of the beginner bad habits. With it being my first past funded account still learning to manage the stress and emotions behind trying to earn a payout but am continuing to remind myself that that rushing a payout",
+    "commentUrl": "https://www.reddit.com/r/Trading/comments/1twxkj2/took_a_trade_on_nq_this_morning_what_do_we_think/opy3mxt/",
+    "detectedAt": "2026-06-11T13:01:41.894Z"
+  },
+  {
+    "id": "reply-opwafhc",
+    "platform": "reddit",
+    "postTitle": "ICT concepts in different timeframes",
+    "subreddit": "ICTMentorship",
+    "replyAuthor": "photon11",
+    "replyText": "Trying to use premium and discount. Where I get confused is what role does the 1 day chart also play? ",
+    "commentUrl": "https://www.reddit.com/r/ICTMentorship/comments/1twr4gr/ict_concepts_in_different_timeframes/opwafhc/",
+    "detectedAt": "2026-06-11T13:01:40.615Z"
+  },
+  {
     "id": "reply-opr77o6",
     "platform": "reddit",
     "postTitle": "Building my own backtesting/strategy building platform",
