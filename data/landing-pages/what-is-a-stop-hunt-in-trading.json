@@ -1,0 +1,91 @@
+{
+  "slug": "what-is-a-stop-hunt-in-trading",
+  "title": "Stop Hunt in Trading Explained",
+  "seoTitle": "What Is a Stop Hunt in Trading? ICT Breakdown",
+  "seoDescription": "9 out of 10 retail traders get stopped out before the real move. What is a stop hunt in trading? It's deliberate liquidity engineering. Here's how to read it.",
+  "headline": "Stop Hunts: Why You Get Stopped Out First",
+  "subheadline": "Institutions need liquidity to fill large orders. Your stop loss is that liquidity. Understanding this dynamic changes how you read every price spike.",
+  "intro": "A stop hunt in trading is a deliberate price move engineered to trigger clustered stop loss orders before reversing in the intended direction. Large institutions and market makers cannot fill significant positions without a pool of willing sellers or buyers, and retail stop losses sitting below swing lows or above swing highs provide exactly that. Once those orders are swept and liquidity is consumed, price often reverses sharply, leaving traders stopped out at the worst possible level.",
+  "keyPoints": [
+    {
+      "icon": "🎯",
+      "title": "What a Stop Hunt Actually Is",
+      "text": "A stop hunt is a calculated price sweep into a liquidity pool, typically resting as buy stops above an old high or sell stops below an old low. In ICT methodology, these pools are called external liquidity or BSL/SSL (buy side liquidity and sell side liquidity). Price raids these levels to fill institutional orders, then reverses."
+    },
+    {
+      "icon": "🏦",
+      "title": "Why Institutions Engineer These Moves",
+      "text": "A fund moving thousands of contracts cannot simply place a market order without moving price against itself. By driving price into a stop cluster, it creates a surge of triggered market orders that act as the opposing side of the institutional trade. The sweep is the fill mechanism, not random volatility."
+    },
+    {
+      "icon": "📍",
+      "title": "How to Use Stop Hunts as Entry Signals",
+      "text": "After a liquidity sweep, watch for a sharp rejection back through the raided level combined with a break of structure (BOS) on a lower timeframe. The strongest setups form when price sweeps a high or low, prints a fair value gap (FVG) or order block on the 1-minute to 15-minute chart during a killzone, then displaces away. That displacement is the confirmation."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "Traders see a sweep and enter immediately at the wick low or high without waiting for displacement or a lower timeframe BOS. Entering on the sweep alone means entering into unconfirmed momentum. Price sometimes continues sweeping further before the real reversal forms, stopping out traders who rushed the entry."
+    },
+    {
+      "icon": "📈",
+      "title": "Your Next Step With This Concept",
+      "text": "Start marking BSL and SSL levels on the London and New York killzone charts for pairs like EURUSD or GBPUSD. Study the 15-minute chart for the sweep, then drop to the 1-minute or 5-minute for the BOS and FVG entry. Track 20 examples before trading it live, so the pattern becomes automatic under pressure."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a stop hunt in trading and is it actually real?",
+      "a": "A stop hunt is a real, structural phenomenon driven by the mechanics of liquidity. Institutions require resting orders to fill large positions. Retail stops cluster at obvious swing points, making those levels predictable targets. This is not a conspiracy. It is how order flow works at scale in forex and futures markets."
+    },
+    {
+      "q": "How do I know if a wick is a stop hunt or just volatility?",
+      "a": "A genuine stop hunt typically shows a sharp wick beyond a swing high or low followed by a full close back inside the range, often within one to three candles. On EURUSD, a 15-minute wick below a session low that closes back above it during the London open killzone is a textbook example worth studying."
+    },
+    {
+      "q": "Where do I put my stop loss to avoid getting hunted?",
+      "a": "Place stops beyond the liquidity level that institutions would need to raid, not directly at it. If a swing low sits at 1.0800 on EURUSD, placing your stop at 1.0798 puts it inside the hunt zone. Placing it at 1.0780 or below the next structural low reduces the risk of being swept by a routine liquidity grab."
+    },
+    {
+      "q": "What timeframes show stop hunts most clearly in ICT trading?",
+      "a": "The 15-minute chart is the primary timeframe for identifying the sweep of BSL or SSL. The 1-minute and 5-minute charts then show the BOS and FVG that confirm the reversal entry. Most clean stop hunt setups in forex appear during the London open (2 to 5 AM EST) and New York open (8 to 11 AM EST) killzones."
+    },
+    {
+      "q": "Can stop hunts happen in futures markets, or is this just a forex concept?",
+      "a": "Stop hunts occur across all liquid markets including ES, NQ, CL, and GC futures. The mechanics are identical. In NQ futures, a common setup involves a pre-market sweep of the overnight high or low during the 8:30 AM EST news window, followed by a sharp reversal that forms the actual session trend direction."
+    }
+  ],
+  "relatedTags": [
+    "liquidity",
+    "ict-methodology",
+    "order-blocks",
+    "fair-value-gap",
+    "break-of-structure",
+    "killzone",
+    "smart-money-concepts",
+    "buy-side-liquidity",
+    "sell-side-liquidity",
+    "price-action"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "premium-and-discount-in-ict",
+      "label": "Premium & Discount in ICT"
+    },
+    {
+      "slug": "what-is-a-mitigation-block",
+      "label": "Mitigation Block Explained"
+    },
+    {
+      "slug": "what-is-a-liquidity-void",
+      "label": "Liquidity Void Explained"
+    },
+    {
+      "slug": "smart-money-concepts",
+      "label": "Smart Money Concepts for Forex"
+    }
+  ],
+  "testimonialIndex": 2,
+  "createdAt": "2026-06-11T05:01:10.702Z",
+  "targetKeyword": "what is a stop hunt in trading"
+}
