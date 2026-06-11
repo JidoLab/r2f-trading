@@ -1,0 +1,93 @@
+{
+  "slug": "equal-highs-and-equal-lows-ict",
+  "title": "Equal Highs & Lows: ICT Liquidity",
+  "seoTitle": "Equal Highs and Equal Lows ICT: Liquidity Targets Explained",
+  "seoDescription": "Equal highs and equal lows in ICT mark clustered stop orders that smart money targets before reversing. Understand where price is likely to sweep next.",
+  "headline": "Equal Highs and Equal Lows: ICT Liquidity Targets",
+  "subheadline": "In ICT methodology, these price levels are not support and resistance. They are pools of resting orders that institutions need to fill large positions.",
+  "intro": "Equal highs and equal lows in ICT are price levels where two or more swing points align closely, signaling a concentration of resting stop orders that smart money will target before making a directional move. Retail traders tend to place stops just above swing highs and just below swing lows, so when multiple highs or lows cluster at the same price, that cluster becomes a high-probability liquidity target. Price will often sweep through these levels to trigger those stops, collect the liquidity, and then reverse sharply in the opposite direction.",
+  "keyPoints": [
+    {
+      "icon": "📌",
+      "title": "What Equal Highs and Lows Are",
+      "text": "Equal highs form when two or more swing highs print at or near the same price level. Equal lows form the same way on the downside. In ICT terms, these are not zones of strength. They are pools of buy-side or sell-side liquidity resting just beyond those repeated price points, waiting to be collected by institutional order flow."
+    },
+    {
+      "icon": "💧",
+      "title": "Why They Matter as Liquidity Pools",
+      "text": "Large institutional participants cannot fill positions in thin markets. They need liquidity, which means they need a surge of triggered orders to trade against. Equal highs accumulate buy stops from retail traders who are short and protecting positions above those highs. Equal lows accumulate sell stops from traders who are long. These clusters give institutions the volume they need to enter or exit at scale."
+    },
+    {
+      "icon": "🎯",
+      "title": "How to Trade Them in ICT Context",
+      "text": "Mark your equal highs or equal lows on the higher timeframe first, such as the 4-hour or daily chart. Then drop to the 15-minute or 5-minute chart during a London or New York killzone and watch for a sweep of that level followed by displacement. Confirmation comes when price closes back through the level with a fair value gap or order block forming on the entry timeframe. The sweep followed by a break of structure is the signal, not the level touch alone."
+    },
+    {
+      "icon": "⚠️",
+      "title": "Common Mistake: Fading Every Touch",
+      "text": "Many traders see equal highs and immediately sell into them, expecting a reversal the moment price reaches that zone. The problem is that price often pushes through the level by several pips before reversing, stopping out early entries. A liquidity sweep means price needs to trade above the equal highs or below the equal lows to collect those stops. Entering before the sweep is confirmed means entering before the institutional move has actually begun."
+    },
+    {
+      "icon": "📈",
+      "title": "Next Steps: Combining With HTF Bias",
+      "text": "Equal highs and equal lows work best when they align with your higher timeframe directional bias and a premium or discount array. If the daily trend is bullish and price has formed equal lows below a key order block in a discount zone, that sell-side liquidity is a strong candidate for a sweep and reversal long. Practice marking these levels on forex pairs like EURUSD or GBPUSD and on futures like ES or NQ across multiple sessions before trading them live."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between equal highs and double tops in ICT?",
+      "a": "A double top in traditional technical analysis signals reversal at resistance. In ICT, equal highs signal a liquidity pool above price. The expectation is that price sweeps above those highs to collect buy stops before reversing lower. The same price level carries the opposite implication depending on the framework you are using."
+    },
+    {
+      "q": "How many equal highs or lows do I need before it counts as a liquidity target?",
+      "a": "Two swing points at the same level are enough to mark a valid pool in ICT. Three or more make the level higher conviction because more stop orders have accumulated there over time. On EURUSD for example, three equal lows on the 1-hour chart during the London session represent a significant concentration of sell-side liquidity."
+    },
+    {
+      "q": "What happens after price sweeps equal highs or equal lows?",
+      "a": "After the sweep, watch for a displacement candle that closes back inside the range. This often leaves a fair value gap on the 5-minute or 15-minute chart, which becomes your entry model. A break of structure on the lower timeframe in the opposite direction confirms that liquidity has been collected and the institutional move is underway."
+    },
+    {
+      "q": "Can equal highs and equal lows appear on any timeframe?",
+      "a": "Yes, but higher timeframe levels carry more weight. Equal highs on the daily or 4-hour chart represent larger accumulations of stop orders than those on the 5-minute chart. In practice, use the daily and 4-hour to identify the primary liquidity targets and use the 15-minute or lower to time entries around the sweep during a killzone window."
+    },
+    {
+      "q": "Do equal highs always get swept before price reverses?",
+      "a": "No. Price sometimes reverses from a nearby order block or fair value gap before reaching the equal highs or lows. The level is a high-probability target, not a guarantee. If your higher timeframe bias is strong and an order block sits between current price and the equal highs, price may reverse from that OB first and the equal highs may get swept later in the session or on another trading day."
+    }
+  ],
+  "relatedTags": [
+    "ict-liquidity",
+    "buy-side-liquidity",
+    "sell-side-liquidity",
+    "liquidity-sweep",
+    "ict-concepts",
+    "order-blocks",
+    "fair-value-gap",
+    "break-of-structure",
+    "smart-money-concepts",
+    "killzone-trading",
+    "price-action",
+    "forex-trading-strategy"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "premium-and-discount-in-ict",
+      "label": "Premium & Discount in ICT"
+    },
+    {
+      "slug": "what-is-a-stop-hunt-in-trading",
+      "label": "Stop Hunt in Trading Explained"
+    },
+    {
+      "slug": "what-is-a-mitigation-block",
+      "label": "Mitigation Block Explained"
+    },
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    }
+  ],
+  "testimonialIndex": 0,
+  "createdAt": "2026-06-11T05:01:45.179Z",
+  "targetKeyword": "equal highs and equal lows ICT"
+}
