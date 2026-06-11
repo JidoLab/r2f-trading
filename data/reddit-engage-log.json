@@ -3016,5 +3016,15 @@
     "commentedAt": "2026-06-11T13:00:24.897Z",
     "permalink": "/r/Forexstrategy/comments/1u2d3q9/why_did_this_xauusd_order_block_fail_looking_for/or104l6/",
     "commentId": "or104l6"
+  },
+  {
+    "postId": "1u33u9j",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAUUSD SHORT SETUP",
+    "commentText": "i had this exact problem last month on xauusd, kept getting chopped up trying to short without waiting for a proper MSS on the 15m first. what changed everything for me was only taking shorts after price raided a buy side liquidity level during new york open and then broke structure to the downside with a clean fvg left behind to reprice into. tbh if you're not seeing that displacement candle away from the high you're probably just guessing the top.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-11T18:00:48.557Z",
+    "permalink": "/r/Forexstrategy/comments/1u33u9j/xauusd_short_setup/or2txs3/",
+    "commentId": "or2txs3"
   }
 ]
