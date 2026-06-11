@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1781137821667-6zwoi",
+    "platform": "youtube",
+    "postTitle": "Live GOLD and CRYPTO Scalping Trading | DAY 256 #goldtrading #cryptotrading #bitcoin",
+    "postUrl": "https://youtube.com/watch?v=MyB-cQY1aJ0",
+    "authorName": "ICT ENIGMA",
+    "suggestedReply": "Scalping gold and crypto on the same session is no joke, the liquidity profiles are completely different. I teach my students to never treat both assets the same way, especially during overlap sessions where crypto can spike on low volume while gold respects displacement more cleanly. The caveat I'd add for day 256 level consistency is to watch your model degradation on crypto scalps when HTF bias is unclear. One of those environments will punish you fast if you carry the same entry criteria across both.",
+    "createdAt": "2026-06-11T00:30:21.667Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781137825641-nyk3v",
+    "platform": "youtube",
+    "postTitle": "ICT Dealing Ranges Explained | Premium vs Discount | Which Timeframe Should You Focus On",
+    "postUrl": "https://youtube.com/watch?v=5XpqwYsuxTE",
+    "authorName": "Phantom trades",
+    "suggestedReply": "The dealing range breakdown hits on something I drill into my students constantly. Most people identify premium and discount correctly but then jump to the 15 minute to enter without confirming which timeframe established the range in the first place. A discount on the daily can still be premium on the 4 hour. Always anchor your bias to the higher timeframe range before dropping down.",
+    "createdAt": "2026-06-11T00:30:25.641Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781137830149-pmr52",
+    "platform": "youtube",
+    "postTitle": "Science of bigger context🚀📊🔥 #xauusd #smc #ict #trading #forextrading #bias #dailybias #smc #fvg",
+    "postUrl": "https://youtube.com/watch?v=I2DoQkdnIm0",
+    "authorName": "Trader in making",
+    "suggestedReply": "Bigger context bias on XAUUSD is everything, but most traders miss how the weekly FVG interacts with the daily bias before they even drop to execution timeframes. I drill this into my students constantly. confirm your higher timeframe draw on liquidity first, then let the daily bias align before touching a 15m entry. chasing setups without that top down confluence is why most people struggle with gold specifically.",
+    "createdAt": "2026-06-11T00:30:30.149Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781137833276-vx71o",
+    "platform": "youtube",
+    "postTitle": "How to use Volume Profile as an ICT trader #daytrading #tutorial",
+    "postUrl": "https://youtube.com/watch?v=WFiRwBO3vN8",
+    "authorName": "Andrew Trades",
+    "suggestedReply": "Volume Profile hits different when you layer it with ICT concepts like dealing ranges. I teach my students to map high volume nodes against premium and discount arrays so they can see where institutions are likely to defend price. Most traders use Volume Profile in isolation and wonder why their levels keep getting blown through. Are you combining this with session highs and lows or strictly reading the profile standalone?",
+    "createdAt": "2026-06-11T00:30:33.276Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781137836513-hi6b6",
+    "platform": "youtube",
+    "postTitle": "Gold Trade Entry Explained | XAUUSD",
+    "postUrl": "https://youtube.com/watch?v=W-EwlgNBCYM",
+    "authorName": "Royale Speed ⚡ ",
+    "suggestedReply": "I tell my students that XAUUSD entry timing is where most people bleed their accounts dry. Waiting for a proper displacement into a premium or discount array on the 15m before committing to a gold entry changed everything for me years ago. The entries that look \"late\" are usually the cleanest ones.",
+    "createdAt": "2026-06-11T00:30:36.513Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781137839963-w0oy3",
+    "platform": "youtube",
+    "postTitle": "Live Futures Trading, GIVEAWAY, NQ Day Trading Prop Firm ICT Strategy, Lucid, Tradeify Cup, Apex",
+    "postUrl": "https://youtube.com/watch?v=g1Y8WyC-Pe8",
+    "authorName": "Cove Trader",
+    "suggestedReply": "The NQ displacement entries on prop firm challenges are where most traders blow it. I tell my students trading funded accounts to wait for the confirmed displacement candle before marking the FVG, not the candle before it. That one shift alone stops premature entries that get stopped out by the spread on volatile NQ opens. Curious how you approached sizing during the Tradeify Cup rules specifically.",
+    "createdAt": "2026-06-11T00:30:39.963Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781137846547-ja8pl",
+    "platform": "youtube",
+    "postTitle": "10 Jun | CPI Live | XAUUSD Live Trading | Gold Live Analysis | ICT Concepts &amp; SPX",
+    "postUrl": "https://youtube.com/watch?v=Tij4flh0_2g",
+    "authorName": "GoldSharks",
+    "suggestedReply": "I always tell my students that CPI days on XAUUSD are not the time to be a hero chasing entries. The liquidity sweeps around that news window are violent and I drill into everyone to wait for the 15m displacement candle AFTER the initial spike before even considering a position. Gold respects ICT concepts beautifully on high impact news but only if you're patient enough to let price tell you the story first.",
+    "createdAt": "2026-06-11T00:30:46.547Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781137849588-myct8",
+    "platform": "youtube",
+    "postTitle": "🟢 400 Point Banger Short | CPI DAY | Live Trading | ICT Concepts | June 10, 2026",
+    "postUrl": "https://youtube.com/watch?v=LOZymaMN4nM",
+    "authorName": "Tyler Trades",
+    "suggestedReply": "CPI days are where most traders blow up chasing the initial spike instead of waiting for the real displacement. I drill into my students that on high impact news, the 400 point move rarely comes from the first candle. it comes from the engineered liquidity sweep that follows. Would be curious what timeframe you confirmed the short entry on before committing size.",
+    "createdAt": "2026-06-11T00:30:49.588Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1781092936171-0rdbc",
     "platform": "investinglive",
     "postTitle": "The S&P 500 is at risk of another selloff as traders hold their breath ahead of the US CPI",
