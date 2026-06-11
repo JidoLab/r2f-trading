@@ -1,0 +1,91 @@
+{
+  "slug": "what-is-a-liquidity-void",
+  "title": "Liquidity Void Explained",
+  "seoTitle": "What Is a Liquidity Void in ICT Trading?",
+  "seoDescription": "A liquidity void forms when price moves so fast that one side of the market barely participates. Here is how to identify and trade these imbalances with precision.",
+  "headline": "What Is a Liquidity Void and Why Price Returns to Fill It",
+  "subheadline": "Liquidity voids are one of the clearest signals in ICT methodology that price has unfinished business at a specific level. Knowing how to read them separates reactive traders from prepared ones.",
+  "intro": "A liquidity void is a price range where the market moved so aggressively in one direction that little to no two-sided trading occurred, leaving an inefficiency that price tends to revisit and fill. In ICT methodology, this concept sits at the core of understanding how smart money delivers price: markets seek out areas of thin participation to balance the ledger. When you see a large, fast candle with minimal overlap from the opposing side, you are likely looking at a liquidity void.",
+  "keyPoints": [
+    {
+      "icon": "🕳️",
+      "title": "What a Liquidity Void Actually Is",
+      "text": "A liquidity void forms when a strong impulse candle, or series of candles, moves price through a zone where very few limit orders were resting on both sides. The result is a visible gap in fair value on the chart. In ICT terms, this is closely related to the Fair Value Gap (FVG): a three-candle formation where the middle candle's range is not touched by the wicks of the surrounding candles, leaving a pocket of imbalance."
+    },
+    {
+      "icon": "⚖️",
+      "title": "Why Price Returns to These Levels",
+      "text": "Markets are engineered to seek liquidity. When price skips through a zone without meaningful participation, institutional order flow has not been fully paired off. Price is drawn back to these voids to allow the other side of those trades to be filled, restoring a degree of balance. This is why you frequently see price retrace into an FVG or imbalance before continuing the original move."
+    },
+    {
+      "icon": "🎯",
+      "title": "How to Use Voids in Your Entries",
+      "text": "Mark the liquidity void on your chart after a Break of Structure (BOS) or a strong displacement candle. During a killzone, such as the London open or New York AM session, watch for price to retrace back into the void. The mitigation of that imbalance, combined with confluence from a nearby order block or previous session high or low, gives you a high-probability entry point with a defined level to place your stop beyond."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "Many traders assume every liquidity void will be filled cleanly and immediately. Some voids act as magnets on a higher timeframe and price may only partially fill them before continuing. Trading the fill in isolation, without checking the higher timeframe bias, trend structure, or whether you are inside a premium or discount zone, leads to entries that work against the dominant order flow."
+    },
+    {
+      "icon": "📈",
+      "title": "Building This Into Your Process",
+      "text": "Start by marking liquidity voids on the 15-minute and 1-hour charts during your pre-session analysis. Identify whether the void sits in a discount zone for longs or a premium zone for shorts using the Fibonacci equilibrium as a reference. Then drop to the 5-minute chart during a killzone to time your entry. Pair this with an understanding of where the market last swept liquidity and you have a structured, repeatable framework."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a liquidity void in trading?",
+      "a": "A liquidity void is a price range where one-sided, aggressive movement occurred with almost no opposing participation. Price tends to return to these zones because the market needs to pair unfilled orders on both sides. In ICT methodology, it is essentially a large-scale imbalance similar to a Fair Value Gap but often spanning multiple candles."
+    },
+    {
+      "q": "Is a liquidity void the same as a Fair Value Gap?",
+      "a": "They are closely related but slightly different in scale. A Fair Value Gap is a specific three-candle imbalance pattern. A liquidity void is a broader inefficiency, sometimes spanning an entire impulsive leg on a higher timeframe chart like the 4-hour or daily, where price delivered heavily in one direction without retracing."
+    },
+    {
+      "q": "How do you trade a liquidity void on the EUR/USD?",
+      "a": "After a strong displacement move on the 15-minute EUR/USD chart, mark the imbalance zone. During the New York AM killzone, watch for price to retrace into the void. If that zone aligns with a bearish order block in a premium area and the daily bias is bearish, a short entry at the top of the void with a stop above the order block is a structured ICT-style setup."
+    },
+    {
+      "q": "Does a liquidity void always get filled?",
+      "a": "Many liquidity voids are eventually mitigated, but not all fill completely or quickly. Higher timeframe voids on the daily or weekly chart can remain open for weeks. Partial fills are common, especially in strong trending markets. Always confirm that filling the void aligns with your current timeframe bias before entering a trade around it."
+    },
+    {
+      "q": "What timeframe is best for spotting liquidity voids?",
+      "a": "The 15-minute and 1-hour charts are the most practical for swing and intraday traders using ICT concepts. Higher timeframe voids on the 4-hour or daily chart carry more weight and tend to draw price back more reliably. The 1-minute and 5-minute charts reveal voids useful for precision entries once a higher timeframe setup is already confirmed."
+    }
+  ],
+  "relatedTags": [
+    "ict-methodology",
+    "fair-value-gap",
+    "order-blocks",
+    "break-of-structure",
+    "liquidity",
+    "smart-money-concepts",
+    "killzone-trading",
+    "price-delivery",
+    "imbalance",
+    "market-structure"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-smt-divergence",
+      "label": "SMT Divergence Explained"
+    },
+    {
+      "slug": "what-is-a-break-of-structure",
+      "label": "Break of Structure (BOS) Explained"
+    },
+    {
+      "slug": "what-is-a-mitigation-block",
+      "label": "Mitigation Block Explained"
+    },
+    {
+      "slug": "premium-and-discount-in-ict",
+      "label": "Premium & Discount in ICT"
+    }
+  ],
+  "testimonialIndex": 1,
+  "createdAt": "2026-06-11T05:00:36.028Z",
+  "targetKeyword": "what is a liquidity void"
+}
