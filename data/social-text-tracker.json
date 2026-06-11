@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "question",
     "poll",
     "hot-take",
     "quote",
@@ -29,11 +28,12 @@
     "tip",
     "challenge",
     "myth",
-    "question"
+    "question",
+    "poll"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "CPI drops this week. Do you STOP trading before the release or do you USE the volatility? Drop your answer 👇 #ICTTrading #SmartMoneyConcepts #CPI",
-    "date": "2026-06-10T12:00:12.872Z"
+    "type": "poll",
+    "text": "CPI drops soon 👀 What's your move?\n\n🅰️ Stay flat, let it pass\n🅱️ Trade the reaction after\n🅲️ Position before the data\n🅳️ I don't even watch news\n\n#ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-06-11T12:00:13.337Z"
   }
 }
