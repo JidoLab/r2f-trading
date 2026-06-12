@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll",
     "hot-take",
     "quote",
     "tip",
@@ -29,11 +28,12 @@
     "challenge",
     "myth",
     "question",
-    "poll"
+    "poll",
+    "story"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "CPI drops soon 👀 What's your move?\n\n🅰️ Stay flat, let it pass\n🅱️ Trade the reaction after\n🅲️ Position before the data\n🅳️ I don't even watch news\n\n#ICTTrading #SmartMoneyConcepts #CPI",
-    "date": "2026-06-11T12:00:13.337Z"
+    "type": "story",
+    "text": "Held through CPI once. Knew it was risky. Told myself 'smart money won't let it drop.' It dropped 150 pips in 4 minutes. Smart money didn't care about my feelings. Now I'm flat before every high-impact event. #ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-06-12T12:00:58.066Z"
   }
 }
