@@ -3102,5 +3102,15 @@
     "commentedAt": "2026-06-12T13:01:36.156Z",
     "permalink": "/r/Forexstrategy/comments/1u3oyll/if_youre_selling_gold_right_now_read_this_first/or7zlkz/",
     "commentId": "or7zlkz"
+  },
+  {
+    "postId": "1u3qd6f",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "I tried to backtest the Silver Bullet mechanically. The strict definition fired ONCE in a year. That's not a bug  it's the most interesting thing about ICT.",
+    "commentText": "the same-candle constraint is doing exactly what you think it is — it's not a mechanical filter, it's ICT describing the *feel* of a confluent moment, not a codeable rule. the MSS on the silver bullet window is really about whether price has already shown displacement within that 10-11 NY killzone, which means the \"candle\" it happens on is a judgment call about which swing is even relevant. tbh your 46-trade relaxed set is actually the more useful finding here because the PF of 0.08 on ETH tells you the FVG retrace without true displacement context is just noise with a fancy name.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-12T18:00:39.193Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u3qd6f/i_tried_to_backtest_the_silver_bullet/or9u8iy/",
+    "commentId": "or9u8iy"
   }
 ]
