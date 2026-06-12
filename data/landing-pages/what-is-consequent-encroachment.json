@@ -1,0 +1,91 @@
+{
+  "slug": "what-is-consequent-encroachment",
+  "title": "Consequent Encroachment Explained",
+  "seoTitle": "What Is Consequent Encroachment in ICT Trading",
+  "seoDescription": "Consequent encroachment is the 50% midpoint of a fair value gap, used by ICT traders as a precision entry level. Here is exactly how to apply it.",
+  "headline": "Consequent Encroachment: The 50% FVG Level That Refines Your Entry",
+  "subheadline": "In ICT methodology, consequent encroachment turns a broad imbalance zone into a single actionable price level. Understanding it separates reactive entries from precise ones.",
+  "intro": "Consequent encroachment is the exact 50% midpoint of a fair value gap (FVG), used in ICT methodology as a refined entry or reaction target within that imbalance. When price returns to fill a fair value gap, traders watch for a reaction at this midpoint rather than treating the entire gap as a single entry zone. It gives a specific price to work with instead of a wide area, which directly improves risk-to-reward on any setup built around an FVG.",
+  "keyPoints": [
+    {
+      "icon": "📐",
+      "title": "What Consequent Encroachment Is",
+      "text": "Consequent encroachment is the 50% level of a fair value gap, calculated by taking the high of the candle that creates the gap and the low of the candle preceding it, then splitting the range in half. It is a single price, not a zone. ICT introduced it as the internal equilibrium of the imbalance, mirroring how the 50% level matters across other ICT concepts like optimal trade entry."
+    },
+    {
+      "icon": "🎯",
+      "title": "Why This Level Has Edge",
+      "text": "Institutional order flow frequently stalls or reverses at the 50% internal level of an FVG because it represents the mean of the inefficiency. Waiting for price to reach consequent encroachment before entering tightens your stop placement and increases the reward potential compared to entering at the gap's edge. On higher timeframe FVGs, this level often aligns with nearby order blocks or liquidity, compounding its significance."
+    },
+    {
+      "icon": "🛠️",
+      "title": "How to Apply It on a Chart",
+      "text": "Identify a valid bullish or bearish fair value gap on your working timeframe, then mark the 50% level of the three-candle formation. During a killzone session such as London or New York open, wait for price to retrace into the FVG and tag consequent encroachment. Use that price as your trigger or confirmation area, placing your stop below the full FVG for a long, and targeting the next dealing range extreme or liquidity pool above."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake Here",
+      "text": "Traders regularly enter at the first touch of the FVG's outer edge and then watch price sweep through to consequent encroachment before moving in their direction. This gives them a loss on a setup they read correctly. The fix is to define the midpoint first and treat the full gap as the stop zone, not the entry zone, unless additional confluence at the edge is extremely strong."
+    },
+    {
+      "icon": "📈",
+      "title": "Pairing It with Broader ICT Concepts",
+      "text": "Consequent encroachment works best when the FVG itself sits inside a premium or discount array aligned with the higher timeframe narrative. A bullish FVG at a discount, with a break of structure already confirmed and price returning during a New York AM killzone, creates the context where consequent encroachment becomes a high-probability entry. Study it alongside order blocks and liquidity sweeps to build complete ICT setups."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is consequent encroachment in ICT trading?",
+      "a": "Consequent encroachment is the 50% midpoint of a fair value gap. ICT uses it as the internal equilibrium of the imbalance, giving traders a precise price level within the FVG to time entries rather than using the full gap width as a single trigger zone."
+    },
+    {
+      "q": "How do you calculate the consequent encroachment level?",
+      "a": "Identify the three candles that form the FVG. The gap itself runs from the high of candle one to the low of candle three. Add those two prices together and divide by two. That midpoint price is consequent encroachment. Most charting platforms let you place a horizontal line there manually."
+    },
+    {
+      "q": "Does consequent encroachment work on all timeframes?",
+      "a": "It applies on any timeframe where a valid FVG forms, but higher timeframe FVGs on the 1H, 4H, or daily carry more weight. On the EUR/USD 15-minute chart during London open, a bullish FVG with price tapping its 50% level and holding is a well-documented setup pattern in ICT methodology."
+    },
+    {
+      "q": "What is the difference between an FVG and consequent encroachment?",
+      "a": "The FVG is the entire gap zone between two non-overlapping candle wicks, representing a price inefficiency. Consequent encroachment is one specific price inside that FVG, its exact midpoint. The FVG defines the area of interest. Consequent encroachment defines where within that area you focus your execution."
+    },
+    {
+      "q": "Should I always wait for price to reach consequent encroachment before entering?",
+      "a": "Not in every case. If the FVG is small and sits inside a strong confluence zone such as an order block at a key swing low, the outer edge of the gap may offer enough precision. Consequent encroachment becomes most valuable on larger FVGs where entering at the edge puts too much risk between entry and stop."
+    }
+  ],
+  "relatedTags": [
+    "fair-value-gap",
+    "ict-methodology",
+    "order-blocks",
+    "optimal-trade-entry",
+    "liquidity",
+    "break-of-structure",
+    "killzone-trading",
+    "price-imbalance",
+    "futures-trading",
+    "forex-entries"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-a-mitigation-block",
+      "label": "Mitigation Block Explained"
+    },
+    {
+      "slug": "what-is-a-liquidity-void",
+      "label": "Liquidity Void Explained"
+    },
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    },
+    {
+      "slug": "premium-and-discount-in-ict",
+      "label": "Premium & Discount in ICT"
+    }
+  ],
+  "testimonialIndex": 2,
+  "createdAt": "2026-06-12T05:02:46.463Z",
+  "targetKeyword": "what is consequent encroachment"
+}
