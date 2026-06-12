@@ -1906,5 +1906,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-06-12T12:00:59.186Z",
+    "type": "text",
+    "postType": "story",
+    "text": "Held through CPI once. Knew it was risky. Told myself 'smart money won't let it drop.' It dropped 15",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
