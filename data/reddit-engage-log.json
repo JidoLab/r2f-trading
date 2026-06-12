@@ -2795,7 +2795,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-06T08:00:20.042Z",
     "permalink": "/r/RealDayTrading/comments/1txl9j9/tips_for_a_new_trader/oq1z9s0/",
-    "commentId": "oq1z9s0"
+    "commentId": "oq1z9s0",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-06T16:04:43.000Z",
+    "firstReplyAuthor": "WeeklyCrab3286",
+    "firstReplyText": "Thanks, I'd been looking at different example logbooks and they all seemed to have a bunch of different categories and stats that I don't quite understand yet. So far I've just been tracking the basics (entry, stop, TP, exit, position size) along with a screenshot of each trade until I figure out a "
   },
   {
     "postId": "1tyecrx",
@@ -2815,7 +2819,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-07T08:01:33.315Z",
     "permalink": "/r/Forexstrategy/comments/1tz5pdu/any_software_engineers_here_building_their_own/oq8br00/",
-    "commentId": "oq8br00"
+    "commentId": "oq8br00",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-07T16:06:38.000Z",
+    "firstReplyAuthor": "Rude_Firefighter_234",
+    "firstReplyText": "Yeah, that’s exactly what I’m trying to avoid. I don’t want the app calling every small structure shift a real CHoCH. On the 1m I’m requiring more than just a break. I’m looking for the sweep or failed breakout/breakdown, then reclaim/rejection, then displacement/strong close, then clean RR before i"
   },
   {
     "postId": "1tydwna",
@@ -2845,7 +2853,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-08T08:01:01.552Z",
     "permalink": "/r/InnerCircleTraders/comments/1u00yma/what_range_do_you_use_for_ote/oqetry4/",
-    "commentId": "oqetry4"
+    "commentId": "oqetry4",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-08T08:08:53.000Z",
+    "firstReplyAuthor": "denimalfie",
+    "firstReplyText": "Thanks! How would you determine your bias for today after the sell-off on Friday? My rationale: I saw that during Asia this morning, the CE of the H1 FVG was perfectly respected, therefore my bias was rather bearish. On the other hand, just due to mean reversion, you could expect a pullback after Fr"
   },
   {
     "postId": "1tzhm9m",
@@ -2865,7 +2877,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-08T08:01:20.002Z",
     "permalink": "/r/InnerCircleTraders/comments/1tzbg42/eurcad_outlook_for_next_week/oqett6e/",
-    "commentId": "oqett6e"
+    "commentId": "oqett6e",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-08T08:04:49.000Z",
+    "firstReplyAuthor": "krsna_unofficial1",
+    "firstReplyText": "I don't use 15min as entry and I will wait for the ob don't trust that fvg"
   },
   {
     "postId": "1tzxien",
