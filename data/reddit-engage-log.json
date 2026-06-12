@@ -3052,5 +3052,55 @@
     "commentedAt": "2026-06-12T03:01:45.951Z",
     "permalink": "/r/RealDayTrading/comments/1u3hq35/trading_template/or5qost/",
     "commentId": "or5qost"
+  },
+  {
+    "postId": "1u3tvu3",
+    "subreddit": "Forexstrategy",
+    "postTitle": "If gold breaks $4,300 this week, the short squeeze will be violent. Here's exactly what to watch and when to enter.",
+    "commentText": "if $4,300 holds as resistance this week, try dropping to the 15m and marking the last up-close candle before the rejection — that's your bearish OB. if price revisits it during NY killzone tuesday or wednesday (especially around the CPI drop), that's the sniper entry back toward $4,016 retest. the $4,212–$4,229 zone you flagged is basically the 50% of the entire displacement leg, so a failed retest there with a FVG underneath seals the bear case imo.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-12T13:00:54.058Z",
+    "permalink": "/r/Forexstrategy/comments/1u3tvu3/if_gold_breaks_4300_this_week_the_short_squeeze/or7zgu1/",
+    "commentId": "or7zgu1"
+  },
+  {
+    "postId": "1u3b4z9",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Gold Spikes 100 Points - What Could Happen at 4180?",
+    "commentText": "4180 is interesting but tbh the real question is whether price sweeps liquidity above that level before reversing. a 100 point spike like this into a clean resistance often leaves an imbalance (FVG) on the 15m that price wants to come back and fill before any true continuation toward 4200. watch the NY session open reaction there, not just the raw break.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-12T13:01:08.701Z",
+    "permalink": "/r/Forexstrategy/comments/1u3b4z9/gold_spikes_100_points_what_could_happen_at_4180/or7ziir/",
+    "commentId": "or7ziir"
+  },
+  {
+    "postId": "1u2zqcf",
+    "subreddit": "Forexstrategy",
+    "postTitle": "I had Claude break down the 5 biggest winners my EURUSD AI ran end-to-end. Here's what the strategies had in common. (67% Win Ratio)",
+    "commentText": "this happened to me last month on EURUSD during the NY open — my macro bias was bearish but price swept a buyside liquidity level above the asian range and printed a clean bullish BOS on the 5m, so i went long anyway and it ran clean. that trade you mentioned where macro was only 15% conviction but trend was 67% and it printed +3.19R is exactly why i stopped letting macro kill entries when the lower timeframe structure is screaming the other way tbh. low conviction macro ≠ strong counter-signal imo, it just means the market isn't committed to a direction yet, which can actually be fuel for a clean trending move.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-12T13:01:20.583Z",
+    "permalink": "/r/Forexstrategy/comments/1u2zqcf/i_had_claude_break_down_the_5_biggest_winners_my/or7zjux/",
+    "commentId": "or7zjux"
+  },
+  {
+    "postId": "1u3mzok",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAUUSD",
+    "commentText": "try marking that $4,246 level on the 15m and looking for a bearish FVG to form right at or just below it during the NY AM killzone. if price runs up into that gap and gets rejected with a strong displacement candle, that's your short entry back toward $4,182 tbh. the wave e narrative in the post actually lines up well with a liquidity sweep above $4,246 before the real move down continues.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-12T13:01:29.084Z",
+    "permalink": "/r/Forexstrategy/comments/1u3mzok/xauusd/or7zkrt/",
+    "commentId": "or7zkrt"
+  },
+  {
+    "postId": "1u3oyll",
+    "subreddit": "Forexstrategy",
+    "postTitle": "😳 IF YOU'RE SELLING GOLD RIGHT NOW, READ THIS FIRST! ⚠️🥇",
+    "commentText": "try marking that $4173 level as a breaker block on the 1H — price swept sell-side liquidity below $4100, reversed hard, and now that old resistance is your key area to watch during tuesday's london open. if price retraces into that zone during the NY killzone and you see a bullish FVG hold on the 15m, that's your long trigger, not a short. tbh fading the crowd here makes more sense than chasing sellers into a liquidity void 🎯",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-12T13:01:36.156Z",
+    "permalink": "/r/Forexstrategy/comments/1u3oyll/if_youre_selling_gold_right_now_read_this_first/or7zlkz/",
+    "commentId": "or7zlkz"
   }
 ]
