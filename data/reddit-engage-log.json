@@ -3026,5 +3026,15 @@
     "commentedAt": "2026-06-11T18:00:48.557Z",
     "permalink": "/r/Forexstrategy/comments/1u33u9j/xauusd_short_setup/or2txs3/",
     "commentId": "or2txs3"
+  },
+  {
+    "postId": "1u3hq35",
+    "subreddit": "RealDayTrading",
+    "postTitle": "Trading Template",
+    "commentText": "really useful setup tbh, but the thematic sector piece is where most people slip up — if you're manually inputting tickers you believe are \"leading,\" you're introducing confirmation bias before price even opens. imo you'd get more out of anchoring that section to actual relative strength vs SPY on the 1hr, so you're reacting to what's showing displacement and BOS rather than what you *think* should be running. the manual sort step on 5-day performance is fine for swing context but it's pretty lagging for same-day sector rotation reads.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-12T03:01:45.951Z",
+    "permalink": "/r/RealDayTrading/comments/1u3hq35/trading_template/or5qost/",
+    "commentId": "or5qost"
   }
 ]
