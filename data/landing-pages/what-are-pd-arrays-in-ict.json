@@ -1,0 +1,91 @@
+{
+  "slug": "what-are-pd-arrays-in-ict",
+  "title": "PD Arrays in ICT Explained",
+  "seoTitle": "What Are PD Arrays in ICT? The Full Hierarchy Explained",
+  "seoDescription": "7 PD array types ranked by precision: what are PD arrays in ICT, how the premium/discount hierarchy works, and which levels to trade first for better entries.",
+  "headline": "What Are PD Arrays in ICT and How Do You Rank Them?",
+  "subheadline": "The premium/discount array hierarchy tells you which institutional price levels carry the most weight. Knowing the order changes how you filter setups entirely.",
+  "intro": "PD arrays in ICT are a structured set of price delivery zones that institutions use to buy at a discount and sell at a premium, arranged in a specific hierarchy based on their precision and reliability. The term 'PD' stands for premium and discount, reflecting where price sits relative to the midpoint of a defined range. ICT methodology organizes these arrays from highest to lowest precision so traders can prioritize which levels to seek entries at and which to treat as confirmation rather than primary signals.",
+  "keyPoints": [
+    {
+      "icon": "📐",
+      "title": "What the PD Array Hierarchy Is",
+      "text": "The hierarchy ranks institutional price delivery zones from most to least precise. At the top sit breaker blocks and mitigation blocks, followed by fair value gaps (FVGs), order blocks, rejection blocks, void fills, and ultimately equilibrium. Each level represents a different way price has left an imbalance or footprint behind. The ranking exists because not all levels offer the same probability of a clean reaction."
+    },
+    {
+      "icon": "🎯",
+      "title": "Why the Hierarchy Changes Your Edge",
+      "text": "Entering on every order block regardless of context dilutes your results. When you apply the hierarchy, you wait for price to reach a higher-ranked array, such as a breaker or FVG, before committing. Lower-ranked arrays like equilibrium still matter for measuring where premium or discount begins, but they are reference points rather than entry triggers. Filtering by hierarchy keeps you aligned with where institutions are actually transacting."
+    },
+    {
+      "icon": "🛠️",
+      "title": "How to Apply This in a Live Setup",
+      "text": "Start by identifying the prevailing range on the higher timeframe, such as the weekly or daily swing, and mark the 50% level using the Fibonacci tool. Price below 50% is discount territory and favors buy setups. Price above 50% favors sells. Then locate the highest-ranked PD array sitting inside the premium or discount zone. On EURUSD, for example, a 4-hour FVG sitting below the 50% equilibrium during the London killzone is a legitimate entry location. Lower-ranked arrays within the same zone act as additional confluence only."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Ranking Mistake",
+      "text": "Traders frequently treat all order blocks as equal regardless of where they fall in the array hierarchy or whether they sit in premium or discount. An order block in premium on a bearish HTF bias is a potential sell location, not a buy. Ignoring whether the array is in the correct premium or discount zone relative to the higher timeframe range is one of the fastest ways to trade against institutional flow while still thinking you are using ICT concepts correctly."
+    },
+    {
+      "icon": "➡️",
+      "title": "Building From Here",
+      "text": "Once you can identify the hierarchy and locate arrays inside the correct premium or discount zone, the next layer is time. ICT sessions like the London and New York killzones are when institutions actually deliver price into these arrays. Study how price behaves when it enters an FVG or breaker block during a killzone versus during dead session hours. Combining array type, zone (premium or discount), and session timing gives you a complete framework for ICT-based entries."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the correct order of the PD array hierarchy in ICT?",
+      "a": "From highest to lowest precision: breaker blocks, mitigation blocks, fair value gaps, order blocks, rejection blocks, void fills, and equilibrium. Breakers and FVGs tend to produce the cleanest reactions. Equilibrium is primarily used to determine whether price is in premium or discount relative to a swing range."
+    },
+    {
+      "q": "What does premium and discount actually mean in ICT?",
+      "a": "Premium refers to price trading above the 50% midpoint of a defined swing range, making it favorable territory for sell setups. Discount refers to price below the 50% midpoint, which is favorable for buys. The range is measured using the Fibonacci tool from the relevant swing low to swing high, or vice versa, on the higher timeframe."
+    },
+    {
+      "q": "How do PD arrays relate to order blocks and FVGs?",
+      "a": "Order blocks and FVGs are both types of PD arrays, but FVGs rank higher in precision because they represent a direct imbalance in price delivery that the market typically returns to fill. An order block marks the last opposing candle before a significant move. When an FVG and order block overlap, traders often call this a high-probability confluence zone and treat it as the primary entry area."
+    },
+    {
+      "q": "Can I use PD arrays on any timeframe or currency pair?",
+      "a": "Yes. PD arrays appear on all liquid markets and all timeframes. On NQ futures, a 15-minute FVG sitting in discount during the New York open killzone is a valid setup. The key is that the lower timeframe array must align with the directional bias established on the higher timeframe, such as the daily or 4-hour chart, through a confirmed BOS."
+    },
+    {
+      "q": "Why does ICT put breaker blocks above order blocks in the hierarchy?",
+      "a": "A breaker block forms when an order block fails and price sweeps the liquidity beyond it, then reverses. This means the level has already been tested and the original buyers or sellers have been stopped out, leaving a cleaner institutional footprint. That failure and reversal process makes breakers more reliable than standard order blocks that have not yet been tested."
+    }
+  ],
+  "relatedTags": [
+    "ict-concepts",
+    "pd-arrays",
+    "order-blocks",
+    "fair-value-gaps",
+    "premium-and-discount",
+    "breaker-blocks",
+    "ict-trading-strategy",
+    "liquidity",
+    "killzone-trading",
+    "market-structure"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-a-break-of-structure",
+      "label": "Break of Structure (BOS) Explained"
+    },
+    {
+      "slug": "what-is-a-liquidity-void",
+      "label": "Liquidity Void Explained"
+    },
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    },
+    {
+      "slug": "smart-money-concepts",
+      "label": "Smart Money Concepts for Forex"
+    }
+  ],
+  "testimonialIndex": 1,
+  "createdAt": "2026-06-12T05:02:13.123Z",
+  "targetKeyword": "what are PD arrays in ICT"
+}
