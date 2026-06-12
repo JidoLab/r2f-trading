@@ -1,5 +1,45 @@
 [
   {
+    "id": "reply-oqett6e",
+    "platform": "reddit",
+    "postTitle": "EURCAD outlook for next week",
+    "subreddit": "InnerCircleTraders",
+    "replyAuthor": "krsna_unofficial1",
+    "replyText": "I don't use 15min as entry and I will wait for the ob don't trust that fvg",
+    "commentUrl": "https://www.reddit.com/r/InnerCircleTraders/comments/1tzbg42/eurcad_outlook_for_next_week/oqett6e/",
+    "detectedAt": "2026-06-12T13:01:23.440Z"
+  },
+  {
+    "id": "reply-oqetry4",
+    "platform": "reddit",
+    "postTitle": "What range do you use for OTE?",
+    "subreddit": "InnerCircleTraders",
+    "replyAuthor": "denimalfie",
+    "replyText": "Thanks! How would you determine your bias for today after the sell-off on Friday? My rationale: I saw that during Asia this morning, the CE of the H1 FVG was perfectly respected, therefore my bias was rather bearish. On the other hand, just due to mean reversion, you could expect a pullback after Fr",
+    "commentUrl": "https://www.reddit.com/r/InnerCircleTraders/comments/1u00yma/what_range_do_you_use_for_ote/oqetry4/",
+    "detectedAt": "2026-06-12T13:01:22.105Z"
+  },
+  {
+    "id": "reply-oq8br00",
+    "platform": "reddit",
+    "postTitle": "Any software engineers here building their own trading apps?",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "Rude_Firefighter_234",
+    "replyText": "Yeah, that’s exactly what I’m trying to avoid. I don’t want the app calling every small structure shift a real CHoCH. On the 1m I’m requiring more than just a break. I’m looking for the sweep or failed breakout/breakdown, then reclaim/rejection, then displacement/strong close, then clean RR before i",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1tz5pdu/any_software_engineers_here_building_their_own/oq8br00/",
+    "detectedAt": "2026-06-12T13:01:20.150Z"
+  },
+  {
+    "id": "reply-oq1z9s0",
+    "platform": "reddit",
+    "postTitle": "Tips for a New Trader",
+    "subreddit": "RealDayTrading",
+    "replyAuthor": "WeeklyCrab3286",
+    "replyText": "Thanks, I'd been looking at different example logbooks and they all seemed to have a bunch of different categories and stats that I don't quite understand yet. So far I've just been tracking the basics (entry, stop, TP, exit, position size) along with a screenshot of each trade until I figure out a ",
+    "commentUrl": "https://www.reddit.com/r/RealDayTrading/comments/1txl9j9/tips_for_a_new_trader/oq1z9s0/",
+    "detectedAt": "2026-06-12T13:01:18.814Z"
+  },
+  {
     "id": "reply-opy3qmq",
     "platform": "reddit",
     "postTitle": "$23,645 From 124 Trades Using a 5Min ORB Setup",
