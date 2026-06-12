@@ -1,0 +1,91 @@
+{
+  "slug": "asian-session-range-trading",
+  "title": "Asian Session Range: ICT Guide",
+  "seoTitle": "Asian Session Range Trading: ICT Bias Guide",
+  "seoDescription": "The Asian session range shapes 80% of London and NY setups ICT traders take. Understand how this 3-hour window sets liquidity targets and directional bias.",
+  "headline": "Asian Session Range Trading: Build Your Daily Bias",
+  "subheadline": "The Asian session quietly sets the table for every London and New York trade you take. Understanding its range is the foundation of ICT killzone analysis.",
+  "intro": "Asian session range trading refers to identifying the high and low formed during the Tokyo session (roughly 8:00 PM to 11:00 PM New York time) and using those levels as liquidity targets and directional reference points for the London and New York killzones. ICT methodology treats this range as a consolidation pool where smart money positions before the higher-volume sessions drive price. The highs and lows of the Asian range are not arbitrary price points. They are where resting buy-side and sell-side liquidity accumulates, making them primary targets for the institutional order flow that defines intraday bias.",
+  "keyPoints": [
+    {
+      "icon": "🌏",
+      "title": "What the Asian Range Actually Is",
+      "text": "The Asian range is the high-to-low price boundary formed during the Tokyo session, typically between 8:00 PM and 11:00 PM New York time. On pairs like GBP/USD or EUR/USD, this range is often tight and consolidating because major institutional participants in London and New York have not yet entered the market. That tight consolidation is precisely what gives the range its utility. It creates clearly defined liquidity pools above and below that the subsequent sessions will target."
+    },
+    {
+      "icon": "🎯",
+      "title": "Why It Matters for Bias",
+      "text": "In ICT methodology, the Asian range highs and lows represent resting liquidity. Buy stops sit just above the Asian high and sell stops sit just below the Asian low. When London opens, price frequently sweeps one side of that range first before reversing and targeting the opposite side. Recognizing which side gets swept during the London killzone (2:00 AM to 5:00 AM NY time) gives you a directional bias for the full trading day, including the New York AM session."
+    },
+    {
+      "icon": "🛠️",
+      "title": "How to Apply It in a Trade",
+      "text": "Mark the Asian session high and low on your chart before the London open. Watch for a liquidity sweep of one boundary during the London killzone, then look for confirmation: a break of structure, a fair value gap, or an order block forming on the 5-minute or 15-minute chart in the opposing direction. For example, if London sweeps the Asian high on GBP/USD and then prints a bearish FVG below that swing, that FVG becomes your entry model targeting the Asian low as a draw on liquidity."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake",
+      "text": "Many traders mark the Asian range and then immediately assume price will sweep both sides every session. The range is a reference, not a mechanical rule. On high-impact news days or during strong trending conditions, price may blow through both boundaries without reversing. Always check the broader market structure on the 1-hour and 4-hour charts first. The Asian range sweep only becomes a high-probability trade when it aligns with a premium or discount array and the higher timeframe narrative."
+    },
+    {
+      "icon": "📈",
+      "title": "Building This Into Your Process",
+      "text": "Start by logging the Asian high and low every day for 30 sessions on one pair, such as EUR/USD or NQ futures. Note which side London sweeps first and whether NY follows through or reverses. This manual review builds pattern recognition faster than any indicator. Once you can identify the sweep and the resulting order flow shift in real time, layer in your ICT entry models: the 2022 model, optimal trade entry, or FVG fills, all anchored to the Asian range as your primary draw on liquidity."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What time is the Asian session range for forex traders in the US?",
+      "a": "For US-based traders, the Asian session runs approximately 8:00 PM to 11:00 PM New York time. The range high and low should be marked before the London killzone opens at 2:00 AM NY time. Some ICT traders extend the window to midnight to capture the full consolidation on pairs like GBP/JPY or AUD/USD."
+    },
+    {
+      "q": "Does the Asian session range work on futures like NQ or ES?",
+      "a": "Yes. On equity index futures like NQ and ES, the Asian session range still forms a consolidation zone and marks clear liquidity pools. The London open at 3:00 AM ET frequently sweeps one side of the overnight range before the NY open at 9:30 AM sets the actual intraday trend. ICT traders use the overnight high and low on NQ as their primary bias anchor."
+    },
+    {
+      "q": "How do I know if price will sweep the Asian high or low first?",
+      "a": "Check the higher timeframe context before the London open. If the daily chart shows price trading in a premium array and the weekly is bearish, London is more likely to sweep the Asian high first before driving lower. Alignment between the 4-hour market structure and a premium or discount condition is the primary filter for choosing which boundary to watch."
+    },
+    {
+      "q": "What happens after the Asian range is swept during London?",
+      "a": "After the sweep, look for a break of structure on the 5-minute chart in the opposing direction, followed by a fair value gap or order block that price returns to. On EUR/USD for example, a sweep of the Asian high followed by a bearish BOS and a 5-minute FVG gives a short entry model. The Asian low then becomes the initial target as the draw on liquidity for that session."
+    },
+    {
+      "q": "Can the Asian range be used for a full-day bias or just London?",
+      "a": "Both. The Asian range sets a morning bias for London, but the levels remain relevant through the New York session. If London sweeps the Asian high and reverses, but price consolidates without reaching the Asian low, the NY AM killzone from 7:00 AM to 10:00 AM NY time often completes that draw. Carry the levels forward until they are clearly taken out."
+    }
+  ],
+  "relatedTags": [
+    "asian-session-range",
+    "ict-killzones",
+    "liquidity-sweep",
+    "london-session-trading",
+    "fair-value-gap",
+    "order-block",
+    "ict-bias",
+    "draw-on-liquidity",
+    "break-of-structure",
+    "intraday-trading-setups"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "ict-silver-bullet-strategy",
+      "label": "ICT Silver Bullet Strategy"
+    },
+    {
+      "slug": "ict-power-of-three-explained",
+      "label": "ICT Power of Three Explained"
+    },
+    {
+      "slug": "what-is-a-judas-swing",
+      "label": "Judas Swing Explained"
+    },
+    {
+      "slug": "equal-highs-and-equal-lows-ict",
+      "label": "Equal Highs & Lows: ICT Liquidity"
+    }
+  ],
+  "testimonialIndex": 3,
+  "createdAt": "2026-06-12T05:01:36.525Z",
+  "targetKeyword": "asian session range trading"
+}
