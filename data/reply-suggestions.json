@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1781265670696-jqn4t",
+    "platform": "youtube",
+    "postTitle": "LuxAlgo: Best All-In-One Indicator for ICT, SMC &amp; Price Action (Full Tutorial 2026)",
+    "postUrl": "https://youtube.com/watch?v=cuoU2wiTMlQ",
+    "authorName": "Lux IQ Trading",
+    "suggestedReply": "LuxAlgo is genuinely one of the better tools for visualizing SMC concepts, and I do recommend it to my students as a starting point. One big caveat though. I always drill into them that the SMC overlay means nothing without proper confluences like session timing and liquidity sweeps confirming the move. Too many newer traders treat the indicator signals as entries without understanding why price is actually moving to that level. Master the concept first, then let the tool assist you.",
+    "createdAt": "2026-06-12T12:01:10.696Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781265673918-eymh6",
+    "platform": "youtube",
+    "postTitle": "How to trade Nifty using SMC &amp; ICT | SMT +Nifty CRT | 12 Jun 2026  #smc  #ict #nifty #trading",
+    "postUrl": "https://youtube.com/watch?v=xIiRfyU_wyc",
+    "authorName": "TradeWizdom | SMC & ICT Trading Education",
+    "suggestedReply": "Interesting take on using SMT divergence with Nifty CRT setups. In my experience, I teach my students to wait for the CRT to fully complete and confirm displacement on the 15m before entering, rather than anticipating the reversal mid-range. The SMT component is powerful but Nifty's correlation pairs can be tricky during high volatility sessions, so confluence is everything here.",
+    "createdAt": "2026-06-12T12:01:13.918Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781265677441-19qsy",
+    "platform": "youtube",
+    "postTitle": "1H Candle Strategy | Liquidity Sweep + FVG 🎯",
+    "postUrl": "https://youtube.com/watch?v=9Xcbo79TqDk",
+    "authorName": "Rohit Prasad",
+    "suggestedReply": "The liquidity sweep into FVG combo on the 1H is genuinely powerful, but I always warn my students to check whether the sweep actually gets a strong displacement candle closing away from the level. Without that confirmation, you're often catching a stop hunt that just keeps running against you. On ranging days especially, price can sweep liquidity and revisit the FVG multiple times before committing to a direction.",
+    "createdAt": "2026-06-12T12:01:17.441Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781265681110-c6k6z",
+    "platform": "youtube",
+    "postTitle": "The Fibonacci level that reverses the NQ every time  #trading #tradinghacks #nqfutures",
+    "postUrl": "https://youtube.com/watch?v=sy2YUVb9pi4",
+    "authorName": "Inner Mind Trader",
+    "suggestedReply": "Interesting take on using Fibonacci as a reversal tool on NQ. In my experience, I teach my students to wait for a confluence between the fib level AND a nearby imbalance or liquidity pool before committing to a trade, because the level alone can trap you on high volatility sessions. A clean premium or discount array with price delivering into that zone tells a much stronger story than the fib in isolation.",
+    "createdAt": "2026-06-12T12:01:21.110Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781265684828-i5spo",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE Forex Trading Hindi | Gold &amp; Bitcoin | Live Trading | 11 June | #tradinglive  #livetrading",
+    "postUrl": "https://youtube.com/watch?v=rZmOSwAO7mg",
+    "authorName": "The Diamond Trader",
+    "suggestedReply": "Interesting take trading Gold and Bitcoin side by side in the same session. In my experience, I teach my students to treat these as completely separate market structures because Gold respects institutional order flow and liquidity sweeps more cleanly, while Bitcoin can run manipulated wicks that punish the same entries. Jumping between the two without adjusting your bias framework is where most newer traders get hurt.",
+    "createdAt": "2026-06-12T12:01:24.828Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781265689014-pkjsk",
+    "platform": "youtube",
+    "postTitle": "Internal vs External Structure Explained | Smart Money Concepts",
+    "postUrl": "https://youtube.com/watch?v=s6BJ8hjE3X4",
+    "authorName": "Trading_Smart",
+    "suggestedReply": "One thing worth adding to the internal vs external structure discussion is how the shift from internal to external range liquidity plays out differently depending on the session. I drill into my students that a confirmed internal structure break on the 15m during London often precedes a full external range sweep by New York open, especially on pairs like cable or euro. Most traders miss the timing element entirely and just focus on the levels themselves.",
+    "createdAt": "2026-06-12T12:01:29.014Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781265692776-alld2",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=2SL9tIk3tAg",
+    "authorName": "The Trading Process",
+    "suggestedReply": "I've been trading XAUUSD with SMC for years and the one thing I drill into my students is patience around liquidity sweeps before looking for entries. Gold respects institutional order flow beautifully on the 4H, especially during London to New York overlap. Most beginners jump in too early and miss the full displacement. Great to see more content combining SMC and ICT concepts on crypto and gold together.",
+    "createdAt": "2026-06-12T12:01:32.776Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781265696950-7i16q",
+    "platform": "youtube",
+    "postTitle": "🔥 ITH / ITL Strategy Live Trading | Learn Smart Money Concepts &amp; Price Action 📈",
+    "postUrl": "https://youtube.com/watch?v=ovdFax5AEoA",
+    "authorName": "Trade with Haidar",
+    "suggestedReply": "I've been trading ITH/ITL structures for years and it's one of the first things I drill into my students when they start learning Smart Money Concepts. Most of them try to trade every swing high and low without waiting for confirmation on the 15m first, which kills their accuracy. Once they learn to pair ITH/ITL with displacement and market structure shifts, their entries tighten up significantly. Seeing this applied live on GBPUSD pairs is exactly the kind of context they need.",
+    "createdAt": "2026-06-12T12:01:36.950Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1781138711188-8dgea",
     "platform": "investinglive",
     "postTitle": "PBOC is expected to set the USD/CNY reference rate at 6.7819 – Reuters estimate",
