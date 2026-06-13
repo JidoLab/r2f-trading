@@ -3112,5 +3112,25 @@
     "commentedAt": "2026-06-12T18:00:39.193Z",
     "permalink": "/r/InnerCircleTraders/comments/1u3qd6f/i_tried_to_backtest_the_silver_bullet/or9u8iy/",
     "commentId": "or9u8iy"
+  },
+  {
+    "postId": "1u3ww3l",
+    "subreddit": "ICTMentorship",
+    "postTitle": "WHAT I MISSED , PLS HELP?",
+    "commentText": "your daily bias was right but the entry model let you down tbh. try dropping to the 15m and marking the last up-closed candle before the sweep failed to happen — that's your potential OB. if price skips your downside liquidity entirely and pushes straight up, that's a clue the real draw was already being targeted from a higher timeframe FVG you might've missed above price.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-13T13:00:49.717Z",
+    "permalink": "/r/ICTMentorship/comments/1u3ww3l/what_i_missed_pls_help/orer96h/",
+    "commentId": "orer96h"
+  },
+  {
+    "postId": "1u468ll",
+    "subreddit": "proptrading",
+    "postTitle": "Looking for recommendations on reputable CFD-based prop firms...",
+    "commentText": "i had this exact problem last year when i moved an algo that was trading EURUSD on the 15m off an apex-style futures setup onto a CFD firm and the data feed discrepancies nearly killed my OB entries completely. tbh FTMO is the safest starting point for your situation, solid payout history and their rules are actually readable unlike some of these newer firms. The Funded Trader and MyForexFunds replacements like Alpha Capital have been decent in 2026 imo but always check their spread markup policies because some will quietly widen spreads during NY open and that'll wreck any algo hunting for fair value gaps.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-13T13:00:59.014Z",
+    "permalink": "/r/proptrading/comments/1u468ll/looking_for_recommendations_on_reputable_cfdbased/orera3o/",
+    "commentId": "orera3o"
   }
 ]
