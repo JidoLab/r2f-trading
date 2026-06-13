@@ -2921,7 +2921,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-09T18:00:48.314Z",
     "permalink": "/r/proptrading/comments/1u18s91/prop_trading_in_us/oqoosza/",
-    "commentId": "oqoosza"
+    "commentId": "oqoosza",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-09T19:21:36.000Z",
+    "firstReplyAuthor": "Zealousideal-Rip6907",
+    "firstReplyText": "Thanks for the info. The platform I build for a friend in EU. Works perfectly. I tried to use FTMO (uses OANDA for US), can't use ctrader, I must use MT5. So I rebuilt it in MT5. But the data is not the same. OCHL is not the same. So i have 11% difference on entries which is pissing me off cause it "
   },
   {
     "postId": "1u0idle",
@@ -2931,7 +2935,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-09T18:00:57.136Z",
     "permalink": "/r/proptrading/comments/1u0idle/which_prop_firm/oqoou60/",
-    "commentId": "oqoou60"
+    "commentId": "oqoou60",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-12T12:49:44.000Z",
+    "firstReplyAuthor": "ymemz",
+    "firstReplyText": "got a high frequency scalping gold bot "
   },
   {
     "postId": "1u1l1y3",
@@ -2941,7 +2949,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-10T03:00:46.105Z",
     "permalink": "/r/ICTMentorship/comments/1u1l1y3/26_years_old_6863_x_5_prop_accounts_in_60_days/oqrmkhl/",
-    "commentId": "oqrmkhl"
+    "commentId": "oqrmkhl",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-10T21:51:49.000Z",
+    "firstReplyAuthor": "Kasraborhan",
+    "firstReplyText": "That’s actually a really solid filter. I do something similar with the displacement candle/FVG structure, but I like the idea of specifically watching the last down candle body before displacement. If price comes back and disrespects that whole area, it usually means the setup is losing quality anyw"
   },
   {
     "postId": "1u1xq1t",
@@ -3021,7 +3033,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-11T08:00:33.694Z",
     "permalink": "/r/ICTMentorship/comments/1u26luf/ict_trader_here_i_feel_like_giving_up/oqzuisk/",
-    "commentId": "oqzuisk"
+    "commentId": "oqzuisk",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-11T09:17:43.000Z",
+    "firstReplyAuthor": "Unable_Chair_9546",
+    "firstReplyText": "I hear you. I trade based on backtested rules with the data."
   },
   {
     "postId": "1u2d3q9",
