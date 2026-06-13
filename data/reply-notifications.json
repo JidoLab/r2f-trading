@@ -1,5 +1,45 @@
 [
   {
+    "id": "reply-oqzuisk",
+    "platform": "reddit",
+    "postTitle": "ICT trader here,  I feel like giving up.",
+    "subreddit": "ICTMentorship",
+    "replyAuthor": "Unable_Chair_9546",
+    "replyText": "I hear you. I trade based on backtested rules with the data.",
+    "commentUrl": "https://www.reddit.com/r/ICTMentorship/comments/1u26luf/ict_trader_here_i_feel_like_giving_up/oqzuisk/",
+    "detectedAt": "2026-06-13T13:01:34.189Z"
+  },
+  {
+    "id": "reply-oqrmkhl",
+    "platform": "reddit",
+    "postTitle": "26 Years Old. $6,863 x 5 Prop Accounts in 60 days using ICT, here's what I track and why:",
+    "subreddit": "ICTMentorship",
+    "replyAuthor": "Kasraborhan",
+    "replyText": "That’s actually a really solid filter. I do something similar with the displacement candle/FVG structure, but I like the idea of specifically watching the last down candle body before displacement. If price comes back and disrespects that whole area, it usually means the setup is losing quality anyw",
+    "commentUrl": "https://www.reddit.com/r/ICTMentorship/comments/1u1l1y3/26_years_old_6863_x_5_prop_accounts_in_60_days/oqrmkhl/",
+    "detectedAt": "2026-06-13T13:01:28.902Z"
+  },
+  {
+    "id": "reply-oqoou60",
+    "platform": "reddit",
+    "postTitle": "which prop firm",
+    "subreddit": "proptrading",
+    "replyAuthor": "ymemz",
+    "replyText": "got a high frequency scalping gold bot ",
+    "commentUrl": "https://www.reddit.com/r/proptrading/comments/1u0idle/which_prop_firm/oqoou60/",
+    "detectedAt": "2026-06-13T13:01:28.170Z"
+  },
+  {
+    "id": "reply-oqoosza",
+    "platform": "reddit",
+    "postTitle": "Prop Trading in US",
+    "subreddit": "proptrading",
+    "replyAuthor": "Zealousideal-Rip6907",
+    "replyText": "Thanks for the info. The platform I build for a friend in EU. Works perfectly. I tried to use FTMO (uses OANDA for US), can't use ctrader, I must use MT5. So I rebuilt it in MT5. But the data is not the same. OCHL is not the same. So i have 11% difference on entries which is pissing me off cause it ",
+    "commentUrl": "https://www.reddit.com/r/proptrading/comments/1u18s91/prop_trading_in_us/oqoosza/",
+    "detectedAt": "2026-06-13T13:01:27.484Z"
+  },
+  {
     "id": "reply-oqett6e",
     "platform": "reddit",
     "postTitle": "EURCAD outlook for next week",
