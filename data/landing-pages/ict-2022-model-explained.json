@@ -1,0 +1,91 @@
+{
+  "slug": "ict-2022-model-explained",
+  "title": "ICT 2022 Model Explained",
+  "seoTitle": "ICT 2022 Model Explained: Step-by-Step Setup Guide",
+  "seoDescription": "The ICT 2022 model explained in 5 clear steps. This killzone-based framework uses liquidity, FVGs, and order blocks to time high-probability entries with precision.",
+  "headline": "The ICT 2022 Model: A Step-by-Step Setup Breakdown",
+  "subheadline": "A structured framework for timing entries using liquidity sweeps, fair value gaps, and killzone sessions. Built for forex and futures traders who want repeatable precision.",
+  "intro": "The ICT 2022 model explained at its core is a repeatable intraday trading framework taught by Michael J. Huddleston that sequences liquidity grabs, market structure breaks, and fair value gap entries within defined killzone windows. It draws from the New York and London session opens, using higher timeframe bias to filter setups and lower timeframes to time execution. The model gives traders a structured checklist rather than a discretionary guess, making it one of the most systematic approaches within the ICT methodology.",
+  "keyPoints": [
+    {
+      "icon": "🧭",
+      "title": "What the 2022 Model Actually Is",
+      "text": "The ICT 2022 model is a five-step intraday framework: establish higher timeframe bias, identify a dealing range with liquidity resting above or below, wait for a killzone session to activate, look for a liquidity sweep followed by a break of structure, then enter on a return into a fair value gap or order block. It is designed for use on the 15-minute down to the 1-minute chart during the London open (2 to 5 AM EST) or New York open (7 to 10 AM EST). The model is particularly well-suited to instruments like the EURUSD, NQ futures, and ES futures."
+    },
+    {
+      "icon": "⚡",
+      "title": "Why This Model Matters for Traders",
+      "text": "Most retail traders enter on breakouts or moving average crossovers, which puts them on the wrong side of institutional order flow. The 2022 model flips that by teaching traders to anticipate where stop runs will occur before the real move begins. By anchoring every trade to a session killzone, traders avoid low-probability noise between sessions. The result is fewer trades, higher selectivity, and entries that align with when smart money is actively positioning."
+    },
+    {
+      "icon": "🛠️",
+      "title": "How to Apply the Model Step by Step",
+      "text": "Start on the daily or 4-hour chart to identify whether price is drawing toward buy-side or sell-side liquidity. Mark the previous day high and low, as those levels commonly hold resting stops. During the New York or London killzone, watch for price to sweep one of those levels on a 5-minute chart, then look for a shift in market structure (a BOS or CHoCH) back in the opposite direction. Enter on the retracement into the nearest FVG or order block, placing your stop beyond the sweep candle and targeting the opposing liquidity pool."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "Traders frequently trigger on the sweep candle itself rather than waiting for the structural confirmation that follows it. A liquidity sweep without a break of structure is just a wick. Entering too early means taking a trade against the momentum that has not yet reversed. The model requires patience: the sweep is the signal to watch, and the BOS on the lower timeframe is the actual trigger."
+    },
+    {
+      "icon": "📈",
+      "title": "Next Steps to Build Competency",
+      "text": "Start by backtesting the model on 30 to 60 days of EURUSD or NQ data using only the New York killzone window. Log each setup by noting the HTF bias, the liquidity level swept, the timeframe of the BOS, and the FVG used for entry. After 20 to 30 documented trades, patterns in your execution errors will surface. From there, the R2F Trading resources on killzone timing and order block refinement can help you tighten the specific steps where leakage is occurring."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What timeframes do you use for the ICT 2022 model?",
+      "a": "Bias is established on the daily or 4-hour chart. The setup context is read on the 15-minute chart. Entry is refined on the 5-minute or 1-minute chart, particularly during the New York open killzone between 7 and 10 AM EST. Using all three levels keeps the trade aligned with institutional order flow."
+    },
+    {
+      "q": "What is a killzone in the ICT 2022 model?",
+      "a": "A killzone is a specific session window when institutional participation is highest and the model setups are most reliable. The two primary killzones are the London open (2 to 5 AM EST) and the New York open (7 to 10 AM EST). Trades taken outside these windows carry significantly lower probability under the 2022 model framework."
+    },
+    {
+      "q": "How does a fair value gap fit into the ICT 2022 model entry?",
+      "a": "After a liquidity sweep and a break of structure, price often retraces before continuing toward the draw. A fair value gap created during the impulsive BOS candle acts as the entry zone. On the EURUSD 5-minute chart, for example, traders watch for price to return to that gap and show a reaction before committing to the trade."
+    },
+    {
+      "q": "Is the ICT 2022 model different from the 2021 mentorship model?",
+      "a": "The 2022 model places more explicit emphasis on the sequential checklist: HTF bias, liquidity draw, killzone timing, sweep, BOS, then FVG entry. The 2021 content covered many of the same concepts but in a less structured sequence. The 2022 version is generally considered more beginner-accessible because of that step-by-step ordering."
+    },
+    {
+      "q": "What is the best market to practice the ICT 2022 model on?",
+      "a": "EURUSD and NQ futures are the most commonly used markets because they have high liquidity during both killzones and clean price delivery. NQ in particular forms sharp FVGs during the New York open that are easy to identify and backtest, making it a practical starting point for traders building screen time with this model."
+    }
+  ],
+  "relatedTags": [
+    "ict-2022-model",
+    "killzone-trading",
+    "fair-value-gap",
+    "order-block",
+    "liquidity-sweep",
+    "break-of-structure",
+    "ict-mentorship",
+    "intraday-forex-setup",
+    "new-york-killzone",
+    "smart-money-concepts"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-a-judas-swing",
+      "label": "Judas Swing Explained"
+    },
+    {
+      "slug": "equal-highs-and-equal-lows-ict",
+      "label": "Equal Highs & Lows: ICT Liquidity"
+    },
+    {
+      "slug": "ict-power-of-three-explained",
+      "label": "ICT Power of Three Explained"
+    },
+    {
+      "slug": "what-is-smt-divergence",
+      "label": "SMT Divergence Explained"
+    }
+  ],
+  "testimonialIndex": 2,
+  "createdAt": "2026-06-13T05:01:42.940Z",
+  "targetKeyword": "ICT 2022 model explained"
+}
