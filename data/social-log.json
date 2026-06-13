@@ -1935,5 +1935,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-06-13T12:00:20.349Z",
+    "type": "text",
+    "postType": "hot-take",
+    "text": "Unpopular opinion: studying for CPI week is more important than any strategy. Most traders have the ",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
