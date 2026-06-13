@@ -1,0 +1,91 @@
+{
+  "slug": "what-is-an-inversion-fair-value-gap",
+  "title": "Inversion Fair Value Gap Explained",
+  "seoTitle": "What Is an Inversion Fair Value Gap? ICT Concept Explained",
+  "seoDescription": "What is an inversion fair value gap? When a bearish FVG gets violated, it flips into support. Know the trigger, the setup, and how to trade the retest with precision.",
+  "headline": "Inversion Fair Value Gap: When Failed Gaps Flip Roles",
+  "subheadline": "Understanding why a violated fair value gap becomes one of the most reliable re-entry zones in the ICT framework, and how to trade the retest with confidence.",
+  "intro": "An inversion fair value gap (IFVG) is a price inefficiency that originally acted as resistance or support but was violated by a subsequent price move, causing it to flip its role and act as the opposing level going forward. In ICT methodology, this flip happens when price trades through a fair value gap rather than respecting it, signaling a shift in market structure and intent. The former gap zone then becomes a high-probability draw zone on the next retest, often aligning with a break of structure, an order block, or a killzone entry window.",
+  "keyPoints": [
+    {
+      "icon": "🔄",
+      "title": "What an IFVG Actually Is",
+      "text": "A standard fair value gap is a three-candle imbalance where the wicks of the first and third candles do not overlap, leaving a range price skipped through. When price returns to that gap and then closes through it entirely, the gap is considered violated. That violated gap becomes an inversion fair value gap, and the market tends to treat it as a level of opposing interest on subsequent approaches."
+    },
+    {
+      "icon": "📍",
+      "title": "Why the Flip Matters Structurally",
+      "text": "The inversion matters because it signals that the original pool of orders defending that gap has been consumed. Institutional order flow has shifted, and the former inefficiency now acts as a reference point for the opposing side of the market. Traders using ICT concepts watch for IFVGs because they often coincide with liquidity sweeps and break of structure events, giving the level extra confluence."
+    },
+    {
+      "icon": "🎯",
+      "title": "How to Trade the IFVG Retest",
+      "text": "After a gap is violated and price continues in the new direction, wait for a pullback into the inverted zone during a relevant killzone, such as the London open or New York AM session. Look for confirmation through a lower-timeframe shift in market structure inside the IFVG range. Entry is taken at the midpoint or the edge of the gap, with a stop placed beyond the full gap boundary to avoid premature invalidation."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake at IFVGs",
+      "text": "Traders frequently enter at the first touch of a newly inverted gap without waiting for price to show any reaction. Touching the IFVG range does not confirm the flip is holding. Price can slice through an IFVG on the first retest and continue, especially in high-momentum trending conditions. Waiting for a lower-timeframe displacement or a wick rejection before entering reduces the number of false entries significantly."
+    },
+    {
+      "icon": "📈",
+      "title": "Building IFVG Setups Into Your Process",
+      "text": "Start by marking your fair value gaps on the higher timeframes, such as the 4-hour or 1-hour chart, during your pre-session analysis. Flag any gaps that have since been violated by a full candle close through them. Then drop to the 15-minute or 5-minute chart during a killzone to refine entries into those IFVG zones. Combining IFVGs with nearby order blocks or liquidity pools strengthens the narrative behind the trade."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is an inversion fair value gap in ICT trading?",
+      "a": "An inversion fair value gap is a price imbalance that was originally bullish or bearish but was violated by price closing through it. Once violated, the ICT framework treats that gap as a flipped level, meaning a former resistance gap becomes support and vice versa on the next retest."
+    },
+    {
+      "q": "How is an IFVG different from a regular fair value gap?",
+      "a": "A regular FVG is respected when price returns to it and reverses. An IFVG is one that was not respected and had price close through it. The violation is what creates the inversion. The same price range is now a reference zone for the opposite market bias, rather than a continuation level for the original direction."
+    },
+    {
+      "q": "Can an IFVG be used as a trade entry on EUR/USD?",
+      "a": "Yes. On EUR/USD, a common scenario is a bearish FVG forming on the 1-hour chart during a downtrend. If price rallies and closes fully above that gap, it inverts. Traders then watch for a pullback into that zone during the New York killzone, looking for a 5-minute market structure shift before entering long with a target toward the next draw on liquidity."
+    },
+    {
+      "q": "Does an IFVG need to align with other ICT concepts to be tradeable?",
+      "a": "An IFVG in isolation is a lower-quality signal. The setup becomes significantly stronger when the inverted gap aligns with a nearby order block, a break of structure on the higher timeframe, or sits within a premium or discount zone relative to the current dealing range. Confluence is what separates high-probability IFVGs from noise."
+    },
+    {
+      "q": "How do you know if an IFVG has been invalidated?",
+      "a": "An IFVG is considered invalidated when price closes through the full range of the inverted gap on the timeframe you are trading. A wick through the zone does not invalidate it. A full candle body closing beyond the far edge of the gap typically means the level has failed and the trade thesis needs to be reassessed."
+    }
+  ],
+  "relatedTags": [
+    "fair-value-gap",
+    "ict-concepts",
+    "order-blocks",
+    "break-of-structure",
+    "market-structure",
+    "liquidity",
+    "killzone-trading",
+    "price-action",
+    "ict-trading-strategy",
+    "forex-price-action"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-a-break-of-structure",
+      "label": "Break of Structure (BOS) Explained"
+    },
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    },
+    {
+      "slug": "equal-highs-and-equal-lows-ict",
+      "label": "Equal Highs & Lows: ICT Liquidity"
+    },
+    {
+      "slug": "premium-and-discount-in-ict",
+      "label": "Premium & Discount in ICT"
+    }
+  ],
+  "testimonialIndex": 0,
+  "createdAt": "2026-06-13T05:02:18.248Z",
+  "targetKeyword": "what is an inversion fair value gap"
+}
