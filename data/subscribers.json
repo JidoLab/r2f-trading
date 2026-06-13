@@ -215,7 +215,7 @@
   {
     "email": "anmolpannu33@gmail.com",
     "date": "2026-06-04T22:08:48.687Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-auqs7a",
     "referredBy": null,
     "referralCount": 0,
@@ -225,7 +225,8 @@
     "lastActivity": "2026-06-04T22:08:48.687Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ]
   }
 ]
