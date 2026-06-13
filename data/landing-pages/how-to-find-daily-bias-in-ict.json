@@ -1,0 +1,93 @@
+{
+  "slug": "how-to-find-daily-bias-in-ict",
+  "title": "Daily Bias in ICT Explained",
+  "seoTitle": "How to Find Daily Bias in ICT Trading (Step-by-Step)",
+  "seoDescription": "3 key inputs determine your daily bias in ICT before price hits your screen. Align HTF draw on liquidity, session structure, and killzone timing to trade with precision.",
+  "headline": "How to Find Your ICT Daily Bias Before the Market Opens",
+  "subheadline": "Knowing whether to buy or sell today starts the night before. Here is the exact framework ICT traders use to build directional conviction from higher timeframe context down to the session level.",
+  "intro": "How to find daily bias in ICT means identifying the directional intention of price for a given trading day based on higher timeframe market structure, the draw on liquidity, and where price is likely to seek equilibrium or premium/discount levels. You establish this before the New York or London killzone opens, not during it. The daily bias acts as a filter: it tells you whether to look for long setups at discounts or short setups at premiums throughout that session.",
+  "keyPoints": [
+    {
+      "icon": "🗺️",
+      "title": "What Daily Bias Actually Is",
+      "text": "Daily bias is your pre-session directional stance, bullish or bearish, derived from reading the higher timeframe narrative. It is built from the weekly and daily chart structure, the most recent break of structure, and where the next pool of liquidity sits relative to current price. It is a probability filter, not a guaranteed prediction."
+    },
+    {
+      "icon": "🎯",
+      "title": "Why It Matters for Execution",
+      "text": "Trading without a daily bias means you are reacting to every candle instead of waiting for price to confirm what you already expected. When your bias is bullish, you ignore short setups even if they look clean, because they work against the draw on liquidity. This discipline alone eliminates a large category of losing trades taken in the wrong direction."
+    },
+    {
+      "icon": "🔍",
+      "title": "How to Build the Bias Step by Step",
+      "text": "Start on the weekly chart and identify the most recent displacement and BOS. Drop to the daily chart and locate the nearest unmitigated order block or FVG in the direction of that break. Then check whether sell-side or buy-side liquidity sits beyond current price. If price is trading below a daily FVG and buy-side liquidity is above, the bias leans bullish for that session. Mark your levels the night before using the 5pm New York close."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "Traders frequently flip their bias mid-session because price moves against them during the London open manipulation. A temporary sweep of session lows during the 2am to 5am New York time window is often the liquidity grab that confirms a bullish bias, not a reason to go short. Changing your bias during a killzone requires a full daily candle close and a structural shift, not a 15-minute reaction."
+    },
+    {
+      "icon": "📅",
+      "title": "Building This Into a Daily Routine",
+      "text": "Review weekly and daily structure every Sunday. Each evening, mark the prior day's high, low, and any open FVGs or order blocks on the 4-hour and 1-hour charts. Note where liquidity rests above and below current price. Enter your bias into a trade journal before the London killzone opens. Over time, tracking your bias accuracy separately from your trade win rate reveals exactly where your read of market structure breaks down."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What timeframe do you use to determine daily bias in ICT?",
+      "a": "The weekly and daily charts set the narrative. The 4-hour chart confirms structure and shows unmitigated order blocks or FVGs. The 1-hour chart is used to time entries once the bias is already established. Bias is never set from anything below the 1-hour timeframe."
+    },
+    {
+      "q": "Can your daily bias be wrong and how do you handle that?",
+      "a": "Yes, bias can be wrong. If price delivers a full daily candle close beyond a key structural level that invalidates your read, the bias shifts. During an active session, a single spike or wick against you is not enough to change direction. Patience and a hard invalidation level set in advance are the practical safeguards."
+    },
+    {
+      "q": "How does the draw on liquidity connect to daily bias in ICT?",
+      "a": "The draw on liquidity is the specific price level, such as a previous week's high or a cluster of buy-side stops, that price is most likely targeting. Your bias is bullish when the draw is above current price and price is trading in a discount relative to the daily range. On EURUSD, for example, if Tuesday's high holds equal highs and price is sitting in a 4-hour FVG below it, the draw is clear."
+    },
+    {
+      "q": "Should your daily bias change between the London and New York sessions?",
+      "a": "Generally no. Both sessions exist within the same daily candle. London often creates the manipulation leg and New York delivers the true directional move. If your bias is bearish and London sweeps highs before reversing, that sweep confirms the bias rather than negating it. Reserve bias changes for new daily candle closes with structural evidence."
+    },
+    {
+      "q": "How do news events affect your ICT daily bias?",
+      "a": "High-impact news events like NFP or FOMC can accelerate or mask the bias move, but the structural bias itself is still valid. ICT traders typically avoid holding positions through the initial news spike and wait for price to return to a relevant order block or FVG post-release. The bias direction remains, but entry timing shifts to after the volatility settles."
+    }
+  ],
+  "relatedTags": [
+    "ict-concepts",
+    "daily-bias",
+    "market-structure",
+    "draw-on-liquidity",
+    "order-blocks",
+    "fair-value-gap",
+    "killzone-trading",
+    "break-of-structure",
+    "london-session",
+    "new-york-session",
+    "higher-timeframe-analysis",
+    "ict-methodology"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-a-break-of-structure",
+      "label": "Break of Structure (BOS) Explained"
+    },
+    {
+      "slug": "what-is-a-judas-swing",
+      "label": "Judas Swing Explained"
+    },
+    {
+      "slug": "what-is-a-liquidity-void",
+      "label": "Liquidity Void Explained"
+    },
+    {
+      "slug": "what-is-smt-divergence",
+      "label": "SMT Divergence Explained"
+    }
+  ],
+  "testimonialIndex": 3,
+  "createdAt": "2026-06-13T05:01:05.817Z",
+  "targetKeyword": "how to find daily bias in ICT"
+}
