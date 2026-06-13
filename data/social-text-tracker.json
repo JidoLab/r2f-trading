@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "hot-take",
     "quote",
     "tip",
     "myth",
@@ -29,11 +28,12 @@
     "myth",
     "question",
     "poll",
-    "story"
+    "story",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "story",
-    "text": "Held through CPI once. Knew it was risky. Told myself 'smart money won't let it drop.' It dropped 150 pips in 4 minutes. Smart money didn't care about my feelings. Now I'm flat before every high-impact event. #ICTTrading #SmartMoneyConcepts #CPI",
-    "date": "2026-06-12T12:00:58.066Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: studying for CPI week is more important than any strategy. Most traders have the setup memorized but zero idea how smart money positions BEFORE inflation data drops. The setup doesn't matter if your timing is wrong. #ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-06-13T12:00:19.571Z"
   }
 }
