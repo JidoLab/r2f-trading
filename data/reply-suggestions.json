@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1781352060603-smcok",
+    "platform": "youtube",
+    "postTitle": "Dynamic Liquidity Zones Explained. Supply &amp; Demand Trading Basics SMC ICT",
+    "postUrl": "https://youtube.com/watch?v=XWyrSFyupzU",
+    "authorName": "VasilyTrader",
+    "suggestedReply": "Interesting take on dynamic liquidity zones. In my experience, the key distinction most traders miss is that supply and demand zones are not static boxes but shift based on where smart money is actively defending. I teach my students to mark the origin of the move first, then wait for price to return with a lower timeframe confirmation before committing. Treating zones as fixed levels is one of the fastest ways to get stopped out repeatedly.",
+    "createdAt": "2026-06-13T12:01:00.603Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781352063821-qiqct",
+    "platform": "youtube",
+    "postTitle": "🔥 $1000 Profit LIVE on Nasdaq Futures! 🚀 | ICT Trade Recap #MNQ | #globalfxhunter #futurestrading",
+    "postUrl": "https://youtube.com/watch?v=Y_TtIExsBco",
+    "authorName": "Global FX Hunter",
+    "suggestedReply": "I remember when I first started trading MNQ, $1000 felt like a massive milestone but now I drill into my students that consistent execution on Nasdaq futures is really about waiting for that killzone displacement and trusting your draw on liquidity. The MNQ is a great instrument for learning ICT because the precision required sharpens your model fast. Good to see this being documented live.",
+    "createdAt": "2026-06-13T12:01:03.821Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781352069807-bdptv",
+    "platform": "youtube",
+    "postTitle": "ICT + SMC Trading Full Course (Ep.1) | Basic To Advance  | Smart Money Concept",
+    "postUrl": "https://youtube.com/watch?v=YhTLZoyneUs",
+    "authorName": "Neeraj joshi",
+    "suggestedReply": "I remember when I first started mapping out Smart Money Concepts from basic to advanced, EURUSD on the 15 minute was my testing ground for months. The progression from understanding market structure to actual entry models is exactly what I drill into my students before they touch anything more complex. Most skip the basics and wonder why their confluences never stack properly. Solid framework to build from here.",
+    "createdAt": "2026-06-13T12:01:09.807Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781352072743-l1523",
+    "platform": "youtube",
+    "postTitle": "Po3s of the week 2-6 March 🤝 #po3 #trading #daytrading #ict #smc #forextrading #forex #livetrade",
+    "postUrl": "https://youtube.com/watch?v=VULK6_w82aY",
+    "authorName": "Vincent Trader ",
+    "suggestedReply": "I've been focusing heavily on PO3 setups this week too, specifically watching the manipulation phase on the 15 minute chart before London open. I drill into my students that the accumulation range needs to be respected before you even think about entering. Most rush the entry and miss the full distribution leg entirely. Clean week if you caught those moves.",
+    "createdAt": "2026-06-13T12:01:12.743Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781352076792-b1trz",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=KjSggn0Obkc",
+    "authorName": "The Trading Process",
+    "suggestedReply": "Applying SMC to both gold and crypto in the same session is something I drill into my students because the liquidity dynamics are completely different between the two assets. Gold respects institutional order flow during London and New York overlaps while crypto can sweep highs almost any hour. Do you find your ICT setups on XAUUSD perform better when you're strictly waiting for confirmed displacement before entry rather than anticipating the move?",
+    "createdAt": "2026-06-13T12:01:16.792Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781352080330-v1uab",
+    "platform": "youtube",
+    "postTitle": "Smart Money Concepts: Flawless Sell-Side Delivery #trading #stockmarket #nifty50 #liquidity #smc",
+    "postUrl": "https://youtube.com/watch?v=WHKcwF8zL30",
+    "authorName": "The Laksh Algo | ICT & SMC Trader",
+    "suggestedReply": "Flawless sell-side delivery is one of those concepts I drill into my students constantly because most of them want to rush the entry before price actually sweeps the sell-side liquidity and confirms displacement. The patience required here separates profitable traders from the ones who keep getting stopped out. Are you framing your delivery confirmations primarily on the 15m or do you find the 1H gives cleaner structure for Nifty50 specifically?",
+    "createdAt": "2026-06-13T12:01:20.330Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781352086162-6cs6u",
+    "platform": "youtube",
+    "postTitle": "Smart Money Concept Jadi Simpel, Tinggal Pasang Indikator Ini #trading #gold",
+    "postUrl": "https://youtube.com/watch?v=wn3Hfy5f8MQ",
+    "authorName": "QuickPro",
+    "suggestedReply": "SMC yang \"simpel\" itu bagus, tapi yang sering diabaikan orang adalah konfirmasi displacement candle sebelum masuk posisi. Saya selalu drill ini ke students saya, terutama yang trading gold karena volatilitasnya tinggi dan sinyal palsu banyak. Kalau indikatornya tidak filter displacement dengan benar, entry kamu cuma gambling di area OB atau FVG.",
+    "createdAt": "2026-06-13T12:01:26.162Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781352089439-r4w6j",
+    "platform": "youtube",
+    "postTitle": "HTF Fair Value Gaps | Smart Entries with SMC 🎯",
+    "postUrl": "https://youtube.com/watch?v=LDYdcMTZwRM",
+    "authorName": "Rohit Prasad",
+    "suggestedReply": "I've been using HTF fair value gaps as my primary entry model for years and the biggest mistake I see from my students is treating every FVG the same. On gold, I teach them to only engage with gaps formed on the daily or 4H after a genuine displacement move, not just any imbalance. That selectivity alone changes the quality of their setups dramatically.",
+    "createdAt": "2026-06-13T12:01:29.439Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1781265704581-1y0v4",
     "platform": "investinglive",
     "postTitle": "investingLive European markets wrap: Setting up for that TACO moment? SpaceX debut up next",
