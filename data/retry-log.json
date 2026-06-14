@@ -1,15 +1,27 @@
 {
-  "date": "2026-06-08",
+  "date": "2026-06-14",
   "entries": [
     {
       "cron": "generate-post",
-      "retriedAt": "2026-06-08T12:00:48.359Z",
+      "retriedAt": "2026-06-14T12:00:41.587Z",
+      "result": "success",
+      "statusCode": 200
+    },
+    {
+      "cron": "find-reply-opportunities",
+      "retriedAt": "2026-06-14T12:01:15.950Z",
+      "result": "success",
+      "statusCode": 200
+    },
+    {
+      "cron": "find-forum-opportunities",
+      "retriedAt": "2026-06-14T12:01:17.352Z",
       "result": "success",
       "statusCode": 200
     },
     {
       "cron": "generate-short",
-      "retriedAt": "2026-06-08T12:02:13.378Z",
+      "retriedAt": "2026-06-14T12:02:16.375Z",
       "result": "success",
       "statusCode": 200
     }
