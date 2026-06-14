@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1781438445655-ywg5k",
+    "platform": "youtube",
+    "postTitle": "ICT/SMC Smart Trading Strategy Part 4  #ictconcepts #tradingstrategy #nasdaqstrategy #smcstrategy",
+    "postUrl": "https://youtube.com/watch?v=soOm-rl8cwo",
+    "authorName": "Charchit Mishra (Elite Trading)",
+    "suggestedReply": "The SMC strategy breakdown here is clean, especially for Nasdaq. One thing I drill into my students that most traders skip in Part 4 style setups is confirming the displacement candle before marking your entry zone. Without that displacement signature, you're just drawing boxes on price and hoping. What timeframe are you primarily using to validate these entries?",
+    "createdAt": "2026-06-14T12:00:45.655Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781438448804-nspji",
+    "platform": "youtube",
+    "postTitle": "9:50 AM Macro | ICT Trading Strategy For Beginners",
+    "postUrl": "https://youtube.com/watch?v=EjOPH3vDJ68",
+    "authorName": "TRADING CLUB FX",
+    "suggestedReply": "The 9:50 AM macro window is one I drill into my students constantly because most beginners treat it like just another random time. The non-obvious part is waiting for price to fully displace through a prior dealing range before committing to an entry. On currencies especially, that confirmation separates the clean setups from the traps that shake you out before the real move.",
+    "createdAt": "2026-06-14T12:00:48.804Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781438452294-77nxt",
+    "platform": "youtube",
+    "postTitle": "FVG Ki Third Candle Sab Kuch Batati Hai 🔥 #fvg #trading",
+    "postUrl": "https://youtube.com/watch?v=NxgmtxJLM0M",
+    "authorName": "Anthropic Trader ",
+    "suggestedReply": "The third candle confirmation inside an FVG is even more powerful when you align it with a higher timeframe PD array. I teach my students to check if that third candle closes with a strong body on the 15m before considering any entry, because a weak close usually signals the gap will get revisited before any real displacement. On pairs like NAS100 or gold, this extra filter alone separates the clean setups from the traps.",
+    "createdAt": "2026-06-14T12:00:52.294Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781438455379-pg7k7",
+    "platform": "youtube",
+    "postTitle": "ICT PO3, AMD &amp; OHLC Explained | Complete Smart Money Trading Guide 🔥",
+    "postUrl": "https://youtube.com/watch?v=-aHty5ScnLo",
+    "authorName": "Nazim shaikh",
+    "suggestedReply": "I started drilling AMD into my students about 2 years ago and it completely changed how they read daily bias. The part about PO3 is what most traders skip because they focus on the manipulation phase too late and miss the actual distribution. Once I got my students mapping accumulation on the 15m during London open, their entries on Cable became far more precise and consistent.",
+    "createdAt": "2026-06-14T12:00:55.379Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781438462148-3gbbe",
+    "platform": "youtube",
+    "postTitle": "Pre-Market Range | Deal Range | Liquidity 🎯",
+    "postUrl": "https://youtube.com/watch?v=EmjYrlatieU",
+    "authorName": "Rohit Prasad",
+    "suggestedReply": "Pre-market range is one of those concepts I drill into my students before they touch a single entry. Most miss that the real liquidity sits just beyond those pre-market highs and lows, not inside the range itself. Are you pairing deal range with the 15m or dropping to lower timeframes to time the actual raid on that liquidity?",
+    "createdAt": "2026-06-14T12:01:02.148Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781438465414-m7d5u",
+    "platform": "youtube",
+    "postTitle": "ict full course hindi 🚀ict class hindi 🚀 ict trading Strategy🚀  ict order block  Chapter -3",
+    "postUrl": "https://youtube.com/watch?v=pNRn6W2rRKA",
+    "authorName": "NiftyView Abhishek",
+    "suggestedReply": "Interesting take on order blocks in Chapter 3. In my experience, I teach my students to always validate an order block with a break of structure on the higher timeframe first before dropping to the 5 minute for entry. Without that confluence, you end up trading too many low probability setups that look clean but have no real institutional backing behind them. Are you incorporating BOS confirmation in your approach here?",
+    "createdAt": "2026-06-14T12:01:05.414Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781438469493-05ql6",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=oenFl-QghUE",
+    "authorName": "The Trading Process",
+    "suggestedReply": "SMC on gold and crypto in the same session is actually solid practice since both markets respect institutional levels well. One thing I'd add though is that my students often get burned applying the same entry model across both without accounting for gold's session bias. XAUUSD during London kill zone behaves very differently from crypto which trades 24 hours with no true session structure. Make sure you're calibrating your expectations before assuming the setups are interchangeable.",
+    "createdAt": "2026-06-14T12:01:09.493Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781438472830-0wlz5",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE Forex Trading | Smart Money Concepts (SMC) Explained – Smcdr",
+    "postUrl": "https://youtube.com/watch?v=mC2pAWTeHaI",
+    "authorName": "Adejare Adewale S",
+    "suggestedReply": "I've been trading SMC for over a decade and the concept that changed everything for me was understanding how smart money hunts liquidity before delivering price. I drill this into my students constantly. On EURUSD specifically, waiting for a confirmed market structure shift on the 15m after a liquidity sweep versus jumping in early is the difference between consistency and frustration. Good to see more content covering this properly.",
+    "createdAt": "2026-06-14T12:01:12.830Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1781352096607-7hk58",
     "platform": "investinglive",
     "postTitle": "investingLive Americas market news wrap: SpaceX IPO succeeds, mixed signals on Iran",
