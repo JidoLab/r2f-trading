@@ -3148,5 +3148,35 @@
     "commentedAt": "2026-06-13T13:00:59.014Z",
     "permalink": "/r/proptrading/comments/1u468ll/looking_for_recommendations_on_reputable_cfdbased/orera3o/",
     "commentId": "orera3o"
+  },
+  {
+    "postId": "1u52u9n",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "If traders like TT, GxT, Jade etc are profitable, why are they selling courses?",
+    "commentText": "tbh the question kind of answers itself if you think about it from a scaling perspective. trading has a hard ceiling, capital limits how much you can realistically make on a single GBPUSD setup off a 15m FVG, but course income doesn't have that same ceiling. imo the more interesting question is whether the concepts they're teaching actually hold up, not whether they trade them personally.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-14T03:00:25.378Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u52u9n/if_traders_like_tt_gxt_jade_etc_are_profitable/orj31n8/",
+    "commentId": "orj31n8"
+  },
+  {
+    "postId": "1u51agw",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Looking for feedback on my  iFVG indicator that trades iFVG Reversals. Includes Set Up Grading and Custom Configs",
+    "commentText": "the HTF tap count logic is interesting but imo the assumption that \"more taps = lower probability\" breaks down pretty hard when you're dealing with a 1H FVG that's been partially filled versus one that's been fully wicked through multiple times. those are completely different scenarios and lumping them together under a tap count could disqualify genuinely high probability setups. also curious how the V-shape recovery ATR multiplier behaves during the NY AM killzone when volatility spikes — a tight multiplier would filter out a ton of valid iFVG entries that just move fast off the sweep.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-14T03:00:33.636Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u51agw/looking_for_feedback_on_my_ifvg_indicator_that/orj32h4/",
+    "commentId": "orj32h4"
+  },
+  {
+    "postId": "1u4jgbq",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "What would you have been looking look",
+    "commentText": "solid read on the GEX level tbh, but the catch with entries like that 28705 buy is you're essentially trading a reclaim after a sweep, which works until it doesn't during a high IV expansion day where market makers are actively repricing the 28700 strike. imo the CVD divergence only really confirms when you've also got a clear displacement candle showing willingness to move, not just a speed-of-tape reaction. would've personally wanted to see a 1m FVG left behind on the break back out before committing size there.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-14T03:00:42.171Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u4jgbq/what_would_you_have_been_looking_look/orj33b3/",
+    "commentId": "orj33b3"
   }
 ]
