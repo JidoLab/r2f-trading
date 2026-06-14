@@ -1,0 +1,91 @@
+{
+  "slug": "ict-market-maker-models",
+  "title": "ICT Market Maker Models",
+  "seoTitle": "ICT Market Maker Models: Buy & Sell Explained",
+  "seoDescription": "ICT market maker models reveal the 2-phase price delivery cycle institutions use. Understand accumulation, manipulation, and distribution to trade with precision.",
+  "headline": "ICT Market Maker Models: Trade the Institutional Cycle",
+  "subheadline": "Price does not move randomly. The market maker buy and sell models give you a repeatable framework for reading how institutions accumulate, manipulate, and distribute positions across any timeframe.",
+  "intro": "ICT market maker models are structured price delivery templates that describe how a market maker or institutional operator cycles through four distinct phases: consolidation, expansion, retracement, and reversal. The buy model describes a bullish delivery sequence where price sweeps sell-side liquidity before expanding upward through a break of structure. The sell model mirrors that sequence in reverse, sweeping buy-side liquidity before delivering a bearish expansion. Together, these two models explain the majority of high-probability setups found in forex pairs like EURUSD and futures instruments like ES or NQ.",
+  "keyPoints": [
+    {
+      "icon": "🏗️",
+      "title": "What the Models Actually Are",
+      "text": "The ICT market maker buy model moves price from a low, sweeps a pool of sell-side liquidity such as equal lows or stops below a swing low, then breaks structure to the upside and delivers a bullish expansion. The sell model does the inverse: it sweeps buy-side liquidity like equal highs, breaks structure to the downside, and distributes price lower. Both models are fractal and appear on charts from the monthly down to the one-minute timeframe."
+    },
+    {
+      "icon": "🎯",
+      "title": "Why This Framework Changes Your Edge",
+      "text": "Most retail traders enter after a breakout and get caught in the manipulation phase. Understanding the market maker model reframes that manipulation as a signal rather than a trap. When you see price sweep a prior low during the London killzone and then form a fair value gap or order block on the 15-minute chart, you are likely watching the setup phase of a buy model, not a continuation lower. That context separates high-probability entries from noise."
+    },
+    {
+      "icon": "🛠️",
+      "title": "How to Apply It on a Live Chart",
+      "text": "Start by identifying the higher-timeframe draw on liquidity, whether price is targeting buy-side or sell-side pools. Then drop to the 15-minute or 5-minute chart during a killzone session (London open or New York open) and wait for the liquidity sweep that initiates the model. Confirm the shift with a break of structure, then look for a mitigation entry at the nearest fair value gap or order block left behind during the expansion leg. Set your target at the opposing liquidity pool identified on the higher timeframe."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Costly Misreading",
+      "text": "Traders commonly treat every liquidity sweep as the start of a new model. A sweep alone is insufficient confirmation. Price must also break structure in the direction of the proposed expansion before the model is considered active. Entering on the sweep without the BOS confirmation means entering during the manipulation phase, which is the highest-risk moment in the entire cycle, not the lowest."
+    },
+    {
+      "icon": "📈",
+      "title": "Building Your Next Step with This Concept",
+      "text": "Once you can identify both the buy and sell model on EURUSD or NQ on a replay chart without hesitation, begin pairing the model with time of day. The cleanest setups consistently form during the London open (2am to 5am EST) and New York open (7am to 10am EST) killzones. From there, study how the weekly profile tends to establish a manipulation move Monday or Tuesday before the true directional expansion runs Wednesday through Friday."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between the ICT market maker buy model and sell model?",
+      "a": "The buy model starts with a sweep of sell-side liquidity, such as stops below an obvious swing low, followed by a bullish break of structure and upward expansion. The sell model starts with a sweep of buy-side liquidity above a swing high, followed by a bearish break of structure and downward expansion. Both follow the same four-phase logic but in opposite directions."
+    },
+    {
+      "q": "How do I know which market maker model is in play on a given day?",
+      "a": "Look at the higher-timeframe chart, such as the daily or 4-hour, and identify where the nearest liquidity pool sits. If price has been making lower highs and has obvious equal lows below, the likely setup is a buy model forming to take that sell-side liquidity. The bias should align with the weekly opening price relative to the previous week's range."
+    },
+    {
+      "q": "Can ICT market maker models be used on futures like NQ or ES?",
+      "a": "Yes. The models apply directly to equity index futures. On NQ, for example, a common setup is a Sunday or Monday sweep of the prior Friday's low during low-liquidity hours, followed by a break of structure and a fair value gap entry during the New York open killzone, with the target being the prior Friday's high or a higher draw on liquidity."
+    },
+    {
+      "q": "Where does the order block fit inside the market maker model?",
+      "a": "After the liquidity sweep and the break of structure, price often retraces into the inefficiency it created during the initial expansion leg. That retracement zone, typically an order block or fair value gap on the 5-minute or 15-minute chart, is where a precision entry is taken. The order block marks where the institutional order flow originated before price expanded away."
+    },
+    {
+      "q": "How long does a market maker model typically take to complete?",
+      "a": "It varies by timeframe. On the intraday chart, a complete buy or sell model can form and resolve within a single session, often between London open and the New York lunch consolidation. On the daily chart, the full cycle from accumulation to distribution can span several days to two weeks, which aligns closely with the typical weekly profile ICT traders study."
+    }
+  ],
+  "relatedTags": [
+    "ict-market-maker-models",
+    "buy-side-liquidity",
+    "sell-side-liquidity",
+    "order-blocks",
+    "fair-value-gap",
+    "break-of-structure",
+    "ict-killzones",
+    "weekly-profile",
+    "liquidity-sweep",
+    "ict-concepts"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "equal-highs-and-equal-lows-ict",
+      "label": "Equal Highs & Lows: ICT Liquidity"
+    },
+    {
+      "slug": "premium-and-discount-in-ict",
+      "label": "Premium & Discount in ICT"
+    },
+    {
+      "slug": "what-is-a-stop-hunt-in-trading",
+      "label": "Stop Hunt in Trading Explained"
+    },
+    {
+      "slug": "asian-session-range-trading",
+      "label": "Asian Session Range: ICT Guide"
+    }
+  ],
+  "testimonialIndex": 0,
+  "createdAt": "2026-06-14T05:02:29.456Z",
+  "targetKeyword": "ICT market maker models"
+}
