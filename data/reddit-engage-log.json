@@ -3178,5 +3178,35 @@
     "commentedAt": "2026-06-14T03:00:42.171Z",
     "permalink": "/r/InnerCircleTraders/comments/1u4jgbq/what_would_you_have_been_looking_look/orj33b3/",
     "commentId": "orj33b3"
+  },
+  {
+    "postId": "1u5cxhk",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Need help i’m new",
+    "commentText": "i had this exact problem last year when i was trying to automate an SMT divergence setup between NQ and ES on the 15m, built it in python and then hit the same wall you're describing with prop firms. tbh the cleanest solution i found was using a bridge like TradersPost or a webhook setup that lets your python bot send signals to MT5 without rewriting the logic in mql5, so the core SMT and liquidity sweep detection stays intact. for backtesting specifically look into VectorBT or Backtrader, both free and handle tick/bar data from alpaca fine. on the ML thing, be careful adding that before you've stress tested the base logic across different market regimes cos it'll just amplify whatever edge or flaw is already baked in.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-14T08:00:30.899Z",
+    "permalink": "/r/Forexstrategy/comments/1u5cxhk/need_help_im_new/ork9k7f/",
+    "commentId": "ork9k7f"
+  },
+  {
+    "postId": "1u4zevx",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Inverse FVG or no?",
+    "commentText": "C1 mitigating the FVG is the key question here — if price traded into that gap and reacted, the FVG is used up, full stop. C2 closing below it after that point doesn't flip it into an inverse FVG imo, it's just price continuing through dead space. for a valid IFVG you really want the original gap to have remained intact and *then* get violated, not already been tapped and spent before the close through it happens.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-14T08:00:39.309Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u4zevx/inverse_fvg_or_no/ork9ksx/",
+    "commentId": "ork9ksx"
+  },
+  {
+    "postId": "1u4mjxo",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "I Trade Po3 And Quarterly Theory And I Am Looking For Like Minded Traders To Trade With.",
+    "commentText": "i had this exact problem finding people trading the same framework — most groups are just indicator traders who don't understand quarterly shifts at all. been deep in po3 on the eurusd 15m lately, specifically watching how the accumulation phase aligns with the Q3 2026 opening range and it's been printing tbh. if you're mapping quarterly theory down to the daily and london open displacement you're already ahead of 90% of people on this sub.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-14T08:00:46.829Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u4mjxo/i_trade_po3_and_quarterly_theory_and_i_am_looking/ork9ldo/",
+    "commentId": "ork9ldo"
   }
 ]
