@@ -3222,5 +3222,25 @@
     "commentedAt": "2026-06-14T13:00:55.336Z",
     "permalink": "/r/ICTMentorship/comments/1u524z3/looking_for_serious_ict_traders_to_build_and/orlcdy2/",
     "commentId": "orlcdy2"
+  },
+  {
+    "postId": "1u5kgka",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "I coded 5 core ICT concepts into exact mechanical rules and ran a year of 1-min data. 2 of 20 backtests were green after fees both were structure. Full breakdown inside.",
+    "commentText": "i had this exact problem trying to mechanical-ize liquidity sweeps on the 1-min eurusd during london open last year and got wrecked the same way you did. the sweep itself isn't the signal, it's whether there's a clean displacement candle AND you're inside a confluence PD array like a breaker or a HTF FVG underneath — without that context the engine is just fading every wick which on 1-min data is basically noise farming. tbh your result of -100% on sweeps across all four markets actually makes sense to me because the entry trigger and the actual reason price reverses are two completely different things and your backtest just proved they don't overlap mechanically. the structure results holding up is also telling imo, because BOS-based entries at least have some implicit displacement baked in.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-14T18:01:07.587Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u5kgka/i_coded_5_core_ict_concepts_into_exact_mechanical/orn1pko/",
+    "commentId": "orn1pko"
+  },
+  {
+    "postId": "1u5nrnw",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "ICT concepts really work",
+    "commentText": "this is exactly it tbh, the \"language not patterns\" shift is what separates people who trade for years with no progress from people who actually get it. the FVG didn't fail, price just hadn't swept the liquidity it needed to before delivering, context is everything. are you framing your bias from the daily draw first or are you jumping straight to the lower timeframe PD arrays to find entries?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-14T18:01:15.400Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u5nrnw/ict_concepts_really_work/orn1qn2/",
+    "commentId": "orn1qn2"
   }
 ]
