@@ -1,0 +1,91 @@
+{
+  "slug": "what-is-a-turtle-soup-setup",
+  "title": "Turtle Soup Setup Explained",
+  "seoTitle": "What Is a Turtle Soup Setup? ICT False Breakout Guide",
+  "seoDescription": "The turtle soup setup fades false breakouts of recent highs and lows where trapped breakout traders fuel the real move. Here is exactly how ICT traders use it.",
+  "headline": "Turtle Soup: Profit From False Breakouts of Key Levels",
+  "subheadline": "When price sweeps a recent high or low and reverses, that liquidity grab is the setup. Here is how ICT traders identify it and position on the right side of the move.",
+  "intro": "A turtle soup setup is a counter-trend entry technique that fades a false breakout of a recent swing high or swing low, targeting the traders who were stopped out or trapped in the wrong direction. Price raids liquidity resting above a high or below a low, then reverses sharply, leaving breakout traders offside. ICT traders use this pattern to enter in the direction of the actual institutional move, often confirmed by a break of structure and a reaction from an order block or fair value gap.",
+  "keyPoints": [
+    {
+      "icon": "🐢",
+      "title": "What the Turtle Soup Setup Is",
+      "text": "The turtle soup setup occurs when price pushes just beyond a recognizable swing high or swing low, triggers the stop losses and breakout entries clustered there, then reverses back through that level. The name references the classic Turtle Trader breakout system. ICT frames this as a liquidity sweep: institutions engineer the false break to fill their own orders against the crowd."
+    },
+    {
+      "icon": "💧",
+      "title": "Why Liquidity Makes This Work",
+      "text": "Retail traders place stops just above swing highs and just below swing lows, creating predictable pools of resting liquidity. Smart money needs that liquidity to execute large orders without slippage. Once the sweep is complete and the liquidity is consumed, there is no remaining reason for price to continue in the breakout direction, which is why the reversal is often sharp and fast."
+    },
+    {
+      "icon": "🎯",
+      "title": "How to Trade It With ICT Concepts",
+      "text": "Wait for price to sweep a recent high or low during a killzone, ideally the London or New York open session. Look for a displacement candle back through the swept level, followed by a break of structure on a lower timeframe such as the 1-minute or 5-minute chart. Entries are timed from a fair value gap or order block left behind by the displacement move, with stops placed beyond the sweep wick."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "Many traders enter the moment price touches a prior high or low, anticipating the sweep rather than waiting for confirmation. A true turtle soup entry requires evidence that the sweep has completed: a strong return candle through the level, a break of structure, and ideally a reaction from a nearby fair value gap. Entering early turns a high-probability fade into a guess."
+    },
+    {
+      "icon": "📈",
+      "title": "Building This Into Your Daily Routine",
+      "text": "Mark your previous day high and low, previous week high and low, and any clean equal highs or lows on the 15-minute chart before each session. During the killzone, watch whether price reaches for one of those levels. When the sweep and displacement occur together, drop to the 1-minute or 5-minute chart for your entry model. Track your results by session and by which liquidity level was swept to find your edge."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a turtle soup setup in ICT trading?",
+      "a": "In ICT trading, a turtle soup setup is a false breakout fade where price sweeps the liquidity resting above a recent high or below a recent low, then reverses. Traders enter in the opposite direction of the initial breakout, using the displacement and a break of structure as confirmation."
+    },
+    {
+      "q": "How is turtle soup different from a regular reversal trade?",
+      "a": "A regular reversal trade is based on a price level alone. Turtle soup requires a specific liquidity sweep mechanics: price must run stops beyond a defined swing point, show a displacement candle back through that level, and ideally leave a fair value gap that acts as the entry trigger on a lower timeframe."
+    },
+    {
+      "q": "What timeframes work best for the turtle soup setup?",
+      "a": "The setup is identified on the 15-minute chart by marking clean swing highs and lows, then the entry is refined on the 1-minute or 5-minute chart. The London open and New York open killzones produce the highest-quality sweeps because institutional order flow is at its peak during those windows."
+    },
+    {
+      "q": "Can you use turtle soup on forex pairs like EURUSD?",
+      "a": "Yes. EURUSD during the London killzone is one of the most consistent environments for this setup. Price frequently sweeps the Asian session high or low in the first hour of London, then reverses toward the opposite draw on liquidity. The 15-minute FVG left by the displacement is a common entry point."
+    },
+    {
+      "q": "Where do you place the stop loss on a turtle soup trade?",
+      "a": "The stop goes a few pips or ticks beyond the wick that created the sweep. If price sweeps a prior high at 1.0850 and wicks to 1.0857 before reversing, the stop sits above 1.0857. This keeps risk tight because any return to that level invalidates the false breakout premise entirely."
+    }
+  ],
+  "relatedTags": [
+    "ict-concepts",
+    "liquidity-sweeps",
+    "false-breakout-trading",
+    "order-blocks",
+    "fair-value-gap",
+    "break-of-structure",
+    "killzone-trading",
+    "london-session",
+    "price-action",
+    "forex-setups"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "equal-highs-and-equal-lows-ict",
+      "label": "Equal Highs & Lows: ICT Liquidity"
+    },
+    {
+      "slug": "how-to-find-daily-bias-in-ict",
+      "label": "Daily Bias in ICT Explained"
+    },
+    {
+      "slug": "what-is-an-inversion-fair-value-gap",
+      "label": "Inversion Fair Value Gap Explained"
+    },
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    }
+  ],
+  "testimonialIndex": 3,
+  "createdAt": "2026-06-14T05:01:52.476Z",
+  "targetKeyword": "what is a turtle soup setup"
+}
