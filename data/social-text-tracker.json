@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "quote",
     "tip",
     "myth",
     "challenge",
@@ -29,11 +28,12 @@
     "question",
     "poll",
     "story",
-    "hot-take"
+    "hot-take",
+    "story"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: studying for CPI week is more important than any strategy. Most traders have the setup memorized but zero idea how smart money positions BEFORE inflation data drops. The setup doesn't matter if your timing is wrong. #ICTTrading #SmartMoneyConcepts #CPI",
-    "date": "2026-06-13T12:00:19.571Z"
+    "type": "story",
+    "text": "Held a trade through PPI week once. Price swept my SL, then hit my target without me. Lesson? News weeks demand wider context, not tighter stops. The market doesn't care about your levels — only about liquidity. #ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-06-14T12:00:49.201Z"
   }
 }
