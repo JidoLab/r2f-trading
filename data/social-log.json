@@ -1964,5 +1964,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-06-14T12:00:50.034Z",
+    "type": "text",
+    "postType": "story",
+    "text": "Held a trade through PPI week once. Price swept my SL, then hit my target without me. Lesson? News w",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
