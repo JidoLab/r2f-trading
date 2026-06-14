@@ -1,0 +1,91 @@
+{
+  "slug": "how-to-identify-order-blocks",
+  "title": "How to Identify Order Blocks",
+  "seoTitle": "How to Identify Order Blocks on a Chart | ICT Method",
+  "seoDescription": "5 clear steps to identify order blocks using ICT concepts. Most traders misread candle structure and miss the true origin of institutional moves. Here is how to spot them correctly.",
+  "headline": "How to Identify Order Blocks on Any Chart",
+  "subheadline": "Order blocks mark the exact price zones where institutional money enters the market. Knowing how to read them gives retail traders a structural edge on entry and risk placement.",
+  "intro": "To identify order blocks, locate the last up-close or down-close candle directly before a strong impulsive move that breaks market structure. These candles represent zones where banks and institutions placed significant orders, leaving a footprint on the chart that price is likely to revisit. In the ICT methodology, order blocks are not arbitrary support or resistance levels. They are specific candle-origin zones tied to structure breaks, displacement, and liquidity.",
+  "keyPoints": [
+    {
+      "icon": "📦",
+      "title": "What an Order Block Actually Is",
+      "text": "An order block is the last up-close candle before a bearish displacement or the last down-close candle before a bullish displacement. The candle body represents the zone where institutional orders were concentrated. This is different from a generic support or resistance level because validity depends on what happens immediately after: a strong, fast move that breaks a prior swing high or low."
+    },
+    {
+      "icon": "📍",
+      "title": "Why Order Blocks Matter for Entries",
+      "text": "Institutional players cannot fill entire positions in a single moment without moving price against themselves. They return to these origin zones to complete their orders, which is why price frequently retraces back into an order block before continuing in the original direction. Pairing an order block with a Fair Value Gap inside the same zone increases confluence and sharpens your entry precision significantly."
+    },
+    {
+      "icon": "🔍",
+      "title": "Step-by-Step: How to Mark Them",
+      "text": "First, identify a Break of Structure or Change of Character on your chart. Second, trace back to the candle that directly preceded the impulsive leg causing that break. Third, mark the high and low of that candle body as your order block zone. On EURUSD for example, a 15-minute bullish order block would use the low and high of the final down-close candle before price displaced upward through a swing high during the London killzone."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "The most common error is marking too many candles as valid order blocks without requiring a confirmed structure break. An order block without displacement and a BOS is just a random candle. Traders also frequently use order blocks that have already been tested and filled. A mitigated order block, one where price has already returned to and traded through it, loses its institutional relevance and should be removed from your chart."
+    },
+    {
+      "icon": "🚀",
+      "title": "Next Steps: Combining OBs with ICT Tools",
+      "text": "Once you can consistently mark raw order blocks, begin layering in additional confluence. Look for order blocks that align with a premium or discount array, sit inside a larger timeframe liquidity draw, or contain an embedded Fair Value Gap. Practicing on higher timeframes like the 4-hour or daily chart first builds the structural recognition needed before dropping to the 15-minute or 5-minute for precision entries."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What timeframe should I use to find order blocks?",
+      "a": "Start on the daily or 4-hour chart to identify the dominant order block zone, then drill into the 15-minute or 5-minute chart to refine your entry. The higher timeframe sets the bias. The lower timeframe gives you the precise candle origin and a tighter stop placement."
+    },
+    {
+      "q": "How do I know if an order block is still valid?",
+      "a": "An order block remains valid until price returns to it and trades through the full candle body. If the zone has been visited and closed through, it is considered mitigated and should no longer be used. Always check whether the zone is fresh before planning a trade around it."
+    },
+    {
+      "q": "What is the difference between an order block and a Fair Value Gap?",
+      "a": "An order block is a single candle zone representing institutional order origin. A Fair Value Gap is a three-candle imbalance where the first and third candle do not overlap. They are related but distinct: an FVG often forms inside or adjacent to an order block, and their overlap creates a high-confluence entry zone called a breaker or refined entry point."
+    },
+    {
+      "q": "Can order blocks form on any currency pair or futures market?",
+      "a": "Yes. Order blocks appear on any liquid market where institutional participation is significant. EURUSD, GBPUSD, NQ futures, and ES futures all show clear order block behavior. The concept works on any timeframe and instrument where price moves impulsively following a structural shift."
+    },
+    {
+      "q": "Should I enter directly at the order block or wait for confirmation?",
+      "a": "Both approaches are used depending on your trading style and risk tolerance. Entering at the zone directly allows a tighter stop but carries more uncertainty. Waiting for a lower timeframe shift in market structure or a reaction candle inside the zone adds confirmation and reduces false entries, especially for traders still building pattern recognition."
+    }
+  ],
+  "relatedTags": [
+    "order-blocks",
+    "ict-methodology",
+    "market-structure",
+    "break-of-structure",
+    "fair-value-gap",
+    "liquidity",
+    "killzone-trading",
+    "price-action",
+    "forex-trading",
+    "futures-trading"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    },
+    {
+      "slug": "what-is-a-liquidity-void",
+      "label": "Liquidity Void Explained"
+    },
+    {
+      "slug": "what-is-a-mitigation-block",
+      "label": "Mitigation Block Explained"
+    },
+    {
+      "slug": "what-is-an-inversion-fair-value-gap",
+      "label": "Inversion Fair Value Gap Explained"
+    }
+  ],
+  "testimonialIndex": 2,
+  "createdAt": "2026-06-14T05:03:02.060Z",
+  "targetKeyword": "how to identify order blocks"
+}
