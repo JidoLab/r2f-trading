@@ -1,0 +1,91 @@
+{
+  "slug": "how-to-trade-fair-value-gaps",
+  "title": "How to Trade Fair Value Gaps",
+  "seoTitle": "How to Trade Fair Value Gaps: Entries, Stops & Targets",
+  "seoDescription": "3-step framework for how to trade fair value gaps using ICT methodology. Covers entry timing, stop placement, and realistic targets with killzone precision.",
+  "headline": "How to Trade Fair Value Gaps With Precision",
+  "subheadline": "Fair value gaps are one of the most reliable entry tools in the ICT methodology. Here is exactly how to use them without guessing at entries or oversizing stops.",
+  "intro": "A fair value gap (FVG) is a three-candle price imbalance where the wicks of the first and third candles do not overlap, leaving an exposed range the market tends to revisit before continuing in the original direction. Traders using the ICT methodology treat FVGs as high-probability entry zones rather than random gaps. When confirmed by market structure, session timing, and nearby liquidity, they provide defined-risk trade setups with clear invalidation levels.",
+  "keyPoints": [
+    {
+      "icon": "📐",
+      "title": "What a Fair Value Gap Actually Is",
+      "text": "An FVG forms when a strong impulse candle moves so aggressively that it skips over a price range, leaving an imbalance between the high of candle one and the low of candle three. On a chart this appears as a visible gap between those two wicks. Price frequently returns to this zone to rebalance before resuming the impulsive move, which is what makes it tradable."
+    },
+    {
+      "icon": "🧲",
+      "title": "Why FVGs Work in ICT Trading",
+      "text": "FVGs represent inefficient delivery. Institutional order flow tends to reprice back into these areas because not all resting orders were filled during the initial move. When an FVG aligns with a breaker block, an order block, or sits just above or below a liquidity pool, its probability as a reversal or continuation zone increases substantially. Structure context is what separates a tradable FVG from noise."
+    },
+    {
+      "icon": "🎯",
+      "title": "Entries, Stops, and Targets",
+      "text": "Enter when price retraces into the FVG during a killzone, ideally the London open or New York AM session, and shows a reaction off the 50 percent level or the upper or lower boundary. Place your stop beyond the opposite end of the FVG so the full zone acts as your buffer. Target the next liquidity pool, previous high or low, or the origin of the FVG impulse for a minimum 1:2 reward-to-risk setup."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common FVG Mistake",
+      "text": "Traders frequently enter an FVG without confirming the prevailing market structure direction first. An FVG in a downtrend is a potential continuation short, not a reversal long. Trading into an FVG against the higher timeframe bias and against a break of structure often results in taking losses on setups that looked textbook. Always confirm bias on the 4H or daily before dropping into the 15M or 5M for the entry."
+    },
+    {
+      "icon": "📈",
+      "title": "Building From FVGs Into Full Setups",
+      "text": "Once you are consistently identifying FVGs in the correct structure context, the next step is combining them with order blocks and breaker blocks to build confluence-based setups. Track your FVG trades in a journal noting the timeframe, session, and whether a BOS confirmed the bias beforehand. Patterns in that data will show you which conditions produce your highest win rate and where your execution needs tightening."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if an FVG will be respected or ignored?",
+      "a": "FVGs with the highest respect rate sit in line with the higher timeframe trend, form during a killzone session, and sit near a liquidity draw such as an old high or low. An FVG on the EURUSD 15M that forms during London open after a clear 4H bullish BOS has far better odds than a random mid-session gap."
+    },
+    {
+      "q": "What timeframe should I use to trade fair value gaps?",
+      "a": "Use the daily or 4H chart to establish bias and locate significant FVGs, then drop to the 15M or 5M to time your entry. Many ICT traders mark FVGs on the 1H for context and execute on the 5M. Scalpers sometimes use the 1M within a New York killzone for precision, but that requires strong understanding of lower timeframe delivery."
+    },
+    {
+      "q": "Where exactly do I place my stop loss on an FVG trade?",
+      "a": "Place the stop just beyond the full FVG boundary in the direction of your entry. For a long trade entering at the bottom of a bullish FVG, the stop sits a few pips below the low of candle one in the three-candle sequence. This keeps your invalidation point structural rather than arbitrary."
+    },
+    {
+      "q": "Can FVGs be used in futures markets like ES or NQ?",
+      "a": "Yes. FVGs are especially visible on equity index futures like ES and NQ because institutional order flow is highly concentrated in those markets. The same three-candle structure applies. Many traders combine FVGs on the NQ 15M with the New York AM killzone between 9:30 and 11:00 EST for some of the cleanest setups available."
+    },
+    {
+      "q": "What is the difference between a fair value gap and an order block?",
+      "a": "An order block is the last opposing candle before a significant impulsive move, representing a zone where institutional orders were placed. An FVG is the imbalance that move created. They are related but distinct. When an order block and an FVG overlap in the same price area, traders call this a confluent zone and it tends to produce stronger reactions."
+    }
+  ],
+  "relatedTags": [
+    "fair-value-gap",
+    "ict-methodology",
+    "order-blocks",
+    "break-of-structure",
+    "liquidity",
+    "killzone-trading",
+    "entry-models",
+    "price-action",
+    "forex-trading",
+    "futures-trading"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "how-to-identify-order-blocks",
+      "label": "How to Identify Order Blocks"
+    },
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    },
+    {
+      "slug": "what-is-a-mitigation-block",
+      "label": "Mitigation Block Explained"
+    },
+    {
+      "slug": "what-is-consequent-encroachment",
+      "label": "Consequent Encroachment Explained"
+    }
+  ],
+  "testimonialIndex": 3,
+  "createdAt": "2026-06-15T05:00:50.962Z",
+  "targetKeyword": "how to trade fair value gaps"
+}
