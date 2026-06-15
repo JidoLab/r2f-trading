@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "tip",
     "myth",
     "challenge",
     "poll-native",
@@ -29,11 +28,12 @@
     "poll",
     "story",
     "hot-take",
-    "story"
+    "story",
+    "quote"
   ],
   "lastPost": {
-    "type": "story",
-    "text": "Held a trade through PPI week once. Price swept my SL, then hit my target without me. Lesson? News weeks demand wider context, not tighter stops. The market doesn't care about your levels — only about liquidity. #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-06-14T12:00:49.201Z"
+    "type": "quote",
+    "text": "\"Smart money doesn't chase price. It waits for price to come to it.\"\n\n— Still the most important thing I ever learned about order blocks.\n\n#ICTTrading #SmartMoneyConcepts #OrderBlocks",
+    "date": "2026-06-15T12:00:14.047Z"
   }
 }
