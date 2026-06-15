@@ -3242,5 +3242,15 @@
     "commentedAt": "2026-06-14T18:01:15.400Z",
     "permalink": "/r/InnerCircleTraders/comments/1u5nrnw/ict_concepts_really_work/orn1qn2/",
     "commentId": "orn1qn2"
+  },
+  {
+    "postId": "1u5unkk",
+    "subreddit": "Trading",
+    "postTitle": "I built a prop firm cashback platform to get some money back on challenge fees. Would you actually use this, or is it a waste of time? Need honest feedback.",
+    "commentText": "honestly the 3-15% cashback doesn't move the needle enough to change behavior imo, because the real problem isn't the fee, it's that most traders are buying challenges before they've actually proven edge on something like the NY killzone on eurusd using a repeatable entry model like a mitigation block or FVG confirmation. recovering $30 on a failed $200 challenge just delays the same mistake. tbh if you added a \"challenge readiness\" tracker or even a simple journaling gate before purchase, that would make this genuinely different from every other rebate portal out there.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-15T03:01:49.838Z",
+    "permalink": "/r/Trading/comments/1u5unkk/i_built_a_prop_firm_cashback_platform_to_get_some/orpuhhd/",
+    "commentId": "orpuhhd"
   }
 ]
