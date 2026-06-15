@@ -193,7 +193,7 @@
   {
     "email": "mani.katakatla.09@gmail.com",
     "date": "2026-06-02T21:06:10.786Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "referralCode": "R2F-cnd4pp",
     "referredBy": null,
     "referralCount": 0,
@@ -209,7 +209,8 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts",
-      "successStory"
+      "successStory",
+      "tradingPsychology"
     ],
     "abandonmentEmailSent": true
   },
