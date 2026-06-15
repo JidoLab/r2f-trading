@@ -1,0 +1,91 @@
+{
+  "slug": "best-timeframes-for-ict-trading",
+  "title": "ICT Trading Timeframes Guide",
+  "seoTitle": "Best Timeframes for ICT Trading: How to Combine Them",
+  "seoDescription": "ICT traders use 3 to 4 timeframes together, not just one. This guide maps out which frames handle bias, entry, and execution so you stop overtrading noise.",
+  "headline": "Best Timeframes for ICT Trading and How to Stack Them",
+  "subheadline": "ICT methodology is built on top-down analysis. Knowing which timeframe does which job is what separates clean setups from random entries.",
+  "intro": "The best timeframes for ICT trading are typically the Daily and 4-Hour for directional bias, the 1-Hour for identifying key structures like order blocks and fair value gaps, and the 5-Minute or 15-Minute for precise entry execution during killzone sessions. ICT methodology is not a single-chart system. Each timeframe carries a specific role in the analysis chain, and combining them correctly is what allows a trader to align with institutional order flow rather than fighting it.",
+  "keyPoints": [
+    {
+      "icon": "🗺️",
+      "title": "What the Timeframe Stack Is",
+      "text": "ICT timeframe analysis works in layers: higher timeframes set the narrative, mid-range timeframes identify the key price levels, and lower timeframes time the entry. A typical stack looks like Weekly and Daily for bias, 4-Hour and 1-Hour for structure, and 5-Minute or 15-Minute for triggers. Each layer answers a different question, and no single chart answers all of them."
+    },
+    {
+      "icon": "⚙️",
+      "title": "Why Timeframe Alignment Matters",
+      "text": "When your entry timeframe conflicts with your higher timeframe bias, you are trading against the dominant order flow. For example, taking a 5-Minute long entry into a Daily bearish order block is a low-probability trade regardless of how clean the short-term setup looks. Alignment across timeframes filters out the majority of false signals and keeps your trades pointed in the direction smart money is positioned."
+    },
+    {
+      "icon": "🔍",
+      "title": "How to Apply the Multi-Timeframe Process",
+      "text": "Start on the Daily chart each morning to identify whether price is drawing toward buy-side or sell-side liquidity. Drop to the 4-Hour to locate the nearest premium or discount array, such as a bullish or bearish order block or a Fair Value Gap. Then monitor the 15-Minute or 5-Minute during the London or New York killzone for a Break of Structure and a refined entry into that level. This sequence keeps your execution grounded in context."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Common Timeframe Mistake",
+      "text": "The most widespread error is fixating on a single timeframe and forcing trades from it. Traders who live exclusively on the 1-Minute chart during New York often take entries that look valid in isolation but sit directly inside a higher timeframe imbalance that is yet to be filled. The entry looks structured, but the destination is already occupied. Always check what the 4-Hour and Daily say about where price is likely to go before committing to any execution-level setup."
+    },
+    {
+      "icon": "🚀",
+      "title": "Next Steps for Timeframe Mastery",
+      "text": "Build a pre-session routine that starts on the Weekly chart every Sunday and works down to the Daily before each trading day. During the London killzone, have the 1-Hour and 15-Minute open side by side. On the r2ftrading.com resources section, the top-down analysis walkthroughs show this process applied to live EURUSD and NQ setups so you can see the framework in action across real market conditions."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the best single timeframe for ICT trading?",
+      "a": "There is no best single timeframe in ICT because the methodology relies on top-down confluence. That said, the 1-Hour chart is the most versatile mid-range frame. It shows order blocks, Fair Value Gaps, and Break of Structure clearly without the noise of sub-5-Minute charts or the slow pace of the Daily."
+    },
+    {
+      "q": "Can I use ICT concepts on the 1-Minute chart?",
+      "a": "Yes, but only when higher timeframes have already validated the direction and the 1-Minute is being used purely for entry refinement during a killzone. Using the 1-Minute in isolation to find setups leads to overtrading. A clean 1-Minute FVG entry on EURUSD during London open carries weight only when the 4-Hour bias supports it."
+    },
+    {
+      "q": "How do ICT killzones relate to timeframe selection?",
+      "a": "Killzones are London open (2am to 5am EST) and New York open (8:30am to 11am EST). During these windows, the 15-Minute and 5-Minute charts become most relevant for entries because institutional activity creates the sweeps and displacement moves that generate high-probability ICT setups. Outside killzones, lower timeframes tend to produce chop."
+    },
+    {
+      "q": "What timeframes work best for futures trading with ICT, like NQ or ES?",
+      "a": "For NQ and ES futures, the Daily and 4-Hour set the weekly bias, the 1-Hour identifies order blocks and liquidity pools, and the 5-Minute is the primary entry chart during New York open. The 15-Minute is useful for tracking session highs and lows being targeted as liquidity before a reversal move."
+    },
+    {
+      "q": "How do I know when my timeframes are aligned in ICT?",
+      "a": "Alignment means the Daily shows a clear draw on liquidity in one direction, the 4-Hour or 1-Hour shows price in a discount array relative to that draw, and the lower timeframe shows a BOS in the direction of the bias during a killzone. When all three conditions stack, the trade has institutional context behind it."
+    }
+  ],
+  "relatedTags": [
+    "ict-methodology",
+    "top-down-analysis",
+    "order-blocks",
+    "fair-value-gaps",
+    "killzone-trading",
+    "liquidity-concepts",
+    "break-of-structure",
+    "forex-trading-strategy",
+    "futures-trading-ict",
+    "multi-timeframe-analysis"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-a-mitigation-block",
+      "label": "Mitigation Block Explained"
+    },
+    {
+      "slug": "how-to-find-daily-bias-in-ict",
+      "label": "Daily Bias in ICT Explained"
+    },
+    {
+      "slug": "equal-highs-and-equal-lows-ict",
+      "label": "Equal Highs & Lows: ICT Liquidity"
+    },
+    {
+      "slug": "how-to-identify-order-blocks",
+      "label": "How to Identify Order Blocks"
+    }
+  ],
+  "testimonialIndex": 0,
+  "createdAt": "2026-06-15T05:02:00.015Z",
+  "targetKeyword": "best timeframes for ICT trading"
+}
