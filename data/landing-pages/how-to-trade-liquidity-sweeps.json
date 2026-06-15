@@ -1,0 +1,91 @@
+{
+  "slug": "how-to-trade-liquidity-sweeps",
+  "title": "How to Trade Liquidity Sweeps",
+  "seoTitle": "How to Trade Liquidity Sweeps for Reversals | R2F",
+  "seoDescription": "Most traders get stopped out by liquidity sweeps and quit the setup. Here's how ICT traders use those same sweeps to enter high-probability reversals with precision.",
+  "headline": "How to Trade Liquidity Sweeps for High-Probability Reversals",
+  "subheadline": "Liquidity sweeps are one of the most reliable reversal signals in the ICT methodology. Knowing where they form and what to look for afterward separates reactive traders from prepared ones.",
+  "intro": "A liquidity sweep occurs when price temporarily breaks above a previous high or below a previous low to trigger resting orders, then reverses sharply back into the prior range. In ICT trading, these sweeps are intentional moves by institutional participants to fill large orders against retail stop clusters. Trading liquidity sweeps means waiting for the sweep to complete, confirming a structural shift, and entering in the direction of the reversal with a defined risk.",
+  "keyPoints": [
+    {
+      "icon": "💧",
+      "title": "What a Liquidity Sweep Actually Is",
+      "text": "A liquidity sweep is a deliberate price move through a level where stop orders are known to cluster, such as equal highs, equal lows, or prior session extremes. Price hunts those orders, fills institutional interest at improved prices, then reverses. The sweep itself is the engineered move. The reversal that follows is where the trade lives."
+    },
+    {
+      "icon": "📍",
+      "title": "Why Sweeps Matter for Trade Location",
+      "text": "Entries taken after a confirmed sweep offer some of the tightest risk-to-reward setups available in ICT methodology. The stop sits just beyond the swept level, the entry is near the reversal point, and the target is typically the opposing liquidity pool. This structure creates asymmetric trades where 1:3 and 1:5 reward ratios are achievable without needing a wide stop."
+    },
+    {
+      "icon": "🔍",
+      "title": "How to Identify and Enter After a Sweep",
+      "text": "Wait for price to take out a clean level such as buy-side liquidity above equal highs or sell-side liquidity below equal lows. Then look for a Break of Structure on a lower timeframe, typically the 1-minute or 5-minute chart, combined with a Fair Value Gap or Order Block forming during the London or New York killzone. That confluence is the entry trigger. The sweep is the context. The structural shift and imbalance are the confirmation."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "Entering during the sweep rather than after it is the single most common error. Price taking out a high looks bearish in the moment, and traders short into the move before confirmation. Without a Break of Structure and a return to a mitigation zone, you are trading the impulse, not the reversal. Waiting for price to close back inside the range and form a lower-timeframe shift is what separates a confirmed sweep from a breakout continuation."
+    },
+    {
+      "icon": "📈",
+      "title": "Building a Repeatable Sweep Trading Process",
+      "text": "Start by marking buy-side and sell-side liquidity levels on the higher timeframe chart each session, focusing on clean equal highs, equal lows, and prior day extremes. During a killzone, watch for price to reach those levels. When the sweep occurs, drop to the 1-minute or 5-minute chart, confirm a Break of Structure, locate the nearest Fair Value Gap or Order Block, and place your entry there. Review these setups in a trading journal to track which liquidity types and sessions produce the highest follow-through."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if a liquidity sweep is complete?",
+      "a": "A sweep is considered complete when price has taken out the target level and then closes back below it on a bearish sweep or above it on a bullish sweep. On the 1-minute chart in EURUSD, this often appears as a wick through equal highs followed by a bearish candle close back inside the range, signaling the hunt is done."
+    },
+    {
+      "q": "What timeframe should I use to trade liquidity sweeps?",
+      "a": "Mark liquidity levels on the 15-minute or 1-hour chart for context, then drop to the 1-minute or 5-minute chart to time the entry after the sweep. The higher timeframe tells you where the sweep is likely to happen. The lower timeframe gives you the structural confirmation and the precise entry point."
+    },
+    {
+      "q": "Can liquidity sweeps be traded in futures markets?",
+      "a": "Yes. ES and NQ futures are particularly clean for this setup because the prior day high and low, the Asian session range, and overnight highs all act as liquidity draw points. A sweep of the prior day high during the first 30 minutes of the New York session followed by a Break of Structure is a textbook ICT reversal setup in index futures."
+    },
+    {
+      "q": "What is the difference between a liquidity sweep and a stop hunt?",
+      "a": "They describe the same market mechanics from different perspectives. A stop hunt emphasizes the retail trader being taken out of a position. A liquidity sweep describes the institutional process of reaching resting orders to facilitate large order flow. In ICT methodology, the two terms are used interchangeably, though liquidity sweep is the preferred framing."
+    },
+    {
+      "q": "How do I set my stop loss when trading a liquidity sweep reversal?",
+      "a": "Place the stop a few pips or ticks beyond the extreme of the sweep candle, which is typically the wick high or low. This keeps risk defined and prevents getting stopped out by minor spread fluctuations. Because the entry is close to the reversal point, this structure naturally creates a favorable risk-to-reward ratio before targeting the opposing liquidity pool."
+    }
+  ],
+  "relatedTags": [
+    "liquidity-sweeps",
+    "ict-methodology",
+    "buy-side-liquidity",
+    "sell-side-liquidity",
+    "break-of-structure",
+    "fair-value-gap",
+    "order-blocks",
+    "killzone-trading",
+    "reversal-setups",
+    "forex-price-action"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "equal-highs-and-equal-lows-ict",
+      "label": "Equal Highs & Lows: ICT Liquidity"
+    },
+    {
+      "slug": "what-is-a-stop-hunt-in-trading",
+      "label": "Stop Hunt in Trading Explained"
+    },
+    {
+      "slug": "what-is-smt-divergence",
+      "label": "SMT Divergence Explained"
+    },
+    {
+      "slug": "how-to-find-daily-bias-in-ict",
+      "label": "Daily Bias in ICT Explained"
+    }
+  ],
+  "testimonialIndex": 0,
+  "createdAt": "2026-06-15T05:01:24.603Z",
+  "targetKeyword": "how to trade liquidity sweeps"
+}
