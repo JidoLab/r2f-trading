@@ -3256,5 +3256,45 @@
     "commentedAt": "2026-06-15T03:01:49.838Z",
     "permalink": "/r/Trading/comments/1u5unkk/i_built_a_prop_firm_cashback_platform_to_get_some/orpuhhd/",
     "commentId": "orpuhhd"
+  },
+  {
+    "postId": "1u64w8m",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Anyone here combine ICT concepts with macro fundamentals? Happy to answer questions on real yields, central bank divergence, smart money flow etc",
+    "commentText": "real yields driving dollar direction is probably the cleanest macro filter i've found for deciding whether to trust a bullish or bearish weekly OB on DXY. if real yields are compressing and the fed is diverging from other central banks, i'm way less inclined to take a dollar long off a 4H OB even if the setup looks textbook. the macro context basically tells you which side of the market smart money is positioned on before you even drop to the execution timeframe tbh.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-15T13:00:24.502Z",
+    "permalink": "/r/ICTMentorship/comments/1u64w8m/anyone_here_combine_ict_concepts_with_macro/ors41f5/",
+    "commentId": "ors41f5"
+  },
+  {
+    "postId": "1u5upla",
+    "subreddit": "ICTMentorship",
+    "postTitle": "I built a prop firm cashback platform to get some money back on challenge fees. Would you actually use this, or is it a waste of time? Need honest feedback.",
+    "commentText": "honestly this is a cool idea and i'd probably use it tbh, but here's what would actually get me to click through every time: show me the cashback breakdown *per firm* on the same page as their typical challenge drawdown rules so i can cross-reference whether a firm's 5% daily DD limit is even tradeable during a london session where GBPUSD can sweep a daily OB and immediately displace 80 pips. the cashback means nothing if the firm's rules make it nearly impossible to hold a trade through a proper NY killzone entry. that combo of info in one place would make this genuinely useful instead of just another affiliate portal.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-15T13:00:33.585Z",
+    "permalink": "/r/ICTMentorship/comments/1u5upla/i_built_a_prop_firm_cashback_platform_to_get_some/ors42g6/",
+    "commentId": "ors42g6"
+  },
+  {
+    "postId": "1u6dymt",
+    "subreddit": "ICTMentorship",
+    "postTitle": "ICT concepts really work",
+    "commentText": "this is exactly it tbh, the \"FVG failed\" mindset is just pattern trading with extra steps. once you start asking *why* price would want to come back to that inefficiency, like is it a true draw on liquidity or just a random gap during the london open, everything clicks differently. are you framing your bias from the daily first or jumping straight to the execution timeframe? that distinction alone changes how you read the PD arrays.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-15T13:00:45.179Z",
+    "permalink": "/r/ICTMentorship/comments/1u6dymt/ict_concepts_really_work/ors43pt/",
+    "commentId": "ors43pt"
+  },
+  {
+    "postId": "1u5ncf5",
+    "subreddit": "ICTMentorship",
+    "postTitle": "5 funded 50ks",
+    "commentText": "congrats on going public with it, that takes guts tbh. one thing to watch on phase 2 though — prop firms tend to tighten drawdown rules right when you're in that \"finally feeling confident\" zone, and if you're trading something like NQ or EU during NY killzone without tight stops on your OBs, one bad run can wipe a funded faster than the challenge ever did. 5 simultaneous 50ks also means correlated exposure, so if you're taking the same setup across accounts and london raids against you, all 5 get hit at once. just something to have a plan for before that first funded payout 🎯",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-15T13:00:54.505Z",
+    "permalink": "/r/ICTMentorship/comments/1u5ncf5/5_funded_50ks/ors44r6/",
+    "commentId": "ors44r6"
   }
 ]
