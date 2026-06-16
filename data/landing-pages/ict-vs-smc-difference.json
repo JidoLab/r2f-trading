@@ -1,0 +1,91 @@
+{
+  "slug": "ict-vs-smc-difference",
+  "title": "ICT vs SMC: The Real Difference",
+  "seoTitle": "ICT vs SMC Difference: What Traders Need to Know",
+  "seoDescription": "The ICT vs SMC difference comes down to one thing: source. ICT is a specific methodology. SMC is a community remix. Know which one you're actually trading before you lose money on blended concepts.",
+  "headline": "ICT vs SMC: What the Difference Actually Means for Your Trading",
+  "subheadline": "Both use similar vocabulary, but they operate from different frameworks. Understanding the distinction stops you from accidentally mixing concepts that were never designed to work together.",
+  "intro": "The ICT vs SMC difference is this: ICT (Inner Circle Trader) is a complete proprietary methodology developed by Michael Huddleston, built around specific institutional price delivery concepts like fair value gaps, order blocks, killzones, and liquidity raids. SMC, or Smart Money Concepts, is a community-adapted version of ICT ideas that various educators and retail traders have repackaged, often with modified rules and added indicators. They share terminology, but they are not interchangeable frameworks.",
+  "keyPoints": [
+    {
+      "icon": "🏗️",
+      "title": "What ICT and SMC Actually Are",
+      "text": "ICT is the original source: a methodology built on how institutions and central banks deliver price, using concepts like breaker blocks, displacement, power of three, and time-based killzones. SMC is a broader community label applied to content that borrows ICT vocabulary but often strips out the time, narrative, and delivery components that make the original framework function. Treating them as the same system creates a patchwork approach with no coherent internal logic."
+    },
+    {
+      "icon": "⚠️",
+      "title": "Why the Difference Matters in Practice",
+      "text": "When you learn SMC from a secondary source, you may get the label without the mechanism. For example, many SMC educators teach order blocks as simple supply and demand zones, ignoring the displacement candle, the internal range liquidity sweep, and the higher timeframe narrative that validate an ICT order block. The result is a concept that looks similar on a chart but triggers in entirely different conditions, leading to inconsistent entries and unclear trade management."
+    },
+    {
+      "icon": "🎯",
+      "title": "How to Use This Distinction Correctly",
+      "text": "If you are trading ICT concepts, go to the primary source and understand the full context: the macro cycle, the dealing range, and the time of day. A London killzone FVG on the 15-minute EURUSD chart has a specific context, including the Asian range that was built before it and the New York session that follows. If you are using an SMC-influenced approach, audit each concept you trade and identify exactly what condition confirms it, so your rules are internally consistent rather than borrowed from multiple incompatible systems."
+    },
+    {
+      "icon": "🚫",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "Traders frequently combine ICT confluence tools with SMC indicators or with supply and demand methods from different educators, then wonder why results are inconsistent. A classic example is marking an ICT order block on a 4-hour chart but using an SMC-style BOS confirmation from a different educator that defines structure breaks differently. The entry triggers, but the trade thesis is built on two frameworks with different definitions of the same term, making it impossible to review or improve systematically."
+    },
+    {
+      "icon": "📍",
+      "title": "Next Steps: Choosing One System to Master",
+      "text": "Pick one framework and map out every definition it uses. If you are committing to ICT, work through the core concepts in sequence: market structure, liquidity, displacement, fair value gaps, and then time-based execution in killzones. If you are working with an SMC-based approach, document the specific rules your educator uses for each concept and test them on a single instrument like the NQ futures or GBPUSD before expanding. Consistency in definitions produces consistency in results."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is SMC just a copy of ICT?",
+      "a": "SMC draws heavily from ICT concepts and uses much of the same terminology, including order blocks, BOS, and liquidity. However, SMC content varies significantly by educator, and rules around confirmation, context, and time are often different or absent. It is derivative of ICT rather than a direct copy, which is why the two produce different results in live trading."
+    },
+    {
+      "q": "Can I use SMC concepts with ICT trading strategies?",
+      "a": "Only if you verify that the definitions match. Many SMC educators define a break of structure as any candle close beyond a swing high or low, while ICT specifies displacement and the internal delivery mechanism. Mixing them on something like a 5-minute EURUSD chart during the London open will create conflicting signals because the confirmation criteria are not the same."
+    },
+    {
+      "q": "Which is better for beginners: ICT or SMC?",
+      "a": "ICT offers a more complete and internally consistent framework, but the learning curve is steeper because time, narrative, and price delivery all matter together. SMC content is often more accessible and visual, but beginners risk learning simplified rules that do not hold up in volatile conditions. Starting with ICT fundamentals and applying them to one pair and one session, such as GBPUSD during the New York killzone, is a more structured approach."
+    },
+    {
+      "q": "Do ICT and SMC use the same order block definition?",
+      "a": "They use the same term but often apply different criteria. In ICT, a valid order block requires a displacement move away from the zone, a liquidity pool that was targeted before the move, and alignment with the higher timeframe bias. Many SMC interpretations reduce this to the last down candle before a bullish move, without requiring displacement or narrative context, which significantly changes when the zone is expected to hold."
+    },
+    {
+      "q": "Why do traders get confused between ICT and SMC?",
+      "a": "The terminology is nearly identical, so content from different educators looks similar on the surface. A chart marked with order blocks, FVGs, and BOS levels looks the same whether it comes from an ICT-based educator or an SMC one. The difference is in the rules used to qualify those levels, and those rules only become visible when you try to trade them consistently and track your results."
+    }
+  ],
+  "relatedTags": [
+    "ict-methodology",
+    "smart-money-concepts",
+    "order-blocks",
+    "fair-value-gaps",
+    "break-of-structure",
+    "ict-killzones",
+    "liquidity-concepts",
+    "price-action-trading",
+    "forex-trading-strategy",
+    "futures-trading"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "best-timeframes-for-ict-trading",
+      "label": "ICT Trading Timeframes Guide"
+    },
+    {
+      "slug": "premium-and-discount-in-ict",
+      "label": "Premium & Discount in ICT"
+    },
+    {
+      "slug": "what-is-a-mitigation-block",
+      "label": "Mitigation Block Explained"
+    },
+    {
+      "slug": "ict-order-blocks",
+      "label": "ICT Order Blocks Explained"
+    }
+  ],
+  "testimonialIndex": 0,
+  "createdAt": "2026-06-16T05:02:44.715Z",
+  "targetKeyword": "ICT vs SMC difference"
+}
