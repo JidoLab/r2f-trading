@@ -3386,5 +3386,25 @@
     "commentedAt": "2026-06-16T08:00:56.859Z",
     "permalink": "/r/Forexstrategy/comments/1u6y8sa/usdjpy_outlook_beyond_the_boj_hike/ory133b/",
     "commentId": "ory133b"
+  },
+  {
+    "postId": "1u6mlz8",
+    "subreddit": "Trading",
+    "postTitle": "Are challenge fees too expensive today?",
+    "commentText": "honestly the fees themselves aren't the real problem, it's the retry loop that bleeds you out. most traders fail challenges because they're taking entries outside of killzone windows, new york open especially, where price is still hunting liquidity before it commits to a move. you end up revenge trading to recover, blow the account, pay again, repeat. tbh the firms aren't getting more expensive so much as traders are getting less selective about their setups before they start. one clean OB entry during a proper session beats five guesses at random times every time. what kind of account sizes are you looking at and are you trading crypto spot or perps? happy to walk through the timing and entry model side of things in more detail if that'd help.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-16T13:00:27.475Z",
+    "permalink": "/r/Trading/comments/1u6mlz8/are_challenge_fees_too_expensive_today/orz74g1/",
+    "commentId": "orz74g1"
+  },
+  {
+    "postId": "1u6qj1u",
+    "subreddit": "Trading",
+    "postTitle": "What strategy do you trade on nq/es/forex?",
+    "commentText": "主要 trade NQ on the 15m, looking for displacement into an FVG after a clean BOS on the 5m during london open or the NY killzone. tbh liquidity sweeps are baked into almost every setup i take, whether it's a sweep of a prior high before a reversal or engineering on a lower timeframe before price expands. the FVG and OB stuff you mentioned are solid anchors but the session timing changes everything imo. happy to walk through how i filter which FVGs are actually worth taking on NQ if you drop what session you're trading and what timeframe you're working off.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-16T13:00:37.018Z",
+    "permalink": "/r/Trading/comments/1u6qj1u/what_strategy_do_you_trade_on_nqesforex/orz75kp/",
+    "commentId": "orz75kp"
   }
 ]
