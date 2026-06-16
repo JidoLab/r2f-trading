@@ -1,0 +1,91 @@
+{
+  "slug": "ict-trading-for-beginners",
+  "title": "ICT Trading: Beginner Roadmap",
+  "seoTitle": "ICT Trading for Beginners: A Starting Roadmap",
+  "seoDescription": "ICT trading for beginners explained in plain terms: 6 core concepts, a sequenced learning path, and the one mistake that kills early progress. Start here.",
+  "headline": "ICT Trading for Beginners: Where to Actually Start",
+  "subheadline": "The ICT methodology has a specific learning order. Skip it and the concepts stop making sense. Follow it and a coherent framework starts to emerge within weeks.",
+  "intro": "ICT trading for beginners refers to learning the Inner Circle Trader methodology, a framework developed by Michael Huddleston that explains price movement through the lens of institutional order flow, liquidity engineering, and precise entry models. The methodology teaches traders to identify where large participants need price to go to fill orders, then align retail entries with that directional bias. It applies across forex pairs like EURUSD and GBPUSD as well as futures instruments like ES and NQ, typically using 15-minute down to 1-minute chart structures during defined high-probability trading windows called killzones.",
+  "keyPoints": [
+    {
+      "icon": "🏗️",
+      "title": "What ICT Trading Actually Is",
+      "text": "ICT is a price action methodology built around the idea that liquidity drives price. Rather than using retail indicators, traders learn to read the market through concepts like order blocks, fair value gaps (FVGs), and break of structure (BOS). The framework argues that price consistently seeks out resting liquidity, such as buy-side above swing highs or sell-side below swing lows, before reversing or continuing in the intended direction."
+    },
+    {
+      "icon": "📐",
+      "title": "Why the Framework Has an Edge",
+      "text": "Most retail approaches react to price after it moves. ICT gives traders a model for anticipating where price is likely to reach before the move happens. By mapping liquidity pools and premium or discount price zones on a higher timeframe, traders can pre-define logical entry, stop, and target levels. This shifts trading from guessing to executing a repeatable process with defined risk."
+    },
+    {
+      "icon": "🗓️",
+      "title": "How to Build the Skill Sequentially",
+      "text": "Start with market structure: learn BOS and change of character (ChoCH) before touching anything else. Then study liquidity concepts, including equal highs and lows as draw-on-liquidity targets. Add fair value gaps and order blocks only after you can read structure fluently. Finally, layer in killzone timing, focusing on the London open (2am to 5am EST) and New York open (7am to 10am EST) sessions where ICT setups carry the highest probability."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Mistake That Stalls Most Beginners",
+      "text": "Beginners consistently try to use every ICT concept at once before any single concept is solid. They mark order blocks, FVGs, liquidity levels, and session ranges on the same chart and then freeze when price approaches a cluster. The fix is deliberate constraint: spend two to four weeks trading only one concept, such as FVGs forming inside a discount zone after a BOS, on one pair, on one timeframe."
+    },
+    {
+      "icon": "🗺️",
+      "title": "Your Concrete Next Steps from Here",
+      "text": "Begin with EURUSD or GBPUSD on the 15-minute chart during London killzone hours. Practice marking swing highs and lows and identifying where liquidity rests. Then locate the most recent BOS and look for a mitigation of an order block or a fill of a fair value gap in the opposite direction as your entry trigger. Journal every trade with a screenshot before and after. Fifty documented trades builds more understanding than five hundred hours of passive study."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does it take to learn ICT trading from scratch?",
+      "a": "Most traders need three to six months of structured daily study and sim trading before ICT concepts become intuitive. The concepts themselves can be understood in weeks, but applying them under live market conditions, particularly during the New York killzone on NQ futures, requires deliberate repetition across many sessions."
+    },
+    {
+      "q": "What is the best ICT concept to learn first as a beginner?",
+      "a": "Market structure is the correct starting point. Specifically, learn to identify a break of structure (BOS) and a change of character (ChoCH) on the 15-minute chart before studying order blocks or FVGs. Every ICT entry model depends on understanding which direction the structure is pointing, so this skill underpins everything else."
+    },
+    {
+      "q": "Can ICT trading work on forex pairs like EURUSD?",
+      "a": "Yes. EURUSD and GBPUSD are two of the most commonly used pairs for ICT study because they have deep liquidity and clean structure. The London open killzone from 2am to 5am EST produces reliable FVG and order block setups on these pairs, particularly after the Asian range has established a clear liquidity pool above or below."
+    },
+    {
+      "q": "What is a fair value gap in ICT and why does it matter for beginners?",
+      "a": "A fair value gap (FVG) is a three-candle formation where the middle candle moves so strongly that it leaves a price gap between the first and third candle's wicks. Price tends to return to these gaps to rebalance. For beginners, FVGs that form above an order block after a BOS on the 5-minute chart are one of the cleaner, more rule-based entry setups in the methodology."
+    },
+    {
+      "q": "Do I need expensive tools or software to trade ICT concepts?",
+      "a": "No. TradingView's free plan is sufficient to mark order blocks, FVGs, and liquidity levels manually. ICT concepts are chart-reading skills, not indicator-dependent systems. Many traders add a simple session highlight indicator to shade killzone windows, but the core analysis requires only price candles, horizontal lines, and rectangles."
+    }
+  ],
+  "relatedTags": [
+    "ict-trading",
+    "ict-for-beginners",
+    "market-structure",
+    "fair-value-gap",
+    "order-block",
+    "liquidity-in-trading",
+    "killzone-trading",
+    "break-of-structure",
+    "forex-price-action",
+    "ict-concepts-explained"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "ict-power-of-three-explained",
+      "label": "ICT Power of Three Explained"
+    },
+    {
+      "slug": "what-is-a-judas-swing",
+      "label": "Judas Swing Explained"
+    },
+    {
+      "slug": "what-is-an-inversion-fair-value-gap",
+      "label": "Inversion Fair Value Gap Explained"
+    },
+    {
+      "slug": "how-to-find-daily-bias-in-ict",
+      "label": "Daily Bias in ICT Explained"
+    }
+  ],
+  "testimonialIndex": 0,
+  "createdAt": "2026-06-16T05:01:31.149Z",
+  "targetKeyword": "ICT trading for beginners"
+}
