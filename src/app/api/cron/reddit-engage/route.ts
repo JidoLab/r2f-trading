@@ -206,6 +206,22 @@ function scorePosts(posts: RedditPost[], alreadyCommented: Set<string>): RedditP
     });
 }
 
+// Hard guarantee against em/en dashes regardless of what the model returns
+// (Harvest's rule). Swaps them for grammatical punctuation and tidies up the
+// fallout. Casual lowercase comments read fine with a comma in place of a
+// clause-joining dash. Also catches the "--" double hyphen some models emit.
+function sanitizeComment(text: string): string {
+  let t = text;
+  t = t.replace(/\s*[—–]\s*/g, ", "); // em/en dash -> comma
+  t = t.replace(/\s+--+\s+/g, ", "); // spaced double-hyphen -> comma
+  // tidy punctuation the swap may have doubled up
+  t = t.replace(/,\s*([.!?,;:])/g, "$1"); // ", ." -> "."
+  t = t.replace(/([.!?;:])\s*,/g, "$1 "); // ". ," -> ". "
+  t = t.replace(/\s+,/g, ",");
+  t = t.replace(/\s{2,}/g, " ");
+  return t.trim();
+}
+
 // --- Generate a helpful comment using Claude ---
 async function generateComment(
   post: RedditPost,
@@ -214,21 +230,29 @@ async function generateComment(
   const anthropic = new Anthropic();
 
   // Randomly select a comment style for variety
+  // Styles that end with an open question or an offer to go deeper are
+  // weighted heavier (listed more than once) because they pull the OP back
+  // into the thread, which is what organically earns profile visits and
+  // chat requests without us ever asking for one.
   const styles = [
     "direct_answer", // straight to the point answer
     "personal_story", // "i had this exact problem when..."
     "challenge_premise", // respectfully disagree or add nuance
     "specific_technique", // share one concrete thing to try
     "question_back", // answer + ask a follow-up question
+    "question_back",
+    "offer_depth", // answer + offer to break it down further in-thread
+    "offer_depth",
   ];
   const style = styles[Math.floor(Math.random() * styles.length)];
 
   const styleInstructions: Record<string, string> = {
-    direct_answer: "Get straight to the answer. No preamble. First sentence IS the solution or insight.",
-    personal_story: "Start with 'i had this exact problem...' or 'this happened to me last month...' and share a specific experience. Include a real detail (pair, timeframe, what you saw on the chart).",
-    challenge_premise: "Respectfully add nuance or a different perspective. 'this is true but there's a catch most people miss...' or 'works great except when...'",
-    specific_technique: "Share ONE specific thing to try. Be concrete: 'try marking the last down candle before the displacement on the 15m. if price comes back to it during NY killzone, that's your entry.'",
-    question_back: "Answer their question, then ask a follow-up that shows expertise: 'are you looking at this on the 15m or 1h? makes a huge difference for OB validity.'",
+    direct_answer: "Get straight to the answer. No preamble. First sentence IS the solution or insight. Then end with one short, genuine question about their setup.",
+    personal_story: "Start with 'i had this exact problem...' or 'this happened to me last month...' and share a specific experience. Include a real detail (pair, timeframe, what you saw on the chart). End curious about how theirs is playing out.",
+    challenge_premise: "Respectfully add nuance or a different perspective. 'this is true but there's a catch most people miss...' or 'works great except when...' Then ask what they're seeing so the convo continues.",
+    specific_technique: "Share ONE specific thing to try. Be concrete: 'try marking the last down candle before the displacement on the 15m. if price comes back to it during NY killzone, that's your entry.' Then ask them to report back what they find.",
+    question_back: "Answer their question, then ask a genuine follow-up that shows expertise and real interest: 'are you looking at this on the 15m or 1h? makes a huge difference for OB validity.' Make them want to reply.",
+    offer_depth: "Answer the core of it, then warmly offer to go deeper IN THE THREAD on the specific piece they're stuck on: 'if you drop the pair and timeframe i can show you exactly where the OB is' or 'happy to walk through the entry model on this one if that helps'. Sound like you genuinely enjoy talking through this stuff. Never point them off the thread.",
   };
 
   const response = await anthropic.messages.create({
@@ -252,15 +276,16 @@ QUALITY RULES:
 - Sound like a REAL person on Reddit, not a polished brand. Use contractions, lowercase, casual grammar.
 - Include at least ONE specific ICT detail (pair name, timeframe, concept name like "FVG", "OB", "BOS", session name)
 - Reference something SPECIFIC from the post title or body. Don't give generic advice.
-- NEVER use dashes, hashtags, bullet points, or numbered lists.
+- NEVER use an em dash or en dash (the "—" or "–" character). Do not use a dash to join two clauses. Use a comma, period, colon, or semicolon instead. Also no hashtags, bullet points, or numbered lists.
 - NEVER start with "Great question!", "Solid post", or generic praise.
 - NEVER sound like an AI or a marketing bot.
 - Zero or one emoji max.
 - Vary sentence lengths. Mix short (3-5 words) with medium (8-15 words).
 - Occasionally use Reddit-isms naturally: "imo", "tbh", "this is the way", "been there"
 - NEVER mention "students", "my students", "coaching", "my coaching", "mentees", R2F Trading, r2ftrading.com, any website, or anything promotional. Pure value only.
-- NEVER ask anyone to DM you, message you, PM you, reach out, or contact you. No "happy to chat", "feel free to DM", "shoot me a message", "my inbox is open", etc.
-- If your comment makes a claim that could need clarification, you may add a single sentence like "happy to clarify anything in the thread" — but ONLY in the thread, never soliciting private contact.
+- END WITH GENUINE INTEREST so they want to reply. Close with a specific open question about their setup, or a warm offer to break the concept down further if they want. Sound like someone who genuinely enjoys talking trading and would happily go deeper. This is how the conversation continues.
+- You MAY invite them to keep talking IN THE PUBLIC THREAD: "curious what pair you're seeing this on", "drop a chart and i'll point out where the OB actually is", "happy to walk through the entry on this if it helps". In-thread only.
+- NEVER ask anyone to DM, PM, message, email, "reach out", or contact you privately, and never point them to a profile, link, or website. Every invitation stays inside the public thread. No "feel free to DM", "shoot me a message", "my inbox is open".
 
 WHAT A BAD COMMENT LOOKS LIKE (avoid this):
 "Great question! ICT concepts like order blocks and fair value gaps can really help with this. Make sure you're using proper risk management and backtesting your strategy."
@@ -277,7 +302,7 @@ Return ONLY the comment text.`,
 
   const text =
     response.content[0].type === "text" ? response.content[0].text.trim() : "";
-  return text;
+  return sanitizeComment(text);
 }
 
 // --- Post a comment on Reddit ---
