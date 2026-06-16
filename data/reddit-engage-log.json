@@ -3306,5 +3306,35 @@
     "commentedAt": "2026-06-15T18:01:06.233Z",
     "permalink": "/r/InnerCircleTraders/comments/1u5t0hn/considering_a_personal_account/orty800/",
     "commentId": "orty800"
+  },
+  {
+    "postId": "1u6zrcy",
+    "subreddit": "Forexstrategy",
+    "postTitle": "I asked chatgpt if theres any guarentee broker wont read and manipulate traders strategy in a robot/EA ~ Response that traders must read.",
+    "commentText": "tbh the broker reading your EA logic is way less of a threat than people think — the real manipulation happens at the quote feed level. if you're trading something like GBPUSD on a 15m and your OB entry gets triggered but price wicks 3 pips past your SL before reversing, that's a spread/requote game, not code cracking. run your EA on a third party VPS like contabo or vultr instead of the broker's own server and you remove the root access problem ChatGPT is describing entirely.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-16T03:00:41.431Z",
+    "permalink": "/r/Forexstrategy/comments/1u6zrcy/i_asked_chatgpt_if_theres_any_guarentee_broker/orwxnwm/",
+    "commentId": "orwxnwm"
+  },
+  {
+    "postId": "1u6b0ie",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAUUSD Approaching Major Resistance – Bearish Reversal Incoming?",
+    "commentText": "try marking the 15m FVG that formed on the last push into your 4,220 zone and see if price mitigates it during london open tomorrow. if you get a BOS to the downside on the 15m after that mitigation, that's your entry trigger rather than just eyeballing the rejection candle. imo waiting for structure to shift *after* the FVG fill keeps you out of the fakeouts that eat people alive at these big round number zones on gold 📉",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-16T03:00:49.991Z",
+    "permalink": "/r/Forexstrategy/comments/1u6b0ie/xauusd_approaching_major_resistance_bearish/orwxoqe/",
+    "commentId": "orwxoqe"
+  },
+  {
+    "postId": "1u6z2ex",
+    "subreddit": "Trading",
+    "postTitle": "I asked chatgpt if theres any guarentee broker wont read and manipulate traders strategy in a robot/EA ~ Response that traders must read.",
+    "commentText": "this is all true but the bigger point most retail traders miss is that brokers don't even need to crack your ex5 to manipulate your fills — they can just watch your order flow in real time and widen the spread during your entry window. if you're running an EA that consistently buys the NY open FVG on EURUSD at 9:30am EST, your execution footprint alone tells them everything. the code is almost irrelevant tbh.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-16T03:00:57.672Z",
+    "permalink": "/r/Trading/comments/1u6z2ex/i_asked_chatgpt_if_theres_any_guarentee_broker/orwxpgt/",
+    "commentId": "orwxpgt"
   }
 ]
