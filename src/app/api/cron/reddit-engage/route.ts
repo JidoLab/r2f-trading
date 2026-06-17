@@ -224,8 +224,7 @@ function sanitizeComment(text: string): string {
 
 // --- Generate a helpful comment using Claude ---
 async function generateComment(
-  post: RedditPost,
-  shouldMentionR2F: boolean
+  post: RedditPost
 ): Promise<string> {
   const anthropic = new Anthropic();
 
@@ -421,7 +420,7 @@ export async function GET(req: NextRequest) {
 
       try {
         // Generate comment
-        const commentText = await generateComment(post, shouldMentionR2F);
+        const commentText = await generateComment(post);
         if (!commentText || commentText.length < 20) {
           results.push({
             postId: post.id,

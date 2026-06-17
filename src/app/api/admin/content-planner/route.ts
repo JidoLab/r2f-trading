@@ -94,10 +94,6 @@ export async function GET() {
     const anthropic = new Anthropic();
 
     // Build context for Claude
-    const staleCategories = categoryCoverage
-      .filter((c) => c.daysAgo > 3)
-      .sort((a, b) => b.daysAgo - a.daysAgo);
-
     const recentCategories = posts.slice(0, 5).map((p) => categorizePost(p.tags));
     const categoryFrequency: Record<string, number> = {};
     for (const cat of recentCategories) {

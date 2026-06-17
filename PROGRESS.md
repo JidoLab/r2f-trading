@@ -20,12 +20,14 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
           (16). src `no-unused-vars` down 35 -> 20.
       [x] Batch 1b (cycle 3): unused local vars + catch bindings + unused route
           `req` params in `src/` (14 fixes). src `no-unused-vars` 20 -> 6.
-      [ ] Batch 1b-ii: the 6 judgement-heavy leftovers — `bangkokDay`
-          (claude-tasks, multi-line + orphan comment), `staleCategories`
-          (content-planner), `title` (market-brief, cascades into `titleMatch`),
-          dead `shouldMentionR2F` param + logic (reddit-engage), and the stub
-          params `url` (indexnow) / `title` (syndication) that look like
-          intentional API shape (decide: prefix `_` vs remove).
+      [x] Batch 1b-ii (cycle 4): all 6 leftovers. Removed dead code (bangkokDay,
+          staleCategories, market-brief title+titleMatch), dropped the unused
+          `shouldMentionR2F` PARAM from generateComment (the GET-level var +
+          mentionedR2F logging stay), and removed the unused stub params
+          `url` (indexnow, zero callers) / `title` (syndication buildCanonicalNote
+          + its one caller). NOTE: `_`-prefix does NOT silence no-unused-vars in
+          this config (no argsIgnorePattern), so params were removed outright.
+          ===> src/ no-unused-vars now 0 (was 35 at discovery). <===
       [ ] Batch 1c: `no-unused-vars` in `scripts/` + `render-service/` (~30,
           standalone operational tooling).
       [ ] Batch 2: `@next/next` + `jsx-a11y` warnings (img->Image, alt text).
@@ -48,7 +50,7 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
       runs lint + typecheck + build + tests and passes on the `dev-loop` branch.
 
 ## Current task
-Task: [none active; next cycle = ESLint baseline batch 1b-ii (6 judgement-heavy
+Task: [none active; next cycle = ESLint baseline batch 1c (scripts/ + render-service/ no-unused-vars)]
        src leftovers) OR batch 1c (scripts/ + render-service/ no-unused-vars)]
 Plan:
   1.
@@ -66,6 +68,11 @@ Research notes:
     After any removal, re-run eslint to catch the cascade in the same cycle.
 
 ## Done
+- (2026-06-17) ESLint baseline batch 1b-ii. Cleared the final 6 src
+  no-unused-vars: removed dead code (bangkokDay, staleCategories, market-brief
+  title+titleMatch), the unused shouldMentionR2F param (logging behavior kept),
+  and unused stub params url/title. src no-unused-vars 6 -> 0 (35 -> 0 total).
+  Green: vitest 6/6, tsc, next build (281 pages).
 - (2026-06-17) ESLint baseline batch 1b. Removed 12 unused local vars/imports
   (incl. cascade: dropped `useRouter` import after removing its `router`),
   converted 2 unused `catch (e: any)` to bindingless `catch` (also clears 2

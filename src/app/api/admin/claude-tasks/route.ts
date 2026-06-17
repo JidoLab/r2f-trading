@@ -36,12 +36,6 @@ function shouldRegenerate(lastGenerated: string): boolean {
   // At least 3 days between generations
   if (daysSince < 3) return false;
 
-  // Only on Mon (1) or Thu (4) in Bangkok time
-  const bangkokDay = parseInt(
-    now.toLocaleDateString("en-US", { timeZone: "Asia/Bangkok", weekday: "narrow" })
-      .replace("M", "1").replace("T", "4").replace("W", "3")
-      .replace("F", "5").replace("S", "6")
-  );
   // Simpler: just check if 3+ days have passed
   return daysSince >= 3;
 }

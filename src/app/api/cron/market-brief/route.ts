@@ -90,13 +90,6 @@ Rules:
     const script =
       claudeData.content?.[0]?.text?.trim() || "Script generation failed.";
 
-    // Generate a short title from the script
-    const titleMatch = script.match(
-      /(?:key level|watch|focus|eye on|looking at)\s+(.{10,60}?)[\.,!]/i
-    );
-    const title =
-      titleMatch?.[1]?.trim() ||
-      `Market Brief — ${dayName}, ${fullDate.split(",")[0].trim()}`;
     const briefTitle = `Daily Market Brief — ${fullDate}`;
 
     // ---- 3. Generate voice with ElevenLabs ----

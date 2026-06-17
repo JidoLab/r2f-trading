@@ -43,7 +43,7 @@ const BLOG_PATH_PREFIX = "/trading-insights";
  * Build a canonical note to prepend to syndicated post body.
  * Tells readers (and signals to platforms) this is a republish with SEO pointing back.
  */
-function buildCanonicalNote(slug: string, title: string): string {
+function buildCanonicalNote(slug: string): string {
   const canonical = `${SITE_URL}${BLOG_PATH_PREFIX}/${slug}`;
   return `*This post was originally published at [R2F Trading](${canonical}). Republished here with canonical link intact.*\n\n---\n\n`;
 }
@@ -54,7 +54,7 @@ function buildCanonicalNote(slug: string, title: string): string {
  */
 export async function syndicatePost(params: SyndicatePostParams): Promise<SyndicateResult> {
   const canonicalUrl = `${SITE_URL}${BLOG_PATH_PREFIX}/${params.slug}`;
-  const canonicalNote = buildCanonicalNote(params.slug, params.title);
+  const canonicalNote = buildCanonicalNote(params.slug);
   const bodyWithCanonical = canonicalNote + params.bodyMarkdown;
 
   const platforms: PlatformResult[] = [];

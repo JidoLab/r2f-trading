@@ -38,7 +38,7 @@ export async function notifyIndexNow(urls: string[]) {
  * Requires a Google Service Account with Indexing API access
  * For now, uses the sitemap ping approach above as it requires no additional setup
  */
-export async function requestGoogleIndexing(url: string) {
+export async function requestGoogleIndexing() {
   // Sitemap ping is already handled in notifyIndexNow
   // If you later set up a Google Service Account, add the official API call here:
   // POST https://indexing.googleapis.com/v3/urlNotifications:publish
