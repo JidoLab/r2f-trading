@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1781697640261-mz339",
+    "platform": "youtube",
+    "postTitle": "Cheers! 🍻 | LIVE Day Trading Futures | ICT concepts | 2026-06-17",
+    "postUrl": "https://youtube.com/watch?v=Ilj6185N_5s",
+    "authorName": "Tipsy Trader",
+    "suggestedReply": "That displacement candle you marked before the FVG entry is exactly what I drill into my students. Most traders see the fair value gap and jump straight in without confirming the impulse that created it, and then wonder why price runs them out before delivering. On futures especially, waiting for that displacement close on the 5m before committing keeps you out of a lot of low probability setups. Cheers to clean execution on a Tuesday session.",
+    "createdAt": "2026-06-17T12:00:40.261Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781697645839-a1jlk",
+    "platform": "youtube",
+    "postTitle": "Follow for more #ict #trading #smct #stockmarket #forex #daytrade #investing",
+    "postUrl": "https://youtube.com/watch?v=y3_d51dRuOY",
+    "authorName": "NQravi",
+    "suggestedReply": "The ICT and SMCT overlap is where it gets interesting. Most traders I work with rush the entry the moment they spot a fair value gap on NQ, but the real edge is waiting for the displacement candle to confirm institutional intent before touching that zone. I drill this into my students constantly because early entries on index futures will humble you fast. Are you marking your displacement on the 5m or going higher timeframe for confluence?",
+    "createdAt": "2026-06-17T12:00:45.839Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781697650013-bn5wi",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=AMG_QDX9BEo",
+    "authorName": "The Trading Process",
+    "suggestedReply": "Interesting take combining SMC with ICT on gold. In my experience, waiting for a clear market structure shift on the 4H before dropping to the 15M for a refined entry works better because it keeps you aligned with smart money flow rather than reacting to noise. I drill this into my students constantly, especially on XAUUSD where liquidity sweeps can look deceptively clean before reversing hard.",
+    "createdAt": "2026-06-17T12:00:50.013Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781697653306-5ly6m",
+    "platform": "youtube",
+    "postTitle": "🔴Live GOLD &amp; BTC Analysis | Smart Money Concepts | ICT Strategy Explained #263 FlipperxForex",
+    "postUrl": "https://youtube.com/watch?v=pW2xTvbFWaQ",
+    "authorName": "FlipperX Forex",
+    "suggestedReply": "I drilled Smart Money Concepts into my students using GOLD specifically because it respects institutional levels cleaner than most pairs. The BTC analysis here is worth paying attention to because crypto sessions mimic forex kill zones more than most retail traders realise. My students who crossed over from BTC to GOLD using ICT structure were profitable faster once they stopped chasing and started waiting for displacement confirmation on the 15m.",
+    "createdAt": "2026-06-17T12:00:53.306Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781697656656-6bou1",
+    "platform": "youtube",
+    "postTitle": "🔴Live GOLD &amp; BTC Analysis | Smart Money Concepts | ICT Strategy Explained #263 FlipperxForex",
+    "postUrl": "https://youtube.com/watch?v=vXpnCy1jbLk",
+    "authorName": "FlipperX Forex",
+    "suggestedReply": "Interesting take on the Smart Money Concepts approach for BTC and Gold together. In my experience, pairing these two assets in the same session analysis can actually dilute your bias because their liquidity sweeps rarely align on the same killzone timing. I teach my students to master one asset's institutional flow before layering in correlations. Curious how you handle conflicting order block confluences when they set up simultaneously across both.",
+    "createdAt": "2026-06-17T12:00:56.656Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781697660470-gm9sk",
+    "platform": "youtube",
+    "postTitle": "🔴LIVE | Gold (XAUUSD) Chart Analysis | Smart Money Concepts &amp; Liquidity | Civilian",
+    "postUrl": "https://youtube.com/watch?v=3IQ58z45iGM",
+    "authorName": "Civilian",
+    "suggestedReply": "I always tell my students that gold liquidity sweeps are some of the cleanest setups in the market when you understand smart money concepts. Watched price hunt stops above a session high on the 1H before reversing hard last week, textbook institutional behavior. Most of my students get this wrong at first because they chase the sweep instead of waiting for confirmation of the reversal. Civilian does a good job showing why patience around liquidity zones separates consistent traders from the rest.",
+    "createdAt": "2026-06-17T12:01:00.470Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781697663752-6nr6p",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=kf8kd8UByOQ",
+    "authorName": "The Trading Process",
+    "suggestedReply": "SMC on XAUUSD is solid but the caveat I always stress with my students is that gold premium and discount zones behave differently during high impact news sessions compared to crypto. The liquidity sweeps on gold can be violent and trap SMC traders who aren't respecting the higher timeframe narrative first. Always confirm your bias on the daily before dropping to entry timeframes.",
+    "createdAt": "2026-06-17T12:01:03.752Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781697666906-esb6l",
+    "platform": "youtube",
+    "postTitle": "🔥 ITH / ITL Strategy Live Trading | Learn Smart Money Concepts &amp; Price Action 📈",
+    "postUrl": "https://youtube.com/watch?v=rGDMoW_Kf2E",
+    "authorName": "Trade with Haidar",
+    "suggestedReply": "The ITH and ITL framework is something I drill into my students constantly, especially around how price respects those internal highs and lows before continuing. The underrated part of this approach is waiting for a confirmed displacement away from the ITH or ITL before committing to a position. Most traders mark the level and enter immediately, then wonder why they get swept first on the lower timeframe confirmation.",
+    "createdAt": "2026-06-17T12:01:06.906Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1781611290905-2wtlm",
     "platform": "investinglive",
     "postTitle": "Gold avoids a complete breakdown on surprising US-Iran breakthrough as focus turns to FOMC",
