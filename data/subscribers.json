@@ -241,8 +241,8 @@
     "referredBy": null,
     "referralCount": 0,
     "phone": "9360126042",
-    "score": 35,
-    "segment": "warm",
+    "score": 55,
+    "segment": "hot",
     "events": [
       {
         "type": "contact_page_view",
@@ -251,9 +251,13 @@
       {
         "type": "coaching_page_view",
         "date": "2026-06-17T15:15:39.417Z"
+      },
+      {
+        "type": "contact_page_view",
+        "date": "2026-06-17T15:15:58.058Z"
       }
     ],
-    "lastActivity": "2026-06-17T15:15:39.417Z",
+    "lastActivity": "2026-06-17T15:15:58.058Z",
     "dripsHistory": []
   }
 ]
