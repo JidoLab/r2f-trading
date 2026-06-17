@@ -28,8 +28,14 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
           + its one caller). NOTE: `_`-prefix does NOT silence no-unused-vars in
           this config (no argsIgnorePattern), so params were removed outright.
           ===> src/ no-unused-vars now 0 (was 35 at discovery). <===
-      [ ] Batch 1c: `no-unused-vars` in `scripts/` + `render-service/` (~30,
-          standalone operational tooling).
+      [ ] Batch 1c (BLOCKED, owner decision): `no-unused-vars` in `scripts/` +
+          `render-service/` (~26). These are standalone FFmpeg server scripts
+          deployed to a separate DigitalOcean/Render droplet, NOT part of the
+          Next build/test gate. `do-server-current.js`/`-patched.js`/`-live.js`
+          are near-identical variants (cruft?). Editing/deleting deployed render
+          infra is a stop-and-ask. Options: (a) fix unused vars in place,
+          (b) add scripts/ + render-service/ to eslint ignores (they are not app
+          code), (c) delete the dead do-server-* duplicates. Pending owner.
       [ ] Batch 2: `@next/next` + `jsx-a11y` warnings (img->Image, alt text).
       [ ] Batch 3: `@typescript-eslint/no-explicit-any` (judgement-heavy, type
           properly; likely several cycles by file).
@@ -50,8 +56,9 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
       runs lint + typecheck + build + tests and passes on the `dev-loop` branch.
 
 ## Current task
-Task: [none active; next cycle = ESLint baseline batch 1c (scripts/ + render-service/ no-unused-vars)]
-       src leftovers) OR batch 1c (scripts/ + render-service/ no-unused-vars)]
+Task: [BLOCKED — batch 1c needs an owner decision (see blockers). Unblocked
+       alternatives available: batch 2 (jsx-a11y/img warnings, src) or the
+       unit-test roadmap items.]
 Plan:
   1.
 Research notes:
