@@ -112,7 +112,7 @@
   {
     "email": "honore.trader@gmail.com",
     "date": "2026-05-22T19:54:53.128Z",
-    "dripsSent": 6,
+    "dripsSent": 7,
     "referralCode": "R2F-zttm23",
     "referredBy": null,
     "referralCount": 0,
@@ -127,7 +127,8 @@
       "successStory",
       "tradingPsychology",
       "propFirmTips",
-      "coachingCta"
+      "coachingCta",
+      "valueRecap"
     ]
   },
   {
@@ -217,7 +218,7 @@
   {
     "email": "anmolpannu33@gmail.com",
     "date": "2026-06-04T22:08:48.687Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "referralCode": "R2F-auqs7a",
     "referredBy": null,
     "referralCount": 0,
@@ -228,7 +229,8 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts",
-      "successStory"
+      "successStory",
+      "tradingPsychology"
     ]
   }
 ]
