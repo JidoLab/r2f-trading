@@ -553,7 +553,6 @@ export async function postTweetWithImage(
     }
     const imgBuffer = await imgRes.arrayBuffer();
     const base64Data = Buffer.from(imgBuffer).toString("base64");
-    const contentType = imgRes.headers.get("content-type") || "image/png";
 
     // Step 2: Upload to Twitter media upload API (simple upload for images < 5MB)
     const uploadUrl = "https://upload.twitter.com/1.1/media/upload.json";

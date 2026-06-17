@@ -93,8 +93,6 @@ async function searchTradingView(): Promise<ForumPost[]> {
   if (!html) return [];
 
   // Extract idea titles and URLs from the HTML
-  const ideaPattern = /href="(\/chart\/[^"]+|\/i\/[^"]+)"/g;
-  const titlePattern = /<a[^>]*class="[^"]*title[^"]*"[^>]*>([^<]+)/g;
 
   // Simpler approach: find idea links with titles
   const blocks = html.split("data-widget-type").slice(1, 8);

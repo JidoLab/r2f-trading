@@ -10,7 +10,7 @@ export const maxDuration = 60;
  * POST — Manually create a Substack draft from an existing blog post slug
  */
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   const admin = await verifyAdmin();
   if (!admin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 

@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import AutoGenerateToggle from "@/components/AutoGenerateToggle";
 
@@ -26,7 +25,6 @@ export default function AdminPostsPage() {
   const [loading, setLoading] = useState(true);
   const [publishing, setPublishing] = useState<string | null>(null);
   const [sharing, setSharing] = useState<string | null>(null);
-  const router = useRouter();
 
   useEffect(() => {
     Promise.all([

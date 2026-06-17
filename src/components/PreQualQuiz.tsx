@@ -64,7 +64,6 @@ export default function PreQualQuiz() {
   const [answers, setAnswers] = useState<Answers>({});
 
   const totalScore = Object.values(answers).reduce((a, b) => a + b, 0);
-  const maxScore = QUESTIONS.length * 4;
   const isQualified = totalScore >= 12; // 60%+ threshold
 
   function handleAnswer(questionId: string, score: number) {

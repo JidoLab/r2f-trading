@@ -65,7 +65,6 @@ export default function ContentGapsPage() {
   }
 
   const commercial = data.gaps.filter(g => g.searchIntent === "commercial");
-  const informational = data.gaps.filter(g => g.searchIntent === "informational");
   const easy = data.gaps.filter(g => g.difficulty === "easy");
 
   return (

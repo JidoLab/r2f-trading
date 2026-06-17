@@ -172,7 +172,6 @@ export async function buildMarketContext(): Promise<string> {
  * Generate SEO keyword suggestions for a given topic
  */
 export function generateKeywordVariations(topic: string): string[] {
-  const baseTerms = topic.toLowerCase().split(/\s+/).filter(w => w.length > 3);
   const modifiers = [
     "how to", "best", "guide", "strategy", "for beginners",
     "explained", "vs", "mistakes", "tips", "2026",

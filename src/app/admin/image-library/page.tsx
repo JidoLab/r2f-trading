@@ -37,7 +37,7 @@ const PAIRS = ["EURUSD", "GBPUSD", "USDJPY", "XAUUSD", "NAS100", "US30", "SPX500
 
 export default function ImageLibraryPage() {
   const [images, setImages] = useState<LibraryImage[]>([]);
-  const [filters, setFilters] = useState<{ tags: string[]; patterns: string[]; categories: string[] }>({ tags: [], patterns: [], categories: [] });
+  const [, setFilters] = useState<{ tags: string[]; patterns: string[]; categories: string[] }>({ tags: [], patterns: [], categories: [] });
   const [loading, setLoading] = useState(true);
   const [uploading, setUploading] = useState(false);
   const [search, setSearch] = useState("");

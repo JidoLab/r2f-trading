@@ -18,7 +18,7 @@ export const maxDuration = 30;
  * 6. Update FACEBOOK_PAGE_ACCESS_TOKEN in Vercel env vars
  */
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   const isAdmin = await verifyAdmin();
   if (!isAdmin) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 

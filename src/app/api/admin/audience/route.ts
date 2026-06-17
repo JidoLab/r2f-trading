@@ -38,7 +38,6 @@ export async function GET() {
 
   // 2. Calculate subscriber growth (last 30 days)
   const now = new Date();
-  const thirtyDaysAgo = new Date(now.getTime() - 30 * 86400000);
   const growthByDay: Record<string, number> = {};
   for (let i = 29; i >= 0; i--) {
     const d = new Date(now.getTime() - i * 86400000);

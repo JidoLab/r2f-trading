@@ -80,7 +80,7 @@ export async function POST(req: NextRequest) {
       try {
         const fbResult = await uploadToFBReel(videoUrl, renderData);
         results.push({ platform: "facebook_reel", ...fbResult });
-      } catch (e: any) {
+      } catch {
         results.push({ platform: "facebook_reel", status: "error" });
       }
 
@@ -88,7 +88,7 @@ export async function POST(req: NextRequest) {
       try {
         const liResult = await uploadToLinkedIn(videoUrl, renderData);
         results.push({ platform: "linkedin", ...liResult });
-      } catch (e: any) {
+      } catch {
         results.push({ platform: "linkedin", status: "error" });
       }
 

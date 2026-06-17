@@ -18,10 +18,14 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
       rules first. Progress:
       [x] Batch 1a (cycle 2): all `prefer-const` (9) + unused imports in `src/`
           (16). src `no-unused-vars` down 35 -> 20.
-      [ ] Batch 1b: remaining `no-unused-vars` in `src/` (~20 unused local vars
-          and function params, incl. dead `shouldMentionR2F` param in
-          reddit-engage and stub params in indexnow/syndication — these need
-          judgement, not blind removal).
+      [x] Batch 1b (cycle 3): unused local vars + catch bindings + unused route
+          `req` params in `src/` (14 fixes). src `no-unused-vars` 20 -> 6.
+      [ ] Batch 1b-ii: the 6 judgement-heavy leftovers — `bangkokDay`
+          (claude-tasks, multi-line + orphan comment), `staleCategories`
+          (content-planner), `title` (market-brief, cascades into `titleMatch`),
+          dead `shouldMentionR2F` param + logic (reddit-engage), and the stub
+          params `url` (indexnow) / `title` (syndication) that look like
+          intentional API shape (decide: prefix `_` vs remove).
       [ ] Batch 1c: `no-unused-vars` in `scripts/` + `render-service/` (~30,
           standalone operational tooling).
       [ ] Batch 2: `@next/next` + `jsx-a11y` warnings (img->Image, alt text).
@@ -44,9 +48,8 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
       runs lint + typecheck + build + tests and passes on the `dev-loop` branch.
 
 ## Current task
-Task: [none active; next cycle = ESLint baseline batch 1b — remaining src
-       no-unused-vars (local vars + params, with judgement on stub/API-shape
-       params and the dead shouldMentionR2F logic in reddit-engage)]
+Task: [none active; next cycle = ESLint baseline batch 1b-ii (6 judgement-heavy
+       src leftovers) OR batch 1c (scripts/ + render-service/ no-unused-vars)]
 Plan:
   1.
 Research notes:
@@ -56,8 +59,21 @@ Research notes:
     which can leave stray whitespace — check the diff after running it.
   - Files have CRLF line endings: `$`-anchored perl line-match fails; use
     unanchored substring matches or \R.
+  - Do NOT use a global (/g) regex to rewrite `catch (e: any)`: some catches use
+    `e` in the body (e.g. shorts/webhook line 76 uses e.message). Only rewrite
+    the ones lint flags as unused.
+  - Removing a local var/usage can orphan its import (e.g. router -> useRouter).
+    After any removal, re-run eslint to catch the cascade in the same cycle.
 
 ## Done
+- (2026-06-17) ESLint baseline batch 1b. Removed 12 unused local vars/imports
+  (incl. cascade: dropped `useRouter` import after removing its `router`),
+  converted 2 unused `catch (e: any)` to bindingless `catch` (also clears 2
+  no-explicit-any), and dropped 2 unused route `req` params. src no-unused-vars
+  20 -> 6. CAUGHT IN REVIEW: the initial global catch-rewrite also stripped the
+  binding from a third catch that DOES use `e.message` (broke the build);
+  restored that one. Lesson: scope catch rewrites, do not /g blindly. Green:
+  vitest 6/6, tsc, next build (281 pages). Commit on dev-loop.
 - (2026-06-17) ESLint baseline batch 1a. Auto-fixed all `prefer-const` (9
   let->const) and removed 16 unused imports across src/. Also dropped a stale
   `eslint-disable no-unreachable` directive the fixer flagged (Next's config has

@@ -49,7 +49,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     li: ({ children }) => <li className="leading-relaxed">{children}</li>,
     blockquote: ({ children }) => {
       // Check if this is a "Key Takeaway" answer block
-      const text = typeof children === "string" ? children : "";
       const childArray = Array.isArray(children) ? children : [children];
       const isKeyTakeaway = childArray.some((child: unknown) => {
         if (typeof child === "string") return child.includes("Key Takeaway");
