@@ -284,7 +284,7 @@ export default function SyndicationAdminPage() {
                     .
                   </li>
                   <li>Scroll to <strong>DEV Community API Keys</strong> at bottom.</li>
-                  <li>Name: "R2F Syndication" → click Generate API Key.</li>
+                  <li>Name: &ldquo;R2F Syndication&rdquo; → click Generate API Key.</li>
                   <li>
                     Add to Vercel env: <code className="text-gold">DEVTO_API_KEY=&lt;paste&gt;</code> → redeploy.
                   </li>
@@ -318,7 +318,7 @@ export default function SyndicationAdminPage() {
                   <li>
                     Add to Vercel env: <code className="text-gold">HASHNODE_API_KEY=&lt;paste&gt;</code> → redeploy.
                   </li>
-                  <li>After redeploy, come back here and click <strong>"Discover Publication ID"</strong> above.</li>
+                  <li>After redeploy, come back here and click <strong>&ldquo;Discover Publication ID&rdquo;</strong> above.</li>
                   <li>
                     Add to Vercel env: <code className="text-gold">HASHNODE_PUBLICATION_ID=&lt;from discover&gt;</code> → redeploy again.
                   </li>

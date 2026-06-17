@@ -331,8 +331,8 @@ export default function OutreachAdminPage() {
         <div className="bg-white/5 border border-white/10 rounded-lg p-8 text-center">
           <p className="text-white/50 mb-4">No targets yet.</p>
           <p className="text-white/30 text-sm">
-            Click <strong>"Load 15 Starters"</strong> to seed curated trading blogs, or{" "}
-            <strong>"+ Add Target"</strong> to add your own.
+            Click <strong>&ldquo;Load 15 Starters&rdquo;</strong> to seed curated trading blogs, or{" "}
+            <strong>&ldquo;+ Add Target&rdquo;</strong> to add your own.
           </p>
         </div>
       ) : (

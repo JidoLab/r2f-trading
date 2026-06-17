@@ -33,8 +33,8 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
           globalIgnores. tsc still typechecks them.
       Remaining to reach green (full-project lint now 69 problems: 52 err / 17
       warn, down from 234 at discovery):
-      [ ] Batch 2a: `react/no-unescaped-entities` (8) — mechanical JSX entity
-          escaping, low risk.
+      [x] Batch 2a (cycle 6): `react/no-unescaped-entities` (8) — escaped JSX
+          quotes with &ldquo;/&rdquo; in admin outreach + syndication pages.
       [ ] Batch 2b: `@next/next/no-img-element` (15) + `jsx-a11y/alt-text` (1)
           — convert <img> to next/image (needs width/height or fill).
       [ ] Batch 3: `@typescript-eslint/no-explicit-any` (22) — type properly;
@@ -83,6 +83,9 @@ Research notes:
     After any removal, re-run eslint to catch the cascade in the same cycle.
 
 ## Done
+- (2026-06-17) ESLint baseline batch 2a. Escaped 8 `react/no-unescaped-entities`
+  (raw `"` in JSX) with &ldquo;/&rdquo; in admin/outreach + admin/syndication.
+  Lint 69 -> 61 problems. Green: vitest 6/6, tsc, next build (281 pages).
 - (2026-06-17) ESLint baseline batch 1c. Per owner decision, added scripts/ +
   render-service/ (standalone FFmpeg render infra, separate deploy) to ESLint
   globalIgnores rather than editing deployed code. Full-project lint 234 -> 69
