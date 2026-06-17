@@ -240,6 +240,16 @@
     "referralCode": "R2F-lb6lnp",
     "referredBy": null,
     "referralCount": 0,
-    "phone": "9360126042"
+    "phone": "9360126042",
+    "score": 20,
+    "segment": "warm",
+    "events": [
+      {
+        "type": "contact_page_view",
+        "date": "2026-06-17T15:14:20.604Z"
+      }
+    ],
+    "lastActivity": "2026-06-17T15:14:20.604Z",
+    "dripsHistory": []
   }
 ]
