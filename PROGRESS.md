@@ -14,14 +14,15 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
 `master`.
 
 ## Roadmap (ordered by priority, top item is next)
-- [ ] Establish a green ESLint baseline — acceptance: `npm run lint` exits 0.
-      DISCOVERED 2026-06-17: lint is already red on master with 153 errors
-      (mostly `@typescript-eslint/no-explicit-any` in src/lib/youtube-analytics.ts,
-      mdx-components.tsx, and others) plus 81 warnings, all pre-existing and
-      unrelated to the test harness. Until this is green the loop's lint gate is
-      not trustworthy. This is likely too big for one cycle: split by file/rule,
-      or decide to scope the gate to changed files. Owner input welcome on which
-      approach (see blockers).
+- [ ] Establish a green ESLint baseline — APPROACH APPROVED 2026-06-17: fix in
+      batches over multiple cycles, safe rules first. Suggested cycle order:
+      (1) `no-unused-vars` + `prefer-const` (mechanical, low-risk),
+      (2) `@next/next` + `jsx-a11y` warnings (img->Image, alt text),
+      (3) `@typescript-eslint/no-explicit-any` (judgement-heavy, type things
+      properly, likely several cycles by file). Each cycle: fix one batch, keep
+      tsc + build + tests green, commit. Final acceptance for the whole item:
+      `npm run lint` exits 0. Baseline at discovery: 153 errors + 81 warnings,
+      all pre-existing, in files the harness never touched.
 - [ ] Unit-test the pure helpers that just shipped and are easy to break —
       acceptance: tests cover `sanitizeComment` (em/en dash stripping +
       punctuation tidy) in reddit-engage, the Pinterest dedup `buildQueue`
@@ -57,6 +58,9 @@ Research notes:
 - (2026-06-17) Did not fix the 153 pre-existing lint errors during the harness
   task — out of scope, and large enough to need its own cycle. Logged as the new
   top roadmap item instead of silently letting the gate stay red.
+- (2026-06-17) Owner approved fixing the lint baseline IN BATCHES (safe rules
+  first, then no-explicit-any) over multiple cycles, rather than scoping the gate
+  to changed files. Next cycle starts batch 1 (no-unused-vars + prefer-const).
 - (2026-06-17) Loop runs on the `dev-loop` branch, never `master`, because
   pushing master auto-deploys to the live production site. Vercel preview
   deployments on the branch serve as staging. Production is promoted by a human
