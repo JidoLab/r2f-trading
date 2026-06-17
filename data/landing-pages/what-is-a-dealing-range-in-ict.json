@@ -1,0 +1,91 @@
+{
+  "slug": "what-is-a-dealing-range-in-ict",
+  "title": "Dealing Range in ICT Explained",
+  "seoTitle": "What Is a Dealing Range in ICT? How to Mark It Correctly",
+  "seoDescription": "ICT's dealing range is misread by most traders who jump to entry without it. This page breaks down exactly how to identify, mark, and trade within a valid dealing range.",
+  "headline": "What Is a Dealing Range in ICT and How Do You Mark It?",
+  "subheadline": "Understanding dealing range gives you a structural reference for where price is likely to draw and where your entries carry the highest probability. Without it, you are guessing at context.",
+  "intro": "A dealing range in ICT is the price range defined by a significant swing high and swing low that acts as the current battleground between institutional buy-side and sell-side activity. ICT uses dealing range to frame where price sits relative to equilibrium, and whether it is positioned to target premium or discount pricing. Marking it correctly determines whether you are entering with the draw on liquidity or fighting against it.",
+  "keyPoints": [
+    {
+      "icon": "📐",
+      "title": "What a Dealing Range Actually Is",
+      "text": "A dealing range is the vertical span between a meaningful swing high and swing low on your chart. ICT frames it as an institutional reference zone divided into three sections: premium (above the 50% midpoint), equilibrium (the midpoint itself), and discount (below the midpoint). The midpoint, often called the mean threshold or equilibrium, is the anchor for all trade location decisions within that range."
+    },
+    {
+      "icon": "🎯",
+      "title": "Why It Matters for Trade Location",
+      "text": "Entering without a defined dealing range is the primary reason traders buy into resistance or sell into support without realizing it. When price is in the premium half of the range, ICT methodology favors short setups aligned with a draw toward the low. When price is in the discount half, long setups targeting the high or beyond carry institutional backing. This framing filters out a large portion of low-probability setups before you ever look for a trigger."
+    },
+    {
+      "icon": "🖊️",
+      "title": "How to Mark It on Your Chart",
+      "text": "Identify the most recent significant swing high and swing low on your higher timeframe, typically the daily or four-hour chart. Draw a Fibonacci retracement from the low to the high in a bullish context, or from high to low in a bearish context. The 50% level marks equilibrium. Levels such as 62%, 70.5%, and 79% mark premium discount zones where order blocks, FVGs, and breaker blocks become actionable. During London and New York killzones, price reactions at these levels carry the strongest confluence."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Marking Mistake",
+      "text": "Traders frequently anchor the dealing range to the wrong swing points, either using too small a leg on the higher timeframe or applying a lower timeframe range when a higher timeframe range is still the governing structure. This produces a misaligned equilibrium, making premium look like discount and vice versa. Always confirm your swing points on the timeframe where the range was created before dropping to lower timeframes for entry."
+    },
+    {
+      "icon": "📈",
+      "title": "Connecting Dealing Range to Your Next Setup",
+      "text": "Once you have the range marked, identify where liquidity rests. If price is at discount and buy-side liquidity pools such as equal highs or a previous week high sit above, the draw is confirmed. Look for a bullish order block or a fair value gap within the discount zone during a killzone window as your entry trigger. The dealing range tells you what to look for; the internal ICT concepts tell you exactly where and when to act."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What timeframe should I use to draw a dealing range in ICT?",
+      "a": "Start on the daily chart to identify the primary swing high and low, then use the four-hour chart to refine the structure. For intraday trading on pairs like EURUSD or NQ futures, the weekly dealing range often provides the macro context, while the daily range governs your session bias and entry location."
+    },
+    {
+      "q": "How is a dealing range different from a support and resistance zone?",
+      "a": "Support and resistance are reactive price levels. A dealing range is a structural context tool that tells you where price sits relative to institutional interest. It includes equilibrium and premium or discount framing, which support and resistance alone do not provide. It shapes directional bias, not just reaction points."
+    },
+    {
+      "q": "Can a dealing range be used on lower timeframes like the 15-minute chart?",
+      "a": "Yes, and ICT specifically teaches using lower timeframe dealing ranges for entry refinement. On a 15-minute GBPUSD chart, a short-term dealing range between the Asian session high and low can frame where price needs to be for a valid London killzone entry, particularly if a FVG sits in the discount of that smaller range."
+    },
+    {
+      "q": "What happens when price breaks out of the dealing range?",
+      "a": "A break of structure beyond the swing high or low typically signals that a new dealing range is forming. ICT traders watch for a break of structure, or BOS, followed by a displacement candle and a new FVG or order block. That sequence defines the new range boundary and resets the premium and discount framing for the next trading leg."
+    },
+    {
+      "q": "Do I need to redraw the dealing range every day?",
+      "a": "The range itself does not change until a BOS confirms a new range. However, you assess daily and weekly ranges alongside each other. A weekly range might still be intact while daily ranges form inside it. Most ICT traders reference at least two nested dealing ranges simultaneously to understand both macro draw and intraday entry context."
+    }
+  ],
+  "relatedTags": [
+    "ict-concepts",
+    "dealing-range",
+    "premium-and-discount",
+    "order-blocks",
+    "fair-value-gap",
+    "break-of-structure",
+    "ict-trade-location",
+    "fibonacci-in-ict",
+    "killzone-trading",
+    "liquidity-in-forex"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "how-to-find-daily-bias-in-ict",
+      "label": "Daily Bias in ICT Explained"
+    },
+    {
+      "slug": "premium-and-discount-in-ict",
+      "label": "Premium & Discount in ICT"
+    },
+    {
+      "slug": "what-is-an-inversion-fair-value-gap",
+      "label": "Inversion Fair Value Gap Explained"
+    },
+    {
+      "slug": "equal-highs-and-equal-lows-ict",
+      "label": "Equal Highs & Lows: ICT Liquidity"
+    }
+  ],
+  "testimonialIndex": 0,
+  "createdAt": "2026-06-17T05:01:31.281Z",
+  "targetKeyword": "what is a dealing range in ICT"
+}
