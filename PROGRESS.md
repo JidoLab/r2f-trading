@@ -35,8 +35,20 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
       warn, down from 234 at discovery):
       [x] Batch 2a (cycle 6): `react/no-unescaped-entities` (8) — escaped JSX
           quotes with &ldquo;/&rdquo; in admin outreach + syndication pages.
-      [ ] Batch 2b: `@next/next/no-img-element` (15) + `jsx-a11y/alt-text` (1)
-          — convert <img> to next/image (needs width/height or fill).
+      [~] Batch 2b (cycle 7): converted the 5 beneficial PUBLIC content images
+          to next/image (about mentor, results achievements, RelatedArticles +
+          trading-insights list = fill; blog-post cover [slug] = width/height +
+          priority since it's the LCP). no-img-element 15 -> 10. Verified: build
+          (281 pages) + live /about renders via /_next/image at correct size.
+          REMAINING 10 are intentional keeps, handle next:
+          [ ] layout.tsx FB tracking pixel (1x1 beacon) -> keep <img>, inline
+              eslint-disable (next/image would be wrong).
+          [ ] review/page.tsx blob-URL upload preview -> keep <img>, disable.
+          [ ] mdx-components.tsx blog-body images (2 incl. the 1 alt-text) ->
+              convert with a wrapper/known dims, or a custom MDX <img> component.
+          [ ] admin pages (competitors, image-library, signature = 7) -> ESLint
+              override off for src/app/admin/** (internal, auth-gated, no perf
+              benefit, often dynamic images).
       [ ] Batch 3: `@typescript-eslint/no-explicit-any` (22) — type properly;
           several cycles by file.
       [ ] Batch 4: react-hooks rules — `set-state-in-effect` (18), `immutability`
@@ -83,6 +95,15 @@ Research notes:
     After any removal, re-run eslint to catch the cascade in the same cycle.
 
 ## Done
+- (2026-06-17) ESLint baseline batch 2b (partial). Converted the 5 beneficial
+  public <img> to next/image: about mentor + results + RelatedArticles +
+  trading-insights list (fill, with `relative` added to each parent) and the
+  blog-post cover (width/height + priority, it's the LCP). Benefit: auto
+  AVIF/WebP + right-sized + lazy/priority + no layout shift on public pages.
+  no-img-element 15 -> 10. The other 10 are intentional keeps (FB pixel, upload
+  preview, MDX body imgs, admin) — see roadmap. Verified: next build (281) +
+  live /about image serves via /_next/image at correct dimensions. Green:
+  vitest 6/6, tsc.
 - (2026-06-17) ESLint baseline batch 2a. Escaped 8 `react/no-unescaped-entities`
   (raw `"` in JSX) with &ldquo;/&rdquo; in admin/outreach + admin/syndication.
   Lint 69 -> 61 problems. Green: vitest 6/6, tsc, next build (281 pages).

@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 import CalendlyEmbed from "@/components/CalendlyEmbed";
 import PageTracker from "@/components/PageTracker";
 import Script from "next/script";
@@ -172,8 +173,8 @@ export default function ResultsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {achievements.map((item) => (
               <div key={item.alt} className="rounded-lg overflow-hidden bg-white/5 border border-white/10">
-                <div className="aspect-square overflow-hidden">
-                  <img src={item.image} alt={item.alt} className="w-full h-full object-cover" />
+                <div className="relative aspect-square overflow-hidden">
+                  <Image src={item.image} alt={item.alt} fill sizes="(max-width: 640px) 100vw, 33vw" className="object-cover" />
                 </div>
                 <div className="p-4">
                   <p className="text-white/80 text-sm font-semibold text-center">{item.caption}</p>

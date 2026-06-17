@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 import Script from "next/script";
 import type { Metadata } from "next";
 
@@ -149,8 +150,8 @@ export default function AboutPage() {
           </h1>
           <div className="flex flex-col md:flex-row gap-10 mb-16">
             <div className="flex-shrink-0">
-              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-gold/30">
-                <img src="/mentor.png" alt="Harvest" className="w-full h-full object-cover" />
+              <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-gold/30">
+                <Image src="/mentor.png" alt="Harvest" fill sizes="160px" className="object-cover" />
               </div>
             </div>
             <div>

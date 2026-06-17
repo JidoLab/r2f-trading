@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 import EmailSignup from "@/components/EmailSignup";
 import RelatedArticles from "@/components/RelatedArticles";
 import ShareButtons from "@/components/ShareButtons";
@@ -316,13 +317,13 @@ export default async function BlogPostPage({
           </nav>
 
           {post.coverImage && (
-            <img
+            <Image
               src={post.coverImage}
               alt={post.title}
-              loading="eager"
-              decoding="async"
               width={1200}
               height={675}
+              priority
+              sizes="(max-width: 768px) 100vw, 800px"
               className="w-full rounded-lg mb-8 aspect-video object-cover"
             />
           )}

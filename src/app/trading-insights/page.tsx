@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 import { getAllPosts } from "@/lib/blog";
 import type { Metadata } from "next";
 
@@ -48,16 +49,14 @@ export default function TradingInsightsPage() {
                   href={`/trading-insights/${post.slug}`}
                   className="group block rounded-lg overflow-hidden border border-gray-200 hover:border-gold/40 transition-colors"
                 >
-                  <div className="aspect-video overflow-hidden bg-gray-100">
+                  <div className="relative aspect-video overflow-hidden bg-gray-100">
                     {post.coverImage ? (
-                      <img
+                      <Image
                         src={post.coverImage}
                         alt={post.title}
-                        loading="lazy"
-                        decoding="async"
-                        width={640}
-                        height={360}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     ) : (
                       <div className="w-full h-full bg-navy flex items-center justify-center">
