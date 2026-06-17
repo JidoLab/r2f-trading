@@ -1889,5 +1889,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-06-17T12:00:35.998Z",
+    "type": "text",
+    "postType": "tip",
+    "text": "FOMC Wednesday = reversal day. Don't chase the spike. Wait for price to return to the fair value gap",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
