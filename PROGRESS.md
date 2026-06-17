@@ -28,19 +28,21 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
           + its one caller). NOTE: `_`-prefix does NOT silence no-unused-vars in
           this config (no argsIgnorePattern), so params were removed outright.
           ===> src/ no-unused-vars now 0 (was 35 at discovery). <===
-      [ ] Batch 1c (BLOCKED, owner decision): `no-unused-vars` in `scripts/` +
-          `render-service/` (~26). These are standalone FFmpeg server scripts
-          deployed to a separate DigitalOcean/Render droplet, NOT part of the
-          Next build/test gate. `do-server-current.js`/`-patched.js`/`-live.js`
-          are near-identical variants (cruft?). Editing/deleting deployed render
-          infra is a stop-and-ask. Options: (a) fix unused vars in place,
-          (b) add scripts/ + render-service/ to eslint ignores (they are not app
-          code), (c) delete the dead do-server-* duplicates. Pending owner.
-      [ ] Batch 2: `@next/next` + `jsx-a11y` warnings (img->Image, alt text).
-      [ ] Batch 3: `@typescript-eslint/no-explicit-any` (judgement-heavy, type
-          properly; likely several cycles by file).
-      Final acceptance for the whole item: `npm run lint` exits 0. Baseline at
-      discovery: 153 errors + 81 warnings, all pre-existing.
+      [x] Batch 1c (cycle 5): owner chose to ESLint-ignore scripts/ +
+          render-service/ (standalone render infra, not app code). Added to
+          globalIgnores. tsc still typechecks them.
+      Remaining to reach green (full-project lint now 69 problems: 52 err / 17
+      warn, down from 234 at discovery):
+      [ ] Batch 2a: `react/no-unescaped-entities` (8) — mechanical JSX entity
+          escaping, low risk.
+      [ ] Batch 2b: `@next/next/no-img-element` (15) + `jsx-a11y/alt-text` (1)
+          — convert <img> to next/image (needs width/height or fill).
+      [ ] Batch 3: `@typescript-eslint/no-explicit-any` (22) — type properly;
+          several cycles by file.
+      [ ] Batch 4: react-hooks rules — `set-state-in-effect` (18), `immutability`
+          (3), `purity` (1), `exhaustive-deps` (1). Judgement-heavy React
+          refactors; do last and carefully (these are correctness-adjacent).
+      Final acceptance for the whole item: `npm run lint` exits 0.
 - [ ] Unit-test the pure helpers that just shipped and are easy to break —
       acceptance: tests cover `sanitizeComment` (em/en dash stripping +
       punctuation tidy) in reddit-engage, the Pinterest dedup `buildQueue`
@@ -54,6 +56,12 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
       cron routes return 401 when the `CRON_SECRET` bearer is missing or wrong.
 - [ ] Add CI on pull requests to master — acceptance: a GitHub Actions workflow
       runs lint + typecheck + build + tests and passes on the `dev-loop` branch.
+- [ ] Investigate the do-server-*.js trio (owner approved investigating) — diff
+      scripts/do-server-current.js / -patched.js / -live.js vs
+      render-service/server.js, identify the canonical/deployed one, and propose
+      deleting the dead variants. ACCEPTANCE: a short written comparison + a
+      deletion proposal. DO NOT delete without explicit owner approval (touches
+      render infra).
 
 ## Current task
 Task: [BLOCKED — batch 1c needs an owner decision (see blockers). Unblocked
@@ -75,6 +83,11 @@ Research notes:
     After any removal, re-run eslint to catch the cascade in the same cycle.
 
 ## Done
+- (2026-06-17) ESLint baseline batch 1c. Per owner decision, added scripts/ +
+  render-service/ (standalone FFmpeg render infra, separate deploy) to ESLint
+  globalIgnores rather than editing deployed code. Full-project lint 234 -> 69
+  problems (153 -> 52 errors). tsc still typechecks those files. Logged a
+  roadmap item to investigate the do-server-*.js duplicates (owner approved).
 - (2026-06-17) ESLint baseline batch 1b-ii. Cleared the final 6 src
   no-unused-vars: removed dead code (bangkokDay, staleCategories, market-brief
   title+titleMatch), the unused shouldMentionR2F param (logging behavior kept),
