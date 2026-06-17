@@ -1,0 +1,91 @@
+{
+  "slug": "high-resistance-liquidity-run",
+  "title": "High & Low Resistance Liquidity",
+  "seoTitle": "High Resistance Liquidity Run Explained | ICT Concepts",
+  "seoDescription": "ICT traders misread 80% of liquidity runs by ignoring market structure quality. A high resistance liquidity run signals choppy, contested price delivery. Know which runs to trade.",
+  "headline": "High Resistance Liquidity Runs: Trade Smarter Entries",
+  "subheadline": "Understanding whether a liquidity run is high or low resistance determines whether you should be in a trade at all. This single filter separates clean setups from difficult ones.",
+  "intro": "A high resistance liquidity run occurs when price moves toward a liquidity pool through contested, inefficient market structure, facing multiple opposing order blocks, fair value gaps, or price imbalances along the way. In contrast, a low resistance liquidity run moves toward the same target through clean, efficient price delivery with minimal opposing structure in the path. ICT traders use this distinction to assess the quality and conviction of a potential move before committing to a position.",
+  "keyPoints": [
+    {
+      "icon": "🧱",
+      "title": "What High vs Low Resistance Means",
+      "text": "Resistance in this context refers to the structural obstacles between current price and a liquidity target such as buy-side or sell-side liquidity resting above highs or below lows. A low resistance path has few or no opposing fair value gaps, order blocks, or consolidation zones between price and its target. A high resistance path is littered with those same elements, making the run harder and less reliable to trade."
+    },
+    {
+      "icon": "📍",
+      "title": "Why This Changes Your Trade Decision",
+      "text": "Entering a trade where price has to fight through multiple opposing order blocks and FVGs to reach its liquidity target dramatically reduces the probability of a clean, timely move. Price may still reach the target eventually, but it will often stall, retrace, or chop through those zones first. For ICT traders, a high resistance run is a signal to either reduce position size, wait for a better entry closer to the target, or skip the trade entirely."
+    },
+    {
+      "icon": "🗺️",
+      "title": "How to Identify the Path Before Entering",
+      "text": "Before executing any trade, mark the liquidity target on your higher timeframe chart, then work down to your execution timeframe and map every fair value gap, order block, and area of price imbalance sitting between current price and that target. Count the opposing structural elements. On a pair like EURUSD on the 15-minute chart, if price is heading toward sell-side liquidity and there are two bullish order blocks and an unfilled FVG sitting above current price in the path, that run is high resistance. A clean path has none of those obstacles."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "Traders frequently fixate on the liquidity target itself and ignore the terrain between entry and target. Spotting buy-side liquidity above a swing high and immediately entering long is an incomplete analysis. The presence of bearish order blocks, inefficient price delivery, or a previous distribution range sitting between entry and target can turn a high-conviction-looking trade into a slow grind or outright loss. The target is only half the analysis."
+    },
+    {
+      "icon": "📈",
+      "title": "Next Steps: Build a Path-Clarity Checklist",
+      "text": "Start incorporating a pre-trade path audit into your routine during the London or New York killzone sessions. On every setup, ask whether the path from entry to liquidity target is clear on both the higher timeframe context and the execution timeframe. Use the higher timeframe to identify the draw on liquidity, use the 15-minute or 5-minute to assess the structural quality of the delivery. Over time this habit shifts your focus from chasing setups to selecting only the trades where structure supports the move."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a high resistance liquidity run in ICT trading?",
+      "a": "A high resistance liquidity run is a move toward a liquidity pool, such as equal highs or a stop cluster, where multiple opposing structural elements sit in the path. These include bearish order blocks, unfilled fair value gaps, and price imbalances that price must work through before reaching its target, making the move slower and less reliable."
+    },
+    {
+      "q": "How do I know if a liquidity run is low resistance or high resistance?",
+      "a": "Map every order block and fair value gap between current price and your identified liquidity target on the execution timeframe. On GBPUSD at the 15-minute level, a clear path with no opposing structure is low resistance. Multiple unfilled gaps or opposing blocks in that same path indicate high resistance. Count the obstacles before entering."
+    },
+    {
+      "q": "Should I avoid high resistance liquidity runs entirely?",
+      "a": "Not necessarily, but you should adjust your approach. High resistance runs often warrant a smaller position size, a tighter risk parameter, or waiting for price to clear one of the opposing structural levels before entering. Skipping the trade entirely is also valid when the path is heavily contested and the risk-to-reward ratio shrinks as a result."
+    },
+    {
+      "q": "Does a break of structure confirm a low resistance run?",
+      "a": "A break of structure confirms directional bias but does not automatically confirm a clean path. After a BOS on the 1-hour chart in a pair like NAS100, you still need to assess whether the price delivery to the next liquidity pool is efficient. Structural breaks with a preceding fair value gap left behind often signal stronger, lower-resistance continuation moves."
+    },
+    {
+      "q": "How does this concept relate to the daily bias in ICT methodology?",
+      "a": "Your higher timeframe daily bias identifies the draw on liquidity. The high versus low resistance concept helps you evaluate whether the intraday delivery supports acting on that bias during the current killzone session. A strong daily bias with a high resistance intraday path often means waiting for a cleaner entry point rather than forcing a trade."
+    }
+  ],
+  "relatedTags": [
+    "ict-liquidity",
+    "buy-side-liquidity",
+    "sell-side-liquidity",
+    "fair-value-gap",
+    "order-block",
+    "market-structure",
+    "break-of-structure",
+    "daily-bias",
+    "killzone-trading",
+    "ict-concepts"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "equal-highs-and-equal-lows-ict",
+      "label": "Equal Highs & Lows: ICT Liquidity"
+    },
+    {
+      "slug": "how-to-find-daily-bias-in-ict",
+      "label": "Daily Bias in ICT Explained"
+    },
+    {
+      "slug": "how-to-trade-liquidity-sweeps",
+      "label": "How to Trade Liquidity Sweeps"
+    },
+    {
+      "slug": "ict-trading-for-beginners",
+      "label": "ICT Trading: Beginner Roadmap"
+    }
+  ],
+  "testimonialIndex": 0,
+  "createdAt": "2026-06-17T05:02:06.541Z",
+  "targetKeyword": "high resistance liquidity run"
+}
