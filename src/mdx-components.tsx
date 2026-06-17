@@ -90,6 +90,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     hr: () => <hr className="my-8 border-gray-200" />,
     img: (props) => (
+      // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text -- MDX body images: dynamic src with unknown intrinsic dimensions and alt supplied via markdown props. A proper next/image conversion needs per-image dims and is tracked as a future task.
       <img {...props} className="rounded-lg my-6 w-full" />
     ),
     ...components,

@@ -35,22 +35,15 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
       warn, down from 234 at discovery):
       [x] Batch 2a (cycle 6): `react/no-unescaped-entities` (8) — escaped JSX
           quotes with &ldquo;/&rdquo; in admin outreach + syndication pages.
-      [~] Batch 2b (cycle 7): converted the 5 beneficial PUBLIC content images
-          to next/image (about mentor, results achievements, RelatedArticles +
-          trading-insights list = fill; blog-post cover [slug] = width/height +
-          priority since it's the LCP). no-img-element 15 -> 10. Verified: build
-          (281 pages) + live /about renders via /_next/image at correct size.
-          REMAINING 10 are intentional keeps, handle next:
-          [ ] layout.tsx FB tracking pixel (1x1 beacon) -> keep <img>, inline
-              eslint-disable (next/image would be wrong).
-          [ ] review/page.tsx blob-URL upload preview -> keep <img>, disable.
-          [ ] mdx-components.tsx blog-body images (2 incl. the 1 alt-text) ->
-              convert with a wrapper/known dims, or a custom MDX <img> component.
-          [ ] admin pages (competitors, image-library, signature = 7) -> ESLint
-              override off for src/app/admin/** (internal, auth-gated, no perf
-              benefit, often dynamic images).
+      [x] Batch 2b (cycles 7-8): DONE. no-img-element + alt-text now 0.
+          Cycle 7 converted the 5 beneficial public images to next/image.
+          Cycle 8 handled the 10 intentional keeps: inline eslint-disable on the
+          FB tracking pixel (layout) and the upload-preview blob img (review),
+          a disable on the MDX body-image component (dynamic dims; a proper MDX
+          image component is a future task), and an ESLint override turning
+          no-img-element off for src/app/admin/** (internal dashboards).
       [ ] Batch 3: `@typescript-eslint/no-explicit-any` (22) — type properly;
-          several cycles by file.
+          several cycles by file. NEXT UP. Full lint now 45 (was 234).
       [ ] Batch 4: react-hooks rules — `set-state-in-effect` (18), `immutability`
           (3), `purity` (1), `exhaustive-deps` (1). Judgement-heavy React
           refactors; do last and carefully (these are correctness-adjacent).
@@ -95,6 +88,14 @@ Research notes:
     After any removal, re-run eslint to catch the cascade in the same cycle.
 
 ## Done
+- (2026-06-17) ESLint baseline batch 2b finished (cycle 8). no-img-element +
+  alt-text now 0. Kept-as-<img> with scoped eslint-disable + reason: FB 1x1
+  pixel (layout), upload blob preview (review), MDX body images (mdx-components,
+  dynamic dims). Added ESLint override to turn no-img-element off for
+  src/app/admin/** (internal dashboards, no perf benefit). Full lint 61 -> 45.
+  Note: had to `rm -rf .next` before build — the dev server run during preview
+  left a half-written .next/dev/types/routes.d.ts that broke `tsc`/build type
+  check; clean rebuild is green (281 pages). vitest 6/6.
 - (2026-06-17) ESLint baseline batch 2b (partial). Converted the 5 beneficial
   public <img> to next/image: about mentor + results + RelatedArticles +
   trading-insights list (fill, with `relative` added to each parent) and the

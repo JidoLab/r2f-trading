@@ -205,6 +205,7 @@ export default function ReviewPage() {
               </p>
               {photoPreview ? (
                 <div className="relative inline-block">
+                  {/* eslint-disable-next-line @next/next/no-img-element -- client-side blob/data-URL preview of the user's just-selected upload; transient and has no fixed dimensions, so next/image cannot optimize it. */}
                   <img src={photoPreview} alt="Preview" className="max-h-40 rounded-lg border border-white/10" />
                   <button
                     type="button"

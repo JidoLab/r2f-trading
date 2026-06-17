@@ -5,6 +5,15 @@ import nextTs from "eslint-config-next/typescript";
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
+  // Admin dashboards are internal, auth-gated, and not indexed, so image
+  // optimization gives no real benefit and the images are often dynamic /
+  // user-managed. Don't force next/image there.
+  {
+    files: ["src/app/admin/**"],
+    rules: {
+      "@next/next/no-img-element": "off",
+    },
+  },
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:
