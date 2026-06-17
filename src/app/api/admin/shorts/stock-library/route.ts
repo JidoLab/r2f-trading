@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { verifyAdmin, verifyAdminOrCron } from "@/lib/admin-auth";
+import { verifyAdminOrCron } from "@/lib/admin-auth";
 import {
   expandCategoryFromPexels,
   getLibraryStats,

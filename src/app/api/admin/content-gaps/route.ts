@@ -56,7 +56,7 @@ export async function GET() {
   } catch {}
 
   // Get landing page topics
-  let landingPageTopics: string[] = [];
+  const landingPageTopics: string[] = [];
   try {
     const { listFiles } = await import("@/lib/github");
     const files = await listFiles("data/landing-pages", ".json");

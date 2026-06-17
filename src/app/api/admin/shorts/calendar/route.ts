@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { verifyAdmin } from "@/lib/admin-auth";
-import { readFile, commitFile } from "@/lib/github";
+import { readFile } from "@/lib/github";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;

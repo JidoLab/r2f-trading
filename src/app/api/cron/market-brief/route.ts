@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { commitFile, readFile, listFiles } from "@/lib/github";
+import { commitFile, readFile } from "@/lib/github";
 
 export const maxDuration = 120; // 2 minutes
 

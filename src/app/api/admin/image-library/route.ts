@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { verifyAdmin } from "@/lib/admin-auth";
-import { readFile, commitFile, listFiles, deleteFile } from "@/lib/github";
+import { readFile, commitFile, deleteFile } from "@/lib/github";
 
 export const maxDuration = 30;
 

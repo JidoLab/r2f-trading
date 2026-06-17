@@ -520,7 +520,6 @@ async function searchMedium(): Promise<PostResult[]> {
   // suspension lifts. Restore by removing this early return.
   return [];
 
-  // eslint-disable-next-line no-unreachable
   const results: PostResult[] = [];
   const seen = new Set<string>();
 

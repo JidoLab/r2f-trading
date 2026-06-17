@@ -14,15 +14,21 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
 `master`.
 
 ## Roadmap (ordered by priority, top item is next)
-- [ ] Establish a green ESLint baseline — APPROACH APPROVED 2026-06-17: fix in
-      batches over multiple cycles, safe rules first. Suggested cycle order:
-      (1) `no-unused-vars` + `prefer-const` (mechanical, low-risk),
-      (2) `@next/next` + `jsx-a11y` warnings (img->Image, alt text),
-      (3) `@typescript-eslint/no-explicit-any` (judgement-heavy, type things
-      properly, likely several cycles by file). Each cycle: fix one batch, keep
-      tsc + build + tests green, commit. Final acceptance for the whole item:
-      `npm run lint` exits 0. Baseline at discovery: 153 errors + 81 warnings,
-      all pre-existing, in files the harness never touched.
+- [ ] Establish a green ESLint baseline (IN PROGRESS) — fix in batches, safe
+      rules first. Progress:
+      [x] Batch 1a (cycle 2): all `prefer-const` (9) + unused imports in `src/`
+          (16). src `no-unused-vars` down 35 -> 20.
+      [ ] Batch 1b: remaining `no-unused-vars` in `src/` (~20 unused local vars
+          and function params, incl. dead `shouldMentionR2F` param in
+          reddit-engage and stub params in indexnow/syndication — these need
+          judgement, not blind removal).
+      [ ] Batch 1c: `no-unused-vars` in `scripts/` + `render-service/` (~30,
+          standalone operational tooling).
+      [ ] Batch 2: `@next/next` + `jsx-a11y` warnings (img->Image, alt text).
+      [ ] Batch 3: `@typescript-eslint/no-explicit-any` (judgement-heavy, type
+          properly; likely several cycles by file).
+      Final acceptance for the whole item: `npm run lint` exits 0. Baseline at
+      discovery: 153 errors + 81 warnings, all pre-existing.
 - [ ] Unit-test the pure helpers that just shipped and are easy to break —
       acceptance: tests cover `sanitizeComment` (em/en dash stripping +
       punctuation tidy) in reddit-engage, the Pinterest dedup `buildQueue`
@@ -38,12 +44,25 @@ this roadmap is empty. Production deploys are a human merge from `dev-loop` to
       runs lint + typecheck + build + tests and passes on the `dev-loop` branch.
 
 ## Current task
-Task: [none active; next cycle picks the top roadmap item — the ESLint baseline]
+Task: [none active; next cycle = ESLint baseline batch 1b — remaining src
+       no-unused-vars (local vars + params, with judgement on stub/API-shape
+       params and the dead shouldMentionR2F logic in reddit-engage)]
 Plan:
   1.
 Research notes:
+  - eslint --fix only touches fixable rules; among currently-firing rules only
+    prefer-const is auto-fixable, so `eslint src --fix` is safe to reuse. It also
+    removes unused eslint-disable directives (reportUnusedDisableDirectives),
+    which can leave stray whitespace — check the diff after running it.
+  - Files have CRLF line endings: `$`-anchored perl line-match fails; use
+    unanchored substring matches or \R.
 
 ## Done
+- (2026-06-17) ESLint baseline batch 1a. Auto-fixed all `prefer-const` (9
+  let->const) and removed 16 unused imports across src/. Also dropped a stale
+  `eslint-disable no-unreachable` directive the fixer flagged (Next's config has
+  no-unreachable off) and cleaned the leftover whitespace. src `no-unused-vars`
+  35 -> 20. Green: vitest 6/6, tsc, next build (281 pages). Commit on dev-loop.
 - (2026-06-17) Set up the test harness. Vitest 4.1.9 added as devDependency,
   `vitest.config.ts` (node env, `@ -> ./src` alias), `test`/`test:watch` scripts,
   and `tests/date-context.test.ts` (6 assertions over the pure date helpers).

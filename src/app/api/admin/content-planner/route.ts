@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { verifyAdmin } from "@/lib/admin-auth";
-import { readFile, listFiles } from "@/lib/github";
+import { readFile } from "@/lib/github";
 import { getAllPosts } from "@/lib/blog";
 import Anthropic from "@anthropic-ai/sdk";
 

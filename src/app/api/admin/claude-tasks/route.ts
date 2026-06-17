@@ -48,7 +48,7 @@ function shouldRegenerate(lastGenerated: string): boolean {
 
 async function gatherBusinessState() {
   // Subscribers
-  let subscriberStats = { total: 0, hot: 0, warm: 0, cold: 0, avgScore: 0 };
+  const subscriberStats = { total: 0, hot: 0, warm: 0, cold: 0, avgScore: 0 };
   try {
     const raw = await readFile("data/subscribers.json");
     const subs: Record<string, unknown>[] = JSON.parse(raw);
@@ -61,7 +61,7 @@ async function gatherBusinessState() {
   } catch {}
 
   // Payments
-  let paymentStats = { total: 0, revenue: 0, thisMonth: 0 };
+  const paymentStats = { total: 0, revenue: 0, thisMonth: 0 };
   try {
     const raw = await readFile("data/payments.json");
     const payments: Record<string, unknown>[] = JSON.parse(raw);
@@ -77,7 +77,7 @@ async function gatherBusinessState() {
   const recentTopics = posts.slice(0, 10).map(p => p.title).join(", ");
 
   // Shorts
-  let shortsStats = { total: 0, published: 0 };
+  const shortsStats = { total: 0, published: 0 };
   try {
     const files = await listFiles("data/shorts/renders");
     for (const file of files) {
@@ -92,7 +92,7 @@ async function gatherBusinessState() {
   } catch {}
 
   // Reddit engagement
-  let redditStats = { totalComments: 0, withReplies: 0 };
+  const redditStats = { totalComments: 0, withReplies: 0 };
   try {
     const raw = await readFile("data/reddit-engage-log.json");
     const log: Record<string, unknown>[] = JSON.parse(raw);

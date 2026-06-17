@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
 import { readFile, commitFile } from "@/lib/github";
-import { sendWhatsAppMessage, markAsRead, isWhatsAppConfigured } from "@/lib/whatsapp";
+import { sendWhatsAppMessage, markAsRead } from "@/lib/whatsapp";
 import { sendTelegramReport } from "@/lib/telegram-report";
 
 export const maxDuration = 30;

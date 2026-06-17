@@ -72,7 +72,7 @@ async function fetchCompetitorData(competitor: { name: string; channel: string }
     const videoIds = (videosResult.items || []).map((v: { id: { videoId: string } }) => v.id.videoId).join(",");
 
     // Get video stats
-    let videoStats: Record<string, string> = {};
+    const videoStats: Record<string, string> = {};
     if (videoIds) {
       const statsResult = await ytFetch("videos", {
         part: "statistics",

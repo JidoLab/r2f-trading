@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { commitFile, readFile, listFiles } from "@/lib/github";
+import { commitFile, listFiles } from "@/lib/github";
 import { notifyIndexNow } from "@/lib/indexnow";
 import { postToAll, postLinkedInArticle } from "@/lib/social";
 import Anthropic from "@anthropic-ai/sdk";

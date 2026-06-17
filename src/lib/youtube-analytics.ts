@@ -1,4 +1,4 @@
-import { commitFile, readFile } from "./github";
+import { commitFile } from "./github";
 
 /**
  * Phase 9: YouTube Analytics Feedback Loop

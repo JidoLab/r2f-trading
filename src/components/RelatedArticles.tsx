@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllPosts, type BlogPost } from "@/lib/blog";
+import { getAllPosts } from "@/lib/blog";
 
 export default function RelatedArticles({ currentSlug, currentTags }: { currentSlug: string; currentTags: string[] }) {
   const allPosts = getAllPosts();
