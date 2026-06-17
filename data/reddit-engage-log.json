@@ -3450,5 +3450,35 @@
     "commentedAt": "2026-06-17T03:01:19.084Z",
     "permalink": "/r/InnerCircleTraders/comments/1u795q5/built_a_free_trading_journal_with_ai_psychology/os42gsy/",
     "commentId": "os42gsy"
+  },
+  {
+    "postId": "1u7to32",
+    "subreddit": "proptrading",
+    "postTitle": "How many funded accounts have you lost because you broke your own rules?",
+    "commentText": "this is mostly right but i'd push back on framing it as purely emotional failure. tbh some of those \"rule breaks\" are symptoms of a flawed model, not just weak discipline. if your OB on the 15m during london open keeps getting blown through, you start doubting the setup mid-trade and that's when the revenge cycle kicks in. the system shaking your confidence is what opens the door to the emotional stuff in the first place. curious what your actual entry model looks like when you blow through max loss, are you usually fighting the dealing range or getting chopped up between two FVGs with no clean BOS to lean on?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-17T08:01:01.589Z",
+    "permalink": "/r/proptrading/comments/1u7to32/how_many_funded_accounts_have_you_lost_because/os56ksg/",
+    "commentId": "os56ksg"
+  },
+  {
+    "postId": "1u7kuhu",
+    "subreddit": "proptrading",
+    "postTitle": "After blowing way too many prop accounts, I finally built the journal I wanted",
+    "commentText": "the journal idea is solid, but tbh the \"mistake identification\" piece is where most of these tools fall short. they'll tell you \"you moved your stop\" or \"you overtraded\" but they can't tell you *why*, like whether you were chasing price after a clean FVG on the 15m already got filled and you missed the actual entry. the categorization only helps if the setups feeding into it are defined precisely enough to begin with. curious how you're labeling your setups in the journal, are you tagging by structure concept or just entry type?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-17T08:01:11.073Z",
+    "permalink": "/r/proptrading/comments/1u7kuhu/after_blowing_way_too_many_prop_accounts_i/os56lgq/",
+    "commentId": "os56lgq"
+  },
+  {
+    "postId": "1u7pztz",
+    "subreddit": "ICTMentorship",
+    "postTitle": "my trading setup",
+    "commentText": "the RR targeting buyside and sellside is solid in theory, but the catch most people miss is that price doesn't always deliver cleanly between the two pools, it'll often tap an intermediate FVG or breaker block first and shake out early entries before continuing. tbh if you're not accounting for those internal delivery points on a lower timeframe like the 15m or 5m, your TP might get taken out by a liquidity sweep you didn't see coming. what session are you timing your entries in, and are you getting confirmation from a BOS before you commit to the trade?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-17T08:01:18.092Z",
+    "permalink": "/r/ICTMentorship/comments/1u7pztz/my_trading_setup/os56ly5/",
+    "commentId": "os56ly5"
   }
 ]
