@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "generate-post": "npx tsx scripts/generate-post.ts",
     "create-short": "npx tsx scripts/shorts/create-short.ts",
     "generate-short": "npx tsx scripts/shorts/generate-script.ts",
@@ -40,7 +42,8 @@
     "eslint-config-next": "16.2.2",
     "tailwindcss": "^4",
     "tsx": "^4.21.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.1.9"
   },
   "browserslist": [
     "Chrome >= 94",
