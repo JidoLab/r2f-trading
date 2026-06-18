@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-02T02:23:10.168Z",
+  "generatedAt": "2026-06-18T10:06:04.358Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Tuesday, 2 June 2026 at 09:23 (Bangkok)",
+  "dateTime": "Thursday, 18 June 2026 at 17:06 (Bangkok)",
   "overnight": {
-    "newSubscribers": 0,
+    "newSubscribers": 2,
     "payments": {
       "count": 0,
       "revenue": 0
@@ -12,21 +12,27 @@
   },
   "contentStatus": {
     "blogPostsToday": 0,
-    "totalBlogPosts": 125,
-    "shortsReady": 44,
+    "totalBlogPosts": 128,
+    "shortsReady": 50,
     "shortsPublished": 30,
     "shortsRendering": 4,
-    "socialPostsThisWeek": 14
+    "socialPostsThisWeek": 8
   },
   "hotLeads": {
-    "count": 0,
-    "recentHot": []
+    "count": 1,
+    "recentHot": [
+      {
+        "email": "keerthivasanchampionvasan@gmail.com",
+        "score": 59,
+        "lastActivity": "2026-06-18T09:00:25.818Z"
+      }
+    ]
   },
   "suggestions": [
-    "With 44 YouTube Shorts ready and 4 still rendering, manually review and schedule a burst-publish strategy to push 10+ Shorts this week to accelerate channel growth and top-of-funnel traffic.",
-    "All 8 subscribers are cold with an average of 5.8 drips each — personally reach out to the most engaged cold leads via a direct Telegram or LINE message from Harvest to break the ice and qualify intent.",
-    "Zero new subscribers yesterday signals a traffic problem — Harvest should personally post 1 high-value ICT trading tip or personal story on TikTok or Instagram Reels today to drive organic sign-ups.",
-    "With 125 blog posts published but 0 chat conversations and no hot leads, set up a targeted lead magnet (e.g. a free ICT killzone cheat sheet) gated behind an opt-in form to convert blog readers into subscribers."
+    "Personally message keerthivasanchampionvasan@gmail.com on Telegram or WhatsApp with a direct, time-sensitive offer (e.g., 'Spots closing this week') since they viewed the coaching page and are your only hot lead.",
+    "With 20 YouTube Shorts queued but unpublished, manually review and schedule the remaining 20 to publish at optimal times (e.g., 2–3 per day) to accelerate organic reach.",
+    "With 0 Reddit upvotes and no traction, manually craft and post 2–3 high-value, non-promotional ICT trading answers on r/Forex or r/Daytrading today to seed credibility before automation resumes.",
+    "With only 12 subscribers and 0 payments this week, create a new lead magnet (e.g., a free ICT concept cheat sheet) and manually promote it in 2–3 Bangkok or Southeast Asia trading Facebook Groups to drive fresh top-of-funnel traffic."
   ],
   "schedule": [
     {
