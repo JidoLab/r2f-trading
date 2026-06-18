@@ -14,6 +14,7 @@ interface FunnelData {
 
 interface HotLead {
   email: string;
+  phone?: string | null;
   score: number;
   segment: string;
   date: string;
@@ -260,6 +261,16 @@ export default function AdminPipelinePage() {
                 >
                   <td className="px-6 py-4 text-white/90 text-sm">
                     {lead.email}
+                    {lead.phone && (
+                      <a
+                        href={`https://wa.me/${lead.phone.replace(/\D/g, "")}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-xs text-green-400 hover:underline mt-0.5"
+                      >
+                        📱 {lead.phone}
+                      </a>
+                    )}
                   </td>
                   <td className="px-6 py-4">
                     <span className="text-red-400 font-bold text-sm">

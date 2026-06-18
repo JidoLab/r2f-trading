@@ -211,6 +211,7 @@ export async function GET(req: NextRequest) {
       const email = sub.email as string;
       const name = (sub.name as string) || email.split("@")[0];
       const score = (sub.score as number) || 0;
+      const phone = (sub.phone as string) || "";
       const signupDate = new Date(sub.date as string).getTime();
       const daysSinceSignup = Math.floor((now - signupDate) / 86400000);
 
@@ -229,7 +230,10 @@ export async function GET(req: NextRequest) {
         const tgToken = process.env.TELEGRAM_BOT_TOKEN;
         const tgChat = process.env.TELEGRAM_OWNER_CHAT_ID;
         if (tgToken && tgChat) {
-          const message = `🔥 HOT LEAD ALERT\n\nEmail: ${email}\nScore: ${score}\nDays since signup: ${daysSinceSignup}\n\nThey've been viewing your coaching page. Consider reaching out!`;
+          const phoneLines = phone
+            ? `\nPhone: ${phone}\nWhatsApp: https://wa.me/${phone.replace(/\D/g, "")}`
+            : "";
+          const message = `🔥 HOT LEAD ALERT\n\nEmail: ${email}${phoneLines}\nScore: ${score}\nDays since signup: ${daysSinceSignup}\n\nThey've been viewing your coaching page. Consider reaching out!`;
           await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },

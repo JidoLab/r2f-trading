@@ -6,6 +6,7 @@ interface Subscriber {
   email: string;
   date: string;
   dripsSent: number;
+  phone?: string;
 }
 
 export default function AdminSubscribersPage() {
@@ -139,7 +140,19 @@ export default function AdminSubscribersPage() {
             <tbody>
               {subscribers.map((sub) => (
                 <tr key={sub.email} className="border-b border-white/5 last:border-0 hover:bg-white/[0.02]">
-                  <td className="px-6 py-4 text-white/90 text-sm">{sub.email}</td>
+                  <td className="px-6 py-4 text-white/90 text-sm">
+                    {sub.email}
+                    {sub.phone && (
+                      <a
+                        href={`https://wa.me/${sub.phone.replace(/\D/g, "")}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-xs text-green-400 hover:underline mt-0.5"
+                      >
+                        📱 {sub.phone}
+                      </a>
+                    )}
+                  </td>
                   <td className="px-6 py-4 text-white/50 text-sm">
                     {new Date(sub.date).toLocaleDateString()}
                   </td>

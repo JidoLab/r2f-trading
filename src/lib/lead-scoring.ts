@@ -37,6 +37,7 @@ export interface ScoredSubscriber {
   events: SubscriberEvent[];
   lastActivity: string;
   dripsHistory: string[];
+  phone?: string;
 }
 
 // Ensure backward compatibility with old subscriber records
@@ -50,6 +51,7 @@ export function normalizeSubscriber(sub: Record<string, unknown>): ScoredSubscri
     events: (sub.events as SubscriberEvent[]) || [],
     lastActivity: (sub.lastActivity as string) || (sub.date as string) || "",
     dripsHistory: (sub.dripsHistory as string[]) || [],
+    phone: (sub.phone as string) || undefined,
   };
 }
 

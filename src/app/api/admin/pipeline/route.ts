@@ -65,6 +65,7 @@ export async function GET() {
       const daysSinceSignup = Math.floor((now - new Date(s.date).getTime()) / 86400000);
       return {
         email: s.email,
+        phone: s.phone || null,
         score: s.score,
         segment: s.segment,
         date: s.date,
