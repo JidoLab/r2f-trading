@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll-native",
     "question",
     "poll",
     "poll-native",
@@ -29,11 +28,12 @@
     "story",
     "quote",
     "promo-free-class",
-    "tip"
+    "tip",
+    "promo-results"
   ],
   "lastPost": {
-    "type": "tip",
-    "text": "FOMC Wednesday = reversal day. Don't chase the spike. Wait for price to return to the fair value gap AFTER the news, then look for your entry. Reactive traders lose. Patient traders eat. #FairValueGap #ICTTrading #R2FTrading",
-    "date": "2026-06-17T12:00:35.149Z"
+    "type": "promo-results",
+    "text": "R2F traders are passing funded challenges while everyone else is blaming 'summer lull' conditions. Order blocks + FVGs hit different when you actually understand the structure. Real results, real people 👇\nhttps://r2ftrading.com/results\n#ICTTrading #FundedTrader #SmartMoneyConcepts",
+    "date": "2026-06-18T12:00:42.953Z"
   }
 }
