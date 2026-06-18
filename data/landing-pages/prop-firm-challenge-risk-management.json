@@ -1,0 +1,91 @@
+{
+  "slug": "prop-firm-challenge-risk-management",
+  "title": "Prop Challenge Risk Management",
+  "seoTitle": "Prop Firm Challenge Risk Management: ICT Method",
+  "seoDescription": "Most traders fail prop firm challenges in the first 3 days by over-trading. Solid prop firm challenge risk management means sizing down, using killzones, and protecting drawdown daily.",
+  "headline": "Risk Rules That Keep Your Prop Challenge Alive",
+  "subheadline": "A structured approach to drawdown, position sizing, and trade selection so you pass the challenge without blowing the account on a single bad session.",
+  "intro": "Prop firm challenge risk management is the practice of controlling position size, daily loss exposure, and trade frequency to stay within a firm's drawdown limits while still generating enough profit to hit the target. Most challenges set a maximum daily drawdown of 4 to 5 percent and an overall drawdown ceiling of 8 to 10 percent, which means a single reckless session can end the attempt. The goal is to compound small, consistent gains using high-probability ICT setups rather than trying to pass the challenge in a week.",
+  "keyPoints": [
+    {
+      "icon": "📐",
+      "title": "What Prop Risk Management Is",
+      "text": "Prop firm challenge risk management is a framework of pre-defined rules that govern how much capital you risk per trade, per session, and in total across the challenge. It is not general trading discipline applied loosely. It is a strict set of numbers calculated against the firm's specific drawdown thresholds before you place a single trade."
+    },
+    {
+      "icon": "⚠️",
+      "title": "Why Drawdown Rules Define Everything",
+      "text": "A prop firm's daily drawdown limit is typically calculated on the prior day's closing balance or the highest intraday equity, depending on the firm. Breaching it ends the challenge immediately regardless of your overall profit. Understanding exactly which calculation method your firm uses determines how aggressively you can trade after a winning morning session."
+    },
+    {
+      "icon": "🎯",
+      "title": "How to Size and Structure Each Trade",
+      "text": "Limit risk to 0.5 to 1 percent of the challenge account per trade and cap total daily risk at 2 to 3 percent. Enter only during proven ICT killzones, the London open and New York AM session, where fair value gaps and order blocks form with confluence. If you take two losses in a session, close the platform and return the next day. This single rule prevents the spiral that ends most challenges."
+    },
+    {
+      "icon": "🚫",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "Traders consistently over-leverage early in the challenge, chasing a fast pass when they see the profit target looking achievable. Taking 3 to 5 percent risk on a single GBPUSD trade because a daily order block looks clean is the pattern that erases accounts. The setup may be valid by ICT criteria, but the position size turns a normal 15-pip stop into an account-ending event."
+    },
+    {
+      "icon": "✅",
+      "title": "Next Steps: Build a Challenge Protocol",
+      "text": "Before funding the challenge, write out your daily loss limit, maximum lot size per trade, and the specific killzones you will trade. Map out which ICT concepts you will use for entry: BOS confirmation, FVG fills, or displacement into an order block. Review this protocol each morning. Passing a prop challenge is a process outcome, not a reaction to the market."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the safest risk per trade for a prop firm challenge?",
+      "a": "Most experienced traders cap individual trade risk at 0.5 to 1 percent of the challenge balance. On a 100k challenge account that means risking 500 to 1000 dollars per trade. This keeps a losing streak of three trades well inside the daily drawdown limit and preserves the account for the next session."
+    },
+    {
+      "q": "Can I trade news events during a prop firm challenge?",
+      "a": "Most prop firms prohibit holding positions through high-impact news or widen spreads dramatically at those moments. Trade the ICT New York AM killzone before major events like NFP or CPI, then close positions beforehand. Re-entering after the initial liquidity sweep post-news is lower risk than holding through the release itself."
+    },
+    {
+      "q": "How do I avoid hitting the daily drawdown limit?",
+      "a": "Set a personal daily stop loss at 2 percent when the firm's limit is 4 or 5 percent. After two losing trades on NQ futures or EURUSD on the 15-minute chart, stop trading for the day. This buffer gives you room to absorb slippage and spread costs without approaching the firm's hard cut-off."
+    },
+    {
+      "q": "Should I trade every day during a prop challenge?",
+      "a": "No. Trading only when ICT killzones align with a clear market structure shift, a BOS on the 1-hour chart followed by a fair value gap on the 15-minute, gives you fewer but higher-probability entries. Forcing trades on low-structure days to feel productive is one of the main reasons challenges fail in weeks 2 and 3."
+    },
+    {
+      "q": "What happens if I'm close to the profit target with 5 days left?",
+      "a": "Reduce position size, not increase it. Traders who are 1 percent away from the profit target often double their size to finish fast and end up triggering the daily drawdown limit instead. Scale down to 0.25 percent risk per trade, look for a clean order block entry on GBPUSD or NQ during the London session, and let the target come to you."
+    }
+  ],
+  "relatedTags": [
+    "prop-firm-challenge",
+    "risk-management",
+    "ict-methodology",
+    "position-sizing",
+    "killzone-trading",
+    "drawdown-rules",
+    "order-blocks",
+    "fair-value-gap",
+    "funded-account",
+    "forex-futures-trading"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "stop-loss-with-order-blocks",
+      "label": "Stop Loss With Order Blocks"
+    },
+    {
+      "slug": "how-to-find-daily-bias-in-ict",
+      "label": "Daily Bias in ICT Explained"
+    },
+    {
+      "slug": "how-to-identify-order-blocks",
+      "label": "How to Identify Order Blocks"
+    },
+    {
+      "slug": "how-to-trade-fair-value-gaps",
+      "label": "How to Trade Fair Value Gaps"
+    }
+  ],
+  "testimonialIndex": 1,
+  "createdAt": "2026-06-18T05:01:30.886Z",
+  "targetKeyword": "prop firm challenge risk management"
+}
