@@ -236,12 +236,12 @@
   {
     "email": "keerthivasanchampionvasan@gmail.com",
     "date": "2026-06-17T15:02:48.371Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-lb6lnp",
     "referredBy": null,
     "referralCount": 0,
     "phone": "9360126042",
-    "score": 55,
+    "score": 59,
     "segment": "hot",
     "events": [
       {
@@ -255,10 +255,21 @@
       {
         "type": "contact_page_view",
         "date": "2026-06-17T15:15:58.058Z"
+      },
+      {
+        "type": "results_page_view",
+        "date": "2026-06-18T09:00:25.818Z"
+      },
+      {
+        "type": "crash_course_page_view",
+        "date": "2026-06-18T09:00:25.818Z"
       }
     ],
-    "lastActivity": "2026-06-17T15:15:58.058Z",
-    "dripsHistory": []
+    "lastActivity": "2026-06-18T09:00:25.818Z",
+    "dripsHistory": [
+      "bookCallUrgent"
+    ],
+    "hotFollowUpSent": true
   },
   {
     "email": "uh01012007@gmail.com",
@@ -267,6 +278,16 @@
     "referralCode": "R2F-inlp91",
     "referredBy": null,
     "referralCount": 0,
-    "phone": "01943830843"
+    "phone": "01943830843",
+    "score": 2,
+    "segment": "cold",
+    "events": [
+      {
+        "type": "crash_course_page_view",
+        "date": "2026-06-18T09:00:25.818Z"
+      }
+    ],
+    "lastActivity": "2026-06-18T09:00:25.818Z",
+    "dripsHistory": []
   }
 ]
