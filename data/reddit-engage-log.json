@@ -3271,7 +3271,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-15T03:01:49.838Z",
     "permalink": "/r/Trading/comments/1u5unkk/i_built_a_prop_firm_cashback_platform_to_get_some/orpuhhd/",
-    "commentId": "orpuhhd"
+    "commentId": "orpuhhd",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-15T05:11:46.000Z",
+    "firstReplyAuthor": "Active_Influence_812",
+    "firstReplyText": "you are 100% right about the real problem…$30 back doesn't fix a lack of edge or FOMO setups. the cashback was just my starting point to solve the immediate financial sting, but your idea about a challenge readiness tracker or a journaling gate is absolute gold. I'm actually going to look into how I"
   },
   {
     "postId": "1u64w8m",
@@ -3301,7 +3305,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-15T13:00:45.179Z",
     "permalink": "/r/ICTMentorship/comments/1u6dymt/ict_concepts_really_work/ors43pt/",
-    "commentId": "ors43pt"
+    "commentId": "ors43pt",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-15T13:21:45.000Z",
+    "firstReplyAuthor": "[deleted]",
+    "firstReplyText": "[removed]"
   },
   {
     "postId": "1u5ncf5",
@@ -3321,7 +3329,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-15T18:01:06.233Z",
     "permalink": "/r/InnerCircleTraders/comments/1u5t0hn/considering_a_personal_account/orty800/",
-    "commentId": "orty800"
+    "commentId": "orty800",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-15T20:16:39.000Z",
+    "firstReplyAuthor": "avocadopeeler3000",
+    "firstReplyText": "Thank you! "
   },
   {
     "postId": "1u6zrcy",
@@ -3331,7 +3343,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-16T03:00:41.431Z",
     "permalink": "/r/Forexstrategy/comments/1u6zrcy/i_asked_chatgpt_if_theres_any_guarentee_broker/orwxnwm/",
-    "commentId": "orwxnwm"
+    "commentId": "orwxnwm",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-16T03:05:15.000Z",
+    "firstReplyAuthor": "Far-Bluejay-7696",
+    "firstReplyText": "It is a threat if the lines he read get to the jackpot"
   },
   {
     "postId": "1u6b0ie",
@@ -3351,7 +3367,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-16T03:00:57.672Z",
     "permalink": "/r/Trading/comments/1u6z2ex/i_asked_chatgpt_if_theres_any_guarentee_broker/orwxpgt/",
-    "commentId": "orwxpgt"
+    "commentId": "orwxpgt",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-16T03:03:46.000Z",
+    "firstReplyAuthor": "Far-Bluejay-7696",
+    "firstReplyText": "What if your trading system is one of most powerful systems. Just focus \"what if\" please. It can or it cannot be is a seperate discussion topic"
   },
   {
     "postId": "1u76rdv",
@@ -3361,7 +3381,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-16T08:00:23.738Z",
     "permalink": "/r/Forexstrategy/comments/1u76rdv/called_this_setup_on_12_june_when_everyone_was/ory10rd/",
-    "commentId": "ory10rd"
+    "commentId": "ory10rd",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-16T08:20:54.000Z",
+    "firstReplyAuthor": "masiatrade",
+    "firstReplyText": "&gt;"
   },
   {
     "postId": "1u75kzn",
@@ -3592,15 +3616,5 @@
     "commentedAt": "2026-06-18T08:00:15.985Z",
     "permalink": "/r/InnerCircleTraders/comments/1u8w1ab/nq_bias_today_18_june/osca4l8/",
     "commentId": "osca4l8"
-  },
-  {
-    "postId": "1u8j43j",
-    "subreddit": "Forexstrategy",
-    "postTitle": "Medio dia",
-    "commentText": "tbh the DCA approach during a news-driven move like a fed announcement is more survival mode than strategy, and that's fine, but you're leaving real pips on the table. the euro sell-off today had a clean BOS on the 15m right after the news dropped, which gave a reentry short opportunity into the asian session lows. 1.25 on 30 dollars is a start, but are you actually marking your daily OBs before the session opens, or are you reacting to price without a pre-marked draw on liquidity?",
-    "mentionedR2F": false,
-    "commentedAt": "2026-06-18T13:00:40.735Z",
-    "permalink": "/r/Forexstrategy/comments/1u8j43j/medio_dia/osdg82t/",
-    "commentId": "osdg82t"
   }
 ]
