@@ -1,0 +1,91 @@
+{
+  "slug": "stop-loss-with-order-blocks",
+  "title": "Stop Loss With Order Blocks",
+  "seoTitle": "Stop Loss With Order Blocks | ICT Method Explained",
+  "seoDescription": "Most traders place stop losses randomly. Setting a stop loss with order blocks gives you a logic-based invalidation point. Get the exact placement rules here.",
+  "headline": "How to Set a Stop Loss Using Order Blocks",
+  "subheadline": "Order blocks give you a structural reason to define risk. Here is how to use them to place stop losses that match how price actually moves.",
+  "intro": "Setting a stop loss with order blocks means placing your exit level beyond the origin candle of an order block, the last opposing candle before a strong impulsive move. This gives your trade a logical invalidation point rather than an arbitrary pip count. If price returns and closes through the order block, the premise is broken and the stop removes you from the trade cleanly.",
+  "keyPoints": [
+    {
+      "icon": "📦",
+      "title": "What an Order Block Is",
+      "text": "An order block is the last bearish candle before a bullish impulse, or the last bullish candle before a bearish impulse. It marks a zone where institutional orders were likely placed. Price frequently returns to this zone before continuing in the direction of the move, making it a natural reference point for trade entries and stops."
+    },
+    {
+      "icon": "🎯",
+      "title": "Why It Gives You Better Risk",
+      "text": "A stop placed beyond an order block reflects market structure, not personal tolerance. If the order block holds, your trade stays valid. If price closes through it, the reason you entered no longer exists. This keeps your risk tied to a real technical level rather than a fixed dollar amount or random pip offset."
+    },
+    {
+      "icon": "🛠️",
+      "title": "How to Place the Stop Correctly",
+      "text": "On a bullish order block, place your stop below the low of the origin candle with a few ticks of buffer to account for spread and wicks. On a bearish order block, the stop goes above the high of the origin candle. Use the higher timeframe order block to anchor the level, then refine your entry on a lower timeframe to tighten the distance between entry and stop."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Placement Mistake",
+      "text": "Placing the stop inside the order block body is the most frequent error. Price routinely wicks into order blocks to collect liquidity before reversing. A stop set at the midpoint of the block gets taken out by normal price behavior, removing you from a valid trade. Always place the stop beyond the full range of the order block candle, not within it."
+    },
+    {
+      "icon": "📈",
+      "title": "Next Steps: Combining Structure and Timing",
+      "text": "Once your stop placement is set, align your entry with a killzone window like the London open or New York open for timing confluence. Look for a break of structure or a fair value gap retracement into the order block for a precision entry. This tightens the distance to your stop and improves your risk-to-reward ratio before the trade is ever placed."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Where exactly do I put my stop loss on a bullish order block?",
+      "a": "Place the stop a few ticks below the low of the last bearish candle before the bullish impulse. For example, on EURUSD on the 15-minute chart, if the order block low is 1.08420, your stop might sit at 1.08400 to clear spread and potential wick. Do not place it at the midpoint of the candle."
+    },
+    {
+      "q": "How many pips below the order block should I place my stop?",
+      "a": "A buffer of 3 to 10 pips is typical depending on the pair and timeframe. Volatile pairs like GBPJPY on a 5-minute chart may need more room. Higher timeframe order blocks on the 1-hour or 4-hour chart warrant a wider buffer than lower timeframe setups."
+    },
+    {
+      "q": "What happens if price sweeps my stop below the order block but then reverses?",
+      "a": "That sweep is often a liquidity grab, price collecting stops below the order block before continuing bullish. Tightening the buffer too much exposes you to this move. If it happens repeatedly in a pair, slightly increase your buffer or wait for price to close back above the block before re-entering."
+    },
+    {
+      "q": "Can I use a mitigation block or breaker block the same way for stop placement?",
+      "a": "Yes. Mitigation blocks and breaker blocks operate on the same logic as order blocks. Place the stop beyond the origin candle of the structure. A breaker block that formed after a change of character on the 1-hour GBPUSD chart follows the same placement rule: stop goes beyond the candle that defined the block."
+    },
+    {
+      "q": "Should I adjust my stop loss after price moves in my favor?",
+      "a": "Yes. Once price has left the order block and formed a new structure level or a fair value gap below the current price, you can trail your stop to that new level. This locks in open profit while keeping the trade aligned with the evolving market structure rather than a static entry-based calculation."
+    }
+  ],
+  "relatedTags": [
+    "order-blocks",
+    "stop-loss-placement",
+    "ict-methodology",
+    "risk-management",
+    "market-structure",
+    "fair-value-gap",
+    "liquidity",
+    "killzone-trading",
+    "break-of-structure",
+    "forex-entries"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "how-to-identify-order-blocks",
+      "label": "How to Identify Order Blocks"
+    },
+    {
+      "slug": "what-is-a-liquidity-void",
+      "label": "Liquidity Void Explained"
+    },
+    {
+      "slug": "what-is-consequent-encroachment",
+      "label": "Consequent Encroachment Explained"
+    },
+    {
+      "slug": "how-to-find-daily-bias-in-ict",
+      "label": "Daily Bias in ICT Explained"
+    }
+  ],
+  "testimonialIndex": 2,
+  "createdAt": "2026-06-18T05:00:55.317Z",
+  "targetKeyword": "stop loss with order blocks"
+}
