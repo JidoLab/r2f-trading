@@ -3522,5 +3522,65 @@
     "commentedAt": "2026-06-17T18:00:12.999Z",
     "permalink": "/r/InnerCircleTraders/comments/1u88hqk/struggling_to_learn_ictsmc_trading_need_guidance/os877l5/",
     "commentId": "os877l5"
+  },
+  {
+    "postId": "1u8559a",
+    "subreddit": "Forexstrategy",
+    "postTitle": "How to classify scalp vs runner trades after entry? XAUUSD M1/M3 trade management problem",
+    "commentText": "try tracking what price does on M1 in the 2-3 candles *after* hitting that first +1 dollar. specifically, if you get a clean M1 BOS above the +1 level with no wick rejection back into the body of the move, that's usually your runner signal. if price stalls and wicks back through the +1 zone, close it or scale out, that's your chop/scalp scenario. the MAE stuff you mentioned is solid context but tbh the post-+1 candle structure tells you way more in real time on XAUUSD. what does your typical M1 candle look like at the +1 mark, clean close or lots of upper wick rejection?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-18T03:00:54.562Z",
+    "permalink": "/r/Forexstrategy/comments/1u8559a/how_to_classify_scalp_vs_runner_trades_after/osb6q5t/",
+    "commentId": "osb6q5t"
+  },
+  {
+    "postId": "1u8sjkb",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Passing challenges using a pair-selection tool I built",
+    "commentText": "the pair-selection bias filter approach is solid, but here's one thing to layer in: after StraviaX flags a pair with directional pressure, go to the 15m and mark the last down candle before the displacement that created the 1H BOS. if price retraces into that candle during london open or NY killzone, that's your actual entry candle, not just \"somewhere on the retrace.\" tightens the entry considerably tbh. curious what pairs were giving you the clearest setups during this challenge, and were they majors or did you find more confluence on crosses?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-18T03:01:03.663Z",
+    "permalink": "/r/Forexstrategy/comments/1u8sjkb/passing_challenges_using_a_pairselection_tool_i/osb6r2m/",
+    "commentId": "osb6r2m"
+  },
+  {
+    "postId": "1u82ffl",
+    "subreddit": "Forexstrategy",
+    "postTitle": "📊 XAU/USD Technical Analysis | Daily Chart",
+    "commentText": "the SMA stack here is clean confirmation of bearish PD array alignment, but tbh the more interesting level to me is that $4,333 spot price sitting right now. on a daily chart that's likely sitting inside a previous dealing range low, and before i'd commit to any short continuation i'd want to see if there's an unfilled FVG below current price acting as a draw on liquidity. if there's one in that $4,200-$4,250 zone, price could hunt it before any meaningful reversal attempt. are you marking your higher timeframe FVGs on this, or are you purely trading the SMA confluence for entries?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-18T03:01:13.615Z",
+    "permalink": "/r/Forexstrategy/comments/1u82ffl/xauusd_technical_analysis_daily_chart/osb6s1w/",
+    "commentId": "osb6s1w"
+  },
+  {
+    "postId": "1u85vje",
+    "subreddit": "Forexstrategy",
+    "postTitle": "🚨 FOMC DAY IS HERE 🚨",
+    "commentText": "the \"first move fake, second move real\" thing is mostly true on FOMC, but the catch is that price often needs to sweep both sides before it commits. on the 1min XAUUSD chart you'll see back to back wicks hunting buy side and sell side liquidity within the first 15-20 minutes, and if you jump in after the first reversal you're still early tbh. the clean entry usually comes after that second sweep prints a displacement candle and leaves an FVG you can actually mark. what levels are you watching going into the statement, and are you planning to wait for the initial spike to fully play out first?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-18T03:01:22.479Z",
+    "permalink": "/r/Forexstrategy/comments/1u85vje/fomc_day_is_here/osb6swf/",
+    "commentId": "osb6swf"
+  },
+  {
+    "postId": "1u8g5qe",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Looking for feedback on my XAUUSD &amp; BTCUSD multi-timeframe trading system",
+    "commentText": "your confluence scoring is solid tbh, but i'd tighten up how you're validating those order blocks on XAUUSD specifically. gold respects institutional OBs really well on the 1H, but if you're marking them on the 15M they get mitigated way faster and you'll get a lot of false scores inflating that 6/11 threshold. the FVG + OB combo is where the real edge lives on this pair, so i'd weight those two higher than MACD confirmation any day. curious whether your BOS/CHoCH confirmation is happening on the LTF or the HTF before you trigger the entry, because that single detail changes everything about entry timing on this setup 👀",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-18T03:01:31.736Z",
+    "permalink": "/r/Forexstrategy/comments/1u8g5qe/looking_for_feedback_on_my_xauusd_btcusd/osb6trq/",
+    "commentId": "osb6trq"
+  },
+  {
+    "postId": "1u8awmj",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAU/USD coiling inside a textbook ascending triangle — 4345 is the line in the sand 👀",
+    "commentText": "before you chase the breakout at 4345, mark the last bearish candle on the 15m that formed right before the most recent push into that resistance ceiling. that's your likely OB sitting just below the breakout level, and if price wicks back into it during london open tomorrow instead of just blasting through, that retest is a cleaner entry than chasing the initial pop imo. the ascending triangle structure you've mapped is solid, but tbh the real confluence is whether that OB holds on the retest rather than whether 4345 breaks with \"volume.\" what does that last down candle look like on the 15m, and does price currently have an FVG sitting underneath it? curious what you're seeing there.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-18T03:01:39.940Z",
+    "permalink": "/r/Forexstrategy/comments/1u8awmj/xauusd_coiling_inside_a_textbook_ascending/osb6ul0/",
+    "commentId": "osb6ul0"
   }
 ]
