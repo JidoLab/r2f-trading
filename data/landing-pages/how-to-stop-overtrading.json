@@ -1,0 +1,91 @@
+{
+  "slug": "how-to-stop-overtrading",
+  "title": "How to Stop Overtrading",
+  "seoTitle": "How to Stop Overtrading: Causes & Real Fixes",
+  "seoDescription": "3 in 4 retail traders blow accounts through overtrading, not bad analysis. Here is what actually drives it and how to stop overtrading using structured ICT rules.",
+  "headline": "How to Stop Overtrading Before It Stops You",
+  "subheadline": "Overtrading is less about discipline and more about structure. Once you understand what triggers it, fixing it becomes a process rather than a willpower battle.",
+  "intro": "Overtrading is the habit of taking trades outside your defined setup criteria, usually driven by boredom, revenge impulses, or fear of missing a move. Knowing how to stop overtrading starts with recognising that most excess trades are taken in the absence of a qualifying condition such as a confirmed order block, a fair value gap fill, or a clean break of structure. Without a checklist that must be satisfied before entry, the market will always find a way to pull you in.",
+  "keyPoints": [
+    {
+      "icon": "📌",
+      "title": "What Overtrading Actually Is",
+      "text": "Overtrading means executing trades that do not meet your pre-defined model requirements. It includes forcing entries during dead sessions outside the London or New York killzone, trading pairs with no clear liquidity draw, and entering after a valid setup has already played out. The trade feels logical in the moment because price is moving, but the edge was never there."
+    },
+    {
+      "icon": "💸",
+      "title": "Why It Destroys Accounts Fast",
+      "text": "Each unqualified trade erodes your capital and, more critically, your statistical edge. A model with a 55 percent win rate over valid setups can flip negative the moment random entries dilute the sample. Overtrading also creates emotional debt: losses from bad trades push traders into revenge cycles that compound the damage within the same session."
+    },
+    {
+      "icon": "🗂️",
+      "title": "How to Use Structure to Prevent It",
+      "text": "Build a written entry checklist tied to specific ICT conditions: price must be at a confirmed order block or FVG, within a killzone window, with a clear BOS on the higher timeframe establishing directional bias. If even one box is unchecked, there is no trade. This removes the subjective in-the-moment decision and replaces it with a binary pass-or-fail process."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake Traders Make",
+      "text": "Traders often set a daily loss limit but ignore a daily trade limit. Capping losses does nothing if you are still allowed to take ten marginal setups. Setting a maximum of two to three trades per session forces selectivity. Traders who journal their entries quickly find that trades taken after the second attempt in a session have a significantly worse outcome rate."
+    },
+    {
+      "icon": "🚀",
+      "title": "Next Steps to Build the Habit",
+      "text": "Start a trade log that records not only wins and losses but also whether each trade met every checklist condition before entry. Review the log weekly and isolate the non-qualifying entries. Over four to six weeks a pattern becomes visible: off-model trades cluster around specific times, emotional states, or losing streaks. That data gives you a concrete trigger to address rather than a vague instruction to be more disciplined."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many trades per day should I be taking with an ICT strategy?",
+      "a": "Most structured ICT models produce one to three valid setups per session during the London or New York killzone. If you are regularly taking five or more trades in a single session on a pair like EURUSD on the 15-minute chart, the extra entries are almost certainly off-model and should be reviewed in your journal."
+    },
+    {
+      "q": "Is overtrading always about taking too many trades?",
+      "a": "Overtrading also includes sizing up on impulsive entries or re-entering a trade immediately after a stop-out without a new qualifying setup. A trader can overtrade with two positions if neither met the entry conditions, such as entering before a fair value gap is properly respected as support or resistance."
+    },
+    {
+      "q": "Why do I overtrade even when I know I should not?",
+      "a": "The most common driver is an undefined session goal. When traders have no clear target such as one confirmed ICT setup per killzone window, the mind keeps scanning for something to do. Idle screen time during the Asian session or mid-day consolidation is one of the highest-risk periods for impulsive entries."
+    },
+    {
+      "q": "Can a daily loss limit alone stop overtrading?",
+      "a": "A daily loss limit caps the damage but does not prevent the behaviour. You can hit five losing trades and still be inside your loss limit if each position was small. A session trade limit combined with a strict entry checklist addresses the root cause rather than just the financial consequence."
+    },
+    {
+      "q": "How does ICT methodology specifically help with overtrading?",
+      "a": "ICT gives you objective conditions to wait for: a liquidity sweep above an old high, price returning to an order block or FVG, confirmation of a break of structure on the higher timeframe, and entry during a defined killzone. When all conditions must align, the number of qualifying setups drops sharply and natural selectivity is built into the model."
+    }
+  ],
+  "relatedTags": [
+    "trading-psychology",
+    "ict-methodology",
+    "risk-management",
+    "killzone-trading",
+    "order-blocks",
+    "fair-value-gap",
+    "trade-journaling",
+    "forex-discipline",
+    "futures-trading",
+    "break-of-structure"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "how-to-identify-order-blocks",
+      "label": "How to Identify Order Blocks"
+    },
+    {
+      "slug": "how-to-trade-fair-value-gaps",
+      "label": "How to Trade Fair Value Gaps"
+    },
+    {
+      "slug": "what-is-a-mitigation-block",
+      "label": "Mitigation Block Explained"
+    },
+    {
+      "slug": "what-is-consequent-encroachment",
+      "label": "Consequent Encroachment Explained"
+    }
+  ],
+  "testimonialIndex": 1,
+  "createdAt": "2026-06-18T05:02:05.214Z",
+  "targetKeyword": "how to stop overtrading"
+}
