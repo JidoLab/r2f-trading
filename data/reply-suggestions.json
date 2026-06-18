@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1781742637145-y2519",
+    "platform": "youtube",
+    "postTitle": "Live GOLD and CRYPTO Scalping Trading | DAY 262 #goldtrading #cryptotrading #bitcoin",
+    "postUrl": "https://youtube.com/watch?v=hOL0k3Zw6fw",
+    "authorName": "ICT ENIGMA",
+    "suggestedReply": "Interesting take on scalping both gold and crypto simultaneously on day 262. In my experience, I actually have my students focus on one asset class per session because the liquidity profiles are so different. Gold respects kill zone timing tightly, while crypto runs its own inefficiencies outside those windows. Splitting attention between both can blur your read on which draw on liquidity is actually playing out.",
+    "createdAt": "2026-06-18T00:30:37.145Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781742640556-alycc",
+    "platform": "youtube",
+    "postTitle": "ICT Enigma: Time &amp; Price Trading Explained",
+    "postUrl": "https://youtube.com/watch?v=bhlbp1CCfGs",
+    "authorName": "airKam Trader",
+    "suggestedReply": "Interesting take on the time and price relationship. In my experience, most traders overlook the \"time\" side of this enigma completely and just chase price. I drill into my students that if price reaches a premium array but the killzone window has closed, you simply wait. Time without price confluence is noise, and price without time is gambling.",
+    "createdAt": "2026-06-18T00:30:40.556Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781742644003-0xur0",
+    "platform": "youtube",
+    "postTitle": "HTF Liquidity #trading #ict #tradingtips #daytrade #daytrader #daytrading #trader",
+    "postUrl": "https://youtube.com/watch?v=VukjQmDIn-M",
+    "authorName": "ReeseTradesNQ",
+    "suggestedReply": "HTF liquidity is where most traders get wrecked because they treat every swing high and low the same. The non-obvious part is understanding which pools have RELATIVE equal highs sitting above a dealing range versus isolated swing points. I drill this into my students constantly. The HTF draw matters more than the entry model itself because if you're hunting the wrong pool your 15m setup means nothing.",
+    "createdAt": "2026-06-18T00:30:44.003Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781742647790-x4bxi",
+    "platform": "youtube",
+    "postTitle": "SHORTED NQ 🔴 LIVE Day Trading Futures | ES NQ | ICT Concepts | June 17",
+    "postUrl": "https://youtube.com/watch?v=nS1TvfatCeA",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Shorting NQ during these conditions is valid but I always tell my students to be careful with premium entries on days where the killzone overlaps with a major news window. The liquidity sweep can look like confirmation when it's actually a trap before the real move. I drill the importance of waiting for a clean displacement candle on the 5m before committing size. Did the June 17 session give you a clean MSS before the short or were you working off a higher timeframe bias?",
+    "createdAt": "2026-06-18T00:30:47.790Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781742650963-vxdza",
+    "platform": "youtube",
+    "postTitle": "😱 Retail Traders Got Trapped Here! #shorts",
+    "postUrl": "https://youtube.com/watch?v=o7LMWtMDXc4",
+    "authorName": "Trader_Zayoo",
+    "suggestedReply": "Retail traps are real but here is what most traders miss. Not every trapped retail zone is worth fading. I tell my students to wait for a confirmed liquidity sweep with a displacement candle on the 15m before calling it a valid trap. Without that confirmation, you are just guessing direction and getting caught on the wrong side yourself.",
+    "createdAt": "2026-06-18T00:30:50.963Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781742654244-51y50",
+    "platform": "youtube",
+    "postTitle": "Live GOLD and CRYPTO Scalping Trading | DAY 262 #goldtrading #cryptotrading #bitcoin",
+    "postUrl": "https://youtube.com/watch?v=EHlRqE4TVOE",
+    "authorName": "ICT ENIGMA",
+    "suggestedReply": "Scalping gold and crypto on the same session is no joke, the liquidity profiles are completely different and most traders don't account for that. I always tell my students to watch how price reacts around Asian range highs before committing to any scalp bias on gold. Are you using the 1m or 5m for entries here, or waiting for a higher TF confirmation before pulling the trigger?",
+    "createdAt": "2026-06-18T00:30:54.244Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781742659541-aihgn",
+    "platform": "youtube",
+    "postTitle": "There’s nothing smart about smart money concepts",
+    "postUrl": "https://youtube.com/watch?v=ILVN2LzQGO8",
+    "authorName": "Ben Trades ",
+    "suggestedReply": "The \"smart\" label is what misleads most traders before they even execute a trade. I tell my students to strip the terminology completely and focus on what price is actually doing relative to liquidity pools on the higher timeframe, whether that's the daily or the 4H on pairs like euro or pound. Once you frame it as liquidity engineering rather than \"smart money,\" the entries start making more sense.",
+    "createdAt": "2026-06-18T00:30:59.541Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781742663452-vuggf",
+    "platform": "youtube",
+    "postTitle": "🔥 ITH / ITL Strategy Live Trading | Learn Smart Money Concepts &amp; Price Action 📈",
+    "postUrl": "https://youtube.com/watch?v=vl908h6aGVA",
+    "authorName": "Trade with Haidar",
+    "suggestedReply": "ITH and ITL setups become significantly more powerful when you layer in session liquidity. I teach my students to mark the previous day's high and low before even looking for internal structure shifts, because ITH/ITL confluences that sit near those external draws have much cleaner follow through. On the 15m during London or New York open, that combination cuts a lot of the noise out. Are you filtering by session when you take these live?",
+    "createdAt": "2026-06-18T00:31:03.452Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1781697676171-hmwd4",
     "platform": "investinglive",
     "postTitle": "IEA sees 'significant overhang' in oil market next year",
