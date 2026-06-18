@@ -269,7 +269,8 @@
     "dripsHistory": [
       "bookCallUrgent"
     ],
-    "hotFollowUpSent": true
+    "hotFollowUpSent": true,
+    "abandonmentEmailSent": true
   },
   {
     "email": "uh01012007@gmail.com",
