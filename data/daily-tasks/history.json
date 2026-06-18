@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-06-18",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1781777127436-0",
+        "title": "With 44 YouTube Shorts ready and 4 still rendering, manually review and schedule a burst-publish strategy to push 10+ Shorts this week to accelerate channel growth and top-of-funnel traffic.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1781777127436-1",
+        "title": "All 8 subscribers are cold with an average of 5.8 drips each — personally reach out to the most engaged cold leads via a direct Telegram or LINE message from Harvest to break the ice and qualify intent.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1781777127436-2",
+        "title": "Zero new subscribers yesterday signals a traffic problem — Harvest should personally post 1 high-value ICT trading tip or personal story on TikTok or Instagram Reels today to drive organic sign-ups.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1781777127436-3",
+        "title": "With 125 blog posts published but 0 chat conversations and no hot leads, set up a targeted lead magnet (e.g. a free ICT killzone cheat sheet) gated behind an opt-in form to convert blog readers into subscribers.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-06-02",
     "tasks": [
       {
