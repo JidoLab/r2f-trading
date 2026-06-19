@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "question",
     "poll",
     "poll-native",
     "hot-take",
@@ -29,11 +28,12 @@
     "quote",
     "promo-free-class",
     "tip",
-    "promo-results"
+    "promo-results",
+    "promo-checklist"
   ],
   "lastPost": {
-    "type": "promo-results",
-    "text": "R2F traders are passing funded challenges while everyone else is blaming 'summer lull' conditions. Order blocks + FVGs hit different when you actually understand the structure. Real results, real people 👇\nhttps://r2ftrading.com/results\n#ICTTrading #FundedTrader #SmartMoneyConcepts",
-    "date": "2026-06-18T12:00:42.953Z"
+    "type": "promo-checklist",
+    "text": "Order blocks. FVGs. Smart money concepts. None of it matters if you skip your pre-trade checklist. I use this before every single trade — grab it free 👇 https://r2ftrading.com #ICTTrading #SmartMoneyConcepts #FundedTrader",
+    "date": "2026-06-19T12:01:16.321Z"
   }
 }
