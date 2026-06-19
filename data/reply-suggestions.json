@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1781870455194-1dzb2",
+    "platform": "youtube",
+    "postTitle": "SMC vs ICT Explained in 60 Seconds | Which One Is Better? #shorts",
+    "postUrl": "https://youtube.com/watch?v=DBGAnsNpJuQ",
+    "authorName": "Sankalp Rai",
+    "suggestedReply": "The SMC vs ICT debate misses the real point. ICT is the source material, SMC is just a repackaged version with different labels. I tell my students to go straight to the original concepts like liquidity raids, PD arrays, and killzone timing because understanding the \"why\" behind the model matters more than which name you give it. Master the origin and the derivative versions make complete sense.",
+    "createdAt": "2026-06-19T12:00:55.194Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781870459012-wl0ik",
+    "platform": "youtube",
+    "postTitle": "Liquidity to liquidity 📊🧠#trading #sorts",
+    "postUrl": "https://youtube.com/watch?v=YeXP80-57Zk",
+    "authorName": "Stock learner 007",
+    "suggestedReply": "Liquidity to liquidity is honestly one of the cleanest frameworks in ICT concepts, but I always warn my students to confirm WHERE that next pool sits on the higher timeframe before committing. On something like NQ or ES, price can sweep a low timeframe pool and continue straight through without offering a clean entry. Make sure you're mapping your draw on liquidity from the daily or 4H first, then dropping down to execute.",
+    "createdAt": "2026-06-19T12:00:59.012Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781870462171-kftlt",
+    "platform": "youtube",
+    "postTitle": "FVGs don’t move the market 😱",
+    "postUrl": "https://youtube.com/watch?v=Kyy-ghmIuRk",
+    "authorName": "FootClanTrading",
+    "suggestedReply": "FVGs don't move price, agreed, but I'd add one caveat my students always miss. A high probability FVG sits inside a larger liquidity draw, so when price sweeps a clean equal high on the higher timeframe FIRST, that same FVG becomes magnetic. Without that confluence, you're just fading into nothing and wondering why it keeps failing.",
+    "createdAt": "2026-06-19T12:01:02.171Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781870465426-qp3mp",
+    "platform": "youtube",
+    "postTitle": "Live GOLD and CRYPTO Scalping Trading | DAY 262 #goldtrading #cryptotrading #bitcoin",
+    "postUrl": "https://youtube.com/watch?v=Ezglg8ddHoo",
+    "authorName": "ICT ENIGMA",
+    "suggestedReply": "Interesting take on scalping gold and crypto simultaneously on day 262 of this journey. In my experience, treating them as separate sessions works better because gold and BTC liquidity windows rarely align cleanly, and forcing confluences between the two often leads to overtrading. I teach my students to anchor to one asset per killzone and let the other setup develop without chasing it.",
+    "createdAt": "2026-06-19T12:01:05.426Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781870469601-hzfkm",
+    "platform": "youtube",
+    "postTitle": "Fair Value Gaps (FVG) හරියටම බලන්නෙ මෙහෙමයි! | Smart Money Concepts",
+    "postUrl": "https://youtube.com/watch?v=6dloZZuz-3k",
+    "authorName": "Dila Trading",
+    "suggestedReply": "FVGs on lower timeframes hit different when you already have a higher timeframe draw on liquidity confirmed first. I teach my students to never trade an FVG in isolation. on the 15m or 1H, if price hasn't swept a significant high or low before tapping that gap, the probability drops sharply. Always pair your FVG with a clear liquidity narrative and the trade becomes much cleaner.",
+    "createdAt": "2026-06-19T12:01:09.601Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781870473923-mnle3",
+    "platform": "youtube",
+    "postTitle": "🔥 LIVE Trading in தமிழ் | ICT + Smart Money Concepts + Price Action 📈 #ICT #SMC #TamilTrader",
+    "postUrl": "https://youtube.com/watch?v=Gxd_-yKQ0Gk",
+    "authorName": "TREND_TRADER",
+    "suggestedReply": "One thing I always add to live SMC sessions like this is a kill zone filter. During live trading I drill into my students to only take ICT setups during London or New York overlap, because Smart Money is most active then and your order blocks and FVGs have far higher follow through. Trading Tamil markets with these concepts outside kill zones is where most beginners get chopped up.",
+    "createdAt": "2026-06-19T12:01:13.923Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781870477584-hv0wi",
+    "platform": "youtube",
+    "postTitle": "🔥 ITH / ITL Strategy Live Trading | Learn Smart Money Concepts &amp; Price Action 📈",
+    "postUrl": "https://youtube.com/watch?v=18UpJfTsaD8",
+    "authorName": "Trade with Haidar",
+    "suggestedReply": "The ITH and ITL concept is something I drill into my students before they ever look at an entry. Most of them default to chasing price without identifying the swing points first, which kills their precision completely. Are you marking these levels primarily on the 15m or do you find the 1H structure gives cleaner ITH and ITL sweeps for your live setups?",
+    "createdAt": "2026-06-19T12:01:17.584Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1781870480753-qjjkv",
+    "platform": "youtube",
+    "postTitle": "Swing Highs &amp; Liquidity SweepsPDH • PDL • Smart Money Concepts 🎯Trade where the stops are.",
+    "postUrl": "https://youtube.com/watch?v=IV-X9_wFau4",
+    "authorName": "Rohit Prasad",
+    "suggestedReply": "I tell my students that PDH and PDL sweeps are the highest probability setups they'll ever find, but most of them chase the sweep instead of waiting for the return. Learned that lesson the hard way trading cable on the 4H years ago. Once you understand that stops above swing highs are the actual target for smart money, your entries get cleaner immediately.",
+    "createdAt": "2026-06-19T12:01:20.753Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1781743536580-o5ssc",
     "platform": "investinglive",
     "postTitle": "SpaceX stock analysis after IPO",
