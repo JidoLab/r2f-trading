@@ -1,0 +1,91 @@
+{
+  "slug": "what-are-ict-macros",
+  "title": "ICT Macros Explained",
+  "seoTitle": "What Are ICT Macros? Intraday Algorithm Windows Explained",
+  "seoDescription": "ICT macros are 20-minute algorithm windows that move price with precision daily. Knowing all 6 windows tells you when to expect manipulation, entries, and reversals.",
+  "headline": "What Are ICT Macros: The Intraday Time Windows That Move Price",
+  "subheadline": "ICT macros are specific 20-minute windows each trading day when algorithms are most likely to reprice assets, raid liquidity, and deliver institutional moves. Knowing them changes how you read intraday price action entirely.",
+  "intro": "ICT macros are fixed 20-minute intraday time windows during which algorithmic systems are programmed to reprice markets, often by sweeping liquidity, filling fair value gaps, or delivering sharp directional moves. There are six core macro windows spread across the New York and London sessions, each beginning and ending at precise times on the clock. Traders who align their entries with these windows gain a structural edge because they are working with the timing of institutional order flow rather than against it.",
+  "keyPoints": [
+    {
+      "icon": "🕐",
+      "title": "What ICT Macros Actually Are",
+      "text": "ICT macros are six recurring 20-minute windows when algorithmic repricing activity peaks. The New York AM macros run at 8:50-9:10, 9:50-10:10, and 10:50-11:10 ET. The PM macros run at 1:10-1:30, 2:10-2:30, and 3:15-3:45 ET. Price frequently makes its most decisive intraday moves within these windows rather than in the quieter periods between them."
+    },
+    {
+      "icon": "📈",
+      "title": "Why Macros Matter for Execution",
+      "text": "Entering a trade outside a macro window often means sitting through chop while waiting for the market to actually move. Macros give you a timing filter so your technical setup, whether that is an order block, a fair value gap, or a break of structure, gets confirmed by the clock as well as the chart. This dramatically reduces the number of low-probability entries you take during dead, directionless price action."
+    },
+    {
+      "icon": "🎯",
+      "title": "How to Trade Around Macro Windows",
+      "text": "The practical approach is to identify your directional bias during the killzone before a macro opens, then watch for a liquidity sweep or FVG entry signal in the first few minutes of the window. On the ES futures or EUR/USD, the 9:50-10:10 macro frequently delivers a reversal or continuation leg off the initial morning range. Set your entry, define your stop beyond the swept liquidity, and let the algorithm deliver price to your target within the window."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Macro Mistake",
+      "text": "Many traders treat macros as guaranteed reversal points rather than windows of heightened activity. A macro does not force price to reverse every session. It signals that meaningful movement is likely, and the direction still depends on the higher-timeframe bias, the session narrative, and where liquidity rests. Forcing a counter-trend trade simply because a macro window opened is how traders get caught on the wrong side of a trend continuation move."
+    },
+    {
+      "icon": "🔁",
+      "title": "Building Macros Into Your Process",
+      "text": "Start by marking all six macro windows on your intraday chart template so they are visible before the session opens. Combine macro timing with your existing ICT framework: confirm bias on the 15-minute chart during the London open, identify the nearest pool of buy-side or sell-side liquidity, and wait for the 9:50 or 10:50 macro to deliver the sweep and entry. Over time, journaling which macros produce your highest-quality setups will sharpen your session-specific edge."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What are ICT macros in trading?",
+      "a": "ICT macros are six specific 20-minute windows each trading day when algorithms are most active in repricing markets. They occur at defined times during the New York AM and PM sessions. Traders use them to time entries with institutional order flow rather than entering during low-activity periods between the windows."
+    },
+    {
+      "q": "What time do ICT macros run?",
+      "a": "The six core macro windows run at 8:50-9:10, 9:50-10:10, and 10:50-11:10 ET for the AM session, and 1:10-1:30, 2:10-2:30, and 3:15-3:45 ET for the PM session. All times are Eastern and apply primarily to New York session instruments like ES futures and major forex pairs."
+    },
+    {
+      "q": "How do I use ICT macros with an order block or FVG?",
+      "a": "Identify a bullish order block or open fair value gap on the 5-minute chart before the macro opens. When the macro window begins, watch for price to sweep sell-side liquidity below a recent low, then reclaim the order block or FVG. That combination of structure and timing is a high-confluence long entry during, for example, the 9:50 AM macro on EUR/USD."
+    },
+    {
+      "q": "Do ICT macros work on forex as well as futures?",
+      "a": "Yes. Macro windows apply to any instrument tied to New York session liquidity, including EUR/USD, GBP/USD, and USD/JPY. The windows are most reliable during the New York AM session overlap with London, where institutional volume is highest and algorithmic repricing is most consistent in its delivery."
+    },
+    {
+      "q": "Are ICT macros the same as killzones?",
+      "a": "No. Killzones are broader session windows, roughly 90 minutes to 2 hours, that identify when major institutional participation is highest, such as the London open or New York open. Macros are precise 20-minute windows nested within or near those killzones. Killzones set the stage for directional bias, while macros pinpoint the specific minutes when price is most likely to move decisively."
+    }
+  ],
+  "relatedTags": [
+    "ict-macros",
+    "intraday-trading",
+    "ict-methodology",
+    "killzones",
+    "order-blocks",
+    "fair-value-gaps",
+    "liquidity-sweeps",
+    "new-york-session",
+    "price-action",
+    "ict-concepts"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "ict-methodology-origins-michael-huddleston",
+      "label": "ICT Methodology Origins"
+    },
+    {
+      "slug": "how-to-find-daily-bias-in-ict",
+      "label": "Daily Bias in ICT Explained"
+    },
+    {
+      "slug": "smart-money-concepts",
+      "label": "Smart Money Concepts for Forex"
+    },
+    {
+      "slug": "what-is-a-turtle-soup-setup",
+      "label": "Turtle Soup Setup Explained"
+    }
+  ],
+  "testimonialIndex": 2,
+  "createdAt": "2026-06-19T05:02:31.495Z",
+  "targetKeyword": "what are ICT macros"
+}
