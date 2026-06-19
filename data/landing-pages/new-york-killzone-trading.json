@@ -1,0 +1,91 @@
+{
+  "slug": "new-york-killzone-trading",
+  "title": "New York Killzone Explained",
+  "seoTitle": "New York Killzone Trading: ICT AM Session Setup",
+  "seoDescription": "The New York killzone runs 7–10 AM EST and produces some of the cleanest ICT setups of the day. Here is how to read it and what to look for before entering.",
+  "headline": "New York Killzone: How to Trade the AM Session",
+  "subheadline": "The New York AM session is one of the highest-probability windows in the ICT framework. Understanding its structure helps you stop chasing moves and start positioning ahead of them.",
+  "intro": "The New York killzone is a defined high-probability trading window running from approximately 7:00 AM to 10:00 AM EST, during which institutional order flow regularly produces sharp, directional price expansions in forex and futures markets. ICT traders focus on this window because it frequently delivers the true trend of the New York session after the London session has already established liquidity on one side of the market. The AM session setup involves identifying draw on liquidity, locating a valid order block or fair value gap, and waiting for a displacement entry within that killzone window.",
+  "keyPoints": [
+    {
+      "icon": "🕖",
+      "title": "What the NY Killzone Is",
+      "text": "The New York killzone covers 7:00 AM to 10:00 AM EST. This window aligns with the open of the New York equity session and the overlap period where London liquidity is still active. ICT defines it as one of four daily killzones where smart money is most likely to engineer and deliver price."
+    },
+    {
+      "icon": "💧",
+      "title": "Why This Window Matters",
+      "text": "By 7 AM EST, London has typically built up a pool of liquidity on one side of the market, often by running buy-side or sell-side levels established in the Asian range. The New York killzone is where price frequently reverses or accelerates through that liquidity, creating the clearest directional bias of the morning. Missing this context means trading noise rather than the actual institutional move."
+    },
+    {
+      "icon": "📐",
+      "title": "How to Build the AM Setup",
+      "text": "Start on the 15-minute chart and identify the overnight dealing range, noting where buy-side and sell-side liquidity sits. Look for a break of structure during the 7 to 8 AM window, then drop to the 5-minute or 1-minute chart to find a fair value gap or order block left by the displacement move. Enter on a return to that inefficiency with a stop beyond the prior swing and a draw on liquidity as your target."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake",
+      "text": "Traders frequently enter the moment New York opens at 9:30 AM without realizing the actual killzone move often begins and completes between 7 and 9 AM. Entering at 9:30 can mean buying the high or selling the low of the expansion. Confirm structure and displacement before 9:30, then look for a retracement entry rather than chasing the initial impulse."
+    },
+    {
+      "icon": "🗺️",
+      "title": "Next Steps to Apply This",
+      "text": "Build a morning routine that reviews the higher timeframe bias, marks the Asian range highs and lows, and notes where London closed relative to those levels. Study the GBP/USD or EUR/USD 15-minute chart across 20 to 30 AM sessions to map recurring patterns. The ICT concepts section at r2ftrading.com covers the full killzone framework in sequence if you want a structured path."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What time exactly is the New York killzone?",
+      "a": "The New York killzone runs from 7:00 AM to 10:00 AM EST. The sharpest ICT setups typically form between 7 and 9 AM, before the official 9:30 AM equity open. After 10 AM the window closes and setups become less reliable within the ICT framework."
+    },
+    {
+      "q": "What pairs work best in the New York killzone?",
+      "a": "EUR/USD, GBP/USD, and NAS100 futures are the most commonly traded instruments in this window. Dollar-denominated pairs with high New York session volume tend to produce the cleanest fair value gaps and order block reactions because institutional participation is highest."
+    },
+    {
+      "q": "How does the London session affect the New York killzone setup?",
+      "a": "London often sets up the liquidity that New York consumes. If London ran buy-side liquidity above the Asian range, the New York killzone frequently delivers a reversal lower. Reading the London close around 5 to 6 AM EST gives you a directional bias before the New York window opens."
+    },
+    {
+      "q": "Can I trade the New York killzone on a 1-minute chart?",
+      "a": "Yes, but the 1-minute chart is an entry timeframe, not a bias timeframe. Build your directional view on the 15-minute and 5-minute charts first. Use the 1-minute chart only to refine entries into order blocks or fair value gaps after a break of structure has already occurred on the higher timeframe."
+    },
+    {
+      "q": "What is the difference between the New York killzone and the New York lunch session?",
+      "a": "The killzone ends around 10 AM EST. The lunch session from roughly 12 PM to 1 PM EST is considered low-probability in the ICT model because institutional participation drops sharply. ICT traders typically avoid new entries during lunch and wait for the PM session killzone beginning around 1:30 PM EST."
+    }
+  ],
+  "relatedTags": [
+    "ict-killzones",
+    "new-york-session-trading",
+    "ict-fair-value-gap",
+    "order-block-trading",
+    "am-session-setup",
+    "london-killzone",
+    "liquidity-and-draw",
+    "break-of-structure",
+    "ict-methodology",
+    "forex-session-timing"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "ict-silver-bullet-strategy",
+      "label": "ICT Silver Bullet Strategy"
+    },
+    {
+      "slug": "ict-vs-smc-difference",
+      "label": "ICT vs SMC: The Real Difference"
+    },
+    {
+      "slug": "london-open-killzone-strategy",
+      "label": "London Open Killzone Guide"
+    },
+    {
+      "slug": "asian-session-range-trading",
+      "label": "Asian Session Range: ICT Guide"
+    }
+  ],
+  "testimonialIndex": 0,
+  "createdAt": "2026-06-19T05:01:55.211Z",
+  "targetKeyword": "new york killzone trading"
+}
