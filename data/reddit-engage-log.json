@@ -3616,5 +3616,55 @@
     "commentedAt": "2026-06-18T08:00:15.985Z",
     "permalink": "/r/InnerCircleTraders/comments/1u8w1ab/nq_bias_today_18_june/osca4l8/",
     "commentId": "osca4l8"
+  },
+  {
+    "postId": "1u9iyjv",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "2026/6/19 FEAR TO LOSS",
+    "commentText": "i had this exact problem last month on gbpusd, marked up a clean H4 FVG going into new york open, price tapped it perfectly but i froze, then when it moved without me i went full revenge mode and got chopped up on a random m15 entry with no confluence. the fear of the loss literally caused the actual loss, which is the cruel part tbh. one thing that helped me was deciding before the session opens that if price hits my zone and i'm not in, that trade is DEAD, no chasing, no revenge, just wait for the next setup. curious whether your H1 FVG was sitting inside a larger HTF discount or was it kinda mid-range when price approached it?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-19T08:00:58.227Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u9iyjv/2026619_fear_to_loss/osjd1wv/",
+    "commentId": "osjd1wv"
+  },
+  {
+    "postId": "1u97t7j",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Have you all watched the entire 2022 model? I can't go past an episode without zoning off",
+    "commentText": "been there tbh, the 2022 model is dense and michael just kind of talks at you for hours before anything clicks. honestly the easiest entry point is just learning one thing: where is the daily bias pointing, and then drop to the 15m and wait for a BOS into an FVG during london open. that's basically the whole core model stripped down. if you tell me what pair you're watching i'm happy to walk through exactly what that looks like on a live chart right here in the thread 👇",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-19T08:01:08.625Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u97t7j/have_you_all_watched_the_entire_2022_model_i_cant/osjd2mz/",
+    "commentId": "osjd2mz"
+  },
+  {
+    "postId": "1u9pswc",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "I need help understanding",
+    "commentText": "the \"hindsight\" feeling with iFVGs usually means the bias is getting built top-down wrong, not that the concept itself is broken. tbh most inconsistency i see comes from people trading every FVG on the 15m without a confirmed BOS on the 4H first, so you're basically just guessing direction. once the higher timeframe leg is clear, the lower timeframe reactions stop feeling so random. curious what pair is giving you the most trouble right now, drop it here and i'm happy to walk through where the actual draw on liquidity sits before we even talk about entries.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-19T08:01:17.775Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u9pswc/i_need_help_understanding/osjd39m/",
+    "commentId": "osjd39m"
+  },
+  {
+    "postId": "1u9fxbq",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Guys when was your breaking point. When you knew you had to go all in on ICT",
+    "commentText": "been there with the \"go all in\" energy, and i don't want to kill it, but the catch most people miss is that \"going all in\" while working a 9-5 with a 1 year old actually means something very specific and narrow. you don't need more hours, you need a single repeatable setup, like one session (london open is honestly ideal for a 9-5 schedule), one pair, one concept like a breaker block or FVG on the 15m. finishing the core mentorship front to back without a defined filter usually just adds more confusion on top of the concepts you already have from the primer. what pairs are you currently watching, and are you focusing more on the london or new york session given your schedule?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-19T08:01:27.176Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u9fxbq/guys_when_was_your_breaking_point_when_you_knew/osjd3wc/",
+    "commentId": "osjd3wc"
+  },
+  {
+    "postId": "1u95cym",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Hey everyone , I need the best free alternatives for Backtesting ict strategies , cant afford the paid ones atp",
+    "commentText": "since your TradingView trial ran out, honestly the best free option right now is TradingView's free plan itself, it's limited but still usable for manual backtesting by just scrolling back through charts and logging your trades in a spreadsheet. Sierra Chart has a free replay mode too if you want something more structured. tbh for early ICT backtesting, manual chart replay on the free tier teaches you to actually *see* the setups rather than just clicking through automation. curious though, are you focusing on a specific session like London or New York killzone? because backtesting an FVG entry during the NY open hits completely different than trying to work the same concept during dead Asian range hours, and it'll change how you log and evaluate your results.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-19T08:01:41.525Z",
+    "permalink": "/r/InnerCircleTraders/comments/1u95cym/hey_everyone_i_need_the_best_free_alternatives/osjd4w0/",
+    "commentId": "osjd4w0"
   }
 ]
