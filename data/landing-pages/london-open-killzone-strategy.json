@@ -1,0 +1,91 @@
+{
+  "slug": "london-open-killzone-strategy",
+  "title": "London Open Killzone Guide",
+  "seoTitle": "London Open Killzone Strategy: ICT Trading Guide",
+  "seoDescription": "The London open killzone runs 2–5 AM EST and produces some of the cleanest ICT setups of the trading day. Here is exactly how to trade it with order blocks and FVGs.",
+  "headline": "How to Trade the London Open Killzone",
+  "subheadline": "The London session open is the highest-volume window in the forex trading day. Understanding why price behaves the way it does here gives you a repeatable framework for finding entries.",
+  "intro": "The London open killzone is a specific high-probability trading window in the ICT methodology, running from approximately 2:00 AM to 5:00 AM EST, during which institutional order flow enters the market and creates the day's most significant price movements. This window regularly produces liquidity sweeps, fair value gaps, and order block reactions that form the basis of ICT entries. Because London overlaps with late Asian session positioning, price frequently raids Asian session highs or lows before reversing, giving traders a structured setup to work from.",
+  "keyPoints": [
+    {
+      "icon": "🕑",
+      "title": "What the Killzone Actually Is",
+      "text": "The London open killzone is a defined time window, 2:00 AM to 5:00 AM EST, when institutional participation surges as European banks and prop desks come online. ICT defines killzones as periods when smart money is most likely executing large orders. This concentration of volume is what makes the window tradeable rather than random."
+    },
+    {
+      "icon": "💧",
+      "title": "Why It Matters: Liquidity Engineering",
+      "text": "During the Asian session, price typically consolidates and builds liquidity above and below its range in the form of resting buy and sell stops. At the London open, institutions frequently sweep that liquidity before committing to the true directional move. Recognizing this pattern means you stop chasing breakouts and start waiting for the sweep and reversal confirmation instead."
+    },
+    {
+      "icon": "📐",
+      "title": "How to Build a London Killzone Setup",
+      "text": "Drop to the 15-minute chart on a liquid pair like GBPUSD or EURUSD. Mark the Asian session high and low from midnight to 2:00 AM EST. When price sweeps one of those levels at the killzone open, look for a break of structure on the 5-minute chart, then identify the nearest fair value gap or order block left behind on the move. That structure becomes your entry zone with a stop beyond the swept liquidity."
+    },
+    {
+      "icon": "⚠️",
+      "title": "Common Mistake: Trading the Sweep Itself",
+      "text": "Many traders enter at the moment price touches the Asian high or low, assuming that contact equals reversal. This leads to repeated stop-outs because the sweep can extend further before reversing. The correct approach is to wait for confirmation: a break of structure or a displacement candle that leaves a fair value gap, then enter on a pullback into that gap during the killzone window."
+    },
+    {
+      "icon": "🔁",
+      "title": "Next Steps: Build a Repeatable Process",
+      "text": "Start by reviewing 30 days of historical price action on GBPUSD or EURUSD from 2:00 to 5:00 AM EST. Mark the Asian range each day and note how often price sweeps one side before reversing. Once you can identify the pattern consistently on historical charts, you will begin to anticipate it in real time. R2F Trading covers this process in detail inside the full ICT methodology coaching content at r2ftrading.com."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What time is the London open killzone in EST?",
+      "a": "The London open killzone runs from 2:00 AM to 5:00 AM Eastern Standard Time. During daylight saving time in the US, this shifts slightly, so it is worth confirming your broker's server time. Most ICT traders mark this window directly on their charts to avoid missing the setup."
+    },
+    {
+      "q": "What pairs work best during the London killzone?",
+      "a": "GBPUSD and EURUSD are the most consistent pairs for London killzone setups because they carry the deepest liquidity at that session open. GBPJPY also moves aggressively but carries higher spread risk. Starting with EURUSD on the 15-minute chart keeps execution cleaner while you learn the pattern."
+    },
+    {
+      "q": "How does the London killzone relate to the Asian range?",
+      "a": "The Asian session, roughly midnight to 2:00 AM EST, tends to consolidate and pool liquidity above and below its range. The London killzone is where institutions most commonly engineer a sweep of that range to fill their orders before the true move begins. The Asian range is the reference point, and the London open is where that range gets tested."
+    },
+    {
+      "q": "Can I use fair value gaps in a London killzone strategy?",
+      "a": "Yes. After a liquidity sweep and a structural break on the 5-minute chart, displacement often leaves a fair value gap behind. That gap becomes a precision entry point. On EURUSD, for example, a 5-minute FVG formed after a sweep of the Asian low during the killzone is a textbook ICT long entry setup."
+    },
+    {
+      "q": "Is the London killzone better than the New York killzone?",
+      "a": "They serve different purposes. The London killzone tends to set the directional bias for the day and often produces the initial trend leg. The New York killzone around 7:00 to 10:00 AM EST frequently continues or reverses that move. Traders learning ICT often find London setups cleaner because price has had the full Asian session to build a defined range to work from."
+    }
+  ],
+  "relatedTags": [
+    "london-open-killzone",
+    "ict-trading-strategy",
+    "killzone-trading",
+    "asian-range-liquidity",
+    "fair-value-gap",
+    "order-block-trading",
+    "break-of-structure",
+    "forex-session-times",
+    "smart-money-concepts",
+    "ict-methodology"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-a-judas-swing",
+      "label": "Judas Swing Explained"
+    },
+    {
+      "slug": "what-is-a-liquidity-void",
+      "label": "Liquidity Void Explained"
+    },
+    {
+      "slug": "what-is-a-mitigation-block",
+      "label": "Mitigation Block Explained"
+    },
+    {
+      "slug": "what-is-smt-divergence",
+      "label": "SMT Divergence Explained"
+    }
+  ],
+  "testimonialIndex": 0,
+  "createdAt": "2026-06-19T05:01:20.382Z",
+  "targetKeyword": "london open killzone strategy"
+}
