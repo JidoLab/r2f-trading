@@ -1,5 +1,55 @@
 [
   {
+    "id": "reply-osb6trq",
+    "platform": "reddit",
+    "postTitle": "Looking for feedback on my XAUUSD &amp; BTCUSD multi-timeframe trading system",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "Any_Teaching6217",
+    "replyText": "Good point. BOS/CHoCH is currently confirmed on the entry timeframe (15M/5M), while 4H/1H are used only for bias.\n\nI agree on weighted scoring too. I’m considering giving more weight to BOS, liquidity sweeps, OBs, and FVGs than MACD/RSI.\n\nInteresting observation on 1H vs 15M OBs for Gold. I’ll defin",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1u8g5qe/looking_for_feedback_on_my_xauusd_btcusd/osb6trq/",
+    "detectedAt": "2026-06-20T13:01:21.507Z"
+  },
+  {
+    "id": "reply-osb6swf",
+    "platform": "reddit",
+    "postTitle": "🚨 FOMC DAY IS HERE 🚨",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "EmmaChartJournal",
+    "replyText": "Yes yesterday gold (XAUUSD) going both side. First gold going Buy and Then Sell. ",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1u85vje/fomc_day_is_here/osb6swf/",
+    "detectedAt": "2026-06-20T13:01:20.835Z"
+  },
+  {
+    "id": "reply-osb6r2m",
+    "platform": "reddit",
+    "postTitle": "Passing challenges using a pair-selection tool I built",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "ChoiceDescription681",
+    "replyText": "Yeah I agree with that - I have a basic strategy technically, break and retest ultimately with using supply and demand zones, Fibonacci retracement levels and MAs for confluence but can definitely see how what you explained would yield a good return.\n\nFrom a scoring perspective, majors where flaggin",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1u8sjkb/passing_challenges_using_a_pairselection_tool_i/osb6r2m/",
+    "detectedAt": "2026-06-20T13:01:19.541Z"
+  },
+  {
+    "id": "reply-osb6q5t",
+    "platform": "reddit",
+    "postTitle": "How to classify scalp vs runner trades after entry? XAUUSD M1/M3 trade management problem",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "kacjak",
+    "replyText": "I checked this on my XAUUSD M1/M3 data and your point seems valid.\n\nWhen price first reaches around +1.00 after my signal, the next 2–3 M1 candles tell a lot. The trades that later become good runners usually show a clean M1 continuation/BOS: candle closes in the trade direction, holds above/below t",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1u8559a/how_to_classify_scalp_vs_runner_trades_after/osb6q5t/",
+    "detectedAt": "2026-06-20T13:01:18.851Z"
+  },
+  {
+    "id": "reply-os56ly5",
+    "platform": "reddit",
+    "postTitle": "my trading setup",
+    "subreddit": "ICTMentorship",
+    "replyAuthor": "Plane_Strawberry1819",
+    "replyText": "i usually trade in new york am session. no i didn't get a confirmation from a BOS before trade. you are right the price doesn't always deliver cleanly between the two pools. so i will combine with the STDV and i will label the keyarea OB in the big timeframes such as H4 or H1 to ensure my profit. i ",
+    "commentUrl": "https://www.reddit.com/r/ICTMentorship/comments/1u7pztz/my_trading_setup/os56ly5/",
+    "detectedAt": "2026-06-20T13:01:16.237Z"
+  },
+  {
     "id": "reply-os42gsy",
     "platform": "reddit",
     "postTitle": "Built a free trading journal with AI psychology analysis, live prices, and full analytics — would love feedback from real traders",
