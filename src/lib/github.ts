@@ -64,6 +64,75 @@ export async function commitFile(
   }
 }
 
+/**
+ * Atomically read-modify-write a JSON file on GitHub.
+ *
+ * Unlike commitFile (which reads a fresh SHA but re-PUTs the SAME in-memory
+ * content on a 409 retry, silently clobbering a concurrent writer's change),
+ * this RE-READS the latest content and RE-APPLIES `mutate` on every attempt.
+ * Concurrent writers therefore merge instead of losing updates — the fix for
+ * the lost-update races across subscribers.json / events-queue.json / etc.
+ *
+ * `mutate` must be a pure transform of the parsed JSON (it may run more than
+ * once). `fallback` is used when the file does not exist yet.
+ */
+export async function updateJsonFile<T>(
+  path: string,
+  mutate: (current: T) => T,
+  fallback: T,
+  message: string,
+  maxRetries = 5
+): Promise<T> {
+  const repo = getRepo();
+  const headers = getHeaders();
+
+  for (let attempt = 0; attempt < maxRetries; attempt++) {
+    let sha: string | undefined;
+    let current: T = fallback;
+    try {
+      const existing = await fetch(
+        `${GITHUB_API}/repos/${repo}/contents/${path}`,
+        { headers }
+      );
+      if (existing.ok) {
+        const data = await existing.json();
+        sha = data.sha;
+        current = JSON.parse(
+          Buffer.from(data.content, "base64").toString("utf-8")
+        ) as T;
+      }
+    } catch {
+      // Treat as missing — fall back to the provided default
+    }
+
+    const next = mutate(current);
+    const body: Record<string, string> = {
+      message,
+      content: Buffer.from(JSON.stringify(next, null, 2)).toString("base64"),
+    };
+    if (sha) body.sha = sha;
+
+    const res = await fetch(
+      `${GITHUB_API}/repos/${repo}/contents/${path}`,
+      { method: "PUT", headers, body: JSON.stringify(body) }
+    );
+
+    if (res.ok) return next;
+
+    const errText = await res.text();
+    const isRetryable = res.status === 409 || res.status === 422;
+    if (isRetryable && attempt < maxRetries - 1) {
+      const waitMs = 300 * Math.pow(2, attempt) + Math.floor(Math.random() * 300);
+      console.log(`[github] updateJsonFile ${path}: ${res.status} conflict, retry ${attempt + 1}/${maxRetries} in ${waitMs}ms`);
+      await new Promise((r) => setTimeout(r, waitMs));
+      continue;
+    }
+
+    throw new Error(`GitHub updateJsonFile failed: ${res.status} ${errText}`);
+  }
+  throw new Error(`GitHub updateJsonFile exhausted retries for ${path}`);
+}
+
 export async function deleteFile(
   path: string,
   message: string
