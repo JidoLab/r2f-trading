@@ -1,0 +1,91 @@
+{
+  "slug": "what-is-a-rejection-block",
+  "title": "What Is a Rejection Block?",
+  "seoTitle": "What Is a Rejection Block in ICT Trading?",
+  "seoDescription": "A rejection block refines the standard order block by pinpointing the wick that rejected price. Get a clearer entry zone and tighter stop placement on your next setup.",
+  "headline": "What Is a Rejection Block and How Do You Trade It?",
+  "subheadline": "A rejection block narrows down the order block to the specific candle body or wick that caused the price rejection, giving you a higher-precision entry zone with less exposure.",
+  "intro": "A rejection block is a refinement of the standard ICT order block concept, defined as the specific portion of a candle, typically the wick or the body's extreme, where price aggressively rejected a level before a displacement move. Rather than treating the entire candle as the zone of interest, the rejection block isolates the actual area of institutional reaction, producing a tighter and more precise entry model. Traders use it to reduce stop distance and improve risk-to-reward on retraces back into that zone.",
+  "keyPoints": [
+    {
+      "icon": "🕯️",
+      "title": "What a Rejection Block Is",
+      "text": "A rejection block is formed when a candle shows a pronounced wick that was aggressively rejected, signaling institutional defense of a price level. The zone is defined by the high and low of that wick, not the full candle body. This narrows the area of interest compared to a standard order block, which uses the entire last opposing candle before a move."
+    },
+    {
+      "icon": "🎯",
+      "title": "Why Precision Matters Here",
+      "text": "Standard order blocks can span 20 to 40 pips on a 15-minute chart, which forces a wide stop and dilutes your risk-to-reward ratio. The rejection block compresses that zone to the actual contested area, often just the upper or lower third of the original candle. Tighter zones mean tighter stops and cleaner trade management when price returns during a killzone."
+    },
+    {
+      "icon": "🛠️",
+      "title": "How to Identify and Use One",
+      "text": "First, confirm a break of structure or change of character on your higher timeframe. Then look back at the last candle before that displacement for a significant wick into the opposing side. Mark the high and low of that wick as your rejection block. Wait for price to retrace into that zone during a session killzone, such as London open or New York AM, and look for confirmation from a fair value gap or order block on a lower timeframe before entering."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The Most Common Mistake",
+      "text": "Many traders mark rejection blocks in the direction of the prevailing trend without first confirming that a structural shift has occurred. A wick alone does not create a valid rejection block. The displacement move following the rejection must break a prior swing high or low to confirm that smart money committed to the move. Without that break of structure, the wick is noise."
+    },
+    {
+      "icon": "📈",
+      "title": "Building This Into Your Process",
+      "text": "Start by reviewing your existing order block setups and check whether a rejection block exists within them. If the original order block candle has a prominent wick, the rejection block sits inside your already-valid zone and simply refines your entry. From there, pair the rejection block with a fair value gap on the entry timeframe to create a confluence-based model you can execute consistently across pairs like EURUSD, GBP/USD, or ES futures."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a rejection block in ICT trading?",
+      "a": "A rejection block in ICT trading is the wick portion of a candle that sharply rejected a price level before a displacement move. It refines the order block concept by isolating only the contested area, giving traders a smaller and more precise zone to work with on retraces."
+    },
+    {
+      "q": "How is a rejection block different from an order block?",
+      "a": "An order block uses the full body of the last opposing candle before a move. A rejection block narrows that down to the wick that actually rejected price. On a EURUSD 15-minute chart, this can reduce your entry zone from 30 pips to under 10 pips, meaningfully improving your risk-to-reward setup."
+    },
+    {
+      "q": "Does a rejection block need a break of structure to be valid?",
+      "a": "Yes. The displacement move that follows the rejection candle must produce a break of structure or a change of character on the working timeframe. Without that structural confirmation, the wick has no institutional context and should not be treated as a rejection block for trade entry."
+    },
+    {
+      "q": "What timeframes work best for trading rejection blocks?",
+      "a": "Rejection blocks are typically identified on the 15-minute or 1-hour chart after a higher timeframe bias is established. Entries are then refined on the 5-minute or 1-minute chart. The London open and New York AM killzones provide the volume needed for price to respect and react from these zones."
+    },
+    {
+      "q": "Can rejection blocks appear in futures markets like ES or NQ?",
+      "a": "Yes, rejection blocks appear consistently on ES and NQ futures, particularly around high-impact economic events or during the New York open when institutional order flow is highest. The concept is market-agnostic because it is based on price delivery mechanics, not instrument-specific behavior."
+    }
+  ],
+  "relatedTags": [
+    "order-blocks",
+    "ict-concepts",
+    "break-of-structure",
+    "fair-value-gap",
+    "killzone-trading",
+    "liquidity",
+    "price-action",
+    "trade-entries",
+    "risk-management",
+    "forex-trading"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-displacement-in-ict",
+      "label": "Displacement in ICT Trading"
+    },
+    {
+      "slug": "how-to-identify-order-blocks",
+      "label": "How to Identify Order Blocks"
+    },
+    {
+      "slug": "how-to-trade-fair-value-gaps",
+      "label": "How to Trade Fair Value Gaps"
+    },
+    {
+      "slug": "what-is-an-inversion-fair-value-gap",
+      "label": "Inversion Fair Value Gap Explained"
+    }
+  ],
+  "testimonialIndex": 2,
+  "createdAt": "2026-06-20T05:01:21.197Z",
+  "targetKeyword": "what is a rejection block"
+}
