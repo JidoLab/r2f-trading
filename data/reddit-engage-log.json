@@ -3527,7 +3527,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-17T08:01:18.092Z",
     "permalink": "/r/ICTMentorship/comments/1u7pztz/my_trading_setup/os56ly5/",
-    "commentId": "os56ly5"
+    "commentId": "os56ly5",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-17T08:08:28.000Z",
+    "firstReplyAuthor": "Plane_Strawberry1819",
+    "firstReplyText": "i usually trade in new york am session. no i didn't get a confirmation from a BOS before trade. you are right the price doesn't always deliver cleanly between the two pools. so i will combine with the STDV and i will label the keyarea OB in the big timeframes such as H4 or H1 to ensure my profit. i "
   },
   {
     "postId": "1u817yu",
@@ -3567,7 +3571,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-18T03:00:54.562Z",
     "permalink": "/r/Forexstrategy/comments/1u8559a/how_to_classify_scalp_vs_runner_trades_after/osb6q5t/",
-    "commentId": "osb6q5t"
+    "commentId": "osb6q5t",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-19T03:19:32.000Z",
+    "firstReplyAuthor": "kacjak",
+    "firstReplyText": "I checked this on my XAUUSD M1/M3 data and your point seems valid.\n\nWhen price first reaches around +1.00 after my signal, the next 2–3 M1 candles tell a lot. The trades that later become good runners usually show a clean M1 continuation/BOS: candle closes in the trade direction, holds above/below t"
   },
   {
     "postId": "1u8sjkb",
@@ -3577,7 +3585,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-18T03:01:03.663Z",
     "permalink": "/r/Forexstrategy/comments/1u8sjkb/passing_challenges_using_a_pairselection_tool_i/osb6r2m/",
-    "commentId": "osb6r2m"
+    "commentId": "osb6r2m",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-18T06:43:29.000Z",
+    "firstReplyAuthor": "ChoiceDescription681",
+    "firstReplyText": "Yeah I agree with that - I have a basic strategy technically, break and retest ultimately with using supply and demand zones, Fibonacci retracement levels and MAs for confluence but can definitely see how what you explained would yield a good return.\n\nFrom a scoring perspective, majors where flaggin"
   },
   {
     "postId": "1u82ffl",
@@ -3597,7 +3609,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-18T03:01:22.479Z",
     "permalink": "/r/Forexstrategy/comments/1u85vje/fomc_day_is_here/osb6swf/",
-    "commentId": "osb6swf"
+    "commentId": "osb6swf",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-18T06:28:12.000Z",
+    "firstReplyAuthor": "EmmaChartJournal",
+    "firstReplyText": "Yes yesterday gold (XAUUSD) going both side. First gold going Buy and Then Sell. "
   },
   {
     "postId": "1u8g5qe",
@@ -3607,7 +3623,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-18T03:01:31.736Z",
     "permalink": "/r/Forexstrategy/comments/1u8g5qe/looking_for_feedback_on_my_xauusd_btcusd/osb6trq/",
-    "commentId": "osb6trq"
+    "commentId": "osb6trq",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-18T04:05:12.000Z",
+    "firstReplyAuthor": "Any_Teaching6217",
+    "firstReplyText": "Good point. BOS/CHoCH is currently confirmed on the entry timeframe (15M/5M), while 4H/1H are used only for bias.\n\nI agree on weighted scoring too. I’m considering giving more weight to BOS, liquidity sweeps, OBs, and FVGs than MACD/RSI.\n\nInteresting observation on 1H vs 15M OBs for Gold. I’ll defin"
   },
   {
     "postId": "1u8awmj",
