@@ -1976,5 +1976,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-06-20T12:00:25.993Z",
+    "type": "text",
+    "postType": "myth",
+    "text": "MYTH: Order blocks work on every timeframe equally.\n\nTRUTH: Without confluence from a higher timefra",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
