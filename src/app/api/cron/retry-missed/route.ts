@@ -20,12 +20,16 @@ const CRITICAL_CRONS = [
   {
     name: "generate-post",
     route: "generate-post",
+    scheduledDays: [0, 3], // Sun, Wed — matches vercel.json "0 6 * * 0,3"
     check: async (): Promise<boolean> => {
       const today = new Date().toISOString().split("T")[0];
       try {
         const files = await import("@/lib/github").then((m) => m.listFiles("content/blog"));
-        // Check if any blog post file contains today's date
-        return files.some((f: string) => f.includes(today.replace(/-/g, "")));
+        // Blog filenames are "YYYY-MM-DD-slug.mdx" so match the hyphenated date.
+        // Previously this stripped hyphens ("20260620") which never matched a
+        // real filename, so retry-missed thought the post was always missing
+        // and re-generated a full blog post (+image+social) every single day.
+        return files.some((f: string) => f.includes(today));
       } catch {
         return false;
       }
@@ -34,6 +38,7 @@ const CRITICAL_CRONS = [
   {
     name: "find-reply-opportunities",
     route: "find-reply-opportunities",
+    scheduledDays: [1, 4], // Mon, Thu — matches "30 0 * * 1,4"
     check: async (): Promise<boolean> => {
       const today = new Date().toISOString().split("T")[0];
       try {
@@ -48,6 +53,7 @@ const CRITICAL_CRONS = [
   {
     name: "find-forum-opportunities",
     route: "find-forum-opportunities",
+    scheduledDays: [1, 4], // Mon, Thu — matches "45 0 * * 1,4"
     check: async (): Promise<boolean> => {
       const today = new Date().toISOString().split("T")[0];
       try {
@@ -67,22 +73,16 @@ const CRITICAL_CRONS = [
       }
     },
   },
-  {
-    name: "generate-short",
-    route: "generate-short",
-    check: async (): Promise<boolean> => {
-      const today = new Date().toISOString().split("T")[0];
-      try {
-        const files = await import("@/lib/github").then((m) => m.listFiles("data/shorts/renders"));
-        return files.some((f: string) => f.includes(today.replace(/-/g, "")));
-      } catch {
-        return false;
-      }
-    },
-  },
+  // generate-short removed from retry-missed on 2026-06-20: shorts production is
+  // currently halted (not in vercel.json), and its render files are slug-named
+  // with no date, so the date check never matched and retry-missed was firing
+  // generate-short every single day — reviving the halted pipeline and burning
+  // ElevenLabs/render cost. If shorts are re-enabled, restore this with a
+  // date-reliable check (e.g. read each render's createdAt) and scheduledDays.
   {
     name: "reddit-engage",
     route: "reddit-engage",
+    scheduledDays: null, // runs daily (multiple times) — always eligible
     check: async (): Promise<boolean> => {
       const today = new Date().toISOString().split("T")[0];
       try {
@@ -130,9 +130,18 @@ export async function GET(req: NextRequest) {
   const retriedNow: string[] = [];
   const newEntries: RetryLogEntry[] = [];
 
+  const todayDow = new Date().getUTCDay(); // 0=Sun..6=Sat (UTC, matches Vercel cron)
+
   for (const cron of CRITICAL_CRONS) {
     // Skip if already retried today
     if (alreadyRetried.has(cron.name)) continue;
+
+    // Only retry on days this cron is actually scheduled. retry-missed runs
+    // daily, but several crons run on specific weekdays (generate-post Sun/Wed,
+    // find-*-opportunities Mon/Thu). Without this guard, an absent output on a
+    // non-scheduled day looked like a "miss" and retry-missed re-fired the cron
+    // every day — duplicate posts and wasted API spend.
+    if (cron.scheduledDays && !cron.scheduledDays.includes(todayDow)) continue;
 
     // Check if cron has produced output today
     let hasOutput = false;
