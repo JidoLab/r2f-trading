@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll",
     "poll-native",
     "hot-take",
     "story",
@@ -29,11 +28,12 @@
     "promo-free-class",
     "tip",
     "promo-results",
-    "promo-checklist"
+    "promo-checklist",
+    "myth"
   ],
   "lastPost": {
-    "type": "promo-checklist",
-    "text": "Order blocks. FVGs. Smart money concepts. None of it matters if you skip your pre-trade checklist. I use this before every single trade — grab it free 👇 https://r2ftrading.com #ICTTrading #SmartMoneyConcepts #FundedTrader",
-    "date": "2026-06-19T12:01:16.321Z"
+    "type": "myth",
+    "text": "MYTH: Order blocks work on every timeframe equally.\n\nTRUTH: Without confluence from a higher timeframe bias, you're just drawing rectangles and gambling.\n\nContext > pattern. Always.\n\n#ICTTrading #OrderBlocks #SmartMoneyConcepts",
+    "date": "2026-06-20T12:00:25.185Z"
   }
 }
