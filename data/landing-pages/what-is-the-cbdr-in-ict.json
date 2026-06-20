@@ -1,0 +1,95 @@
+{
+  "slug": "what-is-the-cbdr-in-ict",
+  "title": "CBDR in ICT Trading Explained",
+  "seoTitle": "What Is the CBDR in ICT? Central Bank Dealers Range Guide",
+  "seoDescription": "The CBDR defines a specific 4-hour price window that ICT traders use to forecast daily range expansion. Here is how to read it and apply it to your setups.",
+  "headline": "What Is the CBDR in ICT and How Do You Use It?",
+  "subheadline": "The Central Bank Dealers Range is a time-based price tool that helps ICT traders anticipate where the daily move is likely to expand. Understanding it adds a directional bias layer before the London and New York sessions open.",
+  "intro": "The CBDR in ICT refers to the Central Bank Dealers Range, a price range formed during the 2:00 AM to 6:00 AM New York time window, which captures the low-volatility accumulation period before major session expansions. ICT uses this range to project potential price targets for the London and New York killzones by applying standard deviation extensions above and below the CBDR boundary. Traders use it alongside tools like fair value gaps and order blocks to confirm whether price is likely to expand to the upside or downside during the active trading hours ahead.",
+  "keyPoints": [
+    {
+      "icon": "🏦",
+      "title": "What the CBDR Actually Is",
+      "text": "The Central Bank Dealers Range is the high and low printed between 2:00 AM and 6:00 AM New York time on forex pairs, most commonly applied to majors like EURUSD and GBPUSD. This window is deliberately quiet because institutional liquidity is thin and large operators are positioning rather than executing. The range itself becomes a reference boundary, not a trade trigger."
+    },
+    {
+      "icon": "📐",
+      "title": "Why the CBDR Range Size Matters",
+      "text": "ICT teaches that the size of the CBDR correlates with the expected daily range expansion. A tight CBDR, roughly under 20 pips on EURUSD, often precedes a larger directional move in London or New York. A wide CBDR can signal that much of the daily range has already been distributed, which changes how aggressively traders should pursue targets. Tracking CBDR size over time gives traders a calibrated expectation for each session."
+    },
+    {
+      "icon": "🎯",
+      "title": "How to Apply Standard Deviations",
+      "text": "Once the 6:00 AM New York time candle closes, ICT traders measure the CBDR high and low and project standard deviation levels above and below. The first standard deviation marks a conservative target, while the second and third extensions map to premium and discount liquidity pools. If price breaks the CBDR high and a bullish fair value gap forms on the 15-minute chart, traders look for a retracement into that FVG before targeting the first standard deviation above the range."
+    },
+    {
+      "icon": "⚠️",
+      "title": "Common Mistake: Trading Inside the CBDR",
+      "text": "A frequent error is trying to trade breakouts or reversals while the CBDR is still forming, between 2:00 AM and 6:00 AM New York time. Price action inside this window is deliberately manipulated and does not offer clean ICT setups. The CBDR is a measurement tool, not a trading window. Traders who enter during this period often get stopped out before the real directional move begins at the London open."
+    },
+    {
+      "icon": "🔁",
+      "title": "Combining CBDR With Your Full ICT Framework",
+      "text": "The CBDR works best as a confluence layer stacked with other ICT concepts. Once you have your standard deviation targets plotted, compare them against higher timeframe order blocks, liquidity pools above swing highs or below swing lows, and the prevailing market structure. If the daily chart shows a break of structure to the upside and the CBDR standard deviation target aligns with an untested order block, that confluence strengthens the case for a long setup in the London killzone."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What time is the CBDR in ICT?",
+      "a": "The CBDR is measured from 2:00 AM to 6:00 AM New York time. This four-hour window precedes the London killzone and captures the low-activity accumulation phase. All standard deviation projections are calculated from the high and low printed during this specific window, not from the midnight open or Asian session high and low."
+    },
+    {
+      "q": "How do you calculate CBDR standard deviations?",
+      "a": "Take the pip range of the CBDR high to low. That full range equals one standard deviation unit. Project that same distance above the CBDR high for bullish targets and below the CBDR low for bearish targets. For example, if the CBDR on GBPUSD is 30 pips wide, the first standard deviation target above the high sits 30 pips above it, the second sits 60 pips above, and so on."
+    },
+    {
+      "q": "Is the CBDR useful on all forex pairs?",
+      "a": "ICT most commonly applies the CBDR to major pairs including EURUSD, GBPUSD, and AUDUSD. It is less reliable on pairs with very low liquidity during the 2 to 6 AM New York window. For futures traders, ICT applies similar range concepts to equity index futures using the overnight inventory as a comparable reference structure."
+    },
+    {
+      "q": "How does the CBDR relate to the AMD model in ICT?",
+      "a": "The AMD model, which stands for Accumulation, Manipulation, and Distribution, maps directly onto how ICT frames the CBDR. The 2 to 6 AM window represents the accumulation phase. Price often sweeps one side of the CBDR in early London trading as the manipulation phase, creating a liquidity grab before distributing in the true directional move. Recognizing the CBDR boundary helps traders identify when that manipulation sweep has occurred."
+    },
+    {
+      "q": "What is a realistic pip target from CBDR projections?",
+      "a": "On EURUSD during a trending day, the first standard deviation above or below the CBDR often lands within 20 to 40 pips of the breakout point depending on range size. The second standard deviation, which maps to a 2x extension, is a common institutional target on higher conviction days. These levels frequently align with visible liquidity pools or unfilled fair value gaps on the one-hour chart."
+    }
+  ],
+  "relatedTags": [
+    "ict-methodology",
+    "central-bank-dealers-range",
+    "cbdr",
+    "forex-trading",
+    "killzone-trading",
+    "fair-value-gap",
+    "order-blocks",
+    "market-structure",
+    "london-session",
+    "new-york-session",
+    "standard-deviation-targets",
+    "amd-model",
+    "liquidity-concepts",
+    "daily-range-projection"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "how-to-find-daily-bias-in-ict",
+      "label": "Daily Bias in ICT Explained"
+    },
+    {
+      "slug": "how-to-identify-order-blocks",
+      "label": "How to Identify Order Blocks"
+    },
+    {
+      "slug": "how-to-pass-ftmo-challenge-ict",
+      "label": "Pass FTMO with ICT Strategy"
+    },
+    {
+      "slug": "how-to-trade-fair-value-gaps",
+      "label": "How to Trade Fair Value Gaps"
+    }
+  ],
+  "testimonialIndex": 1,
+  "createdAt": "2026-06-20T05:00:49.190Z",
+  "targetKeyword": "what is the CBDR in ICT"
+}
