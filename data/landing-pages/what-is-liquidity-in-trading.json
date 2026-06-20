@@ -1,0 +1,91 @@
+{
+  "slug": "what-is-liquidity-in-trading",
+  "title": "Liquidity in Trading Explained",
+  "seoTitle": "What Is Liquidity in Trading? Buy & Sell Side Explained",
+  "seoDescription": "Most traders lose money chasing price instead of understanding what is liquidity in trading. Buy-side and sell-side liquidity explained with real ICT context. Know where the orders are.",
+  "headline": "What Is Liquidity in Trading and Why It Moves Price",
+  "subheadline": "Understanding where buy-side and sell-side liquidity pools sit is the foundation of every ICT setup. Price does not move randomly. It hunts orders.",
+  "intro": "Liquidity in trading refers to clusters of resting orders in the market, stop losses, pending entries, and limit orders placed by other participants, that price actively seeks out before reversing or continuing. In the ICT methodology, liquidity is not a background condition but the actual target of institutional order flow. Buy-side liquidity rests above swing highs where short sellers have placed stop losses, while sell-side liquidity rests below swing lows where long traders have their stops. Smart money engineers price movements to reach these pools, fill large orders against retail positions, and then move in the opposite direction.",
+  "keyPoints": [
+    {
+      "icon": "💧",
+      "title": "What liquidity actually is",
+      "text": "Liquidity is the collection of resting orders sitting at predictable price levels. Equal highs, swing highs, and previous session highs hold buy-side liquidity. Equal lows, swing lows, and Asian session lows hold sell-side liquidity. These levels are magnets, not barriers, because institutions need opposing orders to fill large positions."
+    },
+    {
+      "icon": "📍",
+      "title": "Why liquidity drives price movement",
+      "text": "Institutions cannot fill millions of contracts at a single price without a counterparty. They engineer runs into liquidity pools to find those counterparties. A sweep of sell-side liquidity below a key low provides the buy orders institutions need to build long positions at scale. This is why a clean break of a swing low often reverses sharply rather than continuing lower."
+    },
+    {
+      "icon": "🗺️",
+      "title": "How to map liquidity on your chart",
+      "text": "Mark equal highs and lows on the 15-minute and 1-hour charts before your killzone opens. Note the Asian session range boundaries, as these are targeted frequently during the London open. During New York AM, watch for a sweep of the overnight low followed by a break of structure to the upside. That sequence is a textbook sell-side liquidity grab into an order block entry."
+    },
+    {
+      "icon": "⚠️",
+      "title": "The most common mistake traders make",
+      "text": "Traders place their stops directly at swing highs or lows, which are the exact levels that get swept before a reversal. Entering long after price sweeps sell-side liquidity and then placing your stop below that same low is a tighter and more logical placement. Positioning stops where liquidity already got cleared reduces the chance of being taken out before the real move."
+    },
+    {
+      "icon": "🔁",
+      "title": "Combining liquidity with ICT concepts",
+      "text": "Once a liquidity sweep occurs, look for confirmation through a Break of Structure on a lower timeframe, an unmitigated Order Block in the direction of the new move, or a Fair Value Gap that price returns to before continuing. These tools work together: liquidity identifies the turning point, and FVGs or OBs provide the precise entry. Practice mapping this sequence on the EURUSD or ES futures 15-minute chart during the London killzone."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between buy-side and sell-side liquidity?",
+      "a": "Buy-side liquidity rests above swing highs and equal highs, where short sellers have placed their stop losses. Sell-side liquidity rests below swing lows and equal lows, where long traders have stops sitting. Price sweeps these levels to trigger those orders before reversing in the opposing direction."
+    },
+    {
+      "q": "How do you identify a liquidity sweep on a chart?",
+      "a": "A liquidity sweep is a wick or brief close beyond a notable high or low followed by a fast return into the prior range. On EURUSD, a 15-minute candle that pushes below the prior Asian session low and then closes back above it is a classic sell-side sweep. Confirmation comes from a structure break to the upside shortly after."
+    },
+    {
+      "q": "Is liquidity the same as volume in trading?",
+      "a": "They are related but different concepts. Volume measures how many contracts changed hands. Liquidity in the ICT sense refers to where resting orders are clustered on the chart, regardless of volume at that moment. A level can have high volume and low resting liquidity, or it can be a quiet swing low loaded with stop orders waiting to be triggered."
+    },
+    {
+      "q": "Why does price hunt stop losses before reversing?",
+      "a": "Large institutional orders require counterparties to fill against. When price sweeps a swing low, it triggers retail long stop losses, which become sell orders. Those sell orders are the counterparty that allows institutions to buy large positions efficiently. This is the core mechanic behind most ICT reversal setups and why hunting liquidity is a feature of the market, not an anomaly."
+    },
+    {
+      "q": "How does liquidity connect to order blocks and FVGs?",
+      "a": "Liquidity grabs mark where price has reversed. Order blocks and Fair Value Gaps identify the specific price zone where institutional activity occurred during that reversal. After a sell-side sweep on the NQ futures 5-minute chart, the last bullish candle before the sweeping move often becomes the order block. Price returning to fill the FVG within that zone is the entry trigger."
+    }
+  ],
+  "relatedTags": [
+    "ict-methodology",
+    "order-blocks",
+    "fair-value-gap",
+    "break-of-structure",
+    "killzone-trading",
+    "smart-money-concepts",
+    "stop-hunt",
+    "swing-highs-and-lows",
+    "forex-price-action",
+    "futures-trading"
+  ],
+  "relatedTerms": [
+    {
+      "slug": "what-is-a-judas-swing",
+      "label": "Judas Swing Explained"
+    },
+    {
+      "slug": "what-is-a-mitigation-block",
+      "label": "Mitigation Block Explained"
+    },
+    {
+      "slug": "how-to-identify-order-blocks",
+      "label": "How to Identify Order Blocks"
+    },
+    {
+      "slug": "how-to-stop-overtrading",
+      "label": "How to Stop Overtrading"
+    }
+  ],
+  "testimonialIndex": 2,
+  "createdAt": "2026-06-20T05:01:55.261Z",
+  "targetKeyword": "what is liquidity in trading"
+}
