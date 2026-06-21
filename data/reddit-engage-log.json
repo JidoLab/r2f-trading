@@ -3816,5 +3816,35 @@
     "commentedAt": "2026-06-21T13:00:31.075Z",
     "permalink": "/r/InnerCircleTraders/comments/1ubb7vb/up_354_on_paper_using_ict_luxalgo_but_want_to/osxpchx/",
     "commentId": "osxpchx"
+  },
+  {
+    "postId": "1ubj2w6",
+    "subreddit": "Forexstrategy",
+    "postTitle": "URGENT: EURUSD Ahead of Major Move and 1000-pip trend",
+    "commentText": "the interest rate differential argument is valid but tbh it's a lagging narrative, price already knows. what i'd actually be watching is whether that 1.1400 level has an untapped daily OB sitting just above it, because if it does, the liquidity sweep you're eyeing on the 4H could run clean into that OB before any real reversal prints. the hammer candle is interesting but i'd want to see how new york open treats it on monday before committing to the short bias. curious whether you've mapped out the draw on liquidity to the downside if the weekly resistance holds, because that's where the 1000-pip case really lives imo. happy to walk through where i'd place the short OB entry on this one if that helps.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-21T18:01:13.940Z",
+    "permalink": "/r/Forexstrategy/comments/1ubj2w6/urgent_eurusd_ahead_of_major_move_and_1000pip/oszcvk9/",
+    "commentId": "oszcvk9"
+  },
+  {
+    "postId": "1ubs2cj",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Coding and backtesting strategies",
+    "commentText": "the choch entry directly at the OB is probably your issue tbh. a lot of backtests look rough when you're not filtering for OB quality, specifically whether the block has a clean FVG embedded in it or sits inside a larger draw on liquidity. try adding a rule that the OB has to form after a clean liquidity sweep on at least the 1h, not just any swing high or low getting tagged. are you running this on a specific pair like EURUSD or NQ, and what session are you taking entries in? london vs new york changes the whole validity of the setup.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-21T18:01:22.792Z",
+    "permalink": "/r/ICTMentorship/comments/1ubs2cj/coding_and_backtesting_strategies/oszcwpz/",
+    "commentId": "oszcwpz"
+  },
+  {
+    "postId": "1ubrqo8",
+    "subreddit": "Forexstrategy",
+    "postTitle": "MISS THIS GOLD ANALYSIS AND YOU’LL UNDERSTAND IT THE HARD WAY NEXT WEEK ⚠️",
+    "commentText": "given the rejection from that $4383 OB and the fact last week didn't sweep the prior week's low, try marking the 4h bullish FVG that likely formed during the FOMC impulse down. if price revisits that gap during london open next week and holds, that's your long setup targeting liquidity above before any $4000 hunt even becomes relevant. the weekly close detail you mentioned is actually the key thing most sellers are ignoring rn. curious what your 1h structure looks like inside that FVG, happy to break down the entry criteria in this thread if you want to share a chart 👀",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-21T18:01:32.405Z",
+    "permalink": "/r/Forexstrategy/comments/1ubrqo8/miss_this_gold_analysis_and_youll_understand_it/oszcxxe/",
+    "commentId": "oszcxxe"
   }
 ]
