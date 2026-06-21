@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll-native",
     "hot-take",
     "story",
     "quote",
@@ -29,11 +28,12 @@
     "tip",
     "promo-results",
     "promo-checklist",
-    "myth"
+    "myth",
+    "challenge"
   ],
   "lastPost": {
-    "type": "myth",
-    "text": "MYTH: Order blocks work on every timeframe equally.\n\nTRUTH: Without confluence from a higher timeframe bias, you're just drawing rectangles and gambling.\n\nContext > pattern. Always.\n\n#ICTTrading #OrderBlocks #SmartMoneyConcepts",
-    "date": "2026-06-20T12:00:25.185Z"
+    "type": "challenge",
+    "text": "CHALLENGE: This week only take trades at Order Blocks confirmed by a Fair Value Gap. No FVG confirmation = no trade. 5 days. Track every setup you skipped. The discipline alone will change how you see price. Drop your results 👇 #ICTTrading #OrderBlocks #SmartMoneyConcepts",
+    "date": "2026-06-21T12:01:32.269Z"
   }
 }
