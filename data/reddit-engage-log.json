@@ -3768,5 +3768,35 @@
     "commentedAt": "2026-06-19T18:00:53.232Z",
     "permalink": "/r/Trading/comments/1ua4dmu/i_want_to_become_professional_and_profitable/osmalv7/",
     "commentId": "osmalv7"
+  },
+  {
+    "postId": "1uaxd70",
+    "subreddit": "Trading",
+    "postTitle": "How should you evaluate a trading platform's risk-reward ratio claims? — an analyst's framework",
+    "commentText": "the math in this post is solid, but the part that gets skipped most often is that a 1:3 rr claim means nothing without knowing *where* the stop and target are actually placed. i've seen platforms set targets at the next minor resistance and stops below a random recent low, which has nothing to do with structure. in ICT terms, if your stop isn't beneath a confirmed OB and your target isn't at a liquidity pool or an unfilled FVG on the higher timeframe, the ratio is basically decorative. tbh the average losing trade value question at the end of this post is the one i'd push hardest on any platform. happy to walk through how to audit an entry model on this if it helps, like if you've got a specific algo signal you're trying to stress-test, drop the pair and timeframe and we can pull it apart right here.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-21T08:00:15.066Z",
+    "permalink": "/r/Trading/comments/1uaxd70/how_should_you_evaluate_a_trading_platforms/oswng7y/",
+    "commentId": "oswng7y"
+  },
+  {
+    "postId": "1ubbfu8",
+    "subreddit": "Trading",
+    "postTitle": "Sweep liquidity",
+    "commentText": "for new york, imo the cleanest setup is when london sweeps asia highs or lows and then leaves an FVG or OB going into the NY killzone (8:30-11am EST). that sweep confirms where the liquidity was resting, and NY tends to deliver the actual displacement. tbh trading every session sweep independently makes it noisy, so i use london's sweep of asia as the higher timeframe context, then wait for price to return to a NY open OB on the 5m or 15m before entry. what pair are you watching this on? drop it and i can point out exactly where the sweep confirmation and OB line up on a recent move.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-21T08:00:24.416Z",
+    "permalink": "/r/Trading/comments/1ubbfu8/sweep_liquidity/oswnguc/",
+    "commentId": "oswnguc"
+  },
+  {
+    "postId": "1uax4tp",
+    "subreddit": "Trading",
+    "postTitle": "Any traders here",
+    "commentText": "been trading since before funded accounts blew up the way they have in 2026, and tbh the biggest thing i see people overlook when they're connecting with other traders is they swap strategies before they actually understand why a setup works. if you're exploring ICT concepts, start with understanding the london session BOS on the 15m before you even think about entries. that one shift alone changes how you see price forever. what markets are you currently focused on, forex, indices, or something else?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-21T08:00:34.439Z",
+    "permalink": "/r/Trading/comments/1uax4tp/any_traders_here/oswnhjn/",
+    "commentId": "oswnhjn"
   }
 ]
