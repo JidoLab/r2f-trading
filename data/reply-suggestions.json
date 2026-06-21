@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1782043272879-z0uly",
+    "platform": "youtube",
+    "postTitle": "$500 / DAY TRADING STRATEGY! #daytrader #daytrading #stockmarket #futurestrading #ict",
+    "postUrl": "https://youtube.com/watch?v=Kz3hOV8BuyQ",
+    "authorName": "Brad Scholten ",
+    "suggestedReply": "Chasing a fixed $500 daily target is actually something I steer my students away from. In my experience, targeting a percentage of your account based on premium and discount arrays during the New York open session works better because it keeps your risk proportional and stops you forcing trades when the setup simply isn't there. The days you skip bad setups are just as valuable as your winning days.",
+    "createdAt": "2026-06-21T12:01:12.879Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782043277597-b7vxv",
+    "platform": "youtube",
+    "postTitle": "    Learn Market Structure Step by Step | ICT &amp; SMC series lecture No. 1",
+    "postUrl": "https://youtube.com/watch?v=xoGjOAkunW8",
+    "authorName": "Chart to Check-in",
+    "suggestedReply": "Interesting take on stepping through market structure from the ground up. In my experience, most beginners fixate on identifying highs and lows before they understand WHY price breaks them, which is the displacement and liquidity context behind the move. I always tell my students that structure means nothing without understanding what drove the break, especially on higher timeframes like the daily or 4H first. Starting with that context before drilling into entries changes everything.",
+    "createdAt": "2026-06-21T12:01:17.597Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782043281450-xek3n",
+    "platform": "youtube",
+    "postTitle": "Smart Money Just Set the Trap… Did You Notice It? #trading",
+    "postUrl": "https://youtube.com/watch?v=7IJzntKZHAM",
+    "authorName": "Trade Pluse",
+    "suggestedReply": "Smart money traps are something I drill into my students constantly because most miss the manipulation phase entirely before the actual move. On the 15 minute chart this pattern tends to fake out retail traders right at key liquidity pools, especially during the New York open sweep. Did you find the trap in this video formed above or below an old high, because that context changes everything for your entry timing?",
+    "createdAt": "2026-06-21T12:01:21.450Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782043285856-g74y7",
+    "platform": "youtube",
+    "postTitle": "XAUUSD (GOLD) Weekly Analysis 🔥 | Next Week Gold Prediction | Smart Money Concepts (SMC) | FW TRADE",
+    "postUrl": "https://youtube.com/watch?v=OtSPNDSjGWs",
+    "authorName": "FW TRADER",
+    "suggestedReply": "Interesting take on the weekly SMC structure for gold. In my experience, what works better than just identifying weekly highs and lows is waiting for a confirmed change of character on the daily before committing to a directional bias. I drill this into my students constantly because gold is notorious for inducing traders who jump early on weekly setups without that lower timeframe confirmation.",
+    "createdAt": "2026-06-21T12:01:25.856Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782043289370-2aiue",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE BTC &amp; GOLD Trading | ICT Smart Money Concepts | BTCUSDT &amp; XAUUSD Analysis",
+    "postUrl": "https://youtube.com/watch?v=kKg0WlSCEbQ",
+    "authorName": "Palak Pandit",
+    "suggestedReply": "Interesting take pairing BTC and gold together under SMC. In my experience the two assets demand very different discount/premium zone approaches because crypto liquidity sweeps tend to be far more aggressive than gold. I actually teach my students to build separate confluence checklists for each before overlapping any ICT framework. Curious whether you favour the same session timing on both or adjust for crypto's 24 hour nature.",
+    "createdAt": "2026-06-21T12:01:29.370Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782043292867-6dk0m",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=GvSimLINy0A",
+    "authorName": "The Trading Process",
+    "suggestedReply": "SMC on XAUUSD is solid but I always warn my students about one trap. Gold respects liquidity sweeps beautifully on the higher timeframes but the 15m and 5m entries during crypto sessions can create false confirmations if you're mapping order blocks without accounting for gold's news volatility. I drill this into every student. Confirm your displacement before committing, especially around session overlaps.",
+    "createdAt": "2026-06-21T12:01:32.867Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782043296572-w4nqk",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Gold (XAUUSD) &amp; Crypto Analysis | Smart Money Concepts (SMC) &amp; ICT Strategy#thetradingproces",
+    "postUrl": "https://youtube.com/watch?v=bOVJhXPujM0",
+    "authorName": "The Trading Process",
+    "suggestedReply": "Smart money on XAUUSD is one of the cleanest pairs to apply ICT concepts because gold respects institutional levels so consistently. I drill into my students that the real edge with SMC on gold comes from identifying the higher timeframe draw on liquidity BEFORE dropping to execution timeframes. Are you finding the 4H narrative aligns well with your entries during the live sessions, or do you work primarily from the daily?",
+    "createdAt": "2026-06-21T12:01:36.572Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782043299960-6ztmb",
+    "platform": "youtube",
+    "postTitle": "🚨This Is Why You Keep Losing Trades!",
+    "postUrl": "https://youtube.com/watch?v=mmP2RZ9zlYg",
+    "authorName": "The Crypto Project",
+    "suggestedReply": "I used to keep losing trades for the exact same reason this video touches on. I was trading EURUSD on the 15 minute chart and ignoring draw on liquidity completely, just reacting to price instead of anticipating it. I drill this into my students now. knowing WHERE price is going before you enter is the whole game.",
+    "createdAt": "2026-06-21T12:01:39.960Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1781870489490-arwl9",
     "platform": "investinglive",
     "postTitle": "investingLive European FX news wrap: Markets consolidate on US Juneteenth",
