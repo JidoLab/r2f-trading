@@ -3798,5 +3798,15 @@
     "commentedAt": "2026-06-21T08:00:34.439Z",
     "permalink": "/r/Trading/comments/1uax4tp/any_traders_here/oswnhjn/",
     "commentId": "oswnhjn"
+  },
+  {
+    "postId": "1ubb7vb",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Up $354 on paper using ICT / LuxAlgo, but want to make sure I'm not just getting lucky. Advice?",
+    "commentText": "i had this exact problem early on, kept watching FVGs on the 5m eurusd fail and couldn't figure out if my reads were wrong or if the zones just weren't clean. turns out i was marking FVGs that formed during high spread moments right before a news candle, so they were basically garbage from the start. the ones that actually hold tend to be consecutive displacement candles with a clean void, not just any random gap, and they're way stronger when they align with a higher timeframe OB or a session high/low that got swept first. the \"breakers not sticking\" thing you mentioned makes sense too because a breaker only has conviction if there was a real liquidity grab before the shift, otherwise you're just drawing a rectangle on noise tbh. curious what session you're mostly trading and whether your setups are forming before or after the killzone opens, that context changes everything.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-21T13:00:31.075Z",
+    "permalink": "/r/InnerCircleTraders/comments/1ubb7vb/up_354_on_paper_using_ict_luxalgo_but_want_to/osxpchx/",
+    "commentId": "osxpchx"
   }
 ]
