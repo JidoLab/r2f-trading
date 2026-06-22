@@ -3691,7 +3691,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-19T08:01:27.176Z",
     "permalink": "/r/InnerCircleTraders/comments/1u9fxbq/guys_when_was_your_breaking_point_when_you_knew/osjd3wc/",
-    "commentId": "osjd3wc"
+    "commentId": "osjd3wc",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-21T17:16:14.000Z",
+    "firstReplyAuthor": "limza_the_only_limza",
+    "firstReplyText": "I am trading Nasdaq/ Ustec100 in the New York open"
   },
   {
     "postId": "1u95cym",
@@ -3715,7 +3719,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-19T13:00:53.077Z",
     "permalink": "/r/InnerCircleTraders/comments/1u9vwjj/any_0dte_options_trader_here_in_the_bay_area_lets/oskijsa/",
-    "commentId": "oskijsa"
+    "commentId": "oskijsa",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-19T15:04:11.000Z",
+    "firstReplyAuthor": "Competitive-Edge8173",
+    "firstReplyText": "I basically wait for price to come back to a higher timeframe(4hr or 1hr) FVG/IFVG and then wait for an IFVG to form in the 5min timeframe with a clear draw on liquidity. I usually trade the NY AM session. I trade SPY/QQQ/IWM and the mag 7. How has it been for you this year? "
   },
   {
     "postId": "1u9u79c",
@@ -3735,7 +3743,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-19T18:00:18.673Z",
     "permalink": "/r/Forexstrategy/comments/1ua33o2/gold_gonna_crash_or_will_go_back_to_the_next/osmahb1/",
-    "commentId": "osmahb1"
+    "commentId": "osmahb1",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-20T03:55:16.000Z",
+    "firstReplyAuthor": "czrest",
+    "firstReplyText": "I'm still learning and don't know some of the terminologies but will try my best to explain my strategy.\n\nFirst, I look at 4h timeframe and check the current trend which is bearish. Move to 1h or 15m to mark the current HH, HL or LH, LL. Add Fibonacci to plan my entry, I only do shorts if the market"
   },
   {
     "postId": "1u9v7tx",
@@ -3765,7 +3777,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-19T18:00:44.028Z",
     "permalink": "/r/Forexstrategy/comments/1u9qfw4/gold_analysis_bearish_till_4150_for_now_it_can/osmaknr/",
-    "commentId": "osmaknr"
+    "commentId": "osmaknr",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-20T14:53:28.000Z",
+    "firstReplyAuthor": "Icy-Paramedic7559",
+    "firstReplyText": "I MEAN TREND WAS STRONGLY BEARISH AND THERE WAS NO NEWS SO I WAS HOLDING ... MARKET IS FULL WORKING ON MANIPULATIONS FOR NOW, i stll think market can dump upto 3500 atleast but let see if it support on some key levels area"
   },
   {
     "postId": "1ua4dmu",
@@ -3856,15 +3872,5 @@
     "commentedAt": "2026-06-22T03:00:52.122Z",
     "permalink": "/r/Forexstrategy/comments/1ubro4l/mt5_gold_ea_results_longonly_strategy_with_ai/ot24ibe/",
     "commentId": "ot24ibe"
-  },
-  {
-    "postId": "1ubwate",
-    "subreddit": "Forexstrategy",
-    "postTitle": "Only $700 away from passing FTMO Verification",
-    "commentText": "$700 away is honestly the trickiest spot, that's where people start forcing entries just to close it out. what's your current setup looking like, are you waiting for a proper BOS and OB retest on the 1h or are you dropping to the 15m to find entries? because imo the verification phase is where patience on the higher timeframe confirmation matters most 🎯",
-    "mentionedR2F": true,
-    "commentedAt": "2026-06-22T13:01:00.078Z",
-    "permalink": "/r/Forexstrategy/comments/1ubwate/only_700_away_from_passing_ftmo_verification/ot4c6ik/",
-    "commentId": "ot4c6ik"
   }
 ]
