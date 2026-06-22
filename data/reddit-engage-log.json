@@ -3872,5 +3872,15 @@
     "commentedAt": "2026-06-22T03:00:52.122Z",
     "permalink": "/r/Forexstrategy/comments/1ubro4l/mt5_gold_ea_results_longonly_strategy_with_ai/ot24ibe/",
     "commentId": "ot24ibe"
+  },
+  {
+    "postId": "1ucgnyf",
+    "subreddit": "Trading",
+    "postTitle": "USDT to UAE bank account for large amounts – How do traders do it legally?",
+    "commentText": "tbh the source of funds documentation is the real blocker here, not the transfer itself. UAE banks like Emirates NBD or FAB will typically want to see exchange transaction history, a licensed broker statement showing the USDT was acquired through trading activity, and sometimes a letter from a regulated exchange confirming KYC. the repatriation part is usually cleaner once the funds are sitting in a UAE account, most banks have standard wire processes for that. curious though, are you holding the USDT on a centralized exchange like Binance or something more OTC? makes a big difference for what documentation actually exists to show the bank.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-22T18:01:50.472Z",
+    "permalink": "/r/Trading/comments/1ucgnyf/usdt_to_uae_bank_account_for_large_amounts_how_do/ot65fvp/",
+    "commentId": "ot65fvp"
   }
 ]
