@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-06-22",
+    "subscribers": {
+      "total": 12,
+      "new": 2,
+      "hot": 1,
+      "warm": 1
+    },
+    "revenue": {
+      "amount": 0,
+      "payments": 0
+    },
+    "content": {
+      "posts": 1,
+      "shorts": 0,
+      "social": 9
+    },
+    "engagement": {
+      "replies": 21,
+      "chats": 0
+    },
+    "taskCompletionRate": 0
+  },
+  {
     "date": "2026-06-15",
     "subscribers": {
       "total": 10,
