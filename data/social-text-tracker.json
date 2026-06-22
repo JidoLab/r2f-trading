@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "hot-take",
     "story",
     "quote",
     "promo-free-class",
@@ -29,11 +28,12 @@
     "promo-results",
     "promo-checklist",
     "myth",
-    "challenge"
+    "challenge",
+    "promo-blog"
   ],
   "lastPost": {
-    "type": "challenge",
-    "text": "CHALLENGE: This week only take trades at Order Blocks confirmed by a Fair Value Gap. No FVG confirmation = no trade. 5 days. Track every setup you skipped. The discipline alone will change how you see price. Drop your results 👇 #ICTTrading #OrderBlocks #SmartMoneyConcepts",
-    "date": "2026-06-21T12:01:32.269Z"
+    "type": "promo-blog",
+    "text": "GDP drops this week. Most traders freeze. Smart money FEASTS on those candles. I broke down exactly how to position before high-impact news hits. Read it 👇 https://r2ftrading.com/trading-insights #ICTTrading #SmartMoneyConcepts #FundedTrader",
+    "date": "2026-06-22T12:00:20.659Z"
   }
 }
