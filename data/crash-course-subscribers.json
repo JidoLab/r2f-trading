@@ -101,26 +101,28 @@
     "email": "keerthivasanchampionvasan@gmail.com",
     "name": "keerthivasan",
     "date": "2026-06-17T15:14:52.576Z",
-    "day": 4,
+    "day": 5,
     "emailsSent": [
       "day1",
       "day2",
       "day3",
       "day4",
-      "day5"
+      "day5",
+      "complete"
     ]
   },
   {
     "email": "uh01012007@gmail.com",
     "name": "uh01012007",
     "date": "2026-06-18T06:16:33.270Z",
-    "day": 4,
+    "day": 5,
     "emailsSent": [
       "day1",
       "day2",
       "day3",
       "day4",
-      "day5"
+      "day5",
+      "complete"
     ]
   }
 ]
