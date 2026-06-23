@@ -1807,5 +1807,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-06-23T12:00:47.639Z",
+    "type": "text",
+    "postType": "promo-coaching",
+    "text": "GDP drops this week. Most traders freeze. My students know exactly what to do. I've got 2 coaching s",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
