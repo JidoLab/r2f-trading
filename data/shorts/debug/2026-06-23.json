@@ -1,0 +1,31 @@
+{
+  "date": "2026-06-23T12:02:53.079Z",
+  "today": "2026-06-23",
+  "topicsAttempted": [
+    null,
+    null,
+    null
+  ],
+  "results": [
+    {
+      "title": "",
+      "status": "error",
+      "error": "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo"
+    }
+  ],
+  "errors": [
+    "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo",
+    "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo",
+    "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo"
+  ]
+}
