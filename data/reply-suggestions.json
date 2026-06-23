@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1782216061849-koxpr",
+    "platform": "youtube",
+    "postTitle": "LIVE Trading- ICT CONCEPTS- NIFTY, BANKNIFTY &amp; Equity|| |23th June 2026",
+    "postUrl": "https://youtube.com/watch?v=VDd9kLNzyAE",
+    "authorName": "TyagiMarketMaker",
+    "suggestedReply": "Trading both NIFTY and BANKNIFTY live in the same session is something I always warn my students about because the correlation can trap you into doubling your bias risk. On BANKNIFTY especially, the 15m order blocks tend to get raided more aggressively before any real expansion. Are you finding the higher timeframe dealing ranges on NIFTY cleaner for your ICT entries compared to BANKNIFTY?",
+    "createdAt": "2026-06-23T12:01:01.849Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782216067295-u8iby",
+    "platform": "youtube",
+    "postTitle": "smart Money Concept , liquidity trading strategies #viral#trading#smc#ict#shorts#youtube#liquidity",
+    "postUrl": "https://youtube.com/watch?v=yPCGmNtlQTo",
+    "authorName": "Waymaker__fx",
+    "suggestedReply": "Liquidity trading gets oversimplified a lot in shorts format. Interesting take on the SMC angle, but in my experience teaching students, hunting liquidity sweeps works better when you pair them with a confirmed displacement on the 15m or 1H rather than entering immediately at the sweep. That extra confirmation filters out the fakeouts that cost newer traders so much early on.",
+    "createdAt": "2026-06-23T12:01:07.295Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782216070717-funsh",
+    "platform": "youtube",
+    "postTitle": "Liquidity concept part 2 📊🧠#trading #sorts",
+    "postUrl": "https://youtube.com/watch?v=FmbX0AGrX6M",
+    "authorName": "Stock learner 007",
+    "suggestedReply": "Interesting take on liquidity concepts. In my experience, Part 2 topics like this tend to trip people up because traders focus on WHERE liquidity sits but ignore WHEN price is likely to reach it. I drill the session timing into my students constantly, especially on pairs like Euro and Cable where London and New York overlap create the cleanest sweeps. The concept lands differently once you add that time element.",
+    "createdAt": "2026-06-23T12:01:10.717Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782216075093-b0n0s",
+    "platform": "youtube",
+    "postTitle": "Smart Money Concepts From Zero to Advanced by share samrat lecture 1",
+    "postUrl": "https://youtube.com/watch?v=E8rikIaZBwo",
+    "authorName": "Share Samrat",
+    "suggestedReply": "Going from zero to advanced in SMC means nothing if you skip the foundational piece most beginners miss. liquidity. Before my students even touch order blocks, I make sure they understand that price is engineered to hunt stops first. On forex pairs especially, watch how price sweeps equal highs or lows on the 4H before any real displacement happens. That context changes everything about how you read lecture 1 material.",
+    "createdAt": "2026-06-23T12:01:15.093Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782216078761-oejas",
+    "platform": "youtube",
+    "postTitle": "🔥 LIVE Trading in தமிழ் | ICT + Smart Money Concepts + Price Action 📈 #ICT #SMC #TamilTrader",
+    "postUrl": "https://youtube.com/watch?v=fSbYwiAwjns",
+    "authorName": "TREND_TRADER",
+    "suggestedReply": "Combining ICT with price action in a live Tamil session is something I rarely see done well. I always tell my students that SMC concepts only click when you watch them play out in real time, not just on a chart replay. I notice most traders misread the order block entry during London or New York session overlap. Are you filtering your setups using a higher timeframe bias before dropping to execution on the 15m?",
+    "createdAt": "2026-06-23T12:01:18.761Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782216091189-qyyq9",
+    "platform": "youtube",
+    "postTitle": "GOLD &amp; BTC LIVE | XAUUSD &amp; Bitcoin Live Trading Analysis | Smart Money Concepts, Price Action",
+    "postUrl": "https://youtube.com/watch?v=WDTHBN2fX78",
+    "authorName": "Sulemani Vibes Official",
+    "suggestedReply": "Interesting take combining SMC with Bitcoin and gold simultaneously. In my experience, these two assets respond very differently to liquidity sweeps. Gold tends to respect institutional order blocks on the 4H with much cleaner precision, while BTC can run through those same levels aggressively before reversing. I drill this into my students constantly because trading them with the same framework without adjusting for volatility profile gets people stopped out unnecessarily.",
+    "createdAt": "2026-06-23T12:01:31.189Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782216095323-0lgxr",
+    "platform": "youtube",
+    "postTitle": "WHAT IS INDUCEMENT (IDM)? #trading #currencytradingtips #crypto #stockmarket",
+    "postUrl": "https://youtube.com/watch?v=bqrRnzmsC4U",
+    "authorName": "Harshal with trader ",
+    "suggestedReply": "IDM is one of those concepts that separates real ICT traders from the ones just memorising terms. One thing I always drill into my students though, not all inducement is equal. On lower timeframes like the 5m or 15m, price can sweep inducement and still fail to deliver a clean reversal if there is no higher timeframe confluence supporting the move. Qualify the draw on liquidity first, then assess the IDM.",
+    "createdAt": "2026-06-23T12:01:35.323Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782216099155-e5hi8",
+    "platform": "youtube",
+    "postTitle": "ORDER BLOCKS: O SEGREDO DOS INSTITUCIONAIS REVELADO",
+    "postUrl": "https://youtube.com/watch?v=VGcU3VHjKCM",
+    "authorName": "Rocha Trader",
+    "suggestedReply": "I tell my students that order blocks only become institutional when there's a clear displacement away from them. Been trading this concept for years and the biggest mistake I see is marking every consolidation as a valid OB. On EURUSD, filtering for 4H breaker blocks with a clean imbalance below them changed everything for my accuracy.",
+    "createdAt": "2026-06-23T12:01:39.155Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1782089118598-an1y9",
     "platform": "investinglive",
     "postTitle": "PBOC is expected to set the USD/CNY reference rate at 6.7733– Reuters estimate",
