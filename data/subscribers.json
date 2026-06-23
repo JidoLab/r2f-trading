@@ -196,7 +196,7 @@
   {
     "email": "mani.katakatla.09@gmail.com",
     "date": "2026-06-02T21:06:10.786Z",
-    "dripsSent": 5,
+    "dripsSent": 6,
     "referralCode": "R2F-cnd4pp",
     "referredBy": null,
     "referralCount": 0,
@@ -214,7 +214,8 @@
       "ictConcepts",
       "successStory",
       "tradingPsychology",
-      "propFirmTips"
+      "propFirmTips",
+      "coachingCta"
     ],
     "abandonmentEmailSent": true
   },
@@ -280,7 +281,7 @@
   {
     "email": "uh01012007@gmail.com",
     "date": "2026-06-18T06:17:03.035Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "referralCode": "R2F-inlp91",
     "referredBy": null,
     "referralCount": 0,
@@ -295,7 +296,8 @@
     ],
     "lastActivity": "2026-06-18T09:00:25.818Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   }
 ]
