@@ -1836,5 +1836,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-06-24T12:01:39.477Z",
+    "type": "text",
+    "postType": "question",
+    "text": "GDP drops this week. Do you PAUSE trading or do you USE the volatility? Drop your answer 👇 #ICTTrad",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
