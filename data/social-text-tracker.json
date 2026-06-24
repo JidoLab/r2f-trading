@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "quote",
     "promo-free-class",
     "tip",
     "promo-results",
@@ -29,11 +28,12 @@
     "myth",
     "challenge",
     "promo-blog",
-    "promo-coaching"
+    "promo-coaching",
+    "question"
   ],
   "lastPost": {
-    "type": "promo-coaching",
-    "text": "GDP drops this week. Most traders freeze. My students know exactly what to do. I've got 2 coaching spots open. Free 15-min call — no pitch, just real talk. 👇 https://r2ftrading.com/contact #ICTTrading #FundedTrader #SmartMoneyConcepts",
-    "date": "2026-06-23T12:00:46.661Z"
+    "type": "question",
+    "text": "GDP drops this week. Do you PAUSE trading or do you USE the volatility? Drop your answer 👇 #ICTTrading #SmartMoneyConcepts #FairValueGap",
+    "date": "2026-06-24T12:01:38.704Z"
   }
 }
