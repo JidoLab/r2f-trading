@@ -1,5 +1,15 @@
 [
   {
+    "id": "reply-oszcwpz",
+    "platform": "reddit",
+    "postTitle": "Coding and backtesting strategies",
+    "subreddit": "ICTMentorship",
+    "replyAuthor": "Hasanthek41234",
+    "replyText": "I did add session filter but removed it cause it gave me worst results, and I don't have a specific rule for an orderblock will add it to my backtest, and I am using it on EURUSD , GBPUSD, XAUUSD",
+    "commentUrl": "https://www.reddit.com/r/ICTMentorship/comments/1ubs2cj/coding_and_backtesting_strategies/oszcwpz/",
+    "detectedAt": "2026-06-24T13:00:47.112Z"
+  },
+  {
     "id": "reply-osmalv7",
     "platform": "reddit",
     "postTitle": "I want to become professional and profitable trader.",
