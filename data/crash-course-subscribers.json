@@ -124,5 +124,14 @@
       "day5",
       "complete"
     ]
+  },
+  {
+    "email": "minageeek@gmail.com",
+    "name": "ana",
+    "date": "2026-06-24T18:24:56.667Z",
+    "day": 0,
+    "emailsSent": [
+      "day1"
+    ]
   }
 ]
