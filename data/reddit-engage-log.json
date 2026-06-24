@@ -3924,5 +3924,35 @@
     "commentedAt": "2026-06-24T08:01:46.751Z",
     "permalink": "/r/ICTMentorship/comments/1udp0oa/session_raid_trading_model_157_points_in_11_mins/othjdr2/",
     "commentId": "othjdr2"
+  },
+  {
+    "postId": "1ueiklw",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Does ict talk about htf market structure marking and bias setting in 2024 mentorship,",
+    "commentText": "yeah the 2024 mentorship front-loads a lot of 1min stuff before it connects to the bigger picture, been there. the daily bias and HTF structure marking comes in later lessons but honestly you don't have to wait. pull up the daily and 4h first, mark your swing highs and lows, look for BOS or MSS, then let that tell you whether you're hunting longs or shorts before you even touch the 1min. liquidity sweeps are way easier to read once you know which direction price is trying to go on the higher timeframe. what pair are you backtesting on, and are you filtering your 1min setups off the 15m or going straight from daily to 1min? that gap in between makes a huge difference for context.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-24T18:01:51.645Z",
+    "permalink": "/r/InnerCircleTraders/comments/1ueiklw/does_ict_talk_about_htf_market_structure_marking/otkjxas/",
+    "commentId": "otkjxas"
+  },
+  {
+    "postId": "1uei9qt",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "EURJPY trade idea",
+    "commentText": "solid plan tbh, but make sure the CISD you're waiting on is happening at a meaningful level, not just any short term manipulation. on EURJPY i'd want to see that shift happen inside a daily or 4H discount before committing to longs. happy to walk through the entry model on this one if that helps, just drop what timeframe you're building the trade on 🙏",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-24T18:01:58.082Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uei9qt/eurjpy_trade_idea/otkjy5e/",
+    "commentId": "otkjy5e"
+  },
+  {
+    "postId": "1udr927",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "OTE Strategy insight",
+    "commentText": "1m OTE is usable but tbh the noise kills you unless you're pairing it with a really clean higher timeframe narrative. the problem isn't the level itself, it's that 1m FVGs fill so fast you barely get a reaction before price reverses or just blows through. imo if you're already hitting 2-3R on 5m OTE entries, dropping to 1:1 on 1m just feels like a downgrade in expectancy even if the win rate bumps. what session are you typically taking your 5m OTE entries in, london open or new york?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-24T18:02:05.808Z",
+    "permalink": "/r/InnerCircleTraders/comments/1udr927/ote_strategy_insight/otkjz63/",
+    "commentId": "otkjz63"
   }
 ]
