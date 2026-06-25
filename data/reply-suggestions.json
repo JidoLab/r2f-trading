@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1782347429890-0kao6",
+    "platform": "youtube",
+    "postTitle": "Live Futures Trading, GIVEAWAY, $182,611 Last Year, NQ Trading, Prop Firms, ICT Trading, Day Trading",
+    "postUrl": "https://youtube.com/watch?v=G0R8KODqsDE",
+    "authorName": "Cove Trader",
+    "suggestedReply": "One thing that separates consistent NQ prop firm passes from blown challenges is understanding that NQ respects fair value gaps on the 15 minute chart during the New York open kill zone more than almost any other session. I drill this into my students before they ever touch a funded account. Chasing entries outside those windows is where most traders bleed their drawdown quietly before they even realize it.",
+    "createdAt": "2026-06-25T00:30:29.890Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782347432992-14opt",
+    "platform": "youtube",
+    "postTitle": "How to Trade using Claude AI (ICT Traders: Free Course)",
+    "postUrl": "https://youtube.com/watch?v=OYXpYWrk8zI",
+    "authorName": "airKam Trader",
+    "suggestedReply": "Interesting approach using Claude AI to map out ICT concepts. I drill into my students that the tool is only as good as the framework you feed it, so pairing it with proper PD array alignment on the higher timeframes is key. Are you prompting Claude to identify specific draw on liquidity targets, or more for entry confirmation at mitigation blocks?",
+    "createdAt": "2026-06-25T00:30:32.992Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782347436036-9vqtg",
+    "platform": "youtube",
+    "postTitle": "DAY TRADING ICT LIVE AM SESSION! $NQ and $ES FUTURES",
+    "postUrl": "https://youtube.com/watch?v=-D-9zJltWWs",
+    "authorName": "Benjamin",
+    "suggestedReply": "On NQ and ES AM sessions, the divergence between the two is often where the real edge hides. I tell my students to watch for moments when ES sweeps a liquidity pool cleanly while NQ lags. That lag is often your confirmation for a high probability entry on the stronger instrument. Most traders stare at one chart and miss the full picture.",
+    "createdAt": "2026-06-25T00:30:36.036Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782347439725-tfsab",
+    "platform": "youtube",
+    "postTitle": "Live Trading | ICT Concepts | June 24, 2026",
+    "postUrl": "https://youtube.com/watch?v=TomRGBGlLOc",
+    "authorName": "Tyler Trades",
+    "suggestedReply": "Watching this June 24 session is interesting because mid-year ICT setups tend to trap a lot of retail traders chasing liquidity sweeps too early. I always tell my students to wait for confirmation on the 15m before committing to a direction, especially when price is dancing around an untested Fair Value Gap. Are you finding the killzone entries cleaner on this particular date or did the London to New York overlap create some messy price action?",
+    "createdAt": "2026-06-25T00:30:39.725Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782347443303-fpjx7",
+    "platform": "youtube",
+    "postTitle": "Good W after loss 🔴 LIVE Day Trading Futures | ES NQ | ICT Concepts | June 24",
+    "postUrl": "https://youtube.com/watch?v=--ka0NfdLE8",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Bouncing back after a red day on ES and NQ takes discipline most traders never develop. The recovery mindset is real but what I drill into my students is that the W after a loss only means something if the setup quality stays consistent, not if you revenge trade into cleaner price action. On futures specifically, that post-loss session is where I see traders force entries on weak displacement candles and blow the recovery entirely.",
+    "createdAt": "2026-06-25T00:30:43.303Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782347448448-0v92x",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE XAUUSD + V75 + Boom 1000 | Smart Money Concepts",
+    "postUrl": "https://youtube.com/watch?v=1ClCRhCgDtM",
+    "authorName": "DancScott Traders Hub",
+    "suggestedReply": "On XAUUSD specifically, most traders sleep on the higher timeframe premium and discount arrays before dropping to execution timeframes. I drill into my students that Boom 1000 and V75 require tighter confirmation windows because volatility can chew through a poorly timed entry before price even reaches your target. Waiting for a clear market structure shift on the 5m before committing saves accounts more than any entry technique alone.",
+    "createdAt": "2026-06-25T00:30:48.448Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782347451555-5g0zj",
+    "platform": "youtube",
+    "postTitle": "🔥 ITH / ITL Strategy Live Trading | Learn Smart Money Concepts &amp; Price Action 📈",
+    "postUrl": "https://youtube.com/watch?v=nKzaCxc9jb8",
+    "authorName": "Trade with Haidar",
+    "suggestedReply": "Interesting take on the ITH/ITL framework. In my experience, I teach my students to pair these structural points with a session-based filter, specifically waiting for London or New York confirmation before committing to a direction, because price can sweep both highs and lows during Asian range and trap early entries. The session context separates the clean setups from the noise.",
+    "createdAt": "2026-06-25T00:30:51.555Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782347454718-7ug7e",
+    "platform": "youtube",
+    "postTitle": "🔥 LIVE Trading in தமிழ் | ICT + Smart Money Concepts + Price Action 📈 #ict  #smc  #tamiltrader",
+    "postUrl": "https://youtube.com/watch?v=LOlf46dg-w8",
+    "authorName": "TREND_TRADER",
+    "suggestedReply": "Combining ICT concepts with price action in live sessions is exactly how I train my students to build real screen time. Most traders watching live streams overlook the narrative behind Smart Money moves and just chase entries without understanding the higher timeframe draw on liquidity. Do you walk through HTF bias before dropping into execution timeframes during these sessions?",
+    "createdAt": "2026-06-25T00:30:54.718Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1782302481166-5y54j",
     "platform": "investinglive",
     "postTitle": "Gold extends losses as Fed tightening risk continues to push real yields and dollar higher",
