@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-free-class",
     "tip",
     "promo-results",
     "promo-checklist",
@@ -29,11 +28,12 @@
     "challenge",
     "promo-blog",
     "promo-coaching",
-    "question"
+    "question",
+    "poll"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "GDP drops this week. Do you PAUSE trading or do you USE the volatility? Drop your answer 👇 #ICTTrading #SmartMoneyConcepts #FairValueGap",
-    "date": "2026-06-24T12:01:38.704Z"
+    "type": "poll",
+    "text": "What kills your trades more in low volatility summer markets?\n\n🅰️ Forcing setups that aren't there\n🅱️ Getting stopped out by liquidity sweeps\n🅲️ Ignoring fair value gaps\n🅳️ No patience for real ICT setups\n\n#ICTTrading #SmartMoneyConcepts #FairValueGap",
+    "date": "2026-06-25T12:00:53.159Z"
   }
 }
