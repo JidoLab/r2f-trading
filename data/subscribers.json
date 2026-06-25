@@ -223,7 +223,7 @@
   {
     "email": "anmolpannu33@gmail.com",
     "date": "2026-06-04T22:08:48.687Z",
-    "dripsSent": 5,
+    "dripsSent": 6,
     "referralCode": "R2F-auqs7a",
     "referredBy": null,
     "referralCount": 0,
@@ -236,13 +236,14 @@
       "ictConcepts",
       "successStory",
       "tradingPsychology",
-      "propFirmTips"
+      "propFirmTips",
+      "coachingCta"
     ]
   },
   {
     "email": "keerthivasanchampionvasan@gmail.com",
     "date": "2026-06-17T15:02:48.371Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-lb6lnp",
     "referredBy": null,
     "referralCount": 0,
@@ -274,7 +275,8 @@
     "lastActivity": "2026-06-18T09:00:25.818Z",
     "dripsHistory": [
       "bookCallUrgent",
-      "socialProof"
+      "socialProof",
+      "limitedSpots"
     ],
     "hotFollowUpSent": true,
     "abandonmentEmailSent": true
