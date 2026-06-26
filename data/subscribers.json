@@ -342,6 +342,16 @@
     "referralCode": "R2F-189jqs",
     "referredBy": null,
     "referralCount": 0,
-    "phone": "+351925205264"
+    "phone": "+351925205264",
+    "score": 15,
+    "segment": "cold",
+    "events": [
+      {
+        "type": "coaching_page_view",
+        "date": "2026-06-26T22:42:07.295Z"
+      }
+    ],
+    "lastActivity": "2026-06-26T22:42:07.295Z",
+    "dripsHistory": []
   }
 ]
