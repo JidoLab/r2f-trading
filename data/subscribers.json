@@ -312,7 +312,7 @@
     "referredBy": null,
     "referralCount": 0,
     "phone": "00351925205264",
-    "score": 50,
+    "score": 70,
     "segment": "hot",
     "events": [
       {
@@ -326,9 +326,13 @@
       {
         "type": "coaching_page_view",
         "date": "2026-06-26T15:15:19.942Z"
+      },
+      {
+        "type": "contact_page_view",
+        "date": "2026-06-26T15:15:22.829Z"
       }
     ],
-    "lastActivity": "2026-06-26T15:15:19.942Z",
+    "lastActivity": "2026-06-26T15:15:22.829Z",
     "dripsHistory": []
   }
 ]
