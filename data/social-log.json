@@ -1894,5 +1894,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-06-26T12:00:17.105Z",
+    "type": "text",
+    "postType": "hot-take",
+    "text": "Unpopular opinion: Fair value gaps are overhyped. Traders treating every FVG like a guaranteed fill ",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
