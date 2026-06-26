@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "tip",
     "promo-results",
     "promo-checklist",
     "myth",
@@ -29,11 +28,12 @@
     "promo-blog",
     "promo-coaching",
     "question",
-    "poll"
+    "poll",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "What kills your trades more in low volatility summer markets?\n\n🅰️ Forcing setups that aren't there\n🅱️ Getting stopped out by liquidity sweeps\n🅲️ Ignoring fair value gaps\n🅳️ No patience for real ICT setups\n\n#ICTTrading #SmartMoneyConcepts #FairValueGap",
-    "date": "2026-06-25T12:00:53.159Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: Fair value gaps are overhyped. Traders treating every FVG like a guaranteed fill are getting wrecked. Context > pattern. Always. #ICTTrading #SmartMoneyConcepts #FairValueGap",
+    "date": "2026-06-26T12:00:16.112Z"
   }
 }
