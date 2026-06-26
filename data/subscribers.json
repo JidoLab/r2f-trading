@@ -284,7 +284,7 @@
   {
     "email": "uh01012007@gmail.com",
     "date": "2026-06-18T06:17:03.035Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-inlp91",
     "referredBy": null,
     "referralCount": 0,
@@ -300,7 +300,8 @@
     "lastActivity": "2026-06-18T09:00:25.818Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ]
   }
 ]
