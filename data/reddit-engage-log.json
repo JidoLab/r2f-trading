@@ -3982,5 +3982,25 @@
     "commentedAt": "2026-06-25T13:01:08.528Z",
     "permalink": "/r/Forexstrategy/comments/1ueq1km/the_solution_to_a_problem_you_never_knew_existed/otpwzgh/",
     "commentId": "otpwzgh"
+  },
+  {
+    "postId": "1ufjsu5",
+    "subreddit": "Trading",
+    "postTitle": "Trading volatility is jumpier, the bond market isn't. What the split is telling us.",
+    "commentText": "the credit/VIX split you're describing maps pretty cleanly onto what ICT calls a \"dealing range\" situation, where price is sandwiched between two institutional reference points without committing to either. VIX sitting at the low edge of that 18-22 band with a thin implied/realized cushion is basically the market equivalent of a weak high, it hasn't been swept yet so smart money hasn't shown their hand. tbh i'd be watching for a daily FVG to form on ES or SPY right around that 19 handle if it does push toward 22, because that's usually where the institutional repricing you're describing actually leaves its footprint. are you leaning more on the credit spread behavior to time your equity entries, or using the VIX regime as a filter for position sizing? genuinely curious how you're operationalizing that divergence into actual trade decisions, happy to dig into it here if you want to lay it out.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-26T13:00:36.631Z",
+    "permalink": "/r/Trading/comments/1ufjsu5/trading_volatility_is_jumpier_the_bond_market/otx9jxu/",
+    "commentId": "otx9jxu"
+  },
+  {
+    "postId": "1uftj1f",
+    "subreddit": "Trading",
+    "postTitle": "Advice needed for swing trading",
+    "commentText": "3 to 4 A+ setups a month on that model is actually pretty normal tbh, the issue isn't frequency, it's that a funded challenge rewards consistency not volume. that said, if you want more without diluting the edge, i'd look at GBPJPY and AUDUSD, they respect 4H supply and demand really cleanly and the 15M MSS into 5M FVG combo hits more often because of the volatility. don't just add markets randomly though, each one needs its own session bias mapped out or you're just adding noise. curious what your 4H bias process looks like on EURUSD right now, happy to walk through the full top-down with you in here if that helps.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-26T13:00:45.529Z",
+    "permalink": "/r/Trading/comments/1uftj1f/advice_needed_for_swing_trading/otx9l14/",
+    "commentId": "otx9l14"
   }
 ]
