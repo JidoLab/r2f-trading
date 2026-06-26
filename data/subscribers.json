@@ -311,6 +311,16 @@
     "referralCode": "R2F-ridl5m",
     "referredBy": null,
     "referralCount": 0,
-    "phone": "00351925205264"
+    "phone": "00351925205264",
+    "score": 15,
+    "segment": "cold",
+    "events": [
+      {
+        "type": "coaching_page_view",
+        "date": "2026-06-26T15:14:31.282Z"
+      }
+    ],
+    "lastActivity": "2026-06-26T15:14:31.282Z",
+    "dripsHistory": []
   }
 ]
