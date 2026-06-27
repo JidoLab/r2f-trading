@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1782561689881-et3gv",
+    "platform": "youtube",
+    "postTitle": "Best Top-Down Trading Strategy Explained!",
+    "postUrl": "https://youtube.com/watch?v=qvV-Abvk59s",
+    "authorName": "Smart Risk",
+    "suggestedReply": "I drilled top-down analysis into my students for months before they truly understood why the higher timeframe context matters more than the entry itself. Starting on the weekly to identify draw on liquidity, then dropping to the 15 minute for precision, completely changed how my students read EURUSD setups. The traders who skip this step get chopped alive.",
+    "createdAt": "2026-06-27T12:01:29.881Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782561693727-b7zgn",
+    "platform": "youtube",
+    "postTitle": "The Only SMC + ICT Setup You Need for Gold Trading",
+    "postUrl": "https://youtube.com/watch?v=9ifxvJOrlIU",
+    "authorName": "YTV TRADER SINZO",
+    "suggestedReply": "Interesting take on calling this the \"only\" SMC setup you need for gold. In my experience, gold specifically rewards traders who layer in session bias before touching order blocks, because gold's volatility during New York open can invalidate clean setups that work perfectly on other pairs. I teach my students to confirm displacement on the higher timeframe first before dropping down to execute, which filters out a lot of the noise that catches newer traders off guard.",
+    "createdAt": "2026-06-27T12:01:33.727Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782561696765-lanqo",
+    "platform": "youtube",
+    "postTitle": "Best Trading Strategy For 2026 #shorts #orderflow #daytrading #ict #trading",
+    "postUrl": "https://youtube.com/watch?v=X1CQeISl1S4",
+    "authorName": "SouL Tradez",
+    "suggestedReply": "Order flow for 2026 makes sense given how algorithmic the markets have become. I drill into my students that reading order flow without understanding the underlying draw on liquidity is just noise, especially on lower timeframes where manipulation runs rampant. Are you framing your setups around the daily or weekly PD arrays first before dropping to the execution timeframe?",
+    "createdAt": "2026-06-27T12:01:36.765Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782561700516-o5zgr",
+    "platform": "youtube",
+    "postTitle": "Live GOLD and CRYPTO Scalping Trading | DAY 268 #goldtrading #cryptotrading #bitcoin",
+    "postUrl": "https://youtube.com/watch?v=ipqRZIluZoQ",
+    "authorName": "ICT ENIGMA",
+    "suggestedReply": "Interesting take on scalping gold and crypto on the same session. In my experience, I actually keep these two completely separate because gold respects institutional time windows like London open and New York AM killzone much more cleanly, while crypto can be erratic outside those structures. I drill this into my students constantly. Mixing both in a live session can dilute your focus and pull you into setups that don't meet the same standard.",
+    "createdAt": "2026-06-27T12:01:40.516Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782561704479-wkaqo",
+    "platform": "youtube",
+    "postTitle": "OTE Level Explained in 90 Seconds 🔥 | Smart Money Concept (SMC) Trading | Forex &amp; XAUUSD",
+    "postUrl": "https://youtube.com/watch?v=sZzKD1QEn-g",
+    "authorName": "Gujarati Trader Hardik ",
+    "suggestedReply": "OTE on XAUUSD specifically is where I see most traders fumble. The 62 to 79 percent fib zone is only half the equation. What I drill into my students is to confirm the OTE with a clear market structure shift on the lower timeframe first, not just price touching the zone. Without that confirmation you are just guessing inside a range.",
+    "createdAt": "2026-06-27T12:01:44.479Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782561708361-idf1m",
+    "platform": "youtube",
+    "postTitle": "Order Blocks Explained: The Strongest Level for Big Moves",
+    "postUrl": "https://youtube.com/watch?v=gDuEnWyHwGo",
+    "authorName": "Bharat Jhunjhunwala",
+    "suggestedReply": "The strongest order blocks for big moves aren't just about the candle itself. I teach my students to confirm institutional interest by checking if the block aligns with a higher timeframe liquidity pool, like a weekly BSL or SSL. On forex majors, that confluence is what separates a reaction from a full displacement move.",
+    "createdAt": "2026-06-27T12:01:48.361Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782561711708-yd6sl",
+    "platform": "youtube",
+    "postTitle": "Order Blocks Explained in 60 Seconds (SMC Trading) 🔥",
+    "postUrl": "https://youtube.com/watch?v=kDOneGwOHXs",
+    "authorName": "TradeWithMantraa",
+    "suggestedReply": "Interesting take on explaining order blocks in 60 seconds, but I actually teach my students to slow down on this concept rather than compress it. The biggest mistake I see is traders marking any bearish candle as a valid order block without confirming displacement and a proper break of structure above it. On forex pairs especially, that distinction alone separates the profitable setups from the noise.",
+    "createdAt": "2026-06-27T12:01:51.708Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782561714515-mmd5y",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE TRADING IN BITCOIN 🪙✅ ( DEMO TRADING )",
+    "postUrl": "https://youtube.com/watch?v=FPGufpzioMg",
+    "authorName": "Leap Trader",
+    "suggestedReply": "Demo trading Bitcoin is a smart way to refine your execution before going live. I always tell my students to treat demo sessions seriously, mapping out liquidity pools and key swing highs before every session. Are you focusing more on the New York open killzone for your entries, or spreading across multiple sessions?",
+    "createdAt": "2026-06-27T12:01:54.515Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1782475320644-wad0f",
     "platform": "investinglive",
     "postTitle": "investingLive European markets wrap: Oil drops further, stocks down with eyes on big tech",
