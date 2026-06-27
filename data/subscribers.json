@@ -341,7 +341,8 @@
     "dripsHistory": [
       "bookCallUrgent"
     ],
-    "hotFollowUpSent": true
+    "hotFollowUpSent": true,
+    "abandonmentEmailSent": true
   },
   {
     "email": "mgojcalvesiii@gmail.commgoncalvesiii",
@@ -360,6 +361,7 @@
       }
     ],
     "lastActivity": "2026-06-26T22:42:07.295Z",
-    "dripsHistory": []
+    "dripsHistory": [],
+    "abandonmentEmailSent": true
   }
 ]
