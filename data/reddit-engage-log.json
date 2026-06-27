@@ -4006,5 +4006,25 @@
     "commentedAt": "2026-06-26T13:00:45.529Z",
     "permalink": "/r/Trading/comments/1uftj1f/advice_needed_for_swing_trading/otx9l14/",
     "commentId": "otx9l14"
+  },
+  {
+    "postId": "1ug2mgk",
+    "subreddit": "Trading",
+    "postTitle": "Is there something profitable traders know that I don’t, or am I just bad at trading?",
+    "commentText": "the missing piece isn't a concept, it's context. you can know every FVG and OB on the chart but if you're trading them without knowing where price is in the bigger dealing range, you're just guessing at entries. tbh most courses teach the tools but skip the part about only trading WITH the higher timeframe draw on liquidity, like if the daily is reaching for a BSL above, you're only taking longs off 15m OBs, not shorts. what sessions are you typically trading, and are you framing your entries against a higher timeframe PD array first?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-27T03:00:34.741Z",
+    "permalink": "/r/Trading/comments/1ug2mgk/is_there_something_profitable_traders_know_that_i/ou24a0m/",
+    "commentId": "ou24a0m"
+  },
+  {
+    "postId": "1ug4aa0",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Gold Long Trade Recap MMBM",
+    "commentText": "solid execution on the CISD confirmation, that's the part most people skip and then wonder why their reversal entries get wrecked. one thing i'd be curious about though: after the daily SMT with silver, did you identify a specific OB on the 15m that price returned to before the CISD formed, or were you leaning purely on the structural shift for entry? makes a big difference in how clean the confluences stack 👀",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-27T03:00:43.760Z",
+    "permalink": "/r/InnerCircleTraders/comments/1ug4aa0/gold_long_trade_recap_mmbm/ou24axi/",
+    "commentId": "ou24axi"
   }
 ]
