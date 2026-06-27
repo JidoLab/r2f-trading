@@ -1923,5 +1923,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-06-27T12:00:16.222Z",
+    "type": "text",
+    "postType": "quote",
+    "text": "\"Preparation is the trade. The entry is just the confirmation.\"\n\nGDP drops this week. Markets will m",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
