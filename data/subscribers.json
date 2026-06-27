@@ -130,7 +130,8 @@
       "coachingCta",
       "valueRecap",
       "lastChance"
-    ]
+    ],
+    "staleReengageSent": true
   },
   {
     "email": "eaglesfocus01@gmail.com",
@@ -307,7 +308,7 @@
   {
     "email": "mgoncalvesiii@gmail.com",
     "date": "2026-06-26T15:13:49.441Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-ridl5m",
     "referredBy": null,
     "referralCount": 0,
@@ -337,7 +338,10 @@
       }
     ],
     "lastActivity": "2026-06-27T07:22:29.186Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "bookCallUrgent"
+    ],
+    "hotFollowUpSent": true
   },
   {
     "email": "mgojcalvesiii@gmail.commgoncalvesiii",
