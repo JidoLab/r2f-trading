@@ -4062,5 +4062,25 @@
     "commentedAt": "2026-06-27T08:00:45.013Z",
     "permalink": "/r/Forexstrategy/comments/1ug2x5z/discussion_regarding_xauusd_market_trends/ou38z8r/",
     "commentId": "ou38z8r"
+  },
+  {
+    "postId": "1uh0sxd",
+    "subreddit": "Trading",
+    "postTitle": "Passed eval now funded",
+    "commentText": "drop to 1 micro and don't touch anything else until you've rebuilt a 500+ buffer, full stop. the SL issue on tradingview is real, tbh i'd be setting hard stops directly at the broker level so the platform can't ghost you again. with orderflow you should be waiting for confirmed absorption or a delta flip at a clear OB before entering, not just price arriving at a level. what session are you typically trading and what pair blew the account, curious if the entry was during a low liquidity window like late NY close?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-27T18:01:19.331Z",
+    "permalink": "/r/Trading/comments/1uh0sxd/passed_eval_now_funded/ou62yzx/",
+    "commentId": "ou62yzx"
+  },
+  {
+    "postId": "1ugghij",
+    "subreddit": "FOREXTRADING",
+    "postTitle": "Trading gold",
+    "commentText": "for gold specifically, try marking the daily breaker block after the last significant BOS, then dropping to the 15m during london open to look for a fair value gap forming inside that zone. if price revisits it during the NY AM session and you see a 15m displacement candle closing back above or below it, that's your entry with a tight stop behind the wick. tbh that kind of clean, repeatable setup is exactly what a fund wants to see documented in a track record. what timeframes are you currently using to identify your entries on gold?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-27T18:01:27.447Z",
+    "permalink": "/r/FOREXTRADING/comments/1ugghij/trading_gold/ou6300v/",
+    "commentId": "ou6300v"
   }
 ]
