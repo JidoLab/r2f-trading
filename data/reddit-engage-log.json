@@ -3965,7 +3965,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-24T18:02:05.808Z",
     "permalink": "/r/InnerCircleTraders/comments/1udr927/ote_strategy_insight/otkjz63/",
-    "commentId": "otkjz63"
+    "commentId": "otkjz63",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-27T01:32:49.000Z",
+    "firstReplyAuthor": "Fsty420",
+    "firstReplyText": "NY "
   },
   {
     "postId": "1uf5lxz",
@@ -3995,7 +3999,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-26T13:00:36.631Z",
     "permalink": "/r/Trading/comments/1ufjsu5/trading_volatility_is_jumpier_the_bond_market/otx9jxu/",
-    "commentId": "otx9jxu"
+    "commentId": "otx9jxu",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-26T14:33:16.000Z",
+    "firstReplyAuthor": "OrderflowTrader",
+    "firstReplyText": "For me the divergence occurring at the same time we're starting to see VIX hang around 20 (and having come up from the lower calm baseline regime) means mixed bag, and so that'll put downward pressure on breakout/momentum trades for me. But on the timing thing, I use a dashboard I built in Python to"
   },
   {
     "postId": "1uftj1f",
@@ -4005,7 +4013,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-06-26T13:00:45.529Z",
     "permalink": "/r/Trading/comments/1uftj1f/advice_needed_for_swing_trading/otx9l14/",
-    "commentId": "otx9l14"
+    "commentId": "otx9l14",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-26T13:20:43.000Z",
+    "firstReplyAuthor": "IllustriousAd3738",
+    "firstReplyText": "Can we talk in dm"
   },
   {
     "postId": "1ug2mgk",
@@ -4035,7 +4047,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-06-27T08:00:36.096Z",
     "permalink": "/r/Forexstrategy/comments/1ugwis1/the_reality_of_trading_why_psychology_and/ou38yma/",
-    "commentId": "ou38yma"
+    "commentId": "ou38yma",
+    "hasReply": true,
+    "firstReplyAt": "2026-06-27T08:05:50.000Z",
+    "firstReplyAuthor": "No-Language542",
+    "firstReplyText": "We kinda trade the same, I use some private stuff on 15M timeframe to get the direction, then I come down to 1M and use MSS liquidity sweep and CISD for confirmation. If there is a zone such as RB OB FVG IFVG I will use that only as an extra layer of confirmation. I only trade NY session and trade g"
   },
   {
     "postId": "1ug2x5z",
