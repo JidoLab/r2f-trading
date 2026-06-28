@@ -1952,5 +1952,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-06-28T12:00:34.054Z",
+    "type": "text",
+    "postType": "tip",
+    "text": "GDP drops this week. Smart money will hunt stops before the real move. Mark your HTF levels NOW — do",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
