@@ -352,15 +352,19 @@
     "referredBy": null,
     "referralCount": 0,
     "phone": "+351925205264",
-    "score": 15,
-    "segment": "cold",
+    "score": 35,
+    "segment": "warm",
     "events": [
       {
         "type": "coaching_page_view",
         "date": "2026-06-26T22:42:07.295Z"
+      },
+      {
+        "type": "contact_page_view",
+        "date": "2026-06-28T00:03:42.257Z"
       }
     ],
-    "lastActivity": "2026-06-26T22:42:07.295Z",
+    "lastActivity": "2026-06-28T00:03:42.257Z",
     "dripsHistory": [],
     "abandonmentEmailSent": true
   }
