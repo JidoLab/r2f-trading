@@ -4120,5 +4120,15 @@
     "commentedAt": "2026-06-28T08:00:47.080Z",
     "permalink": "/r/Trading/comments/1uhcnrj/funded_or_live/ou9xkw9/",
     "commentId": "ou9xkw9"
+  },
+  {
+    "postId": "1ui32sx",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "need to transition 3 years of profitable Scalping data into a Swing Trading strategy. Help?",
+    "commentText": "your scalping logic isn't broken, it just needs a higher timeframe anchor. the core of what you're doing, finding draw on liquidity and waiting for price to reach it, works the same on the daily and 4H. map out your weekly and daily PDHs/PDLs on sunday evening, identify the nearest HTF fair value gap, and set a limit order. med school schedule actually fits that workflow pretty well tbh. what pairs are you currently scalping, and are you working mostly off session opens or specific time-based killzones?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-28T18:00:44.200Z",
+    "permalink": "/r/InnerCircleTraders/comments/1ui32sx/need_to_transition_3_years_of_profitable_scalping/oucq8rg/",
+    "commentId": "oucq8rg"
   }
 ]
