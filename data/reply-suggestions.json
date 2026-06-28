@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1782648098070-bswr1",
+    "platform": "youtube",
+    "postTitle": "Advanced Market Structure Mapping with Supply &amp; Demand | SMC ICT Trading Strategy",
+    "postUrl": "https://youtube.com/watch?v=paPxh_6T2H8",
+    "authorName": "Trades by Naman",
+    "suggestedReply": "The supply and demand mapping here is clean but the part most traders sleep on is how you sequence the market structure shift before marking the zone. I drill this into my students constantly. on lower timeframes like the 15m, your demand zone means nothing if you haven't confirmed a break of structure on the higher timeframe first. Have you found this approach holds up the same way on indices as it does on forex pairs?",
+    "createdAt": "2026-06-28T12:01:38.070Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782648101807-ttb2v",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE Gold &amp; Bitcoin Sniper Entry Scalping | ICT Trading Strategy",
+    "postUrl": "https://youtube.com/watch?v=2Cz3HLfyGjg",
+    "authorName": "🔱 3Netra | Market Decode ",
+    "suggestedReply": "Sniper entries on gold during the New York session hit different when you confluence them with the 15m FVG after a liquidity sweep on the higher timeframe. I drill into my students that scalping without identifying the draw on liquidity first is just gambling with extra steps. Most traders jump into entries before asking where price is actually going. What killzone are you finding cleanest for your gold setups here?",
+    "createdAt": "2026-06-28T12:01:41.807Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782648104905-uwrdn",
+    "platform": "youtube",
+    "postTitle": "Gold Analysis Next Week | XAUUSD Prediction | SMC ICT + MSNR Entry Strategy | GOLD LIVE",
+    "postUrl": "https://youtube.com/watch?v=n9wqONwtw7A",
+    "authorName": "Forex Insider Official ",
+    "suggestedReply": "Combining SMC with MSNR on XAUUSD is something I drill into my students constantly. Gold respects these confluence setups beautifully, especially when you align the MSNR entry with a confirmed order block on the higher timeframe first. Do you find the 4H structure is giving you cleaner displacement signals than dropping straight to the 15m for this strategy?",
+    "createdAt": "2026-06-28T12:01:44.905Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782648108390-1rl38",
+    "platform": "youtube",
+    "postTitle": "Bearish FVG + BOS Strategy | High Probability ICT Trade Setup #trading",
+    "postUrl": "https://youtube.com/watch?v=QkpBQnaGBrw",
+    "authorName": "She Trades ICT",
+    "suggestedReply": "Bearish FVGs paired with a BOS are powerful but I always warn my students to confirm the BOS on a higher timeframe first before entering on the lower timeframe signal. A BOS on the 5m that contradicts the 1H structure will get you chopped out fast. The setup works beautifully in trending conditions but in consolidating markets that FVG will fill and reverse on you more often than not.",
+    "createdAt": "2026-06-28T12:01:48.390Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782648112126-18nw8",
+    "platform": "youtube",
+    "postTitle": "Master Order Block &amp; POI | ICT + SMC Trading Course (Ep.5) | Order Block Trading Strategy",
+    "postUrl": "https://youtube.com/watch?v=NGenf0zaBoQ",
+    "authorName": "Neeraj joshi",
+    "suggestedReply": "Interesting take on POI selection. In my experience, the mistake most traders make with order blocks is treating every unmitigated OB equally. I drill into my students to qualify blocks by the displacement strength coming out of them, not just the candle structure itself. On something like dollar pairs especially, a weak displacement leaving the block usually means smart money has already repositioned elsewhere.",
+    "createdAt": "2026-06-28T12:01:52.126Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782648115122-qv9f2",
+    "platform": "youtube",
+    "postTitle": "🚀 STH, STL, ITH &amp; ITL Explained | Smart Money Entry Strategy (ICT + SMC)",
+    "postUrl": "https://youtube.com/watch?v=Nxe1AtWK5AQ",
+    "authorName": "Trade With Sourabh",
+    "suggestedReply": "One thing I drill into my students when working with STH and STL is the importance of confirming the swing label on a higher timeframe before hunting entries on the lower. A short term high on the 15m means very little if the ITH on the 4H is still holding. Confluence between those structural layers is where the real precision entries live.",
+    "createdAt": "2026-06-28T12:01:55.122Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782648118645-s5g02",
+    "platform": "youtube",
+    "postTitle": "Fair Value Gap (FVG) Trading Strategy | Complete FVG Concept for Beginners | ICT &amp; SMC Trading",
+    "postUrl": "https://youtube.com/watch?v=5JNXpOuceOg",
+    "authorName": "Sohail Trading Academy ",
+    "suggestedReply": "Most beginners learning the FVG concept jump straight to the 15m without understanding what higher timeframe draw on liquidity the gap is actually sitting inside. I drill this into my students constantly. When you map your FVGs from the 4H down into execution timeframes, the probability shifts significantly. Are you teaching a top down approach in your next video?",
+    "createdAt": "2026-06-28T12:01:58.645Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782648122747-z3zr6",
+    "platform": "youtube",
+    "postTitle": "The 5 Smart Money Concepts Every Trader Should Know",
+    "postUrl": "https://youtube.com/watch?v=oS929L32XpE",
+    "authorName": "Trading Research Desk | TRD",
+    "suggestedReply": "Of the 5 smart money concepts covered here, order blocks tend to trip traders up the most in my experience. I drill into my students that an unmitigated OB on the 4H carries far more weight than chasing entries on lower timeframes without confluence. Are you factoring in liquidity sweeps as confirmation before calling a valid OB in your framework?",
+    "createdAt": "2026-06-28T12:02:02.747Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1782561721775-y5t2n",
     "platform": "investinglive",
     "postTitle": "Major stock indices close modestly lower with the Nasdaq leading the way.",
