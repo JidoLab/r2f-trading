@@ -4082,5 +4082,35 @@
     "commentedAt": "2026-06-27T18:01:27.447Z",
     "permalink": "/r/FOREXTRADING/comments/1ugghij/trading_gold/ou6300v/",
     "commentId": "ou6300v"
+  },
+  {
+    "postId": "1uhes8j",
+    "subreddit": "Trading",
+    "postTitle": "Any truly consistent prop firm trader ? (Who sells nothing, and has nothing to \"offer\" or \"teach\")",
+    "commentText": "yes, they exist but they're rarer than social media makes it look. tbh the ones doing consistent 6k-12k+ months on prop are usually running multiple funded accounts, trading maybe 2-3 pairs max (a lot of NAS100 and EURUSD guys in that bracket), and they're almost never posting about it. the 18 month bar you set is actually the right filter because that covers at least 3-4 major market shifts where a lucky edge gets exposed. curious what your current drawdown management looks like across accounts, because scaling prop consistently usually breaks down at the rules layer before it ever breaks down at the strategy layer. are you structuring around daily loss limits relative to a specific session, like avoiding late NY entries to protect your buffer?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-28T08:00:29.372Z",
+    "permalink": "/r/Trading/comments/1uhes8j/any_truly_consistent_prop_firm_trader_who_sells/ou9xjme/",
+    "commentId": "ou9xjme"
+  },
+  {
+    "postId": "1uhas6f",
+    "subreddit": "Trading",
+    "postTitle": "Alpha Futures Doesn't Stand Behind their products - Horrible customer service.",
+    "commentText": "tbh the contract cap issue you described sounds like a hidden scaling rule being applied on the backend regardless of what the account tier advertises, i've seen this with other firms where the \"advanced\" label is marketing but the risk engine still throttles you at 20 micros during certain drawdown thresholds. the payout policy change with no grandfathering is the real scam though, that's a straight up retroactive terms change. curious, when you were hitting that 20 micro wall, were you in the killzone during london or new york open, because some platforms flag high-volatility sessions and auto-restrict even on accounts that shouldn't have a cap?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-28T08:00:37.595Z",
+    "permalink": "/r/Trading/comments/1uhas6f/alpha_futures_doesnt_stand_behind_their_products/ou9xk8b/",
+    "commentId": "ou9xk8b"
+  },
+  {
+    "postId": "1uhcnrj",
+    "subreddit": "Trading",
+    "postTitle": "Funded or live",
+    "commentText": "honestly after 1 month of learning and 1 week on demo, neither option is ideal yet tbh. a $100 live account will get blown chasing trades before you've even seen a full weekly range play out, and funded firms will eat your eval fee the second you overtrade a news session. spend another few weeks at minimum watching how price respects daily OBs across at least 2-3 sessions before putting real money anywhere. what pairs have you been practicing on in demo and are you watching the london open or just trading random times?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-28T08:00:47.080Z",
+    "permalink": "/r/Trading/comments/1uhcnrj/funded_or_live/ou9xkw9/",
+    "commentId": "ou9xkw9"
   }
 ]
