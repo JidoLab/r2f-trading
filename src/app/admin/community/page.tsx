@@ -196,7 +196,7 @@ export default function CommunityPage() {
         <div className="grid sm:grid-cols-2 gap-3">
           {[
             { label: "Free Class Promo", text: "🎓 *Free ICT Trading Class Available*\n\nLearn the foundations of ICT trading concepts with our free starter class.\n\n👉 r2ftrading.com/free-class\n\nLimited spots available — start your journey today!" },
-            { label: "Coaching CTA", text: "📈 *Ready to Level Up Your Trading?*\n\nR2F Trading offers personalized 1-on-1 ICT coaching:\n\n• Lite Plan: $150/week\n• Pro Plan: $200/week\n• Full Mentorship: $1,000/4 months\n\nBook a FREE discovery call:\n👉 r2ftrading.com/contact" },
+            { label: "Coaching CTA", text: "📈 *Ready to Level Up Your Trading?*\n\nR2F Trading offers personalized 1-on-1 ICT coaching:\n\n• Lite Plan: $150/week\n• Pro Plan: $250/week\n• Full Mentorship: $5,000 for 4 months\n\nBook a FREE discovery call:\n👉 r2ftrading.com/contact" },
             { label: "Results Showcase", text: "🏆 *Student Results*\n\n\"I went from blowing accounts to passing FTMO within 2 months of coaching.\" — M.R.\n\nSee more results at r2ftrading.com/results\n\nReady to be next? Book a free call 👉 r2ftrading.com/contact" },
             { label: "Starter Kit Promo", text: "📦 *ICT Trading Starter Kit — $49*\n\nEverything you need to start trading ICT concepts:\n• Complete checklist\n• Entry models\n• Risk templates\n• Session guides\n\nGet yours: r2ftrading.com/starter-kit" },
           ].map((template) => (

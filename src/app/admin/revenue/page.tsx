@@ -175,7 +175,7 @@ export default function AdminRevenuePage() {
                 color: "bg-blue-400",
               },
               {
-                label: "Pro ($200/wk)",
+                label: "Pro ($250/wk)",
                 value: data.byPlan.pro,
                 color: "bg-yellow-400",
               },

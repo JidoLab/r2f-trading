@@ -196,7 +196,7 @@ AUTHOR: R2F Trading — ICT coaching brand with 10+ years of trading experience,
 TOPIC: "${topicData.topic}" | CATEGORY: ${topicData.category} | POST TYPE: ${topicData.postType || "how-to"} | ANGLE: ${topicData.angle} | KEYWORD: "${topicData.targetKeyword}" | DATE: ${date}
 UNIQUE INSIGHT: ${topicData.uniqueInsight || "Share something readers can't find elsewhere"}
 SEARCH INTENT: ${topicData.searchIntent || "informational"}
-COACHING: Lite $150/week, Pro $200/week, Full Mentorship $1,000/4 months.
+COACHING: Lite $150/week, Pro $250/week, Full Mentorship $5,000 for 4 months.
 
 ═══ QUALITY STANDARD (MOST IMPORTANT) ═══
 This article must pass this test: "Would this content exist if search engines didn't exist?"

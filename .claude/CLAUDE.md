@@ -28,8 +28,8 @@ Fully automated digital trading coaching business at r2ftrading.com. Built with 
 
 ## Coaching Plans
 - Lite: $150/week (1 session/week)
-- Pro: $200/week (2 sessions/week)
-- Full Mentorship: $1,000/4 months (2 sessions/week + FTMO challenge)
+- Pro: $250/week (2 sessions/week)
+- Full Mentorship: $5,000 for 4 months (2 sessions/week, intensive)
 
 ## Key Pages
 - / — Homepage (JSON-LD ProfessionalService schema)

@@ -15,8 +15,8 @@ ABOUT R2F TRADING:
 
 COACHING PLANS:
 - Lite Plan: $150/week — 1 session/week (60-90 min), templates, action plans, Telegram/WhatsApp support
-- Pro Plan: $200/week — 2 sessions/week, live market walkthroughs, recorded sessions, advanced resources
-- Full Mentorship: $1,000/4 months — 2 sessions/week, psychological coaching, custom trading plan, free FTMO Challenge
+- Pro Plan: $250/week — 2 sessions/week, live market walkthroughs, recorded sessions, advanced resources
+- Full Mentorship: $5,000 for 4 months — 2 sessions/week, psychological coaching, custom trading plan
 
 KEY LINKS:
 - Book a free discovery call: r2ftrading.com/contact

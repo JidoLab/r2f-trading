@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "ICT Trading Coaching Plans",
-  description: "1-on-1 ICT trading coaching with Harvest Wright. Lite ($150/wk), Pro ($200/wk), or Full Mentorship ($1,000/4mo). Get funded faster with personalized guidance.",
+  description: "1-on-1 ICT trading coaching with Harvest Wright. Lite ($150/wk), Pro ($250/wk), or Full Mentorship ($5,000 for 4 months). Get funded faster with personalized guidance.",
   alternates: { canonical: "/coaching" },
   openGraph: {
     title: "ICT Trading Coaching Plans — R2F Trading",
@@ -35,9 +35,9 @@ const plans = [
   },
   {
     name: "Pro Coaching",
-    price: "$200",
-    period: "per week / $800 per month",
-    paypalAmount: "800.00",
+    price: "$250",
+    period: "per week / $1,000 per month",
+    paypalAmount: "1000.00",
     paypalDesc: "Pro Coaching — 1 month (8 weekly sessions)",
     ideal: "Traders who want regular and intensive coaching for faster progress.",
     features: [
@@ -52,20 +52,19 @@ const plans = [
   },
   {
     name: "Full Mentorship",
-    price: "$1,000",
-    period: "for 4 months",
-    paypalAmount: "1000.00",
-    paypalDesc: "Full Mentorship — 4 months complete program",
+    price: "$5,000",
+    period: "one-time · full 4-month program",
+    paypalAmount: "5000.00",
+    paypalDesc: "Full Mentorship — 4-month intensive program (one-time)",
     ideal: "Serious aspiring traders who want a comprehensive, long-term roadmap to success.",
     features: [
-      "2 sessions per week for 4 months (60-90 min each)",
+      "Intensive 4-month program: 2 sessions per week (60-90 min each)",
       "Full resource library including proprietary strategies",
       "Psychological coaching for mindset mastery",
       "Monthly in-depth trade performance reviews",
       "Direct access to private Telegram/WhatsApp for follow-up",
       "Custom trading plan development",
       "Recorded sessions for review",
-      "Complimentary 10k FTMO Challenge at end of 3rd month",
     ],
     highlight: false,
   },
@@ -116,7 +115,7 @@ const jsonLd = {
     {
       "@type": "Offer",
       name: "Pro Coaching",
-      price: "200",
+      price: "250",
       priceCurrency: "USD",
       unitText: "per week",
       description:
@@ -125,11 +124,11 @@ const jsonLd = {
     {
       "@type": "Offer",
       name: "Full Mentorship",
-      price: "1000",
+      price: "5000",
       priceCurrency: "USD",
-      unitText: "4 months",
+      unitText: "one-time, 4-month program",
       description:
-        "Comprehensive 4-month program with 2 sessions per week, full resource library, psychological coaching, and complimentary FTMO Challenge.",
+        "Intensive one-time 4-month program with 2 sessions per week, full resource library, psychological coaching, and custom trading plan development.",
     },
   ],
 };

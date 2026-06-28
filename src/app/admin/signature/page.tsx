@@ -24,7 +24,7 @@ const FULL_BIO = `Harvest Wright is the founder of R2F Trading (Road to Funded),
 
 With over 10 years of trading experience, Harvest has earned a TradingView Editors' Pick award, placed in the Top 1% of trading competitions, and successfully passed the FTMO Challenge. His approach combines technical precision with psychological coaching, helping traders build the discipline and structure needed for consistent profitability.
 
-R2F Trading offers personalized 1-on-1 coaching through three tiers: Lite ($150/week), Pro ($200/week), and Full Mentorship ($1,000/4 months). Students receive hands-on guidance including live market walkthroughs, custom trading plans, and direct access via Telegram and WhatsApp.`;
+R2F Trading offers personalized 1-on-1 coaching through three tiers: Lite ($150/week), Pro ($250/week), and Full Mentorship ($5,000 for 4 months). Students receive hands-on guidance including live market walkthroughs, custom trading plans, and direct access via Telegram and WhatsApp.`;
 
 const BOILERPLATE = `R2F Trading (Road to Funded) is a professional ICT trading coaching program founded by Harvest Wright. Specializing in Inner Circle Trader concepts and personalized mentorship, R2F Trading helps aspiring and intermediate traders develop the skills, psychology, and discipline needed to achieve funded account status and consistent profitability. With a proven track record including TradingView recognition and top-tier competition placements, R2F Trading offers Lite, Pro, and Full Mentorship plans tailored to each trader's goals. Learn more at r2ftrading.com.`;
 

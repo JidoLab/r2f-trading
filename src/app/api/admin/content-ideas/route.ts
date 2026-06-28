@@ -74,7 +74,7 @@ TOPIC: "${idea.suggestedTopic}"
 ANGLE: ${idea.suggestedAngle}
 CONTEXT: This topic was inspired by a high-performing Reddit comment (${idea.score} upvotes) on r/${idea.subreddit}. Original post: "${idea.postTitle}". Our comment that resonated: "${idea.ourComment.slice(0, 300)}"
 DATE: ${date}
-COACHING: Lite $150/week, Pro $200/week, Full Mentorship $1,000/4 months.
+COACHING: Lite $150/week, Pro $250/week, Full Mentorship $5,000 for 4 months.
 INTERNAL LINKS (use 2-4 naturally):
 - [coaching plans](/coaching)
 - [book a free discovery call](/contact)

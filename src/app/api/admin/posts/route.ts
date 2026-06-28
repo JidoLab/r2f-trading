@@ -113,8 +113,8 @@ TODAY'S DATE: ${date}
 
 COACHING SERVICES TO REFERENCE NATURALLY:
 - Lite Plan: $150/week — 1 session/week, great for beginners
-- Pro Plan: $200/week — 2 sessions/week with live market walkthroughs
-- Full Mentorship: $1,000/4 months — complete transformation program with free FTMO Challenge
+- Pro Plan: $250/week — 2 sessions/week with live market walkthroughs
+- Full Mentorship: $5,000 for 4 months — complete transformation program
 
 MANDATORY INTERNAL LINKS (weave 2-3 naturally into the content):
 - [coaching plans](/coaching) — when mentioning structured learning or getting help
