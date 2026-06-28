@@ -198,7 +198,7 @@
   {
     "email": "mani.katakatla.09@gmail.com",
     "date": "2026-06-02T21:06:10.786Z",
-    "dripsSent": 6,
+    "dripsSent": 7,
     "referralCode": "R2F-cnd4pp",
     "referredBy": null,
     "referralCount": 0,
@@ -217,7 +217,8 @@
       "successStory",
       "tradingPsychology",
       "propFirmTips",
-      "coachingCta"
+      "coachingCta",
+      "valueRecap"
     ],
     "abandonmentEmailSent": true
   },
@@ -347,12 +348,12 @@
   {
     "email": "mgojcalvesiii@gmail.commgoncalvesiii",
     "date": "2026-06-26T22:41:13.642Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-189jqs",
     "referredBy": null,
     "referralCount": 0,
     "phone": "+351925205264",
-    "score": 100,
+    "score": 110,
     "segment": "hot",
     "events": [
       {
@@ -378,10 +379,33 @@
       {
         "type": "coaching_page_view",
         "date": "2026-06-28T00:12:09.009Z"
+      },
+      {
+        "type": "crash_course_page_view",
+        "date": "2026-06-28T09:00:22.635Z"
+      },
+      {
+        "type": "crash_course_page_view",
+        "date": "2026-06-28T09:00:22.635Z"
+      },
+      {
+        "type": "crash_course_page_view",
+        "date": "2026-06-28T09:00:22.635Z"
+      },
+      {
+        "type": "results_page_view",
+        "date": "2026-06-28T09:00:22.635Z"
+      },
+      {
+        "type": "crash_course_page_view",
+        "date": "2026-06-28T09:00:22.635Z"
       }
     ],
-    "lastActivity": "2026-06-28T00:12:09.009Z",
-    "dripsHistory": [],
-    "abandonmentEmailSent": true
+    "lastActivity": "2026-06-28T09:00:22.635Z",
+    "dripsHistory": [
+      "bookCallUrgent"
+    ],
+    "abandonmentEmailSent": true,
+    "hotFollowUpSent": true
   }
 ]
