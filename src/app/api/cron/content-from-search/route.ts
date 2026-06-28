@@ -113,6 +113,26 @@ Return ONLY the JSON array, no markdown fencing.`,
       `chore: update search content suggestions ${new Date().toISOString().split("T")[0]}`,
     );
 
+    // Feed the same demand queue that the manual paste + daily generator use,
+    // so GSC-mined topics get generated automatically (deduped by title).
+    try {
+      const { addToQueue } = await import("@/lib/topic-queue");
+      await addToQueue(
+        suggestions
+          .filter((s) => s.suggestedTitle)
+          .map((s) => ({
+            title: String(s.suggestedTitle).slice(0, 80),
+            question: String(s.query || "").slice(0, 200),
+            angle: String(s.angle || "").slice(0, 400),
+            targetKeyword: String(s.query || "").slice(0, 80),
+            source: "gsc" as const,
+            priority: (["high", "medium", "low"].includes(s.priority) ? s.priority : "medium") as "high" | "medium" | "low",
+          })),
+      );
+    } catch (e) {
+      console.error("[content-from-search] queue feed failed:", e);
+    }
+
     // Telegram notification with top 3
     const top3 = suggestions.slice(0, 3);
     if (top3.length > 0) {

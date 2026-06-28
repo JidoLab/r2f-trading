@@ -66,6 +66,8 @@ export async function GET(req: NextRequest) {
       if (words.some(w => ["beginner", "start", "basic", "learn", "guide"].includes(w))) return "Beginner reality-checks";
       if (words.some(w => ["grail", "secret", "magic", "indicator", "system", "method"].includes(w))) return "The Holy Grail Trap";
       if (words.some(w => ["losing", "still", "broken", "blew", "blown", "failed", "stuck", "plateau"].includes(w))) return "Why-am-I-still-losing";
+      if (words.some(w => ["smc", "smart", "concepts", "institutional", "manipulation"].includes(w))) return "Smart Money Concepts";
+      if (words.some(w => ["routine", "process", "journal", "backtest", "backtesting", "habit", "habits", "prep", "preparation"].includes(w))) return "Trading Routine & Process";
       return "Other";
     });
     const categoryCount: Record<string, number> = {};
@@ -81,16 +83,45 @@ export async function GET(req: NextRequest) {
       "The Holy Grail Trap",
       "Personal Stories",
       "Beginner reality-checks",
+      "Smart Money Concepts",
+      "Trading Routine & Process",
     ].sort((a, b) => (categoryCount[a] || 0) - (categoryCount[b] || 0))[0];
 
-    // Topic selection with retry — Claude occasionally picks a topic too close
-    // to an existing post. Instead of bailing (skipping the whole day's post),
-    // retry up to 3 times, feeding the rejected topic back into the prompt.
+    // topicData drives article generation. It comes from either the demand
+    // queue (preferred) or Claude topic invention (fallback).
+    let topicData: { topic: string; category: string; postType: string; angle: string; targetKeyword: string; searchIntent: string; uniqueInsight: string } | null = null;
+    let queueItemId: string | null = null;
+
+    // DEMAND-DRIVEN: prefer a real-demand topic from the queue (pasted GSC
+    // queries, or the content-from-search miner once GSC is configured) before
+    // inventing one. Falls back silently to the category rotation if empty.
+    try {
+      const { nextUnused } = await import("@/lib/topic-queue");
+      const queued = await nextUnused();
+      if (queued) {
+        queueItemId = queued.id;
+        topicData = {
+          topic: queued.title,
+          category: "Search Demand",
+          postType: "how-to",
+          angle: queued.angle || `Answer the real search intent behind "${queued.question}" using 10+ years of ICT coaching, with specifics and a contrarian take.`,
+          targetKeyword: queued.targetKeyword || queued.question,
+          searchIntent: "informational",
+          uniqueInsight: `Targets a query people actually search (source: ${queued.source}). Beat page 1 with real coaching experience, not a summary.`,
+        };
+        console.log(`[cron] Demand-queue topic: "${queued.title}"`);
+      }
+    } catch (e) {
+      console.error("[cron] topic-queue read failed:", e);
+    }
+
+    // Topic selection with retry (only runs if the queue didn't supply one).
+    // Claude occasionally picks a topic too close to an existing post; retry up
+    // to 3 times, feeding the rejected topic back into the prompt.
     const rejectedTopics: string[] = [];
     const MAX_TOPIC_ATTEMPTS = 3;
-    let topicData: { topic: string; category: string; postType: string; angle: string; targetKeyword: string; searchIntent: string; uniqueInsight: string } | null = null;
 
-    for (let attempt = 1; attempt <= MAX_TOPIC_ATTEMPTS; attempt++) {
+    for (let attempt = 1; !topicData && attempt <= MAX_TOPIC_ATTEMPTS; attempt++) {
       const rejectedBlock = rejectedTopics.length > 0
         ? `\n\nREJECTED TOPICS from this run (do NOT re-propose anything similar to these):\n${rejectedTopics.map((t, i) => `${i + 1}. "${t}"`).join("\n")}\n\nYou MUST pick a meaningfully DIFFERENT angle — different category if possible, different keywords, different hook.`
         : "";
@@ -131,6 +162,8 @@ TOPIC DIVERSITY — rotate through these categories evenly. ALL of these are pai
 - **The "Holy Grail" Trap** (the indicator/setup/system mindset, why traders quit one strategy days before it would have worked, the seduction of new methodologies)
 - **Personal Stories** (specific failure → lesson, the day everything clicked, the trade that taught more than 100 winners)
 - **Beginner reality-checks** (what 6 months in actually feels like, the unsexy truths nobody tells beginners)
+- **Smart Money Concepts** (the broader SMC umbrella beyond strict ICT — liquidity, institutional order flow, manipulation, accumulation/distribution — framed for the struggling trader who keeps getting stop-hunted)
+- **Trading Routine & Process** (the daily prep that actually moves the needle, journaling that isn't useless, how to backtest so it transfers to live, building a repeatable process instead of chasing setups)
 
 HIGH-VALUE ANGLES (struggling traders click these every time):
 - "Why your [X] keep failing"
@@ -390,6 +423,17 @@ ${body}
 `;
 
     await commitFile(`content/blog/${slug}.mdx`, mdxContent, `Auto-generate: ${article.title}`);
+
+    // If this post came from the demand queue, mark that item used so it isn't
+    // regenerated and the admin can see it shipped (with its slug).
+    if (queueItemId) {
+      try {
+        const { markUsed } = await import("@/lib/topic-queue");
+        await markUsed(queueItemId, slug);
+      } catch (e) {
+        console.error("[cron] topic-queue markUsed failed:", e);
+      }
+    }
 
     // Notify search engines via IndexNow
     await notifyIndexNow([`/trading-insights/${slug}`, `/trading-insights`, `/sitemap.xml`]);

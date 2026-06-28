@@ -16,6 +16,7 @@ const NAV_SECTIONS = [
     label: "Content",
     items: [
       { href: "/admin/posts", label: "Blog Posts" },
+      { href: "/admin/topic-queue", label: "Topic Queue" },
       { href: "/admin/shorts", label: "Shorts" },
       { href: "/admin/newsletters", label: "Newsletters" },
       { href: "/admin/substack", label: "Substack" },
