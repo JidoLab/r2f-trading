@@ -29,6 +29,8 @@ export default function TopicQueuePage() {
   const [mining, setMining] = useState(false);
   const [generating, setGenerating] = useState(false);
   const [msg, setMsg] = useState("");
+  const [gsc, setGsc] = useState<Record<string, unknown> | null>(null);
+  const [testing, setTesting] = useState(false);
 
   const load = useCallback(async () => {
     const res = await fetch("/api/admin/topic-queue");
@@ -87,6 +89,17 @@ export default function TopicQueuePage() {
     }
   }
 
+  async function testGsc() {
+    setTesting(true);
+    setGsc(null);
+    try {
+      const res = await fetch("/api/admin/test-gsc");
+      setGsc(await res.json());
+    } finally {
+      setTesting(false);
+    }
+  }
+
   async function remove(id: string) {
     await fetch("/api/admin/topic-queue", {
       method: "DELETE",
@@ -104,6 +117,48 @@ export default function TopicQueuePage() {
         on-brand blog ideas. The daily blog generator pulls from this queue first, so your posts answer
         what people actually search.
       </p>
+
+      {/* GSC connection status */}
+      <div className="bg-navy border border-white/10 rounded-lg p-4 mb-6">
+        <div className="flex items-center justify-between gap-3">
+          <div>
+            <span className="text-white/80 text-sm font-semibold">Google Search Console</span>
+            <span className="text-white/40 text-xs ml-2">auto-mining (optional)</span>
+          </div>
+          <button
+            onClick={testGsc}
+            disabled={testing}
+            className="bg-white/10 hover:bg-white/20 text-white text-xs font-bold px-3 py-1.5 rounded-md disabled:opacity-40"
+          >
+            {testing ? "Testing…" : "Test connection"}
+          </button>
+        </div>
+        {gsc && (
+          <div className="mt-3 text-xs space-y-1.5 border-t border-white/10 pt-3">
+            <p className={(gsc.ok ? "text-green-400" : "text-yellow-300") + " font-semibold"}>
+              {gsc.ok ? "✓ Connected" : gsc.configured ? "⚠ Configured but not returning data" : "⚠ Not configured yet"}
+            </p>
+            <p className="text-white/50">
+              Key present: {gsc.hasKey ? (gsc.keyParses ? "yes ✓" : "yes, but not valid JSON ✗") : "no ✗"}
+              {"  ·  "}Site URL: {gsc.hasSiteUrl ? `yes (${String(gsc.siteUrl)})` : "missing ✗"}
+            </p>
+            {gsc.clientEmail ? (
+              <p className="text-white/60">
+                Service account to grant access in Search Console:{" "}
+                <span className="text-gold break-all">{String(gsc.clientEmail)}</span>
+              </p>
+            ) : null}
+            {Array.isArray(gsc.sampleQueries) && gsc.sampleQueries.length > 0 ? (
+              <p className="text-white/50">
+                Sample live queries: {(gsc.sampleQueries as string[]).join(", ")}
+                {typeof gsc.contentGapCount === "number" ? `  ·  ${gsc.contentGapCount} page-2 gaps` : ""}
+              </p>
+            ) : null}
+            {gsc.next ? <p className="text-white/70">→ {String(gsc.next)}</p> : null}
+            {gsc.error ? <p className="text-red-400">Error: {String(gsc.error)}</p> : null}
+          </div>
+        )}
+      </div>
 
       {/* Paste + mine */}
       <div className="bg-navy border border-white/10 rounded-lg p-5 mb-6">
