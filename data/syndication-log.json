@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-06-29-best-ict-trading-course-hype-vs-what-actually-works",
+    "syndicatedAt": "2026-06-29T08:04:44.690Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-06-29-best-ict-trading-course-hype-vs-what-actually-works",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/best-ict-trading-course-hype-vs-what-actually-works-5dlo",
+        "id": "4018759"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-06-29-best-ict-trading-course-hype-vs-what-actually-works"
+  },
+  {
     "slug": "2026-06-20-you-know-the-setup-so-why-d-you-take-the-bad-trade",
     "syndicatedAt": "2026-06-20T12:03:38.132Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-06-20-you-know-the-setup-so-why-d-you-take-the-bad-trade",
