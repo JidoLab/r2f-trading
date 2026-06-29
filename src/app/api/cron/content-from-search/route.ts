@@ -24,15 +24,29 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: "Failed to fetch search data" }, { status: 500 });
     }
 
-    // Find content opportunities: high impressions, low CTR, position 8-20
-    const opportunities = searchData.topQueries
-      .filter((q) => q.position >= 8 && q.position <= 20 && q.impressions >= 10)
-      .sort((a, b) => b.impressions - a.impressions)
-      .slice(0, 20);
+    // Find content opportunities, TIERED so it works at any traffic level.
+    // The old single filter (pos 8-20, 10+ impressions) returned nothing for a
+    // growing site whose queries are mostly page 1, page 3+, or low-impression.
+    const sorted = [...searchData.topQueries].sort((a, b) => b.impressions - a.impressions);
+    let tier = "striking-distance (pos 5-25, 5+ impressions)";
+    let opportunities = sorted.filter((q) => q.position >= 5 && q.position <= 25 && q.impressions >= 5).slice(0, 20);
+    if (opportunities.length === 0) {
+      tier = "broad (pos <=30, 2+ impressions)";
+      opportunities = sorted.filter((q) => q.position <= 30 && q.impressions >= 2).slice(0, 20);
+    }
+    if (opportunities.length === 0) {
+      // Last resort for a brand-new property: any query we appear for at all.
+      tier = "any demand (top queries by impressions)";
+      opportunities = sorted.filter((q) => q.impressions >= 1).slice(0, 15);
+    }
 
     if (opportunities.length === 0) {
-      return NextResponse.json({ skipped: true, reason: "No content opportunities found" });
+      return NextResponse.json({
+        skipped: true,
+        reason: "GSC returned no queries with impressions for this period yet. Give it time as the site gains search visibility, or paste questions manually.",
+      });
     }
+    console.log(`[content-from-search] ${opportunities.length} opportunities (tier: ${tier})`);
 
     // Use Claude to generate blog topic suggestions
     const client = new Anthropic();
@@ -48,11 +62,11 @@ export async function GET(req: NextRequest) {
           role: "user",
           content: `You are an SEO content strategist for R2F Trading, an ICT/forex trading education brand.
 
-Here are search queries where we rank on page 2 (positions 8-20) with high impressions but low CTR — these are content opportunities:
+Here are REAL search queries our site already appears for in Google (with its current average position and impressions over the last 28 days). These are content opportunities: a dedicated, genuinely helpful post can win or improve the ranking and capture this demand. Volumes may be modest for a growing site; prioritize the queries closest to page 1 and with the most impressions.
 
 ${queryList}
 
-For each query (or group of related queries), suggest a blog post topic that could help us rank higher. Return a JSON array of objects with:
+Stay in lane (ICT, smart money concepts, trading psychology, prop firm/funded challenges, risk management, the struggling-trader journey). Skip anything off-topic that we happen to appear for. Merge near-duplicate queries into one idea. For each, suggest a blog post topic that could help us rank higher. Return a JSON array of objects with:
 - "query": the original search query (or combined queries)
 - "suggestedTitle": blog post title (<60 chars)
 - "angle": brief description of the content angle (1-2 sentences)
