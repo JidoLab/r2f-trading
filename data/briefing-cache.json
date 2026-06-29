@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-18T10:06:04.358Z",
+  "generatedAt": "2026-06-29T05:24:46.301Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Thursday, 18 June 2026 at 17:06 (Bangkok)",
+  "dateTime": "Monday, 29 June 2026 at 12:24 (Bangkok)",
   "overnight": {
-    "newSubscribers": 2,
+    "newSubscribers": 0,
     "payments": {
       "count": 0,
       "revenue": 0
@@ -12,15 +12,25 @@
   },
   "contentStatus": {
     "blogPostsToday": 0,
-    "totalBlogPosts": 128,
-    "shortsReady": 50,
+    "totalBlogPosts": 129,
+    "shortsReady": 51,
     "shortsPublished": 30,
     "shortsRendering": 4,
     "socialPostsThisWeek": 8
   },
   "hotLeads": {
-    "count": 1,
+    "count": 3,
     "recentHot": [
+      {
+        "email": "mgojcalvesiii@gmail.commgoncalvesiii",
+        "score": 110,
+        "lastActivity": "2026-06-28T09:00:22.635Z"
+      },
+      {
+        "email": "mgoncalvesiii@gmail.com",
+        "score": 90,
+        "lastActivity": "2026-06-27T07:22:29.186Z"
+      },
       {
         "email": "keerthivasanchampionvasan@gmail.com",
         "score": 59,
@@ -29,10 +39,10 @@
     ]
   },
   "suggestions": [
-    "Personally message keerthivasanchampionvasan@gmail.com on Telegram or WhatsApp with a direct, time-sensitive offer (e.g., 'Spots closing this week') since they viewed the coaching page and are your only hot lead.",
-    "With 20 YouTube Shorts queued but unpublished, manually review and schedule the remaining 20 to publish at optimal times (e.g., 2–3 per day) to accelerate organic reach.",
-    "With 0 Reddit upvotes and no traction, manually craft and post 2–3 high-value, non-promotional ICT trading answers on r/Forex or r/Daytrading today to seed credibility before automation resumes.",
-    "With only 12 subscribers and 0 payments this week, create a new lead magnet (e.g., a free ICT concept cheat sheet) and manually promote it in 2–3 Bangkok or Southeast Asia trading Facebook Groups to drive fresh top-of-funnel traffic."
+    "Personally message all 3 hot leads today via Telegram or LINE with a specific, time-sensitive offer (e.g., 'Join by Friday and get a 1-on-1 onboarding call') to manually push them to convert.",
+    "Upload a batch of the 51 ready YouTube Shorts manually to TikTok or Instagram Reels to diversify distribution beyond the automated YouTube channel.",
+    "With 0 new subscribers in the last day, manually post in 2–3 Bangkok expat or forex Facebook Groups today introducing R2F Trading and linking to the free opt-in offer.",
+    "Schedule a live Q&A or free webinar this week and manually promote it to your 14 existing subscribers to re-engage cold leads and give hot leads a conversion event."
   ],
   "schedule": [
     {
