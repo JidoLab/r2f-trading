@@ -4130,5 +4130,15 @@
     "commentedAt": "2026-06-28T18:00:44.200Z",
     "permalink": "/r/InnerCircleTraders/comments/1ui32sx/need_to_transition_3_years_of_profitable_scalping/oucq8rg/",
     "commentId": "oucq8rg"
+  },
+  {
+    "postId": "1uhvbbk",
+    "subreddit": "proptrading",
+    "postTitle": "How to avoid prop firm payout scams",
+    "commentText": "solid advice tbh, especially the mental profit cap point. a lot of traders i've seen blow past that and end up with a single large withdrawal that triggers a review, which is basically handing the firm a reason to audit every single trade you took. one thing i'd add is being extra careful around high impact news on pairs like GBPUSD or XAUUSD, because some firms will void trades entered within 2 mins of a red folder event even if the rules are buried in the fine print. curious what firms you're currently split across and whether you're hitting your cap based on a fixed dollar amount or a percentage of the account size, since that changes how you'd structure entries around session opens like london or new york.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-29T08:00:18.166Z",
+    "permalink": "/r/proptrading/comments/1uhvbbk/how_to_avoid_prop_firm_payout_scams/ougo4k1/",
+    "commentId": "ougo4k1"
   }
 ]
