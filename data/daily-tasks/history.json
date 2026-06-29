@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-06-29",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1782710658962-0",
+        "title": "Personally message keerthivasanchampionvasan@gmail.com on Telegram or WhatsApp with a direct, time-sensitive offer (e.g., 'Spots closing this week') since they viewed the coaching page and are your only hot lead.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1782710658962-1",
+        "title": "With 20 YouTube Shorts queued but unpublished, manually review and schedule the remaining 20 to publish at optimal times (e.g., 2–3 per day) to accelerate organic reach.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1782710658962-2",
+        "title": "With 0 Reddit upvotes and no traction, manually craft and post 2–3 high-value, non-promotional ICT trading answers on r/Forex or r/Daytrading today to seed credibility before automation resumes.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1782710658962-3",
+        "title": "With only 12 subscribers and 0 payments this week, create a new lead magnet (e.g., a free ICT concept cheat sheet) and manually promote it in 2–3 Bangkok or Southeast Asia trading Facebook Groups to drive fresh top-of-funnel traffic.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-06-18",
     "tasks": [
       {
