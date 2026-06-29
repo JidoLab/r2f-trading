@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1782693039645-fq30v",
+    "platform": "youtube",
+    "postTitle": "Valid Liquidity Sweep Explained 🔥 | Smart Money Concept (SMC)  | #ytshorts #shorts #liquidity",
+    "postUrl": "https://youtube.com/watch?v=ebOK_IOzN7w",
+    "authorName": "Mast boy",
+    "suggestedReply": "Valid liquidity sweeps are the foundation but I always tell my students to confirm the sweep on a higher timeframe before acting on it. A sweep on the 1 minute means nothing if the 15 minute or 1 hour structure hasn't shifted. I've seen traders get trapped constantly because they're trading every wick without waiting for that market structure break to confirm the move is real.",
+    "createdAt": "2026-06-29T00:30:39.645Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782693042730-bkd6u",
+    "platform": "youtube",
+    "postTitle": "Breakouts over ICT #trading #ict #forex",
+    "postUrl": "https://youtube.com/watch?v=rahgoRNEgtg",
+    "authorName": "TraffordTrading™",
+    "suggestedReply": "Breakouts over ICT levels hit different when you understand the liquidity that sits just beyond them. Most traders see the break and chase it. I teach my students to wait for the return back into the broken structure on the 15m, confirming displacement before entry. That patience alone separates the ones who get funded from the ones who blow accounts chasing wicks.",
+    "createdAt": "2026-06-29T00:30:42.730Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782693046250-wrsjj",
+    "platform": "youtube",
+    "postTitle": "Understanding the WHY behind liquidity to improve your win rate | Advanced ICT #9",
+    "postUrl": "https://youtube.com/watch?v=tpxmB4SX2AY",
+    "authorName": "Tizz Trades",
+    "suggestedReply": "The point about understanding WHY liquidity forms before you trade it is something I drill into every one of my students. Most traders see a pool and just chase it. The real edge is knowing whether that liquidity was engineered by a session high sweep or left over from inefficient price delivery. Once you understand the intent behind the draw, your entries on the lower timeframes become so much cleaner.",
+    "createdAt": "2026-06-29T00:30:46.250Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782693049832-6gda7",
+    "platform": "youtube",
+    "postTitle": "iFVG Trading Strategy - Inversion Fair Value Gap (ICT Concepts) (SMC)",
+    "postUrl": "https://youtube.com/watch?v=gp0ANbczaNs",
+    "authorName": "Trader Tips",
+    "suggestedReply": "The iFVG concept here is solid but I drill into my students one thing most miss. Before flipping the FVG into a mitigation zone, you need to confirm the displacement candle that created it actually closed fully outside the range, not just wicked through. On the 15 minute, that distinction alone separates clean iFVG setups from noise, especially on indices.",
+    "createdAt": "2026-06-29T00:30:49.832Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782693054012-etmdu",
+    "platform": "youtube",
+    "postTitle": "ICT Trading FULL COURSE in Hindi | ICT Trading Strategy | What is Market Structure? | Part 1",
+    "postUrl": "https://youtube.com/watch?v=mksYnqLE_6c",
+    "authorName": "Rishu FRX Live",
+    "suggestedReply": "Interesting take on market structure as the foundation. In my experience, most beginners get lost trying to identify highs and lows on every timeframe at once. I teach my students to anchor market structure on the daily first, then drop to the 15 minute only after a clear displacement candle confirms the shift. That top down clarity removes a lot of confusion early on.",
+    "createdAt": "2026-06-29T00:30:54.012Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782693057019-w6qov",
+    "platform": "youtube",
+    "postTitle": "If You Only Watch One ICT Trading Video, Make It This (LIVE Trading)",
+    "postUrl": "https://youtube.com/watch?v=UIGZtoGGPH4",
+    "authorName": "Chart Fanatics",
+    "suggestedReply": "Live trading separates the real ones from the theorists, so respect for putting it on camera. The part most people miss in sessions like this is distinguishing between a true displacement candle and just a strong move. I drill this into my students constantly. Wait for the imbalance to form AFTER the displacement, not before, otherwise you are entering into draw rather than with it.",
+    "createdAt": "2026-06-29T00:30:57.019Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782693061340-2qvvs",
+    "platform": "youtube",
+    "postTitle": "Learn ICT Concepts in 20 Minutes (Liquidity Sweeps&amp; Order Blocks)",
+    "postUrl": "https://youtube.com/watch?v=_EJIacX5VNk",
+    "authorName": "Pro Trading School",
+    "suggestedReply": "Liquidity sweeps on the lower timeframes trip up so many newer traders because they chase the sweep instead of waiting for confirmation back inside the order block. I drill this into my students constantly, especially when they're hunting setups on indices versus forex pairs where the sweeps can be more aggressive. Are you finding the 20 minute condensed approach changes how traders prioritize which order blocks are actually worth trading?",
+    "createdAt": "2026-06-29T00:31:01.340Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782693064796-vuff7",
+    "platform": "youtube",
+    "postTitle": "How to Trade the London Session the Right Way",
+    "postUrl": "https://youtube.com/watch?v=i_ZrROI7a8w",
+    "authorName": "The Soup Room",
+    "suggestedReply": "The London session killzone timing piece is something I drill into my students constantly. Most people fight the range in the first 30 minutes instead of waiting for displacement and a clean sweep of Asian highs or lows before committing to a direction. On Cable and Fiber especially, that patience separates the funded traders from the ones blowing evaluations. Did you cover session overlap manipulation in a follow up?",
+    "createdAt": "2026-06-29T00:31:04.796Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1782648131967-kwo2k",
     "platform": "investinglive",
     "postTitle": "Bitcoin analysis over the weekend, 28 June 2026",
