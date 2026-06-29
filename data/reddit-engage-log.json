@@ -4140,5 +4140,35 @@
     "commentedAt": "2026-06-29T08:00:18.166Z",
     "permalink": "/r/proptrading/comments/1uhvbbk/how_to_avoid_prop_firm_payout_scams/ougo4k1/",
     "commentId": "ougo4k1"
+  },
+  {
+    "postId": "1uiln6v",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "New to trading, need guidance",
+    "commentText": "since your friend is already using ICT, honestly just ask him to walk you through one live setup first before you dive into hours of youtube. that context makes everything click faster. that said, learn market structure basics first, specifically BOS and CHOCH, because without those you'll misread every OB and FVG you come across. start on the 15m chart, something liquid like EURUSD or NAS100, and just focus on identifying where price took out a swing high or low before anything else. curious what timeframe your friend mainly trades on, because if he's an intraday guy working the london or NY session that's going to shape which concepts you actually need to prioritize first?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-29T13:00:19.065Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uiln6v/new_to_trading_need_guidance/ouhu8vu/",
+    "commentId": "ouhu8vu"
+  },
+  {
+    "postId": "1uijeoz",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "ICT is the truth",
+    "commentText": "three years is actually the timeline i tell people to expect tbh, the ones who quit at 18 months never get to see what you're describing. that point about sitting and watching without trading is underrated, most people skip that phase entirely and wonder why their discipline breaks down under live pressure. what's the model you're running, like are you working off a specific session, london open, new york am? curious what pair and timeframe you're seeing the most clean setups on right now, happy to walk through the entry mechanics with you in here if you want to break it down 🙏",
+    "mentionedR2F": true,
+    "commentedAt": "2026-06-29T13:00:26.377Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uijeoz/ict_is_the_truth/ouhu9qr/",
+    "commentId": "ouhu9qr"
+  },
+  {
+    "postId": "1ui6wzv",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "You're unprofitable because you don't have a single backtested ICT model",
+    "commentText": "this is it tbh. the \"concept hopping\" thing is what kills most people, especially jumping between something like MMXM one week and then chasing IFVGs the next with zero data behind either. pick ONE, go back and mark up at least 6 months of NY AM sessions on a single pair like NQ or GU, and actually log your confluences. curious what concept you personally landed on when you committed to backtesting, and are you filtering your entries around a specific session or still bouncing around?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-06-29T13:00:35.663Z",
+    "permalink": "/r/InnerCircleTraders/comments/1ui6wzv/youre_unprofitable_because_you_dont_have_a_single/ouhuaui/",
+    "commentId": "ouhuaui"
   }
 ]
