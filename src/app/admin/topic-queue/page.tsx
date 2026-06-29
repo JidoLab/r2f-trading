@@ -153,9 +153,9 @@ export default function TopicQueuePage() {
             <button
               onClick={mineGsc}
               disabled={miningGsc}
-              className="bg-gold/90 hover:bg-gold text-navy text-xs font-bold px-3 py-1.5 rounded-md disabled:opacity-40"
+              className="bg-white/10 hover:bg-white/20 text-white text-xs font-bold px-3 py-1.5 rounded-md disabled:opacity-40"
             >
-              {miningGsc ? "Mining…" : "Mine GSC now"}
+              {miningGsc ? "Mining…" : "Pull from Google now"}
             </button>
             <button
               onClick={testGsc}
@@ -195,9 +195,13 @@ export default function TopicQueuePage() {
 
       {/* Paste + mine */}
       <div className="bg-navy border border-white/10 rounded-lg p-5 mb-6">
-        <label className="block text-white/80 text-sm font-semibold mb-2">
-          Paste questions or GSC queries (one per line)
+        <label className="block text-white/80 text-sm font-semibold mb-1">
+          1. Paste your questions here (one per line)
         </label>
+        <p className="text-white/40 text-xs mb-2">
+          AI turns each into an on-brand blog idea and adds it to the queue below. (The grey
+          &ldquo;Pull from Google&rdquo; button above is separate — it ignores this box.)
+        </p>
         <textarea
           value={text}
           onChange={(e) => setText(e.target.value)}
@@ -211,7 +215,7 @@ export default function TopicQueuePage() {
             disabled={mining || !text.trim()}
             className="bg-gold/90 hover:bg-gold text-navy font-bold text-sm px-4 py-2 rounded-md disabled:opacity-40 transition-colors"
           >
-            {mining ? "Mining…" : "Mine → Queue"}
+            {mining ? "Adding…" : "Add to queue →"}
           </button>
           <button
             onClick={generateNext}
@@ -220,8 +224,12 @@ export default function TopicQueuePage() {
           >
             {generating ? "Generating…" : "Generate next post now"}
           </button>
-          {msg && <span className="text-xs text-white/60">{msg}</span>}
         </div>
+        {msg && (
+          <p className="mt-3 text-sm font-medium text-gold bg-gold/10 border border-gold/20 rounded-md px-3 py-2">
+            {msg}
+          </p>
+        )}
       </div>
 
       {/* Pending queue */}

@@ -120,10 +120,13 @@ Rules:
     try {
       ideas = JSON.parse(txt);
     } catch {
-      return NextResponse.json({ error: "Could not parse AI output" }, { status: 502 });
+      const m = txt.match(/\[[\s\S]*\]/);
+      if (m) {
+        try { ideas = JSON.parse(m[0]); } catch {}
+      }
     }
 
-    const items = ideas
+    let items = (Array.isArray(ideas) ? ideas : [])
       .filter((i) => i && i.title)
       .map((i) => ({
         title: String(i.title).slice(0, 80),
@@ -134,8 +137,22 @@ Rules:
         priority: (["high", "medium", "low"].includes(i.priority) ? i.priority : "medium") as "high" | "medium" | "low",
       }));
 
+    // Fallback: if the AI step returned nothing usable, queue the raw questions
+    // as-is so the user's input ALWAYS lands in the queue (the generator will
+    // still write a great post from the title + question).
+    if (items.length === 0) {
+      items = lines.map((l: string) => ({
+        title: l.slice(0, 80),
+        question: l.slice(0, 200),
+        angle: "",
+        targetKeyword: l.slice(0, 80),
+        source: "manual" as const,
+        priority: "medium" as const,
+      }));
+    }
+
     const { added, total } = await addToQueue(items);
-    return NextResponse.json({ added, total, ideas: items });
+    return NextResponse.json({ added, total, items });
   }
 
   return NextResponse.json({ error: "Unknown action" }, { status: 400 });
