@@ -31,6 +31,7 @@ export default function TopicQueuePage() {
   const [msg, setMsg] = useState("");
   const [gsc, setGsc] = useState<Record<string, unknown> | null>(null);
   const [testing, setTesting] = useState(false);
+  const [miningGsc, setMiningGsc] = useState(false);
 
   const load = useCallback(async () => {
     const res = await fetch("/api/admin/topic-queue");
@@ -100,6 +101,29 @@ export default function TopicQueuePage() {
     }
   }
 
+  async function mineGsc() {
+    setMiningGsc(true);
+    setMsg("");
+    try {
+      const res = await fetch("/api/admin/topic-queue", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "mine-gsc" }),
+      });
+      const d = await res.json();
+      if (res.ok && d.result?.suggestionsCount != null) {
+        setMsg(`Mined ${d.result.suggestionsCount} GSC suggestion${d.result.suggestionsCount === 1 ? "" : "s"} into the queue.`);
+      } else if (res.ok && d.result?.skipped) {
+        setMsg(`GSC miner: ${d.result.reason || "nothing new to mine right now."}`);
+      } else {
+        setMsg(d.error || "GSC mine failed.");
+      }
+      await load();
+    } finally {
+      setMiningGsc(false);
+    }
+  }
+
   async function remove(id: string) {
     await fetch("/api/admin/topic-queue", {
       method: "DELETE",
@@ -125,13 +149,22 @@ export default function TopicQueuePage() {
             <span className="text-white/80 text-sm font-semibold">Google Search Console</span>
             <span className="text-white/40 text-xs ml-2">auto-mining (optional)</span>
           </div>
-          <button
-            onClick={testGsc}
-            disabled={testing}
-            className="bg-white/10 hover:bg-white/20 text-white text-xs font-bold px-3 py-1.5 rounded-md disabled:opacity-40"
-          >
-            {testing ? "Testing…" : "Test connection"}
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={mineGsc}
+              disabled={miningGsc}
+              className="bg-gold/90 hover:bg-gold text-navy text-xs font-bold px-3 py-1.5 rounded-md disabled:opacity-40"
+            >
+              {miningGsc ? "Mining…" : "Mine GSC now"}
+            </button>
+            <button
+              onClick={testGsc}
+              disabled={testing}
+              className="bg-white/10 hover:bg-white/20 text-white text-xs font-bold px-3 py-1.5 rounded-md disabled:opacity-40"
+            >
+              {testing ? "Testing…" : "Test connection"}
+            </button>
+          </div>
         </div>
         {gsc && (
           <div className="mt-3 text-xs space-y-1.5 border-t border-white/10 pt-3">

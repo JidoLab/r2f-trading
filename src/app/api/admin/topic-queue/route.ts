@@ -26,6 +26,26 @@ export async function POST(req: NextRequest) {
   const body = await req.json().catch(() => ({}));
   const action = body.action;
 
+  if (action === "mine-gsc") {
+    // Trigger the GSC miner now (instead of waiting for the weekly cron); it
+    // fetches page-2 queries and appends suggestions to this same queue.
+    try {
+      const base = process.env.VERCEL_PROJECT_PRODUCTION_URL
+        ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+        : "https://r2ftrading.com";
+      const res = await fetch(`${base}/api/cron/content-from-search`, {
+        headers: { Authorization: `Bearer ${process.env.CRON_SECRET}` },
+      });
+      const data = await res.json().catch(() => ({}));
+      return NextResponse.json({ ok: res.ok, result: data });
+    } catch (err) {
+      return NextResponse.json(
+        { error: err instanceof Error ? err.message : "Mine failed" },
+        { status: 500 }
+      );
+    }
+  }
+
   if (action === "generate") {
     // Trigger the daily generator now; it consumes the top queued item.
     try {
