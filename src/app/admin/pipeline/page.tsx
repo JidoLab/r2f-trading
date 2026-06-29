@@ -42,6 +42,41 @@ export default function AdminPipelinePage() {
       .catch(() => setLoading(false));
   }, []);
 
+  const [cal, setCal] = useState<Record<string, unknown> | null>(null);
+  const [calMsg, setCalMsg] = useState("");
+  const [registering, setRegistering] = useState(false);
+
+  useEffect(() => {
+    fetch("/api/admin/calendly-setup")
+      .then((r) => (r.ok ? r.json() : null))
+      .then(setCal)
+      .catch(() => {});
+  }, []);
+
+  async function registerCalendly() {
+    setRegistering(true);
+    setCalMsg("");
+    try {
+      const res = await fetch("/api/admin/calendly-setup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "register" }),
+      });
+      const d = await res.json();
+      if (d.ok && d.signingKey) {
+        setCalMsg(
+          `Webhook created. Copy this signing key into Vercel as CALENDLY_WEBHOOK_SIGNING_KEY, then redeploy:\n${d.signingKey}`
+        );
+      } else if (d.ok) {
+        setCalMsg("Webhook created (it may have already existed — no new signing key returned).");
+      } else {
+        setCalMsg(d.error || "Registration failed.");
+      }
+    } finally {
+      setRegistering(false);
+    }
+  }
+
   if (loading) {
     return (
       <div>
@@ -132,6 +167,43 @@ export default function AdminPipelinePage() {
         >
           &larr; Dashboard
         </Link>
+      </div>
+
+      {/* Calendly booking alerts */}
+      <div className="bg-navy border border-white/10 rounded-lg p-4 mb-8">
+        <div className="flex items-center justify-between gap-3">
+          <div>
+            <span className="text-white/80 text-sm font-semibold">📅 Booking alerts (Calendly)</span>
+            <span className="text-white/40 text-xs ml-2">
+              {cal?.ready ? "connected ✓" : "needs setup"}
+            </span>
+          </div>
+          <button
+            onClick={registerCalendly}
+            disabled={registering || !cal?.hasToken}
+            className="bg-white/10 hover:bg-white/20 text-white text-xs font-bold px-3 py-1.5 rounded-md disabled:opacity-40"
+          >
+            {registering ? "Registering…" : "Register webhook"}
+          </button>
+        </div>
+        {cal && (
+          <div className="mt-3 text-xs space-y-1.5 border-t border-white/10 pt-3">
+            <p className="text-white/50">
+              API token: {cal.hasToken ? (cal.tokenWorks ? `yes ✓ (${String(cal.accountName || cal.accountEmail || "ok")})` : "set, but not working ✗") : "missing ✗"}
+              {"  ·  "}Signing key: {cal.hasSigningKey ? "yes ✓" : "missing ✗"}
+            </p>
+            {!cal.hasToken && (
+              <p className="text-white/60">
+                Add <span className="text-gold">CALENDLY_API_TOKEN</span> in Vercel (Calendly &rarr; Integrations &rarr; API &amp; webhooks), redeploy, then click Register.
+              </p>
+            )}
+            {calMsg && (
+              <p className="text-gold bg-gold/10 border border-gold/20 rounded px-2 py-1.5 whitespace-pre-wrap break-all">
+                {calMsg}
+              </p>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Funnel Visualization */}

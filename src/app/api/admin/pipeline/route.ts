@@ -41,9 +41,16 @@ export async function GET() {
   const warm = subscribers.filter((s) => s.score >= 20 && s.score < 50);
   const hot = subscribers.filter((s) => s.score >= 50);
 
-  // Booked = subscribers who have a contact_page_view or calendly_click event
+  // Booked = a confirmed Calendly booking (discovery_call_booked, via the
+  // webhook) or the legacy intent proxy (contact_page_view / calendly_click)
+  // for leads captured before booking webhooks existed.
   const booked = subscribers.filter((s) =>
-    s.events.some((e) => e.type === "contact_page_view" || e.type === "calendly_click")
+    s.events.some(
+      (e) =>
+        e.type === "discovery_call_booked" ||
+        e.type === "contact_page_view" ||
+        e.type === "calendly_click"
+    )
   );
 
   const paidEmails = new Set(payments.map((p) => p.email?.toLowerCase()).filter(Boolean));

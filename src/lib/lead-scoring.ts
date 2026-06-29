@@ -8,6 +8,7 @@ export const EVENT_POINTS: Record<string, number> = {
   coaching_page_view: 15,
   contact_page_view: 20,
   calendly_click: 25,
+  discovery_call_booked: 40, // confirmed Calendly booking — strongest intent signal
 };
 
 export type Segment = "cold" | "warm" | "hot";
