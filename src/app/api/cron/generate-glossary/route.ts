@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { readFile, commitFile, listFiles } from "@/lib/github";
 import { sendTelegramReport } from "@/lib/telegram-report";
+import { stripEmDashes } from "@/lib/copy-style";
 import Anthropic from "@anthropic-ai/sdk";
 
 export const maxDuration = 300;
@@ -204,7 +205,25 @@ STRICT STYLE RULES:
     .replace(/^```(?:json)?\s*\n?/, "")
     .replace(/\n?```\s*$/, "")
     .trim();
-  return JSON.parse(text);
+  const page = JSON.parse(text);
+  // Enforce the no-em-dash house rule across every field that renders.
+  for (const k of ["title", "seoTitle", "seoDescription", "headline", "subheadline", "intro"]) {
+    if (typeof page[k] === "string") page[k] = stripEmDashes(page[k]);
+  }
+  if (Array.isArray(page.keyPoints)) {
+    page.keyPoints = page.keyPoints.map((p: { icon?: string; title?: string; text?: string }) => ({
+      ...p,
+      title: typeof p.title === "string" ? stripEmDashes(p.title) : p.title,
+      text: typeof p.text === "string" ? stripEmDashes(p.text) : p.text,
+    }));
+  }
+  if (Array.isArray(page.faqs)) {
+    page.faqs = page.faqs.map((f: { q?: string; a?: string }) => ({
+      q: typeof f.q === "string" ? stripEmDashes(f.q) : f.q,
+      a: typeof f.a === "string" ? stripEmDashes(f.a) : f.a,
+    }));
+  }
+  return page;
 }
 
 export async function GET(req: NextRequest) {

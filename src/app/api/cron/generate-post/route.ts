@@ -5,6 +5,7 @@ import { postToAll, postLinkedInArticle } from "@/lib/social";
 import Anthropic from "@anthropic-ai/sdk";
 import { GoogleGenAI } from "@google/genai";
 import { getCurrentDateContext } from "@/lib/date-context";
+import { stripEmDashes } from "@/lib/copy-style";
 
 export const maxDuration = 300;
 
@@ -245,6 +246,8 @@ FORBIDDEN LANGUAGE (these get content flagged as AI/promotional):
 - NEVER say "my students", "one of my students", "a student of mine", "in coaching", "my mentees", "students I work with", "a student I had", or any variant.
 - NEVER invent student names, initials, or personal anecdotes involving people you taught.
 - NEVER ask readers to DM, message, contact you privately. The CTA is always a link on this site.
+- NEVER use an em dash or en dash (the "—" or "–" character). Use a comma, period, colon, or semicolon, or restructure the sentence.
+- NEVER use the "not X, but Y" construction, and never use repeated-negation cadence like "Not this. Not that." Just state plainly what the thing IS.
 
 WHAT TO AVOID (these make content feel AI-generated):
 - Generic statements like "Trading requires discipline" without a specific example
@@ -314,6 +317,13 @@ Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDes
     let articleText = articleResponse.content[0].type === "text" ? articleResponse.content[0].text : "";
     articleText = articleText.replace(/^```(?:json)?\s*\n?/, "").replace(/\n?```\s*$/, "").trim();
     const article = JSON.parse(articleText);
+
+    // Enforce the no-em-dash house rule deterministically (the model ignores it
+    // often). Applied to every field that ends up in the published post.
+    for (const f of ["title", "seoTitle", "excerpt", "seoDescription", "body"]) {
+      if (typeof article[f] === "string") article[f] = stripEmDashes(article[f]);
+    }
+
     const slug = `${date}-${slugify(article.title)}`;
 
     // Generate images

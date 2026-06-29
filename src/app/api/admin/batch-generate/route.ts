@@ -3,6 +3,7 @@ import { verifyAdmin } from "@/lib/admin-auth";
 import { commitFile, readFile, listFiles } from "@/lib/github";
 import { notifyIndexNow } from "@/lib/indexnow";
 import { postToAll } from "@/lib/social";
+import { stripEmDashes } from "@/lib/copy-style";
 import Anthropic from "@anthropic-ai/sdk";
 import { GoogleGenAI } from "@google/genai";
 
@@ -73,6 +74,9 @@ Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDes
       const jsonEnd = text.lastIndexOf("}");
       if (jsonStart === -1 || jsonEnd === -1) throw new Error("No JSON in response");
       const article = JSON.parse(text.slice(jsonStart, jsonEnd + 1));
+      for (const k of ["title", "seoTitle", "excerpt", "seoDescription", "body"]) {
+        if (typeof article[k] === "string") article[k] = stripEmDashes(article[k]);
+      }
       const slug = `${date}-${slugify(article.title)}`;
 
       // Generate cover image with Gemini

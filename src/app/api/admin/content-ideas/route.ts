@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { readFile, commitFile } from "@/lib/github";
+import { stripEmDashes } from "@/lib/copy-style";
 import Anthropic from "@anthropic-ai/sdk";
 
 const IDEAS_PATH = "data/content-ideas-from-comments.json";
@@ -98,6 +99,9 @@ Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDes
       .replace(/\n?```\s*$/, "")
       .trim();
     const article = JSON.parse(articleText);
+    for (const k of ["title", "seoTitle", "excerpt", "seoDescription", "body"]) {
+      if (typeof article[k] === "string") article[k] = stripEmDashes(article[k]);
+    }
 
     const slugify = (text: string) =>
       text

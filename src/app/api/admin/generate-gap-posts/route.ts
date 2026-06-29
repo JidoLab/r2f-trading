@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { commitFile, readFile, listFiles } from "@/lib/github";
 import { notifyIndexNow } from "@/lib/indexnow";
 import { postToAll, postLinkedInArticle } from "@/lib/social";
+import { stripEmDashes } from "@/lib/copy-style";
 import Anthropic from "@anthropic-ai/sdk";
 import { GoogleGenAI } from "@google/genai";
 
@@ -65,6 +66,9 @@ Return ONLY JSON: { "title": "...", "seoTitle": "...", "excerpt": "...", "seoDes
       let articleText = articleResponse.content[0].type === "text" ? articleResponse.content[0].text : "";
       articleText = articleText.replace(/^```(?:json)?\s*\n?/, "").replace(/\n?```\s*$/, "").trim();
       const article = JSON.parse(articleText);
+      for (const k of ["title", "seoTitle", "excerpt", "seoDescription", "body"]) {
+        if (typeof article[k] === "string") article[k] = stripEmDashes(article[k]);
+      }
       const slug = `${date}-${slugify(article.title)}`;
 
       // Generate images
