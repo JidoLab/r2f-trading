@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-06-30",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1782785641158-0",
+        "title": "Personally message all 3 hot leads on Telegram or LINE today with a time-sensitive offer or a direct question about what's blocking them from enrolling.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1782785641158-1",
+        "title": "With 51 shorts ready but only 30 published, manually review and schedule a burst of 5–10 shorts this week to accelerate YouTube channel growth.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1782785641158-2",
+        "title": "Zero new subscribers yesterday signals a top-of-funnel gap — manually post in 2–3 Bangkok expat or Thai trader Facebook Groups today with a value-driven hook linking to the free lead magnet.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1782785641158-3",
+        "title": "Reach out directly to Harvest's existing personal network (friends, former colleagues, social contacts) with a personal 1-on-1 message about R2F Trading to generate referrals and seed the first few warm leads.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-06-29",
     "tasks": [
       {
