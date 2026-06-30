@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T08:06:30.187Z",
+  "generatedAt": "2026-06-30T02:14:30.248Z",
   "greeting": "Good morning, Harvest",
-  "dateTime": "Monday, 29 June 2026 at 15:06 (Bangkok)",
+  "dateTime": "Tuesday, 30 June 2026 at 09:14 (Bangkok)",
   "overnight": {
     "newSubscribers": 0,
     "payments": {
@@ -11,9 +11,9 @@
     "chatConversations": 0
   },
   "contentStatus": {
-    "blogPostsToday": 1,
-    "totalBlogPosts": 130,
-    "shortsReady": 51,
+    "blogPostsToday": 0,
+    "totalBlogPosts": 131,
+    "shortsReady": 52,
     "shortsPublished": 30,
     "shortsRendering": 4,
     "socialPostsThisWeek": 10
@@ -39,10 +39,10 @@
     ]
   },
   "suggestions": [
-    "Personally message all 3 hot leads on Telegram or LINE today with a time-sensitive offer or a direct question about what's blocking them from enrolling.",
-    "With 51 shorts ready but only 30 published, manually review and schedule a burst of 5–10 shorts this week to accelerate YouTube channel growth.",
-    "Zero new subscribers yesterday signals a top-of-funnel gap — manually post in 2–3 Bangkok expat or Thai trader Facebook Groups today with a value-driven hook linking to the free lead magnet.",
-    "Reach out directly to Harvest's existing personal network (friends, former colleagues, social contacts) with a personal 1-on-1 message about R2F Trading to generate referrals and seed the first few warm leads."
+    "Personally message all 3 hot leads via Telegram or LINE today with a time-sensitive offer (e.g., 'enroll by Friday for a bonus 1-on-1 session') since automated drips show no recent engagement from them.",
+    "With 52 shorts ready but only 30 published, manually review and schedule a burst of 5–10 shorts across TikTok, YouTube, and Instagram Reels this week to accelerate top-of-funnel traffic.",
+    "Zero new subscribers yesterday signals a traffic problem — manually reach out to 3–5 Bangkok-based trading Facebook groups or LINE OpenChat communities today with a direct, value-first post linking to the R2F lead magnet.",
+    "With 0 Reddit upvotes and stalled cold lead growth, create one high-value Reddit post manually on r/Forex or r/Daytrading today sharing a real trade breakdown from Harvest to build credibility and drive organic subscribers."
   ],
   "schedule": [
     {
