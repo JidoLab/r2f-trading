@@ -129,13 +129,14 @@
     "email": "minageeek@gmail.com",
     "name": "ana",
     "date": "2026-06-24T18:24:56.667Z",
-    "day": 4,
+    "day": 5,
     "emailsSent": [
       "day1",
       "day2",
       "day3",
       "day4",
-      "day5"
+      "day5",
+      "complete"
     ]
   }
 ]
