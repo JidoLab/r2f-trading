@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll-native",
     "promo-blog",
     "promo-coaching",
     "question",
@@ -29,11 +28,12 @@
     "hot-take",
     "quote",
     "tip",
-    "challenge"
+    "challenge",
+    "myth"
   ],
   "lastPost": {
-    "type": "challenge",
-    "text": "Challenge: This week, only take trades off Monday's London open range. No exceptions. 5 days. One setup type. See if your discipline improves more than your entries. Drop your results Friday 👇 #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-06-29T12:00:34.458Z"
+    "type": "myth",
+    "text": "MYTH: Order blocks only work in high volatility markets.\n\nTRUTH: Summer lulls are where smart money LOADS positions quietly. Low vol = cleaner order blocks, less noise.\n\nR2F Trading lives for June setups. 👀\n\n#OrderBlocks #SmartMoneyConcepts #ICTTrading",
+    "date": "2026-06-30T12:00:39.216Z"
   }
 }
