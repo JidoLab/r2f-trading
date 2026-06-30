@@ -225,7 +225,7 @@
   {
     "email": "anmolpannu33@gmail.com",
     "date": "2026-06-04T22:08:48.687Z",
-    "dripsSent": 6,
+    "dripsSent": 7,
     "referralCode": "R2F-auqs7a",
     "referredBy": null,
     "referralCount": 0,
@@ -239,7 +239,8 @@
       "successStory",
       "tradingPsychology",
       "propFirmTips",
-      "coachingCta"
+      "coachingCta",
+      "valueRecap"
     ]
   },
   {
@@ -286,7 +287,7 @@
   {
     "email": "uh01012007@gmail.com",
     "date": "2026-06-18T06:17:03.035Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "referralCode": "R2F-inlp91",
     "referredBy": null,
     "referralCount": 0,
@@ -303,13 +304,14 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts",
-      "successStory"
+      "successStory",
+      "tradingPsychology"
     ]
   },
   {
     "email": "mgoncalvesiii@gmail.com",
     "date": "2026-06-26T15:13:49.441Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "referralCode": "R2F-ridl5m",
     "referredBy": null,
     "referralCount": 0,
@@ -340,7 +342,8 @@
     ],
     "lastActivity": "2026-06-27T07:22:29.186Z",
     "dripsHistory": [
-      "bookCallUrgent"
+      "bookCallUrgent",
+      "socialProof"
     ],
     "hotFollowUpSent": true,
     "abandonmentEmailSent": true
@@ -348,7 +351,7 @@
   {
     "email": "mgojcalvesiii@gmail.commgoncalvesiii",
     "date": "2026-06-26T22:41:13.642Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "referralCode": "R2F-189jqs",
     "referredBy": null,
     "referralCount": 0,
@@ -403,7 +406,8 @@
     ],
     "lastActivity": "2026-06-28T09:00:22.635Z",
     "dripsHistory": [
-      "bookCallUrgent"
+      "bookCallUrgent",
+      "socialProof"
     ],
     "abandonmentEmailSent": true,
     "hotFollowUpSent": true
