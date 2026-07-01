@@ -4274,5 +4274,35 @@
     "commentedAt": "2026-07-01T03:00:28.026Z",
     "permalink": "/r/ICTMentorship/comments/1ujyfyk/the_path_to_profitability/ouu54ah/",
     "commentId": "ouu54ah"
+  },
+  {
+    "postId": "1ujy7ww",
+    "subreddit": "Forexstrategy",
+    "postTitle": "The path toprofitability",
+    "commentText": "solid breakdown tbh, but the real killer barrier is between backtesting and paper trading, not where most people think. you can backtest a 15m FVG setup on GBPUSD all day and get 70% win rate, then freeze completely when price actually sweeps a high during london open and you're watching it live. been there. the emotional load of real-time decisions just doesn't exist in static chart review, which is why so many people's paper trading results look nothing like their backtest. curious what stage you're currently in and are you seeing that gap between backtesting confidence and live execution?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-01T08:00:45.701Z",
+    "permalink": "/r/Forexstrategy/comments/1ujy7ww/the_path_toprofitability/ouvamm1/",
+    "commentId": "ouvamm1"
+  },
+  {
+    "postId": "1ujqe4r",
+    "subreddit": "ICTMentorship",
+    "postTitle": "I am learning ICT 2022 model, this is a trade which I spotted",
+    "commentText": "the top-down flow looks right tbh, daily FVG giving you the draw, then using the 1h for the MSS and dropping to 15m for the entry FVG is pretty much the core of that model. one thing i'd double check is whether your 15m FVG is sitting in discount relative to the 1h swing, because if price is already deep into the 1h range when you're entering, the FVG might just get blown through. what was the 1h market structure shift like, clean BOS with a strong displacement candle or more of a gradual grind? curious because that changes how much weight i'd put on the 15m entry.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-01T08:00:57.905Z",
+    "permalink": "/r/ICTMentorship/comments/1ujqe4r/i_am_learning_ict_2022_model_this_is_a_trade/ouvanik/",
+    "commentId": "ouvanik"
+  },
+  {
+    "postId": "1ujp4tz",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAUUSD Short.",
+    "commentText": "i had this exact problem last month on XAUUSD, kept jumping in mid-range and getting chopped before the real move happened. what changed it for me was waiting for that BSL sweep first, because without it the institutional flow just wasn't confirmed yet. your read on the 4044-4050 OB is clean tbh, that premium zone lines up with where smart money would want to offload. did new york actually push into that level or did price stall short and leave you on the sideline?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-01T08:01:06.126Z",
+    "permalink": "/r/Forexstrategy/comments/1ujp4tz/xauusd_short/ouvao3h/",
+    "commentId": "ouvao3h"
   }
 ]
