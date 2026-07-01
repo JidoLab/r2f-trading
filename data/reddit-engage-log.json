@@ -4254,5 +4254,25 @@
     "commentedAt": "2026-06-30T03:01:26.847Z",
     "permalink": "/r/Forexstrategy/comments/1uiz6zc/xauusd_long_setup/oumti0v/",
     "commentId": "oumti0v"
+  },
+  {
+    "postId": "1ujgh3q",
+    "subreddit": "ICTMentorship",
+    "postTitle": "$930 In Under an Hour Using One ICT 2022 Model",
+    "commentText": "the zero drawdown tap into the 15m FVG after the asia SSL sweep is honestly the cleanest version of this model, that sequence almost never lies when the HTF bias is already aligned. one thing i'm curious about though: when you're framing that HTF FVG as your entry mechanism, are you using the 15m displacement candle's body or the full wick-to-wick imbalance for your entry zone? because on a 1R target specifically, that distinction can be the difference between a clean fill and getting stopped out by a single tick before expansion.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-01T03:00:21.016Z",
+    "permalink": "/r/ICTMentorship/comments/1ujgh3q/930_in_under_an_hour_using_one_ict_2022_model/ouu53jk/",
+    "commentId": "ouu53jk"
+  },
+  {
+    "postId": "1ujyfyk",
+    "subreddit": "ICTMentorship",
+    "postTitle": "The path to profitability",
+    "commentText": "the \"over fitting the strategy\" barrier in backtesting is massively underrated, tbh most people don't even realize they're doing it. you end up memorizing price rather than reading it, so when you hit live markets the setup looks totally different and you freeze. been there myself, spent weeks marking up 15m OBs on GBPUSD only to realize i was just connecting dots in hindsight with no real model behind the entries. what stage are you in right now, and are you working off a specific session like london open or new york am?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-01T03:00:28.026Z",
+    "permalink": "/r/ICTMentorship/comments/1ujyfyk/the_path_to_profitability/ouu54ah/",
+    "commentId": "ouu54ah"
   }
 ]
