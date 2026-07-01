@@ -1824,5 +1824,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-01T12:00:14.621Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "NFP week is here 👀 How do you trade the liquidity sweep BEFORE the release? #NFP #ICTTrading\n\n🅰️ S",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
