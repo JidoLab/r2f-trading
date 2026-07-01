@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-blog",
     "promo-coaching",
     "question",
     "poll",
@@ -29,11 +28,12 @@
     "quote",
     "tip",
     "challenge",
-    "myth"
+    "myth",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "myth",
-    "text": "MYTH: Order blocks only work in high volatility markets.\n\nTRUTH: Summer lulls are where smart money LOADS positions quietly. Low vol = cleaner order blocks, less noise.\n\nR2F Trading lives for June setups. 👀\n\n#OrderBlocks #SmartMoneyConcepts #ICTTrading",
-    "date": "2026-06-30T12:00:39.216Z"
+    "type": "poll-native",
+    "text": "NFP week is here 👀 How do you trade the liquidity sweep BEFORE the release? #NFP #ICTTrading\n\n🅰️ Sit out completely\n🅱️ Trade the sweep only\n🅲️ Hold through news\n🅳️ Scale out before\n\nVote below! 👇",
+    "date": "2026-07-01T12:00:12.809Z"
   }
 }
