@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1782907325910-9a85y",
+    "platform": "youtube",
+    "postTitle": "The Alchemist Trading Strategy I MSNR × ICT × SMC | XAUUSD SNIPER TRADE BREAKDOWN WITH #msnr #ict",
+    "postUrl": "https://youtube.com/watch?v=nzqyfZhNFm0",
+    "authorName": "MSNR",
+    "suggestedReply": "The Alchemist concept on XAUUSD is powerful but I always warn my students about one thing. Gold respects ICT killzone timing differently than forex pairs, so if your sniper entry lines up outside London or New York overlap, the probability drops significantly even with a clean SMC setup. Confluence is everything but timing is the filter most traders skip.",
+    "createdAt": "2026-07-01T12:02:05.910Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782907329579-v6jkl",
+    "platform": "youtube",
+    "postTitle": "GOLD Live Trading Session Tamil | Forex Trading Live #ict #smc #ftmochallenge",
+    "postUrl": "https://youtube.com/watch?v=7EQIcGFjVIM",
+    "authorName": "Tamil Traders Academy",
+    "suggestedReply": "ICT concepts on gold during live FTMO sessions is solid practice but the one caveat I always give my students is to be careful trading during high impact news windows. Gold liquidity can shift violently around CPI or NFP and even a textbook order block entry can get stopped out before price delivers. Wait for the manipulation to complete first, then look for your entry structure.",
+    "createdAt": "2026-07-01T12:02:09.579Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782907332423-zfrj6",
+    "platform": "youtube",
+    "postTitle": "Understanding the Midweek Reversal Weekly Profile",
+    "postUrl": "https://youtube.com/watch?v=sjTMUPoifr8",
+    "authorName": "TTrades",
+    "suggestedReply": "The midweek reversal profile is something I drill into my students constantly because Tuesday and Wednesday price delivery is where most retail traders get chopped. The non-obvious part here is timing your entry relative to Tuesday's range expansion first. Most people anticipate the reversal too early and get stopped out before Wednesday confirms the shift back toward the weekly draw.",
+    "createdAt": "2026-07-01T12:02:12.423Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782907336034-rq5sf",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE BTC &amp; Gold Trading | Smart Money Concepts (SMC) | Crypto Market Analysis 2026 | PG Trade Desk",
+    "postUrl": "https://youtube.com/watch?v=M-_cXr4hfQk",
+    "authorName": "PG Trade Desk",
+    "suggestedReply": "Interesting take pairing BTC and Gold under SMC simultaneously. In my experience, the two assets have very different liquidity profiles, and I teach my students to isolate Gold sessions separately because its manipulation phases during London open behave differently than crypto which runs 24 hours. Treating them with the same SMC framework can muddy your bias if you are not careful.",
+    "createdAt": "2026-07-01T12:02:16.034Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782907341151-iso15",
+    "platform": "youtube",
+    "postTitle": "The Market Is Trapping Smart Money Traders (Here&#39;s How To Avoid It)",
+    "postUrl": "https://youtube.com/watch?v=URXDYMdm67c",
+    "authorName": "Harry Gadd",
+    "suggestedReply": "I got trapped by exactly this setup on EURUSD during a London session last year, thinking I was reading institutional flow correctly when the market was engineering liquidity above a clean swing high. I drill this into my students now. smart money trapping smart money traders is the most humbling concept in ICT, and the 15 minute chart is where most people expose themselves without realising it.",
+    "createdAt": "2026-07-01T12:02:21.151Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782907344398-or6yl",
+    "platform": "youtube",
+    "postTitle": "Traders can RELATE #disciplinedtrader #motivation #fundedtrader #success #money #traderlife",
+    "postUrl": "https://youtube.com/watch?v=KbPIVZQMC6o",
+    "authorName": "Mr nobody tradez",
+    "suggestedReply": "Interesting take on the \"funded trader\" identity. In my experience, the discipline piece hits different when you stop trading for the payout and start trading your process. I tell my students constantly that passing a funded challenge means nothing if your model falls apart under pressure on a live account. Focus on your London killzone entries and let the consistency build the account naturally.",
+    "createdAt": "2026-07-01T12:02:24.398Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782907347810-bze4a",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE Forex Trading Analysis | Smart Money Concepts (SMC) 📈 | XAUUSD &amp; BTCUSD Market Outlook",
+    "postUrl": "https://youtube.com/watch?v=hkwmFyjW9Mo",
+    "authorName": "Shoaib_trades",
+    "suggestedReply": "The XAUUSD displacement candle markup on the SMC entries is exactly what I drill into my students. Most traders spot the FVG on gold and jump straight in, completely skipping the confirmation that price actually broke structure with intent. That displacement candle tells you whether institutions were involved or if you are just chasing noise. Clean approach from Shoaib here.",
+    "createdAt": "2026-07-01T12:02:27.810Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782907352886-j3t3w",
+    "platform": "youtube",
+    "postTitle": "How to Trade Supply and Demand Like The Banks | Free Beginner Strategy",
+    "postUrl": "https://youtube.com/watch?v=0j6mmNtiHHc",
+    "authorName": "UBI USDT",
+    "suggestedReply": "Trading supply and demand like the banks comes down to understanding institutional order flow, not just drawing boxes on a chart. I drill this into my students constantly. most beginners nail the zone identification but completely miss the confirmation entry, especially on lower timeframes like the 15m where noise is brutal. Do you find the bank level zones hold more cleanly on the 4H or daily for your setups?",
+    "createdAt": "2026-07-01T12:02:32.886Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1782820913821-2dfdm",
     "platform": "investinglive",
     "postTitle": "investingLive European FX news wrap: Inflation eases in the largest Eurozone economies",
