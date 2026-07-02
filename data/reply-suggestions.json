@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1782952206570-g11v2",
+    "platform": "youtube",
+    "postTitle": "ICT&#39;s Complete Trading Framework (Explained  Simply)",
+    "postUrl": "https://youtube.com/watch?v=DCZ8bRmNnoA",
+    "authorName": "BlovicFx",
+    "suggestedReply": "One thing ICT's complete framework often leaves traders wondering about is execution timing within the model. I drill into my students that once you have your HTF draw on liquidity identified, dropping to the 15m for your entry model confirmation separates the clean setups from the noise. Most traders learn the framework but still enter on structure alone without waiting for a mitigation block or FVG to align with it.",
+    "createdAt": "2026-07-02T00:30:06.570Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782952212567-5egg4",
+    "platform": "youtube",
+    "postTitle": "Live GOLD and CRYPTO Scalping Trading | DAY 273 #goldtrading #cryptotrading #bitcoin",
+    "postUrl": "https://youtube.com/watch?v=mOmBDLKx2_s",
+    "authorName": "ICT ENIGMA",
+    "suggestedReply": "Scalping gold and crypto on the same session is where most traders blow up their discipline. The key I drill into my students is keeping your bias clean between the two assets. Gold displacement on the 1m or 2m needs to confirm with higher timeframe structure, and crypto will fake you out if you treat it the same way. Are you filtering your entries differently between the two or running the same FVG model across both?",
+    "createdAt": "2026-07-02T00:30:12.567Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782952216836-rwze5",
+    "platform": "youtube",
+    "postTitle": "W after taking L🔴 LIVE Day Trading Futures | ES NQ | ICT Concepts | July 1",
+    "postUrl": "https://youtube.com/watch?v=keJ0dcYr-O4",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Bouncing back after a red session on ES and NQ same day takes real discipline, and I respect seeing that process documented live. One thing I drill into my students though is to be careful with revenge trading energy after an L, because even when the setup looks clean, your bias can subtly pull you toward entries that don't have proper confirmation from a higher timeframe PD array. The W feels sweeter but make sure the model is doing the work, not the emotion.",
+    "createdAt": "2026-07-02T00:30:16.836Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782952220163-vp2bj",
+    "platform": "youtube",
+    "postTitle": "Stupid Simple ICT CISD Strategy",
+    "postUrl": "https://youtube.com/watch?v=AqgA444-QJQ",
+    "authorName": "LuxAlgo",
+    "suggestedReply": "The CISD concept is solid and genuinely stupid simple once it clicks. One thing I always drill into my students though is to make sure displacement actually confirms the shift. Seen too many traders take the CISD on a weak inefficient move and get chopped out. On higher volatility pairs like pound dollar, waiting for a clean close through the level on the 5m saves a lot of pain.",
+    "createdAt": "2026-07-02T00:30:20.163Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782952223831-jsoxp",
+    "platform": "youtube",
+    "postTitle": "PERFECT ENTRY ON LONGS | DAY TRADING ICT CONCEPTS | 7/1/2026",
+    "postUrl": "https://youtube.com/watch?v=XvMwZZeoT54",
+    "authorName": "Tanja Trades",
+    "suggestedReply": "Interesting take on \"perfect entries\" for longs. In my experience, what looks perfect on replay often has one extra confirmation layer that traders miss in live conditions, specifically waiting for a displacement candle to close above the previous swing before committing. I drill this into my students constantly because entries feel obvious after the fact but the real edge is in how you handle the moments of uncertainty before confirmation prints.",
+    "createdAt": "2026-07-02T00:30:23.831Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782952227172-mrsyu",
+    "platform": "youtube",
+    "postTitle": "Bionic Nq trade recap #trading #nq #ict #traderecap #god",
+    "postUrl": "https://youtube.com/watch?v=NokW7GBewno",
+    "authorName": "Ict trading ",
+    "suggestedReply": "That Bionic NQ setup is clean. The part I drill into my students is the displacement confirmation before committing to the entry. Most traders see the liquidity sweep on NQ and jump in immediately, missing the fact that a true displacement candle needs to close convincingly beyond the range before the FVG becomes valid. That patience separates consistent traders from the ones getting chopped out.",
+    "createdAt": "2026-07-02T00:30:27.172Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782952231207-rxgau",
+    "platform": "youtube",
+    "postTitle": "I Quit Candlesticks &amp; ICT. Here’s What Made Me Profitable…",
+    "postUrl": "https://youtube.com/watch?v=rO0fTzcJL4E",
+    "authorName": "Trading Nut",
+    "suggestedReply": "Quitting candlesticks entirely is bold and I respect the conviction, but I'd caution my students against throwing out displacement candles when trading around New York open. A single strong engulfing move into a premium array on the 15 minute can validate the whole setup without needing complex patterns. The key is context, not the candle itself.",
+    "createdAt": "2026-07-02T00:30:31.207Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1782952235632-7vge2",
+    "platform": "youtube",
+    "postTitle": "Operator vs Retail Trader | Stop Loss Hunt Ka Sach #operator #stoplosshunt #livetrading #priceaction",
+    "postUrl": "https://youtube.com/watch?v=PjmkkwkfE6U",
+    "authorName": "Ani vs Operator",
+    "suggestedReply": "Stop loss hunts on retail levels are predictable once you understand that operators target liquidity, not price itself. I drill this into my students constantly. When you see a sweep below an obvious swing low on the 15m or 5m, the real question is whether price is rejecting back inside a premium or discount zone, because that confirms the hunt is done and the actual move is starting. Most retail traders flip their bias right when they should be entering.",
+    "createdAt": "2026-07-02T00:30:35.632Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1782907361071-oiyoa",
     "platform": "investinglive",
     "postTitle": "No negative surprises for the ECB as Eurozone inflation eases in June",
