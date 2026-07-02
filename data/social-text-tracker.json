@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-coaching",
     "question",
     "poll",
     "hot-take",
@@ -29,11 +28,12 @@
     "tip",
     "challenge",
     "myth",
-    "poll-native"
+    "poll-native",
+    "question"
   ],
   "lastPost": {
-    "type": "poll-native",
-    "text": "NFP week is here 👀 How do you trade the liquidity sweep BEFORE the release? #NFP #ICTTrading\n\n🅰️ Sit out completely\n🅱️ Trade the sweep only\n🅲️ Hold through news\n🅳️ Scale out before\n\nVote below! 👇",
-    "date": "2026-07-01T12:00:12.809Z"
+    "type": "question",
+    "text": "NFP tomorrow 👀 Do you trade the news OR wait for the liquidity sweep after the spike? Drop your approach below 👇 #NFP #ICTtrading #SmartMoneyConcepts",
+    "date": "2026-07-02T12:01:52.913Z"
   }
 }
