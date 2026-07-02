@@ -1853,5 +1853,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-02T12:01:53.764Z",
+    "type": "text",
+    "postType": "question",
+    "text": "NFP tomorrow 👀 Do you trade the news OR wait for the liquidity sweep after the spike? Drop your app",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
