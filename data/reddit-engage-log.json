@@ -4322,5 +4322,45 @@
     "commentedAt": "2026-07-01T13:00:43.015Z",
     "permalink": "/r/Forexstrategy/comments/1ukhd8w/the_next_gold_move_will_shock_everyone/ouwhi19/",
     "commentId": "ouwhi19"
+  },
+  {
+    "postId": "1ukhmwj",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Where to learn?",
+    "commentText": "babypips is solid for the basics but you're right that it won't tell you *why* price moves, just *what* to look for. tbh the missing piece is understanding liquidity, how price is engineered to sweep stops above highs and below lows before it actually moves. that's why those signal groups get you liquidated, they're usually fading the real move. once you understand that london open on something like eurusd is basically a liquidity hunt before the real directional push, the charts start making a lot more sense. happy to walk through an example in this thread if you want, just drop a pair you've been watching and the timeframe you're on and i can show you where the actual order block sits versus what most people are calling an OB.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-02T03:00:34.635Z",
+    "permalink": "/r/Forexstrategy/comments/1ukhmwj/where_to_learn/ov1nbey/",
+    "commentId": "ov1nbey"
+  },
+  {
+    "postId": "1ul3mdf",
+    "subreddit": "Forexstrategy",
+    "postTitle": "USD/CHF forecast: Bullish wedge keeps upside in focus ahead of payrolls",
+    "commentText": "the asymmetric reaction point in the article is what matters most here tbh. weak payrolls causing larger dollar swings than a beat means the smart money is probably already positioned long, so a miss could trigger a pretty violent displacement to the downside and sweep those lows before any bullish continuation. i'd be watching for a CHF/USD 4h OB to form on the reaction candle rather than chasing the wedge breakout entry. are you marking your OBs pre-payrolls or waiting for the BOS confirmation after the spike, because that timing changes everything for invalidation levels?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-02T03:00:42.107Z",
+    "permalink": "/r/Forexstrategy/comments/1ul3mdf/usdchf_forecast_bullish_wedge_keeps_upside_in/ov1nc6x/",
+    "commentId": "ov1nc6x"
+  },
+  {
+    "postId": "1ukhmzh",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Where to learn?",
+    "commentText": "babypips is solid for the basics but tbh it'll leave you hanging on the \"why\" pretty quick, which is exactly what you're describing. the missing piece imo is understanding that price doesn't move randomly, it's hunting liquidity above old highs and below old lows before it actually goes anywhere. so when you see a signal group say \"buy EURUSD now\" you have no idea if price just ran the asian session lows and swept liquidity into a discount order block, or if it's just a random entry. that context is everything. what pairs are you watching on your paper account right now, and are you mostly trading during a specific session?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-02T03:00:52.504Z",
+    "permalink": "/r/Forexstrategy/comments/1ukhmzh/where_to_learn/ov1nd9s/",
+    "commentId": "ov1nd9s"
+  },
+  {
+    "postId": "1ukv6bk",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Funding pips scam payout",
+    "commentText": "tbh this sounds less like a pips issue and more like a straight up withdrawal routing problem where they're splitting payouts to a third party platform you never agreed to. the \"non functional reset link\" on Tradin is a massive red flag, that's not a bug, that's a barrier. been seeing more prop firms pull creative stuff with payouts in 2026 and it's worth documenting every step of this, screenshots of the broken reset flow included, before escalating. have you tried contacting funding pips support directly and asking them to explain the Tradin split in writing? curious what their response was when you first flagged it.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-02T03:01:00.649Z",
+    "permalink": "/r/Forexstrategy/comments/1ukv6bk/funding_pips_scam_payout/ov1ne3l/",
+    "commentId": "ov1ne3l"
   }
 ]
