@@ -419,6 +419,11 @@
     "referralCode": "R2F-dwavs5",
     "referredBy": null,
     "referralCount": 0,
-    "phone": "123s"
+    "phone": "123s",
+    "score": 0,
+    "segment": "cold",
+    "events": [],
+    "lastActivity": "2026-07-02T00:23:05.911Z",
+    "dripsHistory": []
   }
 ]
