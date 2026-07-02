@@ -4362,5 +4362,35 @@
     "commentedAt": "2026-07-02T03:01:00.649Z",
     "permalink": "/r/Forexstrategy/comments/1ukv6bk/funding_pips_scam_payout/ov1ne3l/",
     "commentId": "ov1ne3l"
+  },
+  {
+    "postId": "1ulb4xf",
+    "subreddit": "Trading",
+    "postTitle": "Anybody mantained a funded account for over 3 years without blowing it ? And do you regularly take payouts? I'm trynna achieve it",
+    "commentText": "your 56-57% winrate across 1500+ trades is actually a solid foundation, but here's one thing worth stress-testing before you scale across dozens of prop firms: mark the last unfilled 15m FVG before each trade's entry signal, then check how often price revisits it during the london or NY killzone before continuing in your direction. if your automated entries are triggering mid-range without that FVG acting as a draw, your real-world slippage and spread costs are probably eating more edge than your backtest assumes, especially on the lower-liquidity pairs. what assets are you primarily running these strategies on, and are you weighting equity indices heavier than forex pairs?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-02T08:00:38.445Z",
+    "permalink": "/r/Trading/comments/1ulb4xf/anybody_mantained_a_funded_account_for_over_3/ov2skyz/",
+    "commentId": "ov2skyz"
+  },
+  {
+    "postId": "1ukureo",
+    "subreddit": "Trading",
+    "postTitle": "Funding pips Reward theft",
+    "commentText": "this is a known issue with funding pips routing payouts through third party platforms, and that \"Tradin\" broker redirect has been flagged by a few traders in 2026 already. tbh the non-functional reset link is the real red flag here, that's not a UX bug, that's a broken payout pipeline they haven't properly integrated. you need to document everything with screenshots and hit their support with a formal withdrawal dispute referencing the exact transaction ID and amount, not just a general complaint ticket. have you already submitted a support ticket with the specific dollar amount and the Tradin redirect as evidence? if you drop what you've got so far i'm happy to walk through how to structure the dispute to actually get traction.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-02T08:00:46.907Z",
+    "permalink": "/r/Trading/comments/1ukureo/funding_pips_reward_theft/ov2slkv/",
+    "commentId": "ov2slkv"
+  },
+  {
+    "postId": "1ul4kkx",
+    "subreddit": "Trading",
+    "postTitle": "It took me 7 years to become consistently profitable. If you're thinking about quitting, read this first:",
+    "commentText": "the IRL to ERL model paired with a 15m ORB is honestly one of the cleaner combos you can run, especially if you're letting the asian session set the range and then waiting for london to displace into an FVG before committing. year four breakthrough tracks too, tbh that's usually when the \"oh i need to understand draw on liquidity first\" click finally happens. less trades, better trades, that's the whole game. curious what session you're primarily running the ORB on, london open or new york?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-02T08:00:55.913Z",
+    "permalink": "/r/Trading/comments/1ul4kkx/it_took_me_7_years_to_become_consistently/ov2sm7s/",
+    "commentId": "ov2sm7s"
   }
 ]
