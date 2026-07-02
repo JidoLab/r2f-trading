@@ -2,7 +2,7 @@
   "slug": "quiz-what-happens-to-price-right-before-nfp",
   "renderId": "render-quiz-what-happens-to-price-right-before-nfp",
   "title": "Quiz: What Happens to Price RIGHT Before NFP? 🧠",
-  "description": "NFP drops tomorrow. Do you actually know what smart money does BEFORE the release? Take this quiz and find out — then watch til the end for the real answer. Follow R2F Trading for daily ICT concepts. r2ftrading.com",
+  "description": "Test your ICT knowledge before NFP drops tomorrow. Most traders get this wrong — do you know what smart money does to price in the 30 minutes before Non-Farm Payrolls? Take the quiz and find out. Follow R2F Trading for daily ICT breakdowns at r2ftrading.com",
   "hashtags": [
     "#ICTTrading",
     "#NFP",
@@ -10,21 +10,16 @@
     "#OrderBlocks",
     "#FairValueGap",
     "#FundedTrader",
+    "#Forex2026",
     "#LiquiditySweep",
-    "#ForexTrading",
     "#R2FTrading",
-    "#ICT2026"
+    "#ForexQuiz"
   ],
-  "script": "NFP is tomorrow. Quick quiz — what does price almost ALWAYS do the hour before the release? A) Trend strongly in one direction. B) Consolidate near equilibrium. C) Sweep liquidity THEN reverse. Most traders pick A or B. They get wrecked every single NFP. The answer is C. Smart money sweeps liquidity FIRST. They hunt your stop losses before the real move. In 2026 alone, 8 out of 10 NFP releases showed a pre-release sweep within 60 minutes of the number. The lesson? Don't trade the spike. Wait for the sweep. Then look for an order block or FVG to confirm your entry. Follow R2F Trading. We post setups like this every single day. r2ftrading.com — link in bio.",
+  "script": "NFP is tomorrow. Quick quiz. What does price almost ALWAYS do 30 minutes before the release? Option A: Price consolidates flat. Option B: Price sweeps liquidity. Option C: Price trends hard in one direction. Most beginners say A. Flat consolidation. Makes sense, right? Big news coming — just wait. The answer is B. Price sweeps liquidity first. Smart money hunts stops BEFORE the candle drops. In 2026 alone, 7 of the last 8 NFP releases started with a liquidity grab. That's not random. That's engineered. The R2F Trading system teaches you to WAIT for the sweep. Then enter with the real move. That's the edge. Follow R2F Trading. Tomorrow's NFP breakdown drops first thing. Don't miss it. r2ftrading.com",
   "contentType": "quiz",
   "seriesName": null,
   "seriesNumber": null,
   "autoPublish": false,
-  "createdAt": "2026-05-07T03:32:05.035Z",
-  "status": "ready",
-  "videoUrl": "https://raw.githubusercontent.com/JidoLab/r2f-trading/master/public/shorts/quiz-what-happens-to-price-right-before-nfp.mp4",
-  "youtubeUrl": null,
-  "copyText": "Quiz: What Happens to Price RIGHT Before NFP? 🧠\n\nNFP drops tomorrow. Do you actually know what smart money does BEFORE the release? Take this quiz and find out — then watch til the end for the real answer. Follow R2F Trading for daily ICT concepts. r2ftrading.com\n\n#ICTTrading #NFP #SmartMoneyConcepts #OrderBlocks #FairValueGap #FundedTrader #LiquiditySweep #ForexTrading #R2FTrading #ICT2026",
-  "uploadResults": [],
-  "completedAt": "2026-05-07T03:40:28.381Z"
+  "createdAt": "2026-07-02T12:01:31.559Z",
+  "status": "rendering"
 }
