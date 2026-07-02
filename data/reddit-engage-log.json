@@ -4392,5 +4392,15 @@
     "commentedAt": "2026-07-02T08:00:55.913Z",
     "permalink": "/r/Trading/comments/1ul4kkx/it_took_me_7_years_to_become_consistently/ov2sm7s/",
     "commentId": "ov2sm7s"
+  },
+  {
+    "postId": "1uldrll",
+    "subreddit": "ICTMentorship",
+    "postTitle": "NQ SMT Divergence Indicator",
+    "commentText": "to display NQ as a separate pane under ES on TradingView, just open a new pane at the bottom and add NQ as its own chart symbol there. sync the timeframes manually so both are on the same interval, then you're basically replicating what ICT does in the 2022 mentorship when he's watching for SMT divergence at key highs and lows. tbh the setup itself is simple, the harder part is knowing *what* to look for once you have it. are you running this on the 1m or 5m for precision entries, or more of a 15m read to catch the divergence before dropping down?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-02T13:00:32.676Z",
+    "permalink": "/r/ICTMentorship/comments/1uldrll/nq_smt_divergence_indicator/ov3zxkk/",
+    "commentId": "ov3zxkk"
   }
 ]
