@@ -4418,5 +4418,25 @@
     "commentedAt": "2026-07-02T13:00:32.676Z",
     "permalink": "/r/ICTMentorship/comments/1uldrll/nq_smt_divergence_indicator/ov3zxkk/",
     "commentId": "ov3zxkk"
+  },
+  {
+    "postId": "1ulqeh2",
+    "subreddit": "Trading",
+    "postTitle": "One of the biggest beginner mistakes is scaling",
+    "commentText": "the 100 trade minimum is real, but tbh i'd push it further and say those 100 trades need to be on the same pair and timeframe, not spread across different setups. seen too many people hit 100 trades mixing NQ on the 15m with eurusd on the 1h and call it a \"proven strategy\" when it's actually just noise. consistency of the setup matters as much as the sample size. what does your current strategy look like, are you focused on one model or still sampling a few?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-03T03:00:38.252Z",
+    "permalink": "/r/Trading/comments/1ulqeh2/one_of_the_biggest_beginner_mistakes_is_scaling/ov8w65j/",
+    "commentId": "ov8w65j"
+  },
+  {
+    "postId": "1uleg97",
+    "subreddit": "Trading",
+    "postTitle": "Passes prop firm evals but loses funded accounts — can this pattern realistically be fixed?",
+    "commentText": "the pattern you're describing, passing evals then blowing funded accounts, usually comes down to one thing: he's trading the eval rules, not a real model. here's something concrete to test. have him mark the 15m FVG that forms during london session, then only take it if price returns to it during NY open killzone (9:30, 11am EST) with a confirmed BOS on the 1m before entry. eval accounts reward aggression, funded accounts punish it, and the killzone filter forces patience he probably skips when the pressure's off. tbh this single constraint cuts overtrading by like 60% for most people because there are just fewer valid setups to take. what pair is he usually on when the funded accounts blow, and is it typically during london or NY?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-03T03:00:46.935Z",
+    "permalink": "/r/Trading/comments/1uleg97/passes_prop_firm_evals_but_loses_funded_accounts/ov8w6zt/",
+    "commentId": "ov8w6zt"
   }
 ]
