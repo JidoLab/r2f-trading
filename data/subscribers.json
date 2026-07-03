@@ -446,6 +446,16 @@
     "dripsSent": 0,
     "referralCode": "R2F-irijh9",
     "referredBy": null,
-    "referralCount": 0
+    "referralCount": 0,
+    "score": 15,
+    "segment": "cold",
+    "events": [
+      {
+        "type": "coaching_page_view",
+        "date": "2026-07-03T18:33:32.628Z"
+      }
+    ],
+    "lastActivity": "2026-07-03T18:33:32.628Z",
+    "dripsHistory": []
   }
 ]
