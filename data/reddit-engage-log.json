@@ -4417,7 +4417,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-02T13:00:32.676Z",
     "permalink": "/r/ICTMentorship/comments/1uldrll/nq_smt_divergence_indicator/ov3zxkk/",
-    "commentId": "ov3zxkk"
+    "commentId": "ov3zxkk",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-02T14:03:35.000Z",
+    "firstReplyAuthor": "addictedcorn",
+    "firstReplyText": "I am also stuck in harder part \"*What to look for for entry*\"\n\n"
   },
   {
     "postId": "1ulqeh2",
@@ -4437,7 +4441,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-07-03T03:00:46.935Z",
     "permalink": "/r/Trading/comments/1uleg97/passes_prop_firm_evals_but_loses_funded_accounts/ov8w6zt/",
-    "commentId": "ov8w6zt"
+    "commentId": "ov8w6zt",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-03T08:59:42.000Z",
+    "firstReplyAuthor": "charlottesphere",
+    "firstReplyText": "He trades NQ/Nasdaq futures in the NY session. He uses Bookmap and says he trades order flow, but I do not know enough about it to know whether he has a specific strategy or set rules behind it. I don’t think he does have one and I see him emotional trading so if he takes a loss he will revenge trad"
   },
   {
     "postId": "1ulngy6",
