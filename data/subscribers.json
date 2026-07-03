@@ -198,7 +198,7 @@
   {
     "email": "mani.katakatla.09@gmail.com",
     "date": "2026-06-02T21:06:10.786Z",
-    "dripsSent": 7,
+    "dripsSent": 8,
     "referralCode": "R2F-cnd4pp",
     "referredBy": null,
     "referralCount": 0,
@@ -218,7 +218,8 @@
       "tradingPsychology",
       "propFirmTips",
       "coachingCta",
-      "valueRecap"
+      "valueRecap",
+      "lastChance"
     ],
     "abandonmentEmailSent": true
   },
@@ -432,6 +433,11 @@
     "dripsSent": 0,
     "referralCode": "R2F-a6x85v",
     "referredBy": null,
-    "referralCount": 0
+    "referralCount": 0,
+    "score": 0,
+    "segment": "cold",
+    "events": [],
+    "lastActivity": "2026-07-02T16:26:29.120Z",
+    "dripsHistory": []
   }
 ]
