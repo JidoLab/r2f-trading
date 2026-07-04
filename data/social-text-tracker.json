@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll",
     "hot-take",
     "quote",
     "tip",
@@ -29,11 +28,12 @@
     "myth",
     "poll-native",
     "question",
-    "poll"
+    "poll",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "NFP day — what's your move? 🅰️ Fade the spike 🅱️ Wait for liquidity sweep then entry 🅲️ Flat. No news trading. 🅳️ Already closed Friday positions #NFP #ICTTrading #SmartMoneyConcepts",
-    "date": "2026-07-03T12:00:41.781Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: backtesting is overrated and most of you use it as procrastination dressed up as 'preparation.' Real edge comes from live screen time. Fight me. #ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-07-04T12:01:49.233Z"
   }
 }
