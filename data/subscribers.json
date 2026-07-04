@@ -288,7 +288,7 @@
   {
     "email": "uh01012007@gmail.com",
     "date": "2026-06-18T06:17:03.035Z",
-    "dripsSent": 4,
+    "dripsSent": 5,
     "referralCode": "R2F-inlp91",
     "referredBy": null,
     "referralCount": 0,
@@ -306,13 +306,14 @@
       "beginnerMistakes",
       "ictConcepts",
       "successStory",
-      "tradingPsychology"
+      "tradingPsychology",
+      "propFirmTips"
     ]
   },
   {
     "email": "mgoncalvesiii@gmail.com",
     "date": "2026-06-26T15:13:49.441Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-ridl5m",
     "referredBy": null,
     "referralCount": 0,
@@ -344,7 +345,8 @@
     "lastActivity": "2026-06-27T07:22:29.186Z",
     "dripsHistory": [
       "bookCallUrgent",
-      "socialProof"
+      "socialProof",
+      "limitedSpots"
     ],
     "hotFollowUpSent": true,
     "abandonmentEmailSent": true
@@ -352,7 +354,7 @@
   {
     "email": "mgojcalvesiii@gmail.commgoncalvesiii",
     "date": "2026-06-26T22:41:13.642Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-189jqs",
     "referredBy": null,
     "referralCount": 0,
@@ -408,7 +410,8 @@
     "lastActivity": "2026-06-28T09:00:22.635Z",
     "dripsHistory": [
       "bookCallUrgent",
-      "socialProof"
+      "socialProof",
+      "limitedSpots"
     ],
     "abandonmentEmailSent": true,
     "hotFollowUpSent": true
@@ -416,7 +419,7 @@
   {
     "email": "mohdsharairy1996@gmail.com",
     "date": "2026-07-02T00:23:05.911Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-dwavs5",
     "referredBy": null,
     "referralCount": 0,
@@ -425,7 +428,9 @@
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-07-02T00:23:05.911Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   },
   {
     "email": "matshelekgotso00@gmail.com",
@@ -447,7 +452,7 @@
     "referralCode": "R2F-irijh9",
     "referredBy": null,
     "referralCount": 0,
-    "score": 35,
+    "score": 41,
     "segment": "warm",
     "events": [
       {
@@ -457,9 +462,21 @@
       {
         "type": "contact_page_view",
         "date": "2026-07-04T04:49:07.430Z"
+      },
+      {
+        "type": "free_class_page_view",
+        "date": "2026-07-04T09:00:39.613Z"
+      },
+      {
+        "type": "landing_page_view",
+        "date": "2026-07-04T09:00:39.614Z"
+      },
+      {
+        "type": "crash_course_page_view",
+        "date": "2026-07-04T09:00:39.614Z"
       }
     ],
-    "lastActivity": "2026-07-04T04:49:07.430Z",
+    "lastActivity": "2026-07-04T09:00:39.614Z",
     "dripsHistory": []
   }
 ]
