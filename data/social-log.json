@@ -1911,5 +1911,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-04T12:01:50.130Z",
+    "type": "text",
+    "postType": "hot-take",
+    "text": "Unpopular opinion: backtesting is overrated and most of you use it as procrastination dressed up as ",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
