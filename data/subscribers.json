@@ -447,15 +447,19 @@
     "referralCode": "R2F-irijh9",
     "referredBy": null,
     "referralCount": 0,
-    "score": 15,
-    "segment": "cold",
+    "score": 35,
+    "segment": "warm",
     "events": [
       {
         "type": "coaching_page_view",
         "date": "2026-07-03T18:33:32.628Z"
+      },
+      {
+        "type": "contact_page_view",
+        "date": "2026-07-04T04:49:07.430Z"
       }
     ],
-    "lastActivity": "2026-07-03T18:33:32.628Z",
+    "lastActivity": "2026-07-04T04:49:07.430Z",
     "dripsHistory": []
   }
 ]
