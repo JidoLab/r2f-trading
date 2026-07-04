@@ -4486,5 +4486,65 @@
     "commentedAt": "2026-07-03T13:00:37.567Z",
     "permalink": "/r/Forexstrategy/comments/1um5i16/gold_is_about_to_make_its_next_big_move_heres_my/ovb7zr7/",
     "commentId": "ovb7zr7"
+  },
+  {
+    "postId": "1um9ozn",
+    "subreddit": "FOREXTRADING",
+    "postTitle": "Sharing how I actually choose a CFD platform — the 7 criteria I won't compromise on",
+    "commentText": "the regulation entity point is the most underrated thing you covered, tbh. i've seen traders get burned specifically because they signed up under a broker's offshore entity without realizing the tier-1 regulated entity existed separately. on the trading side, this matters more than people think because if your broker's stop hunt coincides with a NY open liquidity sweep on something like XAUUSD on the 15m, you want to know your funds are actually protected while you hold through that volatility. solid framework overall. what pairs are you primarily running this framework for right now, and are you mostly trading the london or new york session?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-04T03:00:46.169Z",
+    "permalink": "/r/FOREXTRADING/comments/1um9ozn/sharing_how_i_actually_choose_a_cfd_platform_the/ovfugu5/",
+    "commentId": "ovfugu5"
+  },
+  {
+    "postId": "1umgmnf",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Is there anyone willing to collab and work together on Gold startergy. I am looking to trade gold in 3min or 1min timeframe. It is mostly based on classical chart patterns. Those who are already well versed with concepts of william o neil , mark minervini , quallamaggie , wyckoff",
+    "commentText": "gold on 1min and 3min is actually a solid fit for ICT honestly, especially during london open and the NY killzone where you get clean displacement and proper FVGs to work with. the wyckoff accumulation phases you're referencing map really well onto how price builds up into an order block before the actual expansion leg, so the overlap between those frameworks is tighter than most people think. tbh the 5-10R potential on a high frequency model makes sense if you're catching the displacement move right after a BOS on the 1min with a tight entry on the FVG retracement. curious what your current entry trigger looks like on the 3min, like are you waiting for a confirmed BOS before taking the trade or are you anticipating the move off the OB? happy to break down the entry model further right here if that helps.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-04T03:00:56.200Z",
+    "permalink": "/r/Forexstrategy/comments/1umgmnf/is_there_anyone_willing_to_collab_and_work/ovfuhrl/",
+    "commentId": "ovfuhrl"
+  },
+  {
+    "postId": "1umdv3d",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Help me if possible.",
+    "commentText": "splitting profits on a funded account isn't really how it works, those prop firms already take their cut from the payout split so there's nothing left to pass around. tbh if you've genuinely got an edge on demo, the path is just to fund one yourself, FTMO and the like have been running decent challenges in 2026. what's your edge actually built on though? if you drop the pair and timeframe you're trading, i'm happy to walk through whether your OB entries are holding up at a real level of confluence or if there's something in the model that might not survive live conditions.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-04T03:01:05.910Z",
+    "permalink": "/r/Forexstrategy/comments/1umdv3d/help_me_if_possible/ovfuino/",
+    "commentId": "ovfuino"
+  },
+  {
+    "postId": "1umeobp",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAU/USD (Gold) Market Analysis",
+    "commentText": "that 4160 OB is interesting but i'd want to see how price reacts to it on the 15m before calling it support, specifically whether we get a clean BOS to the upside off that level or just a slow grind that looks like support until it isn't. tbh the real tell for me is whether the asia session respects that zone tonight, because if london opens and immediately sweeps below 4160 without a reaction, that double bottom failure scenario becomes a lot more likely pretty fast. happy to walk through the entry model on the bearish continuation side if that helps, what timeframe are you primarily watching this on?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-04T03:01:13.887Z",
+    "permalink": "/r/Forexstrategy/comments/1umeobp/xauusd_gold_market_analysis/ovfujes/",
+    "commentId": "ovfujes"
+  },
+  {
+    "postId": "1umgkk6",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Is there anyone willing to colab and work together on Gold startergy.",
+    "commentText": "gold on 1m/3m with classical patterns is a rough combo tbh, those timeframes on XAU are super noisy and patterns get invalidated constantly by news wicks. the 5-10R target actually makes more sense if you're confluencing with an ICT framework, like waiting for a BOS on the 15m then dropping to 3m to refine the entry off a FVG or OB mitigation. curious what specifically is getting you stuck, is it the entry trigger or holding through the trade to actually hit that R target?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-04T03:01:23.491Z",
+    "permalink": "/r/Forexstrategy/comments/1umgkk6/is_there_anyone_willing_to_colab_and_work/ovfukap/",
+    "commentId": "ovfukap"
+  },
+  {
+    "postId": "1umdy2w",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAUUSD SHORTS SETUP",
+    "commentText": "gold shorts make sense right now tbh, especially if you're seeing displacement on the 4H into a premium array. the key with xauusd is that the OBs on lower timeframes get violated constantly during ny session so i'd want to see confirmation on the 1H first before committing. what does your entry model look like, are you waiting for a BOS on the 15M or just going straight at the OB?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-04T03:01:32.130Z",
+    "permalink": "/r/Forexstrategy/comments/1umdy2w/xauusd_shorts_setup/ovful40/",
+    "commentId": "ovful40"
   }
 ]
