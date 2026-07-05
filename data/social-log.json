@@ -1940,5 +1940,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-05T12:01:00.249Z",
+    "type": "text",
+    "postType": "story",
+    "text": "Traded NFP last year with no bias. Got swept both ways, blew 4% in 20 mins. Now I wait for the liqui",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
