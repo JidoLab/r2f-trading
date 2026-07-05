@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "hot-take",
     "quote",
     "tip",
     "challenge",
@@ -29,11 +28,12 @@
     "poll-native",
     "question",
     "poll",
-    "hot-take"
+    "hot-take",
+    "story"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: backtesting is overrated and most of you use it as procrastination dressed up as 'preparation.' Real edge comes from live screen time. Fight me. #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-07-04T12:01:49.233Z"
+    "type": "story",
+    "text": "Traded NFP last year with no bias. Got swept both ways, blew 4% in 20 mins. Now I wait for the liquidity grab BEFORE the candle closes. One bad news trade taught me more than 6 months of charts. #NFP #ICTTrading #SmartMoneyConcepts",
+    "date": "2026-07-05T12:00:59.429Z"
   }
 }
