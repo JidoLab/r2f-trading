@@ -1,0 +1,27 @@
+{
+  "date": "2026-07-05T12:04:31.493Z",
+  "today": "2026-07-05",
+  "topicsAttempted": [
+    null,
+    null,
+    null
+  ],
+  "results": [
+    {
+      "title": "NFP Week Secret: How Smart Money Traps Traders Before the Drop",
+      "status": "rendering"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "GitHub commit failed: 409 {\"message\":\"is at 06a832396b76ca58a8d735fa8d4b644ebf8d313d but expected 6aad8d1c49f3d17e65fc0c3bba2c045f6bbf83da\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+    },
+    {
+      "title": "The NFP Myth That's Costing Traders Thousands (2026)",
+      "status": "rendering"
+    }
+  ],
+  "errors": [
+    "GitHub commit failed: 409 {\"message\":\"is at 06a832396b76ca58a8d735fa8d4b644ebf8d313d but expected 6aad8d1c49f3d17e65fc0c3bba2c045f6bbf83da\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
+  ]
+}
