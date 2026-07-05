@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1783252850502-nxd57",
+    "platform": "youtube",
+    "postTitle": "My Personal Strategy |Last Stage of Trading |CRT Strategy |ICT |Part-2",
+    "postUrl": "https://youtube.com/watch?v=AFFCkabFXpw",
+    "authorName": "ICT Mentor",
+    "suggestedReply": "Interesting take on using CRT as a last stage filter. In my experience, I actually teach my students to apply CRT logic earlier in the process, specifically at the 15 minute level during killzone sessions, because waiting until the last stage can sometimes mean you miss the optimal entry window inside the range. The sequence matters a lot more than most traders realise. Curious how you handle late entries when price has already swept the high or low before your trigger prints.",
+    "createdAt": "2026-07-05T12:00:50.502Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783252853537-anty9",
+    "platform": "youtube",
+    "postTitle": "🔴 BTC &amp; GOLD Live Scalping Entery | $500 Challenge | ICT + SMC Strategy | 04 July | FlipperxForex",
+    "postUrl": "https://youtube.com/watch?v=CuxcJOKI9E4",
+    "authorName": "FlipperX Forex",
+    "suggestedReply": "Scalping BTC and gold on the same session is something I warn my students about because the liquidity profiles are completely different. Gold tends to respect ICT killzone timing more cleanly while BTC can sweep twice before committing to a direction. Are you finding the SMC entries on BTC more reliable during specific session overlaps within this $500 challenge format?",
+    "createdAt": "2026-07-05T12:00:53.537Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783252857184-mb9lq",
+    "platform": "youtube",
+    "postTitle": "CONSEQUENCES ENCROACHMENT. #forex #trading",
+    "postUrl": "https://youtube.com/watch?v=w1VEWP_x2h8",
+    "authorName": "FOREX SAILOR",
+    "suggestedReply": "Encroachment is one of those consequences most traders learn the hard way. I drill into my students that when price encroaches on a premium or discount array without a clean displacement, you are watching a trap form in real time. The tell is in how the candles close relative to the inefficiency, not just whether price touched it.",
+    "createdAt": "2026-07-05T12:00:57.184Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783252860921-o1llq",
+    "platform": "youtube",
+    "postTitle": "Every SMC/ICT Trading Strategy RANKED (Found THIS)",
+    "postUrl": "https://youtube.com/watch?v=_BFelENGDv0",
+    "authorName": "The Secret Mindset",
+    "suggestedReply": "Ranking SMC strategies is useful but the real caveat most traders miss is that the \"best\" setup on your list changes completely depending on the session. An order block that prints beautifully during London kill zone can be a trap during dead NY overlap. I drill this into my students constantly. Session context is what separates the setups that work from the ones that just look good on paper.",
+    "createdAt": "2026-07-05T12:01:00.921Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783252865318-ckieg",
+    "platform": "youtube",
+    "postTitle": "How to Identify High Probability Order Blocks and Avoid Common Liquidity Traps Easily",
+    "postUrl": "https://youtube.com/watch?v=SnQ-MpOBgto",
+    "authorName": "Trade With JoedaveFx",
+    "suggestedReply": "One thing I drill into my students when identifying high probability order blocks is to confirm whether the move away from the block actually left a Fair Value Gap. Without that displacement, you're often looking at a weak structure that will fail when price returns. Most liquidity traps I see traders fall for on forex majors happen precisely because they're marking every down candle as an order block without that confirmation.",
+    "createdAt": "2026-07-05T12:01:05.318Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783252869100-utcnx",
+    "platform": "youtube",
+    "postTitle": "Find Powerful Buy &amp; Sell Zones Using Order Blocks 😱Quotex",
+    "postUrl": "https://youtube.com/watch?v=v0Mxs8ceBc0",
+    "authorName": "BFSS TAMIL",
+    "suggestedReply": "Interesting take on using order blocks for buy and sell zones. In my experience, the real edge comes from pairing those order blocks with a higher timeframe bias first, because without that context you end up taking every block you see and getting chopped out. I drill this into my students constantly. A clean order block on the 15m means very little if the 4H is showing distribution.",
+    "createdAt": "2026-07-05T12:01:09.100Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783252872742-r609z",
+    "platform": "youtube",
+    "postTitle": "Smart Money Concept: Order Block &amp; FVG Explained | Best Use Forex, Gold &amp; Indian Stock Market",
+    "postUrl": "https://youtube.com/watch?v=XOEsIm8Pmos",
+    "authorName": "InvestSign",
+    "suggestedReply": "Order blocks work beautifully on gold and Indian indices but the biggest trap I see is traders marking OBs without confirming displacement first. I drill this into my students constantly. An FVG alone on the 15m or 1H means nothing without the preceding impulse showing real institutional intent. On Nifty especially, retail volume can fake these structures during low liquidity sessions so always layer your confluence before committing.",
+    "createdAt": "2026-07-05T12:01:12.742Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783252875764-rt4s6",
+    "platform": "youtube",
+    "postTitle": "Live Market Analysis | Gold &amp; Bitcoin Trading Strategy",
+    "postUrl": "https://youtube.com/watch?v=JeOUCo8EE7w",
+    "authorName": "Trading Reversal",
+    "suggestedReply": "The Gold displacement candle setup here is something I drill into my students constantly. On XAU specifically, most traders mark the FVG but ignore whether the displacement candle actually closed beyond the prior structure. That one filter alone separates a high probability entry from a trap. Are you applying the same displacement criteria on Bitcoin or adjusting for its volatility profile?",
+    "createdAt": "2026-07-05T12:01:15.764Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1783166558150-94dq2",
     "platform": "investinglive",
     "postTitle": "Gold shines on the US holiday",
