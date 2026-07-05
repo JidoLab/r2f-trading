@@ -4578,5 +4578,35 @@
     "commentedAt": "2026-07-04T18:01:17.010Z",
     "permalink": "/r/proptrading/comments/1uncl9m/ctrader_will_no_longer_be_available_to_us_traders/ovjoe3s/",
     "commentId": "ovjoe3s"
+  },
+  {
+    "postId": "1un0ki8",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Gold 4H Outlook: Is the Current Pullback a Buying Opportunity?",
+    "commentText": "the 4080, 4100 zone you flagged is actually worth watching closely as a potential 4H bullish OB, especially if price sweeps the relative equal lows sitting just below 4080 first before reversing. that liquidity grab into the OB is the setup imo, not just a clean tap of the zone. i'd want to see a displacement candle off that level during new york open before touching anything. happy to walk through what a valid entry model looks like on this one if that helps, what session were you planning to take the entry in?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-05T03:00:50.585Z",
+    "permalink": "/r/Forexstrategy/comments/1un0ki8/gold_4h_outlook_is_the_current_pullback_a_buying/ovmc22u/",
+    "commentId": "ovmc22u"
+  },
+  {
+    "postId": "1un7uqx",
+    "subreddit": "Trading",
+    "postTitle": "Macro &amp; Fundamental Terminal setup for Paper Trading?",
+    "commentText": "the small-funded IBKR account is honestly the move for EU residents, tbh. even a €200 deposit unlocks real-time data and the full news feed in TWS, which is way more useful than fighting delayed quotes when you're trying to read macro flow into a london open or new york killzone. for context i run TWS alongside my charting specifically to track economic calendar hits and see how price reacts around high-impact news before i even look for an FVG or OB to anchor an entry. curious what instruments you're actually planning to sim trade, like forex majors, indices, or something else? because that changes which TWS data subscriptions are actually worth activating.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-05T03:00:59.869Z",
+    "permalink": "/r/Trading/comments/1un7uqx/macro_fundamental_terminal_setup_for_paper_trading/ovmc2vn/",
+    "commentId": "ovmc2vn"
+  },
+  {
+    "postId": "1un6whb",
+    "subreddit": "Forexstrategy",
+    "postTitle": "The single solution to solve lack of self control in trading and to respect strategy rules",
+    "commentText": "been there with the 9 months of chaos tbh, FOMO during NY open especially will wreck you before you even realize what happened. the survival instinct thing you mentioned is real, it's basically your brain treating a missed FVG like a physical threat and forcing you into late entries. curious what rules you found yourself breaking most consistently, was it taking trades outside your kill zone or more like moving stops after entry?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-05T03:01:07.403Z",
+    "permalink": "/r/Forexstrategy/comments/1un6whb/the_single_solution_to_solve_lack_of_self_control/ovmc3ic/",
+    "commentId": "ovmc3ic"
   }
 ]
