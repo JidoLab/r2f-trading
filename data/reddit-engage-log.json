@@ -4666,5 +4666,45 @@
     "commentedAt": "2026-07-06T03:00:40.251Z",
     "permalink": "/r/Trading/comments/1uo05bv/is_hyrotrader_a_good_prop_firm/ovt50uz/",
     "commentId": "ovt50uz"
+  },
+  {
+    "postId": "1uoq0v9",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAUUSD SHORTS SETUP",
+    "commentText": "gold shorts are interesting right now tbh, but i'd want to know if you're keying off a daily or 4H order block because xauusd has been really choppy inside these big liquidity pools lately. the asian session has been printing a lot of fake BOS setups that look clean until london open just sweeps them entirely. happy to walk through the entry model with you on this one if you drop the timeframe and what level you're watching.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-06T08:00:11.854Z",
+    "permalink": "/r/Forexstrategy/comments/1uoq0v9/xauusd_shorts_setup/ovu9h7y/",
+    "commentId": "ovu9h7y"
+  },
+  {
+    "postId": "1uonsox",
+    "subreddit": "Forexstrategy",
+    "postTitle": "I Blew 70 Funded Accounts and Spent $50,000 Before The Cycle Broke.",
+    "commentText": "i had this exact problem, blew 11 accounts before i figured out i was just revenge trading every loss back to back without ever asking why the trade failed. the one that broke the cycle for me was a gbpusd setup on the 15m, i saw a clean bullish OB form after a BOS during london open and took it three times in a row after it failed, each time sizing up. turns out price was in a daily premium the whole time and i was buying into distribution like an idiot. curious what the pattern looked like for you across those 70, were you overtrading one specific session or was it spread out?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-06T08:00:19.595Z",
+    "permalink": "/r/Forexstrategy/comments/1uonsox/i_blew_70_funded_accounts_and_spent_50000_before/ovu9hre/",
+    "commentId": "ovu9hre"
+  },
+  {
+    "postId": "1uojg5s",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Just breached my funded account",
+    "commentText": "been there, breaching a funded account stings. the question is whether it was a risk management issue or an actual model problem, because the fix is totally different. a lot of breaches i see come down to trading through a high impact news event without an OB to anchor the trade, not bad entries overall. what pair were you on and were you trading a london or NY session setup?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-06T08:00:26.845Z",
+    "permalink": "/r/Forexstrategy/comments/1uojg5s/just_breached_my_funded_account/ovu9i9h/",
+    "commentId": "ovu9i9h"
+  },
+  {
+    "postId": "1uojffo",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Just breached my funded account",
+    "commentText": "been there, it stings. next time you're in a drawdown, try marking the last up candle before the most recent displacement on the 15m during london open, that's your actual OB, not the whole swing. if price comes back to it during the NY AM killzone with a clean FVG inside it, that's a higher probability entry than whatever got you stopped out. what pair were you trading and were you taking entries during a killzone or off session?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-06T08:00:37.060Z",
+    "permalink": "/r/ICTMentorship/comments/1uojffo/just_breached_my_funded_account/ovu9iz3/",
+    "commentId": "ovu9iz3"
   }
 ]
