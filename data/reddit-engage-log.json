@@ -4710,5 +4710,25 @@
     "commentedAt": "2026-07-06T08:00:37.060Z",
     "permalink": "/r/ICTMentorship/comments/1uojffo/just_breached_my_funded_account/ovu9iz3/",
     "commentId": "ovu9iz3"
+  },
+  {
+    "postId": "1uotvbq",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "do you only take entires off pd arrays?",
+    "commentText": "i had this exact problem last month on eurusd, 15 minute chart during london open. there was a clean BOS and price just kept pushing with tight pullbacks, no fvg, no clean OB in sight. what i've learned is that sometimes the pd array is just forming inside the move itself, like a breaker or a mitigation block that's easy to miss if you're only scanning for the textbook setups. tbh i still prefer waiting for a fvg or OB retest but i've started marking the nearest old high or low as a reference and letting the reaction do the talking. curious what pair you're seeing this on, drop a chart if you can and i'll take a look with you.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-06T13:00:29.899Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uotvbq/do_you_only_take_entires_off_pd_arrays/ovvemvp/",
+    "commentId": "ovvemvp"
+  },
+  {
+    "postId": "1uo7543",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Coding an ICT model with Claude Fable",
+    "commentText": "the low trade frequency you're seeing is almost always a sign that your session filter is too tight, which isn't necessarily bad, but it makes validation brutal. tbh the hardest part to systematize in fable is the MSS confirmation, because whether a candle actually shifts structure on the 5m versus just creating a BOS depends on context that the model doesn't \"see\" the way you do manually. FVG mitigation logic is also tricky, you have to decide whether partial fills count and that one decision changes everything about how often the model actually enters. what session and pair is the profitable model targeting?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-06T13:00:38.047Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uo7543/coding_an_ict_model_with_claude_fable/ovvensm/",
+    "commentId": "ovvensm"
   }
 ]
