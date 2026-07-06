@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1783297837176-5uy9o",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE Sunday Futures Open | Day Trading ES NQ | ICT Concepts | July 5",
+    "postUrl": "https://youtube.com/watch?v=CAWcjlVM_Gk",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Trading the Sunday futures open on ES and NQ is one of the most underrated setups in the week. The key detail I drill into my students is watching for the first displacement candle after the open gap fills before committing to any FVG entry. Most traders see the fair value gap and jump in immediately, missing that the displacement needs to show convincing range expansion on the 5m to confirm real institutional intent rather than noise.",
+    "createdAt": "2026-07-06T00:30:37.176Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783297841752-9xwud",
+    "platform": "youtube",
+    "postTitle": "My A+ NASDAQ Setup ICT Concepts #icttrading #trinifx #nq #fvg #liquiditysweep #ifvg",
+    "postUrl": "https://youtube.com/watch?v=RAgnIKbb4GU",
+    "authorName": "TriniFX",
+    "suggestedReply": "Interesting take on the IFVG as your A+ qualifier on NQ. In my experience, I actually teach my students to combine the liquidity sweep confirmation with a displacement candle on the 5m before committing to the entry, because NQ can be brutal with fake sweeps during the first 30 minutes of New York open. The IFVG alone is powerful but that extra confluence filters out a lot of the noise. Curious whether you're timing these setups around specific killzones or trading them throughout the session.",
+    "createdAt": "2026-07-06T00:30:41.752Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783297844670-o6n3u",
+    "platform": "youtube",
+    "postTitle": "Buy Side vs Sell Side Liquidity | ICT Trading Strategy Explained",
+    "postUrl": "https://youtube.com/watch?v=6lCXoe3shn0",
+    "authorName": "Ashish FX ",
+    "suggestedReply": "Interesting take on buy side vs sell side liquidity. In my experience, most traders miss the sequencing entirely. I teach my students to identify which side was swept most recently before even thinking about an entry, because price rarely raids the same side twice in succession on lower timeframes. Understanding that draw on liquidity is directional really changes how you read intraday structure.",
+    "createdAt": "2026-07-06T00:30:44.670Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783297847852-g0fhv",
+    "platform": "youtube",
+    "postTitle": "5- ICT Concepts To Boost Your Trading🚀 #trading #shorts",
+    "postUrl": "https://youtube.com/watch?v=aLM-jp6cuk8",
+    "authorName": "Fintrade Studio",
+    "suggestedReply": "I drilled all 5 of these concepts into my students last month and the one that clicked hardest was using order blocks on the 15 minute chart paired with a higher timeframe bias. One student went from taking random entries on EUR/USD to waiting for proper confirmation and his consistency improved drastically. These fundamentals separate the guessers from the traders who actually build accounts.",
+    "createdAt": "2026-07-06T00:30:47.852Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783297851506-kxwfc",
+    "platform": "youtube",
+    "postTitle": "Gold Price Tomorrow? XAUUSD SMC ICT Liquidity Levels To Watch",
+    "postUrl": "https://youtube.com/watch?v=t9RO9ThzVE0",
+    "authorName": "Aarav Kumar FX",
+    "suggestedReply": "Solid point focusing on liquidity levels for XAUUSD because gold sweeps those highs and lows aggressively before any real move. One thing I always drill into my students though is to watch the weekly liquidity first before dropping to lower timeframes. Chasing intraday SMC setups on gold without confirming the weekly draw can get you caught on the wrong side of a massive stop hunt.",
+    "createdAt": "2026-07-06T00:30:51.506Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783297859318-z8w50",
+    "platform": "youtube",
+    "postTitle": "Best ICT Trading Strategy? @369Ivan  #memes #real #viral  #fyp #funny",
+    "postUrl": "https://youtube.com/watch?v=NpT6OMbvXtU",
+    "authorName": "Ivan Trades",
+    "suggestedReply": "Calling it the \"best ICT strategy\" is a bold claim and I respect it. Most traders I work with overlook the importance of session alignment when executing ICT concepts, especially pairing your entries with actual liquidity sweeps rather than just hunting order blocks in isolation. Are you finding this approach holds up across different sessions or is it primarily optimized for a specific kill zone?",
+    "createdAt": "2026-07-06T00:30:59.318Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783297862550-xw9ca",
+    "platform": "youtube",
+    "postTitle": "Find Bias using C2 Model | ICT/SMC Smart Trading Strategies Part 6",
+    "postUrl": "https://youtube.com/watch?v=fJfv0a1762A",
+    "authorName": "Charchit Mishra (Elite Trading)",
+    "suggestedReply": "Interesting take on using the C2 Model for bias. In my experience, I actually have my students anchor bias from the higher timeframe first, specifically the daily and weekly, before dropping into the C2 structure. The reason is that C2 alone can give conflicting reads during consolidation. Pairing it with premium and discount zones on the daily cleans up the bias significantly.",
+    "createdAt": "2026-07-06T00:31:02.550Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783297867636-94xcd",
+    "platform": "youtube",
+    "postTitle": "Čekáme na signál. Přijde červencová konsolidace? 📉 | Smart Money Concepts | 5. 7. 2026",
+    "postUrl": "https://youtube.com/watch?v=W83mCsezKKA",
+    "authorName": "TradeCZ Hub",
+    "suggestedReply": "Zajímavý pohled na červencovou konsolidaci. Z mé zkušenosti ale čekání na \"signál\" bez jasně definovaného liquidity targetu nad nebo pod aktuálním rangeom vede k přefiltrování a zmeškání pohybu. Svým studentům vždycky říkám, ať si nejdřív označí weekly inefficiency a teprve pak řeší, jestli jde o konsolidaci nebo distribution. SMC bez kontextu vyšších timeframů je jen half the picture.",
+    "createdAt": "2026-07-06T00:31:07.636Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1783252883826-v2o3d",
     "platform": "investinglive",
     "postTitle": "Is Nike stock a buy or sell after its recent tricky earnings report on 30 June '26?",
