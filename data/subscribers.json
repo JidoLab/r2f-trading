@@ -451,7 +451,7 @@
   {
     "email": "mdrabbihossen046@gmail.com",
     "date": "2026-07-03T18:33:01.864Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-irijh9",
     "referredBy": null,
     "referralCount": 0,
@@ -480,7 +480,9 @@
       }
     ],
     "lastActivity": "2026-07-04T09:00:39.614Z",
-    "dripsHistory": [],
+    "dripsHistory": [
+      "beginnerMistakes"
+    ],
     "abandonmentEmailSent": true
   }
 ]
