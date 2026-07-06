@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "quote",
     "tip",
     "challenge",
     "myth",
@@ -29,11 +28,12 @@
     "question",
     "poll",
     "hot-take",
-    "story"
+    "story",
+    "quote"
   ],
   "lastPost": {
-    "type": "story",
-    "text": "Traded NFP last year with no bias. Got swept both ways, blew 4% in 20 mins. Now I wait for the liquidity grab BEFORE the candle closes. One bad news trade taught me more than 6 months of charts. #NFP #ICTTrading #SmartMoneyConcepts",
-    "date": "2026-07-05T12:00:59.429Z"
+    "type": "quote",
+    "text": "\"Smart money doesn't chase price. It waits for price to come to it.\"\n\n— This is why you stop trading FOMO and start trading ORDER BLOCKS. 🎯\n\n#ICTTrading #OrderBlocks #SmartMoneyConcepts",
+    "date": "2026-07-06T12:00:25.131Z"
   }
 }
