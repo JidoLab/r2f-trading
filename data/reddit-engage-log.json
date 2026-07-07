@@ -4860,5 +4860,25 @@
     "commentedAt": "2026-07-07T13:01:28.949Z",
     "permalink": "/r/ICTMentorship/comments/1upjwdh/im_less_than_100_away_from_100k_in_prop_firm/ow2s54e/",
     "commentId": "ow2s54e"
+  },
+  {
+    "postId": "1up8uq9",
+    "subreddit": "Trading",
+    "postTitle": "FTMO Challenge - Day 17",
+    "commentText": "solid approach tbh, capital preservation on a challenge is underrated. a lot of people blow day 17 chasing drawdown recovery after a rough london session, so keeping that floating pnl tight is actually the move. curious what pairs the EA is mainly running on, and whether it's filtering for sessions like new york open or just running 24/5? happy to dig into the entry model with you if you drop the pairs and timeframes here.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-07T18:00:57.760Z",
+    "permalink": "/r/Trading/comments/1up8uq9/ftmo_challenge_day_17/ow4pa7q/",
+    "commentId": "ow4pa7q"
+  },
+  {
+    "postId": "1uplfuw",
+    "subreddit": "Trading",
+    "postTitle": "FTMO removed me after payout using vague “one-sided betting” claims",
+    "commentText": "been there tbh, a lot of prop firms use \"one-sided betting\" as a catch-all when they can't pin a specific rule violation on you. what i'd try going forward: during NY killzone on eurusd, only take entries where you've got a clear BOS on the 15m confirmed by an FVG that price returns to, so your entries are objectively model-based and not just directional bias. gives you something concrete to show if a firm ever questions your methodology again. what did your entry model actually look like on the trades they flagged, were you taking single-direction setups across multiple consecutive days?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-07T18:01:09.524Z",
+    "permalink": "/r/Trading/comments/1uplfuw/ftmo_removed_me_after_payout_using_vague_onesided/ow4pc3v/",
+    "commentId": "ow4pc3v"
   }
 ]
