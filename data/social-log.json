@@ -1742,5 +1742,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-07T12:00:49.477Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "NFP week is here 👀 How do you trade high-impact news? #ICTTrading #NFP\n\n🅰️ Sit it out\n🅱️ Trade th",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
