@@ -4820,5 +4820,45 @@
     "commentedAt": "2026-07-07T08:01:05.481Z",
     "permalink": "/r/InnerCircleTraders/comments/1upagbr/too_much_information/ow1lx1d/",
     "commentId": "ow1lx1d"
+  },
+  {
+    "postId": "1upt4es",
+    "subreddit": "Trading",
+    "postTitle": "Anyone else only realise psychology was the actual problem after burning through a few accounts?",
+    "commentText": "been there with the \"tweak the strategy, blow another account\" loop, spent longer than i'd like admitting in that exact cycle on gold. one thing that actually helped me was adding a mandatory pause rule tied to a specific condition: after 2 consecutive losing trades on the same session, i'm not allowed to touch the next NY killzone setup, even if the FVG is pristine and price is sitting right on a clean OB. the rule isn't about the setup quality, it's about me not being in the right state to execute it properly. you've already identified the post-loss and post-winning-week triggers yourself, so you're further along than most people at this stage tbh. curious what your current rule structure looks like around session entries, like are you limiting yourself to specific killzones or are you still trading outside them when a setup \"looks good\"? that's usually where i see the cracks appear first.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-07T13:01:02.554Z",
+    "permalink": "/r/Trading/comments/1upt4es/anyone_else_only_realise_psychology_was_the/ow2s23w/",
+    "commentId": "ow2s23w"
+  },
+  {
+    "postId": "1up774s",
+    "subreddit": "Trading",
+    "postTitle": "TTrades vs AM Trades vs Bucko – If you had to pick only ONE mentor, who would it be and why?",
+    "commentText": "tbh if i had to start from zero today and pick just one of those three, i'd go Bucko purely because QT gives you a structural framework that makes *everything* else click into place. once you understand how price respects quarterly, monthly, and weekly cycles, the ICT stuff like OBs and FVGs stops feeling random and starts having actual context. i trade the NQ primarily on the 15m, and knowing which quarterly shift we're in tells me whether to even be looking for a long-side OB or fading into a premium FVG. that said, the \"right\" answer honestly depends on whether you're more of a top-down structure guy or someone who wants a really tight entry model first. what pairs are you currently focused on, and are you struggling more with the higher timeframe bias or the actual entry trigger? happy to walk through how QT overlays with a specific setup if that helps.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-07T13:01:12.679Z",
+    "permalink": "/r/Trading/comments/1up774s/ttrades_vs_am_trades_vs_bucko_if_you_had_to_pick/ow2s399/",
+    "commentId": "ow2s399"
+  },
+  {
+    "postId": "1upccbl",
+    "subreddit": "Trading",
+    "postTitle": "Is 500 bucks a good capital to start trading ?",
+    "commentText": "$500 is honestly enough to feel real pain on a losing trade, which is exactly the point you're making. tbh the jump from demo to live is where most people discover their FVG entries look perfect on a chart but feel impossible to hold when price wicks into them in real time. been there. what pairs are you planning to trade with it, and are you mostly looking at NY session or london? because that changes everything about how you'd size your risk on $500.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-07T13:01:20.745Z",
+    "permalink": "/r/Trading/comments/1upccbl/is_500_bucks_a_good_capital_to_start_trading/ow2s45w/",
+    "commentId": "ow2s45w"
+  },
+  {
+    "postId": "1upjwdh",
+    "subreddit": "ICTMentorship",
+    "postTitle": "I'm Less Than $100 Away From $100K in Prop Firm Payouts Using ICT",
+    "commentText": "the ERL to IRL model is solid, but the part most people blow up on is step 3, specifically entering the *first* HTF FVG when that gap forms right inside a premium array on the higher timeframe. you can have a clean 30min FVG after a sweep and still get steamrolled if you're buying into a daily bearish OB sitting right above you. curious whether you're layering in any HTF PD array confluence before you pull the trigger, or is the sweep plus displacement enough for your NQ entries?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-07T13:01:28.949Z",
+    "permalink": "/r/ICTMentorship/comments/1upjwdh/im_less_than_100_away_from_100k_in_prop_firm/ow2s54e/",
+    "commentId": "ow2s54e"
   }
 ]
