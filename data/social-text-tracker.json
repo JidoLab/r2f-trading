@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "tip",
     "challenge",
     "myth",
     "question",
@@ -29,11 +28,12 @@
     "poll",
     "hot-take",
     "story",
-    "quote"
+    "quote",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "quote",
-    "text": "\"Smart money doesn't chase price. It waits for price to come to it.\"\n\n— This is why you stop trading FOMO and start trading ORDER BLOCKS. 🎯\n\n#ICTTrading #OrderBlocks #SmartMoneyConcepts",
-    "date": "2026-07-06T12:00:25.131Z"
+    "type": "poll-native",
+    "text": "NFP week is here 👀 How do you trade high-impact news? #ICTTrading #NFP\n\n🅰️ Sit it out\n🅱️ Trade the sweep\n🅲️ Fade the spike\n🅳️ Wait for retest\n\nVote below! 👇",
+    "date": "2026-07-07T12:00:48.288Z"
   }
 }
