@@ -150,5 +150,14 @@
       "day3",
       "day4"
     ]
+  },
+  {
+    "email": "ravihkyada@gmail.com",
+    "name": "rk",
+    "date": "2026-07-07T12:12:30.679Z",
+    "day": 0,
+    "emailsSent": [
+      "day1"
+    ]
   }
 ]
