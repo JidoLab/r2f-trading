@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1783425670126-p707l",
+    "platform": "youtube",
+    "postTitle": "ICT AMD MODEL Explained in Tamil | Gold &amp; Forex Trading #smc",
+    "postUrl": "https://youtube.com/watch?v=EsnHexuvCF4",
+    "authorName": "Tamil Traders Academy",
+    "suggestedReply": "Nice to see the AMD model getting explained in Tamil for gold traders. I drill this into my students constantly. the accumulation phase on gold is where most people get confused and jump in too early before manipulation has even played out. Are you covering how to identify the true distribution target using higher timeframe PD arrays or keeping it purely to the model structure itself?",
+    "createdAt": "2026-07-07T12:01:10.126Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783425673956-n38kx",
+    "platform": "youtube",
+    "postTitle": "LIVE Day Trading Futures | ICT concepts | 2026-07-07",
+    "postUrl": "https://youtube.com/watch?v=2fgwaS_Y8xA",
+    "authorName": "Tipsy Trader",
+    "suggestedReply": "I was watching how you navigated the futures session on July 7th and it reminded me of a week I had trading NQ where the 8:30 killzone kept sweeping liquidity before any real displacement showed up. I drill into my students that futures require patience at the open, especially waiting for that first 15 minute close to confirm institutional intent. Most rush entries and get chopped. Did you find the AM session cleaner than the PM today?",
+    "createdAt": "2026-07-07T12:01:13.956Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783425677284-p8349",
+    "platform": "youtube",
+    "postTitle": "🔴 Nifty &amp; BankNifty LIVE  | sensex live trading | live trading || 07 jul",
+    "postUrl": "https://youtube.com/watch?v=XExRvfapJcg",
+    "authorName": "PM TRADER 2.0",
+    "suggestedReply": "Watching BankNifty live sessions like this is valuable but I always tell my students to anchor their bias from the higher timeframe first before dropping into the 15m for entries. So many traders jump straight into the noise without identifying the daily or 4h liquidity pools first. Are you using HTF draw on liquidity to frame your BankNifty trades, or purely reacting to price action intraday?",
+    "createdAt": "2026-07-07T12:01:17.284Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783425680388-01iiz",
+    "platform": "youtube",
+    "postTitle": "Buy Side vs Sell Side Liquidity | ICT Trading Strategy Explained, #shorts #viral",
+    "postUrl": "https://youtube.com/watch?v=BBR4LnhQyZU",
+    "authorName": "Ashish FX ",
+    "suggestedReply": "Buy side and sell side liquidity is foundational but most traders miss the sequencing. I drill into my students that you need to identify which side was swept FIRST before committing to a direction. On pairs like Cable or Euro, price will often raid sell side, then reverse to take buy side before the real move develops. Understanding that sweep order changes everything about your entries.",
+    "createdAt": "2026-07-07T12:01:20.388Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783425684189-ff40f",
+    "platform": "youtube",
+    "postTitle": "In Gold Traders Are Missing This ONE Market Structure Setup | ICT Gold Trading Strategy",
+    "postUrl": "https://youtube.com/watch?v=1PpDSFGI51g",
+    "authorName": "Forex Insider Official ",
+    "suggestedReply": "Interesting take on the market structure setup, but in my experience the \"missing\" piece for most gold traders isn't identifying the setup itself. it's waiting for a proper displacement confirmation on the 15 minute before committing to the trade. I drill this into my students constantly because gold loves to engineer liquidity above key highs before delivering the real move. The setup means nothing without understanding the delivery mechanism behind it.",
+    "createdAt": "2026-07-07T12:01:24.189Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783425687756-4xuog",
+    "platform": "youtube",
+    "postTitle": "GOLD Live Trading Session Tamil | Forex Trading Live #ict #smc #ftmochallenge",
+    "postUrl": "https://youtube.com/watch?v=ZKlw1TSLFfg",
+    "authorName": "Tamil Traders Academy",
+    "suggestedReply": "I drill this into my students every session. trading gold on the 15 minute during London open is where ICT concepts really shine, especially when you are hunting liquidity sweeps before the true displacement move. the FTMO challenge is where most traders blow it by chasing entries instead of waiting for confirmation. patience at key Asian range levels separates funded traders from the rest.",
+    "createdAt": "2026-07-07T12:01:27.756Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783425690912-0llvl",
+    "platform": "youtube",
+    "postTitle": "Live GOLD and CRYPTO Scalping Trading | DAY 279 #goldtrading #cryptotrading #bitcoin",
+    "postUrl": "https://youtube.com/watch?v=eQKu_05B6tw",
+    "authorName": "ICT ENIGMA",
+    "suggestedReply": "Scalping gold and crypto on the same session is no joke, the liquidity profiles are completely different. The displacement reading you showed on the gold setup is exactly what I drill into my students before they touch any intraday scalp. Most traders jump into the FVG without confirming that the displacement candle actually closed with conviction, and on gold especially, that habit gets expensive fast.",
+    "createdAt": "2026-07-07T12:01:30.912Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783425694024-2ks2m",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE Day Trading Futures | ES NQ | ICT Concepts | July 6",
+    "postUrl": "https://youtube.com/watch?v=2AYNsc0OxyI",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Interesting take trading both ES and NQ simultaneously on a live session. In my experience, I tell my students to anchor to one instrument until they fully understand its delivery patterns, because ES and NQ have different volatility profiles that can pull your bias in opposite directions during the same killzone. Watching how you managed confluences between the two is genuinely useful content though.",
+    "createdAt": "2026-07-07T12:01:34.024Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1783298716997-ckn01",
     "platform": "investinglive",
     "postTitle": "PBOC is expected to set the USD/CNY reference rate at 6.7850 – Reuters estimate",
