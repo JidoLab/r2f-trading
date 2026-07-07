@@ -1,0 +1,27 @@
+{
+  "date": "2026-07-07T12:03:23.843Z",
+  "today": "2026-07-07",
+  "topicsAttempted": [
+    null,
+    null,
+    null
+  ],
+  "results": [
+    {
+      "title": "NFP Week Order Block Setup That Funded Traders Use (2026)",
+      "status": "rendering"
+    },
+    {
+      "title": "I Blew 3 Funded Accounts Before NFP Week Taught Me This",
+      "status": "rendering"
+    },
+    {
+      "title": "",
+      "status": "error",
+      "error": "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo"
+    }
+  ],
+  "errors": [
+    "ElevenLabs: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your quo"
+  ]
+}
