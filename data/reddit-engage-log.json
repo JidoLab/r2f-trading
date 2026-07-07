@@ -4730,5 +4730,75 @@
     "commentedAt": "2026-07-06T13:00:38.047Z",
     "permalink": "/r/InnerCircleTraders/comments/1uo7543/coding_an_ict_model_with_claude_fable/ovvensm/",
     "commentId": "ovvensm"
+  },
+  {
+    "postId": "1uoz89k",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Is this setup valid?",
+    "commentText": "yeah the setup can be valid, but without seeing a chart it's hard to say if you've got the right pieces aligned. the key thing for a new ICT trader is making sure you've got a clear BOS on a higher timeframe before dropping down to look for an OB or FVG to enter from. what pair and timeframe are you looking at, drop the chart and i'll tell you if the structure actually supports the trade 👀",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-07T08:00:15.355Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uoz89k/is_this_setup_valid/ow1lthi/",
+    "commentId": "ow1lthi"
+  },
+  {
+    "postId": "1upme4v",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAU/USD: Bearish Retracement in Play",
+    "commentText": "on the 15m, mark the last bearish candle before that impulsive rally that created the BoS. that candle is your OB, and price retracing into 4,160, 4,175 is basically sitting right in that zone tbh. if price sweeps back into it during NY killzone open (2:30pm London / 8:30am NY), watch for a bullish displacement candle off that level before touching a trigger. what does your 15m OB look like relative to the 4H FVG left behind from the impulse? drop the chart if you want, happy to walk through the confluence on this one.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-07T08:00:24.113Z",
+    "permalink": "/r/Forexstrategy/comments/1upme4v/xauusd_bearish_retracement_in_play/ow1lu44/",
+    "commentId": "ow1lu44"
+  },
+  {
+    "postId": "1upfkk4",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Can you Spot the First Sign of a Trend Reversal?",
+    "commentText": "the CHoCH you're pointing to is solid, but imo the CISD only really matters if it forms on a timeframe where there's a clean liquidity pool above that 4165 zone. if price is just wicking into old sell side inefficiency without sweeping buyside first, that retest could be a trap rather than a genuine mitigation. what timeframe is this on? 4h and daily tell a very different story for XAUUSD right now, and i'd want to see where the closest unmitigated OB sits before calling that resistance confirmed 👀",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-07T08:00:31.194Z",
+    "permalink": "/r/Forexstrategy/comments/1upfkk4/can_you_spot_the_first_sign_of_a_trend_reversal/ow1lulr/",
+    "commentId": "ow1lulr"
+  },
+  {
+    "postId": "1upbjz3",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Liquidity + MMXM + NWOG = Winning",
+    "commentText": "stacking the NWOG rejection with the -1 stddev is clean confluence, tbh that combo alone filters out a lot of noise. the sellside liquidity sweep before the reversal is what really confirms it, price needed that fuel to push. curious what timeframe you were using to spot the equal highs for the NY long entry, 15m or lower?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-07T08:00:37.946Z",
+    "permalink": "/r/InnerCircleTraders/comments/1upbjz3/liquidity_mmxm_nwog_winning/ow1lv2x/",
+    "commentId": "ow1lv2x"
+  },
+  {
+    "postId": "1upmrfz",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Gold defended one price 7 times in 30 hours — it finally cracked overnight, hours before the Fed minutes. Full map + honest read [chart]",
+    "commentText": "the air pocket you mapped between 4,120 and 4,088 is exactly where ICT would call an untested inefficiency, and tbh the wick behavior you're describing (fake below, rescue, repeat) is classic liquidity engineering before a real displacement. the 4,128-31 floor getting tested that many times isn't strength, it's the market printing a liquidity pool above every failed bounce. closes below 4,120 on the 1H or 4H are what matter here, not wicks. curious whether you're tracking any bearish FVGs left behind on those rejection legs off 4,164-78, because if price retaps one of those before the Fed minutes that's your entry confirmation model right there. happy to walk through how i'd layer that with the OB structure you've already got if it helps.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-07T08:00:47.188Z",
+    "permalink": "/r/Forexstrategy/comments/1upmrfz/gold_defended_one_price_7_times_in_30_hours_it/ow1lvpw/",
+    "commentId": "ow1lvpw"
+  },
+  {
+    "postId": "1up0xxr",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Textbook example of my RIMC setup on ES today",
+    "commentText": "the 15 second BOS confirmation before committing to the zone is honestly the right call on ES, imo. most people get chopped up fading into demand because they're entering on the touch alone without waiting for price to actually show intent on a lower timeframe. holding through to the prior highs sweep and then moving to breakeven is clean trade management too, nothing to fix there. curious whether your RIMC level lines up with a specific internal structure concept like an OB or FVG, or is it purely the origin candle of the prior BOS you're keying off?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-07T08:00:55.503Z",
+    "permalink": "/r/InnerCircleTraders/comments/1up0xxr/textbook_example_of_my_rimc_setup_on_es_today/ow1lwau/",
+    "commentId": "ow1lwau"
+  },
+  {
+    "postId": "1upagbr",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Too much information",
+    "commentText": "been there tbh, and the \"too much to look for\" feeling is almost always a sign you're trying to trade concepts instead of trading price. pick one thing, like a daily bias using the 8:30am NY session BOS, then drop to the 15m and only look for a single OB or FVG that aligns with it. ignore everything else until that one setup clicks consistently. are you building your bias top-down from the daily, or are you starting straight on a lower timeframe? that changes everything about which concepts actually matter in the moment.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-07T08:01:05.481Z",
+    "permalink": "/r/InnerCircleTraders/comments/1upagbr/too_much_information/ow1lx1d/",
+    "commentId": "ow1lx1d"
   }
 ]
