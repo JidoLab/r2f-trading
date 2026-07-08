@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1783512070646-9ek57",
+    "platform": "youtube",
+    "postTitle": "GOLD Live Trading Session Tamil | Forex Trading Live #ict #smc #ftmochallenge",
+    "postUrl": "https://youtube.com/watch?v=ts-JZ5a-Sb0",
+    "authorName": "Tamil Traders Academy",
+    "suggestedReply": "Interesting take on live gold trading with ICT concepts. In my experience, I teach my students to wait for a proper MSS on the 15 minute before entering during the London or New York session, rather than reacting to every liquidity sweep in real time. Gold is emotional and the AMD cycle plays out more cleanly when you let price confirm displacement first. Great to see the Tamil trading community getting into structured methodology.",
+    "createdAt": "2026-07-08T12:01:10.646Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783512073272-gr51w",
+    "platform": "youtube",
+    "postTitle": "LIVE DayTrading! ICT CONCEPTS!!!!",
+    "postUrl": "https://youtube.com/watch?v=5ZPu2f-RhBQ",
+    "authorName": "Patrick Wieland",
+    "suggestedReply": "Live trading ICT concepts is where most students actually learn to trust the process. I notice a lot of newer traders watching live sessions like this focus too much on entry and miss the PD arrays that confirm the move is legit. Do you lean more on FVGs or order blocks when you're trading live with the clock ticking?",
+    "createdAt": "2026-07-08T12:01:13.272Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783512077063-nlp4i",
+    "platform": "youtube",
+    "postTitle": "Live Futures Trading, GIVEAWAY, $182,611 Last Year, NQ Trading, Prop Firms, ICT Trading, Day Trading",
+    "postUrl": "https://youtube.com/watch?v=000vNryBGR4",
+    "authorName": "Cove Trader",
+    "suggestedReply": "I ran a funded NQ account through a prop firm two years ago and the psychological difference between sim and live capital is something I drill into my students constantly. The $182k figure is real but what most people miss is that NQ's volatility during killzone sessions is where the edge actually lives. I tell my students to focus on the 15m fair value gaps during New York open before scaling into anything larger.",
+    "createdAt": "2026-07-08T12:01:17.063Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783512081146-9kkih",
+    "platform": "youtube",
+    "postTitle": "DAY TRADING ICT CONCEPTS | 7/7/2026",
+    "postUrl": "https://youtube.com/watch?v=G5Zrz28pw14",
+    "authorName": "Tanja Trades",
+    "suggestedReply": "Interesting take on day trading ICT for a Tuesday session. In my experience, I teach my students to prioritize the London to New York killzone overlap before hunting for any model entry, because that confluence window filters out a lot of the noise that traps newer traders on lower timeframes. The displacement and CISD combination tends to play out cleaner in that window than forcing setups outside it.",
+    "createdAt": "2026-07-08T12:01:21.146Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783512084823-oy1ql",
+    "platform": "youtube",
+    "postTitle": "SMART MONEY CONCEPTS ADVANCED TECHNICAL ANALYSIS #trading #smartmoneyconcepts #stockmarket #news",
+    "postUrl": "https://youtube.com/watch?v=68Dwu8QPDic",
+    "authorName": "The Village Investors",
+    "suggestedReply": "Advanced SMC on higher timeframes is where the real edge lives. I drill into my students that most retail traders jump straight to the 15m without understanding how institutional order flow is structured on the daily and 4H first. Do you cover how to align your HTF bias before dropping into lower timeframe entries in this series?",
+    "createdAt": "2026-07-08T12:01:24.823Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783512088068-cw9q6",
+    "platform": "youtube",
+    "postTitle": "🔥 LIVE Trading in தமிழ் | ICT + Smart Money Concepts + Price Action 📈 #ict  #smc  #tamiltrader",
+    "postUrl": "https://youtube.com/watch?v=I77mrKiNH7k",
+    "authorName": "TREND_TRADER",
+    "suggestedReply": "The Smart Money Concepts breakdown here is clean. One thing I drill into my students when combining ICT with price action is to wait for the displacement candle to fully close before marking your FVG. Most people draw the inefficiency mid-candle and then wonder why price keeps wicking through their entry. Did you filter by session for your entries here or trade all session opens?",
+    "createdAt": "2026-07-08T12:01:28.068Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783512091490-zshmz",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE | Forex &amp; Crypto Trading | Price Action • Liquidity • Smart Money Concepts 7-JULY-2026",
+    "postUrl": "https://youtube.com/watch?v=rKedLOMrp9U",
+    "authorName": "Sanatani Traders",
+    "suggestedReply": "Smart money concepts combined with liquidity sweeps is exactly what I drill into my students before they ever think about entering a position. On days like July 7th the killzone timing matters more than most people realize, especially when you're mapping out higher timeframe draw on liquidity first. Are you prioritizing the Asian session highs and lows as your initial reference points before London opens, or working purely from the daily structure?",
+    "createdAt": "2026-07-08T12:01:31.490Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783512094919-oeueg",
+    "platform": "youtube",
+    "postTitle": "🔥 ITH / ITL Strategy Live Trading | Learn Smart Money Concepts &amp; Price Action 📈",
+    "postUrl": "https://youtube.com/watch?v=7sv6JQODtac",
+    "authorName": "Trade with Haidar",
+    "suggestedReply": "ITH and ITL concepts are something I drill into my students before they even think about entries. Most of them struggle early on because they're marking intermediate term highs and lows on the 15m and getting chopped out constantly. Do you find the ITH/ITL structure holds cleaner on the 1H or 4H when defining your bias before dropping down for execution?",
+    "createdAt": "2026-07-08T12:01:34.919Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1783425702256-1r4kw",
     "platform": "investinglive",
     "postTitle": "Oil traders await the US CPI data after war premium fades and prices stabilize above $68",
