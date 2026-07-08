@@ -4942,5 +4942,15 @@
     "commentedAt": "2026-07-08T03:01:48.501Z",
     "permalink": "/r/InnerCircleTraders/comments/1uqb1er/first_payout_after_8_years/ow7tsee/",
     "commentId": "ow7tsee"
+  },
+  {
+    "postId": "1uqlc7t",
+    "subreddit": "Trading",
+    "postTitle": "Getting stopped out before price moves in my direction. What am I missing?",
+    "commentText": "i had this exact problem on eurusd earlier this year, kept getting stopped out of 15M OBs by like 3-5 pips then price ripped 40 pips in my direction. what fixed it for me was waiting for the 15M BOS, then dropping to the 5M and looking for a secondary displacement candle that leaves an FVG, then entering from the 5M FVG instead of the 15M OB directly. the 15M OB entry puts your SL right where smart money needs to grab liquidity before the actual run. curious what session you're mostly taking these entries in, because that changes a lot about where the real entry should be.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-08T18:01:33.478Z",
+    "permalink": "/r/Trading/comments/1uqlc7t/getting_stopped_out_before_price_moves_in_my/owc1lth/",
+    "commentId": "owc1lth"
   }
 ]
