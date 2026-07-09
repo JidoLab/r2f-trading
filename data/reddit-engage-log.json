@@ -4931,7 +4931,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-08T03:01:41.872Z",
     "permalink": "/r/proptrading/comments/1upr9q0/hy/ow7trt3/",
-    "commentId": "ow7trt3"
+    "commentId": "ow7trt3",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-08T03:08:53.000Z",
+    "firstReplyAuthor": "Potential-Put-1900",
+    "firstReplyText": "Bro, in rules it says consistency is calculated by biggest profitable trade of the cycle divided by total profit.  \nI want to ask that total profit is our net profit that we have in our account currently or gross profit that we made the profit from all winning trades excluding the loosing trades.  \n"
   },
   {
     "postId": "1uqb1er",
@@ -5001,7 +5005,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-07-09T03:01:11.183Z",
     "permalink": "/r/Forexstrategy/comments/1uqshxi/gold_just_triggered_panic_selling_but_i_think_the/owf2wfv/",
-    "commentId": "owf2wfv"
+    "commentId": "owf2wfv",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-09T03:13:08.000Z",
+    "firstReplyAuthor": "mrboyfunk",
+    "firstReplyText": "I anchor the bias on the 4H but I execute on the 15m The higher timeframe gives me the zone, the lower timeframe gives me the trigger.\nBy acceptance, I mean multiple 15m closes holding above the reclaimed level after a sweep not just a wick. If price can't hold it, I don't take the trade."
   },
   {
     "postId": "1uqrnkm",
@@ -5062,15 +5070,5 @@
     "commentedAt": "2026-07-09T08:00:40.940Z",
     "permalink": "/r/InnerCircleTraders/comments/1ur390l/new_trading_psychology_book/owg7xn6/",
     "commentId": "owg7xn6"
-  },
-  {
-    "postId": "1uravss",
-    "subreddit": "Trading",
-    "postTitle": "Thinking of starting day trading this summer. Need advice from people who actually trade.",
-    "commentText": "tbh the prop firm vs CFD question is actually the wrong starting point for someone at zero experience. most people wash out of FTMX-style challenges not because they can't trade, but because they never learned to read price properly before risking challenge fees. spend the summer on one thing: understanding how price moves from one liquidity pool to the next, specifically during london session on something like GU (gbpusd) on the 15m. learn what a BOS looks like, find the FVG left behind, and just observe it for weeks before touching real money. that foundation transfers to any market, prop firm or not. what does your current screen time actually look like, are you watching charts live or mostly reading about concepts?",
-    "mentionedR2F": true,
-    "commentedAt": "2026-07-09T13:01:27.963Z",
-    "permalink": "/r/Trading/comments/1uravss/thinking_of_starting_day_trading_this_summer_need/owhfm23/",
-    "commentId": "owhfm23"
   }
 ]
