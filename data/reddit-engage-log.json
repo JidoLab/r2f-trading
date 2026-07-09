@@ -5070,5 +5070,45 @@
     "commentedAt": "2026-07-09T08:00:40.940Z",
     "permalink": "/r/InnerCircleTraders/comments/1ur390l/new_trading_psychology_book/owg7xn6/",
     "commentId": "owg7xn6"
+  },
+  {
+    "postId": "1urwrv7",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Balanced price range and breakay gaps",
+    "commentText": "the \"balanced\" part is the catch most people miss tbh. price isn't confirmed balanced just because it consolidated between two points. you're looking for the range to have been fully traded through, with equal distribution of FVGs on both sides before that breakaway gap forms and leaves an unmitigated imbalance above or below the range. the gap itself is your clue that price had to move aggressively because liquidity wasn't available inside the old range anymore. what pair and timeframe are you seeing this on? drop the chart here and i'll point out exactly where the balanced condition starts and ends.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-09T18:00:52.664Z",
+    "permalink": "/r/InnerCircleTraders/comments/1urwrv7/balanced_price_range_and_breakay_gaps/owjdfm3/",
+    "commentId": "owjdfm3"
+  },
+  {
+    "postId": "1uro3hj",
+    "subreddit": "Forexstrategy",
+    "postTitle": "🟡 XAU/USD is coiling at a make-or-break level right now here's the exact number that decides the next 30 points",
+    "commentText": "4114 isn't the real level imo, the actual decision point is whether price can close a 15m candle above that shelf with a clean body, not just a wick tag. three taps at the same resistance without a proper BOS above it is actually bearish order flow, not bullish compression, and that RSI at 57 on the 15m means nothing if the 1h is still printing lower highs. tbh i'd want to see a displacement candle through 4114 during new york open before committing to the long, otherwise you're just buying into resistance for the fourth time. are you marking that 4114 level off a prior 15m swing high or is there an OB on the higher timeframe sitting right there?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-09T18:01:01.558Z",
+    "permalink": "/r/Forexstrategy/comments/1uro3hj/xauusd_is_coiling_at_a_makeorbreak_level_right/owjdgvm/",
+    "commentId": "owjdgvm"
+  },
+  {
+    "postId": "1uri047",
+    "subreddit": "Forexstrategy",
+    "postTitle": "🚀 INSIDE THE OPERATOR'S MIND: GOLD'S NEXT MOVE EXPLAINED!",
+    "commentText": "the $4100 psychological level acting as a liquidity magnet makes total sense here, that's a classic stop hunt setup before a real expansion move. the sellers stacking shorts below $4100 are basically fueling the next leg up, which is exactly how smart money engineers the move. curious though, are you marking that $4118-$4124 resistance zone off the H4 OB or pulling it from a daily FVG? makes a big difference for how aggressively you'd want to manage the trade once price gets there.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-09T18:01:09.419Z",
+    "permalink": "/r/Forexstrategy/comments/1uri047/inside_the_operators_mind_golds_next_move/owjdi14/",
+    "commentId": "owjdi14"
+  },
+  {
+    "postId": "1urhqip",
+    "subreddit": "Forexstrategy",
+    "postTitle": "🚨 GOLD Ready for the Next Big Move!",
+    "commentText": "the demand zone reaction looks clean on the 5M, but tbh the catch here is that 4,062 sitting as your invalidation is pretty close to where a lot of liquidity rests below the asian session low. if price sweeps that low before pushing up, a lot of people get stopped out right before the real move, which is the classic sell-side liquidity grab ICT guys talk about constantly. the \"aggressive buyer\" candles could actually just be short covering rather than genuine institutional accumulation. curious whether you've checked if there's an unmitigated 15M FVG sitting below 4,062 that could be the actual draw before price heads to 4,100?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-09T18:01:18.323Z",
+    "permalink": "/r/Forexstrategy/comments/1urhqip/gold_ready_for_the_next_big_move/owjdja0/",
+    "commentId": "owjdja0"
   }
 ]
