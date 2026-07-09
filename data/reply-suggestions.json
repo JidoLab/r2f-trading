@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1783557049531-8og3g",
+    "platform": "youtube",
+    "postTitle": "Fibonacci OTE Trading Strategy With Price Action #trading #priceaction #fibonacci",
+    "postUrl": "https://youtube.com/watch?v=YQ0Y6UWz-gU",
+    "authorName": "Com Lucro Trader",
+    "suggestedReply": "The OTE zone hits different when you confluence it with a Market Structure Shift on the lower timeframe first. I teach my students to never take a Fibonacci OTE entry blindly. Wait for the MSS to confirm displacement before committing, especially on pairs like dollar yen where fib levels tend to get swept aggressively before price respects the 62 to 79 percent zone.",
+    "createdAt": "2026-07-09T00:30:49.531Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783557052820-pbb6e",
+    "platform": "youtube",
+    "postTitle": "ICT Gems: Understanding Fair Value Gaps(FVG) and Orderblocks(OB) | ICT Concepts",
+    "postUrl": "https://youtube.com/watch?v=tkgVcqvekiI",
+    "authorName": "URAH ICT",
+    "suggestedReply": "Most of my students confuse Orderblocks with simple supply and demand zones until I show them how displacement confirms the OB is actually institutional. The FVG left behind after that displacement is the real entry confirmation I teach them to wait for. Are you pairing these two concepts together on the higher timeframes like the 4H before dropping to the 15m for precision entries?",
+    "createdAt": "2026-07-09T00:30:52.820Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783557055606-56q29",
+    "platform": "youtube",
+    "postTitle": "2 Brutal Breakevens | Live Trading | ICT Concepts | July 8, 2026",
+    "postUrl": "https://youtube.com/watch?v=fNrW347580E",
+    "authorName": "Tyler Trades",
+    "suggestedReply": "Two breakevens in one session is brutal but honestly it's a mindset test more than anything. I drill into my students that getting stopped at BE means your read was right, your timing just needed refinement. Were these during a specific killzone or did price sweep liquidity before the move fully committed?",
+    "createdAt": "2026-07-09T00:30:55.606Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783557059015-qfjeh",
+    "platform": "youtube",
+    "postTitle": "8 July | NY Gold Live Trading | XAUUSD Live Analysis | ICT &amp; SPX | Gold Sharks",
+    "postUrl": "https://youtube.com/watch?v=SWFMaCPcRoA",
+    "authorName": "GoldSharks",
+    "suggestedReply": "NY session on XAUUSD is where I see most traders get chopped up, especially when SPX correlation starts diverging mid session. The ICT approach works well here but watch out for the killzone overlap when equities are running a different narrative to gold. I drill into my students to always check SPX displacement before committing to a gold entry in NY, because that correlation break will stop you out fast.",
+    "createdAt": "2026-07-09T00:30:59.015Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783557062580-9pe89",
+    "platform": "youtube",
+    "postTitle": "SHORTED TOO EARLY... DAY TRADING ICT CONCEPTS | 7/8/2026",
+    "postUrl": "https://youtube.com/watch?v=FaBr9KNb0kQ",
+    "authorName": "Tanja Trades",
+    "suggestedReply": "Shorting too early is one of the most expensive habits in ICT trading and I drill this into my students constantly. Waiting for price to raid a liquidity pool and then show a confirmed shift in market structure on the 15m before committing to a short entry eliminates most of those premature fills. Did you have a draw on liquidity target in mind when you pulled the trigger, or were you reacting more to the candle structure in that moment?",
+    "createdAt": "2026-07-09T00:31:02.580Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783557066455-nyea5",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE | London Session Trading | ICT &amp; Smart Money Concepts",
+    "postUrl": "https://youtube.com/watch?v=e0FF7_zlMNo",
+    "authorName": "Paper To Payout ",
+    "suggestedReply": "London session is where most retail traders get hunted before the real move develops. What I drill into my students is to wait for the 8-9am GMT kill zone to fully print before committing to a bias. That first sweep of Asian range highs or lows often creates the displacement that confirms which side smart money is actually positioned on.",
+    "createdAt": "2026-07-09T00:31:06.455Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783557070091-cxugx",
+    "platform": "youtube",
+    "postTitle": "🔥 LIVE Trading in தமிழ் | ICT + Smart Money Concepts + Price Action 📈 #ict  #smc  #tamiltrader",
+    "postUrl": "https://youtube.com/watch?v=rNtUiT3a85w",
+    "authorName": "TREND_TRADER",
+    "suggestedReply": "Combining ICT with price action in live sessions is exactly how I train my students to think in real time, not just in hindsight. The Smart Money Concepts piece is powerful but I notice most traders applying it on lower timeframes without confirming the higher timeframe bias first. Are you using the 1H or 4H structure to filter your entries during these live sessions?",
+    "createdAt": "2026-07-09T00:31:10.091Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783557073628-y0mhv",
+    "platform": "youtube",
+    "postTitle": "🔴XAUUSD LIVE | SMART MONEY CONCEPTS in action | KSLBFOREX #trading #live #shorts #crypto",
+    "postUrl": "https://youtube.com/watch?v=fDwM3pdVk5A",
+    "authorName": "Znx",
+    "suggestedReply": "The Smart Money Concepts approach on XAUUSD is where I see most traders struggle with patience. I drill into my students that on gold specifically, the displacement candle confirming the move is everything. Most people see the FVG form and jump in immediately, but waiting for that impulsive close to validate the inefficiency separates clean entries from getting chopped. Did you filter by session here or purely structure?",
+    "createdAt": "2026-07-09T00:31:13.628Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1783512102779-3ip69",
     "platform": "investinglive",
     "postTitle": "Gold stays under pressure amid US-Iran escalation and increase in rate hike bets",
