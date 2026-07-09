@@ -5042,5 +5042,25 @@
     "commentedAt": "2026-07-09T03:01:45.892Z",
     "permalink": "/r/ICTMentorship/comments/1uqmx4c/looking_for_a_small_ict_trading_group/owf2zvu/",
     "commentId": "owf2zvu"
+  },
+  {
+    "postId": "1uqsgy1",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Is this liquidity sweep valid?",
+    "commentText": "on the 15m, mark the last down candle before the displacement that created your IFVG. that's your actual entry candle, your refined OB. if price swept liquidity but then came back into that candle during NY killzone and you weren't using it as your entry reference, the setup was probably valid but your entry was off, not your read. tbh the trump news probably just accelerated the move into your SL before it found the real bid. what did your 15m displacement look like, clean single candle or more of a gradual push?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-09T08:00:29.378Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uqsgy1/is_this_liquidity_sweep_valid/owg7wsw/",
+    "commentId": "owg7wsw"
+  },
+  {
+    "postId": "1ur390l",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "New Trading Psychology Book",
+    "commentText": "i had this exact problem during a 20k eval last year, blew day 5 because i was up near the daily drawdown limit and froze on a textbook bearish FVG fill on eurusd 15m that i would've taken without hesitation in a demo. chapter 5 is the one that's going to hit people hardest tbh, that \"fear of being wrong on camera\" framing is exactly it, it's not fear of losing money, it's fear of looking stupid in front of your own journal. the payout proximity chapter too, i self-sabotaged two funded accounts in q1 of this year right when i was close to hitting withdrawal thresholds. curious whether you're planning to address the difference between single-phase and two-phase eval psychology separately, because the mental reset between phase 1 and phase 2 is its own thing that most people completely underestimate.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-09T08:00:40.940Z",
+    "permalink": "/r/InnerCircleTraders/comments/1ur390l/new_trading_psychology_book/owg7xn6/",
+    "commentId": "owg7xn6"
   }
 ]
