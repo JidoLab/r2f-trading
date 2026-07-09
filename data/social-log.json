@@ -1800,5 +1800,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-09T12:01:52.207Z",
+    "type": "text",
+    "postType": "promo-results",
+    "text": "R2F traders are passing funded challenges at 85%+ — right through CPI weeks. Volatility doesn't scar",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
