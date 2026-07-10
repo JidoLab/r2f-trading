@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "question",
     "poll",
     "story",
     "hot-take",
@@ -29,11 +28,12 @@
     "quote",
     "poll-native",
     "promo-free-class",
-    "promo-results"
+    "promo-results",
+    "promo-checklist"
   ],
   "lastPost": {
-    "type": "promo-results",
-    "text": "R2F traders are passing funded challenges at 85%+ — right through CPI weeks. Volatility doesn't scare structure. It rewards it. See the proof 👇 https://r2ftrading.com/results #ICTTrading #FundedTrader #SmartMoneyConcepts",
-    "date": "2026-07-09T12:01:51.226Z"
+    "type": "promo-checklist",
+    "text": "NFP + CPI next week = chaos if you're not prepared. I use this checklist before every single trade. Pre-trade, during, post-trade — it keeps me disciplined when the market wants to wreck you. Grab it free 👇 https://r2ftrading.com #ICTTrading #SmartMoneyConcepts #NFP",
+    "date": "2026-07-10T12:00:47.565Z"
   }
 }
