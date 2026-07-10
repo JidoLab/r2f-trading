@@ -243,7 +243,8 @@
       "coachingCta",
       "valueRecap",
       "lastChance"
-    ]
+    ],
+    "staleReengageSent": true
   },
   {
     "email": "keerthivasanchampionvasan@gmail.com",
@@ -421,7 +422,7 @@
   {
     "email": "mohdsharairy1996@gmail.com",
     "date": "2026-07-02T00:23:05.911Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-dwavs5",
     "referredBy": null,
     "referralCount": 0,
@@ -432,7 +433,8 @@
     "lastActivity": "2026-07-02T00:23:05.911Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ]
   },
   {
