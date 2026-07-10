@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1783684854548-3niv9",
+    "platform": "youtube",
+    "postTitle": "Longest Stream Ever! | LIVE Day Trading Futures | ICT concepts | 2026-07-10",
+    "postUrl": "https://youtube.com/watch?v=0i3tVw3tqhc",
+    "authorName": "Tipsy Trader",
+    "suggestedReply": "Respect the grind on the longest stream ever, that kind of screen time during live futures sessions is where real learning happens. ICT concepts shine in real time but I always warn my students to be extra cautious with CISD setups during extended sessions when your mental sharpness drops after hour four or five. Decision fatigue leads to chasing entries that don't meet the full criteria. Did you notice your trade quality shifting at all in the later hours?",
+    "createdAt": "2026-07-10T12:00:54.548Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783684858342-zjjz2",
+    "platform": "youtube",
+    "postTitle": "Bitcoin Trading Strategy (80% Win Rate?) | ICT BTC Setup Explained",
+    "postUrl": "https://youtube.com/watch?v=eHPgfNd77Eg",
+    "authorName": "ICT CHARTER & CHARTIST",
+    "suggestedReply": "One thing that separates consistent BTC setups from lottery trades is session alignment. I drill into my students that even an 80% win rate strategy collapses fast if you're taking ICT entries outside the New York kill zone or London open, where smart money is actually moving price. Pairing the setup with higher timeframe PD arrays as confluence is what keeps that stat honest.",
+    "createdAt": "2026-07-10T12:00:58.342Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783684864481-vkad7",
+    "platform": "youtube",
+    "postTitle": "Order Block &amp; Fair Value Gap (FVG) Explained | ICT + SMC Trading Strategy | Lesson 1 | Ms trading ⭐",
+    "postUrl": "https://youtube.com/watch?v=Dxnn6lQeWIA",
+    "authorName": "Fidaii Trading Wala FTW",
+    "suggestedReply": "One thing I always add on top of the Order Block and FVG combo is confluence with session timing. I drill into my students that an FVG sitting inside a breaker block means very little without asking WHEN price is approaching it. London open and New York AM session are where these setups actually deliver, not random midday consolidation. What session are you building your examples around in the next lesson?",
+    "createdAt": "2026-07-10T12:01:04.481Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783684867829-ju781",
+    "platform": "youtube",
+    "postTitle": "LIVE TRADING📊 GOLD XAUUSD &amp; BTC LIVE ANALYSIS #ICT #GoldTrading #LiveTrading #SMC",
+    "postUrl": "https://youtube.com/watch?v=DT0eIAQB65Q",
+    "authorName": "Sniper Liquidity FX",
+    "suggestedReply": "Interesting take on the XAUUSD analysis. In my experience, gold and BTC actually behave quite differently during the same session windows, and I teach my students to separate their SMC confluences for each asset rather than applying the same framework identically to both. Gold respects institutional order flow at higher timeframes more consistently, while BTC can manipulate those same levels aggressively. Worth keeping that distinction sharp when trading them side by side.",
+    "createdAt": "2026-07-10T12:01:07.829Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783684871272-dxlpn",
+    "platform": "youtube",
+    "postTitle": "Live Futures Trading, GIVEAWAY, $182,611 Last Year, NQ Trading, Prop Firms, ICT Trading, Day Trading",
+    "postUrl": "https://youtube.com/watch?v=TFx_RsBRFbk",
+    "authorName": "Cove Trader",
+    "suggestedReply": "NQ prop firm challenges are where most traders blow up chasing entries without confirmation. I drill into my students that on NQ specifically, you need to see the displacement candle close before even considering an FVG entry. The liquidity moves too fast on futures and that one habit alone has saved several of my students from busting funded accounts early.",
+    "createdAt": "2026-07-10T12:01:11.272Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783684874930-ctqlf",
+    "platform": "youtube",
+    "postTitle": "SMART MONEY CONCEPTS ADVANCED TECHNICAL ANALYSIS #trading #smartmoneyconcepts #stockmarket",
+    "postUrl": "https://youtube.com/watch?v=WWXKENjBtBM",
+    "authorName": "The Village Investors",
+    "suggestedReply": "Smart Money Concepts only clicks when you understand the delivery mechanism. I drill into my students that identifying an order block means nothing without confirming the higher timeframe bias first. On forex pairs especially, a 4H breaker paired with a 15M FVG gives you a precision entry that most traders miss because they skip the top down analysis step.",
+    "createdAt": "2026-07-10T12:01:14.930Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783684878289-xozdi",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE Gold Trading | XAUUSD Price Action &amp; Smart Money Concepts (SMC) Stream Session #2",
+    "postUrl": "https://youtube.com/watch?v=DEPJm20MCZs",
+    "authorName": "FX Sigma",
+    "suggestedReply": "The SMC displacement candle identification on XAUUSD is where most traders leak their edge. I drill this into my students constantly. gold respects institutional orderflow more aggressively than most pairs, so if you're marking your FVG without confirming the displacement candle that created it, you're entering on structure that hasn't been validated. That one filter alone changes everything on session opens.",
+    "createdAt": "2026-07-10T12:01:18.289Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783684881384-7x1jr",
+    "platform": "youtube",
+    "postTitle": "🔥 ITH / ITL Strategy Live Trading | Learn Smart Money Concepts &amp; Price Action 📈",
+    "postUrl": "https://youtube.com/watch?v=IIZIr54RcQ0",
+    "authorName": "Trade with Haidar",
+    "suggestedReply": "The ITH to ITL mapping is something I drill into my students constantly because most of them rush the entry the moment price sweeps a high. The displacement confirmation before committing to the shift in market structure is what separates a clean SMC trade from a revenge setup. On higher timeframe pairs especially, waiting for that internal range to fully form before sizing in makes a significant difference in your hit rate.",
+    "createdAt": "2026-07-10T12:01:21.384Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1783557912344-rpg2f",
     "platform": "investinglive",
     "postTitle": "PBOC is expected to set the USD/CNY reference rate at 6.7978 – Reuters estimate",
