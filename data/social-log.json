@@ -1829,5 +1829,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-10T12:00:51.299Z",
+    "type": "text",
+    "postType": "promo-checklist",
+    "text": "NFP + CPI next week = chaos if you're not prepared. I use this checklist before every single trade. ",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
