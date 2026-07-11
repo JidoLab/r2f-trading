@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll",
     "story",
     "hot-take",
     "story",
@@ -29,11 +28,12 @@
     "poll-native",
     "promo-free-class",
     "promo-results",
-    "promo-checklist"
+    "promo-checklist",
+    "tip"
   ],
   "lastPost": {
-    "type": "promo-checklist",
-    "text": "NFP + CPI next week = chaos if you're not prepared. I use this checklist before every single trade. Pre-trade, during, post-trade — it keeps me disciplined when the market wants to wreck you. Grab it free 👇 https://r2ftrading.com #ICTTrading #SmartMoneyConcepts #NFP",
-    "date": "2026-07-10T12:00:47.565Z"
+    "type": "tip",
+    "text": "CPI drops this week. Don't trade the candle — trade the setup BEFORE it. Smart money is already positioned. Your job is to find the order blocks they'll defend. #ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-07-11T12:00:55.354Z"
   }
 }
