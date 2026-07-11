@@ -5164,5 +5164,15 @@
     "commentedAt": "2026-07-10T13:01:36.797Z",
     "permalink": "/r/InnerCircleTraders/comments/1urpo9r/please_do_yourself_a_favor_and_go_through_trade/owovyjl/",
     "commentId": "owovyjl"
+  },
+  {
+    "postId": "1usq98d",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "ICT actually works, coming from an ICT hater. [Read if you are unsure about ICT]",
+    "commentText": "since you're doing bar replay, try marking the last down candle before the displacement that creates the FVG on the 15m, specifically during NY killzone setups on NQ or ES. that one candle is usually your actual OB, not the whole cluster people tend to draw. a lot of missed entries you mentioned are probably because the entry zone is slightly off, not because price didn't come back. curious what pair or instrument you were replaying when most of those missed trades hit TP, happy to help you narrow the zone if you drop some context here.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-11T03:01:13.593Z",
+    "permalink": "/r/InnerCircleTraders/comments/1usq98d/ict_actually_works_coming_from_an_ict_hater_read/owtrdtz/",
+    "commentId": "owtrdtz"
   }
 ]
