@@ -5192,5 +5192,45 @@
     "commentedAt": "2026-07-11T08:01:00.359Z",
     "permalink": "/r/Trading/comments/1usif5y/title_has_anyone_here_traded_with_wemastertrade/owuv2rb/",
     "commentId": "owuv2rb"
+  },
+  {
+    "postId": "1uttcrf",
+    "subreddit": "Trading",
+    "postTitle": "Any working Strategies?",
+    "commentText": "tbh the issue probably isn't the concepts themselves, it's that ifvgs and lq sweeps need confluence with a clear higher timeframe draw on liquidity to still hit consistently in 2026. if you're just taking every fvg you see without confirming the HTF PD array it's pointing into, the edge evaporates fast. supply and demand won't fix that either, it'll just give you more reasons to enter bad trades. what pairs are you trading this on, and are you marking your fvgs on the 15m or waiting for a 1h close to confirm the zone?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-12T03:01:18.154Z",
+    "permalink": "/r/Trading/comments/1uttcrf/any_working_strategies/ox0j2da/",
+    "commentId": "ox0j2da"
+  },
+  {
+    "postId": "1utdyce",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Gold  1H Analysis  Rejection from FVG, Is Another Sell-Off Coming",
+    "commentText": "try marking the last bearish candle before that displacement into the 4,135 FVG on the 15m. if price revisits it during NY killzone tomorrow and can't close above it, that's your confirmation the FVG is holding as resistance, not just a trendline story. tbh the 4,020 support is the more interesting level to me right now anyway. what session did that FVG form in, london or NY?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-12T03:01:24.654Z",
+    "permalink": "/r/Forexstrategy/comments/1utdyce/gold_1h_analysis_rejection_from_fvg_is_another/ox0j315/",
+    "commentId": "ox0j315"
+  },
+  {
+    "postId": "1utgx7v",
+    "subreddit": "proptrading",
+    "postTitle": "I finally did it… I got my 1 payout",
+    "commentText": "been there with the blown accounts, so this genuinely hits. 71% with ICT is solid, especially because most people wash out trying to force the model before they understand how PD arrays actually sequence during killzones. curious what your bread and butter setup looks like, are you mainly working off the 15m OB into a 1m entry during london or NY? happy to walk through the entry model with you right here if you want to break it down.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-12T03:01:31.602Z",
+    "permalink": "/r/proptrading/comments/1utgx7v/i_finally_did_it_i_got_my_1_payout/ox0j3q7/",
+    "commentId": "ox0j3q7"
+  },
+  {
+    "postId": "1utugkt",
+    "subreddit": "Trading",
+    "postTitle": "After months of research, I found a profitable ETHUSDT trading strategy",
+    "commentText": "combining MACD with ICT is honestly an interesting choice, because ICT structure is already giving you a directional bias, so the MACD can end up being redundant noise on a 1H ETHUSDT chart. the thing that jumps out at me is your walk-forward results, specifically how the strategy held up during the high-volatility regimes ETH had in early 2026. if an OB or FVG gets blown through during a liquidity sweep on a news spike, no indicator combo saves you from that. curious what your drawdown looked like specifically during those volatile stretches, because that's usually where automated bots on crypto futures get exposed 👀",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-12T03:01:41.431Z",
+    "permalink": "/r/Trading/comments/1utugkt/after_months_of_research_i_found_a_profitable/ox0j4o0/",
+    "commentId": "ox0j4o0"
   }
 ]
