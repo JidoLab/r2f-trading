@@ -1,327 +1,5 @@
 [
   {
-    "date": "2026-05-31T12:00:39.281Z",
-    "type": "text",
-    "postType": "poll-native",
-    "text": "It's Sunday — time to set your weekly bias. Which tool do you trust MOST going into the week? #ICTTr",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-05-31T12:02:07.021Z",
-    "slug": "2026-05-31-why-knowing-ict-perfectly-won-t-make-you-profitable",
-    "title": "Why Knowing ICT Perfectly Won't Make You Profitable",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
-    "date": "2026-05-31T14:00:36.859Z",
-    "slug": "2026-05-17-the-boredom-that-kills-ict-traders",
-    "title": "The Boredom That Kills ICT Traders",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
-    "date": "2026-06-01T12:01:21.126Z",
-    "type": "text",
-    "postType": "promo-blog",
-    "text": "NFP week + Monday London open = liquidity trap season. Smart money is already setting up the sweep. ",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-06-01T12:03:15.186Z",
-    "slug": "2026-06-01-why-you-keep-failing-phase-2-not-phase-1",
-    "title": "Why You Keep Failing Phase 2 (Not Phase 1)",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
-    "date": "2026-06-02T12:00:24.610Z",
-    "type": "text",
-    "postType": "promo-coaching",
-    "text": "NFP week = liquidity hunt season. Most traders get wrecked. Mine don't. I have 2 coaching spots open",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-06-02T12:02:37.661Z",
-    "slug": "2026-06-02-your-trading-journal-is-lying-to-you",
-    "title": "Your Trading Journal Is Lying to You",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
-    "date": "2026-06-03T06:02:28.890Z",
-    "slug": "2026-06-03-why-knowing-ict-concepts-isn-t-making-you-money",
-    "title": "Why Knowing ICT Concepts Isn't Making You Money",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "success"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
     "date": "2026-06-03T12:00:36.466Z",
     "type": "text",
     "postType": "question",
@@ -1914,6 +1592,55 @@
       {
         "platform": "discord",
         "status": "success"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-12T14:00:49.690Z",
+    "slug": "2026-06-02-your-trading-journal-is-lying-to-you",
+    "title": "Your Trading Journal Is Lying to You",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error",
+        "message": "{\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
+      },
+      {
+        "platform": "reddit-sub",
+        "status": "success"
+      },
+      {
+        "platform": "reddit-profile",
+        "status": "success"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: chat not found\"}"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
       }
     ]
   }
