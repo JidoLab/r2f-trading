@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1783857713055-cw9ox",
+    "platform": "youtube",
+    "postTitle": "MSNR Hindi Tutorial | Liquidity Sweep + SNR Trading Strategy | | MSNR + SMC/ICT  | MSNR ALCHEMIST",
+    "postUrl": "https://youtube.com/watch?v=3z1Q0yeYabA",
+    "authorName": "Forex Insider Official ",
+    "suggestedReply": "The liquidity sweep into SNR confluencing with SMC structure is exactly where most traders hesitate. I drill into my students that the sweep itself is not the signal. You need to see price REJECT the level with a strong displacement candle on the 15m or 5m before committing to an entry. Did you cover filtering sweeps by session timing in this one?",
+    "createdAt": "2026-07-12T12:01:53.055Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783857715809-wuzp4",
+    "platform": "youtube",
+    "postTitle": "ICT Trading Strategy + Delta Profile | Futures Short Setup #ict #orderflow #nq",
+    "postUrl": "https://youtube.com/watch?v=w2Lro5pg7O8",
+    "authorName": "Michael Pitts",
+    "suggestedReply": "Interesting take combining delta profile with the short setup. In my experience I teach my students to wait for a confirmed displacement on the 15 minute before committing to NQ futures shorts, because delta alone can be misleading during low liquidity windows. The confluence of order flow and an ICT PD array gives you a much cleaner entry with defined risk.",
+    "createdAt": "2026-07-12T12:01:55.809Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783857718956-vgy6b",
+    "platform": "youtube",
+    "postTitle": "🔥 Day 4/365 | Liquidity Strategy Kaise Kaam Karti Hai? | World Trader #stockmarket #trading #viral",
+    "postUrl": "https://youtube.com/watch?v=CMa2k0QKFWE",
+    "authorName": "THE WORLD TRADER",
+    "suggestedReply": "Liquidity strategy hits different when you layer in session context. Most traders hunt stops without asking WHERE price is likely to draw to next, and that's the missing piece. I teach my students to map out the daily inefficiencies before the session opens so they already know which liquidity pool is the premium target. Are you planning to cover buyside vs sellside liquidity selection in future days of this series?",
+    "createdAt": "2026-07-12T12:01:58.956Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783857722741-8y7aa",
+    "platform": "youtube",
+    "postTitle": "🔴 BTC &amp; GOLD Live Scalping Entery | $500 Challenge | ICT + SMC Strategy | 11 July | FlipperxForex",
+    "postUrl": "https://youtube.com/watch?v=puM8vd7Q85Q",
+    "authorName": "FlipperX Forex",
+    "suggestedReply": "Interesting take on scalping both BTC and gold simultaneously for the $500 challenge. In my experience, I actually teach my students to isolate one asset per session rather than splitting focus, because gold and BTC have very different liquidity profiles at the same kill zone and your bias can get muddied fast. On gold especially, waiting for a clean CISD on the 5m before committing to a scalp entry has saved my students from a lot of premature fills.",
+    "createdAt": "2026-07-12T12:02:02.741Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783857726127-v0p24",
+    "platform": "youtube",
+    "postTitle": "Market Bias importance #ict ￼",
+    "postUrl": "https://youtube.com/watch?v=5XSiRATfl0I",
+    "authorName": "Trader Abdul Rehman ",
+    "suggestedReply": "Market bias is the foundation everything else is built on. I drill this into my students constantly. knowing whether you're looking to buy or sell before price even moves saves you from chasing setups on the wrong side of the draw. Most traders skip the higher timeframe bias and wonder why their entries keep failing. Are you using weekly premium and discount arrays to confirm before dropping to your execution timeframe?",
+    "createdAt": "2026-07-12T12:02:06.127Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783857730408-vik3j",
+    "platform": "youtube",
+    "postTitle": "Order Block &amp; FVG Explained 🎯 | Smart Money Concept",
+    "postUrl": "https://youtube.com/watch?v=iWJKDuskKH4",
+    "authorName": "DMC Trading India",
+    "suggestedReply": "Order blocks and FVGs are powerful together but here is the caveat I always give my students. A mitigation block sitting inside an unmitigated FVG will often cause price to stall before the real move, and most traders misread that as the order block failing. On pairs like GBPUSD, I teach my students to confirm with the higher timeframe bias first before committing to any OB entry. Context always beats the setup alone.",
+    "createdAt": "2026-07-12T12:02:10.408Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783857734645-8a1p1",
+    "platform": "youtube",
+    "postTitle": "ALL ADVANCED BIAS Explained - ICT Concepts ( MASTERCLASS )",
+    "postUrl": "https://youtube.com/watch?v=-ltn8tIvWjg",
+    "authorName": "Vaxsa",
+    "suggestedReply": "The advanced bias section hits on something I drill into my students constantly. When you're building directional bias, most traders anchor to the wrong swing. The non-obvious detail is confirming your bias shift on the higher timeframe BEFORE dropping to execution. On forex majors especially, a premature bias read on the 1H without 4H confirmation will get you chopped apart every session.",
+    "createdAt": "2026-07-12T12:02:14.645Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1783857738357-86tqa",
+    "platform": "youtube",
+    "postTitle": "Gold (XAU/USD) Weekly Analysis | Smart Money Concepts (SMC) #xauusd #goldanalysis #gold",
+    "postUrl": "https://youtube.com/watch?v=Ef8vheKEsm4",
+    "authorName": "Muhammad Shakeel Ghumman",
+    "suggestedReply": "Interesting take on applying SMC to XAU/USD weekly analysis. In my experience, gold responds better to premium and discount arrays when you anchor your bias from the monthly chart first, then drop to the weekly for confirmation. I drill this into my students because jumping straight to weekly structure on gold without that higher timeframe context is where most of them get chopped up.",
+    "createdAt": "2026-07-12T12:02:18.357Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1783771371995-wd20w",
     "platform": "investinglive",
     "postTitle": "Only one thing has driven FX markets this year - Deutche Bank",
