@@ -9,6 +9,8 @@ function getClient(): Resend {
   return resendClient;
 }
 
+const SITE_URL = "https://r2ftrading.com";
+
 export async function sendEmail(
   to: string,
   subject: string,
@@ -16,11 +18,19 @@ export async function sendEmail(
   attachments?: { filename: string; content: Buffer }[]
 ) {
   const resend = getClient();
+  // One-click unsubscribe (RFC 8058) — required by Gmail/Yahoo for bulk senders,
+  // and a strong signal against spam-foldering. reply_to routes replies to a real inbox.
+  const unsubscribeUrl = `${SITE_URL}/api/unsubscribe?email=${encodeURIComponent(to)}`;
   await resend.emails.send({
     from: "R2F Trading <noreply@r2ftrading.com>",
     to,
     subject,
     html,
+    replyTo: "road2funded@gmail.com",
+    headers: {
+      "List-Unsubscribe": `<${unsubscribeUrl}>, <mailto:road2funded@gmail.com?subject=unsubscribe>`,
+      "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+    },
     attachments: attachments?.map((a) => ({
       filename: a.filename,
       content: a.content,

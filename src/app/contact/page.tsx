@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CalendlyEmbed from "@/components/CalendlyEmbed";
 import PageTracker from "@/components/PageTracker";
-import PreQualQuiz from "@/components/PreQualQuiz";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -64,7 +63,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <PreQualQuiz />
+          <CalendlyEmbed />
 
           <div className="mt-16 border-t border-gray-200 pt-12">
             <h2

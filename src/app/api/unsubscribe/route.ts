@@ -3,7 +3,15 @@ import { readFile, commitFile } from "@/lib/github";
 
 export async function POST(req: NextRequest) {
   try {
-    const { email } = await req.json();
+    // Accept email from the query string (RFC 8058 one-click POST from Gmail/Yahoo)
+    // or from a JSON body (the on-site unsubscribe page).
+    let email = req.nextUrl.searchParams.get("email") || "";
+    if (!email) {
+      try {
+        const body = await req.json();
+        email = (body?.email as string) || "";
+      } catch {}
+    }
     if (!email) return NextResponse.json({ error: "Email required" }, { status: 400 });
 
     // Remove from subscribers
