@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { readFile, commitFile } from "@/lib/github";
+import { verifyAdmin } from "@/lib/admin-auth";
 
 interface Task {
   id: string;
@@ -130,6 +131,9 @@ function getLast7Days(history: DayEntry[], today: string): { date: string; day: 
 }
 
 export async function GET(req: NextRequest) {
+  if (!(await verifyAdmin())) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   try {
     const url = new URL(req.url);
     const countOnly = url.searchParams.get("countOnly") === "true";
@@ -178,6 +182,9 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest) {
+  if (!(await verifyAdmin())) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   try {
     const { taskId } = await req.json();
     if (!taskId) return NextResponse.json({ error: "taskId required" }, { status: 400 });

@@ -109,6 +109,13 @@ export async function POST(req: NextRequest) {
     const messageId = message.id;
     const senderName = value?.contacts?.[0]?.profile?.name || "Unknown";
 
+    // senderPhone is interpolated into a GitHub file path below
+    // (data/whatsapp-chats/<senderPhone>.json). Validate it is a plain phone
+    // number so a forged payload can't traverse/overwrite other data files.
+    if (typeof senderPhone !== "string" || !/^[0-9]{6,15}$/.test(senderPhone)) {
+      return NextResponse.json({ status: "ok" });
+    }
+
     // Mark as read immediately
     markAsRead(messageId).catch(() => {});
 

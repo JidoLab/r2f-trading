@@ -1,29 +1,69 @@
 import { NextRequest, NextResponse } from "next/server";
 import { commitFile, readFile } from "@/lib/github";
 import { isWhatsAppConfigured, sendWhatsAppMessage } from "@/lib/whatsapp";
+import { verifyPayPalOrder } from "@/lib/paypal";
+import { escapeHtml, sanitizeText, isValidEmail } from "@/lib/sanitize";
 
 export async function POST(req: NextRequest) {
   try {
-    const { plan, amount, payerEmail, payerName, orderId, status } = await req.json();
+    const body = await req.json();
+    const orderId = typeof body.orderId === "string" ? body.orderId : "";
+    if (!orderId) {
+      return NextResponse.json({ error: "Missing order id" }, { status: 400 });
+    }
 
-    const payment = {
+    // SERVER-SIDE VERIFICATION: confirm the order is a real, COMPLETED PayPal
+    // payment before recording anything. Without this, the endpoint trusted the
+    // client's POST body and anyone could fabricate a payment + spam emails.
+    const v = await verifyPayPalOrder(orderId);
+    if (!v.ok) {
+      console.error(`[payment-success] PayPal verification failed: ${v.reason}`);
+      return NextResponse.json(
+        { error: "Payment could not be verified" },
+        { status: 402 }
+      );
+    }
+
+    // Trusted values from PayPal; only the plan label comes from the client.
+    const plan = sanitizeText(body.plan, 60) || "Coaching";
+    const amount = v.amount || "";
+    const payerEmail = (v.payerEmail || body.payerEmail || "").toString().trim();
+    const payerName = sanitizeText(v.payerName || body.payerName || "", 80);
+    if (!isValidEmail(payerEmail)) {
+      return NextResponse.json({ error: "Invalid payer email" }, { status: 400 });
+    }
+
+    const today = new Date().toISOString().split("T")[0];
+
+    // Idempotency: a replayed/duplicate POST for the same order must not create
+    // a second payment record (which would inflate revenue totals).
+    let payments: Record<string, unknown>[] = [];
+    try {
+      payments = JSON.parse(await readFile("data/payments.json"));
+    } catch {}
+    if (payments.some((p) => p.orderId === orderId)) {
+      return NextResponse.json({ success: true, duplicate: true });
+    }
+
+    payments.push({
       plan,
       amount,
       payerEmail,
       payerName,
       orderId,
-      status,
+      status: v.status,
       date: new Date().toISOString(),
-    };
+    });
+    await commitFile(
+      "data/payments.json",
+      JSON.stringify(payments, null, 2),
+      `Payment: ${plan} — $${amount}`
+    );
 
-    // Save payment record to GitHub
-    const today = new Date().toISOString().split("T")[0];
-    let payments: Record<string, unknown>[] = [];
-    try {
-      payments = JSON.parse(await readFile("data/payments.json"));
-    } catch {}
-    payments.push(payment);
-    await commitFile("data/payments.json", JSON.stringify(payments, null, 2), `Payment: ${plan} — $${amount} from ${payerEmail}`);
+    const safePlan = escapeHtml(plan);
+    const safeName = escapeHtml(payerName || "there");
+    const safeAmount = escapeHtml(amount);
+    const safeOrder = escapeHtml(orderId);
 
     // Send confirmation email to buyer
     try {
@@ -36,12 +76,12 @@ export async function POST(req: NextRequest) {
             <h1 style="color:#c9a84c;margin:0;font-size:28px;">Payment Confirmed!</h1>
           </div>
           <div style="padding:32px;background:#f9f9f9;border-radius:0 0 8px 8px;">
-            <p style="color:#333;font-size:16px;">Hey ${payerName || "there"},</p>
+            <p style="color:#333;font-size:16px;">Hey ${safeName},</p>
             <p style="color:#555;">Thank you for investing in your trading journey with R2F Trading! Your payment has been received.</p>
             <div style="background:white;padding:20px;border-radius:8px;border:1px solid #e5e5e5;margin:20px 0;">
-              <p style="margin:0 0 8px;color:#333;"><strong>Plan:</strong> ${plan}</p>
-              <p style="margin:0 0 8px;color:#333;"><strong>Amount:</strong> $${amount} USD</p>
-              <p style="margin:0;color:#333;"><strong>Order ID:</strong> ${orderId}</p>
+              <p style="margin:0 0 8px;color:#333;"><strong>Plan:</strong> ${safePlan}</p>
+              <p style="margin:0 0 8px;color:#333;"><strong>Amount:</strong> $${safeAmount} USD</p>
+              <p style="margin:0;color:#333;"><strong>Order ID:</strong> ${safeOrder}</p>
             </div>
             <p style="color:#555;"><strong>What happens next:</strong></p>
             <ol style="color:#555;">
@@ -63,15 +103,15 @@ export async function POST(req: NextRequest) {
       const { sendEmail } = await import("@/lib/resend");
       await sendEmail(
         "road2funded@gmail.com",
-        `💰 New Payment: ${plan} — $${amount} from ${payerEmail}`,
+        `💰 New Payment: ${plan} — $${amount}`,
         `<div style="font-family:Arial,sans-serif;max-width:600px;">
           <h2 style="color:#0d2137;">New Payment Received!</h2>
           <div style="background:#f0fff0;padding:20px;border-radius:8px;border:1px solid #90ee90;">
-            <p style="margin:0 0 8px;"><strong>Plan:</strong> ${plan}</p>
-            <p style="margin:0 0 8px;"><strong>Amount:</strong> $${amount} USD</p>
-            <p style="margin:0 0 8px;"><strong>Email:</strong> ${payerEmail}</p>
-            <p style="margin:0 0 8px;"><strong>Name:</strong> ${payerName || "N/A"}</p>
-            <p style="margin:0 0 8px;"><strong>PayPal Order:</strong> ${orderId}</p>
+            <p style="margin:0 0 8px;"><strong>Plan:</strong> ${safePlan}</p>
+            <p style="margin:0 0 8px;"><strong>Amount:</strong> $${safeAmount} USD</p>
+            <p style="margin:0 0 8px;"><strong>Email:</strong> ${escapeHtml(payerEmail)}</p>
+            <p style="margin:0 0 8px;"><strong>Name:</strong> ${safeName}</p>
+            <p style="margin:0 0 8px;"><strong>PayPal Order:</strong> ${safeOrder}</p>
             <p style="margin:0;"><strong>Date:</strong> ${today}</p>
           </div>
           <p style="color:#555;margin-top:16px;">Reach out to schedule their first session!</p>
@@ -89,8 +129,7 @@ export async function POST(req: NextRequest) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             chat_id: chatId,
-            text: `💰 *NEW PAYMENT*\n\nPlan: ${plan}\nAmount: $${amount}\nEmail: ${payerEmail}\nName: ${payerName || "N/A"}\nOrder: ${orderId}\n\nReach out to schedule their first session!`,
-            parse_mode: "Markdown",
+            text: `💰 NEW PAYMENT\n\nPlan: ${plan}\nAmount: $${amount}\nEmail: ${payerEmail}\nName: ${payerName || "N/A"}\nOrder: ${orderId}\n\nReach out to schedule their first session!`,
           }),
         });
       }
@@ -99,15 +138,12 @@ export async function POST(req: NextRequest) {
     // WhatsApp payment confirmation (non-blocking)
     try {
       if (isWhatsAppConfigured()) {
-        // Look up subscriber's phone number
         let subscriberPhone: string | undefined;
         try {
           const subsRaw = await readFile("data/subscribers.json");
           const subscribers = JSON.parse(subsRaw);
           const sub = subscribers.find((s: { email: string; phone?: string }) => s.email === payerEmail);
-          if (sub?.phone) {
-            subscriberPhone = sub.phone;
-          }
+          if (sub?.phone) subscriberPhone = sub.phone;
         } catch {}
 
         if (subscriberPhone) {
@@ -120,14 +156,13 @@ export async function POST(req: NextRequest) {
       }
     } catch {}
 
-    // Save student record for onboarding automation
+    // Save student record for onboarding automation (idempotent by orderId)
     try {
       let students: Record<string, unknown>[] = [];
       try {
         students = JSON.parse(await readFile("data/students.json"));
       } catch {}
 
-      // Avoid duplicates — skip if student with same orderId exists
       const exists = students.some((s) => s.orderId === orderId);
       if (!exists) {
         const nextCheckIn = new Date();

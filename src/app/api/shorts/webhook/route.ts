@@ -59,6 +59,13 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
+    // Idempotency: the render service can retry a "succeeded" callback. Without
+    // this guard a retry re-uploads the same video to YouTube/FB/LinkedIn. If
+    // this render was already handled, stop here.
+    if (renderData.status === "published" || renderData.status === "ready") {
+      return NextResponse.json({ ok: true, duplicate: true });
+    }
+
     // Build copy text for manual platforms (TikTok, Instagram)
     const copyText = `${renderData.title}\n\n${renderData.description || ""}\n\n${(renderData.hashtags || []).join(" ")}`;
 

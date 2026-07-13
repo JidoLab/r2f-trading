@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { readFile, commitFile } from "@/lib/github";
 import { stripEmDashes } from "@/lib/copy-style";
+import { verifyAdmin } from "@/lib/admin-auth";
 import Anthropic from "@anthropic-ai/sdk";
 
 const IDEAS_PATH = "data/content-ideas-from-comments.json";
@@ -20,6 +21,9 @@ interface ContentIdea {
 }
 
 export async function GET() {
+  if (!(await verifyAdmin())) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   try {
     const raw = await readFile(IDEAS_PATH);
     const ideas: ContentIdea[] = JSON.parse(raw);
@@ -30,6 +34,9 @@ export async function GET() {
 }
 
 export async function POST(req: NextRequest) {
+  if (!(await verifyAdmin())) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   try {
     const body = await req.json();
     const { action, id } = body;

@@ -178,6 +178,13 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
+    // msg.from.id is interpolated into a GitHub file path
+    // (data/telegram-group-chats/<id>.json). Require a real integer id so a
+    // forged update can't traverse/target other data files.
+    if (!Number.isInteger(msg.from.id)) {
+      return NextResponse.json({ ok: true });
+    }
+
     // Only respond in group/supergroup chats
     if (msg.chat.type !== "group" && msg.chat.type !== "supergroup") {
       return NextResponse.json({ ok: true });
