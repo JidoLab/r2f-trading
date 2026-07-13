@@ -120,7 +120,7 @@ async function generateArticle(topic: string, category: string): Promise<{
 Topic: "${topic}"
 Category: ${category}
 
-Website URL: www.road2fundedtrading.com
+Website URL: www.r2ftrading.com
 
 CONTENT REQUIREMENTS:
 - Write 1000-1500 words of high-quality, SEO-optimized content

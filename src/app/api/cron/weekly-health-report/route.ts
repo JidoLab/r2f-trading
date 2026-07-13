@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { readFile, commitFile, listFiles } from "@/lib/github";
 import { getAllPosts } from "@/lib/blog";
+import { getSearchQueries } from "@/lib/search-console";
 
 export const maxDuration = 30;
 
@@ -106,6 +107,35 @@ export async function GET(req: NextRequest) {
       }
     } catch {}
 
+    // --- SEO opportunities (Search Console) ---
+    let seoSection = "";
+    try {
+      const gsc = await getSearchQueries();
+      if (gsc) {
+        const clean = (s: string) => s.replace(/[_*[\]`]/g, "");
+        const striking = gsc.contentGaps.slice(0, 5);
+        const ctrWins = gsc.topQueries
+          .filter((q) => q.position <= 10 && q.impressions >= 20 && q.ctr < 3)
+          .slice(0, 5);
+        const lines: string[] = [];
+        if (striking.length || ctrWins.length) {
+          lines.push(`\n🔎 *SEO Opportunities* (28d: ${gsc.totalClicks} clicks / ${gsc.totalImpressions} impressions)`);
+        }
+        if (striking.length) {
+          lines.push("\n_Push to page 1 (striking distance):_");
+          striking.forEach((g) => lines.push(`• ${clean(g.query)} (#${Math.round(g.position)}, ${g.impressions} impr)`));
+        }
+        if (ctrWins.length) {
+          lines.push("\n_Ranked but under-clicked (rewrite the title/meta):_");
+          ctrWins.forEach((q) => lines.push(`• ${clean(q.query)} (#${Math.round(q.position)}, ${q.ctr}% CTR)`));
+        }
+        if (lines.length) {
+          lines.push("\n[Open Search Insights](https://r2ftrading.com/admin/search-insights)");
+          seoSection = lines.join("\n");
+        }
+      }
+    } catch {}
+
     // --- Build trend indicators ---
     function trend(current: number, previous: number): string {
       if (previous === 0 && current === 0) return "—";
@@ -163,6 +193,7 @@ _Week ending ${today}_
 
 ✅ *Task Consistency*
 • Avg daily completion: *${taskCompletionRate}%*
+${seoSection}
 
 🔗 [Open Dashboard](https://r2ftrading.com/admin)`;
 
