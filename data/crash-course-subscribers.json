@@ -157,13 +157,14 @@
     "email": "ravihkyada@gmail.com",
     "name": "rk",
     "date": "2026-07-07T12:12:30.679Z",
-    "day": 4,
+    "day": 5,
     "emailsSent": [
       "day1",
       "day2",
       "day3",
       "day4",
-      "day5"
+      "day5",
+      "complete"
     ]
   }
 ]
