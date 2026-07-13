@@ -290,7 +290,7 @@
   {
     "email": "uh01012007@gmail.com",
     "date": "2026-06-18T06:17:03.035Z",
-    "dripsSent": 6,
+    "dripsSent": 7,
     "referralCode": "R2F-inlp91",
     "referredBy": null,
     "referralCount": 0,
@@ -310,7 +310,8 @@
       "successStory",
       "tradingPsychology",
       "propFirmTips",
-      "coachingCta"
+      "coachingCta",
+      "valueRecap"
     ]
   },
   {
