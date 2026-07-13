@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "hot-take",
     "story",
     "quote",
     "promo-free-class",
@@ -29,11 +28,12 @@
     "promo-results",
     "promo-checklist",
     "tip",
-    "myth"
+    "myth",
+    "promo-blog"
   ],
   "lastPost": {
-    "type": "myth",
-    "text": "MYTH: Trade every CPI release for big profits.\n\nTRUTH: Smart money positions BEFORE the news — by the time CPI drops, the move is already done.\n\nLearn to read the setup, not the headline.\n\n#ICTTrading #SmartMoneyConcepts #CPI",
-    "date": "2026-07-12T12:00:33.178Z"
+    "type": "promo-blog",
+    "text": "CPI week + smart money runs stops at London open. Most traders get wrecked. I broke down exactly how institutions position BEFORE inflation data drops. Read it 👇 https://r2ftrading.com/trading-insights #ICTtrading #SmartMoneyConcepts #FundedTrader",
+    "date": "2026-07-13T12:01:45.473Z"
   }
 }
