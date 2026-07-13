@@ -22,7 +22,7 @@
     "@tailwindcss/typography": "^0.5.19",
     "@vercel/analytics": "^2.0.1",
     "https-proxy-agent": "^9.0.0",
-    "next": "16.2.2",
+    "next": "16.2.10",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "resend": "^6.10.0"
