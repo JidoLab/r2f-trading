@@ -5296,5 +5296,25 @@
     "commentedAt": "2026-07-13T13:01:36.107Z",
     "permalink": "/r/Forexstrategy/comments/1uv4948/my_view_on_gold_today_remain_bearish/ox9leu4/",
     "commentId": "ox9leu4"
+  },
+  {
+    "postId": "1uv3pvi",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Trading during sessions",
+    "commentText": "the \"movement is strong and doesn't reach the area\" problem is super common with the logon shock setup, but the catch most people miss is they're marking their flip zone on the wrong side of the sweep. if the sweep takes out a low during london open, the displacement FVG that forms on the 1M *after* the sweep is usually your actual entry zone, not the old OB you were waiting on. the price is already in a new narrative by then and it's not coming back to where you thought. curious what session you're primarily trading this on and whether the sweep is happening before or after the NY open killzone? drop a chart if you want, happy to point out where the entry shift is actually occurring.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-13T18:01:47.254Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uv3pvi/trading_during_sessions/oxbh68g/",
+    "commentId": "oxbh68g"
+  },
+  {
+    "postId": "1uvfkqz",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "New to ICT trading, would love some feedback on my setups",
+    "commentText": "your process is actually solid for a beginner, the sweep into sellside then BOS into a FVG is a legit sequence. the part that's probably making it feel like guessing is that you're not accounting for whether price is in premium or discount relative to the daily range when you enter that FVG. if the FVG forms in premium after a sellside sweep, you're essentially fading the institutional flow instead of riding it, and that's where setups look clean but still fail. what pair and session are you trading this on, because that changes a lot about how reliable the FVG entries tend to be?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-13T18:01:55.194Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uvfkqz/new_to_ict_trading_would_love_some_feedback_on_my/oxbh7e1/",
+    "commentId": "oxbh7e1"
   }
 ]
