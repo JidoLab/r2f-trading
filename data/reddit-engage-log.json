@@ -5358,5 +5358,55 @@
     "commentedAt": "2026-07-14T08:00:54.637Z",
     "permalink": "/r/InnerCircleTraders/comments/1uvm04m/orderblock_or_not/oxfnbuw/",
     "commentId": "oxfnbuw"
+  },
+  {
+    "postId": "1uvd91s",
+    "subreddit": "proptrading",
+    "postTitle": "What’s the biggest non trading risk for funded traders?",
+    "commentText": "the record keeping one is massively underrated and i've seen it bite people hard. prop firms in 2026 are getting stricter about consistency rules, and if you can't demonstrate a repeatable process (entry model, session bias, confluences used) you're basically hoping support takes your word for it when a trade gets flagged. i treat every trade like i'm documenting an ICT setup, noting whether it was a London open FVG fill or a NY killzone OB, because that paper trail has saved accounts during disputes. curious which of those operational risks has actually cost you the most, because the rule misunderstandings one is a whole conversation on its own if you want to dig into it here.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-14T13:01:45.936Z",
+    "permalink": "/r/proptrading/comments/1uvd91s/whats_the_biggest_non_trading_risk_for_funded/oxguluv/",
+    "commentId": "oxguluv"
+  },
+  {
+    "postId": "1uvfomx",
+    "subreddit": "proptrading",
+    "postTitle": "I dont know what else to do i am i real tight situation",
+    "commentText": "the utc timezone swap without your consent is a legitimate grievance and honestly the kind of thing that gets firms in trouble when it's documented properly. your MT5 showing utc+2 versus their ctrader logs at utc+0 is a two hour discrepancy, which lines up exactly with what you're describing on that january 8th entry. tbh the screen recording correlating your entry with tradingview during a clean, no-news window on the nasdaq is solid evidence, firms can't really argue with timestamps side by side. what session were you targeting on that trade, london close or new york pm, because that context matters a lot if you escalate this further?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-14T13:01:56.535Z",
+    "permalink": "/r/proptrading/comments/1uvfomx/i_dont_know_what_else_to_do_i_am_i_real_tight/oxgun35/",
+    "commentId": "oxgun35"
+  },
+  {
+    "postId": "1uvaxu3",
+    "subreddit": "proptrading",
+    "postTitle": "Which prop firm is best for retail traders just getting started?",
+    "commentText": "you mentioned wanting clear rules and transparent payouts, so tbh the firm matters less than you think at this stage. what kills most beginners isn't picking the wrong firm, it's entering challenges before they have a repeatable edge on a single setup, like knowing exactly when a 15m OB is actually valid versus just a random candle before a move. what pairs are you currently focused on in demo, and are you trading any specific sessions like london open or new york AM? that actually changes which firm conditions suit you best, happy to break that down here if you want.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-14T13:02:04.413Z",
+    "permalink": "/r/proptrading/comments/1uvaxu3/which_prop_firm_is_best_for_retail_traders_just/oxguo0d/",
+    "commentId": "oxguo0d"
+  },
+  {
+    "postId": "1uvpp77",
+    "subreddit": "Trading",
+    "postTitle": "Why is making 10% per month in trading considered almost impossible?",
+    "commentText": "the 10% monthly thing is really an account size conversation, you nailed it in your post. on a $10k account it's mechanically possible, but the real problem is compounding risk. to hit 10% consistently you're either widening stops, overleveraging, or trading too many setups that don't actually have confluence, and that bleeds the account slowly over time. imo the 1% benchmark exists because it forces you to be selective, like only taking the htf FVG that aligns with a Tuesday london open displacement, not every pullback you see on the 15m. what does your current setup look like in terms of how many trades you're actually taking per month?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-14T13:02:13.794Z",
+    "permalink": "/r/Trading/comments/1uvpp77/why_is_making_10_per_month_in_trading_considered/oxgup4j/",
+    "commentId": "oxgup4j"
+  },
+  {
+    "postId": "1uvdfn7",
+    "subreddit": "Trading",
+    "postTitle": "What’s the biggest non trading risk for funded traders?",
+    "commentText": "honestly the biggest one imo is rule misunderstanding around news and killzone restrictions, specifically traders not knowing their firm's policy on holding through a high impact news event like NFP during the NY open session. i've seen people get disqualified on accounts they'd been building for weeks, not because of a bad trade but because they held a position two minutes into the 8:30 EST window without realizing it violated the terms. record keeping ties into this too, if you can't prove your entry timestamp you basically have no case when you go back and forth with support. what firm are you currently with, and are you running into any specific rule grey areas? happy to dig into it here if that helps",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-14T13:02:22.433Z",
+    "permalink": "/r/Trading/comments/1uvdfn7/whats_the_biggest_non_trading_risk_for_funded/oxguq5g/",
+    "commentId": "oxguq5g"
   }
 ]
