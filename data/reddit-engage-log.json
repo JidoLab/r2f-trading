@@ -5336,5 +5336,15 @@
     "commentedAt": "2026-07-14T03:00:53.138Z",
     "permalink": "/r/InnerCircleTraders/comments/1uvk7de/liquidity_sweep_and_fvg_explained_with_real_chart/oxej3nw/",
     "commentId": "oxej3nw"
+  },
+  {
+    "postId": "1uvm04m",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "ORDERBLOCK or NOT",
+    "commentText": "been on drawdown doesn't mean you're doing everything wrong, tbh it usually means you're taking valid setups but missing the higher timeframe context that invalidates them. a lot of OBs that look clean on the 15m are actually sitting inside a premium array on the 4h, so price just blows right through them. what pair are you trading and are you confirming BOS before entry or just taking the OB touch raw?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-14T08:00:54.637Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uvm04m/orderblock_or_not/oxfnbuw/",
+    "commentId": "oxfnbuw"
   }
 ]
