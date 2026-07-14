@@ -5316,5 +5316,25 @@
     "commentedAt": "2026-07-13T18:01:55.194Z",
     "permalink": "/r/InnerCircleTraders/comments/1uvfkqz/new_to_ict_trading_would_love_some_feedback_on_my/oxbh7e1/",
     "commentId": "oxbh7e1"
+  },
+  {
+    "postId": "1uvqjan",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Japanese Yen Short Covering Raises the Stakes for USD/JPY",
+    "commentText": "this happened to me last month on usdjpy, was watching the h4 and price swept a liquidity pool just under 162.50 right before new york open, classic pre-CPI stop hunt. the short covering made total sense in hindsight because there was a huge imbalance (FVG) left from the prior week's Asia session that price hadn't returned to fill. tbh the intervention risk alone was enough for me to flip bias and look for longs off the daily OB sitting lower rather than chase shorts into that resistance. curious what level you're watching for your entry and whether you're seeing any displacement on the lower timeframes yet, happy to break down the FVG confluence on this if it helps.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-14T03:00:43.337Z",
+    "permalink": "/r/Forexstrategy/comments/1uvqjan/japanese_yen_short_covering_raises_the_stakes_for/oxej2o6/",
+    "commentId": "oxej2o6"
+  },
+  {
+    "postId": "1uvk7de",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Liquidity Sweep and FVG Explained with Real Chart Examples",
+    "commentText": "the liquidity sweep concept hits different once you start pairing it with session context, tbh. a sweep during asian killzone vs london open are two completely different animals in terms of follow-through, and a lot of people miss that distinction when they're first learning this. the FVG that forms *after* the sweep is where the real entry lives, not the sweep itself. curious what timeframe you're using to identify the FVG after the sweep, are you looking at the 15m or 1h? makes a huge difference for whether that gap actually holds as a valid entry zone or just gets blown through.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-14T03:00:53.138Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uvk7de/liquidity_sweep_and_fvg_explained_with_real_chart/oxej3nw/",
+    "commentId": "oxej3nw"
   }
 ]
