@@ -495,5 +495,13 @@
       "bookCallSoft"
     ],
     "abandonmentEmailSent": true
+  },
+  {
+    "email": "karsen110@gmail.com",
+    "date": "2026-07-15T13:01:57.555Z",
+    "dripsSent": 0,
+    "referralCode": "R2F-yj9g01",
+    "referredBy": null,
+    "referralCount": 0
   }
 ]
