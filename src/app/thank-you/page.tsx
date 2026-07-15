@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   description: "Your free ICT Trading Checklist is on its way. Book a free discovery call while you wait.",
 };
 
+// Paste the recorded free-class video EMBED url here once it's recorded, e.g.
+// YouTube: https://www.youtube.com/embed/VIDEO_ID   or   Vimeo: https://player.vimeo.com/video/VIDEO_ID
+// Leave it "" to show a "coming soon, check your inbox" placeholder instead of a broken player.
+const FREE_CLASS_VIDEO_URL = "";
+
 export default function ThankYouPage() {
   return (
     <main>
@@ -26,11 +31,43 @@ export default function ThankYouPage() {
             You&apos;re In! Check Your Email
           </h1>
           <p className="text-white/60 text-lg mb-2">
-            Your free <span className="text-gold font-semibold">ICT Trading Checklist</span> is on its way to your inbox.
+            Watch your free <span className="text-gold font-semibold">ICT class</span> below. Your <span className="text-gold font-semibold">ICT Trading Checklist</span> is also on its way to your inbox.
           </p>
           <p className="text-white/40 text-sm">
-            While you wait, why not book a free discovery call?
+            Watch the class, then book a free call if you want help applying it.
           </p>
+        </div>
+      </section>
+
+      {/* Free class video */}
+      <section className="bg-[#0a1628] py-12 border-t border-white/5">
+        <div className="max-w-3xl mx-auto px-6">
+          <h2
+            className="text-2xl font-bold text-white text-center mb-2"
+            style={{ fontFamily: "var(--font-heading)" }}
+          >
+            Your Free ICT Class
+          </h2>
+          <p className="text-white/50 text-center text-sm mb-6">
+            The exact framework 50+ traders used to get funded. Grab a coffee and watch it start to finish.
+          </p>
+          {FREE_CLASS_VIDEO_URL ? (
+            <div className="aspect-video w-full rounded-lg overflow-hidden border border-white/10 bg-black">
+              <iframe
+                src={FREE_CLASS_VIDEO_URL}
+                title="Free ICT Class"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+          ) : (
+            <div className="rounded-lg border border-white/10 bg-white/5 p-10 text-center">
+              <p className="text-white/70 text-sm">
+                Your class is being finalized. We&apos;ll email you the link within 24 hours, along with your checklist.
+              </p>
+            </div>
+          )}
         </div>
       </section>
 

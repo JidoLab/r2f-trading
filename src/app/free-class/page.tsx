@@ -7,17 +7,17 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Free ICT Trading Class",
-  description: "Join our free live trading class and learn the ICT concepts that helped students get funded in under 60 days. Limited spots available.",
+  description: "Watch our free ICT trading class and learn the exact concepts that helped 50+ traders get funded. Instant access, no cost.",
   alternates: { canonical: "/free-class" },
   openGraph: {
     title: "Free ICT Trading Class — R2F Trading",
-    description: "Learn the exact ICT framework used by funded traders. Free live class with Harvest Wright.",
+    description: "Learn the exact ICT framework used by funded traders. Free ICT class with Harvest Wright.",
     url: "/free-class",
   },
 };
 
 const WHAT_YOU_LEARN = [
-  { icon: "📊", title: "The 3 ICT Setups That Actually Work", desc: "Cut through the noise — these are the only 3 setups you need to be consistently profitable." },
+  { icon: "📊", title: "The 3 ICT Setups That Actually Work", desc: "Cut through the noise. These are the only 3 setups you need to be consistently profitable." },
   { icon: "🎯", title: "How to Find High-Probability Entries", desc: "Stop guessing. Learn to read order blocks, fair value gaps, and liquidity sweeps like smart money." },
   { icon: "💰", title: "The Funded Account Blueprint", desc: "The exact step-by-step process our students use to pass prop firm challenges in under 60 days." },
   { icon: "🧠", title: "Trading Psychology Shortcuts", desc: "Why 90% of trading is mental — and the 3 mindset shifts that separate funded traders from everyone else." },
@@ -34,7 +34,7 @@ const jsonLd = {
   "@type": "Course",
   name: "Free ICT Trading Class",
   description:
-    "Learn the exact ICT concepts, setups, and risk management rules that helped 50+ traders get funded. Free live class with Harvest Wright.",
+    "Learn the exact ICT concepts, setups, and risk management rules that helped 50+ traders get funded. Free ICT class with Harvest Wright.",
   provider: {
     "@type": "Organization",
     name: "R2F Trading",
@@ -63,7 +63,7 @@ export default function FreeClassPage() {
       <section className="bg-navy py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <span className="inline-block bg-gold/20 text-gold text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-6">
-            Free Live Class
+            Free ICT Class
           </span>
           <h1
             className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight"
@@ -72,13 +72,13 @@ export default function FreeClassPage() {
             The ICT Framework That Got <span className="text-gold">50+ Traders Funded</span>
           </h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto mb-8">
-            Join a free live class where I break down the exact ICT concepts, setups, and risk management rules that my students use to pass funded challenges — in plain English.
+            Watch a free class where I break down the exact ICT concepts, setups, and risk management rules my students use to pass funded challenges, in plain English.
           </p>
           <div className="max-w-md mx-auto">
-            <EmailSignup variant="inline" />
+            <EmailSignup variant="inline" buttonLabel="Get Instant Access" />
           </div>
           <p className="text-white/30 text-xs mt-3">
-            Sign up to get the class link + free ICT Trading Checklist
+            Get instant access to the class plus the free ICT Trading Checklist.
           </p>
         </div>
       </section>
@@ -160,7 +160,7 @@ export default function FreeClassPage() {
             className="text-2xl font-bold text-white text-center mb-10"
             style={{ fontFamily: "var(--font-serif)" }}
           >
-            What Past Attendees Say
+            What Traders Say
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {TESTIMONIALS.map((t) => (
@@ -213,10 +213,10 @@ export default function FreeClassPage() {
             Ready to Trade Like Smart Money?
           </h2>
           <p className="text-white/50 text-sm mb-8">
-            Sign up now to reserve your spot. You&apos;ll also get our free ICT Trading Checklist immediately.
+            Get instant access to the class. You&apos;ll also get the free ICT Trading Checklist immediately.
           </p>
           <div className="max-w-md mx-auto">
-            <EmailSignup variant="inline" />
+            <EmailSignup variant="inline" buttonLabel="Get Instant Access" />
           </div>
           <p className="text-white/20 text-xs mt-4">
             100% free. No credit card. Unsubscribe anytime.

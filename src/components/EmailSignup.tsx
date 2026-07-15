@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { trackEvent, trackFBEvent } from "@/lib/tracking";
 
-export default function EmailSignup({ variant = "inline" }: { variant?: "inline" | "sidebar" | "popup" }) {
+export default function EmailSignup({ variant = "inline", buttonLabel }: { variant?: "inline" | "sidebar" | "popup"; buttonLabel?: string }) {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -132,7 +132,7 @@ export default function EmailSignup({ variant = "inline" }: { variant?: "inline"
         disabled={status === "loading"}
         className="bg-gold hover:bg-gold-light text-navy font-bold px-6 py-3 rounded-md transition-all uppercase text-sm tracking-wide whitespace-nowrap disabled:opacity-50"
       >
-        {status === "loading" ? "Sending..." : "Get Free Checklist"}
+        {status === "loading" ? "Sending..." : buttonLabel || "Get Free Checklist"}
       </button>
       </div>
       <input
