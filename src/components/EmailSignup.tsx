@@ -125,7 +125,7 @@ export default function EmailSignup({ variant = "inline" }: { variant?: "inline"
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email"
           required
-          className="flex-1 px-4 py-3 rounded-md border border-gray-200 text-gray-800 text-sm focus:outline-none focus:border-gold"
+          className="flex-1 px-4 py-3 rounded-md border border-gray-300 bg-white text-gray-900 placeholder-gray-400 text-sm focus:outline-none focus:border-gold"
         />
         <button
         type="submit"
@@ -140,7 +140,7 @@ export default function EmailSignup({ variant = "inline" }: { variant?: "inline"
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
         placeholder="Phone (optional, for WhatsApp updates)"
-        className="w-full px-4 py-3 rounded-md border border-gray-200 text-gray-800 text-sm focus:outline-none focus:border-gold"
+        className="w-full px-4 py-3 rounded-md border border-gray-300 bg-white text-gray-900 placeholder-gray-400 text-sm focus:outline-none focus:border-gold"
       />
       {status === "error" && <p className="text-red-500 text-xs self-center">Try again.</p>}
     </form>
