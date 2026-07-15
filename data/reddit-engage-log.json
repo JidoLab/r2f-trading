@@ -5237,7 +5237,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-07-12T03:01:31.602Z",
     "permalink": "/r/proptrading/comments/1utgx7v/i_finally_did_it_i_got_my_1_payout/ox0j3q7/",
-    "commentId": "ox0j3q7"
+    "commentId": "ox0j3q7",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-12T08:37:36.000Z",
+    "firstReplyAuthor": "enivid",
+    "firstReplyText": "Dude! Running toLowerCase() on ChartGPT's output is not enough to pass as a human nowadays."
   },
   {
     "postId": "1utugkt",
@@ -5247,7 +5251,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-07-12T03:01:41.431Z",
     "permalink": "/r/Trading/comments/1utugkt/after_months_of_research_i_found_a_profitable/ox0j4o0/",
-    "commentId": "ox0j4o0"
+    "commentId": "ox0j4o0",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-12T04:00:06.000Z",
+    "firstReplyAuthor": "TreatOtherwise2348",
+    "firstReplyText": "Thanks for the response you're kind of right , the data is from the last 1 year only as much as I got , but about the leverage you're kinda right  I'll need to work with that so a news won't blow up my capital , also I was gonna trade it during the trendy market regimes mostly (find using gaussianNB"
   },
   {
     "postId": "1uu3qfr",
@@ -5267,7 +5275,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-07-12T18:00:34.176Z",
     "permalink": "/r/Trading/comments/1uum5gh/getting_back_into_trading_what_should_i_do/ox4hkgx/",
-    "commentId": "ox4hkgx"
+    "commentId": "ox4hkgx",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-12T18:16:26.000Z",
+    "firstReplyAuthor": "Hungry_Expression775",
+    "firstReplyText": "I traded nq on open I was basically so fried at that time that I used every concept I learnt I just wanna know if I should just focus on ict again or smth else if I'm gonna lock in now?"
   },
   {
     "postId": "1uuh8cc",
