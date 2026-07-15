@@ -1,15 +1,9 @@
 {
-  "date": "2026-07-09",
+  "date": "2026-07-15",
   "entries": [
     {
       "cron": "generate-post",
-      "retriedAt": "2026-07-09T12:01:25.304Z",
-      "result": "success",
-      "statusCode": 200
-    },
-    {
-      "cron": "generate-short",
-      "retriedAt": "2026-07-09T12:02:26.146Z",
+      "retriedAt": "2026-07-15T12:02:01.899Z",
       "result": "success",
       "statusCode": 200
     }
