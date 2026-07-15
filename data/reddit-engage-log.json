@@ -5418,5 +5418,55 @@
     "commentedAt": "2026-07-14T18:00:41.809Z",
     "permalink": "/r/Trading/comments/1uwbs69/looking_for_a_trading_partner/oxirf1w/",
     "commentId": "oxirf1w"
+  },
+  {
+    "postId": "1uwgep6",
+    "subreddit": "Forexstrategy",
+    "postTitle": "CPI bought the strom in the market.",
+    "commentText": "that 4080-4085 OB rejection during the CPI drop is textbook, but tbh i'd wait for a clean BOS on the 15m before touching it again. price sitting at 4060 right now is basically no man's land, not in premium, not at a clean discount, so there's no edge chasing it here. let price come back up and either fail at the OB again or break through and leave an FVG you can actually work with. what timeframe are you using to confirm entries around that 4021 support level?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-15T03:01:11.252Z",
+    "permalink": "/r/Forexstrategy/comments/1uwgep6/cpi_bought_the_strom_in_the_market/oxlwms3/",
+    "commentId": "oxlwms3"
+  },
+  {
+    "postId": "1uwhff0",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Is it worth learning 2022 or 2026 mentorship as a beginner?",
+    "commentText": "been there with the spam-watching phase, it's a trap tbh. honestly, skip the full 2022 mentorship for now, you already know enough concepts to just sit at the charts and watch how price interacts with those FVGs and BPR levels in real time, even if you're just screen-recording london session and reviewing it after. the 2026 content is cleaner and more refined, but none of it matters if you're not logging screen time. curious, when you did peek at the charts those 2 days, were you mapping out your levels on something like the 15m or were you going straight to the 1m? makes a big difference for how readable your BOS and CISD points are going to be as a beginner.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-15T03:01:21.352Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uwhff0/is_it_worth_learning_2022_or_2026_mentorship_as_a/oxlwnus/",
+    "commentId": "oxlwnus"
+  },
+  {
+    "postId": "1uwjzf3",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "CPI came in cooler than expected → took a clean bullish setup at 50% Fib on NY Open at High Value Node (US500 + USTEC)",
+    "commentText": "nice trade tbh, but on a CPI day i'd also mark the 15m FVG that formed right after the initial displacement candle, not just the 50% fib into the HVN. sometimes price comes back to fill that gap during the NY killzone before continuing, and that gives you a tighter entry with less exposure to the chop at the node. did the fib 50% and the FVG actually overlap here, or were they separated by a few points?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-15T03:01:29.128Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uwjzf3/cpi_came_in_cooler_than_expected_took_a_clean/oxlwolb/",
+    "commentId": "oxlwolb"
+  },
+  {
+    "postId": "1uwi6bi",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Seems like a fairly decent statement with help of Gemini",
+    "commentText": "gemini's summaries are decent for getting the gist but they tend to flatten out the nuance, especially around displacement and what actually makes an OB valid versus just a down candle before a move. the difference between a breaker and a mitigation block trips people up constantly when AI explains it. happy to walk through whichever part of the summary felt fuzzy if you drop it in the thread, what concept did you find yourself rereading the most?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-15T03:01:36.815Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uwi6bi/seems_like_a_fairly_decent_statement_with_help_of/oxlwpd8/",
+    "commentId": "oxlwpd8"
+  },
+  {
+    "postId": "1uw5kxw",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Is there anyone willing to colab and work together on Gold startergy.",
+    "commentText": "on the 1m or 3m with gold, try marking the last down candle before the displacement that creates your pattern's breakout point. if price retraces back into that candle during the NY killzone (2pm-5pm london overlap or 8:30am NY open), that's your actual OB entry, not the pattern itself. the classical patterns you're describing from minervini and wyckoff are really just showing you where the institutional move happened, the OB is the precision entry hiding inside it. what does your current entry trigger look like when the pattern confirms, are you entering the breakout candle or waiting for a pullback?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-15T03:01:46.502Z",
+    "permalink": "/r/Forexstrategy/comments/1uw5kxw/is_there_anyone_willing_to_colab_and_work/oxlwqcw/",
+    "commentId": "oxlwqcw"
   }
 ]
