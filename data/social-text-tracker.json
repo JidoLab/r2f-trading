@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "quote",
     "promo-free-class",
     "tip",
     "promo-results",
@@ -29,11 +28,12 @@
     "tip",
     "myth",
     "promo-blog",
-    "promo-coaching"
+    "promo-coaching",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "promo-coaching",
-    "text": "PPI drops this week. Most traders will guess. My students will know exactly what to look for. 📊 Limited coaching spots open — free 15-min call, no pitch. Just real talk. 👇 https://r2ftrading.com/contact #ICTtrading #FundedTrader #SmartMoney",
-    "date": "2026-07-14T12:00:45.106Z"
+    "type": "poll-native",
+    "text": "It's mid-week reversal day 🔄 What's your go-to setup on Wednesdays? #ICTTrading #SmartMoneyConcepts\n\n🅰️ Fair Value Gap\n🅱️ Order Block\n🅲️ Sit out & watch\n🅳️ FOMC play only\n\nVote below! 👇",
+    "date": "2026-07-15T12:00:50.452Z"
   }
 }
