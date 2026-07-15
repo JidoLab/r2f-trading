@@ -5540,5 +5540,15 @@
     "commentedAt": "2026-07-15T13:01:23.835Z",
     "permalink": "/r/ICTMentorship/comments/1uwgqyx/ashamed_of_myself/oxo8ls0/",
     "commentId": "oxo8ls0"
+  },
+  {
+    "postId": "1ux8z6o",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Guidance needed",
+    "commentText": "tbh the \"best and easiest strategy\" framing is the catch most people miss. 2 months is tight, and trying to learn multiple ICT concepts at once usually just creates confusion. imo pick ONE thing, like identifying a daily bias using the london session open and then hunting a single fair value gap entry on the 15m during new york open on something liquid like eurusd or NQ. the prop firm deadline is real pressure but rushing into OBs, PD arrays, and SMT divergence all at once before you understand basic BOS is how people blow evals. what pairs or sessions are you most drawn to so far?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-15T18:00:14.059Z",
+    "permalink": "/r/ICTMentorship/comments/1ux8z6o/guidance_needed/oxq5rt8/",
+    "commentId": "oxq5rt8"
   }
 ]
