@@ -5520,5 +5520,25 @@
     "commentedAt": "2026-07-15T08:00:59.662Z",
     "permalink": "/r/ICTMentorship/comments/1uwnnx7/feeling_hopeless_in_despair_and_need/oxn1619/",
     "commentId": "oxn1619"
+  },
+  {
+    "postId": "1uwajaa",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Planing on buying my first funded account need all the advice i can get.",
+    "commentText": "5-6 months is honestly enough to attempt a funded account if your backtesting is solid, but imo the biggest mistake new traders make on evals is overtrading during news. stick to one pair like eurusd or gbpusd, wait for a clean BOS on the 15m, then drop to the 1m for your OB entry during london or NY open only. tbh the discipline matters more than the strategy at this stage. what pair are you planning to trade on the eval?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-15T13:01:15.321Z",
+    "permalink": "/r/Forexstrategy/comments/1uwajaa/planing_on_buying_my_first_funded_account_need/oxo8kqt/",
+    "commentId": "oxo8kqt"
+  },
+  {
+    "postId": "1uwgqyx",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Ashamed of myself",
+    "commentText": "been there, and the funded account cycle you're describing is a psychology trap more than a skill gap. try this: before your next session, only mark ONE thing on the chart, the most recent HTF FVG on the 4H, and only take a trade if NY killzone price delivers directly into it with a clean BOS on the 5m. one setup, one decision, nothing else. the constraint forces patience because there's literally nothing else to look for. curious what pairs you've been trading when the tilt hits, because that might tell us something.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-15T13:01:23.835Z",
+    "permalink": "/r/ICTMentorship/comments/1uwgqyx/ashamed_of_myself/oxo8ls0/",
+    "commentId": "oxo8ls0"
   }
 ]
