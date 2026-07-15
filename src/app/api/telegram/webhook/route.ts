@@ -133,6 +133,82 @@ async function sendTelegramMessage(chatId: number, text: string, replyToMessageI
   });
 }
 
+const FREE_CLASS_URL =
+  "https://www.r2ftrading.com/free-class?utm_source=telegram&utm_medium=bot&utm_campaign=";
+
+// Private-chat /start funnel. A Telegram ad promotes the bot (t.me/<bot>?start=telegram_ad);
+// the user taps Start, we hand them the free class and capture them as an
+// ad-sourced, reachable contact for later broadcasts.
+async function handleStart(msg: TelegramMessage) {
+  const token = BOT_TOKEN();
+  if (!token || !msg.from) return;
+
+  // /start <payload> — payload is the campaign tag from the deep link.
+  const source = msg.text?.split(/\s+/)[1]?.slice(0, 32) || "direct";
+
+  logBotLead(msg, source).catch(() => {});
+
+  const welcome =
+    "Welcome. If you're here, you're serious about ICT.\n\n" +
+    "Here's the free class that covers the part most traders skip: the execution, risk, and psychology that keep a funded account alive.\n\n" +
+    "Tap below to watch it. If you then want a hand applying it to your own charts, there's a free call link inside.";
+
+  await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      chat_id: msg.chat.id,
+      text: welcome,
+      reply_markup: {
+        inline_keyboard: [
+          [{ text: "Get the Free ICT Class →", url: `${FREE_CLASS_URL}${encodeURIComponent(source)}` }],
+        ],
+      },
+    }),
+  }).catch(() => {});
+
+  // Ping Harvest so a live ad lead is visible immediately.
+  const ownerChat = process.env.TELEGRAM_OWNER_CHAT_ID;
+  if (ownerChat) {
+    const who = msg.from.username ? `@${msg.from.username}` : msg.from.first_name || "someone";
+    await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: ownerChat,
+        text: `🤖 New bot start: ${who} (source: ${source})`,
+        disable_web_page_preview: true,
+      }),
+    }).catch(() => {});
+  }
+}
+
+// Capture the lead deduped by Telegram id, so the ad is measurable and the user
+// becomes a contact we can message again (far higher open rate than email).
+async function logBotLead(msg: TelegramMessage, source: string) {
+  if (!msg.from) return;
+  const path = "data/telegram-bot-leads.json";
+  let leads: Record<string, unknown>[] = [];
+  try {
+    leads = JSON.parse(await readFile(path));
+  } catch {
+    // First lead — file doesn't exist yet.
+  }
+  if (leads.some((l) => l.telegramId === msg.from!.id)) return;
+  leads.push({
+    telegramId: msg.from.id,
+    username: msg.from.username || null,
+    firstName: msg.from.first_name || null,
+    source,
+    date: new Date().toISOString(),
+  });
+  await commitFile(
+    path,
+    JSON.stringify(leads, null, 2),
+    `Bot lead: ${msg.from.username || msg.from.id} (${source})`
+  );
+}
+
 async function getBotInfo(): Promise<{ username?: string }> {
   const token = BOT_TOKEN();
   if (!token) return {};
@@ -182,6 +258,13 @@ export async function POST(req: NextRequest) {
     // (data/telegram-group-chats/<id>.json). Require a real integer id so a
     // forged update can't traverse/target other data files.
     if (!Number.isInteger(msg.from.id)) {
+      return NextResponse.json({ ok: true });
+    }
+
+    // Private-chat /start funnel (Telegram ad -> bot -> free class).
+    // Runs before the group-only gate below.
+    if (msg.chat.type === "private" && msg.text.startsWith("/start")) {
+      await handleStart(msg);
       return NextResponse.json({ ok: true });
     }
 
