@@ -15,10 +15,10 @@ export async function GET(req: NextRequest) {
 
   const api = (m: string) => `https://api.telegram.org/bot${token}/${m}`;
 
-  // Fix mode: re-register the webhook so private messages are delivered.
+  // Fix mode: re-point the webhook at the www URL (the non-www URL 308-redirects,
+  // which Telegram rejects) and ensure message updates are delivered.
   if (req.nextUrl.searchParams.get("fix") === "1") {
-    const info = await fetch(api("getWebhookInfo")).then((r) => r.json()).catch(() => null);
-    const url = info?.result?.url || "https://www.r2ftrading.com/api/telegram/webhook";
+    const url = "https://www.r2ftrading.com/api/telegram/webhook";
     const set = await fetch(api("setWebhook"), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
