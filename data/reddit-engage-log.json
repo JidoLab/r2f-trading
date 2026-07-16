@@ -5630,5 +5630,25 @@
     "commentedAt": "2026-07-16T08:01:18.261Z",
     "permalink": "/r/Trading/comments/1ux4whq/the_guy_in_sweatpants_who_wiped_out_1_trillion_in/oxuhn3e/",
     "commentId": "oxuhn3e"
+  },
+  {
+    "postId": "1uxvjij",
+    "subreddit": "ICTMentorship",
+    "postTitle": "ICT Arena needs your help!",
+    "commentText": "this is a cool idea tbh, gamifying ICT reps is actually underrated for building pattern recognition. curious what concepts you're planning to include, specifically whether it'll test things like identifying the killzone that produced the FVG versus just spotting the FVG itself, because that context piece is where most people break down. are you planning to include session-based scenarios like london open vs new york open, or is it more chart-agnostic right now?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-16T13:00:16.574Z",
+    "permalink": "/r/ICTMentorship/comments/1uxvjij/ict_arena_needs_your_help/oxvpdh0/",
+    "commentId": "oxvpdh0"
+  },
+  {
+    "postId": "1uxu5f4",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Do I need to have any money at all to start ICT trading?",
+    "commentText": "yes, you can start with zero dollars. paper trade on tradingview, free account, practice reading BOS on the 15 minute chart during london open on something like EURUSD. tbh the broke phase is actually useful because you're forced to study setups like FVGs and order blocks without the emotional noise of real money on the line. what session are you most available to watch live charts?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-16T13:00:23.389Z",
+    "permalink": "/r/ICTMentorship/comments/1uxu5f4/do_i_need_to_have_any_money_at_all_to_start_ict/oxvpeai/",
+    "commentId": "oxvpeai"
   }
 ]
