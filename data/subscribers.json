@@ -460,7 +460,7 @@
   {
     "email": "mdrabbihossen046@gmail.com",
     "date": "2026-07-03T18:33:01.864Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "referralCode": "R2F-irijh9",
     "referredBy": null,
     "referralCount": 0,
@@ -492,7 +492,8 @@
     "dripsHistory": [
       "beginnerMistakes",
       "socialProof",
-      "bookCallSoft"
+      "bookCallSoft",
+      "limitedSpots"
     ],
     "abandonmentEmailSent": true
   },
@@ -502,6 +503,20 @@
     "dripsSent": 0,
     "referralCode": "R2F-yj9g01",
     "referredBy": null,
-    "referralCount": 0
+    "referralCount": 0,
+    "score": 7,
+    "segment": "cold",
+    "events": [
+      {
+        "type": "crash_course_page_view",
+        "date": "2026-07-16T09:01:45.443Z"
+      },
+      {
+        "type": "blog_read",
+        "date": "2026-07-16T09:01:45.443Z"
+      }
+    ],
+    "lastActivity": "2026-07-16T09:01:45.443Z",
+    "dripsHistory": []
   }
 ]
