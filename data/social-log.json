@@ -1730,5 +1730,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-16T12:01:47.634Z",
+    "type": "text",
+    "postType": "question",
+    "text": "Order blocks or Fair Value Gaps — if you could only use ONE ICT concept for the rest of your trading",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
