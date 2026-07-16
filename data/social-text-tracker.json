@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-free-class",
     "tip",
     "promo-results",
     "promo-checklist",
@@ -29,11 +28,12 @@
     "myth",
     "promo-blog",
     "promo-coaching",
-    "poll-native"
+    "poll-native",
+    "question"
   ],
   "lastPost": {
-    "type": "poll-native",
-    "text": "It's mid-week reversal day 🔄 What's your go-to setup on Wednesdays? #ICTTrading #SmartMoneyConcepts\n\n🅰️ Fair Value Gap\n🅱️ Order Block\n🅲️ Sit out & watch\n🅳️ FOMC play only\n\nVote below! 👇",
-    "date": "2026-07-15T12:00:50.452Z"
+    "type": "question",
+    "text": "Order blocks or Fair Value Gaps — if you could only use ONE ICT concept for the rest of your trading career, which are you keeping? Drop your answer below 👇 #ICTTrading #SmartMoneyConcepts #OrderBlocks",
+    "date": "2026-07-16T12:01:46.739Z"
   }
 }
