@@ -5550,5 +5550,35 @@
     "commentedAt": "2026-07-15T18:00:14.059Z",
     "permalink": "/r/ICTMentorship/comments/1ux8z6o/guidance_needed/oxq5rt8/",
     "commentId": "oxq5rt8"
+  },
+  {
+    "postId": "1ux15u3",
+    "subreddit": "proptrading",
+    "postTitle": "Real talk: What's the biggest lesson you've learned from a prop trading challenge? Wins AND losses welcome",
+    "commentText": "the \"play money\" thing is real, but tbh i think the actual trap is the opposite for a lot of people. they overtrade the challenge trying to hit the profit target fast, then become so risk-averse once funded that they miss clean setups entirely, like a textbook 15m bullish OB right at a daily FVG on GU during london open, and they just sit on their hands. the psychological pressure you mentioned hits hardest *after* funding, not during the challenge. curious what your funded traders are actually doing differently at the point of blowing up, are they sizing wrong or just completely abandoning the setup criteria that got them through?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-16T03:00:46.621Z",
+    "permalink": "/r/proptrading/comments/1ux15u3/real_talk_whats_the_biggest_lesson_youve_learned/oxtczop/",
+    "commentId": "oxtczop"
+  },
+  {
+    "postId": "1uxbwbi",
+    "subreddit": "proptrading",
+    "postTitle": "Country restrictions and KYC — the unglamorous thing that decides which firms you can even use",
+    "commentText": "the KYC delay thing is real and it hits hardest right when you're in a good run, like imagine finally hitting a clean payout after a solid london session trading cable and then you're stuck waiting three weeks because your bank documents don't match the firm's accepted format. non-US/EU banking friction is genuinely the part nobody talks about in the \"which firm has the best split\" threads. FundingPips being smooth on this is actually a bigger deal than people give it credit for, especially for traders in the MENA region where correspondent banking adds another layer of weirdness to withdrawals. what country are you based in and did the payout actually land clean once KYC cleared?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-16T03:00:56.265Z",
+    "permalink": "/r/proptrading/comments/1uxbwbi/country_restrictions_and_kyc_the_unglamorous/oxtd0lw/",
+    "commentId": "oxtd0lw"
+  },
+  {
+    "postId": "1ux0ckk",
+    "subreddit": "proptrading",
+    "postTitle": "⚠️ 6 YEARS OF TRADING – MY FIRST EVER NEGATIVE REVIEW IS FOR ORION FUNDED",
+    "commentText": "scaling into a position in the same direction is literally just pyramiding, it's not grid trading by any standard definition. grid trading involves hedging across price levels, usually with simultaneous longs and shorts at set intervals. what you described sounds more like adding to a winning or losing trade within a single directional bias, which every ICT-based trader does when building into an OB mitigation across multiple entries on something like the 15m or 1h. tbh this kind of vague \"grid trading\" accusation from prop firms is becoming a pattern in 2026 and it's worth documenting every single entry with timestamps and your bias notes so there's zero ambiguity. if you want, drop the instrument and rough entry zones here and i can tell you whether the entry model reads as sequential scaling or anything that could even loosely be misread as grid behavior.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-16T03:01:07.334Z",
+    "permalink": "/r/proptrading/comments/1ux0ckk/6_years_of_trading_my_first_ever_negative_review/oxtd1nz/",
+    "commentId": "oxtd1nz"
   }
 ]
