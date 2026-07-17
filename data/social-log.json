@@ -1759,5 +1759,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-17T12:01:29.751Z",
+    "type": "text",
+    "postType": "poll",
+    "text": "6 months in — what's actually holding your trading back?\n\n🅰️ No real edge/strategy\n🅱️ Risk managem",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
