@@ -5666,5 +5666,35 @@
     "commentedAt": "2026-07-16T13:00:23.389Z",
     "permalink": "/r/ICTMentorship/comments/1uxu5f4/do_i_need_to_have_any_money_at_all_to_start_ict/oxvpeai/",
     "commentId": "oxvpeai"
+  },
+  {
+    "postId": "1uxxp5t",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Base for a working EA - The Quadrant",
+    "commentText": "trade frequency is the one that kills most EAs tbh, especially when you try to run something on eurusd across all sessions. a setup that prints beautifully during london kill zone gets absolutely wrecked during new york open because the spread widens and the FVGs don't fill cleanly. your quadrant framework is solid but i'd argue frequency and RR are codependent, not independent variables, because a higher frequency model almost always forces you to compress your RR to stay realistic. what timeframe are you backtesting this on, and are you filtering by session or just running it 24/5?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-17T03:00:48.062Z",
+    "permalink": "/r/Forexstrategy/comments/1uxxp5t/base_for_a_working_ea_the_quadrant/oy0qaio/",
+    "commentId": "oy0qaio"
+  },
+  {
+    "postId": "1uya5dm",
+    "subreddit": "Trading",
+    "postTitle": "Do you journal every trade?",
+    "commentText": "all those metrics matter, but tbh the one most people sleep on is **time-of-day drawdown distribution**, specifically whether your losses cluster inside or outside of killzones. i've seen traders with decent R:R who are basically just bleeding during the london-ny overlap on NQ because they're trading noise between sessions and calling it \"price action.\" the win rate looks survivable until you map the losses to the clock and realize 80% of the damage happens in a 45-minute window outside of any legitimate session open. curious what your data shows when you isolate funded account losses by session, are they concentrated around a specific time or spread out?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-17T03:00:56.437Z",
+    "permalink": "/r/Trading/comments/1uya5dm/do_you_journal_every_trade/oy0qbcr/",
+    "commentId": "oy0qbcr"
+  },
+  {
+    "postId": "1uy67s3",
+    "subreddit": "Trading",
+    "postTitle": "18 year old beginner",
+    "commentText": "your \"first 5 min\" breakout idea isn't bad as a starting point, but tbh you're essentially trading the opening range, and without understanding where price came from overnight you're guessing at whether that breakout has any real backing behind it. the open is where smart money hunts liquidity sitting above and below those obvious candle highs and lows, so a lot of those \"breakouts\" are actually just stop raids before price reverses hard. before you enter a breakout, are you checking whether price is running into a prior day's high or low, or is there clean space above/below for it to actually move?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-17T03:01:06.997Z",
+    "permalink": "/r/Trading/comments/1uy67s3/18_year_old_beginner/oy0qcfp/",
+    "commentId": "oy0qcfp"
   }
 ]
