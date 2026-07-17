@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "tip",
     "promo-results",
     "promo-checklist",
     "myth",
@@ -29,11 +28,12 @@
     "promo-blog",
     "promo-coaching",
     "poll-native",
-    "question"
+    "question",
+    "poll"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "Order blocks or Fair Value Gaps — if you could only use ONE ICT concept for the rest of your trading career, which are you keeping? Drop your answer below 👇 #ICTTrading #SmartMoneyConcepts #OrderBlocks",
-    "date": "2026-07-16T12:01:46.739Z"
+    "type": "poll",
+    "text": "6 months in — what's actually holding your trading back?\n\n🅰️ No real edge/strategy\n🅱️ Risk management is trash\n🅲️ Emotional decisions\n🅳️ Still learning ICT concepts\n\n#ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-07-17T12:01:28.747Z"
   }
 }
