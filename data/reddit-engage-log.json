@@ -5708,5 +5708,25 @@
     "commentedAt": "2026-07-17T03:01:06.997Z",
     "permalink": "/r/Trading/comments/1uy67s3/18_year_old_beginner/oy0qcfp/",
     "commentId": "oy0qcfp"
+  },
+  {
+    "postId": "1uy69hx",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Traders, what is your take on the silver bullet strategy?",
+    "commentText": "on XAUUSD specifically, the 10-11am silver bullet window actually does produce setups pretty consistently, but gold can be tricky because the spread and volatility around that time can manipulate entry triggers if you're not waiting for displacement first. tbh if you're going weeks without a trade, i'd suspect the issue is more about how you're defining a valid setup than the window itself. missing a BOS into a clean FVG before entry will filter out a lot of the noise that makes it feel like \"nothing's setting up.\" are you marking your HTF draw on liquidity before the silver bullet opens, or just dropping to lower timeframes cold? that context piece changes everything for gold entries.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-17T13:01:03.384Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uy69hx/traders_what_is_your_take_on_the_silver_bullet/oy33tj6/",
+    "commentId": "oy33tj6"
+  },
+  {
+    "postId": "1uyi4hi",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "ICT isn't discretionary, YOU make it discretionary",
+    "commentText": "the framework you laid out is basically exactly what i run, daily bias off CRT, H4 POI, wait for M15 BOS to confirm. tbh the biggest trap i see is traders treating every FVG on every timeframe as equal weight, when really if it isn't sitting inside a higher timeframe discount or premium it's just noise. fewer tools, cleaner decisions. what session are you targeting once you've got daily bias locked in, london or NY open?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-17T13:01:11.718Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uyi4hi/ict_isnt_discretionary_you_make_it_discretionary/oy33uja/",
+    "commentId": "oy33uja"
   }
 ]
