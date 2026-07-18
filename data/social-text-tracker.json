@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-results",
     "promo-checklist",
     "myth",
     "challenge",
@@ -29,11 +28,12 @@
     "promo-coaching",
     "poll-native",
     "question",
-    "poll"
+    "poll",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "6 months in — what's actually holding your trading back?\n\n🅰️ No real edge/strategy\n🅱️ Risk management is trash\n🅲️ Emotional decisions\n🅳️ Still learning ICT concepts\n\n#ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-07-17T12:01:28.747Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: Most traders fail because of order blocks and fair value gaps — not despite them. Too much theory, zero execution. The concept isn't the edge. YOU are. #ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-07-18T12:00:16.684Z"
   }
 }
