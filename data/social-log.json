@@ -1788,5 +1788,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-18T12:00:17.469Z",
+    "type": "text",
+    "postType": "hot-take",
+    "text": "Unpopular opinion: Most traders fail because of order blocks and fair value gaps — not despite them.",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
