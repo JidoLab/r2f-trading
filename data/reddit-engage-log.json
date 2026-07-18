@@ -5758,5 +5758,15 @@
     "commentedAt": "2026-07-17T18:00:53.082Z",
     "permalink": "/r/InnerCircleTraders/comments/1uyfn2d/there_is_no_enigma_algorithm_its_bs/oy50jdx/",
     "commentId": "oy50jdx"
+  },
+  {
+    "postId": "1uza28e",
+    "subreddit": "proptrading",
+    "postTitle": "Tradeify Banning Accounts for “Suspicious Activity” - Multi-Prop Firm Accounts? | Has This Happened to You?",
+    "commentText": "the \"suspicious activity\" flag is real but tbh it's not always about running multiple accounts. a lot of firms in 2026 are flagging traders who trade correlated pairs simultaneously, like eu and gu during the same killzone, because the drawdown risk compounds across accounts in ways that look coordinated to their risk desk. so it might not even be a multi-account thing specifically. were you trading similar setups across correlated pairs at the same time, like hitting an FVG on EU and a BOS entry on GU both during london open?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-18T03:00:47.580Z",
+    "permalink": "/r/proptrading/comments/1uza28e/tradeify_banning_accounts_for_suspicious_activity/oy7yrzi/",
+    "commentId": "oy7yrzi"
   }
 ]
