@@ -5790,5 +5790,25 @@
     "commentedAt": "2026-07-18T08:00:36.019Z",
     "permalink": "/r/ICTMentorship/comments/1uzkih0/for_any_ict_traders_would_you_like_a_trade_review/oy92nf5/",
     "commentId": "oy92nf5"
+  },
+  {
+    "postId": "1v00wqc",
+    "subreddit": "FOREXTRADING",
+    "postTitle": "Is my Strategy Good or I need to change it? GUIDE ON MY JOURNEY",
+    "commentText": "the OB waiting game on gold is real, but tbh the bigger catch most people miss is that on XAUUSD specifically, a lot of those \"untapped\" daily OBs get mitigated during the london killzone before new york even opens, so by the time price looks like it's approaching your level it's already been partially tapped and the displacement you're waiting for on the lower timeframe just never comes clean. your instinct to watch for BOS confirmation on the LTF is solid, but if the OB is sitting right below a dealing range high on the 4H, the probability it flips to a breaker without a clean tap is way higher than people think. curious what timeframe you're marking your OBs on and whether you're checking if they're sitting in premium or discount before you even put them on your watchlist?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-18T18:00:16.522Z",
+    "permalink": "/r/FOREXTRADING/comments/1v00wqc/is_my_strategy_good_or_i_need_to_change_it_guide/oybw6x7/",
+    "commentId": "oybw6x7"
+  },
+  {
+    "postId": "1v00w0e",
+    "subreddit": "Trading",
+    "postTitle": "What do you think ?",
+    "commentText": "tbh the \"ICT is confusing\" crowd usually just tried to learn everything at once, OBs, FVGs, PD arrays, killzone timing, all in one week, and then wondered why their head was spinning. the catch most people miss is that you can build a clean, functional system using just one concept, like waiting for a BOS on the 15m during london killzone and then dropping to the 1m to find the consequent encroachment on a nearby OB. that alone is more than enough to trade. what's your current setup looking like, are you working off a specific session or still trying to piece different things together?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-18T18:00:24.894Z",
+    "permalink": "/r/Trading/comments/1v00w0e/what_do_you_think/oybw80y/",
+    "commentId": "oybw80y"
   }
 ]
