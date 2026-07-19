@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-checklist",
     "myth",
     "challenge",
     "promo-blog",
@@ -29,11 +28,12 @@
     "poll-native",
     "question",
     "poll",
-    "hot-take"
+    "hot-take",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: Most traders fail because of order blocks and fair value gaps — not despite them. Too much theory, zero execution. The concept isn't the edge. YOU are. #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-07-18T12:00:16.684Z"
+    "type": "poll-native",
+    "text": "Mid-2026 check-in 👀 Which ICT concept has made the BIGGEST difference in your trading this year? #ICTtrading #SmartMoneyConcepts\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ Killzones\n🅳️ Market Structure\n\nVote below! 👇",
+    "date": "2026-07-19T12:00:27.039Z"
   }
 }
