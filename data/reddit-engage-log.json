@@ -5850,5 +5850,35 @@
     "commentedAt": "2026-07-19T03:01:15.187Z",
     "permalink": "/r/Trading/comments/1v02uqz/a_lil_help_thread_for_ict_beginners/oyeqz69/",
     "commentId": "oyeqz69"
+  },
+  {
+    "postId": "1uzuz55",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Any Advice?",
+    "commentText": "that 300-point NQ miss is actually useful data tbh. next time you see a clean displacement on the 15m during NY open, mark the last down candle before the move and wait for price to return to that candle's body, that's your OB entry instead of chasing. the hesitation usually comes from not having a specific level to defend, and having that candle marked gives you a line in the sand to work with. what session were you targeting when you saw that setup?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-19T08:01:14.654Z",
+    "permalink": "/r/ICTMentorship/comments/1uzuz55/any_advice/oyftvir/",
+    "commentId": "oyftvir"
+  },
+  {
+    "postId": "1v0ed0w",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Stop Treating ICT Concepts Like a Strategy",
+    "commentText": "the AMD point hits hard. so many people see the accumulation phase on the m5 and think \"manipulation leg incoming\" without ever checking if the daily is even bullish or if there's external liquidity sitting above to actually draw to. no HTF narrative means you're just pattern-matching noise tbh. been there myself, sitting on a 15min FVG entry like it's the cleanest setup ever, completely ignoring that the H4 was mid-range with no real draw on liquidity above. the concept was technically valid, the context was completely wrong. what does your HTF narrative process actually look like before you drop to execution, like are you marking your daily POIs first or starting from the weekly?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-19T08:01:24.502Z",
+    "permalink": "/r/InnerCircleTraders/comments/1v0ed0w/stop_treating_ict_concepts_like_a_strategy/oyftw88/",
+    "commentId": "oyftw88"
+  },
+  {
+    "postId": "1uzzct0",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "STOP buying ICT courses , seriously you don't need them",
+    "commentText": "100% agree on the free content point, tbh the ICT mentorship model from 2022 and 2023 was where real money got wasted. one thing i'd push back on slightly is the TTrades first approach, nothing wrong with it, but some people get anchored to a simplified version of the model and then struggle to unlearn it when they try to understand delivery on something like the ES or NQ where session timing and AMD actually matters a lot more than a clean OB setup. curious what your actual workflow looks like when you're building narrative, are you starting top down from the weekly or jumping straight to the 4h to find your PD arrays?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-19T08:01:35.981Z",
+    "permalink": "/r/InnerCircleTraders/comments/1uzzct0/stop_buying_ict_courses_seriously_you_dont_need/oyftx0y/",
+    "commentId": "oyftx0y"
   }
 ]
