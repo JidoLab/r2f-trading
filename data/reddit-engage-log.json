@@ -5900,5 +5900,15 @@
     "commentedAt": "2026-07-19T08:01:35.981Z",
     "permalink": "/r/InnerCircleTraders/comments/1uzzct0/stop_buying_ict_courses_seriously_you_dont_need/oyftx0y/",
     "commentId": "oyftx0y"
+  },
+  {
+    "postId": "1v0rss1",
+    "subreddit": "proptrading",
+    "postTitle": "My experience with QT Funded refusing payout due to lost data",
+    "commentText": "solid evidence preservation tbh, the video capture of both MT5 history and the personal area dashboard is exactly the kind of thing most traders never think to do until it's too late. the MetaQuotes server architecture literally timestamps every executed order with a unique ticket number, that data doesn't just vanish, so their \"technical incident\" story falls apart immediately against your recordings. glad you filed with the FSCA and have that report number documented. did you also screenshot the equity curve from inside MT5 showing the daily drawdown stayed within limits throughout the eval period? that internal equity log is harder to dispute than anything else if this escalates further.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-19T18:00:56.386Z",
+    "permalink": "/r/proptrading/comments/1v0rss1/my_experience_with_qt_funded_refusing_payout_due/oyinlrp/",
+    "commentId": "oyinlrp"
   }
 ]
