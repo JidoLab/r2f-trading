@@ -5810,5 +5810,45 @@
     "commentedAt": "2026-07-18T18:00:24.894Z",
     "permalink": "/r/Trading/comments/1v00w0e/what_do_you_think/oybw80y/",
     "commentId": "oybw80y"
+  },
+  {
+    "postId": "1v00umu",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Is my Strategy Good or I need to change it? GUIDE ON MY JOURNEY",
+    "commentText": "the patience issue you're describing is real, but tbh the waiting isn't the problem, it's probably that you're marking OBs on the wrong timeframe for gold specifically. XAUUSD on the daily can sit in a range for days before price even sniffs an OB, so if you're not tracking the 4H breaker blocks as dynamic targets instead of just labeling them \"invalidated,\" you're missing a ton of context on why price isn't reaching your level. the OB becoming a breaker isn't a failure of the setup, it's actually telling you something about where smart money repositioned. curious what timeframe you're marking your HTF OBs on and whether you're aligning them with any particular session, like are you watching the new york open for your entries or just waiting whenever?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-19T03:00:49.579Z",
+    "permalink": "/r/Forexstrategy/comments/1v00umu/is_my_strategy_good_or_i_need_to_change_it_guide/oyeqwsx/",
+    "commentId": "oyeqwsx"
+  },
+  {
+    "postId": "1v00sdw",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Is my Strategy Good or I need to change it? GUIDE ON MY JOURNEY",
+    "commentText": "your OB sitting there for 3-4 days without a tap is usually a sign the draw on liquidity has shifted, tbh. the price is probably hunting something else first, like a SSL or BSL on the daily, before it ever comes back to respect that level. been there with XAUUSD specifically, it's brutal to watch a setup just float. what timeframe are you marking your OBs on, the 4h or daily? because that changes everything for how long you should realistically expect to wait, and whether a breaker is actually confirming a shift in intent or just noise.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-19T03:00:57.734Z",
+    "permalink": "/r/Forexstrategy/comments/1v00sdw/is_my_strategy_good_or_i_need_to_change_it_guide/oyeqxkx/",
+    "commentId": "oyeqxkx"
+  },
+  {
+    "postId": "1v05rc1",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Consolidating multi-timeframe bias and session data into a clean UI dashboard block (XAUUSD Layout)",
+    "commentText": "try adding a \"last BOS direction\" field to that dashboard block, specifically tracking whether the most recent break of structure on the 15m was bullish or bearish. on XAUUSD during the london-to-NY overlap, i'll only take FVG entries that align with the last BOS direction in the block, not just the higher timeframe bias label. the macro trend and the local BOS can diverge hard during that transition window, and that mismatch is where most people get chopped up tbh. curious whether your current layout is already capturing that BOS direction separately from the HTF bias field, or are you treating them as the same signal?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-19T03:01:07.160Z",
+    "permalink": "/r/Forexstrategy/comments/1v05rc1/consolidating_multitimeframe_bias_and_session/oyeqyfw/",
+    "commentId": "oyeqyfw"
+  },
+  {
+    "postId": "1v02uqz",
+    "subreddit": "Trading",
+    "postTitle": "A lil help thread for ict beginners",
+    "commentText": "since you mentioned people being confused and misguided, here's one thing that clears up a ton of early mistakes: try marking the last down candle before a displacement move on the 15m during london open, then wait for price to return to that candle's body during NY killzone before entering. that's your actual OB, not just any random bearish candle before a push. a lot of beginners grab the candle right before the big move but miss that the displacement is what validates it. what pair are you seeing the most confusion on, because GBPUSD vs EURUSD can feel very different when you're trying to spot these in real time?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-19T03:01:15.187Z",
+    "permalink": "/r/Trading/comments/1v02uqz/a_lil_help_thread_for_ict_beginners/oyeqz69/",
+    "commentId": "oyeqz69"
   }
 ]
