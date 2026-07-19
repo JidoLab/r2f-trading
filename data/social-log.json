@@ -1817,5 +1817,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-19T12:00:27.911Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "Mid-2026 check-in 👀 Which ICT concept has made the BIGGEST difference in your trading this year? #I",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
