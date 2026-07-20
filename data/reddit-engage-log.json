@@ -5679,7 +5679,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-16T08:01:07.454Z",
     "permalink": "/r/Trading/comments/1ux3sqg/10_months_into_building_my_own_trading_journal/oxuhmci/",
-    "commentId": "oxuhmci"
+    "commentId": "oxuhmci",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-16T08:23:15.000Z",
+    "firstReplyAuthor": "Royal_Mysterious",
+    "firstReplyText": " Honest answer: it doesn't know about killzones yet. session context works like this: the coach gets your stats broken down by time-of-day block in your local timezone (win rate,net P&amp;L, avg R per block, same for weekdays), so if you ask it \"am i overtrading in the afternoon\" it answers from you"
   },
   {
     "postId": "1ux4whq",
@@ -5709,7 +5713,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-16T13:00:23.389Z",
     "permalink": "/r/ICTMentorship/comments/1uxu5f4/do_i_need_to_have_any_money_at_all_to_start_ict/oxvpeai/",
-    "commentId": "oxvpeai"
+    "commentId": "oxvpeai",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-16T13:32:12.000Z",
+    "firstReplyAuthor": "klll_blll",
+    "firstReplyText": "I’d say eastern, since the video I watched says that"
   },
   {
     "postId": "1uxxp5t",
@@ -5719,7 +5727,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-07-17T03:00:48.062Z",
     "permalink": "/r/Forexstrategy/comments/1uxxp5t/base_for_a_working_ea_the_quadrant/oy0qaio/",
-    "commentId": "oy0qaio"
+    "commentId": "oy0qaio",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-17T05:10:45.000Z",
+    "firstReplyAuthor": "Merchant1010",
+    "firstReplyText": "We always need healthy trade frequency so that the statistics can be verified, it acts as the sample size. \n\nI am a firm believer of only trading an asset class in the perfect environment for it, that means I am trading in specific timeframes, specific sessions ... in the environment where a strateg"
   },
   {
     "postId": "1uya5dm",
@@ -5729,7 +5741,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-17T03:00:56.437Z",
     "permalink": "/r/Trading/comments/1uya5dm/do_you_journal_every_trade/oy0qbcr/",
-    "commentId": "oy0qbcr"
+    "commentId": "oy0qbcr",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-17T04:16:46.000Z",
+    "firstReplyAuthor": "sh_trader",
+    "firstReplyText": "Exactly. Time-of-day drawdown is one of the most underrated metrics because it reveals whether the trader has a strategy problem or a timing problem.  \nA trader can have acceptable win rate and R:R overall, while one specific 30–60 minute window is responsible for most of the account damage. Once lo"
   },
   {
     "postId": "1uy67s3",
@@ -5920,35 +5936,5 @@
     "commentedAt": "2026-07-20T03:00:53.949Z",
     "permalink": "/r/ICTMentorship/comments/1v0qaio/would_you_join/oylprpt/",
     "commentId": "oylprpt"
-  },
-  {
-    "postId": "1v1am74",
-    "subreddit": "Forexstrategy",
-    "postTitle": "Gold reclaimed $4000... but I'm still treating this as a lower high.",
-    "commentText": "not chasing this either tbh. the 4045-4060 zone you're watching lines up pretty cleanly with what looks like a daily bearish OB from the last leg down, so if price taps that and leaves a rejection wick during ny open, that's where i'd be watching for confirmation of the lower high thesis. a BOS below 3980 on the 4h would basically seal it for me. curious what's driving your invalidation level above 4060, is there a specific FVG or swing high on the daily you're anchoring that to?",
-    "mentionedR2F": false,
-    "commentedAt": "2026-07-20T13:00:42.033Z",
-    "permalink": "/r/Forexstrategy/comments/1v1am74/gold_reclaimed_4000_but_im_still_treating_this_as/oynymq7/",
-    "commentId": "oynymq7"
-  },
-  {
-    "postId": "1v0y8m8",
-    "subreddit": "Forexstrategy",
-    "postTitle": "XAUUSD Monday forecast",
-    "commentText": "gold's been pretty clean on the higher timeframes lately tbh. if you're building a monday forecast i'd be looking at friday's NY close relative to the weekly FVG first, that tells you a lot about whether monday's likely to be a continuation or a liquidity sweep setup before any real directional move. what's your read on the weekly range right now, premium or discount? happy to walk through the OB levels with you in this thread if you want to post a chart.",
-    "mentionedR2F": false,
-    "commentedAt": "2026-07-20T13:00:49.589Z",
-    "permalink": "/r/Forexstrategy/comments/1v0y8m8/xauusd_monday_forecast/oynynku/",
-    "commentId": "oynynku"
-  },
-  {
-    "postId": "1v0yd5c",
-    "subreddit": "Forexstrategy",
-    "postTitle": "How to read it right…",
-    "commentText": "\"reading it right\" comes down to one thing tbh, are you marking your OBs from the candle that left the imbalance or just the last down close before the move? most people are marking them wrong from the start and then wondering why price keeps blowing through. happy to walk through exactly where the valid OB sits if you drop the pair and timeframe you're looking at 👀",
-    "mentionedR2F": true,
-    "commentedAt": "2026-07-20T13:00:58.145Z",
-    "permalink": "/r/Forexstrategy/comments/1v0yd5c/how_to_read_it_right/oynyojs/",
-    "commentId": "oynyojs"
   }
 ]
