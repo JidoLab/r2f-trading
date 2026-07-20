@@ -1,5 +1,45 @@
 [
   {
+    "id": "reply-oy0qbcr",
+    "platform": "reddit",
+    "postTitle": "Do you journal every trade?",
+    "subreddit": "Trading",
+    "replyAuthor": "sh_trader",
+    "replyText": "Exactly. Time-of-day drawdown is one of the most underrated metrics because it reveals whether the trader has a strategy problem or a timing problem.  \nA trader can have acceptable win rate and R:R overall, while one specific 30–60 minute window is responsible for most of the account damage. Once lo",
+    "commentUrl": "https://www.reddit.com/r/Trading/comments/1uya5dm/do_you_journal_every_trade/oy0qbcr/",
+    "detectedAt": "2026-07-20T13:00:58.305Z"
+  },
+  {
+    "id": "reply-oy0qaio",
+    "platform": "reddit",
+    "postTitle": "Base for a working EA - The Quadrant",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "Merchant1010",
+    "replyText": "We always need healthy trade frequency so that the statistics can be verified, it acts as the sample size. \n\nI am a firm believer of only trading an asset class in the perfect environment for it, that means I am trading in specific timeframes, specific sessions ... in the environment where a strateg",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1uxxp5t/base_for_a_working_ea_the_quadrant/oy0qaio/",
+    "detectedAt": "2026-07-20T13:00:57.653Z"
+  },
+  {
+    "id": "reply-oxvpeai",
+    "platform": "reddit",
+    "postTitle": "Do I need to have any money at all to start ICT trading?",
+    "subreddit": "ICTMentorship",
+    "replyAuthor": "klll_blll",
+    "replyText": "I’d say eastern, since the video I watched says that",
+    "commentUrl": "https://www.reddit.com/r/ICTMentorship/comments/1uxu5f4/do_i_need_to_have_any_money_at_all_to_start_ict/oxvpeai/",
+    "detectedAt": "2026-07-20T13:00:56.972Z"
+  },
+  {
+    "id": "reply-oxuhmci",
+    "platform": "reddit",
+    "postTitle": "10 months into building my own trading journal — what I got wrong about what traders actually want",
+    "subreddit": "Trading",
+    "replyAuthor": "Royal_Mysterious",
+    "replyText": " Honest answer: it doesn't know about killzones yet. session context works like this: the coach gets your stats broken down by time-of-day block in your local timezone (win rate,net P&amp;L, avg R per block, same for weekdays), so if you ask it \"am i overtrading in the afternoon\" it answers from you",
+    "commentUrl": "https://www.reddit.com/r/Trading/comments/1ux3sqg/10_months_into_building_my_own_trading_journal/oxuhmci/",
+    "detectedAt": "2026-07-20T13:00:55.010Z"
+  },
+  {
     "id": "reply-oxq5rt8",
     "platform": "reddit",
     "postTitle": "Guidance needed",
