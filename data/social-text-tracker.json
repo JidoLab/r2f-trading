@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "myth",
     "challenge",
     "promo-blog",
     "promo-coaching",
@@ -29,11 +28,12 @@
     "question",
     "poll",
     "hot-take",
-    "poll-native"
+    "poll-native",
+    "challenge"
   ],
   "lastPost": {
-    "type": "poll-native",
-    "text": "Mid-2026 check-in 👀 Which ICT concept has made the BIGGEST difference in your trading this year? #ICTtrading #SmartMoneyConcepts\n\n🅰️ Order Blocks\n🅱️ Fair Value Gaps\n🅲️ Killzones\n🅳️ Market Structure\n\nVote below! 👇",
-    "date": "2026-07-19T12:00:27.039Z"
+    "type": "challenge",
+    "text": "Challenge: This week, only trade the London open. No NY, no Asian session. Just London. 5 days. Track every entry. Bet your win rate surprises you. Drop your results Friday 👇 #ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-07-20T12:01:00.942Z"
   }
 }
