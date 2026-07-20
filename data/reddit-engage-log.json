@@ -5936,5 +5936,75 @@
     "commentedAt": "2026-07-20T03:00:53.949Z",
     "permalink": "/r/ICTMentorship/comments/1v0qaio/would_you_join/oylprpt/",
     "commentId": "oylprpt"
+  },
+  {
+    "postId": "1v1labc",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAUUSD 4H Short — Corrective Rally into $4,075–$4,100 Supply, Targeting $4,000 / $3,945 (Jul 20)",
+    "commentText": "the setup is clean tbh, but here's the catch most people miss on xauusd corrective rallies in Q3: gold has a habit of running the obvious bearish OB at $4,075 by 10-15 points before distributing, so waiting for a 15m ChoCH inside the box is the right call, but watch for a wick spike through $4,100 that closes back below before your entry triggers. a lot of traders get shaken out or miss the fill entirely because they set a limit right at the OB midpoint and price never fully retraces to it. curious whether you're using the 1H or dropping to the 15m for that ChoCH confirmation, and are you seeing any FVGs inside that $4,075-$4,100 zone that could act as a tighter entry point?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-20T18:00:55.164Z",
+    "permalink": "/r/Forexstrategy/comments/1v1labc/xauusd_4h_short_corrective_rally_into_40754100/oyptjjs/",
+    "commentId": "oyptjjs"
+  },
+  {
+    "postId": "1v1l0yo",
+    "subreddit": "Forexstrategy",
+    "postTitle": "EURUSD 1H LONG — Bullish Reclaim, Waiting for the Demand Retest",
+    "commentText": "solid setup tbh, the breaker flip inside the demand zone is what gives this real confluence rather than just a naked OB tap. one thing i'd double check is whether that 1H FVG has any overlap with the 15m BOS origin candle, because if they align you've basically got a sniper entry ready to go the second you see that LTF ChoCH. the \"why not 1.14229\" section is genuinely underrated thinking, mid-range entries kill R:R and most people skip that math entirely. curious what your 15m is showing right now as price approaches, are you seeing any displacement yet or still consolidating above the zone?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-20T18:01:05.928Z",
+    "permalink": "/r/Forexstrategy/comments/1v1l0yo/eurusd_1h_long_bullish_reclaim_waiting_for_the/oyptl31/",
+    "commentId": "oyptl31"
+  },
+  {
+    "postId": "1v14hco",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Is a profitable algo possible purely based off price action?",
+    "commentText": "since you're already doing ORB retests, try this: on the 15m NQ chart, mark the last down candle before the displacement that creates the opening range high. if price comes back to that candle's body during the NY AM killzone (9:30 to 11am EST), that's your entry with a stop just below the wick. the key is the displacement has to leave a visible FVG above it, otherwise skip the trade entirely. what does your current ORB setup look like in terms of how you're defining the range itself?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-20T18:01:14.436Z",
+    "permalink": "/r/InnerCircleTraders/comments/1v14hco/is_a_profitable_algo_possible_purely_based_off/oyptm9x/",
+    "commentId": "oyptm9x"
+  },
+  {
+    "postId": "1v1kwgt",
+    "subreddit": "Forexstrategy",
+    "postTitle": "AUDUSD 1H Long — Waiting for the OB Retest, Targeting the 0.7013 Liquidity Sweep",
+    "commentText": "solid read tbh, and your reasoning for skipping the 0.70066 entry is exactly right, mid-range entries on audusd are how people get chopped before price even reaches BSL. the sequence you've laid out is clean, especially waiting for that 5m/15m bullish ChoCH inside the OB before committing. one thing i'd be watching though: if price taps 0.7010 hard during new york open with a big displacement candle, that 1H OB mitigation could happen fast and messy. curious whether you're planning to use a 5m FVG inside the zone as your actual trigger, or just the candle close back above the OB high? happy to walk through the entry model on this one if that helps.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-20T18:01:22.528Z",
+    "permalink": "/r/Forexstrategy/comments/1v1kwgt/audusd_1h_long_waiting_for_the_ob_retest/oyptndn/",
+    "commentId": "oyptndn"
+  },
+  {
+    "postId": "1v1bj7g",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Best ICT teacher you know?",
+    "commentText": "tbh the \"boring low voice\" thing is a real problem when you're trying to actually learn, not just passively absorb content. imo the fastest way through ICT's stuff is to pick one pair like NJ or GU, one session like london open, and just drill the model: find the daily bias using HTF structure, wait for a BOS on the 15m, then drop to the 1m for an FVG entry. that's it. way more useful than watching another 3 hour stream. happy to walk through exactly how i'd map that out on whatever pair you're watching if you want to post a chart here, curious what session you're currently trying to trade?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-20T18:01:31.739Z",
+    "permalink": "/r/InnerCircleTraders/comments/1v1bj7g/best_ict_teacher_you_know/oyptoo3/",
+    "commentId": "oyptoo3"
+  },
+  {
+    "postId": "1v0y8m8",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAUUSD Monday forecast",
+    "commentText": "gold on mondays is tricky tbh, especially right now with the asian session range being so manipulated before london open. i'd be looking at the weekly OB first, then dropping to the 4H to see if there's a clean FVG sitting in discount before i commit to any directional bias. what's your current read on the weekly range, are you positioning long or short coming into this week?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-20T18:01:37.732Z",
+    "permalink": "/r/Forexstrategy/comments/1v0y8m8/xauusd_monday_forecast/oyptpik/",
+    "commentId": "oyptpik"
+  },
+  {
+    "postId": "1v0yd5c",
+    "subreddit": "Forexstrategy",
+    "postTitle": "How to read it right…",
+    "commentText": "\"reading it right\" usually comes down to which draw on liquidity you're anchored to first. if you don't have a clear HTF target like a daily FVG or an old swing high with buy side resting above it, the lower timeframe structure is just noise tbh. what pair are you looking at this on, and are you working top down from the daily or jumping straight to the entry TF?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-20T18:01:44.158Z",
+    "permalink": "/r/Forexstrategy/comments/1v0yd5c/how_to_read_it_right/oyptqdy/",
+    "commentId": "oyptqdy"
   }
 ]
