@@ -6006,5 +6006,35 @@
     "commentedAt": "2026-07-20T18:01:44.158Z",
     "permalink": "/r/Forexstrategy/comments/1v0yd5c/how_to_read_it_right/oyptqdy/",
     "commentId": "oyptqdy"
+  },
+  {
+    "postId": "1v1fn00",
+    "subreddit": "Trading",
+    "postTitle": "Am I understanding margin and making multiple trades a day correctly?",
+    "commentText": "your math on the margin is mostly right, but here's the catch most people miss: the PDT rule. if you're under $25k in a margin account, you're limited to 3 day trades in a rolling 5-business-day window, so that \"make 10+ scalp trades daily\" plan hits a wall fast on a $10k account. tbh simulating scalping on paper without that constraint is going to give you a pretty unrealistic picture of what the actual trading day looks like. i work a lot with the london and ny killzones where you might only get 1-2 clean setups off a proper OB anyway, so the PDT limit hurts less than people think if you're being selective. what does your current session focus look like, are you trying to catch moves across the whole day or targeting a specific window?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-21T03:01:44.011Z",
+    "permalink": "/r/Trading/comments/1v1fn00/am_i_understanding_margin_and_making_multiple/oysuirw/",
+    "commentId": "oysuirw"
+  },
+  {
+    "postId": "1v1enwq",
+    "subreddit": "Trading",
+    "postTitle": "CME's Single Stock Futures could end up being a huge success",
+    "commentText": "the excitement makes sense, but here's the catch most people miss: single stock futures still need liquidity to be tradeable at an institutional level, and without consistent volume you're going to get wide spreads that eat your edge, especially around earnings or something like that XOM crude reaction you mentioned. imo the 23-hour access is the real sell, being able to react to overnight news with a clean futures entry instead of gapping into a chaotic open is genuinely useful, kind of like having london session context before NY opens on ES. the problem is if the OBs you're mapping on these things don't have enough historical data behind them, you're basically trading on vibes for the first year or two while the market structure matures. curious what stocks you're thinking of leading with when these launch, and whether you're planning to size them the same way you would an ES position or treating them more like a speculative overlay?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-21T03:01:53.280Z",
+    "permalink": "/r/Trading/comments/1v1enwq/cmes_single_stock_futures_could_end_up_being_a/oysujop/",
+    "commentId": "oysujop"
+  },
+  {
+    "postId": "1v1ojez",
+    "subreddit": "Trading",
+    "postTitle": "Watched someone very close to me blow &gt;$100k and 20+ funded trading accounts over 5 years. Sharing so someone else doesn’t repeat it.",
+    "commentText": "the \"every 4 months i finally get it\" cycle is honestly the most painful pattern to watch from the outside, because the confidence sounds identical each time. what struck me reading this is that he's clearly not lazy, which means the problem almost certainly isn't effort, it's that he's never stress-tested a rule set over a large enough sample before declaring it broken and moving on. in ICT terms, if you're flipping your entry model every few weeks you'll never know if a string of losses was just variance during a choppy consolidation on the daily, or an actual edge problem. tbh the funded account grind makes this worse because the pressure warps decision-making right around the time data would start to get meaningful. happy to dig into any specific part of this with you in the thread, like if he's working with a particular session bias model or struggling with a specific rule he keeps breaking, sometimes just talking through where the logic breaks down is more useful than another course 🙏",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-21T03:02:05.470Z",
+    "permalink": "/r/Trading/comments/1v1ojez/watched_someone_very_close_to_me_blow_100k_and_20/oysukvp/",
+    "commentId": "oysukvp"
   }
 ]
