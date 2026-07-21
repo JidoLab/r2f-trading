@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "challenge",
     "promo-blog",
     "promo-coaching",
     "question",
@@ -29,11 +28,12 @@
     "poll",
     "hot-take",
     "poll-native",
-    "challenge"
+    "challenge",
+    "quote"
   ],
   "lastPost": {
-    "type": "challenge",
-    "text": "Challenge: This week, only trade the London open. No NY, no Asian session. Just London. 5 days. Track every entry. Bet your win rate surprises you. Drop your results Friday 👇 #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-07-20T12:01:00.942Z"
+    "type": "quote",
+    "text": "\"The market doesn't reward effort. It rewards patience and precision.\"\n\nWith GDP dropping this week, most traders will react. The smart money already positioned. Which one are you?\n\n#ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-07-21T12:00:43.156Z"
   }
 }
