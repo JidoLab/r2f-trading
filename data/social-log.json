@@ -1673,5 +1673,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-21T12:00:44.206Z",
+    "type": "text",
+    "postType": "quote",
+    "text": "\"The market doesn't reward effort. It rewards patience and precision.\"\n\nWith GDP dropping this week,",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
