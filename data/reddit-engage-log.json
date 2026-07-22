@@ -6130,5 +6130,35 @@
     "commentedAt": "2026-07-21T18:01:21.483Z",
     "permalink": "/r/Forexstrategy/comments/1v2h0a4/xauusd_h4_setup/oyx28em/",
     "commentId": "oyx28em"
+  },
+  {
+    "postId": "1v2p52q",
+    "subreddit": "Trading",
+    "postTitle": "Fixed spread vs variable, actually mattered which one you picked or is it overthinking it?",
+    "commentText": "the fixed vs variable thing is real but the part most people miss is it's less about the broker model and more about *when* you're in the market. if you're trading DAX during london open or around frankfurt session overlap, variable spreads can genuinely hurt you because that's exactly when liquidity is being grabbed and your fill is already competing with the spread widening on top of any slippage. the \"90% calm hours\" math only holds if you're actually avoiding high-impact windows, which most newer traders aren't disciplined enough to do consistently yet. tbh at your size the spread difference is almost noise, what actually builds the habit you mentioned is learning to not be in a position *into* news anyway. are you currently holding through scheduled events or mostly getting out before?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-22T03:01:01.918Z",
+    "permalink": "/r/Trading/comments/1v2p52q/fixed_spread_vs_variable_actually_mattered_which/oz04pbx/",
+    "commentId": "oz04pbx"
+  },
+  {
+    "postId": "1v2hd2i",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Can i trade non usd red folder news",
+    "commentText": "avoid red folder news for any currency involved in the pair you're trading, so yeah, CAD CPI matters on USDCAD. ICT's talked about this indirectly through his \"high impact news\" framing, the idea is that volatility from either leg of the pair can blow through your OB or FVG before price delivers. tbh i just mark the time on my chart and stay flat 30 mins either side. what does your current USDCAD setup look like, are you trying to work around a specific CPI release this week?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-22T03:01:09.457Z",
+    "permalink": "/r/InnerCircleTraders/comments/1v2hd2i/can_i_trade_non_usd_red_folder_news/oz04q3p/",
+    "commentId": "oz04q3p"
+  },
+  {
+    "postId": "1v2gm8g",
+    "subreddit": "Trading",
+    "postTitle": "20 y/o beginner – Finished ICT for Dummies, what’s the best path forward to trade Powell’s 10 AM strategy",
+    "commentText": "before you go deep into powell's 10 AM setup, try this first: on the 15m chart during NY killzone (9:30 to 11 AM ET), mark the FVG that forms right after the initial displacement move, then wait for price to retrace back into it before any entry. if you're watching NQ or ES, that retracement into the FVG almost always happens within the first 30-40 minutes, and that's where the real entry presents itself, not the open candle everyone chases. tbh most beginners get wrecked because they're entering on the displacement itself instead of the pullback into the inefficiency. what pair or instrument are you planning to focus this on, and are you seeing clean FVGs form on the 15m during your backtesting so far?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-22T03:01:19.797Z",
+    "permalink": "/r/Trading/comments/1v2gm8g/20_yo_beginner_finished_ict_for_dummies_whats_the/oz04r37/",
+    "commentId": "oz04r37"
   }
 ]
