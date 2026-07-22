@@ -6160,5 +6160,35 @@
     "commentedAt": "2026-07-22T03:01:19.797Z",
     "permalink": "/r/Trading/comments/1v2gm8g/20_yo_beginner_finished_ict_for_dummies_whats_the/oz04r37/",
     "commentId": "oz04r37"
+  },
+  {
+    "postId": "1v2u3ox",
+    "subreddit": "FOREXTRADING",
+    "postTitle": "What is Forex?",
+    "commentText": "the exchange rate analogy is solid for explaining the basics, but there's a catch most people miss: retail forex isn't actually you buying real currency. you're trading a *derivative* of the price, which is why understanding where institutions are actually moving price matters more than the exchange itself. in ICT terms, that USDJPY pair you mentioned with the 150 rate is a great one to watch during the tokyo session killzone, where you'll often see price sweep liquidity before the real move happens. curious what pairs you're planning to start with?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-22T08:00:39.706Z",
+    "permalink": "/r/FOREXTRADING/comments/1v2u3ox/what_is_forex/oz19osl/",
+    "commentId": "oz19osl"
+  },
+  {
+    "postId": "1v2fnkj",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Those who r ICT traders can join discord",
+    "commentText": "solid idea tbh, having a central spot to discuss things like session bias and OTE entries is genuinely useful for beginners trying to piece it all together. one thing worth pinning early is a rule about timeframe context when posting charts, because an OB on the 1m looks totally different to one anchored on the 4h with a clean BOS above it. are you planning to have separate channels by concept or by asset class, like keeping forex pairs separate from indices?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-22T08:00:47.967Z",
+    "permalink": "/r/ICTMentorship/comments/1v2fnkj/those_who_r_ict_traders_can_join_discord/oz19pdk/",
+    "commentId": "oz19pdk"
+  },
+  {
+    "postId": "1v2n4gf",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Regarding the Implementation of the Asian Range",
+    "commentText": "tbh \"narrow\" is relative to the pair, but for something like gbpusd i'm looking for roughly 10-20 pips between the asian high and low before i'd call it tight enough to be meaningful. wider than that and the projection zones start overlapping with too much noise during london open. the core idea is that a compressed asian range builds liquidity on both sides, so when price sweeps one extreme it's telegraphing which direction the smart money wants to deliver into during the ny session. imo it's one of the more underrated setups in the whole model when you combine it with an fvg formed inside the asian consolidation itself. curious what pair you're watching this on, happy to walk through a specific range with you right here if you want to share the timeframe you're using.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-22T08:00:56.841Z",
+    "permalink": "/r/ICTMentorship/comments/1v2n4gf/regarding_the_implementation_of_the_asian_range/oz19q1r/",
+    "commentId": "oz19q1r"
   }
 ]
