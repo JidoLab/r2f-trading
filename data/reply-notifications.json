@@ -1,5 +1,55 @@
 [
   {
+    "id": "reply-oyftx0y",
+    "platform": "reddit",
+    "postTitle": "STOP buying ICT courses , seriously you don't need them",
+    "subreddit": "InnerCircleTraders",
+    "replyAuthor": "Ok_Hovercraft6776",
+    "replyText": "TTrades is pretty much everything you could ever need to become a profitable ICT trader. Anything beyond that will likely overcomplicate your approach, leading to analysis paralysis and hesitation when it's time to execute—all for maybe a 3% improvement in win rate.\n\nTiming is a good confluence, but",
+    "commentUrl": "https://www.reddit.com/r/InnerCircleTraders/comments/1uzzct0/stop_buying_ict_courses_seriously_you_dont_need/oyftx0y/",
+    "detectedAt": "2026-07-22T13:00:55.265Z"
+  },
+  {
+    "id": "reply-oyftw88",
+    "platform": "reddit",
+    "postTitle": "Stop Treating ICT Concepts Like a Strategy",
+    "subreddit": "InnerCircleTraders",
+    "replyAuthor": "Ok_Hovercraft6776",
+    "replyText": "I always look at the weekly just to be aware of POIs or potential obstacles and to determine the longer-term direction but since I'm an Intraday trader I get my bias mainly from the Daily or if the Daily gives me nothing then I go to H4. A daily C2 candle closure (CRT) or a continuation closure in t",
+    "commentUrl": "https://www.reddit.com/r/InnerCircleTraders/comments/1v0ed0w/stop_treating_ict_concepts_like_a_strategy/oyftw88/",
+    "detectedAt": "2026-07-22T13:00:54.601Z"
+  },
+  {
+    "id": "reply-oyeqyfw",
+    "platform": "reddit",
+    "postTitle": "Consolidating multi-timeframe bias and session data into a clean UI dashboard block (XAUUSD Layout)",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "ComputerHealthy3798",
+    "replyText": "That is an incredibly sharp feature recommendation, and you hit the nail on the head regarding that London-to-NY transition window.\n\nRight now, the backend engine treats them as separate data streams, but the UI filters them into the \"Bias State\" and local \"Structure Response\" (like the BMS tracking",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1v05rc1/consolidating_multitimeframe_bias_and_session/oyeqyfw/",
+    "detectedAt": "2026-07-22T13:00:52.677Z"
+  },
+  {
+    "id": "reply-oyeqxkx",
+    "platform": "reddit",
+    "postTitle": "Is my Strategy Good or I need to change it? GUIDE ON MY JOURNEY",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "ehsaanshah303",
+    "replyText": "H1 TF for OB ",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1v00sdw/is_my_strategy_good_or_i_need_to_change_it_guide/oyeqxkx/",
+    "detectedAt": "2026-07-22T13:00:52.033Z"
+  },
+  {
+    "id": "reply-oybw6x7",
+    "platform": "reddit",
+    "postTitle": "Is my Strategy Good or I need to change it? GUIDE ON MY JOURNEY",
+    "subreddit": "FOREXTRADING",
+    "replyAuthor": "ehsaanshah303",
+    "replyText": "I mark valid high probability OB on H1 mostly!",
+    "commentUrl": "https://www.reddit.com/r/FOREXTRADING/comments/1v00wqc/is_my_strategy_good_or_i_need_to_change_it_guide/oybw6x7/",
+    "detectedAt": "2026-07-22T13:00:50.110Z"
+  },
+  {
     "id": "reply-oy7yrzi",
     "platform": "reddit",
     "postTitle": "Tradeify Banning Accounts for “Suspicious Activity” - Multi-Prop Firm Accounts? | Has This Happened to You?",
