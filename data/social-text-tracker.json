@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-blog",
     "promo-coaching",
     "question",
     "poll",
@@ -29,11 +28,12 @@
     "hot-take",
     "poll-native",
     "challenge",
-    "quote"
+    "quote",
+    "tip"
   ],
   "lastPost": {
-    "type": "quote",
-    "text": "\"The market doesn't reward effort. It rewards patience and precision.\"\n\nWith GDP dropping this week, most traders will react. The smart money already positioned. Which one are you?\n\n#ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-07-21T12:00:43.156Z"
+    "type": "tip",
+    "text": "GDP drops soon — smart money already positioned. Your job isn't to react to the news, it's to find the fair value gap left behind and let price come to you. Patience > speed every time. #ICTTrading #FairValueGap #SmartMoneyConcepts",
+    "date": "2026-07-22T12:01:00.881Z"
   }
 }
