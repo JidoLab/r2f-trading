@@ -5859,7 +5859,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-18T18:00:16.522Z",
     "permalink": "/r/FOREXTRADING/comments/1v00wqc/is_my_strategy_good_or_i_need_to_change_it_guide/oybw6x7/",
-    "commentId": "oybw6x7"
+    "commentId": "oybw6x7",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-18T20:34:37.000Z",
+    "firstReplyAuthor": "ehsaanshah303",
+    "firstReplyText": "I mark valid high probability OB on H1 mostly!"
   },
   {
     "postId": "1v00w0e",
@@ -5889,7 +5893,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-07-19T03:00:57.734Z",
     "permalink": "/r/Forexstrategy/comments/1v00sdw/is_my_strategy_good_or_i_need_to_change_it_guide/oyeqxkx/",
-    "commentId": "oyeqxkx"
+    "commentId": "oyeqxkx",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-19T07:39:05.000Z",
+    "firstReplyAuthor": "ehsaanshah303",
+    "firstReplyText": "H1 TF for OB "
   },
   {
     "postId": "1v05rc1",
@@ -5899,7 +5907,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-19T03:01:07.160Z",
     "permalink": "/r/Forexstrategy/comments/1v05rc1/consolidating_multitimeframe_bias_and_session/oyeqyfw/",
-    "commentId": "oyeqyfw"
+    "commentId": "oyeqyfw",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-19T09:46:07.000Z",
+    "firstReplyAuthor": "ComputerHealthy3798",
+    "firstReplyText": "That is an incredibly sharp feature recommendation, and you hit the nail on the head regarding that London-to-NY transition window.\n\nRight now, the backend engine treats them as separate data streams, but the UI filters them into the \"Bias State\" and local \"Structure Response\" (like the BMS tracking"
   },
   {
     "postId": "1v02uqz",
@@ -5929,7 +5941,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-07-19T08:01:24.502Z",
     "permalink": "/r/InnerCircleTraders/comments/1v0ed0w/stop_treating_ict_concepts_like_a_strategy/oyftw88/",
-    "commentId": "oyftw88"
+    "commentId": "oyftw88",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-19T08:04:04.000Z",
+    "firstReplyAuthor": "Ok_Hovercraft6776",
+    "firstReplyText": "I always look at the weekly just to be aware of POIs or potential obstacles and to determine the longer-term direction but since I'm an Intraday trader I get my bias mainly from the Daily or if the Daily gives me nothing then I go to H4. A daily C2 candle closure (CRT) or a continuation closure in t"
   },
   {
     "postId": "1uzzct0",
@@ -5939,7 +5955,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-07-19T08:01:35.981Z",
     "permalink": "/r/InnerCircleTraders/comments/1uzzct0/stop_buying_ict_courses_seriously_you_dont_need/oyftx0y/",
-    "commentId": "oyftx0y"
+    "commentId": "oyftx0y",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-19T08:20:46.000Z",
+    "firstReplyAuthor": "Ok_Hovercraft6776",
+    "firstReplyText": "TTrades is pretty much everything you could ever need to become a profitable ICT trader. Anything beyond that will likely overcomplicate your approach, leading to analysis paralysis and hesitation when it's time to execute—all for maybe a 3% improvement in win rate.\n\nTiming is a good confluence, but"
   },
   {
     "postId": "1v0rss1",
