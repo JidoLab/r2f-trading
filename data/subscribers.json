@@ -313,7 +313,8 @@
       "coachingCta",
       "valueRecap",
       "lastChance"
-    ]
+    ],
+    "staleReengageSent": true
   },
   {
     "email": "mgoncalvesiii@gmail.com",
@@ -445,7 +446,7 @@
   {
     "email": "matshelekgotso00@gmail.com",
     "date": "2026-07-02T16:26:29.120Z",
-    "dripsSent": 5,
+    "dripsSent": 6,
     "referralCode": "R2F-a6x85v",
     "referredBy": null,
     "referralCount": 0,
@@ -458,7 +459,8 @@
       "ictConcepts",
       "successStory",
       "tradingPsychology",
-      "propFirmTips"
+      "propFirmTips",
+      "coachingCta"
     ]
   },
   {
