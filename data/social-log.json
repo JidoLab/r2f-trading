@@ -1731,5 +1731,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-23T12:00:44.031Z",
+    "type": "text",
+    "postType": "question",
+    "text": "GDP drop incoming & you're still holding longs? 👀 Real question — do you actually prep for high-imp",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
