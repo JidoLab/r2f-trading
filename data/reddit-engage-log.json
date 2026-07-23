@@ -6220,5 +6220,65 @@
     "commentedAt": "2026-07-23T03:00:40.922Z",
     "permalink": "/r/FOREXTRADING/comments/1v371z4/cpt_markets_holding_corporate_funds_hostage_our/oz7jjv1/",
     "commentId": "oz7jjv1"
+  },
+  {
+    "postId": "1v45wbq",
+    "subreddit": "Forexstrategy",
+    "postTitle": "How do you decide whether a prop trading firm is worth trying?",
+    "commentText": "the transparent rules piece you mentioned is honestly the most important filter imo. a lot of firms look clean on paper but change drawdown calculations mid-challenge or have vague language around \"consistency rules\" that gets used against you at payout time. tbh i'd specifically ask any firm how they handle news spikes on something like GBP/USD during london open, because that's where shady DD rules tend to bite people. haven't traded with dolvero personally so i can't speak to their payout reliability directly. curious what specific rule structures you've already seen from them, happy to break down any red flags in the terms if you want to post the details here.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-23T08:01:00.638Z",
+    "permalink": "/r/Forexstrategy/comments/1v45wbq/how_do_you_decide_whether_a_prop_trading_firm_is/oz8oj9f/",
+    "commentId": "oz8oj9f"
+  },
+  {
+    "postId": "1v3ax06",
+    "subreddit": "Forexstrategy",
+    "postTitle": "How to pass a prop firm challenge without blowing the account?",
+    "commentText": "been there, and what you described, treating the challenge like a race to the profit target, is honestly the most common way people blow it. the fix that worked for me was treating every day like i was already funded, strict 0.5% risk per trade, only taking A+ setups during london open or new york am session, nothing else. one impulsive trade on a low-quality setup during consolidation can undo three days of clean execution. the \"forcing it\" pattern you mentioned usually shows up when traders don't have a clearly defined entry model, so they're improvising under pressure. tbh if you can tell me what pair you're trading and your timeframe, happy to walk through where you should actually be waiting for a BOS confirmation or OB mitigation before touching size.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-23T08:01:09.858Z",
+    "permalink": "/r/Forexstrategy/comments/1v3ax06/how_to_pass_a_prop_firm_challenge_without_blowing/oz8ojvl/",
+    "commentId": "oz8ojvl"
+  },
+  {
+    "postId": "1v3d9hm",
+    "subreddit": "Forexstrategy",
+    "postTitle": "AUDUSD 1H Long — Pullback into 0.69750–0.69800 Fresh Demand, Targeting 0.7000 / 0.7025 (Jul 22)",
+    "commentText": "solid read on the structure tbh, but i'd be watching that 0.69900 broken support flip really closely on the 15m before committing. if price can't flip that level into support with a clean bullish displacement candle, you're basically just buying into resistance, not out of demand. the LTF ChoCH confirmation you mentioned is the right call here, no shortcuts on that trigger. are you planning to scale in across the full 0.69750 to 0.69800 zone or waiting for a specific 5m OB to form inside it before entry?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-23T08:01:19.326Z",
+    "permalink": "/r/Forexstrategy/comments/1v3d9hm/audusd_1h_long_pullback_into_069750069800_fresh/oz8okj5/",
+    "commentId": "oz8okj5"
+  },
+  {
+    "postId": "1v3d5c7",
+    "subreddit": "Forexstrategy",
+    "postTitle": "EURUSD 1H Short — Rally into 1.14150–1.14250 Supply, Targeting 1.13950 / 1.13850 (Jul 22)",
+    "commentText": "solid setup tbh, and the reasoning behind skipping 1.14048 is exactly right, mid-momentum shorts with inverted R:R are how accounts bleed slowly. the 15m ChoCH trigger before entry is the key detail most people skip, they just see price touch the OB and fire. one thing i'd watch: if that corrective rally comes in during NY open with momentum, the 1.14250 OB could get blown through before the ChoCH even prints, so are you sizing down at all if the entry comes in during a high-volatility session window?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-23T08:01:27.451Z",
+    "permalink": "/r/Forexstrategy/comments/1v3d5c7/eurusd_1h_short_rally_into_114150114250_supply/oz8ol30/",
+    "commentId": "oz8ol30"
+  },
+  {
+    "postId": "1v3gbdd",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Compared several prop firms finally got one that works best.",
+    "commentText": "i had this exact problem last year, bouncing between FTMO and FundedNext without really committing to either. what finally clicked for me was picking one firm and building my eval strategy around it, specifically trading the 15m london session on gbpusd and only entering after a confirmed BOS with an untested OB below. Get Leveraged wasn't on my radar at the time tbh so i'm curious whether their drawdown rules give you enough room to actually let those setups play out without getting squeezed. what's the daily drawdown limit looking like for you and are you finding it workable with your style?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-23T08:01:35.605Z",
+    "permalink": "/r/Forexstrategy/comments/1v3gbdd/compared_several_prop_firms_finally_got_one_that/oz8oln5/",
+    "commentId": "oz8oln5"
+  },
+  {
+    "postId": "1v3d09a",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAUUSD 1H Long — Pullback into $4,040–$4,075 Fresh Demand, Targeting $4,175 (Jul 22)",
+    "commentText": "solid read on the structure tbh, the FVG overlap with the origin of that displacement leg is exactly the kind of stacked confluence that actually holds on gold right now. one thing i'd watch closely is whether that 4H candle that created the FVG left a clean wick or a full body close, because on XAUUSD wick-formed FVGs tend to get pierced before the real reaction kicks in, which could drag price into the lower half of your zone around 4,040 before buyers step in. are you planning your LTF ChoCH confirmation on the 15m or the 1H, because that distinction matters a lot for where you actually place the entry and how much of the zone you're risking through?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-23T08:01:44.346Z",
+    "permalink": "/r/Forexstrategy/comments/1v3d09a/xauusd_1h_long_pullback_into_40404075_fresh/oz8omag/",
+    "commentId": "oz8omag"
   }
 ]
