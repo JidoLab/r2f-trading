@@ -6210,5 +6210,15 @@
     "commentedAt": "2026-07-22T08:00:56.841Z",
     "permalink": "/r/ICTMentorship/comments/1v2n4gf/regarding_the_implementation_of_the_asian_range/oz19q1r/",
     "commentId": "oz19q1r"
+  },
+  {
+    "postId": "1v371z4",
+    "subreddit": "FOREXTRADING",
+    "postTitle": "\"CPT Markets holding corporate funds hostage. Our corporate account is fully locked, and despite our legal team getting involved, they refuse to provide a timeline for fund release. Very disappointed by their lack of professional ethics. Watch out, guys.\"",
+    "commentText": "sorry to hear this, but tbh corporate accounts with brokers exist in a completely different regulatory tier than retail, and the \"no timeline\" response often means they're under a compliance hold or AML review that legally prevents them from disclosing details. it's not always bad faith, sometimes it's just ugly backend stuff that legal teams actually make slower, not faster. what's the rough size of the funds held, and did anything unusual happen on the account side like a large drawdown on a correlated pair or a sudden shift in lot sizing around the london-new york overlap?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-23T03:00:40.922Z",
+    "permalink": "/r/FOREXTRADING/comments/1v371z4/cpt_markets_holding_corporate_funds_hostage_our/oz7jjv1/",
+    "commentId": "oz7jjv1"
   }
 ]
