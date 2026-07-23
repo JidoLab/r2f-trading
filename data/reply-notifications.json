@@ -1,5 +1,65 @@
 [
   {
+    "id": "reply-oyx218t",
+    "platform": "reddit",
+    "postTitle": "I built an automated backtesting tool",
+    "subreddit": "Forexstrategy",
+    "replyAuthor": "trading_outline",
+    "replyText": "Thanks for your reply, we have managed to incorporate the feature to backtest depending on session, this can then be amended and re-run to see how it looks on another session. I have tried to think of as many variables as possible but please let me know if there are any other improvements we can mak",
+    "commentUrl": "https://www.reddit.com/r/Forexstrategy/comments/1v2bmv1/i_built_an_automated_backtesting_tool/oyx218t/",
+    "detectedAt": "2026-07-23T13:01:35.819Z"
+  },
+  {
+    "id": "reply-oysujop",
+    "platform": "reddit",
+    "postTitle": "CME's Single Stock Futures could end up being a huge success",
+    "subreddit": "Trading",
+    "replyAuthor": "awesome-Adi619",
+    "replyText": "1. Well, the liquidity will build up overtime ,SSF are massively popular in Korea, India, Turkey coz its a product that serves a need\n\n2. You can look at the stocks for the historical data itself or the Binance tradfi perps , they keep adding new names  to the list \n\n3. I'll trade wherever I can fin",
+    "commentUrl": "https://www.reddit.com/r/Trading/comments/1v1enwq/cmes_single_stock_futures_could_end_up_being_a/oysujop/",
+    "detectedAt": "2026-07-23T13:01:34.435Z"
+  },
+  {
+    "id": "reply-oysuirw",
+    "platform": "reddit",
+    "postTitle": "Am I understanding margin and making multiple trades a day correctly?",
+    "subreddit": "Trading",
+    "replyAuthor": "Dear-Performance-394",
+    "replyText": "That PDT rule is gone now tho. Now it’s a 2k minimum instead of $25k",
+    "commentUrl": "https://www.reddit.com/r/Trading/comments/1v1fn00/am_i_understanding_margin_and_making_multiple/oysuirw/",
+    "detectedAt": "2026-07-23T13:01:33.767Z"
+  },
+  {
+    "id": "reply-oyptoo3",
+    "platform": "reddit",
+    "postTitle": "Best ICT teacher you know?",
+    "subreddit": "InnerCircleTraders",
+    "replyAuthor": "Tiny_Firefighter4351",
+    "replyText": "ICT taught single concepts like FVG, OB and 10-12+ extra. then taught profitable strategies (models here in ICT language), this is what his channel is? right?\n\ncan I learn 1 concept like FVG and take practice trades using this one concept to use it like a master?",
+    "commentUrl": "https://www.reddit.com/r/InnerCircleTraders/comments/1v1bj7g/best_ict_teacher_you_know/oyptoo3/",
+    "detectedAt": "2026-07-23T13:01:31.821Z"
+  },
+  {
+    "id": "reply-oyptm9x",
+    "platform": "reddit",
+    "postTitle": "Is a profitable algo possible purely based off price action?",
+    "subreddit": "InnerCircleTraders",
+    "replyAuthor": "Silver_Spend_6887",
+    "replyText": "I’ve been playing around with 9:30-10:00 or 9:30-10:30. Trying to get stats on what works best. Also not sure if I should be using 9:59 and 10:29 as the closes",
+    "commentUrl": "https://www.reddit.com/r/InnerCircleTraders/comments/1v14hco/is_a_profitable_algo_possible_purely_based_off/oyptm9x/",
+    "detectedAt": "2026-07-23T13:01:30.472Z"
+  },
+  {
+    "id": "reply-oyinlrp",
+    "platform": "reddit",
+    "postTitle": "My experience with QT Funded refusing payout due to lost data",
+    "subreddit": "proptrading",
+    "replyAuthor": "Ruslan___",
+    "replyText": "Thanks, man! No, I didn't export a separate equity curve chart. But I have a full video capture and screenshots from both MT5 history and my personal area dashboard. They clearly show every single executed order, ticket numbers, and that I never breached any daily or max drawdown limits. Combined wi",
+    "commentUrl": "https://www.reddit.com/r/proptrading/comments/1v0rss1/my_experience_with_qt_funded_refusing_payout_due/oyinlrp/",
+    "detectedAt": "2026-07-23T13:01:27.885Z"
+  },
+  {
     "id": "reply-oyftx0y",
     "platform": "reddit",
     "postTitle": "STOP buying ICT courses , seriously you don't need them",
