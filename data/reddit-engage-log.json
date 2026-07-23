@@ -6280,5 +6280,45 @@
     "commentedAt": "2026-07-23T08:01:44.346Z",
     "permalink": "/r/Forexstrategy/comments/1v3d09a/xauusd_1h_long_pullback_into_40404075_fresh/oz8omag/",
     "commentId": "oz8omag"
+  },
+  {
+    "postId": "1v3s3jk",
+    "subreddit": "Trading",
+    "postTitle": "What was the one moment that actually changed how you trade?",
+    "commentText": "i had this exact problem, and the thing that finally cracked it for me was noticing i only broke my rules during new york open on eurusd when i was already down on the week. i'd see a fair value gap form on the 15m, know it was a low probability setup, and still enter because i needed to \"make it back.\" the pressure wasn't just psychological, it was rewriting what i was seeing on the chart in real time. once i started journaling the reason i entered, not just the setup, i could see exactly when need replaced process. curious whether your rule-breaks were mostly around entry, or were you also mismanaging the trade once you were in it?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-23T13:00:48.179Z",
+    "permalink": "/r/Trading/comments/1v3s3jk/what_was_the_one_moment_that_actually_changed_how/oz9winq/",
+    "commentId": "oz9winq"
+  },
+  {
+    "postId": "1v3jud3",
+    "subreddit": "Trading",
+    "postTitle": "i pulled prop firm numbers from court filings, company accounts and the firms' own disclosures. what the ads leave out",
+    "commentText": "i had this exact problem last year, passed a topstep express challenge trading 6E on the 15 minute chart, got funded, then watched them void a payout citing a \"rule clarification\" buried in an update i never got notified about. that 0.71% funnel number you dug up from their own data is the part nobody wants to sit with, because even the traders who \"make it\" are still operating inside a simulator with no legal claim to the funds per the agreement itself. tbh the math on $280 back per $800 in is cleaner than most people want to admit. curious whether you found any variance in those numbers between firms offering live-funded models versus the straight simulation setups, because that's the distinction i keep trying to nail down.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-23T13:00:58.376Z",
+    "permalink": "/r/Trading/comments/1v3jud3/i_pulled_prop_firm_numbers_from_court_filings/oz9wjwb/",
+    "commentId": "oz9wjwb"
+  },
+  {
+    "postId": "1v3pf4u",
+    "subreddit": "Trading",
+    "postTitle": "VTMarkets to GCash",
+    "commentText": "tbh yung ₱29,931 na natanggap mo is probably just one partial release, and the failed InstaPay portion via Rural Bank of Guinobatan gets returned to VT Markets' side within 3 to 5 banking days typically. follow up directly with VT Markets support and show them that GCash rejection text as proof, kasi minsan hindi sila nag-iinit ng refund process unless you escalate it yourself. been there with similar third-party rail issues and the broker usually needs a push. anong withdrawal method ang naka-set up sa iyong VT Markets account, bank transfer pa rin or may ibang option ka?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-23T13:01:07.954Z",
+    "permalink": "/r/Trading/comments/1v3pf4u/vtmarkets_to_gcash/oz9wl0k/",
+    "commentId": "oz9wl0k"
+  },
+  {
+    "postId": "1v3klp0",
+    "subreddit": "Trading",
+    "postTitle": "7 Years of Struggle to Become Profitable, Only to Be Scammed. My $125K Account Banned by The5ers (Proof Included).",
+    "commentText": "the \"milestone hunter\" excuse is a red flag i've seen more prop firms use in 2026 when they can't cover payouts, tbh. reducing to 0.2-0.3 lots on a $125K account during london session after seeing delayed withdrawals isn't gaming the rules, it's basic capital preservation. the fact that their payout delays preceded the ban is the real story here, not your lot sizing. were you trading specific sessions or pairs when they flagged you, like were most of your entries off daily OBs during new york open?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-23T13:01:17.664Z",
+    "permalink": "/r/Trading/comments/1v3klp0/7_years_of_struggle_to_become_profitable_only_to/oz9wm7g/",
+    "commentId": "oz9wm7g"
   }
 ]
