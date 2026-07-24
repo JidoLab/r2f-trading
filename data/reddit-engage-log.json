@@ -6304,5 +6304,25 @@
     "commentedAt": "2026-07-23T08:01:44.346Z",
     "permalink": "/r/Forexstrategy/comments/1v3d09a/xauusd_1h_long_pullback_into_40404075_fresh/oz8omag/",
     "commentId": "oz8omag"
+  },
+  {
+    "postId": "1v4lsni",
+    "subreddit": "ICTMentorship",
+    "postTitle": "ICT Stops hunted.",
+    "commentText": "the red and green arrows you're showing are classic displacement confusion, where price sweeps liquidity above an old high and the FVG forms in the wrong PD array relative to the draw. the entry model matters more than the FVG itself tbh, because without knowing where price is actually *going*, you're just fading moves into nowhere. been there plenty. if you drop the pair and timeframe i can show you exactly where the OB sits relative to that liquidity sweep 👀",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-24T03:01:53.473Z",
+    "permalink": "/r/ICTMentorship/comments/1v4lsni/ict_stops_hunted/ozev2y5/",
+    "commentId": "ozev2y5"
+  },
+  {
+    "postId": "1v4loty",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Another FVG Fail.",
+    "commentText": "the green and red arrows being a gamble makes sense tbh, if you're not pairing the FVG with a confirmed BOS and a higher timeframe PD array to anchor it, you're just fading random imbalances. the fact that ICT stops got hunted on your entry tells me liquidity was still above or below price when you pulled the trigger, the market needed to sweep that before it would deliver. what pair and session was this on? happy to walk through exactly where the actual entry confirmation should've been if you want to post more context.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-24T03:02:01.237Z",
+    "permalink": "/r/ICTMentorship/comments/1v4loty/another_fvg_fail/ozev3wn/",
+    "commentId": "ozev3wn"
   }
 ]
