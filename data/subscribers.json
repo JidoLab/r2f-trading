@@ -506,7 +506,7 @@
   {
     "email": "karsen110@gmail.com",
     "date": "2026-07-15T13:01:57.555Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-yj9g01",
     "referredBy": null,
     "referralCount": 0,
@@ -525,7 +525,8 @@
     "lastActivity": "2026-07-16T09:01:45.443Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ]
   }
 ]
