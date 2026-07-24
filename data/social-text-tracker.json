@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "question",
     "poll",
     "hot-take",
     "quote",
@@ -29,11 +28,12 @@
     "challenge",
     "quote",
     "tip",
-    "question"
+    "question",
+    "poll"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "GDP drop incoming & you're still holding longs? 👀 Real question — do you actually prep for high-impact news or just pray the trade works out? Drop your protocol below 👇 #ICTTrading #SmartMoneyConcepts #FairValueGap",
-    "date": "2026-07-23T12:00:43.047Z"
+    "type": "poll",
+    "text": "6 months in — what's actually holding your trading back?\n\n🅰️ No real strategy (still guessing)\n🅱️ Strategy works, discipline doesn't\n🅲️ I overtrade & revenge trade\n🅳️ I'm profitable, just not consistent\n\n#ICTTrading #SmartMonkeyConcepts #FundedTrader",
+    "date": "2026-07-24T12:00:36.880Z"
   }
 }
