@@ -6428,5 +6428,15 @@
     "commentedAt": "2026-07-25T03:00:58.283Z",
     "permalink": "/r/Forexstrategy/comments/1v595fk/eurusd_4h_long_waiting_for_1135011365_demand_tap/ozm3u54/",
     "commentId": "ozm3u54"
+  },
+  {
+    "postId": "1v5jrc8",
+    "subreddit": "Trading",
+    "postTitle": "My first $50k Apex Eval journey: My rules, strategy, and mental hurdles. How does this look to experienced traders?",
+    "commentText": "your consecutive loss rule and the 2-hour NY window are actually solid, a lot of newer traders skip that kind of structure entirely. the real thing i'd look at is your daily TP target being tied to a single trade, because when that $200 is the ceiling on one position, your brain starts managing the trade emotionally the second price moves your way, which is probably why you're cutting winners early. tbh the fix isn't psychological, it's structural. try letting your 1m entries breathe to the next HTF level or a FVG above price instead of a fixed dollar exit, so the chart is telling you when to exit, not your P&L. what pairs and sessions are you actually seeing your best A setups on? happy to walk through where the logical targets should sit if you drop a chart in the thread.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-25T13:00:26.782Z",
+    "permalink": "/r/Trading/comments/1v5jrc8/my_first_50k_apex_eval_journey_my_rules_strategy/ozob0re/",
+    "commentId": "ozob0re"
   }
 ]
