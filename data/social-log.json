@@ -1789,5 +1789,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-25T12:01:32.966Z",
+    "type": "text",
+    "postType": "hot-take",
+    "text": "Unpopular opinion: Backtesting order blocks all weekend won't save you if you can't control your emo",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
