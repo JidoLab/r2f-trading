@@ -6398,5 +6398,35 @@
     "commentedAt": "2026-07-24T18:00:38.118Z",
     "permalink": "/r/Trading/comments/1v4r5zm/the_capital_efficiency_in_futures_vs_stock_trading/ozj51ry/",
     "commentId": "ozj51ry"
+  },
+  {
+    "postId": "1v5otdj",
+    "subreddit": "proptrading",
+    "postTitle": "Analyzed 4000+ wallets for credit line for HyperLiquid traders off their performance",
+    "commentText": "the \"bounded first loss sized to your drawdown history\" part is genuinely interesting, because most prop firms just slap a static 10% DD rule on everyone regardless of whether you're scalping NQ on the 1m or swinging HTF OBs on the daily. your model actually accounts for *how* someone trades, not just whether they passed an eval. curious how you're handling traders whose on-chain history is mostly winning during a trending period but hasn't been stress-tested against a real liquidity sweep or extended consolidation, because that's where a lot of \"skilled\" equity curves fall apart fast. are you factoring in trade duration and session timing at all, like distinguishing someone who only prints during NY open versus someone trading consistently across sessions?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-25T03:00:40.317Z",
+    "permalink": "/r/proptrading/comments/1v5otdj/analyzed_4000_wallets_for_credit_line_for/ozm3sej/",
+    "commentId": "ozm3sej"
+  },
+  {
+    "postId": "1v58zh6",
+    "subreddit": "Forexstrategy",
+    "postTitle": "XAUUSD 1H Short — Waiting for $4,130–$4,160 Retest (Jul 24)",
+    "commentText": "solid read on the R:R problem at $4,057, that mid-range trap kills a lot of trades. the key thing i'd watch inside your $4,130, $4,160 zone is whether the 15m ChoCH prints above a clean displacement candle, not just a wick tap, because gold's been faking reactions at 4H OBs on the initial touch in Q3 2026 before actually delivering. tbh the TP3 at $3,880 is ambitious without a daily rebalance point anchoring it. curious whether you're seeing any 1H FVG sitting inside that supply zone that could tighten your actual entry trigger?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-25T03:00:50.019Z",
+    "permalink": "/r/Forexstrategy/comments/1v58zh6/xauusd_1h_short_waiting_for_41304160_retest_jul_24/ozm3tcv/",
+    "commentId": "ozm3tcv"
+  },
+  {
+    "postId": "1v595fk",
+    "subreddit": "Forexstrategy",
+    "postTitle": "EURUSD 4H Long — Waiting for 1.1350–1.1365 Demand Tap (Jul 24)",
+    "commentText": "solid setup tbh, the 15m ChoCH trigger is exactly right for this kind of demand tap. one thing i'd flag: if EURUSD taps 1.1350 during london open rather than a NY session, that 15m bullish OB you're building the limit off can get violated pretty fast before the real move. are you filtering your 15m OB by session, or just taking the first ChoCH you see regardless of when price gets there?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-25T03:00:58.283Z",
+    "permalink": "/r/Forexstrategy/comments/1v595fk/eurusd_4h_long_waiting_for_1135011365_demand_tap/ozm3u54/",
+    "commentId": "ozm3u54"
   }
 ]
