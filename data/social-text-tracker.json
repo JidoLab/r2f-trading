@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll",
     "hot-take",
     "quote",
     "tip",
@@ -29,11 +28,12 @@
     "quote",
     "tip",
     "question",
-    "poll"
+    "poll",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "6 months in — what's actually holding your trading back?\n\n🅰️ No real strategy (still guessing)\n🅱️ Strategy works, discipline doesn't\n🅲️ I overtrade & revenge trade\n🅳️ I'm profitable, just not consistent\n\n#ICTTrading #SmartMonkeyConcepts #FundedTrader",
-    "date": "2026-07-24T12:00:36.880Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: Backtesting order blocks all weekend won't save you if you can't control your emotions live. Screen time > back time. Change my mind. #ICTTrading #SmartMonkeyConcepts #FundedTrader",
+    "date": "2026-07-25T12:01:32.131Z"
   }
 }
