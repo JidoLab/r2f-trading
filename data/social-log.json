@@ -1818,5 +1818,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-26T12:01:18.583Z",
+    "type": "text",
+    "postType": "story",
+    "text": "Held a trade through GDP last quarter. Thought I had the bias right. Wiped half my account in 4 cand",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
