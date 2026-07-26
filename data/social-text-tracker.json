@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "hot-take",
     "quote",
     "tip",
     "challenge",
@@ -29,11 +28,12 @@
     "tip",
     "question",
     "poll",
-    "hot-take"
+    "hot-take",
+    "story"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: Backtesting order blocks all weekend won't save you if you can't control your emotions live. Screen time > back time. Change my mind. #ICTTrading #SmartMonkeyConcepts #FundedTrader",
-    "date": "2026-07-25T12:01:32.131Z"
+    "type": "story",
+    "text": "Held a trade through GDP last quarter. Thought I had the bias right. Wiped half my account in 4 candles. Now I flatten before high impact news — every time, no exceptions. Protect the account first, chase profits second. #ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-07-26T12:01:17.589Z"
   }
 }
