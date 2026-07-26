@@ -6438,5 +6438,35 @@
     "commentedAt": "2026-07-25T13:00:26.782Z",
     "permalink": "/r/Trading/comments/1v5jrc8/my_first_50k_apex_eval_journey_my_rules_strategy/ozob0re/",
     "commentId": "ozob0re"
+  },
+  {
+    "postId": "1v68esr",
+    "subreddit": "Forexstrategy",
+    "postTitle": "AUDUSD 1H Long Update — Fresh Demand Held, Coiling Under 0.6990 (Jul 25)",
+    "commentText": "solid setup tbh, but the catch here is that coiling *under* a round number like 0.7000 during the NY session open can get messy fast. price often sweeps above 0.6990 just enough to trigger early longs before reversing back into the demand zone for a second raid, especially on audusd where asian liquidity above those levels gets hunted pretty aggressively. your 4H ChoCH confluence at 0.69400 keeps the bias clean, i'm not arguing that, just that the wick to 0.6965 might not be the last one if NY decides to run stops below 0.6960 before the real impulse fires. what's the 15M look like right now, any bullish FVG forming above current price that could act as a launch point?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-26T03:00:30.507Z",
+    "permalink": "/r/Forexstrategy/comments/1v68esr/audusd_1h_long_update_fresh_demand_held_coiling/ozspz1x/",
+    "commentId": "ozspz1x"
+  },
+  {
+    "postId": "1v6grd2",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Cerco strategia forex che supera backtest su 10 anni su regole FTMO prop firm",
+    "commentText": "per le regole FTMO il problema col backtest su 10 anni è che spesso le persone contano ogni FVG che tocca, ma non filtrano per sessione. prova questo: marca solo i FVG che si formano durante la killzone di london open (7-9 CET) su EURUSD M15, poi aspetta che il prezzo torni a mitigare durante NY. quelli sono gli unici che dovresti stare contando nel backtest, imo. dimmi quanti setup ti restano dopo quel filtro, curioso se il numero crolla o regge bene.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-26T03:00:37.720Z",
+    "permalink": "/r/Forexstrategy/comments/1v6grd2/cerco_strategia_forex_che_supera_backtest_su_10/ozspzp3/",
+    "commentId": "ozspzp3"
+  },
+  {
+    "postId": "1v6q9zk",
+    "subreddit": "Trading",
+    "postTitle": "Guidance needed!",
+    "commentText": "the \"defeated\" feeling makes sense but tbh i think you're misreading the problem. it's not the multiple accounts, it's that you removed your DLL after ONE loss, which tells me you don't actually trust your edge yet, you're still in performance mode. the June blowup and the July blowup both trace back to the same root: you started sizing for outcomes instead of executing process, classic thing that happens when traders get their first taste of real PnL. the 69% in two days on proper sizing actually proves the edge is there, so the question becomes what does your pre-session routine look like before you even touch a chart, and are you marking out your HTF draw on liquidity before london opens or are you just reacting to setups as they form?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-26T03:00:46.755Z",
+    "permalink": "/r/Trading/comments/1v6q9zk/guidance_needed/ozsq0iz/",
+    "commentId": "ozsq0iz"
   }
 ]
