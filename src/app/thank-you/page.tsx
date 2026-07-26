@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 // Paste the recorded free-class video EMBED url here once it's recorded, e.g.
 // YouTube: https://www.youtube.com/embed/VIDEO_ID   or   Vimeo: https://player.vimeo.com/video/VIDEO_ID
 // Leave it "" to show a "coming soon, check your inbox" placeholder instead of a broken player.
-const FREE_CLASS_VIDEO_URL = "";
+const FREE_CLASS_VIDEO_URL: string = "";
 
 export default function ThankYouPage() {
   return (
@@ -31,27 +31,47 @@ export default function ThankYouPage() {
             You&apos;re In! Check Your Email
           </h1>
           <p className="text-white/60 text-lg mb-2">
-            Watch your free <span className="text-gold font-semibold">ICT class</span> below. Your <span className="text-gold font-semibold">ICT Trading Checklist</span> is also on its way to your inbox.
+            Your <span className="text-gold font-semibold">ICT Funded-Trader Playbook</span> is ready below. A copy is also on its way to your inbox.
           </p>
           <p className="text-white/40 text-sm">
-            Watch the class, then book a free call if you want help applying it.
+            Grab the playbook, then book a free call if you want help applying it.
           </p>
         </div>
       </section>
 
-      {/* Free class video */}
+      {/* Playbook download (primary reward) */}
       <section className="bg-[#0a1628] py-12 border-t border-white/5">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-2xl mx-auto px-6 text-center">
           <h2
-            className="text-2xl font-bold text-white text-center mb-2"
+            className="text-2xl font-bold text-white mb-2"
             style={{ fontFamily: "var(--font-heading)" }}
           >
-            Your Free ICT Class
+            Your ICT Funded-Trader Playbook
           </h2>
-          <p className="text-white/50 text-center text-sm mb-6">
-            The exact framework 50+ traders used to get funded. Grab a coffee and watch it start to finish.
+          <p className="text-white/50 text-sm mb-6 max-w-lg mx-auto">
+            The setups, the pre-trade checklist, the risk rules, and the mindset that keep a funded account alive. Yours to keep.
           </p>
-          {FREE_CLASS_VIDEO_URL ? (
+          <a
+            href="/downloads/ict-funded-trader-playbook.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gold hover:bg-gold-light text-navy font-bold px-8 py-3.5 rounded-md transition-all uppercase text-sm tracking-wide"
+          >
+            Download the Playbook
+          </a>
+        </div>
+      </section>
+
+      {/* Free class video — auto-appears once FREE_CLASS_VIDEO_URL is set */}
+      {FREE_CLASS_VIDEO_URL ? (
+        <section className="bg-navy py-12 border-t border-white/5">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2
+              className="text-2xl font-bold text-white text-center mb-6"
+              style={{ fontFamily: "var(--font-heading)" }}
+            >
+              Your Free ICT Class
+            </h2>
             <div className="aspect-video w-full rounded-lg overflow-hidden border border-white/10 bg-black">
               <iframe
                 src={FREE_CLASS_VIDEO_URL}
@@ -61,15 +81,9 @@ export default function ThankYouPage() {
                 className="w-full h-full"
               />
             </div>
-          ) : (
-            <div className="rounded-lg border border-white/10 bg-white/5 p-10 text-center">
-              <p className="text-white/70 text-sm">
-                Your class is being finalized. We&apos;ll email you the link within 24 hours, along with your checklist.
-              </p>
-            </div>
-          )}
-        </div>
-      </section>
+          </div>
+        </section>
+      ) : null}
 
       {/* What to Expect */}
       <section className="bg-[#0a1628] py-12">

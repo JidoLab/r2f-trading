@@ -6,12 +6,12 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free ICT Trading Class",
-  description: "Watch our free ICT trading class and learn the exact concepts that helped 50+ traders get funded. Instant access, no cost.",
+  title: "Free ICT Funded-Trader Playbook",
+  description: "Get the free ICT Funded-Trader Playbook: the setups, the pre-trade checklist, the risk rules, and the mindset that pass funded challenges. Instant download.",
   alternates: { canonical: "/free-class" },
   openGraph: {
-    title: "Free ICT Trading Class — R2F Trading",
-    description: "Learn the exact ICT framework used by funded traders. Free ICT class with Harvest Wright.",
+    title: "Free ICT Funded-Trader Playbook | R2F Trading",
+    description: "The free ICT Funded-Trader Playbook by Harvest Wright: setups, checklist, risk rules, and the mindset funded traders use.",
     url: "/free-class",
   },
 };
@@ -32,9 +32,9 @@ const TESTIMONIALS = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Course",
-  name: "Free ICT Trading Class",
+  name: "The ICT Funded-Trader Playbook",
   description:
-    "Learn the exact ICT concepts, setups, and risk management rules that helped 50+ traders get funded. Free ICT class with Harvest Wright.",
+    "The setups, the pre-trade checklist, the risk rules, and the mindset that helped 50+ traders get funded. A free playbook by Harvest Wright.",
   provider: {
     "@type": "Organization",
     name: "R2F Trading",
@@ -63,7 +63,7 @@ export default function FreeClassPage() {
       <section className="bg-navy py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <span className="inline-block bg-gold/20 text-gold text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-6">
-            Free ICT Class
+            Free ICT Playbook
           </span>
           <h1
             className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight"
@@ -72,13 +72,13 @@ export default function FreeClassPage() {
             The ICT Framework That Got <span className="text-gold">50+ Traders Funded</span>
           </h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto mb-8">
-            Watch a free class where I break down the exact ICT concepts, setups, and risk management rules my students use to pass funded challenges, in plain English.
+            Get the free ICT Funded-Trader Playbook: the exact setups, the pre-trade checklist, the risk rules, and the mindset my students use to pass funded challenges. Delivered instantly.
           </p>
           <div className="max-w-md mx-auto">
-            <EmailSignup variant="inline" buttonLabel="Get Instant Access" />
+            <EmailSignup variant="inline" buttonLabel="Get the Free Playbook" />
           </div>
           <p className="text-white/30 text-xs mt-3">
-            Get instant access to the class plus the free ICT Trading Checklist.
+            The free ICT Funded-Trader Playbook, delivered instantly. No cost, no card.
           </p>
         </div>
       </section>
@@ -110,7 +110,7 @@ export default function FreeClassPage() {
             What You&apos;ll Learn
           </h2>
           <p className="text-gray-500 text-center mb-12 max-w-2xl mx-auto">
-            This isn&apos;t another generic webinar. You&apos;ll walk away with actionable strategies you can use immediately.
+            This isn&apos;t another recycled ICT rehash. You&apos;ll walk away with setups and rules you can use on your next trade.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {WHAT_YOU_LEARN.map((item) => (
@@ -213,10 +213,10 @@ export default function FreeClassPage() {
             Ready to Trade Like Smart Money?
           </h2>
           <p className="text-white/50 text-sm mb-8">
-            Get instant access to the class. You&apos;ll also get the free ICT Trading Checklist immediately.
+            Get the free playbook now and put it to work before your next session.
           </p>
           <div className="max-w-md mx-auto">
-            <EmailSignup variant="inline" buttonLabel="Get Instant Access" />
+            <EmailSignup variant="inline" buttonLabel="Get the Free Playbook" />
           </div>
           <p className="text-white/20 text-xs mt-4">
             100% free. No credit card. Unsubscribe anytime.

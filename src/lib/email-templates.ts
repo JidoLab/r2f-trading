@@ -32,12 +32,12 @@ export function layout(title: string, body: string, cta?: { text: string; url: s
 
 export function welcomeEmail(): { subject: string; html: string } {
   return {
-    subject: "Welcome to R2F Trading — Here's Your Free ICT Checklist",
+    subject: "Welcome to R2F Trading. Your ICT Funded-Trader Playbook is inside.",
     html: layout(
       "Welcome to R2F Trading!",
       `<p style="color:#555;line-height:1.7;">Hey there,</p>
       <p style="color:#555;line-height:1.7;">Thanks for joining the R2F community! I'm Harvest, and I'm excited to share my ICT trading knowledge with you.</p>
-      <p style="color:#555;line-height:1.7;">Attached to this email is your <strong>ICT Trading Checklist</strong> — a practical guide I use before, during, and after every trade. Print it out, keep it next to your charts, and watch how much more disciplined your trading becomes.</p>
+      <p style="color:#555;line-height:1.7;">Attached to this email is your <strong>ICT Funded-Trader Playbook</strong>. It covers the 3 setups worth trading, the pre-trade checklist, the risk rules that pass funded challenges, and the mindset that keeps an account alive. Keep it next to your charts and run the checklist before every trade.</p>
       <p style="color:#555;line-height:1.7;">Over the next couple of weeks, I'll be sending you some of my best insights on ICT trading. Keep an eye on your inbox!</p>
       <p style="color:#555;line-height:1.7;">Talk soon,<br><strong style="color:${BRAND.navy};">Harvest Wright</strong><br>R2F Trading</p>`,
       { text: "Explore Coaching Plans", url: `${BRAND.url}/coaching` }

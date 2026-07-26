@@ -50,11 +50,11 @@ export async function POST(req: NextRequest) {
 
     try {
       // Try local file first (dev), then fetch from public URL
-      const localPath = path.join(process.cwd(), "public", "downloads", "ict-trading-checklist.pdf");
+      const localPath = path.join(process.cwd(), "public", "downloads", "ict-funded-trader-playbook.pdf");
       if (fs.existsSync(localPath)) {
         pdfBuffer = fs.readFileSync(localPath);
       } else {
-        const res = await fetch("https://r2ftrading.com/downloads/ict-trading-checklist.pdf");
+        const res = await fetch("https://www.r2ftrading.com/downloads/ict-funded-trader-playbook.pdf");
         if (res.ok) {
           pdfBuffer = Buffer.from(await res.arrayBuffer());
         }
@@ -65,7 +65,7 @@ export async function POST(req: NextRequest) {
       email,
       subject,
       html,
-      pdfBuffer ? [{ filename: "ICT-Trading-Checklist.pdf", content: pdfBuffer }] : undefined
+      pdfBuffer ? [{ filename: "ICT-Funded-Trader-Playbook.pdf", content: pdfBuffer }] : undefined
     );
 
     // Store subscriber in GitHub for drip tracking
