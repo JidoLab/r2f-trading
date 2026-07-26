@@ -1,0 +1,14 @@
+# Treat binary assets as binary so core.autocrlf never rewrites their bytes.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.mp4 binary
+*.mov binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
