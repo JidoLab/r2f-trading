@@ -6488,5 +6488,35 @@
     "commentedAt": "2026-07-26T13:01:44.476Z",
     "permalink": "/r/Forexstrategy/comments/1v6z2q4/consistency_is_the_key/ozuxruc/",
     "commentId": "ozuxruc"
+  },
+  {
+    "postId": "1v73nqt",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "For the consistently profitable ICT traders, how does it feel? What did you spend your first big payout/withdrawal on? How has trading allowed you to live the life that you've dreamed of?",
+    "commentText": "honestly the \"big payout\" moment is a bit anticlimactic tbh. mine was a quiet tuesday after a clean GBPUSD london session, price swept a liquidity pool below the asian low, returned to a 15m OB, and i just closed the trade and moved on with my day. first real withdrawal went toward clearing a credit card, nothing glamorous. what's your current stage, are you still grinding consistency or are you already pulling small withdrawals and working on scaling position size?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-26T18:00:24.153Z",
+    "permalink": "/r/InnerCircleTraders/comments/1v73nqt/for_the_consistently_profitable_ict_traders_how/ozwok01/",
+    "commentId": "ozwok01"
+  },
+  {
+    "postId": "1v767f3",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "How the 00:00 True Open eliminated 80% of my fakeouts",
+    "commentText": "the SMT piece you mentioned is underrated tbh, most people use it as a secondary confirmation but when you combine it with the true open and you're in Q2 of the daily macro, it basically pre-frames the entire manipulation leg before it even happens. the BTC/ETH example is a good one, i've seen the same thing play out on EUR/USD vs GBP/USD during the 01:00 to 04:00 EST window more times than i can count this year. what timeframe are you marking your true open level on, and are you using the 15m or 1m for the actual SMT divergence confirmation? curious because that's usually where people get tripped up on execution.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-26T18:00:35.539Z",
+    "permalink": "/r/InnerCircleTraders/comments/1v767f3/how_the_0000_true_open_eliminated_80_of_my/ozwolj9/",
+    "commentId": "ozwolj9"
+  },
+  {
+    "postId": "1v753x3",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "I need someone teach me!",
+    "commentText": "been there man, 2 years unprofitable with ICT is brutal but it usually means the foundation is off, not the concepts themselves. try this one thing: on EURUSD, during the NY killzone (8:30-11am EST), mark the last down candle before the displacement that creates a FVG on the 15m. if price retraces into that candle during the same session, that's your OB entry, not the FVG itself. most people enter the gap and get stopped out before the real move happens. try it on a few setups this week and report back what you're seeing, curious whether price is actually respecting those OBs or blowing through them.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-26T18:00:44.650Z",
+    "permalink": "/r/InnerCircleTraders/comments/1v753x3/i_need_someone_teach_me/ozwomqs/",
+    "commentId": "ozwomqs"
   }
 ]
