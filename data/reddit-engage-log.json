@@ -6478,5 +6478,15 @@
     "commentedAt": "2026-07-26T08:00:21.877Z",
     "permalink": "/r/proptrading/comments/1v69cms/ftmo_pro_firm/ozttp6u/",
     "commentId": "ozttp6u"
+  },
+  {
+    "postId": "1v6z2q4",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Consistency is the key?",
+    "commentText": "since you're already working with market structure and liquidity sweeps, try this: on the 15m chart, mark the last bearish candle before any strong bullish displacement during london open. if price retraces into that candle during NY killzone, that's your OB entry, not before. a lot of traders jump in the moment the sweep happens and get chopped out on the retracement back into the OB. the precision comes from waiting for NY to confirm the move london started. curious what pairs you're primarily running this on tbh, and are you using the daily high/low as your liquidity targets or going deeper to weekly?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-26T13:01:44.476Z",
+    "permalink": "/r/Forexstrategy/comments/1v6z2q4/consistency_is_the_key/ozuxruc/",
+    "commentId": "ozuxruc"
   }
 ]
