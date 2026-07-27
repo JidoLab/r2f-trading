@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "quote",
     "tip",
     "challenge",
     "myth",
@@ -29,11 +28,12 @@
     "question",
     "poll",
     "hot-take",
-    "story"
+    "story",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "story",
-    "text": "Held a trade through GDP last quarter. Thought I had the bias right. Wiped half my account in 4 candles. Now I flatten before high impact news — every time, no exceptions. Protect the account first, chase profits second. #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-07-26T12:01:17.589Z"
+    "type": "poll-native",
+    "text": "GDP drop incoming 👀 How do you trade high-impact news? #ICTtrading #SmartMoney\n\n🅰️ Sit out entirely\n🅱️ Trade the spike\n🅲️ Wait for retracement\n🅳️ Fade the move\n\nVote below! 👇",
+    "date": "2026-07-27T12:00:32.406Z"
   }
 }
