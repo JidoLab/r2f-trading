@@ -1655,5 +1655,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-28T12:01:19.063Z",
+    "type": "text",
+    "postType": "quote",
+    "text": "\"Patience is not waiting. It's knowing exactly what you're waiting for.\"\n\nWith GDP dropping this wee",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
