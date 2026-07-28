@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "tip",
     "challenge",
     "myth",
     "poll-native",
@@ -29,11 +28,12 @@
     "poll",
     "hot-take",
     "story",
-    "poll-native"
+    "poll-native",
+    "quote"
   ],
   "lastPost": {
-    "type": "poll-native",
-    "text": "GDP drop incoming 👀 How do you trade high-impact news? #ICTtrading #SmartMoney\n\n🅰️ Sit out entirely\n🅱️ Trade the spike\n🅲️ Wait for retracement\n🅳️ Fade the move\n\nVote below! 👇",
-    "date": "2026-07-27T12:00:32.406Z"
+    "type": "quote",
+    "text": "\"Patience is not waiting. It's knowing exactly what you're waiting for.\"\n\nWith GDP dropping this week, most traders will react. Smart money already has a plan. Which one are you?\n\n#ICTTrading #SmartMonkeyConcepts #FairValueGap",
+    "date": "2026-07-28T12:01:17.958Z"
   }
 }
