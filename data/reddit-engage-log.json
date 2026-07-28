@@ -6606,5 +6606,15 @@
     "commentedAt": "2026-07-27T13:00:19.272Z",
     "permalink": "/r/ICTMentorship/comments/1v7zca9/bitcoin_setup_using_ict_concepts/p01wihk/",
     "commentId": "p01wihk"
+  },
+  {
+    "postId": "1v8yjwy",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Am I using ICT correctly?",
+    "commentText": "on your 15m confirmation step, try marking the last down-close candle right before the displacement, not just any OB in the zone. if price retraces into that specific candle during the NY killzone with a clean FVG above it, that's your actual entry, not the whole 1H POI area. a lot of traders get shaken out because they're working with a 10-15 pip wide \"zone\" when the real entry is a single candle. curious what pairs you're running this on, because that 10am confluence hits differently on NQ vs forex imo.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-28T18:00:15.513Z",
+    "permalink": "/r/InnerCircleTraders/comments/1v8yjwy/am_i_using_ict_correctly/p0b6kfa/",
+    "commentId": "p0b6kfa"
   }
 ]
