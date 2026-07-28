@@ -6327,7 +6327,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-24T03:02:01.237Z",
     "permalink": "/r/ICTMentorship/comments/1v4loty/another_fvg_fail/ozev3wn/",
-    "commentId": "ozev3wn"
+    "commentId": "ozev3wn",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-24T10:00:19.000Z",
+    "firstReplyAuthor": "Routine-Brick6922",
+    "firstReplyText": "I have shown time with arrows. And I'm not referring to the 9:50 am macro trade but rather that 10:48 am candle, yeah it took liquidity but I'm saying it always goes there. It invalidated the FVG and it always does that."
   },
   {
     "postId": "1v54f66",
@@ -6337,7 +6341,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-24T08:01:30.084Z",
     "permalink": "/r/InnerCircleTraders/comments/1v54f66/looking_for_an_experienced_ict_smart_money_trader/ozg08wl/",
-    "commentId": "ozg08wl"
+    "commentId": "ozg08wl",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-24T08:56:43.000Z",
+    "firstReplyAuthor": "ImaginationPurple224",
+    "firstReplyText": "Thanks for your comment.  \nThe signals usually come with an entry zone, a stop loss and three take-profit levels.\n\nThe reason I’m looking for someone with ICT/Smart Money knowledge is not because the signals are difficult to follow, but because I think someone familiar with the strategy can make bet"
   },
   {
     "postId": "1v4h51y",
@@ -6598,35 +6606,5 @@
     "commentedAt": "2026-07-27T13:00:19.272Z",
     "permalink": "/r/ICTMentorship/comments/1v7zca9/bitcoin_setup_using_ict_concepts/p01wihk/",
     "commentId": "p01wihk"
-  },
-  {
-    "postId": "1v8x77s",
-    "subreddit": "Forexstrategy",
-    "postTitle": "Thoughts on my strategy?",
-    "commentText": "the setup is solid tbh, but one thing worth stress-testing is your CHoCH filter on the 1m during NY open specifically on gold. XAUUSD can print fake CHoCHs all day in the first 15 minutes of that session because the spread widens and you get wicks that look like displacement but are just noise. i'd personally want to see the 1m CHoCH close fully outside the FVG before committing the limit order, not just wick through it. curious whether you're also checking where that swept level sits relative to the daily dealing range, like is it a premium sweep or discount sweep, because that context changes how aggressively you should be targeting the opposite liquidity line at 1:2.",
-    "mentionedR2F": false,
-    "commentedAt": "2026-07-28T13:01:16.083Z",
-    "permalink": "/r/Forexstrategy/comments/1v8x77s/thoughts_on_my_strategy/p09971x/",
-    "commentId": "p09971x"
-  },
-  {
-    "postId": "1v8xk2t",
-    "subreddit": "Forexstrategy",
-    "postTitle": "XAU/USD: Bearish Trend Remains Intact",
-    "commentText": "the FVG at 4,030, 4,035 is solid confluence but i'd want to see a proper mitigation on the M15 before shorting it, not just price touching the zone. if NY session opens and we get a BOS to the downside off that FVG, that's a cleaner entry than fading the rebound blind tbh. the 4,000 OB is the real target imo, but the path there matters. what timeframe are you using to confirm mitigation of that FVG before you pull the trigger?",
-    "mentionedR2F": true,
-    "commentedAt": "2026-07-28T13:01:24.868Z",
-    "permalink": "/r/Forexstrategy/comments/1v8xk2t/xauusd_bearish_trend_remains_intact/p099859/",
-    "commentId": "p099859"
-  },
-  {
-    "postId": "1v8r7gj",
-    "subreddit": "Forexstrategy",
-    "postTitle": "GOLD ANALYSIS",
-    "commentText": "solid analysis tbh, but the catch here is that a single H1 CHOCH doesn't always confirm full bearish control, especially on gold right now in Q3 2026 where liquidity sweeps above obvious supply zones have been trapping shorts pretty aggressively. i'd want to see if there's a corresponding M15 BOS below a recent swing low before committing to that 4,085 sell zone, otherwise you might be entering right as price raids sellside liquidity and reverses back into the OB. what session are you planning to execute this during, london open or new york?",
-    "mentionedR2F": false,
-    "commentedAt": "2026-07-28T13:01:33.942Z",
-    "permalink": "/r/Forexstrategy/comments/1v8r7gj/gold_analysis/p09998r/",
-    "commentId": "p09998r"
   }
 ]
