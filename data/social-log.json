@@ -1684,5 +1684,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-29T12:00:18.739Z",
+    "type": "text",
+    "postType": "promo-free-class",
+    "text": "Order blocks. Fair value gaps. The setups smart money actually uses. Free class drops you the 3 ICT ",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
