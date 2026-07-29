@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-07-29-your-stop-loss-is-why-you-keep-losing",
+    "syndicatedAt": "2026-07-29T12:03:59.739Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-07-29-your-stop-loss-is-why-you-keep-losing",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/your-stop-loss-is-why-you-keep-losing-a2j",
+        "id": "4262723"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-07-29-your-stop-loss-is-why-you-keep-losing"
+  },
+  {
     "slug": "2026-06-29-best-ict-trading-course-hype-vs-what-actually-works",
     "syndicatedAt": "2026-06-29T08:04:44.690Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-06-29-best-ict-trading-course-hype-vs-what-actually-works",
