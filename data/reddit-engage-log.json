@@ -6640,5 +6640,45 @@
     "commentedAt": "2026-07-29T03:00:27.111Z",
     "permalink": "/r/Trading/comments/1v8p3ve/opinions_on_strategy/p0e8pln/",
     "commentId": "p0e8pln"
+  },
+  {
+    "postId": "1va1pn8",
+    "subreddit": "proptrading",
+    "postTitle": "Is prop firm trading viable long term?",
+    "commentText": "prop firms are viable long term tbh, but you have to treat the 1% rule as a feature not a punishment. the traders i see blow funded accounts are usually forcing trades outside their A+ setup window, like taking a weak 15m OB during overlap when there's no clean BOS on the 1h to confirm displacement. scaling across 2 or 3 firms simultaneously is pretty standard once you're consistent, so if one account gets flagged you're not dead in the water. curious what your current drawdown management looks like during the NY killzone, because that's usually where the rule violations stack up fastest.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-29T18:00:38.611Z",
+    "permalink": "/r/proptrading/comments/1va1pn8/is_prop_firm_trading_viable_long_term/p0ij04r/",
+    "commentId": "p0ij04r"
+  },
+  {
+    "postId": "1v9p5ec",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Is this a good identification of Buyside/Sellside Liquidity?",
+    "commentText": "i had this exact problem when i first started marking up EURUSD across multiple timeframes, i had like 30 lines on the daily alone and couldn't see anything useful. the key thing that helped me was accepting that conflicting sentiment between monthly and weekly is actually normal, the weekly is often just retracing into monthly sellside before continuing higher, so they're not always \"disagreeing.\" tbh i'd strip it back to just the most recent swing highs and lows on each timeframe and see which ones have clean equal highs or equal lows sitting above/below price, those are your actual liquidity pools worth watching. curious what pair you're charting this on and whether you're seeing any FVGs sitting between those weekly and monthly levels?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-29T18:00:47.697Z",
+    "permalink": "/r/ICTMentorship/comments/1v9p5ec/is_this_a_good_identification_of_buysidesellside/p0ij1gl/",
+    "commentId": "p0ij1gl"
+  },
+  {
+    "postId": "1v9btxp",
+    "subreddit": "ICTMentorship",
+    "postTitle": "Am I using ICT correctly?",
+    "commentText": "your process is actually pretty clean, tbh. the one thing i'd watch is that 10:00 AM open confluence, because imo it works best when it aligns with a killzone displacement already in play, not just as a standalone filter. also moving to BE only after continuation is confirmed is underrated and most people skip that step. curious though, when you're marking those 1H OBs near liquidity, are you validating them by the FVG left behind or just the candle body itself? makes a huge difference for which ones actually hold when price returns.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-29T18:00:56.546Z",
+    "permalink": "/r/ICTMentorship/comments/1v9btxp/am_i_using_ict_correctly/p0ij2s8/",
+    "commentId": "p0ij2s8"
+  },
+  {
+    "postId": "1v9m6vn",
+    "subreddit": "ICTMentorship",
+    "postTitle": "$1,130 Short Using the ICT 2022 Model (Daily IRL → ERL + Weekly Bias)",
+    "commentText": "clean execution tbh, using the daily fvg as your IRL entry after the ERL sweep is exactly how that model is supposed to work. a lot of people miss the retracement patience piece and just chase the displacement candle instead. curious what your stop placement looked like relative to the fvg, were you putting it just above the high of the imbalance or above the actual weekly high that swept the ERL?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-29T18:01:02.246Z",
+    "permalink": "/r/ICTMentorship/comments/1v9m6vn/1130_short_using_the_ict_2022_model_daily_irl_erl/p0ij3l1/",
+    "commentId": "p0ij3l1"
   }
 ]
