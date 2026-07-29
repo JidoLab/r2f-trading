@@ -6616,5 +6616,25 @@
     "commentedAt": "2026-07-28T18:00:15.513Z",
     "permalink": "/r/InnerCircleTraders/comments/1v8yjwy/am_i_using_ict_correctly/p0b6kfa/",
     "commentId": "p0b6kfa"
+  },
+  {
+    "postId": "1v8v9zb",
+    "subreddit": "Trading",
+    "postTitle": "Every bad trade feels like a bad setup in the moment. It's usually just a skipped step.",
+    "commentText": "the mitigation step is where i see most people blow it, tbh. waiting for price to return to the zone is one thing, but you nailed it: arriving isn't the signal. on gold especially, i want that 1m FVG to form *after* the touch, not during the sweep, because the sweep itself is often just the liquidity grab before the real move prints the opposite way. your initiation rule about wanting two closes past the swing point is solid. curious though, on the 15s ES confirmation, are you anchoring that structure flip to a specific session high or low, like the london open range, or just the most recent swing on that timeframe?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-29T03:00:19.878Z",
+    "permalink": "/r/Trading/comments/1v8v9zb/every_bad_trade_feels_like_a_bad_setup_in_the/p0e8oww/",
+    "commentId": "p0e8oww"
+  },
+  {
+    "postId": "1v8p3ve",
+    "subreddit": "Trading",
+    "postTitle": "Opinions on Strategy",
+    "commentText": "solid framework tbh, the flow from H1 bias down to M5 FVG entry is clean and actually pretty close to how i'd structure it. one thing i'd refine is your confirmation step on the M5 retrace into the FVG, because on XAU/USD that first FVG gets blown through more often than people expect, especially during NY open volatility. 🎯 are you requiring a specific candle close inside the FVG before entry, or just touching the zone, because that distinction alone can cut out a lot of the noise entries on gold?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-29T03:00:27.111Z",
+    "permalink": "/r/Trading/comments/1v8p3ve/opinions_on_strategy/p0e8pln/",
+    "commentId": "p0e8pln"
   }
 ]
