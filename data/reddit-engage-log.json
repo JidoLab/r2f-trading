@@ -6690,5 +6690,55 @@
     "commentedAt": "2026-07-30T03:00:33.979Z",
     "permalink": "/r/proptrading/comments/1v9ygli/prop_trading_risk_management/p0ljes6/",
     "commentId": "p0ljes6"
+  },
+  {
+    "postId": "1vallle",
+    "subreddit": "Trading",
+    "postTitle": "Framework, Not Holy Grail",
+    "commentText": "the \"tight low-volume consolidation vs wide news-driven chop\" distinction you made is exactly it, and most coded indicators can't read that because they're just measuring price, not context. an OB that prints clean entries during a slow london accumulation session is basically useless during a high-impact NFP range expansion, same structure, completely different regime. tbh the fiverr dev problem is really just a symptom of trying to outsource the judgment layer, which is the part that actually matters. what asset are you running this on, and are you currently using any session-based filters to help contextualize the regime before you take a setup?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-30T08:00:31.900Z",
+    "permalink": "/r/Trading/comments/1vallle/framework_not_holy_grail/p0mnkfc/",
+    "commentId": "p0mnkfc"
+  },
+  {
+    "postId": "1va2hyx",
+    "subreddit": "Trading",
+    "postTitle": "GBPCHF H1 - a clean trending structure worth studying",
+    "commentText": "the shallow pullbacks you're describing are basically textbook mitigation of bullish OBs on the H1, buyers stepping in before price can sweep the prior swing low each time. the acceleration into early July is the tell tbh, that's usually when the weak hands have been fully shaken and smart money is running the range clean. curious whether your EA is marking those OBs at the last up-close candle before each impulse leg, or just the swing low itself? makes a real difference for where the actual entry zone sits.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-30T08:00:41.224Z",
+    "permalink": "/r/Trading/comments/1va2hyx/gbpchf_h1_a_clean_trending_structure_worth/p0mnl3j/",
+    "commentId": "p0mnl3j"
+  },
+  {
+    "postId": "1vajrfm",
+    "subreddit": "Forexstrategy",
+    "postTitle": "🚨 FOMC WAS A TRAP... NOW GOLD IS READY TO CRASH BELOW 4000! 📉",
+    "commentText": "try marking the 4H bearish OB that formed right at monday's high, because that's exactly where price reversed from during the FOMC spike. if you drop to the 15m and watch for price to retrace into that OB during the london open or early NY killzone tomorrow, you're looking for a bearish FVG to form on the way down as confirmation before entering. the 4070 BOS you mentioned is key too, imo that's your new short term draw on liquidity pointing straight toward 4000. what does your 1H look like right now, is there a clean FVG sitting above current price that price might tap before continuing lower?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-30T08:00:50.915Z",
+    "permalink": "/r/Forexstrategy/comments/1vajrfm/fomc_was_a_trap_now_gold_is_ready_to_crash_below/p0mnlri/",
+    "commentId": "p0mnlri"
+  },
+  {
+    "postId": "1va1ui3",
+    "subreddit": "Forexstrategy",
+    "postTitle": "🚨 BEFORE YOU TRADE FOMC... READ THIS GOLD TRAP FIRST! ⚠️",
+    "commentText": "the 3980 idea makes a lot of sense tbh, that's basically a classic liquidity grab below a clean psychological level before price seeks the real imbalance higher. what i'd be watching is whether there's an unfilled 4h FVG sitting somewhere between 3950 and 3970, because that's where smart money would actually want to reprice before the real move. the FOMC candle itself is almost never the entry, it's the retracement after that prints the actual OB worth trading. are you mapping this on the 1h or dropping to the 15m for your entry confirmation? makes a big difference for timing the mitigation of that 4000 OB before the push.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-30T08:01:00.801Z",
+    "permalink": "/r/Forexstrategy/comments/1va1ui3/before_you_trade_fomc_read_this_gold_trap_first/p0mnmhf/",
+    "commentId": "p0mnmhf"
+  },
+  {
+    "postId": "1v9qpk9",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Everyone Seems Bearish on Gold. Here's What's Making Me Pause",
+    "commentText": "the sweep you're describing below tuesday's low is exactly what i'd be watching for too, tbh. that kind of liquidity run into FOMC is textbook, and if london takes it out early session, the real question becomes whether you get a rejection candle back inside the previous day's range or if price just accepts below and continues. 4062 as your line in the sand makes sense from a daily perspective, but the H1 OB sitting in that 4034-4046 zone is where i'd be camped, watching for a bullish BOS before committing to anything long. curious what your entry model looks like if the sweep does happen, are you waiting for a full BOS on a lower timeframe or just a strong rejection wick off that zone? happy to walk through the confirmation side of it here if that helps.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-30T08:01:14.213Z",
+    "permalink": "/r/Forexstrategy/comments/1v9qpk9/everyone_seems_bearish_on_gold_heres_whats_making/p0mnnfc/",
+    "commentId": "p0mnnfc"
   }
 ]
