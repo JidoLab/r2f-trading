@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1785371423441-tldrd",
+    "platform": "youtube",
+    "postTitle": "🔥 Live Trading Profit 💰 | Real Gold Trade #shorts",
+    "postUrl": "https://youtube.com/watch?v=1-UJ4woxLEY",
+    "authorName": "Swing Trader Live",
+    "suggestedReply": "Interesting take on the gold trade. In my experience, I get my students to wait for a confirmed displacement into a premium array on the 15 minute before entering, rather than chasing the move. Gold respects liquidity sweeps beautifully and that one filter alone cuts a lot of the noise. Did you have a clear inducement swept before this entry?",
+    "createdAt": "2026-07-30T00:30:23.441Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785371427137-eqg0y",
+    "platform": "youtube",
+    "postTitle": "ICT Kill Zone + 45MIN TF CRT Strategy | Hidden ICT Kill Zone Algorithm That Banks Don&#39;t Teach",
+    "postUrl": "https://youtube.com/watch?v=TTZU7mbC0-4",
+    "authorName": "Yogesh Tech",
+    "suggestedReply": "I've been incorporating the 45min CRT into my own EURUSD sessions for over a year now and the kill zone alignment piece is what most traders completely overlook. I drill into my students that CRT without proper kill zone confluence is just guessing. The algorithm element you touched on here is exactly what separates consistent traders from the ones who keep blowing accounts. Solid framework.",
+    "createdAt": "2026-07-30T00:30:27.137Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785371430689-jxw3e",
+    "platform": "youtube",
+    "postTitle": "#trading #smct #ict #forex #trader",
+    "postUrl": "https://youtube.com/watch?v=GCRU61STCMw",
+    "authorName": "Tango Forex",
+    "suggestedReply": "SMC paired with ICT concepts is a powerful combination but I always warn my students to be careful about confluencing too many things at once. The real edge comes from keeping it simple, waiting for a clean displacement into a premium or discount zone on the 15m or 1H before committing. Overcomplicating the model is where most traders lose the plot entirely.",
+    "createdAt": "2026-07-30T00:30:30.689Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785371433807-3ji9v",
+    "platform": "youtube",
+    "postTitle": "Live Trading | ICT Concepts | July 29, 2026",
+    "postUrl": "https://youtube.com/watch?v=dfSru9toDuY",
+    "authorName": "Tyler Trades",
+    "suggestedReply": "Tyler nailing live July sessions is always valuable content. ICT concepts hit different when you watch them play out in real time versus backtesting. One thing I always warn my students about though is confirmation bias during live sessions. when you already have a bias going in, you can force an order block or FVG read that simply is not there. Trust the structure, not your gut.",
+    "createdAt": "2026-07-30T00:30:33.807Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785371437930-3wsqp",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE | Nifty &amp; Bank Nifty Analysis | Smart Money Concepts (SMC) | Liquidity HUNT Sniper Entry",
+    "postUrl": "https://youtube.com/watch?v=7t22UapX_lQ",
+    "authorName": "Bombay traders",
+    "suggestedReply": "One thing I always add to liquidity hunt setups on Bank Nifty is confirming the sweep on the 5m before dropping to the 1m for entry. Most of my students rush the entry the moment they see the wick, but waiting for a 1m displacement candle after the sweep filters out at least 60% of the fakeouts. Are you factoring in session open liquidity separately from intraday highs and lows here?",
+    "createdAt": "2026-07-30T00:30:37.930Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785371440828-37d23",
+    "platform": "youtube",
+    "postTitle": "The Greatest Smart Money Concepts Indicator of 2026",
+    "postUrl": "https://youtube.com/watch?v=lujpWWPHVEQ",
+    "authorName": "LuxAlgo",
+    "suggestedReply": "Smart money concepts indicators are only as good as the confluences you stack them with. I always tell my students that the \"greatest\" tool means nothing if you're not pairing it with session time, liquidity sweeps, and a clean higher timeframe bias first. Are you finding this indicator performs better on the 4H for confirmation versus the lower timeframes for entry refinement?",
+    "createdAt": "2026-07-30T00:30:40.828Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785371444999-3m2zj",
+    "platform": "youtube",
+    "postTitle": "LIVE GOLD ANALYSIS | XAUUSD LIVE | SMART MONEY CONCEPTS | DAY 23",
+    "postUrl": "https://youtube.com/watch?v=rg9zwtTYA0U",
+    "authorName": "The Trading Logic ",
+    "suggestedReply": "Smart Money Concepts on gold is where I see most traders overthink the entry. I drill into my students to always confirm the XAUUSD draw on liquidity before committing to a position, especially on day 23 of a live series where bias can drift. Are you aligning your SMC entries with the higher timeframe PD arrays first, or working purely from intraday structure?",
+    "createdAt": "2026-07-30T00:30:44.999Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785371448092-05nm6",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Institutional Trading Masterclas 62 Smart Money Concepts (SMC) | Gold, Forex &amp; Crypto",
+    "postUrl": "https://youtube.com/watch?v=YP5vqpXa_9Y",
+    "authorName": "primepipfx",
+    "suggestedReply": "I've been trading SMC for over a decade and gold is still the cleanest asset for reading institutional footprints. I drill into my students that liquidity sweeps on the 4H are where the real setups live, not the 1M noise most beginners chase. The smart money concepts covered here align exactly with what I teach around session confluences and order block validation.",
+    "createdAt": "2026-07-30T00:30:48.092Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1785113136034-9s10v",
     "platform": "investinglive",
     "postTitle": "What is tradeCompass at investingLive.com: Trading methodolgy explained and how traders can utilize it",
