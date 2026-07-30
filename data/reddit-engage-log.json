@@ -6479,11 +6479,7 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-26T03:00:46.755Z",
     "permalink": "/r/Trading/comments/1v6q9zk/guidance_needed/ozsq0iz/",
-    "commentId": "ozsq0iz",
-    "hasReply": true,
-    "firstReplyAt": "2026-07-26T03:04:06.000Z",
-    "firstReplyAuthor": "Outrageous-Ask-3733",
-    "firstReplyText": "Yes I do have a full prep and routine, but I fail to abide by my rules which doesn’t let me survive for tomorrow \n\nI trade Auction market theory, it’s different from ICT(used to trade it), it requires market entries and data reading around entries, volume delta, FP "
+    "commentId": "ozsq0iz"
   },
   {
     "postId": "1v69cms",
@@ -6523,11 +6519,7 @@
     "mentionedR2F": false,
     "commentedAt": "2026-07-26T18:00:35.539Z",
     "permalink": "/r/InnerCircleTraders/comments/1v767f3/how_the_0000_true_open_eliminated_80_of_my/ozwolj9/",
-    "commentId": "ozwolj9",
-    "hasReply": true,
-    "firstReplyAt": "2026-07-26T20:09:40.000Z",
-    "firstReplyAuthor": "DarioMMN",
-    "firstReplyText": "Spot on man, EUR/USD vs GBP/USD in that London window is pure gold with this setup.\n\nTo answer your question: I mark the 00:00 EST True Open directly on the **1H/4H chart** to keep the HTF bias clean and avoid clutter.\n\nFor the SMT confirmation itself, I use the **15m** to spot the structural crack/"
+    "commentId": "ozwolj9"
   },
   {
     "postId": "1v753x3",
@@ -6547,11 +6539,7 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-27T03:00:20.896Z",
     "permalink": "/r/ICTMentorship/comments/1v7j8fe/how_the_0000_true_open_eliminated_80_of_my/ozzl5m9/",
-    "commentId": "ozzl5m9",
-    "hasReply": true,
-    "firstReplyAt": "2026-07-27T13:46:09.000Z",
-    "firstReplyAuthor": "DarioMMN",
-    "firstReplyText": "Spot on. SMT without price context relative to True Open is just a random line mismatch context is everything.\n\nRight now, I run it most consistently on **ETH/BTC** for crypto, and **EUR/USD vs GBP/USD** (or NQ vs ES for indices) during London/NY open windows.\n\nHappy to drop a breakdown chart of a r"
+    "commentId": "ozzl5m9"
   },
   {
     "postId": "1v6z9wa",
@@ -6752,5 +6740,45 @@
     "commentedAt": "2026-07-30T08:01:14.213Z",
     "permalink": "/r/Forexstrategy/comments/1v9qpk9/everyone_seems_bearish_on_gold_heres_whats_making/p0mnnfc/",
     "commentId": "p0mnnfc"
+  },
+  {
+    "postId": "1vao2pe",
+    "subreddit": "Trading",
+    "postTitle": "I blew another funded account 0.25% away from a payout. Why do I keep doing this to myself?",
+    "commentText": "that thing you described, where the last trade feels like it's carrying the weight of four years, that's not a mindset problem. that's a position sizing problem disguised as a mindset problem. when you're 0.25% away, you should literally be risking nothing, half your normal size at most, because the math already won. been there, took me embarrassingly long to figure it out. curious what your normal risk per trade looks like in the final stretch. are you still going full 1R into a new york session FVG when you're that close, or are you scaling down?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-30T13:00:48.587Z",
+    "permalink": "/r/Trading/comments/1vao2pe/i_blew_another_funded_account_025_away_from_a/p0nvhs0/",
+    "commentId": "p0nvhs0"
+  },
+  {
+    "postId": "1vajzfv",
+    "subreddit": "Trading",
+    "postTitle": "Help a beginner out",
+    "commentText": "SMC isn't dead, tbh it's still the cleanest framework out there for reading institutional flow, order blocks and liquidity sweeps work just as well in 2026 as they did when you were active. the prop firm space is a bit cleaner now but still very much buyer beware, some firms are solid and some will still find ways to void your account on a technicality so vetting matters. your CFA macro background is actually a real edge if you layer it properly, reading the higher timeframe narrative on something like dollar index or EURUSD on the weekly before drilling into 15m FVGs for entry is genuinely powerful and most people skip that top-down context entirely. curious whether you were mostly trading forex or futures back then, because the entry model i'd suggest for your comeback really depends on that.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-30T13:00:58.532Z",
+    "permalink": "/r/Trading/comments/1vajzfv/help_a_beginner_out/p0nviya/",
+    "commentId": "p0nviya"
+  },
+  {
+    "postId": "1v9y824",
+    "subreddit": "Trading",
+    "postTitle": "why I stopped trading SPY lunchtime chop during my Vanquish evaluation",
+    "commentText": "been there, and the tangled 9/21 EMA during that 11:30 to 1:30 window is basically a red flag that AMD (algorithmic market delivery) has gone quiet. no institutional program is pushing directional flow, so you're just trading retail noise while your 0DTE bleeds theta. the \"setup\" looks real because price is still touching levels, but there's no IPA (institutional participation) behind it to give you follow-through. curious what your entry model looks like on those morning sessions before the dead zone kicks in. happy to walk through where the last valid order block or FVG sits relative to your entries if you want to drop the specifics here.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-30T13:01:08.968Z",
+    "permalink": "/r/Trading/comments/1v9y824/why_i_stopped_trading_spy_lunchtime_chop_during/p0nvk6m/",
+    "commentId": "p0nvk6m"
+  },
+  {
+    "postId": "1valffz",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "IFVG strategy I have questions about this strategy.",
+    "commentText": "tbh the bias problem you're describing is super common with IFVG traders, but here's the catch most people miss: the IFVG is an entry tool, not a bias tool, so trying to get both from the same concept is where it breaks down. bias has to come from a higher timeframe first, like the 4h or daily dealing range, are you in premium or discount relative to the weekly range? SMT becoming your target sometimes actually makes sense because it's confluence, not confirmation of direction. what pair and session are you scalping when the bias feels unclear? drop some context and i'll try to help you narrow it down.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-30T13:01:17.353Z",
+    "permalink": "/r/InnerCircleTraders/comments/1valffz/ifvg_strategy_i_have_questions_about_this_strategy/p0nvl5z/",
+    "commentId": "p0nvl5z"
   }
 ]
