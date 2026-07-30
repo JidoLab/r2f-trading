@@ -6680,5 +6680,15 @@
     "commentedAt": "2026-07-29T18:01:02.246Z",
     "permalink": "/r/ICTMentorship/comments/1v9m6vn/1130_short_using_the_ict_2022_model_daily_irl_erl/p0ij3l1/",
     "commentId": "p0ij3l1"
+  },
+  {
+    "postId": "1v9ygli",
+    "subreddit": "proptrading",
+    "postTitle": "Prop trading risk management",
+    "commentText": "blowing 3 funded accounts even after passing tells me the issue isn't your entries, it's probably revenge trading or holding through drawdown after a loss on the NY session open. i've seen traders with a solid OB model on the 15m completely wreck themselves because there's nothing external stopping them from re-entering after a stop out. tbh the best \"app\" is a hard broker-side daily drawdown limit combined with a simple script that disables your EA or alerts you when you've hit a pre-set daily loss threshold. nothing fancy, just friction between you and the button. what does your worst blowup day usually look like, a few big losses or a bunch of small ones that compound?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-30T03:00:33.979Z",
+    "permalink": "/r/proptrading/comments/1v9ygli/prop_trading_risk_management/p0ljes6/",
+    "commentId": "p0ljes6"
   }
 ]
