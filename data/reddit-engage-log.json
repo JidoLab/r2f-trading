@@ -6479,7 +6479,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-26T03:00:46.755Z",
     "permalink": "/r/Trading/comments/1v6q9zk/guidance_needed/ozsq0iz/",
-    "commentId": "ozsq0iz"
+    "commentId": "ozsq0iz",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-26T03:04:06.000Z",
+    "firstReplyAuthor": "Outrageous-Ask-3733",
+    "firstReplyText": "Yes I do have a full prep and routine, but I fail to abide by my rules which doesn’t let me survive for tomorrow \n\nI trade Auction market theory, it’s different from ICT(used to trade it), it requires market entries and data reading around entries, volume delta, FP "
   },
   {
     "postId": "1v69cms",
@@ -6519,7 +6523,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-07-26T18:00:35.539Z",
     "permalink": "/r/InnerCircleTraders/comments/1v767f3/how_the_0000_true_open_eliminated_80_of_my/ozwolj9/",
-    "commentId": "ozwolj9"
+    "commentId": "ozwolj9",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-26T20:09:40.000Z",
+    "firstReplyAuthor": "DarioMMN",
+    "firstReplyText": "Spot on man, EUR/USD vs GBP/USD in that London window is pure gold with this setup.\n\nTo answer your question: I mark the 00:00 EST True Open directly on the **1H/4H chart** to keep the HTF bias clean and avoid clutter.\n\nFor the SMT confirmation itself, I use the **15m** to spot the structural crack/"
   },
   {
     "postId": "1v753x3",
@@ -6539,7 +6547,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-27T03:00:20.896Z",
     "permalink": "/r/ICTMentorship/comments/1v7j8fe/how_the_0000_true_open_eliminated_80_of_my/ozzl5m9/",
-    "commentId": "ozzl5m9"
+    "commentId": "ozzl5m9",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-27T13:46:09.000Z",
+    "firstReplyAuthor": "DarioMMN",
+    "firstReplyText": "Spot on. SMT without price context relative to True Open is just a random line mismatch context is everything.\n\nRight now, I run it most consistently on **ETH/BTC** for crypto, and **EUR/USD vs GBP/USD** (or NQ vs ES for indices) during London/NY open windows.\n\nHappy to drop a breakdown chart of a r"
   },
   {
     "postId": "1v6z9wa",
