@@ -6822,5 +6822,15 @@
     "commentedAt": "2026-07-31T13:00:51.786Z",
     "permalink": "/r/Forexstrategy/comments/1vbo2f4/eurusd_1h_update_textbook_tp1_and_tp2_both_tagged/p0v8pdd/",
     "commentId": "p0v8pdd"
+  },
+  {
+    "postId": "1vb7ou6",
+    "subreddit": "Trading",
+    "postTitle": "Need advice from fellow traders",
+    "commentText": "i had this exact problem last year trading GU on the 5 minute, kept wrestling with profit targets and finally realised my exits were totally disconnected from structure. i was just picking numbers like 1.1 or 1.5 rr out of thin air instead of targeting the next HTF liquidity pool or the asian session high sitting above price. once i started letting price tell me where it *wanted* to go rather than forcing a fixed rr, the inconsistency you're describing actually made a lot more sense, because the market isn't random, it's just that fixed targets ignore where the real draw on liquidity is. curious what your current exit logic looks like, are you using any structure levels to guide it or purely rr numbers?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-07-31T18:00:48.015Z",
+    "permalink": "/r/Trading/comments/1vb7ou6/need_advice_from_fellow_traders/p0x52ci/",
+    "commentId": "p0x52ci"
   }
 ]
