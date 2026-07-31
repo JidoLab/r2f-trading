@@ -1675,5 +1675,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-07-31T12:01:44.713Z",
+    "type": "text",
+    "postType": "promo-checklist",
+    "text": "NFP day = no guessing. I run through this ICT checklist before every single trade. Pre-trade, during",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
