@@ -553,6 +553,11 @@
     "dripsSent": 0,
     "referralCode": "R2F-9oi6or",
     "referredBy": null,
-    "referralCount": 0
+    "referralCount": 0,
+    "score": 0,
+    "segment": "cold",
+    "events": [],
+    "lastActivity": "2026-07-30T12:15:44.703Z",
+    "dripsHistory": []
   }
 ]
