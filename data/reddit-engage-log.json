@@ -6780,5 +6780,15 @@
     "commentedAt": "2026-07-30T13:01:17.353Z",
     "permalink": "/r/InnerCircleTraders/comments/1valffz/ifvg_strategy_i_have_questions_about_this_strategy/p0nvl5z/",
     "commentId": "p0nvl5z"
+  },
+  {
+    "postId": "1vaqu49",
+    "subreddit": "Forexstrategy",
+    "postTitle": "📈 EURUSD 1H LONG — Range Broken, Waiting on the Retest 🚀",
+    "commentText": "solid execution on the trigger model, tbh the 15m bullish ChoCH inside the demand base is exactly the right confirmation to wait for rather than just price touching the FVG and hoping. one thing i'd watch though: that breaker block confluence at 1.14300 only really holds if the displacement leg that created the FVG originated from below the old range high, otherwise you're potentially entering into residual imbalance that gets revisited pretty aggressively before continuation. happy to walk through how i'd map the OTE entry on this specific 1H structure if that helps, what's your current read on where the 61.8 actually sits relative to the FVG high?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-07-31T03:01:29.519Z",
+    "permalink": "/r/Forexstrategy/comments/1vaqu49/eurusd_1h_long_range_broken_waiting_on_the_retest/p0sufzu/",
+    "commentId": "p0sufzu"
   }
 ]
