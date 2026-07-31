@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll-native",
     "question",
     "poll",
     "hot-take",
@@ -29,11 +28,12 @@
     "poll-native",
     "quote",
     "promo-free-class",
-    "promo-results"
+    "promo-results",
+    "promo-checklist"
   ],
   "lastPost": {
-    "type": "promo-results",
-    "text": "R2F traders are closing out July profitable using nothing but order blocks + FVGs. Mid-year numbers don't lie. See the community results 👇\nhttps://r2ftrading.com/results\n#ICTTrading #SmartMoneyConcepts #FundedTrader",
-    "date": "2026-07-30T12:01:13.179Z"
+    "type": "promo-checklist",
+    "text": "NFP day = no guessing. I run through this ICT checklist before every single trade. Pre-trade, during, post-trade. Keeps emotions out. Grab it free 👇\nhttps://r2ftrading.com\n\n#ICTTrading #SmartMoneyConcepts #NFP",
+    "date": "2026-07-31T12:01:43.801Z"
   }
 }
