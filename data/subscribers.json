@@ -567,6 +567,16 @@
     "referralCode": "R2F-3tb0wx",
     "referredBy": null,
     "referralCount": 0,
-    "phone": "8029880067"
+    "phone": "8029880067",
+    "score": 15,
+    "segment": "cold",
+    "events": [
+      {
+        "type": "coaching_page_view",
+        "date": "2026-07-31T11:29:16.231Z"
+      }
+    ],
+    "lastActivity": "2026-07-31T11:29:16.231Z",
+    "dripsHistory": []
   }
 ]
