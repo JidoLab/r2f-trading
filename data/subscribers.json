@@ -425,7 +425,7 @@
   {
     "email": "mohdsharairy1996@gmail.com",
     "date": "2026-07-02T00:23:05.911Z",
-    "dripsSent": 7,
+    "dripsSent": 8,
     "referralCode": "R2F-dwavs5",
     "referredBy": null,
     "referralCount": 0,
@@ -441,7 +441,8 @@
       "tradingPsychology",
       "propFirmTips",
       "coachingCta",
-      "valueRecap"
+      "valueRecap",
+      "lastChance"
     ]
   },
   {
@@ -508,7 +509,7 @@
   {
     "email": "karsen110@gmail.com",
     "date": "2026-07-15T13:01:57.555Z",
-    "dripsSent": 4,
+    "dripsSent": 5,
     "referralCode": "R2F-yj9g01",
     "referredBy": null,
     "referralCount": 0,
@@ -529,7 +530,8 @@
       "beginnerMistakes",
       "ictConcepts",
       "successStory",
-      "tradingPsychology"
+      "tradingPsychology",
+      "propFirmTips"
     ]
   },
   {
