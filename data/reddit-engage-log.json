@@ -6832,5 +6832,15 @@
     "commentedAt": "2026-07-31T18:00:48.015Z",
     "permalink": "/r/Trading/comments/1vb7ou6/need_advice_from_fellow_traders/p0x52ci/",
     "commentId": "p0x52ci"
+  },
+  {
+    "postId": "1vbxqd9",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "HTF PD arrays and Gaps",
+    "commentText": "HTF pd arrays act as the draw itself, not the internal discount/premium. so when price is trading into a daily FVG or NWOG from below, the lower quadrant of that gap is where you're looking for longs because that's the discount within the discount. you're not flipping the logic, you're just nesting it, same framework, tighter scope. the 1min entries inside the HTF array still follow the same rule, long in upper half, short in lower, but that only applies once you're already inside the HTF structure trading toward its midpoint or upper boundary. what's your typical HTF draw when you're using those NDOGS, are you trading back into the gap or through it toward an OB above?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-08-01T08:01:38.646Z",
+    "permalink": "/r/InnerCircleTraders/comments/1vbxqd9/htf_pd_arrays_and_gaps/p116nm9/",
+    "commentId": "p116nm9"
   }
 ]
