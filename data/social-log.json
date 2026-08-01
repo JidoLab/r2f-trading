@@ -1704,5 +1704,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-08-01T12:01:25.051Z",
+    "type": "text",
+    "postType": "tip",
+    "text": "NFP week + August liquidity = trap city. Smart money WILL sweep obvious levels before the move. Mark",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
