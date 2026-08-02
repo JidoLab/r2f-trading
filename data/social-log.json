@@ -1733,5 +1733,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-08-02T12:01:11.658Z",
+    "type": "text",
+    "postType": "myth",
+    "text": "MYTH: Trade every setup you see in August.\n\nTRUTH: August = lowest liquidity of the year. Smart mone",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
