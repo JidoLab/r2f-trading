@@ -6625,7 +6625,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-27T13:00:19.272Z",
     "permalink": "/r/ICTMentorship/comments/1v7zca9/bitcoin_setup_using_ict_concepts/p01wihk/",
-    "commentId": "p01wihk"
+    "commentId": "p01wihk",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-27T13:06:17.000Z",
+    "firstReplyAuthor": "WICK_HAPPENS",
+    "firstReplyText": "Yeah, the setup happened during the **London Killzone (2:00–5:00 AM NY time)**.\n\nMy confirmation came from a **5-minute Inversion Fair Value Gap (IFVG)**, and I refined the entry using a **1-minute FVG** for the short.\n\nLooking at it again, I think this setup is better suited for an **intraday trade"
   },
   {
     "postId": "1v8yjwy",
@@ -6635,7 +6639,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-28T18:00:15.513Z",
     "permalink": "/r/InnerCircleTraders/comments/1v8yjwy/am_i_using_ict_correctly/p0b6kfa/",
-    "commentId": "p0b6kfa"
+    "commentId": "p0b6kfa",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-28T21:30:52.000Z",
+    "firstReplyAuthor": "Waste-Chair5081",
+    "firstReplyText": "I’m running this on NQ/ES &amp; Gold sometimes. I will give that a try though"
   },
   {
     "postId": "1v8v9zb",
@@ -6645,7 +6653,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-07-29T03:00:19.878Z",
     "permalink": "/r/Trading/comments/1v8v9zb/every_bad_trade_feels_like_a_bad_setup_in_the/p0e8oww/",
-    "commentId": "p0e8oww"
+    "commentId": "p0e8oww",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-29T06:50:51.000Z",
+    "firstReplyAuthor": "TheTradingTeddy",
+    "firstReplyText": "The 15s entry confirmation is just a MSF in the same way that 1m structure is going, a reconfirmation if you will. I do not care about session highs or lows tbh"
   },
   {
     "postId": "1v8p3ve",
