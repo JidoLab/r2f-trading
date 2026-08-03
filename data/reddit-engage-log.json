@@ -6687,7 +6687,11 @@
     "mentionedR2F": true,
     "commentedAt": "2026-07-29T18:00:47.697Z",
     "permalink": "/r/ICTMentorship/comments/1v9p5ec/is_this_a_good_identification_of_buysidesellside/p0ij1gl/",
-    "commentId": "p0ij1gl"
+    "commentId": "p0ij1gl",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-30T10:53:14.000Z",
+    "firstReplyAuthor": "_pearlywhites",
+    "firstReplyText": "Thanks for the comments. I’m currently charting EURGBP.\n\nAs for FWG, I’m not sure if I’m doing it wrongly but I find that in my experience I identify a lot of FWGs that are false positives? I only see a small minority of the FWGs that I’ve identified actually retrace to its level right before contin"
   },
   {
     "postId": "1v9btxp",
@@ -6697,7 +6701,11 @@
     "mentionedR2F": false,
     "commentedAt": "2026-07-29T18:00:56.546Z",
     "permalink": "/r/ICTMentorship/comments/1v9btxp/am_i_using_ict_correctly/p0ij2s8/",
-    "commentId": "p0ij2s8"
+    "commentId": "p0ij2s8",
+    "hasReply": true,
+    "firstReplyAt": "2026-07-29T18:06:54.000Z",
+    "firstReplyAuthor": "Waste-Chair5081",
+    "firstReplyText": "I use both. I mark the 1H OB after a liquidity sweep, but I trust it a lot more if it leaves behind a clean FVG with displacement. From there, I wait for price to come back into that area, then I drop to the 15M and 5M and wait for confirmation before taking the trade. I don’t really trade the candl"
   },
   {
     "postId": "1v9m6vn",
