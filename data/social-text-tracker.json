@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "hot-take",
     "story",
     "quote",
     "poll-native",
@@ -29,11 +28,12 @@
     "promo-results",
     "promo-checklist",
     "tip",
-    "myth"
+    "myth",
+    "promo-blog"
   ],
   "lastPost": {
-    "type": "myth",
-    "text": "MYTH: Trade every setup you see in August.\n\nTRUTH: August = lowest liquidity of the year. Smart money isn't here. Thin markets = fake moves, stop hunts, chaos.\n\nSit on your hands or size down. Patience IS a trade.\n\n#ICTTrading #SmartMoneyConcepts #August",
-    "date": "2026-08-02T12:01:10.875Z"
+    "type": "promo-blog",
+    "text": "NFP week + August liquidity = smart money's playground. I broke down exactly how ICT concepts predict the sweeps before & after the release. Most traders get wrecked. You don't have to. 👇 https://r2ftrading.com/trading-insights #ICTTrading #NFP #SmartMoneyConcepts",
+    "date": "2026-08-03T12:01:31.868Z"
   }
 }
