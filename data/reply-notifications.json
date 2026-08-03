@@ -1,5 +1,25 @@
 [
   {
+    "id": "reply-p0ij2s8",
+    "platform": "reddit",
+    "postTitle": "Am I using ICT correctly?",
+    "subreddit": "ICTMentorship",
+    "replyAuthor": "Waste-Chair5081",
+    "replyText": "I use both. I mark the 1H OB after a liquidity sweep, but I trust it a lot more if it leaves behind a clean FVG with displacement. From there, I wait for price to come back into that area, then I drop to the 15M and 5M and wait for confirmation before taking the trade. I don’t really trade the candl",
+    "commentUrl": "https://www.reddit.com/r/ICTMentorship/comments/1v9btxp/am_i_using_ict_correctly/p0ij2s8/",
+    "detectedAt": "2026-08-03T13:00:32.814Z"
+  },
+  {
+    "id": "reply-p0ij1gl",
+    "platform": "reddit",
+    "postTitle": "Is this a good identification of Buyside/Sellside Liquidity?",
+    "subreddit": "ICTMentorship",
+    "replyAuthor": "_pearlywhites",
+    "replyText": "Thanks for the comments. I’m currently charting EURGBP.\n\nAs for FWG, I’m not sure if I’m doing it wrongly but I find that in my experience I identify a lot of FWGs that are false positives? I only see a small minority of the FWGs that I’ve identified actually retrace to its level right before contin",
+    "commentUrl": "https://www.reddit.com/r/ICTMentorship/comments/1v9p5ec/is_this_a_good_identification_of_buysidesellside/p0ij1gl/",
+    "detectedAt": "2026-08-03T13:00:32.163Z"
+  },
+  {
     "id": "reply-p0e8oww",
     "platform": "reddit",
     "postTitle": "Every bad trade feels like a bad setup in the moment. It's usually just a skipped step.",
