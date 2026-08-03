@@ -569,7 +569,7 @@
   {
     "email": "rersch4mscm@gmail.com",
     "date": "2026-07-31T11:28:35.424Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-3tb0wx",
     "referredBy": null,
     "referralCount": 0,
@@ -583,7 +583,9 @@
       }
     ],
     "lastActivity": "2026-07-31T11:29:16.231Z",
-    "dripsHistory": [],
+    "dripsHistory": [
+      "beginnerMistakes"
+    ],
     "abandonmentEmailSent": true
   }
 ]
