@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "story",
     "quote",
     "poll-native",
     "promo-free-class",
@@ -29,11 +28,12 @@
     "promo-checklist",
     "tip",
     "myth",
-    "promo-blog"
+    "promo-blog",
+    "promo-coaching"
   ],
   "lastPost": {
-    "type": "promo-blog",
-    "text": "NFP week + August liquidity = smart money's playground. I broke down exactly how ICT concepts predict the sweeps before & after the release. Most traders get wrecked. You don't have to. 👇 https://r2ftrading.com/trading-insights #ICTTrading #NFP #SmartMoneyConcepts",
-    "date": "2026-08-03T12:01:31.868Z"
+    "type": "promo-coaching",
+    "text": "NFP week + August liquidity = traders getting wrecked. I've got 2 coaching spots open. ICT concepts, personalized game plan, real feedback. Free 15-min call, no pitch. Book now 👇\nhttps://r2ftrading.com/contact\n#ICTTrading #FundedTrader #SmartMoneyConcepts",
+    "date": "2026-08-04T12:01:23.392Z"
   }
 }
