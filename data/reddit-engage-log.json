@@ -6915,5 +6915,15 @@
     "commentedAt": "2026-08-04T03:00:16.783Z",
     "permalink": "/r/Trading/comments/1veotru/how_do_you_compare_prop_firms_before_buying_a/p1kspdg/",
     "commentId": "p1kspdg"
+  },
+  {
+    "postId": "1vey465",
+    "subreddit": "Forexstrategy",
+    "postTitle": "Prop firms?",
+    "commentText": "i had this exact problem earlier this year when i was trying to run MT5 for nas100 during the new york open session. tbh most US-based prop firms have been pushing their own platforms hard and MT5 access is genuinely limited, but FTMO and The Funded Trader both still support it for indices. i was hunting a 15m FVG on NQ right at the 9:30 open and needed the MT5 depth of market to time the entry properly, so platform compatibility actually mattered. curious what session you're planning to trade and whether you're looking at a specific eval structure, happy to dig into it more here if it helps.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-08-04T08:00:15.815Z",
+    "permalink": "/r/Forexstrategy/comments/1vey465/prop_firms/p1lxgw2/",
+    "commentId": "p1lxgw2"
   }
 ]
