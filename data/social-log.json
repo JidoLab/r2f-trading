@@ -1657,5 +1657,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-08-04T12:01:24.328Z",
+    "type": "text",
+    "postType": "promo-coaching",
+    "text": "NFP week + August liquidity = traders getting wrecked. I've got 2 coaching spots open. ICT concepts,",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
