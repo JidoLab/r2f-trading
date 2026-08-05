@@ -6945,5 +6945,15 @@
     "commentedAt": "2026-08-04T18:03:14.808Z",
     "permalink": "/r/Forexstrategy/comments/1vf9m5q/audusd_4h_short_a_910_setup/p1p2t3m/",
     "commentId": "p1p2t3m"
+  },
+  {
+    "postId": "1vf6zq7",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Is 4H only one pair Too Slow for Passing a Prop Firm Evaluation?",
+    "commentText": "tbh 4H bias with BTC only is gonna give you maybe 4 trades a month, which is brutal for a prop eval timeline. try this: use your 4H OB for bias, then drop to the 15m and mark the last down candle before the displacement that created the OB. if price retraces into that specific candle during NY killzone (9:30 to 11am EST), that's your actual entry, not the full 4H block. tightens your SL dramatically and you're still respecting the higher timeframe narrative. curious whether you're waiting for a full 4H candle close before you even look for entries, or are you watching it live? that detail changes everything about how you'd apply this.",
+    "mentionedR2F": false,
+    "commentedAt": "2026-08-05T03:00:54.025Z",
+    "permalink": "/r/InnerCircleTraders/comments/1vf6zq7/is_4h_only_one_pair_too_slow_for_passing_a_prop/p1s5ija/",
+    "commentId": "p1s5ija"
   }
 ]
