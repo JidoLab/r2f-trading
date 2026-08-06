@@ -7009,5 +7009,15 @@
     "commentedAt": "2026-08-06T08:00:18.243Z",
     "permalink": "/r/Trading/comments/1vg2zbq/how_to_make_my_way_into_learning_powell_strategy/p20ocl9/",
     "commentId": "p20ocl9"
+  },
+  {
+    "postId": "1vgikk9",
+    "subreddit": "Trading",
+    "postTitle": "Can a Pre-Trade “Cognitive Breathalyzer” Protect Day Traders From Themselves? I Built a Rule-Based Version and Want It Criticized",
+    "commentText": "the \"anger\" and \"overconfidence\" characters are the ones that actually matter most imo, because in my experience those two states are almost always active right after a stop gets run on something like a london killzone entry, and that's exactly when traders revenge trade into NY open with full size on a position they have zero business taking. the consecutive loss hard limit is solid but i'd genuinely push on how your system weighs *recency* of the last loss, not just the count, because three losses spread across a session hits differently than three losses in 20 minutes. curious how you're handling the intent flagging specifically, like is the trader self-reporting \"i'm trying to make back my drawdown\" or is the system inferring it from behavior patterns?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-08-06T13:01:22.557Z",
+    "permalink": "/r/Trading/comments/1vgikk9/can_a_pretrade_cognitive_breathalyzer_protect_day/p21wfpu/",
+    "commentId": "p21wfpu"
   }
 ]
