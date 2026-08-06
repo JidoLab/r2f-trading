@@ -1715,5 +1715,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-08-06T12:00:23.906Z",
+    "type": "text",
+    "postType": "question",
+    "text": "NFP tomorrow. Do you STOP trading before the release, or do you hunt the liquidity sweep right after",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
