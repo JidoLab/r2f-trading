@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1785976214037-pylxf",
+    "platform": "youtube",
+    "postTitle": "Liquidity Sweeps: External vs Internal and Which One Pays #liquidity #ICT #smartmoney",
+    "postUrl": "https://youtube.com/watch?v=-PUqLHl9yEU",
+    "authorName": "Com Lucro Trader",
+    "suggestedReply": "I always tell my students that external liquidity sweeps are the ones that actually fund your account, internal sweeps just set up the run. Had a student last week who kept fading internal sweeps on EURUSD on the 15m and wondering why he kept getting stopped out. Once he started waiting for that external BSL or SSL to get taken first, his entries cleaned up immediately.",
+    "createdAt": "2026-08-06T00:30:14.037Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785976216786-m9np9",
+    "platform": "youtube",
+    "postTitle": "Big Wins 🔴 LIVE  Day Trading Futures | ES NQ | ICT Concepts | Aug 5",
+    "postUrl": "https://youtube.com/watch?v=8S0uS89ljBU",
+    "authorName": "LumiTraders",
+    "suggestedReply": "That Aug 5 session was a masterclass in reading displacement during high volatility. The move most traders missed was waiting for the FVG to form AFTER the aggressive sell off, not before. I drill this into my students constantly. entering into the first impulse candle on NQ that day would have wrecked most retail accounts.",
+    "createdAt": "2026-08-06T00:30:16.786Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785976219491-o6uhc",
+    "platform": "youtube",
+    "postTitle": "Buy or Sell? Master Support &amp; Resistance Like a Pro",
+    "postUrl": "https://youtube.com/watch?v=owpMnTy2pE8",
+    "authorName": "Trading Challenges Everyday",
+    "suggestedReply": "Interesting take on mastering support and resistance. In my experience, raw S&R levels alone can trap newer traders into reactive decisions. I teach my students to wait for price to sweep liquidity above or below those levels first, then look for confirmation on the 15 minute before committing. The sweep is what separates institutional movement from retail noise.",
+    "createdAt": "2026-08-06T00:30:19.491Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785976223159-chagh",
+    "platform": "youtube",
+    "postTitle": "MARKET MAKERS WERE  ONTO ME ;) | DAY TRADING ICT CONCEPTS | 8/5/2026",
+    "postUrl": "https://youtube.com/watch?v=xZYFhlGE52w",
+    "authorName": "Tanja Trades",
+    "suggestedReply": "I tell my students all the time that market makers will test your conviction before giving you the move. Had the same feeling trading the pound last Tuesday, saw a clean liquidity sweep on the 5m that looked like it was hunting my stop before delivering. The fact that you caught yourself second guessing mid trade is exactly the lesson. Most traders never identify that manipulation in real time.",
+    "createdAt": "2026-08-06T00:30:23.159Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785976226086-4ytj7",
+    "platform": "youtube",
+    "postTitle": "IFVG Strategy || Inverse fair value gap || ICT trading strategy #shorts",
+    "postUrl": "https://youtube.com/watch?v=PZqjoVTD6tE",
+    "authorName": "Ashish IQ",
+    "suggestedReply": "Inverse FVGs are one of those concepts most traders dismiss too quickly. I always tell my students to watch how price respects the IFVG mitigation zone on the 4H before dropping to lower timeframes for entry confirmation. Are you finding better confluence when the IFVG aligns with a larger draw on liquidity?",
+    "createdAt": "2026-08-06T00:30:26.086Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785976229689-4gixj",
+    "platform": "youtube",
+    "postTitle": "W on NQ long 🔴PM LIVE  Day Trading Futures | ES NQ | ICT Concepts | Aug 4",
+    "postUrl": "https://youtube.com/watch?v=XRpMqBVtIQ8",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Nice W on the NQ long during PM session, that killzone can be tricky with all the chop before price commits to a direction. I drill into my students to wait for a confirmed displacement and a clean FVG before touching NQ in the afternoon. Most jump in too early and get chopped out before the real move. Did you find price was respecting a higher timeframe PD array coming into that setup?",
+    "createdAt": "2026-08-06T00:30:29.689Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785976233813-d318c",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE TCP Strategy | Pure Smart Money Concepts (SMC) Masterclass for Gold and Crypto | US Session",
+    "postUrl": "https://youtube.com/watch?v=oEc2O123d4k",
+    "authorName": "The Crypto Project",
+    "suggestedReply": "On gold specifically during the US session, most traders miss that SMC setups hit harder when they align with a higher timeframe PD array like a weekly order block or monthly FVG. I drill this into my students constantly. When TCP's TCP strategy confluences with that higher timeframe draw on liquidity, your probability shifts significantly. Are you filtering entries against the weekly range before taking live setups?",
+    "createdAt": "2026-08-06T00:30:33.813Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1785976237765-bup54",
+    "platform": "youtube",
+    "postTitle": "Stop Chasing Order Block Moves — Wait for This Entry #trending  #orderblock #priceaction",
+    "postUrl": "https://youtube.com/watch?v=Eu882mS-JUA",
+    "authorName": "MPA Trader",
+    "suggestedReply": "Chasing the OB move itself is what burns most new traders. What I drill into my students is that the real edge isn't the block, it's the confirmation after price returns to it. A breaker or a 15m FVG forming inside the OB gives you a precision entry instead of a wide stop guess. That patience filter alone changed how my students approach setups on indices.",
+    "createdAt": "2026-08-06T00:30:37.765Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1785717950610-8m1t4",
     "platform": "investinglive",
     "postTitle": "PBOC is expected to set the USD/CNY reference rate at 6.7364 – Reuters estimate",
