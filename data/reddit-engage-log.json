@@ -7039,5 +7039,15 @@
     "commentedAt": "2026-08-07T12:01:55.050Z",
     "permalink": "/r/Forexstrategy/comments/1vhy6t5/xauusd_4h_gold_broke_4300_but_im_not_buying_spot/p28zy2e/",
     "commentId": "p28zy2e"
+  },
+  {
+    "postId": "1vhd1zo",
+    "subreddit": "Trading",
+    "postTitle": "How to start OrderFlow as a beginner with basic ICT concept knowledge?",
+    "commentText": "since you've already got ICT foundations from month 1 and 2, you're actually in a better spot than most people starting orderflow because concepts like BOS and FVGs map pretty cleanly onto what auction theory is describing. tbh i'd start with cbrackn before axia, his earlier content builds AMT from the ground up in a way that clicks faster when you already understand liquidity. the jump from \"price seeks liquidity\" (ICT) to \"price auctions to find acceptance/rejection\" (AMT) is smaller than it looks, it's really just a different vocabulary for similar mechanics. what pairs or sessions are you actually watching right now? if you tell me what you're seeing on the charts i'm happy to walk through where the orderflow and ICT ideas overlap on that specific setup.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-08-07T13:00:50.647Z",
+    "permalink": "/r/Trading/comments/1vhd1zo/how_to_start_orderflow_as_a_beginner_with_basic/p29asg1/",
+    "commentId": "p29asg1"
   }
 ]
