@@ -7049,5 +7049,15 @@
     "commentedAt": "2026-08-07T13:00:50.647Z",
     "permalink": "/r/Trading/comments/1vhd1zo/how_to_start_orderflow_as_a_beginner_with_basic/p29asg1/",
     "commentId": "p29asg1"
+  },
+  {
+    "postId": "1vhwmg8",
+    "subreddit": "Trading",
+    "postTitle": "Any recommendations for real-time insider trading (Form 4) APIs? (Current stack: Sentimentick + IBKR Gateway)",
+    "commentText": "i had this exact problem last month when i was trying to layer insider accumulation signals into an NQ scalp setup on the 15m. i ended up using SEC EDGAR's EFTS full-text search endpoint directly for Form 4 filings, it's free and you can poll it every few minutes for near-realtime data without paying for a premium feed. the latency isn't perfect but for momentum confirmation alongside something like your `sentiment_tier` field it honestly holds up fine, especially if you're not trying to front-run the filing by milliseconds. curious whether your sentimentick bias signals are already picking up on insider activity indirectly or if you're seeing clean separation between the two signals when you test it?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-08-07T18:00:34.435Z",
+    "permalink": "/r/Trading/comments/1vhwmg8/any_recommendations_for_realtime_insider_trading/p2b6n9h/",
+    "commentId": "p2b6n9h"
   }
 ]
