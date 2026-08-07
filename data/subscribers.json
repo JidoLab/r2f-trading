@@ -466,7 +466,8 @@
       "coachingCta",
       "valueRecap",
       "lastChance"
-    ]
+    ],
+    "staleReengageSent": true
   },
   {
     "email": "mdrabbihossen046@gmail.com",
