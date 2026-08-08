@@ -24,5 +24,93 @@
     "used": true,
     "usedAt": "2026-06-29T08:04:00.126Z",
     "generatedSlug": "2026-06-29-best-ict-trading-course-hype-vs-what-actually-works"
+  },
+  {
+    "id": "cm-trading-coach-vs-trading-course",
+    "title": "Trading Coach vs Trading Course: Which Do You Need?",
+    "question": "Should I get a trading coach or just buy a course?",
+    "angle": "Both are legitimate at different stages. Give the course option real credit: it is far cheaper and correct when you cannot yet state your entry criteria in one sentence. Coaching earns its price only once you can state them and still break them.",
+    "targetKeyword": "trading coach vs trading course",
+    "source": "manual",
+    "priority": "high",
+    "addedAt": "2026-08-08T00:00:00.000Z",
+    "used": false
+  },
+  {
+    "id": "cm-questions-to-ask-a-trading-coach",
+    "title": "What to Ask a Trading Coach Before You Pay",
+    "question": "What questions should I ask a trading coach before paying?",
+    "angle": "Four questions that expose a bad fit in one conversation: can I watch you trade live, what did your worst month look like, what happens in a session, and how many students stop showing up. Explain what good and bad answers sound like.",
+    "targetKeyword": "questions to ask a trading coach",
+    "source": "manual",
+    "priority": "high",
+    "addedAt": "2026-08-08T00:00:00.000Z",
+    "used": false
+  },
+  {
+    "id": "cm-trading-mentor-red-flags",
+    "title": "Trading Mentorship Red Flags That Cost Traders Thousands",
+    "question": "How do I avoid getting scammed by a trading mentor?",
+    "angle": "Concrete disqualifiers: guaranteed returns, urgency to decide today, income screenshots as primary proof, refusal to discuss losing months, signals sold as education. Explain why each one correlates with a bad product.",
+    "targetKeyword": "trading mentor red flags",
+    "source": "manual",
+    "priority": "high",
+    "addedAt": "2026-08-08T00:00:00.000Z",
+    "used": false
+  },
+  {
+    "id": "cm-signals-group-vs-trading-coaching",
+    "title": "Signals Groups vs Real Trading Coaching",
+    "question": "Is a signals group the same as trading coaching?",
+    "angle": "Signals give you a fish and create dependency; coaching builds your own decision process. Be fair: signals can be useful for observing entries if you journal the reasoning. The failure mode is treating them as education.",
+    "targetKeyword": "signals group vs trading coaching",
+    "source": "manual",
+    "priority": "high",
+    "addedAt": "2026-08-08T00:00:00.000Z",
+    "used": false
+  },
+  {
+    "id": "cm-when-to-get-a-trading-coach",
+    "title": "Are You Actually Ready for a Trading Coach?",
+    "question": "When should I get a trading coach?",
+    "angle": "A readiness test rather than a sales pitch. If you have no journal, no traded method, or would pay from trading capital, you are not ready and should be told so plainly.",
+    "targetKeyword": "when to get a trading coach",
+    "source": "manual",
+    "priority": "high",
+    "addedAt": "2026-08-08T00:00:00.000Z",
+    "used": false
+  },
+  {
+    "id": "cm-group-trading-coaching-vs-one-on-one",
+    "title": "Group Coaching vs One-on-One: Which Fits Your Stage?",
+    "question": "Is group trading coaching or one on one better?",
+    "angle": "Group wins on price, structure and accountability. One-on-one wins only where your specific errors need catching. Map each to the stage it suits instead of declaring a winner.",
+    "targetKeyword": "group trading coaching vs one on one",
+    "source": "manual",
+    "priority": "high",
+    "addedAt": "2026-08-08T00:00:00.000Z",
+    "used": false
+  },
+  {
+    "id": "cm-prop-firm-coaching-pass-rate",
+    "title": "Does Coaching Improve Prop Firm Pass Rates?",
+    "question": "Does coaching help you pass a prop firm challenge?",
+    "angle": "Most challenge failures come from breaking daily loss limits while recovering, not from bad setups. That is a behaviour problem, which is the specific thing coaching addresses. No guarantees, and say so.",
+    "targetKeyword": "prop firm coaching pass rate",
+    "source": "manual",
+    "priority": "high",
+    "addedAt": "2026-08-08T00:00:00.000Z",
+    "used": false
+  },
+  {
+    "id": "cm-can-a-trading-coach-make-you-profitable",
+    "title": "Can a Trading Coach Make You Profitable?",
+    "question": "Can trading coaching help me become profitable?",
+    "angle": "Answer honestly: no one can promise profitability and anyone who does is disqualified. What a coach does is shorten the feedback loop and stop repeated expensive errors. Screen time and discipline stay on the trader.",
+    "targetKeyword": "can a trading coach make you profitable",
+    "source": "manual",
+    "priority": "high",
+    "addedAt": "2026-08-08T00:00:00.000Z",
+    "used": false
   }
 ]

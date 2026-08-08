@@ -69,13 +69,21 @@ export async function GET(req: NextRequest) {
       if (words.some(w => ["losing", "still", "broken", "blew", "blown", "failed", "stuck", "plateau"].includes(w))) return "Why-am-I-still-losing";
       if (words.some(w => ["smc", "smart", "concepts", "institutional", "manipulation"].includes(w))) return "Smart Money Concepts";
       if (words.some(w => ["routine", "process", "journal", "backtest", "backtesting", "habit", "habits", "prep", "preparation"].includes(w))) return "Trading Routine & Process";
+      if (words.some(w => ["coach", "coaching", "mentor", "mentorship", "cost", "price", "worth", "vs"].includes(w))) return "Coaching & Mentorship Decisions";
       return "Other";
     });
     const categoryCount: Record<string, number> = {};
     recentCategories.forEach(c => { categoryCount[c] = (categoryCount[c] || 0) + 1; });
     // Pain-point driven categories. Market Analysis dropped — news-event
     // topics are explicitly banned in the prompt now.
+    // "Coaching & Mentorship Decisions" listed twice so the rotation gives it
+    // roughly double weight. 90d GSC: 51% of the blog was psychology/mindset
+    // content and those 50 indexed pages returned 1 click, while a single
+    // commercial comparison page returned 20 (42% of all site clicks). Four of
+    // the categories below are mindset framings, which is how the skew arose.
     const leastUsedCategory = [
+      "Coaching & Mentorship Decisions",
+      "Coaching & Mentorship Decisions",
       "Why-am-I-still-losing",
       "ICT Concepts",
       "Trading Psychology",
