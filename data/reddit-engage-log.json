@@ -7059,5 +7059,15 @@
     "commentedAt": "2026-08-07T18:00:34.435Z",
     "permalink": "/r/Trading/comments/1vhwmg8/any_recommendations_for_realtime_insider_trading/p2b6n9h/",
     "commentId": "p2b6n9h"
+  },
+  {
+    "postId": "1vihrgy",
+    "subreddit": "InnerCircleTraders",
+    "postTitle": "Would you be interested ?",
+    "commentText": "honestly curious how the bot handles something like this: ask it to identify the last down close candle before a displacement on the 15m eurusd during london open, then ask it what makes that specific candle an OB versus just noise. that's where most chatbots trained on surface-level content fall apart tbh. if yours actually walks through the logic of why price would want to return to that specific origin during NY killzone, that's genuinely impressive. what does it say when you test it with that prompt?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-08-08T03:02:54.951Z",
+    "permalink": "/r/InnerCircleTraders/comments/1vihrgy/would_you_be_interested/p2e5cf6/",
+    "commentId": "p2e5cf6"
   }
 ]
