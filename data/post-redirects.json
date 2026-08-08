@@ -52,5 +52,17 @@
     "to": "/learn/ict-methodology-origins-michael-huddleston",
     "deletedAt": "2026-05-26T00:00:00.000Z",
     "reason": "Short URL for the methodology-origins page that captures ICT brand queries"
+  },
+  {
+    "from": "2026-04-15-how-long-to-learn-ict-trading",
+    "to": "2026-04-18-how-long-to-learn-ict-trading",
+    "deletedAt": "2026-08-08T00:00:00.000Z",
+    "reason": "Duplicate cleanup: identical title/topic competing for the same query; kept the better-ranking URL (GSC avg position)"
+  },
+  {
+    "from": "2026-04-15-ict-alone-vs-hiring-a-coach-honest-take",
+    "to": "2026-04-18-ict-alone-vs-hiring-a-coach-honest-take",
+    "deletedAt": "2026-08-08T00:00:00.000Z",
+    "reason": "Duplicate cleanup: identical title/topic competing for the same query; kept the better-ranking URL (GSC avg position)"
   }
 ]

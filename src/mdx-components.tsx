@@ -3,13 +3,16 @@ import Link from "next/link";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
+    // Rendered as h2: the post/page template already supplies the single page h1,
+    // so a leading "# Heading" in the body would otherwise create a second h1.
+    // Keeps the original visual weight, just corrects the heading level.
     h1: ({ children }) => (
-      <h1
+      <h2
         className="text-3xl md:text-4xl font-bold text-navy mb-6 mt-10"
         style={{ fontFamily: "var(--font-serif)" }}
       >
         {children}
-      </h1>
+      </h2>
     ),
     h2: ({ children }) => (
       <h2

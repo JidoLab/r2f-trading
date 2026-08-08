@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
+import { seoTitle, seoDescription } from "@/lib/seo";
 
 export const metadata: Metadata = {
   // Title leads with the exact query "Risk Reward Ratio Calculator" — current
   // GSC ranking is position 73-75 because the page never said that exact phrase.
-  title: "Risk Reward Ratio Calculator — Free Position Size Tool for ICT Traders",
-  description: "Free risk reward ratio calculator for forex, futures, and prop firm traders. Type your entry, stop, and target — get exact position size, R:R, and dollar risk in one click.",
+  // seoTitle() drops the brand suffix when it would push past Google's ~60 char
+  // display limit, so the descriptive part is never truncated in the SERP.
+  title: seoTitle("Risk Reward Ratio Calculator: Free Position Size Tool"),
+  description: seoDescription(
+    "Free risk reward ratio calculator for forex, futures, and prop firm traders. Enter your entry, stop, and target to get exact position size, R:R, and dollar risk."
+  ),
   keywords: [
     "risk reward ratio calculator",
     "risk to reward ratio calculator",
@@ -14,9 +19,11 @@ export const metadata: Metadata = {
     "forex lot size calculator",
     "funded account risk management",
   ],
+  alternates: { canonical: "/tools/risk-calculator" },
   openGraph: {
     title: "Risk Reward Ratio Calculator | R2F Trading",
-    description: "Type entry, stop, and target — get exact position size, R:R, and dollar risk. Free tool ICT and funded-account traders use before every trade.",
+    description:
+      "Enter entry, stop, and target to get exact position size, R:R, and dollar risk. The free tool ICT and funded-account traders run before every trade.",
     url: "https://www.r2ftrading.com/tools/risk-calculator",
   },
 };

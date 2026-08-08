@@ -1,5 +1,17 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import type { Metadata } from "next";
+import { seoTitle, seoDescription } from "@/lib/seo";
+
+// Without its own metadata this page inherited the homepage title and
+// description verbatim, making it a duplicate of "/" in the index.
+export const metadata: Metadata = {
+  title: seoTitle("Privacy Policy & Risk Disclaimer"),
+  description: seoDescription(
+    "How R2F Trading collects, uses, and protects your data, plus the risk disclaimer covering our trading education and coaching content."
+  ),
+  alternates: { canonical: "/privacy" },
+};
 
 export default function PrivacyPage() {
   return (
@@ -63,12 +75,12 @@ export default function PrivacyPage() {
 
           <hr className="my-12 border-gray-200" />
 
-          <h1
+          <h2
             className="text-4xl md:text-5xl font-bold text-navy mb-8"
             style={{ fontFamily: "var(--font-serif)" }}
           >
             Disclaimer
-          </h1>
+          </h2>
 
           <h2 className="text-xl font-bold text-navy mt-6 mb-4">Trading Risk Disclaimer</h2>
           <p className="text-gray-600 leading-relaxed mb-4">

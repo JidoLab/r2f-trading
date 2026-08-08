@@ -8,6 +8,7 @@ import TableOfContents from "@/components/TableOfContents";
 import PageTracker from "@/components/PageTracker";
 import Link from "next/link";
 import { getAllSlugs, getPostBySlug, getRawContent } from "@/lib/blog";
+import { seoTitle, seoDescription } from "@/lib/seo";
 import type { Metadata } from "next";
 export const dynamicParams = false;
 
@@ -22,8 +23,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
-  const title = post.seoTitle || `${post.title} | R2F Trading`;
-  const description = post.seoDescription || post.excerpt;
+  const title = seoTitle(post.seoTitle || post.title);
+  const description = seoDescription(post.seoDescription || post.excerpt);
   return {
     title,
     description,

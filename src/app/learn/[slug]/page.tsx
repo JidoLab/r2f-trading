@@ -6,6 +6,7 @@ import Script from "next/script";
 import Link from "next/link";
 import { readFile } from "@/lib/github";
 import { getAllPosts } from "@/lib/blog";
+import { seoTitle, seoDescription } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
@@ -69,12 +70,12 @@ export async function generateMetadata({
   if (!data) return { title: "Not Found" };
 
   return {
-    title: data.seoTitle,
-    description: data.seoDescription,
+    title: seoTitle(data.seoTitle),
+    description: seoDescription(data.seoDescription),
     alternates: { canonical: `/learn/${slug}` },
     openGraph: {
       title: data.seoTitle,
-      description: data.seoDescription,
+      description: seoDescription(data.seoDescription),
       url: `/learn/${slug}`,
       type: "website",
     },

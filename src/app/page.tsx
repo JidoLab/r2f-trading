@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Banner from "@/components/Banner";
@@ -18,6 +19,13 @@ import Script from "next/script";
 // regen — no user ever waits for the rebuild. Deploys invalidate the
 // cache automatically, so copy changes go live instantly.
 export const revalidate = 3600;
+
+// Title and description intentionally inherit the root layout defaults (this is
+// the page they describe). Declared here only to pin the canonical to the www
+// apex so the homepage never gets deduped against a variant URL.
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 // Organization schema — primary entity for AI source selection
 const organizationLd = {
