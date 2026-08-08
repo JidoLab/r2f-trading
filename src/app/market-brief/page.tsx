@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Daily Market Brief — R2F Trading",
+    title: "Daily Market Brief | R2F Trading",
     description:
       "Start your trading day with Harvest's 2-minute audio brief. Key levels, events, and ICT setups delivered daily.",
     url: "/market-brief",

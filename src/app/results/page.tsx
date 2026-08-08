@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Real results from real traders. See how R2F Trading coaching has helped traders get funded, build consistency, and transform their trading careers.",
   alternates: { canonical: "/results" },
   openGraph: {
-    title: "Student Results — R2F Trading",
+    title: "Student Results | R2F Trading",
     description: "See real trading results and testimonials from R2F Trading students.",
     url: "/results",
   },
@@ -197,7 +197,7 @@ export default function ResultsPage() {
             {[
               { title: "Personalized", desc: "No cookie-cutter strategies. Every session is tailored to your specific weaknesses and goals." },
               { title: "Accountability", desc: "Weekly reviews, trade journaling, and honest feedback keep you on track." },
-              { title: "Results-Driven", desc: "The goal isn't just education — it's getting you funded and consistently profitable." },
+              { title: "Results-Driven", desc: "The goal is not just education. It is getting you funded and consistently profitable." },
             ].map((item) => (
               <div key={item.title} className="text-center">
                 <h3 className="text-navy font-bold text-lg mb-2">{item.title}</h3>

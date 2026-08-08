@@ -6,10 +6,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Book a Free Discovery Call",
-  description: "Schedule a free discovery call with Harvest Wright to discuss your trading goals. No commitment — just a conversation about how ICT coaching can help you get funded.",
+  description: "Book a free discovery call with Harvest Wright to talk through your trading goals. No commitment, just an honest conversation about getting funded.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Book a Free Discovery Call — R2F Trading",
+    title: "Book a Free Discovery Call | R2F Trading",
     description: "Schedule a free call to discuss your trading goals and how ICT coaching can help.",
     url: "/contact",
   },

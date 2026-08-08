@@ -20,7 +20,7 @@ const WHAT_YOU_LEARN = [
   { icon: "📊", title: "The 3 ICT Setups That Actually Work", desc: "Cut through the noise. These are the only 3 setups you need to be consistently profitable." },
   { icon: "🎯", title: "How to Find High-Probability Entries", desc: "Stop guessing. Learn to read order blocks, fair value gaps, and liquidity sweeps like smart money." },
   { icon: "💰", title: "The Funded Account Blueprint", desc: "The exact step-by-step process our students use to pass prop firm challenges in under 60 days." },
-  { icon: "🧠", title: "Trading Psychology Shortcuts", desc: "Why 90% of trading is mental — and the 3 mindset shifts that separate funded traders from everyone else." },
+  { icon: "🧠", title: "Trading Psychology Shortcuts", desc: "Why 90% of trading is mental, and the 3 mindset shifts that separate funded traders from everyone else." },
 ];
 
 const TESTIMONIALS = [

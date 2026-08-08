@@ -8,10 +8,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "ICT Trading Coaching Plans",
-  description: "1-on-1 ICT trading coaching with Harvest Wright. Lite ($150/wk), Pro ($250/wk), or Full Mentorship ($5,000 for 4 months). Get funded faster with personalized guidance.",
+  description: "1-on-1 ICT trading coaching with Harvest Wright. Lite ($150/wk), Pro ($250/wk), or Full Mentorship ($5,000 for 4 months). Personalized, not generic.",
   alternates: { canonical: "/coaching" },
   openGraph: {
-    title: "ICT Trading Coaching Plans — R2F Trading",
+    title: "ICT Trading Coaching Plans | R2F Trading",
     description: "Personalized 1-on-1 ICT trading mentorship. Lite, Pro, and Full Mentorship plans available.",
     url: "/coaching",
   },

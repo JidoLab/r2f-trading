@@ -7,12 +7,12 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ICT Trading Starter Kit — $49 One-Time",
+  title: "ICT Trading Starter Kit: $49 One-Time",
   description:
-    "Master ICT trading fundamentals with 5 self-paced modules covering order blocks, FVGs, killzones, risk management, and the funded account roadmap. Instant access for $49.",
+    "Master ICT fundamentals across 5 self-paced modules: order blocks, FVGs, killzones, risk management, and the funded account roadmap. Instant access, $49.",
   alternates: { canonical: "/starter-kit" },
   openGraph: {
-    title: "ICT Trading Starter Kit — R2F Trading",
+    title: "ICT Trading Starter Kit | R2F Trading",
     description:
       "5 modules. Real ICT strategies. One payment. Learn order blocks, market structure, killzones, risk management, and how to get funded.",
     url: "/starter-kit",
