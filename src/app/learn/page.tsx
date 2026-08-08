@@ -7,6 +7,11 @@ import type { Metadata } from "next";
 
 const BASE_URL = "https://www.r2ftrading.com";
 
+// Regenerate hourly so pages added to data/landing-pages via the GitHub API
+// appear in the hub (and pick up its internal links) without waiting for a
+// build. Same reason as src/app/sitemap.ts.
+export const revalidate = 3600;
+
 interface LandingPageMeta {
   slug: string;
   title: string;

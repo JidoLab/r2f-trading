@@ -4,6 +4,13 @@ import { listFiles, readFile } from "@/lib/github";
 
 const BASE_URL = "https://www.r2ftrading.com";
 
+// Regenerate hourly. Landing pages are added to data/landing-pages via the
+// GitHub API (generate-glossary cron, admin UI), and the listing this route
+// reads is fetched at build time. Without revalidation a page could be live at
+// its URL while staying absent from the sitemap until some later build happened
+// to pick it up, so newly generated pages risked never being discovered.
+export const revalidate = 3600;
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = getAllPosts();
 
