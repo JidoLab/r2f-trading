@@ -23,8 +23,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         try {
           const raw = await readFile(filePath);
           const data = JSON.parse(raw);
+          // Route by FILENAME, not data.slug. /learn/[slug] resolves a page by
+          // reading data/landing-pages/<slug>.json, so the filename is the only
+          // routable slug. Where the two disagree (position-sizing.json carries
+          // slug "position-sizing-funded-accounts") the sitemap was advertising
+          // a URL that 308-redirects, which Google reports as "Page with
+          // redirect" and declines to index.
+          const routeSlug =
+            filePath.split("/").pop()?.replace(/\.json$/, "") || data.slug;
           return {
-            url: `${BASE_URL}/learn/${data.slug}`,
+            url: `${BASE_URL}/learn/${routeSlug}`,
             lastModified: data.createdAt || new Date().toISOString(),
             changeFrequency: "monthly" as const,
             priority: 0.8,

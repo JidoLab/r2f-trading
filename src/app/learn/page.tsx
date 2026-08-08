@@ -16,7 +16,9 @@ interface LandingPageMeta {
 }
 
 export const metadata: Metadata = {
-  title: "ICT Trading Glossary & Learning Hub | R2F Trading",
+  // Absolute: the brand suffix is already here, so the root layout template
+  // must not append a second one.
+  title: { absolute: "ICT Trading Glossary & Learning Hub | R2F Trading" },
   description:
     "Plain-English guides to ICT concepts — order blocks, fair value gaps, liquidity sweeps, killzones, prop-firm challenges and more. Learn the smart money method.",
   alternates: { canonical: "/learn" },
