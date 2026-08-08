@@ -7069,5 +7069,15 @@
     "commentedAt": "2026-08-08T03:02:54.951Z",
     "permalink": "/r/InnerCircleTraders/comments/1vihrgy/would_you_be_interested/p2e5cf6/",
     "commentId": "p2e5cf6"
+  },
+  {
+    "postId": "1vimcnf",
+    "subreddit": "ICTMentorship",
+    "postTitle": "FUNDINGPIPS FAKE EVIDENCE CASE",
+    "commentText": "i had this exact problem with a prop firm flagging my account last year, and the \"same device\" logic they used was just as shaky. i was running duplikium style copy routing across two accounts simultaneously during london session on GBPUSD H1, and the IP clustering made it look like one device was mirroring trades, when really it was just latency from the copy service syncing entries near the same OB. the swiss connection alone proves nothing without a MAC address match or session token overlap, tbh. curious whether fundingpips actually provided any session-level metadata or if it was purely IP based?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-08-08T08:00:13.938Z",
+    "permalink": "/r/ICTMentorship/comments/1vimcnf/fundingpips_fake_evidence_case/p2f97zx/",
+    "commentId": "p2f97zx"
   }
 ]
