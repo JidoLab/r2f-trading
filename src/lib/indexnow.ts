@@ -1,13 +1,25 @@
 const SITE_URL = "https://www.r2ftrading.com";
 
+/**
+ * Notify search engines that URLs are new or updated.
+ *
+ * IndexNow covers Bing, Yandex, Seznam, and Naver from a single POST.
+ *
+ * Google is deliberately not pinged here. The old
+ * `google.com/ping?sitemap=` endpoint was retired in June 2023 and now
+ * returns 404, so the previous version of this function burned one dead
+ * round trip per URL on every publish. Google discovers new content via
+ * the sitemap declared in robots.txt (and Search Console); its Indexing
+ * API officially supports only JobPosting and BroadcastEvent pages, so it
+ * does not apply to this site.
+ */
 export async function notifyIndexNow(urls: string[]) {
   const key = process.env.INDEXNOW_KEY;
-  if (!key) return;
+  if (!key || urls.length === 0) return;
 
-  const fullUrls = urls.map((u) => u.startsWith("http") ? u : `${SITE_URL}${u}`);
+  const fullUrls = urls.map((u) => (u.startsWith("http") ? u : `${SITE_URL}${u}`));
 
   try {
-    // IndexNow — instant notification to Bing, Yandex, etc.
     await fetch("https://api.indexnow.org/indexnow", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -18,29 +30,7 @@ export async function notifyIndexNow(urls: string[]) {
         urlList: fullUrls,
       }),
     });
-  } catch {}
-
-  // Ping Google to re-crawl sitemap (triggers re-indexing of new URLs)
-  try {
-    await fetch(`https://www.google.com/ping?sitemap=${encodeURIComponent(`${SITE_URL}/sitemap.xml`)}`);
-  } catch {}
-
-  // Ping Google for each individual URL via the informal indexing endpoint
-  for (const url of fullUrls) {
-    try {
-      await fetch(`https://www.google.com/ping?sitemap=${encodeURIComponent(url)}`);
-    } catch {}
+  } catch {
+    // Best effort: a failed ping must never break a publish.
   }
-}
-
-/**
- * Submit URL to Google Search Console Indexing API
- * Requires a Google Service Account with Indexing API access
- * For now, uses the sitemap ping approach above as it requires no additional setup
- */
-export async function requestGoogleIndexing(url: string) {
-  // Sitemap ping is already handled in notifyIndexNow
-  // If you later set up a Google Service Account, add the official API call here:
-  // POST https://indexing.googleapis.com/v3/urlNotifications:publish
-  // { "url": url, "type": "URL_UPDATED" }
 }
