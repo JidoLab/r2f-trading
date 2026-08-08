@@ -32,9 +32,9 @@ const CTA_VARIANTS: Record<CTAVariant, CTAConfig> = {
     secondaryHref: "/contact",
   },
   checklist: {
-    headline: "Free ICT Trading Checklist",
-    subtext: "The exact checklist I use before every trade. Get it free — no spam, just value.",
-    buttonText: "Get Free Checklist",
+    headline: "Free ICT Funded-Trader Playbook",
+    subtext: "The setups, the pre-trade checklist, and the risk rules I use before every trade. Free, instant download.",
+    buttonText: "Get the Free Playbook",
     href: "/free-class",
   },
   "crash-course": {
@@ -48,7 +48,7 @@ const CTA_VARIANTS: Record<CTAVariant, CTAConfig> = {
     subtext: "Use our free position size calculator to protect your funded account. Professional traders never skip this step.",
     buttonText: "Try the Calculator",
     href: "/tools/risk-calculator",
-    secondaryText: "Get free checklist",
+    secondaryText: "Get the free playbook",
     secondaryHref: "/free-class",
   },
   "starter-kit": {
@@ -56,7 +56,7 @@ const CTA_VARIANTS: Record<CTAVariant, CTAConfig> = {
     subtext: "Templates, checklists, and the complete ICT framework in one package. Everything you need to start trading ICT.",
     buttonText: "Get the Starter Kit",
     href: "/starter-kit",
-    secondaryText: "Or start with free class",
+    secondaryText: "Or grab the free playbook",
     secondaryHref: "/free-class",
   },
 };

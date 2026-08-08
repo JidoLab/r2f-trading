@@ -70,7 +70,7 @@ export default function EmailSignup({ variant = "inline", buttonLabel }: { varia
           disabled={status === "loading"}
           className="w-full bg-gold hover:bg-gold-light text-navy font-bold py-3 rounded-md transition-all uppercase text-sm tracking-wide disabled:opacity-50"
         >
-          {status === "loading" ? "Sending..." : "Get Free Checklist"}
+          {status === "loading" ? "Sending..." : "Get the Free Playbook"}
         </button>
         {status === "error" && <p className="text-red-500 text-xs text-center">Something went wrong. Try again.</p>}
       </form>
@@ -81,10 +81,10 @@ export default function EmailSignup({ variant = "inline", buttonLabel }: { varia
     return (
       <div className="bg-cream rounded-lg p-6 mt-8">
         <p className="text-navy font-bold text-base mb-1" style={{ fontFamily: "var(--font-serif)" }}>
-          Free ICT Trading Checklist
+          Free ICT Funded-Trader Playbook
         </p>
         <p className="text-gray-500 text-sm mb-4">
-          The exact checklist I use before every trade. Get it free.
+          The setups, the pre-trade checklist, and the risk rules I use. Get it free.
         </p>
         <form onSubmit={handleSubmit} className="space-y-2">
           <input
@@ -107,7 +107,7 @@ export default function EmailSignup({ variant = "inline", buttonLabel }: { varia
             disabled={status === "loading"}
             className="w-full bg-gold hover:bg-gold-light text-navy font-bold py-2.5 rounded-md transition-all uppercase text-xs tracking-wide disabled:opacity-50"
           >
-            {status === "loading" ? "Sending..." : "Download Free Checklist"}
+            {status === "loading" ? "Sending..." : "Download Free Playbook"}
           </button>
           {status === "error" && <p className="text-red-500 text-xs">Something went wrong. Try again.</p>}
         </form>
@@ -132,7 +132,7 @@ export default function EmailSignup({ variant = "inline", buttonLabel }: { varia
         disabled={status === "loading"}
         className="bg-gold hover:bg-gold-light text-navy font-bold px-6 py-3 rounded-md transition-all uppercase text-sm tracking-wide whitespace-nowrap disabled:opacity-50"
       >
-        {status === "loading" ? "Sending..." : buttonLabel || "Get Free Checklist"}
+        {status === "loading" ? "Sending..." : buttonLabel || "Get the Free Playbook"}
       </button>
       </div>
       <input

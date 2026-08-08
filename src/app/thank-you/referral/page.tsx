@@ -58,7 +58,7 @@ function ReferralThankYouContent() {
             Your <span className="text-gold font-semibold">Advanced ICT Playbook</span> is on its way to your inbox.
           </p>
           <p className="text-white/40 text-sm">
-            Plus your free ICT Trading Checklist — check your email!
+            Plus your free ICT Funded-Trader Playbook. Check your email!
           </p>
         </div>
       </section>
@@ -151,8 +151,8 @@ function ReferralThankYouContent() {
             {[
               {
                 day: "Today",
-                title: "ICT Playbook + Checklist",
-                desc: "Your bonus PDF and trading checklist — check your inbox now.",
+                title: "Playbook + Bonus PDF",
+                desc: "Your ICT Funded-Trader Playbook and bonus PDF. Check your inbox now.",
               },
               {
                 day: "Day 2",

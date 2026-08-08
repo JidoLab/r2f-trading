@@ -52,7 +52,7 @@ Working: Twitter/X, LinkedIn, Reddit, Telegram, Discord, YouTube, Facebook
 Manual only: TikTok, Instagram (no API — use copy caption + download video)
 
 ## Lead Magnet
-PDF exists at public/downloads/ict-trading-checklist.pdf — already integrated into email signup flow
+ICT Funded-Trader Playbook at public/downloads/ict-funded-trader-playbook.pdf, integrated into the signup flow (old ict-trading-checklist.pdf still ships with the $49 Starter Kit)
 
 ## New Features (Latest)
 - Blog → Twitter/X thread auto-repurposing (src/lib/twitter-threads.ts)

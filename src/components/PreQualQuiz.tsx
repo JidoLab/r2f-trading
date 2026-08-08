@@ -221,7 +221,7 @@ export default function PreQualQuiz() {
                   href="/free-class"
                   className="inline-block bg-white border border-gray-300 hover:border-gold text-navy font-bold text-sm tracking-wide px-6 py-3 rounded-md transition-all uppercase"
                 >
-                  Free ICT Class
+                  Free ICT Playbook
                 </Link>
               </div>
               <p className="text-gray-400 text-xs mt-5">

@@ -24,7 +24,7 @@ const WHAT_YOU_LEARN = [
 ];
 
 const TESTIMONIALS = [
-  { quote: "This free class alone was worth more than the $500 course I bought before.", name: "T.W." },
+  { quote: "This free playbook alone was worth more than the $500 course I bought before.", name: "T.W." },
   { quote: "Finally someone who explains ICT without making it overly complicated.", name: "H.C." },
   { quote: "I got funded 47 days after applying what I learned in the class.", name: "A.S." },
 ];

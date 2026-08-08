@@ -44,11 +44,11 @@ const KEY_URLS = [
   { label: "Homepage", url: "https://r2ftrading.com" },
   { label: "Coaching Plans", url: "https://r2ftrading.com/coaching" },
   { label: "Book Free Call", url: "https://r2ftrading.com/contact" },
-  { label: "Free ICT Class", url: "https://r2ftrading.com/free-class" },
+  { label: "Free ICT Playbook", url: "https://r2ftrading.com/free-class" },
   { label: "Student Results", url: "https://r2ftrading.com/results" },
   { label: "Trading Blog", url: "https://r2ftrading.com/trading-insights" },
   { label: "About", url: "https://r2ftrading.com/about" },
-  { label: "Lead Magnet PDF", url: "https://r2ftrading.com/downloads/ict-trading-checklist.pdf" },
+  { label: "Lead Magnet PDF", url: "https://www.r2ftrading.com/downloads/ict-funded-trader-playbook.pdf" },
 ];
 
 const HASHTAG_SETS: Record<string, string[]> = {
@@ -60,8 +60,8 @@ const HASHTAG_SETS: Record<string, string[]> = {
 
 const CTA_TEMPLATES = [
   { label: "Book a Call", text: "Book a free discovery call with Harvest to discuss your trading goals. No commitment, just a real conversation.\nhttps://r2ftrading.com/contact" },
-  { label: "Free Class", text: "Join our free ICT trading class. Learn the 3 setups that actually work and the funded account blueprint.\nhttps://r2ftrading.com/free-class" },
-  { label: "Free Checklist", text: "Grab the free ICT Trading Checklist. It's the exact checklist I use before every single trade.\nhttps://r2ftrading.com" },
+  { label: "Free Playbook", text: "Grab the free ICT Funded-Trader Playbook. The 3 setups that actually work, the pre-trade checklist, and the risk rules that pass funded challenges.\nhttps://r2ftrading.com/free-class" },
+  { label: "Playbook (short)", text: "I run the same pre-trade checklist before every trade. It's inside the free ICT Funded-Trader Playbook.\nhttps://r2ftrading.com/free-class" },
   { label: "Results", text: "See what our students are achieving with ICT coaching.\nhttps://r2ftrading.com/results" },
   { label: "Blog", text: "Check out our latest trading insights and strategies.\nhttps://r2ftrading.com/trading-insights" },
 ];

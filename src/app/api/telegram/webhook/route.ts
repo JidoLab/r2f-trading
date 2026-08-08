@@ -21,7 +21,7 @@ KEY LINKS:
 - View coaching plans: r2ftrading.com/coaching
 - Student results: r2ftrading.com/results
 - Read trading insights: r2ftrading.com/trading-insights
-- Free ICT class: r2ftrading.com/free-class
+- Free ICT Funded-Trader Playbook (instant PDF): r2ftrading.com/free-class
 - WhatsApp (quick questions only, NOT for booking): wa.me/66935754757
 - Telegram (quick questions only, NOT for booking): t.me/Road2Funded
 
@@ -45,7 +45,7 @@ YOUR RULES:
 - Never give specific financial advice or trading signals
 - If asked about pricing, share the plans and emphasize the FREE discovery call (no commitment)
 - If asked something unrelated to trading/coaching, politely redirect
-- ALWAYS end responses with a clear next step — prioritize: 1) Book a free call, 2) Check the free class, 3) Read an article
+- ALWAYS end responses with a clear next step — prioritize: 1) Book a free call, 2) Grab the free playbook, 3) Read an article
 - BOOKING RULE: to book, schedule, or arrange ANY call, ALWAYS send the booking link r2ftrading.com/contact. Do NOT arrange call times yourself in this chat — send the link so it lands on the calendar. This chat is for questions only.
 - Naturally weave in social proof (student quotes) when discussing results or handling doubts
 - Match the visitor's energy — if they're casual, be casual. If they're serious, be direct and professional.`;
@@ -137,7 +137,7 @@ const FREE_CLASS_URL =
   "https://www.r2ftrading.com/free-class?utm_source=telegram&utm_medium=bot&utm_campaign=";
 
 // Private-chat /start funnel. A Telegram ad promotes the bot (t.me/<bot>?start=telegram_ad);
-// the user taps Start, we hand them the free class and capture them as an
+// the user taps Start, we hand them the free playbook and capture them as an
 // ad-sourced, reachable contact for later broadcasts.
 async function handleStart(msg: TelegramMessage) {
   const token = BOT_TOKEN();
@@ -150,8 +150,8 @@ async function handleStart(msg: TelegramMessage) {
 
   const welcome =
     "Welcome. If you're here, you're serious about ICT.\n\n" +
-    "Here's the free class that covers the part most traders skip: the execution, risk, and psychology that keep a funded account alive.\n\n" +
-    "Tap below to watch it. If you then want a hand applying it to your own charts, there's a free call link inside.";
+    "Here's the free ICT Funded-Trader Playbook. It covers the part most traders skip: the execution, risk, and psychology that keep a funded account alive.\n\n" +
+    "Tap below to grab it. If you then want a hand applying it to your own charts, there's a free call link inside.";
 
   await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
     method: "POST",
@@ -161,7 +161,7 @@ async function handleStart(msg: TelegramMessage) {
       text: welcome,
       reply_markup: {
         inline_keyboard: [
-          [{ text: "Get the Free ICT Class →", url: `${FREE_CLASS_URL}${encodeURIComponent(source)}` }],
+          [{ text: "Get the Free Playbook →", url: `${FREE_CLASS_URL}${encodeURIComponent(source)}` }],
         ],
       },
     }),
@@ -261,7 +261,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // Private-chat /start funnel (Telegram ad -> bot -> free class).
+    // Private-chat /start funnel (Telegram ad -> bot -> free playbook).
     // Runs before the group-only gate below.
     if (msg.chat.type === "private" && msg.text.startsWith("/start")) {
       await handleStart(msg);

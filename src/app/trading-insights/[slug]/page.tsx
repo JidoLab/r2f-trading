@@ -98,7 +98,7 @@ function getBlogCTA(tags: string[], title: string) {
       text: "Start with our free 5-day crash course. Learn the 3 setups that actually work.",
       buttonText: "Start Free Crash Course",
       buttonUrl: "/crash-course",
-      secondaryText: "Or grab the free checklist →",
+      secondaryText: "Or grab the free playbook →",
       secondaryUrl: "/free-class",
     };
   }

@@ -19,8 +19,8 @@ const OFFERS: Record<OfferType, OfferConfig> = {
     emoji: "\uD83D\uDCCA",
     headline: "Wait! Don\u2019t Leave Empty-Handed",
     subheadline:
-      "Get the free ICT Trading Checklist \u2014 the exact checklist I use before every trade.",
-    ctaText: "Get Free Checklist",
+      "Get the free ICT Funded-Trader Playbook: the setups, the checklist, and the risk rules I use before every trade.",
+    ctaText: "Get the Free Playbook",
     ctaAction: "email",
   },
   "crash-course": {

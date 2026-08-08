@@ -229,7 +229,7 @@ export default function RiskCalculatorPage() {
                   <div className="mt-6 bg-gold/5 border border-gold/20 rounded-lg p-5">
                     <p className="text-gold font-bold text-sm mb-1">Want more tools like this?</p>
                     <p className="text-white/50 text-xs mb-3">
-                      Get the free ICT Trading Checklist + weekly trade ideas in your inbox.
+                      Get the free ICT Funded-Trader Playbook + weekly trade ideas in your inbox.
                     </p>
                     <form onSubmit={handleSignup} className="flex gap-2">
                       <input
@@ -303,7 +303,7 @@ export default function RiskCalculatorPage() {
                 href="/free-class"
                 className="border border-white/20 hover:border-gold text-white hover:text-gold font-bold text-sm px-6 py-3 rounded-md transition-all uppercase"
               >
-                Free ICT Class
+                Free ICT Playbook
               </a>
             </div>
           </div>

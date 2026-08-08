@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "You're In! | R2F Trading",
-  description: "Your free ICT Trading Checklist is on its way. Book a free discovery call while you wait.",
+  description: "Your free ICT Funded-Trader Playbook is ready to download. Book a free discovery call while you are here.",
 };
 
 // Paste the recorded free-class video EMBED url here once it's recorded, e.g.

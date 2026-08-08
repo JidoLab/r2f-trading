@@ -30,7 +30,7 @@ const DRIP_SEQUENCE: { day: number; key: string; message: (name: string) => stri
     day: 8,
     key: "day8_free_class",
     message: (name: string) =>
-      `Hey ${name}, have you checked out our free ICT class yet? It covers the 3 setups that actually work \u2192 r2ftrading.com/free-class`,
+      `Hey ${name}, have you opened your free ICT Funded-Trader Playbook yet? It covers the 3 setups that actually work \u2192 r2ftrading.com/free-class`,
   },
   {
     day: 14,

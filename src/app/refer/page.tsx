@@ -14,8 +14,8 @@ const BENEFITS = [
   },
   {
     icon: "📊",
-    title: "ICT Trading Checklist",
-    desc: "The exact pre-trade, in-trade, and post-trade checklist used by funded R2F students.",
+    title: "ICT Funded-Trader Playbook",
+    desc: "The setups, the pre-trade checklist, and the risk rules used by funded R2F traders.",
   },
   {
     icon: "📧",
@@ -299,7 +299,7 @@ function ReferralContent() {
             Ready to Trade Like Smart Money?
           </h2>
           <p className="text-white/50 text-sm mb-8">
-            Sign up now to get your free ICT Trading Checklist + the exclusive Advanced ICT Playbook.
+            Sign up now to get your free ICT Funded-Trader Playbook + the exclusive Advanced ICT Playbook.
           </p>
           <div className="max-w-md mx-auto">
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">

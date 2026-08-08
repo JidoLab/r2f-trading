@@ -510,8 +510,8 @@ export function instantWelcomeEmail(name: string): { subject: string; html: stri
       `<p style="color:#555;line-height:1.7;">I just saw you signed up and wanted to personally say welcome. I'm Harvest, the founder of R2F Trading.</p>
       <p style="color:#555;line-height:1.7;">I've been trading ICT concepts for over 10 years, and I built this community to help traders like you skip the costly mistakes I made early on.</p>
       <p style="color:#555;line-height:1.7;">Quick question: <strong>what's your biggest challenge in trading right now?</strong> Hit reply and let me know. I read every response.</p>
-      <p style="color:#555;line-height:1.7;">In the meantime, check out our free ICT class if you haven't already. It covers the 3 setups that actually work.</p>`,
-      { text: "Watch the Free Class", url: `${BRAND.url}/free-class` }
+      <p style="color:#555;line-height:1.7;">In the meantime, check out your ICT Funded-Trader Playbook if you haven't already. It covers the 3 setups that actually work.</p>`,
+      { text: "Get the Free Playbook", url: `${BRAND.url}/free-class` }
     ),
   };
 }
@@ -885,7 +885,7 @@ export function valueRecapEmail(): { subject: string; html: string } {
         <li>📊 <a href="${BRAND.url}/tools/risk-calculator" style="color:${BRAND.gold};">Risk/Reward Calculator</a> — Size your positions properly</li>
         <li>📚 <a href="${BRAND.url}/trading-insights" style="color:${BRAND.gold};">Trading Blog</a> — 40+ articles on ICT concepts, psychology, and risk management</li>
         <li>🎓 <a href="${BRAND.url}/crash-course" style="color:${BRAND.gold};">Free 5-Day Crash Course</a> — The 3 ICT setups that actually work</li>
-        <li>📋 <a href="${BRAND.url}/free-class" style="color:${BRAND.gold};">Free ICT Checklist</a> — The exact checklist I use before every trade</li>
+        <li>📋 <a href="${BRAND.url}/free-class" style="color:${BRAND.gold};">Free ICT Funded-Trader Playbook</a>: the setups, the checklist, and the risk rules I use before every trade</li>
       </ul>
       <p style="color:#555;line-height:1.7;">If any of this has been helpful, the next step is a free 15-minute discovery call. I'll give you honest feedback on your trading — no pitch, no pressure.</p>
       <p style="color:#555;line-height:1.7;">— Harvest</p>`,

@@ -67,7 +67,7 @@ export async function GET(req: NextRequest) {
             "",
             topicHashtags,
             "",
-            "📈 Free ICT Trading Checklist: https://r2ftrading.com",
+            "📈 Free ICT Funded-Trader Playbook: https://r2ftrading.com/free-class",
             "🎓 Free 5-Day Crash Course: https://r2ftrading.com/crash-course",
             "📊 Trading Insights Blog: https://r2ftrading.com/trading-insights",
             "🔔 Subscribe for daily trading tips",

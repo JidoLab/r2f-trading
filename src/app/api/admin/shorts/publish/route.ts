@@ -57,7 +57,7 @@ export async function POST(req: NextRequest) {
     const videoBuffer = Buffer.from(await videoRes.arrayBuffer());
 
     const results: { platform: string; status: string; url?: string; error?: string }[] = [];
-    const description = `${renderData.description}\n\n${(renderData.hashtags || []).join(" ")}\n\n📈 Free ICT Trading Checklist: https://r2ftrading.com\n🔔 Subscribe for daily trading insights`;
+    const description = `${renderData.description}\n\n${(renderData.hashtags || []).join(" ")}\n\n📈 Free ICT Funded-Trader Playbook: https://r2ftrading.com/free-class\n🔔 Subscribe for daily trading insights`;
     const shortDesc = `${renderData.title}\n\n${renderData.description?.slice(0, 200)}\n\n${(renderData.hashtags || []).join(" ")}`;
 
     // --- YouTube ---

@@ -205,7 +205,7 @@ export default async function LandingPage({
               href="/free-class"
               className="border border-white/20 hover:border-white/40 text-white font-semibold text-sm px-8 py-3 rounded-md transition-all inline-block"
             >
-              Join Free Class
+              Get the Free Playbook
             </Link>
           </div>
         </div>
@@ -384,10 +384,10 @@ export default async function LandingPage({
             className="text-2xl md:text-3xl font-black text-white mb-4"
             style={{ fontFamily: "var(--font-heading)" }}
           >
-            Get the Free ICT Trading Checklist
+            Get the Free ICT Funded-Trader Playbook
           </h2>
           <p className="text-white/50 text-sm mb-8 max-w-xl mx-auto">
-            Download the exact checklist our funded traders use before every
+            Download the setups, pre-trade checklist, and risk rules our funded traders use before every
             trade. Plus get weekly ICT insights straight to your inbox.
           </p>
           <div className="max-w-md mx-auto">

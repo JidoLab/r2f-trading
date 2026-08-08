@@ -63,7 +63,7 @@ const WHAT_YOU_GET = [
 const TESTIMONIALS = [
   {
     quote:
-      "This free class alone was worth more than the $500 course I bought before.",
+      "This free playbook alone was worth more than the $500 course I bought before.",
     name: "T.W.",
   },
   {

@@ -166,7 +166,7 @@ async function uploadToYouTube(videoUrl: string, data: any): Promise<{ status: s
   const videoRes = await fetch(videoUrl);
   const videoBuffer = Buffer.from(await videoRes.arrayBuffer());
 
-  const description = `${data.description}\n\n${(data.hashtags || []).join(" ")}\n\n📈 Free ICT Trading Checklist: https://r2ftrading.com\n🔔 Subscribe for daily trading insights`;
+  const description = `${data.description}\n\n${(data.hashtags || []).join(" ")}\n\n📈 Free ICT Funded-Trader Playbook: https://r2ftrading.com/free-class\n🔔 Subscribe for daily trading insights`;
 
   const initRes = await fetch(
     "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
