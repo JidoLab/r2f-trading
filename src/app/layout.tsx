@@ -42,7 +42,7 @@ const merriweather = Merriweather({
 
 export const metadata: Metadata = {
   title: {
-    default: "R2F Trading — Professional ICT Coaching & Mentorship",
+    default: "R2F Trading: Professional ICT Coaching & Mentorship",
     template: "%s | R2F Trading",
   },
   description:
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "R2F Trading",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "R2F Trading — Professional ICT Coaching & Mentorship" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "R2F Trading: Professional ICT Coaching & Mentorship" }],
   },
   twitter: {
     card: "summary_large_image",

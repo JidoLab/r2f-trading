@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   // must not append a second one.
   title: { absolute: "ICT Trading Glossary & Learning Hub | R2F Trading" },
   description:
-    "Plain-English guides to ICT concepts — order blocks, fair value gaps, liquidity sweeps, killzones, prop-firm challenges and more. Learn the smart money method.",
+    "Plain-English guides to ICT concepts: order blocks, fair value gaps, liquidity sweeps, killzones, prop-firm challenges and more. Learn the smart money method.",
   alternates: { canonical: "/learn" },
   openGraph: {
     title: "ICT Trading Glossary & Learning Hub",
@@ -40,7 +40,11 @@ async function getAllPages(): Promise<LandingPageMeta[]> {
           const raw = await readFile(filePath);
           const d = JSON.parse(raw);
           return {
-            slug: d.slug,
+            // Route by FILENAME, not d.slug: /learn/[slug] resolves a page by
+            // reading data/landing-pages/<slug>.json, so the filename is the
+            // only routable slug. Where they disagree the hub was linking to a
+            // URL that 308-redirects. Same fix as src/app/sitemap.ts.
+            slug: filePath.split("/").pop()?.replace(/\.json$/, "") || d.slug,
             title: d.title,
             seoDescription: d.seoDescription,
             targetKeyword: d.targetKeyword,
