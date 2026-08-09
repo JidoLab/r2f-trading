@@ -7099,5 +7099,15 @@
     "commentedAt": "2026-08-09T03:00:43.728Z",
     "permalink": "/r/Forexstrategy/comments/1viz2ac/i_built_a_small_tool_to_get_a_second_opinion_on/p2ktohy/",
     "commentId": "p2ktohy"
+  },
+  {
+    "postId": "1vjdziq",
+    "subreddit": "Forexstrategy",
+    "postTitle": "I ran 2,000 simulations of my own trading and realized why I kept blowing challenges",
+    "commentText": "your blow-up math tracks exactly with what i see when people run challenges on pairs like NJ or GU during high impact news. try this: cap your risk to 0.5% on any trade where the entry OB sits outside the killzone time window, because those setups have wider variance and eat into your drawdown buffer before your edge even gets a chance to breathe. basically your simulation is probably averaging across all trade types, but the blow-up spikes come from the low-confluence setups, not the clean ones. curious if your tool lets you separate sim results by session, like NY vs london entries specifically? tbh that breakdown alone might tell you a lot more than the aggregate number.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-08-09T08:01:17.207Z",
+    "permalink": "/r/Forexstrategy/comments/1vjdziq/i_ran_2000_simulations_of_my_own_trading_and/p2lx3hl/",
+    "commentId": "p2lx3hl"
   }
 ]
