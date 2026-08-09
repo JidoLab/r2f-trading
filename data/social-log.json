@@ -1628,5 +1628,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-08-09T12:00:31.870Z",
+    "type": "text",
+    "postType": "poll",
+    "text": "With CPI dropping this week, how do YOU trade it?\n\n🅰️ Step aside, no trade\n🅱️ Trade the setup BEFO",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
