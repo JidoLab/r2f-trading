@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-08-09-trading-coach-vs-trading-course-which-do-you-need",
+    "syndicatedAt": "2026-08-09T06:02:40.946Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-08-09-trading-coach-vs-trading-course-which-do-you-need",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/trading-coach-vs-trading-course-which-do-you-need-4ng",
+        "id": "4352003"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-08-09-trading-coach-vs-trading-course-which-do-you-need"
+  },
+  {
     "slug": "2026-07-29-your-stop-loss-is-why-you-keep-losing",
     "syndicatedAt": "2026-07-29T12:03:59.739Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-07-29-your-stop-loss-is-why-you-keep-losing",
