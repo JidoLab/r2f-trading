@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-checklist",
     "tip",
     "myth",
     "promo-blog",
@@ -29,11 +28,12 @@
     "myth",
     "question",
     "poll-native",
-    "poll-native"
+    "poll-native",
+    "poll"
   ],
   "lastPost": {
-    "type": "poll-native",
-    "text": "CPI week incoming 🔥 How do you trade high-impact news? #ICTTrading #SmartMoney\n\n🅰️ Sit it out\n🅱️ Trade the setup\n🅲️ Fade the spike\n🅳️ Wait for retracement\n\nVote below! 👇",
-    "date": "2026-08-08T12:03:05.794Z"
+    "type": "poll",
+    "text": "With CPI dropping this week, how do YOU trade it?\n\n🅰️ Step aside, no trade\n🅱️ Trade the setup BEFORE the news\n🅲️ Wait for the manipulation spike then enter\n🅳️ What's CPI? 💀\n\n#ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-08-09T12:00:31.031Z"
   }
 }
