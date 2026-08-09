@@ -7089,5 +7089,15 @@
     "commentedAt": "2026-08-08T18:00:52.025Z",
     "permalink": "/r/Forexstrategy/comments/1vittfq/gold_update_tp1_hit_at_4350_my_entry_never_filled/p2i1iqd/",
     "commentId": "p2i1iqd"
+  },
+  {
+    "postId": "1viz2ac",
+    "subreddit": "Forexstrategy",
+    "postTitle": "I built a small tool to get a second opinion on forex charts — would this actually help your process?",
+    "commentText": "the \"structured second opinion\" angle is actually the most useful framing here, because most traders already have a directional bias baked in before they even open a tool. what i'd want to see from something like this is whether it can identify the actual draw on liquidity, not just s/r levels. a lot of tools spot horizontal lines and call them support, but that's not the same as recognizing a sellside liquidity pool sitting below equal lows on a 4h, or a FVG that price left behind during a new york open displacement. curious whether your analysis flags anything about session context, like does it recognize when a move happened during london vs asian range, or is it purely price-structure based right now?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-08-09T03:00:43.728Z",
+    "permalink": "/r/Forexstrategy/comments/1viz2ac/i_built_a_small_tool_to_get_a_second_opinion_on/p2ktohy/",
+    "commentId": "p2ktohy"
   }
 ]
