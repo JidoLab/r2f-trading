@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1786321913622-xao2d",
+    "platform": "youtube",
+    "postTitle": "The ATM Approach - ICT Trading Strategy",
+    "postUrl": "https://youtube.com/watch?v=GUEbvLjuifg",
+    "authorName": "GatieTrades",
+    "suggestedReply": "ATM entries hit different when you're already parked at a higher timeframe premium or discount array. I drill into my students to never take an ATM setup in the middle of a range, because without that higher timeframe context the strike price just becomes noise. On pairs like Cable or Euro, waiting for that confluence first turns a decent approach into a precision tool.",
+    "createdAt": "2026-08-10T00:31:53.622Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786321918626-ezxxb",
+    "platform": "youtube",
+    "postTitle": "ICT GOLD XAUUSD Analysis for Coming Week, 9th Aug 2026",
+    "postUrl": "https://youtube.com/watch?v=f4Rbl-XCA-U",
+    "authorName": "Trader Abdullah Masood",
+    "suggestedReply": "Good analysis on gold heading into the week of the 9th. The part I'd add for anyone watching is that on XAUUSD specifically, FVGs need to be validated against the higher timeframe draw on liquidity before you commit to an entry. I drill this into my students constantly because gold respects those premium and discount arrays differently than forex pairs. What HTF level are you using to anchor your bias here Abdullah?",
+    "createdAt": "2026-08-10T00:31:58.626Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786321924433-3t42h",
+    "platform": "youtube",
+    "postTitle": "I Made +21% In 2 Weeks Day Trading LIVE",
+    "postUrl": "https://youtube.com/watch?v=cif93l96c5M",
+    "authorName": "Mangoe",
+    "suggestedReply": "+21% in 2 weeks is impressive but I always tell my students to zoom out and ask what the drawdown looked like during those same sessions. Live trading results can look clean when volatility is in your favour but the real test is how that same approach performs when price is ranging and liquidity grabs keep stopping you out early. Great to see more live content though, this format builds real accountability.",
+    "createdAt": "2026-08-10T00:32:04.433Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786321927740-wtboj",
+    "platform": "youtube",
+    "postTitle": "What Days To Trade This Week (CPI) #trading #daytrading #ict #fyp",
+    "postUrl": "https://youtube.com/watch?v=4plUy4E7shM",
+    "authorName": "NQMason",
+    "suggestedReply": "CPI weeks are actually ideal for studying liquidity sweeps before the news, not just after. I teach my students to mark the Asia session highs and lows on NQ the night before a high impact release, because market makers love to raid those levels in the 30 minutes leading into the print. That pre-news sweep into an FVG is often the real setup.",
+    "createdAt": "2026-08-10T00:32:07.740Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786321930884-lcx7i",
+    "platform": "youtube",
+    "postTitle": "I am the Mentor of your Mentor #SmartMoneyConcepts #ICTTrading #SMCTrader #PriceAction",
+    "postUrl": "https://youtube.com/watch?v=O5alk6eomi0",
+    "authorName": "Trader Abdullah Masood",
+    "suggestedReply": "Being called the mentor of mentors is a bold claim but ICT's concepts genuinely do cascade down through the trading community that way. I teach my students to trace every strategy back to its original source before trusting it, because a lot gets diluted through the chain. Are you focusing more on the foundational PD arrays or the advanced delivery concepts in your content?",
+    "createdAt": "2026-08-10T00:32:10.884Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786321934013-l6snh",
+    "platform": "youtube",
+    "postTitle": "I am the Mentor of your Mentor #SmartMoneyConcepts #ICTTrading #SMCTrader #PriceAction",
+    "postUrl": "https://youtube.com/watch?v=ckcx0w35qjA",
+    "authorName": "Trader Abdullah Masood",
+    "suggestedReply": "Bold claim putting yourself above ICT himself in the mentor chain. I always tell my students that true mastery shows in how you explain liquidity sweeps and displacement, not just the title you carry. Are you teaching the full PD array matrix or focusing on specific entry models for your students?",
+    "createdAt": "2026-08-10T00:32:14.013Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786321941262-kvqp5",
+    "platform": "youtube",
+    "postTitle": "Automatizei o FVG (Smart Money) e olha no que deu... | FVG Liquidity Sniper",
+    "postUrl": "https://youtube.com/watch?v=50pkE8vL1uQ",
+    "authorName": "Nex Trader",
+    "suggestedReply": "The FVG Liquidity Sniper concept is solid, and automating it makes sense for consistency. One thing I always drill into my students though is that automated FVG tools can struggle during high impact news events, where price mitigates the gap but with such aggression that the logic breaks down entirely. On pairs like GBPUSD or NAS100, I teach them to pause the bot during red folder sessions and reassess manually. The automation handles the boring range days beautifully but the edge cases will expose it fast.",
+    "createdAt": "2026-08-10T00:32:21.262Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786321944411-mktyk",
+    "platform": "youtube",
+    "postTitle": "How to Avoid Fake Breakouts — Avoid the Trap",
+    "postUrl": "https://youtube.com/watch?v=DDDhqf3ujac",
+    "authorName": "Discount Trader ",
+    "suggestedReply": "Fake breakouts near session highs and lows hit hardest when there's no liquidity void beneath the move. I teach my students to check for an imbalance on the 15m before committing to any breakout, because price almost always returns to fill it before continuing. On pairs like Cable or gold, that retracement is your actual entry, not the initial push through the level.",
+    "createdAt": "2026-08-10T00:32:24.411Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1785977107472-m5rru",
     "platform": "investinglive",
     "postTitle": "BofA CEO Moynihan sees three Fed rate hikes through year end 2026",
