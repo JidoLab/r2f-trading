@@ -512,7 +512,7 @@
   {
     "email": "karsen110@gmail.com",
     "date": "2026-07-15T13:01:57.555Z",
-    "dripsSent": 6,
+    "dripsSent": 7,
     "referralCode": "R2F-yj9g01",
     "referredBy": null,
     "referralCount": 0,
@@ -535,7 +535,8 @@
       "successStory",
       "tradingPsychology",
       "propFirmTips",
-      "coachingCta"
+      "coachingCta",
+      "valueRecap"
     ]
   },
   {
@@ -600,7 +601,7 @@
   {
     "email": "wrightharvest+funneltest@gmail.com",
     "date": "2026-08-08T01:17:02.324Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-euasj6",
     "referredBy": null,
     "referralCount": 0,
@@ -608,7 +609,9 @@
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-08-08T01:17:02.324Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   },
   {
     "email": "mdyaminh812@gmail.com",
@@ -617,6 +620,11 @@
     "referralCode": "R2F-ubw539",
     "referredBy": null,
     "referralCount": 0,
-    "phone": "01985283486"
+    "phone": "01985283486",
+    "score": 0,
+    "segment": "cold",
+    "events": [],
+    "lastActivity": "2026-08-09T18:03:39.704Z",
+    "dripsHistory": []
   }
 ]
