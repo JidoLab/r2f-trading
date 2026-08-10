@@ -13,7 +13,8 @@
     "assemble-short": "npx tsx scripts/shorts/assemble-video.ts",
     "upload-short": "npx tsx scripts/shorts/upload-youtube.ts",
     "repurpose-blog": "npx tsx scripts/shorts/repurpose-blog.ts",
-    "generate-calendar": "npx tsx scripts/shorts/generate-calendar.ts"
+    "generate-calendar": "npx tsx scripts/shorts/generate-calendar.ts",
+    "fix-yt-descriptions": "npx tsx scripts/fix-youtube-descriptions.ts"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",
