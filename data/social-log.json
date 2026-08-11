@@ -1638,5 +1638,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-08-11T12:00:39.968Z",
+    "type": "text",
+    "postType": "hot-take",
+    "text": "Unpopular opinion: trading CPI week is gambling, not skill. Smart money already positioned BEFORE th",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
