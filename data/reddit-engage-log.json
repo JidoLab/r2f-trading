@@ -7159,5 +7159,15 @@
     "commentedAt": "2026-08-11T13:00:16.324Z",
     "permalink": "/r/Trading/comments/1vkmxon/how_many_hours_a_day_should_i_be_at_the_screen/p3137x3/",
     "commentId": "p3137x3"
+  },
+  {
+    "postId": "1vli1dr",
+    "subreddit": "Trading",
+    "postTitle": "Is this a solid strategy, or am I just getting lucky?",
+    "commentText": "the breaker block is where most people using this setup actually get wrecked, tbh. a lot of traders treat it like a regular OB but it's a failed structure, so if price is still in a premium on the 4h you're often just fading into more sell-side delivery. the IFVG confirmation on the 1h before entry is what separates clean setups from noise in my experience. curious what pairs you're running this on, and are you waiting for a BOS on the 15m to confirm the OB is actually being respected or just entering on touch? makes a massive difference to whether this is repeatable or just luck running hot.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-08-11T18:00:17.301Z",
+    "permalink": "/r/Trading/comments/1vli1dr/is_this_a_solid_strategy_or_am_i_just_getting/p32zusj/",
+    "commentId": "p32zusj"
   }
 ]
