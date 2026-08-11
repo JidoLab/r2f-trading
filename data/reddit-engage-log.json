@@ -7139,5 +7139,15 @@
     "commentedAt": "2026-08-10T18:01:42.222Z",
     "permalink": "/r/Forexstrategy/comments/1vkqtez/gold_4350_breaks/p2vpbqj/",
     "commentId": "p2vpbqj"
+  },
+  {
+    "postId": "1vl06dm",
+    "subreddit": "Trading",
+    "postTitle": "Prop Firms",
+    "commentText": "i had this exact problem last year when i was hammering gold on the 15m during new york open, scaling from 0.1 up to a full lot within minutes after an FVG fill, and half the firms i tried flagged it as \"inconsistent sizing\" even though the trade was already closed. tbh the no consistency rule requirement kills most of the big names immediately. funded engineer and maven both had decent flexibility on gold and btc last time i checked, no consistency rule and news trading allowed, but you'll want to verify their current lot size rules specifically for that rapid rescaling within 5 mins because that's the detail that bites people. curious what timeframe you're actually running your entries on, are you working off the 5m or lower for those btc setups?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-08-11T03:00:34.300Z",
+    "permalink": "/r/Trading/comments/1vl06dm/prop_firms/p2yrl0p/",
+    "commentId": "p2yrl0p"
   }
 ]
