@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "myth",
     "promo-blog",
     "promo-coaching",
     "poll-native",
@@ -29,11 +28,12 @@
     "poll-native",
     "poll-native",
     "poll",
-    "challenge"
+    "challenge",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "challenge",
-    "text": "CHALLENGE: This week — CPI dropping, August liquidity thin, smart money hunting stops. Take ZERO trades during the news window. Just mark your levels, watch the manipulation, and journal what you SEE. 5 days. Report back. 👇 #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-08-10T12:01:26.657Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: trading CPI week is gambling, not skill. Smart money already positioned BEFORE the candle drops. You're just reacting to their exit. #ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-08-11T12:00:38.460Z"
   }
 }
