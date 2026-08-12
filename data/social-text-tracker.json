@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-blog",
     "promo-coaching",
     "poll-native",
     "question",
@@ -29,11 +28,12 @@
     "poll-native",
     "poll",
     "challenge",
-    "hot-take"
+    "hot-take",
+    "quote"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: trading CPI week is gambling, not skill. Smart money already positioned BEFORE the candle drops. You're just reacting to their exit. #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-08-11T12:00:38.460Z"
+    "type": "quote",
+    "text": "\"Price tells the truth. News just confirms what smart money already did.\"\n\n— With CPI dropping this week, remember: they positioned BEFORE the report. Not during.\n\n#ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-08-12T12:01:40.452Z"
   }
 }
