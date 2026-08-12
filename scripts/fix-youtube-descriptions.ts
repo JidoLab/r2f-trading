@@ -34,6 +34,11 @@ const WHOP = "https://whop.com/r2f-2/";
 const WHOP_REPLACEMENT = "https://www.r2ftrading.com/coaching";
 const MARKER = "FREE: The ICT Funded-Trader Playbook";
 
+// Retired contact addresses. coach@r2ftrading.com appears in 34 descriptions
+// and coach@road2fundedtrading.com in one. Current address is the gmail.
+const CURRENT_EMAIL = "road2funded@gmail.com";
+const OLD_EMAILS = ["coach@road2fundedtrading.com", "coach@r2ftrading.com"];
+
 const CTA = `==============================
 FREE: The ICT Funded-Trader Playbook
 The 3 setups that actually work, the pre-trade checklist, and the risk rules that pass funded challenges. Instant download.
@@ -65,7 +70,11 @@ function env(key: string): string {
 }
 
 function desired(desc: string): string {
-  let out = desc
+  let out = desc;
+  // Emails first: the longer address contains the dead domain, so swapping it
+  // before the domain rewrite avoids turning it into coach@r2ftrading.com.
+  for (const old of OLD_EMAILS) out = out.replaceAll(old, CURRENT_EMAIL);
+  out = out
     .replaceAll("www." + DEAD_DOMAIN, "www.r2ftrading.com")
     .replaceAll(DEAD_DOMAIN, "r2ftrading.com")
     .replaceAll(WHOP, WHOP_REPLACEMENT)

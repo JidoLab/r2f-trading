@@ -170,7 +170,7 @@ export default async function BlogPostPage({
       jobTitle: "ICT Trading Coach",
       sameAs: [
         "https://x.com/Road2Funded",
-        "https://www.tradingview.com/u/HarvestSignals/",
+        "https://www.tradingview.com/u/Road_2_Funded/",
       ],
       knowsAbout: ["ICT trading", "forex coaching", "prop firm challenges", "trading psychology"],
     },

@@ -73,7 +73,7 @@ const organizationLd = {
     "https://x.com/Road2Funded",
     "https://www.youtube.com/@R2FTrading",
     "https://t.me/Road2Funded",
-    "https://www.tradingview.com/u/HarvestSignals/",
+    "https://www.tradingview.com/u/Road_2_Funded/",
   ],
 };
 
