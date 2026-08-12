@@ -14,7 +14,8 @@
     "upload-short": "npx tsx scripts/shorts/upload-youtube.ts",
     "repurpose-blog": "npx tsx scripts/shorts/repurpose-blog.ts",
     "generate-calendar": "npx tsx scripts/shorts/generate-calendar.ts",
-    "fix-yt-descriptions": "npx tsx scripts/fix-youtube-descriptions.ts"
+    "fix-yt-descriptions": "npx tsx scripts/fix-youtube-descriptions.ts",
+    "yt-research": "npx tsx scripts/youtube-topic-research.ts"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",
