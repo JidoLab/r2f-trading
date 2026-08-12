@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-08-12-what-to-ask-a-trading-coach-before-you-pay",
+    "syndicatedAt": "2026-08-12T06:02:40.506Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-08-12-what-to-ask-a-trading-coach-before-you-pay",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/what-to-ask-a-trading-coach-before-you-pay-2jde",
+        "id": "4374801"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-08-12-what-to-ask-a-trading-coach-before-you-pay"
+  },
+  {
     "slug": "2026-08-09-trading-coach-vs-trading-course-which-do-you-need",
     "syndicatedAt": "2026-08-09T06:02:40.946Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-08-09-trading-coach-vs-trading-course-which-do-you-need",
