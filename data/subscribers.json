@@ -560,7 +560,7 @@
   {
     "email": "questions25q@gmail.com",
     "date": "2026-07-30T12:15:44.703Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "referralCode": "R2F-9oi6or",
     "referredBy": null,
     "referralCount": 0,
@@ -571,7 +571,8 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts",
-      "successStory"
+      "successStory",
+      "tradingPsychology"
     ]
   },
   {
@@ -616,7 +617,7 @@
   {
     "email": "mdyaminh812@gmail.com",
     "date": "2026-08-09T18:03:39.704Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-ubw539",
     "referredBy": null,
     "referralCount": 0,
@@ -625,6 +626,8 @@
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-08-09T18:03:39.704Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   }
 ]
