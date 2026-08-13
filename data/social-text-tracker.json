@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-coaching",
     "poll-native",
     "question",
     "poll",
@@ -29,11 +28,12 @@
     "poll",
     "challenge",
     "hot-take",
-    "quote"
+    "quote",
+    "question"
   ],
   "lastPost": {
-    "type": "quote",
-    "text": "\"Price tells the truth. News just confirms what smart money already did.\"\n\n— With CPI dropping this week, remember: they positioned BEFORE the report. Not during.\n\n#ICTTrading #SmartMoneyConcepts #CPI",
-    "date": "2026-08-12T12:01:40.452Z"
+    "type": "question",
+    "text": "CPI dropping soon + August liquidity = a trap for most traders. Do you STOP trading before high-impact news or do you trade the spike? Drop your answer 👇 #ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-08-13T12:00:20.109Z"
   }
 }
