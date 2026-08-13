@@ -1,9 +1,15 @@
 {
-  "date": "2026-08-07",
+  "date": "2026-08-13",
   "entries": [
     {
-      "cron": "reddit-engage",
-      "retriedAt": "2026-08-07T12:02:27.673Z",
+      "cron": "find-reply-opportunities",
+      "retriedAt": "2026-08-13T12:03:37.456Z",
+      "result": "success",
+      "statusCode": 200
+    },
+    {
+      "cron": "find-forum-opportunities",
+      "retriedAt": "2026-08-13T12:04:02.433Z",
       "result": "success",
       "statusCode": 200
     }
