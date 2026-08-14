@@ -1687,5 +1687,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-08-14T12:01:57.203Z",
+    "type": "text",
+    "postType": "poll",
+    "text": "What's killing your trades in August's dead liquidity? 🅰️ Chasing moves that go nowhere 🅱️ Getting",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
