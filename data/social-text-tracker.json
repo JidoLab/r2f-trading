@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll-native",
     "question",
     "poll",
     "hot-take",
@@ -29,11 +28,12 @@
     "challenge",
     "hot-take",
     "quote",
-    "question"
+    "question",
+    "poll"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "CPI dropping soon + August liquidity = a trap for most traders. Do you STOP trading before high-impact news or do you trade the spike? Drop your answer 👇 #ICTTrading #SmartMoneyConcepts #CPI",
-    "date": "2026-08-13T12:00:20.109Z"
+    "type": "poll",
+    "text": "What's killing your trades in August's dead liquidity? 🅰️ Chasing moves that go nowhere 🅱️ Getting stopped out before the real run 🅲️ FOMO on fake breakouts 🅳️ Not trading at all #ICTTrading #SmartMoneyConcepts #Forex",
+    "date": "2026-08-14T12:01:55.869Z"
   }
 }
