@@ -7239,5 +7239,15 @@
     "commentedAt": "2026-08-15T03:00:38.749Z",
     "permalink": "/r/Forexstrategy/comments/1vo52hi/gold_xauusd_update_zone_tapped_choch_printed/p3rur36/",
     "commentId": "p3rur36"
+  },
+  {
+    "postId": "1voehss",
+    "subreddit": "Trading",
+    "postTitle": "Part 2: The Volume Distribution Hypothesis (VDH) and Serious Strategy Development.",
+    "commentText": "i had this exact problem last month watching the asian killzone on gbpjpy, 15 minute chart, price kept reacting to levels i marked but the moves were shallow and choppy. what you're describing with the locally inefficient auction actually clicked for me when i noticed the FVG i was targeting had almost no prior volume transacted through it, so even a mid-size order was pushing price through it fast with no real resistance. the kyle reference is interesting because it gives a mathematical backbone to something most ict traders just describe intuitively as \"price seeking liquidity.\" curious whether you're filtering your re-interaction setups by session, like are you only taking confluent entries during london or new york when participant volume is actually high enough to validate the auction efficiency side of this?",
+    "mentionedR2F": false,
+    "commentedAt": "2026-08-15T08:00:42.685Z",
+    "permalink": "/r/Trading/comments/1voehss/part_2_the_volume_distribution_hypothesis_vdh_and/p3sy28a/",
+    "commentId": "p3sy28a"
   }
 ]
