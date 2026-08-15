@@ -1716,5 +1716,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-08-15T12:00:21.699Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "It's the weekend — what's your Saturday grind? #ICTTrading #SmartMoney\n\n🅰️ Backtesting setups\n🅱️ R",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
