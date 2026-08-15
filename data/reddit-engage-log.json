@@ -7259,5 +7259,15 @@
     "commentedAt": "2026-08-15T13:00:15.589Z",
     "permalink": "/r/FOREXTRADING/comments/1volo0z/any_cfd_commodities_trader_intrested_to_work_on_a/p3u1coi/",
     "commentId": "p3u1coi"
+  },
+  {
+    "postId": "1vomodm",
+    "subreddit": "Forexstrategy",
+    "postTitle": "A strategy can be profitable and still be a bad fit for a prop firm",
+    "commentText": "the consistency rule is the one that kills most people tbh, especially if you're running something like a london session BOS entry where your wins cluster heavily in certain weeks and your losses spread across others. the equity curve looks fine over 200 trades but month-to-month the variance will get you flagged before you ever prove the edge. i personally fit the firm to the strategy, not the other way around. adjusting your entries to satisfy a rule set you don't fully understand just introduces discretionary noise you didn't backtest. curious what style you're running, are you holding through new york or closing everything before the daily close? that detail changes which rules are actually the threat for you.",
+    "mentionedR2F": true,
+    "commentedAt": "2026-08-15T18:00:50.805Z",
+    "permalink": "/r/Forexstrategy/comments/1vomodm/a_strategy_can_be_profitable_and_still_be_a_bad/p3vqsrv/",
+    "commentId": "p3vqsrv"
   }
 ]
