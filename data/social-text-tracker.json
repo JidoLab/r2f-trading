@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "question",
     "poll",
     "hot-take",
     "poll-native",
@@ -29,11 +28,12 @@
     "hot-take",
     "quote",
     "question",
-    "poll"
+    "poll",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "What's killing your trades in August's dead liquidity? 🅰️ Chasing moves that go nowhere 🅱️ Getting stopped out before the real run 🅲️ FOMO on fake breakouts 🅳️ Not trading at all #ICTTrading #SmartMoneyConcepts #Forex",
-    "date": "2026-08-14T12:01:55.869Z"
+    "type": "poll-native",
+    "text": "It's the weekend — what's your Saturday grind? #ICTTrading #SmartMoney\n\n🅰️ Backtesting setups\n🅱️ Reviewing my journal\n🅲️ Building watchlist\n🅳️ Taking the day off\n\nVote below! 👇",
+    "date": "2026-08-15T12:00:20.746Z"
   }
 }
