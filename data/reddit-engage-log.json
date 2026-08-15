@@ -7249,5 +7249,15 @@
     "commentedAt": "2026-08-15T08:00:42.685Z",
     "permalink": "/r/Trading/comments/1voehss/part_2_the_volume_distribution_hypothesis_vdh_and/p3sy28a/",
     "commentId": "p3sy28a"
+  },
+  {
+    "postId": "1volo0z",
+    "subreddit": "FOREXTRADING",
+    "postTitle": "Any cfd commodities trader intrested to work on a solid strategy for algo?",
+    "commentText": "commodities algo is actually a solid niche right now, especially with gold and crude being so manipulative on the asian and london kill zones. tbh the hardest part of automating ICT isn't the logic, it's defining OB validity programmatically since a lot of it is context-dependent (what came before the move, is price in premium or discount, did you get a proper BOS on the higher timeframe first). curious what your invalidation rules look like for your OBs on commodities, are you mitigating and moving on or do you allow a second tap?",
+    "mentionedR2F": true,
+    "commentedAt": "2026-08-15T13:00:15.589Z",
+    "permalink": "/r/FOREXTRADING/comments/1volo0z/any_cfd_commodities_trader_intrested_to_work_on_a/p3u1coi/",
+    "commentId": "p3u1coi"
   }
 ]
