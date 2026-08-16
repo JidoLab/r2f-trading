@@ -213,6 +213,22 @@ async function getRedditAccessToken(): Promise<string | null> {
 }
 
 async function postToReddit(post: PostData): Promise<SocialResult[]> {
+  // Kill switch. u/Front-Recording7391 was shadowbanned (confirmed 2026-08-10
+  // by loading the profile logged out). Everything it submits is invisible to
+  // everyone else, so posting from it wastes calls and keeps adding automated
+  // activity to an account already flagged for it.
+  //
+  // Note for anyone re-checking this: the Reddit API cannot tell you a
+  // shadowban happened. is_suspended stays false, comments carry no
+  // banned_by or removal_reason, and they still appear in thread trees when
+  // you fetch them with the banned account's own token. That is the design.
+  // The only reliable test is loading the profile while logged out.
+  //
+  // To re-enable after a successful appeal, set REDDIT_POSTING_ENABLED=true.
+  if (process.env.REDDIT_POSTING_ENABLED !== "true") {
+    return [{ platform: "reddit", status: "skipped", message: "Reddit posting disabled (account shadowbanned)" }];
+  }
+
   const subreddit = process.env.REDDIT_SUBREDDIT || "Road2Funded";
   const username = process.env.REDDIT_USERNAME || "Front-Recording7391";
 

@@ -345,6 +345,17 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  // u/Front-Recording7391 was shadowbanned (confirmed 2026-08-10 logged out).
+  // The schedules are already removed from vercel.json; this guard stops a
+  // manual trigger or a restored schedule from silently resuming. Set
+  // REDDIT_POSTING_ENABLED=true to re-enable after a successful appeal.
+  if (process.env.REDDIT_POSTING_ENABLED !== "true") {
+    return NextResponse.json({
+      skipped: true,
+      reason: "Reddit posting disabled: account shadowbanned, appeal pending",
+    });
+  }
+
   try {
     const accessToken = await getRedditAccessToken();
     if (!accessToken) {
