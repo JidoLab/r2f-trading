@@ -23,8 +23,8 @@ Post it under **Education**, tagged to **BTCUSD** or **NQ1!**. BTCUSD gets more
 eyeballs on TradingView. NQ1! is closer to what he actually trades.
 
 **Formatting note:** the body below is written in TradingView's BBCode. Paste it
-straight in. `[b]bold[/b]`, `[i]italic[/i]`, `[u]underline[/u]` are the three
-the editor supports reliably.
+straight in. Use `[b]bold[/b]` and `[i]italic[/i]` only. `[u]` does not render
+on TradingView. Tags cannot contain spaces, so two-word tags are joined up.
 
 ---
 
@@ -61,7 +61,7 @@ That is the whole thing. It is not manipulation and it is not personal. It is a 
 
 This is the part most explanations skip, and it is the part that makes everything else make sense.
 
-[u]A stop loss is not a passive instruction.[/u] It is a resting order sitting on the exchange. A buy stop above a high is a market buy that fires automatically the moment price touches it. A sell stop below a low is a market sell.
+[b]A stop loss is not a passive instruction.[/b] It is a resting order sitting on the exchange. A buy stop above a high is a market buy that fires automatically the moment price touches it. A sell stop below a low is a market sell.
 
 So when a few thousand traders put stops in the same narrow band, that band contains a few thousand automatic orders waiting to trigger. Nobody has to do anything. Price just has to touch the price.
 
@@ -125,13 +125,13 @@ If you have ever been stopped out in the first thirty seconds of a release and t
 
 Once you know where the pools are, you need to recognise what it looks like when one gets taken. There is a shape to it.
 
-[u]Stage one, the approach.[/u] Price moves toward the level, often slowly. Candle ranges compress. It can look like the move is running out of steam, which is exactly what makes traders add to positions in the wrong direction here.
+[b]Stage one, the approach.[/b] Price moves toward the level, often slowly. Candle ranges compress. It can look like the move is running out of steam, which is exactly what makes traders add to positions in the wrong direction here.
 
-[u]Stage two, the reach.[/u] One candle pushes through the level. This is where the orders get filled. On a sweep, that candle usually has a long wick and closes back inside the range. Sometimes it closes beyond for a candle or two, which traps the breakout traders properly before reversing.
+[b]Stage two, the reach.[/b] One candle pushes through the level. This is where the orders get filled. On a sweep, that candle usually has a long wick and closes back inside the range. Sometimes it closes beyond for a candle or two, which traps the breakout traders properly before reversing.
 
-[u]Stage three, the rejection.[/u] Price comes back through the level with speed. This candle should look different from everything around it. Bigger body, faster, often leaving a gap between candle bodies behind it.
+[b]Stage three, the rejection.[/b] Price comes back through the level with speed. This candle should look different from everything around it. Bigger body, faster, often leaving a gap between candle bodies behind it.
 
-[u]Stage four, the actual move.[/u] Price leaves the level and does not come back.
+[b]Stage four, the actual move.[/b] Price leaves the level and does not come back.
 
 The part that separates traders here is stage three. [b]The wick through the level is not your signal. The move back through it is.[/b] If you enter on the wick, you are guessing. If you wait for price to reclaim the level with displacement, you have evidence.
 
@@ -221,7 +221,7 @@ Sometimes a level breaks because it broke. Strong trends run through equal highs
 
 Sometimes there is no meaningful liquidity above a high because nobody was watching that level in the first place.
 
-And on most retail platforms [u]you cannot see the order book[/u]. Everything in this post is inference from where traders predictably place orders. It is not confirmation of what is actually resting there.
+And on most retail platforms [b]you cannot see the order book[/b]. Everything in this post is inference from where traders predictably place orders. It is not confirmation of what is actually resting there.
 
 So here is how I use it, honestly. I use it to decide where [i]not[/i] to put my stop, and to stay patient when price is walking into an obvious pool. I do not use it to predict direction, and anyone selling it to you as a direction tool is overselling it.
 
@@ -245,9 +245,9 @@ If this was useful, say so in the comments and tell me which of the four zones c
 Copy these into the tag field:
 
 ```
-Trading Psychology
-Trend Analysis
-Trading Plan
+tradingpsychology
+trendanalysis
+tradingplan
 liquidity
 smartmoneyconcepts
 ict
@@ -259,8 +259,8 @@ priceaction
 equalhighs
 ```
 
-TradingView weights the first few tags most, so keep the three proper
-categories first and the hashtag-style ones after.
+Tags cannot contain spaces, so two-word tags are joined up.
+TradingView weights the first few most, so keep the broad ones first.
 
 ---
 
@@ -314,7 +314,7 @@ mangle small text often, so expect two or three passes.
 - [ ] Title exactly: **You Are the Liquidity**
 - [ ] Paste the BBCode body as is, then preview to confirm the tags rendered
 - [ ] Thumbnail is the generated image
-- [ ] First tags in order: Trading Psychology, Trend Analysis, Trading Plan
+- [ ] First tags in order: tradingpsychology, trendanalysis, tradingplan
 - [ ] Reply to every comment in the first 24 hours. On TradingView that is most
       of what drives the boost count.
 
