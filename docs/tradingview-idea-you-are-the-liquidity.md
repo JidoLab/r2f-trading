@@ -15,17 +15,15 @@ BlueNyraFx's numbers show what travels on TradingView Ideas:
 | 100 Trades. One Strategy. Why 4 Outcomes? | 161 |
 | The Journey of One Trade | 18 |
 
-The two winners are a **metaphor plus a reframe**. The one that flopped is a
-mechanical explainer. So the post needs an idea that makes someone
-uncomfortable, not a diagram of how order routing works.
+The two winners take one idea and make the reader uncomfortable about their own
+behaviour. The one that flopped is a neutral explainer. So the post needs a
+claim about the reader, backed by mechanics.
 
-"You are the liquidity" does that. It is Harvest's actual specialism, it is
-confrontational without being rude, and it sets up the equal highs video he is
-about to film.
+"You are the liquidity" does that. It is Harvest's actual specialism, and it is
+the same idea as the equal highs video, so the two cross-promote.
 
 Post it under **Education**, tagged to **BTCUSD** or **NQ1!**. BTCUSD gets more
-eyeballs on TradingView. NQ1! is closer to what he actually trades. Either
-works; BTCUSD if the goal is reach.
+eyeballs on TradingView. NQ1! is closer to what he actually trades.
 
 ---
 
@@ -35,79 +33,117 @@ works; BTCUSD if the goal is reach.
 
 ---
 
-Every stop loss you have ever placed went into a queue with thousands of others.
+Most traders think the market moved against them.
 
-Price never came for you personally. It came for the queue.
+What actually happened is their order was sitting where something bigger needed it to be.
 
-That distinction is the whole game, and most traders never make it.
+I want to walk through the mechanics of that, because once you understand it, a lot of your losing trades stop looking random.
 
-**Where the money actually sits**
+**Start with the problem a large order has**
 
-A market cannot fill a large order without someone on the other side.
+If a fund needs to sell 500 contracts, someone has to buy 500 contracts. That is not optional. Every seller needs a buyer on the other side, at the same moment, at a price they are willing to take.
 
-If a fund needs to sell size, it needs buyers. Lots of them, in one place, at one moment.
+At most prices on the chart, there is not enough resting volume to do that. If they just start selling into thin order flow, price drops while they are still filling, and they get a worse average price on every contract after the first.
 
-So the question stops being "where is price going" and becomes "where are the orders it needs".
+So the question a large participant asks is not "is this a good price to sell". It is "is there enough buying here to absorb my size without moving price against me".
 
-Once you start reading a chart that way, the obvious levels stop looking like walls. They start looking like fuel.
+That question has a specific answer, and the answer is visible on your chart.
 
-**Four places you become the fuel**
+**Why retail orders end up in the same places**
+
+Here is the part most people skip.
+
+A stop loss is not a passive instruction. It is a resting order. A buy stop above a high is a market buy that fires automatically when price touches it. A sell stop below a low is a market sell.
+
+So when a few thousand traders put stops in the same narrow band, that band contains a few thousand automatic orders waiting to trigger.
+
+Now add the second group. Breakout traders put entry orders on the other side of those same levels. Buy stops above the high, sell stops below the low.
+
+Both groups end up leaving orders in the same place, pointing the same direction.
+
+That is a pool of buying above the high, and a pool of selling below the low. Not a theory. Just where the orders are.
+
+**Four places this happens over and over**
 
 **1. Above equal highs**
 
-Two matching highs look like resistance. Traders sell there and put stops above.
+Two highs at roughly the same price is the cleanest version of this.
 
-Breakout traders put buy orders above the same level.
+Traders see the second rejection and read it as resistance. They sell, and they put their stop above the highs, because that is where they would be wrong.
 
-Now there is a pile of buy orders sitting in one narrow band, and everyone can see exactly where it is.
+Breakout traders see the same two highs and place buy stops above, because that is where they would be right.
 
-Price does not go there because the level failed. It goes there because that is where the buyers are.
+You now have shorts' stop losses and breakout buyers' entries stacked in the same few points. Everyone who looks at that chart can see the level. That is the point. It is visible on purpose.
 
-**2. Under the obvious swing low**
+Price does not run through equal highs because resistance failed. It runs through because that is where the buy orders are.
 
-Same mechanic, other direction.
+**2. Below the obvious swing low**
 
-Every trader who bought the low has a stop underneath it. Every breakdown trader is waiting to short below it.
+Same thing in reverse. Everyone who bought that low has a sell stop underneath it. Every breakdown trader is waiting to short below it.
 
-A slow drift into that zone is not weakness. It is the market walking toward the orders it needs.
+The tell is how price approaches. A slow grind lower into an obvious low, with small overlapping candles and no real displacement, usually means price is going to take the orders and turn. Real selling shows up as size and speed.
 
-**3. Around the round number**
+**3. Round numbers**
 
-25,000 on NQ. 4,000 on the S&P. 1.1000 on EURUSD.
+25,000 on NQ. 6,000 on the S&P. 1.1000 on EURUSD. 100,000 on Bitcoin.
 
-Nobody agrees on much in this business, and then everybody puts their stop at the same round figure.
+There is no technical reason a round number matters. It matters because humans place orders at round numbers. Ask ten traders where their stop is and a lot of them will say a figure ending in three zeros.
 
-**4. Right after the news drops**
+Round numbers concentrate orders for no other reason than habit, and that is enough.
 
-A release does not create the move. It creates the volume to complete one.
+**4. Immediately after a scheduled news release**
 
-The level was already there. The data just paid for the trip.
+This one gets misread constantly.
 
-**The uncomfortable part**
+CPI, PPI, NFP and FOMC do not create the move. They create the volume that lets someone complete a move that was already set up.
 
-If your stop is somewhere obvious, you are not being hunted. You are being used.
+The level existed before the release. The liquidity was already sitting there. What the release provides is a burst of participation deep enough to fill a large order in seconds instead of hours.
 
-Nobody is looking at your account. Your order is just part of a pool that happens to sit where a much larger order needs it to be.
+That is why you so often see price run one direction on the release, take out an obvious level, and then spend the rest of the session going the other way. The initial spike was the fill. The rest was the actual move.
 
-That is not a conspiracy. It is how size gets filled.
+**How to see it before it happens**
 
-**What changes when you see it**
+This is not a prediction tool. It is a way of knowing where the risk is.
 
-You stop shorting into equal highs and start waiting for them to break.
+Before you take a trade, look left and mark the places where orders are obviously stacked. Equal highs and equal lows. The high or low everyone is talking about. The round number just above or below.
 
-You stop putting stops at the level everyone can see and start putting them past the sweep.
+Then ask where those levels sit relative to your entry and your stop.
 
-You stop reading a wick through a high as a breakout and start asking what got collected on the way.
+If there is an obvious pool of liquidity between your entry and your target, that pool will probably get taken before your target does. If your stop sits inside one of those pools, you are likely to be stopped out on a move that then goes your way without you.
 
-Ten years in, this is still the single idea that changed my results the most. Not a new indicator. Not a better entry. Just a different question.
+You cannot know it will happen. You can know where it would happen if it does. That is enough to stop being in the wrong place.
 
-**The question**
+**What to actually do differently**
 
-Before your next trade, look at your stop and ask one thing:
+Three changes, in order of how much they matter.
 
-If I needed to fill a huge order right now, would I come for this price?
+First, stop selling into equal highs and stop buying into obvious lows. That is the trade the move is built to remove. If you like the level, wait for it to be swept and then look for price to reclaim it. The reclaim is the signal. The wick through is not.
 
-If the answer is yes, you are not managing risk. You are providing it.
+Second, move your stop past the pool instead of inside it. If you are short and the equal highs are at 25,020, a stop at 25,025 is inside the pool. A stop above where the sweep would reasonably reach gives the trade room to survive the fill. Yes, that means a wider stop and a smaller position. That is the trade you are actually making.
+
+Third, size for it. A wider stop with the same risk in dollars means fewer contracts. Most traders keep the position size and tighten the stop instead, which is exactly backwards, and it is why the same setup works for one trader and fails for another.
+
+**When this reasoning is wrong**
+
+I will be straight about the limits, because plenty of people teach this as if it explains everything.
+
+Sometimes a level breaks because it broke. Strong trends run through equal highs and keep going, and if you are waiting for a sweep and reclaim on every one of them, you will sit out real moves.
+
+Sometimes there is no meaningful liquidity above a high because nobody was watching that level.
+
+And you cannot see the order book on most retail platforms, so everything here is inference from where traders predictably put orders, not confirmation of what is actually resting there.
+
+The way I handle that is simple. I use this to decide where not to put my stop, and to stay patient when price is approaching an obvious pool. I do not use it to predict direction.
+
+**The check to run before your next trade**
+
+Look at where your stop is and ask one question.
+
+If I had to fill a very large order right now, is my stop somewhere I would come looking?
+
+If the answer is yes, move it or skip the trade.
+
+Ten years in, this is still the change that did the most for my results. Not a new indicator. Not a better entry model. Just knowing which side of the pool I was standing on.
 
 ---
 
@@ -196,9 +232,8 @@ This post and the equal highs video are the same idea in two formats. Publish
 the Idea first, then open the video by referencing it. The TradingView profile
 already links out, so the traffic has somewhere to go.
 
-If it performs, the follow-up Idea writes itself: **"The Chart Was Never
-Random"**, same structure, four places the market tells you its intention
-before it moves.
+If it performs, the follow-up Idea writes itself: **"The Stop You Can See Is
+the Stop That Gets Hit"**, same structure, on stop placement specifically.
 
 ---
 
