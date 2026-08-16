@@ -35,7 +35,6 @@ const SOCIAL_LINKS = [
   { platform: "Telegram", url: "https://t.me/Road2Funded", icon: "✈️" },
   { platform: "WhatsApp", url: "https://wa.me/66935754757", icon: "📱" },
   { platform: "LinkedIn", url: "https://linkedin.com/in/harvest-wright", icon: "💼" },
-  { platform: "Reddit", url: "https://reddit.com/user/Road2Funded", icon: "🔴" },
   { platform: "Discord", url: "https://discord.gg/r2ftrading", icon: "💬" },
   { platform: "Facebook", url: "https://facebook.com/R2FTrading", icon: "📘" },
 ];
