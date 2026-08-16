@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-08-16-trading-mentor-red-flags-that-cost-traders-thousands",
+    "syndicatedAt": "2026-08-16T06:02:20.466Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-08-16-trading-mentor-red-flags-that-cost-traders-thousands",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/trading-mentor-red-flags-that-cost-traders-thousands-1j7f",
+        "id": "4408382"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-08-16-trading-mentor-red-flags-that-cost-traders-thousands"
+  },
+  {
     "slug": "2026-08-12-what-to-ask-a-trading-coach-before-you-pay",
     "syndicatedAt": "2026-08-12T06:02:40.506Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-08-12-what-to-ask-a-trading-coach-before-you-pay",
