@@ -20,7 +20,7 @@ spam ban into ban evasion, which is much harder to come back from.
 
 ---
 
-## The letter
+## The full letter (for a reply, not the form)
 
 ```
 Hi,
@@ -42,21 +42,29 @@ Thanks for reviewing this.
 
 ---
 
-## Shorter version if the form has a character limit
+## The 250 character version (use this one)
+
+The appeal form caps at 250 characters, so this is what actually goes in.
 
 ```
-I'm appealing the ban on u/Front-Recording7391.
-
-I'll be straight: I ran an automated system that posted comments to trading subreddits about four times a day for several months, and auto-submitted my own articles. That breaks the rules on spam and automation. It was my setup and my decision.
-
-I have deleted the scheduled jobs and disabled the posting code, so nothing can run from this account now.
-
-If reinstated, I'll comment manually only, where I genuinely have something to add, and I won't link to my own site in comments.
-
-I've had the account since 2024 and would like to use it properly. Thanks for reviewing.
+I set up software that posted comments and my own articles automatically, about 4 times a day for months. That is spam and it was my fault. I have shut it down completely. If reinstated I will only post manually and will not link to my site.
 ```
 
----
+241 characters. Every sentence does one job: what I did, that it was wrong and
+mine, that it is stopped, and what changes if I come back. Nothing else fits,
+and nothing else matters to the person reading it.
+
+Alternative at 238 characters if you prefer it blunter:
+
+```
+I automated comments and self-promo posts ~4x a day for months. That is spam and it was my decision. I have deleted the cron jobs and disabled the code entirely. If reinstated I will only comment manually and will not link to my own site.
+```
+
+Count before pasting. Some forms count whitespace and some strip trailing
+newlines, so do not add a signature or a greeting.
+
+The longer letter above is kept in case a human replies and asks for detail,
+or if you ever get a form with more room.
 
 ## Why it's written this way
 
