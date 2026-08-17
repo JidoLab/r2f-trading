@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1786926699490-vuz2u",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE Sunday Futures Open | Day Trading ES NQ | ICT Concepts | Aug 16",
+    "postUrl": "https://youtube.com/watch?v=2HQYMK9G-60",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Sunday futures open on ES and NQ is one of the most misread sessions traders encounter. I drill into my students to watch the initial 15 minute range as a liquidity reference point before price even attempts to seek out any weekly opening gap. Most retail traders are reacting to price on the open instead of identifying whether institutions are expanding or contracting the range first. That patience alone separates consistently funded traders from the ones blowing accounts every quarter.",
+    "createdAt": "2026-08-17T00:31:39.490Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786926702225-4lfdj",
+    "platform": "youtube",
+    "postTitle": "I am the Mentor of your Mentor #SmartMoneyConcepts #ICTTrading #SMCTrader #PriceAction",
+    "postUrl": "https://youtube.com/watch?v=NCSVq4vCZLg",
+    "authorName": "Trader Abdullah Masood",
+    "suggestedReply": "Bold claim putting yourself as the mentor of ICT mentors. I always tell my students that the real edge in SMC comes from understanding WHY price seeks liquidity, not just identifying where it pools. Are you covering the internal range liquidity concepts here or keeping the focus more on the higher timeframe draw on liquidity?",
+    "createdAt": "2026-08-17T00:31:42.225Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786926705781-sub58",
+    "platform": "youtube",
+    "postTitle": "Conditioning bad behaviour #smc #ict #trader #nq #fvg #trading #livetrade #daytrading #forextrading",
+    "postUrl": "https://youtube.com/watch?v=2qKYfJAGJmc",
+    "authorName": "Timothy Sykes",
+    "suggestedReply": "The FVG setup here is clean but the part most traders miss is how \"conditioning bad behaviour\" actually applies to the entry trigger. I drill into my students that on NQ especially, you have to wait for the displacement candle to fully close before committing. Entering mid-candle on a fair value gap is one of the most conditioned bad habits in this space and it kills your risk to reward before the trade even starts.",
+    "createdAt": "2026-08-17T00:31:45.781Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786926709227-6mk8d",
+    "platform": "youtube",
+    "postTitle": "💰 LIVE Trading ICT తెలుగు",
+    "postUrl": "https://youtube.com/watch?v=iSMH4lr8iEk",
+    "authorName": "ICT తెలుగు",
+    "suggestedReply": "LIVE trading sessions like this are where real learning happens, not just theory. One thing I always warn my students about with live ICT sessions though, watch the kill zones carefully because many traders see a setup forming and jump in before displacement actually confirms. On the 15 minute, patience between the setup and entry is everything. Great to see this content in Telugu for the community.",
+    "createdAt": "2026-08-17T00:31:49.227Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786926712672-gyuc5",
+    "platform": "youtube",
+    "postTitle": "BUY OR SELL? How to Avoid False Breakouts (A Secret Technique) #trading",
+    "postUrl": "https://youtube.com/watch?v=p8HoHyQkIvs",
+    "authorName": "Trading Challenges Everyday",
+    "suggestedReply": "False breakouts on lower timeframes almost always respect a higher timeframe liquidity level sitting just beyond the wick. I tell my students to map out buy side and sell side liquidity on the 4H before touching any breakout setup on the 15M. If price sweeps that level and immediately rejects, you're not in a breakout, you're in a stop hunt. That distinction alone separates profitable traders from frustrated ones.",
+    "createdAt": "2026-08-17T00:31:52.672Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786926715788-ljkmy",
+    "platform": "youtube",
+    "postTitle": "NQ AUG13 Live Trading Recap #tradingtips #propfirmtrading",
+    "postUrl": "https://youtube.com/watch?v=2XoQTh19rAI",
+    "authorName": "Michael Shih",
+    "suggestedReply": "I traded NQ live during a prop firm evaluation last year and the emotional pressure on recap days like this is real. I always tell my students to treat funded account sessions the same as demo, same process, same patience waiting for that 15 minute confirmation before entry. NQ is unforgiving when you rush it.",
+    "createdAt": "2026-08-17T00:31:55.788Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786926720176-sd5zw",
+    "platform": "youtube",
+    "postTitle": "I am the Mentor of your Mentor #SmartMoneyConcepts #ICTTrading #SMCTrader #PriceAction",
+    "postUrl": "https://youtube.com/watch?v=Z9WyoYfHI2Q",
+    "authorName": "Trader Abdullah Masood",
+    "suggestedReply": "Smart Money Concepts being traced back to ICT's original teachings is something I emphasize constantly with my students. The lineage matters because when traders understand the source, they stop misapplying concepts like order blocks and displacement on random timeframes without context. One caveat though, the \"mentor of your mentor\" framing can create a false ceiling where traders stop questioning and just defer to hierarchy. I teach my students to verify every concept against raw price action, no matter who the source is.",
+    "createdAt": "2026-08-17T00:32:00.176Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1786926722917-cg1oo",
+    "platform": "youtube",
+    "postTitle": "Todo lo que necesitas saber sobre este concepto - CISD",
+    "postUrl": "https://youtube.com/watch?v=_drb5sSmQZE",
+    "authorName": "Xavi Ruyra",
+    "suggestedReply": "Interesting take on CISD. In my experience, the concept hits differently depending on whether you are trading during London or New York session. I drill into my students that CISD only becomes reliable when it forms after a clear liquidity sweep on the 15m or lower. Without that confluence, you are just trading a pattern in isolation.",
+    "createdAt": "2026-08-17T00:32:02.917Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1786622622994-8zvm8",
     "platform": "investinglive",
     "postTitle": "Dollar stays more muted so far today amid lack of any post-CPI momentum",
