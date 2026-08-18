@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "hot-take",
     "poll-native",
     "challenge",
     "quote",
@@ -29,11 +28,12 @@
     "question",
     "poll",
     "poll-native",
-    "story"
+    "story",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "story",
-    "text": "Took a trade Sunday night in August thin liquidity. Order block looked perfect. Got stopped out by a 3-pip spike then price went my way 80 pips. August will humble you fast. Sit on your hands more than you trade this month. 🫵 #ICTtrading #SmartMoneyConcepts #FairValueGap",
-    "date": "2026-08-16T12:01:40.911Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: Most funded trader programs are just selling you a dream. The real edge? Order blocks and fair value gaps that 99% of retail ignores. Stop chasing payouts. Learn the structure. #ICTTrading #FairValueGap #FundedTrader",
+    "date": "2026-08-18T12:01:42.168Z"
   }
 }
