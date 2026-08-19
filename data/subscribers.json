@@ -643,7 +643,7 @@
   {
     "email": "Matinvz0vz@gmail.com",
     "date": "2026-08-13T10:07:14.222Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "referralCode": "R2F-b8eyd8",
     "referredBy": null,
     "referralCount": 0,
@@ -657,7 +657,8 @@
     ],
     "lastActivity": "2026-08-14T09:00:41.807Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   },
   {
