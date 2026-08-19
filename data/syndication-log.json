@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-08-19-signals-groups-vs-real-trading-coaching-the-honest-breakdown",
+    "syndicatedAt": "2026-08-19T06:03:43.530Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-08-19-signals-groups-vs-real-trading-coaching-the-honest-breakdown",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/signals-groups-vs-real-trading-coaching-the-honest-breakdown-5hgk",
+        "id": "4431493"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-08-19-signals-groups-vs-real-trading-coaching-the-honest-breakdown"
+  },
+  {
     "slug": "2026-08-16-trading-mentor-red-flags-that-cost-traders-thousands",
     "syndicatedAt": "2026-08-16T06:02:20.466Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-08-16-trading-mentor-red-flags-that-cost-traders-thousands",
