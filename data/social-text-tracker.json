@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll-native",
     "challenge",
     "quote",
     "tip",
@@ -29,11 +28,12 @@
     "poll",
     "poll-native",
     "story",
-    "hot-take"
+    "hot-take",
+    "quote"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: Most funded trader programs are just selling you a dream. The real edge? Order blocks and fair value gaps that 99% of retail ignores. Stop chasing payouts. Learn the structure. #ICTTrading #FairValueGap #FundedTrader",
-    "date": "2026-08-18T12:01:42.168Z"
+    "type": "quote",
+    "text": "\"August will expose every flaw in your process.\" — Low liquidity doesn't forgive sloppy entries. Your order blocks and FVGs still work. Your discipline? That's what's being tested right now. #ICTTrading #SmartMoneyConcepts #R2FTrading",
+    "date": "2026-08-19T12:03:17.232Z"
   }
 }
