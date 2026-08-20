@@ -538,7 +538,8 @@
       "coachingCta",
       "valueRecap",
       "lastChance"
-    ]
+    ],
+    "staleReengageSent": true
   },
   {
     "email": "johnsonjasper03002@gmail.com",
@@ -563,7 +564,7 @@
   {
     "email": "questions25q@gmail.com",
     "date": "2026-07-30T12:15:44.703Z",
-    "dripsSent": 5,
+    "dripsSent": 6,
     "referralCode": "R2F-9oi6or",
     "referredBy": null,
     "referralCount": 0,
@@ -576,7 +577,8 @@
       "ictConcepts",
       "successStory",
       "tradingPsychology",
-      "propFirmTips"
+      "propFirmTips",
+      "coachingCta"
     ]
   },
   {
@@ -608,7 +610,7 @@
   {
     "email": "wrightharvest+funneltest@gmail.com",
     "date": "2026-08-08T01:17:02.324Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "referralCode": "R2F-euasj6",
     "referredBy": null,
     "referralCount": 0,
@@ -619,7 +621,8 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts",
-      "successStory"
+      "successStory",
+      "tradingPsychology"
     ]
   },
   {
@@ -664,7 +667,7 @@
   {
     "email": "nro.shado@gmail.com",
     "date": "2026-08-14T09:29:25.343Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "referralCode": "R2F-nsrejm",
     "referredBy": null,
     "referralCount": 0,
@@ -673,7 +676,8 @@
     "events": [],
     "lastActivity": "2026-08-14T09:29:25.343Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   }
 ]
