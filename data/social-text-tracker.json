@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "challenge",
     "quote",
     "tip",
     "question",
@@ -29,11 +28,12 @@
     "poll-native",
     "story",
     "hot-take",
-    "quote"
+    "quote",
+    "promo-free-class"
   ],
   "lastPost": {
-    "type": "quote",
-    "text": "\"August will expose every flaw in your process.\" — Low liquidity doesn't forgive sloppy entries. Your order blocks and FVGs still work. Your discipline? That's what's being tested right now. #ICTTrading #SmartMoneyConcepts #R2FTrading",
-    "date": "2026-08-19T12:03:17.232Z"
+    "type": "promo-free-class",
+    "text": "August liquidity is thin. Order blocks are getting faked out. Fair value gaps are trapping retail. The free ICT Funded-Trader Playbook covers exactly this: 3 setups that work, a pre-trade checklist, and risk rules that keep funded accounts alive. 👇 https://r2ftrading.com/free-class #ICTTrading #FundedTrader #SmartMoneyConcepts",
+    "date": "2026-08-20T12:00:16.631Z"
   }
 }
