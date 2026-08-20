@@ -171,9 +171,10 @@
     "email": "maxobd@gmail.com",
     "name": "Ayon Chowdhury",
     "date": "2026-08-19T05:45:52.754Z",
-    "day": 0,
+    "day": 1,
     "emailsSent": [
-      "day1"
+      "day1",
+      "day2"
     ]
   }
 ]
