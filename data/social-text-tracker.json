@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "quote",
     "tip",
     "question",
     "poll",
@@ -29,11 +28,12 @@
     "story",
     "hot-take",
     "quote",
-    "promo-free-class"
+    "promo-free-class",
+    "promo-results"
   ],
   "lastPost": {
-    "type": "promo-free-class",
-    "text": "August liquidity is thin. Order blocks are getting faked out. Fair value gaps are trapping retail. The free ICT Funded-Trader Playbook covers exactly this: 3 setups that work, a pre-trade checklist, and risk rules that keep funded accounts alive. 👇 https://r2ftrading.com/free-class #ICTTrading #FundedTrader #SmartMoneyConcepts",
-    "date": "2026-08-20T12:00:16.631Z"
+    "type": "promo-results",
+    "text": "R2F traders are passing funded challenges at 85%+ — even in low-liquidity August. Structure beats conditions every time. See the proof 👇\nhttps://r2ftrading.com/results\n\n#FundedTrader #ICTTrading #SmartMoneyConcepts",
+    "date": "2026-08-21T12:00:09.838Z"
   }
 }
