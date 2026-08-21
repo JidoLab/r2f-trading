@@ -584,7 +584,7 @@
   {
     "email": "rersch4mscm@gmail.com",
     "date": "2026-07-31T11:28:35.424Z",
-    "dripsSent": 5,
+    "dripsSent": 6,
     "referralCode": "R2F-3tb0wx",
     "referredBy": null,
     "referralCount": 0,
@@ -603,7 +603,8 @@
       "ictConcepts",
       "successStory",
       "tradingPsychology",
-      "propFirmTips"
+      "propFirmTips",
+      "coachingCta"
     ],
     "abandonmentEmailSent": true
   },
