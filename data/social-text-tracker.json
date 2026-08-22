@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "tip",
     "question",
     "poll",
     "hot-take",
@@ -29,11 +28,12 @@
     "hot-take",
     "quote",
     "promo-free-class",
-    "promo-results"
+    "promo-results",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "promo-results",
-    "text": "R2F traders are passing funded challenges at 85%+ — even in low-liquidity August. Structure beats conditions every time. See the proof 👇\nhttps://r2ftrading.com/results\n\n#FundedTrader #ICTTrading #SmartMoneyConcepts",
-    "date": "2026-08-21T12:00:09.838Z"
+    "type": "poll-native",
+    "text": "GDP drop incoming 👀 How do you trade high-impact news? #ICTTrading #SmartMoney\n\n🅰️ I wait it out\n🅱️ I trade the spike\n🅲️ Fade the move\n🅳️ Depends on setup\n\nVote below! 👇",
+    "date": "2026-08-22T12:01:08.708Z"
   }
 }
