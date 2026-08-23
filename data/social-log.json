@@ -1,63 +1,5 @@
 [
   {
-    "date": "2026-07-14T12:00:46.030Z",
-    "type": "text",
-    "postType": "promo-coaching",
-    "text": "PPI drops this week. Most traders will guess. My students will know exactly what to look for. 📊 Lim",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error"
-      },
-      {
-        "platform": "telegram",
-        "status": "error"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-15T12:00:51.413Z",
-    "type": "text",
-    "postType": "poll-native",
-    "text": "It's mid-week reversal day 🔄 What's your go-to setup on Wednesdays? #ICTTrading #SmartMoneyConcepts",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error"
-      },
-      {
-        "platform": "telegram",
-        "status": "error"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-07-16T12:01:47.634Z",
     "type": "text",
     "postType": "question",
@@ -1687,6 +1629,52 @@
       {
         "platform": "discord",
         "status": "success"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-23T14:00:09.923Z",
+    "slug": "2026-08-09-trading-coach-vs-trading-course-which-do-you-need",
+    "title": "Trading Coach vs Trading Course: Which Do You Need?",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error",
+        "message": "{\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
+      },
+      {
+        "platform": "reddit",
+        "status": "skipped",
+        "message": "Reddit posting disabled (account shadowbanned)"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: chat not found\"}"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
       }
     ]
   }
