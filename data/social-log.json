@@ -1,170 +1,5 @@
 [
   {
-    "date": "2026-07-10T12:00:51.299Z",
-    "type": "text",
-    "postType": "promo-checklist",
-    "text": "NFP + CPI next week = chaos if you're not prepared. I use this checklist before every single trade. ",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error"
-      },
-      {
-        "platform": "telegram",
-        "status": "error"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-11T12:00:58.390Z",
-    "type": "text",
-    "postType": "tip",
-    "text": "CPI drops this week. Don't trade the candle — trade the setup BEFORE it. Smart money is already posi",
-    "hasImage": true,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error"
-      },
-      {
-        "platform": "telegram",
-        "status": "error"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-12T12:00:38.706Z",
-    "type": "text",
-    "postType": "myth",
-    "text": "MYTH: Trade every CPI release for big profits.\n\nTRUTH: Smart money positions BEFORE the news — by th",
-    "hasImage": true,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error"
-      },
-      {
-        "platform": "telegram",
-        "status": "error"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-12T14:00:49.690Z",
-    "slug": "2026-06-02-your-trading-journal-is-lying-to-you",
-    "title": "Your Trading Journal Is Lying to You",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "message": "{\"account_id\":2040297334387482624,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2040297334387482624] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error",
-        "message": "{\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "error",
-        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: chat not found\"}"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-13T12:01:49.880Z",
-    "type": "text",
-    "postType": "promo-blog",
-    "text": "CPI week + smart money runs stops at London open. Most traders get wrecked. I broke down exactly how",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error"
-      },
-      {
-        "platform": "telegram",
-        "status": "error"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-07-14T12:00:46.030Z",
     "type": "text",
     "postType": "promo-coaching",
@@ -1777,6 +1612,52 @@
       {
         "platform": "discord",
         "status": "success"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-23T06:02:30.995Z",
+    "slug": "2026-08-23-are-you-actually-ready-for-a-trading-coach",
+    "title": "Are You Actually Ready for a Trading Coach?",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error",
+        "message": "{\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
+      },
+      {
+        "platform": "reddit",
+        "status": "skipped",
+        "message": "Reddit posting disabled (account shadowbanned)"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: chat not found\"}"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
       }
     ]
   }
