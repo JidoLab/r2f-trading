@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-08-23-are-you-actually-ready-for-a-trading-coach",
+    "syndicatedAt": "2026-08-23T06:03:06.710Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-08-23-are-you-actually-ready-for-a-trading-coach",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/are-you-actually-ready-for-a-trading-coach-5881",
+        "id": "4466021"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-08-23-are-you-actually-ready-for-a-trading-coach"
+  },
+  {
     "slug": "2026-08-19-signals-groups-vs-real-trading-coaching-the-honest-breakdown",
     "syndicatedAt": "2026-08-19T06:03:43.530Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-08-19-signals-groups-vs-real-trading-coaching-the-honest-breakdown",
