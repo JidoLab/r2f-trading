@@ -86,7 +86,9 @@
     "source": "manual",
     "priority": "high",
     "addedAt": "2026-08-08T00:00:00.000Z",
-    "used": false
+    "used": true,
+    "usedAt": "2026-08-23T06:02:24.620Z",
+    "generatedSlug": "2026-08-23-are-you-actually-ready-for-a-trading-coach"
   },
   {
     "id": "cm-group-trading-coaching-vs-one-on-one",
