@@ -671,7 +671,7 @@
   {
     "email": "nro.shado@gmail.com",
     "date": "2026-08-14T09:29:25.343Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-nsrejm",
     "referredBy": null,
     "referralCount": 0,
@@ -681,7 +681,8 @@
     "lastActivity": "2026-08-14T09:29:25.343Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ]
   }
 ]
