@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll",
     "hot-take",
     "story",
     "poll-native",
@@ -29,11 +28,12 @@
     "promo-free-class",
     "promo-results",
     "poll-native",
-    "poll-native"
+    "poll-native",
+    "tip"
   ],
   "lastPost": {
-    "type": "poll-native",
-    "text": "GDP drop incoming 👀 How do you trade high-impact news? #ICTtrading #SmartMoney\n\n🅰️ Avoid it entirely\n🅱️ Trade the reaction\n🅲️ Wait for retest\n🅳️ News = opportunity\n\nVote below! 👇",
-    "date": "2026-08-23T12:01:43.055Z"
+    "type": "tip",
+    "text": "Monday tip: Smart money uses London open to fake out Friday's range before committing. Don't chase the first move — wait for the sweep, then look for your order block entry. Patience today = precision all week. #ICTTrading #SmartMoneyConcepts #OrderBlocks",
+    "date": "2026-08-24T12:00:49.033Z"
   }
 }
