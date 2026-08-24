@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1787531452359-k8hh1",
+    "platform": "youtube",
+    "postTitle": "ICT Complete DAY TRADING Course in 1 Hour - HINDI/URDU",
+    "postUrl": "https://youtube.com/watch?v=5O6zVO5qfkI",
+    "authorName": "Trader Abdullah Masood",
+    "suggestedReply": "I compressed my entire ICT day trading foundation into a single session years ago when I started mentoring, and it changed how fast my students absorbed the material. The key in a condensed course like this is whether killzones get proper attention because most beginners skip straight to order blocks without understanding WHY price moves at London open or New York open. I tell my students to spend 30 days just watching the 15 minute chart during those windows before touching a single trade.",
+    "createdAt": "2026-08-24T00:30:52.359Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787531455519-ijq16",
+    "platform": "youtube",
+    "postTitle": "Asia Builds. London Manipulates. New York Delivers. #ict #smc #amd #killzones #liquidity #trading",
+    "postUrl": "https://youtube.com/watch?v=WSbdzGPl-gg",
+    "authorName": "EQUALFX",
+    "suggestedReply": "Interesting take on the AMD framework. In my experience, most traders sleep on the Asia session because it \"just builds range\" but I actually teach my students to map those Asian highs and lows first before anything else. London manipulation only makes sense once you know exactly what liquidity got engineered overnight. New York delivery becomes far more predictable from there.",
+    "createdAt": "2026-08-24T00:30:55.519Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787531458861-35p2d",
+    "platform": "youtube",
+    "postTitle": "Breaker Block Explained | ICT/SMC Concepts #trading #ictconcepts #smctrading #tradingeducation",
+    "postUrl": "https://youtube.com/watch?v=DzA8jJCK4uw",
+    "authorName": "Charchit Mishra (Elite Trading)",
+    "suggestedReply": "Breaker blocks are powerful but I always tell my students the biggest mistake is treating every breaker the same regardless of timeframe context. A breaker on the 15m means very little without a higher timeframe narrative backing it, especially on something volatile like indices or forex majors. Make sure you are confirming displacement into the breaker before entering, not just price touching the zone and assuming it holds.",
+    "createdAt": "2026-08-24T00:30:58.861Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787531465251-8gcln",
+    "platform": "youtube",
+    "postTitle": "The Alchemist Trading Strategy I MSNR × ICT × CRT | XAUUSD SNIPER TRADE BREAKDOWN #msnr #ict #crt ",
+    "postUrl": "https://youtube.com/watch?v=XlC2Wk90E6U",
+    "authorName": "MSNR",
+    "suggestedReply": "On CRT setups in gold specifically, the manipulation leg before the actual delivery is where most traders get shaken out. I drill this into my students. watch how price interacts with the previous session's high or low before committing to a direction, because on XAUUSD that sweep is often more aggressive than on forex pairs due to liquidity depth.",
+    "createdAt": "2026-08-24T00:31:05.251Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787531468639-psjep",
+    "platform": "youtube",
+    "postTitle": "🔥 FREE $5K FUNDED ACCOUNT 🔥GIVEAWAY 🎁CLAIM IT NOW! 🚨#FundingPips #Giveaway #freefundedaccount",
+    "postUrl": "https://youtube.com/watch?v=LnUgPbs-UZI",
+    "authorName": "Shadow Pips",
+    "suggestedReply": "Before chasing a funded account like this FundingPips giveaway, make sure your drawdown management is locked in first. I tell my students that most prop firm failures happen not from bad entries but from overtrading during Asian consolidation when liquidity is thin. If you win this $5K account, treat the daily loss limit like a hard stop and stick to London or New York session setups only.",
+    "createdAt": "2026-08-24T00:31:08.639Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787531471685-qbcg9",
+    "platform": "youtube",
+    "postTitle": "ICT is a Fraud, But Do His Trading Concepts Actually Work?",
+    "postUrl": "https://youtube.com/watch?v=jZ5-j7Q4GzY",
+    "authorName": "TheOneLanceB",
+    "suggestedReply": "The \"fraud or not\" debate misses the point entirely. The concepts work when applied correctly, and the FVG is a perfect example. What I drill into my students is marking the displacement candle FIRST before even looking at the gap. Most people identify the imbalance and jump in without confirming the aggressive intent behind it, which is why they get chopped out on retracements.",
+    "createdAt": "2026-08-24T00:31:11.685Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787531476257-9hffw",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: BTC &amp; XAUUSD Trading | Smart Money Concept + Real Entries",
+    "postUrl": "https://youtube.com/watch?v=TQay2x_HgGk",
+    "authorName": "Sync Trade",
+    "suggestedReply": "SMC on both BTC and XAUUSD in the same session is ambitious. Gold and crypto have very different liquidity profiles, and I drill into my students that XAUUSD manipulation during New York open hits much harder than most expect, so your stop placement needs to account for that expanded range. Real entries are only as good as the session context you frame them in. Solid approach overall, just make sure those two assets aren't pulling your focus in opposite directions simultaneously.",
+    "createdAt": "2026-08-24T00:31:16.257Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787531479854-gut0w",
+    "platform": "youtube",
+    "postTitle": "OrderBlock SMC සිංහලෙන් | Smart Money Concept Sinhala",
+    "postUrl": "https://youtube.com/watch?v=nBXCj4yAjqE",
+    "authorName": "Stoned Trader",
+    "suggestedReply": "I tell my students the biggest mistake with Order Blocks is marking every single candle that reverses and calling it an OB. The real skill is identifying the last opposing candle before a strong displacement move, especially on the H4. Been trading GBPUSD with this filter alone for years and it removes at least 70% of the noise. Great explanation in Sinhala, more traders need this in their own language.",
+    "createdAt": "2026-08-24T00:31:19.854Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1787186739813-thwgr",
     "platform": "investinglive",
     "postTitle": "Bessent's panic move risks reigniting rate hike bets, hands Fed hawks new ammunition",
