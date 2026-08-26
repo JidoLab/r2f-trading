@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-08-26-group-vs-one-on-one-trading-coaching-which-fits-your-stage",
+    "syndicatedAt": "2026-08-26T06:02:57.939Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-08-26-group-vs-one-on-one-trading-coaching-which-fits-your-stage",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/group-vs-one-on-one-trading-coaching-which-fits-your-stage-4l1m",
+        "id": "4490861"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-08-26-group-vs-one-on-one-trading-coaching-which-fits-your-stage"
+  },
+  {
     "slug": "2026-08-23-are-you-actually-ready-for-a-trading-coach",
     "syndicatedAt": "2026-08-23T06:03:06.710Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-08-23-are-you-actually-ready-for-a-trading-coach",
