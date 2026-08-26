@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
 
     const text = `${caption}\n\n${url}`;
     const results: { platform: string; status: string; error?: string }[] = [];
-    const selectedPlatforms: string[] = platforms || ["twitter", "facebook", "linkedin", "telegram", "discord", "reddit"];
+    const selectedPlatforms: string[] = platforms || ["twitter", "facebook", "linkedin", "telegram", "discord"];
 
     // Twitter/X (280 char limit)
     if (selectedPlatforms.includes("twitter")) {
@@ -119,7 +119,8 @@ export async function POST(req: NextRequest) {
     }
 
     // Reddit
-    if (selectedPlatforms.includes("reddit")) {
+    // Reddit disabled: account banned site-wide 2026-08-10.
+    if (process.env.REDDIT_POSTING_ENABLED === "true" && selectedPlatforms.includes("reddit")) {
       try {
         const subreddit = process.env.REDDIT_SUBREDDIT;
         const clientId = process.env.REDDIT_CLIENT_ID;

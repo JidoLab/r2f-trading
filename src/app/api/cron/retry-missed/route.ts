@@ -79,30 +79,8 @@ const CRITICAL_CRONS = [
   // generate-short every single day — reviving the halted pipeline and burning
   // ElevenLabs/render cost. If shorts are re-enabled, restore this with a
   // date-reliable check (e.g. read each render's createdAt) and scheduledDays.
-  {
-    name: "reddit-engage",
-    route: "reddit-engage",
-    scheduledDays: null, // runs daily (multiple times) — always eligible
-    check: async (): Promise<boolean> => {
-      const today = new Date().toISOString().split("T")[0];
-      try {
-        const raw = await readFile("data/reddit-engage-log.json");
-        const data = JSON.parse(raw);
-        // Log entries use `commentedAt` (ISO). Earlier this checked for
-        // `date`/`timestamp` which never existed, so retry-missed fired a
-        // 5th reddit-engage run every day — increasing duplicate-comment
-        // exposure. Field name fix on 2026-06-01.
-        if (Array.isArray(data)) {
-          return data.some((d: { commentedAt?: string }) =>
-            (d.commentedAt || "").startsWith(today),
-          );
-        }
-        return !!data[today];
-      } catch {
-        return false;
-      }
-    },
-  },
+  // reddit-engage retry removed 2026-08-10: the Reddit account is banned
+  // site-wide, so there is nothing to retry. Restore only after an appeal.
 ];
 
 export async function GET(req: NextRequest) {

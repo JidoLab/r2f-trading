@@ -285,7 +285,9 @@ Return ONLY a JSON object:
       const clientSecret = process.env.REDDIT_CLIENT_SECRET;
       const refreshToken = process.env.REDDIT_REFRESH_TOKEN;
       const username = process.env.REDDIT_USERNAME;
-      if (subreddit && clientId && clientSecret && refreshToken) {
+      // Reddit posting disabled: u/Front-Recording7391 banned site-wide
+      // 2026-08-10. Set REDDIT_POSTING_ENABLED=true after a successful appeal.
+      if (process.env.REDDIT_POSTING_ENABLED === "true" && subreddit && clientId && clientSecret && refreshToken) {
         // Get access token
         const tokenRes = await fetch("https://www.reddit.com/api/v1/access_token", {
           method: "POST",
