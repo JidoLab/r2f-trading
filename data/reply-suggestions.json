@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1787790653229-iwpfj",
+    "platform": "youtube",
+    "postTitle": "Live Crypto Trading by ICT Trading Strategy | SHIBUSDT ",
+    "postUrl": "https://youtube.com/watch?v=kDdDlkpvyxU",
+    "authorName": "YTG",
+    "suggestedReply": "Trading SHIB with ICT concepts is an interesting choice since most people apply this methodology to forex or indices. I always tell my students to be extra cautious with low cap crypto pairs because liquidity pools can sweep violently and fake out even clean setups. Are you finding the order blocks on SHIB hold up well, or do you get a lot of manipulation through key levels before price delivers?",
+    "createdAt": "2026-08-27T00:30:53.229Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787790658052-e8weo",
+    "platform": "youtube",
+    "postTitle": "How to develop narrative  #futurestrading",
+    "postUrl": "https://youtube.com/watch?v=kSS8m163kvw",
+    "authorName": "Tizz Trades",
+    "suggestedReply": "Developing narrative is genuinely underrated and I drill this into my students constantly. One caveat though. narrative without proper HTF draw on liquidity alignment will have you entering clean looking stories on the 15m that completely fall apart at the session open. Make sure your narrative is built top down, not just from intraday price action alone.",
+    "createdAt": "2026-08-27T00:30:58.052Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787790661984-l4a2y",
+    "platform": "youtube",
+    "postTitle": "2Ws on ES long 🔴LIVE Day Trading Futures | ES NQ | ICT Concepts | Aug 26",
+    "postUrl": "https://youtube.com/watch?v=zfv86Cgp9ls",
+    "authorName": "LumiTraders",
+    "suggestedReply": "Two 2W setups on ES in a single session is worth paying attention to. I always tell my students that when the weekly chart shows back to back bearish or bullish engulfing structures, the intraday PD arrays align cleaner and entries off the 15m become much higher probability. Most traders skip the higher timeframe confluence check and wonder why their ES longs get stopped out. Were the 2Ws forming above or below a significant HTF inefficiency?",
+    "createdAt": "2026-08-27T00:31:01.984Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787790668106-twxr4",
+    "platform": "youtube",
+    "postTitle": "Giveaways! | DAY TRADING ICT CONCEPTS | 8/26/2026",
+    "postUrl": "https://youtube.com/watch?v=znkJ1fC549w",
+    "authorName": "Tanja Trades",
+    "suggestedReply": "Giveaways in price action are something I drill into my students before they even look at entry models. On days like this, the real tell is when price sweeps a liquidity pool during the New York open and fails to deliver continuation. That failure IS the giveaway. Most traders chase the sweep. Experienced ones wait for the shift on the 5m and let price come to them.",
+    "createdAt": "2026-08-27T00:31:08.106Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787790671703-js40q",
+    "platform": "youtube",
+    "postTitle": "ICT &amp; SMC Trading Roadmap for Beginners | Complete ICT SMC Series EP.1",
+    "postUrl": "https://youtube.com/watch?v=Csk3dIxJN5g",
+    "authorName": "ICT SONIC",
+    "suggestedReply": "For a beginner SMC roadmap, the concept most people gloss over in EP.1 is market structure shift versus break of structure. They look identical on the chart until you understand displacement. I drill this into my students from day one because entering on a weak BOS on the 15m instead of waiting for a true MSS with momentum behind it is one of the fastest ways to get chopped up in forex pairs.",
+    "createdAt": "2026-08-27T00:31:11.703Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787790674406-5g0w8",
+    "platform": "youtube",
+    "postTitle": "Trading Day 1! 😱📈 | Can This Strategy Grow $100? Trading Journey Begins! 💰📈 Let’s See What Happens",
+    "postUrl": "https://youtube.com/watch?v=sLaxJAhWcsM",
+    "authorName": "Random_trader56",
+    "suggestedReply": "Starting a $100 challenge is a great way to build discipline early. One thing I always tell my students is that small accounts live or die by their session timing. Are you trading specific kill zones like London or New York open, or just taking setups whenever they appear throughout the day?",
+    "createdAt": "2026-08-27T00:31:14.406Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787790677923-go3o7",
+    "platform": "youtube",
+    "postTitle": "Trading PAID Course in Bengali – Master Liquidity, ICT, SMC &amp; Institutional A+ Strategy Revealed",
+    "postUrl": "https://youtube.com/watch?v=voGQF0se17o",
+    "authorName": "Forex BD Shorts",
+    "suggestedReply": "Interesting take on calling this an \"A+ Institutional Strategy.\" In my experience, most students chase the label before understanding the foundation. I drill into my students that liquidity engineering on the higher timeframes like the daily and 4H has to be read correctly before any SMC or ICT entry on the lower timeframes even matters. The label means nothing without the sequence.",
+    "createdAt": "2026-08-27T00:31:17.923Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1787790682116-1vtpv",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE BTC &amp; GOLD Trading | ICT Smart Money Concepts | BTCUSDT &amp; XAUUSD Analysis",
+    "postUrl": "https://youtube.com/watch?v=N2p_otrQgng",
+    "authorName": "Palak Pandit",
+    "suggestedReply": "One thing worth adding when trading both BTC and XAUUSD simultaneously is how their liquidity sweeps rarely sync up. I teach my students to treat them as separate sessions entirely, because chasing a gold setup while a BTC MSS is forming will get you chopped up fast. On the 15m, waiting for confirmation on one before even glancing at the other saves a lot of accounts.",
+    "createdAt": "2026-08-27T00:31:22.116Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1787532342048-r692k",
     "platform": "investinglive",
     "postTitle": "Trump says military is \"ultimate intervention\" for bond market turmoil",
