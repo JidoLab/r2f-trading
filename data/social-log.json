@@ -1723,5 +1723,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-08-27T12:03:37.867Z",
+    "type": "text",
+    "postType": "promo-blog",
+    "text": "GDP drop incoming + August thin liquidity = trap city for most traders. I broke down exactly how sma",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
