@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "story",
     "poll-native",
     "quote",
     "promo-free-class",
@@ -29,11 +28,12 @@
     "poll-native",
     "poll-native",
     "tip",
-    "promo-checklist"
+    "promo-checklist",
+    "promo-blog"
   ],
   "lastPost": {
-    "type": "promo-checklist",
-    "text": "GDP drop incoming + August liquidity = danger zone. I run the same pre-trade checklist before every single trade. It's inside the free ICT Funded-Trader Playbook. Don't wing it this week. 👇\nhttps://r2ftrading.com/free-class\n#ICTTrading #FundedTrader #SmartMoneyConcepts",
-    "date": "2026-08-26T12:01:16.405Z"
+    "type": "promo-blog",
+    "text": "GDP drop incoming + August thin liquidity = trap city for most traders. I broke down exactly how smart money plays these reversals. Don't be the exit liquidity. 👇 https://r2ftrading.com/trading-insights #ICTTrading #FairValueGap #FundedTrader",
+    "date": "2026-08-27T12:03:36.770Z"
   }
 }
