@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll-native",
     "quote",
     "promo-free-class",
     "promo-results",
@@ -29,11 +28,12 @@
     "poll-native",
     "tip",
     "promo-checklist",
-    "promo-blog"
+    "promo-blog",
+    "myth"
   ],
   "lastPost": {
-    "type": "promo-blog",
-    "text": "GDP drop incoming + August thin liquidity = trap city for most traders. I broke down exactly how smart money plays these reversals. Don't be the exit liquidity. 👇 https://r2ftrading.com/trading-insights #ICTTrading #FairValueGap #FundedTrader",
-    "date": "2026-08-27T12:03:36.770Z"
+    "type": "myth",
+    "text": "MYTH: More trades = more profit.\n\nTRUTH: In August's low liquidity, overtrading is how accounts get blown. Smart money sits on hands. One clean order block setup beats 20 random entries.\n\nPatience IS the strategy.\n\n#ICTTrading #SmartMoney #OrderBlocks",
+    "date": "2026-08-28T12:03:21.259Z"
   }
 }
