@@ -1752,5 +1752,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-08-28T12:03:22.260Z",
+    "type": "text",
+    "postType": "myth",
+    "text": "MYTH: More trades = more profit.\n\nTRUTH: In August's low liquidity, overtrading is how accounts get ",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
