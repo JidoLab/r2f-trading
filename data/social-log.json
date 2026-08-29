@@ -1781,5 +1781,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-08-29T12:01:34.936Z",
+    "type": "text",
+    "postType": "promo-coaching",
+    "text": "August liquidity is thin. Most lose money this month chasing setups that aren't there. I teach you t",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
