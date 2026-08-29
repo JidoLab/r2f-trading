@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "quote",
     "promo-free-class",
     "promo-results",
     "promo-checklist",
@@ -29,11 +28,12 @@
     "tip",
     "promo-checklist",
     "promo-blog",
-    "myth"
+    "myth",
+    "promo-coaching"
   ],
   "lastPost": {
-    "type": "myth",
-    "text": "MYTH: More trades = more profit.\n\nTRUTH: In August's low liquidity, overtrading is how accounts get blown. Smart money sits on hands. One clean order block setup beats 20 random entries.\n\nPatience IS the strategy.\n\n#ICTTrading #SmartMoney #OrderBlocks",
-    "date": "2026-08-28T12:03:21.259Z"
+    "type": "promo-coaching",
+    "text": "August liquidity is thin. Most lose money this month chasing setups that aren't there. I teach you to WAIT for the right order blocks & FVGs. 3 coaching spots left. Free 15-min call, no pitch. 👇 https://r2ftrading.com/contact #ICTTrading #FundedTrader #SmartMoney",
+    "date": "2026-08-29T12:01:33.952Z"
   }
 }
