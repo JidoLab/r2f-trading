@@ -1,63 +1,5 @@
 [
   {
-    "date": "2026-07-22T12:01:01.828Z",
-    "type": "text",
-    "postType": "tip",
-    "text": "GDP drops soon — smart money already positioned. Your job isn't to react to the news, it's to find t",
-    "hasImage": true,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error"
-      },
-      {
-        "platform": "telegram",
-        "status": "error"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-23T12:00:44.031Z",
-    "type": "text",
-    "postType": "question",
-    "text": "GDP drop incoming & you're still holding longs? 👀 Real question — do you actually prep for high-imp",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error"
-      },
-      {
-        "platform": "telegram",
-        "status": "error"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
     "date": "2026-07-24T12:00:38.029Z",
     "type": "text",
     "postType": "poll",
@@ -1718,6 +1660,52 @@
       {
         "platform": "discord",
         "status": "success"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-30T14:03:11.235Z",
+    "slug": "2026-08-16-trading-mentor-red-flags-that-cost-traders-thousands",
+    "title": "Trading Mentor Red Flags That Cost Traders Thousands",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error",
+        "message": "{\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
+      },
+      {
+        "platform": "reddit",
+        "status": "skipped",
+        "message": "Reddit posting disabled (account shadowbanned)"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: chat not found\"}"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
       }
     ]
   }
