@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-free-class",
     "promo-results",
     "promo-checklist",
     "tip",
@@ -29,11 +28,12 @@
     "promo-checklist",
     "promo-blog",
     "myth",
-    "promo-coaching"
+    "promo-coaching",
+    "question"
   ],
   "lastPost": {
-    "type": "promo-coaching",
-    "text": "August liquidity is thin. Most lose money this month chasing setups that aren't there. I teach you to WAIT for the right order blocks & FVGs. 3 coaching spots left. Free 15-min call, no pitch. 👇 https://r2ftrading.com/contact #ICTTrading #FundedTrader #SmartMoney",
-    "date": "2026-08-29T12:01:33.952Z"
+    "type": "question",
+    "text": "Order blocks or fair value gaps — which do you trust MORE for entries and why? Drop your answer below 👇 #ICTTrading #SmartMonkeyConcepts #FairValueGap",
+    "date": "2026-08-30T12:03:27.585Z"
   }
 }
