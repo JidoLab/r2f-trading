@@ -112,7 +112,9 @@
     "source": "manual",
     "priority": "high",
     "addedAt": "2026-08-08T00:00:00.000Z",
-    "used": false
+    "used": true,
+    "usedAt": "2026-08-30T06:04:47.383Z",
+    "generatedSlug": "2026-08-30-does-coaching-improve-prop-firm-pass-rates"
   },
   {
     "id": "cm-can-a-trading-coach-make-you-profitable",
