@@ -566,7 +566,7 @@
   {
     "email": "questions25q@gmail.com",
     "date": "2026-07-30T12:15:44.703Z",
-    "dripsSent": 7,
+    "dripsSent": 8,
     "referralCode": "R2F-9oi6or",
     "referredBy": null,
     "referralCount": 0,
@@ -581,7 +581,8 @@
       "tradingPsychology",
       "propFirmTips",
       "coachingCta",
-      "valueRecap"
+      "valueRecap",
+      "lastChance"
     ]
   },
   {
@@ -635,7 +636,7 @@
   {
     "email": "mdyaminh812@gmail.com",
     "date": "2026-08-09T18:03:39.704Z",
-    "dripsSent": 5,
+    "dripsSent": 6,
     "referralCode": "R2F-ubw539",
     "referredBy": null,
     "referralCount": 0,
@@ -649,13 +650,14 @@
       "ictConcepts",
       "successStory",
       "tradingPsychology",
-      "propFirmTips"
+      "propFirmTips",
+      "coachingCta"
     ]
   },
   {
     "email": "Matinvz0vz@gmail.com",
     "date": "2026-08-13T10:07:14.222Z",
-    "dripsSent": 4,
+    "dripsSent": 5,
     "referralCode": "R2F-b8eyd8",
     "referredBy": null,
     "referralCount": 0,
@@ -672,7 +674,8 @@
       "beginnerMistakes",
       "ictConcepts",
       "successStory",
-      "tradingPsychology"
+      "tradingPsychology",
+      "propFirmTips"
     ]
   },
   {
@@ -699,6 +702,20 @@
     "dripsSent": 0,
     "referralCode": "R2F-35h075",
     "referredBy": null,
-    "referralCount": 0
+    "referralCount": 0,
+    "score": 4,
+    "segment": "cold",
+    "events": [
+      {
+        "type": "free_class_page_view",
+        "date": "2026-08-30T09:00:59.811Z"
+      },
+      {
+        "type": "landing_page_view",
+        "date": "2026-08-30T09:00:59.811Z"
+      }
+    ],
+    "lastActivity": "2026-08-30T09:00:59.811Z",
+    "dripsHistory": []
   }
 ]
