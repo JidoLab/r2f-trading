@@ -588,7 +588,7 @@
   {
     "email": "rersch4mscm@gmail.com",
     "date": "2026-07-31T11:28:35.424Z",
-    "dripsSent": 7,
+    "dripsSent": 8,
     "referralCode": "R2F-3tb0wx",
     "referredBy": null,
     "referralCount": 0,
@@ -609,7 +609,8 @@
       "tradingPsychology",
       "propFirmTips",
       "coachingCta",
-      "valueRecap"
+      "valueRecap",
+      "lastChance"
     ],
     "abandonmentEmailSent": true
   },
@@ -681,7 +682,7 @@
   {
     "email": "nro.shado@gmail.com",
     "date": "2026-08-14T09:29:25.343Z",
-    "dripsSent": 4,
+    "dripsSent": 5,
     "referralCode": "R2F-nsrejm",
     "referredBy": null,
     "referralCount": 0,
@@ -693,7 +694,8 @@
       "beginnerMistakes",
       "ictConcepts",
       "successStory",
-      "tradingPsychology"
+      "tradingPsychology",
+      "propFirmTips"
     ]
   },
   {
