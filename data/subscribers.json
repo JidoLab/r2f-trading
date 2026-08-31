@@ -703,7 +703,7 @@
     "referralCode": "R2F-35h075",
     "referredBy": null,
     "referralCount": 0,
-    "score": 4,
+    "score": 19,
     "segment": "cold",
     "events": [
       {
@@ -713,9 +713,13 @@
       {
         "type": "landing_page_view",
         "date": "2026-08-30T09:00:59.811Z"
+      },
+      {
+        "type": "coaching_page_view",
+        "date": "2026-08-31T03:26:24.475Z"
       }
     ],
-    "lastActivity": "2026-08-30T09:00:59.811Z",
+    "lastActivity": "2026-08-31T03:26:24.475Z",
     "dripsHistory": []
   }
 ]
