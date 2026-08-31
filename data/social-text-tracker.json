@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-results",
     "promo-checklist",
     "tip",
     "myth",
@@ -29,11 +28,12 @@
     "promo-blog",
     "myth",
     "promo-coaching",
-    "question"
+    "question",
+    "tip"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "Order blocks or fair value gaps — which do you trust MORE for entries and why? Drop your answer below 👇 #ICTTrading #SmartMonkeyConcepts #FairValueGap",
-    "date": "2026-08-30T12:03:27.585Z"
+    "type": "tip",
+    "text": "August liquidity is thin — smart money knows it. Fair value gaps are forming faster AND failing faster this month. Don't trade your normal size in these conditions. Size down or sit out. #ICTTrading #FairValueGap #SmartMoneyConcepts",
+    "date": "2026-08-31T12:01:22.071Z"
   }
 }
