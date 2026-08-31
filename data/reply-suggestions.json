@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1788136230560-wfoeh",
+    "platform": "youtube",
+    "postTitle": "#ict #ictconcepts #femaletrader #daytrading #futurestrading",
+    "postUrl": "https://youtube.com/watch?v=51dsjYXPXNo",
+    "authorName": "Izabela Orsini",
+    "suggestedReply": "Interesting take on day trading futures through an ICT lens. In my experience, most traders rush entries without waiting for a proper displacement candle to confirm the move, especially on lower timeframes. I drill this into my students constantly because patience at key liquidity levels separates consistent traders from the ones who blow accounts. Izabela, are you prioritizing session opens for your setups or trading throughout the full session?",
+    "createdAt": "2026-08-31T00:30:30.560Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788136234659-gyegu",
+    "platform": "youtube",
+    "postTitle": "Importance Of Wicks Inside FVGs #ictgems #forex #trading",
+    "postUrl": "https://youtube.com/watch?v=Yl50M6ovC0w",
+    "authorName": "ICT Gems ",
+    "suggestedReply": "Wicks inside FVGs are genuinely one of the most overlooked confirmation signals out there. One thing I always add when teaching my students though. a wick alone inside the FVG isn't enough if price hasn't respected a higher timeframe PD array nearby. On lower timeframe entries especially, I've seen clean wick fills completely fail when the daily bias wasn't aligned. Always anchor the context first.",
+    "createdAt": "2026-08-31T00:30:34.659Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788136239379-hf6x6",
+    "platform": "youtube",
+    "postTitle": "LIVE Gold &amp; BTC Trading | Haq Liquidity  Concept HLC",
+    "postUrl": "https://youtube.com/watch?v=_NI0-Spn6ng",
+    "authorName": "HaqBaba",
+    "suggestedReply": "One thing I drill into my students when trading HLC concepts on Gold and BTC is that liquidity raids behave differently across asset classes. Gold tends to sweep old highs with more precision during London, while BTC liquidity grabs on the 15m can be far more aggressive and erratic. Knowing which asset you're hunting on changes your entry criteria entirely.",
+    "createdAt": "2026-08-31T00:30:39.379Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788136242976-hyrln",
+    "platform": "youtube",
+    "postTitle": "Stop FADING Winning Setups #futurestrading",
+    "postUrl": "https://youtube.com/watch?v=CtxVrc0ql8I",
+    "authorName": "Tizz Trades",
+    "suggestedReply": "Fading winning setups is one of the biggest account killers I see, and it usually comes down to not trusting the displacement that created the draw. I drill this into my students constantly. if price leaves an FVG with a strong impulsive candle on the 15m, that candle IS the confirmation, not a reason to wait for a better entry. The traders who stop fading are the ones who finally respect what displacement is telling them about institutional intent.",
+    "createdAt": "2026-08-31T00:30:42.976Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788136246618-mr75i",
+    "platform": "youtube",
+    "postTitle": "📊 Market Analysis Live | 🎯 ICT Concepts | 🔥 Trading Strategy in Urdu",
+    "postUrl": "https://youtube.com/watch?v=db4RXT1m3hA",
+    "authorName": "ICT Concepts Urdu",
+    "suggestedReply": "Interesting take on the live market analysis approach. In my experience, I always teach my students to anchor their ICT concepts to a higher timeframe bias first before dropping into execution. Reading order flow on the daily or 4H before touching the 15M entries removes so much noise and keeps you from getting chopped up during retracements. Are you layering in HTF liquidity pools before marking your intraday setups here?",
+    "createdAt": "2026-08-31T00:30:46.618Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788136251182-7eocf",
+    "platform": "youtube",
+    "postTitle": "💰 LIVE Trading ICT తెలుగు",
+    "postUrl": "https://youtube.com/watch?v=h696xM_XYII",
+    "authorName": "ICT తెలుగు",
+    "suggestedReply": "లైవ్ ట్రేడింగ్ లో చాలా మంది traders kill zones miss చేస్తారు అని నా students తో చాలాసార్లు discuss చేశాను. ICT లో New York session open లో liquidity grabs చూసి entry తీసుకోవడం key. మీరు లైవ్ లో ఏ session focus చేస్తున్నారు, London or New York?",
+    "createdAt": "2026-08-31T00:30:51.182Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788136254157-w24gv",
+    "platform": "youtube",
+    "postTitle": "Stupid Simple Asia Session Sweep Strategy",
+    "postUrl": "https://youtube.com/watch?v=a31xRfNzTcg",
+    "authorName": "Smart Money",
+    "suggestedReply": "The Asia session sweep becomes far more powerful when you mark the high and low before New York pre-market opens. I tell my students to watch for price to return into the swept liquidity zone on the 15m using a mitigation block as confirmation rather than just the sweep candle itself. Most people trade the sweep and miss the actual entry. That refinement alone changes the win rate significantly.",
+    "createdAt": "2026-08-31T00:30:54.157Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788136258491-ni7il",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE BTC/USD &amp; XAU/USD | Smart Money Concepts | Live Trading | 30 August 2026",
+    "postUrl": "https://youtube.com/watch?v=E5fkLDkVoaQ",
+    "authorName": "Apni Wali Trading",
+    "suggestedReply": "I trade both BTC and XAU/USD with SMC daily and gold is the one I always tell my students to prioritize when these two are running simultaneously. The liquidity sweeps on XAU/USD during New York open are far more predictable than BTC in my experience. I drill into my students to never chase BTC displacement without a confirmed 15m market structure shift first. Gold just respects the levels cleaner.",
+    "createdAt": "2026-08-31T00:30:58.491Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1787791522640-zh42k",
     "platform": "investinglive",
     "postTitle": "Nvidia's stock does the limbo then the moonwalk on 2028 guidance",
