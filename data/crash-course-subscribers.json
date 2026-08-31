@@ -185,9 +185,10 @@
     "email": "traderanthony2@gmail.com",
     "name": "Anthony",
     "date": "2026-08-30T04:23:55.606Z",
-    "day": 0,
+    "day": 1,
     "emailsSent": [
-      "day1"
+      "day1",
+      "day2"
     ]
   }
 ]
