@@ -722,6 +722,7 @@
       }
     ],
     "lastActivity": "2026-08-31T03:26:24.475Z",
-    "dripsHistory": []
+    "dripsHistory": [],
+    "abandonmentEmailSent": true
   }
 ]
