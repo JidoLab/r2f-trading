@@ -561,7 +561,8 @@
       "coachingCta",
       "valueRecap",
       "lastChance"
-    ]
+    ],
+    "staleReengageSent": true
   },
   {
     "email": "questions25q@gmail.com",
@@ -701,7 +702,7 @@
   {
     "email": "traderanthony2@gmail.com",
     "date": "2026-08-30T04:25:43.489Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-35h075",
     "referredBy": null,
     "referralCount": 0,
@@ -722,7 +723,9 @@
       }
     ],
     "lastActivity": "2026-08-31T03:26:24.475Z",
-    "dripsHistory": [],
+    "dripsHistory": [
+      "beginnerMistakes"
+    ],
     "abandonmentEmailSent": true
   }
 ]
