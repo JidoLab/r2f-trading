@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-checklist",
     "tip",
     "myth",
     "promo-blog",
@@ -29,11 +28,12 @@
     "myth",
     "promo-coaching",
     "question",
-    "tip"
+    "tip",
+    "poll"
   ],
   "lastPost": {
-    "type": "tip",
-    "text": "August liquidity is thin — smart money knows it. Fair value gaps are forming faster AND failing faster this month. Don't trade your normal size in these conditions. Size down or sit out. #ICTTrading #FairValueGap #SmartMoneyConcepts",
-    "date": "2026-08-31T12:01:22.071Z"
+    "type": "poll",
+    "text": "NFP week — what's your move?\n\n🅰️ Stay out, let it cook\n🅱️ Trade the liquidity sweep before\n🅲️ Wait for the 9:30 AM reversal\n🅳️ NFP? I trade everything 😈\n\n#NFP #ICTTrading #SmartMoneyConcepts",
+    "date": "2026-09-01T12:03:27.426Z"
   }
 }
