@@ -1737,5 +1737,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-09-01T12:03:28.511Z",
+    "type": "text",
+    "postType": "poll",
+    "text": "NFP week — what's your move?\n\n🅰️ Stay out, let it cook\n🅱️ Trade the liquidity sweep before\n🅲️ Wai",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
