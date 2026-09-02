@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-09-02-can-a-trading-coach-make-you-profitable",
+    "syndicatedAt": "2026-09-02T06:05:21.593Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-09-02-can-a-trading-coach-make-you-profitable",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/can-a-trading-coach-make-you-profitable-17pj",
+        "id": "4552702"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-09-02-can-a-trading-coach-make-you-profitable"
+  },
+  {
     "slug": "2026-08-30-does-coaching-improve-prop-firm-pass-rates",
     "syndicatedAt": "2026-08-30T06:05:33.523Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-08-30-does-coaching-improve-prop-firm-pass-rates",
