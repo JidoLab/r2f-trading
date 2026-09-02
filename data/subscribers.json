@@ -618,7 +618,7 @@
   {
     "email": "wrightharvest+funneltest@gmail.com",
     "date": "2026-08-08T01:17:02.324Z",
-    "dripsSent": 6,
+    "dripsSent": 7,
     "referralCode": "R2F-euasj6",
     "referredBy": null,
     "referralCount": 0,
@@ -632,7 +632,8 @@
       "successStory",
       "tradingPsychology",
       "propFirmTips",
-      "coachingCta"
+      "coachingCta",
+      "valueRecap"
     ]
   },
   {
