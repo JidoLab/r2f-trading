@@ -1,5 +1,85 @@
 [
   {
+    "id": "sug-1788395438523-hani1",
+    "platform": "youtube",
+    "postTitle": "Gold Analysis 3 September 2026 | Gold setup | XAUUSD Forcast | SMC ICT Trading Strategy",
+    "postUrl": "https://youtube.com/watch?v=AGIghdF68g4",
+    "authorName": "Gyaanii Trading ",
+    "suggestedReply": "On XAUUSD specifically, the SMC setup changes character depending on whether you're trading the New York open or London. I drill into my students that gold's liquidity sweeps during the Asian session often set the actual draw for the entire day, so mapping that before applying any ICT framework is critical. Most miss that context and enter too early off a clean order block that hasn't tapped its real target yet.",
+    "createdAt": "2026-09-03T00:30:38.523Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788395442480-6oibl",
+    "platform": "youtube",
+    "postTitle": "WE DID OUR BEST... 🔴LIVE Day Trading Futures | ES NQ | ICT Concepts | Sep 2",
+    "postUrl": "https://youtube.com/watch?v=VTFANdloG64",
+    "authorName": "LumiTraders",
+    "suggestedReply": "One thing that separates profitable days from breakeven ones on ES and NQ is knowing when to stop trading after a loss, not just how to trade. I drill into my students that September is historically one of the choppiest months for index futures, so your entry model needs tighter criteria, especially around killzone overlaps. Protecting capital on tough days IS the best you can do.",
+    "createdAt": "2026-09-03T00:30:42.480Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788395449217-eqeku",
+    "platform": "youtube",
+    "postTitle": "most traders pull a profile over any range and call it a day",
+    "postUrl": "https://youtube.com/watch?v=ptd41vSKKN8",
+    "authorName": "Orochi Trading",
+    "suggestedReply": "Pulling a profile over any random range without context is one of the first bad habits I break in my students. The value area means nothing if you haven't identified whether you're working inside a dealing range or respecting a higher timeframe draw on liquidity. Are you building your profiles anchored to specific session highs and lows, or do you have another method for defining the relevant range?",
+    "createdAt": "2026-09-03T00:30:49.217Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788395452833-bec2w",
+    "platform": "youtube",
+    "postTitle": "BEST Timeframe for Trading 📈#fyp #foryou #foryoupage #Trading #DayTrading #TradingTips #ICT",
+    "postUrl": "https://youtube.com/watch?v=5NNjPf3OuLw",
+    "authorName": "CVC Mads Hansen",
+    "suggestedReply": "Timeframe selection is genuinely one of the biggest factors in ICT trading and I preach this constantly to my students. One thing I'd add though, the \"best\" timeframe really depends on your reference point. A 15m entry means nothing without a clean higher timeframe draw on liquidity to anchor it. I've seen traders nail the timeframe and still get chopped up because they ignored where price was actually reaching for.",
+    "createdAt": "2026-09-03T00:30:52.833Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788395456634-1mva9",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE: Institutional Trading Masterclas 81  Smart Money Concepts (SMC) | Gold, Forex &amp; Crypto",
+    "postUrl": "https://youtube.com/watch?v=CvNcePUW_QM",
+    "authorName": "primepipfx",
+    "suggestedReply": "Smart money concepts on Gold specifically is where I drill my students hardest. Most of them try to trade SMC setups without confirming liquidity sweeps on the higher timeframe first, then wonder why their 15m entries keep getting stopped out. Are you covering how institutional order flow differs between Gold and Forex pairs in this masterclass, because that distinction changes everything?",
+    "createdAt": "2026-09-03T00:30:56.634Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788395460233-mrzy5",
+    "platform": "youtube",
+    "postTitle": "Forex Live Trading | ICT Strategy &amp; Smart Money Concepts | Daily Live Analysis | 02 SEP 2026",
+    "postUrl": "https://youtube.com/watch?v=JIFFzZzbvoU",
+    "authorName": "PunjabiPips",
+    "suggestedReply": "Interesting take on the Smart Money Concepts approach for the September 2 session. In my experience, I always teach my students to anchor their daily bias from the higher timeframe premium and discount arrays before dropping to execution, because London and New York sessions can easily trap you if your bias is built on the lower timeframe first. Curious how PunjabiPips handled the killzone overlap today.",
+    "createdAt": "2026-09-03T00:31:00.233Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788395463629-kb3w9",
+    "platform": "youtube",
+    "postTitle": "🔴 LIVE BTC &amp; GOLD Trading | ICT Smart Money Concepts | BTCUSDT &amp; XAUUSD Analysis",
+    "postUrl": "https://youtube.com/watch?v=NmScTWVjiWQ",
+    "authorName": "Palak Pandit",
+    "suggestedReply": "One thing worth layering into BTC and Gold analysis simultaneously is session displacement. London open tends to print the cleaner Fair Value Gaps on XAUUSD while New York drives the more aggressive BTC moves. I drill this into my students so they know which asset to prioritize at which session. Running both pairs live is great for spotting correlation breakdowns too.",
+    "createdAt": "2026-09-03T00:31:03.629Z",
+    "status": "pending"
+  },
+  {
+    "id": "sug-1788395467548-m0jpw",
+    "platform": "youtube",
+    "postTitle": "Intraday Trading Strategy to learn in Malayalam Using Smart Money Concepts",
+    "postUrl": "https://youtube.com/watch?v=f590-6xDLXQ",
+    "authorName": "SafeTraders90 - Stock Market Analysis",
+    "suggestedReply": "Interesting take on using Smart Money Concepts for intraday. In my experience, the real edge with SMC comes from pairing those setups with a clear session bias first, specifically London or New York open liquidity sweeps, before hunting for entries. I drill this into my students because jumping into intraday moves without that higher timeframe context is where most traders get chopped up. Curious whether the Malayalam community here leans more toward equity intraday or do your viewers also apply this to index futures?",
+    "createdAt": "2026-09-03T00:31:07.548Z",
+    "status": "pending"
+  },
+  {
     "id": "sug-1788137106946-maj3i",
     "platform": "investinglive",
     "postTitle": "Goldman Sachs still sees Fed on hold despite Warsh's hawkish Jackson Hole tone",
