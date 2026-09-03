@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "myth",
     "promo-blog",
     "promo-coaching",
     "myth",
@@ -29,11 +28,12 @@
     "question",
     "tip",
     "poll",
-    "challenge"
+    "challenge",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "challenge",
-    "text": "NFP drops Friday. Challenge: Map your liquidity levels NOW — don't touch a chart again until 9:31 AM Friday. Then take 1 trade only. No revenge, no re-entry. Drop your result below 👇 #ICTTrading #NFP #SmartMoneyConcepts",
-    "date": "2026-09-02T12:00:40.761Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: NFP is not the opportunity. The liquidity sweep 30 mins BEFORE the number drops is. Most retail traders are still watching the candle after the news. Smart money already ate. #NFP #ICTTrading #SmartMoneyConcepts",
+    "date": "2026-09-03T12:00:43.469Z"
   }
 }
