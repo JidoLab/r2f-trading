@@ -1754,5 +1754,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-09-03T12:00:44.460Z",
+    "type": "text",
+    "postType": "hot-take",
+    "text": "Unpopular opinion: NFP is not the opportunity. The liquidity sweep 30 mins BEFORE the number drops i",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
