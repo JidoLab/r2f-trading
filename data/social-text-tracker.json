@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "promo-blog",
     "promo-coaching",
     "myth",
     "question",
@@ -29,11 +28,12 @@
     "tip",
     "poll",
     "challenge",
-    "hot-take"
+    "hot-take",
+    "quote"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: NFP is not the opportunity. The liquidity sweep 30 mins BEFORE the number drops is. Most retail traders are still watching the candle after the news. Smart money already ate. #NFP #ICTTrading #SmartMoneyConcepts",
-    "date": "2026-09-03T12:00:43.469Z"
+    "type": "quote",
+    "text": "\"The news doesn't move the market. The market uses the news to move you.\"\n\nNFP drops today. Watch for that liquidity sweep BEFORE the number hits — that's where smart money does its real work.\n\n#NFP #ICTTrading #SmartMoneyConcepts",
+    "date": "2026-09-04T12:00:43.022Z"
   }
 }
