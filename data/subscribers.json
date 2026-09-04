@@ -584,7 +584,8 @@
       "coachingCta",
       "valueRecap",
       "lastChance"
-    ]
+    ],
+    "staleReengageSent": true
   },
   {
     "email": "rersch4mscm@gmail.com",
@@ -639,7 +640,7 @@
   {
     "email": "mdyaminh812@gmail.com",
     "date": "2026-08-09T18:03:39.704Z",
-    "dripsSent": 6,
+    "dripsSent": 7,
     "referralCode": "R2F-ubw539",
     "referredBy": null,
     "referralCount": 0,
@@ -654,7 +655,8 @@
       "successStory",
       "tradingPsychology",
       "propFirmTips",
-      "coachingCta"
+      "coachingCta",
+      "valueRecap"
     ]
   },
   {
@@ -685,7 +687,7 @@
   {
     "email": "nro.shado@gmail.com",
     "date": "2026-08-14T09:29:25.343Z",
-    "dripsSent": 5,
+    "dripsSent": 6,
     "referralCode": "R2F-nsrejm",
     "referredBy": null,
     "referralCount": 0,
@@ -698,13 +700,14 @@
       "ictConcepts",
       "successStory",
       "tradingPsychology",
-      "propFirmTips"
+      "propFirmTips",
+      "coachingCta"
     ]
   },
   {
     "email": "traderanthony2@gmail.com",
     "date": "2026-08-30T04:25:43.489Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "referralCode": "R2F-35h075",
     "referredBy": null,
     "referralCount": 0,
@@ -726,7 +729,8 @@
     ],
     "lastActivity": "2026-08-31T03:26:24.475Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ],
     "abandonmentEmailSent": true
   }
