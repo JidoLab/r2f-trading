@@ -1812,5 +1812,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-09-05T12:00:41.251Z",
+    "type": "text",
+    "postType": "question",
+    "text": "NFP drops this week 👀 Do you WAIT for the news or trade the liquidity sweep BEFORE it hits? Drop yo",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
