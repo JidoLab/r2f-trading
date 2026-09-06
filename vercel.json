@@ -25,16 +25,8 @@
       "schedule": "0 15 * * *"
     },
     {
-      "path": "/api/cron/find-reply-opportunities",
-      "schedule": "30 0 * * 1,4"
-    },
-    {
       "path": "/api/cron/student-onboarding",
       "schedule": "0 8 * * *"
-    },
-    {
-      "path": "/api/cron/find-forum-opportunities",
-      "schedule": "45 0 * * 1,4"
     },
     {
       "path": "/api/cron/gbp-reviews",
@@ -67,10 +59,6 @@
     {
       "path": "/api/cron/upsell",
       "schedule": "0 12 * * *"
-    },
-    {
-      "path": "/api/cron/check-comment-replies",
-      "schedule": "0 13 * * *"
     },
     {
       "path": "/api/cron/weekly-health-report",

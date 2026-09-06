@@ -35,44 +35,6 @@ const CRITICAL_CRONS = [
       }
     },
   },
-  {
-    name: "find-reply-opportunities",
-    route: "find-reply-opportunities",
-    scheduledDays: [1, 4], // Mon, Thu — matches "30 0 * * 1,4"
-    check: async (): Promise<boolean> => {
-      const today = new Date().toISOString().split("T")[0];
-      try {
-        const raw = await readFile("data/reply-suggestions.json");
-        const data = JSON.parse(raw);
-        return Array.isArray(data) && data.some((d: { createdAt?: string }) => d.createdAt?.startsWith(today));
-      } catch {
-        return false;
-      }
-    },
-  },
-  {
-    name: "find-forum-opportunities",
-    route: "find-forum-opportunities",
-    scheduledDays: [1, 4], // Mon, Thu — matches "45 0 * * 1,4"
-    check: async (): Promise<boolean> => {
-      const today = new Date().toISOString().split("T")[0];
-      try {
-        const raw = await readFile("data/reply-suggestions.json");
-        const data = JSON.parse(raw);
-        return (
-          Array.isArray(data) &&
-          data.some(
-            (d: { createdAt?: string; platform?: string }) =>
-              d.createdAt?.startsWith(today) &&
-              d.platform &&
-              !["youtube", "facebook_group", "linkedin", "medium"].includes(d.platform),
-          )
-        );
-      } catch {
-        return false;
-      }
-    },
-  },
   // generate-short removed from retry-missed on 2026-06-20: shorts production is
   // currently halted (not in vercel.json), and its render files are slug-named
   // with no date, so the date check never matched and retry-missed was firing
