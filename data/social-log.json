@@ -1,190 +1,5 @@
 [
   {
-    "date": "2026-07-26T14:01:40.478Z",
-    "slug": "2026-06-29-how-to-pass-a-funded-challenge-without-blowing-it",
-    "title": "How to Pass a Funded Challenge Without Blowing It",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "message": "{\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error",
-        "message": "{\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "error",
-        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: chat not found\"}"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-27T12:00:33.456Z",
-    "type": "text",
-    "postType": "poll-native",
-    "text": "GDP drop incoming 👀 How do you trade high-impact news? #ICTtrading #SmartMoney\n\n🅰️ Sit out entirel",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error"
-      },
-      {
-        "platform": "telegram",
-        "status": "error"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-28T12:01:19.063Z",
-    "type": "text",
-    "postType": "quote",
-    "text": "\"Patience is not waiting. It's knowing exactly what you're waiting for.\"\n\nWith GDP dropping this wee",
-    "hasImage": true,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error"
-      },
-      {
-        "platform": "telegram",
-        "status": "error"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-29T12:00:18.739Z",
-    "type": "text",
-    "postType": "promo-free-class",
-    "text": "Order blocks. Fair value gaps. The setups smart money actually uses. Free class drops you the 3 ICT ",
-    "hasImage": false,
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error"
-      },
-      {
-        "platform": "telegram",
-        "status": "error"
-      },
-      {
-        "platform": "discord",
-        "status": "success"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-29T12:03:20.324Z",
-    "slug": "2026-07-29-your-stop-loss-is-why-you-keep-losing",
-    "title": "Your Stop Loss Is Why You Keep Losing",
-    "results": [
-      {
-        "platform": "twitter",
-        "status": "error",
-        "message": "{\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}"
-      },
-      {
-        "platform": "facebook",
-        "status": "success"
-      },
-      {
-        "platform": "instagram",
-        "status": "skipped",
-        "message": "No credentials or cover image"
-      },
-      {
-        "platform": "linkedin",
-        "status": "error",
-        "message": "{\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
-      },
-      {
-        "platform": "reddit-sub",
-        "status": "success"
-      },
-      {
-        "platform": "reddit-profile",
-        "status": "success"
-      },
-      {
-        "platform": "telegram",
-        "status": "error",
-        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: chat not found\"}"
-      },
-      {
-        "platform": "pinterest",
-        "status": "error",
-        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
-      },
-      {
-        "platform": "discord",
-        "status": "error",
-        "message": "{\"embeds\": [\"0\"]}"
-      }
-    ]
-  },
-  {
     "date": "2026-07-30T12:01:14.153Z",
     "type": "text",
     "postType": "promo-results",
@@ -1839,6 +1654,52 @@
       {
         "platform": "discord",
         "status": "success"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-06T06:02:00.310Z",
+    "slug": "2026-09-06-why-getting-a-mentor-won-t-save-you-either",
+    "title": "Why Getting a Mentor Won't Save You Either",
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error",
+        "message": "{\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "No credentials or cover image"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error",
+        "message": "{\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
+      },
+      {
+        "platform": "reddit",
+        "status": "skipped",
+        "message": "Reddit posting disabled (account shadowbanned)"
+      },
+      {
+        "platform": "telegram",
+        "status": "error",
+        "message": "{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: chat not found\"}"
+      },
+      {
+        "platform": "pinterest",
+        "status": "error",
+        "message": "{\"code\":2,\"message\":\"Authentication failed.\",\"status\":\"failure\"}"
+      },
+      {
+        "platform": "discord",
+        "status": "error",
+        "message": "{\"embeds\": [\"0\"]}"
       }
     ]
   }
