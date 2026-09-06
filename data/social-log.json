@@ -1702,5 +1702,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-09-06T12:00:42.416Z",
+    "type": "text",
+    "postType": "poll",
+    "text": "NFP week incoming 👀 How do YOU trade high-impact news?\n\n🅰️ Avoid it entirely\n🅱️ Trade the liquidi",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
