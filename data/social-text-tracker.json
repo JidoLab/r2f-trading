@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "myth",
     "question",
     "poll-native",
     "poll-native",
@@ -29,11 +28,12 @@
     "challenge",
     "hot-take",
     "quote",
-    "question"
+    "question",
+    "poll"
   ],
   "lastPost": {
-    "type": "question",
-    "text": "NFP drops this week 👀 Do you WAIT for the news or trade the liquidity sweep BEFORE it hits? Drop your strategy below 👇 #NFP #ICTtrading #SmartMoneyConcepts",
-    "date": "2026-09-05T12:00:40.107Z"
+    "type": "poll",
+    "text": "NFP week incoming 👀 How do YOU trade high-impact news?\n\n🅰️ Avoid it entirely\n🅱️ Trade the liquidity sweep after\n🅲️ Pre-position before release\n🅳️ Watch only, no trades\n\n#NFP #ICTTrading #SmartMoney",
+    "date": "2026-09-06T12:00:41.094Z"
   }
 }
