@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "question",
     "poll-native",
     "poll-native",
     "poll",
@@ -29,11 +28,12 @@
     "hot-take",
     "quote",
     "question",
-    "poll"
+    "poll",
+    "myth"
   ],
   "lastPost": {
-    "type": "poll",
-    "text": "NFP week incoming 👀 How do YOU trade high-impact news?\n\n🅰️ Avoid it entirely\n🅱️ Trade the liquidity sweep after\n🅲️ Pre-position before release\n🅳️ Watch only, no trades\n\n#NFP #ICTTrading #SmartMoney",
-    "date": "2026-09-06T12:00:41.094Z"
+    "type": "myth",
+    "text": "MYTH: You need perfect entries to be profitable. TRUTH: Smart money doesn't chase perfection — they target liquidity, wait for order blocks, and let price come to them. Execution is 20%. Patience is 80%. #ICTTrading #SmartMoneyConcepts #OrderBlocks",
+    "date": "2026-09-07T12:00:43.608Z"
   }
 }
