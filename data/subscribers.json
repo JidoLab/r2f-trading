@@ -619,7 +619,7 @@
   {
     "email": "wrightharvest+funneltest@gmail.com",
     "date": "2026-08-08T01:17:02.324Z",
-    "dripsSent": 7,
+    "dripsSent": 8,
     "referralCode": "R2F-euasj6",
     "referredBy": null,
     "referralCount": 0,
@@ -634,7 +634,8 @@
       "tradingPsychology",
       "propFirmTips",
       "coachingCta",
-      "valueRecap"
+      "valueRecap",
+      "lastChance"
     ]
   },
   {
@@ -707,7 +708,7 @@
   {
     "email": "traderanthony2@gmail.com",
     "date": "2026-08-30T04:25:43.489Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-35h075",
     "referredBy": null,
     "referralCount": 0,
@@ -730,7 +731,8 @@
     "lastActivity": "2026-08-31T03:26:24.475Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ],
     "abandonmentEmailSent": true
   },
@@ -741,6 +743,11 @@
     "referralCode": "R2F-zp6pce",
     "referredBy": null,
     "referralCount": 0,
-    "phone": "0986011105"
+    "phone": "0986011105",
+    "score": 0,
+    "segment": "cold",
+    "events": [],
+    "lastActivity": "2026-09-07T06:00:20.850Z",
+    "dripsHistory": []
   }
 ]
