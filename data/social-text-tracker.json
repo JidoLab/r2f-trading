@@ -1,7 +1,6 @@
 {
   "recentTypes": [
     "poll-native",
-    "poll-native",
     "poll",
     "challenge",
     "hot-take",
@@ -29,11 +28,12 @@
     "quote",
     "question",
     "poll",
-    "myth"
+    "myth",
+    "story"
   ],
   "lastPost": {
-    "type": "myth",
-    "text": "MYTH: You need perfect entries to be profitable. TRUTH: Smart money doesn't chase perfection — they target liquidity, wait for order blocks, and let price come to them. Execution is 20%. Patience is 80%. #ICTTrading #SmartMoneyConcepts #OrderBlocks",
-    "date": "2026-09-07T12:00:43.608Z"
+    "type": "story",
+    "text": "Held a short going into CPI last year. Thought I was smart money. Got stopped out in seconds. Now I wait for the sweep AFTER the spike — let the manipulation clear first. 🎯 #ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-09-08T12:00:41.329Z"
   }
 }
