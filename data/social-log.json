@@ -1748,5 +1748,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-09-08T12:00:42.520Z",
+    "type": "text",
+    "postType": "story",
+    "text": "Held a short going into CPI last year. Thought I was smart money. Got stopped out in seconds. Now I ",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
