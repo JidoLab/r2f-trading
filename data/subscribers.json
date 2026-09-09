@@ -641,7 +641,7 @@
   {
     "email": "mdyaminh812@gmail.com",
     "date": "2026-08-09T18:03:39.704Z",
-    "dripsSent": 7,
+    "dripsSent": 8,
     "referralCode": "R2F-ubw539",
     "referredBy": null,
     "referralCount": 0,
@@ -657,7 +657,8 @@
       "tradingPsychology",
       "propFirmTips",
       "coachingCta",
-      "valueRecap"
+      "valueRecap",
+      "lastChance"
     ]
   },
   {
@@ -689,7 +690,7 @@
   {
     "email": "nro.shado@gmail.com",
     "date": "2026-08-14T09:29:25.343Z",
-    "dripsSent": 6,
+    "dripsSent": 7,
     "referralCode": "R2F-nsrejm",
     "referredBy": null,
     "referralCount": 0,
@@ -703,7 +704,8 @@
       "successStory",
       "tradingPsychology",
       "propFirmTips",
-      "coachingCta"
+      "coachingCta",
+      "valueRecap"
     ]
   },
   {
@@ -740,7 +742,7 @@
   {
     "email": "hung.copywriting.swipes@gmail.com",
     "date": "2026-09-07T06:00:20.850Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-zp6pce",
     "referredBy": null,
     "referralCount": 0,
@@ -749,6 +751,8 @@
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-09-07T06:00:20.850Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   }
 ]
