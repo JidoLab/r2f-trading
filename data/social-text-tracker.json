@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll-native",
     "poll",
     "challenge",
     "hot-take",
@@ -29,11 +28,12 @@
     "question",
     "poll",
     "myth",
-    "story"
+    "story",
+    "hot-take"
   ],
   "lastPost": {
-    "type": "story",
-    "text": "Held a short going into CPI last year. Thought I was smart money. Got stopped out in seconds. Now I wait for the sweep AFTER the spike — let the manipulation clear first. 🎯 #ICTTrading #SmartMoneyConcepts #CPI",
-    "date": "2026-09-08T12:00:41.329Z"
+    "type": "hot-take",
+    "text": "Unpopular opinion: Trading around CPI is gambling, not strategy. Smart money was positioned DAYS ago. You're just their exit liquidity. #ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-09-09T12:00:43.647Z"
   }
 }
