@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-09-09-why-phase-2-keeps-destroying-you",
+    "syndicatedAt": "2026-09-09T06:03:22.628Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-09-09-why-phase-2-keeps-destroying-you",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/why-phase-2-keeps-destroying-you-21jg",
+        "id": "4611745"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-09-09-why-phase-2-keeps-destroying-you"
+  },
+  {
     "slug": "2026-09-06-why-getting-a-mentor-won-t-save-you-either",
     "syndicatedAt": "2026-09-06T06:02:35.434Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-09-06-why-getting-a-mentor-won-t-save-you-either",
