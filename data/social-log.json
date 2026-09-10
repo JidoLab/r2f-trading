@@ -1745,5 +1745,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-09-10T12:00:42.556Z",
+    "type": "text",
+    "postType": "quote",
+    "text": "\"Before CPI hits, amateurs react. Professionals already positioned.\"\n\nSmart money doesn't chase the ",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
