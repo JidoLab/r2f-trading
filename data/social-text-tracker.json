@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "poll",
     "challenge",
     "hot-take",
     "quote",
@@ -29,11 +28,12 @@
     "poll",
     "myth",
     "story",
-    "hot-take"
+    "hot-take",
+    "quote"
   ],
   "lastPost": {
-    "type": "hot-take",
-    "text": "Unpopular opinion: Trading around CPI is gambling, not strategy. Smart money was positioned DAYS ago. You're just their exit liquidity. #ICTTrading #SmartMoneyConcepts #CPI",
-    "date": "2026-09-09T12:00:43.647Z"
+    "type": "quote",
+    "text": "\"Before CPI hits, amateurs react. Professionals already positioned.\"\n\nSmart money doesn't chase the candle — they built the trap you're running into right now.\n\n#ICTTrading #SmartMoneyConcepts #CPI",
+    "date": "2026-09-10T12:00:41.583Z"
   }
 }
