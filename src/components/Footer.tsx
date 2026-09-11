@@ -103,7 +103,10 @@ export default function Footer() {
             size (~3.2:1). Bumped to text-white/70 (~5.2:1, passes AA). */}
         <div className="border-t border-white/10 pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-white/70 text-xs">
           <p>&copy; {new Date().getFullYear()} R2F Trading. All rights reserved.</p>
-          <Link href="/privacy" className="hover:text-gold transition-colors">Privacy Policy &amp; Disclaimer</Link>
+          <div className="flex items-center gap-4">
+            <Link href="/live" className="hover:text-gold transition-colors">Live Stream</Link>
+            <Link href="/privacy" className="hover:text-gold transition-colors">Privacy Policy &amp; Disclaimer</Link>
+          </div>
         </div>
       </div>
     </footer>

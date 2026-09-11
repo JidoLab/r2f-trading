@@ -70,6 +70,7 @@ Ask questions in chat. I answer between setups.
 
 Telegram: https://t.me/Road2Funded
 TradingView: https://www.tradingview.com/u/Road_2_Funded/
+Schedule and live player: https://www.r2ftrading.com/live
 Site: https://www.r2ftrading.com
 
 ==============================

@@ -20,8 +20,8 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
-          {["Home", "About", "Coaching", "Free Course", "Results", "Trading Insights", "Calculator"].map((item) => (
+        <nav className="hidden md:flex items-center gap-6">
+          {["Home", "Live", "About", "Coaching", "Free Course", "Results", "Trading Insights", "Calculator"].map((item) => (
             <Link
               key={item}
               href={
@@ -62,7 +62,7 @@ export default function Header() {
       {/* Mobile Nav */}
       {menuOpen && (
         <nav className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
-          {["Home", "About", "Coaching", "Free Course", "Results", "Trading Insights", "Calculator"].map((item) => (
+          {["Home", "Live", "About", "Coaching", "Free Course", "Results", "Trading Insights", "Calculator"].map((item) => (
             <Link
               key={item}
               href={
