@@ -87,3 +87,26 @@ https://www.r2ftrading.com/learn
 Risk disclosure: Futures and forex trading carry substantial risk and are not suitable for every investor. You can lose more than your initial deposit. Nothing on this stream is financial advice. Past performance does not indicate future results. Trade only with risk capital.
 
 #nq #livetrading #ict #daytrading #futures
+
+## XSplit scenes (final layout)
+
+Canvas: top bar of XSplit set to 1920x1080, 30 fps. Transition: Settings >
+Transition > Fade, 300 ms. Mic is one global source in the audio mixer; mute
+it with F8 rather than per scene.
+
+1. **Starting Soon** (F1). Media File: `public/stream/generic-starting-soon.png`,
+   fit to screen. Optional Text source "back at :00" or the built-in countdown
+   under the ribbon. Optional music: one YouTube Audio Library track, volume
+   at about 20 percent. Mic muted.
+2. **Live** (F2). Screen Capture > Window: the chart window only. Media File:
+   `badge.png` bottom left, 640 px wide, 40 px from the edges. Mask: a solid
+   dark rectangle over any account ID or balance, locked. Optional Webcam:
+   bottom right, about 380 px wide, 2 px gold border. Optional Webpage:
+   YouTube popout chat, 380 px column on the right, only if the chart still
+   reads at that size. Mic on.
+3. **Break** (F3). Media File: `generic-break.png`, fit to screen. Mic muted.
+4. **Ending** (F4). Media File: `generic-ending.png`, fit to screen. Mic on,
+   say goodbye, hold 30 to 60 seconds, then stop the output.
+
+Copy the Live scene as a fifth "Talk" scene later (webcam large, chart small)
+for the pre-market bias walkthrough. Not needed for launch.
