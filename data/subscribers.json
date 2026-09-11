@@ -711,7 +711,7 @@
   {
     "email": "traderanthony2@gmail.com",
     "date": "2026-08-30T04:25:43.489Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "referralCode": "R2F-35h075",
     "referredBy": null,
     "referralCount": 0,
@@ -735,7 +735,8 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts",
-      "successStory"
+      "successStory",
+      "tradingPsychology"
     ],
     "abandonmentEmailSent": true
   },
@@ -776,6 +777,16 @@
     "referralCode": "R2F-74cplx",
     "referredBy": null,
     "referralCount": 0,
-    "phone": "09359186085"
+    "phone": "09359186085",
+    "score": 2,
+    "segment": "cold",
+    "events": [
+      {
+        "type": "crash_course_page_view",
+        "date": "2026-09-11T09:00:30.171Z"
+      }
+    ],
+    "lastActivity": "2026-09-11T09:00:30.171Z",
+    "dripsHistory": []
   }
 ]
