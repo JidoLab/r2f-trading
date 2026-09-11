@@ -1,5 +1,11 @@
 # Going live by hand (no scripts)
 
+Session: **London**. Go live 1:45 PM Bangkok (7:45 AM London) until 25 Oct 2026,
+then 2:45 PM Bangkok when UK clocks go back. Run through the London AM, roughly
+8 to 11 AM London (2 to 5 PM Bangkok).
+
+Scene images live in `public/stream/` (regenerate with `python scripts/stream-scenes.py`).
+
 Stream key is already in XSplit. Thumbnail is made. This is the whole routine.
 
 ## One-time: make the persistent key the default in Studio
@@ -27,32 +33,32 @@ Only the title, date and thumbnail change.
    yesterday's stream.
 2. Title (change the date, optionally swap the hook):
 
-   NQ Live Trading: New York Open | ICT Concepts | 12 Sep
+   NQ Live Trading: London Session | ICT Concepts | 12 Sep
 
    If you have an angle: `CPI Day: Who Gets Swept? | NQ Live Trading | ICT | 12 Sep`
 
 3. Description: paste the block at the bottom of this file.
 4. Thumbnail: upload today's stamped image.
-5. Date: today. Time: 8:00 PM (Bangkok) until 1 Nov 2026, then 9:00 PM.
-6. Done. Copy the watch link and post it to Telegram: "Live tonight 8 PM
-   Bangkok / 9 AM New York. <link>".
+5. Date: today. Time: 1:45 PM (Bangkok) until 25 Oct 2026, then 2:45 PM.
+6. Done. Copy the watch link and post it to Telegram: "Live today 2 PM
+   Bangkok / 8 AM London. <link>".
 
-## Daily (evening)
+## Daily (afternoon)
 
-- 7:45 PM: open XSplit, **Broadcast > YouTube**. Auto-start takes the stream
+- 1:45 PM: open XSplit, **Broadcast > YouTube**. Auto-start takes the stream
   live within about 30 seconds. Studio shows "Live" on the Manage tab.
 - End: stop the XSplit output. Auto-stop ends the broadcast after about a
   minute of no signal.
 
 ## Tags (paste into the Tags field, comma separated)
 
-nq live trading, live day trading, nasdaq futures, ict live trading, ict concepts, day trading live, futures trading live, smart money concepts, new york open, nq futures, live trading, r2f trading
+nq live trading, live day trading, nasdaq futures, ict live trading, ict concepts, day trading live, futures trading live, smart money concepts, london session, nq futures, live trading, r2f trading
 
 ## Description (paste as is)
 
-Live NQ futures trading at the New York open, every weekday, using ICT concepts. Real entries, real stops, wins and losses on the chart as they happen. No hindsight replays.
+Live NQ futures trading through the London session, every weekday, using ICT concepts. Real entries, real stops, wins and losses on the chart as they happen. No hindsight replays.
 
-Stream starts 30 minutes before the 9:30 ET open and runs through the New York AM session.
+Stream starts at the 8 AM London open (2 PM Bangkok, 3 AM New York) and runs through the London AM session.
 
 What I cover live:
 - Higher timeframe bias and the levels that matter today

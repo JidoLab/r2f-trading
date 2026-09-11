@@ -27,9 +27,9 @@ import fs from "fs";
 import path from "path";
 
 const STREAM_TITLE = "R2F XSplit persistent";
-// 13:00 UTC = 8:00 PM Bangkok = 30 min before the 9:30 ET New York open while
-// US daylight time is in effect (until 1 Nov 2026). After that use 14.
-const DEFAULT_START_HOUR_UTC = 13;
+// 07:00 UTC = 2:00 PM Bangkok = 8:00 AM London open while UK summer time is in
+// effect (until 25 Oct 2026). After that use 8. Harvest trades London only.
+const DEFAULT_START_HOUR_UTC = 7;
 
 const MARKER = "FREE: The ICT Funded-Trader Playbook";
 const CTA = `==============================
@@ -47,7 +47,7 @@ https://www.r2ftrading.com/learn`;
 const TAGS = [
   "nq live trading", "live day trading", "nasdaq futures", "ict live trading",
   "ict concepts", "day trading live", "futures trading live", "smart money concepts",
-  "new york open", "nq futures", "live trading", "r2f trading",
+  "london session", "nq futures", "live trading", "r2f trading",
 ];
 
 function env(key: string): string {
@@ -77,14 +77,14 @@ function dateLabel(d: Date): string {
 function buildTitle(hook: string | undefined, d: Date): string {
   const base = hook
     ? `${hook} | NQ Live Trading | ICT | ${dateLabel(d)}`
-    : `NQ Live Trading: New York Open | ICT Concepts | ${dateLabel(d)}`;
+    : `NQ Live Trading: London Session | ICT Concepts | ${dateLabel(d)}`;
   return base.slice(0, 100);
 }
 
 function buildDescription(d: Date): string {
-  return `Live NQ futures trading at the New York open, every weekday, using ICT concepts. Real entries, real stops, wins and losses on the chart as they happen. No hindsight replays.
+  return `Live NQ futures trading through the London session, every weekday, using ICT concepts. Real entries, real stops, wins and losses on the chart as they happen. No hindsight replays.
 
-Stream starts 30 minutes before the 9:30 ET open and runs through the New York AM session.
+Stream starts at the 8 AM London open (2 PM Bangkok, 3 AM New York) and runs through the London AM session.
 
 What I cover live:
 - Higher timeframe bias and the levels that matter today
@@ -218,7 +218,7 @@ async function main() {
   const outDir = path.join(process.cwd(), ".tmp");
   fs.mkdirSync(outDir, { recursive: true });
   const thumb = path.join(outDir, `stream-thumb-${start.toISOString().slice(0, 10)}.png`);
-  execSync(`python "${path.join("scripts", "stamp-thumbnail.py")}" "${(hook || "New York Open Live").replace(/"/g, "")}" "${label}" "${thumb}"`, { stdio: "inherit" });
+  execSync(`python "${path.join("scripts", "stamp-thumbnail.py")}" "${(hook || "London Session Live").replace(/"/g, "")}" "${label}" "${thumb}"`, { stdio: "inherit" });
 
   if (!live) {
     console.log("\nDry run complete. Re-run with --live to create the broadcast.");

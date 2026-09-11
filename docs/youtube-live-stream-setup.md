@@ -65,8 +65,8 @@ part of this plan still applies.
 Set up four scenes. Switch between them with hotkeys.
 
 **1. Starting Soon** (5 to 10 minutes before you trade)
-- Media source: a static 1920x1080 image. Navy background, "NQ LIVE | NEW YORK
-  OPEN" in large type, "starting shortly" underneath, your Telegram and site.
+- Media source: a static 1920x1080 image. Navy background, "NQ LIVE | LONDON
+  SESSION" in large type, "starting shortly" underneath, your Telegram and site.
 - Text source: countdown timer. XSplit has a built-in countdown; set it to the
   open time.
 - Audio: one royalty-free track from the YouTube Audio Library on loop, low
