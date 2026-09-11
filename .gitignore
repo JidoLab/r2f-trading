@@ -49,3 +49,4 @@ next-env.d.ts
 /Gemini_Generated_*.png
 /Gemini_Generated_*.jpg
 /Gemini_Generated_*.jpeg
+.tmp/
