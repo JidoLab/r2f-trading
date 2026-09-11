@@ -209,6 +209,11 @@ async function main() {
   }
   if (stream) fs.writeFileSync(cachePath, JSON.stringify({ id: stream.id, title: STREAM_TITLE }, null, 2) + "\n");
 
+  if (process.argv.includes("--stream-only")) {
+    console.log("\nStream-only run complete. No broadcast created.");
+    return;
+  }
+
   // 2. thumbnail (stamped locally either way so the dry run shows the file)
   const outDir = path.join(process.cwd(), ".tmp");
   fs.mkdirSync(outDir, { recursive: true });
