@@ -3,7 +3,7 @@
 
     python scripts/stream-scenes.py
 
-Writes 1920x1080 PNGs to public/stream/: starting-soon, break, ending, plus a
+Writes plain fallback 1920x1080 PNGs to public/stream/plain/ (the real ones in public/stream/ were generated with Gemini from the ChatGPT thumbnail): starting-soon, break, ending, plus a
 transparent lower-third badge (playbook link) for the Live scene. Same navy and
 gold as the thumbnails so everything matches.
 """
@@ -24,7 +24,7 @@ ARIAL_B = os.path.join(FONT_DIR, "arialbd.ttf")
 ARIAL = os.path.join(FONT_DIR, "arial.ttf")
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "public", "stream")
+OUT = os.path.join(ROOT, "public", "stream", "plain")
 
 
 def base():

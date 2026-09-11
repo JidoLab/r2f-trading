@@ -4,7 +4,7 @@ Session: **London**. Go live 1:45 PM Bangkok (7:45 AM London) until 25 Oct 2026,
 then 2:45 PM Bangkok when UK clocks go back. Run through the London AM, roughly
 8 to 11 AM London (2 to 5 PM Bangkok).
 
-Scene images live in `public/stream/` (regenerate with `python scripts/stream-scenes.py`).
+Scene images live in `public/stream/`: starting-soon, break, ending (Gemini, matched to the ChatGPT thumbnail), starting-soon-face (variant with the redrawn face), badge (lower third), thumbnail.jpg (1280x720, ready for Studio). Plain fallbacks: `python scripts/stream-scenes.py` writes to `public/stream/plain/`.
 
 Stream key is already in XSplit. Thumbnail is made. This is the whole routine.
 
