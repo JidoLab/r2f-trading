@@ -24,6 +24,7 @@ KEY LINKS:
 - Free ICT Funded-Trader Playbook (instant PDF): r2ftrading.com/free-class
 - WhatsApp (quick questions only, NOT for booking): wa.me/66935754757
 - Telegram (quick questions only, NOT for booking): t.me/Road2Funded
+- Live stream: Harvest trades NQ live on YouTube every weekday at the 8:00 AM London open (2:00 PM Bangkok, 9:00 AM Berlin, 3:00 AM New York), running through the London morning. Schedule, local time and player: r2ftrading.com/live
 
 STUDENT TESTIMONIALS (use these naturally when relevant):
 - "I finally feel confident in my trades. R2F worked through all the aspects holding me back." — T.W.
