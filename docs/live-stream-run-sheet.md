@@ -132,3 +132,25 @@ those numbers for months before daily streams compounded. The two numbers
 that matter are average view duration on the replay (Studio > Analytics >
 Engagement) and whether it climbs week to week. Everything in this sheet is
 aimed at that number.
+
+## Replay title bank
+
+The live title is generic on purpose (subscribers see it in the notification).
+The replay needs a specific one within ten minutes of ending. Fill the
+brackets, keep it under 70 characters, put the concept first and the date
+last.
+
+- NQ Sweeps the [Asia/Previous Day] High Then Reverses | Live ICT | [date]
+- Equal Lows Taken at the London Open: Full Live Breakdown | [date]
+- Why I Skipped the Breakout and Took the Retest | NQ Live | [date]
+- One Loss, One Win, Same Level: NQ London Session | [date]
+- Fair Value Gap Entry at the Open, Explained Live | NQ | [date]
+- Order Block Held Twice: Live NQ Trade and the Reasoning | [date]
+- No Trade Day: Why Sitting Out Was the Trade | NQ Live | [date]
+- [News event] Day on NQ: Where the Liquidity Went | Live | [date]
+- Stopped Out Then Re-entered: Live NQ Decision Making | [date]
+- Bias Was Wrong by 8:15: How I Flipped It Live | NQ | [date]
+
+Rule: the title states what happened on the chart. Never "Crazy day" or
+"You won't believe". Concept words (liquidity, fair value gap, order block,
+equal highs) are what the search traffic types.
