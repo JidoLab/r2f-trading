@@ -111,3 +111,7 @@ it with F8 rather than per scene.
 
 Copy the Live scene as a fifth "Talk" scene later (webcam large, chart small)
 for the pre-market bias walkthrough. Not needed for launch.
+
+## Automatic reminder (the only automation in this flow)
+
+Every weekday at 1:00 PM Bangkok a cron checks the channel for a PUBLIC stream scheduled in the next 4 hours. If you scheduled one in Studio that morning, it posts the watch link to the Telegram channel and X once. If nothing is scheduled, it posts nothing. Off switch: set `LIVE_REMINDER_ENABLED=false` on Vercel. Log: `data/live-reminder-log.json`.
