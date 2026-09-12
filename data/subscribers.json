@@ -636,7 +636,8 @@
       "coachingCta",
       "valueRecap",
       "lastChance"
-    ]
+    ],
+    "staleReengageSent": true
   },
   {
     "email": "mdyaminh812@gmail.com",
@@ -743,7 +744,7 @@
   {
     "email": "hung.copywriting.swipes@gmail.com",
     "date": "2026-09-07T06:00:20.850Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "referralCode": "R2F-zp6pce",
     "referredBy": null,
     "referralCount": 0,
@@ -753,13 +754,14 @@
     "events": [],
     "lastActivity": "2026-09-07T06:00:20.850Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   },
   {
     "email": "brandonmweddle@gmail.com",
     "date": "2026-09-10T05:41:34.068Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-diy043",
     "referredBy": null,
     "referralCount": 0,
@@ -768,7 +770,9 @@
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-09-10T05:41:34.068Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   },
   {
     "email": "franjray38@gmail.com",
@@ -778,15 +782,19 @@
     "referredBy": null,
     "referralCount": 0,
     "phone": "09359186085",
-    "score": 2,
+    "score": 4,
     "segment": "cold",
     "events": [
       {
         "type": "crash_course_page_view",
         "date": "2026-09-11T09:00:30.171Z"
+      },
+      {
+        "type": "crash_course_page_view",
+        "date": "2026-09-12T09:00:30.112Z"
       }
     ],
-    "lastActivity": "2026-09-11T09:00:30.171Z",
+    "lastActivity": "2026-09-12T09:00:30.112Z",
     "dripsHistory": []
   }
 ]
