@@ -33,6 +33,14 @@ const DEAD_DOMAIN = "road2fundedtrading.com";
 const WHOP = "https://whop.com/r2f-2/";
 const WHOP_REPLACEMENT = "https://www.r2ftrading.com/coaching";
 const MARKER = "FREE: The ICT Funded-Trader Playbook";
+// Live stream block (added 2026-09-12 when the channel moved to daily London streams).
+// Inserted above the coaching lines on descriptions that already carry the CTA.
+const LIVE_MARKER = "https://www.r2ftrading.com/live";
+const COACHING_HEAD = "1-on-1 ICT COACHING WITH HARVEST WRIGHT";
+const LIVE = `LIVE NQ TRADING EVERY WEEKDAY
+8 AM London open (2 PM Bangkok). Schedule, your local time, and the live player:
+https://www.r2ftrading.com/live`;
+const MAX_DESCRIPTION = 5000;
 
 // Retired contact addresses. coach@r2ftrading.com appears in 34 descriptions
 // and coach@road2fundedtrading.com in one. Current address is the gmail.
@@ -43,6 +51,8 @@ const CTA = `==============================
 FREE: The ICT Funded-Trader Playbook
 The 3 setups that actually work, the pre-trade checklist, and the risk rules that pass funded challenges. Instant download.
 https://www.r2ftrading.com/free-class
+
+${LIVE}
 
 1-on-1 ICT COACHING WITH HARVEST WRIGHT
 10+ years trading ICT concepts. Book a free 15-minute discovery call, no pitch:
@@ -80,6 +90,11 @@ function desired(desc: string): string {
     .replaceAll(WHOP, WHOP_REPLACEMENT)
     .replaceAll(WHOP.replace(/\/$/, ""), WHOP_REPLACEMENT);
   if (!out.includes(MARKER)) out = out.trimEnd() + "\n\n" + CTA + "\n";
+  if (!out.includes(LIVE_MARKER) && out.includes(COACHING_HEAD)) {
+    out = out.replace(COACHING_HEAD, LIVE + "\n\n" + COACHING_HEAD);
+  }
+  // videos.update rejects descriptions over 5000 chars; leave those as they are.
+  if (out.length > MAX_DESCRIPTION) return desc;
   return out;
 }
 

@@ -71,6 +71,10 @@
     {
       "path": "/api/cron/pinterest-pin",
       "schedule": "0 10 * * *"
+    },
+    {
+      "path": "/api/cron/live-reminder",
+      "schedule": "0 6 * * 1-5"
     }
   ]
 }
