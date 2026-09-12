@@ -199,13 +199,14 @@
     "email": "hung.copywriting.swipes@gmail.com",
     "name": "Hung",
     "date": "2026-09-07T05:59:54.646Z",
-    "day": 4,
+    "day": 5,
     "emailsSent": [
       "day1",
       "day2",
       "day3",
       "day4",
-      "day5"
+      "day5",
+      "complete"
     ]
   }
 ]
