@@ -1803,5 +1803,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-09-12T12:00:45.328Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "CPI week is here 🔥 How do you trade high-impact news events? #ICTTrading #SmartMoney\n\n🅰️ Sit it ou",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
