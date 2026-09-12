@@ -6,7 +6,8 @@ import { generateOAuthHeader } from "@/lib/social-auth";
  * Live stream reminder. Runs on weekday mornings (06:00 UTC, 1 PM Bangkok).
  *
  * It only posts when a PUBLIC broadcast is actually scheduled on the channel
- * within the next few hours, so a day with no stream scheduled produces no
+ * within the next few hours (broadcastStatus=upcoming already scopes to the
+ * authenticated channel; adding mine=true makes the API reject the call), so a day with no stream scheduled produces no
  * post at all. Harvest schedules the stream by hand in YouTube Studio each
  * morning; this picks it up from there. Each broadcast is announced once
  * (data/live-reminder-log.json), so retries never double post.
@@ -92,7 +93,7 @@ export async function GET(req: NextRequest) {
   try {
     const token = await youtubeToken();
     const res = await fetch(
-      "https://www.googleapis.com/youtube/v3/liveBroadcasts?part=snippet,status&broadcastStatus=upcoming&mine=true&maxResults=10",
+      "https://www.googleapis.com/youtube/v3/liveBroadcasts?part=snippet,status&broadcastStatus=upcoming&maxResults=10",
       { headers: { Authorization: `Bearer ${token}` } }
     );
     const data = await res.json();
