@@ -1,5 +1,29 @@
 [
   {
+    "slug": "2026-09-13-why-watching-more-charts-makes-you-worse",
+    "syndicatedAt": "2026-09-13T12:02:56.054Z",
+    "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-09-13-why-watching-more-charts-makes-you-worse",
+    "platforms": [
+      {
+        "platform": "devto",
+        "success": true,
+        "url": "https://dev.to/jidolab/why-watching-more-charts-makes-you-worse-447p",
+        "id": "4643505"
+      },
+      {
+        "platform": "hashnode",
+        "success": false,
+        "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      },
+      {
+        "platform": "medium",
+        "success": true,
+        "url": "https://medium.com/p/import"
+      }
+    ],
+    "mediumImportUrl": "https://www.r2ftrading.com/trading-insights/2026-09-13-why-watching-more-charts-makes-you-worse"
+  },
+  {
     "slug": "2026-09-09-why-phase-2-keeps-destroying-you",
     "syndicatedAt": "2026-09-09T06:03:22.628Z",
     "canonicalUrl": "https://www.r2ftrading.com/trading-insights/2026-09-09-why-phase-2-keeps-destroying-you",
