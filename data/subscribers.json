@@ -665,7 +665,7 @@
   {
     "email": "Matinvz0vz@gmail.com",
     "date": "2026-08-13T10:07:14.222Z",
-    "dripsSent": 7,
+    "dripsSent": 8,
     "referralCode": "R2F-b8eyd8",
     "referredBy": null,
     "referralCount": 0,
@@ -685,7 +685,8 @@
       "tradingPsychology",
       "propFirmTips",
       "coachingCta",
-      "valueRecap"
+      "valueRecap",
+      "lastChance"
     ]
   },
   {
@@ -777,7 +778,7 @@
   {
     "email": "franjray38@gmail.com",
     "date": "2026-09-11T07:57:46.647Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-74cplx",
     "referredBy": null,
     "referralCount": 0,
@@ -795,6 +796,8 @@
       }
     ],
     "lastActivity": "2026-09-12T09:00:30.112Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   }
 ]
