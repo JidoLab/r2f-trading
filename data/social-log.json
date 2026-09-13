@@ -1832,5 +1832,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-09-13T12:00:46.873Z",
+    "type": "text",
+    "postType": "promo-results",
+    "text": "R2F traders are navigating CPI week with structure — not guessing. 73% profitable this quarter. That",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
