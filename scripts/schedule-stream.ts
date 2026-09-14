@@ -32,18 +32,6 @@ const STREAM_TITLE = "R2F XSplit persistent";
 const DEFAULT_START_HOUR_UTC = 7;
 
 const MARKER = "FREE: The ICT Funded-Trader Playbook";
-const CTA = `==============================
-FREE: The ICT Funded-Trader Playbook
-The 3 setups that actually work, the pre-trade checklist, and the risk rules that pass funded challenges. Instant download.
-https://www.r2ftrading.com/free-class
-
-1-on-1 ICT COACHING WITH HARVEST WRIGHT
-10+ years trading ICT concepts. Book a free 15-minute discovery call, no pitch:
-https://www.r2ftrading.com/contact
-
-More free guides and breakdowns:
-https://www.r2ftrading.com/learn`;
-
 const TAGS = [
   "nq live trading", "live day trading", "nasdaq futures", "ict live trading",
   "ict concepts", "day trading live", "futures trading live", "smart money concepts",
@@ -82,26 +70,30 @@ function buildTitle(hook: string | undefined, d: Date): string {
 }
 
 function buildDescription(d: Date): string {
-  return `Live NQ futures trading through the London session, every weekday, using ICT concepts. Real entries, real stops, wins and losses on the chart as they happen. No hindsight replays.
+  void d;
+  return `My name is Harvest and I trade NQ futures. On this channel I stream live every weekday at the London open using ICT concepts: real entries, real stops, reasoning said out loud. Subscribe and hit the bell so you get the link when I go live.
 
-Stream starts at the 8 AM London open (2 PM Bangkok, 3 AM New York) and runs through the London AM session.
+Stream starts at the 8 AM London open (2 PM Bangkok, 3 AM New York) and runs through the London morning.
 
-What I cover live:
-- Higher timeframe bias and the levels that matter today
-- Where the liquidity is resting and which side I expect to get taken
-- Live entries with the reasoning said out loud, and the ones I skip
-- Risk per trade, stop placement, and why
+FREE: The ICT Funded-Trader Playbook
+The 3 setups used on this stream, the pre-trade checklist, and the risk rules that pass funded challenges. Instant download.
+https://www.r2ftrading.com/free-class
 
-Ask questions in chat. I answer between setups.
+Free community and stream links: https://t.me/Road2Funded
+Schedule in your time zone: https://www.r2ftrading.com/live
 
-Telegram: https://t.me/Road2Funded
+1-ON-1 ICT COACHING
+10+ years trading ICT concepts. Book a free 15-minute discovery call, no pitch:
+https://www.r2ftrading.com/contact
+
 TradingView: https://www.tradingview.com/u/Road_2_Funded/
-Schedule and live player: https://www.r2ftrading.com/live
+Instagram: https://instagram.com/road2funded
+X: https://twitter.com/Road2Funded
 Site: https://www.r2ftrading.com
 
-${CTA}
+Risk disclosure: Futures and forex trading carry substantial risk and are not suitable for every investor. You could lose all or more than your initial investment. Only risk capital should be used for trading. Past performance is not necessarily indicative of future results. Nothing on this stream is financial advice.
 
-Risk disclosure: Futures and forex trading carry substantial risk and are not suitable for every investor. You can lose more than your initial deposit. Nothing on this stream is financial advice. Past performance does not indicate future results. Trade only with risk capital.
+Hypothetical performance disclosure: Any results shown from backtesting, replay or demo accounts have inherent limitations. They are prepared with the benefit of hindsight and do not involve financial risk, so no such record can fully account for the impact of real trading. No representation is made that any account will achieve profits or losses similar to those shown.
 
 #nq #livetrading #ict #daytrading #futures`;
 }
