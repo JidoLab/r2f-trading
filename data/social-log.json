@@ -1730,5 +1730,34 @@
         "message": "{\"embeds\": [\"0\"]}"
       }
     ]
+  },
+  {
+    "date": "2026-09-14T12:00:38.566Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "Monday London open just ran Friday's high… do you fade it or ride it? #ICTTrading #SmartMoney\n\n🅰️ F",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
