@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "question",
     "poll",
     "poll-native",
     "story",
@@ -29,11 +28,12 @@
     "quote",
     "promo-free-class",
     "poll-native",
-    "promo-results"
+    "promo-results",
+    "poll-native"
   ],
   "lastPost": {
-    "type": "promo-results",
-    "text": "R2F traders are navigating CPI week with structure — not guessing. 73% profitable this quarter. That's smart money concepts applied in real time. See the proof 👇 https://r2ftrading.com/results #ICTTrading #SmartMoneyConcepts #FundedTrader",
-    "date": "2026-09-13T12:00:45.834Z"
+    "type": "poll-native",
+    "text": "Monday London open just ran Friday's high… do you fade it or ride it? #ICTTrading #SmartMoney\n\n🅰️ Fade it 🐻\n🅱️ Ride it 🐂\n🅲️ Wait for NY confirm\n🅳️ Depends on bias\n\nVote below! 👇",
+    "date": "2026-09-14T12:00:37.373Z"
   }
 }
