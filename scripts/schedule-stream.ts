@@ -65,7 +65,7 @@ function dateLabel(d: Date): string {
 function buildTitle(hook: string | undefined, d: Date): string {
   const base = hook
     ? `${hook} | NQ Live Trading | ICT | ${dateLabel(d)}`
-    : `NQ Live Trading: London Session | ICT Concepts | ${dateLabel(d)}`;
+    : `NQ Live Trading ICT | London Session | ${dateLabel(d)}`;
   return base.slice(0, 100);
 }
 

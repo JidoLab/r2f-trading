@@ -33,7 +33,7 @@ Only the title, date and thumbnail change.
    yesterday's stream.
 2. Title (change the date, optionally swap the hook):
 
-   NQ Live Trading: London Session | ICT Concepts | 12 Sep
+   NQ Live Trading ICT | London Session | 12 Sep
 
    If you have an angle: `CPI Day: Who Gets Swept? | NQ Live Trading | ICT | 12 Sep`
 
