@@ -1759,5 +1759,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-09-15T12:00:43.873Z",
+    "type": "text",
+    "postType": "poll-native",
+    "text": "Fair value gaps or order blocks — which ICT concept hits harder for your entries? 🔥 #ICTtrading #Sm",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "error"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
