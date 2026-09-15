@@ -715,7 +715,7 @@
   {
     "email": "traderanthony2@gmail.com",
     "date": "2026-08-30T04:25:43.489Z",
-    "dripsSent": 4,
+    "dripsSent": 5,
     "referralCode": "R2F-35h075",
     "referredBy": null,
     "referralCount": 0,
@@ -740,14 +740,15 @@
       "beginnerMistakes",
       "ictConcepts",
       "successStory",
-      "tradingPsychology"
+      "tradingPsychology",
+      "propFirmTips"
     ],
     "abandonmentEmailSent": true
   },
   {
     "email": "hung.copywriting.swipes@gmail.com",
     "date": "2026-09-07T06:00:20.850Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-zp6pce",
     "referredBy": null,
     "referralCount": 0,
@@ -758,13 +759,14 @@
     "lastActivity": "2026-09-07T06:00:20.850Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ]
   },
   {
     "email": "brandonmweddle@gmail.com",
     "date": "2026-09-10T05:41:34.068Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "referralCode": "R2F-diy043",
     "referredBy": null,
     "referralCount": 0,
@@ -774,7 +776,8 @@
     "events": [],
     "lastActivity": "2026-09-10T05:41:34.068Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   },
   {
@@ -822,6 +825,11 @@
     "referralCode": "R2F-ebfga2",
     "referredBy": null,
     "referralCount": 0,
-    "phone": "5044004992"
+    "phone": "5044004992",
+    "score": 0,
+    "segment": "cold",
+    "events": [],
+    "lastActivity": "2026-09-15T05:14:35.599Z",
+    "dripsHistory": []
   }
 ]
