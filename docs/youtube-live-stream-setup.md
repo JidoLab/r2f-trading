@@ -236,7 +236,7 @@ Cloudbot > Commands. Add:
 - `!call` Free 15 minute call: https://www.r2ftrading.com/contact
 - `!coaching` Plans: https://www.r2ftrading.com/coaching
 - `!telegram` https://t.me/Road2Funded
-- `!schedule` Live every weekday, 30 minutes before the NY open (8 PM Bangkok / 9 AM ET).
+- `!schedule` Live every weekday at the 8 AM London open (2 PM Bangkok). All time zones: https://www.r2ftrading.com/live
 - `!risk` Nothing here is financial advice. Trade only with money you can afford to lose.
 
 ### Moderation
