@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-09-16",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1789564817014-0",
+        "title": "Personally message all 3 hot leads via Telegram or LINE today with a time-sensitive offer (e.g., 'enroll by Friday for a bonus 1-on-1 session') since automated drips show no recent engagement from them.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1789564817014-1",
+        "title": "With 52 shorts ready but only 30 published, manually review and schedule a burst of 5–10 shorts across TikTok, YouTube, and Instagram Reels this week to accelerate top-of-funnel traffic.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1789564817014-2",
+        "title": "Zero new subscribers yesterday signals a traffic problem — manually reach out to 3–5 Bangkok-based trading Facebook groups or LINE OpenChat communities today with a direct, value-first post linking to the R2F lead magnet.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1789564817014-3",
+        "title": "With 0 Reddit upvotes and stalled cold lead growth, create one high-value Reddit post manually on r/Forex or r/Daytrading today sharing a real trade breakdown from Harvest to build credibility and drive organic subscribers.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-06-30",
     "tasks": [
       {
