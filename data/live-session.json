@@ -1,12 +1,18 @@
 {
   "date": "2026-09-16",
   "startedAt": "2026-09-16T13:22:31.208Z",
-  "open": {
-    "side": "long",
-    "setup": "",
-    "openedAt": "2026-09-16T13:22:31.289Z",
-    "carried": false
-  },
-  "trades": [],
-  "updatedAt": "2026-09-16T13:22:31.289Z"
+  "open": null,
+  "trades": [
+    {
+      "id": "mu44rny1tnma",
+      "side": "long",
+      "setup": "",
+      "result": "win",
+      "r": 1.5,
+      "openedAt": "2026-09-16T13:22:31.289Z",
+      "closedAt": "2026-09-16T13:22:34.105Z",
+      "carried": false
+    }
+  ],
+  "updatedAt": "2026-09-16T13:22:34.105Z"
 }
