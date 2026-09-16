@@ -783,7 +783,7 @@
   {
     "email": "franjray38@gmail.com",
     "date": "2026-09-11T07:57:46.647Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "referralCode": "R2F-74cplx",
     "referredBy": null,
     "referralCount": 0,
@@ -802,13 +802,14 @@
     ],
     "lastActivity": "2026-09-12T09:00:30.112Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   },
   {
     "email": "angelapa1328@gmail.com",
     "date": "2026-09-13T17:57:08.905Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-q0wqjl",
     "referredBy": null,
     "referralCount": 0,
@@ -816,7 +817,9 @@
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-09-13T17:57:08.905Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   },
   {
     "email": "jacksondejonn@gmail.com",
