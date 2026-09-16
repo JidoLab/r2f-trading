@@ -81,6 +81,17 @@ async function postTweet(text: string): Promise<string> {
   return res.ok ? "success" : `error ${res.status}`;
 }
 
+async function postDiscord(text: string): Promise<string> {
+  const url = process.env.DISCORD_WEBHOOK_URL;
+  if (!url) return "skipped";
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ content: text }),
+  });
+  return res.ok || res.status === 204 ? "success" : `error ${res.status}`;
+}
+
 export async function GET(req: NextRequest) {
   const authHeader = req.headers.get("authorization");
   if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
@@ -134,9 +145,10 @@ export async function GET(req: NextRequest) {
     const results = {
       telegram: await postTelegram(telegramText),
       twitter: await postTweet(tweetText),
+      discord: await postDiscord(telegramText),
     };
 
-    const nextLog = { posted: [...posted, b.id].slice(-30), lastTitle: b.snippet.title, lastAt: new Date().toISOString() };
+    const nextLog = { posted: [...posted, b.id].slice(-30), lastTitle: b.snippet.title, lastAt: new Date().toISOString(), lastResults: results };
     await commitFile(LOG_PATH, JSON.stringify(nextLog, null, 2) + "\n", `Live reminder posted: ${b.snippet.title}`);
 
     return NextResponse.json({ status: "posted", id: b.id, title: b.snippet.title, start: iso, results });
