@@ -146,7 +146,7 @@ export default function LivePage() {
               Subscribe and hit the bell
             </a>
             <a
-              href="https://t.me/Road2Funded"
+              href="https://t.me/r2fchannel"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 hover:bg-white/20 text-white font-bold text-sm tracking-wide px-6 py-3 rounded-md transition-all uppercase"

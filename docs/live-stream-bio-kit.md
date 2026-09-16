@@ -20,7 +20,7 @@ financial advice.
 
 1. Live schedule: https://www.r2ftrading.com/live
 2. Free playbook: https://www.r2ftrading.com/free-class
-3. Telegram: https://t.me/Road2Funded
+3. Telegram channel (stream links): https://t.me/r2fchannel
 4. TradingView: https://www.tradingview.com/u/Road_2_Funded/
 
 ## Telegram channel pinned message
