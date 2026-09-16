@@ -89,6 +89,21 @@ Hypothetical performance disclosure: Any results shown from backtesting, replay 
 
 #nq #livetrading #ict #daytrading #futures
 
+## Scoreboard overlay (trades, W/L, net R)
+
+Add once to the Live scene: **Add Source > Webpage**, URL
+`https://www.r2ftrading.com/live/overlay`, width 900, height 200. Drag it to the
+top right of the chart. The page is transparent apart from the card.
+
+Log trades from your phone at `https://www.r2ftrading.com/admin/live-session`
+(admin login). Tap New session when you go live. Tap LONG or SHORT when you
+enter, then WIN, LOSS or B/E with the R multiple when you exit. The overlay
+updates within about 5 seconds and shows a Last Trade card for 45 seconds.
+If you are still in a trade from yesterday, New session asks whether to carry
+it; a carried trade counts in the day it closes. Everything is in R, never
+dollars. Every tap is a git commit to data/live-session.json, so the history
+is your stream journal.
+
 ## XSplit scenes (final layout)
 
 Canvas: top bar of XSplit set to 1920x1080, 30 fps. Transition: Settings >

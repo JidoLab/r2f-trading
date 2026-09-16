@@ -32,6 +32,7 @@ const NAV_SECTIONS = [
   {
     label: "Engagement",
     items: [
+      { href: "/admin/live-session", label: "Live Scoreboard" },
       { href: "/admin/engagement-log", label: "Engagement Log" },
       { href: "/admin/outreach", label: "Guest Post Outreach" },
       { href: "/admin/reply-suggestions", label: "Reply Suggestions" },

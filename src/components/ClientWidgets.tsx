@@ -22,6 +22,7 @@
  */
 
 import dynamic from "next/dynamic";
+import { usePathname } from "next/navigation";
 
 const WhatsAppButton  = dynamic(() => import("@/components/WhatsAppButton"),  { ssr: false, loading: () => null });
 const BackToTop       = dynamic(() => import("@/components/BackToTop"),       { ssr: false, loading: () => null });
@@ -30,6 +31,9 @@ const ExitIntentPopup = dynamic(() => import("@/components/ExitIntentPopup"), { 
 const SocialProof     = dynamic(() => import("@/components/SocialProof"),     { ssr: false, loading: () => null });
 
 export default function ClientWidgets() {
+  const pathname = usePathname();
+  // The stream overlay is captured by XSplit; no chat bubbles or popups there.
+  if (pathname?.startsWith("/live/overlay")) return null;
   return (
     <>
       <WhatsAppButton />
