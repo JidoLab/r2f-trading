@@ -29,6 +29,7 @@ export default function LiveOverlay() {
     const load = async () => {
       try {
         const r = await fetch("/api/live/session", { cache: "no-store" });
+        if (!r.ok) return; // keep the last good numbers on screen
         const j = await r.json();
         if (alive) {
           setS(j.stats);

@@ -20,7 +20,9 @@ export default function LiveSessionPage() {
   const [err, setErr] = useState("");
 
   const load = useCallback(async () => {
-    const j = await fetch("/api/live/session", { cache: "no-store" }).then((x) => x.json());
+    const r = await fetch("/api/live/session", { cache: "no-store" });
+    if (!r.ok) { setErr("GitHub is rate limited right now; the panel will work again when it resets."); return; }
+    const j = await r.json();
     setSession(j.session);
     setStats(j.stats);
     if (j.stats?.plan) setPlan(j.stats.plan);

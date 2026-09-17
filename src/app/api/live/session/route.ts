@@ -11,6 +11,9 @@ export const dynamic = "force-dynamic";
 
 export async function GET() {
   const session = await readSessionCached();
+  if (!session) {
+    return NextResponse.json({ error: "session unavailable" }, { status: 503, headers: { "Cache-Control": "no-store" } });
+  }
   return NextResponse.json(
     { session, stats: stats(session) },
     { headers: { "Cache-Control": "no-store" } }
