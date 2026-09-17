@@ -824,7 +824,7 @@
   {
     "email": "jacksondejonn@gmail.com",
     "date": "2026-09-15T05:14:35.599Z",
-    "dripsSent": 0,
+    "dripsSent": 1,
     "referralCode": "R2F-ebfga2",
     "referredBy": null,
     "referralCount": 0,
@@ -833,6 +833,8 @@
     "segment": "cold",
     "events": [],
     "lastActivity": "2026-09-15T05:14:35.599Z",
-    "dripsHistory": []
+    "dripsHistory": [
+      "beginnerMistakes"
+    ]
   }
 ]
