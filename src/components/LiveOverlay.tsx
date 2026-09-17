@@ -89,7 +89,7 @@ export default function LiveOverlay() {
         )}
       </div>
 
-      {loaded && (s.plan.bias || s.plan.target || s.plan.waiting) && (
+      {loaded && (
         <div
           style={{
             display: "flex",
@@ -105,9 +105,10 @@ export default function LiveOverlay() {
             boxShadow: "0 4px 18px rgba(0,0,0,0.45)",
           }}
         >
-          {s.plan.bias && <span><span style={{ color: GOLD, fontSize: 12, letterSpacing: 2 }}>BIAS </span>{s.plan.bias}</span>}
-          {s.plan.target && <span><span style={{ color: GOLD, fontSize: 12, letterSpacing: 2 }}>TARGET </span>{s.plan.target}</span>}
-          {s.plan.waiting && <span><span style={{ color: GOLD, fontSize: 12, letterSpacing: 2 }}>WAITING FOR </span>{s.plan.waiting}</span>}
+          {/* Always visible so an unfilled plan is obvious on the second monitor. */}
+          <span><span style={{ color: GOLD, fontSize: 12, letterSpacing: 2 }}>BIAS </span>{s.plan.bias || <span style={{ color: "#6b7a8c" }}>--</span>}</span>
+          <span><span style={{ color: GOLD, fontSize: 12, letterSpacing: 2 }}>TARGET </span>{s.plan.target || <span style={{ color: "#6b7a8c" }}>--</span>}</span>
+          <span><span style={{ color: GOLD, fontSize: 12, letterSpacing: 2 }}>WAITING FOR </span>{s.plan.waiting || <span style={{ color: "#6b7a8c" }}>--</span>}</span>
         </div>
       )}
 
