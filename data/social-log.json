@@ -1817,5 +1817,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-09-17T12:00:38.908Z",
+    "type": "text",
+    "postType": "promo-blog",
+    "text": "Most traders chase fair value gaps without knowing WHY price returns to them. The answer separates f",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
