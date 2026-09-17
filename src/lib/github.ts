@@ -100,9 +100,16 @@ export async function updateJsonFile<T>(
         current = JSON.parse(
           Buffer.from(data.content, "base64").toString("utf-8")
         ) as T;
+      } else if (existing.status === 403 || existing.status === 429) {
+        // Rate limited. Writing without the sha would be rejected (422) and
+        // would clobber the file if it were accepted, so stop here and say why.
+        const reset = Number(existing.headers.get("x-ratelimit-reset") || 0) * 1000;
+        const mins = reset ? Math.max(1, Math.ceil((reset - Date.now()) / 60000)) : 0;
+        throw new Error(`GitHub API rate limited${mins ? `, resets in about ${mins} min` : ""}`);
       }
-    } catch {
-      // Treat as missing — fall back to the provided default
+    } catch (err) {
+      if (err instanceof Error && err.message.startsWith("GitHub API rate limited")) throw err;
+      // Otherwise treat as missing and fall back to the provided default
     }
 
     const next = mutate(current);
