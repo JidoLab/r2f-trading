@@ -16,7 +16,7 @@ export function NotificationBadge() {
         .catch(() => {});
     };
     fetchCount();
-    const interval = setInterval(fetchCount, 60000);
+    const interval = setInterval(fetchCount, 15 * 60 * 1000);
     // Also listen for storage changes (when user marks all read on the notifications page)
     const onStorage = (e: StorageEvent) => {
       if (e.key === "r2f_notifications_last_read") fetchCount();
@@ -45,7 +45,7 @@ export function DailyTasksBadge() {
         .catch(() => {});
     };
     fetchCount();
-    const interval = setInterval(fetchCount, 60000);
+    const interval = setInterval(fetchCount, 15 * 60 * 1000);
     return () => clearInterval(interval);
   }, []);
 
@@ -82,7 +82,7 @@ export function EngagementRepliesBadge() {
         .catch(() => {});
     };
     fetchCount();
-    const interval = setInterval(fetchCount, 60000);
+    const interval = setInterval(fetchCount, 15 * 60 * 1000);
     const onStorage = (e: StorageEvent) => {
       if (e.key === "engagement-log:lastReadAt") fetchCount();
     };
@@ -110,7 +110,7 @@ export function ReplySuggestionsBadge() {
         .catch(() => {});
     };
     fetchCount();
-    const interval = setInterval(fetchCount, 60000);
+    const interval = setInterval(fetchCount, 15 * 60 * 1000);
     return () => clearInterval(interval);
   }, []);
 

@@ -92,7 +92,9 @@ export async function GET(req: NextRequest) {
 
   // 4. Chat transcripts
   try {
-    const files = await listFiles("data/chat-transcripts", ".json");
+    // Newest 15 only. Reading every transcript on each poll cost hundreds of
+    // GitHub calls a minute and exhausted the shared token on 2026-09-17.
+    const files = (await listFiles("data/chat-transcripts", ".json")).slice(-15);
     for (let i = 0; i < files.length; i++) {
       try {
         const raw = await readFile(files[i]);
@@ -113,7 +115,7 @@ export async function GET(req: NextRequest) {
 
   // 5. Shorts renders (published videos)
   try {
-    const files = await listFiles("data/shorts/renders", ".json");
+    const files = (await listFiles("data/shorts/renders", ".json")).slice(-15);
     for (let i = 0; i < files.length; i++) {
       try {
         const raw = await readFile(files[i]);
