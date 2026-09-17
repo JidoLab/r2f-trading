@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
+import { revalidateTag } from "next/cache";
 import { verifyAdmin } from "@/lib/admin-auth";
 import { updateJsonFile } from "@/lib/github";
-import { SESSION_PATH, apply, emptySession, stats, type Action, type LiveSession } from "@/lib/live-session";
+import { SESSION_PATH, SESSION_TAG, apply, emptySession, stats, type Action, type LiveSession } from "@/lib/live-session";
 
 /**
  * Admin writes for the stream scoreboard. Body is an Action (see
@@ -38,6 +39,7 @@ export async function POST(req: NextRequest) {
       emptySession(),
       `Live session: ${label}`
     );
+    revalidateTag(SESSION_TAG, { expire: 0 });
     return NextResponse.json({ session, stats: stats(session) });
   } catch (err) {
     // An uncaught throw here would come back as an empty 500, which the panel

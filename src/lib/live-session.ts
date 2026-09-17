@@ -141,3 +141,29 @@ export function apply(current: LiveSession | null, action: Action, now = new Dat
     }
   }
 }
+
+export const SESSION_TAG = "live-session";
+
+/**
+ * Cached read for the public endpoint. The overlay polls every few seconds
+ * and every uncached read is one GitHub API call, which is how the token hit
+ * GitHub's hourly rate limit on 2026-09-17 and writes started failing. The
+ * fetch is cached for 5 seconds across all function instances and the write
+ * route invalidates the tag, so a logged trade still shows within one poll.
+ */
+export async function readSessionCached(): Promise<LiveSession> {
+  const repo = process.env.GITHUB_REPO || "JidoLab/r2f-trading";
+  try {
+    const res = await fetch(`https://api.github.com/repos/${repo}/contents/${SESSION_PATH}`, {
+      headers: { Authorization: `Bearer ${process.env.GITHUB_TOKEN}`, Accept: "application/vnd.github+json" },
+      next: { revalidate: 5, tags: [SESSION_TAG] },
+    });
+    if (!res.ok) return emptySession();
+    const data = await res.json();
+    const parsed = JSON.parse(Buffer.from(data.content, "base64").toString("utf-8")) as LiveSession;
+    return parsed && parsed.date ? { ...parsed, plan: parsed.plan || { ...EMPTY_PLAN } } : emptySession();
+  } catch {
+    return emptySession();
+  }
+}
+

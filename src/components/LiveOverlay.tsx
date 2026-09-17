@@ -8,7 +8,7 @@ import type { SessionStats } from "@/lib/live-session";
  * Transparent everywhere except the two cards, so it can sit anywhere.
  * Polls the public session endpoint every 4 seconds.
  */
-const POLL_MS = 4000;
+const POLL_MS = 5000;
 const TOAST_MS = 45_000;
 
 const GOLD = "#c9a84c";
