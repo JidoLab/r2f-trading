@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "story",
     "hot-take",
     "quote",
     "promo-free-class",
@@ -29,11 +28,12 @@
     "promo-results",
     "poll-native",
     "poll-native",
-    "promo-checklist"
+    "promo-checklist",
+    "promo-blog"
   ],
   "lastPost": {
-    "type": "promo-checklist",
-    "text": "Run the same pre-trade checklist before every single trade. No checklist = no trade. It's inside the free ICT Funded-Trader Playbook. FOMC week + Retail Sales incoming — discipline wins right now. Grab it free 👇 https://r2ftrading.com/free-class #ICTTrading #FundedTrader #SmartMoneyConcepts",
-    "date": "2026-09-16T12:00:40.124Z"
+    "type": "promo-blog",
+    "text": "Most traders chase fair value gaps without knowing WHY price returns to them. The answer separates funded traders from blown accounts. I broke it down 👇\nhttps://r2ftrading.com/trading-insights\n#ICTTrading #SmartMoneyConcepts #FundedTrader",
+    "date": "2026-09-17T12:00:37.449Z"
   }
 }
