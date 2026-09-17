@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
   } catch {
     return NextResponse.json({ error: "Bad JSON" }, { status: 400 });
   }
-  if (!action || !["new", "open", "close", "cancel", "undo"].includes(action.type)) {
+  if (!action || !["new", "open", "close", "cancel", "undo", "plan"].includes(action.type)) {
     return NextResponse.json({ error: "Unknown action" }, { status: 400 });
   }
   if (action.type === "close" && (typeof action.r !== "number" || !isFinite(action.r) || action.r > 50)) {
@@ -26,7 +26,8 @@ export async function POST(req: NextRequest) {
 
   const label =
     action.type === "close" ? `${action.result} ${action.r}R` :
-    action.type === "open" ? `open ${action.side}` : action.type;
+    action.type === "open" ? `open ${action.side}` :
+    action.type === "plan" ? "plan updated" : action.type;
 
   const session = await updateJsonFile<LiveSession>(
     SESSION_PATH,

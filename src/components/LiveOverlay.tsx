@@ -87,6 +87,28 @@ export default function LiveOverlay() {
         )}
       </div>
 
+      {(s.plan.bias || s.plan.target || s.plan.waiting) && (
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 18,
+            padding: "8px 18px",
+            background: "rgba(7,18,32,0.88)",
+            border: `2px solid ${GOLD}`,
+            borderRadius: 12,
+            color: "#ffffff",
+            fontSize: 20,
+            fontWeight: 700,
+            boxShadow: "0 4px 18px rgba(0,0,0,0.45)",
+          }}
+        >
+          {s.plan.bias && <span><span style={{ color: GOLD, fontSize: 12, letterSpacing: 2 }}>BIAS </span>{s.plan.bias}</span>}
+          {s.plan.target && <span><span style={{ color: GOLD, fontSize: 12, letterSpacing: 2 }}>TARGET </span>{s.plan.target}</span>}
+          {s.plan.waiting && <span><span style={{ color: GOLD, fontSize: 12, letterSpacing: 2 }}>WAITING FOR </span>{s.plan.waiting}</span>}
+        </div>
+      )}
+
       {showToast && s.last && (
         <div
           style={{

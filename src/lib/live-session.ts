@@ -34,11 +34,20 @@ export interface ClosedTrade {
   carried: boolean;
 }
 
+export interface Plan {
+  bias: string;
+  target: string;
+  waiting: string;
+}
+
+export const EMPTY_PLAN: Plan = { bias: "", target: "", waiting: "" };
+
 export interface LiveSession {
   date: string; // YYYY-MM-DD in Asia/Bangkok
   startedAt: string;
   open: OpenTrade | null;
   trades: ClosedTrade[];
+  plan: Plan;
   updatedAt: string;
 }
 
@@ -52,6 +61,7 @@ export interface SessionStats {
   status: "flat" | Side;
   open: OpenTrade | null;
   last: ClosedTrade | null;
+  plan: Plan;
 }
 
 export function bangkokDate(d = new Date()): string {
@@ -59,7 +69,7 @@ export function bangkokDate(d = new Date()): string {
 }
 
 export function emptySession(now = new Date()): LiveSession {
-  return { date: bangkokDate(now), startedAt: now.toISOString(), open: null, trades: [], updatedAt: now.toISOString() };
+  return { date: bangkokDate(now), startedAt: now.toISOString(), open: null, trades: [], plan: { ...EMPTY_PLAN }, updatedAt: now.toISOString() };
 }
 
 export function stats(s: LiveSession): SessionStats {
@@ -78,6 +88,7 @@ export function stats(s: LiveSession): SessionStats {
     status: s.open ? s.open.side : "flat",
     open: s.open,
     last: s.trades.length ? s.trades[s.trades.length - 1] : null,
+    plan: s.plan || { ...EMPTY_PLAN },
   };
 }
 
@@ -86,16 +97,18 @@ export type Action =
   | { type: "open"; side: Side; setup?: string }
   | { type: "close"; result: Result; r: number; setup?: string }
   | { type: "cancel" }
-  | { type: "undo" };
+  | { type: "undo" }
+  | { type: "plan"; bias?: string; target?: string; waiting?: string };
 
 /** Pure transform used by updateJsonFile; may run more than once on conflict. */
 export function apply(current: LiveSession | null, action: Action, now = new Date()): LiveSession {
-  const s: LiveSession = current ? { ...current, trades: [...current.trades] } : emptySession(now);
+  const s: LiveSession = current ? { ...current, trades: [...current.trades], plan: current.plan || { ...EMPTY_PLAN } } : emptySession(now);
   const iso = now.toISOString();
   switch (action.type) {
     case "new": {
       const carriedOpen = action.carry && s.open ? { ...s.open, carried: true } : null;
-      return { ...emptySession(now), open: carriedOpen };
+      // The plan is written before going live; a new session keeps it.
+      return { ...emptySession(now), open: carriedOpen, plan: s.plan };
     }
     case "open": {
       if (s.open) return s; // already in a trade; close it first
@@ -121,6 +134,10 @@ export function apply(current: LiveSession | null, action: Action, now = new Dat
     case "undo": {
       if (s.open) return { ...s, open: null, updatedAt: iso };
       return { ...s, trades: s.trades.slice(0, -1), updatedAt: iso };
+    }
+    case "plan": {
+      const clip = (v: string | undefined) => (v ?? "").trim().slice(0, 60);
+      return { ...s, plan: { bias: clip(action.bias), target: clip(action.target), waiting: clip(action.waiting) }, updatedAt: iso };
     }
   }
 }

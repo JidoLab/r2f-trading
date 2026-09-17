@@ -14,6 +14,7 @@ export default function LiveSessionPage() {
   const [session, setSession] = useState<LiveSession | null>(null);
   const [stats, setStats] = useState<SessionStats | null>(null);
   const [setup, setSetup] = useState("");
+  const [plan, setPlan] = useState({ bias: "", target: "", waiting: "" });
   const [r, setR] = useState("1");
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
@@ -22,6 +23,7 @@ export default function LiveSessionPage() {
     const j = await fetch("/api/live/session", { cache: "no-store" }).then((x) => x.json());
     setSession(j.session);
     setStats(j.stats);
+    if (j.stats?.plan) setPlan(j.stats.plan);
   }, []);
 
   useEffect(() => {
@@ -41,6 +43,7 @@ export default function LiveSessionPage() {
       if (!res.ok) throw new Error(j.error || `HTTP ${res.status}`);
       setSession(j.session);
       setStats(j.stats);
+      if (j.stats?.plan) setPlan(j.stats.plan);
       if (action.type === "close" || action.type === "open") setSetup("");
     } catch (e) {
       setErr(String(e instanceof Error ? e.message : e));
@@ -72,6 +75,26 @@ export default function LiveSessionPage() {
       )}
 
       {err && <p className="text-red-400 text-sm">{err}</p>}
+
+      <form
+        onSubmit={(e) => { e.preventDefault(); send({ type: "plan", ...plan }); }}
+        className="space-y-2 bg-white/5 rounded-xl p-3"
+      >
+        <div className="flex items-baseline justify-between">
+          <h2 className="text-white/60 text-xs uppercase tracking-wider">Plan bar (shows on stream)</h2>
+          <button type="submit" disabled={busy} className="text-xs font-bold bg-gold text-navy px-3 py-1.5 rounded-md disabled:opacity-40">Update</button>
+        </div>
+        {(["bias", "target", "waiting"] as const).map((k) => (
+          <input
+            key={k}
+            value={plan[k]}
+            onChange={(e) => setPlan({ ...plan, [k]: e.target.value })}
+            maxLength={60}
+            placeholder={k === "bias" ? "Bias: SHORT under 20,150" : k === "target" ? "Target: Asia low 20,080" : "Waiting for: 5m FVG to fill"}
+            className="w-full px-3 py-2 rounded-lg bg-white/10 text-white placeholder-white/40 border border-white/10 focus:outline-none focus:border-gold text-sm"
+          />
+        ))}
+      </form>
 
       {!inTrade ? (
         <div className="space-y-3">

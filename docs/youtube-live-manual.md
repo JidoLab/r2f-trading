@@ -92,7 +92,7 @@ Hypothetical performance disclosure: Any results shown from backtesting, replay 
 ## Scoreboard overlay (trades, W/L, net R)
 
 Add once to the Live scene: **Add Source > Webpage**, URL
-`https://www.r2ftrading.com/live/overlay`, width 900, height 200. Drag it to the
+`https://www.r2ftrading.com/live/overlay`, width 900, height 260. Drag it to the
 top right of the chart. The page is transparent apart from the card.
 
 Log trades from your phone at `https://www.r2ftrading.com/admin/live-session`
@@ -103,6 +103,12 @@ If you are still in a trade from yesterday, New session asks whether to carry
 it; a carried trade counts in the day it closes. Everything is in R, never
 dollars. Every tap is a git commit to data/live-session.json, so the history
 is your stream journal.
+
+Plan bar: the same page has three fields, Bias, Target and Waiting for. Fill
+them before going live and update them on the second monitor as the story
+changes. They render as a second bar under the scoreboard. Keep each under
+60 characters and write them as the viewer reads them: "SHORT under 20,150",
+"Asia low 20,080", "5m FVG to fill". New session keeps the plan.
 
 ## XSplit scenes (final layout)
 
