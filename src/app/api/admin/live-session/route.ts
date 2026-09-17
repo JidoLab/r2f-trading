@@ -11,6 +11,32 @@ import { SESSION_PATH, SESSION_TAG, apply, emptySession, stats, type Action, typ
  */
 export const maxDuration = 30;
 
+/**
+ * The plan bar doubles as the day's one human post in Discord: when Harvest
+ * updates bias / target / waiting-for before or during the stream, the same
+ * three lines go to the announcements webhook. Only when something changed
+ * and at least one field is filled, so repeated saves do not spam.
+ */
+async function announcePlan(session: LiveSession, previousPlanKey: string) {
+  const url = process.env.DISCORD_WEBHOOK_URL;
+  const p = session.plan;
+  if (!url || !p || !(p.bias || p.target || p.waiting)) return;
+  if (JSON.stringify(p) === previousPlanKey) return;
+  const lines = [
+    "**Today's plan** (NQ, London session)",
+    p.bias ? `Bias: ${p.bias}` : null,
+    p.target ? `Target: ${p.target}` : null,
+    p.waiting ? `Waiting for: ${p.waiting}` : null,
+    "",
+    "Watch live: https://www.r2ftrading.com/live",
+  ].filter((l) => l !== null);
+  try {
+    await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ content: lines.join("\n") }) });
+  } catch {
+    // Discord being down must never block a save.
+  }
+}
+
 export async function POST(req: NextRequest) {
   if (!(await verifyAdmin())) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
@@ -32,14 +58,19 @@ export async function POST(req: NextRequest) {
     action.type === "open" ? `open ${action.side}` :
     action.type === "plan" ? "plan updated" : action.type;
 
+  let previousPlanKey = "";
   try {
     const session = await updateJsonFile<LiveSession>(
       SESSION_PATH,
-      (current) => apply(current && current.date ? current : null, action),
+      (current) => {
+        if (current?.plan) previousPlanKey = JSON.stringify(current.plan);
+        return apply(current && current.date ? current : null, action);
+      },
       emptySession(),
       `Live session: ${label}`
     );
     revalidateTag(SESSION_TAG, { expire: 0 });
+    if (action.type === "plan") await announcePlan(session, previousPlanKey);
     return NextResponse.json({ session, stats: stats(session) });
   } catch (err) {
     // An uncaught throw here would come back as an empty 500, which the panel
