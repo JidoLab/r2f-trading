@@ -13,7 +13,16 @@
  * Idempotent: channels and roles that already exist by name are reused.
  * Prints the #live-announcements webhook URL at the end; that value goes into
  * DISCORD_WEBHOOK_URL on Vercel so the stream reminder, replay and blog posts
- * land in the right channel.
+ * land in the right channel. *
+ * HISTORY: run once on 2026-09-17. The server ("R2F - Official Channel", 32
+ * members) already had channels, so the fresh layout below was merged into the
+ * existing ones afterwards: START HERE = #rules (welcome pinned), #announcements
+ * (site webhook "R2F Trading Site"), #r2f-youtube-uploads; TRADING =
+ * #stream-chat, #questions, #htf-analysis, #intraday-analysis,
+ * #trading-records, #trading-psychology, #hive-mind; OFF TOPIC = #the-lounge,
+ * #trading-memes. Re-running this script would recreate the duplicates it
+ * originally made (start-here, live-announcements, trade-reviews,
+ * wins-and-lessons, lounge). Edit LAYOUT before running it again.
  */
 import fs from "fs";
 import path from "path";
