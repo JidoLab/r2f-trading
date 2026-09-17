@@ -55,6 +55,16 @@ export default function LiveOverlay() {
   const statusColor = !loaded ? GOLD : s.status === "flat" ? GOLD : s.status === "long" ? GREEN : RED;
   const showToast = loaded && s.last && now - new Date(s.last.closedAt).getTime() < TOAST_MS;
 
+  // Same label-over-value layout as the scoreboard, smaller value, wraps to two lines.
+  const planCell = (label: string, value: string) => (
+    <div style={{ flex: "1 1 0", minWidth: 150, maxWidth: 300, padding: "0 14px" }}>
+      <div style={{ fontSize: 12, letterSpacing: 2, color: "#aab4c3", fontWeight: 700 }}>{label}</div>
+      <div style={{ fontSize: 24, lineHeight: 1.1, color: value ? "#ffffff" : "#6b7a8c", fontFamily: "var(--font-heading), Impact, sans-serif", fontWeight: 700, textTransform: "uppercase" }}>
+        {value || "--"}
+      </div>
+    </div>
+  );
+
   const cell = (label: string, value: string, color = "#ffffff") => (
     <div style={{ minWidth: 96, padding: "0 14px" }}>
       <div style={{ fontSize: 12, letterSpacing: 2, color: "#aab4c3", fontWeight: 700 }}>{label}</div>
@@ -63,7 +73,7 @@ export default function LiveOverlay() {
   );
 
   return (
-    <div style={{ position: "fixed", top: 0, left: 0, display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 10, padding: 6, fontFamily: "var(--font-body), Arial, sans-serif" }}>
+    <div style={{ position: "fixed", top: 0, left: 0, display: "inline-flex", flexDirection: "column", alignItems: "stretch", gap: 10, padding: 6, fontFamily: "var(--font-body), Arial, sans-serif" }}>
       <div
         style={{
           display: "flex",
@@ -93,22 +103,18 @@ export default function LiveOverlay() {
         <div
           style={{
             display: "flex",
-            flexWrap: "wrap",
-            gap: 18,
-            padding: "8px 18px",
+            alignItems: "flex-start",
+            gap: 4,
+            padding: "10px 8px",
             background: "rgba(7,18,32,0.88)",
             border: `2px solid ${GOLD}`,
-            borderRadius: 12,
-            color: "#ffffff",
-            fontSize: 20,
-            fontWeight: 700,
+            borderRadius: 14,
             boxShadow: "0 4px 18px rgba(0,0,0,0.45)",
           }}
         >
-          {/* Always visible so an unfilled plan is obvious on the second monitor. */}
-          <span><span style={{ color: GOLD, fontSize: 12, letterSpacing: 2 }}>BIAS </span>{s.plan.bias || <span style={{ color: "#6b7a8c" }}>--</span>}</span>
-          <span><span style={{ color: GOLD, fontSize: 12, letterSpacing: 2 }}>TARGET </span>{s.plan.target || <span style={{ color: "#6b7a8c" }}>--</span>}</span>
-          <span><span style={{ color: GOLD, fontSize: 12, letterSpacing: 2 }}>WAITING FOR </span>{s.plan.waiting || <span style={{ color: "#6b7a8c" }}>--</span>}</span>
+          {planCell("BIAS", s.plan.bias)}
+          {planCell("TARGET", s.plan.target)}
+          {planCell("WAITING FOR", s.plan.waiting)}
         </div>
       )}
 
