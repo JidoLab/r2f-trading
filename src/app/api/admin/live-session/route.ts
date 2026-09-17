@@ -8,6 +8,8 @@ import { SESSION_PATH, apply, emptySession, stats, type Action, type LiveSession
  * lib/live-session.ts). Each call commits the new session file to the repo,
  * which doubles as the trading journal for the stream.
  */
+export const maxDuration = 30;
+
 export async function POST(req: NextRequest) {
   if (!(await verifyAdmin())) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
@@ -29,12 +31,19 @@ export async function POST(req: NextRequest) {
     action.type === "open" ? `open ${action.side}` :
     action.type === "plan" ? "plan updated" : action.type;
 
-  const session = await updateJsonFile<LiveSession>(
-    SESSION_PATH,
-    (current) => apply(current && current.date ? current : null, action),
-    emptySession(),
-    `Live session: ${label}`
-  );
-
-  return NextResponse.json({ session, stats: stats(session) });
+  try {
+    const session = await updateJsonFile<LiveSession>(
+      SESSION_PATH,
+      (current) => apply(current && current.date ? current : null, action),
+      emptySession(),
+      `Live session: ${label}`
+    );
+    return NextResponse.json({ session, stats: stats(session) });
+  } catch (err) {
+    // An uncaught throw here would come back as an empty 500, which the panel
+    // showed as "Unexpected end of JSON input". Say what actually failed.
+    const message = err instanceof Error ? err.message : String(err);
+    console.error("live-session write failed:", message);
+    return NextResponse.json({ error: `Save failed: ${message.slice(0, 200)}` }, { status: 500 });
+  }
 }

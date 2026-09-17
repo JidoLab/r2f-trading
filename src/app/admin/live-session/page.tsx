@@ -39,10 +39,12 @@ export default function LiveSessionPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(action),
       });
-      const j = await res.json();
-      if (!res.ok) throw new Error(j.error || `HTTP ${res.status}`);
+      const text = await res.text();
+      let j: { error?: string; session?: LiveSession; stats?: SessionStats } = {};
+      try { j = text ? JSON.parse(text) : {}; } catch { /* not JSON */ }
+      if (!res.ok || !j.session) throw new Error(j.error || `HTTP ${res.status}: ${text.slice(0, 120) || "empty response"}`);
       setSession(j.session);
-      setStats(j.stats);
+      setStats(j.stats ?? null);
       if (j.stats?.plan) setPlan(j.stats.plan);
       if (action.type === "close" || action.type === "open") setSetup("");
     } catch (e) {
