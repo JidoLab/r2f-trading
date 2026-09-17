@@ -4,9 +4,9 @@
   "open": null,
   "trades": [],
   "plan": {
-    "bias": "",
-    "target": "",
-    "waiting": ""
+    "bias": "Bias Sort",
+    "target": "target the asia low",
+    "waiting": "Waiting for 4m: 1234"
   },
-  "updatedAt": "2026-09-17T10:20:47.383Z"
+  "updatedAt": "2026-09-17T10:21:07.191Z"
 }
