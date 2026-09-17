@@ -1,5 +1,7 @@
 import { listFiles, readFile } from "@/lib/github";
 
+export const revalidate = 3600;
+
 const BASE_URL = "https://www.r2ftrading.com";
 
 export async function GET() {

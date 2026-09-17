@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { readFile } from "@/lib/github";
 import { getAllPosts } from "@/lib/blog";
 
+export const revalidate = 3600;
+
 const BASE_URL = "https://www.r2ftrading.com";
 const REPO = "JidoLab/r2f-trading";
 

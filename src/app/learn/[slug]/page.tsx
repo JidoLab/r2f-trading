@@ -10,6 +10,11 @@ import { seoTitle, seoDescription } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
+// Cache each landing page for an hour. Every uncached view cost one GitHub API
+// call, and a crawler working through 200+ pages was enough to help exhaust the
+// shared 5000/hour token budget (2026-09-17).
+export const revalidate = 3600;
+
 const BASE_URL = "https://www.r2ftrading.com";
 
 interface LandingPageData {
