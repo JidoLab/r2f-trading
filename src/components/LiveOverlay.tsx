@@ -47,12 +47,13 @@ export default function LiveOverlay() {
     };
   }, []);
 
-  if (!s) return null;
-
-  const netColor = s.netR > 0 ? GREEN : s.netR < 0 ? RED : "#ffffff";
-  const statusLabel = s.status === "flat" ? "FLAT" : s.status.toUpperCase();
-  const statusColor = s.status === "flat" ? GOLD : s.status === "long" ? GREEN : RED;
-  const showToast = s.last && now - new Date(s.last.closedAt).getTime() < TOAST_MS;
+  // Before the first successful poll (or while GitHub is unavailable on a cold
+  // start) draw the card with dashes so the stream never shows an empty box.
+  const loaded = s !== null;
+  const netColor = !loaded ? "#ffffff" : s.netR > 0 ? GREEN : s.netR < 0 ? RED : "#ffffff";
+  const statusLabel = !loaded ? "--" : s.status === "flat" ? "FLAT" : s.status.toUpperCase();
+  const statusColor = !loaded ? GOLD : s.status === "flat" ? GOLD : s.status === "long" ? GREEN : RED;
+  const showToast = loaded && s.last && now - new Date(s.last.closedAt).getTime() < TOAST_MS;
 
   const cell = (label: string, value: string, color = "#ffffff") => (
     <div style={{ minWidth: 96, padding: "0 14px" }}>
@@ -76,11 +77,11 @@ export default function LiveOverlay() {
         }}
       >
         {cell("TODAY", "R2F", GOLD)}
-        {cell("TRADES", String(s.trades))}
-        {cell("W / L", `${s.wins} / ${s.losses}`)}
-        {cell("NET", fmtR(s.netR), netColor)}
+        {cell("TRADES", loaded ? String(s.trades) : "--")}
+        {cell("W / L", loaded ? `${s.wins} / ${s.losses}` : "-- / --")}
+        {cell("NET", loaded ? fmtR(s.netR) : "--", netColor)}
         {cell("STATUS", statusLabel, statusColor)}
-        {s.open && (
+        {loaded && s.open && (
           <div style={{ padding: "0 14px", fontSize: 14, color: "#e8ecf1", maxWidth: 180 }}>
             {s.open.setup || "in trade"}
             {s.open.carried && <div style={{ color: GOLD, fontSize: 11, letterSpacing: 1 }}>CARRIED OVER</div>}
@@ -88,7 +89,7 @@ export default function LiveOverlay() {
         )}
       </div>
 
-      {(s.plan.bias || s.plan.target || s.plan.waiting) && (
+      {loaded && (s.plan.bias || s.plan.target || s.plan.waiting) && (
         <div
           style={{
             display: "flex",
@@ -110,7 +111,7 @@ export default function LiveOverlay() {
         </div>
       )}
 
-      {showToast && s.last && (
+      {loaded && showToast && s.last && (
         <div
           style={{
             padding: "8px 16px",
