@@ -1,12 +1,17 @@
 {
   "date": "2026-09-17",
   "startedAt": "2026-09-17T10:10:58.080Z",
-  "open": null,
+  "open": {
+    "side": "short",
+    "setup": "+cOB 2m",
+    "openedAt": "2026-09-17T10:20:32.911Z",
+    "carried": false
+  },
   "trades": [],
   "plan": {
     "bias": "",
     "target": "",
     "waiting": ""
   },
-  "updatedAt": "2026-09-17T10:10:58.080Z"
+  "updatedAt": "2026-09-17T10:20:32.911Z"
 }
