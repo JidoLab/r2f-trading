@@ -39,12 +39,13 @@ async function api<T = Record<string, unknown>>(method: string, route: string, b
   return (text ? JSON.parse(text) : {}) as T;
 }
 
-// Discord permission bits
-const VIEW = 1n << 10n;
-const SEND = 1n << 11n;
-const ADD_REACTIONS = 1n << 6n;
-const READ_HISTORY = 1n << 16n;
-const CREATE_THREADS = (1n << 34n) | (1n << 35n);
+// Discord permission bits (plain numbers; all well under 2^53, and Discord
+// takes them as decimal strings)
+const VIEW = 2 ** 10;
+const SEND = 2 ** 11;
+const ADD_REACTIONS = 2 ** 6;
+const READ_HISTORY = 2 ** 16;
+const CREATE_THREADS = 2 ** 34 + 2 ** 35;
 
 type Channel = { id: string; name: string; type: number; parent_id?: string | null };
 type Role = { id: string; name: string };
@@ -109,7 +110,7 @@ async function main() {
     for (const ch of group.channels) {
       let c = byName(ch.name, 0);
       const overwrites = ch.readOnly
-        ? [{ id: everyone.id, type: 0, allow: String(VIEW | READ_HISTORY | ADD_REACTIONS), deny: String(SEND | CREATE_THREADS) }]
+        ? [{ id: everyone.id, type: 0, allow: String(VIEW + READ_HISTORY + ADD_REACTIONS), deny: String(SEND + CREATE_THREADS) }]
         : [];
       if (!c) {
         console.log(`    #${ch.name}${ch.readOnly ? " (read only)" : ""}`);
@@ -141,9 +142,10 @@ async function main() {
   // Webhook for the site in #live-announcements.
   if (announceId) {
     const hooks = await api<{ name: string; url?: string; id: string; token?: string }[]>("GET", `/channels/${announceId}/webhooks`);
-    let hook = hooks.find((h) => h.name === "R2F Trading Site");
+    type Hook = { name: string; url?: string; id: string; token?: string };
+    let hook: Hook | undefined = hooks.find((h) => h.name === "R2F Trading Site");
     if (!hook) {
-      hook = await api("POST", `/channels/${announceId}/webhooks`, { name: "R2F Trading Site" });
+      hook = await api<Hook>("POST", `/channels/${announceId}/webhooks`, { name: "R2F Trading Site" });
       console.log("  created webhook in #live-announcements");
     }
     const url = hook.url || `https://discord.com/api/webhooks/${hook.id}/${hook.token}`;
