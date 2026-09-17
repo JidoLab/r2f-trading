@@ -57,9 +57,9 @@ export default function LiveOverlay() {
 
   // Same label-over-value layout as the scoreboard, smaller value, wraps to two lines.
   const planCell = (label: string, value: string) => (
-    <div style={{ flex: "1 1 0", minWidth: 150, maxWidth: 300, padding: "0 14px" }}>
+    <div style={{ flex: "1 1 0", minWidth: 170, maxWidth: 340, padding: "0 14px" }}>
       <div style={{ fontSize: 12, letterSpacing: 2, color: "#aab4c3", fontWeight: 700 }}>{label}</div>
-      <div style={{ fontSize: 24, lineHeight: 1.1, color: value ? "#ffffff" : "#6b7a8c", fontFamily: "var(--font-heading), Impact, sans-serif", fontWeight: 700, textTransform: "uppercase" }}>
+      <div style={{ fontSize: 19, lineHeight: 1.3, color: value ? "#ffffff" : "#6b7a8c", fontFamily: "var(--font-body), Arial, sans-serif", fontWeight: 400, letterSpacing: 0.2, marginTop: 2 }}>
         {value || "--"}
       </div>
     </div>
