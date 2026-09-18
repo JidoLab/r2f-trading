@@ -146,12 +146,20 @@ export default function LivePage() {
               Subscribe and hit the bell
             </a>
             <a
+              href="https://discord.gg/mgYKZ7qdBA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/10 hover:bg-white/20 text-white font-bold text-sm tracking-wide px-6 py-3 rounded-md transition-all uppercase"
+            >
+              Join the Discord
+            </a>
+            <a
               href="https://t.me/r2fchannel"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 hover:bg-white/20 text-white font-bold text-sm tracking-wide px-6 py-3 rounded-md transition-all uppercase"
             >
-              Get the link on Telegram
+              Telegram links
             </a>
           </div>
         </div>

@@ -79,7 +79,8 @@ FREE: The ICT Funded-Trader Playbook
 The 3 setups used on this stream, the pre-trade checklist, and the risk rules that pass funded challenges. Instant download.
 https://www.r2ftrading.com/free-class
 
-Stream links and community: https://t.me/r2fchannel
+Discord community: https://discord.gg/mgYKZ7qdBA
+Telegram stream links: https://t.me/r2fchannel
 Schedule in your time zone: https://www.r2ftrading.com/live
 
 1-ON-1 ICT COACHING

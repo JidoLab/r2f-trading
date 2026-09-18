@@ -235,7 +235,8 @@ Cloudbot > Commands. Add:
 - `!playbook` The free playbook: https://www.r2ftrading.com/free-class
 - `!call` Free 15 minute call: https://www.r2ftrading.com/contact
 - `!coaching` Plans: https://www.r2ftrading.com/coaching
-- `!telegram` Stream links and community: https://t.me/r2fchannel
+- `!telegram` Stream links: https://t.me/r2fchannel
+- `!discord` Community, charts and questions between streams: https://discord.gg/mgYKZ7qdBA
 - `!schedule` Live every weekday at the 8 AM London open (2 PM Bangkok). All time zones: https://www.r2ftrading.com/live
 - `!risk` Nothing here is financial advice. Trade only with money you can afford to lose.
 
