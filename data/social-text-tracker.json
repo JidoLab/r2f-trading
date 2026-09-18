@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "hot-take",
     "quote",
     "promo-free-class",
     "promo-results",
@@ -29,11 +28,12 @@
     "poll-native",
     "poll-native",
     "promo-checklist",
-    "promo-blog"
+    "promo-blog",
+    "tip"
   ],
   "lastPost": {
-    "type": "promo-blog",
-    "text": "Most traders chase fair value gaps without knowing WHY price returns to them. The answer separates funded traders from blown accounts. I broke it down 👇\nhttps://r2ftrading.com/trading-insights\n#ICTTrading #SmartMoneyConcepts #FundedTrader",
-    "date": "2026-09-17T12:00:37.449Z"
+    "type": "tip",
+    "text": "Fair value gaps on Friday after London close = trap city. Smart money already positioned. Don't chase fills in low liquidity — wait for Monday's open to confirm. Patience is the edge. #FairValueGap #ICTTrading #SmartMoneyConcepts",
+    "date": "2026-09-18T12:00:41.984Z"
   }
 }
