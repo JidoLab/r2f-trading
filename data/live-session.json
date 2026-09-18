@@ -13,10 +13,10 @@
     "target": "",
     "waiting": ""
   },
-  "updatedAt": "2026-09-18T06:48:23.337Z",
+  "updatedAt": "2026-09-18T06:58:43.217Z",
   "rules": {
     "risk": "10% per trade",
-    "target": "1-2R",
+    "target": "0.7R Min",
     "extra": "Max 2 Trades / Day",
     "note": "Higher Risk + Low RR Compounding Strategy"
   }
