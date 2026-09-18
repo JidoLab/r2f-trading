@@ -53,7 +53,7 @@ export interface Rules {
 export const DEFAULT_RULES: Rules = {
   risk: "10% per trade",
   target: "1R",
-  extra: "",
+  extra: "Max 2 trades a day",
   note: "Small account, aggressive growth phase. Not advice.",
 };
 
