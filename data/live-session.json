@@ -1,7 +1,12 @@
 {
   "date": "2026-09-18",
   "startedAt": "2026-09-18T06:02:59.297Z",
-  "open": null,
+  "open": {
+    "side": "long",
+    "setup": "",
+    "openedAt": "2026-09-18T08:21:45.980Z",
+    "carried": false
+  },
   "trades": [
     {
       "id": "mu6m8ee9r1nj",
@@ -19,7 +24,7 @@
     "target": "",
     "waiting": ""
   },
-  "updatedAt": "2026-09-18T07:07:00.704Z",
+  "updatedAt": "2026-09-18T08:21:45.980Z",
   "rules": {
     "risk": "10% per trade",
     "target": "0.7R Min",
