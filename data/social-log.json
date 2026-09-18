@@ -1846,5 +1846,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-09-18T12:00:42.951Z",
+    "type": "text",
+    "postType": "tip",
+    "text": "Fair value gaps on Friday after London close = trap city. Smart money already positioned. Don't chas",
+    "hasImage": true,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "error"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
