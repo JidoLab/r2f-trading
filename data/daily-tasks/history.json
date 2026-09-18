@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-09-18",
+    "tasks": [
+      {
+        "id": "rec-1",
+        "title": "Review reply suggestions",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-2",
+        "title": "Check engagement log & respond",
+        "category": "engagement",
+        "estimatedMinutes": 10,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "rec-3",
+        "title": "Review AI briefing & act on insights",
+        "category": "overview",
+        "estimatedMinutes": 5,
+        "source": "recurring",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1789693421163-0",
+        "title": "Personally message all 3 hot leads via Telegram or LINE today with a direct, time-sensitive offer (e.g., 'Enroll by Friday and get a 1-on-1 session free') since no hot lead activity has been recorded recently.",
+        "category": "engagement",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1789693421163-1",
+        "title": "With 53 shorts ready but only 30 published, manually review and schedule a batch of 10–15 shorts for immediate publish across TikTok, YouTube, and Instagram Reels to accelerate top-of-funnel reach.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1789693421163-2",
+        "title": "Zero new subscribers yesterday signals a traffic problem — manually reach out to 3–5 Bangkok-based trading Facebook groups or LINE communities today with a personal post or value-drop linking to a lead magnet.",
+        "category": "content",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      },
+      {
+        "id": "ai-1789693421163-3",
+        "title": "Create a new lead magnet or landing page offer specifically targeting Thai ICT traders (e.g., a free 'ICT Concepts Cheat Sheet in Thai') to restart subscriber growth and give cold outreach a concrete hook.",
+        "category": "growth",
+        "estimatedMinutes": 15,
+        "source": "ai",
+        "completed": false,
+        "completedAt": null
+      }
+    ],
+    "completedCount": 0,
+    "totalCount": 7
+  },
+  {
     "date": "2026-09-17",
     "tasks": [
       {
