@@ -688,7 +688,8 @@
       "coachingCta",
       "valueRecap",
       "lastChance"
-    ]
+    ],
+    "staleReengageSent": true
   },
   {
     "email": "nro.shado@gmail.com",
@@ -766,7 +767,7 @@
   {
     "email": "brandonmweddle@gmail.com",
     "date": "2026-09-10T05:41:34.068Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-diy043",
     "referredBy": null,
     "referralCount": 0,
@@ -777,7 +778,8 @@
     "lastActivity": "2026-09-10T05:41:34.068Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ]
   },
   {
@@ -843,6 +845,11 @@
     "dripsSent": 0,
     "referralCode": "R2F-x5l6j4",
     "referredBy": null,
-    "referralCount": 0
+    "referralCount": 0,
+    "score": 0,
+    "segment": "cold",
+    "events": [],
+    "lastActivity": "2026-09-18T04:05:07.903Z",
+    "dripsHistory": []
   }
 ]
