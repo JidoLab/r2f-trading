@@ -93,7 +93,8 @@ Hypothetical performance disclosure: Any results shown from backtesting, replay 
 ## Scoreboard overlay (trades, W/L, net R)
 
 Add once to the Live scene: **Add Source > Webpage**, URL
-`https://www.r2ftrading.com/live/overlay`, width 900, height 260. Drag it to the
+`https://www.r2ftrading.com/live/overlay`, width 900, height 560. The page is
+transparent, so the empty space below the cards costs nothing. Drag it to the
 top right of the chart. The page is transparent apart from the card.
 
 Log trades from your phone at `https://www.r2ftrading.com/admin/live-session`
@@ -110,6 +111,13 @@ them before going live and update them on the second monitor as the story
 changes. They render as a second bar under the scoreboard. Keep each under
 60 characters and write them as the viewer reads them: "SHORT under 20,150",
 "Asia low 20,080", "5m FVG to fill". New session keeps the plan.
+
+Below the plan bar the overlay shows two more cards: **Account rules** (risk,
+target, optional extra rule, footnote; edit on the same admin page, New session
+keeps them) and **USD news this week** (High and Medium impact events from the
+ForexFactory feed, with a countdown inside two hours, red under 15 minutes).
+The news card hides itself when nothing is left this week, so it is normal for
+it to be gone on Friday afternoon and back on Monday.
 
 ## XSplit scenes (final layout)
 

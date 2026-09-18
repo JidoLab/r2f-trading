@@ -15,6 +15,7 @@ export default function LiveSessionPage() {
   const [stats, setStats] = useState<SessionStats | null>(null);
   const [setup, setSetup] = useState("");
   const [plan, setPlan] = useState({ bias: "", target: "", waiting: "" });
+  const [rules, setRules] = useState({ risk: "", target: "", extra: "", note: "" });
   const [r, setR] = useState("1");
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
@@ -26,6 +27,7 @@ export default function LiveSessionPage() {
     setSession(j.session);
     setStats(j.stats);
     if (j.stats?.plan) setPlan(j.stats.plan);
+    if (j.stats?.rules) setRules(j.stats.rules);
   }, []);
 
   useEffect(() => {
@@ -48,6 +50,7 @@ export default function LiveSessionPage() {
       setSession(j.session);
       setStats(j.stats ?? null);
       if (j.stats?.plan) setPlan(j.stats.plan);
+      if (j.stats?.rules) setRules(j.stats.rules);
       if (action.type === "close" || action.type === "open") setSetup("");
     } catch (e) {
       setErr(String(e instanceof Error ? e.message : e));
@@ -95,6 +98,26 @@ export default function LiveSessionPage() {
             onChange={(e) => setPlan({ ...plan, [k]: e.target.value })}
             maxLength={60}
             placeholder={k === "bias" ? "Bias: SHORT under 20,150" : k === "target" ? "Target: Asia low 20,080" : "Waiting for: 5m FVG to fill"}
+            className="w-full px-3 py-2 rounded-lg bg-white/10 text-white placeholder-white/40 border border-white/10 focus:outline-none focus:border-gold text-sm"
+          />
+        ))}
+      </form>
+
+      <form
+        onSubmit={(e) => { e.preventDefault(); send({ type: "rules", ...rules }); }}
+        className="space-y-2 bg-white/5 rounded-xl p-3"
+      >
+        <div className="flex items-baseline justify-between">
+          <h2 className="text-white/60 text-xs uppercase tracking-wider">Account rules (shows on stream)</h2>
+          <button type="submit" disabled={busy} className="text-xs font-bold bg-gold text-navy px-3 py-1.5 rounded-md disabled:opacity-40">Update</button>
+        </div>
+        {(["risk", "target", "extra", "note"] as const).map((k) => (
+          <input
+            key={k}
+            value={rules[k]}
+            onChange={(e) => setRules({ ...rules, [k]: e.target.value })}
+            maxLength={80}
+            placeholder={k === "risk" ? "Risk: 10% per trade" : k === "target" ? "Target: 1R" : k === "extra" ? "Extra rule (optional): max 2 trades a day" : "Footnote: Small account, aggressive growth phase. Not advice."}
             className="w-full px-3 py-2 rounded-lg bg-white/10 text-white placeholder-white/40 border border-white/10 focus:outline-none focus:border-gold text-sm"
           />
         ))}

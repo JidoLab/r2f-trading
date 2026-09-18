@@ -42,12 +42,28 @@ export interface Plan {
 
 export const EMPTY_PLAN: Plan = { bias: "", target: "", waiting: "" };
 
+/** Account rules shown on stream. Free text per line so they can change as the account grows. */
+export interface Rules {
+  risk: string;
+  target: string;
+  extra: string;
+  note: string;
+}
+
+export const DEFAULT_RULES: Rules = {
+  risk: "10% per trade",
+  target: "1R",
+  extra: "",
+  note: "Small account, aggressive growth phase. Not advice.",
+};
+
 export interface LiveSession {
   date: string; // YYYY-MM-DD in Asia/Bangkok
   startedAt: string;
   open: OpenTrade | null;
   trades: ClosedTrade[];
   plan: Plan;
+  rules: Rules;
   updatedAt: string;
 }
 
@@ -62,6 +78,7 @@ export interface SessionStats {
   open: OpenTrade | null;
   last: ClosedTrade | null;
   plan: Plan;
+  rules: Rules;
 }
 
 export function bangkokDate(d = new Date()): string {
@@ -69,7 +86,7 @@ export function bangkokDate(d = new Date()): string {
 }
 
 export function emptySession(now = new Date()): LiveSession {
-  return { date: bangkokDate(now), startedAt: now.toISOString(), open: null, trades: [], plan: { ...EMPTY_PLAN }, updatedAt: now.toISOString() };
+  return { date: bangkokDate(now), startedAt: now.toISOString(), open: null, trades: [], plan: { ...EMPTY_PLAN }, rules: { ...DEFAULT_RULES }, updatedAt: now.toISOString() };
 }
 
 export function stats(s: LiveSession): SessionStats {
@@ -89,6 +106,7 @@ export function stats(s: LiveSession): SessionStats {
     open: s.open,
     last: s.trades.length ? s.trades[s.trades.length - 1] : null,
     plan: s.plan || { ...EMPTY_PLAN },
+    rules: s.rules || { ...DEFAULT_RULES },
   };
 }
 
@@ -98,17 +116,20 @@ export type Action =
   | { type: "close"; result: Result; r: number; setup?: string }
   | { type: "cancel" }
   | { type: "undo" }
-  | { type: "plan"; bias?: string; target?: string; waiting?: string };
+  | { type: "plan"; bias?: string; target?: string; waiting?: string }
+  | { type: "rules"; risk?: string; target?: string; extra?: string; note?: string };
 
 /** Pure transform used by updateJsonFile; may run more than once on conflict. */
 export function apply(current: LiveSession | null, action: Action, now = new Date()): LiveSession {
-  const s: LiveSession = current ? { ...current, trades: [...current.trades], plan: current.plan || { ...EMPTY_PLAN } } : emptySession(now);
+  const s: LiveSession = current
+    ? { ...current, trades: [...current.trades], plan: current.plan || { ...EMPTY_PLAN }, rules: current.rules || { ...DEFAULT_RULES } }
+    : emptySession(now);
   const iso = now.toISOString();
   switch (action.type) {
     case "new": {
       const carriedOpen = action.carry && s.open ? { ...s.open, carried: true } : null;
       // The plan is written before going live; a new session keeps it.
-      return { ...emptySession(now), open: carriedOpen, plan: s.plan };
+      return { ...emptySession(now), open: carriedOpen, plan: s.plan, rules: s.rules };
     }
     case "open": {
       if (s.open) return s; // already in a trade; close it first
@@ -139,6 +160,10 @@ export function apply(current: LiveSession | null, action: Action, now = new Dat
       const clip = (v: string | undefined) => (v ?? "").trim().slice(0, 60);
       return { ...s, plan: { bias: clip(action.bias), target: clip(action.target), waiting: clip(action.waiting) }, updatedAt: iso };
     }
+    case "rules": {
+      const clip = (v: string | undefined) => (v ?? "").trim().slice(0, 80);
+      return { ...s, rules: { risk: clip(action.risk), target: clip(action.target), extra: clip(action.extra), note: clip(action.note) }, updatedAt: iso };
+    }
   }
 }
 
@@ -164,7 +189,7 @@ export async function readSessionCached(): Promise<LiveSession | null> {
     if (!res.ok) return null;
     const data = await res.json();
     const parsed = JSON.parse(Buffer.from(data.content, "base64").toString("utf-8")) as LiveSession;
-    return parsed && parsed.date ? { ...parsed, plan: parsed.plan || { ...EMPTY_PLAN } } : emptySession();
+    return parsed && parsed.date ? { ...parsed, plan: parsed.plan || { ...EMPTY_PLAN }, rules: parsed.rules || { ...DEFAULT_RULES } } : emptySession();
   } catch {
     return null;
   }
