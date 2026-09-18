@@ -1,12 +1,7 @@
 {
   "date": "2026-09-18",
   "startedAt": "2026-09-18T06:02:59.297Z",
-  "open": {
-    "side": "long",
-    "setup": "",
-    "openedAt": "2026-09-18T08:21:45.980Z",
-    "carried": false
-  },
+  "open": null,
   "trades": [
     {
       "id": "mu6m8ee9r1nj",
@@ -17,6 +12,16 @@
       "openedAt": "2026-09-18T06:46:07.377Z",
       "closedAt": "2026-09-18T07:07:00.704Z",
       "carried": false
+    },
+    {
+      "id": "mu6owppecpja",
+      "side": "long",
+      "setup": "",
+      "result": "win",
+      "r": 0.5,
+      "openedAt": "2026-09-18T08:21:45.980Z",
+      "closedAt": "2026-09-18T08:21:54.338Z",
+      "carried": false
     }
   ],
   "plan": {
@@ -24,7 +29,7 @@
     "target": "",
     "waiting": ""
   },
-  "updatedAt": "2026-09-18T08:21:45.980Z",
+  "updatedAt": "2026-09-18T08:21:54.338Z",
   "rules": {
     "risk": "10% per trade",
     "target": "0.7R Min",
