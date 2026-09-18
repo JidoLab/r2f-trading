@@ -1,19 +1,25 @@
 {
   "date": "2026-09-18",
   "startedAt": "2026-09-18T06:02:59.297Z",
-  "open": {
-    "side": "long",
-    "setup": "",
-    "openedAt": "2026-09-18T06:46:07.377Z",
-    "carried": false
-  },
-  "trades": [],
+  "open": null,
+  "trades": [
+    {
+      "id": "mu6m8ee9r1nj",
+      "side": "long",
+      "setup": "",
+      "result": "win",
+      "r": 1.5,
+      "openedAt": "2026-09-18T06:46:07.377Z",
+      "closedAt": "2026-09-18T07:07:00.704Z",
+      "carried": false
+    }
+  ],
   "plan": {
     "bias": "Possible retracement into 1D SIBI",
     "target": "",
     "waiting": ""
   },
-  "updatedAt": "2026-09-18T07:06:56.092Z",
+  "updatedAt": "2026-09-18T07:07:00.704Z",
   "rules": {
     "risk": "10% per trade",
     "target": "0.7R Min",
