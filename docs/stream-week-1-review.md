@@ -1,7 +1,7 @@
 # Live stream review: week 1 (14 to 18 Sep 2026)
 
 Numbers pulled from the YouTube Data and Analytics APIs on 19 Sep. Analytics
-lag about two days, so Thursday's retention is not in yet.
+lag about two days, so Friday's retention is not in yet.
 
 ## Is it working
 
