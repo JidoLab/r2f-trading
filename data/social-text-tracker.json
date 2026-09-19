@@ -1,6 +1,5 @@
 {
   "recentTypes": [
-    "quote",
     "promo-free-class",
     "promo-results",
     "poll-native",
@@ -29,11 +28,12 @@
     "poll-native",
     "promo-checklist",
     "promo-blog",
-    "tip"
+    "tip",
+    "promo-coaching"
   ],
   "lastPost": {
-    "type": "tip",
-    "text": "Fair value gaps on Friday after London close = trap city. Smart money already positioned. Don't chase fills in low liquidity — wait for Monday's open to confirm. Patience is the edge. #FairValueGap #ICTTrading #SmartMoneyConcepts",
-    "date": "2026-09-18T12:00:41.984Z"
+    "type": "promo-coaching",
+    "text": "Weekend = review your order blocks, not Netflix. September volatility is back & FOMC is lurking. I have 2 coaching spots open. Free 15-min call, no pitch. Just real talk on getting funded. 👇 https://r2ftrading.com/contact #ICTTrading #FundedTrader #SmartMoneyConcepts",
+    "date": "2026-09-19T12:00:37.784Z"
   }
 }
