@@ -1,4 +1,4 @@
-# Live stream review: week 1 (15 to 19 Sep 2026)
+# Live stream review: week 1 (14 to 18 Sep 2026)
 
 Numbers pulled from the YouTube Data and Analytics APIs on 19 Sep. Analytics
 lag about two days, so Thursday's retention is not in yet.
@@ -10,15 +10,15 @@ than anything the channel has posted in a year.
 
 | Stream | Length | Replay views (19 Sep) | Avg view duration | Likes |
 |---|---|---|---|---|
-| Mon 15 Sep | 1h41 | 58 | 6 min 36 s (6.5%) | 2 |
+| Tue 15 Sep | 1h41 | 58 | 6 min 36 s (6.5%) | 2 |
 | Wed 16 Sep | 1h45 | 58 | 1 min 21 s (1.3%) | 1 |
-| Thu 18 Sep | 1h50 | 95 | not in yet | 2 |
+| Fri 18 Sep | 1h50 | 95 | not in yet | 2 |
 
 The channel's median video before the pivot was 21 views. Three streams in,
-every replay is at 3 to 4 times that, and Thursday, the first one with the
+every replay is at 3 to 4 times that, and Friday, the first one with the
 scoreboard and plan bar on screen, is the best.
 
-Tuesday's scheduled stream never went live (the GitHub rate-limit day).
+Thursday's scheduled stream never went live (the GitHub rate-limit day), and Monday was the unlisted test.
 Consistency is the whole strategy, so that is the one miss to not repeat.
 
 ## Where the views came from
@@ -38,7 +38,7 @@ one and it is what the next three changes are aimed at.
 ## What changed on 19 Sep
 
 - Replays now get chapters from the scoreboard log and a result-based title,
-  automatically, when the replay poster runs at 5:30 PM. Thursday's replay was
+  automatically, when the replay poster runs at 5:30 PM. Friday's replay was
   done by hand with the same tool: "NQ London Session Live: 2 Wins, +2R | ICT |
   18 Sept" with chapters at each trade. Chapters are what let a searcher jump
   to the trade instead of leaving at minute one.
@@ -56,9 +56,9 @@ one and it is what the next three changes are aimed at.
    five minutes ask one direct question ("where are you watching from, and
    what's your bias?"), and say the name of anyone who answers.
 4. **Log the plan in three fields**, one idea each: bias, target, waiting for.
-   Thursday's plan was one long sentence in the bias field.
+   Friday's plan was one long sentence in the bias field.
 5. **Use Undo for misclicks.** A trade logged open and closed nine seconds apart
-   went into Thursday's result as +0.5R. It is dropped from the chapters but it
+   went into Friday's result as +0.5R. It is dropped from the chapters but it
    counts in the title.
 
 ## What to ignore

@@ -145,3 +145,12 @@ for the pre-market bias walkthrough. Not needed for launch.
 ## Automatic reminder (the only automation in this flow)
 
 Every weekday at 1:00 PM Bangkok a cron checks the channel for a PUBLIC stream scheduled in the next 4 hours. If you scheduled one in Studio that morning, it posts the watch link to the Telegram channel and X once. If nothing is scheduled, it posts nothing. Off switch: set `LIVE_REMINDER_ENABLED=false` on Vercel. Log: `data/live-reminder-log.json`.
+
+## What runs by itself
+
+- 1:00 PM weekdays: going-live post to Telegram, X, Discord (if a public stream is scheduled inside 4 hours).
+- Plan bar Update: "Today's plan" to Discord when it changes.
+- 5:30 PM weekdays: replay link + session result to Telegram, X, Discord; chapters and a result title written onto the replay; replay added to the playlist "NQ Live Trading ICT | London Session Replays".
+- 6:00 PM Friday: the week's stream numbers to your own Telegram.
+- /live page: latest replays from the playlist, refreshed hourly.
+
