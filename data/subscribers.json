@@ -856,5 +856,13 @@
     "events": [],
     "lastActivity": "2026-09-18T04:05:07.903Z",
     "dripsHistory": []
+  },
+  {
+    "email": "maximilian.gassner@gmx.de",
+    "date": "2026-09-19T10:44:44.017Z",
+    "dripsSent": 0,
+    "referralCode": "R2F-csvd6l",
+    "referredBy": null,
+    "referralCount": 0
   }
 ]
