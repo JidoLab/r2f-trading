@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { trackEvent, trackFBEvent } from "@/lib/tracking";
 
-export default function EmailSignup({ variant = "inline", buttonLabel }: { variant?: "inline" | "sidebar" | "popup"; buttonLabel?: string }) {
+export default function EmailSignup({ variant = "inline", buttonLabel, redirectTo = "/thank-you" }: { variant?: "inline" | "sidebar" | "popup"; buttonLabel?: string; redirectTo?: string }) {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -29,7 +29,7 @@ export default function EmailSignup({ variant = "inline", buttonLabel }: { varia
         setStatus("success");
         setEmail("");
         // Redirect to thank-you page with Calendly
-        router.push("/thank-you");
+        router.push(redirectTo);
       } else {
         setStatus("error");
       }

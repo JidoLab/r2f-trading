@@ -105,6 +105,7 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} R2F Trading. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link href="/live" className="hover:text-gold transition-colors">Live Stream</Link>
+            <Link href="/handbook" className="hover:text-gold transition-colors">The Handbook</Link>
             <Link href="/privacy" className="hover:text-gold transition-colors">Privacy Policy &amp; Disclaimer</Link>
           </div>
         </div>
