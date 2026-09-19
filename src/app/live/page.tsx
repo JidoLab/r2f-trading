@@ -7,8 +7,12 @@ import Script from "next/script";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { seoTitle, seoDescription } from "@/lib/seo";
+import { getLatestReplays, REPLAY_PLAYLIST_URL } from "@/lib/youtube-live";
 
 const CHANNEL_ID = "UCOJcTd6NQnnaaM5r2dFd-Yg";
+
+// Replays list refreshes hourly; the rest of the page is static.
+export const revalidate = 3600;
 const SUBSCRIBE_URL = "https://www.youtube.com/@R2F-Trading?sub_confirmation=1";
 
 export const metadata: Metadata = {
@@ -108,7 +112,8 @@ const jsonLd = {
   ],
 };
 
-export default function LivePage() {
+export default async function LivePage() {
+  const replays = await getLatestReplays(6);
   return (
     <main>
       <Script
@@ -192,6 +197,46 @@ export default function LivePage() {
           </p>
         </div>
       </section>
+
+      {/* Latest replays */}
+      {replays.length > 0 && (
+        <section className="py-16 md:py-20 bg-white border-b border-gray-100">
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="flex items-end justify-between mb-8 gap-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-navy" style={{ fontFamily: "var(--font-serif)" }}>
+                Latest Replays
+              </h2>
+              <a href={REPLAY_PLAYLIST_URL} target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-gold hover:underline whitespace-nowrap">
+                Full playlist
+              </a>
+            </div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {replays.map((r) => (
+                <a
+                  key={r.id}
+                  href={`https://www.youtube.com/watch?v=${r.id}&list=${REPLAY_PLAYLIST_URL.split("list=")[1]}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block rounded-lg overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow bg-gray-50"
+                >
+                  <div className="aspect-video bg-navy overflow-hidden">
+                    {r.thumbnail && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={r.thumbnail} alt="" loading="lazy" className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform" />
+                    )}
+                  </div>
+                  <div className="p-4">
+                    <p className="font-bold text-navy leading-snug line-clamp-2">{r.title}</p>
+                    <p className="text-xs text-gray-500 mt-2">
+                      {new Date(r.publishedAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}
+                    </p>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Schedule */}
       <section className="py-16 md:py-20 bg-white">

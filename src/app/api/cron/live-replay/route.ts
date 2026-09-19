@@ -3,6 +3,7 @@ import { readFile, commitFile } from "@/lib/github";
 import { generateOAuthHeader } from "@/lib/social-auth";
 import { SESSION_PATH, stats, type LiveSession } from "@/lib/live-session";
 import { finishSnippet, dateLabelBangkok, type VideoSnippet } from "@/lib/replay-finish";
+import { REPLAY_PLAYLIST_ID } from "@/lib/youtube-live";
 
 /**
  * Replay poster. Runs weekday afternoons after the London stream (10:30 UTC,
@@ -145,6 +146,20 @@ export async function GET(req: NextRequest) {
       }
     }
 
+    // Add the replay to the replays playlist (playlists rank in search and
+    // autoplay the next stream). Duplicate adds are harmless.
+    let playlist = "skipped";
+    try {
+      const pr = await fetch("https://www.googleapis.com/youtube/v3/playlistItems?part=snippet", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ snippet: { playlistId: REPLAY_PLAYLIST_ID, resourceId: { kind: "youtube#video", videoId: b.id } } }),
+      });
+      playlist = pr.ok ? "added" : `error ${pr.status}`;
+    } catch (e) {
+      playlist = `error ${String(e).slice(0, 60)}`;
+    }
+
     const watch = `https://www.youtube.com/watch?v=${b.id}`;
     const text = `Replay is up: today's NQ London session.${result ? ` ${result}` : ""}\n\n${watch}\n\nLive again tomorrow at 8 AM London / 2 PM Bangkok: ${LIVE_PAGE}`;
     const tweet = `Replay is up: today's NQ London session, ICT concepts, entries and stops out loud.${result ? ` ${result}` : ""}\n\n${watch}`;
@@ -155,10 +170,10 @@ export async function GET(req: NextRequest) {
       discord: await postDiscord(text),
     };
 
-    const nextLog = { posted: [...posted, b.id].slice(-30), lastTitle: b.snippet.title, lastAt: new Date().toISOString(), lastResults: { ...results, replayFinish: finished } };
+    const nextLog = { posted: [...posted, b.id].slice(-30), lastTitle: b.snippet.title, lastAt: new Date().toISOString(), lastResults: { ...results, replayFinish: finished, playlist } };
     await commitFile(LOG_PATH, JSON.stringify(nextLog, null, 2) + "\n", `Replay posted: ${b.snippet.title}`);
 
-    return NextResponse.json({ status: "posted", id: b.id, title: b.snippet.title, results, replayFinish: finished });
+    return NextResponse.json({ status: "posted", id: b.id, title: b.snippet.title, results, replayFinish: finished, playlist });
   } catch (err) {
     return NextResponse.json({ status: "error", message: String(err) }, { status: 500 });
   }

@@ -79,6 +79,10 @@
     {
       "path": "/api/cron/live-replay",
       "schedule": "30 10 * * 1-5"
+    },
+    {
+      "path": "/api/cron/stream-weekly",
+      "schedule": "0 11 * * 5"
     }
   ]
 }
