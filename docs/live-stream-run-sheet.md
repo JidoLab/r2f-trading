@@ -133,6 +133,26 @@ that matter are average view duration on the replay (Studio > Analytics >
 Engagement) and whether it climbs week to week. Everything in this sheet is
 aimed at that number.
 
+## Shorts from the recording (the daily discovery lever)
+
+Set up once in XSplit: **Broadcast > Local Recording > gear**, folder
+`C:\Streamecordings`, tick "automatically record when streaming". You get a
+full-quality file of every stream without downloading anything.
+
+After the stream, note one moment worth clipping (a clean entry, a loss handled
+calmly, a two-minute concept). Then one command from the repo folder:
+
+    npm run yt-clip -- "C:\Streamecordings\<today>.mp4" 01:12:40 --title "Why I sold the equal highs" --upload
+
+That cuts 45 seconds from that timestamp, frames it 9:16 with the hook on top
+and the schedule at the bottom, and uploads it as a public Short. Add
+`--len 30` for shorter, `--unlisted` to check it first, `--out` to keep the
+file. Titles: the concept first, plain words, under 60 characters.
+
+The replay poster now also writes chapters and a result-based title onto each
+replay automatically at 5:30 PM. To redo one by hand:
+`npm run yt-finish-replay -- <videoId> --live`.
+
 ## Replay title bank
 
 The live title is generic on purpose (subscribers see it in the notification).

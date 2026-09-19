@@ -18,7 +18,8 @@
     "yt-research": "npx tsx scripts/youtube-topic-research.ts",
     "yt-schedule-stream": "npx tsx scripts/schedule-stream.ts",
     "discord-setup": "npx tsx scripts/discord-setup.ts",
-    "yt-finish-replay": "npx tsx scripts/finish-replay.ts"
+    "yt-finish-replay": "npx tsx scripts/finish-replay.ts",
+    "yt-clip": "python scripts/clip-short.py"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",
