@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { readFile, commitFile } from "@/lib/github";
 import { generateOAuthHeader } from "@/lib/social-auth";
 import { SESSION_PATH, stats, type LiveSession } from "@/lib/live-session";
+import { finishSnippet, dateLabelBangkok, type VideoSnippet } from "@/lib/replay-finish";
 
 /**
  * Replay poster. Runs weekday afternoons after the London stream (10:30 UTC,
@@ -110,14 +111,39 @@ export async function GET(req: NextRequest) {
 
     // Session result from the scoreboard, only if it is today's session.
     let result = "";
+    let session: LiveSession | null = null;
     try {
-      const session = JSON.parse(await readFile(SESSION_PATH)) as LiveSession;
-      if (session.date === today && session.trades.length > 0) {
+      session = JSON.parse(await readFile(SESSION_PATH)) as LiveSession;
+      if (session.date !== today) session = null;
+      if (session && session.trades.length > 0) {
         const st = stats(session);
         const r = `${st.netR > 0 ? "+" : ""}${st.netR}R`;
         result = `${st.trades} trade${st.trades === 1 ? "" : "s"}, ${st.wins} win${st.wins === 1 ? "" : "s"} ${st.losses} loss${st.losses === 1 ? "" : "es"}, ${r} on the day.`;
       }
     } catch { /* no session */ }
+
+    // Finish the replay: chapters from the trade log and a result-based title
+    // (only while the title is still the generic live one). videos.update
+    // replaces the whole snippet, so everything is resent.
+    let finished = "skipped";
+    if (session && b.snippet.actualStartTime) {
+      try {
+        const vres = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${b.id}`, { headers: { Authorization: `Bearer ${token}` } });
+        const vdata = await vres.json();
+        const sn = vdata.items?.[0]?.snippet as VideoSnippet | undefined;
+        if (sn) {
+          const next = finishSnippet({ title: sn.title, description: sn.description, categoryId: sn.categoryId, tags: sn.tags, defaultLanguage: sn.defaultLanguage }, session, b.snippet.actualStartTime, dateLabelBangkok(b.snippet.actualStartTime));
+          const up = await fetch("https://www.googleapis.com/youtube/v3/videos?part=snippet", {
+            method: "PUT",
+            headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+            body: JSON.stringify({ id: b.id, snippet: { title: next.title, description: next.description, categoryId: next.categoryId || "27", tags: next.tags || [], defaultLanguage: next.defaultLanguage || "en" } }),
+          });
+          finished = up.ok ? `title: ${next.title}` : `error ${up.status}`;
+        }
+      } catch (e) {
+        finished = `error ${String(e).slice(0, 80)}`;
+      }
+    }
 
     const watch = `https://www.youtube.com/watch?v=${b.id}`;
     const text = `Replay is up: today's NQ London session.${result ? ` ${result}` : ""}\n\n${watch}\n\nLive again tomorrow at 8 AM London / 2 PM Bangkok: ${LIVE_PAGE}`;
@@ -129,10 +155,10 @@ export async function GET(req: NextRequest) {
       discord: await postDiscord(text),
     };
 
-    const nextLog = { posted: [...posted, b.id].slice(-30), lastTitle: b.snippet.title, lastAt: new Date().toISOString(), lastResults: results };
+    const nextLog = { posted: [...posted, b.id].slice(-30), lastTitle: b.snippet.title, lastAt: new Date().toISOString(), lastResults: { ...results, replayFinish: finished } };
     await commitFile(LOG_PATH, JSON.stringify(nextLog, null, 2) + "\n", `Replay posted: ${b.snippet.title}`);
 
-    return NextResponse.json({ status: "posted", id: b.id, title: b.snippet.title, results });
+    return NextResponse.json({ status: "posted", id: b.id, title: b.snippet.title, results, replayFinish: finished });
   } catch (err) {
     return NextResponse.json({ status: "error", message: String(err) }, { status: 500 });
   }
