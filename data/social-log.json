@@ -1875,5 +1875,34 @@
         "status": "success"
       }
     ]
+  },
+  {
+    "date": "2026-09-19T12:00:38.767Z",
+    "type": "text",
+    "postType": "promo-coaching",
+    "text": "Weekend = review your order blocks, not Netflix. September volatility is back & FOMC is lurking. I h",
+    "hasImage": false,
+    "results": [
+      {
+        "platform": "twitter",
+        "status": "success"
+      },
+      {
+        "platform": "facebook",
+        "status": "success"
+      },
+      {
+        "platform": "linkedin",
+        "status": "error"
+      },
+      {
+        "platform": "telegram",
+        "status": "success"
+      },
+      {
+        "platform": "discord",
+        "status": "success"
+      }
+    ]
   }
 ]
