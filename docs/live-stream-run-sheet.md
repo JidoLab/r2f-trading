@@ -136,13 +136,13 @@ aimed at that number.
 ## Shorts from the recording (the daily discovery lever)
 
 Set up once in XSplit: **Broadcast > Local Recording > gear**, folder
-`C:\Streamecordings`, tick "automatically record when streaming". You get a
+`C:\Stream\recordings`, tick "automatically record when streaming". You get a
 full-quality file of every stream without downloading anything.
 
 After the stream, note one moment worth clipping (a clean entry, a loss handled
 calmly, a two-minute concept). Then one command from the repo folder:
 
-    npm run yt-clip -- "C:\Streamecordings\<today>.mp4" 01:12:40 --title "Why I sold the equal highs" --upload
+    npm run yt-clip -- "C:\Stream\recordings\<today>.mp4" 01:12:40 --title "Why I sold the equal highs" --upload
 
 That cuts 45 seconds from that timestamp, frames it 9:16 with the hook on top
 and the schedule at the bottom, and uploads it as a public Short. Add
