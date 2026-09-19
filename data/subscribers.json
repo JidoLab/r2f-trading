@@ -711,12 +711,13 @@
       "coachingCta",
       "valueRecap",
       "lastChance"
-    ]
+    ],
+    "staleReengageSent": true
   },
   {
     "email": "traderanthony2@gmail.com",
     "date": "2026-08-30T04:25:43.489Z",
-    "dripsSent": 5,
+    "dripsSent": 6,
     "referralCode": "R2F-35h075",
     "referredBy": null,
     "referralCount": 0,
@@ -742,14 +743,15 @@
       "ictConcepts",
       "successStory",
       "tradingPsychology",
-      "propFirmTips"
+      "propFirmTips",
+      "coachingCta"
     ],
     "abandonmentEmailSent": true
   },
   {
     "email": "hung.copywriting.swipes@gmail.com",
     "date": "2026-09-07T06:00:20.850Z",
-    "dripsSent": 3,
+    "dripsSent": 4,
     "referralCode": "R2F-zp6pce",
     "referredBy": null,
     "referralCount": 0,
@@ -761,7 +763,8 @@
     "dripsHistory": [
       "beginnerMistakes",
       "ictConcepts",
-      "successStory"
+      "successStory",
+      "tradingPsychology"
     ]
   },
   {
@@ -785,7 +788,7 @@
   {
     "email": "franjray38@gmail.com",
     "date": "2026-09-11T07:57:46.647Z",
-    "dripsSent": 2,
+    "dripsSent": 3,
     "referralCode": "R2F-74cplx",
     "referredBy": null,
     "referralCount": 0,
@@ -805,13 +808,14 @@
     "lastActivity": "2026-09-12T09:00:30.112Z",
     "dripsHistory": [
       "beginnerMistakes",
-      "ictConcepts"
+      "ictConcepts",
+      "successStory"
     ]
   },
   {
     "email": "angelapa1328@gmail.com",
     "date": "2026-09-13T17:57:08.905Z",
-    "dripsSent": 1,
+    "dripsSent": 2,
     "referralCode": "R2F-q0wqjl",
     "referredBy": null,
     "referralCount": 0,
@@ -820,7 +824,8 @@
     "events": [],
     "lastActivity": "2026-09-13T17:57:08.905Z",
     "dripsHistory": [
-      "beginnerMistakes"
+      "beginnerMistakes",
+      "ictConcepts"
     ]
   },
   {
